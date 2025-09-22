@@ -1,0 +1,1437 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "your.email@example.com",
+        "name": "Your Name",
+        "type": "Agent",
+        "value": "Your Name"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Kyaw T. Tun"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Tun",
+            "given_name": "Kyaw T.",
+            "name": "Kyaw T. Tun",
+            "type": "Agent"
+          }
+        ],
+        "datePublished": "2024",
+        "doi": "10.5281/zenodo.14504697",
+        "format": "cff",
+        "title": "AGI-Pipeline",
+        "type": "File_dump",
+        "url": "https://doi.org/10.5281/zenodo.14504697",
+        "value": "cff-version: 1.2.0\nmessage: If you use this software, please cite it using the metadata from this file.\ntitle: AGI-Pipeline\nversion: 1.0.0\ndate-released: '2024-12-17'\nlicense: MIT\nrepository-code: https://github.com/OneFineStarstuff/AGI-Pipeline\ndoi: 10.5281/zenodo.14504697\nauthors:\n  - given-names: Kyaw T.\n    family-names: Tun\nabstract: >-\n  The AGI (Artificial General Intelligence) Pipeline is a comprehensive and\n  modular software framework designed to integrate various AI capabilities,\n  including Natural Language Processing (NLP), Computer Vision (CV), Multi-Modal\n  Processing, Reinforcement Learning (RL), and Real-Time Video Processing. This\n  pipeline leverages state-of-the-art models and techniques to provide a robust\n  and scalable solution for diverse AI tasks.\n\n  The AGI Pipeline is built to facilitate seamless integration and interaction\n  between different AI modules, enabling the development of sophisticated AI\n  applications. Key features of the pipeline include:\n  \n  1. Natural Language Processing (NLP):\n     - Utilizes the BART (Bidirectional and Auto-Regressive Transformers) model for text summarization and other NLP tasks.\n     - Provides efficient and accurate text processing capabilities.\n\n  2. Computer Vision (CV):\n     - Employs the ResNet50 model for image classification, leveraging pre-trained weights from ImageNet.\n     - Supports advanced data augmentation techniques using the Albumentations library to enhance model robustness.\n\n  3. Multi-Modal Processing:\n     - Integrates the CLIP (Contrastive Language\u2013Image Pretraining) model to process and understand text and image inputs simultaneously.\n     - Enables tasks such as image captioning and scene understanding.\n\n  4. Reinforcement Learning (RL):\n     - Implements the PPO (Proximal Policy Optimization) algorithm from the Stable-Baselines3 library for training RL agents.\n     - Includes a custom environment for RL tasks, allowing for flexible and dynamic training scenarios.\n\n  5. Real-Time Video Processing:\n     - Supports real-time video processing using OpenCV, enabling live video feed analysis and processing.\n     - Provides a robust framework for handling real-time data streams.\n\n  6. Voice and Speech Integration:\n     - Incorporates speech-to-text and text-to-speech capabilities using libraries like Google Speech Recognition and pyttsx3.\n     - Facilitates voice-based interactions and processing.\n\n  7. Interactive Visualization:\n     - Utilizes Plotly for dynamic and interactive data visualization, creating insightful visual representations of data and model performance.\n\n  8. Deployment and Scalability:\n     - Designed for easy deployment to cloud platforms such as AWS, GCP, and Heroku.\n     - Ensures scalability and performance optimization for handling large-scale AI tasks.\n\n  9. Comprehensive Testing and Validation:\n     - Implements unit tests and integration tests using PyTest to ensure the robustness and reliability of the pipeline.\n\n  10. User Interface:\n      - Provides a web-based user interface using frameworks like Flask and React for easy interaction with the pipeline.\n\n  The AGI Pipeline is a versatile and powerful tool for researchers, developers,\n  and AI enthusiasts, enabling the creation of advanced AI applications with\n  ease and efficiency.\n\nkeywords:\n  - Artificial General Intelligence (AGI)\n  - Natural Language Processing (NLP)\n  - Computer Vision (CV)\n  - Multi-Modal Processing\n  - Reinforcement Learning (RL)\n  - Real-Time Video Processing\n  - Data Augmentation\n  - Speech Recognition\n  - Text-to-Speech\n  - Machine Learning (ML)\n  - Data Science\n  - AI Pipeline\n  - Deep Learning\n  - Model Integration\n  - Cloud Deployment\n  - Interactive Visualization\n  - Voice Processing\n  - AI Applications\n  - Docker\n  - FastAPI\n"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/OneFineStarstuff/AGI-Pipeline"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/webpack.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/hugo.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/ada.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/greetings.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/python-app.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/ios.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/python-publish.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/label.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/dotnet-desktop.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/pylint.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/crystal.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/static.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/swift.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/jekyll-docker.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/msbuild.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/defender-for-devops.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/anchore-syft.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/generator-generic-ossf-slsa3-publish.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/manual.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/c-cpp.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/gem-push.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/deno.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/android.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/astro.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/erlang.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/scala.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/nextjs.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/docker-image.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/docker-img.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/ruby.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/stale.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/go.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/anchore.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/docker-publish.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/makefile.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/d.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/gradle-publish.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/openshift.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/rust.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/r.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/main.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/octopusdeploy.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/go-ossf-slsa3-publish.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/gatsby.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/npm-grunt.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/nuxtjs.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/maven-publish.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/aws-new.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/php.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/clojure.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/cmake-multi-platform.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/azure-container-webapp.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/aws.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/haskell.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/datadog-synthetics.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/super-linter.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/maven.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/codacy.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/cmake-single-platform.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/elixir.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/google.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/azure-container-webapp-new.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/dotnet.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/django.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/npm-publish-github-packages.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/rubyonrails.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/python-package-conda.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/objective-c-xcode.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/dart.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/jekyll-gh-pages.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/python-package.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/azure-webapps-node.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/alibabacloud.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/npm-gulp.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/jekyll.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/laravel.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/tencent.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/ibm.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/symfony.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/.github/workflows/mdbook.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "AGI Pipeline"
+        ],
+        "type": "Text_excerpt",
+        "value": "Feel free to open issues or submit pull requests!\n"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-12-16T10:48:37Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-12-16"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-12-17"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-26T18:21:30Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-12-17"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A comprehensive AGI pipeline integrating NLP, Computer Vision, and Speech Processing."
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8107437151534737,
+      "result": {
+        "original_header": "Features",
+        "type": "Text_excerpt",
+        "value": "- Text generation with T5\n- Object detection with YOLO\n- Speech-to-text with Whisper\n- Text-to-speech with Pyttsx3\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/OneFineStarstuff/AGI-Pipeline/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/agi_pipeline.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/agi_pipeline.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/OneFineStarstuff/AGI-Pipeline/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OneFineStarstuff/AGI-Pipeline"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "AGI Pipeline"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "AGI Pipeline"
+        ],
+        "type": "Text_excerpt",
+        "value": "1. **Clone the repository**:\n    ```bash\n    git clone https://github.com/yourusername/agi-pipeline.git\n    ```\n    \n2. **Navigate to the project directory**:\n    ```bash\n    cd agi-pipeline\n    ```\n    \n3. **Create and activate a virtual environment**:\n    ```bash\n    python -m venv venv\n    source venv/bin/activate  # On Windows use `venv\\Scripts\\activate`\n    ```\n    \n4. **Install dependencies**:\n    ```bash\n    pip install -r requirements.txt\n    ```\n"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/OneFineStarstuff/AGI-Pipeline/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Artificial General Intelligence (AGI)",
+          "Natural Language Processing (NLP)",
+          "Computer Vision (CV)",
+          "Multi-Modal Processing",
+          "Reinforcement Learning (RL)",
+          "Real-Time Video Processing",
+          "Data Augmentation",
+          "Speech Recognition",
+          "Text-to-Speech",
+          "Machine Learning (ML)",
+          "Data Science",
+          "AI Pipeline",
+          "Deep Learning",
+          "Model Integration",
+          "Cloud Deployment",
+          "Interactive Visualization",
+          "Voice Processing",
+          "AI Applications",
+          "Docker",
+          "FastAPI"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2024 Kyaw T. Tun\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/MIT",
+        "spdx_id": "MIT",
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "AGI Pipeline"
+        ],
+        "type": "Text_excerpt",
+        "value": "This project is licensed under the MIT License - see the LICENSE file for details.\n"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "AGI-Pipeline"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "AGI-Pipeline"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "OneFineStarstuff"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "agi_pipeline"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "agi_pipeline"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jupyter Notebook",
+        "size": 12459,
+        "type": "Programming_language",
+        "value": "Jupyter Notebook"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 9621,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 3423,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 2397,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 547,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "codefair-io[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2024-12-17T06:49:02Z",
+        "date_published": "2024-12-17T06:49:06Z",
+        "description": "## What's Changed\r\n* feat: \u2728 LICENSE file added by @codefair-io in https://github.com/OneFineStarstuff/AGI-Pipeline/pull/2\r\n\r\n## New Contributors\r\n* @codefair-io made their first contribution in https://github.com/OneFineStarstuff/AGI-Pipeline/pull/2\r\n\r\n**Full Changelog**: https://github.com/OneFineStarstuff/AGI-Pipeline/commits/v.1.0.0",
+        "html_url": "https://github.com/OneFineStarstuff/AGI-Pipeline/releases/tag/v.1.0.0",
+        "name": "AGI-Pipeline ",
+        "release_id": 191014208,
+        "tag": "v.1.0.0",
+        "tarball_url": "https://api.github.com/repos/OneFineStarstuff/AGI-Pipeline/tarball/v.1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/OneFineStarstuff/AGI-Pipeline/releases/191014208",
+        "value": "https://api.github.com/repos/OneFineStarstuff/AGI-Pipeline/releases/191014208",
+        "zipball_url": "https://api.github.com/repos/OneFineStarstuff/AGI-Pipeline/zipball/v.1.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "fastapi",
+        "type": "Software_application",
+        "value": "fastapi",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "uvicorn",
+        "type": "Software_application",
+        "value": "uvicorn",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "torch",
+        "type": "Software_application",
+        "value": "torch",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "transformers",
+        "type": "Software_application",
+        "value": "transformers",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Pillow",
+        "type": "Software_application",
+        "value": "Pillow",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "whisper",
+        "type": "Software_application",
+        "value": "whisper",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ultralytics",
+        "type": "Software_application",
+        "value": "ultralytics",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyttsx3",
+        "type": "Software_application",
+        "value": "pyttsx3",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "loguru",
+        "type": "Software_application",
+        "value": "loguru",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "nest_asyncio",
+        "type": "Software_application",
+        "value": "nest_asyncio",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "wheel",
+        "type": "Software_application",
+        "value": "wheel",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "fastapi",
+        "type": "Software_application",
+        "value": "fastapi",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "uvicorn",
+        "type": "Software_application",
+        "value": "uvicorn",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "torch",
+        "type": "Software_application",
+        "value": "torch",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "transformers",
+        "type": "Software_application",
+        "value": "transformers",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Pillow",
+        "type": "Software_application",
+        "value": "Pillow",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "whisper",
+        "type": "Software_application",
+        "value": "whisper",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ultralytics",
+        "type": "Software_application",
+        "value": "ultralytics",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyttsx3",
+        "type": "Software_application",
+        "value": "pyttsx3",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "loguru",
+        "type": "Software_application",
+        "value": "loguru",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "nest_asyncio",
+        "type": "Software_application",
+        "value": "nest_asyncio",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "identifier"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:26:39",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "AGI Pipeline"
+        ],
+        "type": "Text_excerpt",
+        "value": "1. **Run the FastAPI application**:\n    ```bash\n    uvicorn main:app --reload\n    ```\n    \n2. **Access the API** at `http://127.0.0.1:8000`.\n"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "tag": "1.0.1",
+        "type": "Release",
+        "value": "1.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/OneFineStarstuff/AGI-Pipeline/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

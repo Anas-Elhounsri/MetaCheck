@@ -1,0 +1,600 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8775,
+      "result": {
+        "type": "String",
+        "value": "Computer Vision"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "dena.clink@cornell.edu",
+        "identifier": "https://orcid.org/0000-0003-0363-5581",
+        "type": "String",
+        "value": "Dena J. Clink"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2025",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "authors:\n- family-names: Clink\n  given-names: Dena Jane\n  orcid: \"https://orcid.org/0000-0003-0363-5581\"\n- family-names: Ahmad\n  given-names: Abdul Hamid\n  orcid: \"https://orcid.org/0000-0001-9658-8600\"\ndoi: 10.5281/zenodo.15608992\nmessage: If you use this software, please cite our article in the\n  Journal of Open Source Software.\npreferred-citation:\n  authors:\n  - family-names: Clink\n    given-names: Dena Jane\n    orcid: \"https://orcid.org/0000-0003-0363-5581\"\n  - family-names: Ahmad\n    given-names: Abdul Hamid\n    orcid: \"https://orcid.org/0000-0001-9658-8600\"\n  date-published: 2025-06-07\n  doi: 10.21105/joss.07250\n  issn: 2475-9066\n  issue: 110\n  journal: Journal of Open Source Software\n  publisher:\n    name: Open Journals\n  start: 7250\n  title: \"gibbonNetR: an R Package for the Use of Convolutional Neural\n    Networks for Automated Detection of Acoustic Data\"\n  type: article\n  url: \"https://joss.theoj.org/papers/10.21105/joss.07250\"\n  volume: 10\ntitle: \"gibbonNetR: an R Package for the Use of Convolutional Neural\n  Networks for Automated Detection of Acoustic Data\"\n"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/inst/CITATION",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DenaJGibbon/gibbonNetR"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DenaJGibbon/gibbonNetR"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/.github/workflows/draft-pdf.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-08-19T13:38:52Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-06-30T17:12:31Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R package to use 'torch for R' for automated detection using convolutional neural nets in passive acoustic monitoring (PAM) data"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+        "type": "String",
+        "value": "R Package for the Use of CNNs on\n    Acoustic Data."
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R Package for the Use of CNNs on Acoustic Data."
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9628479575834686,
+      "result": {
+        "original_header": "gibbonNetR R Package",
+        "type": "Text_excerpt",
+        "value": "Dena J. Clink and Abdul Hamid Ahmad\n2025-06-07\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9581832563692984,
+      "result": {
+        "original_header": "Overview",
+        "type": "Text_excerpt",
+        "value": "This README provides code for training, testing, and deploying,\ndifferent convolutional neural network model architectures for automated\ndetection and classification of acoustic data. \nUsers can train both binary and multi-class classification models on\nspectrogram images, and evaluate their performance on test datasets. The\npackage includes tools for performance evaluation, allowing easy\nidentification of the best-performing model. Once the best-performing\nmodel is identified, it can be deployed for large-scale inference on\nmultiple sound files. In addition to classification, trained CNNs can be\nused as feature extractors. Combined with unsupervised clustering, this\nenables visualization of differences in acoustic signals.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/DenaJGibbon/gibbonNetR/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DenaJGibbon/gibbonNetR/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DenaJGibbon/gibbonNetR"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gibbonNetR R Package"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://denajgibbon.github.io/gibbonNetR/"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gibbonNetR"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.21105/joss.07250"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://joss.theoj.org/papers/10.21105/joss.07250/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "You can install the `gibbonNetR` package from its repository using\n`devtools`:\n\n``` r\n# If you don't have devtools installed\ninstall.packages(\"devtools\")\n\n# Install gibbonNetR\ndevtools::install_github(\"https://github.com/DenaJGibbon/gibbonNetR\")\n\n# The first time you use the package 'torch' will need to install additional packages. You can start the process using the following:\nlibrary(torch)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Quickstart guide",
+        "type": "Text_excerpt",
+        "value": "``` r\nlibrary(gibbonNetR)\n\n# Set file path to spectrogram images\nfilepath <- system.file(\"extdata\", \"multiclass/\", package = \"gibbonNetR\")\n\n# Train simple CNN model\ntrain_CNN_multi(\n  input.data.path = filepath,\n  test.data = paste(filepath, \"/test/\", sep = \"\"),\n  architecture = \"alexnet\", # Choose 'alexnet', 'vgg16', 'vgg19', 'resnet18', 'resnet50', or 'resnet152'\n  unfreeze.param = TRUE,\n  batch_size = 6,\n  class_weights = rep((1 / 5), 5),\n  learning_rate = 0.001,\n  epoch.iterations = 1, # Or any other list of integer epochs\n  early.stop = \"yes\",\n  save.model = FALSE,\n  output.base.path = file.path(tempdir(), \"/MultiDir/\", sep = \"\"),\n  trainingfolder = \"test_multi\",\n  noise.category = \"noise\"\n)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DenaJGibbon/gibbonNetR/issues"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DenaJGibbon/gibbonNetR/issues"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2025 Dena Jane Clink\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gibbonNetR"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gibbonNetR: gibbonNetR: R Package for the Use of CNNs and Transfer Learning on\n    Acoustic Data"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "DenaJGibbon"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+        "type": "String",
+        "value": "gibbonNetR"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 3706906,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 134364,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 25570,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/DenaJGibbon/gibbonNetR/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DenaJGibbon",
+          "type": "User"
+        },
+        "date_created": "2025-06-06T13:14:45Z",
+        "date_published": "2025-06-06T13:20:16Z",
+        "description": "This is the release version for the accepted manuscript describing the package in JOSS.",
+        "html_url": "https://github.com/DenaJGibbon/gibbonNetR/releases/tag/v1.0.1",
+        "name": "Version of record for JOSS",
+        "release_id": 223645436,
+        "tag": "v1.0.1",
+        "tarball_url": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/tarball/v1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/releases/223645436",
+        "value": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/releases/223645436",
+        "zipball_url": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/zipball/v1.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DenaJGibbon",
+          "type": "User"
+        },
+        "date_created": "2025-04-02T15:46:55Z",
+        "date_published": "2025-04-03T10:59:37Z",
+        "description": "First full release after peer review. ",
+        "html_url": "https://github.com/DenaJGibbon/gibbonNetR/releases/tag/v1.0.0",
+        "name": "First full release. ",
+        "release_id": 210068244,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/releases/210068244",
+        "value": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/releases/210068244",
+        "zipball_url": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DenaJGibbon",
+          "type": "User"
+        },
+        "date_created": "2024-07-08T13:47:33Z",
+        "date_published": "2024-07-21T11:59:07Z",
+        "description": "This is the first beta release after releasing the pre-print.",
+        "html_url": "https://github.com/DenaJGibbon/gibbonNetR/releases/tag/v1.0.0-beta.1",
+        "name": "First beta release. ",
+        "release_id": 166401421,
+        "tag": "v1.0.0-beta.1",
+        "tarball_url": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/tarball/v1.0.0-beta.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/releases/166401421",
+        "value": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/releases/166401421",
+        "zipball_url": "https://api.github.com/repos/DenaJGibbon/gibbonNetR/zipball/v1.0.0-beta.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Prerequisites",
+        "type": "Text_excerpt",
+        "value": "This package assumes a basic understanding of machine learning, deep\nlearning, and convolutional neural networks (CNNs). Users should be\nfamiliar with training and evaluating models, as well as handling\nspectrogram image data. For those new to these concepts, we recommend\nreviewing foundational machine learning and deep learning resources\nbefore using this package. a good starting point would be:\n\nStowell, Dan. \u201cComputational bioacoustics with deep learning: a review\nand roadmap.\u201d PeerJ 10 (2022): e13152.\n<https://peerj.com/articles/13152/>\n\nSome practical information on improving model performance can be found\nhere:\n<https://kahst.github.io/BirdNET-Analyzer/best-practices/training.html#>\n"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:15:41",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "type": "Text_excerpt",
+        "value": "A detailed usage guide can be found at:\n<https://denajgibbon.github.io/gibbonNetR/>\n\nLink to paper in the Journal of Open Source Software:\n[![DOI](https://joss.theoj.org/papers/10.21105/joss.07250/status.svg)](https://doi.org/10.21105/joss.07250)\n"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+        "type": "String",
+        "value": "1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/DenaJGibbon/gibbonNetR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,793 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "jdherman8@gmail.com",
+        "name": "Jon Herman",
+        "type": "Agent",
+        "value": "Jon Herman"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": null,
+        "name": "Will Usher",
+        "type": "Agent",
+        "value": "Will Usher"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": null,
+        "name": "Takuya Iwanaga",
+        "type": "Agent",
+        "value": "Takuya Iwanaga"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Oxford",
+        "email": "william.usher@ouce.ox.ac.uk",
+        "identifier": "http://orcid.org/0000-0001-9367-1791",
+        "type": "String",
+        "value": "Will Usher"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of California, Davis",
+        "email": "jdherman@ucdavis.edu",
+        "identifier": "http://orcid.org/0000-0002-4081-3175",
+        "type": "String",
+        "value": "jdherman"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Iwanaga",
+            "given_name": "Takuya",
+            "name": "Takuya Iwanaga",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-8173-0870"
+          },
+          {
+            "family_name": "Usher",
+            "given_name": "Will",
+            "name": "Will Usher",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-9367-1791"
+          },
+          {
+            "family_name": "Herman",
+            "given_name": "Jon",
+            "name": "Jon Herman",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-4081-3175"
+          }
+        ],
+        "datePublished": "2022",
+        "doi": "10.21105/joss.00097",
+        "format": "cff",
+        "title": "SALib: An open-source Python library for sensitivity analysis",
+        "type": "File_dump",
+        "url": "https://doi.org/10.21105/joss.00097",
+        "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\nauthors:\n- family-names: \"Iwanaga\"\n  given-names: \"Takuya\"\n  orcid: \"0000-0001-8173-0870\"\n- family-names: \"Usher\"\n  given-names: \"Will\"\n  orcid: \"0000-0001-9367-1791\"\n- family-names: \"Herman\"\n  given-names: \"Jon\"\n  orcid: \"0000-0002-4081-3175\"\ntitle: \"SALib: An open-source Python library for sensitivity analysis\"\nversion: 1.4.6.1\ndoi: 10.21105/joss.00097\ndate-released: 2022-05-01\nurl: \"https://github.com/SALib/SALib\"\npreferred-citation:\n  type: article\n  authors:\n  - family-names: \"Iwanaga\"\n    given-names: \"Takuya\"\n    orcid: \"0000-0001-8173-0870\"\n  - family-names: \"Usher\"\n    given-names: \"Will\"\n    orcid: \"0000-0001-9367-1791\"\n  - family-names: \"Herman\"\n    given-names: \"Jon\"\n    orcid: \"0000-0002-4081-3175\"\n  doi: \"10.18174/sesmo.18155\"\n  journal: \"Socio-Environmental Systems Modelling\"\n  month: 5\n  start: 1 # First page number\n  end: 15 # Last page number\n  title: \"Toward SALib 2.0: Advancing the accessibility and interpretability of global sensitivity analyses\"\n  issue: 1\n  volume: 4\n  year: 2022\n"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to cite SALib",
+        "parent_header": [
+          "Sensitivity Analysis Library (SALib)"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you would like to use our software, please cite it using the following:\n\n    Iwanaga, T., Usher, W., & Herman, J. (2022).\n    Toward SALib 2.0: Advancing the accessibility and interpretability of global sensitivity analyses.\n    Socio-Environmental Systems Modelling, 4, 18155.\n    doi:10.18174/sesmo.18155\n\n    Herman, J. and Usher, W. (2017) SALib: An open-source Python library for\n    sensitivity analysis. Journal of Open Source Software, 2(9).\n    doi:10.21105/joss.00097\n\n|paper status|\n\nIf you use BibTeX, cite using the following entries::\n\n    @article{Iwanaga2022,\n      title = {Toward {SALib} 2.0: {Advancing} the accessibility and interpretability of global sensitivity analyses},\n      volume = {4},\n      url = {https://sesmo.org/article/view/18155},\n      doi = {10.18174/sesmo.18155},\n      journal = {Socio-Environmental Systems Modelling},\n      author = {Iwanaga, Takuya and Usher, William and Herman, Jonathan},\n      month = may,\n      year = {2022},\n      pages = {18155},\n    }\n\n    @article{Herman2017,\n      doi = {10.21105/joss.00097},\n      url = {https://doi.org/10.21105/joss.00097},\n      year  = {2017},\n      month = {jan},\n      publisher = {The Open Journal},\n      volume = {2},\n      number = {9},\n      author = {Jon Herman and Will Usher},\n      title = {{SALib}: An open-source Python library for Sensitivity Analysis},\n      journal = {The Journal of Open Source Software}\n    }\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Iwanaga, Takuya and Usher, William and Herman, Jonathan",
+        "doi": "10.18174/sesmo.18155",
+        "format": "bibtex",
+        "title": "Toward {SALib} 2.0: {Advancing} the accessibility and interpretability of global sensitivity analyses",
+        "type": "Text_excerpt",
+        "url": "https://sesmo.org/article/view/18155",
+        "value": "@article{Iwanaga2022,\n    pages = {18155},\n    year = {2022},\n    month = {May},\n    author = {Iwanaga, Takuya and Usher, William and Herman, Jonathan},\n    journal = {Socio-Environmental Systems Modelling},\n    doi = {10.18174/sesmo.18155},\n    url = {https://sesmo.org/article/view/18155},\n    volume = {4},\n    title = {Toward {SALib} 2.0: {Advancing} the accessibility and interpretability of global sensitivity analyses},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Jon Herman and Will Usher",
+        "doi": "10.21105/joss.00097",
+        "format": "bibtex",
+        "title": "{SALib}: An open-source Python library for Sensitivity Analysis",
+        "type": "Text_excerpt",
+        "url": "https://doi.org/10.21105/joss.00097",
+        "value": "@article{Herman2017,\n    journal = {The Journal of Open Source Software},\n    title = {{SALib}: An open-source Python library for Sensitivity Analysis},\n    author = {Jon Herman and Will Usher},\n    number = {9},\n    volume = {2},\n    publisher = {The Open Journal},\n    month = {jan},\n    year = {2017},\n    url = {https://doi.org/10.21105/joss.00097},\n    doi = {10.21105/joss.00097},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, gender identity and expression, level of experience,\nnationality, personal appearance, race, religion, or sexual identity and\norientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\nadvances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at wusher{THATSIGN}kth.se. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at [http://contributor-covenant.org/version/1/4][version]\n\n[homepage]: http://contributor-covenant.org\n[version]: http://contributor-covenant.org/version/1/4/\n"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ssn95070/salib"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/SALib/SALib"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/.github/workflows/test.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/.github/workflows/lint.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nAdmins: [Will Usher](https://github.com/willu47) and [Jon Herman](https://github.com/jdherman)\n\nThanks to all those who have [contributed so far](https://github.com/SALib/SALib/graphs/contributors)!\n\n## Asking Questions, Reporting Bugs\n\nWe use GitHub issues to keep track of bugs and to answer questions about the use\nof the library.\n\nFor bugs, [create a new issue](https://github.com/SALib/SALib/issues/new)\non GitHub. Use this to describe the nature of the bug and\nthe conditions needed to recreate it, including operating system and Python version.\n\nIf you have a question on interpretation of results, then we may be able to help.\n\nWe cannot answer specific implementation questions (such as 'how do I run my model\nwith SALib?')\n\nYou can format your questions using GitHub Markdown, which makes it easy to [paste in short snippets of code](https://help.github.com/articles/creating-and-highlighting-code-blocks/). If including a very long Python error traceback, please use a GitHub [gist](https://gist.github.com/).\n\n## Contributing Code\n\nTo contribute new code, submit a pull request. There are two instances in which you may want to contribute code: to fix a bug, or to add a new feature, such as a new sensitivity analysis method.\n\n### Making a development environment\n\nNote: We **strongly** recommend using a virtual environment setup, such as\n`venv` or `conda`.\n\nFirst, fork a copy of the main SALib repository in GitHub onto your own\naccount and then create your local repository via:\n\n```sh\ngit clone git@github.com:YOURUSERNAME/SALib.git\ncd SALib\n```\n\nNext, set up your development environment.\n\nWith `conda` installed (through\n[Miniforge or Mambaforge](https://github.com/conda-forge/miniforge),\n[Miniconda](https://docs.conda.io/en/latest/miniconda.html) or\n[Anaconda](https://www.anaconda.com/products/individual)), execute the\nfollowing commands at the terminal from the base directory of your\n[SALib](https://github.com/SALib/SALib) clone:\n\n```sh\n# Create an environment with all development dependencies\nconda env create -f environment.yml  # works with `mamba` too\n# Activate the environment\nconda activate SALib\n```\n\nFinally, you can install SALib in editable mode in your environment:\n\n```sh\npip install -e .\n```\n\n### Fixing a Bug\n\nFirst, create a new issue on GitHub with the label `bug`. Use this to describe the nature of the bug and the conditions needed to recreate it.\n\nThen, please create a new branch with the name `bug_xxx` where xxx is the number of the issue.\n\nIf possible, write a test which reproduces the bug. The tests are stored in the `SALib/tests/` folder, and are run using `pytest` from the root folder of the library.\nYou can run the tests with the command `pytest` from the root project directory. Individual tests can be run with by specifying a file, or file and test function.\n\nFor example:\n\n```bash\n$ pytest  # run all tests\n$ pytest tests/test_file.py  # run tests within a specific file\n$ pytest tests/test_file.py::specific_function  # run a specific test\n```\n\nThen, fix the bug in the code so that the test passes.\n\nSubmit a pull request with a descriptive title and reference the issue in the text. Once a pull request is submitted, the tests will run on Travis CI. If these tests pass, we will review and merge in your changes.\n\n### Adding a new method\n\nMethods in SALib follow a decoupled sample/analysis workflow. In other words, the generation of parameter samples and the calculation of sensitivity indices can be performed in two separate steps. This is because many users have models in languages other than Python, so sending data to/from the model is left to the user. All methods should support a command-line interface on top of the Python functions.\n\nTo add a new method, create an issue on GitHub with the label `add_method`, if one does not already exist. Please describe the method, and link to the peer reviewed article in which the method is described. The master branch should only contain published methods. First check the current [open issues with this label](https://github.com/SALib/SALib/labels/add_method) for inspiration or to see if someone is already working on a certain method.\n\nWe use GitHub issues to track ideas for  and [enhancements](https://github.com/SALib/SALib/labels/enhancement).  If you are looking to contribute new methods to the library, check the labels for inspiration or to ensure you are not duplicating another's work.\n\nThen, create a new branch with a useful name, such as `new_method_method_name`. Methods should consist of:\n\n* A sampling module (a `method_name.py` file in `SALib.sample`). This will contain, among other things, a function `sample(problem, ...)` that accepts a problem dictionary and returns a numpy array of samples, one column for each parameter. See [SALib.sample.saltelli](https://github.com/SALib/SALib/blob/main/SALib/sample/saltelli.py) for an example.\n\n* An analysis module (a `method_name.py` file in `SALib.analyze`). This will contain a function analyze(problem, ...) that returns a dictionary of sensitivity indices. See [SALib.analyze.sobol](https://github.com/SALib/SALib/blob/main/SALib/analyze/sobol.py) for an example.\n\n* An example shell script and python file in the `examples` folder, ideally using a test function included in SALib such as the Ishigami or Sobol-G functions.\n\n* Docstrings for the `sample` and `analyze` functions that include citations. Please add an entry to `docs/index.rst` to add your method documentation to the concise API reference.\n\n* All contributed methods should also provide functions to support their use through the command line interface (CLI). These are `cli_parse()` and `cli_action()` to parse command line options and to run the sampling and analysis respectively. See the implementations in [SALib.analyze.delta](https://github.com/SALib/SALib/blob/consolidate-cli/SALib/analyze/delta.py) for an example.\n\n* Tests in the `tests` folder.  We're using Travis CI and Coveralls. Ideally, every new function will have one or more corresponding tests to check that errors are raised for invalid inputs, and that functions return matrices of the proper sizes. (For example [see here](https://github.com/SALib/SALib/blob/main/tests/test_sobol.py). But at a minimum, please include a regression test for the Ishigami function, in the same format as all of the other methods [see here](https://github.com/SALib/SALib/blob/main/tests/test_regression.py). This will at least ensure that future updates don't break your code!\n\nFinally, submit a pull request. Either @willu47 or @jdherman will review the pull request and merge in your changes.\n\n\n### Other Enhancements\n\nContributions not related to new methods are also welcome. These might include new test functions (see [SALib.test_functions](https://github.com/SALib/SALib/tree/main/SALib/test_functions) for how these are set up), or other code that is general across some or all of the methods. This general code is currently included in [SALib.util.\\_\\_init\\_\\_.py](https://github.com/SALib/SALib/blob/main/SALib/util/__init__.py).\n\n\n### Other Development Comments\n\nMost of the sampling techniques make heavy use of pseudo-random number\ngenerators.\nWe use primarily `numpy.random` as the python standard library\n`random` library is inconsistent across Python 2 and 3.\nWhen writing tests for methods which use these random number generators, set the seeds using `numpy.random.seed(SEED)`\nwhere `SEED` is a fixed integer.\nThis will ensure that your tests are repeatable.\n\n### Notes about scope\n\n* SALib contains a few basic types of plots, especially for the Morris method. Indicative results can be made by calling the [`.plot()` method](https://salib.readthedocs.io/en/main/basics.html#basic-plotting)\n* However, we generally assume that plot types and styles are left to the user, as these are often application-specific. Users interested in more complex plot types should check out the [savvy](https://github.com/houghb/savvy) library, which is built on top of SALib.\n\nThanks again!\n\n## Making a release\n\nFollowing is the process that the development team follows in order to make\na release:\n\n1. Document overview of changes since last release in `CHANGELOG.md`\n2. Build locally using `hatch build`, and verify the content of the artifacts\n3. Tag release with version number and push to SALib repo\n4. Check that release has been deployed to PyPI\n5. Check documentation is built and deployed to readthedocs (http://salib.readthedocs.org)\n6. Check that auto-generated PR is auto-merged on the conda-forge feedstock repo (conda-forge/salib-feedstock)\n7. Update development roadmap on GitHub\n\n## Building a local copy of the documentation\n\nAssuming the current location is the project root (the `SALib` directory):\n\n```bash\n$ conda install pydata-sphinx-theme myst-parser -c conda-forge\n$ sphinx-build -b html docs docs/html\n```\n\nA copy of the documentation will be in the `docs/html` directory.\nOpen `index.html` to view it.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to contribute",
+        "parent_header": [
+          "Sensitivity Analysis Library (SALib)"
+        ],
+        "type": "Text_excerpt",
+        "value": "See `here <CONTRIBUTING.md>`__ for how to contribute to SALib.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-07-17T19:31:26Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-10-18"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-10-18"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-07-17T19:35:44Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-10-18"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Tools for global sensitivity analysis. Contains Sobol', Morris, FAST, DGSM, PAWN, HDMR, Moment Independent and fractional factorial methods"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Sensitivity Analysis Library in Python (Numpy). Contains Sobol, Morris, Fractional Factorial and FAST methods."
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9329098721923417,
+      "result": {
+        "original_header": "Sensitivity Analysis Library (SALib)",
+        "type": "Text_excerpt",
+        "value": "Python implementations of commonly used sensitivity analysis methods.\nUseful in systems modeling to calculate the effects of model inputs or\nexogenous factors on outputs of interest. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://salib.readthedocs.io"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ssn95070/salib/tree/main/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://salib.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ssn95070/salib/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ssn95070/salib/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ssn95070/salib"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Sensitivity Analysis Library (SALib)"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/examples/morris/morris.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/examples/sobol/sobol.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/examples/fast/fast.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/examples/enhanced_hdmr/enhanced_hdmr.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/examples/dgsm/dgsm.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/examples/hdmr/hdmr.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/examples/delta/delta.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/examples/rbd_fast/rbd_fast.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/examples/ff/ff.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/examples/pawn/pawn.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.5281/zenodo.160164"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ssn95070/salib/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "sensitivity analysis",
+          "Python",
+          "uncertainty",
+          "variance-based",
+          "global sensitivity analysis",
+          "fractional factorial",
+          "Method of Morris",
+          "elementary effects"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "The MIT License (MIT)\n\nCopyright (c) 2013-2017 Jon Herman, Will Usher, and others.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/MIT",
+        "spdx_id": "MIT",
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "Sensitivity Analysis Library (SALib)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Copyright (C) 2012-2019 Jon Herman, Will Usher, and others. Versions v0.5 and\nlater are released under the `MIT license <LICENSE.md>`__.\n\n.. |Build Status| image:: https://travis-ci.com/SALib/SALib.svg?branch=master\n   :target: https://travis-ci.com/SALib/SALib\n.. |Coverage Status| image:: https://img.shields.io/coveralls/SALib/SALib.svg\n   :target: https://coveralls.io/r/SALib/SALib\n.. |Code Issues| image:: https://www.quantifiedcode.com/api/v1/project/ed62e70f899e4ec8af4ea6b2212d4b30/badge.svg\n   :target: https://www.quantifiedcode.com/app/project/ed62e70f899e4ec8af4ea6b2212d4b30\n.. |paper status| image:: http://joss.theoj.org/papers/431262803744581c1d4b6a95892d3343/status.svg\n   :target: http://joss.theoj.org/papers/431262803744581c1d4b6a95892d3343\n"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "salib"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "ssn95070"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SALib"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 2442774,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 40231,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 142,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/SALib/SALib"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy>=1.20.3",
+        "version": ">=1.20.3"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scipy",
+        "type": "Software_application",
+        "value": "scipy>=1.9.3",
+        "version": ">=1.9.3"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib>=3.5",
+        "version": ">=3.5"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pandas",
+        "type": "Software_application",
+        "value": "pandas>=2.0",
+        "version": ">=2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "multiprocess",
+        "type": "Software_application",
+        "value": "multiprocess",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "hatchling",
+        "type": "Software_application",
+        "value": "hatchling",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "hatch-vcs",
+        "type": "Software_application",
+        "value": "hatch-vcs",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:30:07",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Quick Start",
+        "parent_header": [
+          "Sensitivity Analysis Library (SALib)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Procedural approach\n~~~~~~~~~~~~~~~~~~~\n\n.. code:: python\n\n    from SALib.sample import saltelli\n    from SALib.analyze import sobol\n    from SALib.test_functions import Ishigami\n    import numpy as np\n\n    problem = {\n      'num_vars': 3,\n      'names': ['x1', 'x2', 'x3'],\n      'bounds': [[-np.pi, np.pi]]*3\n    }\n\n    # Generate samples\n    param_values = saltelli.sample(problem, 1024)\n\n    # Run model (example)\n    Y = Ishigami.evaluate(param_values)\n\n    # Perform analysis\n    Si = sobol.analyze(problem, Y, print_to_console=True)\n    # Returns a dictionary with keys 'S1', 'S1_conf', 'ST', and 'ST_conf'\n    # (first and total-order indices with bootstrap confidence intervals)\n\nIt's also possible to specify the parameter bounds in a file with 3\ncolumns:\n\n::\n\n    # name lower_bound upper_bound\n    P1 0.0 1.0\n    P2 0.0 5.0\n    ...etc.\n\nThen the ``problem`` dictionary above can be created from the\n``read_param_file`` function:\n\n.. code:: python\n\n    from SALib.util import read_param_file\n    problem = read_param_file('/path/to/file.txt')\n    # ... same as above\n\nLots of other options are included for parameter files, as well as a\ncommand-line interface. See the `advanced\nsection in the documentation <https://salib.readthedocs.io/en/latest/advanced.html>`__.\n\n\nMethod chaining approach\n~~~~~~~~~~~~~~~~~~~~~~~~\n\nChaining calls is supported from SALib v1.4\n\n.. code:: python\n\n    from SALib import ProblemSpec\n    from SALib.test_functions import Ishigami\n\n    import numpy as np\n\n\n    # By convention, we assign to \"sp\" (for \"SALib Problem\")\n    sp = ProblemSpec({\n      'names': ['x1', 'x2', 'x3'],   # Name of each parameter\n      'bounds': [[-np.pi, np.pi]]*3,  # bounds of each parameter\n      'outputs': ['Y']               # name of outputs in expected order\n    })\n\n    (sp.sample_saltelli(1024, calc_second_order=True)\n       .evaluate(Ishigami.evaluate)\n       .analyze_sobol(print_to_console=True))\n\n    print(sp)\n\n    # Samples, model results and analyses can be extracted:\n    print(sp.samples)\n    print(sp.results)\n    print(sp.analysis)\n\n    # Basic plotting functionality is also provided\n    sp.plot()\n\n\nThe above is equivalent to the procedural approach shown previously.\n\nAlso check out the `FAQ <https://github.com/SALib/SALib/tree/main/FAQ.md>`__ and\n`examples <https://github.com/SALib/SALib/tree/main/examples>`__ for a\nfull description of options for each method.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Projects that use SALib",
+        "parent_header": [
+          "Sensitivity Analysis Library (SALib)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Many projects now use the Global Sensitivity Analysis features provided by\nSALib. Here is a selection:\n\nSoftware\n~~~~~~~~\n\n* `The City Energy Analyst <https://github.com/architecture-building-systems/CEAforArcGIS>`_\n* `pynoddy <https://github.com/flohorovicic/pynoddy>`_\n* `savvy <https://github.com/houghb/savvy>`_\n* `rhodium <https://github.com/Project-Platypus/Rhodium>`_\n* `pySur <https://github.com/MastenSpace/pysur>`_\n* `EMA workbench <https://github.com/quaquel/EMAworkbench>`_\n* `Brain/Circulation Model Developer <https://github.com/bcmd/BCMD>`_\n* `DAE Tools <http://daetools.com/>`_\n* `agentpy <https://github.com/JoelForamitti/agentpy>`_\n* `uncertainpy <https://github.com/simetenn/uncertainpy>`_\n* `CLIMADA <https://github.com/CLIMADA-project/climada_python>`_\n\nBlogs\n~~~~~\n\n* `Sensitivity Analysis in Python <http://www.perrygeo.com/sensitivity-analysis-in-python.html>`_\n* `Sensitivity Analysis with SALib <http://keyboardscientist.weebly.com/blog/sensitivity-analysis-with-salib>`_\n* `Running Sobol using SALib <https://waterprogramming.wordpress.com/2013/08/05/running-sobol-sensitivity-analysis-using-salib/>`_\n* `Extensions of SALib for more complex sensitivity analyses <https://waterprogramming.wordpress.com/2014/02/11/extensions-of-salib-for-more-complex-sensitivity-analyses/>`_\n\nVideos\n~~~~~~\n\n* `PyData Presentation on SALib <https://youtu.be/gkR_lz5OptU>`_\n\nIf you would like to be added to this list, please submit a pull request,\nor create an issue.\n\nMany thanks for using SALib.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v1.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/ssn95070/salib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

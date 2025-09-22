@@ -1,0 +1,400 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.866352890343534,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech Library",
+        "email": "rsdoiel@caltech.edu",
+        "identifier": "https://orcid.org/0000-0003-0900-6903",
+        "type": "String",
+        "value": "R. S. Doiel"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Doiel",
+            "given_name": "R. S.",
+            "name": "R. S. Doiel",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0003-0900-6903"
+          }
+        ],
+        "format": "cff",
+        "title": "pandoc-client-go",
+        "type": "File_dump",
+        "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\ntype: software\ntitle: \"pandoc-client-go\"\nabstract: \"This is a Go package for working with Pandoc Server to\nconvert content from one format to another.\"\nauthors:\n  - family-names: Doiel\n    given-names: R. S.\n    orcid: \"https://orcid.org/0000-0003-0900-6903\"\n\nrepository-code: \"git+https://github.com/caltechlibrary/pandoc-client-go\"\nversion: 0.0.1\nlicense-url: \"https://spdx.org/licenses/BSD-3-Clause-Clear\"\nkeywords: [ \"pandoc\" ]\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pandoc_client"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/caltechlibrary/pandoc-client-go"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-11-04T19:45:39Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2022-11-04"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-30T22:03:34Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This repository holds an experimental Go package that functions as a client to pandoc-server."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This is a Go package for working with Pandoc Server to convert content from one format to another."
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9872303037676483,
+      "result": {
+        "original_header": "Pandoc Client",
+        "type": "Text_excerpt",
+        "value": "This repository holds an experimental Go package that functions as a client to pandoc-server.\nCaltech Library builds many of it static websites using Pandoc to render Markdown (and other\nformats) to HTML (or other formats). This is typically done via scripting (e.g. Bash, Python)\nor a dedicated application (e.g. something written in Go). For a small number of pages in a\nslow change website doing an \"exec\" makes sense. This approach breaks down when you have a\nwebsite (e.g. https://feeds.library.caltech.edu) that has 118545 documents and is growing.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9507393635000037,
+      "result": {
+        "original_header": "Concept",
+        "type": "Text_excerpt",
+        "value": "The pandoc server is launched via systemd when the machine starts up. It listens on a\nlocalhost port ONLY.  When the site building processes startup they can read the \ndocuments that need to be converted from either a database (e.g. SQLite3, MySQL,\nPostgres) or the file system. That content is then turned into a structure that\nthe Pandoc server understands and is sent to it as a POST per [Pandoc Server](https://pandoc.org/pandoc-server.html)\ndocumentation.  The response then is written to disk (or S3 bucket) as appropriate. \nThis should result in a relatively simple Go package and can work with io.Reader,\nio.Writer types for maximum flexibility.  Combined with other services we hypothisis\nis that we would see improved performance in rendering the website. The expectation\nis that pandoc-server launches once, it is a single process (so no overhead on startup).\nWe have the existing overhead of the data source so that doesn't change. The documents \nare small for the most part so the network overhead between the client and pandoc-server\nshould be minimal (they are running on the same machine after all). The write of the\nrendered document should be the same as our previous approach. The wind down of the process\nfrom the exec is avoided.  We should be able to run conversions in parallel without\nworrying about running out of process handles. More parallel writes should imply that\nthe overall time of the updates can be lowered. \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concept"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pandoc_client/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/pandoc_client/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/pandoc_client"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Pandoc Client"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "INSTALL\n=======\n\nThis is an experimental Go package and cli. It is only distributed in source code. If you wish compile and test it then you need the required development environment.  Follow the steps listed below in \"Compiling from Source\".\n\nRequirements\n------------\n\npandoc_client is currently implemented as a Go application. This may change in the future.\n\n- Git to clone the repository\n- Compiling the cli\n    - [Golang](https://golang.org) 1.19.2 or better\n    - GNU Make\n    - Pandoc 2.19 or better (you need to run pandoc-server for the client to work)\n\nCompiling from Source\n---------------------\n\n1. clone the repository\n2. change into the cloned directory\n3. run \"make\", \"make test\", \"make install\" to install the cli, man pages\n\nHere's the steps I take on my macOS box or Linux box.\n\n~~~\ngit clone git@github.com:caltechlibrary/pandoc_client.git\ncd pandoc_client\nmake\nmake test\nmake install\n~~~\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/INSTALL.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/pandoc_client/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pandoc-client-go/issues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pandoc, pandoc-server, static-site-rendering"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "pandoc"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "\nCopyright (c) 2022, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/BSD-3-Clause-Clear",
+        "spdx_id": "https://spdx.org/licenses/BSD-3-Clause-Clear",
+        "type": "License",
+        "value": "https://spdx.org/licenses/BSD-3-Clause-Clear"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pandoc_client"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pandoc-client-go"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "size": 20673,
+        "type": "Programming_language",
+        "value": "Go"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 14912,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 6142,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "type": "Programming_language",
+        "value": "Go",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Pandoc 2.19 or better",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Requirements",
+        "parent_header": [
+          "Pandoc Client"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Go 1.19.2 or better\n- Pandoc 2.19 or better\n- A data source (e.g. file system with markdown documents)\n- A place to write the output (e.g. a file system with render documents)\n\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:52:01",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pandoc_client/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

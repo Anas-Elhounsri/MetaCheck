@@ -1,0 +1,626 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Bruno Vilela"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "gentile.alessandro@gmail.com",
+        "type": "String",
+        "value": "Alessandro Gentile"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Martin Freiberg"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Marten Winter"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2020",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "bibentry(bibtype = \"article\",\n         title = \"LCVP, The Leipzig catalogue of vascular plants, a new taxonomic reference list for all known vascular plants\",\n         author = c(person(\"Martin\", \"Freiberg\"),\n\t\t            person(\"Marten\", \"Winter\"),\n\t\t            person(\"Alessandro\", \"Gentile\"),\n\t\t            person(\"Alexander\", \"Zizka\"),\n\t\t            person(\"Alexandra Nora\", \"Muellner-Riehl\"),\n\t\t            person(\"Alexandra\", \"Weigelt\"),\n\t\t            person(\"Christian\", \"Wirth\")),\n         journal = \"Scientific data\",\n         number = 7,\n         pages = 416,\n         year = 2020,\n         doi = \"10.1038/s41597-020-00702-z\")\n"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "type": "Text_excerpt",
+        "value": "```{r}\nlibrary(lcvplants)\ncitation(\"lcvplants\")\n```\n\n"
+      },
+      "source": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/idiv-biodiversity/lcvplants"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/idiv-biodiversity/lcvplants"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/idiv-biodiversity/lcvplants"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.com/idiv-biodiversity/lcplants.svg?token=Bbiute2RTxuP5ghkjAxb&branch=master",
+          "https://codecov.io/github/idiv-biodiversity/lcplants"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/.github/workflows/r.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-10-18T08:37:16Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-07-03T09:41:28Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Large-scale taxonomic harmonization of plant names by fuzzy matching and synonymy resolution against the Leipzig Plant List as taxonomic backbone. Submission of single names or list of species names is possible."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+        "type": "String",
+        "value": "Allows taxonomic resolution of plant taxa names listed in the \"Leipzig Catalogue of Vascular Plants\" (LCVP). The package aims to facilitate  finding, retrieving and orthographically resolving plant names through the  comparison between plant taxa. The R-package is able to apply a text-based  search of plant names on the LCVP using a fuzzy match algorithm, which is the  core of the searching engine. This package interacts with data available trough the  \"LCVP\" package, which is available in a github repository. To access this data package, run  'devtools::install_github(\"idiv-biodiversity/LCVP\")'. The size of the `LCVP` package is approximately 45 MB."
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Allows taxonomic resolution of plant taxa names listed in the \"Leipzig Catalogue of Vascular Plants\" (LCVP). The package aims to facilitate finding, retrieving and orthographically resolving plant names through the comparison between plant taxa. The R-package is able to apply a text-based search of plant names on the LCVP using a fuzzy match algorithm, which is the core of the searching engine."
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Function summary",
+        "type": "Text_excerpt",
+        "value": "| Name | Description |\n|---|---|\n|`lcvp_search`|Resolve one or multiple vascular plant names. Return only best matches.|\n|`lcvp_summary`| Summarize results of `lcvp_search` query | \n|`lcvp_fuzzy_match`| Same as `lcvp_seach` but returns all matches|\n|`lcvp_group_search`| Return all names listed in LCVP for a genus, family, order, or authority|\n|`lcvp_match`| Compare and match two lists of species vascular plant names|\n|`lcvp_join`| Join two tables based on vascular plant names|\n|`lcvp_solve_dups`| Solve duplicated species names by summarizing traits given user provided functions|\n\n"
+      },
+      "source": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.9618285352102056,
+      "result": {
+        "original_header": "lcvplants 2.1.0",
+        "type": "Text_excerpt",
+        "value": "A package for large-scale taxonomic harmonization of plant names by fuzzy matching and synonymy resolution against the Leipzig Plant Catalogue as taxonomic backbone. Submission of single names or list of species names is possible. The Leipzig Plant Catalogue is an updated taxonomic backbone based on the plant list comprising more than 1,300,000 names and 350,000 accepted names (this data is in the [`LCVP`](https://github.com/idiv-biodiversity/LCVP) package). \n \n"
+      },
+      "source": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/idiv-biodiversity/lcvplants/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "type": "Text_excerpt",
+        "value": "You can find more information on how to use lcvplants in the [vignette](https://idiv-biodiversity.github.io/lcvplants/articles/taxonomic_resolution_using_lcvplants.html).\n"
+      },
+      "source": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/idiv-biodiversity/lcvplants/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/idiv-biodiversity/lcvplants/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "idiv-biodiversity/lcvplants"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "lcvplants 2.1.0"
+      },
+      "source": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "lcvplants"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://img.youtube.com/vi/fAjbRNrLCec/0.jpg"
+      },
+      "source": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "You can install lcvplants directly from R using the `install_github` function of devtools (you may need to install that one first). To use `lcvplants` you also need the data of the [`LCVP` package](https://github.com/idiv-biodiversity/LCVP), which you can install in the same way.\n\n```r\ninstall.packages(\"devtools\")\n\ndevtools::install_github(\"idiv-biodiversity/LCVP\")\ndevtools::install_github(\"idiv-biodiversity/lcvplants\")\n```\n"
+      },
+      "source": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/idiv-biodiversity/lcvplants/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/idiv-biodiversity/lcvplants/issues"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/idiv-biodiversity/lcvplants/issues"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2021 lcvplants authors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "lcvplants"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "lcvplants: The Leipzig Catalogue of Vascular Plants (LCVP) - An improved taxonomic reference list \n    for all known vascular plants"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "idiv-biodiversity"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+        "type": "String",
+        "value": "lcvplants"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 108995,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "BrunoVilela",
+          "type": "User"
+        },
+        "date_created": "2021-08-14T15:18:04Z",
+        "date_published": "2021-09-02T13:53:00Z",
+        "description": "lcvplants v1.1.1 release. This is the first original version of the package, kept for register. ",
+        "html_url": "https://github.com/idiv-biodiversity/lcvplants/releases/tag/v1.1.1",
+        "name": "lcvplants v1.1.1 (original functions)",
+        "release_id": 48893403,
+        "tag": "v1.1.1",
+        "tarball_url": "https://api.github.com/repos/idiv-biodiversity/lcvplants/tarball/v1.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/idiv-biodiversity/lcvplants/releases/48893403",
+        "value": "https://api.github.com/repos/idiv-biodiversity/lcvplants/releases/48893403",
+        "zipball_url": "https://api.github.com/repos/idiv-biodiversity/lcvplants/zipball/v1.1.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable state and is being actively developed.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 3.5.0",
+        "version": ">= 3.5.0"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "LCVP",
+        "type": "Software_application",
+        "value": "LCVP",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "parallel",
+        "type": "Software_application",
+        "value": "parallel==>= 3.5.2",
+        "version": ">= 3.5.2"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "utils",
+        "type": "Software_application",
+        "value": "utils",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:47:40",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 14
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Video Tutorial",
+        "type": "Text_excerpt",
+        "value": "[![Video Tutorial](https://img.youtube.com/vi/fAjbRNrLCec/0.jpg)](https://www.youtube.com/watch?v=fAjbRNrLCec)\n\n"
+      },
+      "source": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "type": "Text_excerpt",
+        "value": "Simple working examples:\n```r\nlibrary(lcvplants)\n\n# single names\nlcvp_search(\"Hibiscus vitifolius\")\n\n# Can also include infra specific names and authorities\nlcvp_search(\"Hibiscus abelmoschus var. betulifolius Mast.\")\n\n# Also works on vectors of names\nsearch_result <- lcvp_search(c(\"Hibiscus abelmoschus var. betulifolius Mast.\", \"Hibiscus abutiloides Willd.\", \n       \"Hibiscus aculeatus\", \"Hibiscus acuminatus\"))\n\n# You can see the summary results\nlcvp_summary(search_result)\n```\n\nThe algorithm can also consider misspellings and look for the most similar match given a max_distance argument set by the user:\n```r\n# Misspeled name\nlcvp_search(\"Hibiscus vitifolia\", max_distance = 2)\n\n# Misspelings in a vector of names\nres_ex <- lcvp_search(c(\"Hibiscus abelmoschus var. betulifolius Mast.\", \"Hibiscus abutiloides Willd.\", \"Hibiscus aculeatus\", \"Hibiscus acuminatus\", \"Hibiscus furcatuis\", \"Hibiscus error\"), max_distance = 1)\nlcvp_summary(res_ex)\n\n\n# You may also want to check all the possible matches \nlcvp_fuzzy_search(\"Hibiscus vitifolia\", max_distance = 2)\n```\n\nYou can also search for species using the Order, Family, Genus or Author name:\n```r\n# Search for the genus AA\nlcvp_group_search(\"AA\", search_by = \"Genus\")\n\n# It also accepts a vector of names\nlcvp_group_search(c(\"Orchidaceae\", \"Poaceae\", \"Phyllanthaceae\"), search_by = \"Family\")\n```\n\nThe package also facilitates the comparison between two lists of species vascular plant names:\n```r\n# Species list 1\nsplist1 <- sample(apply(LCVP::tab_lcvp[2:10, 2:3], 1, paste, collapse = \" \"))\n\n# Species list 2\nsplist2 <- sample(apply(LCVP::tab_lcvp[11:3, 2:3], 1, paste, collapse = \" \"))\n\n# Compare the two lists\nlcvp_match(splist1, splist2)\n```\n\nLastly, you can use lcvplants two join two tables based on vascular plant names:\n```r\n# data.frame1 \nsplist1 <- sample(apply(LCVP::tab_lcvp[2:10, 2:3], 1, paste, collapse = \" \"))\nx <- data.frame(\"Species\" = splist1, \"Trait1\" = runif(length(splist1)))\n \n# data.frame2\nsplist2 <- sample(apply(LCVP::tab_lcvp[11:3, 2:3], 1, paste, collapse = \" \"))\ny <- data.frame(\"Species\" = splist2,  \"Trait2\" = runif(length(splist2)), \"Trait3\" = runif(length(splist2)))\n \n# Full join the two tables\nlcvp_join(x, y, c(\"Species\", \"Species\"), type = \"full\")\n```\n"
+      },
+      "source": "https://github.com/idiv-biodiversity/lcvplants/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+        "type": "String",
+        "value": "2.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/idiv-biodiversity/lcvplants/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

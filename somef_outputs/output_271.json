@@ -1,0 +1,845 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9635481352437095,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "gabe@gabehe.im",
+        "type": "Agent",
+        "value": "tgurney@unomaha.edu"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "dosocs2",
+        "last_name": "is written by Thomas T. Gurney.",
+        "name": "dosocs2 is written by Thomas T. Gurney.",
+        "type": "Agent",
+        "value": "dosocs2 is written by Thomas T. Gurney."
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "The",
+        "last_name": "original DoSOCS was written by Zachary McFarland; no code from DoSOCS",
+        "name": "The original DoSOCS was written by Zachary McFarland; no code from DoSOCS",
+        "type": "Agent",
+        "value": "The original DoSOCS was written by Zachary McFarland; no code from DoSOCS"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "remains",
+        "last_name": "in dosocs2.",
+        "name": "remains in dosocs2.",
+        "type": "Agent",
+        "value": "remains in dosocs2."
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Thanks",
+        "last_name": "also to these contributors to documentation:",
+        "name": "Thanks also to these contributors to documentation:",
+        "type": "Agent",
+        "value": "Thanks also to these contributors to documentation:"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Sebastian",
+        "last_name": "Schuberth",
+        "name": "Sebastian Schuberth",
+        "type": "Agent",
+        "value": "Sebastian Schuberth"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/AUTHORS",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/chaoss/augur-license"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DoSOCSv2/DoSOCSv2"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/chaoss/augur"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/worker/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Contributing to DoSOCS\n-----------------------\n\nThe contribution rules for DoSOCS are currently being rewritten. You are\nwelcome to create issues, but we can't accept pull requests from the community\nat this time.\n"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-07-29T18:55:30Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-09T03:16:42Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Augur's Open Source License coverage tool. Provides license identification by file, identification of non-OSI compliant licenses, and percentage of a project with license declarations. Also provides a downloadable SBOM with license information by file.  Integrated with Augur, and leveraging Fossology scanners and DosocsV2."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SPDX 2.0 document creation and storage"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Template worker to be used as an example"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/worker/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "download": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Step 1 - Download and install",
+        "parent_header": [
+          "Augur-License",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "1. `git clone https://github.com/chaoss/augur-spdx`\n2. Create a python3 virtual enviornment `virtualenv --python=python3 venv-name`\n3. Activate Python virtual environment `source venv-name/bin/activate`\n4. `pip install .`\n5. `sudo make install-spdx` \nNote: It is necessary to compile using sudo because the license scanners provided by [Fossology](https://www.fossology.org/) are designed only to be installed at the system level\n"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/chaoss/augur-license/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/chaoss/augur-license/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "chaoss/augur-license"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Augur-License"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/chaoss/augur-license/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/chaoss/augur-license/main/worker/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/worker/setup.py",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/chaoss/augur-license/main/processed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/chaoss/augur-license/main/scripts/install/old-install-nomos.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/chaoss/augur-license/main/scripts/install/install-nomos.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/chaoss/augur-license/main/scripts/install/install-spdx-sudo.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/chaoss/augur-license/main/dev-tools/build-rpm.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/chaoss/augur-license/main/dev-tools/release.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Step 1 - Download and install",
+        "parent_header": [
+          "Augur-License",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "1. `git clone https://github.com/chaoss/augur-spdx`\n2. Create a python3 virtual enviornment `virtualenv --python=python3 venv-name`\n3. Activate Python virtual environment `source venv-name/bin/activate`\n4. `pip install .`\n5. `sudo make install-spdx` \nNote: It is necessary to compile using sudo because the license scanners provided by [Fossology](https://www.fossology.org/) are designed only to be installed at the system level\n"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Step 2 - Install System Level libmagic",
+        "parent_header": [
+          "Augur-License",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "1. `sudo apt install libmagic1`\n\n**This is necessary for the scanners**\n"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Step 3 - Initialize the Database Schema (spdx) <br/>",
+        "parent_header": [
+          "Augur-License",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "NOTE: You can also use these steps to reinitialize or update a database\n1. `python3 initial.py <path to augur instance root>` <br> Example: `python3 initial.py ../augur-chaoss`\n2. After this, run `dosocs2 dbinit --config dosocs2.conf` in the augur-spdx directory\n3. The program will prompt you to ensure that you have the right database. Please double check\n4. Any existing tables that fit the schema will be dropped, and a new set of tables will be created and populated.\n"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/chaoss/augur-license/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "spdx license licenses"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "The MIT License (MIT)\n\nCopyright (c) 2019 Augur Team\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "GNU General Public License v2 or later (GPLv2+)"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/worker/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "augur-license"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "chaoss"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "dosocs2"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "template_worker"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/worker/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 2077620,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 3476,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 533,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 396,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/worker/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/worker/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/worker/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/chaoss/augur-license/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sgoggins",
+          "type": "User"
+        },
+        "date_created": "2020-09-25T11:26:24Z",
+        "date_published": "2020-09-25T11:27:31Z",
+        "description": "Fully tested against latest version of Augur. Ready for Dockerization. ",
+        "html_url": "https://github.com/chaoss/augur-license/releases/tag/0.4.0",
+        "name": "Oingo Boingo",
+        "release_id": 31808401,
+        "tag": "0.4.0",
+        "tarball_url": "https://api.github.com/repos/chaoss/augur-license/tarball/0.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/chaoss/augur-license/releases/31808401",
+        "value": "https://api.github.com/repos/chaoss/augur-license/releases/31808401",
+        "zipball_url": "https://api.github.com/repos/chaoss/augur-license/zipball/0.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sgoggins",
+          "type": "User"
+        },
+        "date_created": "2020-09-07T18:43:27Z",
+        "date_published": "2020-09-07T18:48:10Z",
+        "description": "Population of [Augur's](https://github.com/chaoss/augur) `SPDX` Schema and standalone installation make the project ready for inclusion in a docker container, and to be made part of a Docker Compose Script. ",
+        "html_url": "https://github.com/chaoss/augur-license/releases/tag/0.1.0",
+        "name": "Sunrise over Omaha",
+        "release_id": 30868538,
+        "tag": "0.1.0",
+        "tarball_url": "https://api.github.com/repos/chaoss/augur-license/tarball/0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/chaoss/augur-license/releases/30868538",
+        "value": "https://api.github.com/repos/chaoss/augur-license/releases/30868538",
+        "zipball_url": "https://api.github.com/repos/chaoss/augur-license/zipball/0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "wheel",
+        "type": "Software_application",
+        "value": "wheel",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "requests",
+        "type": "Software_application",
+        "value": "requests",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "docopt",
+        "type": "Software_application",
+        "value": "docopt==0.6.2",
+        "version": "==0.6.2"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jinja2",
+        "type": "Software_application",
+        "value": "Jinja2==2.10.1",
+        "version": "==2.10.1"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MarkupSafe",
+        "type": "Software_application",
+        "value": "MarkupSafe==1.1.0",
+        "version": "==1.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "psycopg2-binary",
+        "type": "Software_application",
+        "value": "psycopg2-binary",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python-magic",
+        "type": "Software_application",
+        "value": "python-magic==0.4.15",
+        "version": "==0.4.15"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "SQLAlchemy",
+        "type": "Software_application",
+        "value": "SQLAlchemy==1.2.16",
+        "version": "==1.2.16"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "coloredlogs",
+        "type": "Software_application",
+        "value": "coloredlogs",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "beaker",
+        "type": "Software_application",
+        "value": "beaker",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "click",
+        "type": "Software_application",
+        "value": "click",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "psutil",
+        "type": "Software_application",
+        "value": "psutil",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "six",
+        "type": "Software_application",
+        "value": "six>=1.14.0",
+        "version": ">=1.14.0"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pathlib",
+        "type": "Software_application",
+        "value": "pathlib",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "libmagic",
+        "type": "Software_application",
+        "value": "libmagic",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Dependencies",
+        "parent_header": [
+          "Augur-License"
+        ],
+        "type": "Text_excerpt",
+        "value": "------------\n\n- Python 3.7 or later version\n- PostgreSQL 8.x or later version (can be on a separate machine)\n- Installed instance of [Augur](https://github.com/chaoss/augur) that has had the `facade worker` run at least one time. Without this step there will be no cloned repos to scan. \n- Necessary libraries for compilation of python source: \n```\n  sudo apt install gcc\n  sudo apt install python3-dev\n  sudo apt-get install libpq-dev\n```\n\nPython libraries:\n- All Python dependencies are handled automatically by `pip` during installation.\n\n**Augur-SPDX runs as a process to populate the `SPDX` schema with SPDX license information in [Augur](https://github.com/chaoss/augur). Available [Fossology](https://www.fossology.org/) license scanners only compile on Ubuntu's current long term maintenance version due to library dependencies. Believe us, we have spent many hours trying to compile on Mac OSX and Fedora. In the future, we will provide a docker container to enable this functionality across platforms**\n"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "run": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Step 3 - Run Augur-SPDX <br/>",
+        "parent_header": [
+          "Augur-License",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "NOTE: You can only run one instance of Augur-SPDX at at time\n1. `nohup python3 director.py <path to augur instance root> >spdx.log 2>spdx.err &` <br> Example: `nohup python3 director.py ../augur-chaoss >spdx.log 2>spdx.err &`\n2. Wait about 30 seconds to allow the program to run. \n3. `tail -30 spdx.log` - Check that licenses are being scanned.\n4. `cat spdx.err` - Check for errors. \n5. When the process finishes, check to see if there are any Augur repos not in the mapping table by executing `cat spdx.log | grep MAPPING` . \n\n- If you see any problems, create an issue with the full output of the log at https://github.com/chaoss/augur-spdx \n\n-----\n"
+      },
+      "source": "https://raw.githubusercontent.com/chaoss/augur-license/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:14:33",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 8
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ]
+}

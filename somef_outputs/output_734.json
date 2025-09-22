@@ -1,0 +1,743 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8685027383427195,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Rohit Goswami"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "rgoswami@ieee.org",
+        "identifier": "https://orcid.org/0000-0002-2393-8056",
+        "type": "String",
+        "value": "Rohit Goswami"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/CITATION.cff"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/fastMatMR"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/fastMatMR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/fastMatMR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/ropensci/fastMatMR/actions/workflows/R-CMD-check.yaml",
+          "https://github.com/ropensci/fastMatMR/actions?query=workflow%3Apkgcheck"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/.github/workflows/pre-commit.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to `fastMatMR`\n\nThank you for considering contributing to `fastMatMR`! We appreciate your\ninterest in making this project better.\n\n## Code of Conduct\n\nPlease read and adhere to our [Code of Conduct](https://ropensci.org/code-of-conduct/) to maintain\na safe, welcoming, and inclusive environment.\n\n## Types of Contributions\n\nWe welcome various forms of contributions:\n\n- **Bug Reports**: Feel free to report any bugs you encounter.\n- **Documentation**: Typos, clarity issues, or missing guides\u2014your help is\n  welcome here.\n- **Feature Discussions/Requests**: Got an idea? Open an issue to discuss its\n  potential.\n- **Code Contributions**: All code contributions are welcome.\n\n## Using Co-Authored-By in Git Commits\n\nWe encourage the use of [co-authored\ncommits](https://docs.github.com/en/github/committing-changes-to-your-project/creating-a-commit-with-multiple-authors)\nfor collaborative efforts. This helps in giving credit to all contributors for\ntheir work.\n\n```markdown\nCo-authored-by: name <name@example.com>\nCo-authored-by: another-name <another-name@example.com>\n```\n\n## Development\n\nYour contributions make this project better for everyone. Thank you for\nparticipating!\n\n### Local Development\n\nOften it is useful to have [pixi](https://prefix.dev/) handle the dependencies:\n\n```bash\npixi shell\n```\n\nA `pre-commit` job is set up on CI to enforce consistent styles. It is advisable\nto set it up locally as well using [pipx](https://pypa.github.io/pipx/) for\nisolation:\n\n```bash\n# Run before committing\npipx run pre-commit run --all-files\n# Or install the git hook to enforce this\npipx run pre-commit install\n```\n\nFor working with packages with compiled extensions, instead of `devtools::load_all()` it can be more useful to run this instead:\n\n```{r eval=FALSE}\ndevtools::clean_dll()\ncpp11::cpp_register()\ndevtools::document()\ndevtools::load_all()\n```\n\nAlso don't forget to recreate the `readme` file:\n```{r eval=FALSE}\ndevtools::build_readme()\n```\n\nIf you find that `pre-commit` for R is flaky, you can consider the following commands:\n\n```bash\nfind . \\( -path \"./.pixi\" -o -path \"./renv\" \\) -prune -o -type f -name \"*.R\" -exec Rscript -e 'library(styler); style_file(\"{}\")' \\;\nRscript -e 'library(lintr); lintr::lint_package(\".\")'\n```\n\n#### Tests\n\nTests and checks are run on the CI, however locally one can use:\n\n```bash\nRscript -e 'devtools::test()'\n```\n\n\n#### Documentation\n\nIdeally each change should be documented. Major changes should be `vignettes`,\nand minor ones can be added to `newsfragments`.\n\nBenchmark vignettes are pre-computed via:\n\n```bash\nRscript tools/rebuild-benchmarks.R\n```\n\nWhich makes it faster to build the package and run checks.\n\n\n## CRAN Submission and Updates\n\nBefore submitting or updating the package on CRAN, follow these steps to ensure a smooth submission process:\n\n1. **Document changes and recreate**:\n   - Update documentation, and recreate vignettes.\n     ```r\n     urlchecker::url_check()\n     devtools::document()\n     devtools::build_readme()\n     ## Will take a while\n     Rscript tools/rebuild-benchmarks.R\n     ```\n\n2. **Check the package**:\n   - This runs various checks to make sure the package is CRAN-ready.\n     ```r\n     devtools::check(remote = TRUE, manual = TRUE)\n     ## devtools::install_github('r-lib/revdepcheck')\n     revdepcheck::revdep_check(num_workers = 4)\n     ```\n\n3. **Test on various platforms**:\n   - Before submission, it's beneficial to test your package on different platforms. The commented lines are used to populate `cran_comments.md`.\n     ```r\n     res_cran <- rhub::check_for_cran()   # Tests on multiple platforms\n     ## res_cran$cran_summary()\n     ubsan <- rhub::check_with_sanitizers() # A post-submission CRAN check\n     devtools::check_win_devel()  # Specifically for Windows\n     devtools::check_mac_release() # Mac only\n     ```\n\n4. **Adhere to best practices**:\n   - Using the `goodpractice` package can help ensure you're following best practices for R package development.\n     ```r\n     goodpractice::gp()\n     ```\n\n5. **Bump the package version**:\n   - Depending on the extent and nature of changes, adjust the version of your package. Remember semantic versioning conventions.\n     ```r\n     # Use \"major\", \"minor\", or \"patch\" based on the changes\n     fledge::bump_version(\"patch\")\n     ```\n\n6. **Submit to CRAN**:\n   - Once all checks pass and you've ensured the quality of your package, it's time to submit.\n     ```r\n     devtools::release()\n     ```\n\nFor more detailed information on the CRAN submission and update process, refer to the following resources:\n- [Releasing a package](https://r-pkgs.org/release.html#sec-release-process)\n- [How to Develop an R Package and Submit to CRAN (Mannheim University)](https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/r-package/)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "`fastMatMR` <img src=\"man/figures/logo.png\" align=\"right\" height=\"139\" alt=\"\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "Contributions are very welcome. Please see the [Contribution\nGuide](https://docs.ropensci.org/fastMatMR/CONTRIBUTING.html) and our\n[Code of Conduct](https://ropensci.org/code-of-conduct/).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-08-30T20:20:11Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-08-24T13:02:23Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R bindings to fast_matrix_market for reading and writing .mtx files"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+        "type": "String",
+        "value": "An interface to the 'fast_matrix_market' 'C++' library, this package offers efficient read and write operations for Matrix Market files in R. It supports both sparse and dense matrix formats. Peer-reviewed at ROpenSci (<https://github.com/ropensci/software-review/issues/606>)."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "An interface to the 'fast_matrix_market' 'C++' library, this package offers efficient read and write operations for Matrix Market files in R. It supports both sparse and dense matrix formats. Peer-reviewed at ROpenSci (<https://github.com/ropensci/software-review/issues/606>)."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9025448474015239,
+      "result": {
+        "original_header": "Why?",
+        "type": "Text_excerpt",
+        "value": "[Matrix Market files](https://math.nist.gov/MatrixMarket/formats.html)\nare crucial to much of the data-science ecosystem. The `fastMatMR`\npackage focuses on high-performance read and write operations for Matrix\nMarket files, serving as a key tool for data extraction in computational\nand data science pipelines. \nThe target audience and scientific applications primarily include data\nscientists or researchers developing numerical methods who may wish to\neither test standard NIST (National Institute of Standards and\nTechnology) which include: \n> comparative studies of algorithms for numerical linear algebra,\n> featuring nearly 500 sparse matrices from a variety of applications,\n> as well as matrix generation tools and services. \nAdditionally, being able to use the matrix market file format, means it\nis easier to interface `R` analysis with those in `Python` (e.g.\u00a0`SciPy`\nuses the same underlying `C++` library). These files can also be used\nwith the [Tensor Algebra\nCompiler](http://tensor-compiler.org/docs/tensors.html) (TACO).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8719613001223423,
+      "result": {
+        "original_header": "Features",
+        "type": "Text_excerpt",
+        "value": "- **Extended Support**: `fastMatMR` supports standard R vectors,\n  matrices, as well as `Matrix` sparse objects. \n- **Performance**: The package is a thin wrapper around one of the\n  fastest C++ libraries for reading and writing `.mtx` files. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9154858722938006,
+      "result": {
+        "original_header": "Alternatives and statement of need",
+        "type": "Text_excerpt",
+        "value": "- The `Matrix` package allows reading and writing sparse matrices in the\n  `.mtx` (matrix market) format.\n  - However, for `.mtx` files, it can only handles sparse matrices for\n    writing and reading.\n  - Round-tripping (writing and subsequently reading) data with `NA` and\n    `NaN` values produces arbitrarily high numbers instead of preserving\n    `NaN` / handling `NA`\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://lifecycle.r-lib.org/articles/stages.html#stable"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/fastMatMR/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/fastMatMR/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/fastMatMR"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fastMatMR "
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fastMatMR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/685246044"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "CRAN",
+        "parent_header": [
+          "`fastMatMR` <img src=\"man/figures/logo.png\" align=\"right\" height=\"139\" alt=\"\" />",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "For the latest `CRAN` version:\n\n``` r\ninstall.packages(\"fastMatMR\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "R-Universe",
+        "parent_header": [
+          "`fastMatMR` <img src=\"man/figures/logo.png\" align=\"right\" height=\"139\" alt=\"\" />",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "For the latest development version of `fastMatMR`:\n\n``` r\ninstall.packages(\"fastMatMR\",\n                 repos = \"https://ropensci.r-universe.dev\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Development Git",
+        "parent_header": [
+          "`fastMatMR` <img src=\"man/figures/logo.png\" align=\"right\" height=\"139\" alt=\"\" />",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "For the latest commit, one can use:\n\n``` r\n# install.packages(\"devtools\")\ndevtools::install_github(\"ropensci/fastMatMR\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/fastMatMR/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/fastMatMR/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/fastMatMR/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cpp17, matrix-market, matrix-market-format, r-cpp11, r-package"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "cpp17",
+          "matrix-market",
+          "matrix-market-format",
+          "r-package",
+          "r-cpp11"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2023 fastMatMR authors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "`fastMatMR` <img src=\"man/figures/logo.png\" align=\"right\" height=\"139\" alt=\"\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "This project is licensed under the [MIT\nLicense](https://docs.ropensci.org/fastMatMR/LICENSE.html).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Logo",
+        "parent_header": [
+          "`fastMatMR` <img src=\"man/figures/logo.png\" align=\"right\" height=\"139\" alt=\"\" />",
+          "License"
+        ],
+        "type": "Text_excerpt",
+        "value": "The logo was generated via a non-commercial use prompt on hotpot.ai,\nboth [blue](https://hotpot.ai/s/art-generator/8-TNiwRilbBFnQHwK), and\n[green](https://hotpot.ai/s/art-generator/8-E2dBngG5nRiwCeL), as a riff\non the [NIST Matrix Market logo](https://math.nist.gov/MatrixMarket/).\nThe text was added in a presentation software (WPS Presentation).\nHexagonal cropping was accomplished in a [hexb](http://hexb.in/)\ncompatible design [using\nhexsticker](https://github.com/fridex/hexsticker).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fastMatMR"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fastMatMR: High-Performance Matrix Market File Operations"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+        "type": "String",
+        "value": "fastMatMR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 139409,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 48401,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 39,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/fastMatMR/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "HaoZeke",
+          "type": "User"
+        },
+        "date_created": "2023-11-02T11:46:20Z",
+        "date_published": "2023-11-02T16:13:16Z",
+        "description": "# CRAN release\r\n\r\n**Full Changelog**: https://github.com/ropensci/fastMatMR/compare/v1.2.0...v1.2.4\r\n\r\nBinaries and more here: https://cran.r-project.org/web/packages/fastMatMR/",
+        "html_url": "https://github.com/ropensci/fastMatMR/releases/tag/v1.2.4",
+        "name": "CRAN fastMatMR I",
+        "release_id": 127724201,
+        "tag": "v1.2.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/fastMatMR/tarball/v1.2.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/fastMatMR/releases/127724201",
+        "value": "https://api.github.com/repos/ropensci/fastMatMR/releases/127724201",
+        "zipball_url": "https://api.github.com/repos/ropensci/fastMatMR/zipball/v1.2.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "HaoZeke",
+          "type": "User"
+        },
+        "date_created": "2023-10-24T01:36:47Z",
+        "date_published": "2023-10-24T01:49:17Z",
+        "description": "## What's Changed\r\n* Pre ROpenSci comments by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/21\r\n* MAINT: Cleanup basic usage vignette by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/52\r\n* DOC: Rewrite README by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/53\r\n* TST: Add tempdir fixtures and refactor tests by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/54\r\n* MAINT,ENH: Handle `~` and cleanup C++ code by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/55\r\n* ENH: Integer inputs by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/57\r\n* TST: Add support for integer I/O by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/59\r\n* MAINT: Move rebuild-benchmarks by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/60\r\n* MAINT: Update `fast_matrix_market` to 1.7.4 by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/61\r\n\r\n\r\n**Full Changelog**: https://github.com/HaoZeke/fastMatMR/compare/v1.0.0.0...v1.1.0\r\n\r\n\r\nEssentially addresses: \r\n1. https://github.com/ropensci/software-review/issues/606#issuecomment-1731654678\r\n2. https://github.com/ropensci/software-review/issues/606#issuecomment-1751660212",
+        "html_url": "https://github.com/ropensci/fastMatMR/releases/tag/v1.1.0",
+        "name": "Dashami release",
+        "release_id": 126346648,
+        "tag": "v1.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/fastMatMR/tarball/v1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/fastMatMR/releases/126346648",
+        "value": "https://api.github.com/repos/ropensci/fastMatMR/releases/126346648",
+        "zipball_url": "https://api.github.com/repos/ropensci/fastMatMR/zipball/v1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "HaoZeke",
+          "type": "User"
+        },
+        "date_created": "2023-09-02T02:19:53Z",
+        "date_published": "2023-09-02T02:40:26Z",
+        "description": "# 0.0.1.0 (2023-09-02)\r\n\r\n## Features\r\n\r\n- Support reading `R` numeric vectors (`is.vector()`)\r\n- Support reading of `R` `is.matrix()` numerical matrices\r\n- Support reading sparse matrices from Matrix.\r\n\r\n## What's Changed\r\n* DOC: `pkgdown` and vignettes by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/15\r\n* MAINT: Update more metadata by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/16\r\n* ENH: Initialize readers by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/19\r\n\r\n\r\n**Full Changelog**: https://github.com/HaoZeke/fastMatMR/compare/v0.0.1.0...v1.0.0.0",
+        "html_url": "https://github.com/ropensci/fastMatMR/releases/tag/v1.0.0.0",
+        "name": "v1.0.0.0: Bound release",
+        "release_id": 119673407,
+        "tag": "v1.0.0.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/fastMatMR/tarball/v1.0.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/fastMatMR/releases/119673407",
+        "value": "https://api.github.com/repos/ropensci/fastMatMR/releases/119673407",
+        "zipball_url": "https://api.github.com/repos/ropensci/fastMatMR/zipball/v1.0.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "HaoZeke",
+          "type": "User"
+        },
+        "date_created": "2023-08-31T07:38:18Z",
+        "date_published": "2023-08-31T07:43:02Z",
+        "description": "# v0.0.1.0: `fastMatMR` Writer\r\n### Features\r\n\r\n- A full multi-OS set of tests conforming to CRAN submission requirements and ROpenSci is present. (#12)\r\n- Support writing `R` numeric vectors (`is.vector()`)\r\n- Support writing of `R` `is.matrix()` numerical matrices\r\n- Support writing sparse matrices from Matrix.\r\n\r\n\r\n\r\n### Improved Documentation\r\n\r\n- Added a performance benchmark for write and a basic introduction to the package.\r\n\r\n\r\n## What's Changed\r\n* Prep ROpenSci submission by @HaoZeke in https://github.com/HaoZeke/fastMatMR/pull/12\r\n\r\n**Full Changelog**: https://github.com/HaoZeke/fastMatMR/commits/v0.0.1.0",
+        "html_url": "https://github.com/ropensci/fastMatMR/releases/tag/v0.0.1.0",
+        "name": "v0.0.1.0: `fastMatMR` Writer",
+        "release_id": 119392813,
+        "tag": "v0.0.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/fastMatMR/tarball/v0.0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/fastMatMR/releases/119392813",
+        "value": "https://api.github.com/repos/ropensci/fastMatMR/releases/119392813",
+        "zipball_url": "https://api.github.com/repos/ropensci/fastMatMR/zipball/v0.0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:52:11",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Quick Example",
+        "parent_header": [
+          "`fastMatMR` <img src=\"man/figures/logo.png\" align=\"right\" height=\"139\" alt=\"\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "``` r\nlibrary(fastMatMR)\nspmat <- Matrix::Matrix(c(1, 0, 3, 2), nrow = 2, sparse = TRUE)\nwrite_fmm(spmat, \"sparse.mtx\")\nfmm_to_sparse_Matrix(\"sparse.mtx\")\n```\n\nThe resulting `.mtx` file is language agnostic, and can even be read\nback in `python` as an example:\n\n``` bash\npip install fast_matrix_market\npython -c 'import fast_matrix_market as fmm; print(fmm.read_array_or_coo(\"sparse.mtx\"))'\n((array([1., 3., 2.]), (array([0, 0, 1], dtype=int32), array([0, 1, 1], dtype=int32))), (2, 2))\npython -c 'import fast_matrix_market as fmm; print(fmm.read_array(\"sparse.mtx\"))'\narray([[1., 3.],\n       [0., 2.]])\n```\n\nSimilarly, `fastMatMR` supports writing and reading from other `R`\nobjects (e.g. standard R vectors and matrices), as seen in the [getting\nstarted\nvignette](https://docs.ropensci.org/fastMatMR/articles/fastMatMR.html).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+        "type": "String",
+        "value": "1.2.5"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.2.5"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/fastMatMR/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,339 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Computer Science"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8317026036043593,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "[\u00c9tienne",
+        "last_name": "Payet](mailto:etienne.payet@univ-reunion.fr)",
+        "name": "[\u00c9tienne Payet](mailto:etienne.payet@univ-reunion.fr)",
+        "type": "Agent",
+        "value": "[\u00c9tienne Payet](mailto:etienne.payet@univ-reunion.fr)"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/AUTHORS.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "LIM, Universit\u00e9 de La R\u00e9union, France",
+        "email": "etienne.payet@univ-reunion.fr",
+        "identifier": "https://orcid.org/0000-0002-3519-025X",
+        "type": "String",
+        "value": "\u00c9tienne Payet"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/etiennepayet/nti"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/etiennepayet/nti"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-11-20T06:29:46Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2007-05-21"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2007-05-21"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-30T13:11:57Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2023-11-13"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "NTI is a non-termination prover for term-rewriting systems and logic programs."
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8703625757235881,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "NTI is a **free software** distributed under the terms of the\n[GNU Lesser General Public License](https://www.gnu.org/licenses/lgpl-3.0.html), version 3\nor any later version. It is developed and maintained by [\u00c9tienne Payet](mailto:etienne.payet@univ-reunion.fr). \nNTI tries to prove (non)termination of the program in the provided file.\n- For logic programs, the implemented techniques are described in\n[[Payet & Mesnard, TOPLAS'06]](http://lim.univ-reunion.fr/staff/epayet/Research/Resources/toplas06.pdf) and [[Payet, TPLP'25]](https://arxiv.org/abs/2507.09390).\n- For TRSs, the implemented technique uses the dependency pair (DP) framework:\nfirst, it decomposes the initial set of DP problems into subproblems using\nsound DP processors, then it tries to prove that the unsolved subproblems\nare infinite using the approaches of [[Payet, TCS'08]](http://lim.univ-reunion.fr/staff/epayet/Research/Resources/tcs08.pdf),\n[[Payet, LOPSTR'18]](http://arxiv.org/abs/1808.05065) and\n[[Payet, JAR'24]](https://arxiv.org/abs/2312.13949). \n`file` has to conform to the TPDB syntax specification\n(see [here](http://termination-portal.org/wiki/TPDB) and\n[here](https://termination-portal.org/wiki/Term_Rewriting)).\nIt has one of the following suffixes:\n- `.pl`  for a  pure logic program\n- `.ari` for a  TRS or an SRS in the ARI format\n- `.xml` for a  TRS or an SRS in the old XML format\n- `.trs` for a  TRS in the old, human readable, format\n- `.srs` for an SRS in the old, human readable, format \n"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/etiennepayet/nti/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/etiennepayet/nti/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "etiennepayet/nti"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/etiennepayet/nti/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Non-Termination",
+          "Term Rewriting",
+          "Logic Programming"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/LGPL-3.0+",
+        "spdx_id": "https://spdx.org/licenses/LGPL-3.0+",
+        "type": "License",
+        "value": "https://spdx.org/licenses/LGPL-3.0+"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "nti"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "NTI"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "etiennepayet"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "size": 949990,
+        "type": "Programming_language",
+        "value": "Java"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java 8",
+        "type": "Programming_language",
+        "value": "Java 8",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/etiennepayet/nti/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_papers": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://arxiv.org/abs/2312.13949"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://arxiv.org/abs/2507.09390"
+      },
+      "source": "https://raw.githubusercontent.com/etiennepayet/nti/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:17:03",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ]
+}

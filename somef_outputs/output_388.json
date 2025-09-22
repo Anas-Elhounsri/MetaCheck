@@ -1,0 +1,1207 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Authors and acknowledgment",
+        "type": "Text_excerpt",
+        "value": "@Authors: Borja Esteban, Christophe Laures, Valentin Kozlov (KIT)\nCopyright (c) 2023 - 2024 Karlsruhe Institute of Technology - Scientific Computing Center.\n"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Software templates"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8854168492221561,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "KIT",
+        "type": "String",
+        "value": "Christophe Laures"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "KIT",
+        "type": "String",
+        "value": "Borja Esteban"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "KIT",
+        "type": "String",
+        "value": "Valentin Kozlov"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "User",
+        "type": "Agent",
+        "value": "User"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Laures",
+            "given_name": "Christophe",
+            "name": "Christophe Laures",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Esteban",
+            "given_name": "Borja",
+            "name": "Borja Esteban",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Kozlov",
+            "given_name": "Valentin",
+            "name": "Valentin Kozlov",
+            "type": "Agent"
+          }
+        ],
+        "format": "cff",
+        "title": "cookiecutter-web",
+        "type": "File_dump",
+        "url": "https://templates.services.fedcloud.eu/",
+        "value": "# This CITATION.cff file was generated with cffinit.\n# Visit https://bit.ly/cffinit to generate yours today!\n\ncff-version: 1.2.0\ntitle: cookiecutter-web\nmessage: >-\n  If you use this software, please cite it using the\n  metadata from this file.\ntype: software\nauthors:\n  - given-names: Christophe\n    family-names: Laures\n    affiliation: KIT\n  - given-names: Borja\n    family-names: Esteban\n    affiliation: KIT\n  - given-names: Valentin\n    family-names: Kozlov\n    affiliation: KIT\nrepository-code: >-\n  https://codebase.helmholtz.cloud/m-team/ai/cookiecutter-web/\nurl: 'https://templates.services.fedcloud.eu/'\nabstract: >-\n  This application provides a 'marketplace' for commonly\n  used [cookiecutter](https://cookiecutter.readthedocs.io/)\n  templates, allowing the user to fill in the configuration\n  online and download the generated project as a .zip file.\nkeywords:\n  - templates\n  - web service\n  - cookiecutter\nlicense: Apache-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to make participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, sex characteristics, gender identity and expression,\nlevel of experience, education, socio-economic status, nationality, personal\nappearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\n  advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies within all project spaces, and it also applies when\nan individual is representing the project or its community in public spaces.\nExamples of representing a project or community include using an official\nproject e-mail address, posting via an official social media account, or acting\nas an appointed representative at an online or offline event. Representation of\na project may be further defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at [m-contact@lists.kit.edu](m-contact@lists.kit.edu). All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see\nhttps://www.contributor-covenant.org/faq\n"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/m-team-kit/cookiecutter-web"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://codebase.helmholtz.cloud/m-team/ai/cookiecutter-web/"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/.github/workflows/github-to-gitlab.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nContributions are welcome, and they are greatly appreciated! \nWhen contributing to this repository, please first discuss the change you wish to make via issue,\nemail, or any other method with the owners of this repository before making a change. \n\nPlease note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.\n\n## Backend\nPlease, also see **backend/CODE_OF_CONDUCT.md** and **backend/CONTRIBUTING.md** in the [backend repository](https://codebase.helmholtz.cloud/m-team/ai/cookiecutter-web-backend).\n\n\n## Reporting bugs\nReport bugs at https://github.com/m-team-kit/cookiecutter-web/issues\n\nIf you are reporting a bug, please include:\n\n* Your operating system name and version.\n* Any details about your local setup that might be helpful in troubleshooting.\n* If you can, provide detailed steps to reproduce the bug.\n* If you don't have steps to reproduce the bug, just note your observations in\n  as much detail as you can. Questions to start a discussion about the issue\n  are welcome.\n\n### Submit Feedback\nThe best way to send feedback is to file an issue at the follwing URL:\n\nhttps://github.com/m-team-kit/cookiecutter-web/issues\n\nIf you are proposing a feature:\n\n* Explain in detail how it would work.\n* Keep the scope as narrow as possible, to make it easier to implement.\n* Remember that this is a volunteer-driven project, and that contributions\n  are welcome :)\n\n## Pull Request Process\n\nYou are welcome to open Pull Requests for either fixing a bug, adding a new feature, contributing to the documentation, etc.\n\n1. Fork the repository and create a new branch from `main`.\n2. If you\u2019ve fixed a bug or added code that should be tested, add tests!\n3. Make sure your code lints (e.g. flake8 for python; eslint, prettier for next.js).\n4. Update the README.md with details of changes, e.g. new environment variables, \n   exposed ports, container parameters etc.\n5. Increase the version numbers in any examples files and the README.md to the new version that this\n   Pull Request would represent. The versioning scheme we use is [SemVer](http://semver.org/).\n6. Push the changes to your fork.\n7. Create a Pull Request to this repository.\n8. Review and address comments on your pull request.\n\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "type": "Text_excerpt",
+        "value": "Please, see our [CONTRIBUTING](CONTRIBUTING.md) description and the [CODE OF CONDUCT](CODE_OF_CONDUCT.md).\n"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-04-20T12:29:07Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-06-26T16:33:26Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "An application that reads a cookiecutter.json file and parses it to a webform"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This application provides a 'marketplace' for commonly used [cookiecutter](https://cookiecutter.readthedocs.io/) templates, allowing the user to fill in the configuration online and download the generated project as a .zip file."
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OpenAPI client for cookiecutter-web-client"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8948225327556272,
+      "result": {
+        "original_header": "Cookiecutter-Web or Templates Hub",
+        "type": "Text_excerpt",
+        "value": "This application provides a 'marketplace' for commonly used [cookiecutter](https://cookiecutter.readthedocs.io/) templates, allowing the user to fill in the configuration online and download the generated project as a .zip file. \nThe frontend is built in [next.js](https://nextjs.org/) and can be found in `/frontend`. \n"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/m-team-kit/cookiecutter-web/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/m-team-kit/cookiecutter-web/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "m-team-kit/cookiecutter-web"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Cookiecutter-Web or Templates Hub"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "package.json",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "package.json",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "package.json"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "package.json"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/m-team-kit/cookiecutter-web/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/m-team-kit/cookiecutter-web/issues"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cookiecutter, templates, web-service"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "templates",
+          "cookiecutter",
+          "web service"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "axios"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "typescript"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "openapi-client"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "openapi-generator"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cookiecutter-web-client"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "value": "https://api.github.com/licenses/apache-2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "File_dump",
+        "value": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright 2023 - 2024 Karlsruhe Institute of Technology - Scientific Computing Center\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/Apache-2.0",
+        "spdx_id": "https://spdx.org/licenses/Apache-2.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/Apache-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "UNLICENSED"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "type": "Text_excerpt",
+        "value": "This code is distributed under the Apache 2.0 License. Please, see the [LICENSE](LICENSE) file.\n"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cookiecutter-web"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cookiecutter-web"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "m-team-kit"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "frontend"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cookiecutter-web-client"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TypeScript",
+        "size": 136803,
+        "type": "Programming_language",
+        "value": "TypeScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "SCSS",
+        "size": 6262,
+        "type": "Programming_language",
+        "value": "SCSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 3950,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 1797,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 59,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Javascript",
+        "type": "Programming_language",
+        "value": "Javascript",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "value": "Python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://cookiecutter.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "vykozlov",
+          "type": "User"
+        },
+        "date_created": "2024-12-09T20:47:09Z",
+        "date_published": "2024-12-09T20:52:51Z",
+        "description": "### Added\r\n\r\n* Ability to create github issue report for a particulare template via frontend\r\n* Disable input fields if not logged in\r\n* Frontend: build with pnpm\r\n* Backend Docker warning\r\n\r\n### Changed\r\n\r\n* README is updated\r\n* Rename docker-compose.yml to compose.yml\r\n\r\n### Fixed\r\n\r\n* improve error legibility and reporting\r\n* URL color for creating a github issue",
+        "html_url": "https://github.com/m-team-kit/cookiecutter-web/releases/tag/1.2.0",
+        "name": "cookiecutter-web 1.2.0",
+        "release_id": 189815261,
+        "tag": "1.2.0",
+        "tarball_url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/tarball/1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/releases/189815261",
+        "value": "https://api.github.com/repos/m-team-kit/cookiecutter-web/releases/189815261",
+        "zipball_url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/zipball/1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "vykozlov",
+          "type": "User"
+        },
+        "date_created": "2024-12-09T20:44:57Z",
+        "date_published": "2024-12-09T20:50:13Z",
+        "description": "### Added\r\n\r\n* Installation of DVC via backend requirements\r\n\r\n### Changed\r\n\r\n* Actualize EC logo and the funding message\r\n* Upgrade backend version to 1.0.2\r\n* Use cookiecuter fork which implements [PR#1829](https://github.com/cookiecutter/cookiecutter/pull/1829) to propagate errors from pre/post-gen hook(s) to the FailedHookException message\r\n\r\n### Fixed\r\n\r\n* Exclude trailing dot from URL\r\n* Handle axioserror response data being blob\r\n* Make error messages scroll horizontally if too long",
+        "html_url": "https://github.com/m-team-kit/cookiecutter-web/releases/tag/1.1.0",
+        "name": "cookiecutter-web 1.1.0",
+        "release_id": 189814848,
+        "tag": "1.1.0",
+        "tarball_url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/tarball/1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/releases/189814848",
+        "value": "https://api.github.com/repos/m-team-kit/cookiecutter-web/releases/189814848",
+        "zipball_url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/zipball/1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "vykozlov",
+          "type": "User"
+        },
+        "date_created": "2024-02-23T11:12:34Z",
+        "date_published": "2024-02-23T11:14:14Z",
+        "description": "First release of the templates-hub service (see e.g. https://templates.services.fedcloud.eu)\r\n\r\n### Added\r\n- Show template tags\r\n- Filtering templates by tags\r\n- Templates sorting\r\n- Allow to rate templates\r\n- Display basic star rating\r\n- URLs in templates are shown as clickable links\r\n- Temlates are now added via dedicated GitHub repository\r\n- Link to the templates repo\r\n- Ability to provide an icon/image to represent template\r\n- Accepted updates in the templates GitHub repository are automatically propagated to the running service\r\n- Ability to deploy only Frontend\r\n- Option to deploy with a subset of templates based on tags\r\n\r\n### Changed\r\n- Refactor frontend\r\n- New page design\r\n- Update AUP, Privacy policy, SCC name\r\n- Backend is completely re-written and hosted in another repository (here is added as a submodule)\r\n- Backend version is 1.0.0\r\n\r\n### Fixed\r\n- Names of docker-compose files in README\r\n- Replace old react-query with tanstack query\r\n- Replace old index with templates page\r\n- lint config\r\n\r\n### Removed\r\n- credentials for nginx as we use traefik\r\n- DEEP-HDC links\r\n- webpage top banner",
+        "html_url": "https://github.com/m-team-kit/cookiecutter-web/releases/tag/1.0.0",
+        "name": "cookiecutter-web 1.0.0",
+        "release_id": 143063971,
+        "tag": "1.0.0",
+        "tarball_url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/tarball/1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/releases/143063971",
+        "value": "https://api.github.com/repos/m-team-kit/cookiecutter-web/releases/143063971",
+        "zipball_url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/zipball/1.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "vykozlov",
+          "type": "User"
+        },
+        "date_created": "2024-01-26T08:05:27Z",
+        "date_published": "2024-02-15T15:33:32Z",
+        "description": "_Initial release_\r\n\r\nFirst version of the templates service with only DEEP/AI4EOSC templates (no option to easily add new templates, as what and how templates are loaded, is configured in the code).\r\n\r\n### Added:\r\n- Frontend in next.js\r\n- Backend in python\r\n- Deployed via docker-compose\r\n- Reverse proxy is traefik\r\n- Only DEEP/AI4EOSC templates are added\r\n",
+        "html_url": "https://github.com/m-team-kit/cookiecutter-web/releases/tag/0.5.0",
+        "name": "cookiecutter-web 0.5.0 ",
+        "release_id": 142179440,
+        "tag": "0.5.0",
+        "tarball_url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/tarball/0.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/releases/142179440",
+        "value": "https://api.github.com/repos/m-team-kit/cookiecutter-web/releases/142179440",
+        "zipball_url": "https://api.github.com/repos/m-team-kit/cookiecutter-web/zipball/0.5.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@fortawesome/fontawesome-svg-core",
+        "type": "Software_application",
+        "value": "@fortawesome/fontawesome-svg-core@^6.6.0",
+        "version": "^6.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@fortawesome/free-regular-svg-icons",
+        "type": "Software_application",
+        "value": "@fortawesome/free-regular-svg-icons@^6.6.0",
+        "version": "^6.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@fortawesome/free-solid-svg-icons",
+        "type": "Software_application",
+        "value": "@fortawesome/free-solid-svg-icons@^6.6.0",
+        "version": "^6.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@fortawesome/react-fontawesome",
+        "type": "Software_application",
+        "value": "@fortawesome/react-fontawesome@^0.2.2",
+        "version": "^0.2.2"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@tailwindcss/forms",
+        "type": "Software_application",
+        "value": "@tailwindcss/forms@^0.5.9",
+        "version": "^0.5.9"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@tanstack/react-query",
+        "type": "Software_application",
+        "value": "@tanstack/react-query@^4.36.1",
+        "version": "^4.36.1"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@tanstack/react-query-devtools",
+        "type": "Software_application",
+        "value": "@tanstack/react-query-devtools@^4.36.1",
+        "version": "^4.36.1"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "axios",
+        "type": "Software_application",
+        "value": "axios@^1.7.7",
+        "version": "^1.7.7"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "clsx",
+        "type": "Software_application",
+        "value": "clsx@^2.1.1",
+        "version": "^2.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint",
+        "type": "Software_application",
+        "value": "eslint@^8.57.1",
+        "version": "^8.57.1"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint-config-next",
+        "type": "Software_application",
+        "value": "eslint-config-next@^15.0.2",
+        "version": "^15.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lodash",
+        "type": "Software_application",
+        "value": "lodash@^4.17.21",
+        "version": "^4.17.21"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lucide-react",
+        "type": "Software_application",
+        "value": "lucide-react@^0.279.0",
+        "version": "^0.279.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mustache",
+        "type": "Software_application",
+        "value": "mustache@^4.2.0",
+        "version": "^4.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "next",
+        "type": "Software_application",
+        "value": "next@^15.0.2",
+        "version": "^15.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "normalize.css",
+        "type": "Software_application",
+        "value": "normalize.css@^8.0.1",
+        "version": "^8.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "oidc-client-ts",
+        "type": "Software_application",
+        "value": "oidc-client-ts@^2.4.1",
+        "version": "^2.4.1"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react",
+        "type": "Software_application",
+        "value": "react@^18.2.0",
+        "version": "^18.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-dom",
+        "type": "Software_application",
+        "value": "react-dom@^18.2.0",
+        "version": "^18.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-oidc-context",
+        "type": "Software_application",
+        "value": "react-oidc-context@^2.4.0",
+        "version": "^2.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sass",
+        "type": "Software_application",
+        "value": "sass@^1.80.6",
+        "version": "^1.80.6"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/lodash",
+        "type": "Software_application",
+        "value": "@types/lodash@^4.17.13",
+        "version": "^4.17.13"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/mustache",
+        "type": "Software_application",
+        "value": "@types/mustache@^4.2.5",
+        "version": "^4.2.5"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/node",
+        "type": "Software_application",
+        "value": "@types/node@^18.19.64",
+        "version": "^18.19.64"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/react",
+        "type": "Software_application",
+        "value": "@types/react@^18.3.12",
+        "version": "^18.3.12"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/react-dom",
+        "type": "Software_application",
+        "value": "@types/react-dom@^18.3.1",
+        "version": "^18.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@typescript-eslint/eslint-plugin",
+        "type": "Software_application",
+        "value": "@typescript-eslint/eslint-plugin@^6.21.0",
+        "version": "^6.21.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@typescript-eslint/parser",
+        "type": "Software_application",
+        "value": "@typescript-eslint/parser@^6.21.0",
+        "version": "^6.21.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "autoprefixer",
+        "type": "Software_application",
+        "value": "autoprefixer@^10.4.20",
+        "version": "^10.4.20"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint-plugin-eslint-comments",
+        "type": "Software_application",
+        "value": "eslint-plugin-eslint-comments@^3.2.0",
+        "version": "^3.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint-plugin-github",
+        "type": "Software_application",
+        "value": "eslint-plugin-github@^4.10.2",
+        "version": "^4.10.2"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint-plugin-tailwindcss",
+        "type": "Software_application",
+        "value": "eslint-plugin-tailwindcss@^3.17.5",
+        "version": "^3.17.5"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "postcss",
+        "type": "Software_application",
+        "value": "postcss@^8.4.47",
+        "version": "^8.4.47"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "prettier",
+        "type": "Software_application",
+        "value": "prettier@^2.8.8",
+        "version": "^2.8.8"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "tailwindcss",
+        "type": "Software_application",
+        "value": "tailwindcss@^3.4.14",
+        "version": "^3.4.14"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "typescript",
+        "type": "Software_application",
+        "value": "typescript@^5.6.3",
+        "version": "^5.6.3"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "axios",
+        "type": "Software_application",
+        "value": "axios@^1.6.5",
+        "version": "^1.6.5"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/node",
+        "type": "Software_application",
+        "value": "@types/node@^18.19.8",
+        "version": "^18.19.8"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "typescript",
+        "type": "Software_application",
+        "value": "typescript@^5.3.3",
+        "version": "^5.3.3"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "run": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Running the application",
+        "type": "Text_excerpt",
+        "value": "Run `docker compose -f compose.base.yaml -f compose.prod.yaml up --build -d` to deploy the application in production mode.\n\nRun `docker compose -f compose.base.yaml -f compose.prod.yaml -f compose.frontend-only.yaml up --build -d` to deploy the application with the frontend only (e.g. to have different frontends with still the same backend hosted on another instance).\n\nRun `docker compose -f compose.base.yaml -f compose.dev.yaml up --build` to deploy the application in development mode for testing.\n"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:38:54",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "non-software"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "0.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "0.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-team-kit/cookiecutter-web/main/frontend/lib/client/package.json",
+      "technique": "code_parser"
+    }
+  ]
+}

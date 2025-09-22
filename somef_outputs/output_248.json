@@ -1,0 +1,790 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgments",
+        "parent_header": [
+          "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "This work was funded by the California Institute of Technology Library.\n\nThe [vector artwork](https://thenounproject.com/term/okapi-face/1546683/) of the face of an [okapi](https://en.wikipedia.org/wiki/Okapi), used as the icon for this project, was created by [Icons Producer](https://thenounproject.com/iconsproducer/) from the Noun Project.  It is licensed under the Creative Commons [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/) license.\n\nPokapi makes use of numerous open-source packages, without which Pokapi could not have been developed.  I want to acknowledge this debt.  In alphabetical order, the packages are:\n\n* [CommonPy](https://github.com/caltechlibrary/commonpy) &ndash; a collection of commonly-useful Python functions\n* [ipdb](https://github.com/gotcha/ipdb) &ndash; the IPython debugger\n* [lxml](https://lxml.de) &ndash; an XML parsing library for Python\n* [Python Decouple](https://github.com/henriquebastos/python-decouple/) &ndash; a high-level configuration file interface\n* [setuptools](https://github.com/pypa/setuptools) &ndash; library for `setup.py`\n* [Sidetrack](https://github.com/caltechlibrary/sidetrack) &ndash; simple debug logging/tracing package\n* [uritemplate](https://github.com/python-hyper/uritemplate) &ndash; URI template parsing per RFC&nbsp;6570\n* [validators](https://github.com/kvesteri/validators) &ndash; Python data validation for Humans\n\n<div align=\"center\">\n  <br>\n  <a href=\"https://www.caltech.edu\">\n    <img width=\"100\" height=\"100\" src=\"https://raw.githubusercontent.com/caltechlibrary/pokapi/main/.graphics/caltech-round.png\">\n  </a>\n</div>\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "California Institute of Technology Library",
+        "email": "mhucka@library.caltech.edu",
+        "identifier": "https://orcid.org/0000-0001-9105-5960",
+        "type": "String",
+        "value": "Michael Hucka"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Hucka",
+            "given_name": "Mike",
+            "name": "Mike Hucka",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-9105-5960"
+          }
+        ],
+        "datePublished": "2023",
+        "format": "cff",
+        "title": "Pokapi: Python Okapi Interface",
+        "type": "File_dump",
+        "value": "cff-version: 1.2\nmessage: \"If you use this software, please cite it using these metadata.\"\ntitle: \"Pokapi: Python Okapi Interface\"\nauthors: \n  -\n    affiliation: \"Caltech Library\"\n    given-names: Mike\n    family-names: Hucka\n    orcid: \"0000-0001-9105-5960\"\nversion: \"0.4.0\"\nabstract: \"A tool to do bulk changes in FOLIO using the OKAPI API\"\nrepository-code: \"https://github.com/caltechlibrary/pokapi\"\ntype: software\nlicense-url: \"https://github.com/caltechlibrary/foliage/blob/main/LICENSE\"\nkeywords: \n  - FOLIO\n  - Library Services Platforms\ndate-released: 2023-01-18\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Contributor Covenant Code of Conduct\n====================================\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment include:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a professional setting\n\n## Our Responsibilities\n\nProject contributors are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.\n\nProject contributors have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project contributors.\n\n## Enforcement\n\nIf a contributor engages in harassing behaviour, the project organizers may take any action they deem appropriate, including warning the offender or expelling them from online forums, online project resources, face-to-face meetings, or any other project-related activity or resource.\n\nIf you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the project team immediately.  Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team.  All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.  The project team is obligated to maintain confidentiality with regard to the reporter of an incident.  Further details of specific enforcement policies may be posted separately.\n\n## Attribution\n\nPortions of this Code of Conduct were adapted from Electron's [Contributor Covenant Code of Conduct](https://github.com/electron/electron/blob/master/CODE_OF_CONDUCT.md), which itself was adapted from the [Contributor Covenant](http://contributor-covenant.org/version/1/4), version 1.4.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pokapi"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pokapi"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Guidelines for contributing to this project\n\nAny constructive contributions &ndash; bug reports, pull requests (code or documentation), suggestions for improvements, and more &ndash; are welcome.\n\n## Conduct\n\nEveryone is asked to read and respect the [code of conduct](CODE_OF_CONDUCT.md) before participating in this project.\n\n## Coordinating work\n\nA quick way to find out what is currently in the near-term plans for this project is to look at the [GitHub issue tracker](https://github.com/caltechlibrary/pokapi/issues), but the possibilities are not limited to what you see there &ndash; if you have ideas for new features and enhancements, please feel free to write them up as a new issue or contact the developers directly!\n\n## Submitting contributions\n\nPlease feel free to contact the author directly, or even better, jump right in and use the standard GitHub approach of forking the repo and creating a pull request.  When committing code changes and submitting pull requests, please write a clear log message for your commits.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "We would be happy to receive your help and participation with enhancing Pokapi!  Please visit the [guidelines for contributing](CONTRIBUTING.md) for some tips on getting started.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-08-20T22:06:55Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-12T11:13:36Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Simple Python object-oriented interface for getting records from FOLIO"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python package for getting basic data from a FOLIO ILS server"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Introduction",
+        "parent_header": [
+          "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "The [FOLIO](https://www.folio.org) platform is a [library services platform](https://www.niso.org/sites/default/files/stories/2017-09/FE_Grant_Future_Library_Systems_%20isqv24no4.pdf).  The Caltech Library uses a hosted solution by [EBSCO](https://www.ebsco.com) for its [library catalog](https://www.library.caltech.edu/libsearch).   To make writing interfaces and automation scripts in Python easier, the Caltech Library [Digital Library Development team](https://www.library.caltech.edu/staff?&field_directory_department%5B0%5D=754) are developing Pokapi (_Python Okapi Interface_), a Python package that provides an object-oriented interface to accessing FOLIO data via the [Okapi API](https://github.com/folio-org/okapi/blob/master/doc/guide.md). It currently provides a simple object structure based mostly on FOLIO _instance_ records.\n\nIncidentally, [okapi](https://en.wikipedia.org/wiki/Okapi) (properly known as _Okapia johnstoni_) are real animals related to the giraffe. They are an [endangered species](https://www.iucnredlist.org/species/15188/51140517) whose population continues to decrease due to human activity and [hunting by humans](https://www.nationalgeographic.com/animals/mammals/facts/okapi).\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.8923591368867556,
+      "result": {
+        "original_header": "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">",
+        "type": "Text_excerpt",
+        "value": "Pokapi (_Python Okapi Interface_)  is a Python package for getting basic data from a [FOLIO](https://www.folio.org) LSP server using the [Okapi API](https://github.com/folio-org/okapi/blob/master/doc/guide.md). \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pokapi/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pokapi/archive/main.zip"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/pokapi/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/pokapi"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Pokapi"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/.graphics/caltech-round.png"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# How to install Python version 3.x\n\nThe following instructions focus on getting [Python 3](https://docs.python.org/3/) running on Debian/Ubuntu Linux-based systems as well as on macOS via [MacPorts](https://www.macports.org) or [HomeBrew](https://brew.sh).\n\n_**Tip**_: If you are running on an Intel-based computers (e.g., most Macs and Windows machines), you can use a Python distribution called [Miniconda](https://docs.conda.io/en/latest/miniconda.html).  This is often the easiest approach to getting Python on your machine.  If that's not suitable for you for any reason, continue reading!\n\n\n## A note about Python version issues\n\nIt may be possible to use the default copy of Python provided by your operating system if it happens to be a version 3 edition of Python.  As of January 2021, the [oldest still-supported version of Python is 3.6](https://www.python.org/downloads/).  However, for historical reasons, many operating system distributions still ship with Python version 2.7 even today. This can be confusing, because the default `python` and `pip` commands provided on these operating systems is version 2.7 of Python; attempting to run programs written for Python version 3 with version 2.7 can result in extremely confusing errors that bear no relationship to the _actual_ problem, which is that the program is not written to run in Python 2.7.\n\n\n## Installing a recent version of Python and `pip`\n\nOn some systems, version 3.x of the Python interpreter and `pip` are available using the commands `python3` and `pip3`, respectively. More often, they must be installed separately.  The following subsections describe how Python 3 can be installed either using the standard software package managers on certain popular operating systems, or using third-party software managers.\n\n\n### Debian/Ubuntu\n\nDebian-based systems still ship with older versions of Python by\ndefault. To install a modern version of Python and the associated version of `pip`, run the following command:\n\n```\nsudo apt install python3 python3-pip\n```\n\n### macOS\n\nThe version of Python that comes with macOS through at least macOS 10.15 (Catalina) is Python 2.7.  The most convenient way to get Python 3.x and the associated version of `pip` is to use [MacPorts](https://www.macports.org) or [HomeBrew](https://brew.sh), depending on your preference.\n\n\n#### _Using MacPorts_\n\nIf you are using macOS and MacPorts, the following command will install a recent version of Python 3:\n\n```\nsudo port install python3 py38-pip\n```\n\nAfter running the command above, you should be able to invoke the Python interpreter using the command `python3`. You can verify the version of Python and `pip` with the following commands:\n\n```\npython3 --version\npython3 -m pip --version\n```\n\n#### _Using HomeBrew_\n\nIf you are using [HomeBrew](https://brew.sh), the corresponding commands are as follows:\n\n```\nbrew install python3\n```\n\nHomeBrew's Python 3 package installs `pip3` by default.  Unless you configured your copy of HomeBrew to install it elsewhere, programs should end up in `/usr/local/bin` on your computer.  Look for `pip3` there (e.g., by running the command `ls /usr/local/bin/pip*` to see what gets listed).\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/INSTALL-Python3.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "The instructions below assume you have a Python interpreter installed on your computer; if that's not the case, please first [install Python version 3](INSTALL-Python3.md) and familiarize yourself with running Python programs on your system.\n\nOn **Linux**, **macOS**, and **Windows** operating systems, you should be able to install `pokapi` with [`pip`](https://pip.pypa.io/en/stable/installing/).  To install `pokapi` from the [Python package repository (PyPI)](https://pypi.org), run the following command:\n```sh\npython3 -m pip install pokapi\n```\n\nAs an alternative to getting it from [PyPI](https://pypi.org), you can use `pip` to install `pokapi` directly from GitHub, like this:\n```sh\npython3 -m pip install git+https://github.com/caltechlibrary/pokapi.git\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/pokapi/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pokapi/issues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "api, folio, folio-lsp, library-systems, python, python-library"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "software",
+          "science"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "Copyright (c) 2021-2023, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors\nmay be used to endorse or promote products derived from this software without\nspecific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE\nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://github.com/caltechlibrary/pokapi/blob/main/LICENSE",
+        "spdx_id": "https://github.com/caltechlibrary/pokapi/blob/main/LICENSE",
+        "type": "License",
+        "value": "https://github.com/caltechlibrary/pokapi/blob/main/LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Software produced by the Caltech Library is Copyright \u00a9 2021&ndash;2023 California Institute of Technology.  This software is freely distributed under a BSD/MIT type license.  Please see the [LICENSE](LICENSE) file for more information.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pokapi"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Pokapi"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_distribution": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pypi.org/project/pokapi/"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 24745,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 11483,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2023-01-18T23:36:40Z",
+        "date_published": "2023-01-18T23:38:26Z",
+        "description": "This release adds a new exception class, `PermissionError`, to make it easier to detect problems involving such things as expired tokens.\n\nInternally, code comments have been updated in a few places (e.g., to update the copyright year), linting with flake8 has been done, and some other minor corrections have been made.\n",
+        "html_url": "https://github.com/caltechlibrary/pokapi/releases/tag/v0.4.0",
+        "name": "Release 0.4.0",
+        "release_id": 89474619,
+        "tag": "v0.4.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pokapi/tarball/v0.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pokapi/releases/89474619",
+        "value": "https://api.github.com/repos/caltechlibrary/pokapi/releases/89474619",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pokapi/zipball/v0.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-09-29T02:25:02Z",
+        "date_published": "2021-09-29T02:29:05Z",
+        "description": "There are no functional changes in this release; all the changes consist of minor cleanup and documentation updates.\n",
+        "html_url": "https://github.com/caltechlibrary/pokapi/releases/tag/v0.3.1",
+        "name": "Release 0.3.1",
+        "release_id": 50439156,
+        "tag": "v0.3.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pokapi/tarball/v0.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pokapi/releases/50439156",
+        "value": "https://api.github.com/repos/caltechlibrary/pokapi/releases/50439156",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pokapi/zipball/v0.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-09-28T00:49:55Z",
+        "date_published": "2021-09-28T00:50:16Z",
+        "description": "Changes in this release:\n\n* Catch another case of authors in titles separated by `/ by`.\n* Support creating `FolioRecord` objects using saved JSON data from FOLIO OKAPI API calls.\n* Rewrite all tests to use saved data instead of calling Caltech's FOLIO API server.\n",
+        "html_url": "https://github.com/caltechlibrary/pokapi/releases/tag/v0.3.0",
+        "name": "Release 0.3.0",
+        "release_id": 50360088,
+        "tag": "v0.3.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pokapi/tarball/v0.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pokapi/releases/50360088",
+        "value": "https://api.github.com/repos/caltechlibrary/pokapi/releases/50360088",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pokapi/zipball/v0.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-09-22T21:30:57Z",
+        "date_published": "2021-09-22T21:31:13Z",
+        "description": "Fixes in this release:\n\n* Fix: `Folio.record(...)` is supposed to throw a `NotFound` exception if it can't find the requested item. (It was returning a blank `FolioRecord` object.)\n* Fix: the fields in the definition of `FolioRecord` were out of date with the most recent code and documentation.\n* Fix: use a fallback method to get the author names from the title string instead of setting it to `None`.\n* Add acknowledgment for the artwork used for the icon.\n",
+        "html_url": "https://github.com/caltechlibrary/pokapi/releases/tag/v0.2.1",
+        "name": "Release 0.2.1",
+        "release_id": 50091271,
+        "tag": "v0.2.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pokapi/tarball/v0.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pokapi/releases/50091271",
+        "value": "https://api.github.com/repos/caltechlibrary/pokapi/releases/50091271",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pokapi/zipball/v0.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-09-14T01:30:26Z",
+        "date_published": "2021-09-14T01:30:47Z",
+        "description": "This release changes the parsing of authors to use the text that appears in the `title` field of the Folio record instead of the contributors list field.\n",
+        "html_url": "https://github.com/caltechlibrary/pokapi/releases/tag/v0.2.0",
+        "name": "Release 0.2.0",
+        "release_id": 49495049,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pokapi/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pokapi/releases/49495049",
+        "value": "https://api.github.com/repos/caltechlibrary/pokapi/releases/49495049",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pokapi/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-09-13T23:39:03Z",
+        "date_published": "2021-09-13T23:39:21Z",
+        "description": "This release includes breaking changes to the API:\n* The parameter `page_template` is gone from the `Folio` object.\n* The field `details_page` is gone from the `FolioRecord` object.\n\nThese changes were made after the realization that the record pages were not a concept of FOLIO or Okapi, but rather of the discovery system, and thus they don't belong in Pokapi.\n",
+        "html_url": "https://github.com/caltechlibrary/pokapi/releases/tag/v0.1.0",
+        "name": "Release 0.1.0",
+        "release_id": 49492040,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pokapi/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pokapi/releases/49492040",
+        "value": "https://api.github.com/repos/caltechlibrary/pokapi/releases/49492040",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pokapi/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-09-07T23:20:05Z",
+        "date_published": "2021-09-08T21:31:17Z",
+        "description": "* Added more parameters to `Folio` interface object in order to avoid hardwiring Caltech-specific things into the code.\n* Removed thumbnail handling code; it doesn't belong here because FOLIO/Okapi doesn't have a way to get thumbnails. What Pokapi was doing before was something more closely related to EDS.\n* Changed fields in `FolioRecord` objects.\n* Made numerous internal changes and bug fixes.\n",
+        "html_url": "https://github.com/caltechlibrary/pokapi/releases/tag/v0.0.2",
+        "name": "Release 0.0.2",
+        "release_id": 49233630,
+        "tag": "v0.0.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pokapi/tarball/v0.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pokapi/releases/49233630",
+        "value": "https://api.github.com/repos/caltechlibrary/pokapi/releases/49233630",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pokapi/zipball/v0.0.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "commonpy",
+        "type": "Software_application",
+        "value": "commonpy        >= 1.3.10",
+        "version": ">= 1.3.10"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lxml",
+        "type": "Software_application",
+        "value": "lxml            >= 4.6.3",
+        "version": ">= 4.6.3"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python-decouple",
+        "type": "Software_application",
+        "value": "python-decouple >= 3.4",
+        "version": ">= 3.4"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sidetrack",
+        "type": "Software_application",
+        "value": "sidetrack       >= 1.4.0",
+        "version": ">= 1.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "uritemplate",
+        "type": "Software_application",
+        "value": "uritemplate     >= 3.0.0",
+        "version": ">= 3.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "validators",
+        "type": "Software_application",
+        "value": "validators      >= 0.18.2",
+        "version": ">= 0.18.2"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:09:42",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 10
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Getting help",
+        "parent_header": [
+          "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/caltechlibrary/pokapi/issues) for this repository.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "The use of Pokapi is straightfoward. First, callers must create one instance of a `Folio` object that defines various aspects of how to communicate with their FOLIO/Okapi system. Then, callers can use the `record(...)` method on that `Folio` object to get objects that represent records in their FOLIO system. The method only requires an identifier, which can be a FOLIO instance identifier, an item barcode, or an EDS accession number. More details about all of this are provided below.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "The `Folio` interface object",
+        "parent_header": [
+          "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "To use Pokapi, first create a `Folio` object with parameters that define certain things Pokapi can't get on its own. These are: the the Okapi URL for your instance, an Okapi API token, a tenant id, and the prefix that appears in front of your accession numbers.  Assuming that these values are stored in separate variables, the following code illustrates how to create a `Folio` object:\n```python\nfrom pokapi import Folio\n\nfolio = Folio(okapi_url = the_okapi_url,\n              okapi_token = the_okapi_token,\n              tenant_id = the_tenant_id,\n              an_prefix = the_accession_number_prefix)\n```\n\nAs an example of a prefix for accession numbers, for Caltech the prefix is the `clc` part of an accession number such as `clc.025d49d5.735a.4d79.8889.c5895ac65fd2`. \n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "The `record(...)` method",
+        "parent_header": [
+          "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The `Folio` class has only one method on it currently: `record(...)`. This method contacts the FOLIO server to obtain data and returns a `FolioRecord` object with the data stored in fields. The following fields are implemented at this time:\n\n| Field            | Type   | Meaning |\n|------------------|--------|---------|\n| `id`               | string | FOLIO instance record identifier |\n| `accession_number` | string | The accession number for the record |\n| `title`            | string | Title of the work |\n| `author`           | string | Author; multiple authors are separated by \"and\" |\n| `publisher`        | string | Publisher |\n| `year`             | string | Year of publication |\n| `edition`          | string | the edition of the work (if any) |\n| `isbn_issn`        | string | ISBN or ISSN |\n\nThe method `Folio.record(...)` can take any one of the following mutually-exclusive keyword arguments to identify the record to be retrieved:\n\n* `barcode`: retrieve the record corresponding to the given item barcode\n* `instance_id`: retrieve the record having the given FOLIO instance identifier\n* `accession_number`: retrieve the record corresponding to the accession number\n\nHere is an example of using the method:\n\n```python\nr = folio.record(barcode = \"35047019531631\")\nassert r.id == \"1fedf5f3-b631-4d34-8d40-e022f70ab232\"\nassert r.title == \"The bad doctor\"\nassert r.year == \"2015\"\nassert r.author == \"Williams, Ian\"\nassert r.isbn_issn == \"9780271067544\"\nassert r.publisher == \"The Pennsylvania State University Press\"\n```\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Getting help",
+        "parent_header": [
+          "Pokapi<img width=\"11%\" align=\"right\" src=\"https://github.com/caltechlibrary/pokapi/raw/main/.graphics/pokapi-icon.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/caltechlibrary/pokapi/issues) for this repository.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pokapi/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

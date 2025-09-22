@@ -1,0 +1,431 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "david.chen49@berkeley.edu",
+        "identifier": "https://orcid.org/0000-0002-9413-8152",
+        "type": "String",
+        "value": "David Chen"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/imbroglio-dc/concrete"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/imbroglio-dc/concrete"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/imbroglio-dc/concrete"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/.github/workflows/coverage.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-10-22T07:28:28Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-14T14:47:45Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concrete: an R package implementing CONtinuous-time Competing Risks Targeted maximum likelihood Estimation"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+        "type": "String",
+        "value": "One-step continuous-time Targeted Minimum Loss-Based Estimation (TMLE) for outcome-specific absolute risk estimands in right-censored survival settings with or without competing risks, implementing the methodology described in Rytgaard et al. (2023) <doi:10.1111/biom.13856> and Rytgaard and van der Laan (2023) <doi:10.1007/s10985-022-09576-2>. Currently 'concrete' can be used to estimate the effects of static or dynamic interventions on binary treatments given at baseline, cross-validated initial estimation of treatment propensity is done using the 'SuperLearner' package, and initial estimation of conditional hazards is done using ensembles of Cox regressions from the 'survival' package or Coxnet from the 'glmnet' package."
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Continuous-time estimation of survival estimands using targeted maximumum likelihood estimation methodology described by Helene Rytgaard, Thomas Gerds, and Mark van der Laan 2021. Currently supported - Estimation of cause-specific hazards using Cox models, binary treatments, and simultaneously targeting survival estimands at multiple time points. "
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Description",
+        "parent_header": [
+          "concrete"
+        ],
+        "type": "Text_excerpt",
+        "value": "`concrete` is an R package designed to use targeted maximum likelihood\nestimation (TMLE) to compute covariate-adjusted marginal cumulative\nincidence estimates in right-censored survival settings with and without\ncompeting risks.\n\n------------------------------------------------------------------------\n"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.8586791860711889,
+      "result": {
+        "original_header": "concrete",
+        "type": "Text_excerpt",
+        "value": "> Continuous-Time Targeted Maximum Likelihood Estimation for Survival\n> Analysis with Competing Risks\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/imbroglio-dc/concrete/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/imbroglio-dc/concrete/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "imbroglio-dc/concrete"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concrete"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concrete"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "concrete"
+        ],
+        "type": "Text_excerpt",
+        "value": "`concrete` is under active development, so we recommend installing the \nlatest release from Github via [`devtools`](https://www.rstudio.com/products/rpackages/devtools/) with:\n\n``` r\ndevtools::install_github(\"imbroglio-dc/concrete\")\n```\n\nYou can download the latest stable release of `concrete` from [CRAN](https://cran.r-project.org/) via\n\n``` r\ninstall.packages(\"concrete\")\n```\n\n------------------------------------------------------------------------\n"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/imbroglio-dc/concrete/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/imbroglio-dc/concrete/issues"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+        "type": "String",
+        "value": "GPL (>= 3)"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concrete"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concrete: Continuous-Time Competing Risks Estimation using TMLE"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "imbroglio-dc"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+        "type": "String",
+        "value": "concrete"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 492306,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 225106,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 5255,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/imbroglio-dc/concrete/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:26:16",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+        "type": "String",
+        "value": "1.0.6"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.0.9"
+      },
+      "source": "https://raw.githubusercontent.com/imbroglio-dc/concrete/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

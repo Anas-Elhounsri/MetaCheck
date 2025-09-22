@@ -1,0 +1,1383 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geospace"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SciVision"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "",
+        "email": "",
+        "type": "String",
+        "value": "Michael Hirsch, Ph.D"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "name": "SciVision",
+            "type": "Agent"
+          }
+        ],
+        "doi": "10.21105/joss.00580",
+        "format": "cff",
+        "title": "PyMap3D",
+        "type": "File_dump",
+        "url": "https://doi.org/10.21105/joss.00580",
+        "value": "cff-version: 1.2.0\nauthors:\n  - orcid: 0000-0002-1637-6526\n    name: SciVision\ntitle: PyMap3D\ndoi: 10.21105/joss.00580\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/geospace-code/pymap3d"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/geospace-code/pymap3d"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/scivision/pymap3d"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/.github/workflows/ci.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/.github/workflows/publish-python-package.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/.github/workflows/ci_stdlib_only.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributors": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Thanks to those who contributed code and ideas, including:\n\n```\n@aldebaran1 (robustness)\n@ryanpavlick (.rsphere, .rcurve, .latitude, .lox, .los, .dca, and more)\n@cchuravy (Ellipsoid parameters)\n@jprMesh  (more conversion functions)\n@Fil (docs)\n@SamuelMarks (docs)\n@Yozh2 (numerous ellipsoids and tests)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/.github/contributors.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2014-08-03T04:28:03Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-01-28"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-01-28"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-18T09:36:34Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-01-28"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pure-Python (Numpy optional) 3D coordinate conversions for geospace ecef enu eci"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pure Python (no prereqs) coordinate conversions, following convention of several popular Matlab routines."
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pure-Python (Numpy optional) 3D coordinate conversions for geospace"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "3-D coordinate conversions in pure Python"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8658016124212239,
+      "result": {
+        "original_header": "Python 3-D coordinate conversions",
+        "type": "Text_excerpt",
+        "value": "Pure Python (no prerequistes beyond Python itself) 3-D geographic coordinate conversions and geodesy.\nFunction syntax is roughly similar to Matlab Mapping Toolbox.\nPyMap3D is intended for non-interactive use on massively parallel (HPC) and embedded systems. \n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8449107179007319,
+      "result": {
+        "original_header": "Notes",
+        "type": "Text_excerpt",
+        "value": "* PyMap3D does not require anything beyond pure Python for most transforms\n* Astronomical conversions are done using (optional) AstroPy for established accuracy\n* PyMap3D API is similar to Matlab Mapping Toolbox, while PyProj's interface is quite distinct\n* PyMap3D intrinsically handles local coordinate systems such as ENU,\n  while PyProj ENU requires some [additional effort](https://github.com/jswhit/pyproj/issues/105).\n* PyProj is oriented towards points on the planet surface, while PyMap3D handles points on or above the planet surface equally well, particularly important for airborne vehicles and remote sensing.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9473093601493671,
+      "result": {
+        "original_header": "AstroPy.Units.Quantity",
+        "type": "Text_excerpt",
+        "value": "At this time,\n[AstroPy.Units.Quantity](http://docs.astropy.org/en/stable/units/)\nis not supported.\nLet us know if this is of interest.\nImpacts on performance would have to be considered before making Quantity a first-class citizen.\nFor now, you can workaround by passing in the `.value` of the variable.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/geospace-code/pymap3d/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/Examples/geodetic%20to%20ENU.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/Examples/geodetic%20to%20ENU.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 86
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geospace-code/pymap3d"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python 3-D coordinate conversions"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/pyproject.toml",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "10.21105/joss.00580"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "http://doi.org/10.5281/zenodo.213676"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://joss.theoj.org/papers/10.21105/joss.00580/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install",
+        "parent_header": [
+          "Python 3-D coordinate conversions"
+        ],
+        "type": "Text_excerpt",
+        "value": "```sh\npython3 -m pip install pymap3d\n```\n\nor for the latest development code:\n\n```sh\ngit clone https://github.com/geospace-code/pymap3d\n\npip install -e pymap3d\n```\n\nOne can verify Python functionality after installation by:\n\n```sh\npytest pymap3d\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/geospace-code/pymap3d/issues"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "coordinate-conversion, coordinate-transformation, geodesy"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "coordinate-conversion"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geodesy"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "coordinate transformation"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "geospace",
+          "coordinates"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "type": "License",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "value": "https://api.github.com/licenses/bsd-2-clause"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "Copyright (c) 2014-2025 SciVision, Inc.\nCopyright (c) 2013, Felipe Geremia Nievinski\nCopyright (c) 2004-2007 Michael Kleder\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/BSD-2-Clause",
+        "spdx_id": "https://spdx.org/licenses/BSD-2-Clause",
+        "type": "License",
+        "value": "https://spdx.org/licenses/BSD-2-Clause"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/BSD",
+        "spdx_id": "BSD",
+        "type": "License",
+        "value": "BSD"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pymap3d"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PyMap3d"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "geospace-code"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pymap3d"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 195643,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MATLAB",
+        "size": 682,
+        "type": "Programming_language",
+        "value": "MATLAB"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "value": "Python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2025-07-08T06:19:18Z",
+        "date_published": "2025-07-08T06:19:53Z",
+        "description": "## What's Changed\r\n* enu2ecefv by @niwhsa9 in https://github.com/geospace-code/pymap3d/pull/96\r\n* Adding support for downrange-crossrange-above coordinate conversions \u2026 by @ryanpavlick in https://github.com/geospace-code/pymap3d/pull/100\r\n\r\n## New Contributors\r\n* @niwhsa9 made their first contribution in https://github.com/geospace-code/pymap3d/pull/96\r\n\r\n**Full Changelog**: https://github.com/geospace-code/pymap3d/compare/v3.1.0...v3.2.0",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v3.2.0",
+        "name": "v3.2.0",
+        "release_id": 230688724,
+        "tag": "v3.2.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v3.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/230688724",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/230688724",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v3.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2024-02-11T00:53:13Z",
+        "date_published": "2024-02-11T00:58:17Z",
+        "description": "[microseconds added to juliandate](https://github.com/geospace-code/pymap3d/commit/9310f624bbc8e445b0bd577a0e1aa48c2b34b67d)\r\n\r\n\r\n[Fixed numpy divide by zero error converting ECEF for multiple locations.](https://github.com/geospace-code/pymap3d/commit/e847c327f7865148d6e13f2bb2974eda8c467af9) \r\n\r\n\r\n[Don't skip Beta calculation if some values would divide-by-zero.](https://github.com/geospace-code/pymap3d/commit/3e4908ff99ea7f7c7b90dc86fb0dfe139c1a9186)\r\n\r\n[vdist, vreckon: add deg= option (default true)](https://github.com/geospace-code/pymap3d/commit/343a786f2de12164a4fc2dc0c2942e926ba77aaa)\r\n\r\n[ecef2geodetic: scalar-in, scalar-out](https://github.com/geospace-code/pymap3d/commit/dc652b8944f8d5d2e746baadfa8ead80c6438184)",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v3.1.0",
+        "name": "Default Ellipsoid improvements",
+        "release_id": 141517398,
+        "tag": "v3.1.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v3.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/141517398",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/141517398",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v3.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2023-03-05T05:31:37Z",
+        "date_published": "2023-03-05T05:32:23Z",
+        "description": "use `warnings.catch_warnings()` context manager instead of `numpy.seterr` to avoid breaking other programs that `import pymap3d` and want their warnings not to be errors.\r\n\r\nThanks @sanguinariojoe for the report and suggested fix",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v3.0.1",
+        "name": "Bugfix: don't use numpy.seterr",
+        "release_id": 94291246,
+        "tag": "v3.0.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v3.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/94291246",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/94291246",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v3.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2023-02-26T16:39:56Z",
+        "date_published": "2023-02-26T16:44:16Z",
+        "description": "* Numpy would issue warnings that could cause incorrect computations by not being caught in `try: except:` for things like divide by zero. This has been fixed.\r\n* overhaul the Ellipsoid() class\r\n* apply good coding style and use only pyproject.toml (no setup.py, setup.cfg)\r\n* Require Python >= 3.8: Numpy NEP29 dropped support for Python < 3.8 in December 2021.\r\nWe are having a harder time supporting corner cases in Python 3.7.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v3.0.0",
+        "name": "overhaul Ellipsoid, fix Numpy warning to error",
+        "release_id": 93716135,
+        "tag": "v3.0.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v3.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/93716135",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/93716135",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v3.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2022-07-03T21:12:17Z",
+        "date_published": "2022-07-03T21:21:01Z",
+        "description": "thanks @EpicWink ",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.9.1",
+        "name": "project PEP517",
+        "release_id": 71155845,
+        "tag": "v2.9.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.9.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/71155845",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/71155845",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.9.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2022-06-17T17:31:29Z",
+        "date_published": "2022-06-17T17:32:59Z",
+        "description": "lookAtSpheroid allows all inputs to be arrays of same shape \r\n\r\nadd functions `spherical2geodetic`, `geodetic2spherical`  thanks @[leouieda](https://github.com/geospace-code/pymap3d/issues?q=is%3Apr+author%3Aleouieda)\r\n\r\nremove internal \"use_astropy\" option\r\n\r\nadd mathfun.py to abstract numpy/math fallback",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.9.0",
+        "name": "add spherical<->geodetic transforms, enhance inputs and testing",
+        "release_id": 69736642,
+        "tag": "v2.9.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/69736642",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/69736642",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2022-03-30T17:38:25Z",
+        "date_published": "2022-03-30T17:46:50Z",
+        "description": "The type hinting for most numerics was removed to avoid causing external package problems as per #50. thanks @randallpittman\r\nThe CI coverage was improved by testing each supported Python version across MacOS, Linux, and Windows.\r\nThe PEP621 pyproject.toml meta was removed to avoid duplication and conflicts with setup.cfg. thanks @philblckwd",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.8.0",
+        "name": "remove most numeric type hint",
+        "release_id": 63184339,
+        "tag": "v2.8.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/63184339",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/63184339",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-11-22T06:27:56Z",
+        "date_published": "2021-11-22T06:36:42Z",
+        "description": "enhance ecef2geodetic stability with float32",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.7.3",
+        "name": "ecef2geodetic stability with float32",
+        "release_id": 53815066,
+        "tag": "v2.7.3",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.7.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/53815066",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/53815066",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.7.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-10-18T21:04:17Z",
+        "date_published": "2021-10-18T21:07:35Z",
+        "description": "Thanks to @noritada for finding and making tests for loxodrome_direct issues. Always appreciate hearing where the test suite isn't covering a broken case.\r\n\r\nused numpy.broadcast_arrays to simplify code. ",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.7.2",
+        "name": "loxodrome_direct stability near asymptote",
+        "release_id": 51570545,
+        "tag": "v2.7.2",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.7.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/51570545",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/51570545",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.7.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-10-17T17:50:15Z",
+        "date_published": "2021-10-17T18:01:44Z",
+        "description": "CI tests Python 3.7...3.10\r\n\r\nAdded stability to loxodrome_direct for azimuth = {90,-90,270,-270}\r\nenhanced efficiency of loxodrome_inverse for stability",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.7.1",
+        "name": "loxodrome_direct stability near asymptote, enhance CI",
+        "release_id": 51499425,
+        "tag": "v2.7.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.7.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/51499425",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/51499425",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.7.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-05-25T21:40:26Z",
+        "date_published": "2021-05-25T21:43:46Z",
+        "description": "Don't automatically import less widespread used modules including:\r\n```\r\n    lox\r\n    los\r\n    rcurve\r\n    rsphere\r\n````\r\nthis speeds imports for most users.\r\n\r\nadd command line convenience functions:\r\n\r\n```sh\r\npython -m pymap3d.vdist\r\npython -m pymap3d.vreckon\r\n\r\n```",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.7.0",
+        "name": "speed imports, add -m pymap3d.{vdist,reckon}",
+        "release_id": 43561309,
+        "tag": "v2.7.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.7.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/43561309",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/43561309",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.7.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-04-13T05:26:01Z",
+        "date_published": "2021-04-13T05:29:45Z",
+        "description": "when implementing the speedup of 2.6.0, a mistake was made in ecef2geodetic that could cause an exception. This is now fixed thanks to @dschurman ",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.6.1",
+        "name": "bugfix: ecef2geodetic inside bug from 2.6.0",
+        "release_id": 41331764,
+        "tag": "v2.6.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.6.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/41331764",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/41331764",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.6.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-03-21T04:51:18Z",
+        "date_published": "2021-03-21T04:53:25Z",
+        "description": "eliminated numpy.vectorize for ~100x speedup of many of the pymap3d functions, while still preserving the \"no-Numpy\" functionality for scalars.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.6.0",
+        "name": "100x speedup for Numpy operations",
+        "release_id": 40115048,
+        "tag": "v2.6.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/40115048",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/40115048",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-03-10T04:05:02Z",
+        "date_published": "2021-03-10T04:05:39Z",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.5.1",
+        "name": "pypi readme fix, pep621",
+        "release_id": 39565290,
+        "tag": "v2.5.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.5.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/39565290",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/39565290",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.5.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-02-07T05:59:12Z",
+        "date_published": "2021-02-07T06:11:54Z",
+        "description": "For better internal quality, modernize type annotations in accord with Numpy 1.20 final release.\r\nThis requires [`__future__.annotations`](https://docs.python.org/3/library/__future__.html), which requires Python >= 3.7.\r\nFor many months, Python 3.5 use of pymap3d has been &ll; 1%\r\nPython 3.6 use of pymap3d continues to drop as current Numpy requires Python >= 3.7 as well.\r\n\r\nPython 3.5 and 3.6 users can continue to use [pymap3d 2.4.x](https://github.com/geospace-code/pymap3d/tree/2.4.x). \r\nIf we find any significant bugs, we plan to backport them to pymap3d 2.4.x as long as there is still significant pymap3d usage from Python < 3.7.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.5.0",
+        "name": "Python >= 3.7, modernize type annotations",
+        "release_id": 37591186,
+        "tag": "v2.5.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/37591186",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/37591186",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-09-21T15:16:02Z",
+        "date_published": "2020-09-21T15:20:10Z",
+        "description": "Numpy 1.20 adds optional type hinting in the numpy.typing module. ArrayLike is a key type we feel appropriate for PyMap3D. PyMap3D will continue to work without Numpy or older versions of Numpy. \r\n\r\nWe add optional type hinting using numpy.typing.ArrayLike",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.4.3",
+        "name": "prepare for optional Numpy 1.20 type hinting",
+        "release_id": 31611562,
+        "tag": "v2.4.3",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.4.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/31611562",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/31611562",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.4.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-07-23T19:29:47Z",
+        "date_published": "2020-07-23T19:34:43Z",
+        "description": "* remove extraneous syntax from tests\r\n* add codecov",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.4.2",
+        "name": "add codecov, cleanup test",
+        "release_id": 28886987,
+        "tag": "v2.4.2",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.4.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/28886987",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/28886987",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.4.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-05-10T22:20:41Z",
+        "date_published": "2020-05-10T22:25:12Z",
+        "description": "v2.4.0 too boldly removed the non-AstroPy ECI conversions that only require Numpy. However, the Numpy-only fallback can have several percent error due to rotation only being considered. AstroPy considers higher-order effects that greatly increase accuracy of conversions involving ECI  (eci2* or *2eci)\r\n\r\nThis release restores optional status of AstroPy for ECI, but Numpy is still required for ECI as it always has been for PyMap3d.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.4.1",
+        "name": "ECI: restore less accurate Numpy-only fallback",
+        "release_id": 26360585,
+        "tag": "v2.4.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.4.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/26360585",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/26360585",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.4.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-04-23T20:40:40Z",
+        "date_published": "2020-04-23T20:46:37Z",
+        "description": "The ECI calculation error was substantial for some applications due to only considering Earth rotation. Now ECI calculations use AstroPy for better accuracy (< 1% error) considering more factors in the ECI transformations. \r\nFixes #33\r\n\r\nAdded `geodetic2eci`\r\n\r\nAdded more ECI self-tests\r\n\r\nTemporarily pinned CI to Python 3.8 to avoid the usual issues with brand new Python releases not immediately having PyPi wheels for Astropy. We still also test Python 3.5.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.4.0",
+        "name": "eci: use AstroPy",
+        "release_id": 25826674,
+        "tag": "v2.4.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/25826674",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/25826674",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-03-13T10:33:59Z",
+        "date_published": "2020-04-23T17:10:05Z",
+        "description": "also move to python \"src/\" directory layout",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.3.1",
+        "name": "return scalars when result is scalar",
+        "release_id": 25818765,
+        "tag": "v2.3.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/25818765",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/25818765",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-01-27T03:18:51Z",
+        "date_published": "2020-01-27T03:23:36Z",
+        "description": "v2.0 introduced the use of numpy.vectorize to allow seamless pymap3d use with ndarray but also without numpy and scalars. However, this returned 0-d ndarray for certain functions rather than scalars for scalar inputs. This fixes that issue and adds tests for it.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.3.0",
+        "name": "return scalar for scalar input",
+        "release_id": 23139121,
+        "tag": "v2.3.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/23139121",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/23139121",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-12-29T09:34:49Z",
+        "date_published": "2019-12-29T09:39:55Z",
+        "description": "API change: the last releases geodetic2geocentric and geocentric2geodetic have a \"alt_m\" parameter now. Set it to zero to act like before / Matlab. include the altitude to account for object height above ellipsoid.\r\n\r\nType hinting / quality / refactoring\r\n\r\nAdded diagnostic plots\r\n\r\nCorrected / updated docs and error messages.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.2.0",
+        "name": "add geod2geoc, geoc2geod",
+        "release_id": 22501575,
+        "tag": "v2.2.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/22501575",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/22501575",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-09-24T13:30:12Z",
+        "date_published": "2019-09-24T13:33:50Z",
+        "description": "Thanks to @rpavlick  for adding numerous functions in rcurve, rsphere, latitude, lox, utils and more.\r\nThese functions each had tests written.\r\nFurther, some Numpy functionality that was accidentally removed from v2.0 was restored for v2.1.\r\n\r\nThe goal of the PyMap3D package remains to support non-Numpy users, while also fully supporting those who have Numpy. The non-Numpy users are typically robots or platforms that stream positions in realtime, and don't need arrays, and want the faster performance of Python's built-in `math` module.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.1.0",
+        "name": "add numerous geodetic / spherical transforms from @rpavlick",
+        "release_id": 20211997,
+        "tag": "v2.1.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/20211997",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/20211997",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-09-23T17:17:12Z",
+        "date_published": "2019-09-23T17:19:37Z",
+        "description": "also breaking out tests to make easier to read and more comprehensive (checking for singularities, numpy vs scalar, etc.)",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v.2.0.1",
+        "name": "unify ellipsoid spec, add geocentric <=> geodetic latitude conversion",
+        "release_id": 20187317,
+        "tag": "v.2.0.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v.2.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/20187317",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/20187317",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v.2.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-09-09T19:59:22Z",
+        "date_published": "2019-09-09T20:02:31Z",
+        "description": "* Drop Python 2.x as code duplication and maintenance burden is too high.\r\n* improve numerical stability, thanks @bcminch #27\r\n* make non-Numpy use a first-class use case, with all but ECI working without Numpy (let us know if non-Numpy ECI is desirable). Of course Numpy, Pandas and Xarray are still handled first-class as well.\r\n* move CI to GitHub Actions.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v2.0.0",
+        "name": "Drop Python 2.x, improve numerical stability, improve non-Numpy use, move to GitHub Actions CI",
+        "release_id": 19862434,
+        "tag": "v2.0.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v2.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/19862434",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/19862434",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v2.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-06-30T04:54:39Z",
+        "date_published": "2019-06-30T04:55:42Z",
+        "description": "Put ellipsoid in own file\r\nput examples in own dir\r\n\r\ntest python setup.py install as well as python setup.py develop",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v1.8.1",
+        "name": "enhance CI integration, modularize",
+        "release_id": 18313777,
+        "tag": "v1.8.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v1.8.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/18313777",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/18313777",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v1.8.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-05-17T19:38:46Z",
+        "date_published": "2019-05-17T19:42:39Z",
+        "description": "Full functionality of PyMap3D (as with Python in general in 2019) requires Python &ge; 3.5, but a useful subset is made available to Python 2.6, 2.7 and 3.4. This is relevant to MicroPython and ROS users and other special use cases where currently supported Python versions may not yet be readily available.\r\n\r\nPut Ellipsoid() in its own file for clarity and flexibility with other packages.\r\n\r\nECI functions previously had an API unlike other PyMap3D functions, they are now the same as the rest of PyMap3D (scalar or N-D array for each variable).",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v1.8.0",
+        "name": "Enable fallback to Python 2.6, 2.7 and 3.4",
+        "release_id": 17431787,
+        "tag": "v1.8.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v1.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/17431787",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/17431787",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v1.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-03-25T03:20:18Z",
+        "date_published": "2019-03-25T03:25:27Z",
+        "description": "added several tests so that Pandas and Xarray are functioning.\r\n\r\nAlso handles ecef2geodetic scalar input.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v1.7.15",
+        "name": "more input types",
+        "release_id": 16315343,
+        "tag": "v1.7.15",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v1.7.15",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/16315343",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/16315343",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v1.7.15"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-03-08T16:30:49Z",
+        "date_published": "2019-03-08T16:54:10Z",
+        "description": "AER2GEODETIC was always going to the default WGS84 ellipsoid since the `ell=` argument was not present. We have fixed this error.\r\n\r\nAlso did a complete rewrite of documentation to `numpydoc` standards (mostly) and regenerated with pdoc3.",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v1.7.14",
+        "name": "BUGFIX: aer2geogetic ellipsoid specifier",
+        "release_id": 15999998,
+        "tag": "v1.7.14",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v1.7.14",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/15999998",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/15999998",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v1.7.14"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-01-20T20:42:36Z",
+        "date_published": "2019-01-20T20:45:56Z",
+        "description": "Corrected algorithmic error for `ecef2geodetic` where negative altitude wrapped to positive altitude\r\n\r\nparameterized tests to provide better coverage of singularities / edge cases",
+        "html_url": "https://github.com/geospace-code/pymap3d/releases/tag/v1.7.13",
+        "name": "BUGFIX: ecef2geodetic negative altitude",
+        "release_id": 15077553,
+        "tag": "v1.7.13",
+        "tarball_url": "https://api.github.com/repos/geospace-code/pymap3d/tarball/v1.7.13",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/pymap3d/releases/15077553",
+        "value": "https://api.github.com/repos/geospace-code/pymap3d/releases/15077553",
+        "zipball_url": "https://api.github.com/repos/geospace-code/pymap3d/zipball/v1.7.13"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools>=61.0.0",
+        "version": ">=61.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "wheel",
+        "type": "Software_application",
+        "value": "wheel",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Prerequisites",
+        "parent_header": [
+          "Python 3-D coordinate conversions"
+        ],
+        "type": "Text_excerpt",
+        "value": "Numpy and AstroPy are optional.\nAlgorithms from Vallado and Meeus are used if AstroPy is not present.\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "documentation",
+    "faq",
+    "support"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:18:54",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 424
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "Python 3-D coordinate conversions"
+        ],
+        "type": "Text_excerpt",
+        "value": "Where consistent with the definition of the functions, all arguments may\nbe arbitrarily shaped (scalar, N-D array).\n\n```python\nimport pymap3d as pm\n\nx,y,z = pm.geodetic2ecef(lat,lon,alt)\n\naz,el,range = pm.geodetic2aer(lat, lon, alt, observer_lat, observer_lon, 0)\n```\n\n[Python](https://www.python.org/dev/peps/pep-0448/)\n[argument unpacking](https://docs.python.org/3/tutorial/controlflow.html#unpacking-argument-lists)\ncan be used for compact function arguments with scalars or arbitrarily\nshaped N-D arrays:\n\n```python\naer = (az,el,slantrange)\nobslla = (obs_lat ,obs_lon, obs_alt)\n\nlla = pm.aer2geodetic(*aer, *obslla)\n```\n\nwhere tuple `lla` is comprised of scalar or N-D arrays `(lat,lon,alt)`.\n\nExample scripts are in the [examples](./Examples) directory.\n\nNative Python float is typically [64 bit](https://docs.python.org/3/library/stdtypes.html#typesnumeric).\nNumpy can select real precision bits: 32, 64, 128, etc.\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Functions",
+        "parent_header": [
+          "Python 3-D coordinate conversions",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Popular mapping toolbox functions ported to Python include the\nfollowing, where the source coordinate system (before the \"2\") is\nconverted to the desired coordinate system:\n\n```\naer2ecef  aer2enu  aer2geodetic  aer2ned\necef2aer  ecef2enu  ecef2enuv  ecef2geodetic  ecef2ned  ecef2nedv\necef2eci  eci2ecef eci2aer aer2eci geodetic2eci eci2geodetic\nenu2aer  enu2ecef   enu2geodetic\ngeodetic2aer  geodetic2ecef  geodetic2enu  geodetic2ned\nned2aer  ned2ecef   ned2geodetic\nazel2radec radec2azel\nlookAtSpheroid\ntrack2 departure meanm\nrcurve rsphere\ngeod2geoc geoc2geod\ngeodetic2spherical spherical2geodetic\n```\n\nVincenty functions \"vincenty.vreckon\" and \"vincenty.vdist\" are accessed like:\n\n```python\nimport pymap3d.vincenty as pmv\n\nlat2, lon2 = pmv.vreckon(lat1, lon1, ground_range_m, azimuth_deg)\ndist_m, azimuth_deg = pmv.vdist(lat1, lon1, lat2, lon2)\n```\n\nAdditional functions:\n\n* loxodrome_inverse: rhumb line distance and azimuth between ellipsoid points (lat,lon)  akin to Matlab `distance('rh', ...)` and `azimuth('rh', ...)`\n* loxodrome_direct\n* geodetic latitude transforms to/from: parametric, authalic, isometric, and more in pymap3d.latitude\n\nAbbreviations:\n\n* [AER: Azimuth, Elevation, Range](https://en.wikipedia.org/wiki/Spherical_coordinate_system)\n* [ECEF: Earth-centered, Earth-fixed](https://en.wikipedia.org/wiki/ECEF)\n* [ECI: Earth-centered Inertial using IERS](https://www.iers.org/IERS/EN/Home/home_node.html) via `astropy`\n* [ENU: East North Up](https://en.wikipedia.org/wiki/Axes_conventions#Ground_reference_frames:_ENU_and_NED)\n* [NED: North East Down](https://en.wikipedia.org/wiki/North_east_down)\n* [radec: right ascension, declination](https://en.wikipedia.org/wiki/Right_ascension)\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Ellipsoid",
+        "parent_header": [
+          "Python 3-D coordinate conversions",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Numerous functions in pymap3d use an ellipsoid model.\nThe default is WGS84 Ellipsoid.\nNumerous other ellipsoids are available in pymap3d.Ellipsoid.\n\nPrint available ellipsoid models:\n\n```python\nimport pymap3d as pm\n\nprint(pm.Ellipsoid.models)\n```\n\nSpecify GRS80 ellipsoid:\n\n```python\nimport pymap3d as pm\n\nell = pm.Ellipsoid.from_name('grs80')\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "array vs scalar",
+        "parent_header": [
+          "Python 3-D coordinate conversions",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Use of pymap3d on embedded systems or other streaming data applications often deal with scalar position data.\nThese data are handled efficiently with the Python math stdlib module.\nVector data can be handled via list comprehension.\n\nThose needing multidimensional data with SIMD and other Numpy and/or PyPy accelerated performance can do so automatically by installing Numpy.\npymap3d seamlessly falls back to Python's math module if Numpy isn't present.\nTo keep the code clean, only scalar data can be used without Numpy.\nAs noted above, use list comprehension if you need vector data without Numpy.\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Caveats",
+        "parent_header": [
+          "Python 3-D coordinate conversions",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "* Atmospheric effects neglected in all functions not invoking AstroPy.\n  Would need to update code to add these input parameters (just start a GitHub Issue to request).\n* Planetary perturbations and nutation etc. not fully considered.\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/pymap3d/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

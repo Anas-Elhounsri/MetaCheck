@@ -1,0 +1,845 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8058303262639249,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "j.aravind@icar.gov.in",
+        "identifier": "https://orcid.org/0000-0002-4791-442X",
+        "type": "String",
+        "value": "J. Aravind"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "jalli.radhamani@icar.gov.in",
+        "type": "String",
+        "value": "J. Radhamani"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "kalyani.srinivasan@icar.gov.in",
+        "type": "String",
+        "value": "Kalyani Srinivasan"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "anandasubhash@gmail.com",
+        "type": "String",
+        "value": "B. Ananda Subhash"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "rishi.tyagi@icar.gov.in",
+        "type": "String",
+        "value": "['Rishi', 'Kumar'] Tyagi"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Aravind",
+            "given_name": "J.",
+            "name": "J. Aravind",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-4791-442X"
+          },
+          {
+            "family_name": "Radhamani",
+            "given_name": "J.",
+            "name": "J. Radhamani",
+            "type": "Agent"
+          },
+          {
+            "name": "Kalyani Srinivasan",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Ananda Subhash",
+            "given_name": "B.",
+            "name": "B. Ananda Subhash",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Tyagi",
+            "given_name": "Rishi Kumar",
+            "name": "Rishi Kumar Tyagi",
+            "type": "Agent"
+          }
+        ],
+        "format": "cff",
+        "title": "PGRdup: Discover Probable Duplicates in Plant Genetic Resources Collections",
+        "type": "File_dump",
+        "url": "https://doi.org/10.5281/zenodo.841963",
+        "value": "# -----------------------------------------------------------\n# CITATION file created with {cffr} R package, v0.5.0\n# See also: https://docs.ropensci.org/cffr/\n# -----------------------------------------------------------\n \ncff-version: 1.2.0\nmessage: 'To cite package \"PGRdup\" in publications use:'\ntype: software\nlicense:\n- GPL-2.0-only\n- GPL-3.0-only\ntitle: 'PGRdup: Discover Probable Duplicates in Plant Genetic Resources Collections'\nversion: 0.2.3.9\nabstract: Provides functions to aid the identification of probable/possible duplicates\n  in Plant Genetic Resources (PGR) collections using 'passport databases' comprising\n  of information records of each constituent sample. These include methods for cleaning\n  the data, creation of a searchable Key Word in Context (KWIC) index of keywords\n  associated with sample records and the identification of nearly identical records\n  with similar information by fuzzy, phonetic and semantic matching of keywords.\nauthors:\n- family-names: Aravind\n  given-names: J.\n  email: j.aravind@icar.gov.in\n  orcid: https://orcid.org/0000-0002-4791-442X\n- family-names: Radhamani\n  given-names: J.\n  email: jalli.radhamani@icar.gov.in\n- name: Kalyani Srinivasan\n  email: kalyani.srinivasan@icar.gov.in\n- family-names: Ananda Subhash\n  given-names: B.\n  email: anandasubhash@gmail.com\n- family-names: Tyagi\n  given-names: Rishi Kumar\n  email: rishi.tyagi@icar.gov.in\npreferred-citation:\n  type: manual\n  title: 'PGRdup: Discover Probable Duplicates in Plant Genetic Resources Collections'\n  authors:\n  - family-names: Aravind\n    given-names: J.\n    email: j.aravind@icar.gov.in\n    orcid: https://orcid.org/0000-0002-4791-442X\n  - family-names: Radhamani\n    given-names: J.\n    email: jalli.radhamani@icar.gov.in\n  - name: Kalyani Srinivasan\n    email: kalyani.srinivasan@icar.gov.in\n  - family-names: Ananda Subhash\n    given-names: B.\n    email: anandasubhash@gmail.com\n  - family-names: Tyagi\n    given-names: Rishi Kumar\n    email: rishi.tyagi@icar.gov.in\n  notes: R package version 0.2.3.9 https://github.com/aravind-j/PGRdup, https://cran.r-project.org/package=PGRdup\nrepository: https://CRAN.R-project.org/package=PGRdup\nrepository-code: https://github.com/aravind-j/PGRdup\nurl: https://cran.r-project.org/package=PGRdup\ncontact:\n- family-names: Aravind\n  given-names: J.\n  email: j.aravind@icar.gov.in\n  orcid: https://orcid.org/0000-0002-4791-442X\nkeywords:\n- double-metaphone\n- double-metaphone-algorithm\n- natural-language-processing\n- pgr\n- plant-genetic-resources\n- r\n- record-linkage\nidentifiers:\n- type: url\n  value: https://doi.org/10.5281/zenodo.841963\n- type: url\n  value: https://aravind-j.github.io/PGRdup/\n- type: url\n  value: https://www.rdocumentation.org/packages/PGRdup\n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citing `PGRdup`",
+        "type": "Text_excerpt",
+        "value": "To cite the methods in the package use:\n\n``` r\ncitation(\"PGRdup\")\n```\n\n    To cite the R package 'PGRdup' in publications use:\n\n      Aravind, J., Radhamani, J., Kalyani Srinivasan, Ananda Subhash, B., and Tyagi, R. K.  ().  PGRdup:\n      Discover Probable Duplicates in Plant Genetic Resources Collections. R package version 0.2.3.9,\n      https://github.com/aravind-j/PGRdup,https://cran.r-project.org/package=PGRdup.\n\n    A BibTeX entry for LaTeX users is\n\n      @Manual{,\n        title = {PGRdup: Discover Probable Duplicates in Plant Genetic Resources Collections},\n        author = {J. Aravind and J. Radhamani and {Kalyani Srinivasan} and B. {Ananda Subhash} and Rishi Kumar Tyagi},\n        note = {R package version 0.2.3.9 https://github.com/aravind-j/PGRdup, https://cran.r-project.org/package=PGRdup},\n      }\n\n    This free and open-source software implements academic research by the authors and co-workers. If you use\n    it, please support the project by citing the package.\n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/aravind-j/PGRdup"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/aravind-j/PGRdup"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/aravind-j/PGRdup"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/aravind-j/PGRdup/actions"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-08-01T18:28:57Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-30T18:04:56Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Discover Probable Duplicates in Plant Genetic Resources Collections"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+        "type": "String",
+        "value": "Provides functions to aid the identification of probable/possible\n    duplicates in Plant Genetic Resources (PGR) collections using\n    'passport databases' comprising of information records of each constituent\n    sample. These include methods for cleaning the data, creation of a\n    searchable Key Word in Context (KWIC) index of keywords associated with\n    sample records and the identification of nearly identical records with\n    similar information by fuzzy, phonetic and semantic matching of keywords."
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Provides functions to aid the identification of probable/possible duplicates in Plant Genetic Resources (PGR) collections using 'passport databases' comprising of information records of each constituent sample. These include methods for cleaning the data, creation of a searchable Key Word in Context (KWIC) index of keywords associated with sample records and the identification of nearly identical records with similar information by fuzzy, phonetic and semantic matching of keywords."
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Introduction <img src=\"https://raw.githubusercontent.com/aravind-j/PGRdup/master/inst/extdata/PGRdup_v2.png\" align=\"right\" alt=\"logo\" width=\"173\" height = \"200\" style = \"padding: 10px; border: none; float: right;\">",
+        "type": "Text_excerpt",
+        "value": "The `R` package `PGRdup` was developed as a tool to aid genebank\nmanagers in the identification of probable duplicate accessions from\nplant genetic resources (PGR) passport databases.\n\nThis package primarily implements a workflow designed to fetch groups or\nsets of germplasm accessions with similar passport data particularly in\nfields associated with accession names within or across PGR passport\ndatabases.\n\nThe functions in this package are primarily built using the following R\npackages:\n\n- [`data.table`](https://cran.r-project.org/package=data.table)\n- [`igraph`](https://cran.r-project.org/package=igraph)\n- [`stringdist`](https://cran.r-project.org/package=stringdist)\n- [`stringi`](https://cran.r-project.org/package=stringi)\n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.9424756890593573,
+      "result": {
+        "original_header": "*Aravind, J.<sup>1</sup>, Radhamani, J.<sup>1</sup>, Kalyani Srinivasan<sup>1</sup>, Ananda Subhash, B.<sup>2</sup>, and Tyagi, R. K.<sup>1</sup>*",
+        "type": "Text_excerpt",
+        "value": "1.  ICAR-National Bureau of Plant Genetic Resources, New Delhi, India\n2.  Centre for Development of Advanced Computing, Thiruvananthapuram,\n    Kerala, India \n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8930059796660874,
+      "result": {
+        "original_header": "Step 1",
+        "type": "Text_excerpt",
+        "value": "Use these functions for the appropriate data standardisation of the\nrelevant fields in the passport databases to harmonize punctuation,\nleading zeros, prefixes, suffixes etc. associated with accession names.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8389045229905627,
+      "result": {
+        "original_header": "Step 2",
+        "type": "Text_excerpt",
+        "value": "Use this function to extract the information in the relevant fields as\nkeywords or text strings in the form of a searchable Keyword in Context\n(KWIC) index.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9466900732913763,
+      "result": {
+        "original_header": "Step 3",
+        "type": "Text_excerpt",
+        "value": "Execute fuzzy, phonetic and semantic matching of keywords to identify\nprobable duplicate sets either within a single KWIC index or between two\nindexes using this function. For fuzzy matching the levenshtein edit\ndistance is used, while for phonetic matching, the double metaphone\nalgorithm is used. For semantic matching, synonym sets or \u2018synsets\u2019 of\naccession names can be supplied as an input and the text strings in such\nsets will be treated as being identical for matching. Various options to\ntweak the matching strategies used are also available in this function.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9043394367701578,
+      "result": {
+        "original_header": "Adjuncts",
+        "type": "Text_excerpt",
+        "value": "Use these helper functions if needed. `ValidatePrimKey` can be used to\ncheck whether a column chosen in a data.frame as the primary primary\nkey/ID confirms to the constraints of absence of duplicates and NULL\nvalues. \n`DoubleMetaphone` is an implementation of the Double Metaphone phonetic\nalgorithm in `R` and is used for phonetic matching. \n`ParseProbDup` and `AddProbDup` work with objects of class `ProbDup`.\nThe former can be used to parse the probable duplicate sets in a\n`ProbDup` object to a `data.frame` while the latter can be used to add\nthese sets data fields to the passport databases. `SplitProbDup` can be\nused to split an object of class `ProbDup` according to set counts.\n`MergeProbDup` can be used to merge together two objects of class\n`ProbDup`. `ViewProbDup` can be used to plot the summary visualizations\nof probable duplicate sets retrieved in an object of class `ProbDup`. \n`KWCounts` can be used to compute keyword counts from PGR passport\ndatabase fields(columns), which can give a rough indication of the\ncompleteness of the data. \n`read.genesys` can be used to import PGR data in a Darwin Core -\ngermplasm zip archive downloaded from genesys database into the R\nenvironment.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9628224630113535,
+      "result": {
+        "original_header": "Tips",
+        "type": "Text_excerpt",
+        "value": "- Use [`fread`](https://rdrr.io/cran/data.table/man/fread.html) to\n  rapidly read large files instead of `read.csv` or `read.table` in\n  `base`.\n- In case the PGR passport data is in any DBMS, use the appropriate\n  [`R`-database interface\n  packages](https://www.burns-stat.com/r-database-interfaces/) to get\n  the required table as a `data.frame` in `R`.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9080651035455597,
+      "result": {
+        "original_header": "What\u2019s new",
+        "type": "Text_excerpt",
+        "value": "To know whats new in this version type:\n``` r\nnews(package='PGRdup')\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "https://www.repostatus.org/#inactive",
+          "https://lifecycle.r-lib.org/articles/stages.html#stable"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/aravind-j/PGRdup/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/aravind-j/PGRdup/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "aravind-j/PGRdup"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://cran.r-project.org/package=PGRdup"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.841963"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://aravind-j.github.io/PGRdup/"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.rdocumentation.org/packages/PGRdup"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PGRdup"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pro-pulsar-193905.appspot.com/UA-112827210-2/welcome-page"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/inst/extdata/PGRdup_v2.png"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "The package can be installed from CRAN as follows:\n\n``` r\n# Install from CRAN\ninstall.packages('PGRdup', dependencies=TRUE)\n\nThe development version can be installed from github as follows:\n# Install development version from Github\ndevtools::install_github(\"aravind-j/PGRdup\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/aravind-j/PGRdup/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/aravind-j/PGRdup/issues"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/aravind-j/PGRdup/issues"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "double-metaphone, double-metaphone-algorithm, natural-language-processing, pgr, plant-genetic-resources, r, record-linkage"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-2 | GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-2.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-2.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/inst/extdata/PGRdup.png"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PGRdup"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PGRdup: Discover Probable Duplicates in Plant Genetic Resources Collections"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "aravind-j"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+        "type": "String",
+        "value": "PGRdup"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 1196812,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 181799,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 38103,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 1630,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.html"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "aravind-j",
+          "type": "User"
+        },
+        "date_created": "2023-05-22T18:25:50Z",
+        "date_published": "2023-06-07T17:53:39Z",
+        "description": "Same as CRAN_0.2.3.8.",
+        "html_url": "https://github.com/aravind-j/PGRdup/releases/tag/CRAN_0.2.3.8",
+        "name": "CRAN_0.2.3.8",
+        "release_id": 107711578,
+        "tag": "CRAN_0.2.3.8",
+        "tarball_url": "https://api.github.com/repos/aravind-j/PGRdup/tarball/CRAN_0.2.3.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/aravind-j/PGRdup/releases/107711578",
+        "value": "https://api.github.com/repos/aravind-j/PGRdup/releases/107711578",
+        "zipball_url": "https://api.github.com/repos/aravind-j/PGRdup/zipball/CRAN_0.2.3.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "aravind-j",
+          "type": "User"
+        },
+        "date_created": "2021-02-16T14:06:41Z",
+        "date_published": "2021-02-17T14:03:07Z",
+        "description": "Same as CRAN_0.2.3.7",
+        "html_url": "https://github.com/aravind-j/PGRdup/releases/tag/CRAN_0.2.3.7",
+        "name": "CRAN_0.2.3.7",
+        "release_id": 38168896,
+        "tag": "CRAN_0.2.3.7",
+        "tarball_url": "https://api.github.com/repos/aravind-j/PGRdup/tarball/CRAN_0.2.3.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/aravind-j/PGRdup/releases/38168896",
+        "value": "https://api.github.com/repos/aravind-j/PGRdup/releases/38168896",
+        "zipball_url": "https://api.github.com/repos/aravind-j/PGRdup/zipball/CRAN_0.2.3.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "aravind-j",
+          "type": "User"
+        },
+        "date_created": "2020-02-09T21:05:31Z",
+        "date_published": "2019-09-19T18:54:07Z",
+        "description": "Same as CRAN_0.2.3.4",
+        "html_url": "https://github.com/aravind-j/PGRdup/releases/tag/CRAN_0.2.3.4",
+        "name": "CRAN_0.2.3.4",
+        "release_id": 20119313,
+        "tag": "CRAN_0.2.3.4",
+        "tarball_url": "https://api.github.com/repos/aravind-j/PGRdup/tarball/CRAN_0.2.3.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/aravind-j/PGRdup/releases/20119313",
+        "value": "https://api.github.com/repos/aravind-j/PGRdup/releases/20119313",
+        "zipball_url": "https://api.github.com/repos/aravind-j/PGRdup/zipball/CRAN_0.2.3.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "aravind-j",
+          "type": "User"
+        },
+        "date_created": "2019-09-19T15:49:49Z",
+        "date_published": "2020-02-23T21:40:49Z",
+        "description": "Same as CRAN_0.2.3.5",
+        "html_url": "https://github.com/aravind-j/PGRdup/releases/tag/CRAN_0.2.3.5",
+        "name": "CRAN_0.2.3.5",
+        "release_id": 23914410,
+        "tag": "CRAN_0.2.3.5",
+        "tarball_url": "https://api.github.com/repos/aravind-j/PGRdup/tarball/CRAN_0.2.3.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/aravind-j/PGRdup/releases/23914410",
+        "value": "https://api.github.com/repos/aravind-j/PGRdup/releases/23914410",
+        "zipball_url": "https://api.github.com/repos/aravind-j/PGRdup/zipball/CRAN_0.2.3.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "aravind-j",
+          "type": "User"
+        },
+        "date_created": "2018-01-13T05:12:34Z",
+        "date_published": "2018-01-13T07:49:15Z",
+        "description": "Same as CRAN_0.2.3.3",
+        "html_url": "https://github.com/aravind-j/PGRdup/releases/tag/CRAN_0.2.3.3",
+        "name": "CRAN_0.2.3.3",
+        "release_id": 9222356,
+        "tag": "CRAN_0.2.3.3",
+        "tarball_url": "https://api.github.com/repos/aravind-j/PGRdup/tarball/CRAN_0.2.3.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/aravind-j/PGRdup/releases/9222356",
+        "value": "https://api.github.com/repos/aravind-j/PGRdup/releases/9222356",
+        "zipball_url": "https://api.github.com/repos/aravind-j/PGRdup/zipball/CRAN_0.2.3.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "aravind-j",
+          "type": "User"
+        },
+        "date_created": "2017-08-04T14:29:42Z",
+        "date_published": "2017-08-12T05:33:56Z",
+        "description": "Same as CRAN_0.2.3.2",
+        "html_url": "https://github.com/aravind-j/PGRdup/releases/tag/CRAN_0.2.3.2",
+        "release_id": 7369026,
+        "tag": "CRAN_0.2.3.2",
+        "tarball_url": "https://api.github.com/repos/aravind-j/PGRdup/tarball/CRAN_0.2.3.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/aravind-j/PGRdup/releases/7369026",
+        "value": "https://api.github.com/repos/aravind-j/PGRdup/releases/7369026",
+        "zipball_url": "https://api.github.com/repos/aravind-j/PGRdup/zipball/CRAN_0.2.3.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Project Status:\nInactive",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#project"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:28:23",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Detailed tutorial",
+        "type": "Text_excerpt",
+        "value": "For a detailed tutorial (vignette) on how to used this package type:\n\n``` r\nbrowseVignettes(package = 'PGRdup')\n```\n\nThe vignette for the latest version is also available\n[online](https://aravind-j.github.io/PGRdup/articles/Introduction.html).\n"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.2.3.9"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.2.3.9"
+      },
+      "source": "https://raw.githubusercontent.com/aravind-j/PGRdup/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

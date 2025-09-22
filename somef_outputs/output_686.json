@@ -1,0 +1,751 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Hart Edmund"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "Edmund.m.hart@gmail.com",
+        "type": "String",
+        "value": "Hart Edmund"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "kmb56@berkeley.edu",
+        "type": "String",
+        "value": "Kendon Bell"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2015",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "bibentry(bibtype = \"Manual\",\n  title   = \"prism: Download data from the Oregon prism project\",\n  author  = \"Edmund M. Hart and Kendon Bell\",\n  year    = \"2015\",\n  note    = \"R package version 0.0.6\",\n  url     = \"https://github.com/ropensci/prism\",\n  doi     = \"10.5281/zenodo.33663\",\n\n  textVersion =\n  paste(\"Edmund M. Hart and Kendon Bell (2015) prism: Download data from the Oregon prism project. R package version 0.0.6 https://github.com/ropensci/prism DOI: 10.5281/zenodo.33663 \")\n)"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/inst/CITATION",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/prism"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/prism"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/prism"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/ropensci/prism/actions",
+          "https://app.codecov.io/github/ropensci/prism?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to prism\n\nThis outlines how to propose a change to prism. \n\n## Fixing typos\n\nYou can fix typos, spelling mistakes, or grammatical errors in the documentation directly using the GitHub web interface, as long as the changes are made in the _source_ file. \nThis generally means you'll need to edit [roxygen2 comments](https://roxygen2.r-lib.org/articles/roxygen2.html) in an `.R`, not a `.Rd` file. \nYou can find the `.R` file that generates the `.Rd` by reading the comment in the first line.\n\n## Bigger changes\n\nIf you want to make a bigger change, it's a good idea to first file an issue and make sure someone from the team agrees that it\u2019s needed. \nIf you\u2019ve found a bug, please file an issue that illustrates the bug with a minimal \n[reprex](https://www.tidyverse.org/help/#reprex) (this will also help you write a unit test, if needed).\n\nBigger changes should also include new tests, as appropriate. \n\n### Pull request process\n\n*   Fork the package and clone onto your computer. If you haven't done this before, we recommend using `usethis::create_from_github(\"ropensci/prism\", fork = TRUE)`.\n\n*   Install all development dependencies with `devtools::install_dev_deps()`, and then make sure the package passes R CMD check by running `devtools::check()`. \n    If R CMD check doesn't pass cleanly, it's a good idea to ask for help before continuing. \n*   Create a Git branch for your pull request (PR). We recommend using `usethis::pr_init(\"brief-description-of-change\")`.\n\n*   Make your changes, commit to git, and then create a PR by running `usethis::pr_push()`, and following the prompts in your browser.\n    The title of your PR should briefly describe the change.\n    The body of your PR should contain `Fixes #issue-number`.\n\n*  For user-facing changes, add a bullet to the top of `NEWS.md` (i.e. just below the first header). Follow the style described in <https://style.tidyverse.org/news.html>.\n\n* All GitHub Action Builds must pass\n\n### Code style\n\n*   New code should generally follow the tidyverse [style guide](https://style.tidyverse.org). \n    You can use the [styler](https://CRAN.R-project.org/package=styler) package to apply these styles, but please don't restyle code that has nothing to do with your PR.  \n\n*  We use [roxygen2](https://cran.r-project.org/package=roxygen2), with [Markdown syntax](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd-formatting.html), for documentation.  \n\n*  We use [testthat](https://cran.r-project.org/package=testthat) for unit tests. \n   Contributions with test cases included are easier to accept.  \n\n## Code of Conduct\n\nPlease note that the prism project is released with a\n[Contributor Code of Conduct](../CONDUCT.md). By contributing to this\nproject you agree to abide by its terms.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2014-03-25T04:49:41Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-31T19:35:45Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Download data from the Oregon PRISM climate data project http://www.prism.oregonstate.edu/"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+        "type": "String",
+        "value": "Allows users to access the Oregon State Prism climate data\n    (<https://prism.nacse.org/>). Using the web service API data\n    can easily downloaded in bulk and loaded into R for spatial analysis.\n    Some user friendly visualizations are also provided."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Allows users to access the Oregon State Prism climate data (<https://prism.nacse.org/>). Using the web service API data can easily downloaded in bulk and loaded into R for spatial analysis. Some user friendly visualizations are also provided."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9510965123979619,
+      "result": {
+        "original_header": "`prism`",
+        "type": "Text_excerpt",
+        "value": "This package allows users to access and visualize data from the [Oregon\nState PRISM project](https://prism.nacse.org). Data are all in the form\nof gridded rasters for the continental US at 4 different temporal\nscales: daily, monthly, annual, and 30 year normals. Please see their\nwebpage for a full description of the data products, or [see their\noverview](https://www.prism.oregonstate.edu/documents/PRISM_datasets.pdf).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.915966357590759,
+      "result": {
+        "original_header": "Quickstart",
+        "type": "Text_excerpt",
+        "value": "The overall work flow in the prism package is (links go to details on\nthis page): \n1.  [Set the download directory](#downloading-data), i.e., the folder on\n    your computer that prism data will be saved to:\n    `prism_set_dl_dir()`. This is now referred to as the \u201cprism\n    archive\u201d.\n2.  [Download prism data to the archive:](#download-30-year-normal-data)\n    `get_prism_*()`. Each folder, or variable, timestep, day/month/year\n    is stored in a single folder in the archive and referred to as prism\n    data (`pd`).\n3.  [Interact with the prism\n    archive:](#interact-with-the-archive-and-prism-data)\n    `prism_archive_*()`. Or interact with the prism data: `pd_*()`. \nThe remainder of this README provides examples following this work flow.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9268826878573274,
+      "result": {
+        "original_header": "Data availability",
+        "type": "Text_excerpt",
+        "value": "**Normals (4km or 800m resolution) based on 1991-2020 average:** \n**Daily, monthly, and annual data:** \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9302045353454121,
+      "result": {
+        "original_header": "Raster plots",
+        "type": "Text_excerpt",
+        "value": "You can easily make a quick plot of your data using the output of\n`prism_archive_ls()` or `prism_archive_subset()` with `pd_image()`.\n``` r\n# Plot the January 30-year average temperatures\njmean <- prism_archive_subset(\n  \"tmean\", \"monthly normals\", mon = 1, resolution = \"4km\"\n)\npd_image(jmean)\n```\n \nIt is easy to load the prism data with the raster package. This time we\nwill look at January temperature anomalies. To do this we will examine\nthe difference between January 2013 and the January 30-year normals.\nConveniently, we already downloaded these data. We just need to grab\nthem out of our archive.\n``` r\nlibrary(raster)\n#> Warning: package 'raster' was built under R version 4.4.2\n#> Loading required package: sp\n#> Warning: package 'sp' was built under R version 4.4.2\n# knowing the name of the files you are after allows you to find them in the \n# list of all files that exist\n# jnorm_name <- \"PRISM_tmean_30yr_normal_4kmM2_01_bil\"\n# j2013_name <- \"PRISM_tmean_stable_4kmM3_201301_bil\"\n# but we will use prism_archive_subset() to find the files we need\n\njnorm <- prism_archive_subset(\n  \"tmean\", \"monthly normals\", mon = 1, resolution = \"4km\"\n)\nj2013 <- prism_archive_subset(\"tmean\", \"monthly\", years = 2013, mon = 1)\n\n# raster needs a full path, not the \"short\" prism data name\njnorm <- pd_to_file(jnorm)\nj2013 <- pd_to_file(j2013)\n\n## Now we'll load the rasters.\njnorm_rast <- raster(jnorm)\nj2013_rast <- raster(j2013)\n\n# Now we can do simple subtraction to get the anomaly by subtracting 2014 \n# from the 30 year normal map\nanomCalc <- function(x, y) {\n  return(x - y)\n}\n\nanom_rast <- raster::overlay(j2013_rast,jnorm_rast,fun = anomCalc)\n\nplot(anom_rast)\n```\n \nThe plot shows that January 2013 was warmer than the average over the\nlast 30 years. It also shows how easy it is to use the raster library to\nwork with prism data. The package provides a simple framework to work\nwith a large number of rasters that you can easily download and\nvisualize or use with other data sets.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9171249709842161,
+      "result": {
+        "original_header": "Single grid cell plot",
+        "type": "Text_excerpt",
+        "value": "You can also visualize a single point across multiple prism data files\n(slice) using `pd_plot_slice()`. This procedure will take a set of\nrasters, create a \u201c`raster::stack`\u201d, extract data at a point, and then\ncreate a ggplot2 object. \nLet\u2019s now make a plot of January temperatures in Boulder between 1982\nand 2014. First we\u2019ll grab all the data from the US (downloaded in the\nprevious step), and then give our function a point to get data from. The\npoint must be a vector in the form of longitude, latitude. Because\n`pd_plot_slice()` returns a gg object, it can be combined with other\nggplot functions.\n``` r\nlibrary(ggplot2)\n# data already exist in the prism dl dir\nboulder <- c(-105.2797, 40.0176)\n\n# prism_archive_subset() will return prism data that matches the specified \n# variable, time step, years, months, days, etc.\nto_slice <- prism_archive_subset(\"tmean\", \"monthly\", mon = 1)\np <- pd_plot_slice(to_slice, boulder)\n\n# add a linear average and title\np + \n  stat_smooth(method=\"lm\", se = FALSE) + \n  theme_bw() + \n  ggtitle(\"Average January temperature in Boulder, CO 1982-2014\")\n#> `geom_smooth()` using formula = 'y ~ x'\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9097973521231231,
+      "result": {
+        "original_header": "leaflet map",
+        "type": "Text_excerpt",
+        "value": "Finally, the prism data are in a form that can be used with leaflet maps\n(with the help of the raster package). The [leaflet\npackage](https://CRAN.R-project.org/package=leaflet) allows you to\neasily make JavaScript maps using the [leaflet](https://leafletjs.com/)\nmapping framework using prism data. These can easily be hosted on\nwebsites like [Rpubs](https://rpubs.com/) or your own site. Here is a\nsimple example of plotting the [30-year normal for annual\ntemperature](https://rpubs.com/DistribEcology/122453). If you run this\ncode you will have an interactive map, instead of just the screen shot\nshown here.\n``` r\nlibrary(leaflet)\nlibrary(raster)\nlibrary(prism)\n\n# 30-year normal average temperature have already been downloaded for \nnorm <- prism_archive_subset(\n  \"tmean\", \"annual normals\", resolution = \"4km\"\n)\nrast <- raster(pd_to_file(norm))\n\n# Create color palette and plot\npal <- colorNumeric(\n  c(\"#0000FF\", \"#FFFF00\", \"#FF0000\"), \n  values(rast),\n  na.color = \"transparent\"\n)\n\nleaflet() %>% \n  addTiles(\n    urlTemplate = 'http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'\n  ) %>% \n  addRasterImage(rast, colors = pal, opacity=.65) %>% \n  addLegend(pal = pal, values = values(rast), title = \"Deg C\")\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Downloading data",
+        "parent_header": [
+          "`prism`"
+        ],
+        "type": "Text_excerpt",
+        "value": "Before downloading any data, set the directory that the prism data will\nbe saved to:\n\n``` r\nlibrary(prism)\n#> Be sure to set the download folder using `prism_set_dl_dir()`.\nprism_set_dl_dir(\"~/prismtmp\")\n```\n\nThis is now referred to as the \u201cprism archive\u201d. The `prism_archive_*()`\nfunctions allow the user to search through the archive. The prism\narchive contains \u201cprism data\u201d. The prism data are referred to by their\nfolder names, even though the \u201creal\u201d data are the .bil, .txt, and other\nfiles that exist in the folder. The prism data (`pd`) can be accessed\nusing the `pd_*()` functions.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Download 30-year normal data",
+        "parent_header": [
+          "`prism`",
+          "Downloading data"
+        ],
+        "type": "Text_excerpt",
+        "value": "Normals are based on the latest 30-year period; currently 1981 - 2010.\nNormals can be downloaded in two resolutions, 4km and 800m, and a\nresolution must be specified. They can be downloaded for a given day,\nmonth, vector of days/months, or annual averages for all 30 years.\n\n``` r\n# Download March 14 30-year average precip. Note the year is ignored\nget_prism_normals('ppt', '4km', day = as.Date('2025-03-14'))\n\n# Download the January - June 30-year averages at 4km resolution\nget_prism_normals(type=\"tmean\", resolution = \"4km\", mon = 1:6, keepZip = FALSE)\n\n# Download the 30-year annual average precip and annual average temperature\nget_prism_normals(\"ppt\", \"4km\", annual = TRUE, keepZip = FALSE)\nget_prism_normals(\"tmean\", \"4km\", annual = TRUE, keepZip = FALSE)\n```\n\nIf the archive has not already been set, calling any of the\n`get_prism_*()` functions will prompt the user to specify the directory.\nprism data are downloaded as zip files and then unzipped. If the\n`keepZip` argument is `TRUE` the zip file will remain on your machine,\notherwise it will be automatically deleted.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Download daily, monthly, and annual data",
+        "parent_header": [
+          "`prism`",
+          "Downloading data"
+        ],
+        "type": "Text_excerpt",
+        "value": "Let us download daily average temperatures from June 1 to June 14, 2013.\nWe can also download January average temperature data from 1982 to 2014.\nFinally, we will download annual average precipitation for 2000 to 2015.\n\n``` r\nget_prism_dailys(\n  type = \"tmean\", \n  minDate = \"2013-06-01\", \n  maxDate = \"2013-06-14\", \n  keepZip = FALSE\n)\nget_prism_monthlys(type = \"tmean\", year = 1982:2014, mon = 1, keepZip = FALSE)\nget_prism_annual(\"ppt\", years = 2000:2015, keepZip = FALSE)\n```\n\nNote that for daily data you need to give a well formed date string in\nthe form of \u201cYYYY-MM-DD\u201d.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/prism/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 26
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/prism/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/prism"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "prism"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/prism/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "prism"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://codecov.io/github/ropensci/prism/coverage.svg?branch=master"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/prism/master/man/figures/README-quick_plot-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/prism/master/man/figures/README-raster_math-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/prism/master/man/figures/README-plot_Boulder-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/prism/master/vignettes/leaflet_example.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "`prism`"
+        ],
+        "type": "Text_excerpt",
+        "value": "prism is available on CRAN:\n\n``` r\ninstall.packages(\"prism\")\n```\n\nOr the development version can be installed from GitHub with devtools:\n\n``` r\n# install.packages(\"devtools\")\nlibrary(devtools)\ninstall_github(\"ropensci/prism\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/prism/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/prism/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/prism/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "r, r-package, rstats"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "r",
+          "rstats",
+          "r-package"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "YEAR: 2015\nCOPYRIGHT HOLDER: Edmund Hart and Kendon Bell"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "prism"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "prism: Access Data from the Oregon State Prism Climate Project"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+        "type": "String",
+        "value": "prism"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 133513,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/prism/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/prism/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/prism/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rabutler-usbr",
+          "type": "User"
+        },
+        "date_created": "2025-03-24T18:13:16Z",
+        "date_published": "2025-03-26T14:59:53Z",
+        "description": "# prism 0.2.3\r\n\r\n* Changed `prism_check_dl_dir()` so that it no longer suggests ~/prismtmp as a default. The user must specify where the data should be downloaded to either using `prism_set_dl_dir()` or via the prompts in `prism_check_dl_dir()`. Additionally, if following the prompts in `prism_check_dl_dir()`, if a user specifies a folder that does not exist, then it confirms that user wants the folder to be created. ",
+        "html_url": "https://github.com/ropensci/prism/releases/tag/v0.2.3",
+        "name": "v0.2.3",
+        "release_id": 208434007,
+        "tag": "v0.2.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/prism/tarball/v0.2.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/prism/releases/208434007",
+        "value": "https://api.github.com/repos/ropensci/prism/releases/208434007",
+        "zipball_url": "https://api.github.com/repos/ropensci/prism/zipball/v0.2.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rabutler-usbr",
+          "type": "User"
+        },
+        "date_created": "2025-03-18T19:39:07Z",
+        "date_published": "2025-03-19T16:16:15Z",
+        "description": "# prism 0.2.2 \r\n\r\n**Released March 18, 2025**\r\n\r\n## Minor Enhancements (non-API breaking changes)\r\n\r\n* Added solar radiation (clear sky), solar radiation (sloped), solar radiation (total), and cloud transmittance as available variables to download for monthly and annual normals. The variables are `solclear`, `solslope`, `soltotal`, and `soltrans`. (#130, @brownag)\r\n* Added ability to download daily normals for all variables except solar radiation (clear sky), solar radiation (sloped), solar radiation (total), and cloud transmittance (#123). The `day` parameter was added to `get_prism_dailys()` to specify which days to get the normals for. It was added as the last parameter so previous code that does not specify arguments by name will still work. Made sure all `pd_get_*()` functions work with daily normals.\r\n* Added a better error message when the PRISM webservice is down (not returning status 200). (#122)\r\n\r\n## Bug Fixes and Clean Up\r\n\r\n* Fixed examples in the `prism_archive_subset()` to use correct syntax for a range of years. (#128, @Archaeo-Programmer)\r\n* Internal updates to meet ROpenSci style guide including removing uses of `sapply()`, removing uses of `1:length(...)`, and removing global assignment inside `prism_webservice()`\r\n* Documented return value for `pd_stack()`, `prism_set_dl_dir()` ,`pd_to_file()`, `pd_get_type()` & `get_prism_*()` functions.\r\n* Added examples to documentation for `pd_to_file()`, `prism_archive_clean()`, `prism_archive_verify()`, `prism_set_dl_dir()`, & `pd_get_*()` functions.",
+        "html_url": "https://github.com/ropensci/prism/releases/tag/v0.2.2",
+        "name": "v0.2.2",
+        "release_id": 206905545,
+        "tag": "v0.2.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/prism/tarball/v0.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/prism/releases/206905545",
+        "value": "https://api.github.com/repos/ropensci/prism/releases/206905545",
+        "zipball_url": "https://api.github.com/repos/ropensci/prism/zipball/v0.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rabutler-usbr",
+          "type": "User"
+        },
+        "date_created": "2023-10-18T02:48:01Z",
+        "date_published": "2023-10-19T15:26:22Z",
+        "description": "**Released October 17, 2023**\r\n\r\n## Minor Enhancements\r\n\r\n* Added `service` parameter to `get_prism_dailys()`, `get_prism_monthlys()`, and `get_prism_annual()`, so user can provide subscription based URLs, instead of default public available 4km data. (@adamlilith)\r\n* Changed defaults in get data functions (#104)\r\n  * `get_prism_monthlys()` \r\n    * `mon` now defaults to `1:12`, so default now downloads all months for the specified years\r\n    * `years` no longer has a default of `NULL`, so user will understand it has to be provided\r\n  * `get_prism_annual()`\r\n    * `years` no longer has a default of `NULL`, so user will understand it has to be provided\r\n  * Minor updates to documentation of `mon` and `years` parameters\r\n\r\n## Bug Fixes and Clean Up\r\n\r\n* Fixed CRAN notes\r\n  * Removed LazyData and LazyLoad from Description to fix CRAN note.\r\n  * Removed lubridate from imports to fix CRAN note.\r\n* Removed vignette that depended on too many other libraries; did not want to add them all to Suggests and also relied on external shape file. This may be linked to from README in the future. \r\n* Updated error message in `pd_image()` when input has length of 0.\r\n* Fixed documentation for `get_prism_normals()` to reference the new period (1991-2020). (#111)\r\n* Updated error message in `get_prism_dailys()` if a date before Jan. 1, 1981 is provided.\r\n* Deprecated `check` parameter in `get_prism_dailys()` as it does not exist in monthly or annual functions. (#116)\r\n* Removed purrr from imports by switching one call from `purrr:map()` to `lapply()`.\r\n",
+        "html_url": "https://github.com/ropensci/prism/releases/tag/v0.2.1",
+        "name": "prism 0.2.1",
+        "release_id": 125827002,
+        "tag": "v0.2.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/prism/tarball/v0.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/prism/releases/125827002",
+        "value": "https://api.github.com/repos/ropensci/prism/releases/125827002",
+        "zipball_url": "https://api.github.com/repos/ropensci/prism/zipball/v0.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rabutler-usbr",
+          "type": "User"
+        },
+        "date_created": "2020-12-10T17:15:54Z",
+        "date_published": "2020-12-10T17:17:10Z",
+        "description": "# prism 0.2.0\r\n\r\n**Published December 5, 2020**\r\n\r\nThanks to @jsta for updating the README and helping with several other under the hood fixes. \r\n\r\n## Breaking Changes\r\n\r\n* `prism_webservice()` is no longer exported as it is wrapped by `get_prism_*()` functions, and requires a correctly specified url. It can still be called with `prism:::prism_webservice()` if users really need it. (#83)\r\n* `pr_parse()` is no longer exported. Use `pd_get_name()` or `pd_get_date()` instead. \r\n\r\n\r\n## Major Updates\r\n\r\nThere are two overall major updates with this release. (1) All functions should work with all temporal periods and all variables; previously some functions only worked with daily data and not all variables were able to be downloaded from the prism website. (2) A new API was implemented that results in many functions being deprecated in favor of the updated naming convention. This change was intended to provide consistent names for functions that apply to different steps in the work flow implemented in this package. The details of these changes are:\r\n\r\n* Users can now download vpdmin, vpdmax, and tdmean variables for 30-year normals, daily, monthly, and annual data. (#68)\r\n* There are now several functions (`prism_*_dl_dir()`) that set and check the prism download directory. These are hopefully easier to remember than using the base R `options()` and `getOption()` functions and the prism option variable name \"prism.path\". \r\n  * `prism_check_dl_dir()` replaces `check_path()`, which is deprecated and will be removed in the next release.\r\n* The prism data are downloaded to this directory and then referred to as the \"prism archive\". These are the `prism_archive_*()` functions.\r\n  * New function: `prism_archive_subset()`. This makes it much easier to get the data for a specific type/temporal period from the prism archive. (#69)\r\n  * `prism_archive_ls()` replaces `ls_prism_data()`, which will be removed in a future release. \r\n    * The return type and options changed from `ls_prism_data()` to `prism_archive_ls()`, which now always returns only folder names as a vector, instead of a data.frame that could have between 1 and 3 columns.\r\n    * The previous behavior can be achieved by applying new functions (`pd_get_name()` and `pd_to_file()`) to the vector returned by `prism_archive_ls()`. \r\n  * `prism_archive_clean()` replaces `del_early_prov()`, which will be removed in a future release. It also now works with all time steps and prompts user to select which folders will be removed before removing them (when R is in interactive mode). (#89)\r\n  * `prism_archive_verify()` replaces `check_corrupt()`, which will be removed in a future release. It also now works with time steps other than daily and it gains a `download_corrupt` argument that controls whether corrupt files are automatically re-downloaded.\r\n* `prism_archive_ls()` and `prism_archive_pd()` both return vectors of prism data folder names, i.e., prism data, i.e., `pd`. There are a number of functions that act on the prism data. These are the `pd_*()` functions. \r\n  * `pd_image()` replaces `prism_image()`.\r\n  * `pd_plot_slice()` replaces `prism_slice()`.\r\n  * `pd_stack()` replaces `prism_stack()`.\r\n  * `pd_get_station_md()` replaces `get_prism_station_md()`. (#88)\r\n  * `prism_md()` will be removed in a future release. It is replaced by:\r\n    * `pd_get_name()`, which is equivalent to `prism_md(f, FALSE)`.\r\n    * `pd_get_date()`, which is equivalent to `prism_md(f, TRUE)`.\r\n  * Two new functions were added that convert the prism data to a full absolute path (`pd_to_file()`) and get the type (parameter) of the prism data (`pd_get_type()`).\r\n  \r\n\r\n## Other Changes\r\n\r\n* The way pre 1981 data is handled has been updated. \r\n  * `get_prism_annual()` and `get_prism_monthlys()` gain a `keep_pre81_months` parameter. This lets the user determine if all of the monthly and annual data are kept, since the download includes all 12 months + the annual data for years before 1981. If this is `TRUE` then all monthly data are kept, instead of only those that were specified in the current call to `get_prism_*()`. (#82)\r\n  * Because pre-1981 data might already have been downloaded based on `keep_pre81_months` parameter in previous downloads, the download functions now check that pre-1981 data does not exist before downloading it. To do this, `prism_webservice()` and `prism_check()` gain a `pre81_months` parameter, which allows the functions to know which months were requested for downloading. (#81)\r\n* The prism web service only allows a user to download the same data twice in a 24-hour period. The download functions now report when the user has exceeded the allowable number of attempts to download the same file (in one day). If a user tries to download the same file more than two times in one day, the message is posted as a warning and the returned text file is saved in the prism archive. This is not posted as an error so that if a query of multiple files runs into this issue, it does not abort the full query. Another warning posts if the unzipped folder is empty. (#80)\r\n* `prism_check()` is deprecated and will be no longer be exported in the next release.\r\n* `get_prism_normals()` will now error if neither monthly nor annual data are specified to be downloaded and will download monthly and annual data simultaneously if asked to do so. (#77)\r\n* all `get_prism_*()` functions are documented in same help page. (#79)\r\n* Help pages for non-exported functions have been removed.\r\n* More tests were added. Up to 50% coverage now. Some tests are only run locally to ensure prism download limits are not exceeded. \r\n* `pd_get_station_md()` (formerly `get_prism_station_md()`) now reports a warning if not all requested dates exist in the metadata data frame. (#87 related). It also now works for monthly and normals; not solely daily prism data. \r\n* `pd_get_md()` was added to parse .info.txt metadata, by converting an existing internal function. (#88)\r\n* `prism_archive_clean()` (formerly `del_early_prov()`) now invisibly returns the folders that it removes.\r\n* `pd_image()` (formerly `prism_image()`) invisibly returns the `gg` object it creates. It also shows the units for the prism variable in the fill legend. (#99)",
+        "html_url": "https://github.com/ropensci/prism/releases/tag/v0.2.0",
+        "name": "v0.2.0",
+        "release_id": 35111888,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/prism/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/prism/releases/35111888",
+        "value": "https://api.github.com/repos/ropensci/prism/releases/35111888",
+        "zipball_url": "https://api.github.com/repos/ropensci/prism/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rabutler-usbr",
+          "type": "User"
+        },
+        "date_created": "2018-12-10T17:49:53Z",
+        "date_published": "2018-12-10T22:59:43Z",
+        "description": "# prism v0.1.0\r\n\r\n## Minor changes\r\n\r\n* New functions\r\n    - `del_early_prov()` searches the download folder for duplicated PRISM data and keeps only the newest version.\r\n    - `get_prism_station_md()` extracts metadata from daily PRISM data.\r\n* `get_prism_dailys ()` gains a `check` parameter that allows the user to specify how prism files are checked.\r\n\r\n\r\n## Bug fixes\r\n\r\n* `get_prism_monthlys()` can now download 1981 data. (@sdtaylor #59, #63)\r\n* `get_prism_annual()` can now download pre 1981 data by itself. (@rabutler #64)\r\n* `get_prism_dailys()` now correctly sets the progress bar.\r\n* fixed bug in `gen_dates()` so that `get_prism_dailys()` works with only the `dates` parameter specified. (@rabutler #66)\r\n\r\n## Under the hood\r\n\r\n* added internal `gen_dates()` function for determining the specified dates (either from `minDate` and `maxDate`. or `dates`) used by the `get_prism_*()` functions.\r\n* added tests for `gen_dates()` .",
+        "html_url": "https://github.com/ropensci/prism/releases/tag/v0.1.0",
+        "name": "v0.1.0",
+        "release_id": 14453534,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/prism/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/prism/releases/14453534",
+        "value": "https://api.github.com/repos/ropensci/prism/releases/14453534",
+        "zipball_url": "https://api.github.com/repos/ropensci/prism/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:40:46",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 61
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.2.3.9000"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.2.1.9000"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/prism/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

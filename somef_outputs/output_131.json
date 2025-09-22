@@ -1,0 +1,320 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Mathematics"
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Stuttgart",
+        "identifier": "https://orcid.org/0000-0002-7543-5944",
+        "type": "String",
+        "value": "Vidushi Arora"
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/izus-fokus/mathJax4Dataverse"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/izus-fokus/mathJax4Dataverse.git"
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-06-28T09:27:12Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-06-28T10:01:47Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MathJax integration into a Dataverse instance"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A script to render Latex-Formulas in Dataverse Dataset pages"
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8747676180498836,
+      "result": {
+        "original_header": "mathJax4Dataverse",
+        "type": "Text_excerpt",
+        "value": "This repository consists of a script (customJax.js) to process specific HTML elements by mathjax and convert LaTeX code with mathematical formulas into pretty rendered math equations. This script can be tested with the example.html page and integrated into a Dataverse installation via [a custom footer](https://guides.dataverse.org/en/latest/installation/config.html#custom-footer) (custom-footer-js.html). The custom footer file renders LaTeX code in the metadata fields **Title** and **Description** (for this, we are using HTML-Elements with the ids \"title\", \"dsDescription\", \"metadata_title\", \"metadata_dsDescription\", see line 11 in custom-footer-js.html to change).  \n"
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/izus-fokus/mathJax4Dataverse/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/izus-fokus/mathJax4Dataverse/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "izus-fokus/mathJax4Dataverse"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mathJax4Dataverse"
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/izus-fokus/mathJax4Dataverse/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Rendering",
+          "MathJax"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2023 University of Stuttgart \u00b7 IZUS \u00b7 FoKUS\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mathJax4Dataverse"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mathJax4Dataverse"
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "izus-fokus"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 3846,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 1643,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "type": "Programming_language",
+        "value": "JavaScript",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MathJax",
+        "type": "Software_application",
+        "value": "MathJax",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/izus-fokus/mathJax4Dataverse/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:45:54",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "type": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "static-website"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ]
+}

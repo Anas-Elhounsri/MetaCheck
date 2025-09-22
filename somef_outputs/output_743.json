@@ -1,0 +1,4214 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<html>\n<!-- This manual is for FFTW\n(version 3.3.10, 10 December 2020).\n\nCopyright (C) 2003 Matteo Frigo.\n\nCopyright (C) 2003 Massachusetts Institute of Technology.\n\nPermission is granted to make and distribute verbatim copies of this\nmanual provided the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\nmanual under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.\n\nPermission is granted to copy and distribute translations of this manual\ninto another language, under the above conditions for modified versions,\nexcept that this permission notice may be stated in a translation\napproved by the Free Software Foundation. -->\n<!-- Created by GNU Texinfo 6.7, http://www.gnu.org/software/texinfo/ -->\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n<title>Acknowledgments (FFTW 3.3.10)</title>\n\n<meta name=\"description\" content=\"Acknowledgments (FFTW 3.3.10)\">\n<meta name=\"keywords\" content=\"Acknowledgments (FFTW 3.3.10)\">\n<meta name=\"resource-type\" content=\"document\">\n<meta name=\"distribution\" content=\"global\">\n<meta name=\"Generator\" content=\"makeinfo\">\n<link href=\"index.html\" rel=\"start\" title=\"Top\">\n<link href=\"Concept-Index.html\" rel=\"index\" title=\"Concept Index\">\n<link href=\"index.html#SEC_Contents\" rel=\"contents\" title=\"Table of Contents\">\n<link href=\"index.html\" rel=\"up\" title=\"Top\">\n<link href=\"License-and-Copyright.html\" rel=\"next\" title=\"License and Copyright\">\n<link href=\"Generating-your-own-code.html\" rel=\"prev\" title=\"Generating your own code\">\n<style type=\"text/css\">\n<!--\na.summary-letter {text-decoration: none}\nblockquote.indentedblock {margin-right: 0em}\ndiv.display {margin-left: 3.2em}\ndiv.example {margin-left: 3.2em}\ndiv.lisp {margin-left: 3.2em}\nkbd {font-style: oblique}\npre.display {font-family: inherit}\npre.format {font-family: inherit}\npre.menu-comment {font-family: serif}\npre.menu-preformatted {font-family: serif}\nspan.nolinebreak {white-space: nowrap}\nspan.roman {font-family: initial; font-weight: normal}\nspan.sansserif {font-family: sans-serif; font-weight: normal}\nul.no-bullet {list-style: none}\n-->\n</style>\n\n\n</head>\n\n<body lang=\"en\">\n<span id=\"Acknowledgments\"></span><div class=\"header\">\n<p>\nNext: <a href=\"License-and-Copyright.html\" accesskey=\"n\" rel=\"next\">License and Copyright</a>, Previous: <a href=\"Installation-and-Customization.html\" accesskey=\"p\" rel=\"prev\">Installation and Customization</a>, Up: <a href=\"index.html\" accesskey=\"u\" rel=\"up\">Top</a> &nbsp; [<a href=\"index.html#SEC_Contents\" title=\"Table of contents\" rel=\"contents\">Contents</a>][<a href=\"Concept-Index.html\" title=\"Index\" rel=\"index\">Index</a>]</p>\n</div>\n<hr>\n<span id=\"Acknowledgments-1\"></span><h2 class=\"chapter\">11 Acknowledgments</h2>\n\n<p>Matteo Frigo was supported in part by the Special Research Program SFB\nF011 &ldquo;AURORA&rdquo; of the Austrian Science Fund FWF and by MIT Lincoln\nLaboratory.  For previous versions of FFTW, he was supported in part by the\nDefense Advanced Research Projects Agency (DARPA), under Grants\nN00014-94-1-0985 and F30602-97-1-0270, and by a Digital Equipment\nCorporation Fellowship.  \n</p>\n<p>Steven G. Johnson was supported in part by a Dept.&nbsp;of Defense NDSEG\nFellowship, an MIT Karl Taylor Compton Fellowship, and by the Materials\nResearch Science and Engineering Center program of the National Science\nFoundation under award DMR-9400334.\n</p>\n<p>Code for the Cell Broadband Engine was graciously donated to the FFTW\nproject by the IBM Austin Research Lab and included in fftw-3.2.  (This\ncode was removed in fftw-3.3.)\n</p>\n<p>Code for the MIPS paired-single SIMD support was graciously donated to\nthe FFTW project by CodeSourcery, Inc.\n</p>\n<p>We are grateful to Sun Microsystems Inc.&nbsp;for its donation of a\ncluster of 9 8-processor Ultra HPC 5000 SMPs (24 Gflops peak). These\nmachines served as the primary platform for the development of early\nversions of FFTW.\n</p>\n<p>We thank Intel Corporation for donating a four-processor Pentium Pro\nmachine.  We thank the GNU/Linux community for giving us a decent OS to\nrun on that machine.\n</p>\n<p>We are thankful to the AMD corporation for donating an AMD Athlon XP 1700+\ncomputer to the FFTW project.\n</p>\n<p>We thank the Compaq/HP testdrive program and VA Software Corporation\n(SourceForge.net) for providing remote access to machines that were used\nto test FFTW.\n</p>\n<p>The <code>genfft</code> suite of code generators was written using Objective\nCaml, a dialect of ML.  Objective Caml is a small and elegant language\ndeveloped by Xavier Leroy.  The implementation is available from\n<a href=\"http://caml.inria.fr/\"><code>http://caml.inria.fr/</code></a>.  In previous\nreleases of FFTW, <code>genfft</code> was written in Caml Light, by the same\nauthors.  An even earlier implementation of <code>genfft</code> was written in\nScheme, but Caml is definitely better for this kind of application.\n<span id=\"index-Caml-1\"></span>\n<span id=\"index-LISP\"></span>\n</p>\n\n<p>FFTW uses many tools from the GNU project, including <code>automake</code>,\n<code>texinfo</code>, and <code>libtool</code>.\n</p>\n<p>Prof.&nbsp;Charles E.&nbsp;Leiserson of MIT provided continuous support and\nencouragement.  This program would not exist without him.  Charles also\nproposed the name &ldquo;codelets&rdquo; for the basic FFT blocks.\n<span id=\"index-codelet-3\"></span>\n</p>\n\n<p>Prof.&nbsp;John D.&nbsp;Joannopoulos of MIT demonstrated continuing tolerance of\nSteven&rsquo;s &ldquo;extra-curricular&rdquo; computer-science activities, as well as\nremarkable creativity in working them into his grant proposals.\nSteven&rsquo;s physics degree would not exist without him.\n</p>\n<p>Franz Franchetti wrote SIMD extensions to FFTW 2, which eventually\nled to the SIMD support in FFTW 3.\n</p>\n<p>Stefan Kral wrote most of the K7 code generator distributed with FFTW\n3.0.x and 3.1.x.\n</p>\n<p>Andrew Sterian contributed the Windows timing code in FFTW 2.  \n</p>\n<p>Didier Miras reported a bug in the test procedure used in FFTW 1.2.  We\nnow use a completely different test algorithm by Funda Ergun that does\nnot require a separate FFT program to compare against.\n</p>\n<p>Wolfgang Reimer contributed the Pentium cycle counter and a few fixes\nthat help portability.\n</p>\n<p>Ming-Chang Liu uncovered a well-hidden bug in the complex transforms of\nFFTW 2.0 and supplied a patch to correct it.\n</p>\n<p>The FFTW FAQ was written in <code>bfnn</code> (Bizarre Format With No Name)\nand formatted using the tools developed by Ian Jackson for the Linux\nFAQ.\n</p>\n<p><em>We are especially thankful to all of our users for their\ncontinuing support, feedback, and interest during our development of\nFFTW.</em>\n</p>\n<hr>\n<div class=\"header\">\n<p>\nNext: <a href=\"License-and-Copyright.html\" accesskey=\"n\" rel=\"next\">License and Copyright</a>, Previous: <a href=\"Installation-and-Customization.html\" accesskey=\"p\" rel=\"prev\">Installation and Customization</a>, Up: <a href=\"index.html\" accesskey=\"u\" rel=\"up\">Top</a> &nbsp; [<a href=\"index.html#SEC_Contents\" title=\"Table of contents\" rel=\"contents\">Contents</a>][<a href=\"Concept-Index.html\" title=\"Index\" rel=\"index\">Index</a>]</p>\n</div>\n\n\n\n</body>\n</html>\n"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/doc/html/Acknowledgments.html",
+      "technique": "file_exploration"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": null,
+        "name": "Aymeric Blot",
+        "type": "Agent",
+        "value": "Aymeric Blot"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "aymeric.blot@univ-rennes.fr",
+        "name": null,
+        "type": "Agent",
+        "value": null
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "leberre@cril-lab.fr",
+        "type": "String",
+        "value": "Daniel Le Berre"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "parrain@cril.fr",
+        "type": "String",
+        "value": "Anne Parrain"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "sroussel@cril.fr",
+        "type": "String",
+        "value": "St\u00e9phanie Roussel"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "lonca@cril.fr",
+        "type": "String",
+        "value": "Emmanuel Lonca"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "wallon@cril.fr",
+        "type": "String",
+        "value": "Romain Wallon"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          {
+            "email": "daniel.leberre@sat4j.org",
+            "name": "Daniel Le Berre",
+            "organization": "CRIL CNRS 8188",
+            "url": "http://www.sat4j.org/",
+            "value": "Daniel Le Berre"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "leberre@cril-lab.fr",
+        "type": "String",
+        "value": "Daniel Le Berre"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "parrain@cril.fr",
+        "type": "String",
+        "value": "Anne Parrain"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "sroussel@cril.fr",
+        "type": "String",
+        "value": "St\u00e9phanie Roussel"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "lonca@cril.fr",
+        "type": "String",
+        "value": "Emmanuel Lonca"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "wallon@cril.fr",
+        "type": "String",
+        "value": "Romain Wallon"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Authors",
+        "last_name": "of FFTW (reachable at fftw@fftw.org):",
+        "name": "Authors of FFTW (reachable at fftw@fftw.org):",
+        "type": "Agent",
+        "value": "Authors of FFTW (reachable at fftw@fftw.org):"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "athena@fftw.org",
+        "given_name": "Matteo",
+        "last_name": "Frigo",
+        "name": "Matteo Frigo",
+        "type": "Agent",
+        "value": "Matteo Frigo"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "stevenj@alum.mit.edu",
+        "given_name": "Steven",
+        "last_name": "G. Johnson",
+        "name": "Steven G. Johnson",
+        "type": "Agent",
+        "value": "Steven G. Johnson"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "skral@fftw.org",
+        "given_name": "Stefan",
+        "last_name": "Kral",
+        "name": "Stefan Kral",
+        "type": "Agent",
+        "value": "Stefan Kral"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "added",
+        "last_name": "in fftw-3.0 and removed in fftw-3.2.",
+        "name": "added in fftw-3.0 and removed in fftw-3.2.",
+        "type": "Agent",
+        "value": "added in fftw-3.0 and removed in fftw-3.2."
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Romain",
+        "last_name": "Dolbeau contributed support for AVX512 and KCvi.",
+        "name": "Romain Dolbeau contributed support for AVX512 and KCvi.",
+        "type": "Agent",
+        "value": "Romain Dolbeau contributed support for AVX512 and KCvi."
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Erik",
+        "last_name": "Lindahl contributed support for AVX2 and Power8 VSX.",
+        "name": "Erik Lindahl contributed support for AVX2 and Power8 VSX.",
+        "type": "Agent",
+        "value": "Erik Lindahl contributed support for AVX2 and Power8 VSX."
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Support",
+        "last_name": "for the Cell Broadband Engine was graciously donated by the",
+        "name": "Support for the Cell Broadband Engine was graciously donated by the",
+        "type": "Agent",
+        "value": "Support for the Cell Broadband Engine was graciously donated by the"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "IBM",
+        "last_name": "Austin Research Lab, which was added in fftw-3.2 and removed in",
+        "name": "IBM Austin Research Lab, which was added in fftw-3.2 and removed in",
+        "type": "Agent",
+        "value": "IBM Austin Research Lab, which was added in fftw-3.2 and removed in"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "fftw-3.3.",
+        "last_name": null,
+        "name": "fftw-3.3.",
+        "type": "Agent",
+        "value": "fftw-3.3."
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Support",
+        "last_name": "for MIPS64 paired-single SIMD instructions was graciously",
+        "name": "Support for MIPS64 paired-single SIMD instructions was graciously",
+        "type": "Agent",
+        "value": "Support for MIPS64 paired-single SIMD instructions was graciously"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "donated by CodeSourcery, Inc.",
+        "type": "Agent",
+        "value": "donated by CodeSourcery, Inc."
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/AUTHORS",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jimbou/Optimised-fitness-functions-fse"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-09-10T12:03:40Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-05-20T09:26:57Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Artifacts for Optimised Fitness Functions for automated runtime improvement of software, an application on magpie"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Machine Automated General Performance Improvement via Evolution of software"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "\nSat4j is a full featured boolean reasoning library designed to bring state-of-the-art SAT technologies to the Java Virtual Machine.\n  "
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "\nSat4j is a full featured boolean reasoning library designed to bring state-of-the-art SAT technologies to the Java Virtual Machine.\n  "
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jimbou/Optimised-fitness-functions-fse/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "Optimised Fitness Functions for runtime improvement , an application on MAGPIE"
+        ],
+        "type": "Text_excerpt",
+        "value": "Everything you need to know about Magpie and the new Optimised Fitness Function and retry parameter.\n\n**Results**\n- [Results for local search approach for 14 measure,  retry combos on 11 scenarios](./local_search_results/)\n- [Results for genetic programming approach for 14 measure, 5 retry combos on 11 scenarios](./genetic_programming_results/)\n\n**Optimised Fitness Functions**\n\n- [Consistency - corellation experiments](./docs/results/initial_experiments.md)\n- [Guide to running a new benchmark](./docs/results/running_new_benchmark.md)\n- [Guide to create a scenario file](./docs/results/scenario_file_guide.md)\n- [Analysis Methodology](./docs/results/analysis_methodology.md)\n- [Understanding the Results](./docs/results/understanding_results.md)\n- [Test on Irace](./irace/)\n**Tutorials**\n\n- [Quick start](./docs/tutorials/quick_start.md) **(start here!)**\n- [Search for improved variants](./docs/tutorials/search.md)\n\n**How-to guides**\n\n- [Write a custom fitness function](./docs/howto/custom_fitness_function.md)\n\n**Explanations**\n\n- [Project structure](./docs/explanations/project_structure.md)\n\n**Reference guides**\n\n- [Entry points](./docs/reference/entry_points.md)\n- [Fitness functions](./docs/reference/fitness_functions.md)\n- [Scenario files](./docs/reference/scenario_file.md)\n- [Algorithm configuration model](./docs/params_model.md)\n\n\n**For ParamILS experiments**\n- [Go to this folder](./ParamILS_experiments)\n\n\n**For LLM based experiments**\n- [Go to this folder](./LLM_experiments)\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/README",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jimbou/Optimised-fitness-functions-fse/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/jimbou/Optimised-fitness-functions-fse/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "jimbou/Optimised-fitness-functions-fse"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Optimised Fitness Functions for runtime improvement , an application on MAGPIE"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/README",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/org.sat4j.core/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/org.sat4j.core/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/org.sat4j.br4cp/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/org.sat4j.br4cp/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/org.sat4j.maxsat/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/org.sat4j.maxsat/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/org.sat4j.pb/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/org.sat4j.pb/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/org.sat4j.core/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/org.sat4j.core/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/org.sat4j.br4cp/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/org.sat4j.br4cp/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/org.sat4j.maxsat/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/org.sat4j.maxsat/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/org.sat4j.pb/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/org.sat4j.pb/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/org.sat4j.sat/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/org.sat4j.sat/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/org.sat4j.sat/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/org.sat4j.sat/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/magpie/core/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/magpie/core/setup.py",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/run_multiple.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/irace/target-times-20.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/irace/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/irace/minisat-arena/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/run_single.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/run_single_with_code.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/run2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/run_single.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/run_single_with_code.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/run2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/lpg/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/magpie/clean.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/magpie/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-rb/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp3/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp3/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp3/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp3/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp3/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp3/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp3/necessary/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp3/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp3/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/zlib/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/run_fixed_advanced.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/scipy/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-java/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-java/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/example.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/buildSite.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/example.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/buildSite.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp2/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp2/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp2/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp2/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp2/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp2/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp2/necessary/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp2/necessary/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp2/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp/necessary/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-cpp/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-py/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-py/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-py/init_bloat.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-py/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-py/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-py/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/build.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/clean.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/necessary/run_rapl_energy%20copy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/necessary/run_custom%20copy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/necessary/build.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/necessary/clean.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat_hack/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/run_single.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/run_single_with_code.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/run2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/necessary/run_single.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/necessary/run_single_with_code.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/necessary/run2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/necessary/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/minisat2/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-c/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-c/run_rapl_energy_ram.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-c/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-c/run_rapl_energy_uncore.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-c/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-c/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/triangle-c/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/create_example.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/run_initial.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/total_inital.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/run_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/helpers/perf_test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/helpers/run_rapl_energy_ram.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/helpers/pythonenv.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/helpers/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/helpers/create_example.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/helpers/run_rapl_energy_uncore.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/helpers/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/helpers/triangle/create_examples_old.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/useful_scripts/helpers/triangle/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/hmmer/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/hmmer/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/hmmer/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/hmmer/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/hmmer/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/bootstrap.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/ltmain.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/support/twovers.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/api/f03api.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/mpi/f03-wrap.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fftw-3.3.10/mpi/f03api.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/run%20copy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/final_needed/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/final_needed/run_initial.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/final_needed/total_inital.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/final_needed/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_22.5/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_22.5/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_22.5/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_22.5/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_22.5/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_15/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_15/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_15/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_15/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_15/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_17.5/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_17.5/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_17.5/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_17.5/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_17.5/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_7.5/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_7.5/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_7.5/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_7.5/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_7.5/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_5/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_5/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_5/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_5/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_5/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_25/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_25/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_25/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_25/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_25/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_12.5/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_12.5/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_12.5/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_12.5/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_12.5/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_20/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_20/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_20/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_20/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_20/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_10/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_10/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_10/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_10/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/unnecessary/cpu_10/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/consistency%20analysis%20on%20magpie%20bench/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/results/sha/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/results/sha/runme_large.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/results/sha/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/results/sha/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/results/sha/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/results/sha/runme_small.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/results/sha/run-all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/results/sha/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/gzip/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/gzip/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/gzip/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/gzip/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/gzip/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bzip2/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bzip2/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bzip2/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bzip2/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bzip2/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fft/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fft/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fft/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fft/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/fft/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/blackscholes/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/blackscholes/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/blackscholes/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/blackscholes/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/blackscholes/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bitcount/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bitcount/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bitcount/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bitcount/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bitcount/runme_small.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/bitcount/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/jpeg/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/jpeg/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/jpeg/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/jpeg/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/jpeg/runme_small.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/jpeg/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/jpeg/jpeg-6a/run-all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sqlite/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sqlite/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sqlite/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sqlite/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sqlite/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/lu/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/lu/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/lu/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/lu/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/lu/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sha/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sha/runme_large.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sha/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sha/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sha/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sha/runme_small.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sha/run-all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/consistency_corellation/sha/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_sat4j/run_all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_sat4j/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_sat4j/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_weka/run_all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_weka/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_weka/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/run_all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/necessary/run_rapl_energy%20copy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/necessary/run_custom%20copy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/necessary/build.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/necessary/clean.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat_hack/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_zlib/run_all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_zlib/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_zlib/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/useful_scripts/run_all_minisat.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/useful_scripts/run_all_scipy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/useful_scripts/run_multiple2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/useful_scripts/run_all_sat4j.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/useful_scripts/run_all_zlib.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/useful_scripts/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/useful_scripts/run_all_weka.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/useful_scripts/run_multiple.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/useful_scripts/run_all_minisat_hack.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/run_all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/run_single.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/run_single_with_code.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/run2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_minisat/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_lpg/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_lpg/run_all_lpg.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_lpg/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_scipy/run_all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_scipy/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/ParamILS_experiments/benchmarks/example_scipy/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/run_cpu.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_27.5/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_27.5/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_27.5/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_27.5/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_27.5/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_30/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_30/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_30/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_30/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_30/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_35/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_35/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_35/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_35/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_35/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_40/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_40/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_40/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_40/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_40/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_37.5/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_37.5/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_37.5/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_37.5/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_37.5/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_32.5/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_32.5/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_32.5/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_32.5/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/cpu_benchmarks/cpu_32.5/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/analysis/analysis.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "org.ow2.sat4j.org.ow2.sat4j.pom"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "org.ow2.sat4j.org.ow2.sat4j.pom"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/jimbou/Optimised-fitness-functions-fse/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/issues"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/issues"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/issues"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2023 Universit\u00e9 de Rennes\nCopyright (c) 2022 Universit\u00e9 du Littoral C\u00f4te d'Opale\nCopyright (c) 2019 UCL\nCopyright (c) 2018 COINSE KAIST (PyGGI)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Optimised-fitness-functions-fse"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SAT4J"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SAT4J"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "jimbou"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_distribution": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "magpie"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "org.ow2.sat4j.org.ow2.sat4j.pom"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 21415386,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "AGS Script",
+        "size": 20971520,
+        "type": "Programming_language",
+        "value": "AGS Script"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 11187928,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 3530434,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 1136537,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 1011571,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 897499,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "size": 633079,
+        "type": "Programming_language",
+        "value": "Java"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 380572,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Ruby",
+        "size": 346376,
+        "type": "Programming_language",
+        "value": "Ruby"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "OCaml",
+        "size": 254813,
+        "type": "Programming_language",
+        "value": "OCaml"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Fortran",
+        "size": 168318,
+        "type": "Programming_language",
+        "value": "Fortran"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "M4",
+        "size": 59941,
+        "type": "Programming_language",
+        "value": "M4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Roff",
+        "size": 58208,
+        "type": "Programming_language",
+        "value": "Roff"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Perl",
+        "size": 33440,
+        "type": "Programming_language",
+        "value": "Perl"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Raku",
+        "size": 24889,
+        "type": "Programming_language",
+        "value": "Raku"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CMake",
+        "size": 16921,
+        "type": "Programming_language",
+        "value": "CMake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "SAS",
+        "size": 13284,
+        "type": "Programming_language",
+        "value": "SAS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "WebAssembly",
+        "size": 13226,
+        "type": "Programming_language",
+        "value": "WebAssembly"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Module Management System",
+        "size": 12905,
+        "type": "Programming_language",
+        "value": "Module Management System"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Smalltalk",
+        "size": 10298,
+        "type": "Programming_language",
+        "value": "Smalltalk"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "PowerShell",
+        "size": 9033,
+        "type": "Programming_language",
+        "value": "PowerShell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Assembly",
+        "size": 8314,
+        "type": "Programming_language",
+        "value": "Assembly"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 1809,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "type": "Programming_language",
+        "value": "Java",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "type": "Programming_language",
+        "value": "Java",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/README"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "junit",
+        "type": "Software_application",
+        "value": "junit==4.13.2",
+        "version": "4.13.2"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mockito-core",
+        "type": "Software_application",
+        "value": "mockito-core==4.3.1",
+        "version": "4.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "junit",
+        "type": "Software_application",
+        "value": "junit.junit",
+        "version": "4.13.2"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mockito-core",
+        "type": "Software_application",
+        "value": "org.mockito.mockito-core",
+        "version": "4.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "junit",
+        "type": "Software_application",
+        "value": "junit==4.13.2",
+        "version": "4.13.2"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mockito-core",
+        "type": "Software_application",
+        "value": "mockito-core==4.3.1",
+        "version": "4.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Requirements",
+        "parent_header": [
+          "Optimised Fitness Functions for runtime improvement , an application on MAGPIE"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Unix (Linux/macOS/etc; untested on Windows)\n- Python 3.8+\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/README",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:53:53",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "tag": "1.1.0",
+        "type": "Release",
+        "value": "1.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "3.0.0-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "3.0.0-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "3.0.0-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/Optimised-fitness-functions-fse/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

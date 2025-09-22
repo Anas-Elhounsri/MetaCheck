@@ -1,0 +1,1336 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Kenneth Benoit"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2018",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "if (!exists(\"meta\") || is.null(meta)) \n    meta <- packageDescription(\"quanteda\")\nnote <- sprintf(\"R package version %s\", meta$Version)\n\nbibentry(bibtype = \"article\",\n         title = \"quanteda: An R package for the quantitative analysis of textual data\",\n         journal = \"Journal of Open Source Software\",\n         author = c(person(\"Kenneth\", \"Benoit\"),\n                    person(\"Kohei\", \"Watanabe\"),\n                    person(\"Haiyan\", \"Wang\"),\n                    person(\"Paul\", \"Nulty\"),\n                    person(\"Adam\", \"Obeng\"),\n                    person(\"Stefan\", \"M\u00fcller\"),\n                    person(\"Akitaka\", \"Matsuo\")),\n         doi = \"10.21105/joss.00774\",\n         url = \"https://quanteda.io\",\n         volume = 3,\n         number = 30,\n         pages = 774,\n         year = 2018\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Cite the package",
+        "parent_header": [
+          "How To\u2026"
+        ],
+        "type": "Text_excerpt",
+        "value": "Benoit, Kenneth, Kohei Watanabe, Haiyan Wang, Paul Nulty, Adam Obeng,\nStefan M\u00fcller, and Akitaka Matsuo. (2018) \u201c[quanteda: An R package for\nthe quantitative analysis of textual\ndata](https://www.theoj.org/joss-papers/joss.00774/10.21105.joss.00774.pdf)\u201d.\n*Journal of Open Source Software* 3(30), 774.\n<https://doi.org/10.21105/joss.00774>.\n\nFor a BibTeX entry, use the output from\n`citation(package = \"quanteda\")`.\n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/quanteda/quanteda"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/quanteda/quanteda.git"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contribute",
+        "parent_header": [
+          "How To\u2026"
+        ],
+        "type": "Text_excerpt",
+        "value": "Contributions in the form of feedback, comments, code, and bug reports\nare most welcome. How to contribute:\n\n- Fork the source code, modify, and issue a [pull\n  request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)\n  through the [project GitHub\n  page](https://github.com/quanteda/quanteda). See our [Contributor Code\n  of\n  Conduct](https://github.com/quanteda/quanteda/blob/master/CONDUCT.md)\n  and the all-important **quanteda** [Style\n  Guide](https://github.com/quanteda/quanteda/wiki/Style-guide).\n- Issues, bug reports, and wish lists: [File a GitHub\n  issue](https://github.com/quanteda/quanteda/issues).\n- Contact [the maintainer](mailto:kbenoit@lse.ac.uk) by email.\n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2012-08-15T10:15:43Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-05-04"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-05-04"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-05T16:26:50Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-05-04"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "An R package for the Quantitative Analysis of Textual Data"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+        "type": "String",
+        "value": "A fast, flexible, and comprehensive framework for \n    quantitative text analysis in R.  Provides functionality for corpus management,\n    creating and manipulating tokens and n-grams, exploring keywords in context, \n    forming and manipulating sparse matrices\n    of documents by features and feature co-occurrences, analyzing keywords, computing feature similarities and\n    distances, applying content dictionaries, applying supervised and unsupervised machine learning, \n    visually representing text and text analyses, and more."
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R package for quantitative analysis of textual data"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8190861411143441,
+      "result": {
+        "original_header": "About",
+        "type": "Text_excerpt",
+        "value": "**quanteda** is an R package for managing and analyzing text, created\nand maintained by [Kenneth Benoit](https://kenbenoit.net) and [Kohei\nWatanabe](https://blog.koheiw.net/). Its creation was funded by the\nEuropean Research Council grant ERC-2011-StG 283794-QUANTESS and its\ncontinued development is supported by the [Quanteda Initiative\nCIC](https://quanteda.org). \n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8252206838482772,
+      "result": {
+        "original_header": "**quanteda** version 4",
+        "type": "Text_excerpt",
+        "value": "The **quanteda** 4.0 is a major release that improves functionality and\nperformance and further improves function consistency by removing\npreviously deprecated functions. It also includes significant new\ntokeniser rules that make the default tokeniser smarter than ever, with\nnew Unicode and ICU-compliant rules enabling it to work more\nconsistently with even more languages. \n- an [article about the new external pointer tokens\n  objects](https://quanteda.io/articles/pkgdown/tokens_xptr.html);\n- an [article showing performance\n  benchmarks](https://quanteda.io/articles/pkgdown/benchmarks_xptr.html)\n  for the new external pointer tokens objects, as well as some of the\n  tokeniser improvements in v4; and\n- the [changelog for\n  v4](https://github.com/quanteda/quanteda/blob/master/NEWS.md#quanteda-40)\n  a full listing of the changes, improvements, and deprecations in v4.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8865626147843307,
+      "result": {
+        "original_header": "The **quanteda** family of packages",
+        "type": "Text_excerpt",
+        "value": "- [**quanteda**](https://github.com/quanteda/quanteda): contains all of\n  the core natural language processing and textual data management\n  functions\n- [**quanteda.textmodels**](https://github.com/quanteda/quanteda.textmodels):\n  contains all of the text models and supporting functions, namely the\n  `textmodel_*()` functions. This was split from the main package with\n  the v2 release\n- [**quanteda.textstats**](https://github.com/quanteda/quanteda.textstats):\n  statistics for textual data, namely the `textstat_*()` functions,\n  split with the v3 release\n- [**quanteda.textplots**](https://github.com/quanteda/quanteda.textplots):\n  plots for textual data, namely the `textplot_*()` functions, split\n  with the v3 release \n- [**quanteda.sentiment**](https://github.com/quanteda/quanteda.sentiment):\n  Functions and lexicons for sentiment analysis using dictionaries\n- [**quanteda.tidy**](https://github.com/quanteda/quanteda.tidy):\n  Extensions for manipulating document variables in core **quanteda**\n  objects using your favourite **tidyverse** functions \nand more to come.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9095845219422316,
+      "result": {
+        "original_header": "Enable parallelisation",
+        "type": "Text_excerpt",
+        "value": "**quanteda** takes advantage of parallel computing through the [TBB\n(Threading Building Blocks)\nlibrary](https://en.wikipedia.org/wiki/Threading_Building_Blocks) to\nspeed up computations. This guide provides step-by-step instructions on\nhow to set up your system for using Quanteda with parallel capabilities\non Windows, macOS, and Linux. \n- For Fedora, CentOS, RHEL: \n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/quanteda/quanteda/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/quanteda/quanteda/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/quanteda/quanteda/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 188
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/quanteda/quanteda/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "quanteda/quanteda"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://quanteda.io"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://zenodo.org/record/1219063#.WuxZzdbTUUQ"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/5424649"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.21105/joss.00774"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://joss.theoj.org/papers/10.21105/joss.00774/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install (binaries) from CRAN",
+        "parent_header": [
+          "How To\u2026"
+        ],
+        "type": "Text_excerpt",
+        "value": "The normal way from CRAN, using your R GUI or\n\n``` r\ninstall.packages(\"quanteda\") \n```\n\n**(New for quanteda v4.0)** For Linux users: Because all installations\non Linux are compiled, Linux users will first need to install the Intel\noneAPI Threading Building Blocks for parallel computing for installation\nto work.\n\nTo install TBB on Linux:\n\n``` bash\n# Fedora, CentOS, RHEL\nsudo yum install tbb-devel\n\n# Debian and Ubuntu\nsudo apt install libtbb-dev\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/quanteda/quanteda/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/quanteda/quanteda/issues"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "corpus, natural-language-processing, quanteda, r, text-analytics"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "text analysis",
+          "NLP",
+          "R"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The GNU General Public License is a free, copyleft license for\nsoftware and other kinds of works.\n\n  The licenses for most software and other practical works are designed\nto take away your freedom to share and change the works.  By contrast,\nthe GNU General Public License is intended to guarantee your freedom to\nshare and change all versions of a program--to make sure it remains free\nsoftware for all its users.  We, the Free Software Foundation, use the\nGNU General Public License for most of our software; it applies also to\nany other work released this way by its authors.  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthem if you wish), that you receive source code or can get it if you\nwant it, that you can change the software or use pieces of it in new\nfree programs, and that you know you can do these things.\n\n  To protect your rights, we need to prevent others from denying you\nthese rights or asking you to surrender the rights.  Therefore, you have\ncertain responsibilities if you distribute copies of the software, or if\nyou modify it: responsibilities to respect the freedom of others.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must pass on to the recipients the same\nfreedoms that you received.  You must make sure that they, too, receive\nor can get the source code.  And you must show them these terms so they\nknow their rights.\n\n  Developers that use the GNU GPL protect your rights with two steps:\n(1) assert copyright on the software, and (2) offer you this License\ngiving you legal permission to copy, distribute and/or modify it.\n\n  For the developers' and authors' protection, the GPL clearly explains\nthat there is no warranty for this free software.  For both users' and\nauthors' sake, the GPL requires that modified versions be marked as\nchanged, so that their problems will not be attributed erroneously to\nauthors of previous versions.\n\n  Some devices are designed to deny users access to install or run\nmodified versions of the software inside them, although the manufacturer\ncan do so.  This is fundamentally incompatible with the aim of\nprotecting users' freedom to change the software.  The systematic\npattern of such abuse occurs in the area of products for individuals to\nuse, which is precisely where it is most unacceptable.  Therefore, we\nhave designed this version of the GPL to prohibit the practice for those\nproducts.  If such problems arise substantially in other domains, we\nstand ready to extend this provision to those domains in future versions\nof the GPL, as needed to protect the freedom of users.\n\n  Finally, every program is threatened constantly by software patents.\nStates should not allow patents to restrict development and use of\nsoftware on general-purpose computers, but in those that do, we wish to\navoid the special danger that patents applied to a free program could\nmake it effectively proprietary.  To prevent this, the GPL assures that\npatents cannot be used to render the program non-free.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n                       TERMS AND CONDITIONS\n\n  0. Definitions.\n\n  \"This License\" refers to version 3 of the GNU General Public License.\n\n  \"Copyright\" also means copyright-like laws that apply to other kinds of\nworks, such as semiconductor masks.\n\n  \"The Program\" refers to any copyrightable work licensed under this\nLicense.  Each licensee is addressed as \"you\".  \"Licensees\" and\n\"recipients\" may be individuals or organizations.\n\n  To \"modify\" a work means to copy from or adapt all or part of the work\nin a fashion requiring copyright permission, other than the making of an\nexact copy.  The resulting work is called a \"modified version\" of the\nearlier work or a work \"based on\" the earlier work.\n\n  A \"covered work\" means either the unmodified Program or a work based\non the Program.\n\n  To \"propagate\" a work means to do anything with it that, without\npermission, would make you directly or secondarily liable for\ninfringement under applicable copyright law, except executing it on a\ncomputer or modifying a private copy.  Propagation includes copying,\ndistribution (with or without modification), making available to the\npublic, and in some countries other activities as well.\n\n  To \"convey\" a work means any kind of propagation that enables other\nparties to make or receive copies.  Mere interaction with a user through\na computer network, with no transfer of a copy, is not conveying.\n\n  An interactive user interface displays \"Appropriate Legal Notices\"\nto the extent that it includes a convenient and prominently visible\nfeature that (1) displays an appropriate copyright notice, and (2)\ntells the user that there is no warranty for the work (except to the\nextent that warranties are provided), that licensees may convey the\nwork under this License, and how to view a copy of this License.  If\nthe interface presents a list of user commands or options, such as a\nmenu, a prominent item in the list meets this criterion.\n\n  1. Source Code.\n\n  The \"source code\" for a work means the preferred form of the work\nfor making modifications to it.  \"Object code\" means any non-source\nform of a work.\n\n  A \"Standard Interface\" means an interface that either is an official\nstandard defined by a recognized standards body, or, in the case of\ninterfaces specified for a particular programming language, one that\nis widely used among developers working in that language.\n\n  The \"System Libraries\" of an executable work include anything, other\nthan the work as a whole, that (a) is included in the normal form of\npackaging a Major Component, but which is not part of that Major\nComponent, and (b) serves only to enable use of the work with that\nMajor Component, or to implement a Standard Interface for which an\nimplementation is available to the public in source code form.  A\n\"Major Component\", in this context, means a major essential component\n(kernel, window system, and so on) of the specific operating system\n(if any) on which the executable work runs, or a compiler used to\nproduce the work, or an object code interpreter used to run it.\n\n  The \"Corresponding Source\" for a work in object code form means all\nthe source code needed to generate, install, and (for an executable\nwork) run the object code and to modify the work, including scripts to\ncontrol those activities.  However, it does not include the work's\nSystem Libraries, or general-purpose tools or generally available free\nprograms which are used unmodified in performing those activities but\nwhich are not part of the work.  For example, Corresponding Source\nincludes interface definition files associated with source files for\nthe work, and the source code for shared libraries and dynamically\nlinked subprograms that the work is specifically designed to require,\nsuch as by intimate data communication or control flow between those\nsubprograms and other parts of the work.\n\n  The Corresponding Source need not include anything that users\ncan regenerate automatically from other parts of the Corresponding\nSource.\n\n  The Corresponding Source for a work in source code form is that\nsame work.\n\n  2. Basic Permissions.\n\n  All rights granted under this License are granted for the term of\ncopyright on the Program, and are irrevocable provided the stated\nconditions are met.  This License explicitly affirms your unlimited\npermission to run the unmodified Program.  The output from running a\ncovered work is covered by this License only if the output, given its\ncontent, constitutes a covered work.  This License acknowledges your\nrights of fair use or other equivalent, as provided by copyright law.\n\n  You may make, run and propagate covered works that you do not\nconvey, without conditions so long as your license otherwise remains\nin force.  You may convey covered works to others for the sole purpose\nof having them make modifications exclusively for you, or provide you\nwith facilities for running those works, provided that you comply with\nthe terms of this License in conveying all material for which you do\nnot control copyright.  Those thus making or running the covered works\nfor you must do so exclusively on your behalf, under your direction\nand control, on terms that prohibit them from making any copies of\nyour copyrighted material outside their relationship with you.\n\n  Conveying under any other circumstances is permitted solely under\nthe conditions stated below.  Sublicensing is not allowed; section 10\nmakes it unnecessary.\n\n  3. Protecting Users' Legal Rights From Anti-Circumvention Law.\n\n  No covered work shall be deemed part of an effective technological\nmeasure under any applicable law fulfilling obligations under article\n11 of the WIPO copyright treaty adopted on 20 December 1996, or\nsimilar laws prohibiting or restricting circumvention of such\nmeasures.\n\n  When you convey a covered work, you waive any legal power to forbid\ncircumvention of technological measures to the extent such circumvention\nis effected by exercising rights under this License with respect to\nthe covered work, and you disclaim any intention to limit operation or\nmodification of the work as a means of enforcing, against the work's\nusers, your or third parties' legal rights to forbid circumvention of\ntechnological measures.\n\n  4. Conveying Verbatim Copies.\n\n  You may convey verbatim copies of the Program's source code as you\nreceive it, in any medium, provided that you conspicuously and\nappropriately publish on each copy an appropriate copyright notice;\nkeep intact all notices stating that this License and any\nnon-permissive terms added in accord with section 7 apply to the code;\nkeep intact all notices of the absence of any warranty; and give all\nrecipients a copy of this License along with the Program.\n\n  You may charge any price or no price for each copy that you convey,\nand you may offer support or warranty protection for a fee.\n\n  5. Conveying Modified Source Versions.\n\n  You may convey a work based on the Program, or the modifications to\nproduce it from the Program, in the form of source code under the\nterms of section 4, provided that you also meet all of these conditions:\n\n    a) The work must carry prominent notices stating that you modified\n    it, and giving a relevant date.\n\n    b) The work must carry prominent notices stating that it is\n    released under this License and any conditions added under section\n    7.  This requirement modifies the requirement in section 4 to\n    \"keep intact all notices\".\n\n    c) You must license the entire work, as a whole, under this\n    License to anyone who comes into possession of a copy.  This\n    License will therefore apply, along with any applicable section 7\n    additional terms, to the whole of the work, and all its parts,\n    regardless of how they are packaged.  This License gives no\n    permission to license the work in any other way, but it does not\n    invalidate such permission if you have separately received it.\n\n    d) If the work has interactive user interfaces, each must display\n    Appropriate Legal Notices; however, if the Program has interactive\n    interfaces that do not display Appropriate Legal Notices, your\n    work need not make them do so.\n\n  A compilation of a covered work with other separate and independent\nworks, which are not by their nature extensions of the covered work,\nand which are not combined with it such as to form a larger program,\nin or on a volume of a storage or distribution medium, is called an\n\"aggregate\" if the compilation and its resulting copyright are not\nused to limit the access or legal rights of the compilation's users\nbeyond what the individual works permit.  Inclusion of a covered work\nin an aggregate does not cause this License to apply to the other\nparts of the aggregate.\n\n  6. Conveying Non-Source Forms.\n\n  You may convey a covered work in object code form under the terms\nof sections 4 and 5, provided that you also convey the\nmachine-readable Corresponding Source under the terms of this License,\nin one of these ways:\n\n    a) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by the\n    Corresponding Source fixed on a durable physical medium\n    customarily used for software interchange.\n\n    b) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by a\n    written offer, valid for at least three years and valid for as\n    long as you offer spare parts or customer support for that product\n    model, to give anyone who possesses the object code either (1) a\n    copy of the Corresponding Source for all the software in the\n    product that is covered by this License, on a durable physical\n    medium customarily used for software interchange, for a price no\n    more than your reasonable cost of physically performing this\n    conveying of source, or (2) access to copy the\n    Corresponding Source from a network server at no charge.\n\n    c) Convey individual copies of the object code with a copy of the\n    written offer to provide the Corresponding Source.  This\n    alternative is allowed only occasionally and noncommercially, and\n    only if you received the object code with such an offer, in accord\n    with subsection 6b.\n\n    d) Convey the object code by offering access from a designated\n    place (gratis or for a charge), and offer equivalent access to the\n    Corresponding Source in the same way through the same place at no\n    further charge.  You need not require recipients to copy the\n    Corresponding Source along with the object code.  If the place to\n    copy the object code is a network server, the Corresponding Source\n    may be on a different server (operated by you or a third party)\n    that supports equivalent copying facilities, provided you maintain\n    clear directions next to the object code saying where to find the\n    Corresponding Source.  Regardless of what server hosts the\n    Corresponding Source, you remain obligated to ensure that it is\n    available for as long as needed to satisfy these requirements.\n\n    e) Convey the object code using peer-to-peer transmission, provided\n    you inform other peers where the object code and Corresponding\n    Source of the work are being offered to the general public at no\n    charge under subsection 6d.\n\n  A separable portion of the object code, whose source code is excluded\nfrom the Corresponding Source as a System Library, need not be\nincluded in conveying the object code work.\n\n  A \"User Product\" is either (1) a \"consumer product\", which means any\ntangible personal property which is normally used for personal, family,\nor household purposes, or (2) anything designed or sold for incorporation\ninto a dwelling.  In determining whether a product is a consumer product,\ndoubtful cases shall be resolved in favor of coverage.  For a particular\nproduct received by a particular user, \"normally used\" refers to a\ntypical or common use of that class of product, regardless of the status\nof the particular user or of the way in which the particular user\nactually uses, or expects or is expected to use, the product.  A product\nis a consumer product regardless of whether the product has substantial\ncommercial, industrial or non-consumer uses, unless such uses represent\nthe only significant mode of use of the product.\n\n  \"Installation Information\" for a User Product means any methods,\nprocedures, authorization keys, or other information required to install\nand execute modified versions of a covered work in that User Product from\na modified version of its Corresponding Source.  The information must\nsuffice to ensure that the continued functioning of the modified object\ncode is in no case prevented or interfered with solely because\nmodification has been made.\n\n  If you convey an object code work under this section in, or with, or\nspecifically for use in, a User Product, and the conveying occurs as\npart of a transaction in which the right of possession and use of the\nUser Product is transferred to the recipient in perpetuity or for a\nfixed term (regardless of how the transaction is characterized), the\nCorresponding Source conveyed under this section must be accompanied\nby the Installation Information.  But this requirement does not apply\nif neither you nor any third party retains the ability to install\nmodified object code on the User Product (for example, the work has\nbeen installed in ROM).\n\n  The requirement to provide Installation Information does not include a\nrequirement to continue to provide support service, warranty, or updates\nfor a work that has been modified or installed by the recipient, or for\nthe User Product in which it has been modified or installed.  Access to a\nnetwork may be denied when the modification itself materially and\nadversely affects the operation of the network or violates the rules and\nprotocols for communication across the network.\n\n  Corresponding Source conveyed, and Installation Information provided,\nin accord with this section must be in a format that is publicly\ndocumented (and with an implementation available to the public in\nsource code form), and must require no special password or key for\nunpacking, reading or copying.\n\n  7. Additional Terms.\n\n  \"Additional permissions\" are terms that supplement the terms of this\nLicense by making exceptions from one or more of its conditions.\nAdditional permissions that are applicable to the entire Program shall\nbe treated as though they were included in this License, to the extent\nthat they are valid under applicable law.  If additional permissions\napply only to part of the Program, that part may be used separately\nunder those permissions, but the entire Program remains governed by\nthis License without regard to the additional permissions.\n\n  When you convey a copy of a covered work, you may at your option\nremove any additional permissions from that copy, or from any part of\nit.  (Additional permissions may be written to require their own\nremoval in certain cases when you modify the work.)  You may place\nadditional permissions on material, added by you to a covered work,\nfor which you have or can give appropriate copyright permission.\n\n  Notwithstanding any other provision of this License, for material you\nadd to a covered work, you may (if authorized by the copyright holders of\nthat material) supplement the terms of this License with terms:\n\n    a) Disclaiming warranty or limiting liability differently from the\n    terms of sections 15 and 16 of this License; or\n\n    b) Requiring preservation of specified reasonable legal notices or\n    author attributions in that material or in the Appropriate Legal\n    Notices displayed by works containing it; or\n\n    c) Prohibiting misrepresentation of the origin of that material, or\n    requiring that modified versions of such material be marked in\n    reasonable ways as different from the original version; or\n\n    d) Limiting the use for publicity purposes of names of licensors or\n    authors of the material; or\n\n    e) Declining to grant rights under trademark law for use of some\n    trade names, trademarks, or service marks; or\n\n    f) Requiring indemnification of licensors and authors of that\n    material by anyone who conveys the material (or modified versions of\n    it) with contractual assumptions of liability to the recipient, for\n    any liability that these contractual assumptions directly impose on\n    those licensors and authors.\n\n  All other non-permissive additional terms are considered \"further\nrestrictions\" within the meaning of section 10.  If the Program as you\nreceived it, or any part of it, contains a notice stating that it is\ngoverned by this License along with a term that is a further\nrestriction, you may remove that term.  If a license document contains\na further restriction but permits relicensing or conveying under this\nLicense, you may add to a covered work material governed by the terms\nof that license document, provided that the further restriction does\nnot survive such relicensing or conveying.\n\n  If you add terms to a covered work in accord with this section, you\nmust place, in the relevant source files, a statement of the\nadditional terms that apply to those files, or a notice indicating\nwhere to find the applicable terms.\n\n  Additional terms, permissive or non-permissive, may be stated in the\nform of a separately written license, or stated as exceptions;\nthe above requirements apply either way.\n\n  8. Termination.\n\n  You may not propagate or modify a covered work except as expressly\nprovided under this License.  Any attempt otherwise to propagate or\nmodify it is void, and will automatically terminate your rights under\nthis License (including any patent licenses granted under the third\nparagraph of section 11).\n\n  However, if you cease all violation of this License, then your\nlicense from a particular copyright holder is reinstated (a)\nprovisionally, unless and until the copyright holder explicitly and\nfinally terminates your license, and (b) permanently, if the copyright\nholder fails to notify you of the violation by some reasonable means\nprior to 60 days after the cessation.\n\n  Moreover, your license from a particular copyright holder is\nreinstated permanently if the copyright holder notifies you of the\nviolation by some reasonable means, this is the first time you have\nreceived notice of violation of this License (for any work) from that\ncopyright holder, and you cure the violation prior to 30 days after\nyour receipt of the notice.\n\n  Termination of your rights under this section does not terminate the\nlicenses of parties who have received copies or rights from you under\nthis License.  If your rights have been terminated and not permanently\nreinstated, you do not qualify to receive new licenses for the same\nmaterial under section 10.\n\n  9. Acceptance Not Required for Having Copies.\n\n  You are not required to accept this License in order to receive or\nrun a copy of the Program.  Ancillary propagation of a covered work\noccurring solely as a consequence of using peer-to-peer transmission\nto receive a copy likewise does not require acceptance.  However,\nnothing other than this License grants you permission to propagate or\nmodify any covered work.  These actions infringe copyright if you do\nnot accept this License.  Therefore, by modifying or propagating a\ncovered work, you indicate your acceptance of this License to do so.\n\n  10. Automatic Licensing of Downstream Recipients.\n\n  Each time you convey a covered work, the recipient automatically\nreceives a license from the original licensors, to run, modify and\npropagate that work, subject to this License.  You are not responsible\nfor enforcing compliance by third parties with this License.\n\n  An \"entity transaction\" is a transaction transferring control of an\norganization, or substantially all assets of one, or subdividing an\norganization, or merging organizations.  If propagation of a covered\nwork results from an entity transaction, each party to that\ntransaction who receives a copy of the work also receives whatever\nlicenses to the work the party's predecessor in interest had or could\ngive under the previous paragraph, plus a right to possession of the\nCorresponding Source of the work from the predecessor in interest, if\nthe predecessor has it or can get it with reasonable efforts.\n\n  You may not impose any further restrictions on the exercise of the\nrights granted or affirmed under this License.  For example, you may\nnot impose a license fee, royalty, or other charge for exercise of\nrights granted under this License, and you may not initiate litigation\n(including a cross-claim or counterclaim in a lawsuit) alleging that\nany patent claim is infringed by making, using, selling, offering for\nsale, or importing the Program or any portion of it.\n\n  11. Patents.\n\n  A \"contributor\" is a copyright holder who authorizes use under this\nLicense of the Program or a work on which the Program is based.  The\nwork thus licensed is called the contributor's \"contributor version\".\n\n  A contributor's \"essential patent claims\" are all patent claims\nowned or controlled by the contributor, whether already acquired or\nhereafter acquired, that would be infringed by some manner, permitted\nby this License, of making, using, or selling its contributor version,\nbut do not include claims that would be infringed only as a\nconsequence of further modification of the contributor version.  For\npurposes of this definition, \"control\" includes the right to grant\npatent sublicenses in a manner consistent with the requirements of\nthis License.\n\n  Each contributor grants you a non-exclusive, worldwide, royalty-free\npatent license under the contributor's essential patent claims, to\nmake, use, sell, offer for sale, import and otherwise run, modify and\npropagate the contents of its contributor version.\n\n  In the following three paragraphs, a \"patent license\" is any express\nagreement or commitment, however denominated, not to enforce a patent\n(such as an express permission to practice a patent or covenant not to\nsue for patent infringement).  To \"grant\" such a patent license to a\nparty means to make such an agreement or commitment not to enforce a\npatent against the party.\n\n  If you convey a covered work, knowingly relying on a patent license,\nand the Corresponding Source of the work is not available for anyone\nto copy, free of charge and under the terms of this License, through a\npublicly available network server or other readily accessible means,\nthen you must either (1) cause the Corresponding Source to be so\navailable, or (2) arrange to deprive yourself of the benefit of the\npatent license for this particular work, or (3) arrange, in a manner\nconsistent with the requirements of this License, to extend the patent\nlicense to downstream recipients.  \"Knowingly relying\" means you have\nactual knowledge that, but for the patent license, your conveying the\ncovered work in a country, or your recipient's use of the covered work\nin a country, would infringe one or more identifiable patents in that\ncountry that you have reason to believe are valid.\n\n  If, pursuant to or in connection with a single transaction or\narrangement, you convey, or propagate by procuring conveyance of, a\ncovered work, and grant a patent license to some of the parties\nreceiving the covered work authorizing them to use, propagate, modify\nor convey a specific copy of the covered work, then the patent license\nyou grant is automatically extended to all recipients of the covered\nwork and works based on it.\n\n  A patent license is \"discriminatory\" if it does not include within\nthe scope of its coverage, prohibits the exercise of, or is\nconditioned on the non-exercise of one or more of the rights that are\nspecifically granted under this License.  You may not convey a covered\nwork if you are a party to an arrangement with a third party that is\nin the business of distributing software, under which you make payment\nto the third party based on the extent of your activity of conveying\nthe work, and under which the third party grants, to any of the\nparties who would receive the covered work from you, a discriminatory\npatent license (a) in connection with copies of the covered work\nconveyed by you (or copies made from those copies), or (b) primarily\nfor and in connection with specific products or compilations that\ncontain the covered work, unless you entered into that arrangement,\nor that patent license was granted, prior to 28 March 2007.\n\n  Nothing in this License shall be construed as excluding or limiting\nany implied license or other defenses to infringement that may\notherwise be available to you under applicable patent law.\n\n  12. No Surrender of Others' Freedom.\n\n  If conditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot convey a\ncovered work so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you may\nnot convey it at all.  For example, if you agree to terms that obligate you\nto collect a royalty for further conveying from those to whom you convey\nthe Program, the only way you could satisfy both those terms and this\nLicense would be to refrain entirely from conveying the Program.\n\n  13. Use with the GNU Affero General Public License.\n\n  Notwithstanding any other provision of this License, you have\npermission to link or combine any covered work with a work licensed\nunder version 3 of the GNU Affero General Public License into a single\ncombined work, and to convey the resulting work.  The terms of this\nLicense will continue to apply to the part which is the covered work,\nbut the special requirements of the GNU Affero General Public License,\nsection 13, concerning interaction through a network will apply to the\ncombination as such.\n\n  14. Revised Versions of this License.\n\n  The Free Software Foundation may publish revised and/or new versions of\nthe GNU General Public License from time to time.  Such new versions will\nbe similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\n  Each version is given a distinguishing version number.  If the\nProgram specifies that a certain numbered version of the GNU General\nPublic License \"or any later version\" applies to it, you have the\noption of following the terms and conditions either of that numbered\nversion or of any later version published by the Free Software\nFoundation.  If the Program does not specify a version number of the\nGNU General Public License, you may choose any version ever published\nby the Free Software Foundation.\n\n  If the Program specifies that a proxy can decide which future\nversions of the GNU General Public License can be used, that proxy's\npublic statement of acceptance of a version permanently authorizes you\nto choose that version for the Program.\n\n  Later license versions may give you additional or different\npermissions.  However, no additional obligations are imposed on any\nauthor or copyright holder as a result of your choosing to follow a\nlater version.\n\n  15. Disclaimer of Warranty.\n\n  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY\nAPPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT\nHOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY\nOF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM\nIS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF\nALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n  16. Limitation of Liability.\n\n  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS\nTHE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\nGENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE\nUSE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF\nDATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD\nPARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),\nEVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGES.\n\n  17. Interpretation of Sections 15 and 16.\n\n  If the disclaimer of warranty and limitation of liability provided\nabove cannot be given local legal effect according to their terms,\nreviewing courts shall apply local law that most closely approximates\nan absolute waiver of all civil liability in connection with the\nProgram, unless a warranty or assumption of liability accompanies a\ncopy of the Program in return for a fee.\n\n                     END OF TERMS AND CONDITIONS\n\n            How to Apply These Terms to Your New Programs\n\n  If you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these terms.\n\n  To do so, attach the following notices to the program.  It is safest\nto attach them to the start of each source file to most effectively\nstate the exclusion of warranty; and each file should have at least\nthe \"copyright\" line and a pointer to where the full notice is found.\n\n    <one line to give the program's name and a brief idea of what it does.>\n    Copyright (C) <year>  <name of author>\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <https://www.gnu.org/licenses/>.\n\nAlso add information on how to contact you by electronic and paper mail.\n\n  If the program does terminal interaction, make it output a short\nnotice like this when it starts in an interactive mode:\n\n    <program>  Copyright (C) <year>  <name of author>\n    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `show c' for details.\n\nThe hypothetical commands `show w' and `show c' should show the appropriate\nparts of the General Public License.  Of course, your program's commands\nmight be different; for a GUI interface, you would use an \"about box\".\n\n  You should also get your employer (if you work as a programmer) or school,\nif any, to sign a \"copyright disclaimer\" for the program, if necessary.\nFor more information on this, and how to apply and follow the GNU GPL, see\n<https://www.gnu.org/licenses/>.\n\n  The GNU General Public License does not permit incorporating your program\ninto proprietary programs.  If your program is a subroutine library, you\nmay consider it more useful to permit linking proprietary applications with\nthe library.  If this is what you want to do, use the GNU Lesser General\nPublic License instead of this License.  But first, please read\n<https://www.gnu.org/licenses/why-not-lgpl.html>.\n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/GPL v3.0",
+        "spdx_id": "GPL v3.0",
+        "type": "License",
+        "value": "GPL v3.0"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://cdn.rawgit.com/quanteda/quanteda/master/images/quanteda_logo.svg"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "quanteda"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "quanteda"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+        "type": "String",
+        "value": "quanteda"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 1209485,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 132471,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 5238,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "M4",
+        "size": 3288,
+        "type": "Programming_language",
+        "value": "M4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 1520,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 531,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 150,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 54,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2025-05-20T07:50:42Z",
+        "date_published": "2025-05-21T09:10:50Z",
+        "description": "## Changes and additions\r\n\r\n* Added `corpus_chunk()` for chunking texts into smaller documents.\r\n\r\n* Significantly reduce the memory usage for the `c` operation on large `tokens` and `tokens_xptr` objects.\r\n\r\n* Further improvements to the verbose messages for corpus, tokens, dfm and fcm objects.\r\n\r\n* `tokens_ngrams()` now includes a new argument `apply_if`, functioning similar to this argument\r\nin `tokens_compound()` and `tokens_lookup()` (#2390).\r\n\r\n* Replaced `remove_unigram` with `match_pattern` in `object2id()` to control the matching of single-word patterns or multi-word patterns.\r\n\r\n* `data_corpus_inaugural` now updated for Trump 2025.\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v4.3.0",
+        "name": "CRAN v4.3.0",
+        "release_id": 220007003,
+        "tag": "v4.3.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v4.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/220007003",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/220007003",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v4.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2025-01-08T22:58:51Z",
+        "date_published": "2025-01-08T23:00:58Z",
+        "description": "# quanteda 4.2.0\r\n\r\n## Changes and additions\r\n\r\n* Made the `c` operation on `tokens` and `tokens_xptr` objects significantly faster.\r\n\r\n* New, and more consistent verbose messages for tokens and dfm objects.\r\n\r\n* Preserve the default `concatenator` of tokens objects in `tokens_compound()` (#2432).\r\n\r\n* Make the `c` operation on `tokens` and `tokens_xptr` objects significantly faster. \r\n\r\n## Bug fixes and stability enhancements\r\n\r\n* Fix a bug in `dfm_lookup()` that leads to wrong feature names when `exclusive = TRUE` (#2424).\r\n\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v4.2.0",
+        "name": "CRAN v4.2.0",
+        "release_id": 193802727,
+        "tag": "v4.2.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v4.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/193802727",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/193802727",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v4.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2024-04-25T17:39:19Z",
+        "date_published": "2024-04-25T17:40:17Z",
+        "description": "Minor fixes:\r\n\r\n- A failing test caused by C++ code related to `fcm()` and how tokens objects are re-indexed.\r\n\r\n- An undeclared package \u2018quanteda.textstats\u2019 in Rd xrefs.\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v4.0.2",
+        "name": "CRAN v4.0.2",
+        "release_id": 152856580,
+        "tag": "v4.0.2",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v4.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/152856580",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/152856580",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v4.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2024-04-09T07:50:54Z",
+        "date_published": "2024-04-09T07:52:09Z",
+        "description": "Fixed:\r\n\r\n- A failing test caused by the ever-shifting behaviour of **Matrix** and the devel R on r-devel-linux-x86_64-debian-clang and r-devel-linux-x86_64-debian-gcc.\r\n\r\n- An Undeclared package \u2018quanteda.textstats\u2019 in Rd xrefs.\r\n\r\n- An installation failure on r-devel-linux-x86_64-fedora-gcc due to searching for TBB in all the wrong places.\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v4.0.1",
+        "name": "CRAN v4.0.1",
+        "release_id": 150343929,
+        "tag": "v4.0.1",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v4.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/150343929",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/150343929",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v4.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2024-04-04T10:08:02Z",
+        "date_published": "2024-04-04T16:45:42Z",
+        "description": "# quanteda 4.0.0\r\n\r\n## Changes and additions\r\n\r\n* Introduces the `tokens_xptr` objects that extend the `tokens` objects with external pointers for a greater efficiency. Once `tokens` objects are converted to `tokens_xptr` objects using `as.tokens_xptr()`, `tokens_*.tokens_xptr()` methods are called automatically. \r\n\r\n* Improved C++ functions to allow the users to change the number of threads for parallel computing in more flexible manner using `quanteda_options()`. The value of `threads` can be changed in the middle of analysis pipeline.\r\n\r\n* Makes `\"word4\"` the default (word) tokeniser, with improved efficiency, language handling, and customisation options.\r\n\r\n* Replaced all occurrences of the **magrittr** `%>%` pipe with the R pipe `|>` introduced in R 4.1, although the `%>%` pipe is still re-exported and therefore available to all users of **quanteda** without loading any additional packages.\r\n\r\n* Added `min_ntoken` and `max_ntoken` to `tokens_subset()` and `dfm_subset()` to extract documents based on number of tokens easily. It is equivalent to selecting documents using `ntoken()`.\r\n\r\n* Added a new argument `apply_if` that allows a tokens-based operation to apply only to documents that meet a logical condition.  This argument has been added to `tokens_select()`, `tokens_compound()`, `tokens_replace()`, `tokens_split()`, and `tokens_lookup()`.  This is similar to applying `purrr::map_if()` to a tokens object, but is implemented within the function so that it can be performed efficiently in C++.\r\n\r\n* Added new arguments `append_key`, `separator` and `concatenator` to `tokens_lookup()`. These allow tokens matched by dictionary values to be retained with their keys appended to them, separated by `separator`.  The addition of the `concatenator` argument allows additional control at the lookup stage for tokens that will be concatenated from having matched multi-word dictionary values. (#2324)\r\n\r\n* Added a new argument `remove_padding` to `ntoken()` and `ntype()` that allows for not counting padding that might have been left over from `tokens_remove(x, padding = TRUE`). This changes the previous number of types from `ntype()` when pads exist, by counting pads by default. (#2336)\r\n\r\n* Removed dependency on **RcppParallel** to improve the stability of the C++ code. This change requires the users of Linux-like OS to install the Intel TBB library manually to enable parallel computing.\r\n\r\n## Removals\r\n\r\n* `bootstrap_dfm()` was removed for character and corpus objects.  The correct way to bootstrap sentences is not to tokenize them as sentences and then bootstrap them from the dfm.  This is consistent with requiring the user to tokenise objects prior to forming dfms or other \"downstream\" objects.\r\n\r\n* `dfm()` no longer works on character or corpus objects, only on tokens or other dfm objects.  This was deprecated in v3 and removed in v4. \r\n\r\n* Very old arguments to `dfm()` options that were not visible but worked with warnings (such as `stem = TRUE`) are removed.\r\n\r\n* Deprecated or renamed arguments formerly passed in `tokens()` that formerly mapped to the v3 arguments with a warning are removed.\r\n\r\n* Methods for **readtext** objects are removed, since these are data.frame objects that are straightforward to convert into a `corpus` object.\r\n\r\n* `topfeatures()` no longer works on an fcm object. (#2141)\r\n\r\n## Deprecations\r\n\r\n* Some on-the-fly calculations applied to character or corpus objects that require a temporary tokenisation are now deprecated.  This includes:\r\n    - `nsentence()` -- use `lengths(tokens(x, what = \"sentence\"))` instead;  \r\n    - `ntype()` -- use `ntype(tokens(x))` instead; and. \r\n    - `ntoken()` -- use `ntoken(tokens(x))` instead.\r\n    - `char_ngrams()` -- use `tokens_ngrams(tokens(x))` instead.\r\n\r\n* `corpus.kwic()` is deprecated, with the suggestion to form a corpus from using `tokens_select(x, window = ...)` instead.",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v4.0",
+        "name": "CRAN v4.0",
+        "release_id": 149811456,
+        "tag": "v4.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/149811456",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/149811456",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2023-04-07T07:29:27Z",
+        "date_published": "2023-04-07T22:48:39Z",
+        "description": "## Changes and additions\r\n\r\n*  Implements a `\"word4\"` tokeniser that is based on new RBBI (RuleBasedBreakIterator) rules, implemented in a new .yml file that can be edited and changed by users, but whose defaults represent a significant improvement in pattern handling for words, sentences, and other forms of patterns.  These rules are customised from the ICU rules for breaks, with the standard and customised rules found now in the `breakrules/` system folder, so that they could, in principle, be modified by the user.\r\n\r\n*  Other minor changes:\r\n    \r\n    - changes how elapsed time is recorded, by creating a global environment to record these in (aaa.R)\r\n    - improves several of the R-coded patterns that apply to `\"word2\"`:\r\n        - the hashtag pattern (`pattern_hashtag)\r\n        - the separator pattern (by adding `\\\\p{M}`). \r\n        - the URL pattern\r\n    - creates a new tokens_restore(), implemented in C++, to replace the older `preserve_special()` that rejoined splits created by the default stringi tokeniser machinery.  \r\n    - makes some technical improvements to internal tokenisation functions, such as moving the ellipsis to the end of the function, to allow more modularity in developing future tokenisers.\r\n\r\n    \r\n## Bug fixes and stability enhancements\r\n\r\n* `dfm_group()` now works correctly with an empty dfm (#2225).\r\n* `convert(x, to = \"stm\")` no longer vulnerable to large numbers of removed features as in #2189.\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v3.3",
+        "name": "CRAN v3.3.0",
+        "release_id": 98603130,
+        "tag": "v3.3",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v3.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/98603130",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/98603130",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v3.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2022-12-08T11:30:51Z",
+        "date_published": "2022-12-12T10:57:37Z",
+        "description": "Fixes test failures caused by recent changes to **Matrix** package behaviours.",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v3.2.4",
+        "name": "CRAN v3.2.4",
+        "release_id": 85716655,
+        "tag": "v3.2.4",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v3.2.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/85716655",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/85716655",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v3.2.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2022-08-29T08:00:48Z",
+        "date_published": "2022-08-29T08:01:46Z",
+        "description": "## Bug fixes and stability enhancements\r\n\r\n* **Matrix** package calls updated for compatibility with **Matrix** 1.4.2. (#2182)\r\n* Changes to C++ code for `fcm()` to prevent some (chance) errors downstream in **LSX**. (#2181)\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v3.2.3",
+        "name": "CRAN v3.2.3",
+        "release_id": 75609856,
+        "tag": "v3.2.3",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v3.2.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/75609856",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/75609856",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v3.2.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2022-08-09T09:16:27Z",
+        "date_published": "2022-08-09T09:18:57Z",
+        "description": "## Bug fixes and stability enhancements\r\n\r\n* `fcm()` computes the marginal frequency of upper-case tokens correctly (#2176).\r\n* `tokens_chunk()` keeps all the docid, including those of empty documents, in the original object. \r\n* `tokens_select()` recycles values when the length of `startpos` or `endpos` is less than `ndoc(x)`.\r\n* `tokens_lookup()` and `dfm_lookup()` can apply very large dictionaries (more than 100,000 keys).\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v3.2.2",
+        "name": "CRAN v3.2.2",
+        "release_id": 73969258,
+        "tag": "v3.2.2",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v3.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/73969258",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/73969258",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v3.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2021-12-01T09:56:49Z",
+        "date_published": "2021-12-01T09:59:24Z",
+        "description": "## Bug fixes and stability enhancements\r\n\r\n* `dfm()` returns a dfm with the identical column order even if `tokens_compound()` or `tokens_ngrams()` is used in the upstream (#2100).\r\n* `dfm_group()` with NA values in a grouping variable now drops those, similar to the behaviour of `tokens_group()` and `corpus_group()` (#2134).\r\n\r\n## Changes and additions\r\n\r\n* `char_wordstem()` now has a a new argument `check_whitespace`, which will not throw an error when lower-casing text containing a whitespace character.\r\n* `dfm_remove()` now has a new argument `padding = FALSE` that when `TRUE`, collects counts of the removed features in the first column.  This produces results consistent with what is compiled as a dfm built from tokens where some have been removed with `padding = TRUE` (#2152).\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v3.2.0",
+        "name": "CRAN v3.2.0",
+        "release_id": 54394349,
+        "tag": "v3.2.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v3.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/54394349",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/54394349",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v3.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2021-08-17T16:44:55Z",
+        "date_published": "2021-08-17T16:46:39Z",
+        "description": "## Bug fixes and stability enhancements\r\n\r\n* Improved and more consistent handling of empty corpus, tokens and dfm objects, to address #2110.\r\n* `rbind.dfm()` now preserves docvars (#2109).\r\n* Document name for Biden's 2021 Inaugural Address in `data_corpus_inaugural` is now consistent with all other documents.\r\n* Fix #2127 that caused subsetting to change document names.\r\n\r\n## Changes and additions\r\n\r\n* `phrase()` now has a `separator` argument (#2124)\r\n\r\n## Deprecations\r\n\r\n* `phrase()` methods for tokens, collocations, and lists are deprecated in favour of `as.phrase()`.  (#2129)\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v3.1.0",
+        "name": "CRAN v3.1.0",
+        "release_id": 47991003,
+        "tag": "v3.1.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v3.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/47991003",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/47991003",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v3.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2021-03-25T11:29:56Z",
+        "date_published": "2021-04-06T09:08:02Z",
+        "description": "## Summary\r\n\r\n**quanteda** 3.0 is a major release that improves functionality, completes the modularisation of the package begun in v2.0, further improves function consistency by removing previously deprecated functions, and enhances workflow stability and consistency by deprecating some shortcut steps built into some functions.\r\n\r\n## Changes and additions\r\n\r\n* Modularisation: We have now separated the `textplot_*()` functions from the main package into a separate package **quanteda.textplots**, and the `textstat_*()` functions from the main package into a separate package **quanteda.textstats**.  This completes the modularisation begun in v2 with the move of the `textmodel_*()` functions to the separate package **quanteda.textmodels**.  **quanteda** now consists of core functions for textual data processing and management.\r\n\r\n* The package dependency structure is now greatly reduced, by eliminating some unnecessary package dependencies, through modularisation, and by addressing complex downstream dependencies in packages such as **stopwords**.  v3 should serve as a more lightweight and more consistent platform for other text analysis packages to build on.\r\n\r\n* We have added non-standard evaluation for `by` and `groups` arguments to access object docvars:\r\n    - The `*_sample()` functions' argument `by`, and `groups` in the `*_group()` functions, now take unquoted document variable (docvar) names directly, similar to the way the `subset` argument works in the `*_subset()` functions.\r\n    - Quoted docvar names no longer work, as these will be evaluated literally.\r\n    - The `by = \"document\"` formerly sampled from `docid(x)`, but this functionality is now removed.  Instead, use `by = docid(x)` to replicate this functionality.\r\n    - For `groups`, the default is now `docid(x)`, which is now documented more completely.  See `?groups` and `?docid`.\r\n\r\n* `dfm()` has a new argument, `remove_padding`, for removing the \"pads\" left behind after removing tokens with `padding = TRUE`.  (For other extensive changes to `dfm()`, see \"Deprecated\" below.)\r\n\r\n* `tokens_group()`, formerly internal-only, is now exported.\r\n\r\n* `corpus_sample()`, `dfm_sample()`, and `tokens_sample()` now work consistently (#2023).\r\n\r\n* The `kwic()` return object structure has been redefined, and built with an option to use a new function `index()` that returns token spans following a pattern search.  (#2045 and #2065)\r\n\r\n* The punctuation regular expression and that for matching social media usernames has now been redefined so that the valid Twitter username `@_` is now counted as a \"tag\" rather than as \"punctuation\". (#2049)\r\n\r\n* The data object `data_corpus_inaugural` has been updated to include the Biden 2021 inaugural address.\r\n\r\n* A new system of validators for input types now provides better argument type and value checking, with more consistent error messages for invalid types or values.\r\n\r\n* Upon startup, we now message the console with the Unicode and ICU version information.  Because we removed our redefinition of `View()` (see below), the former conflict warning is now gone.\r\n\r\n* `as.character.corpus()` now has a `use.names = TRUE` argument, similar to `as.character.tokens()` (but with a different default value).\r\n\r\n## Deprecations\r\n\r\nThe main potentially breaking changes in version 3 relate to the deprecation or\r\nelimination of shortcut steps that allowed functions that required tokens inputs\r\nto skip the tokens creation step.  We did this to require users to take more\r\ndirect control of tokenization options, or to substitute the alternative\r\ntokeniser of their choice (and then coercing it to tokens via [as.tokens()]).\r\nThis also allows our function behaviour to be more consistent, with each\r\nfunction performing a single task, rather than combining functions (such as\r\ntokenisation _and_ constructing a matrix).\r\n\r\nThe most common example involves constructing a dfm directly from a character\r\nor corpus object.  Formerly, this would construct a tokens object internally\r\nbefore creating the dfm, and allowed passing arguments to `tokens()` via `...`.\r\nThis is now deprecated, although still functional with a warning.\r\n\r\nWe strongly encourage either creating a tokens object first, or piping the\r\ntokens return to `dfm()` using `%>%`.  (See examples below.)\r\n\r\nWe have also deprecated direct character or corpus inputs to [kwic()], since\r\nthis also requires a tokenised input.\r\n\r\nThe full listing of deprecations is:\r\n\r\n* `dfm.character()` and `dfm.corpus()` are deprecated.  Users should create a tokens object first, and input that to `dfm()`.\r\n\r\n* `dfm()`: As of version 3, only tokens objects are supported as inputs to `dfm()`.  Calling `dfm()` for character or corpus objects is still functional, but issues a warning.  Convenience passing of arguments to `tokens()` via `...` for `dfm()` is also deprecated, but undocumented, and functions only with a warning.  Users should now create a tokens object (using `tokens()` from character or corpus inputs before calling `dfm()`.\r\n\r\n* `kwic()`: As of version 3, only tokens objects are supported as inputs to `kwic()`.  Calling `kwic()` for character or corpus objects is still functional, but issues a warning.  Passing arguments to `tokens()` via `...` in `kwic()` is now disabled.  Users should now create a tokens object (using `tokens()` from character or corpus inputs before calling `kwic()`.\r\n\r\n* Shortcut arguments to `dfm()` are now deprecated.  These are still active, with a warning, although they are no longer documented.  These are:\r\n    - `stem` -- use `tokens_wordstem()` or `dfm_wordstem()` instead.\r\n    - `select`, `remove` -- use `tokens_select()` / `dfm_select()` or `tokens_remove()` / `dfm_remove()` instead.\r\n    - `dictionary`, `thesaurus` -- use `tokens_lookup()` or `dfm_lookup()` instead.\r\n    - `valuetype`, `case_insensitive` -- these are disabled; for the deprecated arguments that take these qualifiers, they are fixed to the defaults `\"glob\"` and `TRUE`.\r\n    - `groups` -- use `tokens_group()` or `dfm_group()` instead.\r\n    \r\n* `texts()` and `texts<-` are deprecated.\r\n    - Use `as.character.corpus()` to turn a corpus into a simple named character vector.\r\n    - Use `corpus_group()` instead of `texts(x, groups = ...)` to aggregate texts by a grouping variable.\r\n    - Use `[<-` instead of `texts()<-` for replacing texts in a corpus object.\r\n\r\n## Removals\r\n\r\n* See note above under \"Changes\" about the `textplot_*()` and `textstat_*()` functions.\r\n\r\n* The following functions have been removed:\r\n    - all methods for defunct `corpuszip` objects.\r\n    - `View()` functions\r\n    - `as.wfm()` and `as.DocumentTermMatrix()` (the same functionality is available via `convert()`)\r\n    - `metadoc()` and `metacorpus()`\r\n    - `corpus_trimsentences()` (replaced by `corpus_trim()`)\r\n    - all of the `tortl` functions\r\n    - all legacy functions related to the ancient \"corpuszip\" corpus variant.\r\n\r\n* `dfm` objects can no longer be used as a `pattern` in `dfm_select()` (formerly deprecated).\r\n\r\n* `dfm_sample()`:\r\n    - no longer has a `margin` argument.  Instead, `dfm_sample()` now samples only on documents, the same as `corpus_sample()` and `tokens_sample()`; and\r\n    - no longer works with `by = \"document\"` -- use `by = docid(x)` instead.\r\n\r\n* `dictionary_edit()`, `char_edit()`, and `list_edit()` are removed.\r\n\r\n* `dfm_weight()` - formerly deprecated `\"scheme\"` options are now removed. \r\n\r\n* `tokens()` - formerly deprecated options `remove_hyphens` and `remove_twitter` are now removed.  (Use `split_hyphens` instead, and the default tokenizer always now preserves Twitter and other social media tags.)\r\n\r\n* Special versions of `head()` and `tail()` for corpus, dfm, and fcm objects are now removed, since the base methods work fine for these objects. The main consequence was the removal of the `nf` option from the methods for dfm and fcm objects, which limited the number of features.  This can be accomplished using the index operator `[` instead, or for printing, by specifying `print(x, max_nfeat = 6L)` (for instance).\r\n\r\n## Bug fixes and stability enhancements\r\n\r\n* Fixed a bug causing `topfeatures(x, group = something)` to fail with weighted dfms (#2032).\r\n\r\n* `kwic()` is more stable and does not crash when a vector is supplied as the `window` argument (#2008).\r\n\r\n* Allow use of multi-threading with more than two threads by fixing `quanteda_options()`.\r\n\r\n* Mentions of the now-removed `ngrams` option in `dfm(x, ...)` has now been removed from the dfm documentation.  (#1990)\r\n\r\n* Handling for some early-cycle v2 dfm object is improved, to ensure that they are updated to the latest object format.  (#2097)\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v3.0.0",
+        "name": "CRAN v3.0.0",
+        "release_id": 40983960,
+        "tag": "v3.0.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v3.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/40983960",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/40983960",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v3.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2020-09-23T17:47:19Z",
+        "date_published": "2020-09-23T17:50:02Z",
+        "description": "## Changes\r\n\r\n* `textstat_keyness()` performance is now improved through implementation in (multi-threaded) C++.\r\n\r\n## Bug fixes and stability enhancements\r\n\r\n* Fixes breaking tests and examples on Solaris platform as well as other changes introduced by changes to the stringi package.\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v2.1.2",
+        "name": "CRAN v2.1.2",
+        "release_id": 31717363,
+        "tag": "v2.1.2",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v2.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/31717363",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/31717363",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v2.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2020-07-27T14:55:17Z",
+        "date_published": "2020-07-27T14:56:43Z",
+        "description": "## Bug fixes and stability enhancements\r\n\r\n* `corpus_reshape()` now allows reshaping back to documents even when segmented texts were of zero length. (#1978)\r\n* Special handling applied for Solaris to some issues breaking on that build, relating to the caching in `summary.corpus()`/`textstat_summary()`.\r\n\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v2.1.1",
+        "name": "CRAN v2.1.1",
+        "release_id": 28991403,
+        "tag": "v2.1.1",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v2.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/28991403",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/28991403",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v2.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2020-07-02T16:53:11Z",
+        "date_published": "2020-07-06T06:27:43Z",
+        "description": "## Changes\r\n\r\n* Added `block_size` to `quanteda_options()` to control the number of documents in blocked tokenization.\r\n* Fixed `print.dictionary2()` to control the printing of nested levels with `max_nkey` (#1967)\r\n* Added `textstat_summary()` to provide detailed information about dfm, tokens and corpus objects. It will replace `summary()` in future versions.\r\n* Fixed a performance issue causing slowdowns in tokenizing (using the default `what = \"word\"`) corpora with large numbers of documents that contain social media tags and URLs that needed to be preserved (such a large corpus of Tweets).\r\n* Updated the (default) \"word\" tokenizer to preserve hashtags and usernames better with non-ASCII text, and made these patterns user-configurable in `quanteda_options()`.  The following are now preserved: \"#\u653f\u6cbb\" as well as Weibo-style hashtags such as \"#\u82f1\u56fd\u9996\u76f8#\".\r\n* `convert(x, to = \"data.frame\")` now outputs the first column as \"doc_id\" rather than \"document\" since \"document\" is a commonly occurring term in many texts. (#1918)\r\n* Added new methods `char_select()`, `char_keep()`, and `char_remove()` for easy manipulation of character vectors.\r\n* Added `dictionary_edit()` for easy, interactive editing of dictionaries, plus the functions `char_edit()` and `list_edit()` for editing character and list of character objects.\r\n* Added a method to `textplot_wordcloud()` that plots objects from `textstat_keyness()`, to visualize keywords either by comparison or for the target category only.\r\n* Improved the performance of `kwic()` (#1840).\r\n* Added new `logsmooth` scheme to `dfm_weight()`.\r\n* Added new `textstat_summary()` method, which returns summary information about the tokens/types/features etc in an object.  It also caches summary information so that this can be retrieved on subsequent calls, rather than re-computed.\r\n\r\n## Bug fixes and stability enhancements\r\n\r\n* Stopped returning `NA` for non-existent features when `n` > `nfeat(x)` in `textstat_frequency(x, n)`.  (#1929)\r\n* Fixed a problem in `dfm_lookup()` and `tokens_lookup()` in which an error was caused when no dictionary key returned a single match (#1946).\r\n* Fixed a bug that caused a `textstat_simil/dist` object converted to a data.frame to drop its `document2` labels (#1939).\r\n* Fixed a bug causing `dfm_match()` to fail on a dfm that included \"pads\" (`\"\"`). (#1960)\r\n* Updated the `data_dfm_lbgexample` object using more modern dfm internals.\r\n* Updates `textstat_readability()`, `textstat_lexdiv()`, and `nscrabble()` so that empty texts are not dropped in the result. (#1976)\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v2.1.0",
+        "name": "CRAN v2.1.0",
+        "release_id": 28242676,
+        "tag": "v2.1.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v2.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/28242676",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/28242676",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v2.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2020-03-26T21:12:57Z",
+        "date_published": "2020-03-26T21:13:55Z",
+        "description": "## Changes\r\n\r\n* Moved `data_corpus_irishbudget2010` and `data_corpus_dailnoconf1991` to the **quanteda.textmodels** package.\r\n* Em dashes and double dashes between words, whether surrounded by a space or not, are now converted to \" - \" to distinguish them from infix hyphens.  (#1889)\r\n* Verbose output for dfm and tokens creation is now corrected and more consistent.  (#1894)\r\n\r\n## Bug fixes and stability enhancements\r\n\r\n* Number removal is now both improved and fixed (#1909).\r\n* Fixed an issue causing CRAN errors in pre-v4, related to the new default of `stringsAsFactors = FALSE` for data.frame objects.\r\n* An error in the print method for dfm objects is now fixed (#1897)\r\n* Fixed a bug in `tokens_replace()` when the pattern was not matched (#1895)\r\n* Fixed the names of dimensions not exchanging when a dfm was transposed (#1903)\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v2.0.1",
+        "name": "CRAN v2.0.1",
+        "release_id": 24909774,
+        "tag": "v2.0.1",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v2.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/24909774",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/24909774",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v2.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2020-02-23T22:43:34Z",
+        "date_published": "2020-02-26T22:52:30Z",
+        "description": "**quanteda** 2.0 introduces some major changes, detailed here.\r\n\r\n## What's new in v2.0\r\n\r\n1.  New corpus object structure.  \r\n\r\n    The internals of the corpus object have been redesigned, and now are based around a character vector with meta- and system-data in attributes.  These are all updated to work with the existing extractor and replacement functions.  If you were using these before, then you should not even notice the change.  Docvars are now handled separately from the texts, in the same way that  docvars are handled for tokens objects.\r\n    \r\n2.  New metadata handling.\r\n\r\n    Corpus-level metadata is now inserted in a user metadata list via `meta()` and `meta<-()`.  `metacorpus()` is kept as a synonym for `meta()`, for backwards compatibility.  Additional system-level corpus information is also recorded, but automatically when an object is created.  \r\n    \r\n    Document-level metadata is deprecated, and now all document-level information is simply a \"docvar\".  For backward compatibility, `metadoc()` is kept and will insert document variables (docvars) with the name prefixed by an underscore.\r\n    \r\n3.  Corpus objects now store default summary statistics for efficiency.  When these are present, `summary.corpus()` retrieves them rather than computing them on the fly.\r\n\r\n4.  New index operators for core objects.  The main change here is to redefine the `$` operator for corpus, tokens, and dfm objects (all objects that retain docvars) to allow this operator to access single docvars by name.  Some other index operators have been redefined as well, such as `[.corpus` returning a slice of a corpus, and `[[.corpus` returning the texts from a corpus.\r\n\r\n    See the full details at https://github.com/quanteda/quanteda/wiki/indexing_core_objects.\r\n    \r\n5.  `*_subset()` functions.  \r\n\r\n     The `subset` argument now must be logical, and the `select` argument has been removed.  (This is part of `base::subset()` but has never made sense, either in **quanteda** or **base**.)\r\n\r\n6.  Return format from `textstat_simil()` and `textstat_dist()`.\r\n\r\n    Now defaults to a sparse matrix from the **Matrix** package, but coercion methods are provided for `as.data.frame()`, to make these functions return a data.frame just like the other textstat functions.  Additional coercion methods are provided for `as.dist()`, `as.simil()`, and `as.matrix()`. \r\n    \r\n7.  settings functions (and related slots and object attributes) are gone.  These are now replaced by a new `meta(x, type = \"object\")` that records object-specific meta-data, including settings such as the `n` for tokens (to record the `ngrams`).\r\n\r\n8.  All included data objects are upgraded to the new formats.  This includes the three corpus objects, the single dfm data object, and the LSD 2015 dictionary object.\r\n\r\n9.  New print methods for core objects (corpus, tokens, dfm, dictionary) now exist, each with new global options to control the number of documents shown, as well as the length of a text snippet (corpus), the tokens (tokens), dfm cells (dfm), or keys and values (dictionary).  Similar to the extended printing options for dfm objects, printing of corpus objects now allows for brief summaries of the texts to be printed, and for the number of documents and the length of the previews to be controlled by new global options.\r\n\r\n10. All textmodels and related functions have been moved to a new package **quanteda.textmodels**.  This makes them easier to maintain and update, and keeps the size of the core package down.\r\n    \r\n11. **quanteda** v2 implements major changes to the `tokens()` constructor.  These are designed to simplify the code and its maintenance in **quanteda**, to allow users to work with other (external) tokenizers, and to improve consistency across the tokens processing options.  Changes include:\r\n\r\n    -  A new method `tokens.list(x, ...)` constructs a `tokens` object from named list of characters, allowing users to tokenize texts using some other function (or package) such as `tokenize_words()`, `tokenize_sentences()`, or `tokenize_tweets()` from the **tokenizers** package, or the list returned by `spacyr::spacy_tokenize()`.  This allows users to use their choice of tokenizer, as long as it returns a named list of characters.  With `tokens.list()`, all tokens processing (`remove_*`) options can be applied, or the list can be converted directly to a `tokens` object without processing using `as.tokens.list()`.\r\n    \r\n    - All tokens options are now _intervention_ options, to split or remove things that by default are not split or removed.  All `remove_*` options to `tokens()` now remove them from tokens objects by calling `tokens.tokens()`, after constructing the object.  \"Pre-processing\" is now  actually post-processing using `tokens_*()` methods internally, after a conservative tokenization on token boundaries. This both improves performance and improves consistency in handling special characters (e.g. Twitter characters) across different tokenizer engines. (#1503, #1446, #1801)    \r\n    \r\n    Note that `tokens.tokens()` will remove what is found, but cannot \"undo\" a removal -- for instance it cannot replace missing punctuation characters if these have already been removed.\r\n\r\n    - The option `remove_hyphens` is removed and deprecated, but replaced by `split_hyphens`.  This preserves infix (internal) hyphens rather than splitting them.  This behaviour is implemented in both the `what = \"word\"` and `what = \"word2\"` tokenizer options.  This option is `FALSE` by default.\r\n    \r\n    -  The option `remove_twitter` has been removed.  The new `what = \"word\"` is a smarter tokenizer that preserves social media tags, URLs, and email-addresses.  \"Tags\" are defined as valid social media hashtags and usernames (using Twitter rules for validity) rather than removing the `#` and `@` punctuation characters, even if `remove_punct = TRUE`.\r\n    \r\n## New features\r\n\r\n* Changed the default value of the `size` argument in `dfm_sample()` to the number of features, not the number of documents.  (#1643)\r\n* Fixes a few CRAN-related issues (compiler warnings on Solaris and encoding warnings on r-devel-linux-x86_64-debian-clang.)\r\n* Added `startpos` and `endpos` arguments to `tokens_select()`, for selecting on token positions relative to the start or end of the tokens in each document. (#1475)\r\n* Added a `convert()` method for corpus objects, to convert them into data.frame or json formats.\r\n* Added a `spacy_tokenize()` method for corpus objects, to provide direct access via the **spacyr** package.\r\n\r\n## Behaviour changes\r\n\r\n* Added a `force = TRUE` option and error checking for the situations of applying `dfm_weight()` or `dfm_group()` to a dfm that has already been weighted.  (#1545)  The function `textstat_frequency()` now allows passing this argument to `dfm_group()` via `...`.  (#1646)\r\n* `textstat_frequency()` now has a new argument for resolving ties when ranking term frequencies, defaulting to the \"min\" method.  (#1634)\r\n* New docvars accessor and replacement functions are available for corpus, tokens, and dfm objects via `$`.  (See Index Operators for Core Objects above.)\r\n* `textstat_entropy()` now produces a data.frame that is more consistent with other `textstat` methods.  (#1690)\r\n\r\n## Bug fixes and stability enhancements\r\n\r\n*  docnames now enforced to be character (formerly, could be numeric for some objects).\r\n*  docnames are now enforced to be strictly unique for all object classes.\r\n*  Grouping operations in `tokens_group()` and `dfm_group()` are more robust to using multiple grouping variables, and preserve these correctly as docvars in the new dfm.  (#1809)\r\n*  Some fixes to documented ... objects in two functions that were previously causing CRAN check failures on the release of 1.5.2.\r\n\r\n## Other improvements\r\n\r\n* All of the (three) included corpus objects have been cleaned up and augmented with improved meta-data and docvars.  The inaugural speech corpus, for instance, now includes the President's political party affiliation.\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v2.0.0",
+        "name": "CRAN v2.0.0",
+        "release_id": 24020422,
+        "tag": "v2.0.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v2.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/24020422",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/24020422",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v2.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2019-11-25T19:57:38Z",
+        "date_published": "2019-11-26T08:20:59Z",
+        "description": "Last 1.x.x release before major changes in v2.\r\n\r\n## New features\r\n\r\n* Added Yule's I to `textstat_lexdiv()`.\r\n* Added forward compatibility for newer (v2) corpus class objects.\r\n* Added a new function `featfreq()` to compute the overall feature frequencies from a dfm.  \r\n\r\n## Bug fixes\r\n\r\n* Fixed a bug in `tokens_lookup()` when `exclusive = FALSE` and the tokens object has paddings. (#1743)\r\n* Fixed a bug in `tokens_replace()` (#1765).\r\n\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.5.2",
+        "name": "CRAN v1.5.2",
+        "release_id": 21757716,
+        "tag": "v1.5.2",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.5.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/21757716",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/21757716",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.5.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2019-07-30T12:29:51Z",
+        "date_published": "2019-07-30T12:33:24Z",
+        "description": "## New features\r\n\r\n* Added `omit_empty` as an argument to `convert()`, to allow the user to control whether empty documents are excluded from converted dfm objects for certain formats.  (#1660)\r\n\r\n## Bug fixes and stability enhancements\r\n\r\n* Fixed a bug that affects the new `textstat_dist()` and `textstat_simil()` (#1730)\r\n* Fixed a bug in how `textstat_dist()` and `textstat_simil()` class symmetric matrices.\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.5.1",
+        "name": "CRAN v1.5.1",
+        "release_id": 18954810,
+        "tag": "v1.5.1",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.5.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/18954810",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/18954810",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.5.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2019-07-04T10:59:17Z",
+        "date_published": "2019-07-04T13:34:26Z",
+        "description": "## New features\r\n\r\n* Add `flatten` and `levels` arguments to `as.list.dictionary2()` to enable more flexible conversion of dictionary objects. (#1661)\r\n* In `corpus_sample()`, the `size` now works with the `by` argument, to control the size of units sampled from each group.\r\n* Improvements to `textstat_dist()` and `textstat_simil()`, see below.\r\n* Long tokens are not discarded automatically in the call to `tokens()`. (#1713)\r\n\r\n## Behaviour changes\r\n\r\n* `textstat_dist()` and `textstat_simil()` now return sparse symmetric matrix objects using classes from the **Matrix** package.  This replaces the former structure based on the `dist` class.  Computation of these classes is now also based on the fast implementation in the **proxyC** package.  When computing similarities, the new `min_simil` argument allows a user to ignore certain values below a specified similarity threshold.  A new coercion method `as.data.frame.textstat_simildist()` now exists for converting these returns into a data.frame of pairwise comparisons.  Existing methods such as `as.matrix()`, `as.dist()`, and `as.list()` work as they did before.\r\n* We have removed the \"faith\", \"chi-squared\", and \"kullback\" methods from `textstat_dist()` and `textstat_simil()` because these were either not symmetric or not invariant to document or feature ordering. Finally, the `selection` argument has been deprecated in favour of a new `y` argument.  \r\n* `textstat_readability()` now defaults to `measure = \"Flesch\"` if no measure is supplied.  This makes it consistent with `textstat_lexdiv()` that also takes a default measure (\"TTR\") if none is supplied.  (#1715)\r\n* The default values for `max_nchar` and `min_nchar` in `tokens_select()` are now NULL, meaning they are not applied if the user does not supply values.  Fixes #1713.\r\n\r\n## Bug fixes and stability enhancements\r\n\r\n* `kwic.corpus()` and `kwic.tokens()` behaviour now aligned, meaning that dictionaries are correctly faceted by key instead of by value. (#1684)\r\n* Improved formatting of `tokens()` verbose output. (#1683)\r\n* Subsetting and printing of subsetted kwic objects is more robust. (#1665)\r\n* The \"Bormuth\" and \"DRP\" measures are now fixed for `textstat_readability()`. (#1701)\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.5.0",
+        "name": "CRAN v1.5.0",
+        "release_id": 18415255,
+        "tag": "v1.5.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/18415255",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/18415255",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2019-04-01T06:47:04Z",
+        "date_published": "2019-04-02T21:50:55Z",
+        "description": "## Bug fixes and stability enhancements\r\n\r\n* Changed the default value of the `size` argument in `dfm_sample()` to the number of features, not the number of documents.  (#1643)\r\n* Fixes a few CRAN-related issues (compiler warnings on Solaris and encoding warnings on r-devel-linux-x86_64-debian-clang.)\r\n\r\n## Behaviour changes\r\n\r\n* Added a `force = TRUE` option and error checking for the situations of applying `dfm_weight()` or `dfm_group()` to a dfm that has already been weighted.  (#1545)  The function `textstat_frequency()` now allows passing this argument to `dfm_group()` via `...`.  (#1646)\r\n* `textstat_frequency()` now has a new argument for resolving ties when ranking term frequencies, defaulting to the \"min\" method.  (#1634)\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.4.3",
+        "name": "CRAN v1.4.3",
+        "release_id": 16513826,
+        "tag": "v1.4.3",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.4.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/16513826",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/16513826",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.4.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2019-02-26T10:36:21Z",
+        "date_published": "2019-02-26T21:18:10Z",
+        "description": "# quanteda 1.4.1\r\n\r\n## Bug fixes and stability enhancements\r\n\r\n* Fixed an issue with special handling of whitespace variants that caused a test to fail when running Ubuntu 18.10 system with libicu-dev version 63.1 (#1604).\r\n* Fixed the operation of `docvars<-.corpus()` in a way that solves #1603 (reassignment of docvar names).\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.4.1",
+        "name": "CRAN v1.4.1",
+        "release_id": 15791941,
+        "tag": "v1.4.1",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.4.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/15791941",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/15791941",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.4.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2019-01-30T22:01:06Z",
+        "date_published": "2019-01-30T22:04:26Z",
+        "description": "### Bug fixes and stability enhancements\r\n\r\n* Fixed bug in `dfm_compress()` and `dfm_group()` that changed or deleted docvars attributes of dfm objects (#1506).\r\n* Fixed a bug in `textplot_xray()` that caused incorrect facet labels when a pattern contained multiple list elements or values (#1514).\r\n* `kwic()` now correctly returns the pattern associated with each match as the `\"keywords\"` attribute, for all `pattern` types (#1515)\r\n* Implemented some improvements in efficiency and computation of unusual edge cases for `textstat_simil()` and `textstat_dist()`.\r\n\r\n### New features\r\n\r\n* `textstat_lexdiv()` now works on tokens objects, not just dfm objects.  New methods of lexical diversity now include MATTR (the Moving-Average Type-Token Ratio, Covington & McFall 2010) and MSTTR (Mean Segmental Type-Token Ratio).\r\n* New function `tokens_split()` allows splitting single into multiple tokens based on a pattern match. (#1500)\r\n* New function `tokens_chunk()` allows splitting tokens into new documents of equally-sized \"chunks\". (#1520)\r\n* New function `textstat_entropy()` now computes entropy for a dfm across feature or document margins.\r\n* The documentation for `textstat_readability()` is vastly improved, now providing detailing all formulas and providing full references.\r\n* New function `dfm_match()` allows a user to specify the features in a dfm according to a fixed vector of feature names, including those of another dfm.  Replaces `dfm_select(x, pattern)` where `pattern` was a dfm.\r\n* A new argument `vertex_labelsize` added to `textplot_network()` to allow more precise control of label sizes, either globally or individually.\r\n\r\n### Behaviour changes\r\n\r\n* `tokens.tokens(x, remove_hyphens = TRUE)` where `x` was generated with `remove_hyphens = FALSE` now behaves similarly to how the same tokens would be handled had this option been called on character input as `tokens.character(x, remove_hyphens = TRUE)`. (#1498)\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.4",
+        "name": "CRAN v1.4.0",
+        "release_id": 15277476,
+        "tag": "v1.4",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/15277476",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/15277476",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2018-11-19T18:28:27Z",
+        "date_published": "2018-11-19T20:01:53Z",
+        "description": "# quanteda v.1.3.14\r\n\r\n### Bug fixes and stability enhancements\r\n\r\n* Improved the robustness of `textstat_keyness()` (#1482).\r\n* Improved the accuracy of sparsity reporting for the print method of a dfm (#1473).\r\n\r\n### New Features\r\n\r\n* Added the following measures to `textstat_lexdiv()`: Yule's _K_, Simpson's _D_, and Herdan's _Vm_.",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.3.14",
+        "name": "CRAN v1.3.14",
+        "release_id": 14084308,
+        "tag": "v1.3.14",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.3.14",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/14084308",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/14084308",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.3.14"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2018-11-01T14:14:45Z",
+        "date_published": "2018-11-01T21:25:12Z",
+        "description": "### Bug fixes and stability enhancements\r\n\r\n* Fixed a bug causing incorrect counting in `fcm(x, ordered = TRUE)`. (#1413)  Also set the condition that `window` can be of size 1 (formerly the limit was 2 or greater).\r\n* Fixed deprecation warnings from adding a dfm as docvars, and this now inmports the feature names as docvar names automatically. (related to #1417)\r\n* Fixed behaviour from `tokens(x, what = \"fasterword\", remove_separators = TRUE)` so that it correctly splits words separated by `\\n` and `\\t` characters.  (#1420)\r\n* Add error checking for functions taking dfm inputs in case a dfm has empty features (#1419).\r\n* For `textstat_readability()`, fixed a bug in Dale-Chall-based measures and in the Spache word list measure.  These were caused by an incorrect lookup mechanism but also by limited implementation of the wordlists.  The new wordlists include all of the variations called for in the original measures, but using fast fixed matching. (#1410)\r\n* Fixed problems with basic dfm operations (`rowMeans()`, `rowSums()`, `colMeans()`, `colSums()`) caused by not having access to the **Matrix** package methods.  (#1428)\r\n* Fixed problem in `textplot_scale1d()` when input a predicted wordscores object with `se.fit = TRUE` (#1440).\r\n* Improved the stability of `textplot_network()`. (#1460)\r\n\r\n### New Features\r\n\r\n* Added new argument `intermediate` to `textstat_readability(x, measure, intermediate = FALSE)`, which if `TRUE` returns intermediate quantities used in the computation of readability statistics.  Useful for verification or direct use of the intermediate quantities.\r\n* Added a new `separator` argument to `kwic()` to allow a user to define which characters will be added between tokens returned from a keywords in context search.  (#1449)\r\n* Reimplemented `textstat_dist()` and `textstat_simil()` in C++ for enhanced performance.  (#1210)\r\n* Added a `tokens_sample()` function (#1478).\r\n\r\n### Behaviour changes\r\n\r\n* Removed the Hamming distance method from `textstat_dist()` (#1443), based on the reasoning in #1442.\r\n* Removed the \"chisquared\" and \"chisquared2\" distance measures from `textstat_simil()`. (#1442)\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.3.13",
+        "name": "CRAN v1.3.13",
+        "release_id": 13786796,
+        "tag": "v1.3.13",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.3.13",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/13786796",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/13786796",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.3.13"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2018-10-05T19:22:31Z",
+        "date_published": "2018-10-05T20:08:34Z",
+        "description": "Prepared for and submitted to CRAN, and the version current with the publication of the _JOSS_ article about **quanteda**.",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.3.10",
+        "name": "(not accepted by CRAN \ud83d\ude1e) v1.3.10",
+        "release_id": 13275387,
+        "tag": "v1.3.10",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.3.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/13275387",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/13275387",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.3.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2018-06-05T18:30:18Z",
+        "date_published": "2018-06-05T18:43:13Z",
+        "description": "### New Features\r\n\r\n* Added `to = \"tripletlist\"` output type for `convert()`, to convert a dfm into a simple triplet list. (#1321) \r\n* Added `tokens_tortl()` and `char_tortl()` to add markers for right-to-left language tokens and character objects. (#1322)\r\n\r\n### Behaviour changes\r\n\r\n* Improved `corpus.kwic()` by adding new arguments `split_context` and `extract_keyword`.\r\n* `dfm_remove(x, selection = anydfm)` is now equivalent to `dfm_remove(x, selection = featnames(anydfm))`.  (#1320)\r\n* Improved consistency of `predict.textmodel_nb()` returns, and added `type = ` argument. (#1329)\r\n\r\n### Bug fixes\r\n\r\n* Fixed a bug in `textmodel_affinity()` that caused failure when the input dfm had been compiled with `tolower = FALSE`.  (#1338)\r\n* Fixed a bug affecting `tokens_lookup()` and `dfm_lookup()` when `nomatch` is used. (#1347)\r\n* Fixed a problem whereby NA texts created a \"document\" (or tokens) containing `\"NA\"` (#1372)\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.3.0",
+        "name": "CRAN v1.3.0",
+        "release_id": 11335143,
+        "tag": "v1.3.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/11335143",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/11335143",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2018-04-15T17:18:09Z",
+        "date_published": "2018-04-16T12:23:33Z",
+        "description": "### New Features\r\n\r\n* Added an `nsentence()` method for **spacyr** parsed objects.  (#1289)\r\n\r\n### Bug fixes and stability enhancements\r\n\r\n* Fix bug in `nsyllable()` that incorrectly handled cased words, and returned wrong names with `use.names = TRUE`. (#1282)\r\n* Fix the overwriting of `summary.character()` caused by previous import of the **network** package namespace. (#1285)\r\n* `dfm_smooth()` now correctly sets the smooth value in the dfm (#1274).  Arithmetic operations on dfm objects are now much more consistent and do not drop attributes of the dfm, as sometimes happened with earlier versions.\r\n\r\n### Behaviour changes\r\n\r\n* `tokens_toupper()` and `tokens_tolower()` no longer remove unused token types.  Solves #1278.\r\n* `dfm_trim()` now takes more options, and these are implemented more consistently.  `min_termfreq` and `max_termfreq` have replaced `min_count` and `max_count`, and these can be modified using a `termfreq_type` argument.  (Similar options are implemented for `docfreq_type`.)  Solves #1253, #1254.\r\n* `textstat_simil()` and `textstat_dist()` now take valid dfm indexes for the relevant margin for the `selection` argument.  Previously, this could also be a direct vector or matrix for comparison, but this is no longer allowed.  Solves #1266.\r\n* Improved performance for `dfm_group()` (#1295).\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.2.0",
+        "name": "CRAN v1.2.0",
+        "release_id": 10562481,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/10562481",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/10562481",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2018-03-06T18:00:41Z",
+        "date_published": "2018-03-08T10:19:13Z",
+        "description": "Changed the default number of threads to 2.",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.1.1",
+        "name": "CRAN v1.1.1",
+        "release_id": 9995316,
+        "tag": "v1.1.1",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/9995316",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/9995316",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kbenoit",
+          "type": "User"
+        },
+        "date_created": "2018-03-05T17:41:10Z",
+        "date_published": "2018-03-06T15:21:05Z",
+        "description": "### New Features\r\n\r\n* Added `as.dfm()` methods for **tm** `DocumentTermMatrix` and `TermDocumentMatrix` objects. (#1222)\r\n* `predict.textmodel_wordscores()` nows includes an `include_reftexts` argument to exclude training texts from the predicted model object (#1229).  The default behaviour is `include_reftexts = TRUE`, producing the same behaviour as existed before the introduction of this argument.  This allows rescaling based on the reference documents (since rescaling requires prediction on the reference documents) but provides an easy way to exclude the reference documents from the predicted quantities.\r\n* `textplot_wordcloud()` now uses code entirely internal to **quanteda**, instead of using the **wordcloud** package.\r\n\r\n### Bug fixes and stability enhancements\r\n\r\n* Eliminated unnecessary dependency on the **digest** package.\r\n* Updated the vignette title to be less generic.\r\n* Improved the robustness of `dfm_trim()` and `dfm_weight()` for previously weighted dfm objects and when supplied thresholds are proportions instead of counts.  (#1237)\r\n* Fixed a problem in `summary.corpus(x, n = 101)` when `ndoc(x) > 100` (#1242). \r\n* Fixed a problem in `predict.textmodel_wordscores(x, rescaling = \"mv\")` that always reset the reference values for rescaling to the first and second documents (#1251).\r\n* Issues in the color generation and labels for `textplot_keyness()` are now resolved (#1233, #1233).\r\n\r\n\r\n### Performance improvements\r\n\r\n* textmodel methods are now exported, to facilitate extension packages for other textmodel methods (e.g. wordshoal).\r\n\r\n### Behaviour changes\r\n\r\n* Changed the default in `textmodel_wordfish()` to `sparse = FALSE`, in response to #1216.\r\n* `dfm_group()` now preserves docvars that are constant for the group aggregation (#1228).\r\n",
+        "html_url": "https://github.com/quanteda/quanteda/releases/tag/v1.1.0",
+        "name": "CRAN v1.1.0",
+        "release_id": 9961788,
+        "tag": "v1.1.0",
+        "tarball_url": "https://api.github.com/repos/quanteda/quanteda/tarball/v1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/quanteda/quanteda/releases/9961788",
+        "value": "https://api.github.com/repos/quanteda/quanteda/releases/9961788",
+        "zipball_url": "https://api.github.com/repos/quanteda/quanteda/zipball/v1.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:36:07",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 863
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Get Help",
+        "parent_header": [
+          "How To\u2026"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Read out documentation at <https://quanteda.io>.\n- Check out the [**quanteda**\n  cheatsheet](https://github.com/quanteda/quanteda/blob/master/tests/cheatsheet/quanteda-cheatsheet.pdf).\n- Submit a question on the **quanteda** channel on StackOverflow\n  (questions tagged as quanteda\u201d).\n- See our [tutorial site](https://tutorials.quanteda.io/).\n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Use **quanteda**",
+        "parent_header": [
+          "How To\u2026"
+        ],
+        "type": "Text_excerpt",
+        "value": "See the [quick start\nguide](https://quanteda.io/articles/quickstart.html) to learn how to use\n**quanteda**.\n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Get Help",
+        "parent_header": [
+          "How To\u2026"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Read out documentation at <https://quanteda.io>.\n- Check out the [**quanteda**\n  cheatsheet](https://github.com/quanteda/quanteda/blob/master/tests/cheatsheet/quanteda-cheatsheet.pdf).\n- Submit a question on the **quanteda** channel on StackOverflow\n  (questions tagged as quanteda\u201d).\n- See our [tutorial site](https://tutorials.quanteda.io/).\n"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+        "type": "String",
+        "value": "4.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v1.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/quanteda/quanteda/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

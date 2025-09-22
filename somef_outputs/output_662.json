@@ -1,0 +1,728 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9217544518646623,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "florian.dirk.schneider@gmail.com",
+            "value": "Florian D. Schneider"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "florian.dirk.schneider@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-1494-5684",
+        "type": "String",
+        "value": "Florian D. Schneider"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2018",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"To cite 'traitdataform' in publications use:\")\n\ncitEntry(entry = \"Manual\",\n  title        = \"Package 'traitdataform'\",\n  author       = personList(as.person(\"Florian D. Schneider\")),\n  url          = \"https://ecologicaltraitdata.github.io/traitdataform/\",\n\n  textVersion  =\n  paste(\"Florian D. Schneider (2018).\",\n        \"Package 'traitdataform'\",\n        \"URL https://ecologicaltraitdata.github.io/traitdataform/.\")\n)"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Cite as",
+        "parent_header": [
+          "Package 'traitdataform': Formatting and Harmonizing Ecological Trait-Data"
+        ],
+        "type": "Text_excerpt",
+        "value": "Schneider, F.D. (2022) traitdataform - harmonizing ecological trait data in R, v0.6.8, DOI: [10.5281/zenodo.1489527](http://dx.doi.org/10.5281/zenodo.1489527) http://ecologicaltraitdata.github.io/traitdataform\n"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Code of Conduct\n\nAs contributors and maintainers of this project, we pledge to respect all people who \ncontribute through reporting issues, posting feature requests, updating documentation,\nsubmitting pull requests or patches, and other activities.\n\nWe are committed to making participation in this project a harassment-free experience for\neveryone, regardless of level of experience, gender, gender identity and expression,\nsexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.\n\nExamples of unacceptable behavior by participants include the use of sexual language or\nimagery, derogatory comments or personal attacks, trolling, public or private harassment,\ninsults, or other unprofessional conduct.\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments,\ncommits, code, wiki edits, issues, and other contributions that are not aligned to this \nCode of Conduct. Project maintainers who do not follow the Code of Conduct may be removed \nfrom the project team.\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by \nopening an issue or contacting one or more of the project maintainers.\n\nThis Code of Conduct is adapted from the Contributor Covenant \n(http://contributor-covenant.org), version 1.0.0, available at \nhttp://contributor-covenant.org/version/1/0/0/\n"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/EcologicalTraitData/traitdataform"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ecologicaltraitdata/traitdataform"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ecologicaltraitdata/traitdataform"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/EcologicalTraitData/traitdataform/actions"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING #\n\n### Fixing typos\n\nSmall typos or grammatical errors in documentation may be edited directly using\nthe GitHub web interface, so long as the changes are made in the _source_ file.\n\n*  YES: you edit a roxygen comment in a `.R` file below `R/`.\n*  NO: you edit an `.Rd` file below `man/`.\n\n### Prerequisites\n\nBefore you make a substantial pull request, you should always file an issue and\nmake sure someone from the team agrees that it\u2019s a problem. If you\u2019ve found a\nbug, create an associated issue and illustrate the bug with a minimal \n[reprex](https://www.tidyverse.org/help/#reprex).\n\n### Pull request process\n\n*  We recommend that you create a Git branch for each pull request (PR).  \n*  Look at the Travis and AppVeyor build status before and after making changes (visible in README).\n*  We recommend the tidyverse [style guide](http://style.tidyverse.org).\n*  We use [roxygen2](https://cran.r-project.org/package=roxygen2).  \n*  We use [testthat](https://cran.r-project.org/package=testthat). Contributions\nwith test cases included are easier to accept.  \n*  For user-facing changes, add a bullet to the top of `NEWS.md` below the\ncurrent development version header describing the changes made followed by your\nGitHub username, and links to relevant issue(s)/PR(s).\n\n### Code of Conduct\n\nPlease note that the 'traitdataform' project is released with a\n[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this\nproject you agree to abide by its terms.\n\n### See rOpenSci [contributing guide](https://ropensci.github.io/dev_guide/contributingguide.html)\nfor further details.\n\n### Discussion forum\n\nCheck out our [discussion forum](https://discuss.ropensci.org) if you think your issue requires a longer form discussion.\n\n### Prefer to Email? \n\nEmail the person listed as maintainer in the `DESCRIPTION` file of this repo.\n\nThough note that private discussions over email don't help others - of course email is totally warranted if it's a sensitive problem of any kind.\n\n### Thanks for contributing!\n\nThis contributing guide is adapted from the tidyverse contributing guide available at https://raw.githubusercontent.com/r-lib/usethis/master/inst/templates/tidy-contributing.md \n"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "Package 'traitdataform': Formatting and Harmonizing Ecological Trait-Data"
+        ],
+        "type": "Text_excerpt",
+        "value": "The package invites any contributions e.g. minor fixes and spell-checks, improving interoperability with data and other packages or software for trait-data handling. Please see [the Contributing Guidelines](https://ecologicaltraitdata.github.io/traitdataform/CONTRIBUTING.html) for details.\n\nPlease note that the 'traitdataform' project is released with a [Contributor Code of Conduct](https://ecologicaltraitdata.github.io/traitdataform/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.\n"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-04-27T13:50:24Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-04-14T05:27:30Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A package to manage and compile functional trait data into predefined templates"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+        "type": "String",
+        "value": "Assistance for handling ecological trait data and applying the \n    Ecological Trait-Data Standard terminology (Schneider et al. 2019\n    <doi:10.1111/2041-210X.13288>). There are two major use cases: (1) preparation of\n    own trait datasets for publication, and (2) harmonizing\n    trait datasets from different sources by re-formatting them into a unified\n    format. See 'traitdataform' website for full documentation."
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Assistance for handling ecological trait data and applying the Ecological Trait-Data Standard terminology (Schneider et al. 2019 <doi:10.1111/2041-210X.13288>). There are two major use cases: (1) preparation of own trait datasets for publication, and (2) harmonizing trait datasets from different sources by re-formatting them into a unified format. See 'traitdataform' website for full documentation. "
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8919744514223833,
+      "result": {
+        "original_header": "Package 'traitdataform': Formatting and Harmonizing Ecological Trait-Data",
+        "type": "Text_excerpt",
+        "value": "\nAssistance for handling functional trait data and transferring them into the Ecological Trait-Data Standard (Schneider et al. 2019 Towards an Ecological Trait-data Standard, *Methods in Ecology and Evolution* DOI: [10.1111/2041-210X.13288]( https://doi.org/10.1111/2041-210X.13288)).  \n- preparation of own trait datasets for upload into public data bases, and\n- harmonizing trait datasets from different sources by moulding them into a unified format. \nThe toolset of the package includes \n"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9493247603060055,
+      "result": {
+        "original_header": "Datasets",
+        "type": "Text_excerpt",
+        "value": "The traitdataform package links to a couple of datasets, which are used for demo purposes in the vignette and documentation, but can be used for research and production use.   \nFor additional information and interpretation of the data please refer to the help pages of the data objects (e.g. calling `?carabids` in R) and the original data sources given therein.  \nIf you want  further data sources published under Creative Commons Licenses or in the public domain being added to this package, feel free to file a pull-request with a script for download and harmonization in the `data/` directory and a documentation appended to `R/data.R`!  \n"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9022346168567057,
+      "result": {
+        "original_header": "Future features",
+        "type": "Text_excerpt",
+        "value": "The package is under open source development. You are invited to submit pull-requests with your improvements.  \nWe are aiming to provide the following features in future iterations of the package:  \n- extracting trait definitions and hierarchies from semantic ontologies (e.g. from the OWL files or via APIs), to facilitate analysis of comparable traits across taxa. \n- automated matching of user-provided trait names against trait definitions in online resources, by looking up traits from published ontologies.\n- harmonization of levels of factorial traits via fuzzy matching (requires lookup tables and ontologies providing legit factor levels). \n- managing trait databases locally in R by managing relational data (e.g. on occurrence level or measurement level, sampling event,  taxon etc.) in the data.frame attributes. \n \n"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "https://lifecycle.r-lib.org/articles/stages.html#stable",
+          "https://www.repostatus.org/#active"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "Package 'traitdataform': Formatting and Harmonizing Ecological Trait-Data"
+        ],
+        "type": "Text_excerpt",
+        "value": "A documentation is available online at http://ecologicaltraitdata.github.io/traitdataform/ or offline in the package vignette 'traitdataform'. \n"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/EcologicalTraitData/traitdataform/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 9
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/EcologicalTraitData/traitdataform/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "EcologicalTraitData/traitdataform"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Package 'traitdataform': Formatting and Harmonizing Ecological Trait-Data"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ecologicaltraitdata.github.io/traitdataform/"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "traitdataform"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.1489527"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "Package 'traitdataform': Formatting and Harmonizing Ecological Trait-Data"
+        ],
+        "type": "Text_excerpt",
+        "value": "Install from CRAN via\n\n```r\ninstall.packages('traitdataform')\n```\n\nThe development version of the package can be installed from Github via the 'devtools' package\n\n```r\ninstall.packages('devtools')\ndevtools::install_github('EcologicalTraitData/traitdataform')\n```"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/EcologicalTraitData/traitdataform/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ecologicaltraitdata/traitdataform/issues"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ecologicaltraitdata/traitdataform/issues"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "dataset, ecology, harmonization, r-package, trait-datasets"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "dataset",
+          "trait-datasets",
+          "harmonization",
+          "r-package",
+          "ecology"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "YEAR: 2022\nCOPYRIGHT HOLDER: F.D. Schneider"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "Package 'traitdataform': Formatting and Harmonizing Ecological Trait-Data"
+        ],
+        "type": "Text_excerpt",
+        "value": "Copyright (c) 2022 F.D. Schneider, florian.dirk.schneider@gmail.com\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "traitdataform"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "traitdataform: Formatting and Harmonizing Ecological Trait-Data"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "EcologicalTraitData"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+        "type": "String",
+        "value": "traitdataform"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 131409,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "fdschneider",
+          "type": "User"
+        },
+        "date_created": "2020-10-21T07:08:52Z",
+        "date_published": "2021-03-10T18:54:56Z",
+        "description": "Major changes:\r\n\r\n- update internal terms to v0.10 of the Ecological Trait-data Standard (ETS). In ETS v0.10 the assignment of user-defined and standardised measurement values and trait and taxon assignments has been updated, to match labelling practice in DwC and provide a more intuitive content for those fields. Accordingly\r\n- the v0.9.1 terms scientificName, traitName, traitValue, and traitUnit have been renamed into verbatimScientificName, verbatimTraitName, verbatimTraitValue, and verbatimTraitUnit with new identifiers.\r\n- the terms scientificNameStd, traitNameStd, traitValueStd, and traitUnitStd have been renamed into scientificName, traitName, traitValue, and traitUnit and now form the default suggested content for trait data complying with the ETS. Definitions have been harmonized. The original *Std identifiers now resolve to these new terms.\r\n\r\nThis causes the output file to differ from earlier outputs. To maintain compatibility with earlier versions, an option conformsTo has been added to as.traitdata() to return the data table in terms of version 0.9. By default, output is returned in ETS version 0.10. Data releases created by traitdataform should always be labelled with the version of ETS that applies to the data!\r\n",
+        "html_url": "https://github.com/EcologicalTraitData/traitdataform/releases/tag/v0.6.0",
+        "name": "Conforming v0.10 of the Ecological Trait-data Standard (ETS)",
+        "release_id": 39611749,
+        "tag": "v0.6.0",
+        "tarball_url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/tarball/v0.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/releases/39611749",
+        "value": "https://api.github.com/repos/EcologicalTraitData/traitdataform/releases/39611749",
+        "zipball_url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/zipball/v0.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "fdschneider",
+          "type": "User"
+        },
+        "date_created": "2018-12-04T10:03:03Z",
+        "date_published": "2018-12-04T10:06:26Z",
+        "description": "first stable release. Intended for submission to CRAN. \r\nFrom this point on, backward compatibility will be maintained.\r\n\r\nminor changes (since v0.4): \r\n\r\n- complete package vignette \r\n- improved unit handling\r\n- solid demo data import\r\n ",
+        "html_url": "https://github.com/EcologicalTraitData/traitdataform/releases/tag/v0.5.0",
+        "name": "first stable",
+        "release_id": 14334210,
+        "tag": "v0.5.0",
+        "tarball_url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/tarball/v0.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/releases/14334210",
+        "value": "https://api.github.com/repos/EcologicalTraitData/traitdataform/releases/14334210",
+        "zipball_url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/zipball/v0.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "fdschneider",
+          "type": "User"
+        },
+        "date_created": "2018-11-15T16:41:45Z",
+        "date_published": "2018-11-16T08:03:59Z",
+        "html_url": "https://github.com/EcologicalTraitData/traitdataform/releases/tag/v0.3.0",
+        "name": "No errors and warnings at R CHECK",
+        "release_id": 14038646,
+        "tag": "v0.3.0",
+        "tarball_url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/tarball/v0.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/releases/14038646",
+        "value": "https://api.github.com/repos/EcologicalTraitData/traitdataform/releases/14038646",
+        "zipball_url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/zipball/v0.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "fdschneider",
+          "type": "User"
+        },
+        "date_created": "2017-11-21T08:44:01Z",
+        "date_published": "2017-11-21T08:51:33Z",
+        "description": "Release with full documentation website: https://ecologicaltraitdata.github.io/traitdataform/\r\n\r\n## Major changes\r\n\r\n- updated terms to traitdata standard v0.6.\r\n- datasets are not loaded by default, but wait for a prompt using `data()`. Also added documentation for all datasets and added more datasets.  \r\n- adding function method `rbind.traitdata()` for merging standardised datasets into a unified table. includes handling of metadata object in attributes\r\n- metadata can be stored in the attributes of a dataset and will be preserved when updating the dataset. Information will be handled when merging or combining multiple datasets. \r\n- trait thesauri can be added more easily from a data frame or from a list of 'trait' objects. \r\n\r\n\r\n## Minor changes\r\n\r\n- update vignette: add section on merging and combining data. \r\n- added print methods for traits and thesaurus objects. \r\n",
+        "html_url": "https://github.com/EcologicalTraitData/traitdataform/releases/tag/v0.2.0",
+        "name": "functional and documented",
+        "release_id": 8598770,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/releases/8598770",
+        "value": "https://api.github.com/repos/EcologicalTraitData/traitdataform/releases/8598770",
+        "zipball_url": "https://api.github.com/repos/EcologicalTraitData/traitdataform/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active - The project has reached a stable, usable state and is being actively developed.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "System requirements",
+        "parent_header": [
+          "Package 'traitdataform': Formatting and Harmonizing Ecological Trait-Data"
+        ],
+        "type": "Text_excerpt",
+        "value": "The package requires the [udunits library](https://www.unidata.ucar.edu/software/udunits/) for unit conversion to be installed. It should install automatically, but if the package installation throws an error, it might need manual installation (see [this thread for help](https://github.com/r-quantities/units/issues/1)).  \n"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:35:55",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 34
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "Package 'traitdataform': Formatting and Harmonizing Ecological Trait-Data"
+        ],
+        "type": "Text_excerpt",
+        "value": "```r\n\npulldata(\"carabids\")\n\nthesaurus <- as.thesaurus(\n       body_length = as.trait(\"body_length\", \n         expectedUnit = \"mm\", \n         identifier = \"length\"\n         ), \n       antenna_length = as.trait(\"antenna_length\", \n         expectedUnit = \"mm\", \n         identifier = \"antenna\"\n         ),\n       metafemur_length = as.trait(\"metafemur_length\", \n         expectedUnit = \"mm\", \n         identifier = \"metafemur\"\n         ),\n       eyewidth = as.trait(\"eyewidth_corr\", \n         expectedUnit = \"mm\", \n         identifier = \"eyewidth\"\n         )\n)\n                          \ntraitdataset1 <- standardize(carabids,\n            thesaurus = thesaurus,\n            taxa = \"name_correct\",\n            units = \"mm\"\n            )\n\n```"
+      },
+      "source": "https://github.com/EcologicalTraitData/traitdataform/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.6.8"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.6.8"
+      },
+      "source": "https://raw.githubusercontent.com/EcologicalTraitData/traitdataform/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

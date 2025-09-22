@@ -1,0 +1,1408 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "proycon@anaproy.nl",
+        "type": "Agent",
+        "value": "proycon@anaproy.nl"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "proycon@anaproy.nl",
+        "identifier": "https://orcid.org/0000-0002-1046-0006",
+        "type": "String",
+        "value": "Maarten van Gompel"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/clam"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://proycon.github.io/clam"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/clam"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/clam/actions/workflows/clam.yml"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/clam/master/.github/workflows/clam.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2010-07-06T17:15:18Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2010-03-21"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-08T07:51:05Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-03-12"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Quickly turn command-line applications into RESTful webservices with a web-application front-end. You provide a specification of your command line application, its input, output and parameters, and CLAM wraps around your application to form a fully fledged RESTful webservice."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Turns command-line tools into fully-fledged RESTful webservices with an auto-generated web-interface for human end-users."
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Quickly turn command-line applications into RESTful webservices with a web-application front-end. You provide a specification of your command line application, its input, output and parameters, and CLAM wraps around your application to form a fully fledged RESTful webservice. "
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.987064370029444,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "CLAM allows you to quickly and transparently transform your Natural Language\nProcessing application into a RESTful webservice, with which both human\nend-users as well as automated clients can interact. CLAM takes a description\nof your system and wraps itself around the system, allowing end-users or\nautomated clients to upload input files to your application, start your\napplication with specific parameters of their choice, and download and view the\noutput of the application once it is completed. \nCLAM is set up in a universal fashion, requiring minimal effort on the part of\nthe service developer. Your actual NLP application is treated as a black box,\nof which only the parameters, input formats and output formats need to be\ndescribed. Your application itself needs not be network aware in any way, nor\naware of CLAM, and the handling and validation of input can be taken care of by\nCLAM. \nCLAM is entirely written in Python, runs on UNIX-derived systems, and is\navailable as open source under the GNU Public License (v3). It is set up in a\nmodular fashion, and offers an API, and as such is easily extendable. CLAM\ncommunicates in a transparent XML format, and using XSL transformation offers a\nmodern client-side generated web-interface for human end users. \n"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/README.rst",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "https://www.repostatus.org/#active",
+          "https://w3id.org/research-technology-readiness-levels#Level9Proven"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/clam/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "type": "Text_excerpt",
+        "value": "Documentation is available on https://clam.readthedocs.io\n\nSome screenshots of the web user interface can be found below:\n\n.. image:: https://raw.githubusercontent.com/proycon/clam/master/docs/screenshot.png\n    :alt: the clam project list\n\n.. image:: https://raw.githubusercontent.com/proycon/clam/master/docs/screenshot2.png\n    :alt: the clam project page during staging\n\n.. image:: https://raw.githubusercontent.com/proycon/clam/master/docs/screenshot3.png\n    :alt: the clam project page when done\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "http://clam.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/clam/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 17
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/proycon/clam/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "proycon/clam"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/clam/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/clam/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/clam/master/clam/wrappers/template.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "clam"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "Installation from the Python Package Index using the  package manager *pip* it the recommended way to\nintall CLAM. This is the easiest method\nof installing CLAM, as it will automatically fetch and install any\ndependencies. We recommend to use a virtual environment (``virtualenv``) if you\nwant to install CLAM locally as a user, if you want to install globally,\nprepend the following commands with ``sudo``:\n\nCLAM can be installed from the Python Package Index using pip. Pip is usually\npart of the ``python3-pip`` package (Debian/Ubuntu) or similar, note that\nPython 2.7 is not supported anymore (you might need to call ``pip3`` instead of ``pip`` on older system). It downloads CLAM and all dependencies\nautomatically:::\n\n  $ pip install clam\n\nIf you already downloaded CLAM manually (from github), you can do::\n\n  $ pip install .\n\nIf pip is not yet installed on your system, install it using:\n on debian-based linux systems (including Ubuntu)::\n\n  $ apt-get install python3-pip\n\non RPM-based linux systems::\n\n  $ yum install python3-pip\n\nNote that sudo/root access is needed to install globally. Ask your system administrator\nto install it if you do not own the system. Alternatively, you can install it locally in a Python virtual\nenvironment::\n\n  $ virtualenv --python=python3 env\n\nOr::\n\n  $ python3 -m venv env\n\nThen activate it as follows:\n\n  $ . env/bin/activate\n\n  (env)$ pip install clam\n\nCLAM also has some optional dependencies. For MySQL support, install\n``mysqlclient`` using pip. For `FoLiA <https://proycon.github.io/folia>`_\nsupport, install ``FoLiA-Tools`` using pip.\n\n**Note:** CLAM is designed for Linux-like systems, although the client and data library work everywhere, hosting webservices via ``clamservice`` may not work on Windows.\n\nRunning a test webservice\n~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nIf you installed CLAM using the above method, then you can launch a clam test\nwebservice using the development server as follows::\n\n  $ clamservice -H localhost -p 8080 clam.config.textstats\n\nNavigate your browser to http://localhost:8080 and verify everything works\n\n**Note:** It is important to regularly keep CLAM up to date as fixes and\nimprovements are implemented on a regular basis. Update CLAM using::\n\n  $ pip install -U clam\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/proycon/clam/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/clam/issues"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "nlp, python, rest, webservice, wrapper"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SaaS"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "webservice"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "rest"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "nlp",
+          "natural language processing",
+          "webservice",
+          "rest"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "GPL-3.0-only"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0-only",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0-only",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0-only"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "clam"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CLAM"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "proycon"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CLAM"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 690088,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 141575,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "XSLT",
+        "size": 90128,
+        "type": "Programming_language",
+        "value": "XSLT"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 17171,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 16997,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 7806,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 3183,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python",
+        "type": "Programming_language",
+        "value": "python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/clam/master/README.rst"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/proycon/clam/blob/master/README.rst"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "title": "CLAM: Computational Linguistics Application Mediator",
+        "type": "Scholarly_article",
+        "url": "https://github.com/proycon/clam/raw/master/docs/clam_manual.pdf",
+        "value": "CLAM: Computational Linguistics Application Mediator"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "title": "CLAM: Quickly deploy NLP command-line tools on the web",
+        "type": "Scholarly_article",
+        "url": "http://anthology.aclweb.org/C/C14/C14-2016.pdf",
+        "value": "CLAM: Quickly deploy NLP command-line tools on the web"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2025-03-12T10:48:18Z",
+        "date_published": "2025-03-12T12:22:57Z",
+        "description": "* minor bugfix when input parameters are missing",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.11",
+        "name": "v3.2.11",
+        "release_id": 205274985,
+        "tag": "v3.2.11",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.11",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/205274985",
+        "value": "https://api.github.com/repos/proycon/clam/releases/205274985",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.11"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2024-03-14T20:42:31Z",
+        "date_published": "2024-03-14T20:47:58Z",
+        "description": "* Fixed a regression (might have been introduced in v3.2.6) that caused file parameter selection not to fully show.\r\n* Upgraded jquery to 3.7.1",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.10",
+        "name": "v3.2.10",
+        "release_id": 146673025,
+        "tag": "v3.2.10",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/146673025",
+        "value": "https://api.github.com/repos/proycon/clam/releases/146673025",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2024-02-05T11:01:05Z",
+        "date_published": "2024-02-05T11:03:08Z",
+        "description": "Minor update: \r\n\r\n* clamnewproject: fix generated Dockerfile for Alpine 3.19\r\n* clamnewproject: allow using DATADIR in environment variable\r\n* documentation: improved/clarified installation instructions",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.9",
+        "name": "v3.2.9",
+        "release_id": 139888395,
+        "tag": "v3.2.9",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/139888395",
+        "value": "https://api.github.com/repos/proycon/clam/releases/139888395",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2023-10-31T17:24:48Z",
+        "date_published": "2023-10-31T17:29:31Z",
+        "description": "Minor update, fixes forwarded authentication test\r\n\r\n**Note:** When using forwarded authentication, do not use the REMOTE_USER header, the underlying flask or werkzeug library filters it.\r\n\r\n",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.8",
+        "name": "v3.2.8",
+        "release_id": 127405282,
+        "tag": "v3.2.8",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/127405282",
+        "value": "https://api.github.com/repos/proycon/clam/releases/127405282",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2023-10-31T16:24:50Z",
+        "date_published": "2023-10-31T16:36:34Z",
+        "description": "[Maarten van Gompel]\r\n* archive fix: download of tar.gz had wrong mimetype and was uncompressed by the browser again\r\n* minor fixes/cleanup \r\n\r\n[Sheaan Spoel]\r\n* Update index when project is started/reset\r\n",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.7",
+        "name": "v3.2.7",
+        "release_id": 127397418,
+        "tag": "v3.2.7",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/127397418",
+        "value": "https://api.github.com/repos/proycon/clam/releases/127397418",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2023-05-01T10:46:24Z",
+        "date_published": "2023-05-01T10:51:02Z",
+        "description": "* upgraded jquery, addresses CVE-2020-11022\r\n* clamclient: use basic auth by default, added `-D` option for digest.\r\n* info page: list all possible authentication methods in curl calls (as already advertised)",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.6",
+        "name": "v3.2.6",
+        "release_id": 101456488,
+        "tag": "v3.2.6",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/101456488",
+        "value": "https://api.github.com/repos/proycon/clam/releases/101456488",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2023-03-01T13:33:18Z",
+        "date_published": "2023-03-02T09:03:26Z",
+        "description": "Software metadata update only, no functional changes",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.5",
+        "name": "v3.2.5",
+        "release_id": 94197125,
+        "tag": "v3.2.5",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/94197125",
+        "value": "https://api.github.com/repos/proycon/clam/releases/94197125",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-12-12T12:13:39Z",
+        "date_published": "2023-01-02T11:15:28Z",
+        "description": "Minor bugfix release:\r\n\r\n* Fixed JSON-LD output of info page",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.4",
+        "name": "v3.2.4",
+        "release_id": 87689307,
+        "tag": "v3.2.4",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/87689307",
+        "value": "https://api.github.com/repos/proycon/clam/releases/87689307",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-11-29T13:15:02Z",
+        "date_published": "2022-11-29T13:17:13Z",
+        "description": "* Fixes two remaining leaks of the oauth2 access token, users using OAuth2 are urged to upgrade.",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.3",
+        "name": "v3.2.3",
+        "release_id": 84449020,
+        "tag": "v3.2.3",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/84449020",
+        "value": "https://api.github.com/repos/proycon/clam/releases/84449020",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-11-22T20:49:00Z",
+        "date_published": "2022-11-22T20:52:53Z",
+        "description": "* Unset oauth_access_token cookie when token is invalid/expired\r\n* Fix Www-authenticate header response for OAuth2",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.2",
+        "name": "v3.2.2",
+        "release_id": 83920375,
+        "tag": "v3.2.2",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/83920375",
+        "value": "https://api.github.com/repos/proycon/clam/releases/83920375",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-11-22T14:43:36Z",
+        "date_published": "2022-11-22T14:52:19Z",
+        "description": "* making HTTP Basic Authentication the default over HTTP Digest Authentication (people need to use SSL anyway so Digest has no added value)\r\n* allow explicitly requesting fallback (basic) authentication, also from interface\r\n* info page: updated with more accurate information on authentication methods (and curl/python examples)\r\n* added interface customisation options to config template\r\n",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2.1",
+        "name": "v3.2.1",
+        "release_id": 83881904,
+        "tag": "v3.2.1",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/83881904",
+        "value": "https://api.github.com/repos/proycon/clam/releases/83881904",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-11-17T14:55:25Z",
+        "date_published": "2022-11-17T16:14:49Z",
+        "description": "Users using OAuth2 or OpenID Connect are urged to upgrade to this release because of security improvements:\r\n\r\n* Removed OAuth2 tokens from query parameters #109 , now using cookies instead\r\n* Generate Dockerfile with clamnewproject #104\r\n* Allow JSON-LD content request for service metadata, using schema.org vocabulary #110 \r\n* Allow using OAuth2 and HTTP Basic at the same time\r\n* Implemented USERS_FILE directive to load user credentials from a simple tsv file\r\n* Made wrapper shell script template  POSIX-compliant\r\n* Revised documentation regarding installation and deployment, favouring containerised setups (e.g. Docker) in production scenarios.\r\n\r\n",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.2",
+        "name": "v3.2",
+        "release_id": 83418017,
+        "tag": "v3.2",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/83418017",
+        "value": "https://api.github.com/repos/proycon/clam/releases/83418017",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-11-11T13:14:42Z",
+        "date_published": "2022-11-11T13:24:31Z",
+        "description": "Fixed regression in oauth2 authentication introduced in v3.1.6",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.1.8",
+        "name": "v3.1.8",
+        "release_id": 82795103,
+        "tag": "v3.1.8",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.1.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/82795103",
+        "value": "https://api.github.com/repos/proycon/clam/releases/82795103",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.1.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-11-11T12:08:08Z",
+        "date_published": "2022-11-11T12:15:58Z",
+        "description": "Bugfix release: status log has to be utf-8 encoded\r\n",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.1.7",
+        "name": "v3.1.7",
+        "release_id": 82789488,
+        "tag": "v3.1.7",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.1.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/82789488",
+        "value": "https://api.github.com/repos/proycon/clam/releases/82789488",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.1.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-11-01T14:40:47Z",
+        "date_published": "2022-11-03T11:00:47Z",
+        "description": "Bugfix release: redirect (401) when oauth tokens expire or other unexpected errors occurs",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.1.6",
+        "name": "v3.1.6",
+        "release_id": 81936636,
+        "tag": "v3.1.6",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.1.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/81936636",
+        "value": "https://api.github.com/repos/proycon/clam/releases/81936636",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.1.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-04-08T12:12:28Z",
+        "date_published": "2022-04-08T14:26:18Z",
+        "description": "Minor bugfix release, metadata update (no functional changes)",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.1.5",
+        "name": "v3.1.5",
+        "release_id": 63978795,
+        "tag": "v3.1.5",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.1.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/63978795",
+        "value": "https://api.github.com/repos/proycon/clam/releases/63978795",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.1.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-04-07T12:44:06Z",
+        "date_published": "2022-04-07T12:53:07Z",
+        "description": "Bugfix release:\r\n\r\n* Fixed project creation when using OAuth2 authentication\r\n* Fixed/disabled automatic redirects in flask/werkzeug that were having unwanted side-effects\r\n* Fix for parsing json environment variables in external configuration\r\n* Increased debug output in OAuth2 login process",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.1.4",
+        "name": "v3.1.4",
+        "release_id": 63856356,
+        "tag": "v3.1.4",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/63856356",
+        "value": "https://api.github.com/repos/proycon/clam/releases/63856356",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-04-07T09:07:28Z",
+        "date_published": "2022-04-07T09:27:44Z",
+        "description": "Minor bugfix release: fixes environment variables to JSON mapping in external configuration files",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.1.3",
+        "name": "v3.1.3",
+        "release_id": 63839172,
+        "tag": "v3.1.3",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/63839172",
+        "value": "https://api.github.com/repos/proycon/clam/releases/63839172",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-04-04T21:17:05Z",
+        "date_published": "2022-04-04T21:20:49Z",
+        "description": "Implemented some type casts for handling environment variables in config files:\r\n\r\n*  Now supports constructions like: {{VAR|int}} {{VAR|bool}}\r\n*  Fixed a small regression issue in the test suite (#107)\r\n",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.1.2",
+        "name": "v3.1.2",
+        "release_id": 63568959,
+        "tag": "v3.1.2",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/63568959",
+        "value": "https://api.github.com/repos/proycon/clam/releases/63568959",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-02-17T20:06:14Z",
+        "date_published": "2022-02-17T21:28:46Z",
+        "description": "*  Implemented more extensive support for handling environment variables in config files, \r\n    *  Now supports required variables: ``{{VAR!}}`` and defaults ``{{VAR=defaultvalue}}``",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.1.1",
+        "name": "v3.1.1",
+        "release_id": 59851636,
+        "tag": "v3.1.1",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/59851636",
+        "value": "https://api.github.com/repos/proycon/clam/releases/59851636",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2021-06-04T17:20:54Z",
+        "date_published": "2021-06-22T14:47:34Z",
+        "description": "* Implemented the ability to share output publicly over a one-time download link to overcome authentication barriers #95 \r\n  * Implemented support for temporary unauthenticated storage (enabled by default) in the Forwarder\r\n  * Defer building of downloadable archives to when temporary storage is accessed\r\n  * Implemented a share option in the interface, using a new ShareView. Implemented the ability to share more persistently.\r\n  * fixes for return mime types on error responses for the storage endpoint\r\n  * Implemented a downloadstorage() method in the client library\r\n* Forwarders now automatically urlencode the backlink #86 \r\n  * Resolve more variables in Forwarder urls and updated documentation accordingly #86\r\n* Implemented OpenID Connect support (#93). Various fixes and improvements for OAuth2 authentication:\r\n   * added OAUTH_CLIENT_URL configuration directive\r\n   * Implemented OAUTH_USERINFO_URL parameter and implemented more general behaviour for getting usernames (email) that should work with OpenID Connect #93\r\n* Augmented the interface so things don't get cluttered when there are many viewers for a file #102\r\n* Do not serialise empty/unfilled input parameters in CLAM metadata #103 \r\n*  Added utility functions isncname and makencname to check if a string is a valid XML NCName and to make it so if not. Duplicated from the folia library but included here so we don't need an external dependency.\r\n* Implemented an allowdefault option on viewers, can be used to state that you don't want a feature to be used as default viewer. \r\n* ensure textstats example also works without external configuration file (it is used as a simple demo case)\r\n* Implemented ability to read original host from X-Forwarded-Host (#105) \r\n* Updated dependencies to the latest versions, deprecated Python 3.5 support (use 3.6 or higher)\r\n\r\n",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.1",
+        "name": "v3.1",
+        "release_id": 45035189,
+        "tag": "v3.1",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/45035189",
+        "value": "https://api.github.com/repos/proycon/clam/releases/45035189",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-12-11T14:26:29Z",
+        "date_published": "2020-12-11T14:35:40Z",
+        "description": "Minor update:\r\n * Adapted some default mime types to comply to e.g. RFC 2361 for compatibility with the CLARIN switchboard",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.0.23",
+        "name": "v3.0.23",
+        "release_id": 35156515,
+        "tag": "v3.0.23",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.0.23",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/35156515",
+        "value": "https://api.github.com/repos/proycon/clam/releases/35156515",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.0.23"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-11-27T14:18:43Z",
+        "date_published": "2020-11-30T17:18:16Z",
+        "description": "Bugfix release: \r\n\r\n* Do not serialise empty/unfilled input parameters in CLAM metadata #103\r\n* Added utility functions isncname and makencname to check if a string is a valid XML NCName and to make it so if not.",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.0.22",
+        "name": "v3.0.22",
+        "release_id": 34588859,
+        "tag": "v3.0.22",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.0.22",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/34588859",
+        "value": "https://api.github.com/repos/proycon/clam/releases/34588859",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.0.22"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-11-19T18:05:32Z",
+        "date_published": "2020-11-19T18:10:49Z",
+        "description": "Bugfix release: Fixes for shortcut method, important authentication fix and handle url-encoded URLs.",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.0.21",
+        "name": "v3.0.21",
+        "release_id": 34189853,
+        "tag": "v3.0.21",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.0.21",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/34189853",
+        "value": "https://api.github.com/repos/proycon/clam/releases/34189853",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.0.21"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-11-10T13:49:07Z",
+        "date_published": "2020-11-10T13:52:19Z",
+        "description": "Bugfix release: Fixed error message when downloading remote files and implemented  proper URL decoding (#100)",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.0.20",
+        "name": "v3.0.20",
+        "release_id": 33720667,
+        "tag": "v3.0.20",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.0.20",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/33720667",
+        "value": "https://api.github.com/repos/proycon/clam/releases/33720667",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.0.20"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-10-27T11:04:40Z",
+        "date_published": "2020-10-27T11:45:08Z",
+        "description": "Bugfix release:\r\n\r\n* Fixed files not being added to list after upload in web interface #94",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.0.19",
+        "name": "v3.0.19",
+        "release_id": 33104805,
+        "tag": "v3.0.19",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.0.19",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/33104805",
+        "value": "https://api.github.com/repos/proycon/clam/releases/33104805",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.0.19"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-09-30T13:47:58Z",
+        "date_published": "2020-09-30T14:49:14Z",
+        "description": "Bugfix release:\r\n * Fix in data API: correctly parse optional attribute from CLAM XML ",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.0.18",
+        "name": "v3.0.18",
+        "release_id": 31996517,
+        "tag": "v3.0.18",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.0.18",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/31996517",
+        "value": "https://api.github.com/repos/proycon/clam/releases/31996517",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.0.18"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-07-20T11:54:51Z",
+        "date_published": "2020-07-20T11:58:35Z",
+        "description": "* adding all static assets inside the proejct rather than relying on fetching them from other origins, removes dependencies on cloudflare and CDNs\r\n\r\n\r\n",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.0.17",
+        "name": "v3.0.17",
+        "release_id": 28735405,
+        "tag": "v3.0.17",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.0.17",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/28735405",
+        "value": "https://api.github.com/repos/proycon/clam/releases/28735405",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.0.17"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-06-25T09:20:39Z",
+        "date_published": "2020-06-25T09:26:23Z",
+        "description": "* Added FORCEHTTPS configuration directive, as a lighter alternative to using the full FORCEURL option.",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.0.16",
+        "name": "v3.0.16",
+        "release_id": 27908350,
+        "tag": "v3.0.16",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.0.16",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/27908350",
+        "value": "https://api.github.com/repos/proycon/clam/releases/27908350",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.0.16"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-06-09T19:43:47Z",
+        "date_published": "2020-06-09T19:45:29Z",
+        "description": "* Made it possible to set a maximum number of MBs of data a user can have in running projects. #92 \r\n* Made it possible to set a maximum number of running projects per user. #91 \r\n",
+        "html_url": "https://github.com/proycon/clam/releases/tag/v3.0.15",
+        "name": "v3.0.15",
+        "release_id": 27384832,
+        "tag": "v3.0.15",
+        "tarball_url": "https://api.github.com/repos/proycon/clam/tarball/v3.0.15",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/clam/releases/27384832",
+        "value": "https://api.github.com/repos/proycon/clam/releases/27384832",
+        "zipball_url": "https://api.github.com/repos/proycon/clam/zipball/v3.0.15"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "flask",
+        "type": "Software_application",
+        "value": "flask>=2.0.1",
+        "version": ">=2.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lxml",
+        "type": "Software_application",
+        "value": "lxml>=4.6.0",
+        "version": ">=4.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "requests",
+        "type": "Software_application",
+        "value": "requests",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "requests_oauthlib",
+        "type": "Software_application",
+        "value": "requests_oauthlib",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "requests_toolbelt",
+        "type": "Software_application",
+        "value": "requests_toolbelt",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "certifi",
+        "type": "Software_application",
+        "value": "certifi",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyyaml",
+        "type": "Software_application",
+        "value": "pyyaml",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "flask",
+        "type": "Software_application",
+        "value": "flask",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:22:20",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 132
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "3.2.11"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/clam/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

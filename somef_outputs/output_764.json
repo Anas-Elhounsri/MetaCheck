@@ -1,0 +1,1352 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Texas A&M University",
+        "email": "wenzel.jakob@epfl.ch",
+        "identifier": "https://orcid.org/0000-0001-8340-0824",
+        "type": "String",
+        "value": "Scott Kolodziej"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Texas A&M University",
+        "email": "wenzel.jakob@epfl.ch",
+        "identifier": "https://orcid.org/0000-0001-7614-6899",
+        "type": "String",
+        "value": "Timothy Davis"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Microsoft Corporation",
+        "email": "wenzel.jakob@epfl.ch",
+        "identifier": "https://orcid.org/0000-0002-8689-5268",
+        "type": "String",
+        "value": "Nuri Yeralan"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Florida",
+        "email": "wenzel.jakob@epfl.ch",
+        "type": "String",
+        "value": "William Hager"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Authors",
+        "last_name": "of GETFEM++",
+        "name": "Authors of GETFEM++",
+        "type": "Agent",
+        "value": "Authors of GETFEM++"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/CoMISo/ext/gmm-4.2/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Yves",
+        "last_name": "RENARD. Initial project. All the project.",
+        "name": "Yves RENARD. Initial project. All the project.",
+        "type": "Agent",
+        "value": "Yves RENARD. Initial project. All the project."
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/CoMISo/ext/gmm-4.2/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Julien",
+        "last_name": "POMMIER. All the project.",
+        "name": "Julien POMMIER. All the project.",
+        "type": "Agent",
+        "value": "Julien POMMIER. All the project."
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/CoMISo/ext/gmm-4.2/AUTHORS",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/penn-graphics-research/DOT"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ScottKolo/Mongoose"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jdittrich/figureAltCaption"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/figureAltCaption/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/pybind11/pybind11"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://travis-ci.com/ScottKolo/Mongoose"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Thank you for your interest in this project! Please refer to the following\nsections on how to contribute code and bug reports.\n\n### Reporting bugs\n\nAt the moment, this project is run in the spare time of a single person\n([Wenzel Jakob](http://rgl.epfl.ch/people/wjakob)) with very limited resources\nfor issue tracker tickets. Thus, before submitting a question or bug report,\nplease take a moment of your time and ensure that your issue isn't already\ndiscussed in the project documentation provided at\n[http://pybind11.readthedocs.org/en/latest](http://pybind11.readthedocs.org/en/latest).\n\nAssuming that you have identified a previously unknown problem or an important\nquestion, it's essential that you submit a self-contained and minimal piece of\ncode that reproduces the problem. In other words: no external dependencies,\nisolate the function(s) that cause breakage, submit matched and complete C++\nand Python snippets that can be easily compiled and run on my end.\n\n## Pull requests\nContributions are submitted, reviewed, and accepted using Github pull requests.\nPlease refer to [this\narticle](https://help.github.com/articles/using-pull-requests) for details and\nadhere to the following rules to make the process as smooth as possible:\n\n* Make a new branch for every feature you're working on.\n* Make small and clean pull requests that are easy to review but make sure they\n  do add value by themselves.\n* Add tests for any new functionality and run the test suite (``make pytest``)\n  to ensure that no existing features break.\n* This project has a strong focus on providing general solutions using a\n  minimal amount of code, thus small pull requests are greatly preferred.\n\n### Licensing of contributions\n\npybind11 is provided under a BSD-style license that can be found in the\n``LICENSE`` file. By using, distributing, or contributing to this project, you\nagree to the terms and conditions of this license.\n\nYou are under no obligation whatsoever to provide any bug fixes, patches, or\nupgrades to the features, functionality or performance of the source code\n(\"Enhancements\") to anyone; however, if you choose to make your Enhancements\navailable either publicly, or directly to the author of this software, without\nimposing a separate written license agreement for such Enhancements, then you\nhereby grant the following license: a non-exclusive, royalty-free perpetual\nlicense to install, use, modify, prepare derivative works, incorporate into\nother computer software, distribute, and sublicense such enhancements or\nderivative works thereof, in binary and source code form.\n"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-06-07T23:17:32Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-04-09"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-05-25"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-05-04T05:35:05Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-07-05"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Decomposed Optimization Time Integration (DOT) is a domain-decomposed optimization method for fast, reliable simulation of deformation dynamics. DOT efficiently converges with frame-rate time-steps across a wide range of extreme conditions."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Mongoose is a hybrid graph partitioning library."
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Extension for Python-Markdown to parse images with captions."
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/figureAltCaption/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/python/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Seamless operability between C++11 and Python"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9408931323101536,
+      "result": {
+        "original_header": "DOT",
+        "type": "Text_excerpt",
+        "value": "Decomposed Optimization Time Integration (DOT) is a domain-decomposed optimization method for fast, reliable simulation of deformation dynamics. DOT efficiently converges with frame-rate time-steps across a wide range of extreme conditions. \n"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9092188058124011,
+      "result": {
+        "original_header": "Output Files",
+        "type": "Text_excerpt",
+        "value": "* n.obj: surface mesh of the simulated object in n-th time step\n* statusn: saved information of n-th time step that can be used to restart the simulation from\n* 0.png and finalResult.png: snapshot of the initial and the last time step\n* finalResult_mesh.msh/finalResult_mesh.obj: shape of the simulated object in the last time step\n* anim.gif: animation preview of the simulation\n* config.txt: the config file containing all simulation settings that can be used to rerun the simulation\n* iterStats.txt: simulation/optimization statistics of each iteration\n* info.txt: timing information\n* log.txt: debug information\n* label.obj: subdomain label of each vertex on the input shape (DOT output only)\n* wire.poly: wire frame of the mesh in rest shape (DOT output only)\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9556550023994409,
+      "result": {
+        "original_header": "Script Settings",
+        "type": "Text_excerpt",
+        "value": "* `energy {FCR | SNH}`\n    * `FCR`: Fixed Co-rotational elasticity energy\n    * `SNH`: Stable Neo-Hookean elasticity energy\n* `timeIntegration {BE}`\n    * `BE`: Backward Euler (default)\n* `timeStepper { Newton | LBFGSH | LBFGSHI | LBFGS | ADMM <number-of-iterations> | DOT {<number-of-subdomains> | -1 <nodes-per-block>} | ADMMDD {<number-of-subdomains> | -1 <nodes-per-block>} | LBFGSJH {<number-of-subdomains> | -1 <nodes-per-block>} | GSDD {<number-of-subdomains> | -1 <nodes-per-block>}}`\n    * `Newton`: projected Newton\n    * `LBFGSH`: LBFGS-H\n    * `LBFGSHI`: LBFGS with incomplete Cholesky decomposition of the beginning of time step Hessian as initializer\n    * `LBFGS`: LBFGS-PD\n    * `ADMM`: ADMM-PD\n    * `DOT`: our method\n    * `ADMMDD`: [must be used without SIMD] a constrained formulation of domain decomposed elastodynamic simulation realized by ADMM. This is our initial trial. It is robust but slow to converge.\n    * `LBFGSJH`: LBFGS initialized with Jacobi domain decomposition (nonoverlapped block diagonal preconditioning)\n    * `GSDD`: Gauss-Seidel domain decomposition (sequential overlapped block diagonal preconditioned gradient descent)\n* `warmStart {0-5}`\n    * `0`: initial position (no warm start) (x\u207f)\n    * `1`: initial position + integrated velocity (x\u207f + \u0394t v\u207f), the one we found provides the fastest convergence but with a little bit damping if not solving to enough accuracy (1e-5 CN that we used in all of our experiments is accurate enough)\n    * `2`: initial position + integrated velocity + doubly integrated gravity (x\u207f + \u0394t v\u207f + \u0394t\u00b2 g), the one used in all of our experiments\n    * `3`: uniformly accelerated warm start\n    * `4`: symplectic Euler warm start\n    * `5`: Jacobi warm start\n* `resolution <num-elements>`\n    * number of elements (:warning:not working for tetrahedral meshes:warning:)\n* `size <size>`\n    * size of the bounding box in meters\n* `time <num-seconds> <time-step>`\n    * total time in seconds\n    * \u0394t in seconds\n* `density <density>`\n    * density of the mesh in Kg/m\u00b3\n* `stiffness <young-modulus> <poisson-ratio>`\n    * Young's modulus (E) in Pa\n    * Poisson's ratio (\u03bd)\n* `turnOffGravity`\n    * no gravity if specified\n* `script {null | scaleF | hang | stretch | squash | stretchnsquash | bend | twist | twistnstretch | twistnsns | twistnsns_old | rubberBandPull | onepoint | random | fall}`\n    * Different animation scripts (see `src/AnimScripter.cpp` for details)\n* `handleRatio <ratio>`\n    * the proportion of fixed vertices for setting Dirichlet boundary conditions\n    * `ratio` must be greater than zero and less than one\n* `shape input <mesh-file-path>`\n* `rotateModel <rot-axis-x> <rot-axis-y> <rot-axis-z> <rot-deg>`\n    * rotate model in model space with rotDeg degrees along direction `[rot-axis-x rot-axis-y rot-axis-z]`\n* `tol positiveInteger`\n    * number of time steps to set for CN followed by that number of positiveRealNumber\n    * if not set, all time steps will use 1e-5 CN\n    * if set and more than positiveInteger time steps will be simulated, the exceeding time steps will use the last tolerance set by this command\n* `restart <status-file-path-str>`\n    * restart simulation from the time step in the specified status file (other settings must be the same)\n* `view {orthographic | perspective}`\n* `zoom <positive-real-number>`\n* `appendStr <str>`\n    * append result folder with the string specified\n* `disableCout`\n    * no command line output if specified \n"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/penn-graphics-research/DOT/tree/master/libigl/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/penn-graphics-research/DOT/tree/master/libigl/external/glfw/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/penn-graphics-research/DOT/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ScottKolo/Mongoose/archive/v2.0.2.zip"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 9
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/penn-graphics-research/DOT/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "penn-graphics-research/DOT"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DOT"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/figureAltCaption/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/figureAltCaption/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/python/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/python/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/docs/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/docs/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/CHOLMOD/Demo/gpu.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/SPQR/Demo/demo_colamd2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/SPQR/Demo/demo_colamd3.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/SPQR/Demo/demo_colamd.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/SPQR/Demo/demo_metis2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/SPQR/Demo/demo_metis3.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/SPQR/Demo/demo_metis.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/tutorial/602_Matlab/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/license.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/clone-and-build.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/make_j.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/compile_external.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/pre-commit.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/append_source.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/upload.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/doc.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/make.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/autoexplicit.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/compress.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/autoexplicit_linux.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/update_gh-pages.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/h2pair.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/CoMISo/ext/gmm-4.2/ltmain.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/tutorials/osp2emb.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/tutorials/ispc2cpp.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/common/cmake/rpm_ldconfig.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/klocwork.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/package_linux.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/check_symbols.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/release_linux.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/install_linux_gcc.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/benchmark_instancing.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/release_macosx.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/strip.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/package_macosx.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/install_macosx/embree-vars.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/embree/scripts/install_linux/embree-vars.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/tools/check-style.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/imgui/imgui/examples/vulkan_example/gen_spv.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/eigen/bench/bench_multi_compilers.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/eigen/bench/btl/data/mk_gnuplot_script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/eigen/bench/btl/data/mk_mean_script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/eigen/bench/btl/data/mk_new_gnuplot.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/eigen/bench/btl/data/smooth_all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/eigen/bench/perf_monitoring/gemm/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/eigen/bench/perf_monitoring/gemm/make_plot.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Mongoose"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/teaser.jpg"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/penn-graphics-research/DOT/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ScottKolo/Mongoose/issues"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "computer-graphics, deformable-bodies-dynamics, domain-decomposition, elasticity, elastodynamics, optimization-time-integrator, physics-based-animation, siggraph"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Mongoose",
+          "SuiteSparse",
+          "software",
+          "graph partitioning",
+          "sparse matrices",
+          "graph coarsening",
+          "edge cut",
+          "scientific software",
+          "mathematical software"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "C++11"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python bindings"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0-only.html",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0-only.html",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0-only.html"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "type": "File_dump",
+        "value": "TetGen License\n--------------\n\nTetGen is distributed under a dual licensing scheme. You can\nredistribute it and/or modify it under the terms of the GNU Affero\nGeneral Public License as published by the Free Software Foundation,\neither version 3 of the License, or (at your option) any later\nversion. A copy of the GNU Affero General Public License is reproduced\nbelow.\n\nIf the terms and conditions of the AGPL v.3. would prevent you from\nusing TetGen, please consider the option to obtain a commercial\nlicense for a fee. These licenses are offered by the Weierstrass\nInstitute for Applied Analysis and Stochastics (WIAS). As a rule,\nlicenses are provided \"as-is\", unlimited in time for a one time\nfee. Please send corresponding requests to:\ntetgen@wias-berlin.de. Please do not forget to include some\ndescription of your company and the realm of its activities.\n\n=====================================================================\nGNU AFFERO GENERAL PUBLIC LICENSE\n\nVersion 3, 19 November 2007\n\nCopyright \u00a9 2007 Free Software Foundation, Inc. <http://fsf.org/>\nEveryone is permitted to copy and distribute verbatim copies of this\nlicense document, but changing it is not allowed.\n\nPreamble\n\nThe GNU Affero General Public License is a free, copyleft license for\nsoftware and other kinds of works, specifically designed to ensure\ncooperation with the community in the case of network server software.\n\nThe licenses for most software and other practical works are designed\nto take away your freedom to share and change the works. By contrast,\nour General Public Licenses are intended to guarantee your freedom to\nshare and change all versions of a program--to make sure it remains\nfree software for all its users.\n\nWhen we speak of free software, we are referring to freedom, not\nprice. Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthem if you wish), that you receive source code or can get it if you\nwant it, that you can change the software or use pieces of it in new\nfree programs, and that you know you can do these things.\n\nDevelopers that use our General Public Licenses protect your rights\nwith two steps: (1) assert copyright on the software, and (2) offer\nyou this License which gives you legal permission to copy, distribute\nand/or modify the software.\n\nA secondary benefit of defending all users' freedom is that\nimprovements made in alternate versions of the program, if they\nreceive widespread use, become available for other developers to\nincorporate. Many developers of free software are heartened and\nencouraged by the resulting cooperation. However, in the case of\nsoftware used on network servers, this result may fail to come\nabout. The GNU General Public License permits making a modified\nversion and letting the public access it on a server without ever\nreleasing its source code to the public.\n\nThe GNU Affero General Public License is designed specifically to\nensure that, in such cases, the modified source code becomes available\nto the community. It requires the operator of a network server to\nprovide the source code of the modified version running there to the\nusers of that server. Therefore, public use of a modified version, on\na publicly accessible server, gives the public access to the source\ncode of the modified version.\n\nAn older license, called the Affero General Public License and\npublished by Affero, was designed to accomplish similar goals. This is\na different license, not a version of the Affero GPL, but Affero has\nreleased a new version of the Affero GPL which permits relicensing\nunder this license.\n\nThe precise terms and conditions for copying, distribution and\nmodification follow.\n\nTERMS AND CONDITIONS\n\n0. Definitions.\n\n\"This License\" refers to version 3 of the GNU Affero General Public\nLicense.\n\n\"Copyright\" also means copyright-like laws that apply to other kinds\nof works, such as semiconductor masks.\n\n\"The Program\" refers to any copyrightable work licensed under this\nLicense. Each licensee is addressed as \"you\". \"Licensees\" and\n\"recipients\" may be individuals or organizations.\n\nTo \"modify\" a work means to copy from or adapt all or part of the work\nin a fashion requiring copyright permission, other than the making of\nan exact copy. The resulting work is called a \"modified version\" of\nthe earlier work or a work \"based on\" the earlier work.\n\nA \"covered work\" means either the unmodified Program or a work based\non the Program.\n\nTo \"propagate\" a work means to do anything with it that, without\npermission, would make you directly or secondarily liable for\ninfringement under applicable copyright law, except executing it on a\ncomputer or modifying a private copy. Propagation includes copying,\ndistribution (with or without modification), making available to the\npublic, and in some countries other activities as well.\n\nTo \"convey\" a work means any kind of propagation that enables other\nparties to make or receive copies. Mere interaction with a user\nthrough a computer network, with no transfer of a copy, is not\nconveying.\n\nAn interactive user interface displays \"Appropriate Legal Notices\" to\nthe extent that it includes a convenient and prominently visible\nfeature that (1) displays an appropriate copyright notice, and (2)\ntells the user that there is no warranty for the work (except to the\nextent that warranties are provided), that licensees may convey the\nwork under this License, and how to view a copy of this License. If\nthe interface presents a list of user commands or options, such as a\nmenu, a prominent item in the list meets this criterion.\n\n1. Source Code.\n\nThe \"source code\" for a work means the preferred form of the work for\nmaking modifications to it. \"Object code\" means any non-source form of\na work.\n\nA \"Standard Interface\" means an interface that either is an official\nstandard defined by a recognized standards body, or, in the case of\ninterfaces specified for a particular programming language, one that\nis widely used among developers working in that language.\n\nThe \"System Libraries\" of an executable work include anything, other\nthan the work as a whole, that (a) is included in the normal form of\npackaging a Major Component, but which is not part of that Major\nComponent, and (b) serves only to enable use of the work with that\nMajor Component, or to implement a Standard Interface for which an\nimplementation is available to the public in source code form. A\n\"Major Component\", in this context, means a major essential component\n(kernel, window system, and so on) of the specific operating system\n(if any) on which the executable work runs, or a compiler used to\nproduce the work, or an object code interpreter used to run it.\n\nThe \"Corresponding Source\" for a work in object code form means all\nthe source code needed to generate, install, and (for an executable\nwork) run the object code and to modify the work, including scripts to\ncontrol those activities. However, it does not include the work's\nSystem Libraries, or general-purpose tools or generally available free\nprograms which are used unmodified in performing those activities but\nwhich are not part of the work. For example, Corresponding Source\nincludes interface definition files associated with source files for\nthe work, and the source code for shared libraries and dynamically\nlinked subprograms that the work is specifically designed to require,\nsuch as by intimate data communication or control flow between those\nsubprograms and other parts of the work.\n\nThe Corresponding Source need not include anything that users can\nregenerate automatically from other parts of the Corresponding Source.\n\nThe Corresponding Source for a work in source code form is that same\nwork.\n\n2. Basic Permissions.\n\nAll rights granted under this License are granted for the term of\ncopyright on the Program, and are irrevocable provided the stated\nconditions are met. This License explicitly affirms your unlimited\npermission to run the unmodified Program. The output from running a\ncovered work is covered by this License only if the output, given its\ncontent, constitutes a covered work. This License acknowledges your\nrights of fair use or other equivalent, as provided by copyright law.\n\nYou may make, run and propagate covered works that you do not convey,\nwithout conditions so long as your license otherwise remains in\nforce. You may convey covered works to others for the sole purpose of\nhaving them make modifications exclusively for you, or provide you\nwith facilities for running those works, provided that you comply with\nthe terms of this License in conveying all material for which you do\nnot control copyright. Those thus making or running the covered works\nfor you must do so exclusively on your behalf, under your direction\nand control, on terms that prohibit them from making any copies of\nyour copyrighted material outside their relationship with you.\n\nConveying under any other circumstances is permitted solely under the\nconditions stated below. Sublicensing is not allowed; section 10 makes\nit unnecessary.\n\n3. Protecting Users' Legal Rights From Anti-Circumvention Law.\n\nNo covered work shall be deemed part of an effective technological\nmeasure under any applicable law fulfilling obligations under article\n11 of the WIPO copyright treaty adopted on 20 December 1996, or\nsimilar laws prohibiting or restricting circumvention of such\nmeasures.\n\nWhen you convey a covered work, you waive any legal power to forbid\ncircumvention of technological measures to the extent such\ncircumvention is effected by exercising rights under this License with\nrespect to the covered work, and you disclaim any intention to limit\noperation or modification of the work as a means of enforcing, against\nthe work's users, your or third parties' legal rights to forbid\ncircumvention of technological measures.\n\n4. Conveying Verbatim Copies.\n\nYou may convey verbatim copies of the Program's source code as you\nreceive it, in any medium, provided that you conspicuously and\nappropriately publish on each copy an appropriate copyright notice;\nkeep intact all notices stating that this License and any\nnon-permissive terms added in accord with section 7 apply to the code;\nkeep intact all notices of the absence of any warranty; and give all\nrecipients a copy of this License along with the Program.\n\nYou may charge any price or no price for each copy that you convey,\nand you may offer support or warranty protection for a fee.\n\n5. Conveying Modified Source Versions.\n\nYou may convey a work based on the Program, or the modifications to\nproduce it from the Program, in the form of source code under the\nterms of section 4, provided that you also meet all of these\nconditions:\n\na) The work must carry prominent notices stating that you modified it,\nand giving a relevant date.  b) The work must carry prominent notices\nstating that it is released under this License and any conditions\nadded under section 7. This requirement modifies the requirement in\nsection 4 to \"keep intact all notices\".  c) You must license the\nentire work, as a whole, under this License to anyone who comes into\npossession of a copy. This License will therefore apply, along with\nany applicable section 7 additional terms, to the whole of the work,\nand all its parts, regardless of how they are packaged. This License\ngives no permission to license the work in any other way, but it does\nnot invalidate such permission if you have separately received it.  d)\nIf the work has interactive user interfaces, each must display\nAppropriate Legal Notices; however, if the Program has interactive\ninterfaces that do not display Appropriate Legal Notices, your work\nneed not make them do so.  A compilation of a covered work with other\nseparate and independent works, which are not by their nature\nextensions of the covered work, and which are not combined with it\nsuch as to form a larger program, in or on a volume of a storage or\ndistribution medium, is called an \"aggregate\" if the compilation and\nits resulting copyright are not used to limit the access or legal\nrights of the compilation's users beyond what the individual works\npermit. Inclusion of a covered work in an aggregate does not cause\nthis License to apply to the other parts of the aggregate.\n\n6. Conveying Non-Source Forms.\n\nYou may convey a covered work in object code form under the terms of\nsections 4 and 5, provided that you also convey the machine-readable\nCorresponding Source under the terms of this License, in one of these\nways:\n\na) Convey the object code in, or embodied in, a physical product\n(including a physical distribution medium), accompanied by the\nCorresponding Source fixed on a durable physical medium customarily\nused for software interchange.  b) Convey the object code in, or\nembodied in, a physical product (including a physical distribution\nmedium), accompanied by a written offer, valid for at least three\nyears and valid for as long as you offer spare parts or customer\nsupport for that product model, to give anyone who possesses the\nobject code either (1) a copy of the Corresponding Source for all the\nsoftware in the product that is covered by this License, on a durable\nphysical medium customarily used for software interchange, for a price\nno more than your reasonable cost of physically performing this\nconveying of source, or (2) access to copy the Corresponding Source\nfrom a network server at no charge.  c) Convey individual copies of\nthe object code with a copy of the written offer to provide the\nCorresponding Source. This alternative is allowed only occasionally\nand noncommercially, and only if you received the object code with\nsuch an offer, in accord with subsection 6b.  d) Convey the object\ncode by offering access from a designated place (gratis or for a\ncharge), and offer equivalent access to the Corresponding Source in\nthe same way through the same place at no further charge. You need not\nrequire recipients to copy the Corresponding Source along with the\nobject code. If the place to copy the object code is a network server,\nthe Corresponding Source may be on a different server (operated by you\nor a third party) that supports equivalent copying facilities,\nprovided you maintain clear directions next to the object code saying\nwhere to find the Corresponding Source. Regardless of what server\nhosts the Corresponding Source, you remain obligated to ensure that it\nis available for as long as needed to satisfy these requirements.  e)\nConvey the object code using peer-to-peer transmission, provided you\ninform other peers where the object code and Corresponding Source of\nthe work are being offered to the general public at no charge under\nsubsection 6d.  A separable portion of the object code, whose source\ncode is excluded from the Corresponding Source as a System Library,\nneed not be included in conveying the object code work.\n\nA \"User Product\" is either (1) a \"consumer product\", which means any\ntangible personal property which is normally used for personal,\nfamily, or household purposes, or (2) anything designed or sold for\nincorporation into a dwelling. In determining whether a product is a\nconsumer product, doubtful cases shall be resolved in favor of\ncoverage. For a particular product received by a particular user,\n\"normally used\" refers to a typical or common use of that class of\nproduct, regardless of the status of the particular user or of the way\nin which the particular user actually uses, or expects or is expected\nto use, the product. A product is a consumer product regardless of\nwhether the product has substantial commercial, industrial or\nnon-consumer uses, unless such uses represent the only significant\nmode of use of the product.\n\n\"Installation Information\" for a User Product means any methods,\nprocedures, authorization keys, or other information required to\ninstall and execute modified versions of a covered work in that User\nProduct from a modified version of its Corresponding Source. The\ninformation must suffice to ensure that the continued functioning of\nthe modified object code is in no case prevented or interfered with\nsolely because modification has been made.\n\nIf you convey an object code work under this section in, or with, or\nspecifically for use in, a User Product, and the conveying occurs as\npart of a transaction in which the right of possession and use of the\nUser Product is transferred to the recipient in perpetuity or for a\nfixed term (regardless of how the transaction is characterized), the\nCorresponding Source conveyed under this section must be accompanied\nby the Installation Information. But this requirement does not apply\nif neither you nor any third party retains the ability to install\nmodified object code on the User Product (for example, the work has\nbeen installed in ROM).\n\nThe requirement to provide Installation Information does not include a\nrequirement to continue to provide support service, warranty, or\nupdates for a work that has been modified or installed by the\nrecipient, or for the User Product in which it has been modified or\ninstalled. Access to a network may be denied when the modification\nitself materially and adversely affects the operation of the network\nor violates the rules and protocols for communication across the\nnetwork.\n\nCorresponding Source conveyed, and Installation Information provided,\nin accord with this section must be in a format that is publicly\ndocumented (and with an implementation available to the public in\nsource code form), and must require no special password or key for\nunpacking, reading or copying.\n\n7. Additional Terms.\n\n\"Additional permissions\" are terms that supplement the terms of this\nLicense by making exceptions from one or more of its\nconditions. Additional permissions that are applicable to the entire\nProgram shall be treated as though they were included in this License,\nto the extent that they are valid under applicable law. If additional\npermissions apply only to part of the Program, that part may be used\nseparately under those permissions, but the entire Program remains\ngoverned by this License without regard to the additional permissions.\n\nWhen you convey a copy of a covered work, you may at your option\nremove any additional permissions from that copy, or from any part of\nit. (Additional permissions may be written to require their own\nremoval in certain cases when you modify the work.) You may place\nadditional permissions on material, added by you to a covered work,\nfor which you have or can give appropriate copyright permission.\n\nNotwithstanding any other provision of this License, for material you\nadd to a covered work, you may (if authorized by the copyright holders\nof that material) supplement the terms of this License with terms:\n\na) Disclaiming warranty or limiting liability differently from the\nterms of sections 15 and 16 of this License; or b) Requiring\npreservation of specified reasonable legal notices or author\nattributions in that material or in the Appropriate Legal Notices\ndisplayed by works containing it; or c) Prohibiting misrepresentation\nof the origin of that material, or requiring that modified versions of\nsuch material be marked in reasonable ways as different from the\noriginal version; or d) Limiting the use for publicity purposes of\nnames of licensors or authors of the material; or e) Declining to\ngrant rights under trademark law for use of some trade names,\ntrademarks, or service marks; or f) Requiring indemnification of\nlicensors and authors of that material by anyone who conveys the\nmaterial (or modified versions of it) with contractual assumptions of\nliability to the recipient, for any liability that these contractual\nassumptions directly impose on those licensors and authors.  All other\nnon-permissive additional terms are considered \"further restrictions\"\nwithin the meaning of section 10. If the Program as you received it,\nor any part of it, contains a notice stating that it is governed by\nthis License along with a term that is a further restriction, you may\nremove that term. If a license document contains a further restriction\nbut permits relicensing or conveying under this License, you may add\nto a covered work material governed by the terms of that license\ndocument, provided that the further restriction does not survive such\nrelicensing or conveying.\n\nIf you add terms to a covered work in accord with this section, you\nmust place, in the relevant source files, a statement of the\nadditional terms that apply to those files, or a notice indicating\nwhere to find the applicable terms.\n\nAdditional terms, permissive or non-permissive, may be stated in the\nform of a separately written license, or stated as exceptions; the\nabove requirements apply either way.\n\n8. Termination.\n\nYou may not propagate or modify a covered work except as expressly\nprovided under this License. Any attempt otherwise to propagate or\nmodify it is void, and will automatically terminate your rights under\nthis License (including any patent licenses granted under the third\nparagraph of section 11).\n\nHowever, if you cease all violation of this License, then your license\nfrom a particular copyright holder is reinstated (a) provisionally,\nunless and until the copyright holder explicitly and finally\nterminates your license, and (b) permanently, if the copyright holder\nfails to notify you of the violation by some reasonable means prior to\n60 days after the cessation.\n\nMoreover, your license from a particular copyright holder is\nreinstated permanently if the copyright holder notifies you of the\nviolation by some reasonable means, this is the first time you have\nreceived notice of violation of this License (for any work) from that\ncopyright holder, and you cure the violation prior to 30 days after\nyour receipt of the notice.\n\nTermination of your rights under this section does not terminate the\nlicenses of parties who have received copies or rights from you under\nthis License. If your rights have been terminated and not permanently\nreinstated, you do not qualify to receive new licenses for the same\nmaterial under section 10.\n\n9. Acceptance Not Required for Having Copies.\n\nYou are not required to accept this License in order to receive or run\na copy of the Program. Ancillary propagation of a covered work\noccurring solely as a consequence of using peer-to-peer transmission\nto receive a copy likewise does not require acceptance. However,\nnothing other than this License grants you permission to propagate or\nmodify any covered work. These actions infringe copyright if you do\nnot accept this License. Therefore, by modifying or propagating a\ncovered work, you indicate your acceptance of this License to do so.\n\n10. Automatic Licensing of Downstream Recipients.\n\nEach time you convey a covered work, the recipient automatically\nreceives a license from the original licensors, to run, modify and\npropagate that work, subject to this License. You are not responsible\nfor enforcing compliance by third parties with this License.\n\nAn \"entity transaction\" is a transaction transferring control of an\norganization, or substantially all assets of one, or subdividing an\norganization, or merging organizations. If propagation of a covered\nwork results from an entity transaction, each party to that\ntransaction who receives a copy of the work also receives whatever\nlicenses to the work the party's predecessor in interest had or could\ngive under the previous paragraph, plus a right to possession of the\nCorresponding Source of the work from the predecessor in interest, if\nthe predecessor has it or can get it with reasonable efforts.\n\nYou may not impose any further restrictions on the exercise of the\nrights granted or affirmed under this License. For example, you may\nnot impose a license fee, royalty, or other charge for exercise of\nrights granted under this License, and you may not initiate litigation\n(including a cross-claim or counterclaim in a lawsuit) alleging that\nany patent claim is infringed by making, using, selling, offering for\nsale, or importing the Program or any portion of it.\n\n11. Patents.\n\nA \"contributor\" is a copyright holder who authorizes use under this\nLicense of the Program or a work on which the Program is based. The\nwork thus licensed is called the contributor's \"contributor version\".\n\nA contributor's \"essential patent claims\" are all patent claims owned\nor controlled by the contributor, whether already acquired or\nhereafter acquired, that would be infringed by some manner, permitted\nby this License, of making, using, or selling its contributor version,\nbut do not include claims that would be infringed only as a\nconsequence of further modification of the contributor version. For\npurposes of this definition, \"control\" includes the right to grant\npatent sublicenses in a manner consistent with the requirements of\nthis License.\n\nEach contributor grants you a non-exclusive, worldwide, royalty-free\npatent license under the contributor's essential patent claims, to\nmake, use, sell, offer for sale, import and otherwise run, modify and\npropagate the contents of its contributor version.\n\nIn the following three paragraphs, a \"patent license\" is any express\nagreement or commitment, however denominated, not to enforce a patent\n(such as an express permission to practice a patent or covenant not to\nsue for patent infringement). To \"grant\" such a patent license to a\nparty means to make such an agreement or commitment not to enforce a\npatent against the party.\n\nIf you convey a covered work, knowingly relying on a patent license,\nand the Corresponding Source of the work is not available for anyone\nto copy, free of charge and under the terms of this License, through a\npublicly available network server or other readily accessible means,\nthen you must either (1) cause the Corresponding Source to be so\navailable, or (2) arrange to deprive yourself of the benefit of the\npatent license for this particular work, or (3) arrange, in a manner\nconsistent with the requirements of this License, to extend the patent\nlicense to downstream recipients. \"Knowingly relying\" means you have\nactual knowledge that, but for the patent license, your conveying the\ncovered work in a country, or your recipient's use of the covered work\nin a country, would infringe one or more identifiable patents in that\ncountry that you have reason to believe are valid.\n\nIf, pursuant to or in connection with a single transaction or\narrangement, you convey, or propagate by procuring conveyance of, a\ncovered work, and grant a patent license to some of the parties\nreceiving the covered work authorizing them to use, propagate, modify\nor convey a specific copy of the covered work, then the patent license\nyou grant is automatically extended to all recipients of the covered\nwork and works based on it.\n\nA patent license is \"discriminatory\" if it does not include within the\nscope of its coverage, prohibits the exercise of, or is conditioned on\nthe non-exercise of one or more of the rights that are specifically\ngranted under this License. You may not convey a covered work if you\nare a party to an arrangement with a third party that is in the\nbusiness of distributing software, under which you make payment to the\nthird party based on the extent of your activity of conveying the\nwork, and under which the third party grants, to any of the parties\nwho would receive the covered work from you, a discriminatory patent\nlicense (a) in connection with copies of the covered work conveyed by\nyou (or copies made from those copies), or (b) primarily for and in\nconnection with specific products or compilations that contain the\ncovered work, unless you entered into that arrangement, or that patent\nlicense was granted, prior to 28 March 2007.\n\nNothing in this License shall be construed as excluding or limiting\nany implied license or other defenses to infringement that may\notherwise be available to you under applicable patent law.\n\n12. No Surrender of Others' Freedom.\n\nIf conditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License. If you cannot convey a\ncovered work so as to satisfy simultaneously your obligations under\nthis License and any other pertinent obligations, then as a\nconsequence you may not convey it at all. For example, if you agree to\nterms that obligate you to collect a royalty for further conveying\nfrom those to whom you convey the Program, the only way you could\nsatisfy both those terms and this License would be to refrain entirely\nfrom conveying the Program.\n\n13. Remote Network Interaction; Use with the GNU General Public\nLicense.\n\nNotwithstanding any other provision of this License, if you modify the\nProgram, your modified version must prominently offer all users\ninteracting with it remotely through a computer network (if your\nversion supports such interaction) an opportunity to receive the\nCorresponding Source of your version by providing access to the\nCorresponding Source from a network server at no charge, through some\nstandard or customary means of facilitating copying of software. This\nCorresponding Source shall include the Corresponding Source for any\nwork covered by version 3 of the GNU General Public License that is\nincorporated pursuant to the following paragraph.\n\nNotwithstanding any other provision of this License, you have\npermission to link or combine any covered work with a work licensed\nunder version 3 of the GNU General Public License into a single\ncombined work, and to convey the resulting work. The terms of this\nLicense will continue to apply to the part which is the covered work,\nbut the work with which it is combined will remain governed by version\n3 of the GNU General Public License.\n\n14. Revised Versions of this License.\n\nThe Free Software Foundation may publish revised and/or new versions\nof the GNU Affero General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\nEach version is given a distinguishing version number. If the Program\nspecifies that a certain numbered version of the GNU Affero General\nPublic License \"or any later version\" applies to it, you have the\noption of following the terms and conditions either of that numbered\nversion or of any later version published by the Free Software\nFoundation. If the Program does not specify a version number of the\nGNU Affero General Public License, you may choose any version ever\npublished by the Free Software Foundation.\n\nIf the Program specifies that a proxy can decide which future versions\nof the GNU Affero General Public License can be used, that proxy's\npublic statement of acceptance of a version permanently authorizes you\nto choose that version for the Program.\n\nLater license versions may give you additional or different\npermissions. However, no additional obligations are imposed on any\nauthor or copyright holder as a result of your choosing to follow a\nlater version.\n\n15. Disclaimer of Warranty.\n\nTHERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY\nAPPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT\nHOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\" WITHOUT\nWARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND\nPERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE\nDEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR\nCORRECTION.\n\n16. Limitation of Liability.\n\nIN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR\nCONVEYS THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,\nINCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES\nARISING OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT\nNOT LIMITED TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR\nLOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM\nTO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH HOLDER OR OTHER\nPARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\n\n17. Interpretation of Sections 15 and 16.\n\nIf the disclaimer of warranty and limitation of liability provided\nabove cannot be given local legal effect according to their terms,\nreviewing courts shall apply local law that most closely approximates\nan absolute waiver of all civil liability in connection with the\nProgram, unless a warranty or assumption of liability accompanies a\ncopy of the Program in return for a fee.\n\nEND OF TERMS AND CONDITIONS\n\nHow to Apply These Terms to Your New Programs\n\nIf you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these\nterms.\n\nTo do so, attach the following notices to the program. It is safest to\nattach them to the start of each source file to most effectively state\nthe exclusion of warranty; and each file should have at least the\n\"copyright\" line and a pointer to where the full notice is found.\n\n    <one line to give the program's name and a brief idea of what it\n    does.> Copyright (C) <year> <name of author>\n\n    This program is free software: you can redistribute it and/or\n    modify it under the terms of the GNU Affero General Public License\n    as published by the Free Software Foundation, either version 3 of\n    the License, or (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\n    Affero General Public License for more details.\n\n    You should have received a copy of the GNU Affero General Public\n    License along with this program.  If not, see\n    <http://www.gnu.org/licenses/>.  Also add information on how to\n    contact you by electronic and paper mail.\n\nIf your software can interact with users remotely through a computer\nnetwork, you should also make sure that it provides a way for users to\nget its source. For example, if your program is a web application, its\ninterface could display a \"Source\" link that leads users to an archive\nof the code. There are many ways you could offer source, and different\nsolutions will be better for different programs; see section 13 for\nthe specific requirements.\n\nYou should also get your employer (if you work as a programmer) or\nschool, if any, to sign a \"copyright disclaimer\" for the program, if\nnecessary. For more information on this, and how to apply and follow\nthe GNU AGPL, see <http://www.gnu.org/licenses/>."
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/tetgen/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "BSD"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DOT"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Mongoose: A Graph Coarsening and Partitioning Library"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "penn-graphics-research"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "figureAltCaption"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/scripts/figureAltCaption/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pyigl"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/python/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pybind11"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 25430985,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 7723856,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MATLAB",
+        "size": 2283419,
+        "type": "Programming_language",
+        "value": "MATLAB"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 868279,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 354340,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "size": 269430,
+        "type": "Programming_language",
+        "value": "Java"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Fortran",
+        "size": 172674,
+        "type": "Programming_language",
+        "value": "Fortran"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 169997,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 126209,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CMake",
+        "size": 99402,
+        "type": "Programming_language",
+        "value": "CMake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Cuda",
+        "size": 82351,
+        "type": "Programming_language",
+        "value": "Cuda"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 73616,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Ruby",
+        "size": 51979,
+        "type": "Programming_language",
+        "value": "Ruby"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Roff",
+        "size": 17382,
+        "type": "Programming_language",
+        "value": "Roff"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Perl",
+        "size": 9412,
+        "type": "Programming_language",
+        "value": "Perl"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "M",
+        "size": 4405,
+        "type": "Programming_language",
+        "value": "M"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 3061,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Mako",
+        "size": 2842,
+        "type": "Programming_language",
+        "value": "Mako"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sed",
+        "size": 1660,
+        "type": "Programming_language",
+        "value": "sed"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "D",
+        "size": 740,
+        "type": "Programming_language",
+        "value": "D"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Awk",
+        "size": 665,
+        "type": "Programming_language",
+        "value": "Awk"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 156,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "NASL",
+        "size": 107,
+        "type": "Programming_language",
+        "value": "NASL"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MATLAB",
+        "type": "Programming_language",
+        "value": "MATLAB",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "breathe",
+        "type": "Software_application",
+        "value": "breathe == 4.5.0",
+        "version": "== 4.5.0"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/libigl/external/pybind11/docs/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "run": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Compile and Run",
+        "parent_header": [
+          "DOT"
+        ],
+        "type": "Text_excerpt",
+        "value": "* Install (rebuild Suitesparse and DOT)\n\nOn Ubuntu:\n```\ncd DOT\npython install_Ubuntu.py\n```\nOn Mac:\n```\ncd DOT\npython install_Mac.py\n```\nThis will rebuild SuiteSparse (with MKL on Ubuntu or default on Mac) and then build DOT.\n\n*Tips on linear solver: By default DOT uses CHOLMOD (involved in SuiteSparse) to solve the linear systems. On Mac, default compilation is great, but on Ubuntu, we found that CHOLMOD compiled with MKL LAPACK and BLAS is much more performant than compiled with libopenblas and liblapack from apt-get.*\n\n*Note: Prompts and sudo password might be needed to install certain packages.*\n\n*Tips for Windows users: Running DOT on Windows is possible to encounter severe speed issues, which can be related to the memory management of Eigen backend. A useful suggestion is to swap out Eigen's malloc with dlmalloc.*\n\n* Build (rebuild DOT)\n```\npython build.py\n```\n\n* Run\n\nWe provide a convenient way to run a batch of examples with a specific number of threads per linear solver using the batch.py under repo directory.\n\nTo use batch.py, first create 4 folders named 1, 8, 12, and 32 under input/, which means use these numbers to set MKL_NUM_THREADS, OMP_NUM_THREADS, VECLIB_MAXIMUM_THREADS respectively for the linear solvers when running examples under them. (This will not affect the parallelization of other parts of DOT as we are using TBB there). Then you can put the script files to be run under folder 1, 8, 12, or 32 and go to DOT/ to run\n```\npython batch.py\n```\nThe python code will automatically take the name of the folder to set number of threads per linear solver to run the examples. In our experiments we ran PN, LBFGS-H(I), and GSDD with 12 threads per linear solver and all others with single thread per linear solver since for the latter ones we solve multiple linear systems simultaneously with TBB and we were on a 6-core 12-thread machine.\n\nThe output of each script will be saved into a separate folder in output/ with time tag, so no overwrites when reruning.\n\n*Note that by default we only compile 3D version of DOT, to compile and run the 2D version, please modify the DIM macro defined in src/Utils/Types.hpp and rebuild, and then you can run scripts from input/2D/.*\n"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:02:16",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 57
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/penn-graphics-research/DOT/master/SuiteSparse/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

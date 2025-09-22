@@ -1,0 +1,510 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "micl@umich.edu",
+        "type": "String",
+        "value": "Michael Clark"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/m-clark/confusionMatrix"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/m-clark/confusionMatrix"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/m-clark/confusionMatrix"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.org/m-clark/confusionMatrix",
+          "https://ci.appveyor.com/project/m-clark/confusionMatrix",
+          "https://codecov.io/gh/m-clark/confusionMatrix?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-09-12T16:29:37Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-06-20T16:10:54Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Report various statistics stemming from a confusion matrix in a tidy fashion. \ud83c\udfaf "
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+        "type": "String",
+        "value": "Given predictions and a target variable, provide numerous statistics from the resulting confusion matrix."
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Given predictions and a target variable, provide numerous statistics from the resulting confusion matrix."
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.929326258651908,
+      "result": {
+        "original_header": "confusionMatrix",
+        "type": "Text_excerpt",
+        "value": "Given predictions and a target variable, provide numerous statistics\nfrom the resulting confusion matrix. The goal is to provide a wealth of\nsummary statistics that can be calculated from a single confusion\nmatrix, and return <span class=\"emph\" style=\"\">**tidy**</span> results\nwith as few dependencies as possible.\n``` r\nlibrary(confusionMatrix)\n\np = sample(letters[1:2], 250, replace = T, prob = 1:2)\no = sample(letters[1:2], 250, replace = T, prob = 1:2)\n\nresult = confusion_matrix(\n  prediction = p,\n  target = o,\n  return_table = TRUE\n)\n\nresult\n```\n    $Accuracy\n    # A tibble: 1 x 6\n      Accuracy `Accuracy LL` `Accuracy UL` `Accuracy Guess\u2026 `Accuracy P-val\u2026\n         <dbl>         <dbl>         <dbl>            <dbl>            <dbl>\n    1    0.596         0.532         0.657            0.692            0.999\n    # \u2026 with 1 more variable: `Frequency Table` <list>\n    \n    $Other\n    # A tibble: 1 x 19\n      Positive     N `N Positive` `N Negative` `Sensitivity/Re\u2026 `Specificity/TN\u2026\n      <chr>    <int>        <int>        <int>            <dbl>            <dbl>\n    1 a          250           77          173            0.338            0.711\n    # \u2026 with 13 more variables: `PPV/Precision` <dbl>, NPV <dbl>, `F1/Dice` <dbl>,\n    #   Prevalence <dbl>, `Detection Rate` <dbl>, `Detection Prevalence` <dbl>,\n    #   `Balanced Accuracy` <dbl>, FDR <dbl>, FOR <dbl>, `FPR/Fallout` <dbl>,\n    #   FNR <dbl>, `D Prime` <dbl>, AUC <dbl>\n    \n    $`Association and Agreement`\n    # A tibble: 1 x 6\n       Kappa `Adjusted Rand`  Yule    Phi Peirce Jaccard\n       <dbl>           <dbl> <dbl>  <dbl>  <dbl>   <dbl>\n    1 0.0488          0.0116 0.113 0.0488 0.0486   0.549\n``` r\nresult$Accuracy$`Frequency Table`\n```\n    [[1]]\n             Target\n    Predicted   a   b\n            a  26  50\n            b  51 123\n``` r\nresult = confusion_matrix(\n  prediction = p,\n  target = o,\n  longer = TRUE\n)\n\nresult\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.tidyverse.org/lifecycle/#experimental"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/m-clark/confusionMatrix/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/m-clark/confusionMatrix/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 4
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/m-clark/confusionMatrix/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "m-clark/confusionMatrix"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "confusionMatrix"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "confusionMatrix"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "confusionMatrix"
+        ],
+        "type": "Text_excerpt",
+        "value": "To install from GitHub the <span class=\"pack\">devtools</span> package is\nrequired.\n\n``` r\ndevtools::install_github('m-clark/confusionMatrix')\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/m-clark/confusionMatrix/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/m-clark/confusionMatrix/issues"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/m-clark/confusionMatrix/issues"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "balanced-accuracy, confusion-matrix, dice-coefficient, f1-score, fallout, false-discovery-rate, false-negative-rate, false-omission-rate, false-positive-rate, kappa, negative-predictive-value, peirce, positive-predictive-value, precision-recall, rand, sensitivity, specificity, tidy, true-negative-rate, true-positive-rate"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "confusion-matrix",
+          "sensitivity",
+          "specificity",
+          "positive-predictive-value",
+          "negative-predictive-value",
+          "precision-recall",
+          "f1-score",
+          "dice-coefficient",
+          "true-positive-rate",
+          "true-negative-rate",
+          "false-positive-rate",
+          "false-negative-rate",
+          "balanced-accuracy",
+          "false-discovery-rate",
+          "false-omission-rate",
+          "fallout"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2019 Michael Clark\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "confusionMatrix"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "confusionMatrix: Confusion Matrix"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "m-clark"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+        "type": "String",
+        "value": "confusionMatrix"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 39328,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 16649,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": "3.6.1"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/m-clark/confusionMatrix/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 3.5.0",
+        "version": ">= 3.5.0"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dplyr",
+        "type": "Software_application",
+        "value": "dplyr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:43:39",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 12
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.3.6"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/m-clark/confusionMatrix/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

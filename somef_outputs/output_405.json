@@ -1,0 +1,648 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "https://w3id.org/nwo-research-fields#SoftwareForHumanities",
+          "https://w3id.org/nwo-research-fields#Linguistics",
+          "https://w3id.org/nwo-research-fields#ComputationalLinguisticsandPhilology",
+          "https://vocabs.dariah.eu/tadirah/structuralAnalysis"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9497705282568594,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "mailto:p.c.j.kleiweg@rug.nl",
+        "type": "String",
+        "value": "Peter Kleiweg"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rug-compling/paqu"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rug-compling/paqu.git"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2014-05-22T10:25:17Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2014-05-21"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-14T16:08:13Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-04-24"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Parse & Query"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Met PaQu (Parse & Query) kun je zoeken in syntactisch geannoteerde Nederlandstalige corpora.\n\nPaQu ondersteunt twee manieren van zoeken. Met de eerste, eenvoudige, manier kun je naar woordparen zoeken, met daarbij eventueel hun syntactische relatie. De tweede, ingewikkeldere, manier gebruikt de zoektaal XPath.\n\nIn PaQu is een aantal syntactisch geannoteerde corpora standaard beschikbaar. Maar het is ook mogelijk om je eigen teksten aan te bieden. Deze teksten worden dan door de automatische ontleder geanalyseerd, en opgeslagen. Vervolgens kun je dan op dezelfde manier in je eigen teksten zoeken."
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9901237461058188,
+      "result": {
+        "original_header": "Overzicht",
+        "type": "Text_excerpt",
+        "value": "PaQu is een webserver waarin gebruikers Nederlandstalige tekstdocumenten\nkunnen laten analyseren, en vervolgens onderzoeken op woordrelaties. \n"
+      },
+      "source": "https://github.com/rug-compling/paqu/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8656989564118599,
+      "result": {
+        "original_header": "DbXML: Oracle Berkeley DB XML",
+        "type": "Text_excerpt",
+        "value": "Dit is optioneel, maar wel sterk aanbevolen. Zonder DbXML kun je geen\nDact-bestanden verwerken, en kun je geen XPATH-query's uitvoeren.\nDact-bestanden zijn corpora in het formaat gebruikt door\n[Dact](http://rug-compling.github.io/dact/), waarmee corpora bekeken en\ngeanalyseerd kunnen worden. \n"
+      },
+      "source": "https://github.com/rug-compling/paqu/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9244455393511166,
+      "result": {
+        "original_header": "Installatie",
+        "type": "Text_excerpt",
+        "value": "Als die niet gedefinieerd is, dan wordt gekeken naar de waarde die bij\nhet compileren is gedefineerd. \nVerder gaan we ervan uit dat je PaQu in `$HOME/paqu` hebt geplaatst.\n \n"
+      },
+      "source": "https://github.com/rug-compling/paqu/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.883708036088585,
+      "result": {
+        "original_header": "Lassy Klein",
+        "type": "Text_excerpt",
+        "value": "Als je dit corpus hebt ge\u00efnstalleerd in `~/corpora/LassySmall` kun je\nhet zo opnemen in PaQu: \nAls je geen DbXml beschikbaar hebt kun je het zo opnemen in PaQu: \nNadat het corpus in PaQu is opgenomen moet je het dact-bestand (of de\nxml-bestanden) van Lassy Klein laten staan waar het staat. Dat bestand\nwordt zelf niet in PaQu opgenomen, alleen de analyse ervan. Het bestand\nzelf is nog steeds nodig voor het werken met PaQu. \n"
+      },
+      "source": "https://github.com/rug-compling/paqu/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9809583777790519,
+      "result": {
+        "original_header": "Beheer",
+        "type": "Text_excerpt",
+        "value": "Met het programma `pqsetquota` kun je het quotum voor een of meer\ngebruikers aanpassen.\n \n"
+      },
+      "source": "https://github.com/rug-compling/paqu/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "https://www.repostatus.org/#active",
+          "https://w3id.org/research-technology-readiness-levels#Stage4Complete"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rug-compling/paqu/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rug-compling/paqu/archive/refs/heads/master.zip"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/rug-compling/paqu/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "rug-compling/paqu"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PaQu"
+      },
+      "source": "https://github.com/rug-compling/paqu/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/rug-compling/paqu/master/run/run.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://w3id.org/research-technology-readiness-levels/Stage4Complete.svg"
+      },
+      "source": "https://github.com/rug-compling/paqu/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/rug-compling/paqu/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rug-compling/paqu/issues"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Alpino",
+          "Dependency parsing",
+          "SPOD: Syntactic profiler of Dutch",
+          "XPath",
+          "UD: Universal Dependencies"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/BSD-2-Clause",
+        "spdx_id": "https://spdx.org/licenses/BSD-2-Clause",
+        "type": "License",
+        "value": "https://spdx.org/licenses/BSD-2-Clause"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "paqu"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PaQu"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "rug-compling"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "size": 2047465,
+        "type": "Programming_language",
+        "value": "Go"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 72560,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Lex",
+        "size": 12854,
+        "type": "Programming_language",
+        "value": "Lex"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 10676,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 6539,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 3673,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 381,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "type": "Programming_language",
+        "value": "Go",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/rug-compling/paqu/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/rug-compling/paqu/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "title": "The Parse and Query (PaQu) Application",
+        "type": "Scholarly_article",
+        "url": "https://doi.org/10.5334/bbi.23",
+        "value": "The Parse and Query (PaQu) Application"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "pebbe",
+          "type": "User"
+        },
+        "date_created": "2024-04-24T10:43:03Z",
+        "date_published": "2024-04-24T10:44:14Z",
+        "description": " * upgrade naar alud v2.14.0\r\n * upgrade naar alpinods v1.16.4\r\n * SPOD:\r\n     * Inbedding -> Inbedding in finiete zinnen\r\n     * count of cat below top\r\n * fix voor XSS kwetsbaarheid\r\n",
+        "html_url": "https://github.com/rug-compling/paqu/releases/tag/v1.0.5",
+        "name": "v1.0.5",
+        "release_id": 152581306,
+        "tag": "v1.0.5",
+        "tarball_url": "https://api.github.com/repos/rug-compling/paqu/tarball/v1.0.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rug-compling/paqu/releases/152581306",
+        "value": "https://api.github.com/repos/rug-compling/paqu/releases/152581306",
+        "zipball_url": "https://api.github.com/repos/rug-compling/paqu/zipball/v1.0.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "pebbe",
+          "type": "User"
+        },
+        "date_created": "2023-04-10T18:55:51Z",
+        "date_published": "2023-04-10T18:56:39Z",
+        "description": " * update codemeta.json\r\n * webpage with rdf data moved to https://www.let.rug.nl/alfa/rdf/paqu\r\n",
+        "html_url": "https://github.com/rug-compling/paqu/releases/tag/v1.0.4",
+        "name": "v1.0.4",
+        "release_id": 98830185,
+        "tag": "v1.0.4",
+        "tarball_url": "https://api.github.com/repos/rug-compling/paqu/tarball/v1.0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rug-compling/paqu/releases/98830185",
+        "value": "https://api.github.com/repos/rug-compling/paqu/releases/98830185",
+        "zipball_url": "https://api.github.com/repos/rug-compling/paqu/zipball/v1.0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "pebbe",
+          "type": "User"
+        },
+        "date_created": "2023-04-10T16:28:01Z",
+        "date_published": "2023-04-10T16:28:51Z",
+        "description": " * update codemeta.json\r\n * webpage with rdf data moved to https://www.let.rug.nl/alfa/rdf/paqu/\r\n",
+        "html_url": "https://github.com/rug-compling/paqu/releases/tag/v1.0.3",
+        "name": "v1.0.3",
+        "release_id": 98816612,
+        "tag": "v1.0.3",
+        "tarball_url": "https://api.github.com/repos/rug-compling/paqu/tarball/v1.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rug-compling/paqu/releases/98816612",
+        "value": "https://api.github.com/repos/rug-compling/paqu/releases/98816612",
+        "zipball_url": "https://api.github.com/repos/rug-compling/paqu/zipball/v1.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "pebbe",
+          "type": "User"
+        },
+        "date_created": "2023-04-08T12:41:12Z",
+        "date_published": "2023-04-08T12:42:32Z",
+        "description": " * update codemeta.json\r\n * webpage https://rug-compling.github.io/paqu/ with rdf data ",
+        "html_url": "https://github.com/rug-compling/paqu/releases/tag/v1.0.2",
+        "name": "v1.0.2",
+        "release_id": 98622325,
+        "tag": "v1.0.2",
+        "tarball_url": "https://api.github.com/repos/rug-compling/paqu/tarball/v1.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rug-compling/paqu/releases/98622325",
+        "value": "https://api.github.com/repos/rug-compling/paqu/releases/98622325",
+        "zipball_url": "https://api.github.com/repos/rug-compling/paqu/zipball/v1.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "pebbe",
+          "type": "User"
+        },
+        "date_created": "2023-03-30T19:30:52Z",
+        "date_published": "2023-03-30T19:32:15Z",
+        "description": "long overdue initial release",
+        "html_url": "https://github.com/rug-compling/paqu/releases/tag/v1.0.1",
+        "name": "v1.0.1",
+        "release_id": 97535288,
+        "tag": "v1.0.1",
+        "tarball_url": "https://api.github.com/repos/rug-compling/paqu/tarball/v1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rug-compling/paqu/releases/97535288",
+        "value": "https://api.github.com/repos/rug-compling/paqu/releases/97535288",
+        "zipball_url": "https://api.github.com/repos/rug-compling/paqu/zipball/v1.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "https://github.com/rug-compling/paqu#benodigde-software",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Alpino: A dependency parser for Dutch",
+        "parent_header": [
+          "PaQu",
+          "Benodigde software"
+        ],
+        "type": "Text_excerpt",
+        "value": "Om PaQu te draaien heb je van\n[Alpino](http://www.let.rug.nl/vannoord/alp/Alpino/) de tokenizer en de\nparser nodig.\n\nJe kunt ook een Alpino-server gebruiken die voldoet aan de\n[Alpino API](https://github.com/rug-compling/alpino-api).\nAls je dat doet heb je zelf van Alpino alleen de tokenizer nodig.\nZo'n server kan in principe de data parallel verwerken, en dus veel\nsneller zijn dan wanneer je Alpino lokaal gebruikt.\n\n----------------------------------------------------------------\n"
+      },
+      "source": "https://github.com/rug-compling/paqu/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:42:11",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 11
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Go: The Go Programming Language",
+        "parent_header": [
+          "PaQu",
+          "Benodigde software"
+        ],
+        "type": "Text_excerpt",
+        "value": "De meeste programma's zijn geschreven in de programmeertaal Go. Je hebt\ndus de Go-compiler nodig.\n\nJe hebt minimaal Go versie 1.8 nodig. Geef het commando `go version` om\ndit te controleren.\n\nJe kunt Go downloaden van http://golang.org/\n"
+      },
+      "source": "https://github.com/rug-compling/paqu/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.0.5"
+      },
+      "source": "https://raw.githubusercontent.com/rug-compling/paqu/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

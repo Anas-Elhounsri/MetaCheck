@@ -1,0 +1,413 @@
+{
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "van der Sluys",
+            "given_name": "Marc",
+            "name": "Marc van der Sluys",
+            "type": "Agent"
+          },
+          {
+            "family_name": "van Kan",
+            "given_name": "Paul",
+            "name": "Paul van Kan",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Reintjes",
+            "given_name": "Jurgen",
+            "name": "Jurgen Reintjes",
+            "type": "Agent"
+          }
+        ],
+        "datePublished": "2017",
+        "format": "cff",
+        "title": "SolTrack: Compute the position of the Sun in topocentric coordinates",
+        "type": "File_dump",
+        "value": "cff-version: 1.1.0\nmessage: \"Please cite the following works when using this software: https://ui.adsabs.harvard.edu/abs/2022ascl.soft09019V\"\nauthors:\n- family-names: van der Sluys\n  given-names: Marc\n- family-names: van Kan\n  given-names: Paul\n- family-names: Reintjes\n  given-names: Jurgen\ntitle: \"SolTrack: Compute the position of the Sun in topocentric coordinates\"\nversion: 2.2\ndate-released: 2017-09-09\nidentifiers:\n - type: \"ascl-id\"\n   value: \"2209.019\"\n - type: \"bibcode\"\n   value: \"2022ascl.soft09019V\"\nabstract: \"SolTrack computes the position of the Sun, the rise and set times and azimuths, and transit times and altitudes. It includes corrections for aberration and parallax, and has a simple routine to correct for atmospheric refraction, taking into account local atmospheric conditions. SolTrack is derived from the Fortran library libTheSky (ascl:2209.018) and has versions in C(++), Arduino Scratch and Python. The package can be used to track the Sun on a low-specs machine, such as a microcontroller or PLC, and can be used for (highly) concentrated (photovoltaic) solar power or accurate solar-energy modeling.\"\n"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/MarcvdSluys/SolTrack"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://soltrack.sf.net"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "contact": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contact",
+        "parent_header": [
+          "SolTrack"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can contact the authors (preferably through email) via [this page](http://han.vandersluys.nl/en/).\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2015-11-22T10:54:18Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-04T01:35:32Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": " A free, fast and accurate routine to compute the position of the Sun"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A free, fast and accurate Python package to compute the position of the Sun"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Description, speed and accuracy",
+        "parent_header": [
+          "SolTrack"
+        ],
+        "type": "Text_excerpt",
+        "value": "See also the [**poster and conference proceedings**](http://han.vandersluys.nl/en/Publications.html) we\npresented on CPV-11 in April 2015.\n\nSolTrack is a simple C/C++ routine that can compute the position of the Sun in topocentric coordinates, both\nin a [horizontal](https://en.wikipedia.org/wiki/Horizontal_coordinate_system \"Wikipedia\") and in an\n[equatorial](https://en.wikipedia.org/wiki/Equatorial_coordinate_system \"Wikipedia\") system. The code is based\non the Fortran library [libTheSky](http://libthesky.sf.net) and includes corrections for\n[aberration](http://en.wikipedia.org/wiki/Aberration_of_light \"Wikipedia\") and\n[parallax](http://en.wikipedia.org/wiki/Parallax#Diurnal_parallax \"Wikipedia\"), and a [simple\nroutine](http://adsabs.harvard.edu/abs/1986S%26T....72...70S) to correct for [atmospheric\nrefraction](https://en.wikipedia.org/wiki/Atmospheric_refraction \"Wikipedia\"), taking into account local\natmospheric conditions.  We compared the performance of SolTrack to detailed calculations using the planetary\ntheories [VSOP 87](http://cdsads.u-strasbg.fr/cgi-bin/nph-bib_query?1988A%26A...202..309B) and an [accurate\nmodel](http://astro.ukho.gov.uk/data/tn/naotn63.pdf) for atmospheric refraction.\n\n\nWe tested SolTrack for 100,000 random moments in the next 100 years (between 2017 and 2116) when the Sun is\nabove the horizon in the Netherlands (latitude &sim;52&deg;N). We find that the mean error in position is\n0.0030 &pm; 0.0016&deg;, which is sufficient for solar tracking of CPV systems under all conditions. The code\ncan compute ten million positions in 6.47 &pm; 0.03s on a single 2.67 GHz CPU core when only horizontal\ncoordinates (azimuth and altitude) are computed, and takes 8.16 &pm; 0.02s (26% slower) if\nrefraction-corrected parallactic coordinates are also calculated.  In addition to positions, SolTrack can also\ncompute the distance to the Sun, its rise, transit and set times, and its rise and set azimuth and transit\naltitude.\n\n\nWhen compared to the [PSA SunPos](http://www.psa.es/sdg/sunpos.htm) routine, which is also light-weight and\nfreely available, SolTrack is 24 times more accurate (0.073&deg;) and 2% faster. When computing additional\nrefraction-corrected equatorial coordinates, SolTrack is 23% slower than SunPos. We also compared the\nperformance of SolTrack to the [NREL SPA routine](http://www.nrel.gov/midc/spa/), which is more elaborate and\nhas a more restricted licence. SPA is 24% more accurate than SolTrack (0.0023&deg;), but also 20 times slower,\nwhere we computed only the Sun's position in SPA (not its rise and set times or incident radiation) and\nincluded the additional refraction-corrected equatorial coordinates in SolTrack.  A paper describing more\ndetails is forthcoming.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.9344234386512535,
+      "result": {
+        "original_header": "SolTrack",
+        "type": "Text_excerpt",
+        "value": "**SolTrack** is a free, fast and accurate C/C++ routine to compute the position of the Sun.  In addition, SolTrack computes\nrise and set times and azimuths, and transit times and altitudes.\nThe code can be used to track the Sun on a low-specs machine, such as a microcontroller or PLC, and can be used for _e.g._\n(highly) concentrated (photovoltaic) solar power or accurate solar-energy modelling.   \n\nSolTrack has been developed by [Marc van der Sluys](http://han.vandersluys.nl/en/), Paul van Kan and Jurgen\nReintjes, at the [Sustainable Energy research\ngroup](http://www.han.nl/international/english/research/sustainable-electrical-energy/) at the [HAN University\nof Applied Sciences](http://www.han.nl/international/english/) in Arnhem, the Netherlands.  The code is based\non the astronomical Fortran library [libTheSky](http://libthesky.sf.net \"libTheSky: a Fortran library to\ncompute the positions of celestial bodies and events with great accuracy\") and can be used, modified and\ndistributed under the conditions of version 3 of the [GNU Lesser General Public\nLicence](http://www.gnu.org/licenses/lgpl.html). \n"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/MarcvdSluys/SolTrack/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/MarcvdSluys/SolTrack/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MarcvdSluys/SolTrack"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SolTrack"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py",
+      "technique": "file_exploration"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installing SolTrack",
+        "parent_header": [
+          "SolTrack"
+        ],
+        "type": "Text_excerpt",
+        "value": "The SolTrack tarball contains CMake installer files for (semi)automatic compilation and installation of the\nshared (and if desired static) library.  See doc/INSTALL for more information.\n\n\nSolTrack has an [ebuild](https://cgit.gentoo.org/user/AstroFloyd.git/tree/sci-astronomy/soltrack) for easy\ninstallation in Gentoo Linux and has been included in Arch Linux's\n[AUR](https://aur.archlinux.org/packages/soltrack/).  Binary packages\n([.deb](https://sourceforge.net/projects/soltrack/files/deb/) and\n[.rpm](https://sourceforge.net/projects/soltrack/files/rpm/)) are available for _e.g._ Debian, (*)Ubuntu, Red\nHat, Fedora, CentOS, Scientific Linux, SUSE and many others.\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/MarcvdSluys/SolTrack/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "astronomy"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ephemeris"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "sun"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "solar"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "value": "https://api.github.com/licenses/lgpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "GPLv3+"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SolTrack"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "MarcvdSluys"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "soltrack"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 33942,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 29322,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CMake",
+        "size": 16209,
+        "type": "Programming_language",
+        "value": "CMake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/Python/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:06:26",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 17
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Examples",
+        "parent_header": [
+          "SolTrack"
+        ],
+        "type": "Text_excerpt",
+        "value": "The examples/ directory lists two example programs that can be linked against the SolTrack library, and which\ncomputes either data for a single instance, or read dates from a file and compute the corresponding positions.\nExample output is provided to verify the results.\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/MarcvdSluys/SolTrack/master/README.md",
+      "technique": "header_analysis"
+    }
+  ]
+}

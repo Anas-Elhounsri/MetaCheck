@@ -1,0 +1,596 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Timoth\u00e9e Giraud"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "timothee.giraud@cnrs.fr",
+        "identifier": "https://orcid.org/0000-0002-1932-3323",
+        "type": "String",
+        "value": "Timoth\u00e9e Giraud"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "hadrien.commenges@univ-paris1.fr",
+        "type": "String",
+        "value": "Hadrien Commenges"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Giraud",
+            "given_name": "Timoth\u00e9e",
+            "name": "Timoth\u00e9e Giraud",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-1932-3323"
+          },
+          {
+            "family_name": "Commenges",
+            "given_name": "Hadrien",
+            "name": "Hadrien Commenges",
+            "type": "Agent"
+          }
+        ],
+        "datePublished": "1941",
+        "format": "cff",
+        "title": "potential: Implementation of the Potential Model",
+        "type": "File_dump",
+        "url": "https://github.com/riatelab/potential",
+        "value": "# -----------------------------------------------------------\n# CITATION file created with {cffr} R package, v0.2.2\n# See also: https://docs.ropensci.org/cffr/\n# -----------------------------------------------------------\n \ncff-version: 1.2.0\nmessage: 'To cite package \"potential\" in publications use:'\ntype: software\nlicense: GPL-3.0-only\ntitle: 'potential: Implementation of the Potential Model'\nversion: 0.2.0\nabstract: Provides functions to compute the potential model as defined by Stewart\n  (1941) <doi:10.1126/science.93.2404.89>. Several options are available to customize\n  the model, such as the possibility to fine-tune the distance friction functions\n  or to use custom distance matrices. Some computations are parallelized to improve\n  their efficiency.\nauthors:\n- family-names: Giraud\n  given-names: Timoth\u00e9e\n  email: timothee.giraud@cnrs.fr\n  orcid: https://orcid.org/0000-0002-1932-3323\n- family-names: Commenges\n  given-names: Hadrien\n  email: hadrien.commenges@univ-paris1.fr\npreferred-citation:\n  type: manual\n  title: 'potential: Implementation of the Potential Model'\n  authors:\n  - family-names: Giraud\n    given-names: Timoth\u00e9e\n    email: timothee.giraud@cnrs.fr\n    orcid: https://orcid.org/0000-0002-1932-3323\n  - family-names: Commenges\n    given-names: Hadrien\n    email: hadrien.commenges@univ-paris1.fr\n  version: 0.2.0\n  abstract: Provides functions to compute the potential model as defined by Stewart\n    (1941) <doi:10.1126/science.93.2404.89>. Several options are available to customize\n    the model, such as the possibility to fine-tune the distance friction functions\n    or to use custom distance matrices. Some computations are parallelized to improve\n    their efficiency.\n  repository: https://CRAN.R-project.org/package=potential\n  repository-code: https://github.com/riatelab/potential\n  url: https://github.com/riatelab/potential\n  contact:\n  - family-names: Giraud\n    given-names: Timoth\u00e9e\n    email: timothee.giraud@cnrs.fr\n    orcid: https://orcid.org/0000-0002-1932-3323\n  keywords:\n  - rspatial\n  - stewart\n  license: GPL-3.0-only\n  year: '2022'\nrepository: https://CRAN.R-project.org/package=potential\nrepository-code: https://github.com/riatelab/potential\nurl: https://github.com/riatelab/potential\ncontact:\n- family-names: Giraud\n  given-names: Timoth\u00e9e\n  email: timothee.giraud@cnrs.fr\n  orcid: https://orcid.org/0000-0002-1932-3323\nkeywords:\n- rspatial\n- stewart\nreferences:\n- type: software\n  title: 'R: A Language and Environment for Statistical Computing'\n  notes: Depends\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2022'\n  url: https://www.R-project.org/\n  institution:\n    name: R Foundation for Statistical Computing\n  version: '>= 3.5.0'\n- type: software\n  title: sf\n  abstract: 'sf: Simple Features for R'\n  notes: Imports\n  authors:\n  - family-names: Pebesma\n    given-names: Edzer\n    email: edzer.pebesma@uni-muenster.de\n    orcid: https://orcid.org/0000-0001-8049-7069\n  year: '2022'\n  url: https://CRAN.R-project.org/package=sf\n- type: software\n  title: graphics\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2022'\n  url: https://www.R-project.org/\n  institution:\n    name: R Foundation for Statistical Computing\n- type: software\n  title: mapiso\n  abstract: 'mapiso: Create Contour Polygons from Regular Grids'\n  notes: Imports\n  authors:\n  - family-names: Giraud\n    given-names: Timoth\u00e9e\n    email: timothee.giraud@cnrs.fr\n    orcid: https://orcid.org/0000-0002-1932-3323\n  year: '2022'\n  url: https://CRAN.R-project.org/package=mapiso\n- type: software\n  title: parallel\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2022'\n  url: https://www.R-project.org/\n  institution:\n    name: R Foundation for Statistical Computing\n- type: software\n  title: doParallel\n  abstract: 'doParallel: Foreach Parallel Adaptor for the ''parallel'' Package'\n  notes: Imports\n  authors:\n  - family-names: Corporation\n    given-names: Microsoft\n  - family-names: Weston\n    given-names: Steve\n  year: '2022'\n  url: https://CRAN.R-project.org/package=doParallel\n- type: software\n  title: foreach\n  abstract: 'foreach: Provides Foreach Looping Construct'\n  notes: Imports\n  authors:\n  - name: Microsoft\n  - family-names: Weston\n    given-names: Steve\n  year: '2022'\n  url: https://CRAN.R-project.org/package=foreach\n- type: software\n  title: covr\n  abstract: 'covr: Test Coverage for Packages'\n  notes: Suggests\n  authors:\n  - family-names: Hester\n    given-names: Jim\n    email: james.f.hester@gmail.com\n  year: '2022'\n  url: https://CRAN.R-project.org/package=covr\n- type: software\n  title: lwgeom\n  abstract: 'lwgeom: Bindings to Selected ''liblwgeom'' Functions for Simple Features'\n  notes: Suggests\n  authors:\n  - family-names: Pebesma\n    given-names: Edzer\n    email: edzer.pebesma@uni-muenster.de\n    orcid: https://orcid.org/0000-0001-8049-7069\n  year: '2022'\n  url: https://CRAN.R-project.org/package=lwgeom\n- type: software\n  title: eurostat\n  abstract: 'eurostat: Tools for Eurostat Open Data'\n  notes: Suggests\n  authors:\n  - family-names: Lahti\n    given-names: Leo\n    email: leo.lahti@iki.fi\n    orcid: https://orcid.org/0000-0001-5537-637X\n  - family-names: Huovari\n    given-names: Janne\n  - family-names: Kainu\n    given-names: Markus\n  - family-names: Biecek\n    given-names: Przemyslaw\n  year: '2022'\n  url: https://CRAN.R-project.org/package=eurostat\n- type: software\n  title: giscoR\n  abstract: 'giscoR: Download Map Data from GISCO API - Eurostat'\n  notes: Suggests\n  authors:\n  - family-names: Hernang\u00f3mez\n    given-names: Diego\n    email: diego.hernangomezherrero@gmail.com\n    orcid: https://orcid.org/0000-0001-8457-4658\n    affiliation: rOpenGov\n  year: '2022'\n  url: https://CRAN.R-project.org/package=giscoR\n- type: software\n  title: mapsf\n  abstract: 'mapsf: Thematic Cartography'\n  notes: Suggests\n  authors:\n  - family-names: Giraud\n    given-names: Timoth\u00e9e\n    email: timothee.giraud@cnrs.fr\n    orcid: https://orcid.org/0000-0002-1932-3323\n  year: '2022'\n  url: https://CRAN.R-project.org/package=mapsf\n- type: software\n  title: knitr\n  abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'\n  notes: Suggests\n  authors:\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  year: '2022'\n  url: https://CRAN.R-project.org/package=knitr\n- type: software\n  title: tinytest\n  abstract: 'tinytest: Lightweight and Feature Complete Unit Testing Framework'\n  notes: Suggests\n  authors:\n  - family-names: van der Loo\n    given-names: Mark\n    email: mark.vanderloo@gmail.com\n    orcid: https://orcid.org/0000-0002-9807-4686\n  year: '2022'\n  url: https://CRAN.R-project.org/package=tinytest\n- type: software\n  title: rmarkdown\n  abstract: 'rmarkdown: Dynamic Documents for R'\n  notes: Suggests\n  authors:\n  - family-names: Allaire\n    given-names: JJ\n    email: jj@rstudio.com\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  - family-names: McPherson\n    given-names: Jonathan\n    email: jonathan@rstudio.com\n  - family-names: Luraschi\n    given-names: Javier\n    email: javier@rstudio.com\n  - family-names: Ushey\n    given-names: Kevin\n    email: kevin@rstudio.com\n  - family-names: Atkins\n    given-names: Aron\n    email: aron@rstudio.com\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@rstudio.com\n  - family-names: Cheng\n    given-names: Joe\n    email: joe@rstudio.com\n  - family-names: Chang\n    given-names: Winston\n    email: winston@rstudio.com\n  - family-names: Iannone\n    given-names: Richard\n    email: rich@rstudio.com\n    orcid: https://orcid.org/0000-0003-3925-190X\n  year: '2022'\n  url: https://CRAN.R-project.org/package=rmarkdown\n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "References",
+        "parent_header": [
+          "potential <img src=\"man/figures/logo.png\" align=\"right\" width=\"140\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "<div id=\"refs\" class=\"references csl-bib-body hanging-indent\">\n\n<div id=\"ref-STEWART41\" class=\"csl-entry\">\n\nStewart, John Q. 1941. \u201cAn Inverse Distance Variation for Certain Social\nInfluences.\u201d *Science* 93 (2404): 89\u201390.\n<https://doi.org/10.1126/science.93.2404.89>.\n\n</div>\n\n</div>\n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/potential"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/potential"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/potential"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/riatelab/potential/actions",
+          "https://app.codecov.io/gh/riatelab/potential"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-09-29T14:13:19Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-05T12:39:23Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "An R package to compute the potential model as defined by Stewart (1941)."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+        "type": "String",
+        "value": "Provides functions to compute the potential model as defined by\n    Stewart (1941) <doi:10.1126/science.93.2404.89>. Several options are available\n    to customize the model, such as the possibility to fine-tune the distance\n    friction functions or to use custom distance matrices. Some computations are\n    parallelized to improve their efficiency."
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Provides functions to compute the potential model as defined by Stewart (1941) <doi:10.1126/science.93.2404.89>. Several options are available to customize the model, such as the possibility to fine-tune the distance friction functions or to use custom distance matrices. Some computations are parallelized to improve their efficiency."
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8419085533908364,
+      "result": {
+        "original_header": "potential <img src=\"man/figures/logo.png\" align=\"right\" width=\"140\"/>",
+        "type": "Text_excerpt",
+        "value": "This package provides functions to compute the potential model as\ndefined by Stewart (1941). Several options are available to customize\nthe model, for example it is possible to fine-tune the distance friction\nfunctions or to use custom distance matrices. Some computations are\nparallelized to improve their efficiency. \n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8807741608718416,
+      "result": {
+        "original_header": "Note",
+        "type": "Text_excerpt",
+        "value": "This package provides access to the revamped potential-related functions\ninitially offered by\n[`SpatialPosition`](https://CRAN.R-project.org/package=SpatialPosition).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/potential/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/potential/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/riatelab/potential/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "riatelab/potential"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "potential "
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "potential"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/potential/master/man/figures/demox-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/potential/master/man/figures/demo-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "potential <img src=\"man/figures/logo.png\" align=\"right\" width=\"140\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install the released version of `potential` from\n[CRAN](https://CRAN.R-project.org/package=potential) with:\n\n``` r\ninstall.packages(\"potential\")\n```\n\nYou can install the development version of `potential` from GitHub with:\n\n``` r\n# install.packages(\"remotes\")\nremotes::install_github(\"riatelab/potential\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/riatelab/potential/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/potential/issues"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/potential/issues"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "rspatial, stewart"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "stewart",
+          "rspatial"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/potential/master/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "potential"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "potential: Implementation of the Potential Model"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "riatelab"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+        "type": "String",
+        "value": "potential"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 24155,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 1187,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/riatelab/potential/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/potential/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:29:42",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 29
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Demo",
+        "parent_header": [
+          "potential <img src=\"man/figures/logo.png\" align=\"right\" width=\"140\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "``` r\nlibrary(mapsf)\nlibrary(potential)\n# Display the spatial interaction function\nplot_inter(fun = \"e\", span = 75000, beta = 2, limit = 250000)\n```\n\n![](man/figures/demox-1.png)\n\n``` r\n# create a regular grid\ny <- create_grid(x = n3_poly, res = 20000)\n# compute potentials\npot <- mcpotential(\n  x = n3_pt, y = y,\n  var = \"POP19\",\n  fun = \"e\", span = 75000,\n  beta = 2, limit = 250000, \n  ncl = 2\n)\n# Define potential according to the maximum value\ny$pot <- pot / max(pot) * 100\n# create equipotential areas\nbks <- seq(0, 100, length.out = 11)\nequipot <- equipotential(y, var = \"pot\", breaks = bks, mask = n3_poly)\n# map potentials\nmf_theme(\"default\")\nmf_map(x = equipot, var = \"min\", type = \"choro\", \n       breaks = bks, \n       pal = hcl.colors(10, 'Teal'),\n       border = \"#121725\", \n       leg_val_rnd = 0,\n       lwd = .2, \n       leg_pos = \"topright\", \n       leg_title = \"Potential Intensity\")\nmf_title(txt = \"Potentials of Population\")\nmf_credits(txt = \"\u00a9 EuroGeographics for the administrative boundaries and \u00a9 Eurostat for data\")\n```\n\n![](man/figures/demo-1.png)\n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/README.rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.3.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/potential/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,1057 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Databases"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9516532524285086,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "myrmecocystus@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-1444-9135",
+        "type": "String",
+        "value": "Scott Chamberlain"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/elastic"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/elastic"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/elastic"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/elastic/master/.github/workflows/R-check.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING #\n\n### Bugs?\n\n* Submit an issue on the [Issues page](https://github.com/ropensci/elastic/issues)\n\n### Code contributions\n\n* Fork this repo to your Github account\n* Clone your version on your account down to your machine from your account, e.g,. `git clone https://github.com/<yourgithubusername>/elastic.git`\n* Make sure to track progress upstream (i.e., on our version of `elastic` at `ropensci/elastic`) by doing `git remote add upstream https://github.com/ropensci/elastic.git`. Before making changes make sure to pull changes in from upstream by doing either `git fetch upstream` then merge later or `git pull upstream` to fetch and merge in one step\n* Make your changes (bonus points for making changes on a new feature branch)\n* Push up to your account\n* Submit a pull request to home base at `ropensci/elastic`\n\n### Also, check out our [discussion forum](https://discuss.ropensci.org)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2013-11-14T07:48:08Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-12T16:02:53Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R client for the Elasticsearch HTTP API"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+        "type": "String",
+        "value": "Connect to 'Elasticsearch', a 'NoSQL' database built on the 'Java'\n    Virtual Machine. Interacts with the 'Elasticsearch' 'HTTP' API\n    (<https://www.elastic.co/elasticsearch/>), including functions for\n    setting connection details to 'Elasticsearch' instances, loading bulk data,\n    searching for documents with both 'HTTP' query variables and 'JSON' based body\n    requests. In addition, 'elastic' provides functions for interacting with API's\n    for 'indices', documents, nodes, clusters, an interface to the cat API, and\n    more."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Connect to 'Elasticsearch', a 'NoSQL' database built on the 'Java'\n    Virtual Machine. Interacts with the 'Elasticsearch' 'HTTP' API\n    (<https://www.elastic.co/elasticsearch/>), including functions for\n    setting connection details to 'Elasticsearch' instances, loading bulk data,\n    searching for documents with both 'HTTP' query variables and 'JSON' based body\n    requests. In addition, 'elastic' provides functions for interacting with API's\n    for 'indices', documents, nodes, clusters, an interface to the cat API, and\n    more."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9801619388754054,
+      "result": {
+        "original_header": "Compatibility",
+        "type": "Text_excerpt",
+        "value": "This client is developed following the latest stable releases, currently `v7.10.0`. It is generally compatible with older versions of Elasticsearch. Unlike the [Python client](https://github.com/elastic/elasticsearch-py#compatibility), we try to keep as much compatibility as possible within a single version of this client, as that's an easier setup in R world.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9713944732187402,
+      "result": {
+        "original_header": "Upgrading Elasticsearch",
+        "type": "Text_excerpt",
+        "value": "I am not totally clear on best practice here, but from what I understand, when you upgrade to a new version of Elasticsearch, place old `elasticsearch/data` and `elasticsearch/config` directories into the new installation (`elasticsearch/` dir). The new elasticsearch instance with replaced data and config directories should automatically update data to the new version and start working. Maybe if you use homebrew on a Mac to upgrade it takes care of this for you - not sure. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8766401059984378,
+      "result": {
+        "original_header": "Meta",
+        "type": "Text_excerpt",
+        "value": "* Please [report any issues or bugs](https://github.com/ropensci/elastic/issues)\n* License: MIT\n* Get citation information for `elastic` in R doing `citation(package = 'elastic')`\n* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/elastic/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 58
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/elastic/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/elastic"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "elastic"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/elastic/ (website)"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "elastic"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "elastic"
+        ],
+        "type": "Text_excerpt",
+        "value": "Stable version from CRAN\n\n\n```r\ninstall.packages(\"elastic\")\n```\n\nDevelopment version from GitHub\n\n\n```r\nremotes::install_github(\"ropensci/elastic\")\n```\n\n\n```r\nlibrary('elastic')\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install Elasticsearch",
+        "parent_header": [
+          "elastic"
+        ],
+        "type": "Text_excerpt",
+        "value": "* [Elasticsearch installation help](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html)\n\n__w/ Docker__\n\nPull the official elasticsearch image\n\n```\n# elasticsearch needs to have a version tag. We're pulling 7.10.1 here\ndocker pull elasticsearch:7.10.1\n```\n\nThen start up a container\n\n```\ndocker run -d -p 9200:9200 elasticsearch:7.10.1\n```\n\nThen elasticsearch should be available on port 9200, try `curl localhost:9200` and you should get the familiar message indicating ES is on.\n\nIf you're using boot2docker, you'll need to use the IP address in place of localhost. Get it by doing `boot2docker ip`.\n\n__on OSX__\n\n+ Download zip or tar file from Elasticsearch [see here for download](https://www.elastic.co/downloads), e.g., `curl -L -O https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.0-darwin-x86_64.tar.gz`\n+ Extract: `tar -zxvf elasticsearch-7.10.0-darwin-x86_64.tar.gz`\n+ Move it: `sudo mv elasticsearch-7.10.0 /usr/local`\n+ Navigate to /usr/local: `cd /usr/local`\n+ Delete symlinked `elasticsearch` directory: `rm -rf elasticsearch`\n+ Add shortcut: `sudo ln -s elasticsearch-7.10.0 elasticsearch` (replace version with your version)\n\nYou can also install via Homebrew: `brew install elasticsearch`\n\n> Note: for the 1.6 and greater upgrades of Elasticsearch, they want you to have java 8 or greater. I downloaded Java 8 from here http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html and it seemed to work great.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "More data sets",
+        "parent_header": [
+          "elastic",
+          "Get some data"
+        ],
+        "type": "Text_excerpt",
+        "value": "There are more datasets formatted for bulk loading in the `sckott/elastic_data` GitHub repository. Find it at <https://github.com/sckott/elastic_data>\n\n\n<br>\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/elastic/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/elastic/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/elastic/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "data-science, database, database-wrapper, elasticsearch, etl, http, json, r, r-package, rstats"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "database",
+          "Elasticsearch",
+          "HTTP",
+          "API",
+          "search",
+          "NoSQL",
+          "Java",
+          "JSON",
+          "documents",
+          "elasticsearch",
+          "http",
+          "database-wrapper",
+          "json",
+          "rstats",
+          "r",
+          "r-package",
+          "data-science",
+          "etl"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Copyright (c) 2021, Scott Chamberlain\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "elastic"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "elastic: General Purpose Interface to 'Elasticsearch'"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+        "type": "String",
+        "value": "elastic"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 383272,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 904,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/elastic/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/elastic/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2021-03-16T17:50:40Z",
+        "date_published": "2021-03-16T17:50:43Z",
+        "description": "### NEW FEATURES\n\n* `Search()` and `Search_uri()` gain new parameter `ignore_unavailable` to determine what happens if an index name does not exist (#273)\n* `connect()` gains new parameter `ignore_version`. Internally, `elastic` sometimes checks the Elasticsearch version that the user is connected to to determine what to do. may be useful when it's not possible to check the Elasticsearch version, e.g., when its not possible to ping the root route of the API  (#275)\n* all docs bulk functions gain parameter `digits` that is passed down to `jsonlite::toJSON() used internally`. thus, `digits` will control the number of decimal digits used in the JSON the package creates to be bulk loaded into Elasticsearch (#279)\n\n### MINOR IMPROVEMENTS\n\n* fix README instructions on installing Elasticsearch from docker; there's no latest tag, so use a specific version (#277) thanks @ColinFay\n\n\n",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v1.2.0",
+        "name": "elastic v1.2.0",
+        "release_id": 39896009,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/39896009",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/39896009",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2020-01-11T01:24:20Z",
+        "date_published": "2020-01-11T01:28:24Z",
+        "description": "### NEW FEATURES\r\n\r\n* types were deprecated in Elasticsearch v7 and greater, and will be removed in Elasticsearch v8 and greater. this version makes type optional in all/most functions so that users with older Elasticsearch versions can still use them, but users with v7 or v8 installations don't have to use them  (#251) (#270)\r\n* gains new method `index_shrink()` for index shrinking (#192)\r\n* through fixing functionality in `docs_bulk()` to allow pipline attachments to work, all `docs_bulk` methods that do http requests (i.e, not prep fxns) gain the parameter `query` to pass through query parameters to the http request, including for example `pipeline`, `_source` etc. (#253)\r\n* `Search()` and `Search_uri()` gain the parameter `track_total_hits` (default: `TRUE`) (#262) thanks @orenov\r\n\r\n### MINOR IMPROVEMENTS\r\n\r\n* the `warn` parameter in `connect()` was not being used across the entire package; now all methods should capture any warnings returned in the Elasticsearch HTTP API headers  (#261)\r\n* clarify in docs that `connect()` does not create a DBI like connection object (#265)\r\n* fix warning in `index_analyze()` function where as is method `I()` should only be applied if the input parameter is not `NULL` - to avoid a warning (#269)\r\n\r\n### BUG FIXES\r\n\r\n* fix to `docs_bulk_update()`: subsetting data.frame's was not working correctly when data.frame's had only 1 column; fixed (#260)\r\n* fix to internal method `es_ver()` in the `Elasticsearch` class to be more flexible in capturing Elasticsearch version (#268)\r\n* require newest `crul` version, helps fix a problem with passing along authentication details (#267)",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v1.1.0",
+        "name": "elastic v1.1.0",
+        "release_id": 22758656,
+        "tag": "v1.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/22758656",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/22758656",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2019-04-10T23:12:42Z",
+        "date_published": "2019-04-10T23:13:44Z",
+        "description": "### BREAKING CHANGE\r\n\r\n(#87) The `connect()` function is essentially the same, with some changes, but now you pass the connection object to each function all. This indeed will break code. That's why this is a major version bump. \r\n\r\nThere is one very big downside to this: breaks existing code. That's the big one. I do apologize for this, but I believe that is outweighed by the upsides: passing the connection object matches behavior in similar R packages (e.g., all the SQL database clients); you can now manage as many different connection objects as you like in the same R session; having the connection object as an R6 class allows us to have some simple methods on that object to ping the server, etc. In addition, all functions will error with an informative message if you don't pass the connection object as the first thing.\r\n\r\n### NEW FEATURES\r\n\r\n* gains new ingest functions `pipeline_create`, `pipeline_delete`, `pipeline_get`, `pipeline_simulate`, and `pipeline_attachment()` (#191) (#226) \r\n* gains new function `docs_delete_by_query()` and `docs_update_by_query()` to delete or update multiple documents at once, respectively; and new function `reindex()` to reindex all documents from one index to another (#237) (#195)\r\n* now using `crul` for HTTP requests. this only should matter with respect to passing in curl options  (#168)\r\n* recent versions of Elasticsearch are starting to include warnings in response headers for deprecations and other things. These can now be turned on or off with `connect()` (#241)\r\n* gains new functions for the bulk API: `docs_bulk_create()`, `docs_bulk_delete()`, `docs_bulk_index()`. each of which are tailored to doing the operation in the function name: creating docs, deleting docs, or indexing docs (#183)\r\n* gains new function `type_remover()` as a utility function to help users remove types from their files to use for bulk loading; could be used on example files in this package or user supplied files (#180)\r\n* gains function `alias_rename()` to rename aliases\r\n\r\n### MINOR IMPROVEMENTS\r\n\r\n* fixed `scroll()` example that wasn't working (#228)\r\n* rework `alias_create()` (#230)\r\n* move initialize Elasticsearch connection section of README higher up to emphasize it in the right place (#231) thanks @mbannert\r\n* whether you want \"simple\" or \"complete\" errors no longer sets env vars internally, but is passed through the internal error checker so that choices about type of errors for different connection objects do not affect one another (#242)\r\n* `docs_get` gains new parameters `source_includes` and `source_excludes` to include or exclude certain fields in the returned document (#246) thanks @Jensxy\r\n* added more examples to `index_create()` (#211)\r\n* add examples to `Search()` and `Search_uri()` docs of how to use profiles (https://www.elastic.co/guide/en/elasticsearch/reference/current/search-profile.html) (#194)\r\n* additional example added to `docs_bulk_prep()` for doing a mix of actions (i.e., delete, create, etc.)\r\n* improved examples throughout package docs so that examples are more self-contained\r\n* add `include_type_name` param in mappings fxns (#250)\r\n\r\n### BUG FIXES\r\n\r\n* `docs_bulk_update()` was not handling boolean values correctly. now fixed (#239) (#240) thanks to @dpmccabe\r\n\r\n### DEPRECATED AND DEFUNCT\r\n\r\n* the `info()` method has been moved inside of the connection object. after calling `x = connect()` you can call `x$info()`\r\n* the `ping()` method has been marked as deprecated; instead, call `ping()` on the connection object created by a call to `connect()`",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v1.0.0",
+        "name": "elastic v1.0.0",
+        "release_id": 16687918,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/16687918",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/16687918",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2019-04-09T17:05:50Z",
+        "date_published": "2019-04-09T17:10:36Z",
+        "description": "install: `remotes::install_github(\"ropensci/elastic@v1.0.0-rc1\")`\r\n\r\n### BREAKING CHANGE\r\n\r\n(#87) The `connect()` function is essentially the same, with some changes, but now you pass the connection object to each function all. This indeed will break code. That's why this is a major version bump. \r\n\r\nThere is one very big downside to this: breaks existing code. That's the big one. I do apologize for this, but I believe that is outweighed by the upsides: passing the connection object matches behavior in similar R packages (e.g., all the SQL database clients); you can now manage as many different connection objects as you like in the same R session; having the connection object as an R6 class allows us to have some simple methods on that object to ping the server, etc. In addition, all functions will error with an informative message if you don't pass the connection object as the first thing.\r\n\r\n### NEW FEATURES\r\n\r\n* gains new ingest functions `pipeline_create`, `pipeline_delete`, `pipeline_get`, `pipeline_simulate`, and `pipeline_attachment()` (#191) (#226) \r\n* gains new function `docs_delete_by_query()` and `docs_update_by_query()` to delete or update multiple documents at once, respectively; and new function `reindex()` to reindex all documents from one index to another (#237) (#195)\r\n* now using `crul` for HTTP requests. this only should matter with respect to passing in curl options  (#168)\r\n* recent versions of Elasticsearch are starting to include warnings in response headers for deprecations and other things. These can now be turned on or off with `connect()` (#241)\r\n* gains new functions for the bulk API: `docs_bulk_create()`, `docs_bulk_delete()`, `docs_bulk_index()`. each of which are tailored to doing the operation in the function name: creating docs, deleting docs, or indexing docs (#183)\r\n* gains new function `type_remover()` as a utility function to help users remove types from their files to use for bulk loading; could be used on example files in this package or user supplied files (#180)\r\n* gains function `alias_rename()` to rename aliases\r\n\r\n### MINOR IMPROVEMENTS\r\n\r\n* fixed `scroll()` example that wasn't working (#228)\r\n* rework `alias_create()` (#230)\r\n* move initialize Elasticsearch connection section of README higher up to emphasize it in the right place (#231) thanks @mbannert\r\n* whether you want \"simple\" or \"complete\" errors no longer sets env vars internally, but is passed through the internal error checker so that choices about type of errors for different connection objects do not affect one another (#242)\r\n* `docs_get` gains new parameters `source_includes` and `source_excludes` to include or exclude certain fields in the returned document (#246) thanks @Jensxy\r\n* added more examples to `index_create()` (#211)\r\n* add examples to `Search()` and `Search_uri()` docs of how to use profiles (https://www.elastic.co/guide/en/elasticsearch/reference/current/search-profile.html) (#194)\r\n* additional example added to `docs_bulk_prep()` for doing a mix of actions (i.e., delete, create, etc.)\r\n* improved examples throughout package docs so that examples are more self-contained\r\n\r\n### BUG FIXES\r\n\r\n* `docs_bulk_update()` was not handling boolean values correctly. now fixed (#239) (#240) thanks to @dpmccabe\r\n\r\n## DEPRECATED AND DEFUNCT\r\n\r\n* the `info()` method has been moved inside of the connection object. after calling `x = connect()` you can call `x$info()`\r\n* the `ping()` method has been marked as deprecated; instead, call `ping()` on the connection object created by a call to `connect()`",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v1.0.0-rc1",
+        "name": "elastic v1.0.0-rc1",
+        "release_id": 16628117,
+        "tag": "v1.0.0-rc1",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v1.0.0-rc1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/16628117",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/16628117",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v1.0.0-rc1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2018-06-25T21:58:05Z",
+        "date_published": "2018-06-25T23:52:33Z",
+        "description": "### NEW FEATURES\r\n\r\n* Gains new function `docs_bulk_update()` to do bulk updates to documents (#169)\r\n\r\n### MINOR IMPROVEMENTS\r\n\r\n* Vignettes weren't showing up on CRAN, fixed (#205)\r\n* Added an example of using WKT in a query (#215)\r\n* using markdown docs (#209)\r\n* `id` is now optional in `docs_create()` - if you don't pass a document identifier Elasticsearch generates one for you (#216) thanks @jbrant\r\n* `docs_bulk()` gains new parameter `quiet` to optionally turn off the progress bar (#202)\r\n\r\n### BUG FIXES\r\n\r\n* Fix to `docs_bulk()` for encoding in different locales (#223) (#224) thanks @Lchiffon\r\n* Fix for `index_get()`: you can now only pass in one value to the `features` parameter (one of settings, mappings, or aliases) (#218) thanks @happyshows\r\n* Fix to `index_create()` to handle a list body, in addition to a JSON body (#214) thanks @emillykkejensen\r\n* Fix to `docs_bulk()` for document IDs as factors (#212) thanks @AMR-KELEG\r\n* Temporary files created when using `docs_bulk()` (and taking up disk space) are cleaned up now (deleted), though if you pass in your own file paths you have to clean them up (#208) thanks @emillykkejensen",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.8.4",
+        "name": "elastic v0.8.4",
+        "release_id": 11643124,
+        "tag": "v0.8.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.8.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/11643124",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/11643124",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.8.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2017-09-13T15:09:12Z",
+        "date_published": "2017-09-14T14:03:34Z",
+        "description": "### Scroll changes\r\n\r\n* changed to S3 setup, with methods for `character` and\r\n`list`.\r\n* first parameter of `scroll()` and `scroll_clear()` is now `x`, should\r\nonly matter if you specified the parameter name for the first parameter\r\n* `scroll` parameter in `scroll()` function is now `time_scroll`\r\n* Added `asdf` (for \"as data.frame\") to `scroll()` to give back a\r\ndata.frame (#163)\r\n* streaming option added to `scroll()`, see parameter `stream_opts` in the\r\ndocs and examples (#160)\r\n* general docs improvements (#182)\r\n\r\n\r\n### NEW FEATURES\r\n\r\n* New functions `tasks` and `tasks_cancel` for the tasks API (#145)\r\n* streaming option added to `Search()`, see parameter `stream_opts` in the\r\ndocs and examples. `scroll` parameter in `Search()` is now `time_scroll`\r\n(#160)\r\n* New function `field_caps` (for field capabilities) - in ES v5.4 and\r\ngreater\r\n* New function `reindex` for the reindex ES API (#134)\r\n* New functions `index_template_get`, `index_template_put`,\r\n`index_template_exists`, and `index_template_delete` for the indices\r\ntemplates ES API (#133)\r\n* New function `index_forcemerge` for the ES index `_forcemerge`\r\nroute (#176)\r\n\r\n### MINOR IMPROVEMENTS\r\n\r\n* Added examples to docs for `Search` and `Search_uri` for how\r\nto show progress bar (#162)\r\n* Small docs fix to `docs_bulk` to clarify what's allowed as first\r\nparameter input (#173)\r\n* `docs_bulk` change to internal JSON preparation to use\r\n`na = \"null\"` and `auto_unbox = TRUE` in the `jsonlite::toJSON`\r\ncall. This means that `NA`'s in R become `null` in the JSON\r\nand atomic vectors are unboxed (#174) thanks @pieterprovoost\r\n* `mapping_create` gains `update_all_types` parameter; and new man\r\nfile to explain how to enable fielddata if sorting needed (#164)\r\n* `suggest` is used through query DSL instead of a route, added\r\nexample to `Search` (#102)\r\n* Now caching internal `ping()` calls - so that after the first one\r\nwe used the cached version if called again within the same R session.\r\nShould help speed up some code with respect to http calls (#184)\r\nthanks @henfiber\r\n* Fixes to percolate functions and docs for differences in percolate\r\nfunctionality pre v5 and post v5 (#176)\r\n* All http requests now contain `content-type` headers, for the most part\r\n`application/json` (#197), though functions that work with the bulk API\r\nuse `application/x-ndjson` (#186)\r\n* docs fix to `mapping_create` egs (#199)\r\n* README now includes example of how to connect when your ES is using X-pack\r\n(#185) thanks @ugosan\r\n\r\n### BUG FIXES\r\n\r\n* fixes for normalizing url paths (#181)\r\n* fix to `type_exists` to work on ES versions less to and greater than\r\nv5 (#189)\r\n* fix to `field_stats` to indicate that its no longer avail. in\r\nES v5.4 and above - and that the `fields` parameter in ES >= v5 is\r\ngone (#190)",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.8.0",
+        "name": "elastic v0.8.0",
+        "release_id": 7730705,
+        "tag": "v0.8.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/7730705",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/7730705",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2016-11-08T23:49:12Z",
+        "date_published": "2016-11-09T00:06:56Z",
+        "description": "### NEW FEATURES\n- New function `docs_update()` to do partial document updates (#152)\n- New function `docs_bulk_prep()` to prepare bulk format files\n  that you can use to load into Elasticsearch with this package, on the\n  command line, or in any other context (Python, Ruby, etc.) (#154)\n\n### MINOR IMPROVEMENTS\n- We're no longer running a check that your ES server is up before\n  every request to the server. This makes request faster, but may lead to\n  less informative errors when your server is down or in some other state\n  than fully operational (#149)\n- Tweaks here and there to make sure `elastic` works with Elasticsearch\n  v5. Note that not all v5 features are included here yet. (#153)\n\n### BUG FIXES\n- `docs_bulk()` was not working on single column data.frame's. now is\n  working. (#151) thanks @gustavobio\n- `docs_*` functions now support ids with whitespace in them. (#155)\n- fixes to `docs_mget()` to fix requesting certain fields back.\n",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.7.8",
+        "name": "elastic v0.7.8",
+        "release_id": 4608760,
+        "tag": "v0.7.8",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.7.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/4608760",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/4608760",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.7.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2016-08-24T23:16:11Z",
+        "date_published": "2016-08-24T23:20:03Z",
+        "description": "### BUG FIXES\n- Allow usage of `es_base` parameter in `connect()` - Now, instead of \n  `stop()` on `es_base` usage, we use its value for `es_host`. Only \n  pass in one or the other of `es_base` and `es_host`, not both. \n  (#146) thanks @MarcinKosinski\n",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.7.6",
+        "name": "elastic v0.7.6",
+        "release_id": 3967610,
+        "tag": "v0.7.6",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.7.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/3967610",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/3967610",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.7.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2016-08-17T20:59:59Z",
+        "date_published": "2016-08-17T21:08:43Z",
+        "description": "### NEW FEATURES\n- package gains new set of functions for working with search templates:\n  `Search_template()`, `Search_template_register()`, `Search_template_get()`, \n  `Search_template_delete()`, and `Search_template_render()`  (#101)\n\n### MINOR IMPROVEMENTS\n- Improved documentation for `docs_delete`, `docs_get` and `docs_create` \n  to list correctly that numeric and character values are accepted for \n  the id parameter - before stated that numeric values allowed only (#144)\n  thanks @dominoFire\n- Added tests for illegal characters in index names.\n\n### BUG FIXES\n- Fixed bug introduced into `Search` and related functions where \n  wildcards in indeces didn't work. Turned out we url escaped twice\n  unintentionally. Fixed now, and more tests added for wildcards. \n  (#143) thanks @martijnvanbeers\n",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.7.4",
+        "name": "elastic v0.7.4",
+        "release_id": 3911116,
+        "tag": "v0.7.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.7.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/3911116",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/3911116",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.7.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2016-08-02T19:41:59Z",
+        "date_published": "2016-08-02T19:45:49Z",
+        "description": "### MINOR IMPROVEMENTS\n- Changed `docs_bulk()` to always return a list, whether it's given a file,\n  data.frame, or list. For a file, a named list is returned, while for a \n  data.frame or list an unnamed list is returned as many chunks can be processed\n  and we don't attempt to wrangle the list output. Inputs of data.frame and list\n  used to return `NULL` as we didn't return anything from the internal for loop. \n  You can wrap `docs_bulk` in `invisible()` if you don't want the list printed \n  (#142)\n\n### BUG FIXES\n- Fixed bug in `docs_bulk()` and `msearch()` in which base URL construction\n  was not done correctly (#141) thanks @steeled !\n",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.7.2",
+        "name": "elastic v0.7.2",
+        "release_id": 3796622,
+        "tag": "v0.7.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.7.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/3796622",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/3796622",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.7.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2016-07-25T03:42:50Z",
+        "date_published": "2016-07-25T14:22:43Z",
+        "description": "### NEW FEATURES\n- New function `scroll_clear()` to clear search contexts created when\n  using `scroll()` (#140)\n- New function `ping()` to ping an Elasticsearch server to see if\n  it is up (#138)\n- `connect()` gains new parameter `es_path` to specify a context path, \n  e.g., the `bar` in `http://foo.com/bar` (#137)\n\n### MINOR IMPROVEMENTS\n- Change all `httr::content()` calls to parse to plain text\n  and UTF-8 encoding (#118)\n- Added note to docs that when using `scroll()` all scores are\n  zero b/c scores are not calculated/tracked (#127)\n- `connect()` no longer pings the ES server when run, but can\n  now be done separately with `ping()` (#139)\n- Let http request headers be sent with all requests - set with \n  `connect()` (#129)\n- Added `transport_schema` param to `connect()` to specify \n  http or https (#130)\n- By default use UUIDs with bulk API with `docs_bulk()` (#125)\n\n### BUG FIXES\n- Fix to fail well on empty body sent by user (#119)\n- Fix to `docs_bulk()` function so that user supplied `doc_ids` \n  are not changed at all now (#123)\n",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.7.0",
+        "name": "elastic v0.7.0",
+        "release_id": 3732405,
+        "tag": "v0.7.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.7.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/3732405",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/3732405",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.7.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2016-01-07T15:34:25Z",
+        "date_published": "2016-01-07T15:35:54Z",
+        "description": "Compatibility for many Elasticsearch versions has improved. We've tested on ES versions\nfrom the current (`v2.1.1`) back to `v1.0.0`, and `elastic` works with all versions.\nThere are some functions that stop with a message with some ES versions simply \nbecause older versions may not have had particular ES features. Please do let us \nknow if you have problems with older versions of ES, so we can improve compatibility.\n\n### NEW FEATURES\n- Added `index_settings_update()` function to allow updating index settings (#66)\n- All errors from the Elasticsearch server are now given back as `JSON`. \n  Error parsing has thus changed in `elastic`. We now have two levels of error\n  behavior: 'simple' and 'complete'. These can be set in `connect()` with the \n  `errors` parameter. Simple errors give back often just that there was an error,\n  sometimes a message with explanation is supplied. Complete errors give \n  more explanation and even the ES stack trace if supplied in the ES error \n  response (#92) (#93)\n- New function `msearch()` to do multi-searches. This works by defining queries \n  in a file, much like is done for a file to be used in bulk loading. (#103)\n- New function `validate()` to validate a search. (#105)\n- New suite of functions to work with the percolator service: `percolate_count()`, \n  `percolate_delete()`, `percolate_list()`, `percolate_match()`, `percolate_register()`. \n  The percolator works by first storing queries into an index and then you define \n  documents in order to retrieve these queries. (#106)\n- New function `field_stats()` to find statistical properties of a field without \n  executing a search (#107)\n- Added a Code of Conduct\n- New function `cat_nodeattrs()`\n- New function `index_recreate()` as a convenience function that detects if an \n  index exists, and if so, deletes it first, then creates it again.\n\n### MINOR IMPROVEMENTS\n- `docs_bulk()` now supports passing in document ids (to the `_id` field) \n  via the parameter `doc_ids` for each input data.frame or list & supports using ids\n  already in data.frame's or lists (#83)\n- `cat_*()` functions cleaned up. previously, some functions had parameters\n  that were essentially silently ignored. Those parameters dropped now\n  from the functions. (#96)\n- Elasticsearch had for a while 'search exists' functionality (via `/_search/exists`), \n  but have removed that in favor of using regular `_search` with `size=0` and \n  `terminate_after=1` instead. (#104)\n- New parameter `lenient` in `Search()` and `Search_uri` to allow format based \n  failures to be ignored, or not ignored.\n- Better error handling for `docs_get()` when gthe document isn't found\n\n### BUG FIXES\n- Fixed problems in `docs_bulk()` in the use case where users use \n  the function in a for loop, for example, and indexing started over, \n  replacing documents with the same id (#83)\n- Fixed bug in `cat_()` functions in which they sometimes failed \n  when `parse=TRUE` (#88)\n- Fixed bug in `docs_bulk()` in which user supplied document IDs weren't being \n  passed correctly internally (#90)\n- Fixed bug in `Search()` and `Search_uri()` where multiple indices weren't \n  supported, whereas they should have been - supported now (#115)\n\n### DEFUNCT\n- The following functions are now defunct: `mlt()`, `nodes_shutdown()`, `index_status()`, \n  and `mapping_delete()` (#94) (#98) (#99) (#110)\n",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.6.0",
+        "name": "elastic v0.6.0",
+        "release_id": 2384252,
+        "tag": "v0.6.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/2384252",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/2384252",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2015-07-02T18:53:19Z",
+        "date_published": "2015-07-02T18:54:27Z",
+        "description": "### NEW FEATURES\n- Added `index_settings_update()` function to allow updating index settings (#66)\n\n### MINOR IMPROVEMENTS\n- Replace `RCurl::curlEscape()` with `curl::curl_escape()` (#81)\n- Explicitly import non-base R functions (#80)\n\n### BUG FIXES\n- Fixed problems introduced with `v1` of `httr`\n",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.5.0",
+        "name": "elastic v0.5.0",
+        "release_id": 1490098,
+        "tag": "v0.5.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/1490098",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/1490098",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2015-05-01T01:55:16Z",
+        "date_published": "2015-05-01T02:09:08Z",
+        "description": "## NEW FEATURES\n- New function `Search_uri()` where the search is defined entirely in the URL itself. \n  Especially useful for cases in which `POST` requests are forbidden, e.g, on a server\n  that prevents `POST` requests (which the function `Search()` uses). (#58)\n- New function `nodes_shutdown()` (#23)\n- `docs_bulk()` gains ability to push data into Elasticsearch via the bulk http API \n  from data.frame or list objects. Previously, this function only would accept a file\n  formatted correctly. In addition, gains new parameters: `index` - The index name to use. \n  `type` - The type name to use. `chunk_size` - Size of each chunk. (#60) (#67) (#68)\n\n## MINOR IMPROVEMENTS\n- `cat_*()` functions gain new parameters: `h` to specify what fields to return; `help` to \n  output available columns, and their meanings; `bytes` to give numbers back machine \n  friendly; `parse` Parse to a data.frame or not\n- `cat_*()` functions can now optionally capture data returned in to a data.frame (#64)\n- `Search()` gains new parameter `search_path` to set the path that is used for searching. \n  The default is `_search`, but sometimes in your configuration you've setup so that \n  you don't need that path, or it's a different path. (023d28762e7e1028fcb0ad17867f08b5e2c92f93)\n\n## BUG FIXES\n- In `docs_mget()` added internal checker to make sure user passes in the right combination of \n  `index`, `type`, and `id` parameters, or `index` and `type_id`, or just `index_type_id` (#42)\n- Made `index`, `type`, and `id` parameters required in the function `docs_get()` (#43)\n- Fixed bug in `scroll()` to allow long `scroll_id`'s by passing scroll ids in the body instead \n  of as query parameter (#44)\n- In `Search()` function, in the `error_parser()` error parser function, check to see if \n  `error` element returned in response body from Elasticsearch, and if so, parse error, if not, \n  pass on body (likely empty) (#45)\n- In `Search()` function, added helper function to check size and from parameter\n  values passed in to make sure they are numbers. (#46)\n- Across all functions where `index` and `type` parameters used, now using `RCurl::curlEscape()`\n  to URL escape. Other parameters passed in are go through `httr` CRUD methods, and do URL escaping\n  for us. (#49)\n- Fixed links to development repo in DESCRIPTION file\n",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.4.0",
+        "name": "elastic 0.4.0",
+        "release_id": 1242609,
+        "tag": "v0.4.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/1242609",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/1242609",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2015-01-29T15:40:20Z",
+        "date_published": "2015-01-29T18:00:34Z",
+        "description": "This is the first version to go to CRAN - so all notes are included here.\n\n# elastic 0.3.0\n\nNEW FEATURES\n- Added a function `scroll()` and a `scroll` parameter to the `Search()` function (#36)\n- Added the function `explain()` to easily get at explanation of search results.\n- Added a help file added to help explain timem and distance units. See `?units-time` and \n  `?units=distance`\n- New help file added to list and explain the various search functions. See `?searchapis`\n- New function `tokenizer_set()` to set tokenizers\n- `connect()` run on package load to set default base url of `localhost` and port of `9200` - \n  you can override this by running that fxn yourself, or storing `es_base`, `es_port`, etc. \n  in your `.Rprofile` file.\n\nIMPROVEMENTS\n- Made CouchDB river plugin functions not exported for now, may bring back later. \n- Added vignettes for an intro and for search details and examples (#2)\n- `es_search()` changed to `Search()`.\n- More datasets included in the package for bulk data load (#16)\n- All examples wrapped in `\\dontrun` instead of `\\donttest` so they don't fail on CRAN checks.\n- `es_search_body()` removed - body based queries using the query DSL moved to the `Search()` \n  function, passed into the `body` parameter.\n\n# elastic 0.2.0\n\nIMPROVEMENTS\n- Remoworked package API. Almost all functions have new names. Sorry for this major change\n  but it needed to be done. This brings `elastic` more in line with the official Elasticsearch\n  Python client (http://elasticsearch-py.readthedocs.org/en/master/).\n- Similar functions are grouped together in the same manual file now to make finder related\n  functions easier. For example, all functions that work with indices are on the `index` manual\n  page, and all functions prefixed with `index_()`. Thematic manual files are: `index`, `cat`,\n  `cluster`, `alias`, `cdbriver`, `connect`, `documents`, `mapping`, `nodes`, and `search`.\n- Note that the function `es_cat()` was changed to `cat_()` - we avoided `cat()` because as \n  you know there is already a widely used function in base R, see `base::cat()`.\n- We changed `cat` functions to separate functions for each command, instead of passing \n  the command in as an argument. For example, `cat('aliases')` becomes `cat_aliases()`.\n- The `es_` prefix remains only for `es_search()`, as we have to avoid conflict with \n  `base::search()`. \n- Removed `assertthat` package import, using `stopifnot()` instead (#14)\n\n# elastic 0.1.0\n\nNEW FEATURES\n- First version.\n",
+        "html_url": "https://github.com/ropensci/elastic/releases/tag/v0.3.0",
+        "name": "v0.3.0",
+        "release_id": 897844,
+        "tag": "v0.3.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/elastic/tarball/v0.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/elastic/releases/897844",
+        "value": "https://api.github.com/repos/ropensci/elastic/releases/897844",
+        "zipball_url": "https://api.github.com/repos/ropensci/elastic/zipball/v0.3.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable state and is being actively developed.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "utils",
+        "type": "Software_application",
+        "value": "utils",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "curl",
+        "type": "Software_application",
+        "value": "curl==>= 2.2",
+        "version": ">= 2.2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "crul",
+        "type": "Software_application",
+        "value": "crul==>= 0.9.0",
+        "version": ">= 0.9.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jsonlite",
+        "type": "Software_application",
+        "value": "jsonlite==>= 1.1",
+        "version": ">= 1.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R6",
+        "type": "Software_application",
+        "value": "R6",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:56:08",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 246
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Start Elasticsearch",
+        "parent_header": [
+          "elastic"
+        ],
+        "type": "Text_excerpt",
+        "value": "* Navigate to elasticsearch: `cd /usr/local/elasticsearch`\n* Start elasticsearch: `bin/elasticsearch`\n\nI create a little bash shortcut called `es` that does both of the above commands in one step (`cd /usr/local/elasticsearch && bin/elasticsearch`).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Get some data",
+        "parent_header": [
+          "elastic"
+        ],
+        "type": "Text_excerpt",
+        "value": "Elasticsearch has a bulk load API to load data in fast. The format is pretty weird though. It's sort of JSON, but would pass no JSON linter. I include a few data sets in `elastic` so it's easy to get up and running, and so when you run examples in this package they'll actually run the same way (hopefully).\n\nI have prepare a non-exported function useful for preparing the weird format that Elasticsearch wants for bulk data loads, that is somewhat specific to PLOS data (See below), but you could modify for your purposes. See `make_bulk_plos()` and `make_bulk_gbif()` [here](https://github.com/ropensci/elastic/blob/master/R/docs_bulk.r).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Shakespeare data",
+        "parent_header": [
+          "elastic",
+          "Get some data"
+        ],
+        "type": "Text_excerpt",
+        "value": "Elasticsearch provides some data on Shakespeare plays. I've provided a subset of this data in this package. Get the path for the file specific to your machine:\n\n\n\n\n```r\nshakespeare <- system.file(\"examples\", \"shakespeare_data.json\", package = \"elastic\")\n# If you're on Elastic v6 or greater, use this one\nshakespeare <- system.file(\"examples\", \"shakespeare_data_.json\", package = \"elastic\")\nshakespeare <- type_remover(shakespeare)\n```\n\nThen load the data into Elasticsearch:\n\n> make sure to create your connection object with `connect()`\n\n\n```r\n# x <- connect()  # do this now if you didn't do this above\ninvisible(docs_bulk(x, shakespeare))\n```\n\nIf you need some big data to play with, the shakespeare dataset is a good one to start with. You can get the whole thing and pop it into Elasticsearch (beware, may take up to 10 minutes or so.):\n\n```sh\ncurl -XGET https://download.elastic.co/demos/kibana/gettingstarted/shakespeare_6.0.json > shakespeare.json\ncurl -XPUT localhost:9200/_bulk --data-binary @shakespeare.json\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Public Library of Science (PLOS) data",
+        "parent_header": [
+          "elastic",
+          "Get some data"
+        ],
+        "type": "Text_excerpt",
+        "value": "A dataset inluded in the `elastic` package is metadata for PLOS scholarly articles. Get the file path, then load:\n\n\n```r\nif (index_exists(x, \"plos\")) index_delete(x, \"plos\")\nplosdat <- system.file(\"examples\", \"plos_data.json\", package = \"elastic\")\nplosdat <- type_remover(plosdat)\ninvisible(docs_bulk(x, plosdat))\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Global Biodiversity Information Facility (GBIF) data",
+        "parent_header": [
+          "elastic",
+          "Get some data"
+        ],
+        "type": "Text_excerpt",
+        "value": "A dataset inluded in the `elastic` package is data for GBIF species occurrence records. Get the file path, then load:\n\n\n```r\nif (index_exists(x, \"gbif\")) index_delete(x, \"gbif\")\ngbifdat <- system.file(\"examples\", \"gbif_data.json\", package = \"elastic\")\ngbifdat <- type_remover(gbifdat)\ninvisible(docs_bulk(x, gbifdat))\n```\n\nGBIF geo data with a coordinates element to allow `geo_shape` queries\n\n\n```r\nif (index_exists(x, \"gbifgeo\")) index_delete(x, \"gbifgeo\")\ngbifgeo <- system.file(\"examples\", \"gbif_geo.json\", package = \"elastic\")\ngbifgeo <- type_remover(gbifgeo)\ninvisible(docs_bulk(x, gbifgeo))\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Get documents",
+        "parent_header": [
+          "elastic"
+        ],
+        "type": "Text_excerpt",
+        "value": "Get document with id=4\n\n\n```r\ndocs_get(x, index = 'plos', id = 4)\n#> $`_index`\n#> [1] \"plos\"\n#> \n#> $`_type`\n#> [1] \"_doc\"\n#> \n#> $`_id`\n#> [1] \"4\"\n#> \n#> $`_version`\n#> [1] 1\n#> \n#> $`_seq_no`\n#> [1] 4\n#> \n#> $`_primary_term`\n#> [1] 1\n#> \n#> $found\n#> [1] TRUE\n#> \n#> $`_source`\n#> $`_source`$id\n#> [1] \"10.1371/journal.pone.0107758\"\n#> \n#> $`_source`$title\n#> [1] \"Lactobacilli Inactivate Chlamydia trachomatis through Lactic Acid but Not H2O2\"\n```\n\nGet certain fields\n\n\n```r\ndocs_get(x, index = 'plos', id = 4, fields = 'id')\n#> $`_index`\n#> [1] \"plos\"\n#> \n#> $`_type`\n#> [1] \"_doc\"\n#> \n#> $`_id`\n#> [1] \"4\"\n#> \n#> $`_version`\n#> [1] 1\n#> \n#> $`_seq_no`\n#> [1] 4\n#> \n#> $`_primary_term`\n#> [1] 1\n#> \n#> $found\n#> [1] TRUE\n```\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Get multiple documents via the multiget API",
+        "parent_header": [
+          "elastic"
+        ],
+        "type": "Text_excerpt",
+        "value": "Same index and different document ids\n\n\n```r\ndocs_mget(x, index = \"plos\", id = 1:2)\n#> $docs\n#> $docs[[1]]\n#> $docs[[1]]$`_index`\n#> [1] \"plos\"\n#> \n#> $docs[[1]]$`_type`\n#> [1] \"_doc\"\n#> \n#> $docs[[1]]$`_id`\n#> [1] \"1\"\n#> \n#> $docs[[1]]$`_version`\n#> [1] 1\n#> \n#> $docs[[1]]$`_seq_no`\n#> [1] 1\n#> \n#> $docs[[1]]$`_primary_term`\n#> [1] 1\n#> \n#> $docs[[1]]$found\n#> [1] TRUE\n#> \n#> $docs[[1]]$`_source`\n#> $docs[[1]]$`_source`$id\n#> [1] \"10.1371/journal.pone.0098602\"\n#> \n#> $docs[[1]]$`_source`$title\n#> [1] \"Population Genetic Structure of a Sandstone Specialist and a Generalist Heath Species at Two Levels of Sandstone Patchiness across the Strait of Gibraltar\"\n#> \n#> \n#> \n#> $docs[[2]]\n#> $docs[[2]]$`_index`\n#> [1] \"plos\"\n#> \n#> $docs[[2]]$`_type`\n#> [1] \"_doc\"\n#> \n#> $docs[[2]]$`_id`\n#> [1] \"2\"\n#> \n#> $docs[[2]]$`_version`\n#> [1] 1\n#> \n#> $docs[[2]]$`_seq_no`\n#> [1] 2\n#> \n#> $docs[[2]]$`_primary_term`\n#> [1] 1\n#> \n#> $docs[[2]]$found\n#> [1] TRUE\n#> \n#> $docs[[2]]$`_source`\n#> $docs[[2]]$`_source`$id\n#> [1] \"10.1371/journal.pone.0107757\"\n#> \n#> $docs[[2]]$`_source`$title\n#> [1] \"Cigarette Smoke Extract Induces a Phenotypic Shift in Epithelial Cells; Involvement of HIF1\\u03b1 in Mesenchymal Transition\"\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+        "type": "String",
+        "value": "1.2.1.91"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/elastic/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

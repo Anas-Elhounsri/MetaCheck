@@ -1,0 +1,1827 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "proycon@anaproy.nl",
+        "identifier": "https://orcid.org/0000-0002-1046-0006",
+        "type": "String",
+        "value": "Maarten van Gompel"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/LaMachine"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/LaMachine"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://travis-ci.org/proycon/LaMachine"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Adding new software to LaMachine\n\n## Requirements and guidelines\n\n* Only add relevant NLP software\n* LaMachine is only intended for linux and, with some limitations, unix-like systems (BSD, macOS).\n  Other systems such as Windows are only supported as a host system for a VM.\n* All software must be in public version control (we recommend *github*), be *public*, and be fully *open source* with\n  an explicitly stated licence.\n* LaMachine distinguishes between latest development versions and stable\n  releases. If your software is mature enough to be released, please do so\n  using the releases mechanism on github. Version numbers should use semantic versioning and start with a **v** (like\n  v0.1.2; the ``major.minor.revision`` format is recommended)\n* The latest state of the ``master`` branch of your repository will be considered the development version.\n* If there is a suitable software repository for your software (such as the [Python Package\n  Index](https://pypi.python.org) for Python, [CPAN](https://wwww.cpan.org) for\n  Perl, [CRAN](https://www.cran.org) for R, [Maven](https://search.maven.org) for Java); use it to publish stable releases.\n  LaMachine can in turn obtain it from these\n  repositories.\n* Your software should have some form of documentation, at least a decent README\n* Any Python software should support Python 3.4 or above. Python 2.7 is not supported.\n* The software should be maintained and should work on modern linux distributions. More precisely, it should always work\n  on the operating systems that we have designated with **gold support status**, and preferably also on those designated\n  with **silver support status**. Support for the bronze category is much appreciated but not required. Note that these\n  categories get updates as time progresses, see the general README.\n* LaMachine is not intended for legacy or archiving purposes. (that is not to say that the resulting images themselves can not be used for archiving).\n\n## Why use LaMachine?\n\nWhy should you want to participate in LaMachine to distribute your software?\n\n* LaMachine comes in many flavours and is not just a containerisation solution (e.g. Docker). We use Ansible to offer\n  a good and clear level of abstraction, allowing it to work with multiple technologies (Vagrant, Docker, local installation, global installation).\n  It also removes the need to mess with Dockerfile or Vagrantfile yourself, as this is something LaMachine handles for\n  you.\n* LaMachine already offers a lot of NLP software; this may include software your tool depends on or software people like\n  to use independently in combination with your tool.\n* LaMachine supports multiple modern Linux distributions, offering flexibility rather than forcing a single one.\n* LaMachine aims to provide a Virtual Research Environment\n* From a user perspective, LaMachine is easy to install (one command bootstrap).\n* LaMachine comes with an extensive test framework.\n* LaMachine is extensively documented.\n* LaMachine does not replace or reinvent existing technologies, but builds on them: Linux Distributions, Ansible, Vagrant, Docker, pip, virtualenv\n    * This means LaMachine remains an optional solution to make things easier, but build on established installation methods that remain usable outside LaMachine.\n* LaMachine handles software metadata\n\n\n## How to contribute?\n\nContributors are expected to be familiar with git and github:\n\n* Fork the LaMachine github repository\n* Add a role for your software in ``roles/``  (read the rest of this documentation to learn how)\n* When all done, create a pull request on Github\n\n## LaMachine Architecture\n\nLaMachine consists primarily of installation and configuration recipes for [Ansible](https://ansible.org). These recipes\nare called *playbooks* by Ansible, or more specifically they are called *roles* when used in a modular fashion as we do.\nRoles are defined in a simple [YAML syntax](http://docs.ansible.com/ansible/latest/YAMLSyntax.html) in combination with\na powerful [templating language](http://docs.ansible.com/ansible/latest/playbooks_templating.html).\n\nA role or playbook defines *tasks*, each task is an installation or configuration\nstep. A task has a name and references a certain Ansible module based on the\ntype of work to do, there is for example a ``copy`` module to copy files onto\nthe destination system, a ``file`` module to create files/directories and set\nproper owners ship, an ``include_role`` module that calls another role with\nspecific parameters (this is heavily used in LaMachine), and hundreds more.\nA task may also define [a condition](http://docs.ansible.com/ansible/latest/playbooks_conditionals.html)\nfor its execution through a ``when`` statement.\n\nLaMachine provides a full framework with various predefined *roles* and preset *variables*.  The framework allows for\ninstallation in various forms (docker, VM, local, global). A single ``bootstrap.sh`` script is used build any desired\nform; it does the necessary preprocessing and finally always invokes Ansible.  We will look into that first.\n\n### The bootstrap process\n\nThe LaMachine bootstrap consists of a single bash script that is capable of downloading almost all necessary dependencies and\nkicking of the installation process in whatever form the user choses. The script can be downloaded\nand piped directly to the shell, allowing a *single command* to be sufficient to get everything downloaded and started.\n\nBy default, the script interactively queries the user for his\ninstallation preferences and creates at least the following files:\n\n * **Installation Manifest** - (``install.yml``) - This is the main ansible playbook that contains the packages to install\n   or roles to perform.\n * **Host Configuration File** - (``host_vars/$HOSTNAME.yml``) - This contains the\n   configuration variables for your LaMachine installation.\n * If a Virtual Machine is chosen, a ``Vagrantfile`` will be generated.\n * If a Docker container is to be constructed, then the provided ``Dockerfile`` will be used.\n * A ``hosts.ini`` file may be generated, this is the Ansible inventory.\n\nThe bootstrap initially creates a directory in  ``lamachine-controller/`` (which in turn is created in the directory\nwhere you run the bootstrap). This controller directory will hold a git clone of the LaMachine\nrepository with all the aforemention generated files. The installation manifest and host configuration file will initially be staged\nin the current working directory and presented in a text editor a text editor so end-users can adapt these files to\ntheir liking (both are heavily commented with instructions). Afterwards they are copied into the LaMachine controller.\nIn most cases, the LaMachine controller performs a temporary role during the bootstrap process, the controller will be\ncopied into the LaMachine environment, allowing the environment to be updatable; we call this the *internal* controller.\nIn some advanced situations however, you may prefer an *external* controller. This means the ``lamachine-controller``\ndirectory is kept and used to updated a LaMachine installation from the outside. This is used for managing *remote*\nsystems directly using Ansible, but may also be useful in development settings.\n\nNote that the bootstrap procedure can also be run in a non-interactive fashion and parameters can be passed on the command line,\nsee ``bootstrap.sh --help`` for details.\n\nFirst we take a look at the variables available to LaMachine and defined in the host configuration file, afterwards we\nlook at the installation manifest and learn how to add software to LaMachine.\n\n### Variables\n\nThe variables are generally set by the end-user in the LaMachine host configuration file\nwhen building or updating LaMachine. These determine the type of environment to\nbuild, as LaMachine offers quite some flexibility through its different\nflavours, versions, and is meant to work on multiple Linux distributions.\n\nWe distinguish the following variables, all of which you can read and use in your Ansible roles for LaMachine:\n\n* *Generic:*\n  * ``version`` -- The version of LaMachine, is either ``stable``, ``development``, or ``custom``.\n  * ``locality`` - Set to either ``local`` or ``global`` and determines whether LaMachine is installed in a local user environment (see ``localenv_type``) or globally on the system. For Virtual Machines and Docker Containers, this value will be set to global.\n    * ``localenv_type`` - The type of local environment (only makes sense if ``locality == \"local\"``), can only be set to ``virtualenv`` for now, meaning we use a Python VirtualEnv.\n* *Permissions:*\n  * ``root``\t - A boolean indicating whether LaMachine has root permission on the system (necessarily true if ``locality == \"global\"``)\n  * ``unix_user`` - The unix user that owns and runs LaMachine.\n  * ``unix_group`` - The unix group that owns and runs LaMachine and has write access.\n  * ``controller`` - Set to either ``internal`` or ``external``. Indicates whether the LaMachine installation manages itself (i.e. upgrades are done from within the LaMachine environment), or whether it is externally managed. Externally managed installation are useful in development environments or for provisioning of remote machines.\n* *Paths:*\n  * ``lm_prefix`` - The path where LaMachine installs its software. This equals to either:\n    * ``local_prefix`` - The local installation path (i.e., the path of the virtual enviroment)\n    * ``global_prefix`` - The global installation path (by default ``/usr/local``)\n  * ``homedir`` - The path to the home directory for the user that owns and runs LaMachine\n  * ``source_path`` - The path to where sources for packages will be downloaded\n  * ``lm_path`` - The path to the LaMachine source repository (where are the ansible roles, templates and configurations are). This equals to either:\n      * ``lamachine_path`` - The path upon first installation or remote location where the installation is managed (if controller == `external`)\n      * ``source_path``/LaMachine - The path inside LaMachine (if controller == 'internal')\n  * ``data_path`` - The path where the end-user can store data (this is typically shared with the host system, if applicable)\n* *Network:*\n  * ``hostname`` - The hostname of the system\n  * ``webserver`` - (boolean) Include a webserver or not\n    * ``webservertype`` - The type of webserver, defaults to ``nginx``. LaMAchine does not install any other webserver, so if you change this nginx won't be installed but you have to set up any alternative webserver (e.g. Apache) yourself.\n  * ``http_port`` - port the webserver will listen on\n  * ``web_user`` - The unix user that runs the webserver and webservices\n  * ``web_group`` - The unix group that runs the webserver and webservices; ``unix_user`` should always be a member of this group\n  * ``services`` - This is a list of services to provide, by default it is set to ``[ all ]``, meaning all services provided by the software categories you install will be enabled, you can remove ``all`` and provide only specific services.\n* *Other:*\n  * ``private`` - (boolean) Send basic analytics back to us\n  * ``minimal`` - (boolean) A minimal installation is requested (might break some stuff)\n\n### Directory layout\n\nIt is important to understand the directory layout used by LaMachine and to adhere to it when adding software yourself.\nThe variable ``lm_prefix`` is most important here, as it holds the base directory under which all software is installed.\nFor a global installation (in the Docker and Virtual Machine flavours for instance), this by default corresponds to\n``/usr/local`` (don't let the word *local* confuse you here, we are still talking about a global installation). In a\nlocal installation ``lm_prefix`` corresponds to the directory containing the virtual environment, which can be anywhere the user desires.\n\nWe try to follow the [Filesystem Hierarchy Standard](https://wiki.linuxfoundation.org/lsb/fhs) as much as possible:\n\n * ``{{lm_prefix}}/bin`` - Holds executable binaries other executable scripts; this will be added to your\n   environment's ``$PATH`` upon activation\n   * ``{{lm_prefix}}/bin/activate.d`` - Extra shell scripts for activating the environment for specific software, will be sourced automatically by the main LaMachine activation script\n * ``{{lm_prefix}}/lib`` - Holds shared libraries; this will be added to your environments library path.\n   * ``{{lm_prefix}}/lib/python3.*/site-packages`` - Contains installed Python modules.\n * ``{{lm_prefix}}/include`` - Holds development header files\n * ``{{lm_prefix}}/src`` - Holds sources of the software, symlinks to ``{{source_path}}``\n * ``{{lm_prefix}}/opt`` - Holds optional application software, for which each application is stored in a single directory under this path. This is common for software that is not typically distributed in a more unix-like fashion.\n (e.g. Alpino, PICCL, Nextflow), but we also use it to symlink to certain software.\n * ``{{lm_prefix}}/share`` - Shared data files\n * ``{{lm_prefix}}/var`` - Holds variable files.\n   * ``{{lm_prefix}}/var/log/nginx`` - Holds log files by the webserver.\n   * ``{{lm_prefix}}/var/log/uwsgi`` - Holds log files for the individual uwsgi-powered (e.g. CLAM, Django) webservices/webapplications.\n * ``{{lm_prefix}}/etc`` - Holds configuration files\n   * ``{{lm_prefix}}/etc/nginx/nginx.conf`` - Generic webserver configuration (in global installations this will symlink to the system-wide ``/etc/nginx``)\n   * ``{{lm_prefix}}/etc/nginx/conf.d/*.conf`` - Configurations per webservice/webapplication.\n   * ``{{lm_prefix}}/etc/uwsgi-emperor/vassals/`` - Holds individual uwsgi configuration files for uwsgi-powered webservices/webapplications\n   * ``{{lm_prefix}}/etc/*.clam.yml`` - External configuration files for specific CLAM webservices\n\n### Reusable Roles\n\nWe supply  *roles* that are built for reuse (they all start with\n``lamachine-*``) and are meant to to install software from one or more external\nrepositories:\n\n* ``lamachine-python-install`` - Install Python software\n\t* Expects a ``package`` variable that is a dictionary/map with the following fields:\n      * ``github_user`` - The user/group that holds the github repository (used by the development version of LaMachine)\n      * ``github_repo`` - The name of the github repository (used by the development version of LaMachine)\n      * ``pip`` - The name of the package in the Python Package Index (used by the stable version of LaMachine)\n* ``lamachine-package-install`` - Install Distribution packages\n\t* Expects a ``package`` variable that is a dictionary/map with one or more of the following fields:\n      * ``debian`` - The package name for APT on debian/ubuntu/mint systems.\n      * ``redhat`` - The package name for YUM on fedora/redhat/rhel/centos systems.\n      * ``arch`` - The package name for Arch Linux\n      * ``homebrew`` - The package name for Homebrew on Mac OS X\n* ``lamachine-git-autoconf`` -  Install C++ software hosted in git and which makes use of the GNU autotools (autoconf/automake), i.e. software that follows the classic  ``./configure && make && make install`` paradigm.\n\t* Expects a ``package`` variable that is a dictionary/map with the following fields:\n      * ``user`` - The user/group that holds the github repository (used by the development version of LaMachine)\n      * ``repo`` - The name of the github repository (used by the development version of LaMachine)\n      * You can also pass any of the variables used by ``lamachine-register``, as this will be called automatically.\n\nSome lower-level roles:\n* ``lamachine-git`` - Clone a particular git repository\n* ``lamachine-run`` - Run a particular command in the LaMachine environment.\n* ``lamachine-register`` -  Registers software metadata manually\n    * Holds a ``metadata`` dictionary/map with the relevant metadata according to the  Codemeta model (Read the *metadata* section below).\n    * Set ``codemeta`` to point to a specific ``codemeta.json`` file to load, any metadata supplied in ``metadata`` will be appended.\n    * When using ``lamachine-python-install``, metadata registration is entirely automatic, as PyPI contains all relevant information already. So you never need ``lamachine-register``, you can again set a ``metadata`` map and/or ``codemeta`` field.\n    * When using ``lamachine-git-autoconf``,  ``lamachine-register`` is automatically called and a few variables (name,identifier,version) can be pre-filled. Others you will need to provide explicitly if wanted (preferably in the upstream project in a ``codemeta.json`` file).\n    * When using ``lamachine-git``,  ``lamachine-register`` is only called if you set ``do_registration: true``. Certain variables (name, version) can be pre-filled. Others you will need to provide explicitly if wanted.\n\nThe use of specific LaMachine roles is always preferred over the use of comparable generic ansible modules as the\nLaMachine roles take care of a lot of specific things for you so it works in all environments. So use\n``lamachine-python-install`` rather than Ansible's ``pip`` module, and ``lamachine-git`` rather than ansible's ``git``\nor ``github`` module.\n\nTo add your own software, you add a *role* yourself which includes one (or more) of the above, with specific parameters, to do the\nactual work. Your role, in turn, is referenced by the end-user who has final control over the installation playbook.\nRather than just installing a single piece of software, a role in LaMachine usually installs multiple inter-connected\nsoftware components and all their dependencies.\n\nThis may sound a bit cryptic still, so let's go through some examples:\n\n## Examples\n\nLearning by example is usually the most efficient. We provide somes examples below, but also want to encourage you to\njust browse around in the ``roles/`` directory and see how some of the existing software packages are installed:\n\n### Example: Python software\n\n* For this example, we use a Python software package named *babelente*\n* The source code is on github as https://github.com/proycon/babelente\n* The software is released on the Python Package Index as *babelente*, meaning a simple ``pip install babelente`` is enough to\n  install it and all dependencies.\n* Fork the LaMachine github repository\n* Git clone your fork\n* Create a file  *roles/babelente/tasks/main.yml* (create the necessary directories) with the following contents:\n\n```\n - name: Install Foobar\n   include_role:\n      name: lamachine-python-install\n   vars:\n      package:\n         github_user: proycon\n         github_repo: babelente\n         pip: babelente\n```\n\nThat's it, the ``lamachine-python-install`` role works in such a way that the stable version of LaMachine will use\n``pip`` with PyPI, whilst the development version of LaMachine will draw from github directly and run ``python3 setup.py\ninstall``. Note that this automatically covers any Python dependencies the package has declared.\n\n### Example: Distribution packages\n\nIf a software package already commonly included in our supported Linux distributions, then we can pull straight from the\ndistribution's repository. To this end, we use the ``lamachine-package-install`` role. The following example\ndemonstrates an installation of the Tesseract OCR system, supported on different distributions:\n\n```\n - name: Install Tesseract\n   include_role:\n      name: lamachine-package-install\n   with_items:\n      - { debian: tesseract-ocr, redhat: tesseract, arch: tesseract, homebrew: tesseract }\n      - { debian: tesseract-ocr-eng, redhat: tesseract-langpack-eng, arch: tesseract-data-eng }\n   loop_control:\n       loop_var: package\n```\n\nNote that ``with_items`` and ``loop_control`` is a standard [Ansible looping construct](http://docs.ansible.com/ansible/latest/playbooks_loops.html). The role is called two times, and the\nvariable ``package`` is assigned the value provided in ``with_items``.\n\nIt is not always feasible to include all distributions and this it not obligatory, if a platform isn't mentioned then\nnothing will be installed. This however may break the process, so you if you decide not to support a certain platform,\nwe encourage you to set up a task that produces an error if the platform is unsupported. This can be done as follows:\n\n```\n - name: Check for unsupported OS\n   fail:\n     msg: \"This software is not supported on Mac OS X or CentOS\"\n   when: ansible_distribution|lower == \"macosx\" or ansible_distribution|lower == \"centos\"\n```\n\n## Software Metadata\n\nLaMachine attempts to register software metadata of all software it explicitly installs, the ``lamachine-register`` role\nthat is invoked by various installation procedures takes care of this. All software metadata is collected in a\nsingle ``lamachine-registry.json`` file.\nLaMachine uses the [Codemeta](https://codemeta.github.io) standard for software metadata,\nensuring a unified metadata format. Metadata from certain sources such as the Python Package Index or CRAN can be\nautomatically converted quite well.  Our philosophy is that software metadata should be in a simple format and either live right alongside the source code in a\nversion controlled repository (e.g. on github, bitbucket, etc), or be obtained from a software repository such as as the\nPython Package Index, CRAN, CPAN, Maven Central and automatically converted to a unified format. This automatic\nconversion is performed by [CodeMetaPy](https://github.com/proycon/codemetapy) or [CodeMetar](https://ropensci.github.io/codemetar/)), included in LaMachine.\n\nYou can, and are in fact encouraged to, place a ``codemeta.json`` file in the root of your source code repository, following the proper Codemeta specifications. If you do so, LaMachine\nwill automatically use this. Alternatively, you can augment metadata from within the ansible roles themselves if updating the upstream project\nis not an option.\n\nWithin LaMachine, the ``lamachine-list`` allows users to access the available metadata from the command line (it will be serialised as YAML).\n\nIf you enabled and started the webserver in LaMachine, then you have access to a rich portal page giving an overview of\nall installed software and providing access to any software with a web-based interface. This portal is powered by\n[Labirinto](https://github.com/proycon/labirinto).\n\n## Testing\n\nIf you are doing development on LaMachine, you will be working from a cloned LaMachine repository on a particular git\nbranch. We recommend to fork it on github and then clone your fork. Make sure you navigate to the root of the git\nrepository, and then simply invoke ``./bootstrap.sh`` to build a LaMachine build. LaMachine will simply reuse your git\nrepository for the controller environment rather than download and create a new one, allowing you to test your\nadditions.\n\nOnce you are ready, issue a pull request on https://github.com/proycon/LaMachine/ to merge your changed into the\n``develop`` branch.\n\nVarious predefined tests are also available for multiple linux distributions, through vagrant and docker. The test\nscript is ``builds/test.py`` and the build are defined in ``builds/build.py``. Note that the former script references a particular\nLaMachine git repository and branch, so may need to be adapted to fit your situation.\n"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contribute",
+        "type": "Text_excerpt",
+        "value": "LaMachine is open for contributions by other software projects, please read [the contributor\ndocumentation](https://github.com/proycon/LaMachine/blob/develop/CONTRIBUTING.md).\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: Docker gives an error: \"flag provided but not defined: --build-arg\"",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "Your Docker is too old, upgrade to at least 1.9\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: lamachine-update gives an error: error 'fragment_class is None' (<a href=\"https://github.com/proycon/LaMachine/issues/144\">Issue #144</a>)",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "This error may appear when LaMachine updates from ansible 2.7 to 2.8, if this occurs, simply rerun the update.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2015-05-20T17:09:13Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2015-05-17"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-07-22T03:46:35Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "LaMachine - A software distribution of our in-house as well as some 3rd party NLP software - Virtual Machine, Docker, or local compilation/installation script"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "LaMachine is a unified software distribution for Natural Language Processing. We integrate numerous open-source NLP tools, programming libraries, web-services, and web-applications in a single Virtual Research Environment that can be installed on a wide variety of machines."
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9558668822606783,
+      "result": {
+        "original_header": "Included Software",
+        "type": "Text_excerpt",
+        "value": "LaMachine includes a wide variety of open-source NLP software. You can select which software you want to include during\nthe installation procedure (or any subsequent update). \n* by the Centre of Language and Speech Technology, Radboud University Nijmegen (CLST, RU)\n    * [Timbl](https://languagemachines.github.io/timbl) - Tilburg Memory Based Learner\n    * [Ucto](https://languagemachines.github.io/ucto) - Tokenizer\n    * [Frog](https://languagemachines.github.io/frog) - Frog is an integration of various memory-based natural language processing (NLP) modules developed for Dutch. It can do Part-of-Speech tagging, lemmatisation, named entity recogniton, shallow parsing, dependency parsing and morphological analysis.\n    * [Mbt](https://languagemachines.github.io/mbt) - Memory-based Tagger\n    * [Wopr](http://ilk.uvt.nl/wopr) - Memory-based Word Predictor\n    * [FoLiA-tools](http://proycon.github.io/folia) - Command line tools for working with the FoLiA format\n    * [PyNLPl](https://pypi.python.org/pypi/PyNLPl) - Python Natural Language Processing Library\n    * [Colibri Core](http://proycon.github.io/colibri-core/) - Colibri core is an NLP tool as well as a C++ and Python library for working with basic linguistic constructions such as n-grams and skipgrams (i.e patterns with one or more gaps, either of fixed or dynamic size) in a quick and memory-efficient way.\n    * *C++ libraries* - [ticcutils](https://github.com/LanguageMachines/ticcutils), [libfolia](https://github.com/LanguageMachines/libfolia)\n    * *Python bindings* - [python-ucto](https://github.com/proycon/python-ucto), [python-frog](https://github.com/proycon/python-frog), [python-timbl](https://github.com/proycon/python-timbl)\n    * [CLAM](https://proycon.github.io/clam) - Quickly build RESTful webservices\n    * [Gecco](https://github.com/proycon/gecco) - Generic Environment for Context-Aware Correction of Orthography\n    * [Valkuil](https://github.com/proycon/valkuil-gecco) - A context-aware spelling corrector for Dutch\n    * [Toad](https://github.com/LanguageMachines/toad) - Trainer Of All Data, training tools for Frog\n    * [foliadocserve](https://github.com/proycon/foliadocserve) - FoLiA Document Server\n    * [FLAT](https://github.com/proycon/flat) - FoLiA Linguistic Annotation Tool\n    * [TICCLTools](https://github.com/LanguageMachines/ticcltools) - Tools that together constitute the bulk of TICCL: Text Induced Corpus-Cleanup.\n    * [PICCL](https://github.com/LanguageMachines/PICCL) - PICCL: A set of workflows for corpus building through OCR, post-correction (using TICCL) and Natural Language Processing.\n    * [Labirinto](https://github.com/proycon/labirinto) - A web-based portal listing all available tools in LaMachine, an ideal starting point for LaMachine\n    * [Oersetter](https://github.com/proycon/oersetter-webservice) - A Frisian<->Dutch Machine Translation system in\n        collaboration with the Fryske Akademy\n* by the University of Groningen\n    * [Alpino](http://www.let.rug.nl/vannoord/alp/Alpino/) - a dependency parser and tagger for Dutch\n* by the Vrije Universiteit Amsterdam (VU)\n    * [KafNafParserPy](https://github.com/cltl/KafNafParserPy) - A python module to parse NAF files\n* by Utrecht University (UU)\n    * [T-scan](https://github.com/proycon/tscan) - T-scan is a Dutch text analytics tool for readability prediction (initially developed at TiCC, Tilburg University).\n* by Meertens Instituut\n    * [Python Course for the Humanities](http://www.karsdorp.io/python-course/) - Interactive tutorial and introduction into programming with Python for the humanities by Folgert Karsdorp & Maarten van Gompel (CLST, Nijmegen)\n* Major third party software (not exhaustive!):\n    * [Python](https://python.org)\n      * [NumPy](http://www.numpy.org/) and [SciPy](http://www.numpy.org/) - Python libraries for scientific computing\n      * [Matplotlib](http://matplotlib.org) - A Python 2D plotting library producing publication quality figures\n      * [Scikit-learn](http://matplotlib.org) - Machine learning in Python\n      * [IPython](http://ipython.org/) and [Jupyter](https://jupyter.org/) - A rich architecture for interactive computing.\n        * **[Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/)** - The successor of the popular Jupyter Notebooks, offers notebooks, a web-based IDE, terminals. An ideal entry point to get started with LaMachine and all it contains!\n      * [Pandas](http://pandas.pydata.org/) - Python Data Analysis Library\n      * [NLTK](http://www.nltk.org) - Natural Language Toolkit for Python\n      * [PyTorch](https://pytorch.org) - Deep-learning library for Python\n      * [Spacy](https://spacy.io) - Industrial-Strength NLP in Python\n      * [FLAIR](https://github.com/zalandoresearch/flair) - Framework for state-of-the-art sequence modelling through\n          word embeddings\n    * [fastText](https://fasttext.cc/) - Library for efficient text classification and representation learning (has a Python binding)\n    * [R](https://r-project.org)\n    * [Java](http://openjdk.java.net/)\n      * [NextFlow](http://www.nextflow.io) - A system and language for writing parallel and scalable pipelines in a portable manner.\n      * [Stanford CoreNLP](https://stanfordnlp.github.io/CoreNLP/) - Various types of linguistic enrichment\n    * [Hunspell](https://hunspell.github.io) - A spell checker\n    * [Tesseract](https://github.com/tesseract-ocr/tesseract) - Open Source Optical Character Recognition (OCR)\n    * [Tensorflow](https://tensorflow.org) - Open-source machine learning framework\n    * [Kaldi](http://kaldi-asr.org) - Speech Recognition Framework (ASR)\n    * [Moses](http://www.statmt.org/moses) - Statistical Machine Translation system \nIf you enabled and started the webserver in LaMachine, then you have access to a rich portal page giving an overview of\nall installed software and providing access to any software with a web-based interface. This portal is powered by\n[Labirinto](https://github.com/proycon/labirinto).\n \n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.872777893562852,
+      "result": {
+        "original_header": "Architecture",
+        "type": "Text_excerpt",
+        "value": "In all cases, the installation is mediated through [Ansible](https://www.ansible.com), providing a level of abstraction\nover whatever underlying technology is employed. Containerisation uses [Docker](https://docker.com) or\n[LXD](https://linuxcontainers.org/lxd/introduction/). Virtualisation is\nmade possible through [Vagrant](https://vagrantup.com) and [VirtualBox](https://virtualbox.org). The local installation\nvariant uses virtualenv with some custom extensions. \nLaMachine uses [Debian](https://www.debian.org) as primary Linux distribution (for virtualisation and containerisation),\nwe support the distributions/platforms listed below for a native installation of LaMachine (i.e. compiled against the libraries\nof that distribution). We distinguish three categories of support (and for all we only support the x86-64 architecture): \n* **Bronze support** - Certain software is known not to work and/or things are more prone to breakage and have not been\n    tested.\n  * Debian testing (bullseye) and debian unstable (sid) - Should work but not tested.\n  * Ubuntu (a non-LTS version) - Should work as long as it's newer than the one mentioned under silver support, but not tested.\n  * macOS (a recent version) - Not all software is supported on macOS by definition, but a considerable portion does\n      work. Things are a bit more prone to break if the user's environment has been heavily tweaked and differs from the\n      stock experience.\n  * Arch Linux (rolling release; things tend to work fine for most software but the nature of a rolling release makes breakages more common, e.g. on each major Python upgrade)\n  * Linux Mint (recent version) - Supported in principle due to being an Ubuntu derivative, but not really tested so there could be surprises\n  * Fedora (latest version); supported in principle but not really tested. \nIn addition to a flavour, users can opt for one of three versions of LaMachine:\n * **stable** - Installs the latest official releases of all participating software\n * **development** - Installs the latest development versions of participating software, this often means they are\n   installed straight from the latest git version.\n * **custom** - Installs explicitly defined versions for all software (for e.g. scientific reproducibility). \nRead more about the technical details in [the contributor documentation](https://github.com/proycon/LaMachine/blob/develop/CONTRIBUTING.md).\n \n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8972537882123085,
+      "result": {
+        "original_header": "Privacy",
+        "type": "Text_excerpt",
+        "value": "The following information is sent:\n* The form in which you run LaMachine (vagrant/local/docker)\n* Is it a new LaMachine installation or an update\n* Stable or Development?\n* The OS you are running on and its version\n* Your Python version \nTo opt-out of this behaviour, set ``private: true`` in your LaMachine settings. \nDuring build and upgrade, LaMachine downloads software from a wide variety of external sources.\n \n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8869323452394284,
+      "result": {
+        "original_header": "Security",
+        "type": "Text_excerpt",
+        "value": "* Our recommended bootstrap procedure downloads a script and immediately executes it. This is offered\n  as a convenience but carries some inherent risks and is generally not a secure practice. It implies a trust relation\n  between you and us, as well as the hoster (github). Prudent users are encouraged to download the script,\n  inspect it, and only then execute it. We may provide PGP-signed releases in the future.\n* The bootstrap script asks for and requires root privileges for certain installation steps, this will always be asked and the user may confirm. The Ansible provisioning scripts also generally requires sudo, this will only be asked once per run, and the privileges will only be used when needed.\n* Running either the bootstrap procedure or the subsequent ansible provisioning entirely as root is forbidden for\n  security reasons.\n* The current webserver configuration does not yet enable authentication for any of the webservices, so do *NOT* expose it directly to the internet without setting up authentication yourself. If you want authentication, consult the OpenID Connect section below.\n* If you are sure you don't need a webserver/webservices, disable it in the configuration upon first build.\n* The virtual machines tend to come with a preset username and password ``(vagrant:vagrant)``, the lamachine user in Docker containers has\n  the password ``lamachine``, you will need to change this.\n* Do not run development versions in a production environment, always use the stable release.\n* Do not run an outdated LaMachine installation, ensure you regularly run ``lamachine-update`` for updates! Bugs and\n  potential vulnerabilities may have been patched in the meantime.\n* Only if your setup is otherwise secure (i.e. authentication on webservices), then make sure to always open only the necessary ports (80/443) to the internet, do not expose any of the UWSGI services to the world (this would allow arbitrary code execution).\n* As per the GNU General Public Licence, we do not offer any warranty despite doing our best.\n \n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.960068774032513,
+      "result": {
+        "original_header": "OpenID Connect Authentication",
+        "type": "Text_excerpt",
+        "value": "LaMachine supports OpenID Connect, which is an extension on top of OAuth2, as a means to authenticate against an\n*external* single-sign-on authentication provider. You can configure OpenID Connect in the LaMachine configuration and LaMachine will\nattempt to propagate these parameters to all underlying software that supports OpenID Connect. \n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9325546993058534,
+      "result": {
+        "original_header": "Versioning",
+        "type": "Text_excerpt",
+        "value": "LaMachine comes in three versions, *stable* installs the latest stable releases of all software, *development* installs\nthe latest development releases and *custom* installs explicitly specified versions. This section is about the latter\nand is for advanced users. \nLaMachine itself also carries a version number, this number corresponds to the version of all the installation scripts\nthat make up LaMachine. It is not tied to the versions of any underlying software. \nYou can edit this ``customversions.yml`` file if you have good reason to opt for very specific versions of certain\npackages. Instead of an appropriate version number, you can also use the strings. Do be be aware that choosing version\nnumbers that do not exist or combining versions of different packages that are not compatible will surely break things.\nIf things fail, most software providers, us included, will not deliver support on older software versions. \nThe purpose of this custom versioning feature of LaMachine is to aid scientific reproducibility, with it you can build\nan environment consisting of older software, corresponding to the versions at the time you ran your experiments. In such\ncases you should publish a version of ``customversions.yml`` along with your data (and a copy of the installation\nmanifest ideally). \nThis custom versioning is limited, it only pertains to software that is 1) not provided by the linux distribution\nitself, and 2) explicitly installed by LaMachine, rather than dependencies that are pulled in automatically by package\nmanagers. Even then, certain sofware is excluded from this scheme as the upstream provider does not provide the\nnecessary facilities for obtaining older versions, LaMachine should output a warning in the log if that is the case. It\nis also not supported on MacOS. \nIf a strict reproduction environment is desired, we strongly recommend to use the docker or virtual machine flavour of LaMachine and\narchive the entire resulting image.\n \n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8805856022431182,
+      "result": {
+        "original_header": "Q: Do I need LaMachine?",
+        "type": "Text_excerpt",
+        "value": "A: This depends on the software you are interested in and the kind of system you are on. LaMachine is offered as a\nconvenience but draws from other software repositories which you can also access directly. \nYou may want to first check if our software packages are available for your Linux distribution. For C++ software such as\nFrog, ucto and Timbl, we provide packages for: \n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9484401877797785,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "LaMachine is a unified software distribution for Natural Language Processing.  We integrate numerous open-source NLP\ntools, programming libraries, web-services, and web-applications in a single Virtual Research Environment that can be\ninstalled on a wide variety of machines. \nThe software included in LaMachine tends to be highly specialised and generally depends on a lot of other interdependent\nsoftware.  Installing all this software can be a daunting task, compiling it from scratch even more so. LaMachine\nattempts to make this process easier by offering pre-built recipes for a wide variety of systems, whether it is on your\nhome computer or whether you are setting up a dedicated production environment, LaMachine will safe you a lot of work. \nWe address various audiences; the bulk of the software is geared towards data scientists who are not afraid of the\ncommand line and some programming. We give you the instruments and it is up to you to yield them. However, we also\nattempt to accommodate researchers that require more high-level interfaces by incorporating webservices and websites\nthat expose some of the functionality to a larger audience. \n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/LaMachine/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/LaMachine/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "faq": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: I get an error \"no space left on device\" in the VM or Docker flavour of LaMachine (<a href=\"https://github.com/proycon/LaMachine/issues/152\">Issue #152</a>)",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "This means the virtual disk used by the virtual machine or container is full. This may especially occur if you select\nsome of the larger optional software packages. There is only limited space available in the VM or Docker container\n(roughly 9GB). For the VM, when you bootstrap your own LaMachine image from scratch (an option currently not available\nfor Windows users though), you can opt to create extra diskspace (an extra volume).\n\nFor Docker, you may need to increase the base size of\nyour containers (depending on the storage driver you use for docker). Consult the docker documentation at\nhttps://docs.docker.com/storage/storagedriver/ and do so now if you need this.\n\nAdvanced VM users can resolve the problem on their existing LaMachine VM by adding another virtual disk and moving some of the\ndata, but this requires a fair amount of Linux administration expertise on their part. The procedure is roughly as follows:\n* Create an extra disk for the LaMachine VM in the VirtualBox interface (see for instance [this\n    tutorial](https://www.zachpfeffer.com/single-post/Add-a-disk-to-an-Ubuntu-VirtualBox-VM) up to step 11).\n* From within the LaMachine VM:\n    * Partition the new disk (with ``fdisk`` or ``parted``)\n    * Format the new disk (with ``mkfs.ext4``)\n    * Add the new disk to ``/etc/fstab``\n    * Move ``/usr/local`` (which is where most of LaMachine is installed) to the new disk\n    * Symlink the old ``/usr/local`` to the new path on the new disk\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: Docker gives an error: \"flag provided but not defined: --build-arg\"",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "Your Docker is too old, upgrade to at least 1.9\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: lamachine-update gives an error: error 'fragment_class is None' (<a href=\"https://github.com/proycon/LaMachine/issues/144\">Issue #144</a>)",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "This error may appear when LaMachine updates from ansible 2.7 to 2.8, if this occurs, simply rerun the update.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: I have another problem, can I report it?",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "Yes! Please report it in our [Issue Tracker](https://github.com/proycon/LaMachine/issues) after checking that the problem has\nnot already been reported (and solved perhaps) by someone else. Note that this is only for problems relating to the\ninstallation and availability of the software; for bugs or feature requests on any of the participating software\n(including our own), you should use the issue trackers pertaining to those software projects.\n\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 20
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/proycon/LaMachine/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "proycon/LaMachine"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/docs/kubernetes/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/docs/kubernetes/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/debian10/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/debian10/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/ubuntu1804/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/ubuntu1804/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/arch/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/arch/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/centos8/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/centos8/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/debian9/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/debian9/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/centos7/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/centos7/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/ubuntu1604/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/context/ubuntu1604/Dockerfile",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/bootstrap.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/virtualenv-bootstrap.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/helpers/aur_github_releaseupdate.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/builds/build-all.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/roles/spotlight/templates/spotlight.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/roles/lamachine-core/templates/lamachine-start-webserver.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/roles/lamachine-core/templates/lamachine-stop-webserver.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/roles/lamachine-core/templates/lamachine-activate.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/roles/lamachine-core/templates/lamachine-config.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/roles/lamachine-core/templates/lamachine-move-www-data.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/roles/lamachine-core/templates/lamachine-update.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "lamachine"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master//docs/screenshot_bootstrap.jpg?raw=true"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master//docs/screenshot_venv_activate.jpg?raw=true"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master//docs/screenshot_portal.jpg?raw=true"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master//docs/screenshot_lab.jpg?raw=true"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "A) Guided installation with custom build option (recommended)",
+        "parent_header": [
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "To build your own LaMachine instance, in any of the possible flavours, or to download a pre-built image, open a terminal\non your Linux, BSD or MacOS system and run the following command:\n\n```\nbash <(curl -s https://raw.githubusercontent.com/proycon/LaMachine/master/bootstrap.sh)\n```\n\nThis will prompt you for some questions on how you would like your LaMachine installation and allows you to include precisely\nthe software you want or need and ensures that all is up to date. A screenshot is shown at the end of this subsection.\n\nAre you on Windows 10 or 2016? Then you need to run this command in the Windows Linux subsystem, we do not support\nWindows natively. To do this you must first install the Linux Subsystem with a distribution of your choice (we recommend\nUbuntu) from the Microsoft Store. Follow the instructions\n[here](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide). Alternatively, you may want to choose for a pre-built Virtual Machine image as explained in installation path C.\n\nBuilding LaMachine can take quite some time, depending also on your computer's resources, internet connection, and the\namount of software you selected to install. Half an hour to an hour is a normal build time. The bootstrap script\nalternatively also offers the option to download pre-built images (installation path B & C).\n\n![LaMachine bootstrap](/docs/screenshot_bootstrap.jpg?raw=true \"LaMachine Bootstrap\")\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "B) Pre-built container image for Docker",
+        "parent_header": [
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "We regularly build a basic LaMachine image and publish it to [Docker Hub](https://hub.docker.com/r/proycon/lamachine/).\nThe above installation path A also offers access to this, but you may opt to do it directly:\n\nTo download and use it, run:\n\n```\ndocker pull proycon/lamachine\ndocker run  -p 8080:80 -h latest -t -i proycon/lamachine\n```\n\nThis requires you to already have [Docker](https://www.docker.com/) installed and running on your system.\n\nThe pre-built image contains the stable version with only a basic set of common software rather than the full set, run ``lamachine-add``\ninside the container to select extra software to install. Alternatively, other specialised LaMachine builds may be available\non Docker Hub.\n\nIf you want another release, specify its tag explicitly:\n\n```\ndocker pull proycon/lamachine:develop\ndocker run  -p 8080:80 -h develop -t -i proycon/lamachine:develop\n```\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "C) Pre-built Virtual Machine image for Vagrant (recommended for Windows users)",
+        "parent_header": [
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "We regularly build a basic LaMachine image and publish it to the [Vagrant Cloud](https://app.vagrantup.com/proycon/).\nThe above installation path A also offers (simplified) access to this (except on Windows), but you may opt to do it directly.\n\nTo download and use a LaMachine prebuilt image:\n\n* Ensure you have  [Vagrant](https://www.vagrantup.com/) and [VirtualBox](https://www.virtualbox.org) installed on your system. Windows users also have to make sure that Hyper-V is *disabled* in *Control Panel \u2192 Programs \u2192 Turn Windows features on or off \u2192 Hyper-V*\n* Open a terminal or command prompt\n* Navigate to a folder of your choice (using ``cd``); this will be the base folder, files inside will be shared within the VM under\n    ``/vagrant``\n* Download [this example vagrant file](https://github.com/proycon/LaMachine/blob/master/Vagrantfile.prebuilt.erb) into\n    that same folder. If you are on linux or macOS you can download directly from command line like this: ``wget https://raw.githubusercontent.com/proycon/LaMachine/master/Vagrantfile.prebuilt.erb``\n* Run ``vagrant init --template Vagrantfile.prebuilt.erb proycon/lamachine`` from the terminal.\n* Open ``Vagrantfile`` in a text editor and change the memory and CPU options to suit your system (the more resources\n  the better!).\n   * On an up-to-date windows 10 installation (at least version 1809), you can use Notepad as a text editor, but on older Windows versions this won't work and you need a better text editor!\n* Run ``vagrant up`` from the terminal to boot your VM\n* Run ``vagrant ssh`` from the terminal to connect to the VM\n\nThe pre-built image contains only a basic set of common software rather than the full set, run ``lamachine-stable-update --edit``\ninside the virtual machine to select extra software to install.\n\nTo stop the VM when you're done, run: ``vagrant halt``. Next time, navigate to the same base folder in your terminal and run ``vagrant\nup`` and ``vagrant ssh`` again.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: Why is my LaMachine installation so big??",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "A LaMachine installation quickly reaches 6GB, and even more if you enable software that is not enabled by default.\nLaMachine is a research environment that can be used in a wide variety of ways which we can't predict in advance, so we\nby default include a lot of popular software for maximum flexibility. When building your LaMachine, you can disable\nsoftware groups you don't want and save space, or opt for extra dikspace (see the next question).\n\nYou can also limit the size somewhat by setting ``minimal: true`` in your LaMachine configuration, but this may mean that\ncertains tools don't fully work.\n\nDisk space is also, by far, the cheapest resource, in contrast to memory or CPU.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/proycon/LaMachine/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/proycon/LaMachine/issues"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "clam, computational-linguistics, docker-image, flat, folia, frog, installer, linux, linux-distribution, natural-language-processing, nlp, python, software-distribution, vagrant, virtual-machine, webservices"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "nlp",
+          "natural language processing",
+          "software distribution",
+          "installer",
+          "python"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The GNU General Public License is a free, copyleft license for\nsoftware and other kinds of works.\n\n  The licenses for most software and other practical works are designed\nto take away your freedom to share and change the works.  By contrast,\nthe GNU General Public License is intended to guarantee your freedom to\nshare and change all versions of a program--to make sure it remains free\nsoftware for all its users.  We, the Free Software Foundation, use the\nGNU General Public License for most of our software; it applies also to\nany other work released this way by its authors.  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthem if you wish), that you receive source code or can get it if you\nwant it, that you can change the software or use pieces of it in new\nfree programs, and that you know you can do these things.\n\n  To protect your rights, we need to prevent others from denying you\nthese rights or asking you to surrender the rights.  Therefore, you have\ncertain responsibilities if you distribute copies of the software, or if\nyou modify it: responsibilities to respect the freedom of others.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must pass on to the recipients the same\nfreedoms that you received.  You must make sure that they, too, receive\nor can get the source code.  And you must show them these terms so they\nknow their rights.\n\n  Developers that use the GNU GPL protect your rights with two steps:\n(1) assert copyright on the software, and (2) offer you this License\ngiving you legal permission to copy, distribute and/or modify it.\n\n  For the developers' and authors' protection, the GPL clearly explains\nthat there is no warranty for this free software.  For both users' and\nauthors' sake, the GPL requires that modified versions be marked as\nchanged, so that their problems will not be attributed erroneously to\nauthors of previous versions.\n\n  Some devices are designed to deny users access to install or run\nmodified versions of the software inside them, although the manufacturer\ncan do so.  This is fundamentally incompatible with the aim of\nprotecting users' freedom to change the software.  The systematic\npattern of such abuse occurs in the area of products for individuals to\nuse, which is precisely where it is most unacceptable.  Therefore, we\nhave designed this version of the GPL to prohibit the practice for those\nproducts.  If such problems arise substantially in other domains, we\nstand ready to extend this provision to those domains in future versions\nof the GPL, as needed to protect the freedom of users.\n\n  Finally, every program is threatened constantly by software patents.\nStates should not allow patents to restrict development and use of\nsoftware on general-purpose computers, but in those that do, we wish to\navoid the special danger that patents applied to a free program could\nmake it effectively proprietary.  To prevent this, the GPL assures that\npatents cannot be used to render the program non-free.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n                       TERMS AND CONDITIONS\n\n  0. Definitions.\n\n  \"This License\" refers to version 3 of the GNU General Public License.\n\n  \"Copyright\" also means copyright-like laws that apply to other kinds of\nworks, such as semiconductor masks.\n\n  \"The Program\" refers to any copyrightable work licensed under this\nLicense.  Each licensee is addressed as \"you\".  \"Licensees\" and\n\"recipients\" may be individuals or organizations.\n\n  To \"modify\" a work means to copy from or adapt all or part of the work\nin a fashion requiring copyright permission, other than the making of an\nexact copy.  The resulting work is called a \"modified version\" of the\nearlier work or a work \"based on\" the earlier work.\n\n  A \"covered work\" means either the unmodified Program or a work based\non the Program.\n\n  To \"propagate\" a work means to do anything with it that, without\npermission, would make you directly or secondarily liable for\ninfringement under applicable copyright law, except executing it on a\ncomputer or modifying a private copy.  Propagation includes copying,\ndistribution (with or without modification), making available to the\npublic, and in some countries other activities as well.\n\n  To \"convey\" a work means any kind of propagation that enables other\nparties to make or receive copies.  Mere interaction with a user through\na computer network, with no transfer of a copy, is not conveying.\n\n  An interactive user interface displays \"Appropriate Legal Notices\"\nto the extent that it includes a convenient and prominently visible\nfeature that (1) displays an appropriate copyright notice, and (2)\ntells the user that there is no warranty for the work (except to the\nextent that warranties are provided), that licensees may convey the\nwork under this License, and how to view a copy of this License.  If\nthe interface presents a list of user commands or options, such as a\nmenu, a prominent item in the list meets this criterion.\n\n  1. Source Code.\n\n  The \"source code\" for a work means the preferred form of the work\nfor making modifications to it.  \"Object code\" means any non-source\nform of a work.\n\n  A \"Standard Interface\" means an interface that either is an official\nstandard defined by a recognized standards body, or, in the case of\ninterfaces specified for a particular programming language, one that\nis widely used among developers working in that language.\n\n  The \"System Libraries\" of an executable work include anything, other\nthan the work as a whole, that (a) is included in the normal form of\npackaging a Major Component, but which is not part of that Major\nComponent, and (b) serves only to enable use of the work with that\nMajor Component, or to implement a Standard Interface for which an\nimplementation is available to the public in source code form.  A\n\"Major Component\", in this context, means a major essential component\n(kernel, window system, and so on) of the specific operating system\n(if any) on which the executable work runs, or a compiler used to\nproduce the work, or an object code interpreter used to run it.\n\n  The \"Corresponding Source\" for a work in object code form means all\nthe source code needed to generate, install, and (for an executable\nwork) run the object code and to modify the work, including scripts to\ncontrol those activities.  However, it does not include the work's\nSystem Libraries, or general-purpose tools or generally available free\nprograms which are used unmodified in performing those activities but\nwhich are not part of the work.  For example, Corresponding Source\nincludes interface definition files associated with source files for\nthe work, and the source code for shared libraries and dynamically\nlinked subprograms that the work is specifically designed to require,\nsuch as by intimate data communication or control flow between those\nsubprograms and other parts of the work.\n\n  The Corresponding Source need not include anything that users\ncan regenerate automatically from other parts of the Corresponding\nSource.\n\n  The Corresponding Source for a work in source code form is that\nsame work.\n\n  2. Basic Permissions.\n\n  All rights granted under this License are granted for the term of\ncopyright on the Program, and are irrevocable provided the stated\nconditions are met.  This License explicitly affirms your unlimited\npermission to run the unmodified Program.  The output from running a\ncovered work is covered by this License only if the output, given its\ncontent, constitutes a covered work.  This License acknowledges your\nrights of fair use or other equivalent, as provided by copyright law.\n\n  You may make, run and propagate covered works that you do not\nconvey, without conditions so long as your license otherwise remains\nin force.  You may convey covered works to others for the sole purpose\nof having them make modifications exclusively for you, or provide you\nwith facilities for running those works, provided that you comply with\nthe terms of this License in conveying all material for which you do\nnot control copyright.  Those thus making or running the covered works\nfor you must do so exclusively on your behalf, under your direction\nand control, on terms that prohibit them from making any copies of\nyour copyrighted material outside their relationship with you.\n\n  Conveying under any other circumstances is permitted solely under\nthe conditions stated below.  Sublicensing is not allowed; section 10\nmakes it unnecessary.\n\n  3. Protecting Users' Legal Rights From Anti-Circumvention Law.\n\n  No covered work shall be deemed part of an effective technological\nmeasure under any applicable law fulfilling obligations under article\n11 of the WIPO copyright treaty adopted on 20 December 1996, or\nsimilar laws prohibiting or restricting circumvention of such\nmeasures.\n\n  When you convey a covered work, you waive any legal power to forbid\ncircumvention of technological measures to the extent such circumvention\nis effected by exercising rights under this License with respect to\nthe covered work, and you disclaim any intention to limit operation or\nmodification of the work as a means of enforcing, against the work's\nusers, your or third parties' legal rights to forbid circumvention of\ntechnological measures.\n\n  4. Conveying Verbatim Copies.\n\n  You may convey verbatim copies of the Program's source code as you\nreceive it, in any medium, provided that you conspicuously and\nappropriately publish on each copy an appropriate copyright notice;\nkeep intact all notices stating that this License and any\nnon-permissive terms added in accord with section 7 apply to the code;\nkeep intact all notices of the absence of any warranty; and give all\nrecipients a copy of this License along with the Program.\n\n  You may charge any price or no price for each copy that you convey,\nand you may offer support or warranty protection for a fee.\n\n  5. Conveying Modified Source Versions.\n\n  You may convey a work based on the Program, or the modifications to\nproduce it from the Program, in the form of source code under the\nterms of section 4, provided that you also meet all of these conditions:\n\n    a) The work must carry prominent notices stating that you modified\n    it, and giving a relevant date.\n\n    b) The work must carry prominent notices stating that it is\n    released under this License and any conditions added under section\n    7.  This requirement modifies the requirement in section 4 to\n    \"keep intact all notices\".\n\n    c) You must license the entire work, as a whole, under this\n    License to anyone who comes into possession of a copy.  This\n    License will therefore apply, along with any applicable section 7\n    additional terms, to the whole of the work, and all its parts,\n    regardless of how they are packaged.  This License gives no\n    permission to license the work in any other way, but it does not\n    invalidate such permission if you have separately received it.\n\n    d) If the work has interactive user interfaces, each must display\n    Appropriate Legal Notices; however, if the Program has interactive\n    interfaces that do not display Appropriate Legal Notices, your\n    work need not make them do so.\n\n  A compilation of a covered work with other separate and independent\nworks, which are not by their nature extensions of the covered work,\nand which are not combined with it such as to form a larger program,\nin or on a volume of a storage or distribution medium, is called an\n\"aggregate\" if the compilation and its resulting copyright are not\nused to limit the access or legal rights of the compilation's users\nbeyond what the individual works permit.  Inclusion of a covered work\nin an aggregate does not cause this License to apply to the other\nparts of the aggregate.\n\n  6. Conveying Non-Source Forms.\n\n  You may convey a covered work in object code form under the terms\nof sections 4 and 5, provided that you also convey the\nmachine-readable Corresponding Source under the terms of this License,\nin one of these ways:\n\n    a) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by the\n    Corresponding Source fixed on a durable physical medium\n    customarily used for software interchange.\n\n    b) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by a\n    written offer, valid for at least three years and valid for as\n    long as you offer spare parts or customer support for that product\n    model, to give anyone who possesses the object code either (1) a\n    copy of the Corresponding Source for all the software in the\n    product that is covered by this License, on a durable physical\n    medium customarily used for software interchange, for a price no\n    more than your reasonable cost of physically performing this\n    conveying of source, or (2) access to copy the\n    Corresponding Source from a network server at no charge.\n\n    c) Convey individual copies of the object code with a copy of the\n    written offer to provide the Corresponding Source.  This\n    alternative is allowed only occasionally and noncommercially, and\n    only if you received the object code with such an offer, in accord\n    with subsection 6b.\n\n    d) Convey the object code by offering access from a designated\n    place (gratis or for a charge), and offer equivalent access to the\n    Corresponding Source in the same way through the same place at no\n    further charge.  You need not require recipients to copy the\n    Corresponding Source along with the object code.  If the place to\n    copy the object code is a network server, the Corresponding Source\n    may be on a different server (operated by you or a third party)\n    that supports equivalent copying facilities, provided you maintain\n    clear directions next to the object code saying where to find the\n    Corresponding Source.  Regardless of what server hosts the\n    Corresponding Source, you remain obligated to ensure that it is\n    available for as long as needed to satisfy these requirements.\n\n    e) Convey the object code using peer-to-peer transmission, provided\n    you inform other peers where the object code and Corresponding\n    Source of the work are being offered to the general public at no\n    charge under subsection 6d.\n\n  A separable portion of the object code, whose source code is excluded\nfrom the Corresponding Source as a System Library, need not be\nincluded in conveying the object code work.\n\n  A \"User Product\" is either (1) a \"consumer product\", which means any\ntangible personal property which is normally used for personal, family,\nor household purposes, or (2) anything designed or sold for incorporation\ninto a dwelling.  In determining whether a product is a consumer product,\ndoubtful cases shall be resolved in favor of coverage.  For a particular\nproduct received by a particular user, \"normally used\" refers to a\ntypical or common use of that class of product, regardless of the status\nof the particular user or of the way in which the particular user\nactually uses, or expects or is expected to use, the product.  A product\nis a consumer product regardless of whether the product has substantial\ncommercial, industrial or non-consumer uses, unless such uses represent\nthe only significant mode of use of the product.\n\n  \"Installation Information\" for a User Product means any methods,\nprocedures, authorization keys, or other information required to install\nand execute modified versions of a covered work in that User Product from\na modified version of its Corresponding Source.  The information must\nsuffice to ensure that the continued functioning of the modified object\ncode is in no case prevented or interfered with solely because\nmodification has been made.\n\n  If you convey an object code work under this section in, or with, or\nspecifically for use in, a User Product, and the conveying occurs as\npart of a transaction in which the right of possession and use of the\nUser Product is transferred to the recipient in perpetuity or for a\nfixed term (regardless of how the transaction is characterized), the\nCorresponding Source conveyed under this section must be accompanied\nby the Installation Information.  But this requirement does not apply\nif neither you nor any third party retains the ability to install\nmodified object code on the User Product (for example, the work has\nbeen installed in ROM).\n\n  The requirement to provide Installation Information does not include a\nrequirement to continue to provide support service, warranty, or updates\nfor a work that has been modified or installed by the recipient, or for\nthe User Product in which it has been modified or installed.  Access to a\nnetwork may be denied when the modification itself materially and\nadversely affects the operation of the network or violates the rules and\nprotocols for communication across the network.\n\n  Corresponding Source conveyed, and Installation Information provided,\nin accord with this section must be in a format that is publicly\ndocumented (and with an implementation available to the public in\nsource code form), and must require no special password or key for\nunpacking, reading or copying.\n\n  7. Additional Terms.\n\n  \"Additional permissions\" are terms that supplement the terms of this\nLicense by making exceptions from one or more of its conditions.\nAdditional permissions that are applicable to the entire Program shall\nbe treated as though they were included in this License, to the extent\nthat they are valid under applicable law.  If additional permissions\napply only to part of the Program, that part may be used separately\nunder those permissions, but the entire Program remains governed by\nthis License without regard to the additional permissions.\n\n  When you convey a copy of a covered work, you may at your option\nremove any additional permissions from that copy, or from any part of\nit.  (Additional permissions may be written to require their own\nremoval in certain cases when you modify the work.)  You may place\nadditional permissions on material, added by you to a covered work,\nfor which you have or can give appropriate copyright permission.\n\n  Notwithstanding any other provision of this License, for material you\nadd to a covered work, you may (if authorized by the copyright holders of\nthat material) supplement the terms of this License with terms:\n\n    a) Disclaiming warranty or limiting liability differently from the\n    terms of sections 15 and 16 of this License; or\n\n    b) Requiring preservation of specified reasonable legal notices or\n    author attributions in that material or in the Appropriate Legal\n    Notices displayed by works containing it; or\n\n    c) Prohibiting misrepresentation of the origin of that material, or\n    requiring that modified versions of such material be marked in\n    reasonable ways as different from the original version; or\n\n    d) Limiting the use for publicity purposes of names of licensors or\n    authors of the material; or\n\n    e) Declining to grant rights under trademark law for use of some\n    trade names, trademarks, or service marks; or\n\n    f) Requiring indemnification of licensors and authors of that\n    material by anyone who conveys the material (or modified versions of\n    it) with contractual assumptions of liability to the recipient, for\n    any liability that these contractual assumptions directly impose on\n    those licensors and authors.\n\n  All other non-permissive additional terms are considered \"further\nrestrictions\" within the meaning of section 10.  If the Program as you\nreceived it, or any part of it, contains a notice stating that it is\ngoverned by this License along with a term that is a further\nrestriction, you may remove that term.  If a license document contains\na further restriction but permits relicensing or conveying under this\nLicense, you may add to a covered work material governed by the terms\nof that license document, provided that the further restriction does\nnot survive such relicensing or conveying.\n\n  If you add terms to a covered work in accord with this section, you\nmust place, in the relevant source files, a statement of the\nadditional terms that apply to those files, or a notice indicating\nwhere to find the applicable terms.\n\n  Additional terms, permissive or non-permissive, may be stated in the\nform of a separately written license, or stated as exceptions;\nthe above requirements apply either way.\n\n  8. Termination.\n\n  You may not propagate or modify a covered work except as expressly\nprovided under this License.  Any attempt otherwise to propagate or\nmodify it is void, and will automatically terminate your rights under\nthis License (including any patent licenses granted under the third\nparagraph of section 11).\n\n  However, if you cease all violation of this License, then your\nlicense from a particular copyright holder is reinstated (a)\nprovisionally, unless and until the copyright holder explicitly and\nfinally terminates your license, and (b) permanently, if the copyright\nholder fails to notify you of the violation by some reasonable means\nprior to 60 days after the cessation.\n\n  Moreover, your license from a particular copyright holder is\nreinstated permanently if the copyright holder notifies you of the\nviolation by some reasonable means, this is the first time you have\nreceived notice of violation of this License (for any work) from that\ncopyright holder, and you cure the violation prior to 30 days after\nyour receipt of the notice.\n\n  Termination of your rights under this section does not terminate the\nlicenses of parties who have received copies or rights from you under\nthis License.  If your rights have been terminated and not permanently\nreinstated, you do not qualify to receive new licenses for the same\nmaterial under section 10.\n\n  9. Acceptance Not Required for Having Copies.\n\n  You are not required to accept this License in order to receive or\nrun a copy of the Program.  Ancillary propagation of a covered work\noccurring solely as a consequence of using peer-to-peer transmission\nto receive a copy likewise does not require acceptance.  However,\nnothing other than this License grants you permission to propagate or\nmodify any covered work.  These actions infringe copyright if you do\nnot accept this License.  Therefore, by modifying or propagating a\ncovered work, you indicate your acceptance of this License to do so.\n\n  10. Automatic Licensing of Downstream Recipients.\n\n  Each time you convey a covered work, the recipient automatically\nreceives a license from the original licensors, to run, modify and\npropagate that work, subject to this License.  You are not responsible\nfor enforcing compliance by third parties with this License.\n\n  An \"entity transaction\" is a transaction transferring control of an\norganization, or substantially all assets of one, or subdividing an\norganization, or merging organizations.  If propagation of a covered\nwork results from an entity transaction, each party to that\ntransaction who receives a copy of the work also receives whatever\nlicenses to the work the party's predecessor in interest had or could\ngive under the previous paragraph, plus a right to possession of the\nCorresponding Source of the work from the predecessor in interest, if\nthe predecessor has it or can get it with reasonable efforts.\n\n  You may not impose any further restrictions on the exercise of the\nrights granted or affirmed under this License.  For example, you may\nnot impose a license fee, royalty, or other charge for exercise of\nrights granted under this License, and you may not initiate litigation\n(including a cross-claim or counterclaim in a lawsuit) alleging that\nany patent claim is infringed by making, using, selling, offering for\nsale, or importing the Program or any portion of it.\n\n  11. Patents.\n\n  A \"contributor\" is a copyright holder who authorizes use under this\nLicense of the Program or a work on which the Program is based.  The\nwork thus licensed is called the contributor's \"contributor version\".\n\n  A contributor's \"essential patent claims\" are all patent claims\nowned or controlled by the contributor, whether already acquired or\nhereafter acquired, that would be infringed by some manner, permitted\nby this License, of making, using, or selling its contributor version,\nbut do not include claims that would be infringed only as a\nconsequence of further modification of the contributor version.  For\npurposes of this definition, \"control\" includes the right to grant\npatent sublicenses in a manner consistent with the requirements of\nthis License.\n\n  Each contributor grants you a non-exclusive, worldwide, royalty-free\npatent license under the contributor's essential patent claims, to\nmake, use, sell, offer for sale, import and otherwise run, modify and\npropagate the contents of its contributor version.\n\n  In the following three paragraphs, a \"patent license\" is any express\nagreement or commitment, however denominated, not to enforce a patent\n(such as an express permission to practice a patent or covenant not to\nsue for patent infringement).  To \"grant\" such a patent license to a\nparty means to make such an agreement or commitment not to enforce a\npatent against the party.\n\n  If you convey a covered work, knowingly relying on a patent license,\nand the Corresponding Source of the work is not available for anyone\nto copy, free of charge and under the terms of this License, through a\npublicly available network server or other readily accessible means,\nthen you must either (1) cause the Corresponding Source to be so\navailable, or (2) arrange to deprive yourself of the benefit of the\npatent license for this particular work, or (3) arrange, in a manner\nconsistent with the requirements of this License, to extend the patent\nlicense to downstream recipients.  \"Knowingly relying\" means you have\nactual knowledge that, but for the patent license, your conveying the\ncovered work in a country, or your recipient's use of the covered work\nin a country, would infringe one or more identifiable patents in that\ncountry that you have reason to believe are valid.\n\n  If, pursuant to or in connection with a single transaction or\narrangement, you convey, or propagate by procuring conveyance of, a\ncovered work, and grant a patent license to some of the parties\nreceiving the covered work authorizing them to use, propagate, modify\nor convey a specific copy of the covered work, then the patent license\nyou grant is automatically extended to all recipients of the covered\nwork and works based on it.\n\n  A patent license is \"discriminatory\" if it does not include within\nthe scope of its coverage, prohibits the exercise of, or is\nconditioned on the non-exercise of one or more of the rights that are\nspecifically granted under this License.  You may not convey a covered\nwork if you are a party to an arrangement with a third party that is\nin the business of distributing software, under which you make payment\nto the third party based on the extent of your activity of conveying\nthe work, and under which the third party grants, to any of the\nparties who would receive the covered work from you, a discriminatory\npatent license (a) in connection with copies of the covered work\nconveyed by you (or copies made from those copies), or (b) primarily\nfor and in connection with specific products or compilations that\ncontain the covered work, unless you entered into that arrangement,\nor that patent license was granted, prior to 28 March 2007.\n\n  Nothing in this License shall be construed as excluding or limiting\nany implied license or other defenses to infringement that may\notherwise be available to you under applicable patent law.\n\n  12. No Surrender of Others' Freedom.\n\n  If conditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot convey a\ncovered work so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you may\nnot convey it at all.  For example, if you agree to terms that obligate you\nto collect a royalty for further conveying from those to whom you convey\nthe Program, the only way you could satisfy both those terms and this\nLicense would be to refrain entirely from conveying the Program.\n\n  13. Use with the GNU Affero General Public License.\n\n  Notwithstanding any other provision of this License, you have\npermission to link or combine any covered work with a work licensed\nunder version 3 of the GNU Affero General Public License into a single\ncombined work, and to convey the resulting work.  The terms of this\nLicense will continue to apply to the part which is the covered work,\nbut the special requirements of the GNU Affero General Public License,\nsection 13, concerning interaction through a network will apply to the\ncombination as such.\n\n  14. Revised Versions of this License.\n\n  The Free Software Foundation may publish revised and/or new versions of\nthe GNU General Public License from time to time.  Such new versions will\nbe similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\n  Each version is given a distinguishing version number.  If the\nProgram specifies that a certain numbered version of the GNU General\nPublic License \"or any later version\" applies to it, you have the\noption of following the terms and conditions either of that numbered\nversion or of any later version published by the Free Software\nFoundation.  If the Program does not specify a version number of the\nGNU General Public License, you may choose any version ever published\nby the Free Software Foundation.\n\n  If the Program specifies that a proxy can decide which future\nversions of the GNU General Public License can be used, that proxy's\npublic statement of acceptance of a version permanently authorizes you\nto choose that version for the Program.\n\n  Later license versions may give you additional or different\npermissions.  However, no additional obligations are imposed on any\nauthor or copyright holder as a result of your choosing to follow a\nlater version.\n\n  15. Disclaimer of Warranty.\n\n  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY\nAPPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT\nHOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY\nOF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM\nIS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF\nALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n  16. Limitation of Liability.\n\n  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS\nTHE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\nGENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE\nUSE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF\nDATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD\nPARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),\nEVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGES.\n\n  17. Interpretation of Sections 15 and 16.\n\n  If the disclaimer of warranty and limitation of liability provided\nabove cannot be given local legal effect according to their terms,\nreviewing courts shall apply local law that most closely approximates\nan absolute waiver of all civil liability in connection with the\nProgram, unless a warranty or assumption of liability accompanies a\ncopy of the Program in return for a fee.\n\n                     END OF TERMS AND CONDITIONS\n\n            How to Apply These Terms to Your New Programs\n\n  If you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these terms.\n\n  To do so, attach the following notices to the program.  It is safest\nto attach them to the start of each source file to most effectively\nstate the exclusion of warranty; and each file should have at least\nthe \"copyright\" line and a pointer to where the full notice is found.\n\n    <one line to give the program's name and a brief idea of what it does.>\n    Copyright (C) <year>  <name of author>\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.\n\nAlso add information on how to contact you by electronic and paper mail.\n\n  If the program does terminal interaction, make it output a short\nnotice like this when it starts in an interactive mode:\n\n    <program>  Copyright (C) <year>  <name of author>\n    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `show c' for details.\n\nThe hypothetical commands `show w' and `show c' should show the appropriate\nparts of the General Public License.  Of course, your program's commands\nmight be different; for a GUI interface, you would use an \"about box\".\n\n  You should also get your employer (if you work as a programmer) or school,\nif any, to sign a \"copyright disclaimer\" for the program, if necessary.\nFor more information on this, and how to apply and follow the GNU GPL, see\n<http://www.gnu.org/licenses/>.\n\n  The GNU General Public License does not permit incorporating your program\ninto proprietary programs.  If your program is a subroutine library, you\nmay consider it more useful to permit linking proprietary applications with\nthe library.  If this is what you want to do, use the GNU Lesser General\nPublic License instead of this License.  But first, please read\n<http://www.gnu.org/philosophy/why-not-lgpl.html>.\n"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://applejack.science.ru.nl/lamabadge.php/LaMachine"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "LaMachine"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "LaMachine"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "proycon"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 125379,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 92624,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Ruby",
+        "size": 9645,
+        "type": "Programming_language",
+        "value": "Ruby"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 7233,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 2920,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Singularity",
+        "size": 909,
+        "type": "Programming_language",
+        "value": "Singularity"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 373,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ansible",
+        "type": "Programming_language",
+        "value": "ansible",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "bash",
+        "type": "Programming_language",
+        "value": "bash",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/proycon/LaMachine/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/proycon/LaMachine/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "title": "LaMachine: A meta-distribution for NLP software",
+        "type": "Scholarly_article",
+        "url": "https://raw.githubusercontent.com/proycon/LaMachine/master/docs/lamachine_extabstract_clarin2018.pdf",
+        "value": "LaMachine: A meta-distribution for NLP software"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://jupyterlab.readthedocs.io/"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-07-22T20:56:39Z",
+        "date_published": "2022-07-22T21:09:59Z",
+        "description": "# LaMachine end-of-life release\r\n\r\nLaMachine is now deprecated and will not be further developed. Please see https://github.com/proycon/LaMachine/issues/214 for an explanation and alternative solutions we will actively work on.\r\n\r\n* LaMachine is end-of-life now; added deprecation notices #214\r\n* setting priority of git_branch over version #217\r\n* attempting a fix for keeping codemetapy at previous version (#217)\r\n* force codemetapy v0.3.5 because newer versions are not yet compatible\r\n* adapted for Kaldi_NL v0.4\r\n* forgot to rename this oralhistory -> asr_nl\r\n* more retries when doing npm install\r\n* removed old forcedalignment service\r\n* renamed oralhistory to asr_nl\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.28",
+        "name": "v2.28",
+        "release_id": 72653729,
+        "tag": "v2.28",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.28",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/72653729",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/72653729",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.28"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2022-01-18T16:32:09Z",
+        "date_published": "2022-01-18T17:49:49Z",
+        "description": "* Fix for python 3.10 compatibility, dropped 3.4 support. Considering 3.5 deprecated as well (might still work though), but please ensure 3.6 or higher.\r\n* Fixed moving the www-data path to an externally mounted volume in docker; refactored www-data dir handling.",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.27",
+        "name": "v2.27",
+        "release_id": 57392211,
+        "tag": "v2.27",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.27",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/57392211",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/57392211",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.27"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2021-12-02T14:03:26Z",
+        "date_published": "2021-12-02T16:48:55Z",
+        "description": "* Switched docker base image to Ubuntu Linux 20.04 LTS rather than Debian stable (consistency with VMs)\r\n* Use python's built-in venv instead of virtualenv\r\n* Fixes for npm and labirinto\r\n* Get ansible from distribution repos for VM/container rather than the PPA\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.26",
+        "name": "v2.26",
+        "release_id": 54513482,
+        "tag": "v2.26",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.26",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/54513482",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/54513482",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.26"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2021-07-14T20:01:23Z",
+        "date_published": "2021-07-14T20:58:14Z",
+        "description": "This is a major update:\r\n\r\n* Implement OAuth2/OpenID Connect authentication solution (works for CLAM & FLAT, further testing in order for Jupyter Hub) #171 \r\n* Stripped all Python 2.7 support from the bootstrap script\r\n* Migrated to Jupyter Hub\r\n* Vagrant base box and Docker base image now use Ubuntu 20.04 LTS rather than Debian 10\r\n* Use LTS release of nodejs on ubuntu/debian/redhat/centos\r\n* Fixed issue in installation of labirinto (the portal website) #198 \r\n* Better fallbacks for installation of python bindings\r\n* Less output clutter: hide skipped tasks (e.g. where condition is false)\r\n* Added analiticcl to the languagemachines-rust package\r\n* DeepFrog compilation may be broken currently\r\n* force_ssl option now forces HTTP_X_FORWARDED_PROTO header in cases where the reverse proxy propagates the wrong headers\r\n* Improvements to lamachine-config\r\n    * Added a --remoteservice parameter for easy configuration editing #188\r\n* Various fixes in kaldi/kaldi_nl\r\n\r\n(some of the changes were already in v2.24)\r\n\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.25",
+        "name": "v2.25",
+        "release_id": 46214467,
+        "tag": "v2.25",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.25",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/46214467",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/46214467",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.25"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-10-01T09:28:27Z",
+        "date_published": "2020-10-01T14:43:18Z",
+        "description": "* Added rust #181 \r\n   * Added rust-based software sesdiff, ssam\r\n   * Added deepfrog\r\n* Kaldi_NL, g2pservice and forcedalignment2 are obtained from new upstream source\r\n  * various fixes for those webservices\r\n* added asr4J, spreek2schrijf\r\n* Various fixes and improvements for container deployment behind a reverse proxy\r\n   *  added custom_flat_settings option \r\n   *  use a default CLAM base configuration\r\n   * added force_https option \r\n* Refactoring:  Implemented a languagemachine-web-install role and a language-python-link role to refactor some things and remove a lot of unnecessary duplication\r\n* better argument parsing in lamachine-update\r\n* explicitly set ansible python interpeter when running lamachine update\r\n* various fixes\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.23",
+        "name": "v2.23",
+        "release_id": 32051041,
+        "tag": "v2.23",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.23",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/32051041",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/32051041",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.23"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-08-19T18:25:29Z",
+        "date_published": "2020-08-20T13:38:04Z",
+        "description": "* integrated lamastats\r\n* When calling the virtualenv activate script, an important part of activation wasmissed. Try to automatically call the primary activation script in such a case.\r\n* Adding mitlm to phonetisaurus installation (phonetisaurus-train depends on it), and some CentOS 8 changes\r\n* Docker fix, default interactive shell now starts with non-root and in the proper homedir\r\n\r\n\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.21",
+        "name": "v2.21",
+        "release_id": 29925528,
+        "tag": "v2.21",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.21",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/29925528",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/29925528",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.21"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-07-20T20:47:41Z",
+        "date_published": "2020-07-20T20:53:06Z",
+        "description": "* Important fixes for macOS: install ansible through homebrew rather than through pip. This hopefully fixes some recent failures to install on at least macos catalina.\r\n* Java fix: ensure Java is version 11 (versions 13 and 14 are too new for nextflow and probably also for various other tools)\r\n* Automatically start background servers for valkuil and tscan (using uwsgi attach-daemon), and some fixes for existing background servers\r\n* Fixed port number clash when both PICCL and T-scan were enabled\r\n* Adding a sites-extra directory for non-LaMachine managed nginx configuration\r\n\r\n\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.20",
+        "name": "v2.20",
+        "release_id": 28756143,
+        "tag": "v2.20",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.20",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/28756143",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/28756143",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.20"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-06-21T17:32:35Z",
+        "date_published": "2020-06-21T18:23:53Z",
+        "description": "* fixes for  prebuilt VM flavour\r\n* allow setting ssh key filename rather than forcing id_rsa\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.19",
+        "name": "v2.19",
+        "release_id": 27764865,
+        "tag": "v2.19",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.19",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/27764865",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/27764865",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.19"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-04-16T16:41:14Z",
+        "date_published": "2020-04-16T18:50:17Z",
+        "description": "* LaMachine Release after final releases by @kosloot of full frog, ucto, libfolia, timbl, mbt software stack\r\n* Fix for alpino\r\n* Added fame_align (frisian aligner) to LaMachine\r\n* Added forced alignment service\r\n* Allow python-timbl to fail on macOS for now #175",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.17",
+        "name": "v2.17",
+        "release_id": 25584473,
+        "tag": "v2.17",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.17",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/25584473",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/25584473",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.17"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-03-11T19:59:56Z",
+        "date_published": "2020-03-11T20:02:13Z",
+        "description": "* Added huggingface transformers library\r\n* Fixed kaldi lib to atlas3 by default instead of openblas #172\r\n* Various fixes for speech webservices (oral history and others)\r\n* Allow setting ssh keypairs from the LaMachine configuration (needed for restricted access to e.g. our gitlab server)\r\n* Added an option to skip nvm activation things\r\n* Make lxc profile configurable in bootstrap.sh\r\n\r\n\r\n\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.16",
+        "name": "v2.16",
+        "release_id": 24441327,
+        "tag": "v2.16",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.16",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/24441327",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/24441327",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.16"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-01-26T14:19:28Z",
+        "date_published": "2020-01-26T15:08:02Z",
+        "description": "* ansible deprecated some features, adapting accordingly (#167)\r\n* explicitly set ALPINO_HOME and alpino-specific lib path in alpino/tscan uwsgi #153 (should already be set properly in venv though)\r\n* completed tscan integration #153 \r\n* Rerun all activation scripts after update so the shell is up to date for any added environment variables immediately #153\r\n* some documentation updates\r\n\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.15",
+        "name": "v2.15",
+        "release_id": 23133798,
+        "tag": "v2.15",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.15",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/23133798",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/23133798",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.15"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2020-01-14T12:21:59Z",
+        "date_published": "2020-01-14T12:37:42Z",
+        "description": "* Added julia #165\r\n* Added spaCy webservice (a CLAM webservice with spacy2folia for FoLiA output support)\r\n* Docker: expose more ports by default (8080, 8888 and 9999 are now exposed by default in the Dockerfile)\r\n* Adding kaldi-nl resource (#106) and oral history (+webservice) (#140) [requires private access]\r\n* Minor updates to contributing guidelines\r\n\r\n**v2.13**:\r\n* Fix for alpino, it is linked against extra libraries which are in a non-default location\r\n* Continue even if shared data path can't be created (due to permission issues sometimes)\r\n* Various fixes for improved jupyter lab integration \r\n    * auto-starting it\r\n    * store jupyter notebooks in www_data_path and allow this to be stored on the shared data volume (relevant for docker/VM)\r\n* Implemented new www_data_path option and a shared_www_data boolean that by defaults sets the data path to be on the shared volume (for VM/container)\r\n  *  explicitly ask during boostrap whether to put web data on the shared volume\r\n* **LaMachine now specifically provides support status indications for different Linux distributions/operating systems**, we distinguish four categories (gold, silver, bronze and deprecated). Support indications are given both in the bootstrap strict as in the documentation.\r\n* CentOS 8 support (silver support status), CentOS 7 support is being deprecated.\r\n* Added clam_include directive to include a base CLAM configuration from the configuration of each clam service\r\n* adding various \"maintainted by lamachine\" comments to configuration files, warning the user not to edit them.\r\n* Fixes and updated instructions for for LXD containers\r\n* Fixes in lamachine-start-webserver and cleanup of lamachine-start-webserver output \r\n\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.14",
+        "name": "v2.14",
+        "release_id": 22823094,
+        "tag": "v2.14",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.14",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/22823094",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/22823094",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.14"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-11-27T11:05:39Z",
+        "date_published": "2019-11-27T11:15:17Z",
+        "description": "* Vagrant base box updated to Debian 10 (buster)\r\n* Changing the way metadata is collected, adapting to codemetapy 0.3, making it easier to regenerate metadata, and removing some complexity\r\n* Added piereling (and installing poppler and pandoc by default)\r\n* Allowing quicker updates with the lamachine-update --only parameter no longer process all dependencies if it is set\r\n* Remove labirinto sources before update because it often fails to upgrade nicely\r\n* Allow LaMachine to build against a custom Python 3, by setting python_bin and pip_bin (building the custom Python is not included in LaMachine) #159\r\n* Fixes for Arch Linux #161 \r\n* adding hdf5 to base packages (required by keras)\r\n* adding new translitteration service (t2t)\r\n* Various smaller fixes\r\n\r\n\r\n\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.12",
+        "name": "v2.12",
+        "release_id": 21797071,
+        "tag": "v2.12",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.12",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/21797071",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/21797071",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.12"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-10-17T17:23:44Z",
+        "date_published": "2019-10-17T18:57:10Z",
+        "description": "Various fixes:\r\n* lamachine-list: get $LM_PREFIX dynamically\r\n* lamachine-list update\r\n* metadata fixes for glem and g2pservice \r\n* adding valkuil frontend installation and configuration  (not done)\r\n* allow setting ignore_errors in package for lamachine-package-install, as it does not propagate to tasks within ignore_role\r\n* disabling cask installation for homebrew, they say it comes by default\r\n\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.10.1",
+        "name": "v2.10.1",
+        "release_id": 20785131,
+        "tag": "v2.10.1",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.10.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/20785131",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/20785131",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.10.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-09-01T15:01:38Z",
+        "date_published": "2019-09-01T15:44:42Z",
+        "description": "* use latest available java version\r\n* version bump because of other releases (FLAT, libfolia, ticcutils)",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.10.0",
+        "name": "v2.10.0",
+        "release_id": 19680189,
+        "tag": "v2.10.0",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.10.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/19680189",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/19680189",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.10.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-08-21T18:59:49Z",
+        "date_published": "2019-08-27T20:18:26Z",
+        "description": "* Added colibri-utils (except on mac)\r\n* Adding user to vboxsf group for shared folder access (if it exists) \r\n* ignore errors on creating webserver dirs (in case they already exist or are links)\r\n* don't let nvm problems prevent lamachine activation",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.9.1",
+        "name": "v2.9.1",
+        "release_id": 19574252,
+        "tag": "v2.9.1",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.9.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/19574252",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/19574252",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.9.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-06-28T10:57:53Z",
+        "date_published": "2019-06-28T12:23:37Z",
+        "description": "* extract list of packages and ask to open installation manifest in editor or not (relates to #63), same thing for the configuration file\r\n* Removing some packages from the default installation to conserve space:\r\n  * Removing cltl-vu-python from the default packages (the folia-naf converter is not really in use nor maintained well nowadays and the git repo comes with some big files that take up too much space)\r\n  * exclude xgboost from the default installation as it takes up a lot of space and is not a direct dependency\r\n* add extra user input stage with updated instruction prior to ansible start. This ensures people know to expect a lot of output they can ignore and a long wait whilst things are installing, and so understand what to do when ansible asks for the BECOME password (addressed an issue raised by @pboot)\r\n* fix for failure to start nginx #151 \r\n* adapting the strict python check and making the bootstrap also work when python 2 is absent in some cases\r\n* ensured ~/bin is in $PATH immediately after bootstrap \r\n* added more feedback to lamachine-start-webserver script\r\n* implemented CSV export ability for lamachine-list \r\n* do linux distribution detection and warn users if they run on an unsupported or outdated platform\r\n* [documentation] updated FAQ\r\n\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.9.0",
+        "name": "v2.9.0",
+        "release_id": 18292384,
+        "tag": "v2.9.0",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/18292384",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/18292384",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-06-14T15:38:28Z",
+        "date_published": "2019-06-14T21:48:32Z",
+        "description": "* Added aNtiLoPe and nederlab-pipeline, (both split off from PICCL), they are nabled by default now as part of the ``languagemachines-pipelines`` package \r\n* Adding DBPedia spotlight #143 \r\n* Added langid.py\r\n* Added fasttext\r\n* Added WikiEnte\r\n* Fix for spacy #148\r\n* Fixed proper validation in case disk size wasn't a number \r\n* opening port 9999 by default in vagrant for user-defined purposes\r\n\r\nv2.7.0 (forgot to release formally here):\r\n* New FoLiA v2 based releases for Ucto, frog, libfolia, FoLiA-utils\r\n* [CentOS7] compile SQLite from scratch because system version is too old (django complains, affects FLAT)\r\n* attempted fix for redhat (CentOS)\r\n* fix: flair requires python >3.6, do not install on older distributions \r\n* ansible 2.8 compatibility; added note for ansible upgrade error #144 ",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.8.0",
+        "name": "v2.8.0",
+        "release_id": 18010575,
+        "tag": "v2.8.0",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/18010575",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/18010575",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-04-30T22:07:17Z",
+        "date_published": "2019-04-30T22:37:07Z",
+        "description": "* Added spacy2folia\r\n* Added Freeling #123 \r\n* Added eng_ASR #139 (still to be properly tested)\r\n* Adapted for FLAT v0.8.0 and foliadocserve v0.7.0\r\n* Fix in npm upgrade\r\n* This version also holds the final camera ready paper on LaMachine as published in the CLARIN 2018 proceedings\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.6.0",
+        "name": "v2.6.0",
+        "release_id": 17079570,
+        "tag": "v2.6.0",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/17079570",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/17079570",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-03-13T23:40:40Z",
+        "date_published": "2019-03-14T12:19:29Z",
+        "description": "Adds support for FoLiA 2.0, see also the release plan in proycon/folia#68\r\n* Added new [FoLiApy](https://github.com/proycon/foliapy)\r\n* FoLiA-tools is now split from the central FoLiA repository and LaMachine is adapted accordingly. The central repository containing examples and specifications is still supplied with LaMachine, but usually not needed for most end-users.\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.5.0",
+        "name": "v2.5.0",
+        "release_id": 16112700,
+        "tag": "v2.5.0",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/16112700",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/16112700",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-03-05T20:39:22Z",
+        "date_published": "2019-03-05T22:02:33Z",
+        "description": "* Added FLAIR to pytorch package\r\n* Added phonetisaurus and g2pservice (limited availability), includes openfst independent of kaldi",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.4.11",
+        "name": "v2.4.11",
+        "release_id": 15931336,
+        "tag": "v2.4.11",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.4.11",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/15931336",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/15931336",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.4.11"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-02-06T17:03:59Z",
+        "date_published": "2019-02-06T20:26:12Z",
+        "description": "* implemented initial support for LXC/LXD containers #134 \r\n* fix for macOS installation of uwsgi\r\n* added Go\r\n* added a -h/--help flag to lamachine-update \r\n* added --only option for lamachine-update to more selectively update ",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.4.10",
+        "name": "v2.4.10",
+        "release_id": 15407301,
+        "tag": "v2.4.10",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.4.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/15407301",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/15407301",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.4.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2019-01-14T21:21:05Z",
+        "date_published": "2019-01-16T12:29:49Z",
+        "description": "* Added GLEM webservice\r\n* listen on all IPs for Jupyter Lab (fixes #129) \r\n* fixes for continuous integration on travis\r\n* fixed for installation on Ubuntu 18.04",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.4.9",
+        "name": "v2.4.9",
+        "release_id": 15005390,
+        "tag": "v2.4.9",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.4.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/15005390",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/15005390",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.4.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2018-12-19T22:15:33Z",
+        "date_published": "2018-12-19T23:11:00Z",
+        "description": "* Fixes lamachine update error in docker/VM #127",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.4.8",
+        "name": "v2.4.8",
+        "release_id": 14627397,
+        "tag": "v2.4.8",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.4.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/14627397",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/14627397",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.4.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2018-12-08T19:43:48Z",
+        "date_published": "2018-12-08T20:24:57Z",
+        "description": "* Set default path of docker container to home dir and create convenience symlinks to $DATA_PATH and $LAMACHINE_PATH (arose from #125)\r\n* explicitly install python3-setuptools (debian/ubuntu)\r\n* Travis-CI integration tests are finally on ubuntu 16.04 instead of 14.04\r\n* Use pip instead of ``python setup.py install`` whenever possible, with fallbacks\r\n* Added GLEM to LaMachine\r\n* Improved sanity check and error feedback for possibly outdated/malfunctioning virtualenv python\r\n* Improved Ansible log output (colors and less cruft)\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.4.7",
+        "name": "v2.4.7",
+        "release_id": 14424878,
+        "tag": "v2.4.7",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.4.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/14424878",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/14424878",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.4.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2018-11-21T19:51:28Z",
+        "date_published": "2018-11-21T19:52:56Z",
+        "description": "Minor bugfix release:\r\n* Fix: PICCL didn't get registered suddenly?\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.4.6",
+        "name": "v2.4.6",
+        "release_id": 14127558,
+        "tag": "v2.4.6",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.4.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/14127558",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/14127558",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.4.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2018-10-17T12:16:57Z",
+        "date_published": "2018-10-17T21:16:48Z",
+        "description": "* Added Oersetter Frisian-Dutch MT (#121)\r\n* Added Moses (#110)\r\n* Metadata registration fixes",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.4.5",
+        "name": "v2.4.5",
+        "release_id": 13491560,
+        "tag": "v2.4.5",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.4.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/13491560",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/13491560",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.4.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2018-10-12T21:53:59Z",
+        "date_published": "2018-10-12T21:55:19Z",
+        "description": "Bugfix release:\r\n * Added compatibility for BSD sed (on mac), not just GNU sed ",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.4.4",
+        "name": "v2.4.4",
+        "release_id": 13403577,
+        "tag": "v2.4.4",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.4.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/13403577",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/13403577",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.4.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2018-10-12T19:28:56Z",
+        "date_published": "2018-10-12T19:31:01Z",
+        "description": "* Fixes in bootstrap for prebuilt VM",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.4.3",
+        "name": "v2.4.3",
+        "release_id": 13401575,
+        "tag": "v2.4.3",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.4.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/13401575",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/13401575",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.4.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "proycon",
+          "type": "User"
+        },
+        "date_created": "2018-10-08T14:20:57Z",
+        "date_published": "2018-10-08T18:14:22Z",
+        "description": "* Added an ``extra_disksize`` variable for VM (``--disksize`` parameter for bootstrap), configures an extra virtual disk to put LaMachine on in order to allow installation of large software that would not fit in the default disk image.\r\n* Allow allow Tesseract German Fraktur installation to fail (not present on all distros, removed from ubuntu 18.04) should solve #117\r\n* Do not require python-core for kaldi\r\n* Various small fixes\r\n* Adding fy_nl_ASR webservice #116  (not fully functional yet)\r\n* Attempt to get kaldi working on Arch Linux still failed for now\r\n* Added LaMachine poster presentation for CLARIN conference in Pisa\r\n\r\n",
+        "html_url": "https://github.com/proycon/LaMachine/releases/tag/v2.4.2",
+        "name": "v2.4.2",
+        "release_id": 13309925,
+        "tag": "v2.4.2",
+        "tarball_url": "https://api.github.com/repos/proycon/LaMachine/tarball/v2.4.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/proycon/LaMachine/releases/13309925",
+        "value": "https://api.github.com/repos/proycon/LaMachine/releases/13309925",
+        "zipball_url": "https://api.github.com/repos/proycon/LaMachine/zipball/v2.4.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Unsupported - The project has reached a stable, usable state but the author(s) have ceased all work on it",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#unsupported"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "run": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: Can I run LaMachine in a 32-bit environment?",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "No\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: Can I run LaMachine with Python 2.7 instead of 3?",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "No\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: Can I run LaMachine on an old Linux distribution?",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "No, your Linux distribution needs to be up to date and supported.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: Can I run a graphical desktop environment in the LaMachine Virtual Machine? (X.org)",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "Though LaMachine does not provide this out-of-the-box, you can easily install a fully fledged desktop environment as\nfollows (do make sure you opted for extra diskspace during the bootstrap):\n\n``apt-get install task-gnome-desktop`` (See https://wiki.debian.org/DesktopEnvironment)\n\nTo access the graphical desktop you will want to start LaMachine from the VirtualBox interface.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: Can I run LaMachine on Kubernetes?",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "Yes, see [docs/kubernetes/README.md](these instructions) and templates.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:07:41",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 68
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: I have another problem, can I report it?",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "Yes! Please report it in our [Issue Tracker](https://github.com/proycon/LaMachine/issues) after checking that the problem has\nnot already been reported (and solved perhaps) by someone else. Note that this is only for problems relating to the\ninstallation and availability of the software; for bugs or feature requests on any of the participating software\n(including our own), you should use the issue trackers pertaining to those software projects.\n\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "type": "Text_excerpt",
+        "value": "How to start LaMachine differs a bit depending on your flavour.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Local Environment",
+        "parent_header": [
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Run the generated activation script to activate the local environment (here we assume your LaMachine VM is called **stable**!):\n* Run ``source lamachine-stable-activate`` or ``lamachine-stable-activate``, this script should be located in your\n  ``~/bin`` directory.\n\n![LaMachine terminal screenshot](/docs/screenshot_venv_activate.jpg?raw=true \"Activating the LaMachine local environment\")\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Virtual Machine",
+        "parent_header": [
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you built your own LaMachine you have various scripts at your disposal (here we assume your LaMachine VM is called **stable**! The script names will be different for other names, replace as needed):\n* Run ``lamachine-stable-start`` to start the VM\n* Run ``lamachine-stable-connect`` to connect to a running VM and obtain a command line shell (over ssh)\n* Run ``lamachine-stable-stop`` to stop the VM\n* Run ``lamachine-stable-destroy`` to completely delete the VM again\n* ``lamachine-stable-activate`` is a shortcut that starts the VM and connects automatically, and stops the VM when you\n  disconnect again.\n\nIf you used a prebuilt image you have to invoke ``vagrant`` yourself from the proper directory where you did ``vagrant\ninit proycon/lamachine:stable``:\n* Run ``vagrant up`` to start the VM\n* Run ``vagrant halt`` to stop the VM\n* Run ``vagrant ssh`` to connect to the VM and obtain a command line shell\n* Run ``vagrant destroy`` to remove the VM\n\nCommand line access to your LaMachine Virtual Machine through vagrant or ``lamachine-*-connect`` should be passwordless, other methods\nmay require a login; use username ``vagrant`` and password ``vagrant``.  The root password is also ``vagrant``. Change\nthese in any exposed environments!\n\nIf you enabled a webserver in your LaMachine build, you can connect your web browser to http://127.0.0.1:8080 after having started the\nVM.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Port Mapping to the Virtual Machine",
+        "parent_header": [
+          "Usage",
+          "Virtual Machine"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you want to connect to a particular special-purpose server (not a\nwebservice) inside the VM from your host system, then you often need to forward\na port from your host system into the LaMachine VM, as for all intents and\npurposes, they should be considered two separated systems. This applies for\ninstance when you want to use the server mode offered by software such as Frog\nor Alpino (again, this is completely different and independent from the\n**web**services that LaMachine also offers).\n\nFrom LaMachine 2.6.2 onward, the\nport 9999 is forwarded by default for the VM, meaning that if you connect to\nport 9999 on your local machine (IP 127.0.0.1), it will be forwarded to port\n9999 in the LaMachine VM.\n\nIf you want to open any additional ports, you need to\ndo so in Virtualbox for your LaMachine VM. Consult [this\nguide](https://www.simplified.guide/virtualbox/port-forwarding) for easy and\nillustrated instructions on how to set this up in the VirtualBox interface, or\nalternatively consult the relevant chapter in the [Virtualbox\nManual](https://www.virtualbox.org/manual/ch06.html#natforward) itself.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Docker Container",
+        "parent_header": [
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you used the LaMachine bootstrap script, you will have several scripts at your disposition (we assume that your\nLaMachine VM is called stable, adapt the script names to your own situation). If you instead issued a ``docker pull\nproycon/lamachine`` manually you will need to run the docker commands yourself:\n\n* Run ``lamachine-stable-activate`` to start a **new** interactive container\n    * This corresponds to ``docker run -i -t proycon/lamachine``\n* Run ``lamachine-stable-run`` to start the command specified as a parameter in a **new** container (e.g.  ``lamachine-stable-run frog``)\n    * This corresponds to : ``docker run -i -t proycon/lamachine:latest frog``\n        * You can omit the ``-i`` flag if the tool is not an interactive tool that reads from standard input (i.e. keyboard input).\n* Run ``lamachine-stable-start`` to start a webserver and all enabled webservices in a **new** LaMachine container:\n    * This corresponds to: ``docker run -p 8080:80 -h hostname -t proycon/lamachine:latest lamachine-start-webserver -f ``\n        * The numbers values for ``-p`` are the port numbers on the host side and on the container side respectively, the latter must always match with the ``http_port`` setting LaMachine has been built with (defaults to 80).\n        * Set ``-h`` with the desired hostname, this too must match the setting LaMachine has been built with!\n        * The ``-f`` argument to ``lamachine-start-webserver`` ensures the script waits in the foreground and doesn't exit after starting. In a docker context,\n          this also makes the script a valid entrypoint (PID 1).\n\t* If started in this way, you can connect your webbrowser on the host system to http://127.0.0.1:8080 .\n\nThe scripts will automatically share your designated data directory (your home directory by default) with the container, mounted at ``/data`` by default. To manually make persistent storage available in the container, e.g. for sharing data, use docker parameters like: ``--mount type=bind,source=/path/on/host,target=/data``\n\nIf you use LaMachine with docker, we expect you to actually be familiar with docker and understand the non-persistent\nnature of containers, understand the difference between images and containers. Be aware that new containers are created\nevery time you run any of the above commands. If you want a more VM-like container experience, you can consider LXD\ninstead of Docker.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Updating LaMachine",
+        "parent_header": [
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "When you are inside LaMachine, you can update it by running ``lamachine-update``, if you want to add\nextra software packages to your installation, run ``lamachine-add`` first (add ``--list`` for a list of installable packages).\nYou can also edit LaMachine's settings and/or directly edit the list of packages to be installed/updated with ``lamachine-update --edit``. Do note that\nthis can't be used to uninstall software.\n\nThe update normally only updates what has changed, if you want to force an update of everything instead, run\n``lamachine-update force=1``. You can also use the even stronger ``force=2``, which will forcibly remove all downloaded sources\nand start from scratch.\n\nFor Docker and the Virtual Machine flavours, when a SUDO password is being asked by the update script, you can simply\npress ENTER and leave it empty, do not run the entire script with escalated privileges.\n\nUpdating everything can be a time-consuming endeavour. If you know what you are doing then you can limit your update to\ncertain packages, you can specify these packages (as a comma separated list) to the ``--only`` parameter, e.g:\n``lamachine-update --only python-core,java-core``. Do be aware that this could result in your LaMachine ending up in an\nunusable state (in which case a normal update should remedy the problem again).\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Configuring LaMachine",
+        "parent_header": [
+          "Usage",
+          "Updating LaMachine"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you want to view the LaMachine configuration, simply issue a ``lamachine-config`` from within. If you want to edit it\ninteractively, add the ``--edit`` flag. Always run ``lamachine-update`` afterwards to apply the new configuration.\n\nThe ``lamachine-config`` tool can also be used to quickly edit a configuration setting through the command line, see\n``lamachine-config --help`` for details.\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Webservices and web applications",
+        "parent_header": [
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "LaMachine comes with several webservices and web applications out of the box.\nMost are RESTful webservices served using [CLAM](https://proycon.github.io/clam), which also offer a generic\nweb-interface for human end-users. The webserver provides a generic portal to all available services, powered by\n[Labirinto](https://github.com/proycon/labirinto), as shown in the screenshot below:\n\n![portal_screenshot](/docs/screenshot_portal.jpg?raw=true \"Screenshot of the portal in LaMachine\")\n\nTo start (or restart) the webserver and webservices, run ``lamachine-start-webserver`` from within your LaMachine\ninstallation. You can then connect your browser (on the host system) to http://localhost:8080 (the port may differ if\nyou changed the default value). On virtual machines, the webserver will be automatically started at boot. For\ndocker you can do: ``docker run -p 8080:80 -h hostname -t proycon/lamachine:latest lamachine-start-webserver -f ``\n\n**Warning: There is currently no or poor authentication enabled on the webservices, so do not\nexpose them to the outside world!**\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Jupyter Lab",
+        "parent_header": [
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "LaMachine comes with an installation of [Jupyter Lab](https://jupyterlab.readthedocs.io/en/latest/), which provides an excellent entry-point to LaMachine as it provides\na web-based scripting environment or IDE (for Python and R), web-based terminal access, and especially access to the\nubiquitous Jupyter Notebooks that enjoy great popularity in data science and beyond.\n\nYou can access your Jupyter Lab installation from the portal website of your LaMachine installation. By default\nLaMachine also preinstalls the interactive [Python Course for the Humanities](http://www.karsdorp.io/python-course/) for you, so you can get started right\naway.\n\n![Jupyter Lab in LaMachine](/docs/screenshot_lab.jpg?raw=true \"Jupyter Lab in LaMachine screenshot\")\n\nThe default password for the Lab environment is *lamachine*, you can change this with ``lamachine-passwd lab``.\n\n**Warning: Do not expose this service to the world without a strong customised password as it allows arbitrary code execution and full\naccess to your system!**\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: I get an error \"no space left on device\" in the VM or Docker flavour of LaMachine (<a href=\"https://github.com/proycon/LaMachine/issues/152\">Issue #152</a>)",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "This means the virtual disk used by the virtual machine or container is full. This may especially occur if you select\nsome of the larger optional software packages. There is only limited space available in the VM or Docker container\n(roughly 9GB). For the VM, when you bootstrap your own LaMachine image from scratch (an option currently not available\nfor Windows users though), you can opt to create extra diskspace (an extra volume).\n\nFor Docker, you may need to increase the base size of\nyour containers (depending on the storage driver you use for docker). Consult the docker documentation at\nhttps://docs.docker.com/storage/storagedriver/ and do so now if you need this.\n\nAdvanced VM users can resolve the problem on their existing LaMachine VM by adding another virtual disk and moving some of the\ndata, but this requires a fair amount of Linux administration expertise on their part. The procedure is roughly as follows:\n* Create an extra disk for the LaMachine VM in the VirtualBox interface (see for instance [this\n    tutorial](https://www.zachpfeffer.com/single-post/Add-a-disk-to-an-Ubuntu-VirtualBox-VM) up to step 11).\n* From within the LaMachine VM:\n    * Partition the new disk (with ``fdisk`` or ``parted``)\n    * Format the new disk (with ``mkfs.ext4``)\n    * Add the new disk to ``/etc/fstab``\n    * Move ``/usr/local`` (which is where most of LaMachine is installed) to the new disk\n    * Symlink the old ``/usr/local`` to the new path on the new disk\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Q: Someone provided me with a pre-build LaMachine VM image in the form of a *.box file, how do I use it?",
+        "parent_header": [
+          "Frequently Asked Questioned &amp; Troubleshooting"
+        ],
+        "type": "Text_excerpt",
+        "value": "This is a Vagrant box file. You will need to follow the instruction as specified in Installation section **C**, with the\nfollowing differences:\n\n* **Prior** to running ``vagrant init``, you will need to run ``vagrant box add --name custom-lamachine /path/to/your/image.box`` (adapt the path to\n    point to the box file you were given). You may change the name ``custom-lamachine`` to anything you like to identify\n    this LaMachine image.\n* Instead of ``vagrant init --template Vagrantbox.prebuilt.erb proycon/lamachine``, do ``vagrant init --template Vagrantbox.prebuilt.erb custom-lamachine`` (or another name if you changed it in the first step)\n"
+      },
+      "source": "https://github.com/proycon/LaMachine/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.28"
+      },
+      "source": "https://raw.githubusercontent.com/proycon/LaMachine/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,848 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Research"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "marcociccalebaztan@gmail.com",
+        "name": "mciccale",
+        "type": "Agent",
+        "value": "mciccale"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "marcociccalebaztan@gmail.com",
+        "identifier": "https://orcid.org/0009-0000-8821-0587",
+        "type": "String",
+        "value": "Marco Ciccal\u00e8"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Ciccal\u00e8",
+            "given_name": "Marco",
+            "name": "Marco Ciccal\u00e8",
+            "type": "Agent",
+            "url": "https://orcid.org/0009-0000-8821-0587"
+          }
+        ],
+        "datePublished": "2024",
+        "doi": "10.5281/zenodo.10654760",
+        "format": "cff",
+        "title": "ScholarVista",
+        "type": "File_dump",
+        "url": "https://doi.org/10.5281/zenodo.10654760",
+        "value": "cff-version: 1.2.0\nmessage: 'If you use this software, please cite it as below.'\nauthors:\n  - family-names: Ciccal\u00e8\n    given-names: Marco\n    orcid: https://orcid.org/0009-0000-8821-0587\ntitle: 'ScholarVista'\nlicense: Apache-2.0\nversion: '0.2.0'\ndoi: '10.5281/zenodo.10654760'\ndate-released: 2024-03-02\nurl: 'https://github.com/mciccale/ScholarVista'\n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mciccale/ScholarVista"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/mciccale/ScholarVista"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/.github/workflows/test.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/.github/workflows/lint.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nThank you for considering contributing to ScholarVista. Here's a quick guide on how to create an issue:\n\n## How to Create an Issue:\n\n1. **Go to Issues**: Click on the \"Issues\" tab in the repository.\n2. **Check Existing Issues**: Before creating a new issue, check if someone else has already reported it.\n3. **New Issue**: If your issue isn't already reported, click on the \"New Issue\" button.\n4. **Choose Type**: Select the type of issue you want to report (e.g., Bug Report, Feature Request).\n5. **Describe Your Issue**: Write a clear and concise description of the problem or feature request. Include any necessary details, such as steps to reproduce for bugs.\n6. **Submit**: Click on the \"Submit new issue\" button to create your issue.\n\nThank you for helping improve this project.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-02-10T10:25:21Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-02-10"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-02-14"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-03-06T19:13:36Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-03-02"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ScholarVista analyses research papers and extracts/plots information about them. It uses Grobid to extract all the content of the research papers. Then all this data is plotted and displayed using Python."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ScholarVista is a tool that analyzes research papers and extracts and plots information from them. It utilizes Grobid, a library for extracting content from research papers, to extract all the relevant data. The extracted data is then plotted and displayed using Python."
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ScholarVista is a tool that analyzes research papers and extracts and plots information from them. It utilizes Grobid, a library for extracting content from research papers, to extract all the relevant data. The extracted data is then plotted and displayed using Python."
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8992588014404702,
+      "result": {
+        "original_header": "ScholarVista",
+        "type": "Text_excerpt",
+        "value": "**ScholarVista** is a tool that extracts and plots information from a set of Academic Research Papers in PDF / TEI XML format. To process PDFs, it utilizes [Grobid](https://github.com/kermitt2/grobid/) to generate the TEI XML files, then **ScholarVista** extracts the relevant information from the TEI XML files and generates the following data: \n1. **Keyword Cloud** for each of the paper's abstract and for the total of all abstracts.\n2. **Links List** for each one of the links found in the paper.\n3. **Figures Histogram** comparing the number of figures per paper.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9265859265952765,
+      "result": {
+        "original_header": "Python Modules",
+        "type": "Text_excerpt",
+        "value": "*Note: The default behaviour of ScholarVista's Docker Image is processing pdf files, you can override this by providing the `process-xmls` argument after the image name.*  \n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8998312006053212,
+      "result": {
+        "original_header": "Docker Compose (Experimental)",
+        "type": "Text_excerpt",
+        "value": "You can try to run **ScholarVista** through **Docker Compose**. However, this feature is still in development and may not work as expected. **ScholarVista** will be trying to connect to **Grobid** before it has started, and it will be restarted until the **Grobid** service is up and running. You can try it by:\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mciccale/ScholarVista/tree/main/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://scholarvista.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mciccale/ScholarVista/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/mciccale/ScholarVista/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mciccale/ScholarVista"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ScholarVista"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "docker_compose",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/docker-compose.yml"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/docker-compose.yml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/docs/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/docs/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "10.5281/zenodo.10654760"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Installation Instructions\n\nThere are two ways of installing **ScholarVista**:\n\n1. **The Python package**. This option provides all the functionality of **ScholarVista**: a CLI tool and the separate Python modules.\n\n2. **The Docker Image**. This option only lets you run the CLI but there is no need for installing the package in your system.\n\n## From Source\n\nTo install **ScholarVista** from source, you can clone the repository and install the package using **_pip_**. When using **_pip_** it is a good practice to use virtual environments. Check out the official documentation on virtual envornments [here](https://docs.python.org/3/library/venv.html).\n\n#### Conda\n\n```bash\ngit clone https://github.com/mciccale/ScholarVista\ncd ScholarVista\nconda create -n scholarvista-env-3.12 python=3.12\nconda activate scholarvista-env-3.12\npip install .\n```\n\n_Note: You can use **PyEnv** to create a virtual environment. But since **ScholarVista** needs Python >=3.12, it is more suitable to use **Conda**, where you can select the **Python** version to use._\n\n## Docker Container\n\nIf you prefer running **ScholarVista** from a Docker Container, you can build the Docker Image with the following commands.\n\n```bash\ngit clone https://github.com/mciccale/ScholarVista\ncd ScholarVista\ndocker build -t scholarvista-app .\n```\n\nThis will create a Docker Image called **scholarvista-app**. You're free of choosing the name you want for your image.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/docs/install.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Conda",
+        "parent_header": [
+          "ScholarVista",
+          "Install ScholarVista",
+          "From Source"
+        ],
+        "type": "Text_excerpt",
+        "value": "```bash\ngit clone https://github.com/mciccale/ScholarVista\ncd ScholarVista\nconda create -n scholarvista-env-3.12 python=3.12\nconda activate scholarvista-env-3.12\npip install .\n```\n\n_Note: You can use **PyEnv** to create a virtual environment. But since **ScholarVista** needs Python >=3.12, it is more suitable to use **Conda**, where you can select the **Python** version to use._\n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/mciccale/ScholarVista/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "keyword-cloud, keyword-extraction, machine-learning, python3, text-extraction"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "text",
+          "research",
+          "analysis",
+          "python",
+          "grobid"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "value": "https://api.github.com/licenses/apache-2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "File_dump",
+        "value": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [yyyy] [name of copyright owner]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "Apache-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/Apache-2.0",
+        "spdx_id": "https://spdx.org/licenses/Apache-2.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/Apache-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "ScholarVista"
+        ],
+        "type": "Text_excerpt",
+        "value": "Please refer to the `LICENSE` file.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ScholarVista"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ScholarVista"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "mciccale"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "scholarvista"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 28377,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 485,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3",
+        "type": "Programming_language",
+        "value": "Python 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://grobid.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mciccale",
+          "type": "User"
+        },
+        "date_created": "2024-03-06T19:09:10Z",
+        "date_published": "2024-03-06T19:12:37Z",
+        "description": "# Release v0.2.0",
+        "html_url": "https://github.com/mciccale/ScholarVista/releases/tag/v0.2.0",
+        "name": "Release v0.2.0",
+        "release_id": 145124076,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/mciccale/ScholarVista/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mciccale/ScholarVista/releases/145124076",
+        "value": "https://api.github.com/repos/mciccale/ScholarVista/releases/145124076",
+        "zipball_url": "https://api.github.com/repos/mciccale/ScholarVista/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mciccale",
+          "type": "User"
+        },
+        "date_created": "2024-02-14T13:49:53Z",
+        "date_published": "2024-02-14T13:52:24Z",
+        "html_url": "https://github.com/mciccale/ScholarVista/releases/tag/v0.1.3",
+        "name": "Release v0.1.3",
+        "release_id": 141981809,
+        "tag": "v0.1.3",
+        "tarball_url": "https://api.github.com/repos/mciccale/ScholarVista/tarball/v0.1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mciccale/ScholarVista/releases/141981809",
+        "value": "https://api.github.com/repos/mciccale/ScholarVista/releases/141981809",
+        "zipball_url": "https://api.github.com/repos/mciccale/ScholarVista/zipball/v0.1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mciccale",
+          "type": "User"
+        },
+        "date_created": "2024-02-14T11:08:19Z",
+        "date_published": "2024-02-14T11:10:01Z",
+        "html_url": "https://github.com/mciccale/ScholarVista/releases/tag/v0.1.1",
+        "name": "Release v0.1.1",
+        "release_id": 141958194,
+        "tag": "v0.1.1",
+        "tarball_url": "https://api.github.com/repos/mciccale/ScholarVista/tarball/v0.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mciccale/ScholarVista/releases/141958194",
+        "value": "https://api.github.com/repos/mciccale/ScholarVista/releases/141958194",
+        "zipball_url": "https://api.github.com/repos/mciccale/ScholarVista/zipball/v0.1.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python",
+        "type": "Software_application",
+        "value": "python^3.12",
+        "version": "^3.12"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib^3.8.2",
+        "version": "^3.8.2"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "click",
+        "type": "Software_application",
+        "value": "click^8.1.7",
+        "version": "^8.1.7"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "grobid-client-python",
+        "type": "Software_application",
+        "value": "grobid-client-python^0.0.8",
+        "version": "^0.0.8"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "wordcloud",
+        "type": "Software_application",
+        "value": "wordcloud^1.9.3",
+        "version": "^1.9.3"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "poetry-core",
+        "type": "Software_application",
+        "value": "poetry-core",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Python 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Grobid",
+        "type": "Software_application",
+        "value": "Grobid",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Matplotlib",
+        "type": "Software_application",
+        "value": "Matplotlib",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "WordCloud",
+        "type": "Software_application",
+        "value": "WordCloud",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mkdocs-material",
+        "type": "Software_application",
+        "value": "mkdocs-material",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Requirements",
+        "parent_header": [
+          "ScholarVista"
+        ],
+        "type": "Text_excerpt",
+        "value": "**Python >=3.12** is required for installing the **ScholarVista** package, not for the **Docker Image**.\n\nIf you want to generate the results from a set of PDF academic papers, you must ensure that the **Grobid Service** is installed and running in your machine. See Grobid installation instrucions [here](https://grobid.readthedocs.io/en/latest/Run-Grobid/).\n\nThe most straight-forward way of starting and running **Grobid Service** is by running a _Docker_ image. Make sure you have _Docker_ installed in your system.\n\n```bash\ndocker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.8.0\n```\n\nThis command will run **Grobid** and expose a web client in port 8070.\n\nIf you already have the TEI XML files generated from Grobid saved in a folder, you can directly generate the information from them.\n\n_Note: The TEI XML files **MUST** be obtained using Grobid, as this tool is intended to work only with Grobid generated TEI XML files._\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:29:30",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Where to Get Help",
+        "parent_header": [
+          "ScholarVista"
+        ],
+        "type": "Text_excerpt",
+        "value": "For further assistance or to contribute to the project, please refer to the `CONTRIBUTING.md` file.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example",
+        "parent_header": [
+          "ScholarVista",
+          "Execution Instructions",
+          "Docker Container"
+        ],
+        "type": "Text_excerpt",
+        "value": "1. Start **Grobid** service using the container.\n\n```bash\ndocker run --rm --init --ulimit core=0 -p 8070:8070 lfoppiano/grobid:0.8.0\n```\n\n2. Run **ScholarVista's** CLI to process all the PDFs in a given directory and leave the results in another directory.\n\n```bash\n# Process PDF files and save the results to a specified directory\nscholarvista --input-dir ./pdfs --output-dir ./output process-pdfs\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Where to Get Help",
+        "parent_header": [
+          "ScholarVista"
+        ],
+        "type": "Text_excerpt",
+        "value": "For further assistance or to contribute to the project, please refer to the `CONTRIBUTING.md` file.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "tag": "0.2.0",
+        "type": "Release",
+        "value": "0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/mciccale/ScholarVista/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

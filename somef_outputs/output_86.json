@@ -1,0 +1,775 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Antarctic/SouthernOcean"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Ben Raymond"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "ben.raymond@aad.gov.au",
+        "type": "String",
+        "value": "Ben Raymond"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "michael.sumner@aad.gov.au",
+        "type": "String",
+        "value": "Michael Sumner"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "1992",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"To cite antanym and the SCAR Composite Gazetteer in publications use:\")\n\ncitEntry(entry = \"Manual\",\n  title        = \"Composite Gazetteer of Antarctica, Scientific Committee on Antarctic Research. Data obtained via the antanym R package: https://github.com/ropensci/antanym\",\n  author       = personList(person(\"Secretariat SCAR\")),\n  year         = paste0(\"1992, updated \", format(Sys.Date(), \"%Y\")),\n  url          = \"http://gcmd.nasa.gov/records/SCAR_Gazetteer.html\",\n\n  textVersion  =\n  paste(\"Secretariat SCAR (1992 updated\", format(Sys.Date(), \"%Y)\"),\n        \"Composite Gazetteer of Antarctica, Scientific Committee on Antarctic Research. GCMD Metadata (http://gcmd.nasa.gov/records/SCAR_Gazetteer.html)\",\n        \"Data obtained via the antanym R package: \",\n        \"https://github.com/ropensci/antanym\")\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citing",
+        "parent_header": [
+          "antanym",
+          "Overview"
+        ],
+        "type": "Text_excerpt",
+        "value": "The SCAR Composite Gazetteer of Antarctica is made available under a CC-BY license. If you use it, please cite it:\n\n> Composite Gazetteer of Antarctica, Scientific Committee on Antarctic Research. GCMD Metadata (<http://gcmd.nasa.gov/records/SCAR_Gazetteer.html>)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/antanym"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/antanym"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/antanym"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://travis-ci.org/ropensci/antanym"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributions\n\nSuggestions, requests, bug reports, and code are welcome. Please open an [issue](https://github.com/SCAR/antanym/issues) or [fork this repository](https://help.github.com/articles/fork-a-repo/) and submit a pull request.\n\n# Code of conduct\n\nMaintainers and contributors must follow this repository's [code of conduct](CONDUCT.md).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-03-14T08:33:40Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-12-20T09:31:18Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R package for Antarctic geographic placenames"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+        "type": "String",
+        "value": "Antarctic geographic names from the Composite Gazetteer of Antarctica, and functions for working with those place names."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Antarctic geographic names from the SCAR Composite Gazetteer of Antarctica, and functions for working with those place names."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9527662783404695,
+      "result": {
+        "original_header": "Overview",
+        "type": "Text_excerpt",
+        "value": "This R package provides easy access to Antarctic geographic place name information, and tools for working with those names. \nThe authoritative source of place names in Antarctica is the Composite Gazetteer of Antarctica (CGA), which is produced by the Scientific Committee on Antarctic Research (SCAR). The CGA consists of approximately 37,000 names corresponding to 19,000 distinct features. It covers features south of 60 \u00b0S, including terrestrial and undersea or under-ice. \nFor more information, see the [CGA home page](http://data.aad.gov.au/aadc/gaz/scar/). The CGA was begun in 1992. Since 2008, Italy and Australia have jointly managed the CGA, the former taking care of the editing, the latter maintaining the database and website. The SCAR [Standing Committee on Antarctic Geographic Information (SCAGI)](http://www.scar.org/data-products/scagi) coordinates the project. This R package is a product of the SCAR [Expert Group on Antarctic Biodiversity Informatics](http://www.scar.org/ssg/life-sciences/eg-abi) and SCAGI.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8668038525749275,
+      "result": {
+        "original_header": "Resolving multiple names per feature",
+        "type": "Text_excerpt",
+        "value": "As noted above, the CGA is a composite gazetteer and so there are often multiple names associated with a given feature. For example, we can see all names associated with feature 1589 (Booth Island) and the country of origin of each name:\n``` r\nan_filter(g, feature_ids = 1589)[, c(\"place_name\", \"origin\")]\n#> # A tibble: 7 x 2\n#>   place_name   origin                  \n#>   <chr>        <chr>                   \n#> 1 Booth, isla  Argentina               \n#> 2 Wandel, Ile  Belgium                 \n#> 3 Booth, Isla  Chile                   \n#> 4 Boothinsel   Germany                 \n#> 5 Booth Island United Kingdom          \n#> 6 Booth Island Russia                  \n#> 7 Booth Island United States of America\n```\n \nNow we have 19601 names in our data frame, corresponding to the same 19601 distinct features.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8664730196794244,
+      "result": {
+        "original_header": "Name suggestions",
+        "type": "Text_excerpt",
+        "value": "Antanym includes an experimental function that will suggest which features might be best to to name on a given map. These suggestions are based on maps prepared by expert cartographers, and the features that were explicitly named on those maps. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8532075237866443,
+      "result": {
+        "original_header": "antanym 0.4.0",
+        "type": "Text_excerpt",
+        "value": "-   `an_read` now takes a `cache` parameter instead of `cache_directory` (and now can have special values \"session\" and \"persistent\")\n-   `an_filter` and `an_suggest` now take an `origin` parameter that replaces the previous `origin_country` and `cga_source` parameters\n-   the default data structure (returned by `an_read(..., simplified = TRUE)` no longer contains the \"country\\_name\" or \"cga\\_source\\_gazetteer columns, but if needed these are available via `an_read(..., simplified = FALSE)`\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9726283754105436,
+      "result": {
+        "original_header": "Other packages",
+        "type": "Text_excerpt",
+        "value": "The [geonames package](https://cran.r-project.org/package=geonames) also provides access to geographic place names, including from the SCAR Composite Gazetteer. If you need *global* place name coverage, geonames may be a better option. However, the composite nature of the CGA is not particularly well suited to geonames, and at the time of writing the geonames database did not include the most current version of the CGA. The geonames package requires a login for some functionality, and because it makes calls to api.geonames.org it isn't easily used while offline. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/antanym/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/antanym/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 4
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/antanym/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/antanym"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "antanym"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/antanym"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "antanym"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/antanym/master/vignettes/README-leaflet.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/antanym/master/vignettes/README-leafletps.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/scar_footer.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installing",
+        "parent_header": [
+          "antanym"
+        ],
+        "type": "Text_excerpt",
+        "value": "``` r\ninstall.packages(\"remotes\")\nremotes::install_github(\"ropensci/antanym\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/antanym/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/antanym/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/antanym/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "peer-reviewed, r, r-package, rstats"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Antarctic",
+          "SouthernOcean",
+          "placenames",
+          "gazetteer"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2018 Scientific Committee on Antarctic Research (SCAR)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "antanym"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "antanym: Antarctic geographic place names"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+        "type": "String",
+        "value": "antanym"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 75160,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": "3.4.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/antanym/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/antanym/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable state and is being actively developed.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "assertthat",
+        "type": "Software_application",
+        "value": "assertthat",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C50",
+        "type": "Software_application",
+        "value": "C50",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "geosphere",
+        "type": "Software_application",
+        "value": "geosphere",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "httr",
+        "type": "Software_application",
+        "value": "httr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "magrittr",
+        "type": "Software_application",
+        "value": "magrittr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "raster",
+        "type": "Software_application",
+        "value": "raster",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "readr",
+        "type": "Software_application",
+        "value": "readr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rlang",
+        "type": "Software_application",
+        "value": "rlang",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sp",
+        "type": "Software_application",
+        "value": "sp",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "stringi",
+        "type": "Software_application",
+        "value": "stringi",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==3.3.0",
+        "version": "3.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:24:01",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 7
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example usage",
+        "parent_header": [
+          "antanym"
+        ],
+        "type": "Text_excerpt",
+        "value": "Start by fetching the names data from the host server. Here we use a temporary cache so that we can re-load it later in the session without needing to re-download it:\n\n``` r\nlibrary(antanym)\ng <- an_read(cache = \"session\")\n```\n\nHow many names do we have in total?\n\n``` r\nnrow(g)\n#> [1] 37661\n```\n\nCorresponding to how many distinct features?\n\n``` r\nlength(unique(g$scar_common_id))\n#> [1] 19601\n```\n\nFind names starting with \"Slom\":\n\n``` r\nan_filter(g, query = \"^Slom\")[, c(\"place_name\", \"longitude\", \"latitude\")]\n#> # A tibble: 3 x 3\n#>   place_name     longitude latitude\n#>   <chr>              <dbl>    <dbl>\n#> 1 Sloman Glacier     -68.6    -67.7\n#> 2 Sloman Glacier     -68.6    -67.7\n#> 3 Slomer Cove        -59.4    -63.8\n```\n\nFind islands within 20km of 100 \u00b0E, 66 \u00b0S:\n\n``` r\nnms <- an_near(an_filter(g, feature_type = \"Island\"), loc = c(100, -66), max_distance = 20)\n\n## or equivalently, using the pipe operator\nnms <- g %>% an_filter(feature_type = \"Island\") %>% an_near(loc = c(100, -66), max_distance = 20)\n\nnms[, c(\"place_name\", \"longitude\", \"latitude\")]\n#> # A tibble: 3 x 3\n#>   place_name    longitude latitude\n#>   <chr>             <dbl>    <dbl>\n#> 1 Foster Island       100    -66.1\n#> 2 Severnyj holm       100    -66.1\n#> 3 Foster Island       100    -66.1\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Other map examples",
+        "parent_header": [
+          "antanym"
+        ],
+        "type": "Text_excerpt",
+        "value": "A [leaflet app](https://australianantarcticdatacentre.github.io/antanym-demo/leaflet.html) using Mercator projection and clustered markers for place names.\n\n<a href=\"https://australianantarcticdatacentre.github.io/antanym-demo/leaflet.html\"><img src=\"vignettes/README-leaflet.png\" width=\"40%\" /></a>\n\nAnd a similar example using a [polar stereographic projection](https://australianantarcticdatacentre.github.io/antanym-demo/leafletps.html).\n\n<a href=\"https://australianantarcticdatacentre.github.io/antanym-demo/leafletps.html\"><img src=\"vignettes/README-leafletps.png\" width=\"40%\" /></a>\n\nSee the [antanym-demo](https://github.com/AustralianAntarcticDataCentre/antanym-demo) repository for the source code of these examples.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.4.4"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.2.6"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/antanym/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

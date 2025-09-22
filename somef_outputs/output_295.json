@@ -1,0 +1,239 @@
+{
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/arms-mbon/code_release_001"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/arms-mbon/code_release_001/main/.github/workflows/rocrate_fix_publish_pages.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-02-20T14:38:42Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-03T08:46:27Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Code used for the analyses of the data paper associated with data_release_001"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 0.9908288840671009,
+      "result": {
+        "original_header": "code_release_001",
+        "type": "Text_excerpt",
+        "value": "Here you will find all code that was used for the analysis presented in ARMS-MBON's first data paper. Note that this is not the code used to create files for (Eur)OBIS data submissions, but the code used for the exploration of the sequencing data (see [data_release_001](https://github.com/arms-mbon/data_release_001) for the related occurrence and event data and [analysis_release_001](https://github.com/arms-mbon/analysis_release_001) for the bioinformatics data).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/arms-mbon/code_release_001/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9522835983549325,
+      "result": {
+        "original_header": "DwC-A generator code",
+        "type": "Text_excerpt",
+        "value": "Note that the code takes the NCBI IDs returned by PEMA and does a search in Aphia (WoRMS) for the matching ID. If none is found, that field (scientificNameID) is blank in the DwC. For one ITs, COI, and 18S dataset that we looked at, we have, respectively, the following ratios of no match to all: 48/196, 74/295, 40/817 where all, all, and 1 of those no-matches were at species level. We decided not to go up one level to genus to look for a match there, mainly because of lack of time to add that into the DwC generator code. \n \n"
+      },
+      "source": "https://raw.githubusercontent.com/arms-mbon/code_release_001/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8056300878903779,
+      "result": {
+        "original_header": "Curating taxonomy and adding NCBI IDs",
+        "type": "Text_excerpt",
+        "value": "*  [FixPEMAtaxassigments_18S_taxonomist.py](https://github.com/arms-mbon/code_release_001/blob/main/FixPEMAtaxassigments_18S_taxonomist.py) to curate the 18S taxonomic outputs (see [the repo processing_batch1/updated_taxonomic_assignments](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments) for more detail) and get the NBCI IDs for the scientific names. \n*  [FixPEMAtaxassigments_COI_taxonomist.py](https://github.com/arms-mbon/code_release_001/blob/main/FixPEMAtaxassigments_COI_taxonomist.py) to add the species level from the output PEMA taxonomic assignment files to the OTU tables, for COI, and finding the NCBI ID for those (see [the repo processing_batch1/updated_taxonomic_assignments](https://github.com/arms-mbon/data_workspace/tree/main/analysis_data/from_pema/processing_batch1/updated_taxonomic_assignments) for more detail).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/arms-mbon/code_release_001/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9722144477759799,
+      "result": {
+        "original_header": "Processing and analysis in R",
+        "type": "Text_excerpt",
+        "value": "The following R scripts merge the data (read count, taxonomy, and fasta files) from individual PEMA runs we provide in the [analysis_release_001](https://github.com/arms-mbon/analysis_release_001/tree/main) GitHub repository for each marker gene:  \nThese scripts perform the following tasks:\n* Merging of all data from individual PEMA runs.\n* As no confidence threshold was applied within PEMA for taxonomic assignments of COI ASVs, all rank assignments with a confidence value of below 0.8 are discarded for this marker gene.\n* Given that reference databases use different taxonomic levels and contain assignments that may not represent an actual classification (e.g., \"Class.xy_X\" etc.), rank assignments were curated (i.e., assignments containing Xs,\"_sp\", etc. set as NA), actual species assignments generated and a final rank order established.\n* Final ASV/OTU count tables, taxonomy tables and fasta files were generated for each gene's data set. These files can be found in [final_count_taxonomy_fasta_files](https://github.com/arms-mbon/code_release_001/tree/main/final_count_taxonomy_fasta_files). Note that the ASVs/OTUs there do NOT equal the ASV/OTU IDs in the PEMA output files. New IDs were re-assigned after merging all data of all PEMA runs for each gene. \nThe R script [gene_analysis.R](https://github.com/arms-mbon/code_release_001/blob/main/gene_analysis.R) uses the files found in [final_count_taxonomy_fasta_files](https://github.com/arms-mbon/code_release_001/tree/main/final_count_taxonomy_fasta_files), the [sample_data.txt](https://github.com/arms-mbon/code_release_001/blob/main/sample_data.txt) and the [palette.txt](https://github.com/arms-mbon/code_release_001/blob/main/palette.txt) file and performs all subsequent exploration of the sequencing data as presented in the manuscript, including: \n* removal of certain samples/replicates and erroneous/contaminant sequences\n* manual correction of phylum level assignments\n* generating all data/results presented in the mansucript\n* generating species occurrences (i.e., species occurrences with at least two sequence reads of COI and 18S data; data of each gene were then pooled) to screen for sensitive, non-indigenous and red-listed taxa (see below for respective code of the actual screening process)\n* statistics\n* generating plots \n"
+      },
+      "source": "https://raw.githubusercontent.com/arms-mbon/code_release_001/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8970396079615323,
+      "result": {
+        "original_header": "Screening for species listed in AMBI, IUCN/HELCOM Red Lists and WRiMS",
+        "type": "Text_excerpt",
+        "value": "The [gene_analysis.R](https://github.com/arms-mbon/code_release_001/blob/main/gene_analysis.R) script generates a list of species (among many other files) occuring in the COI and 18S data set. we made use of LifeWatch Belgium's e-Lab services (https://www.lifewatch.be/data-services/) using the \"Taxon match services\" -> \"Taxon match World Register of Marine Species (WoRMS)\" to obtain correct, accepted species names and AphiaIDs as present in WoRMS. The results were read back into R and used in the [gene_analysis.R](https://github.com/arms-mbon/code_release_001/blob/main/gene_analysis.R) script to generate files with species occurrences per observatory to screen against the three databases mentioned below. See the respective part in [gene_analysis.R](https://github.com/arms-mbon/code_release_001/blob/main/gene_analysis.R) for further details. \n* AZTI\u2019s Marine Biotic Index (AMBI; Borja et al., 2000, 2019) for species very sensitive to disturbance\n* the World Register of Introduced Marine Species (WRiMS; Costello et al., 2021, 2024) for species with alien status at the place of observation\n* the Red Lists of the International Union for Conservation of Nature (IUCN) and Baltic Marine Environment Protection Commission (Helsinki Commission, HELCOM) for species registered as Near Threatened, Vulnerable, Endangered or Critically Endangered \nFor AMBI and IUCN/HELCOM scan, we used the web services provided by the World Register of Marine Species (WoRMS, Ahyong et al. 2023), using the [WoRMS REST services](https://www.marinespecies.org/rest/); more specifically the call AphiaAttributesByAphiaID) via the following script:\n* [WormsAttributes4ARMSdata.py](https://github.com/arms-mbon/code_release_001/blob/main/WormsAttributes4ARMSdata.py) takes as input a CSV file with at least one column of [AphiaIDs](https://www.marinespecies.org/about.php#what_is_aphia) for the species' of interest, and it returns the information about a set of attributes (\"Species importance to society\", \"IUCN RedList Category\",\"IUCN Criteria\",\"IUCN Year Accessed\",\"HELCOM RedList Category\",\"AMBI ecological group\",\"Environmental position\") for those species as found in WoRMS, using its [REST APIs](https://www.marinespecies.org/rest/). Useage of the code is documented within the code. You run this on the command line, with the input file name and column number with the AphiaIDs written into the top of the code. The specific version of this code used for the manuscript of data_release_001 is [WormsAttributes4ARMSdata_4release001.py](https://github.com/arms-mbon/code_release_001/blob/main/WormsAttributes4ARMSdata_4release001.py). This specific version outputs some of the input columns in addition to what is computed by the code.\n* The resulting files are [SpeciesListAttributesCOI.csv](https://github.com/arms-mbon/code_release_001/blob/main/SpeciesListAttributesCOI.csv) and [SpeciesListAttributes18S.csv](https://github.com/arms-mbon/code_release_001/blob/main/SpeciesListAttributes18S.csv). \nThe files resulting from the database scans are read into R within the [gene_analysis.R](https://github.com/arms-mbon/code_release_001/blob/main/gene_analysis.R) script and processed further for analysis and visualisation. \n"
+      },
+      "source": "https://raw.githubusercontent.com/arms-mbon/code_release_001/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/arms-mbon/code_release_001/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/arms-mbon/code_release_001/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "arms-mbon/code_release_001"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "code_release_001"
+      },
+      "source": "https://raw.githubusercontent.com/arms-mbon/code_release_001/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/arms-mbon/code_release_001/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "code_release_001"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "arms-mbon"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 250859,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 33932,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/arms-mbon/code_release_001/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "license",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:19:32",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ]
+}

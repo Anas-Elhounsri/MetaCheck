@@ -1,0 +1,863 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8209984328054798,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "DillonHammill@anu.edu.au",
+        "identifier": "https://orcid.org/0000-0002-1407-7223",
+        "type": "String",
+        "value": "Dillon Hammill"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Credits",
+        "parent_header": [
+          "DataEditR <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"240\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "**DataEditR** is built using the fantastic\n[rhandsontable](https://github.com/jrowen/rhandsontable) package.\n**DataEditR** makes use of many features for entering and editing data,\nbut **rhandsontable** has support for much more sophisticated\ninteractive representations of data should you need them. The user\ninterface of **DataEditR** has been inspired by the\n[editData](https://github.com/cardiomoon/editData) package which is a\ngreat alternative to **DataEditR**.\n"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "DataEditR <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"240\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you use **DataEditR** in your work, please cite the package as\nfollows:\n\n``` r\ncitation(\"DataEditR\")\n#> \n#> To cite package 'DataEditR' in publications use:\n#> \n#>   Dillon Hammill (2022). DataEditR: An Interactive Editor for Viewing,\n#>   Entering, Filtering & Editing Data. R package version 0.1.5.\n#>   https://github.com/DillonHammill/DataEditR\n#> \n#> A BibTeX entry for LaTeX users is\n#> \n#>   @Manual{,\n#>     title = {DataEditR: An Interactive Editor for Viewing, Entering, Filtering & Editing Data},\n#>     author = {Dillon Hammill},\n#>     year = {2022},\n#>     note = {R package version 0.1.5},\n#>     url = {https://github.com/DillonHammill/DataEditR},\n#>   }\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nWe as members, contributors, and leaders pledge to make participation in our\ncommunity a harassment-free experience for everyone, regardless of age, body\nsize, visible or invisible disability, ethnicity, sex characteristics, gender\nidentity and expression, level of experience, education, socio-economic status,\nnationality, personal appearance, race, religion, or sexual identity and\norientation.\n\nWe pledge to act and interact in ways that contribute to an open, welcoming,\ndiverse, inclusive, and healthy community.\n\n## Our Standards\n\nExamples of behavior that contributes to a positive environment for our\ncommunity include:\n\n* Demonstrating empathy and kindness toward other people\n* Being respectful of differing opinions, viewpoints, and experiences\n* Giving and gracefully accepting constructive feedback\n* Accepting responsibility and apologizing to those affected by our mistakes,\nand learning from the experience\n* Focusing on what is best not just for us as individuals, but for the overall\ncommunity\n\nExamples of unacceptable behavior include:\n\n* The use of sexualized language or imagery, and sexual attention or\nadvances of any kind\n* Trolling, insulting or derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or email\naddress, without their explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\nprofessional setting\n\n## Enforcement Responsibilities\n\nCommunity leaders are responsible for clarifying and enforcing our standards\nof acceptable behavior and will take appropriate and fair corrective action in\nresponse to any behavior that they deem inappropriate, threatening, offensive,\nor harmful.\n\nCommunity leaders have the right and responsibility to remove, edit, or reject\ncomments, commits, code, wiki edits, issues, and other contributions that are\nnot aligned to this Code of Conduct, and will communicate reasons for moderation\ndecisions when appropriate.\n\n## Scope\n\nThis Code of Conduct applies within all community spaces, and also applies\nwhen an individual is officially representing the community in public spaces.\nExamples of representing our community include using an official e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported to the community leaders responsible for enforcement at [INSERT CONTACT\nMETHOD]. All complaints will be reviewed and investigated promptly and fairly.\n\nAll community leaders are obligated to respect the privacy and security of the\nreporter of any incident.\n\n## Enforcement Guidelines\n\nCommunity leaders will follow these Community Impact Guidelines in determining\nthe consequences for any action they deem in violation of this Code of Conduct:\n\n### 1. Correction\n\n**Community Impact**: Use of inappropriate language or other behavior deemed\nunprofessional or unwelcome in the community.\n\n**Consequence**: A private, written warning from community leaders, providing\nclarity around the nature of the violation and an explanation of why the\nbehavior was inappropriate. A public apology may be requested.\n\n### 2. Warning\n\n**Community Impact**: A violation through a single incident or series of\nactions.\n\n**Consequence**: A warning with consequences for continued behavior. No\ninteraction with the people involved, including unsolicited interaction with\nthose enforcing the Code of Conduct, for a specified period of time. This\nincludes avoiding interactions in community spaces as well as external channels\nlike social media. Violating these terms may lead to a temporary or permanent\nban.\n\n### 3. Temporary Ban\n\n**Community Impact**: A serious violation of community standards, including\nsustained inappropriate behavior.\n\n**Consequence**: A temporary ban from any sort of interaction or public\ncommunication with the community for a specified period of time. No public or\nprivate interaction with the people involved, including unsolicited interaction\nwith those enforcing the Code of Conduct, is allowed during this period.\nViolating these terms may lead to a permanent ban.\n\n### 4. Permanent Ban\n\n**Community Impact**: Demonstrating a pattern of violation of community\nstandards, including sustained inappropriate behavior, harassment of an\nindividual, or aggression toward or disparagement of classes of individuals.\n\n**Consequence**: A permanent ban from any sort of public interaction within the\ncommunity.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage],\nversion 2.0,\navailable at https://www.contributor-covenant.org/version/2/0/\ncode_of_conduct.html.\n\nCommunity Impact Guidelines were inspired by [Mozilla's code of conduct\nenforcement ladder](https://github.com/mozilla/diversity).\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see the FAQ at\nhttps://www.contributor-covenant.org/faq. Translations are available at https://\nwww.contributor-covenant.org/translations.\n"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DillonHammill/DataEditR"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DillonHammill/DataEditR"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DillonHammill/DataEditR"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.com/DillonHammill/dataeditR",
+          "https://ci.appveyor.com/project/DillonHammill/dataeditR"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-05-20T03:36:30Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-11T22:04:39Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "An Interactive R Package for Viewing, Entering Filtering and Editing Data"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+        "type": "String",
+        "value": "An interactive editor built on 'rhandsontable' to allow the \n  interactive viewing, entering, filtering and editing of data in R \n  <https://dillonhammill.github.io/DataEditR/>."
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Provides an interactive way to edit matrices, data.frames or \n  tabular data files in R."
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9849637992163827,
+      "result": {
+        "original_header": "DataEditR <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"240\"/>",
+        "type": "Text_excerpt",
+        "value": "\nManual data entry and editing in R can be tedious, especially if you\nhave limited coding experience and are accustomed to using software with\na Graphical User Interface (GUI). **DataEditR** is an R package built on\nshiny and rhandsontable that makes it easy to interactively view, enter,\nfilter and edit data. If you are new to **DataEditR** visit\n<https://dillonhammill.github.io/DataEditR/> to get started.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9602680469303578,
+      "result": {
+        "original_header": "Code of Conduct",
+        "type": "Text_excerpt",
+        "value": "Please note that the **DataEditR** project is released with a\n[Contributor Code of\nConduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).\nBy contributing to this project, you agree to abide by its terms.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DillonHammill/DataEditR/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DillonHammill/DataEditR/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 40
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DillonHammill/DataEditR"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DataEditR "
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DataEditR"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/man/figures/DataEditR/DataEditR-README.gif"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "DataEditR <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"240\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "**DataEditR** can be installed from CRAN:\n\n``` r\ninstall.packages(\"DataEditR\")\n```\n\nThe development version of **DataEditR** can be installed directly from\nGitHub:\n\n``` r\nlibrary(devtools)\ninstall_github(\"DillonHammill/DataEditR\")\n```\n\nTo ensure that `DataEditR` works as expected, you will also need to\ninstall my fork of `rhandsontable`:\n\n``` r\ndevtools::install_github(\"DillonHammill/rhandsontable\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DillonHammill/DataEditR/issues"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DillonHammill/DataEditR/issues"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-2"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-2.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-2.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DataEditR"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DataEditR: Interactive Editor for Tabular Data"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "DillonHammill"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+        "type": "String",
+        "value": "DataEditR"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 91214,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/DillonHammill/DataEditR/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2022-03-08T00:10:32Z",
+        "date_published": "2022-03-08T11:09:48Z",
+        "description": "Bug fixes to RStudio add-in and switch to {bslib} for custom themes.",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.1.5",
+        "name": "DataEditR v0.1.5",
+        "release_id": 61263904,
+        "tag": "v0.1.5",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.1.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/61263904",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/61263904",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.1.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2021-12-10T04:20:24Z",
+        "date_published": "2021-12-10T04:45:56Z",
+        "description": "Some UI improvements. Better handling of empty datasets and removal of dependency for RStudio. Added support for googlesheets.",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.1.4",
+        "name": "DataEditR v0.1.4",
+        "release_id": 55018015,
+        "tag": "v0.1.4",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/55018015",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/55018015",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2021-07-09T05:34:07Z",
+        "date_published": "2021-07-09T06:03:45Z",
+        "description": "Some UI improvements (button suggestions and row/column highlighting) and improved support for tibbles. This update also includes some fixes for the dataFilter module.",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.1.3",
+        "name": "DataEditR v0.1.3",
+        "release_id": 45947535,
+        "tag": "v0.1.3",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/45947535",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/45947535",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2021-05-19T05:33:24Z",
+        "date_published": "2021-05-19T05:38:29Z",
+        "description": "Improved handling of environments when creating templates or reading files.",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.1.2",
+        "name": "DataEditR v0.1.2",
+        "release_id": 43189523,
+        "tag": "v0.1.2",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/43189523",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/43189523",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2021-05-10T03:16:58Z",
+        "date_published": "2021-05-10T03:29:44Z",
+        "description": "Minor improvements in data searching and loading.",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.1.1",
+        "name": "DataEditR v0.1.1",
+        "release_id": 42679385,
+        "tag": "v0.1.1",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/42679385",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/42679385",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2020-08-25T00:19:48Z",
+        "date_published": "2020-08-25T00:24:51Z",
+        "description": "Add support for creating data.frame templates by supplying column names.",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.0.6",
+        "name": "DataEditR v0.0.6",
+        "release_id": 30077470,
+        "tag": "v0.0.6",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.0.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/30077470",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/30077470",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.0.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2020-08-06T01:41:26Z",
+        "date_published": "2020-08-06T01:47:20Z",
+        "description": "Fixes for row indices and update examples.",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.0.5",
+        "name": "DataEditR v0.0.5",
+        "release_id": 29389717,
+        "tag": "v0.0.5",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.0.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/29389717",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/29389717",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.0.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2020-07-31T04:14:55Z",
+        "date_published": "2020-07-31T04:16:18Z",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.0.4",
+        "name": "DataEditR v0.0.4",
+        "release_id": 29148397,
+        "tag": "v0.0.4",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/29148397",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/29148397",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2020-07-30T08:38:10Z",
+        "date_published": "2020-07-30T22:43:39Z",
+        "description": "Add control over renaming of columns.",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.0.3",
+        "name": "DataEditR v0.0.3",
+        "release_id": 29142345,
+        "tag": "v0.0.3",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/29142345",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/29142345",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2020-07-30T01:17:03Z",
+        "date_published": "2020-07-30T01:25:15Z",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.0.2",
+        "name": "DataEditR v0.0.2",
+        "release_id": 29096979,
+        "tag": "v0.0.2",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/29096979",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/29096979",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DillonHammill",
+          "type": "User"
+        },
+        "date_created": "2020-07-23T04:30:22Z",
+        "date_published": "2020-07-23T05:55:51Z",
+        "description": "Initial release.",
+        "html_url": "https://github.com/DillonHammill/DataEditR/releases/tag/v0.0.1",
+        "name": "DataEditR",
+        "release_id": 28856591,
+        "tag": "v0.0.1",
+        "tarball_url": "https://api.github.com/repos/DillonHammill/DataEditR/tarball/v0.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DillonHammill/DataEditR/releases/28856591",
+        "value": "https://api.github.com/repos/DillonHammill/DataEditR/releases/28856591",
+        "zipball_url": "https://api.github.com/repos/DillonHammill/DataEditR/zipball/v0.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 3.5.0",
+        "version": ">= 3.5.0"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "shiny",
+        "type": "Software_application",
+        "value": "shiny",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "shinythemes",
+        "type": "Software_application",
+        "value": "shinythemes",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rhandsontable",
+        "type": "Software_application",
+        "value": "rhandsontable",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "htmltools",
+        "type": "Software_application",
+        "value": "htmltools",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:57:09",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 388
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "DataEditR <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"240\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "**DataEditR** ships with a series of shiny modules, namely `dataInput`,\n`dataSelect`, `dataFilter`, `dataEdit` and `dataOutput` which have been\nwrapped up into a single function called `data_edit()` to create an\ninteractive data editor. You can use `data_edit()` as a standalone\napplication, or include the relevant modules within your own shiny\napplications. Alternatively, `DataEditR` also ships with an RStudio\nadd-in should you prefer to interact with it in this way.\n"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "General features:",
+        "parent_header": [
+          "DataEditR <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"240\"/>",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "-   RStudio add-in\n-   flexible display options (either `dialog` box, `browser` or RStudio\n    `viewer` pane)\n-   fast rendering to quickly view datasets\n-   ability to interactively create data.frames from scratch\n-   load tabular data saved to file using any reading function\n    (e.g.\u00a0`read.csv()`)\n-   save edited data to file using any writing function\n    (e.g.\u00a0`write.csv()`)\n-   return appropriately formatted data as an R object for downstream\n    use\n-   code required to create edited data can be optionally printed to the\n    console or saved to a file\n-   support for custom themes through `bslib` package\n-   customisable user interface (title, logo and modules)\n-   row indices are always displayed for easy navigation\n-   switch between datasets or files without having to leave the\n    application\n"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Data editing features:",
+        "parent_header": [
+          "DataEditR <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"240\"/>",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "-   column selection using the `dataSelect` module\n-   row selection using the `dataFilter` module\n-   edit row or column names\n-   addition or removal of rows or columns\n-   manual column resizing\n-   drag to fill cells\n-   copy or paste data to and from external software\n-   custom column types to simplify user input (e.g.\u00a0checkboxes and\n    dropdown menus)\n-   support for readonly columns to prevent users from editing certain\n    columns\n-   control over which column names can be edited\n-   stretch columns horizontally to fill available space\n-   programmatically add columns or rows to data prior to loading into\n    the data editor\n\nA quick demonstration of some of these features can be seen below, where\nwe use `data_edit()` to make changes to the `mtcars` dataset and save\nthe result to a new csv file:\n\n``` r\n# Load required packages\nlibrary(DataEditR)\n\n# Save output to R object & csv file\nmtcars_new <- data_edit(mtcars,\n                        save_as = \"mtcars_new.csv\")\n```\n\n<img src=\"https://raw.githubusercontent.com/DillonHammill/DataEditR/master/man/figures/DataEditR/DataEditR-README.gif\" width=\"100%\" style=\"display: block; margin: auto;\" />\n"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.1.6"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/DillonHammill/DataEditR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

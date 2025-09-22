@@ -1,0 +1,674 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Damien M. de Vienne"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "damien.de-vienne@univ-lyon1.fr",
+        "identifier": "https://orcid.org/0000-0001-9532-5251",
+        "type": "String",
+        "value": "Damien M. de Vienne"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "stephane.dray@univ-lyon1.fr",
+        "identifier": "https://orcid.org/0000-0003-0153-1105",
+        "type": "String",
+        "value": "St\u00e9phane Dray"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "treecou.theo@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-4432-2680",
+        "type": "String",
+        "value": "Th\u00e9o Tricou"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2023",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "bibentry(bibtype = \"Article\",\n    title = \"{PhylteR}: Efficient Identification of Outlier Sequences in Phylogenomic Datasets\",\n    author = c(person(given = \"Aurore\", family = \"Comte\"),\n               person(given = \"Th\\\\'eo\", family = \"Tricou\"),\n               person(given = \"Eric\", family = \"Tannier\"),\n               person(given = \"Julien\", family = \"Joseph\"),\n               person(given = \"Aur\\\\'elie\", family = \"Siberchicot\"),\n               person(given = \"Simon\", family = \"Penel\"),\n               person(given = \"R\\\\'emi\", family = \"Allio\"),\n               person(given = \"Fr\\\\'ed\\\\'eric\", family = \"Delsuc\"),\n               person(given = \"St\\\\'ephane\", family = \"Dray\"),\n               person(given = \"Damien M\", family = \"de Vienne\")\n               ),\n    journal = \"Molecular Biology and Evolution\",\n    volume = \"40\",\n    number = \"11\",\n    pages = \"msad234\",\n    year = \"2023\",\n    month = \"10\",\n    doi = \"10.1093/molbev/msad234\",\n    header = \"To cite phylter in publications use:\"\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "References",
+        "parent_header": [
+          "PhylteR, a tool for analyzing, visualizing and filtering phylogenomics datasets <img src=\"man/figures/logophylter.png\" align=\"right\" style=\"float:right; width:20%;\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Abdi, H., O\u2019Toole, A.J., Valentin, D. & Edelman, B. (2005). *DISTATIS: The analysis of multiple distance matrices.* Proceedings of the IEEE Computer Society: International Conference on Computer Vision and Pattern Recognition (San Diego, CA, USA). doi: 10.1109/CVPR.2005.445. https://www.utdallas.edu/~herve/abdi-distatis2005.pdf\n\n- Allio, R., Tilak, M. K., Scornavacca, C., Avenant, N. L., Kitchener, A. C., Corre, E., ... & Delsuc, F. (2021). High-quality carnivoran genomes from roadkill samples enable comparative species delineation in aardwolf and bat-eared fox. Elife, 10, e63167. https://doi.org/10.7554/eLife.63167\n\n- Comte, A., Tricou, T., Tannier, E., Joseph, J., Siberchicot, A., Penel, S., Allio, R., Delsuc, F., Dray, S., de Vienne, D.M. (2023). PhylteR: Efficient Identification of Outlier Sequences in Phylogenomic Datasets, Molecular Biology and Evolution, 40(11), msad234, [https://doi.org/10.1093/molbev/msad234](https://doi.org/10.1093/molbev/msad234)\n\n- Hubert, M. and Vandervieren, E. (2008). *An adjusted boxplot for skewed distributions.* Computational Statistics and Data Analysis. https://doi.org/10.1016/j.csda.2007.11.008\n\n- de Vienne D.M., Ollier S. et Aguileta G. (2012). *Phylo-MCOA: A Fast and Efficient Method to Detect Outlier Genes and Species in Phylogenomics Using Multiple Co-inertia Analysis.* Molecular Biology and Evolution. https://doi.org/10.1093/molbev/msr317 (This is the ancestor of phylter). \n\n\n---\nFor comments, suggestions and bug reports, please open an [issue](https://github.com/damiendevienne/phylter/issues) on this GitHub repository.\n\n"
+      },
+      "source": "https://github.com/damiendevienne/phylter/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/damiendevienne/phylter"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/damiendevienne/phylter"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/damiendevienne/phylter"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/damiendevienne/phylter/actions"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-01-16T16:08:19Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-04-11T02:33:04Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Detection of outlier genes and species in phylogenomics"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+        "type": "String",
+        "value": "Analyzis and filtering of phylogenomics datasets. \n\tIt takes an input either a collection of gene trees (then transformed to matrices) or directly a collection of gene matrices and performs an iterative process to identify\n\twhat species in what genes are outliers, and whose elimination significantly improves the concordance between the input matrices. The methods builds upon the Distatis approach (Abdi et al. (2005) <doi:10.1101/2021.09.08.459421>), a generalization of classical multidimensional scaling to multiple distance matrices."
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Analyzis and filtering of phylogenomics datasets. It takes an input either a collection of gene trees (then transformed to matrices) or directly a collection of gene matrices and performs an iterative process to identify what species in what genes are outliers, and whose elimination significantly improves the concordance between the input matrices. The methods builds upon the Distatis approach (Abdi et al. (2005) <doi:10.1101/2021.09.08.459421>), a generalization of classical multidimensional scaling to multiple distance matrices."
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8707684302169201,
+      "result": {
+        "original_header": "PhylteR, a tool for analyzing, visualizing and filtering phylogenomics datasets <img src=\"man/figures/logophylter.png\" align=\"right\" style=\"float:right; width:20%;\"/>",
+        "type": "Text_excerpt",
+        "value": "\n**`phylter`** is a tool that allows detecting, removing and visualizing outliers in phylogenomics dataset by iteratively removing taxa from gene families (gene trees) and optimizing a score of concordance between individual matrices.   \n**`phylter`** relies on DISTATIS (Abdi et al, 2005), an extension of multidimensional scaling to 3 dimensions to compare multiple distance matrices at once.   \n**`phylter`** builds on Phylo-MCOA (de Vienne et al. 2012) but is much faster and accurate.   \n**`phylter`** takes as input either a collection of phylogenetic trees (that are converted to distance matrices by `phylter`), or a collection of pairwise distance matrices (obtained from multiple sequence alignements, for instance).  \n**`phylter`** accepts data with missing values (missing taxa in some genes).  \n**`phylter`** detects outliers with a method proposed by Hubert & Vandervieren (2008) for skewed data.  \n**`phylter`** does not accept that the same taxa is present multiple times in the same gene.  \n**`phylter`** is written in R language.  \nFor details about the functions, their usage, and a in-depth description of the use of **phylter** on a biological dataset, step-by-step, please vist the phylter web page : https://damiendevienne.github.io/phylter.  \n> Note: if you don't use R or don't want to use R, **containerized versions of phylter** are also available (Docker and Singularity): [https://damiendevienne.github.io/phylter/articles/phyltercontainer.html](https://damiendevienne.github.io/phylter/articles/phyltercontainer.html) \n> if you use **phylter**, please cite: Comte, A., Tricou, T., Tannier, E., Joseph, J., Siberchicot, A., Penel, S., Allio, R., Delsuc, F., Dray, S., de Vienne, D.M. (2023). PhylteR: Efficient Identification of Outlier Sequences in Phylogenomic Datasets, Molecular Biology and Evolution, 40(11) msad234, [https://doi.org/10.1093/molbev/msad234](https://doi.org/10.1093/molbev/msad234) \n"
+      },
+      "source": "https://github.com/damiendevienne/phylter/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/damiendevienne/phylter/wiki"
+      },
+      "source": "https://github.com/damiendevienne/phylter/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/damiendevienne/phylter/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/damiendevienne/phylter/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "damiendevienne/phylter"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PhylteR, a tool for analyzing, visualizing and filtering phylogenomics datasets "
+      },
+      "source": "https://github.com/damiendevienne/phylter/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "phylter"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "PhylteR, a tool for analyzing, visualizing and filtering phylogenomics datasets <img src=\"man/figures/logophylter.png\" align=\"right\" style=\"float:right; width:20%;\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "**`phylter`** is now on CRAN. \n\n\nInstallation is as easy as typing what follows at the R command prompt: \n```R\ninstall.packages(\"phylter\")\n```\n\nIf you want the latest version, you can also install the development version of **phylter**:\n\n1. Install the release version of `remotes` from CRAN:\n```R\ninstall.packages(\"remotes\")\n```\n\n2. Install the development version of `phylter` from GitHub:\n```R\nremotes::install_github(\"damiendevienne/phylter\")\n\n```\n3. Once installed, the package can be loaded:\n```R\nlibrary(\"phylter\")\n```\n\n> Note: phylter requires R version > 4.0, otherwise it cannot be installed. Also, R uses the GNU Scientific Library. On Ubuntu, this can be installed prior to the installation of the phylter package by typing `sudo apt install libgsl-dev` in a terminal. \n"
+      },
+      "source": "https://github.com/damiendevienne/phylter/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/damiendevienne/phylter/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/damiendevienne/phylter/issues"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/damiendevienne/phylter/issues"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "phylogenetic-trees, phylogenetics, phylogenomics"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "phylogenetic-trees",
+          "phylogenetics",
+          "phylogenomics"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL (>= 2)"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-2.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-2.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/damiendevienne/phylter/master/man/figures/logophylter.png"
+      },
+      "source": "https://github.com/damiendevienne/phylter/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "phylter"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "phylter: Detect and Remove Outliers in Phylogenomics Datasets"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "damiendevienne"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+        "type": "String",
+        "value": "phylter"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 76628,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 7747,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 584,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/damiendevienne/phylter/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/damiendevienne/phylter/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "aursiber",
+          "type": "User"
+        },
+        "date_created": "2025-03-04T15:21:06Z",
+        "date_published": "2025-07-31T07:46:56Z",
+        "description": "v0.9.12",
+        "html_url": "https://github.com/damiendevienne/phylter/releases/tag/v0.9.12",
+        "name": "v0.9.12",
+        "release_id": 236490196,
+        "tag": "v0.9.12",
+        "tarball_url": "https://api.github.com/repos/damiendevienne/phylter/tarball/v0.9.12",
+        "type": "Release",
+        "url": "https://api.github.com/repos/damiendevienne/phylter/releases/236490196",
+        "value": "https://api.github.com/repos/damiendevienne/phylter/releases/236490196",
+        "zipball_url": "https://api.github.com/repos/damiendevienne/phylter/zipball/v0.9.12"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "aursiber",
+          "type": "User"
+        },
+        "date_created": "2023-08-24T08:05:02Z",
+        "date_published": "2023-08-24T08:42:40Z",
+        "html_url": "https://github.com/damiendevienne/phylter/releases/tag/v0.9.11",
+        "name": "v0.9.11",
+        "release_id": 118517925,
+        "tag": "v0.9.11",
+        "tarball_url": "https://api.github.com/repos/damiendevienne/phylter/tarball/v0.9.11",
+        "type": "Release",
+        "url": "https://api.github.com/repos/damiendevienne/phylter/releases/118517925",
+        "value": "https://api.github.com/repos/damiendevienne/phylter/releases/118517925",
+        "zipball_url": "https://api.github.com/repos/damiendevienne/phylter/zipball/v0.9.11"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "aursiber",
+          "type": "User"
+        },
+        "date_created": "2023-02-27T09:02:09Z",
+        "date_published": "2023-02-27T10:07:03Z",
+        "html_url": "https://github.com/damiendevienne/phylter/releases/tag/v0.9.7",
+        "name": "v0.9.7",
+        "release_id": 93764393,
+        "tag": "v0.9.7",
+        "tarball_url": "https://api.github.com/repos/damiendevienne/phylter/tarball/v0.9.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/damiendevienne/phylter/releases/93764393",
+        "value": "https://api.github.com/repos/damiendevienne/phylter/releases/93764393",
+        "zipball_url": "https://api.github.com/repos/damiendevienne/phylter/zipball/v0.9.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "aursiber",
+          "type": "User"
+        },
+        "date_created": "2023-01-18T14:15:32Z",
+        "date_published": "2023-01-20T10:07:37Z",
+        "html_url": "https://github.com/damiendevienne/phylter/releases/tag/v0.9.6",
+        "name": "v0.9.6",
+        "release_id": 89678959,
+        "tag": "v0.9.6",
+        "tarball_url": "https://api.github.com/repos/damiendevienne/phylter/tarball/v0.9.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/damiendevienne/phylter/releases/89678959",
+        "value": "https://api.github.com/repos/damiendevienne/phylter/releases/89678959",
+        "zipball_url": "https://api.github.com/repos/damiendevienne/phylter/zipball/v0.9.6"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable state and is being actively developed.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://github.com/damiendevienne/phylter/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:27:46",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 12
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "PhylteR, a tool for analyzing, visualizing and filtering phylogenomics datasets <img src=\"man/figures/logophylter.png\" align=\"right\" style=\"float:right; width:20%;\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "Here is a brief introduction to the use `phylter` on a collection of gene trees. For more detailed explanations and a use case example, please visit  https://damiendevienne.github.io/phylter/.\n\n\n\n**1.** With the `read.tree` function from the `ape` package, read trees from external file and save as a list called `trees`.\n```R\nif (!requireNamespace(\"ape\", quietly = TRUE))\n   install.packages(\"ape\")\ntrees <- ape::read.tree(\"treefile.tre\")\n```\n\n**2.** (optional) Read or get gene names somewhere (same order as the trees) and save it as a vector called `names`.\n\n**3.** Run `phylter` on your trees (see details below for possible options).\n```R\nresults <- phylter(trees, gene.names = names)\n\n```\n>#### Options\n>The `phylter` function is called as follows by default:\n>```R\n>phylter(X, bvalue = 0, distance = \"patristic\", k = 3, k2 = k, Norm = \"median\", \n>  Norm.cutoff = 0.001, gene.names = NULL, test.island = TRUE, \n>  verbose = TRUE, stop.criteria = 1e-5, InitialOnly = FALSE, normalizeby = \"row\", \n>  parallel = TRUE)\n>```\n>\n>Arguments are as follows:\n>\n>- `X`: A list of phylogenetic trees (phylo object) or a list of distance matrices. Trees can have different number of leaves and matrices can have different dimensions. If this is the case, missing values are imputed.\n>- `bvalue`: If `X` is a list of trees, nodes with a support below `bvalue` will be collapsed prior to the outlier detection.\n>- `distance`: If `X` is a list of trees, type of distance used to compute the pairwise matrices for each tree. Can be \"patristic\" (sum of branch lengths separating tips, the default) or \"nodal\" (number of nodes separating tips).\n>- `k`: Strength of outlier detection. The higher this value the less outliers detected.\n>- `k2`: Same as `k` for complete gene outlier detection. To preserve complete genes from being discarded, `k2` can be increased. By default, `k2 = k`.\n>- `Norm`:  Should the matrices be normalized prior to the complete analysis and how. If \"median\", matrices are divided by their median; if \"mean\", they are divided by their mean; if \"none\", no normalization if performed. Normalizing ensures that fast-evolving (and slow-evolving) genes are not treated as outliers. Normalization by median is a better choice as it is less sensitive to outlier values.\n>- `Norm.cutoff`: Value of the median (if `Norm = \"median\"`) or the mean (if `Norm = \"mean\"`) below which matrices are simply discarded from the analysis. This prevents dividing by 0, and allows getting rid of genes that contain mostly branches of length 0 and are therefore uninformative anyway. Discarded genes, if any, are listed in the output (`out$DiscardedGenes`).\n>- `gene.names`: List of gene names used to rename elements in `X`. If NULL (the default), elements are named 1,2,...,length(X).\n>- `test.island`: If `TRUE` (the default), only the highest value in an *island* of outliers is considered an outlier. This prevents non-outliers hitchhiked by outliers to be considered outliers themselves.\n>- `verbose`: If `TRUE` (the default), messages are written during the filtering process to get information on what is happening.\n>- `stop.criteria`: The optimization stops when the gain (quality of compromise) between round *n* and round *n*+1 is smaller than this value. Default to 1e-5.\n>- `InitialOnly`: Logical. If `TRUE`, only the Initial state of the data is computed.\n>- `normalizeby`: Should the gene x species matrix be normalized prior to outlier detection, and how.\n>- `parallel`: Logical. Should the computations be parallelized when possible? Default to `TRUE`. Note that the number of threads cannot be set by the user when `parallel = TRUE`. It uses all available cores on the machine. \n\n**4.** Analyze the results\n\nTo get the list of outliers detected by `phylter`, simply type:\n\n```R\nresults$Final$Outliers\n```\n\nIn addition, many functions allow looking at the outliers detected and comparing before and after *phy*ltering. \n\n```R\n# Get a summary: nb of outliers, gain in concordance, etc.\nsummary(results)\n\n# Show the number of species in each gene, and how many per gene are outliers\nplot(results, \"genes\") \n\n# Show the number of genes where each species is found, and how many are outliers\nplot(results, \"species\") \n\n# Compare before and after genes x species matrices, highlighting missing data and outliers \n# identified (not efficient for large datasets)\nplot2WR(results) \n\n# Plot the dispersion of data before and after outlier removal. One dot represents one \n# gene x species association\nplotDispersion(results) \n\n# Plot the genes x genes matrix showing pairwise correlation between genes\nplotRV(results) \n\n# Plot optimization scores during optimization\nplotopti(results) \n``` \n\n**5.** Save the results of the analysis to an external file, for example to perform cleaning on raw alignments or pruning gene trees based on the results from `phylter`.\n\n```R\nwrite.phylter(results, file = \"phylter.out\")\n```\n\n\n## References\n\n- Abdi, H., O\u2019Toole, A.J., Valentin, D. & Edelman, B. (2005). *DISTATIS: The analysis of multiple distance matrices.* Proceedings of the IEEE Computer Society: International Conference on Computer Vision and Pattern Recognition (San Diego, CA, USA). doi: 10.1109/CVPR.2005.445. https://www.utdallas.edu/~herve/abdi-distatis2005.pdf\n\n- Allio, R., Tilak, M. K., Scornavacca, C., Avenant, N. L., Kitchener, A. C., Corre, E., ... & Delsuc, F. (2021). High-quality carnivoran genomes from roadkill samples enable comparative species delineation in aardwolf and bat-eared fox. Elife, 10, e63167. https://doi.org/10.7554/eLife.63167\n\n- Comte, A., Tricou, T., Tannier, E., Joseph, J., Siberchicot, A., Penel, S., Allio, R., Delsuc, F., Dray, S., de Vienne, D.M. (2023). PhylteR: Efficient Identification of Outlier Sequences in Phylogenomic Datasets, Molecular Biology and Evolution, 40(11), msad234, [https://doi.org/10.1093/molbev/msad234](https://doi.org/10.1093/molbev/msad234)\n\n- Hubert, M. and Vandervieren, E. (2008). *An adjusted boxplot for skewed distributions.* Computational Statistics and Data Analysis. https://doi.org/10.1016/j.csda.2007.11.008\n\n- de Vienne D.M., Ollier S. et Aguileta G. (2012). *Phylo-MCOA: A Fast and Efficient Method to Detect Outlier Genes and Species in Phylogenomics Using Multiple Co-inertia Analysis.* Molecular Biology and Evolution. https://doi.org/10.1093/molbev/msr317 (This is the ancestor of phylter). \n\n\n---\nFor comments, suggestions and bug reports, please open an [issue](https://github.com/damiendevienne/phylter/issues) on this GitHub repository.\n\n"
+      },
+      "source": "https://github.com/damiendevienne/phylter/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Options",
+        "parent_header": [
+          "PhylteR, a tool for analyzing, visualizing and filtering phylogenomics datasets <img src=\"man/figures/logophylter.png\" align=\"right\" style=\"float:right; width:20%;\"/>",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "# PhylteR, a tool for analyzing, visualizing and filtering phylogenomics datasets <img src=\"man/figures/logophylter.png\" align=\"right\" style=\"float:right; width:20%;\"/>\n\n[![CRAN_Release_Badge](https://www.r-pkg.org/badges/version-ago/phylter)](https://cran.r-project.org/package=phylter)\n[![CRAN Downloads](https://cranlogs.r-pkg.org/badges/phylter)](https://cran.r-project.org/package=phylter)\n[![R-CMD-check](https://github.com/damiendevienne/phylter/workflows/R-CMD-check/badge.svg)](https://github.com/damiendevienne/phylter/actions)\n[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)\n[![Project Status: Active \u2013 The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)\n[![SWH](https://archive.softwareheritage.org/badge/origin/https://github.com/damiendevienne/phylter/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/damiendevienne/phylter)\n\n\n**`phylter`** is a tool that allows detecting, removing and visualizing outliers in phylogenomics dataset by iteratively removing taxa from gene families (gene trees) and optimizing a score of concordance between individual matrices.   \n**`phylter`** relies on DISTATIS (Abdi et al, 2005), an extension of multidimensional scaling to 3 dimensions to compare multiple distance matrices at once.   \n**`phylter`** builds on Phylo-MCOA (de Vienne et al. 2012) but is much faster and accurate.   \n**`phylter`** takes as input either a collection of phylogenetic trees (that are converted to distance matrices by `phylter`), or a collection of pairwise distance matrices (obtained from multiple sequence alignements, for instance).  \n**`phylter`** accepts data with missing values (missing taxa in some genes).  \n**`phylter`** detects outliers with a method proposed by Hubert & Vandervieren (2008) for skewed data.  \n**`phylter`** does not accept that the same taxa is present multiple times in the same gene. \n\n**`phylter`** is written in R language. \n\nFor details about the functions, their usage, and a in-depth description of the use of **phylter** on a biological dataset, step-by-step, please vist the phylter web page : https://damiendevienne.github.io/phylter. \n\n> Note: if you don't use R or don't want to use R, **containerized versions of phylter** are also available (Docker and Singularity): [https://damiendevienne.github.io/phylter/articles/phyltercontainer.html](https://damiendevienne.github.io/phylter/articles/phyltercontainer.html)\n\n> if you use **phylter**, please cite: Comte, A., Tricou, T., Tannier, E., Joseph, J., Siberchicot, A., Penel, S., Allio, R., Delsuc, F., Dray, S., de Vienne, D.M. (2023). PhylteR: Efficient Identification of Outlier Sequences in Phylogenomic Datasets, Molecular Biology and Evolution, 40(11) msad234, [https://doi.org/10.1093/molbev/msad234](https://doi.org/10.1093/molbev/msad234)\n\n\n## Installation\n\n**`phylter`** is now on CRAN. \n\n\nInstallation is as easy as typing what follows at the R command prompt: \n```R\ninstall.packages(\"phylter\")\n```\n\nIf you want the latest version, you can also install the development version of **phylter**:\n\n1. Install the release version of `remotes` from CRAN:\n```R\ninstall.packages(\"remotes\")\n```\n\n2. Install the development version of `phylter` from GitHub:\n```R\nremotes::install_github(\"damiendevienne/phylter\")\n\n```\n3. Once installed, the package can be loaded:\n```R\nlibrary(\"phylter\")\n```\n\n> Note: phylter requires R version > 4.0, otherwise it cannot be installed. Also, R uses the GNU Scientific Library. On Ubuntu, this can be installed prior to the installation of the phylter package by typing `sudo apt install libgsl-dev` in a terminal. \n\n## Usage\n\nHere is a brief introduction to the use `phylter` on a collection of gene trees. For more detailed explanations and a use case example, please visit  https://damiendevienne.github.io/phylter/.\n\n\n\n**1.** With the `read.tree` function from the `ape` package, read trees from external file and save as a list called `trees`.\n```R\nif (!requireNamespace(\"ape\", quietly = TRUE))\n   install.packages(\"ape\")\ntrees <- ape::read.tree(\"treefile.tre\")\n```\n\n**2.** (optional) Read or get gene names somewhere (same order as the trees) and save it as a vector called `names`.\n\n**3.** Run `phylter` on your trees (see details below for possible options).\n```R\nresults <- phylter(trees, gene.names = names)\n\n```\n>#### Options\n>The `phylter` function is called as follows by default:\n>```R\n>phylter(X, bvalue = 0, distance = \"patristic\", k = 3, k2 = k, Norm = \"median\", \n>  Norm.cutoff = 0.001, gene.names = NULL, test.island = TRUE, \n>  verbose = TRUE, stop.criteria = 1e-5, InitialOnly = FALSE, normalizeby = \"row\", \n>  parallel = TRUE)\n>```\n>\n>Arguments are as follows:\n>\n>- `X`: A list of phylogenetic trees (phylo object) or a list of distance matrices. Trees can have different number of leaves and matrices can have different dimensions. If this is the case, missing values are imputed.\n>- `bvalue`: If `X` is a list of trees, nodes with a support below `bvalue` will be collapsed prior to the outlier detection.\n>- `distance`: If `X` is a list of trees, type of distance used to compute the pairwise matrices for each tree. Can be \"patristic\" (sum of branch lengths separating tips, the default) or \"nodal\" (number of nodes separating tips).\n>- `k`: Strength of outlier detection. The higher this value the less outliers detected.\n>- `k2`: Same as `k` for complete gene outlier detection. To preserve complete genes from being discarded, `k2` can be increased. By default, `k2 = k`.\n>- `Norm`:  Should the matrices be normalized prior to the complete analysis and how. If \"median\", matrices are divided by their median; if \"mean\", they are divided by their mean; if \"none\", no normalization if performed. Normalizing ensures that fast-evolving (and slow-evolving) genes are not treated as outliers. Normalization by median is a better choice as it is less sensitive to outlier values.\n>- `Norm.cutoff`: Value of the median (if `Norm = \"median\"`) or the mean (if `Norm = \"mean\"`) below which matrices are simply discarded from the analysis. This prevents dividing by 0, and allows getting rid of genes that contain mostly branches of length 0 and are therefore uninformative anyway. Discarded genes, if any, are listed in the output (`out$DiscardedGenes`).\n>- `gene.names`: List of gene names used to rename elements in `X`. If NULL (the default), elements are named 1,2,...,length(X).\n>- `test.island`: If `TRUE` (the default), only the highest value in an *island* of outliers is considered an outlier. This prevents non-outliers hitchhiked by outliers to be considered outliers themselves.\n>- `verbose`: If `TRUE` (the default), messages are written during the filtering process to get information on what is happening.\n>- `stop.criteria`: The optimization stops when the gain (quality of compromise) between round *n* and round *n*+1 is smaller than this value. Default to 1e-5.\n>- `InitialOnly`: Logical. If `TRUE`, only the Initial state of the data is computed.\n>- `normalizeby`: Should the gene x species matrix be normalized prior to outlier detection, and how.\n>- `parallel`: Logical. Should the computations be parallelized when possible? Default to `TRUE`. Note that the number of threads cannot be set by the user when `parallel = TRUE`. It uses all available cores on the machine. \n\n**4.** Analyze the results\n\nTo get the list of outliers detected by `phylter`, simply type:\n\n```R\nresults$Final$Outliers\n```\n\nIn addition, many functions allow looking at the outliers detected and comparing before and after *phy*ltering. \n\n```R\n# Get a summary: nb of outliers, gain in concordance, etc.\nsummary(results)\n\n# Show the number of species in each gene, and how many per gene are outliers\nplot(results, \"genes\") \n\n# Show the number of genes where each species is found, and how many are outliers\nplot(results, \"species\") \n\n# Compare before and after genes x species matrices, highlighting missing data and outliers \n# identified (not efficient for large datasets)\nplot2WR(results) \n\n# Plot the dispersion of data before and after outlier removal. One dot represents one \n# gene x species association\nplotDispersion(results) \n\n# Plot the genes x genes matrix showing pairwise correlation between genes\nplotRV(results) \n\n# Plot optimization scores during optimization\nplotopti(results) \n``` \n\n**5.** Save the results of the analysis to an external file, for example to perform cleaning on raw alignments or pruning gene trees based on the results from `phylter`.\n\n```R\nwrite.phylter(results, file = \"phylter.out\")\n```\n\n"
+      },
+      "source": "https://github.com/damiendevienne/phylter/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.9.12"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.9.12"
+      },
+      "source": "https://raw.githubusercontent.com/damiendevienne/phylter/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

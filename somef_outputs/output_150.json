@@ -1,0 +1,546 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "adamhsparks@gmail.com",
+            "value": "Adam Sparks"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "adamhsparks@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-0061-8359",
+        "type": "String",
+        "value": "Adam Sparks"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "keith.pembleton@usq.edu.au",
+        "identifier": "https://orcid.org/0000-0002-1896-4516",
+        "type": "String",
+        "value": "Keith Pembleton"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "\nyear <- sub(\"-.*\", \"\", meta$Date)\nnote <- sprintf(\"R package version %s\", meta$Version)\n\nbibentry(bibtype = \"Manual\",\n         title = \"{WINS}: Crop Stress Weather Information Delivery System in R\",\n         author = c(person(\"Adam\", \"Sparks\"),\n                    person(\"Keith\", \"Pembleton\"),\n                    person(\"Gordon\", \"Grundy\")),\n         year = year,\n         note = note,\n         url = \"https://github.com/ToowoombaTrio/WINS\")\n"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/inst/CITATION",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ToowoombaTrio/WINS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ToowoombaTrio/WINS"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ToowoombaTrio/WINS"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.org/ToowoombaTrio/WINS",
+          "https://ci.appveyor.com/project/adamhsparks/WINS/branch/master",
+          "https://codecov.io/github/NA/NA?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-02-03T01:06:44Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-03-22T08:14:43Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "WINS - a crop stress Weather INformation delivery System in R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+        "type": "String",
+        "value": "Identifies likely heat or cold stress events in crops and\n    send an alert via e-mail to subscribers. The chillR package is used to\n    generate hourly weather data from Australia Bureau of Meteorology\n    (BOM)."
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Identifies likely heat or cold stress events in crops and send an alert via e-mail to subscribers. The chillR package is used to generate hourly weather data from Australia Bureau of Meteorology (BOM)."
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9694511973403148,
+      "result": {
+        "original_header": "About",
+        "type": "Text_excerpt",
+        "value": "WINS is an R-package constructed as a part of GovHack 2016. \nThe *WINS* project (formerly called\n[*John_Conner*](https://github.com/ToowoombaTrio/John_Conner)) was\ninitiated by the Toowoomba Trio to tackle a major and growing problem\nfaced by Queensland vegetable growers. This challenge is identifying and\nresponding to heat stress in their crops. High temperatures can cause\nconsiderable stress to crops, reducing yields and the quality of the\nproduce grown. However, if the stress is identified early enough\nremedial action can be taken to minimise the damage and save the crop.\n*WINS* provides a timely warning system for farmers when a heat stress\nevent has likely occurred. The *WINS* project is built in the R\nenvironment, an open source statistical programing environment and\nutilises Australia Bureau of Meteorology (BOM) weather data. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9601144993731047,
+      "result": {
+        "original_header": "Meta",
+        "type": "Text_excerpt",
+        "value": "Please note that this project is released with a [Contributor Code of\nConduct](CONDUCT.md). By participating in this project you agree to\nabide by its terms.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ToowoombaTrio/WINS/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ToowoombaTrio/WINS/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ToowoombaTrio/WINS/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ToowoombaTrio/WINS"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "WINS - crop stress Weather INformation delivery System"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://toowoombatrio.github.io/WINS/"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "WINS"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/doi/10.5281/zenodo.11363275"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/man/figures/Fit_hexbin.png"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ToowoombaTrio/WINS/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ToowoombaTrio/WINS/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ToowoombaTrio/WINS/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "crop-stress, information-delivery, temperature, weather, weather-information"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "temperature",
+          "weather",
+          "weather-information",
+          "information-delivery",
+          "crop-stress"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "The MIT License (MIT)\n\nCopyright (c) 2016 ToowoombaTrio\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "WINS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "WINS: Crop Stress Weather Information Delivery System"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ToowoombaTrio"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+        "type": "String",
+        "value": "WINS"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 7554,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ToowoombaTrio/WINS/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adamhsparks",
+          "type": "User"
+        },
+        "date_created": "2024-05-28T02:47:56Z",
+        "date_published": "2024-05-28T02:49:05Z",
+        "description": "First release after 6 years to mint a DOI",
+        "html_url": "https://github.com/ToowoombaTrio/WINS/releases/tag/v0.0.1",
+        "name": "v0.0.1",
+        "release_id": 157707643,
+        "tag": "v0.0.1",
+        "tarball_url": "https://api.github.com/repos/ToowoombaTrio/WINS/tarball/v0.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ToowoombaTrio/WINS/releases/157707643",
+        "value": "https://api.github.com/repos/ToowoombaTrio/WINS/releases/157707643",
+        "zipball_url": "https://api.github.com/repos/ToowoombaTrio/WINS/zipball/v0.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:49:26",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Quick Start",
+        "type": "Text_excerpt",
+        "value": "This package is only available from GitHub, not yet on CRAN, so you\u2019ll\nneed *devtools* to install it.\n\n``` r\nif (!require(\"devtools\")) {\n  install.packages(\"devtools\", repos = \"http://cran.rstudio.com/\") \n  library(\"devtools\")\n}\n\ndevtools::install_github(\"ToowoombaTrio/WINS\")\nlibrary(\"WINS\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/ToowoombaTrio/WINS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

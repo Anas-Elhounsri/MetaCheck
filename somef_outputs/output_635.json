@@ -1,0 +1,357 @@
+{
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Antonioletti",
+            "given_name": "Mario",
+            "name": "Mario Antonioletti",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-2486-7990"
+          }
+        ],
+        "datePublished": "2023",
+        "format": "cff",
+        "title": "Testing FAIR4RS",
+        "type": "File_dump",
+        "value": "cff-version: \"1.2.0\"\nauthors:\n- affiliation: \"EPCC, University of Edinburgh\"\n  family-names: \"Antonioletti\"\n  given-names: \"Mario\"\n  orcid: \"https://orcid.org/0000-0002-2486-7990\"\ntitle: \"Testing FAIR4RS\"\nkeywords:\n - \"FAIR\"\n - \"fair-test-target\"\n - \"FAIR4RS\"\nversion: \"0.1\"\nlicense: \"MIT\"\ndate-released: 2023-02-15\nrepository-code: \"https://github.com/marioa/fair-test\"\n"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/marioa/fair-test"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/marioa/fair-test"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nThank you for thinking about contributing to this project and to make this repository FAIRer. I am assuming that you already have a GitHub account. \nIf you for fork this repository and then issue a pull request I will endeavour to merge your changes.\n"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/CONTRIBUTING",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-02-06T09:21:38Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2023-06-20"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2023-06-20"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-07-18T09:22:15Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2023-06-20"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Test to make repo FAIR."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Looking at birth and death plots of data from the national registries in Scotland."
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9488650423219562,
+      "result": {
+        "original_header": "FAIR Test Repository",
+        "type": "Text_excerpt",
+        "value": "This is a target end point for FAIR and FAIR4RS metric testing software to evaluate how easy/expensive it is to get a fully compliant repository that complies with the FAIR principles. The `codemeta.json` file was generated using the [codemeta-generator](https://codemeta.github.io/codemeta-generator/).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9652103884304813,
+      "result": {
+        "original_header": "FAIR principles for data and research software",
+        "type": "Text_excerpt",
+        "value": "* **F: Software, and its associated metadata, is easy for both humans and machines to find.**\n* **A: Software, and its metadata, is retrievable via standardized protocols.**\n* **I: Software interoperates with other software by exchanging data and/or metadata, and/or through interaction via application programming interfaces (APIs), described through standards.**\n* **R: Software is both usable (can be executed) and reusable (can be understood, modified, built upon, or incorporated into other software).** \n|      | FAIR for data                                                | FAIR for software                                            |\n| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |\n| F1   | (Meta)data are assigned a globally unique and persistent identifier. | Software is assigned a globally unique and persistent identifier. |\n| F1.1 | -                                                            | Components of the software representing levels of granularity are assigned distinct identifiers. |\n| F1.2 | -                                                            | Different versions of the software are assigned distinct identifiers. |\n| F2   | Data are described with rich metadata.                       | Software is described with rich metadata.                    |\n| F3   | Metadata clearly and explicitly include the identifier of the data it describes. | Metadata clearly and explicitly include the identifier of the software they describe. |\n| F4   | (Meta)data are registered or indexed in a searchable resource. | Metadata are FAIR, searchable and indexable.                 |\n| A1   | (Meta)data are retrievable by their identifier using a standardized communications protocol. | Software and its associated metadata are accessible by their identifier using a standardized communications protocol. |\n| A1.1 | The protocol is open, free, and universally implementable.   | The protocol is open, free, and universally implementable.   |\n| A1.2 | The protocol allows for an authentication and authorization procedure, where necessary. | The protocol allows for an authentication and authorization procedure, where necessary. |\n| A2   | Metadata are accessible, even when the data are no longer available. | Metadata are accessible, even when the software is no longer available. |\n| I1   | (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation. | Software reads, writes and exchanges data in a way that meets domain-relevant community standards. |\n| I2   | (Meta)data use vocabularies that follow FAIR principles.     | Software includes qualified references to other objects.     |\n| I3   | (Meta)data include qualified references to other (meta)data. | \u2013                                                            |\n| R1   | (Meta)data are richly described with a plurality of accurate and relevant attributes. | Software is described with a plurality of accurate and relevant attributes. |\n| R1.1 | (Meta)data are released with a clear and accessible data usage license. | Software is given a clear and accessible license.            |\n| R1.2 | (Meta)data are associated with detailed provenance.          | Software is associated with detailed provenance.             |\n| R1.3 | (Meta)data meet domain-relevant community standards.         | -                                                            |\n| R2   | -                                                            | Software includes qualified references to other software.    |\n| R3   | -                                                            | Software includes qualified references to other software.    | \n"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/marioa/fair-test/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/marioa/fair-test/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "marioa/fair-test"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "FAIR Test Repository"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/marioa/fair-test/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fair, fair-test-target, fair4rs"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2023 Mario Antonioletti\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/LICENCE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fair-test"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Birth and death records"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "marioa"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 21304,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/marioa/fair-test/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "marioa",
+          "type": "User"
+        },
+        "date_created": "2024-01-19T12:23:48Z",
+        "date_published": "2024-01-19T12:28:03Z",
+        "description": "This is a trial release.",
+        "html_url": "https://github.com/marioa/fair-test/releases/tag/v0.1-test",
+        "name": "test-release",
+        "release_id": 137707926,
+        "tag": "v0.1-test",
+        "tarball_url": "https://api.github.com/repos/marioa/fair-test/tarball/v0.1-test",
+        "type": "Release",
+        "url": "https://api.github.com/repos/marioa/fair-test/releases/137707926",
+        "value": "https://api.github.com/repos/marioa/fair-test/releases/137707926",
+        "zipball_url": "https://api.github.com/repos/marioa/fair-test/zipball/v0.1-test"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:30:25",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.1"
+      },
+      "source": "https://raw.githubusercontent.com/marioa/fair-test/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,421 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgments",
+        "parent_header": [
+          "ArchiveSpace OAI/EAD to OAI/DC Conversion"
+        ],
+        "type": "Text_excerpt",
+        "value": "This work was funded by the California Institute of Technology Library."
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech",
+        "email": "sdavison@caltech.edu",
+        "identifier": "https://orcid.org/0000-0003-0102-8200",
+        "type": "String",
+        "value": "Stephen Davison"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "References",
+        "parent_header": [
+          "ArchiveSpace OAI/EAD to OAI/DC Conversion"
+        ],
+        "type": "Text_excerpt",
+        "value": "* [OAI Static Repositories](http://www.openarchives.org/OAI/2.0/guidelines-static-repository.htm)\n* [DCMI Metadata Terms](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/)\n* [Dublin Core Qualifiers](https://www.dublincore.org/specifications/dublin-core/dcmes-qualifiers/)\n* [Guidelines for implementing DC in XML](https://www.dublincore.org/specifications/dublin-core/dc-xml-guidelines/2002-04-14/)\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/ead2dc"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/ead2dc"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/.github/workflows/codemeta2cff.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/.github/workflows/iga.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-08-31T17:44:25Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-12T22:47:40Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Converts ArchivesSpace EAD Finding Aid XML to an OAI-PMH Static Repository with DC metadata."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Python 3 script to convert ArchivesSpace Encoded Archival Description (EAD) finding aids to Dublin Core (DC) records."
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Introduction",
+        "parent_header": [
+          "ArchiveSpace OAI/EAD to OAI/DC Conversion"
+        ],
+        "type": "Text_excerpt",
+        "value": "The Python 3 script, [ead2dc.py](app/ead2dc.py), takes as its input the Open Archives Initiative (OAI) output of an ArchivesSpace resource finding aid in Encoded Archival Description (EAD) format and outputs an XML file. The XML output contains Dublin Core (DC) records for digital resources found in the finding aid. Only records containing links to digital objects are included. The XML output is a 'static repository', inspired by the OAI Static Repository specification, but not adhering to it strictly. The static repository is the data source for the Open Archives Initiative (OAI) Data Provider.\n\nThe [OAI Data Provider](https://apps.library.caltech.edu/ead2dc/) adheres to the OAI standard and supports all the verbs (Identify, ListMetadataFormats, ListSets, ListIdentifiers, ListRecords, and GetRecord), resumption tokens, and sets. Only DC metadata is provided. Sets correspond to the archival collections in the Caltech Archives.\n\nead2dc - Main features and assumptions:\n\n* Both input and output are OAI-compliant XML files.\n* All 12 levels of EAD container are supported.\n* Titles are inherited down the container hierarchy.\n* All other metadata is mapped from the record containing the digital object references.\n* Records without digital object references are ignored (i.e. not mapped to the output file)\n\nOAI Data Provider - Main features and assumptions:\n\n* The OAI Data Provider uses a static repository, i.e. it does not dynamically generate records.\n* DC metadata only.\n* Sets correspond to the archival collections and do not overlap.\n* Records are delivered in batches of 250.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/ead2dc/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/ead2dc/archive/main.zip"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/ead2dc/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/ead2dc"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ArchiveSpace OAI/EAD to OAI/DC Conversion"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation and Usage",
+        "parent_header": [
+          "ArchiveSpace OAI/EAD to OAI/DC Conversion"
+        ],
+        "type": "Text_excerpt",
+        "value": "The [ead2dc.py](app/ead2dc.py) file is designed to be run from the command line, or from within your favorite editing environment. It uses standard Python libraries and has been tested using Python 3.9.10 and 3.9.17.\n\nThe [OAI Data Provider](https://apps.library.caltech.edu/ead2dc/) is a web application written in Python 3 using the [Flask](https://flask.palletsprojects.com/en/3.0.x/) micro web framework. Installation of Flask will include dependent libraries, such as Jinja2 and werkzeug. No additional libraries are required.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/ead2dc/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/ead2dc/issues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "software",
+          "metadata",
+          "Open Archives Initiative Protocol for Metadata Harvesting",
+          "Dublin Core"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "Copyright (c) 2022, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors\nmay be used to endorse or promote products derived from this software without\nspecific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE\nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://github.com/caltechlibrary/ead2dc/blob/main/LICENSE",
+        "spdx_id": "https://github.com/caltechlibrary/ead2dc/blob/main/LICENSE",
+        "type": "License",
+        "value": "https://github.com/caltechlibrary/ead2dc/blob/main/LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "ArchiveSpace OAI/EAD to OAI/DC Conversion"
+        ],
+        "type": "Text_excerpt",
+        "value": "Software produced by the Caltech Library is Copyright \u00a9 2023 California Institute of Technology.  This software is freely distributed under a BSD-style license.  Please see the [LICENSE](LICENSE) file for more information.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ead2dc"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ead2dc"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 102199,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 23608,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 3277,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "somef_missing_categories": [
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:38:30",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation and Usage",
+        "parent_header": [
+          "ArchiveSpace OAI/EAD to OAI/DC Conversion"
+        ],
+        "type": "Text_excerpt",
+        "value": "The [ead2dc.py](app/ead2dc.py) file is designed to be run from the command line, or from within your favorite editing environment. It uses standard Python libraries and has been tested using Python 3.9.10 and 3.9.17.\n\nThe [OAI Data Provider](https://apps.library.caltech.edu/ead2dc/) is a web application written in Python 3 using the [Flask](https://flask.palletsprojects.com/en/3.0.x/) micro web framework. Installation of Flask will include dependent libraries, such as Jinja2 and werkzeug. No additional libraries are required.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example",
+        "parent_header": [
+          "ArchiveSpace OAI/EAD to OAI/DC Conversion"
+        ],
+        "type": "Text_excerpt",
+        "value": "Paul B. MacCready Papers ca. 1931-2002, Caltech Archives\n\n* [Finding Aid](https://collections.archives.caltech.edu/repositories/2/resources/197)\n* [ArchivesSpace OAI Data Provider output](https://caltechlibrary.github.io/ead2dc/xml/maccready-ead.xml)\n* [OAI Static Repository created by ead2dc](https://caltechlibrary.github.io/ead2dc/xml/maccready-dc.xml)\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.1"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/ead2dc/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,643 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9658079477088775,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech Library",
+        "email": "rsdoiel@caltech.edu",
+        "type": "String",
+        "value": "R. S. Doiel"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Doiel",
+            "given_name": "R. S.",
+            "name": "R. S. Doiel",
+            "type": "Agent"
+          }
+        ],
+        "datePublished": "2024",
+        "format": "cff",
+        "title": "models",
+        "type": "File_dump",
+        "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\ntype: software\ntitle: \"models\"\nabstract: \"A Go package for working with simple data models inspired by\nHTML5 web forms.\"\nauthors:\n  - family-names: Doiel\n    given-names: R. S.\n    orcid: \"\"\n\n\n\nrepository-code: \"https://github.com/caltechlibary/models\"\nversion: 0.0.5\nlicense-url: \"https://spdx.org/licenses/BSD-3-Clause\"\nkeywords: [ \"metadata\" ]\ndate-released: 2024-10-15\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/models"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibary/models"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-09-20T13:57:34Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-09-20"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-03-24"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-03-24T22:58:03Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-03-24"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This is a Go package used to describe data models aligned with the HTML5 data types."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Go and TypeScript package for working with simple data models inspired by HTML5 web forms."
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9518995482829999,
+      "result": {
+        "original_header": "models",
+        "type": "Text_excerpt",
+        "value": "This is a Go package used to describe data models aligned with the HTML5 data types. The model can be expressed in YAML or JSON. The YAML (or JSON) data structure is patterned after the HTML5 form elements. A single model can be used to generate HTML web forms or used to validate a map that confirms to the model. In princple generators can be written to express the model in other forms, e.g. SQL. \nIt is important to note that is not an Object Relational Mapper (ORM).  The purpose of the model package is to facilitate describing simple data models using YAML then beable to reuse the models in other Go based projects (e.g. [dataset](http://github.com/caltechlibrary/dataset), [Newt](https://github.com/caltechlibrary/newt)). \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9710376830074545,
+      "result": {
+        "original_header": "Oberservation: Web forms describe a simple data structure",
+        "type": "Text_excerpt",
+        "value": "The models package grew out of an observation that if you can define the elements of an HTML5 web form you can also describe a simple data model or schema. The problem is HTML5 is combersum to type, read and work with.  On the other hand it lends itself to expression in simpler representations. \nYAML can be used to represent a web form in a clear and concise way. From that description you can extrapulate HTML and SQL Schema. You can also use it as a guide to data validation for web form submissions. \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "wip"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/models/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/models/releases"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/models/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/models"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "models"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/models/main/installer.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Installation\n============\n\n__model__ is a Go package but also includes a demo application\ncalled __modelgen__. You can install __modelgen__ via instructions\nbelow. NOTE: This is an experimental proof of concept.\n\nQuick install with curl or irm\n------------------------------\n\nThere is an experimental installer.sh script that can be run with the\nfollowing command to install latest table release. This may work for\nmacOS, Linux and if you're using Windows with the Unix subsystem. This\nwould be run from your shell (e.g. Terminal on macOS).\n\n~~~\ncurl https://caltechlibrary.github.io/models/installer.sh | sh\n~~~\n\nThis will install modelgen in your `$HOME/bin` directory.\n\nIf you are running Windows 10 or 11 use the Powershell command\nbelow.\n\n~~~\nirm https://caltechlibrary.github.io/models/installer.ps1 | iex\n~~~\n\nIf your want to install a specific verions set the `PKG_VERSION` environment\nvariable then download. E.g. version 2.1.5 in tihs example.\n\nFor Linux and macOS\n\n~~~\nexport PKG_VERSION=0.0.1\ncurl https://caltechlibrary.github.io/models/installer.sh | sh\n~~~\n\nFor Windows\n\n~~~\n$env:PKG_VERSION = '0.0.1'\nirm https://caltechlibrary.github.io/models/installer.ps1 | iex\n~~~\n\n## Compiling from source\n\nYou need to have git, Pandoc, Go compiler and Make (GNU Make) available for \nthis recipe to work.  Clone the repository and then compile in the typical\nPOSIX style. NOTE by default the binaries are installed in `$HOME/bin` and\nthat is assumed to be in your path.\n\n```shell\n    cd\n    git clone https://github.com/caltechlibrary/models\n    cd models\n    make\n    # Add any missing dependencies you might need in your Go environment\n    make test\n    make install\n```\n\nOn Windows you would perform the following in Powershell.\n\n```shell\n    cd\n    git clone https://github.com/caltechlibrary/models\n    cd models\n    .\\make.bat\n    # Follow the prompts and instruction in the bat file.\n```\n\n\n### Requirements\n\n- Go version 1.23.1 or better\n- Pandoc version 3.1 or better\n- GNU Make\n- Common POSIX/Unix utilities, e.g. cat, sed, grep\n- jq >= 1.7.1\n\n### Windows compilation\n\nThe tool chain to compile on Windows make several assumptions.\n\n1. You're using Anaconda shell and have the C tool chain installed for\n   cgo to work\n2. GNU Make, cat, grep and sed\n3. You have the latest Go installed\n\nSince I don't assume a POSIX shell environment on windows I have made\nbatch files to perform some of what Make under Linux and macOS would do.\n\n- make.bat builds our application and depends on go and jq commands\n\nCompilation assumes [Go](https://github.com/golang/go) v1.23.1 or better.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/INSTALL.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/models/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltehclibrary/models/isues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "metadata"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "\nCopyright (c) 2024, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/BSD-3-Clause",
+        "spdx_id": "https://spdx.org/licenses/BSD-3-Clause",
+        "type": "License",
+        "value": "https://spdx.org/licenses/BSD-3-Clause"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "models"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "models"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "size": 121095,
+        "type": "Programming_language",
+        "value": "Go"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 60617,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TypeScript",
+        "size": 49092,
+        "type": "Programming_language",
+        "value": "TypeScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 43944,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 7689,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 7567,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 7336,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "PowerShell",
+        "size": 3965,
+        "type": "Programming_language",
+        "value": "PowerShell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 1497,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Lua",
+        "size": 195,
+        "type": "Programming_language",
+        "value": "Lua"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "type": "Programming_language",
+        "value": "Go",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TypeScript",
+        "type": "Programming_language",
+        "value": "TypeScript",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/models/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2024-10-15T21:34:24Z",
+        "date_published": "2024-10-15T21:41:11Z",
+        "description": "Added check in validate call to make sure model is not nil, fails check if it is nil.",
+        "html_url": "https://github.com/caltechlibrary/models/releases/tag/v0.0.5",
+        "name": "bug fix",
+        "release_id": 180111120,
+        "tag": "v0.0.5",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/models/tarball/v0.0.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/models/releases/180111120",
+        "value": "https://api.github.com/repos/caltechlibrary/models/releases/180111120",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/models/zipball/v0.0.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2024-10-08T15:55:35Z",
+        "date_published": "2024-10-08T15:58:48Z",
+        "description": "This release sees improvement in debug handling as well as added identifier types.  NOTE: The validation is too reliant on patterns, types like ROR need to have more thorough validation.",
+        "html_url": "https://github.com/caltechlibrary/models/releases/tag/v0.0.4",
+        "name": "Improved debugging, adding identifier types",
+        "release_id": 178938702,
+        "tag": "v0.0.4",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/models/tarball/v0.0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/models/releases/178938702",
+        "value": "https://api.github.com/repos/caltechlibrary/models/releases/178938702",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/models/zipball/v0.0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2024-09-27T18:17:57Z",
+        "date_published": "2024-09-27T18:21:49Z",
+        "description": "This release refines the interactive model experiment, `modelgen model mything.yaml`.\r\n\r\n",
+        "html_url": "https://github.com/caltechlibrary/models/releases/tag/v0.0.3",
+        "name": "Refining interactive modeler",
+        "release_id": 177351391,
+        "tag": "v0.0.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/models/tarball/v0.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/models/releases/177351391",
+        "value": "https://api.github.com/repos/caltechlibrary/models/releases/177351391",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/models/zipball/v0.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2024-09-26T17:55:16Z",
+        "date_published": "2024-09-26T18:03:08Z",
+        "description": "This release includes a cli demoing the concept behind models packages called `modelgen`. It includes a crude interactive modeler action.\r\n",
+        "html_url": "https://github.com/caltechlibrary/models/releases/tag/v0.0.2",
+        "name": "Refining concepts",
+        "release_id": 177141013,
+        "tag": "v0.0.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/models/tarball/v0.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/models/releases/177141013",
+        "value": "https://api.github.com/repos/caltechlibrary/models/releases/177141013",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/models/zipball/v0.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2024-09-20T23:09:41Z",
+        "date_published": "2024-09-20T23:09:51Z",
+        "description": "This is a proof of concept of the models Go package. It include a cli modelgen which can take a model expressed as YAML and render HTML or SQLite 3 Scheme.\r\n\r\nThis repository is intended for use by Newt and Dataset Projects at Caltech Library.",
+        "html_url": "https://github.com/caltechlibrary/models/releases/tag/v0.0.1",
+        "name": "Proof of Concept",
+        "release_id": 176202253,
+        "tag": "v0.0.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/models/tarball/v0.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/models/releases/176202253",
+        "value": "https://api.github.com/repos/caltechlibrary/models/releases/176202253",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/models/zipball/v0.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Go >= 1.23.1",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "GNU Make",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Pandoc >= 3.1",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:06:46",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "A simple example",
+        "type": "Text_excerpt",
+        "value": "A \"guest book\" model.\n\n~~~yaml\nid: guest_book_entry\nattributes:\n  action: ./signbook.html\n  method: POST\n  x-success: ./thankyou.html\n  x-failure: ./oops.html\nelements:\n  - id: record_id\n    type: text\n    pattern: [a-z0-9]+\\.[a-z0-9]+\n    attributes:\n      name: record_id\n      placeholder: A unique record id\n      required: true\n  - id: name\n    type: text\n    attributes:\n      name: name\n      placeholder: E.g. Doe, Jane\n      required: true\n  - id: message\n    type: text\n    attributes:\n      placeholder: Please leave a message\n      name: message\n  - id: signed\n    type: date\n    attributes:\n      name: signed\n      required: true\n~~~\n\nThis \"model\" describes JSON data that might look like the following.\n\n~~~json\n{ \n    \"record_id\": \"jane.doe\",\n    \"Doe, Jane\",\n    \"signed\": \"2024-09-10\"\n}\n~~~\n\nThe model could be used to generate the web form and validate the data. It implies an SQL Scheme.  The model package provides the means of working with a model and to validate the model's content. By normalizing your data elements to throse supported by HTML5 you also can easily generate the code you need (e.g. HTML form or SQL scheme).\n\nThe package doesn't provide the extrapolated forms but does provide the functions and method to make it easy to build them.\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.6"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/models/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

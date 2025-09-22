@@ -1,0 +1,669 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "mfleonawicz@gmail.com",
+        "type": "String",
+        "value": "Matthew Leonawicz"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "legocolors <img src=\"man/figures/logo.png\" style=\"margin-left:10px;margin-bottom:5px;\" width=\"120\" align=\"right\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Matthew Leonawicz (2024). legocolors: Official Lego Color Palettes. R\npackage version 0.4.0. <https://CRAN.R-project.org/package=legocolors>\n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Code of Conduct\n\nAs contributors and maintainers of this project, we pledge to respect all people who \ncontribute through reporting issues, posting feature requests, updating documentation,\nsubmitting pull requests or patches, and other activities.\n\nWe are committed to making participation in this project a harassment-free experience for\neveryone, regardless of level of experience, gender, gender identity and expression,\nsexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.\n\nExamples of unacceptable behavior by participants include the use of sexual language or\nimagery, derogatory comments or personal attacks, trolling, public or private harassment,\ninsults, or other unprofessional conduct.\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments,\ncommits, code, wiki edits, issues, and other contributions that are not aligned to this \nCode of Conduct. Project maintainers who do not follow the Code of Conduct may be removed \nfrom the project team.\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by \nopening an issue or contacting one or more of the project maintainers.\n\nThis Code of Conduct is adapted from the Contributor Covenant \n(https://www.contributor-covenant.org), version 1.0.0, available at \nhttps://contributor-covenant.org/version/1/0/0/.\n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/legocolors"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/legocolors"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/legocolors"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.org/leonawicz/legocolors",
+          "https://ci.appveyor.com/project/leonawicz/legocolors",
+          "https://codecov.io/gh/leonawicz/legocolors?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contribute",
+        "parent_header": [
+          "legocolors <img src=\"man/figures/logo.png\" style=\"margin-left:10px;margin-bottom:5px;\" width=\"120\" align=\"right\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Contributions are welcome. Contribute through GitHub via pull request.\nPlease create an issue first if it is regarding any substantive feature\nadd or change.\n\n------------------------------------------------------------------------\n\nPlease note that the `legocolors` project is released with a\n[Contributor Code of\nConduct](https://leonawicz.github.io/legocolors/CODE_OF_CONDUCT.html).\nBy contributing to this project, you agree to abide by its terms.\n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-03-17T19:55:42Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-11-15T04:06:28Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Lego color naming conventions, associated metadata, and mapping functions."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+        "type": "String",
+        "value": "Provides a dataset containing several color naming conventions established by multiple sources, along with associated color metadata.\n    The package also provides related helper functions for mapping among the different Lego color naming conventions and between Lego colors, hex colors, and 'R' color names, \n    making it easy to convert any color palette to one based on existing Lego colors while keeping as close to the original color palette as possible.\n    The functions use nearest color matching based on Euclidean distance in RGB space. \n    Naming conventions for color mapping include those from 'BrickLink' (<https://www.bricklink.com>), 'The Lego Group' (<https://www.lego.com>), 'LDraw' (<https://www.ldraw.org/>), and 'Peeron' (<http://www.peeron.com/>)."
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Provides a dataset containing several color naming conventions established by multiple sources, along with associated color metadata.\n    The package also provides related helper functions for mapping among the different Lego color naming conventions and between Lego colors, hex colors, and 'R' color names, \n    making it easy to convert any color palette to one based on existing Lego colors while keeping as close to the original color palette as possible.\n    The functions use nearest color matching based on Euclidean distance in RGB space. \n    Naming conventions for color mapping include those from 'BrickLink' (<https://www.bricklink.com>), 'The Lego Group' (<https://www.lego.com>), 'LDraw' (<https://www.ldraw.org/>), and 'Peeron' (<http://www.peeron.com/>)."
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9236537301317383,
+      "result": {
+        "original_header": "legocolors <img src=\"man/figures/logo.png\" style=\"margin-left:10px;margin-bottom:5px;\" width=\"120\" align=\"right\">",
+        "type": "Text_excerpt",
+        "value": "\n`legocolors` provides a dataset containing several Lego color naming\nconventions established by various popular sources. It also provides\nfunctions for mapping between these color naming conventions as well as\nbetween Lego color names, hex colors, and R color names. \nBy default, nearest colors are computed based on distance in RGB space\nwhen an exact match is not found. This behavior supports the purpose of\nexchanging arbitrary colors for known Lego colors when the goal is to\nactually acquire and build something out of Lego parts. This focus is\nalso one of the reasons `legocolors` uses BrickLink color names as the\ndefault naming convention. See `?legocolor` for details.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.843183834776686,
+      "result": {
+        "original_header": "Palette conversions",
+        "type": "Text_excerpt",
+        "value": "While different sets of Lego colors are organized by `material` type,\ne.g., solid colors, semi-transparent colors, etc., these palettes are\nnot useful for plotting data. The greatest value comes from converting\nuseful color palettes to those comprised of existing Lego colors while\nstill keeping as close to the original palette as possible.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9347918872802347,
+      "result": {
+        "original_header": "Recommended colors",
+        "type": "Text_excerpt",
+        "value": "- Available colors for generic bricks and plates but prohibitively\n  expensive.\n- Available colors for generic bricks and plates but with low supply.\n- Colors used only for exotic/specialty parts (not available for bricks\n  and plates). \nFiltering to a decent set of Lego colors that are relatively easy to\nacquire online at BrickLink.com for simple brick and/or plate parts, and\nrelatively affordable, is largely the responsibility of the user. There\nis a `recommended` column in the `legoCols` dataset. However, a\nhuman-derived recommendation column would be better (feel free to submit\na PR if you\u2019d like to improve the package). \nIn the previous version of `legocolors`, brick- and plate- specific\ndata, excluding more exotic parts, was scraped from the website catalog,\nbut this has become too difficult to do reliably. For now, you will have\nto use your personal Lego knowledge to filter out irrelevant or\nproblematic colors from the complete official set. This is worth\nconsidering because even though BrickLink consistently offers the widest\nselection and greatest quantity at the lowest price, supply and demand\nleads to some parts in some colors being prohibitively expensive to\nacquire in quantity. When determining what colors you wish to use to\nbuild a physical model, you will save an incredible amount of money if\nyou can accept limiting your palette to the most common Lego colors.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/legocolors/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/legocolors/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/leonawicz/legocolors/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "leonawicz/legocolors"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "legocolors "
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "legocolors"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/leonawicz/legocolors/master/man/figures/README-plot-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/leonawicz/legocolors/master/man/figures/README-plot-2.png"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "legocolors <img src=\"man/figures/logo.png\" style=\"margin-left:10px;margin-bottom:5px;\" width=\"120\" align=\"right\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Install the CRAN release of `legocolors` with\n\n``` r\ninstall.packages(\"legocolors\")\n```\n\nInstall the development version from GitHub with\n\n``` r\n# install.packages(\"remotes\")\nremotes::install_github(\"leonawicz/legocolors\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/leonawicz/legocolors/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/legocolors/issues"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/legocolors/issues"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "color-palettes, lego, r-package"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "r-package",
+          "lego",
+          "color-palettes"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2019 Matthew Leonawicz\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/leonawicz/legocolors/master/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "legocolors"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "legocolors: Official Lego Color Palettes"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "leonawicz"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+        "type": "String",
+        "value": "legocolors"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 15275,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 165,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/leonawicz/legocolors/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2024-09-11T22:41:24Z",
+        "date_published": "2024-09-19T14:23:16Z",
+        "description": "* Dataset renames.\r\n* Documentation updates.",
+        "html_url": "https://github.com/leonawicz/legocolors/releases/tag/v0.4.0",
+        "name": "legocolors 0.4.0 release",
+        "release_id": 175909147,
+        "tag": "v0.4.0",
+        "tarball_url": "https://api.github.com/repos/leonawicz/legocolors/tarball/v0.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/legocolors/releases/175909147",
+        "value": "https://api.github.com/repos/leonawicz/legocolors/releases/175909147",
+        "zipball_url": "https://api.github.com/repos/leonawicz/legocolors/zipball/v0.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2021-02-20T15:38:17Z",
+        "date_published": "2021-02-24T17:00:55Z",
+        "description": "* Documentation updates.",
+        "html_url": "https://github.com/leonawicz/legocolors/releases/tag/v0.3.1",
+        "name": "legocolors 0.3.1 release",
+        "release_id": 38666616,
+        "tag": "v0.3.1",
+        "tarball_url": "https://api.github.com/repos/leonawicz/legocolors/tarball/v0.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/legocolors/releases/38666616",
+        "value": "https://api.github.com/repos/leonawicz/legocolors/releases/38666616",
+        "zipball_url": "https://api.github.com/repos/leonawicz/legocolors/zipball/v0.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2019-04-28T17:19:37Z",
+        "date_published": "2019-04-30T14:16:44Z",
+        "description": "# legocolors 0.2.0\r\n\r\n* Added `view_legopal` function.\r\n* Added new columns `bl_bp` (rough BrickLink brick/plate availability metric) and `recommended` (recommended colors, based on relative ease of acquirement) to the `legocolors` dataset.\r\n* Documentation updates.\r\n",
+        "html_url": "https://github.com/leonawicz/legocolors/releases/tag/v0.2.0",
+        "name": "legocolors 0.2.0 release",
+        "release_id": 17067931,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/leonawicz/legocolors/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/legocolors/releases/17067931",
+        "value": "https://api.github.com/repos/leonawicz/legocolors/releases/17067931",
+        "zipball_url": "https://api.github.com/repos/leonawicz/legocolors/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2019-03-20T14:19:36Z",
+        "date_published": "2019-03-25T16:03:29Z",
+        "description": "# legocolors 0.1.2\r\n\r\n* Initial release\r\n",
+        "html_url": "https://github.com/leonawicz/legocolors/releases/tag/v0.1.2",
+        "name": "legocolors 0.1.2 release",
+        "release_id": 16329769,
+        "tag": "v0.1.2",
+        "tarball_url": "https://api.github.com/repos/leonawicz/legocolors/tarball/v0.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/legocolors/releases/16329769",
+        "value": "https://api.github.com/repos/leonawicz/legocolors/releases/16329769",
+        "zipball_url": "https://api.github.com/repos/leonawicz/legocolors/zipball/v0.1.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 2.10",
+        "version": ">= 2.10"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:17:45",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 7
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.3.2"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/legocolors/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

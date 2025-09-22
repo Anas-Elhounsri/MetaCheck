@@ -1,0 +1,786 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "krishna.naidoo.11@ucl.ac.uk",
+        "type": "Agent",
+        "value": "krishna.naidoo.11@ucl.ac.uk"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Krishna Naidoo"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citing",
+        "parent_header": [
+          "MiSTree"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can cite ``MiSTree`` using the following BibTex:\n\n```\n@ARTICLE{Naidoo2019,\n       author = {{Naidoo}, Krishna},\n        title = \"{MiSTree: a Python package for constructing and analysing Minimum Spanning Trees}\",\n      journal = {The Journal of Open Source Software},\n         year = \"2019\",\n        month = \"Oct\",\n       volume = {4},\n       number = {42},\n          eid = {1721},\n        pages = {1721},\n          doi = {10.21105/joss.01721},\n       adsurl = {https://ui.adsabs.harvard.edu/abs/2019JOSS....4.1721N}\n}\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "{Naidoo}, Krishna",
+        "doi": "10.21105/joss.01721",
+        "format": "bibtex",
+        "title": "{MiSTree: a Python package for constructing and analysing Minimum Spanning Trees}",
+        "type": "Text_excerpt",
+        "value": "@article{Naidoo2019,\n    adsurl = {https://ui.adsabs.harvard.edu/abs/2019JOSS....4.1721N},\n    doi = {10.21105/joss.01721},\n    pages = {1721},\n    eid = {1721},\n    number = {42},\n    volume = {4},\n    month = {Oct},\n    year = {2019},\n    journal = {The Journal of Open Source Software},\n    title = {{MiSTree: a Python package for constructing and analysing Minimum Spanning Trees}},\n    author = {{Naidoo}, Krishna},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/knaidoo29/mistree"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://knaidoo29.github.io/mistreedoc/"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/knaidoo29/mistree"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/knaidoo29/mistree/master/.github/workflows/python-package_windows.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/knaidoo29/mistree/master/.github/workflows/python-package.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/knaidoo29/mistree/master/.github/workflows/python-package_macos.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-02-13T08:51:21Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-17T12:12:16Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A python package for constructing and analysing minimum spanning trees."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A python package for constructing and analysing the minimum spanning tree"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MiSTree quickly constructs minimum spanning tree graphs for various coordinate systems, including Celestial coordinates, by using a k-nearest neighbor graph (kNN, rather than a matrix of pairwise distances) which is then fed to Kruskal's algorithm to create the graph. MiSTree bins the MST statistics into histograms and plots the distributions; enabling the inclusion of high-order statistics information from the cosmic web to provide additional information that improves cosmological parameter constraints. Though MiSTree was designed for use in cosmology, it can be used in any field requiring extracting non-Gaussian information from point distributions."
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Introduction",
+        "parent_header": [
+          "MiSTree"
+        ],
+        "type": "Text_excerpt",
+        "value": "The *minimum spanning tree* (MST), a graph constructed from a distribution of points, draws lines between pairs of points so that all points are linked in a single skeletal structure that contains no loops and has minimal total edge length. The MST has been used in a broad range of scientific fields such as particle physics, in astronomy and cosmology. Its success in these fields has been driven by its sensitivity to the spatial distribution of points and the patterns within. ``MiSTree``, a public ``Python`` package, allows a user to construct the MST in a variety of coordinates systems, including Celestial coordinates used in astronomy. The package enables the MST to be constructed quickly by initially using a *k*-nearest neighbour graph (*k* NN, rather than a matrix of pairwise distances) which is then fed to Kruskal's algorithm to construct the MST. ``MiSTree`` enables a user to measure the statistics of the MST and provides classes for binning the MST statistics (into histograms) and plotting the distributions. Applying the MST will enable the inclusion of high-order statistics information from the cosmic web which can provide additional information to improve cosmological parameter constraints. This information has not been fully exploited due to the computational cost of calculating *N*-point statistics. ``MiSTree`` was designed to be used in cosmology but could be used in any field which requires extracting non-Gaussian information from point distributions.\n"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "MiSTree"
+        ],
+        "type": "Text_excerpt",
+        "value": "In depth documentation and tutorials are provided [here](https://knaidoo29.github.io/mistreedoc/).\n"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/knaidoo29/mistree/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/knaidoo29/mistree/master/tutorials/notebooks/tutorial_2_minimum_spanning_tree.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/tutorials/notebooks/tutorial_2_minimum_spanning_tree.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/knaidoo29/mistree/master/tutorials/notebooks/tutorial_1_levy_flight.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/tutorials/notebooks/tutorial_1_levy_flight.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://mybinder.org/v2/gh/knaidoo29/mistree/master?filepath=tutorials%2Fnotebooks%2F"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 22
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/knaidoo29/mistree/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "knaidoo29/mistree"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MiSTree"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/knaidoo29/mistree/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/knaidoo29/mistree/master/run_coverage.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ascl:1910.016"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/170473458"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/knaidoo29/mistree/refs/heads/master/coverage.svg"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://joss.theoj.org/papers/461d79e9e5faf21029c0a7b1c928be28/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "MiSTree"
+        ],
+        "type": "Text_excerpt",
+        "value": "MiSTree can be installed as follows:\n\n```\npip install mistree [--user]\n```\nThe `--user` is optional and only required if you don\u2019t have write permission. If you\nare using a windows machine this may not work, in this case (or as an alternative to pip) clone the repository,\n\n```\ngit clone https://github.com/knaidoo29/mistree.git\ncd mistree\n```\n\nand install by either running\n\n```\npip install . [--user]\n```\n\nor\n\n```\npython setup.py build\npython setup.py install\n```\n\nSimilarly, if you would like to work and edit mistree you can clone the repository and install an editable version:\n\n```\ngit clone https://github.com/knaidoo29/mistree.git\ncd mistree\npip install -e . [--user]\n```\n\nFrom the `mistree` directory you can then test the install using `nose`:\n\n```\npython setup.py test\n```\n\nor using `pytest`:\n\n```\npython -m pytest\n```\n\nYou should now be able to import the module:\n\n```python\nimport mistree as mist\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/knaidoo29/mistree/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cosmology, graph-theory, levy-walks, minimum-spanning-tree, minimum-spanning-trees, python, random-walk"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT.html",
+        "spdx_id": "https://spdx.org/licenses/MIT.html",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT.html"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mistree"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MiSTree: Construct and analyze Minimum Spanning Tree graphs"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "knaidoo29"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mistree"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 181062,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jupyter Notebook",
+        "size": 43531,
+        "type": "Programming_language",
+        "value": "Jupyter Notebook"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 9082,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 116,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "title": null,
+        "type": "Scholarly_article",
+        "url": "https://ui.adsabs.harvard.edu/abs/2019JOSS....4.1721N",
+        "value": null
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "knaidoo29",
+          "type": "User"
+        },
+        "date_created": "2024-11-28T02:22:49Z",
+        "date_published": "2024-11-28T02:32:32Z",
+        "description": "Updated setup for compatible installation on newer python versions. Fortran subroutines have been completely overhauled with numba implementation to simplify installation without compromises in speed.",
+        "html_url": "https://github.com/knaidoo29/mistree/releases/tag/v2.0",
+        "name": "MiSTree_v2.0",
+        "release_id": 187938516,
+        "tag": "v2.0",
+        "tarball_url": "https://api.github.com/repos/knaidoo29/mistree/tarball/v2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/knaidoo29/mistree/releases/187938516",
+        "value": "https://api.github.com/repos/knaidoo29/mistree/releases/187938516",
+        "zipball_url": "https://api.github.com/repos/knaidoo29/mistree/zipball/v2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "knaidoo29",
+          "type": "User"
+        },
+        "date_created": "2019-10-16T22:52:50Z",
+        "date_published": "2019-10-16T23:03:52Z",
+        "description": "Added automated testing routines which can be executed using `nose` or `pytest` and includes changes made during the review process for publication in the Journal of Open Source Software.",
+        "html_url": "https://github.com/knaidoo29/mistree/releases/tag/v1.2",
+        "name": "MiSTree_v1.2",
+        "release_id": 20758816,
+        "tag": "v1.2",
+        "tarball_url": "https://api.github.com/repos/knaidoo29/mistree/tarball/v1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/knaidoo29/mistree/releases/20758816",
+        "value": "https://api.github.com/repos/knaidoo29/mistree/releases/20758816",
+        "zipball_url": "https://api.github.com/repos/knaidoo29/mistree/zipball/v1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "knaidoo29",
+          "type": "User"
+        },
+        "date_created": "2019-09-05T13:06:09Z",
+        "date_published": "2019-09-05T13:13:00Z",
+        "description": "Added classes for binning and plotting the default MST statistics (degree, edge length, branch length and branch shape).",
+        "html_url": "https://github.com/knaidoo29/mistree/releases/tag/v1.1",
+        "name": "MiSTree_v1.1",
+        "release_id": 19778970,
+        "tag": "v1.1",
+        "tarball_url": "https://api.github.com/repos/knaidoo29/mistree/tarball/v1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/knaidoo29/mistree/releases/19778970",
+        "value": "https://api.github.com/repos/knaidoo29/mistree/releases/19778970",
+        "zipball_url": "https://api.github.com/repos/knaidoo29/mistree/zipball/v1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "knaidoo29",
+          "type": "User"
+        },
+        "date_created": "2019-08-02T23:04:55Z",
+        "date_published": "2019-08-22T13:03:15Z",
+        "description": "MiSTree is a python module for the construction and analysis of minimum spanning trees (MST). This version can construct the MST in 2D, 3D, tomographic (on a unit sphere) and spherical polar coordinates and then measure statistics from the MST. In addition we provide routines for constructing Levy-Flight (random walk) distributions in 2D and 3D.",
+        "html_url": "https://github.com/knaidoo29/mistree/releases/tag/v1.0",
+        "name": "MiSTree_v1.0",
+        "release_id": 19465527,
+        "tag": "v1.0",
+        "tarball_url": "https://api.github.com/repos/knaidoo29/mistree/tarball/v1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/knaidoo29/mistree/releases/19465527",
+        "value": "https://api.github.com/repos/knaidoo29/mistree/releases/19465527",
+        "zipball_url": "https://api.github.com/repos/knaidoo29/mistree/zipball/v1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numba",
+        "type": "Software_application",
+        "value": "numba",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scikit-learn",
+        "type": "Software_application",
+        "value": "scikit-learn",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scipy",
+        "type": "Software_application",
+        "value": "scipy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Dependencies",
+        "parent_header": [
+          "MiSTree"
+        ],
+        "type": "Text_excerpt",
+        "value": "* `numpy`\n* `numba`\n* `matplotlib`\n* `scipy`\n* `scikit-learn`\n\nFor testing you will require `nose` or `pytest`.\n"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:14:50",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 52
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Support",
+        "parent_header": [
+          "MiSTree"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you have any issues with the code or want to suggest ways to improve it please open a new issue ([here](https://github.com/knaidoo29/mistree/issues))\nor (if you don't have a github account) email _krishna.naidoo.11@ucl.ac.uk_.\n"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Tutorials",
+        "parent_header": [
+          "MiSTree"
+        ],
+        "type": "Text_excerpt",
+        "value": "The tutorials in the documentation are supplied as ipython notebooks which can be downloaded from [here](https://github.com/knaidoo29/mistree/tree/master/tutorials/notebooks) or can be run online using [binder](https://mybinder.org/v2/gh/knaidoo29/mistree/master?filepath=tutorials%2Fnotebooks%2F).\n"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/knaidoo29/mistree/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

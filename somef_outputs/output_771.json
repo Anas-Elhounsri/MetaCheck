@@ -1,0 +1,591 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Ronan Ysebaert"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0002-7344-5911",
+        "type": "String",
+        "value": "Ronan Ysebaert"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0003-4976-6560",
+        "type": "String",
+        "value": "Nicolas Lambert"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "timothee.giraud@cnrs.fr",
+        "identifier": "https://orcid.org/0000-0002-1932-3323",
+        "type": "String",
+        "value": "Timoth\u00e9e Giraud"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Ysebaert",
+            "given_name": "Ronan",
+            "name": "Ronan Ysebaert",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-7344-5911"
+          },
+          {
+            "family_name": "Lambert",
+            "given_name": "Nicolas",
+            "name": "Nicolas Lambert",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0003-4976-6560"
+          },
+          {
+            "family_name": "Giraud",
+            "given_name": "Timoth\u00e9e",
+            "name": "Timoth\u00e9e Giraud",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-1932-3323"
+          }
+        ],
+        "datePublished": "1932",
+        "format": "cff",
+        "title": "MTA: Multiscalar Territorial Analysis",
+        "type": "File_dump",
+        "url": "https://github.com/riatelab/MTA/",
+        "value": "# -----------------------------------------------------------\n# CITATION file created with {cffr} R package, v0.5.0\n# See also: https://docs.ropensci.org/cffr/\n# -----------------------------------------------------------\n \ncff-version: 1.2.0\nmessage: 'To cite package \"MTA\" in publications use:'\ntype: software\nlicense: GPL-3.0-only\ntitle: 'MTA: Multiscalar Territorial Analysis'\nversion: 0.6.0\nabstract: Build multiscalar territorial analysis based on various contexts.\nauthors:\n- family-names: Ysebaert\n  given-names: Ronan\n  orcid: https://orcid.org/0000-0002-7344-5911\n- family-names: Lambert\n  given-names: Nicolas\n  orcid: https://orcid.org/0000-0003-4976-6560\n- family-names: Giraud\n  given-names: Timoth\u00e9e\n  email: timothee.giraud@cnrs.fr\n  orcid: https://orcid.org/0000-0002-1932-3323\nrepository: https://CRAN.R-project.org/package=MTA\nrepository-code: https://github.com/riatelab/MTA/issues/\nurl: https://github.com/riatelab/MTA/\ncontact:\n- family-names: Giraud\n  given-names: Timoth\u00e9e\n  email: timothee.giraud@cnrs.fr\n  orcid: https://orcid.org/0000-0002-1932-3323\nreferences:\n- type: software\n  title: 'R: A Language and Environment for Statistical Computing'\n  notes: Depends\n  url: https://www.R-project.org/\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2023'\n  institution:\n    name: R Foundation for Statistical Computing\n  version: '>= 3.5'\n- type: software\n  title: methods\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2023'\n  institution:\n    name: R Foundation for Statistical Computing\n- type: software\n  title: stats\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2023'\n  institution:\n    name: R Foundation for Statistical Computing\n- type: software\n  title: graphics\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2023'\n  institution:\n    name: R Foundation for Statistical Computing\n- type: software\n  title: igraph\n  abstract: 'igraph: Network Analysis and Visualization'\n  notes: Imports\n  url: https://r.igraph.org/\n  repository: https://CRAN.R-project.org/package=igraph\n  authors:\n  - family-names: Cs\u00e1rdi\n    given-names: G\u00e1bor\n    email: csardi.gabor@gmail.com\n    orcid: https://orcid.org/0000-0001-7098-9676\n  - family-names: Nepusz\n    given-names: Tam\u00e1s\n    email: ntamas@gmail.com\n    orcid: https://orcid.org/0000-0002-1451-338X\n  - family-names: Traag\n    given-names: Vincent\n    orcid: https://orcid.org/0000-0003-3170-3879\n  - family-names: Horv\u00e1t\n    given-names: Szabolcs\n    email: szhorvat@gmail.com\n    orcid: https://orcid.org/0000-0002-3100-523X\n  - family-names: Zanini\n    given-names: Fabio\n    email: fabio.zanini@unsw.edu.au\n    orcid: https://orcid.org/0000-0001-7097-8539\n  - family-names: Noom\n    given-names: Daniel\n  - family-names: M\u00fcller\n    given-names: Kirill\n    email: kirill@cynkra.com\n    orcid: https://orcid.org/0000-0002-1416-3412\n  year: '2023'\n- type: software\n  title: sf\n  abstract: 'sf: Simple Features for R'\n  notes: Imports\n  url: https://r-spatial.github.io/sf/\n  repository: https://CRAN.R-project.org/package=sf\n  authors:\n  - family-names: Pebesma\n    given-names: Edzer\n    email: edzer.pebesma@uni-muenster.de\n    orcid: https://orcid.org/0000-0001-8049-7069\n  year: '2023'\n- type: software\n  title: knitr\n  abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'\n  notes: Suggests\n  url: https://yihui.org/knitr/\n  repository: https://CRAN.R-project.org/package=knitr\n  authors:\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  year: '2023'\n- type: software\n  title: rmarkdown\n  abstract: 'rmarkdown: Dynamic Documents for R'\n  notes: Suggests\n  url: https://pkgs.rstudio.com/rmarkdown/\n  repository: https://CRAN.R-project.org/package=rmarkdown\n  authors:\n  - family-names: Allaire\n    given-names: JJ\n    email: jj@posit.co\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  - family-names: Dervieux\n    given-names: Christophe\n    email: cderv@posit.co\n    orcid: https://orcid.org/0000-0003-4474-2498\n  - family-names: McPherson\n    given-names: Jonathan\n    email: jonathan@posit.co\n  - family-names: Luraschi\n    given-names: Javier\n  - family-names: Ushey\n    given-names: Kevin\n    email: kevin@posit.co\n  - family-names: Atkins\n    given-names: Aron\n    email: aron@posit.co\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  - family-names: Cheng\n    given-names: Joe\n    email: joe@posit.co\n  - family-names: Chang\n    given-names: Winston\n    email: winston@posit.co\n  - family-names: Iannone\n    given-names: Richard\n    email: rich@posit.co\n    orcid: https://orcid.org/0000-0003-3925-190X\n  year: '2023'\n- type: software\n  title: ineq\n  abstract: 'ineq: Measuring Inequality, Concentration, and Poverty'\n  notes: Suggests\n  repository: https://CRAN.R-project.org/package=ineq\n  authors:\n  - family-names: Zeileis\n    given-names: Achim\n    email: Achim.Zeileis@R-project.org\n  year: '2023'\n- type: software\n  title: png\n  abstract: 'png: Read and write PNG images'\n  notes: Suggests\n  url: http://www.rforge.net/png/\n  repository: https://CRAN.R-project.org/package=png\n  authors:\n  - family-names: Urbanek\n    given-names: Simon\n    email: Simon.Urbanek@r-project.org\n  year: '2023'\n- type: software\n  title: mapsf\n  abstract: 'mapsf: Thematic Cartography'\n  notes: Suggests\n  url: https://riatelab.github.io/mapsf/\n  repository: https://CRAN.R-project.org/package=mapsf\n  authors:\n  - family-names: Giraud\n    given-names: Timoth\u00e9e\n    email: timothee.giraud@cnrs.fr\n    orcid: https://orcid.org/0000-0002-1932-3323\n  year: '2023'\n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/MTA"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/MTA/"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/MTA/"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-02-28T10:30:55Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-05-12T14:59:56Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Multiscalar Territorial Analysis"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+        "type": "String",
+        "value": "Build multiscalar territorial analysis based on various contexts."
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Build multiscalar territorial analysis based on various contexts."
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8196674980711158,
+      "result": {
+        "original_header": "Multiscalar Territorial Analysis <img src=\"man/figures/logo.png\" align=\"right\" width=\"140\"/>",
+        "type": "Text_excerpt",
+        "value": "*Multiscalar territorial analysis based on various contexts.*    \n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.967184814337489,
+      "result": {
+        "original_header": "Main functions :",
+        "type": "Text_excerpt",
+        "value": "- `gdev()`: general deviation between regional ratios and a ratio of reference.  \n- `tdev()`: territorial deviation between regional ratios and ratios of an aggregated level.  \n- `sdev()`: spatial deviation between regional ratios and ratios of neighborhing regions. \n- `bidev()`: multiscalar typology based on 2 deviations.  \n- `mst()`: multiscalar typology based on the 3 deviations.  \n- `mas()`: multiscalar absolute synthesis, total amount of redistributions based on the three deviations.  \n- `map_bidev()`: creating bidev and parameters for producing a map based on it.\n- `map_mst()`: creating mst and parameters for producing a map based on it.\n- `plot_bidev()`: creating a plot for visualizing bidev results.\n- `plot_mst()`: creating a plot for visualizing mst results. \n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/MTA/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/riatelab/MTA/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "riatelab/MTA"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Multiscalar Territorial Analysis "
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MTA"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "Multiscalar Territorial Analysis <img src=\"man/figures/logo.png\" align=\"right\" width=\"140\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "* Stable version\n```{r}\ninstall.packages(\"MTA\")\n```\n\n* Development version on GitHub\n```{r}\nrequire(remotes)\ninstall_github(\"riatelab/MTA\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/riatelab/MTA/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/MTA/issues/"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/MTA/issues/"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "maps, r, rspatial, rstats, spatial-analysis"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/MTA/master/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MTA"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MTA: Multiscalar Territorial Analysis"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "riatelab"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+        "type": "String",
+        "value": "MTA"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 57321,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 7345,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 1251,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/MTA/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rCarto",
+          "type": "User"
+        },
+        "date_created": "2021-10-14T09:27:13Z",
+        "date_published": "2022-02-18T11:17:02Z",
+        "description": "- suggest the use of [`mapsf`](https://riatelab.github.io/mapsf/) instead of [`cartography`](https://cran.r-project.org/web/packages/cartography/index.html) for mapping results (functions examples, vignette) \r\n- the `MTA` package does not import cartography and reshape2 anymore. \r\n- Update of the vignette on conceptual background (new references).\r\n- Update of the input data (geopackage instead of .RData).\r\n- Use raw data instead of RData files \r\n\r\n\r\n",
+        "html_url": "https://github.com/riatelab/MTA/releases/tag/v0.4.0",
+        "name": "CRAN version",
+        "release_id": 59893955,
+        "tag": "v0.4.0",
+        "tarball_url": "https://api.github.com/repos/riatelab/MTA/tarball/v0.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/riatelab/MTA/releases/59893955",
+        "value": "https://api.github.com/repos/riatelab/MTA/releases/59893955",
+        "zipball_url": "https://api.github.com/repos/riatelab/MTA/zipball/v0.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rCarto",
+          "type": "User"
+        },
+        "date_created": "2019-10-16T09:56:41Z",
+        "date_published": "2019-10-16T09:57:29Z",
+        "html_url": "https://github.com/riatelab/MTA/releases/tag/v0.2.0",
+        "name": "CRAN version",
+        "release_id": 20737105,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/riatelab/MTA/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/riatelab/MTA/releases/20737105",
+        "value": "https://api.github.com/repos/riatelab/MTA/releases/20737105",
+        "zipball_url": "https://api.github.com/repos/riatelab/MTA/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rCarto",
+          "type": "User"
+        },
+        "date_created": "2017-09-25T08:23:29Z",
+        "date_published": "2017-09-25T14:03:06Z",
+        "description": "adapt vignette and example to use cartography 2.0.1",
+        "html_url": "https://github.com/riatelab/MTA/releases/tag/v0.1.1",
+        "name": "CRAN Version",
+        "release_id": 7878634,
+        "tag": "v0.1.1",
+        "tarball_url": "https://api.github.com/repos/riatelab/MTA/tarball/v0.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/riatelab/MTA/releases/7878634",
+        "value": "https://api.github.com/repos/riatelab/MTA/releases/7878634",
+        "zipball_url": "https://api.github.com/repos/riatelab/MTA/zipball/v0.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rCarto",
+          "type": "User"
+        },
+        "date_created": "2017-03-06T09:36:12Z",
+        "date_published": "2017-03-06T14:30:58Z",
+        "description": "Initial version",
+        "html_url": "https://github.com/riatelab/MTA/releases/tag/v0.1.0",
+        "name": "CRAN Version",
+        "release_id": 5651749,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/riatelab/MTA/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/riatelab/MTA/releases/5651749",
+        "value": "https://api.github.com/repos/riatelab/MTA/releases/5651749",
+        "zipball_url": "https://api.github.com/repos/riatelab/MTA/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:04:14",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 7
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/MTA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

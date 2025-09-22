@@ -1,0 +1,656 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Astronomy"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "CNES",
+        "email": "antoine.basset@cnes.fr",
+        "type": "String",
+        "value": "Antoine Basset"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "CNES",
+        "email": "manuel.grizonnet@cnes.fr",
+        "type": "String",
+        "value": "Manuel Grizonnet"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Geneva",
+        "email": "hubert.degaudenzi@unige.ch",
+        "type": "String",
+        "value": "Hubert Degaudenzi"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CNES/EleFits"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CNES/EleFits"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-08-23T12:06:06Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2021-10-28"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-03-27T20:23:10Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A modern C++ API on top of CFitsIO"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "EleFits is a modern C++ package to read and write Fits files which focuses on safety, user-friendliness, and performance."
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9945896799921558,
+      "result": {
+        "original_header": "Purpose and scope",
+        "type": "Text_excerpt",
+        "value": "EleFits is a modern C++ package to read and write FITS files which focuses on safety, user-friendliness, and performance.\nEleFits provides the only C++ FITS library which features a fully consistent and optimal internal type management system.\nNevertheless, the API is templated and agnostic of the underlying architecture, which makes usage straightforward.\nEleFits is compact and involves as few parameters as possible, which makes it both simple and robust.\nAs compared to CFITSIO, the benefits are mainly those of C++ over C: \n"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9492781547905982,
+      "result": {
+        "original_header": "Exclusive features",
+        "type": "Text_excerpt",
+        "value": "Strategies are predefined or user-defined lists of actions to be performed automatically.\nAmong strategies, compression strategies enables adaptive internal compression of image HDUs:\n```cpp\n// Given:\n// - std::string filename: A file name\n// - Raster<float> data: A 2D intensity image\n// - Raster<char> mask: A 2D mask image\n\nMefFile f(filename, FileMode::Edit, CompressAuto(), ValidateChecksums());\nf.append_image(\"\", {}, image); // Automatically compresses with shuffled GZIP\nf.append_image(\"\", {}, mask); // Automatically compresses with PLIO\nconst auto& p = f.primary(); // Automatically validates Primary's checksums, if any\nf.close(); // Automatically updates checksums of edited HDUs\n```\nFiles are iterable, and selectors enable looping over filtered HDUs\n(here, newly created image HDUs):\n```cpp\n// Given:\n// - MefFile f: The MEF file handler\n// - process_new_image: A user-defined function\n\nfor (const auto& hdu : f.filter<ImageHdu>(HduCategory::Created)) {\n  process_new_image(hdu);\n}\n```\nHeterogeneous collections of keyword records can be parsed and written,\nand a comprehensive type conversion system is provided:\n```cpp\n// Given:\n// - Header header: The header unit handler\n\nauto records = header.parse_all(KeywordCategory::Reserved);\nauto instrument = records.as<std::string>(\"INSTRUME\");\nauto exptime = records.as<double>(\"EXPTIME\");\n```\nImages and tables can be read and written region-wise\nby mapping -- possibly non-contiguous -- in-file and in-memory regions, e.g.:\n```cpp\n// Given:\n// - ImageRaster raster: The image data unit handler\n\nBox<2> region {{32, 16}, {64, 32}};\nraster.read_region(region);\n```\nFor binary tables, multiple columns can be read or written at once\nto take advantage of an internal buffer:\n```cpp\n// Given:\n// - BintableColumns columns: The binary table data unit handler\n\nauto [col_a, col_b, col_c] = columns.read_n(\n    as<char>(\"A\"), as<double>(\"B\"), as<std::complex<float>>(\"C\"));\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "User documentation",
+        "parent_header": [
+          "The elegant FITS processor!"
+        ],
+        "type": "Text_excerpt",
+        "value": "The [User Guide](https://cnes.github.io/EleFits/5.3.1/modules.html) is the main entry point for usage documentation.\nEach so-called documentation module addresses a specific topic to learn how to use EleFits and understand why it is designed the way it is.\nThe API documentation of related namespaces, classes and functions is linked at the bottom of each module page.\n\nTo go further, many other topics are discussed in the [Related pages](https://cnes.github.io/EleFits/5.3.1/pages.html), as unordered documents.\nAmong others, you'll find there thoughts on CFITSIO, the tutorial, and some design documentation. \n"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CNES/EleFits/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/CNES/EleFits/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CNES/EleFits"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The elegant FITS processor!"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CNES/EleFits/develop/install.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "10.24400/815952/elefits"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CNES/EleFits/develop/doc/diagrams/out/elefits_square.svg"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Installation and configuration guide\n\n## Introduction\n\nEleFits depends on Elements, a Euclid-developed build framework based on CMake.\nAs such, EleFits can be used either from an Elements project or from a CMake project.\nEuclid developers benefit from the continuous delivery of EDEN (Euclid development environment) and have nothing to install.\nOthers must install EleFits (and Elements) before they configure their project.\n\n## Download, install and test EleFits\n\n### EDEN users\n\nNothing to install: all versions of EleFits are already part of EDEN.\nJump to the configuration section.\n\n### Non-EDEN users\n\n#### TL;DR\n\nDownload and run [the installation script](https://raw.githubusercontent.com/CNES/EleFits/5.3.1/install.sh):\n\n```sh\nwget https://raw.githubusercontent.com/CNES/EleFits/5.3.1/install.sh\nchmod +x install.sh\nsudo ./install.sh\n```\n\n#### More details\n\nIn the remaining, we assume that you're putting the source code of Elements and EleFits in some `<root>` directory.\n\nYou'll first need to get Elements:\n\n```xml\ncd <root>\ngit clone -b 6.2.1 https://github.com/astrorama/Elements.git\ncd Elements\nmkdir build ; cd build\ncmake -DCMAKE_INSTALL_PREFIX=/usr/local ..\nsudo make install\n```\n\nFinally, install EleFits the same way:\n\n```xml\ncd <root>\ngit clone -b 5.3.1 https://github.com/cnes/EleFits.git\ncd EleFits\nmkdir build ; cd build\ncmake -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_PREFIX_PATH=/usr/local ..\nsudo make install\n```\n\nThis will install the the set of libraries in `/usr/local/lib` (or `usr/local/lib64`), headers in `/usr/local/include`, and executables in `/usr/local/bin`.\nThe end-user library is named EleFits, while the low-level API is named EleCfitsioWrapper.\n\nAn install script is provided to perform all those steps, `install.sh`.\nCheck the help as:\n\n```sh\ninstall.sh -h\n```\n\n## Configure a project to depend on EleFits\n\n### Elements project\n\nAn Elements project is made of modules.\nThe project contains a root `CMakeLists.txt`, and each module contains a `CMakeLists.txt`.\nFor more information, please refer to the [Elements documentation](https://euclid.roe.ac.uk/projects/codeen-users/wiki/User_Bui_Too).\n\nUsing the package means declaring the dependency to the EleFits project in the root `CMakeLists.txt`:\n\n```xml\nelements_project(<project_name> <project_version>\n    USE EleFits <EleFits_version>)\n```\n\nand to the EleFits module in the `CMakeLists.txt` of each module which requires EleFits:\n\n```xml\nelements_depends_on_subdirs(EleFits)\n\nelements_add_executable(<program_name> src/program/<program_name>.cpp\n    LINK_LIBRARIES ElementsKernel EleFits)\n\nelements_add_library(<library_name> src/Lib/*.cpp\n    LINK_LIBRARIES ElementsKernel EleFits\n    INCLUDE_DIRS ElementsKernel EleFits\n    PUBLIC_HEADERS <library_name>)\n```\n\n### CMake project\n\nHere's a minimal `CMakeLists.txt` file to use the EleFits library (end-user API):\n\n```xml\nCMAKE_MINIMUM_REQUIRED(VERSION <cmake_version>)\nproject(<project_name>)\nlist(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/modules)\nfind_package(EleFits REQUIRED)\nadd_executable(<exe_name> <exe_source>)\ntarget_link_libraries(<exe_name> EleFits)\n```\n\nThe `find_package` command expects parent folder of the file `FindEleFits.cmake` to be in the `CMAKE_MODULE_PATH`.\nFor now, this file is located in the sources of EleFits, in `cmake/modules`\n(we'd like it to be installed in a more standard location in some future version).\nTo work with the proposed `CMakeLists.txt`, it should be copied inside your project:\n\n```sh\ncd <root>/<project_name>\nwget https://raw.githubusercontent.com/CNES/EleFits/5.3.1/cmake/modules/FindEleFits.cmake -P cmake/modules\nmkdir build ; cd build\ncmake ..\nmake\n```\n\nNote that, to run executables, the EleFits library has to be in the library path.\nThis can be done, for example, with:\n\n```xml\nexport LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64\n```\n\nwhich can be added to the `.bashrc`, e.g.:\n\n```xml\necho 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib:/usr/local/lib64' >> ~/.bashrc\nsource ~/.bashrc\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/INSTALL.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation instructions",
+        "parent_header": [
+          "The elegant FITS processor!"
+        ],
+        "type": "Text_excerpt",
+        "value": "See [the dedicated page](INSTALL.md).\n"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/CNES/EleFits/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CNES/EleFits/issues"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "actively-maintained, cpp, fits-files, fitsio"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "FITS",
+          "C++"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "### GNU Lesser General Public License\n\nVersion 3, 29 June 2007\n\nCopyright (C) 2007 Free Software Foundation, Inc.\n<https://fsf.org/>\n\nEveryone is permitted to copy and distribute verbatim copies of this\nlicense document, but changing it is not allowed.\n\nThis version of the GNU Lesser General Public License incorporates the\nterms and conditions of version 3 of the GNU General Public License,\nsupplemented by the additional permissions listed below.\n\n#### 0. Additional Definitions.\n\nAs used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the\nGNU General Public License.\n\n\"The Library\" refers to a covered work governed by this License, other\nthan an Application or a Combined Work as defined below.\n\nAn \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\nA \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library. The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\nThe \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\nThe \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n#### 1. Exception to Section 3 of the GNU GPL.\n\nYou may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n#### 2. Conveying Modified Versions.\n\nIf you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n-   a) under this License, provided that you make a good faith effort\n    to ensure that, in the event an Application does not supply the\n    function or data, the facility still operates, and performs\n    whatever part of its purpose remains meaningful, or\n-   b) under the GNU GPL, with none of the additional permissions of\n    this License applicable to that copy.\n\n#### 3. Object Code Incorporating Material from Library Header Files.\n\nThe object code form of an Application may incorporate material from a\nheader file that is part of the Library. You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n-   a) Give prominent notice with each copy of the object code that\n    the Library is used in it and that the Library and its use are\n    covered by this License.\n-   b) Accompany the object code with a copy of the GNU GPL and this\n    license document.\n\n#### 4. Combined Works.\n\nYou may convey a Combined Work under terms of your choice that, taken\ntogether, effectively do not restrict modification of the portions of\nthe Library contained in the Combined Work and reverse engineering for\ndebugging such modifications, if you also do each of the following:\n\n-   a) Give prominent notice with each copy of the Combined Work that\n    the Library is used in it and that the Library and its use are\n    covered by this License.\n-   b) Accompany the Combined Work with a copy of the GNU GPL and this\n    license document.\n-   c) For a Combined Work that displays copyright notices during\n    execution, include the copyright notice for the Library among\n    these notices, as well as a reference directing the user to the\n    copies of the GNU GPL and this license document.\n-   d) Do one of the following:\n    -   0) Convey the Minimal Corresponding Source under the terms of\n        this License, and the Corresponding Application Code in a form\n        suitable for, and under terms that permit, the user to\n        recombine or relink the Application with a modified version of\n        the Linked Version to produce a modified Combined Work, in the\n        manner specified by section 6 of the GNU GPL for conveying\n        Corresponding Source.\n    -   1) Use a suitable shared library mechanism for linking with\n        the Library. A suitable mechanism is one that (a) uses at run\n        time a copy of the Library already present on the user's\n        computer system, and (b) will operate properly with a modified\n        version of the Library that is interface-compatible with the\n        Linked Version.\n-   e) Provide Installation Information, but only if you would\n    otherwise be required to provide such information under section 6\n    of the GNU GPL, and only to the extent that such information is\n    necessary to install and execute a modified version of the\n    Combined Work produced by recombining or relinking the Application\n    with a modified version of the Linked Version. (If you use option\n    4d0, the Installation Information must accompany the Minimal\n    Corresponding Source and Corresponding Application Code. If you\n    use option 4d1, you must provide the Installation Information in\n    the manner specified by section 6 of the GNU GPL for conveying\n    Corresponding Source.)\n\n#### 5. Combined Libraries.\n\nYou may place library facilities that are a work based on the Library\nside by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n-   a) Accompany the combined library with a copy of the same work\n    based on the Library, uncombined with any other library\n    facilities, conveyed under the terms of this License.\n-   b) Give prominent notice with the combined library that part of it\n    is a work based on the Library, and explaining where to find the\n    accompanying uncombined form of the same work.\n\n#### 6. Revised Versions of the GNU Lesser General Public License.\n\nThe Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\nEach version is given a distinguishing version number. If the Library\nas you received it specifies that a certain numbered version of the\nGNU Lesser General Public License \"or any later version\" applies to\nit, you have the option of following the terms and conditions either\nof that published version or of any later version published by the\nFree Software Foundation. If the Library as you received it does not\nspecify a version number of the GNU Lesser General Public License, you\nmay choose any version of the GNU Lesser General Public License ever\npublished by the Free Software Foundation.\n\nIf the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/LGPL-3.0-or-later",
+        "spdx_id": "https://spdx.org/licenses/LGPL-3.0-or-later",
+        "type": "License",
+        "value": "https://spdx.org/licenses/LGPL-3.0-or-later"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "The elegant FITS processor!"
+        ],
+        "type": "Text_excerpt",
+        "value": "[LGPL-3.0-or-later](LICENSE.md)\n"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "EleFits"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "EleFits"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "CNES"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 705611,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 36148,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CMake",
+        "size": 34778,
+        "type": "Programming_language",
+        "value": "CMake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 13997,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 5720,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 4889,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 1994,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Groovy",
+        "size": 122,
+        "type": "Programming_language",
+        "value": "Groovy"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++14",
+        "type": "Programming_language",
+        "value": "C++14",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CNES/EleFits/develop/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kabasset",
+          "type": "User"
+        },
+        "date_created": "2023-11-25T14:36:56Z",
+        "date_published": "2023-11-25T18:06:12Z",
+        "description": "New automation tools and support for internal compression!",
+        "html_url": "https://github.com/CNES/EleFits/releases/tag/5.3.0",
+        "name": "5.3.0",
+        "release_id": 131440273,
+        "tag": "5.3.0",
+        "tarball_url": "https://api.github.com/repos/CNES/EleFits/tarball/5.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CNES/EleFits/releases/131440273",
+        "value": "https://api.github.com/repos/CNES/EleFits/releases/131440273",
+        "zipball_url": "https://api.github.com/repos/CNES/EleFits/zipball/5.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kabasset",
+          "type": "User"
+        },
+        "date_created": "2022-02-10T18:35:01Z",
+        "date_published": "2022-02-10T18:51:30Z",
+        "description": "## 5.0.0\r\n\r\n### Bug fixes\r\n\r\n* Function `shapeSize()` was wrong for `N = 0`\r\n* Method `readSize()` of `ImageHdu` and `ImageRaster` was wrong for `N != 2`\r\n* `BintableColumns::initSeq()` was ill-formed for non-tuple sequences\r\n* Fixed `BintableColumns::readSegmentSeq()` with unresolved bound (-1)\r\n\r\n### Breaking changes\r\n\r\n* Updated to Elements 6.0.1\r\n* `Raster<T, N>` becomes `Raster<T, N, TContainer>` to work with any contiguous container\r\n  (with `PtrRaster<T, N> = Raster<T, N, T*>` and `VecRaster<T, N> = Raster<T, N, vector<T>>`)\r\n* `ColumnInfo<T>` becomes `ColumnInfo<T, N>` and variable `repeatCount` becomes method `repeatCount()`\r\n  to support multidimensional entries\r\n* `Column<T>` becomes `Column<T, N, TContainer>`\r\n  to support multidimensional entries and to work with any contiguous container\r\n  (with `PtrColumn<T, N> = Column<T, N, T*>` and `VecColumn<T, N> = Column<T, N, vector<T>>`)\r\n* `PtrColumn(info, elementCount, data)` becomes `PtrColumn(info, rowCount, data)` for homogeneity with `VecColumn`\r\n\r\n### Refactoring\r\n\r\n* `Raster`, `Column` and `Position` inherit `DataContainer` (see below)\r\n* `PtrRaster`, `VecRaster`, `PtrColumn` and `VecColumn` are now mere aliases\r\n* Methods which took a `Raster&` or `Column&` as parameter now accept any type which fullfills `Raster` or `Column` requirements\r\n* All `DataContainer`s fulfill the standard `ContiguousContainer` requirements (e.g are iterable)\r\n* All `DataContainer`s have vector space arithmetic (e.g. support `+`, `-`, `*`, `/`)\r\n* `DataContainer::apply()` and `DataContainer::generate()` enable arbitrary element-wise transforms,\r\n  including with other `DataContainer`s as arguments\r\n* `ColumnInfo` has a member `shape` in lieu of `repeatCount` to support multidimensional entries\r\n* `Column::entry()` returns a view as a `PtrRaster` for multidimensional columns\r\n* `Column::elementCount()` is deprecated and replaced with standard `size()`\r\n* `MefFile` method names have been standardized (old names are kept for backward compatibility but deprecated)\r\n* `VecRaster::vector()` and `VecColumn::vector()` are deprecated (use `container()` instead, which performs no copy)\r\n* `Named` and `Indexed` are deprecated (use maker function `as()`)\r\n\r\n### Other new features\r\n\r\n* Header units and data units can be accessed directly from a `MefFile`\r\n  (e.g. `access<ImageRaster>(1)` is a shortcut for `access<ImageHdu>(1).raster()`)\r\n* Multi-dimensional columns are supported\r\n* Empty binary table HDUs can be created\r\n* `FileMode::Write` added to edit an existing file or create a new one\r\n* Added `BintableColumns::readSeq()` overloads for homogeneous sequences (returns `std::vector<VecColumn<T>>`)\r\n* `Record` and `DataContainer`s support `operator<<()`\r\n* New method `FitsFile::handoverToCfitsio()` returns the CFITSIO's `fitsfile*`\r\n* New \"Game of Life\" example demonstrates the use of slicing\r\n\r\n### Optimization and cleaning\r\n\r\n* Access to raster and column elements is notably faster\r\n* Many similar code blocks have been merged (e.g. through mixins)\r\n* Several overloads have been merged (e.g. with `ColumnKey` and `TypedKey`)\r\n* Legal notices have been reviewed\r\n* Formatting has been reviewed\r\n* This change log was added to Doxygen pages",
+        "html_url": "https://github.com/CNES/EleFits/releases/tag/5.0.0",
+        "name": "5.0.0",
+        "release_id": 59265363,
+        "tag": "5.0.0",
+        "tarball_url": "https://api.github.com/repos/CNES/EleFits/tarball/5.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CNES/EleFits/releases/59265363",
+        "value": "https://api.github.com/repos/CNES/EleFits/releases/59265363",
+        "zipball_url": "https://api.github.com/repos/CNES/EleFits/zipball/5.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kabasset",
+          "type": "User"
+        },
+        "date_created": "2021-11-02T17:56:44Z",
+        "date_published": "2021-11-02T18:10:18Z",
+        "description": "# 4.0.1 - Bug fix\r\n\r\n## Bug fixes\r\n\r\n* `BintableColumns::initSeq()` was ill-formed for non-tuple sequences\r\n\r\n## New features\r\n\r\n* Empty binary table HDUs can be created",
+        "html_url": "https://github.com/CNES/EleFits/releases/tag/4.0.1",
+        "name": "4.0.1",
+        "release_id": 52541906,
+        "tag": "4.0.1",
+        "tarball_url": "https://api.github.com/repos/CNES/EleFits/tarball/4.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CNES/EleFits/releases/52541906",
+        "value": "https://api.github.com/repos/CNES/EleFits/releases/52541906",
+        "zipball_url": "https://api.github.com/repos/CNES/EleFits/zipball/4.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kabasset",
+          "type": "User"
+        },
+        "date_created": "2021-10-22T19:04:57Z",
+        "date_published": "2021-10-28T11:52:30Z",
+        "description": "# 4.0.0 - First public release\r\n\r\nAfter years of intra-Euclid development, here is the first public release of EleFits!\r\nJump to [the documentation](https://cnes.github.io/EleFits) and enjoy!\r\n\r\nAny feedback welcome ;-)",
+        "html_url": "https://github.com/CNES/EleFits/releases/tag/4.0.0",
+        "name": "4.0.0",
+        "release_id": 52227287,
+        "tag": "4.0.0",
+        "tarball_url": "https://api.github.com/repos/CNES/EleFits/tarball/4.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CNES/EleFits/releases/52227287",
+        "value": "https://api.github.com/repos/CNES/EleFits/releases/52227287",
+        "zipball_url": "https://api.github.com/repos/CNES/EleFits/zipball/4.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Elements",
+        "type": "Software_application",
+        "value": "Elements",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Boost",
+        "type": "Software_application",
+        "value": "Boost",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CFITSIO",
+        "type": "Software_application",
+        "value": "CFITSIO",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:28:02",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 16
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Tutorial",
+        "parent_header": [
+          "The elegant FITS processor!"
+        ],
+        "type": "Text_excerpt",
+        "value": "The tutorial composed of an example program and [associated documentation](https://cnes.github.io/EleFits/5.3.1/tuto.html) is probably the good entry point for newcomers.\n"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "5.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/CNES/EleFits/develop/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

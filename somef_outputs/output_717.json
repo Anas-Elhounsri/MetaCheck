@@ -1,0 +1,1029 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DataPublication"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9748803919117602,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Carl Boettiger"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "cboettig@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-1642-628X",
+        "type": "String",
+        "value": "Carl Boettiger"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0003-1444-9135",
+        "type": "String",
+        "value": "Scott Chamberlain"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0001-9107-0714",
+        "type": "String",
+        "value": "Hilmar Lapp"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Kseniia Shumelchyk"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0001-9254-7318",
+        "type": "String",
+        "value": "Rutger Vos"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2016",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "bibentry(bibtype = \"Article\",\n         header = \"To cite RNeXML in publications, please use:\", \n         title = \"{RNeXML}: {A} Package for Reading and Writing Richly Annotated Phylogenetic, Character, and Trait Data in {R}\",\n         journal = \"Methods in Ecology and Evolution\",\n         author = c(\n             person(\"Carl\", \"Boettiger\"),\n             person(\"Scott\", \"Chamberlain\"),\n             person(\"Rutger\", \"Vos\"),\n             person(\"Hilmar\", \"Lapp\")),\n         year = 2016,\n         volume = 7,\n         pages = \"352--357\",\n         doi = \"10.1111/2041-210X.12469\")\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to cite",
+        "parent_header": [
+          "RNeXML <img src=\"man/figures/logo.svg\" align=\"right\" alt=\"\" width=\"120\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "RNeXML has been published in the following article:\n\n> Boettiger C, Chamberlain S, Vos R and Lapp H (2016). \u201cRNeXML: A\n> Package for Reading and Writing Richly Annotated Phylogenetic,\n> Character, and Trait Data in R.\u201d *Methods in Ecology and Evolution*,\n> **7**, pp. 352-357.\n> doi:10.1111/2041-210X.12469\n\nAlthough the published version of the article is pay-walled, the source\nof the manuscript, and a much better rendered PDF, are included in this\npackage (in the `manuscripts` folder). You can also find it [freely\navailable on arXiv](https://arxiv.org/abs/1506.02722).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/RNeXML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/RNeXML"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/RNeXML"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.org/ropensci/RNeXML",
+          "https://ci.appveyor.com/project/cboettig/rnexml/branch/master",
+          "https://codecov.io/github/ropensci/RNeXML?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "\nContributing Guidelines\n=======================\n\n\nRepository structure\n--------------------\n\nThis repository is structured as a standard R package\nfollowing the conventions outlined in the [Writing R\nextensions](http://cran.r-project.org/doc/manuals/R-exts.html) manual.\nA few additional files are provided that are not part of the built\nR package and are listed in `.Rbuildignore`, such as `.travis.yml`,\nwhich is used for continuous testing and integration.\n\n\nCode\n----\n\nAll code for this package is found in `R/`, (except compiled source\ncode, if used, which is in `/src`).  All functions should be thoroughly\ndocumented with `roxygen2` notation; see Documentation.\n\nTesting\n-------\n\nAny new feature or bug-fix should include a unit-test demonstrating the\nchange.  Unit tests follow the `testthat` framework with files in\n`tests/testthat`.  Please make sure that the testing suite passes\nbefore issuing a pull request.  This can be done by running `check()`\nfrom the `devtools` package, which will also check for consistent\ndocumentation, etc.\n\n\nThis package uses the [travis](https://github.com/craigcitro/r-travis)\ncontinuous testing mechanism for R to ensure that the test suite is run\non each push to Github.  An icon at the top of the README.md indicates\nwhether or not the tests are currently passing.\n\n\nDocumentation\n-------------\n\nAll of the function documentation is generated automatically.\nPlease do not edit any of the documentation files in `man/`\nor the `NAMESPACE`.  Instead, construct the appropriate\n[roxygen2](https://github.com/klutometis/roxygen) documentation in the\nfunction files in `R/` themselves.  The documentation is then generated\nby running the `document()` function from the `devtools` package.  Please\nconsult the [Advanced R programming](http://adv-r.had.co.nz/) guide if\nthis workflow is unfamiliar to you.  Note that functions should include\nexamples in the documentation. Please use `\\dontrun` for examples that\ntake more than a few seconds to execute or require an internet connection.\n\nLikewise, the README.md file in the base directory should not be edited\ndirectly.  This file is created automatically from code that runs the\nexamples shown, helping to ensure that they are functioning as advertised\nand consistent with the package README vignette.  Instead, edit the\n`README.Rmd` source file in `manuscripts` and run `make` to build\nthe README.\n\n\n\nManuscript\n----------\n\nThe manuscript files are built using the dynamic documentation tool\n`knitr` from the `.Rmd` versions of the file.  Please do not edit\nthe `.md` versions since such files are built automatically.\nThe `.md` versions are built for viewing on Github, and take advantage\nof Github's rendering and display of text-based diffs.  The `.md`\nfiles should then be generated using the `Makefile` provided, which\nwill also handle details such as Github-compatible syntax highlighting\nand the embedding of images.\n\nThe `Makefile` will also generate a pdf version of the manuscript\nusing pandoc and the appropriate LaTeX templates.\n\nText should be hard-wrapped at less than 80 characters width when\npossible. This allows git to better track real changes to the files\nand impoves the display of line-based diffs.  For this reason,\nalso avoid re-wrapping text frequently, or changing line end encodings,\netc.\n\n\n**Embedding images**: Image generation is handled by the markdown\nfile, which will embed online png images published to imgur for the\n`.md` output, and vector pdf graphics for the `.pdf` manuscript.\n\n**Citations**: Citations should be added to the `.Rmd` file using\npandoc markdown notation, with the corresponding bibtex entries\nadded to `citations.bib`. Citations can also be added as a standard\nmarkdown link.\n\n**Caching** To avoid rerunning potentially slow R code embedded in the\nmansucript simply to view changes to the text, results from running the\ncode are cached in `cache` (see the knitr documentation for details on\nhow caching is used).  Run `make clean` to erase the cache and clear\nyour workspace.  Recall that the Makefile will only rerun the relevant\ncommand if the source file has changed.  Consequently, changes to to\nthe package functions themselves will not automatically cause make to\nrecompile the manuscript.\n\n\n<!-- Should add a utility that will generate citation metadata from\nthe mauscript.Rmd links using knitcitations.\n\nConsider yaml-based citation format instead, see:\nhttp://blog.martinfenner.org/2013/07/30/citeproc-yaml-for-bibliographies/#comment-1046228784\n-->\n\n\nBranches\n--------\n\nPlease ensure that any pull requests are made to the relevant branch.\n\n\nQuestions or comments?\n---------------------\n\nDo not hesistate to open an issue in the issues tracker to raise any\nquestions or comments about the package or these guidelines.\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2013-08-03T02:50:25Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-05-06T19:06:48Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Implementing semantically rich NeXML I/O in R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+        "type": "String",
+        "value": "Provides access to phyloinformatic data in 'NeXML' format.  The\n    package should add new functionality to R such as the possibility to\n    manipulate 'NeXML' objects in more various and refined way and compatibility\n    with 'ape' objects."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Provides access to phyloinformatic data in 'NeXML' format.  The\n    package should add new functionality to R such as the possibility to\n    manipulate 'NeXML' objects in more various and refined way and compatibility\n    with 'ape' objects."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9897594359970715,
+      "result": {
+        "original_header": "RNeXML <img src=\"man/figures/logo.svg\" align=\"right\" alt=\"\" width=\"120\" />",
+        "type": "Text_excerpt",
+        "value": "An extensive and rapidly growing collection of richly annotated\nphylogenetics data is now available in the NeXML format. NeXML relies on\nstate-of-the-art data exchange technology to provide a format that can\nbe both validated and extended, providing a data quality assurance and\nadaptability to the future that is lacking in other formats. See [Vos et\nal\n2012](https://doi.org/10.1093/sysbio/sys025 \"NeXML: Rich, Extensible, and Verifiable Representation of Comparative Data and Metadata.\")\nfor further details on the NeXML format.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/RNeXML/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 9
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/RNeXML/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/RNeXML"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "RNeXML "
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/RNeXML/master/manuscripts/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/manuscripts/Dockerfile",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/RNeXML/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "RNeXML"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/11856817"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.travis-ci.org/ropensci/RNeXML.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ci.appveyor.com/api/projects/status/dhiwp5blx2ns2yba/branch/master?svg=true"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://codecov.io/github/ropensci/RNeXML/coverage.svg?branch=master"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org//public_images/github_footer.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "RNeXML <img src=\"man/figures/logo.svg\" align=\"right\" alt=\"\" width=\"120\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "The latest stable release of RNeXML is on CRAN, and can be installed\nwith the usual `install.packages(\"RNeXML\")` command. Some of the more\nspecialized functionality described in the Vignettes (such as RDF\nmanipulation) requires additional packages which can be installed using:\n\n``` r\ninstall.packages(\"RNeXML\", deps = TRUE)\n```\n\nThe development version can be installed using:\n\n``` r\nremotes::install_github(\"ropensci/RNeXML\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/RNeXML/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/RNeXML/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/RNeXML/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "nexml, phylogenetics, r, r-package, rstats"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "metadata",
+          "nexml",
+          "phylogenetics",
+          "linked-data",
+          "r",
+          "rstats",
+          "r-package"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "YEAR: 2013 - 2014\nCOPYRIGHT HOLDER: Carl Boettiger  \nORGANIZATION: rOpenSci \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+        "type": "String",
+        "value": "BSD_3_clause + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/BSD-3-Clause",
+        "spdx_id": "https://spdx.org/licenses/BSD-3-Clause",
+        "type": "License",
+        "value": "https://spdx.org/licenses/BSD-3-Clause"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/RNeXML/master/man/figures/logo.svg"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "RNeXML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "RNeXML: Semantically Rich I/O for the 'NeXML' Format"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+        "type": "String",
+        "value": "RNeXML"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 254897,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 100503,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "XSLT",
+        "size": 32062,
+        "type": "Programming_language",
+        "value": "XSLT"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 570,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 71,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": "3.6.2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/RNeXML/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_papers": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://arxiv.org/abs/1506.02722"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cboettig",
+          "type": "User"
+        },
+        "date_created": "2019-11-08T16:18:59Z",
+        "date_published": "2019-11-08T22:04:16Z",
+        "html_url": "https://github.com/ropensci/RNeXML/releases/tag/v2.4.0",
+        "name": "RNeXML",
+        "release_id": 21333024,
+        "tag": "v2.4.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/RNeXML/tarball/v2.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/RNeXML/releases/21333024",
+        "value": "https://api.github.com/repos/ropensci/RNeXML/releases/21333024",
+        "zipball_url": "https://api.github.com/repos/ropensci/RNeXML/zipball/v2.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cboettig",
+          "type": "User"
+        },
+        "date_created": "2019-01-23T00:01:13Z",
+        "date_published": "2019-01-26T04:45:50Z",
+        "description": "[![DOI](https://zenodo.org/badge/11856817.svg)](https://zenodo.org/badge/latestdoi/11856817) [![codecov.io](https://codecov.io/github/ropensci/RNeXML/coverage.svg?branch=master)](https://codecov.io/github/ropensci/RNeXML?branch=master) [![Build\r\nStatus](https://api.travis-ci.org/ropensci/RNeXML.png)](https://travis-ci.org/ropensci/RNeXML) [![CRAN\r\nstatus](https://www.r-pkg.org/badges/version/RNeXML)](https://cran.r-project.org/package=RNeXML) ![downloads](http://cranlogs.r-pkg.org/badges/grand-total/RNeXML)\r\n\r\n\r\nAn extensive and rapidly growing collection of richly annotated phylogenetics data is now available in the NeXML format. NeXML relies on state-of-the-art data exchange technology to provide a format that can be both validated and extended, providing a data quality assurance and adaptability to the future that is lacking in other formats. See [Vos et al 2012](http://doi.org/10.1093/sysbio/sys025 \"NeXML: Rich, Extensible, and Verifiable Representation of Comparative Data and Metadata.\") for further details on the NeXML format.\r\n\r\n## [Release Notes](https://github.com/ropensci/RNeXML/blob/master/NEWS.md)\r\n\r\n\r\nThis release addresses several aspects improving the handling of metadata:\r\n\r\n- `add_meta()` now works for trees and characters (#213, PR #217)\r\n- Handles nested meta elements properly (#196, PR #197)\r\n\r\nMisc fixes:\r\n\r\n- enable handling of `rootEdge` (#207, PR #218)\r\n- Replaces taxize backend with faster alternative `taxadb` method. (#224, PR #226).\r\n This remains only a suggested package and has much lighter dependencies as well.  \r\n- add hex\r\n",
+        "html_url": "https://github.com/ropensci/RNeXML/releases/tag/v2.3.0",
+        "name": "RNeXML v2.3.0",
+        "release_id": 15194523,
+        "tag": "v2.3.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/RNeXML/tarball/v2.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/RNeXML/releases/15194523",
+        "value": "https://api.github.com/repos/ropensci/RNeXML/releases/15194523",
+        "zipball_url": "https://api.github.com/repos/ropensci/RNeXML/zipball/v2.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cboettig",
+          "type": "User"
+        },
+        "date_created": "2018-11-01T03:45:14Z",
+        "date_published": "2018-11-04T03:58:53Z",
+        "description": "[![DOI](https://zenodo.org/badge/11856817.svg)](https://zenodo.org/badge/latestdoi/11856817) [![codecov.io](https://codecov.io/github/ropensci/RNeXML/coverage.svg?branch=master)](https://codecov.io/github/ropensci/RNeXML?branch=master) [![Build\r\nStatus](https://api.travis-ci.org/ropensci/RNeXML.png)](https://travis-ci.org/ropensci/RNeXML) [![CRAN\r\nstatus](https://www.r-pkg.org/badges/version/RNeXML)](https://cran.r-project.org/package=RNeXML) ![downloads](http://cranlogs.r-pkg.org/badges/grand-total/RNeXML)\r\n\r\n\r\nAn extensive and rapidly growing collection of richly annotated phylogenetics data is now available in the NeXML format. NeXML relies on state-of-the-art data exchange technology to provide a format that can be both validated and extended, providing a data quality assurance and adaptability to the future that is lacking in other formats. See [Vos et al 2012](http://doi.org/10.1093/sysbio/sys025 \"NeXML: Rich, Extensible, and Verifiable Representation of Comparative Data and Metadata.\") for further details on the NeXML format.\r\n\r\n## [Release Notes](https://github.com/ropensci/RNeXML/blob/master/NEWS.md)\r\n\r\n\r\n- Fixes various (previously broken) aspects of handling polymorphic\r\n  and uncertain states for discrete (non-molecular) and continuous\r\n  characters, including obtaining a character matrix (#174), ensuring\r\n  proper column types (#188), and serializing to NeXML (#192).\r\n- Adds the optional ability to, in addition to the character matrix,\r\n  obtain a concordantly formatted matrix of state types (standard,\r\n  polymorphic, uncertain).\r\n- Fixes loss of certain literal-valued metadata when serializing to\r\n  NeXML. #193\r\n- Drops package phylobase as dependency. (Also removes circular\r\n  dependency chain, because phylobase depends on RNeXML.)",
+        "html_url": "https://github.com/ropensci/RNeXML/releases/tag/v2.2.0",
+        "name": "RNeXML v2.2.0",
+        "release_id": 13815912,
+        "tag": "v2.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/RNeXML/tarball/v2.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/RNeXML/releases/13815912",
+        "value": "https://api.github.com/repos/ropensci/RNeXML/releases/13815912",
+        "zipball_url": "https://api.github.com/repos/ropensci/RNeXML/zipball/v2.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cboettig",
+          "type": "User"
+        },
+        "date_created": "2018-08-11T18:28:31Z",
+        "date_published": "2018-08-20T17:38:55Z",
+        "description": "[![DOI](https://zenodo.org/badge/11856817.svg)](https://zenodo.org/badge/latestdoi/11856817) [![codecov.io](https://codecov.io/github/ropensci/RNeXML/coverage.svg?branch=master)](https://codecov.io/github/ropensci/RNeXML?branch=master) [![Build\r\nStatus](https://api.travis-ci.org/ropensci/RNeXML.png)](https://travis-ci.org/ropensci/RNeXML) [![CRAN\r\nstatus](https://www.r-pkg.org/badges/version/RNeXML)](https://cran.r-project.org/package=RNeXML) ![downloads](http://cranlogs.r-pkg.org/badges/grand-total/RNeXML)\r\n\r\n\r\nAn extensive and rapidly growing collection of richly annotated phylogenetics data is now available in the NeXML format. NeXML relies on state-of-the-art data exchange technology to provide a format that can be both validated and extended, providing a data quality assurance and adaptability to the future that is lacking in other formats. See [Vos et al 2012](http://doi.org/10.1093/sysbio/sys025 \"NeXML: Rich, Extensible, and Verifiable Representation of Comparative Data and Metadata.\") for further details on the NeXML format.\r\n\r\n## [Release Notes](https://github.com/ropensci/RNeXML/blob/master/NEWS.md)",
+        "html_url": "https://github.com/ropensci/RNeXML/releases/tag/v2.1.2",
+        "name": "RNeXML: The next-generation phylogenetics format comes to R",
+        "release_id": 12486619,
+        "tag": "v2.1.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/RNeXML/tarball/v2.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/RNeXML/releases/12486619",
+        "value": "https://api.github.com/repos/ropensci/RNeXML/releases/12486619",
+        "zipball_url": "https://api.github.com/repos/ropensci/RNeXML/zipball/v2.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cboettig",
+          "type": "User"
+        },
+        "date_created": "2018-05-04T21:18:09Z",
+        "date_published": "2018-05-05T16:43:15Z",
+        "description": "Streamlines some dependencies:\r\n\r\n- `taxize` as Suggests only\r\n- drop `rrdf` in favor of `rdflib`\r\n- drop `Sxslt` in favor of `xslt`",
+        "html_url": "https://github.com/ropensci/RNeXML/releases/tag/v2.1.0",
+        "name": "RNeXML",
+        "release_id": 10866557,
+        "tag": "v2.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/RNeXML/tarball/v2.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/RNeXML/releases/10866557",
+        "value": "https://api.github.com/repos/ropensci/RNeXML/releases/10866557",
+        "zipball_url": "https://api.github.com/repos/ropensci/RNeXML/zipball/v2.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cboettig",
+          "type": "User"
+        },
+        "date_created": "2017-11-10T18:25:58Z",
+        "date_published": "2017-11-18T00:34:14Z",
+        "html_url": "https://github.com/ropensci/RNeXML/releases/tag/2.0.8",
+        "name": "RNeXML 2.0.8",
+        "release_id": 8570461,
+        "tag": "2.0.8",
+        "tarball_url": "https://api.github.com/repos/ropensci/RNeXML/tarball/2.0.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/RNeXML/releases/8570461",
+        "value": "https://api.github.com/repos/ropensci/RNeXML/releases/8570461",
+        "zipball_url": "https://api.github.com/repos/ropensci/RNeXML/zipball/2.0.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cboettig",
+          "type": "User"
+        },
+        "date_created": "2016-06-29T02:42:15Z",
+        "date_published": "2017-02-02T21:35:34Z",
+        "html_url": "https://github.com/ropensci/RNeXML/releases/tag/v2.0.7",
+        "name": "RNeXML v2.0.7 released to CRAN",
+        "release_id": 5345629,
+        "tag": "v2.0.7",
+        "tarball_url": "https://api.github.com/repos/ropensci/RNeXML/tarball/v2.0.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/RNeXML/releases/5345629",
+        "value": "https://api.github.com/repos/ropensci/RNeXML/releases/5345629",
+        "zipball_url": "https://api.github.com/repos/ropensci/RNeXML/zipball/v2.0.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cboettig",
+          "type": "User"
+        },
+        "date_created": "2014-12-05T22:44:48Z",
+        "date_published": "2014-12-06T21:56:10Z",
+        "description": "# NEWS\n\nFor more fine-grained list of changes or to report a bug, consult \n- [The issues log](https://github.com/ropensci/RNeXML/issues)\n- [The commit log](https://github.com/ropensci/RNeXML/commits/master)\n\n## Versioning\n\nReleases will be numbered with the following semantic versioning format:\n\n<major>.<minor>.<patch>\n\nAnd constructed with the following guidelines:\n- Breaking backward compatibility bumps the major (and resets the minor \n  and patch)\n- New additions without breaking backward compatibility bumps the minor \n  (and resets the patch)\n- Bug fixes and misc changes bumps the patch\n- Following the RStudio convention, a .99 is appended after the patch\n  number to indicate the development version on Github.  Any version\n  Coming from Github will now use the .99 extension, which will never\n  appear in a version number for the package on CRAN. \n\nFor more information on SemVer, please visit http://semver.org/.\n\n## v2.0.0\n- add URL and BugReports to Description. [#103](https://github.com/ropensci/RNeXML/issues/103)\n- for consistency with other `add_` methods, the `nexml` object is now the _last_, not the _first_, \n  argument to `add_basic_meta`.  As this changes the function API, it could break code that does not\n  explicitly name the arguments, so we should consider releasing this as 2.0.0\n\n## v1.1.3\n\nMinor bugfix\n- Fixes typo that caused validator to fail when nexml.org couldn't be reached\n\n## v1.1.2\n\nLess aggressive unit-tests\n- nexml_validate now returns NULL if the validation cannot be performed. Unit tests now consider either TRUE or NULL as acceptable.  \n- Just skips the uuid unit test if uuid package is not available\n- Documented versioning practice in NEWS\n\n## v1.1.1\n\nDocumentation and less agressive unit tests\n- Unit tests relying on the Figshare API are not run (without failing) if authentication to figshare server fails\n- Documentation updated to include examples for all functions\n\n## v1.1-0\n\nInitial Release \n",
+        "html_url": "https://github.com/ropensci/RNeXML/releases/tag/v2.0.0",
+        "release_id": 761515,
+        "tag": "v2.0.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/RNeXML/tarball/v2.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/RNeXML/releases/761515",
+        "value": "https://api.github.com/repos/ropensci/RNeXML/releases/761515",
+        "zipball_url": "https://api.github.com/repos/ropensci/RNeXML/zipball/v2.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 3.0.0",
+        "version": ">= 3.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ape",
+        "type": "Software_application",
+        "value": "ape==>= 3.1",
+        "version": ">= 3.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "methods",
+        "type": "Software_application",
+        "value": "methods==>= 3.0.0",
+        "version": ">= 3.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "XML",
+        "type": "Software_application",
+        "value": "XML==>= 3.95",
+        "version": ">= 3.95"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "plyr",
+        "type": "Software_application",
+        "value": "plyr==>= 1.8",
+        "version": ">= 1.8"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "reshape2",
+        "type": "Software_application",
+        "value": "reshape2==>= 1.2.2",
+        "version": ">= 1.2.2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "httr",
+        "type": "Software_application",
+        "value": "httr==>= 0.3",
+        "version": ">= 0.3"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "uuid",
+        "type": "Software_application",
+        "value": "uuid==>= 0.1-1",
+        "version": ">= 0.1-1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dplyr",
+        "type": "Software_application",
+        "value": "dplyr==>= 0.5.0",
+        "version": ">= 0.5.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lazyeval",
+        "type": "Software_application",
+        "value": "lazyeval==>= 0.1.0",
+        "version": ">= 0.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "tidyr",
+        "type": "Software_application",
+        "value": "tidyr==>= 0.3.1",
+        "version": ">= 0.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "stringr",
+        "type": "Software_application",
+        "value": "stringr==>= 1.0",
+        "version": ">= 1.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "stringi",
+        "type": "Software_application",
+        "value": "stringi",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "xml2",
+        "type": "Software_application",
+        "value": "xml2",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:49:12",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 13
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Getting Started",
+        "parent_header": [
+          "RNeXML <img src=\"man/figures/logo.svg\" align=\"right\" alt=\"\" width=\"120\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "See the vignettes below for both a general quick start and an overview\nof more specialized features.\n\n  - [A Brief Introduction to\n    RNeXML](https://docs.ropensci.org/RNeXML/articles/intro)\n  - [RNeXML: A Package for Reading and Writing Richly Annotated\n    Phylogenetic, Character, and Trait Data in\n    R](https://github.com/ropensci/RNeXML/tree/master/manuscripts)\n    (published in MEE).\n  - [Handling Metadata in\n    RNeXML](https://docs.ropensci.org/RNeXML/articles/metadata)\n  - [The `nexml` S4\n    Object](https://docs.ropensci.org/RNeXML/articles/S4)\n  - [Semantic data & SPARQL with\n    RNeXML](https://docs.ropensci.org/RNeXML/articles/sparql)\n  - [Extending NeXML: an example based on\n    simmap](https://docs.ropensci.org/RNeXML/articles/simmap)\n\n-----\n\n[![ropensci\nfooter](https://ropensci.org//public_images/github_footer.png)](https://ropensci.org/)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+        "type": "String",
+        "value": "2.4.11"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.4.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/RNeXML/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

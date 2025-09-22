@@ -1,0 +1,1735 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgements",
+        "parent_header": [
+          "OSCAR - Open Source Serverless Computing for Data-Processing Applications"
+        ],
+        "type": "Text_excerpt",
+        "value": "This development is partially funded by the [EGI Strategic and Innovation Fund](https://www.egi.eu/about/egi-council/egi-strategic-and-innovation-fund/).\n\nPartially funded by the projects:\n\n- [AI-SPRINT](https://ai-sprint-project.eu) \"AI in Secure Privacy-Preserving Computing Continuum\" that has received funding from the European Union\u2019s Horizon 2020 Research and Innovation Programme under Grant 101016577.\n- [interTwin](https://intertwin.eu) \"An interdisciplinary Digital Twin Engine for science\" that has received funding from the European Union\u2019s Horizon Europe Programme under Grant 101058386.\n- [AI4EOSC](https://ai4eosc.eu) \"Artificial Intelligence for the European Open Science Cloud\" that has received funding from the European Union\u2019s Horizon Europe Research and Innovation Programme under Grant 101058593.\"\n- [iMagine](http://imagine-ai.eu) \"AI-based image data analysis tools for aquatic research\" that has received funding from the European Union\u2019s Horizon Europe Research and Innovation Programme under Grant 101058625.\n\nAlso, Grant PDC2021-120844-I00 funded by Ministerio de Ciencia e Innovaci\u00f3n/Agencia Estatal de Investigaci\u00f3n/ 10.13039/501100011033 and by \u201cEuropean Union NextGenerationEU/PRTR\u201d and Grant PID2020-113126RB-I00 funded by Ministerio de Ciencia e Innovaci\u00f3n/Agencia Estatal de Investigaci\u00f3n/ 10.13039/501100011033.\n\n![financing](docs/images/financing/funded.png)\n\n<a href=\"https://eu.badgr.com/public/assertions/0vLlQBANQzyHMOrmcsck3w?identity__url=https:%2F%2Fgithub.com%2FEOSC-synergy%2Foscar.assess.sqaaas%2Fcommit%2F10254d15a9230f45c84dae22f3711653162faf78\">\n    <img align=\"left\" src=\"docs/images/badge_software_silver.png\" alt=\"Silver Badge\" width=\"90\">\n</a>\n\nThis software has received a silver badge according to the [Software Quality Baseline criteria](https://www.eosc-synergy.eu/for-developers/) defined by the [EOSC-Synergy](https://www.eosc-synergy.eu) project. Please acknowledge the use of OSCAR by citing the following scientific\npublications ([preprints available](https://www.grycap.upv.es/gmolto/publications.php)):\n\n```\nSebasti\u00e1n Risco, Germ\u00e1n Molt\u00f3, Diana M. Naranjo and Ignacio Blanquer. (2021). Serverless Workflows for Containerised Applications in the Cloud Continuum. Journal of Grid Computing, 19(3), 30. https://doi.org/10.1007/s10723-021-09570-2\n```\n```\nAlfonso P\u00e9rez, Sebasti\u00e1n Risco, Diana M. Naranjo, Miguel Caballer, and Germ\u00e1n Molt\u00f3,\n\u201cServerless Computing for Event-Driven Data Processing Applications,\u201d\nin 2019 IEEE International Conference on Cloud Computing (CLOUD 2019), 2019. https://ieeexplore.ieee.org/document/8814513/\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Computing"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Instituto de Instrumentaci\u00f3n para Imagen Molecular (I3M), Centro Mixto CSIC \u2014 Universitat Polit\u00e8cnica de Val\u00e8ncia, Camino de Vera s/n, 46022 Valencia, Espa\u00f1a",
+        "email": "serisgal@i3m.upv.es",
+        "identifier": "https://orcid.org/0000-0002-7710-2182",
+        "type": "String",
+        "value": "Sebasti\u00e1n Risco"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Instituto de Instrumentaci\u00f3n para Imagen Molecular (I3M), Centro Mixto CSIC \u2014 Universitat Polit\u00e8cnica de Val\u00e8ncia, Camino de Vera s/n, 46022 Valencia, Espa\u00f1a",
+        "email": "gmolto@dsic.upv.es",
+        "identifier": "https://www.grycap.upv.es/gmolto",
+        "type": "String",
+        "value": "Germ\u00e1n Molt\u00f3"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Instituto de Instrumentaci\u00f3n para Imagen Molecular (I3M), Centro Mixto CSIC \u2014 Universitat Polit\u00e8cnica de Val\u00e8ncia, Camino de Vera s/n, 46022 Valencia, Espa\u00f1a",
+        "email": "calarcon@i3m.upv.es",
+        "type": "String",
+        "value": "Caterina Alarc\u00f3n"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Instituto de Instrumentaci\u00f3n para Imagen Molecular (I3M), Centro Mixto CSIC \u2014 Universitat Polit\u00e8cnica de Val\u00e8ncia, Camino de Vera s/n, 46022 Valencia, Espa\u00f1a",
+        "email": "slangarita@i3m.upv.es",
+        "type": "String",
+        "value": "Sergio Langarita"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Instituto de Instrumentaci\u00f3n para Imagen Molecular (I3M), Centro Mixto CSIC \u2014 Universitat Polit\u00e8cnica de Val\u00e8ncia, Camino de Vera s/n, 46022 Valencia, Espa\u00f1a",
+        "email": "alpegon3@upv.es",
+        "type": "String",
+        "value": "Alfonso P\u00e9rez"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Instituto de Instrumentaci\u00f3n para Imagen Molecular (I3M), Centro Mixto CSIC \u2014 Universitat Polit\u00e8cnica de Val\u00e8ncia, Camino de Vera s/n, 46022 Valencia, Espa\u00f1a",
+        "email": "dnaranjo@upv.es",
+        "type": "String",
+        "value": "Diana M. Naranjo"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Instituto de Instrumentaci\u00f3n para Imagen Molecular (I3M), Centro Mixto CSIC \u2014 Universitat Polit\u00e8cnica de Val\u00e8ncia, Camino de Vera s/n, 46022 Valencia, Espa\u00f1a",
+        "email": "micafer1@upv.es",
+        "type": "String",
+        "value": "Miguel Caballer"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, gender identity and expression, level of experience,\nnationality, personal appearance, race, religion, or sexual identity and\norientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n- Using welcoming and inclusive language\n- Being respectful of differing viewpoints and experiences\n- Gracefully accepting constructive criticism\n- Focusing on what is best for the community\n- Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n- The use of sexualized language or imagery and unwelcome sexual attention or\n  advances\n- Trolling, insulting/derogatory comments, and personal or political attacks\n- Public or private harassment\n- Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n- Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at <products@grycap.upv.es>. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage],\nversion 1.4, available at\n[http://contributor-covenant.org/version/1/4][version]\n\n[homepage]: http://contributor-covenant.org\n[version]: http://contributor-covenant.org/version/1/4/\n"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/grycap/oscar"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/grycap/oscar"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/grycap/oscar/actions"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nWhen contributing to this repository, please first discuss the change you\nwish to make via issue,\nemail, or any other method with the owners of this repository before making a change.\n\nPlease note we have a code of conduct, so follow it in all your interactions\nwith the project.\n\n## Pull Request Process\n\n1. Ensure any install or build dependencies are removed before the end of\n   the layer when doing a build.\n1. Update the README.md with details of changes to the interface, this\n   includes new environment variables, exposed ports, useful file locations\n   and container parameters.\n1. Increase the version numbers in any examples files and the README.md to the\n   new version that this Pull Request would represent. The versioning scheme\n   we use is [SemVer](http://semver.org/).\n1. You may merge the Pull Request in once you have the sign-off of two other\n   developers, or if you do not have permission to do that, you may request\n   the second reviewer to merge it for you.\n"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-06-15T10:50:18Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-06-15"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-10-01"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-08T14:43:50Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2022-11-07"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Open Source Serverless Computing for Data-Processing Applications"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OSCAR is an open-source platform to support the Functions as a Service (FaaS) computing model for file-processing applications. It can be automatically deployed on multi-Clouds in order to create highly-parallel event-driven file-processing serverless applications that execute on customized runtime environments provided by Docker containers than run on an elastic Kubernetes cluster."
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Introduction",
+        "parent_header": [
+          "OSCAR - Open Source Serverless Computing for Data-Processing Applications"
+        ],
+        "type": "Text_excerpt",
+        "value": "OSCAR is an open-source platform to support the event-driven serverless\ncomputing model for data-processing applications. It can be automatically\ndeployed on multi-Clouds, and even on low-powered devices, to create highly-parallel event-driven\ndata-processing serverless applications along the computing continuum. These applications execute on customized runtime\nenvironments provided by Docker containers that run on elastic Kubernetes clusters.\n\nInformation on how to deploy an OSCAR cluster using the Infrastucture Manager can be found at: https://grycap.github.io/oscar/deploy-im-dashboard/\n\nFor more documentation visit https://docs.oscar.grycap.net\n\n> **_NOTE:_** If you detect inaccurate or unclear information on the documentation please report back to us either opening an issue or contacting us at products@grycap.upv.es\n"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.957632992320969,
+      "result": {
+        "original_header": "Why OSCAR",
+        "type": "Text_excerpt",
+        "value": "FaaS platforms are typically oriented to the execution of short-lived functions,\ncoded in a certain programming language, in response to events. Scientific\napplication can greatly benefit from this event-driven computing paradigm in\norder to trigger on demand the execution of a resource-intensive application\nthat requires processing a certain file that was just uploaded to a storage\nservice. This requires additional support for the execution of generic\napplications in existing open-source FaaS frameworks. \nWith OSCAR, users upload files to a data storage back-end and this automatically\ntriggers the execution of parallel invocations to a service responsible for\nprocessing each file. Output files are delivered into a data storage back-end\nfor the convenience of the user. The user only specifies the Docker image and\nthe script to be executed, inside a container created out of that image, \nto process a file that will be automatically made available to the\ncontainer. The deployment of the computing infrastructure and its scalability\nis abstracted away from the user. Synchronous invocations are also supported to create \nscalable HTTP-based endpoints for triggering containerised applications.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9843409528183817,
+      "result": {
+        "original_header": "Components",
+        "type": "Text_excerpt",
+        "value": "\n- [CLUES](http://github.com/grycap/clues), an elasticity manager that\n    horizontally scales in and out the number of nodes of the Kubernetes cluster\n    according to the workload.\n- [MinIO](http://minio.io), a high-performance distributed object storage\n    server that provides an API compatible with S3.\n- [Knative](https://knative.dev), a serverless framework to serve\n    container-based applications for synchronous invocations (default Serverless\n    Backend).\n- [OSCAR Manager](https://docs.oscar.grycap.net/api/), the main API, responsible for the management of the services and the integration of the different components. \n- [OSCAR UI](https://github.com/grycap/oscar-ui), an easy-to-use web-based graphical user interface aimed at end users. \n- External [MinIO](https://min.io) servers, which may be in clusters other than\n    the platform.\n- [Amazon S3](https://aws.amazon.com/s3/), an object storage service\n    that offers industry-leading scalability, data availability, security, and\n    performance in the AWS public Cloud.\n- [Onedata](https://onedata.org/), the global data access solution for science,\n    used in the [EGI Federated Cloud](https://datahub.egi.eu/).\n- [dCache](http://dcache.org//), a system for storing and retrieving huge amounts of data, distributed among a large number of heterogeneous server nodes, under a single virtual filesystem tree with a variety of standard access methods. \n"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/grycap/oscar/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/grycap/oscar/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/grycap/oscar/archive/refs/tags/v2.5.2.zip"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 18
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/grycap/oscar/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "grycap/oscar"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OSCAR - Open Source Serverless Computing for Data-Processing Applications"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/radiomics/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/radiomics/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/vllm-deepseek/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/vllm-deepseek/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/plant-classification-theano/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/plant-classification-theano/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/cowsay/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/cowsay/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/stable-diffusion/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/stable-diffusion/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/fire-detection/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/fire-detection/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/python/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/python/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/c/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/c/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/c/increment/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/c/increment/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/java/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/java/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/text-to-speech-google/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/text-to-speech-google/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/text-to-speech-coqui/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/text-to-speech-coqui/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/tools/oscar-bin-downloader/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/tools/oscar-bin-downloader/Dockerfile",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/c/increment/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/deploy/kind-deploy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/video-process/yolov3-object-detection.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/video-process/split-video.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/thermal-detector-interlink/script-interlink.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/dog-breed-detector/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/yolov8/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/radiomics/user-script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/imagemagick/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/body-pose-detection/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/secrets-usage/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/plants-classification-tensorflow/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/fish-detector/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/vllm-deepseek/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/plant-classification-sync/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/plant-classification-theano/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/cowsay/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/expose_services/jupyter/jupyterscript2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/expose_services/jupyter/jupyterscript.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/expose_services/nginx/nginxscript.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/expose_services/deep/deepscript.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/fish-detector-replicas/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/stable-diffusion/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/fire-detection/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/python/buildAndPush.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/python/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/c/buildAndPush.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/c/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/c/increment/xml/templates/replace.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/java/buildAndPush.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/java/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/text-to-speech-google/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/mask-detector-workflow/blurry-faces.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/mask-detector-workflow/mask-detector.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/examples/text-to-speech-coqui/script.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/tools/oscar-bin-downloader/oscar-bin-downloader.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://oscar.grycap.net"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/docs/images/oscar-components.png"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/docs/images/financing/funded.png"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/grycap/oscar/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/grycap/oscar/issues"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "faas, knative, kubernetes, minio, serverless"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Serverless",
+          "Cloud computing"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "value": "https://api.github.com/licenses/apache-2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "File_dump",
+        "value": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"[]\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright [yyyy] [name of copyright owner]\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/Apache-2.0",
+        "spdx_id": "https://spdx.org/licenses/Apache-2.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/Apache-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/docs/images/oscar3.png"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "oscar"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OSCAR"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "grycap"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ".increment"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/examples/compss/c/increment/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "size": 482571,
+        "type": "Programming_language",
+        "value": "Go"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 12610,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 1174,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "type": "Programming_language",
+        "value": "Go",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "type": "Programming_language",
+        "value": "Shell",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "type": "Programming_language",
+        "value": "Dockerfile",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/grycap/oscar/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://dx.doi.org/10.1109/CLOUD.2019.00073"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://scar.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "SergioLangaritaBenitez",
+          "type": "User"
+        },
+        "date_created": "2025-08-07T09:12:50Z",
+        "date_published": "2025-08-07T10:32:23Z",
+        "description": "## What's Changed\r\n* Rollback to old navigation bar by @catttam in https://github.com/grycap/oscar/pull/348\r\n* Add Node-RED integration documentation and related images by @RK181 in https://github.com/grycap/oscar/pull/349\r\n* Added example for OSCAR-interLink service by @esparig in https://github.com/grycap/oscar/pull/354\r\n* Added example to illustrate Secret definition in FDL. by @esparig in https://github.com/grycap/oscar/pull/355\r\n* fix: health check path by @RK181 in https://github.com/grycap/oscar/pull/353\r\n* update: Knative Serving to version 1.18.0 in deployment script by @RK181 in https://github.com/grycap/oscar/pull/352\r\n* Fix localhost first by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/356\r\n* Hot Fix: Modify Status to work with Virtual Nodes by @esparig in https://github.com/grycap/oscar/pull/357\r\n* Enable rucio output by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/359\r\n* Enable to read a service info to oscar user by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/360\r\n* update dashboard by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/361\r\n* set version node by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/362\r\n* update dashboard by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/363\r\n* update nginx services expose by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/365\r\n* Update fdl with Rucio as storage provider  by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/364\r\n* PR to master, ready to release by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/366\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.6.2...v3.6.3",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.6.3",
+        "name": "v3.6.3",
+        "release_id": 238250027,
+        "tag": "v3.6.3",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.6.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/238250027",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/238250027",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.6.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "SergioLangaritaBenitez",
+          "type": "User"
+        },
+        "date_created": "2025-08-07T09:12:50Z",
+        "date_published": "2025-08-07T09:14:01Z",
+        "description": "## What's Changed\r\n* Rollback to old navigation bar by @catttam in https://github.com/grycap/oscar/pull/348\r\n* Add Node-RED integration documentation and related images by @RK181 in https://github.com/grycap/oscar/pull/349\r\n* Added example for OSCAR-interLink service by @esparig in https://github.com/grycap/oscar/pull/354\r\n* Added example to illustrate Secret definition in FDL. by @esparig in https://github.com/grycap/oscar/pull/355\r\n* fix: health check path by @RK181 in https://github.com/grycap/oscar/pull/353\r\n* update: Knative Serving to version 1.18.0 in deployment script by @RK181 in https://github.com/grycap/oscar/pull/352\r\n* Fix localhost first by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/356\r\n* Hot Fix: Modify Status to work with Virtual Nodes by @esparig in https://github.com/grycap/oscar/pull/357\r\n* Enable rucio output by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/359\r\n* Enable to read a service info to oscar user by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/360\r\n* update dashboard by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/361\r\n* set version node by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/362\r\n* update dashboard by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/363\r\n* update nginx services expose by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/365\r\n* Update fdl with Rucio as storage provider  by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/364\r\n* PR to master, ready to release by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/366\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.6.2...v3.6.3-beta",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.6.3-beta",
+        "name": "v3.6.3-beta",
+        "release_id": 238225597,
+        "tag": "v3.6.3-beta",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.6.3-beta",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/238225597",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/238225597",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.6.3-beta"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "SergioLangaritaBenitez",
+          "type": "User"
+        },
+        "date_created": "2025-07-11T11:26:44Z",
+        "date_published": "2025-07-14T10:08:52Z",
+        "description": "## What's Changed\r\n* rucio storage provider support by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/341\r\n* MinIO bucket management fixed when isolation_level is set  by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/344\r\n* Minor fixes on bucket creation by @catttam in https://github.com/grycap/oscar/pull/345\r\n* Add liveness and readiness probes to expose by @micafer in https://github.com/grycap/oscar/pull/343\r\n* Fixes to production by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/347\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.6.1...v3.6.2",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.6.2",
+        "name": "v3.6.2",
+        "release_id": 232175022,
+        "tag": "v3.6.2",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.6.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/232175022",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/232175022",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.6.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2025-06-09T07:09:46Z",
+        "date_published": "2025-06-09T07:13:21Z",
+        "description": "## What's Changed\r\n* Fixed OpenAPI specification by @catttam in https://github.com/grycap/oscar/pull/331\r\n* New sections to Synchronous and Asynchronous invocations documentation by @RK181 in https://github.com/grycap/oscar/pull/327\r\n* Update gh-page workflow by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/333\r\n* Fixed errors in mount implementation by @catttam in https://github.com/grycap/oscar/pull/338\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.6.0...v3.6.1",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.6.1",
+        "name": "v3.6.1",
+        "release_id": 223933482,
+        "tag": "v3.6.1",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.6.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/223933482",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/223933482",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.6.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2025-05-29T15:47:52Z",
+        "date_published": "2025-05-29T15:49:37Z",
+        "description": "## What's Changed\r\n* Updated OSCAR Dashboard images to match its last changes by @RK181 in https://github.com/grycap/oscar/pull/320\r\n* Add guide for deepseek-coder-1.3b-instruct deployment with vllm by @RK181 in https://github.com/grycap/oscar/pull/328\r\n* Bug fixing by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/326\r\n* Changes on MinIO buckets management by @catttam in https://github.com/grycap/oscar/pull/329\r\n* MinIO buckets API implementation by @catttam in https://github.com/grycap/oscar/pull/330\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.5.3...v3.6.0",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.6.0",
+        "name": "v3.6.0",
+        "release_id": 221874230,
+        "tag": "v3.6.0",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/221874230",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/221874230",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2025-05-08T15:50:06Z",
+        "date_published": "2025-05-08T16:10:31Z",
+        "description": "## What's Changed\r\n* Bug fixing by @catttam in https://github.com/grycap/oscar/pull/324\r\n* Fixed outdated ubuntu images on workflows by @catttam in https://github.com/grycap/oscar/pull/325\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.5.2...v3.5.3",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.5.3",
+        "name": "v3.5.3",
+        "release_id": 217378352,
+        "tag": "v3.5.3",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.5.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/217378352",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/217378352",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.5.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2025-04-11T10:02:40Z",
+        "date_published": "2025-04-11T10:03:58Z",
+        "description": "## What's Changed\r\n* Update OSCAR UI screenshots to OSCAR Dashboard's by @RK181 in https://github.com/grycap/oscar/pull/311\r\n* Included Example for OBSEA Fish Detector by @vicente87 in https://github.com/grycap/oscar/pull/314\r\n* Fixed delete bug by @catttam in https://github.com/grycap/oscar/pull/317\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.5.1...v3.5.2",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.5.2",
+        "name": "v3.5.2",
+        "release_id": 211791408,
+        "tag": "v3.5.2",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.5.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/211791408",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/211791408",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.5.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2025-04-03T14:52:17Z",
+        "date_published": "2025-04-04T07:39:35Z",
+        "description": "## Bug fixing version:\r\n* Removed file crashing with go dependencies download",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.5.1",
+        "name": "v3.5.1",
+        "release_id": 210296048,
+        "tag": "v3.5.1",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.5.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/210296048",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/210296048",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.5.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2025-04-02T08:45:43Z",
+        "date_published": "2025-04-02T09:56:17Z",
+        "description": "## What's Changed\r\n* Improved security of MinIO credentials by @catttam in https://github.com/grycap/oscar/pull/310\r\n  * Changed MinIO credential management on service's containers\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.4.0...v3.5.0",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.5.0",
+        "name": "v3.5.0",
+        "release_id": 209809768,
+        "tag": "v3.5.0",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/209809768",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/209809768",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2025-03-26T11:54:29Z",
+        "date_published": "2025-03-26T12:02:46Z",
+        "description": "## What's Changed\r\n* Migration to the new OSCAR interface  by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/301\r\n* Keycloak integration and new features by @catttam in https://github.com/grycap/oscar/pull/307\r\n  * Added support for Keycloak clients\r\n  * Added new variables on the FDL to associate secrets to services\r\n* Modify priority value of the replica services by @catttam in https://github.com/grycap/oscar/pull/257\r\n* Updated InterLink integration documentation by @esparig in https://github.com/grycap/oscar/pull/297\r\n* Improve local deployment instructions by @gmolto in https://github.com/grycap/oscar/pull/302\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.3.3...v3.4.0",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.4.0",
+        "name": "v3.4.0",
+        "release_id": 208377235,
+        "tag": "v3.4.0",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/208377235",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/208377235",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "SergioLangaritaBenitez",
+          "type": "User"
+        },
+        "date_created": "2025-02-24T12:20:41Z",
+        "date_published": "2025-02-24T12:41:48Z",
+        "description": "## What's Changed\r\n* update multitenancy documentation by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/286\r\n* Improved invoking documentation by @gmolto in https://github.com/grycap/oscar/pull/287\r\n* Improved support for Docker availability check by @gmolto in https://github.com/grycap/oscar/pull/258\r\n* Update multitenancy documentation by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/288\r\n* update fdl documentation by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/289\r\n* Update multitenancy documentation by @amcaar in https://github.com/grycap/oscar/pull/290\r\n* Updated oscar-cli documentation to oscar-cli v1.10.1 by @RK181 in https://github.com/grycap/oscar/pull/291\r\n* Fix bug, improve documentation by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/292\r\n\r\n## New Contributors\r\n* @amcaar made their first contribution in https://github.com/grycap/oscar/pull/290\r\n* @RK181 made their first contribution in https://github.com/grycap/oscar/pull/291\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.3.2...v3.3.3",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.3.3",
+        "name": "v3.3.3",
+        "release_id": 202023417,
+        "tag": "v3.3.3",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.3.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/202023417",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/202023417",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.3.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "SergioLangaritaBenitez",
+          "type": "User"
+        },
+        "date_created": "2025-01-16T13:57:00Z",
+        "date_published": "2025-01-16T14:36:10Z",
+        "description": "## What's Changed\r\n* Dev slangarita by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/277\r\n* Improve test by @micafer in https://github.com/grycap/oscar/pull/280\r\n* update ui by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/279\r\n* Fix sec issues by @micafer in https://github.com/grycap/oscar/pull/275\r\n* update minio policy by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/283\r\n* Devel by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/284\r\n* fix bug multitenancy by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/285\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.3.1...v3.3.2",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.3.2",
+        "name": "v3.3.2",
+        "release_id": 195143891,
+        "tag": "v3.3.2",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.3.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/195143891",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/195143891",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.3.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "SergioLangaritaBenitez",
+          "type": "User"
+        },
+        "date_created": "2025-01-16T13:57:00Z",
+        "date_published": "2025-01-16T13:59:16Z",
+        "description": "## What's Changed\r\n* Dev slangarita by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/277\r\n* Improve test by @micafer in https://github.com/grycap/oscar/pull/280\r\n* update ui by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/279\r\n* Fix sec issues by @micafer in https://github.com/grycap/oscar/pull/275\r\n* update minio policy by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/283\r\n* Devel by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/284\r\n* fix bug multitenancy by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/285\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.3.1...v3.3.2-beta",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.3.2-beta",
+        "name": "v3.3.2-beta",
+        "release_id": 195133728,
+        "tag": "v3.3.2-beta",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.3.2-beta",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/195133728",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/195133728",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.3.2-beta"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "SergioLangaritaBenitez",
+          "type": "User"
+        },
+        "date_created": "2025-01-10T07:34:36Z",
+        "date_published": "2025-01-15T10:16:34Z",
+        "description": "## What's Changed\r\n* Add tests by @micafer in https://github.com/grycap/oscar/pull/261\r\n* Fix coverage badge by @micafer in https://github.com/grycap/oscar/pull/264\r\n* Fix go report badge by @micafer in https://github.com/grycap/oscar/pull/265\r\n* Added YOLOv8 example in English and other related changes by @Dialdroid in https://github.com/grycap/oscar/pull/266\r\n* Update script to prevent overwrite and Documentation Improvements by @gmolto in https://github.com/grycap/oscar/pull/256\r\n* Improve tests by @micafer in https://github.com/grycap/oscar/pull/263\r\n* Minor changes by @catttam in https://github.com/grycap/oscar/pull/267\r\n* Minor documentation fixes by @gmolto in https://github.com/grycap/oscar/pull/268\r\n* config shows oidc-groups by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/269\r\n* Improve create test by @micafer in https://github.com/grycap/oscar/pull/270\r\n* Add tests by @micafer in https://github.com/grycap/oscar/pull/271\r\n* Fix line by @esparig in https://github.com/grycap/oscar/pull/273\r\n* Add SQA tests by @micafer in https://github.com/grycap/oscar/pull/272\r\n* Uploaded example for stable diffusion by @esparig in https://github.com/grycap/oscar/pull/274\r\n* Updated acknowledgements by @gmolto in https://github.com/grycap/oscar/pull/276\r\n* Multitenancy on minio by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/278\r\n\r\n## New Contributors\r\n* @esparig made their first contribution in https://github.com/grycap/oscar/pull/273\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.3.0...v3.3.1",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.3.1",
+        "name": "v3.3.1",
+        "release_id": 194868362,
+        "tag": "v3.3.1",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/194868362",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/194868362",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2024-10-08T14:32:03Z",
+        "date_published": "2024-10-08T14:38:56Z",
+        "description": "## What's Changed\r\n* Fixed load based delegation algorithm by @catttam in https://github.com/grycap/oscar/pull/250\r\n* Refactor of listing services and Interlink features by @catttam in https://github.com/grycap/oscar/pull/252\r\n* Fixed mount feature errors by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/260\r\n* Updated Swagger documentation to match bearer token usage in OSCAR API by @gmolto in https://github.com/grycap/oscar/pull/259\r\n* Changes in API calls by @catttam in https://github.com/grycap/oscar/pull/262\r\n  - Fixed type errors on /status\r\n  - Modified execute endpoints `/job` and `/run` so service invocations could be made using a JWT token\r\n  - Added internal logs for monitoring\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.2.2...v3.3.0",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.3.0",
+        "name": "OSCAR v3.3.0",
+        "release_id": 178919680,
+        "tag": "v3.3.0",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/178919680",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/178919680",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2024-09-05T14:31:40Z",
+        "date_published": "2024-09-05T16:54:20Z",
+        "description": "## What's Changed\r\n* Update documentation by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/246\r\n* Improved mount docs by @catttam in https://github.com/grycap/oscar/pull/249\r\n* Refactor of listing services and Interlink features  by @catttam in https://github.com/grycap/oscar/pull/253\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.2.1...v3.2.2",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.2.2",
+        "name": "v3.2.2",
+        "release_id": 173693276,
+        "tag": "v3.2.2",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/173693276",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/173693276",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2024-07-25T11:11:13Z",
+        "date_published": "2024-07-25T11:46:09Z",
+        "description": "## What's Changed\r\n* Improvements on mounted volumes by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/248\r\n   * Fixed multitenancy on mounted buckets\r\n   * Updated UI to support Juno mounted volumes \r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.2.0...v3.2.1",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.2.1",
+        "name": "OSCAR v3.2.1",
+        "release_id": 167114077,
+        "tag": "v3.2.1",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/167114077",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/167114077",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2024-06-21T10:50:24Z",
+        "date_published": "2024-06-21T10:53:51Z",
+        "description": "## What's Changed\r\n* Changes in docs by @catttam in https://github.com/grycap/oscar/pull/238\r\n* Documentation revamp by @gmolto in https://github.com/grycap/oscar/pull/242\r\n* Dieagra yolov8 by @Dialdroid in https://github.com/grycap/oscar/pull/244\r\n* Support to mount a storage provider folder on OSCAR containers by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/245\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.1.0...v3.2.0",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.2.0",
+        "name": "v3.2.0",
+        "release_id": 161647573,
+        "tag": "v3.2.0",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/161647573",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/161647573",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2024-05-20T11:11:47Z",
+        "date_published": "2024-05-20T11:21:27Z",
+        "description": "## What's Changed\r\n\r\n* Added support for Interlink nodes by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/236\r\n* Implemented a mechanism to restrict the origin of the Docker images by @catttam in https://github.com/grycap/oscar/pull/237\r\n* Improved exposed services implementation by @catttam in https://github.com/grycap/oscar/pull/237\r\n* Added authentication on exposed services by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/236\r\n* Fixed some multitenancy bugs by @catttam in https://github.com/grycap/oscar/pull/237\r\n* Added endpoint for cluster status metrics by @vicente87 in https://github.com/grycap/oscar/pull/237\r\n\r\n## New Contributors\r\n* @vicente87 made their first contribution in https://github.com/grycap/oscar/pull/232\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v3.0.0...v3.1.0",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.1.0",
+        "name": "v3.1.0",
+        "release_id": 156495436,
+        "tag": "v3.1.0",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/156495436",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/156495436",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2024-02-12T08:32:28Z",
+        "date_published": "2024-02-05T11:05:42Z",
+        "description": "## What's Changed\r\n* First multenancy version by @catttam in https://github.com/grycap/oscar/pull/226\r\n*  Minor changes:\r\n    * Bump golang.org/x/crypto from 0.14.0 to 0.17.0 by @dependabot in https://github.com/grycap/oscar/pull/221\r\n    * Updated documentation by @catttam in https://github.com/grycap/oscar/pull/224\r\n    * Fixing mkdocs navigation by @catttam in https://github.com/grycap/oscar/pull/225\r\n    * Updated OSCAR-UI reference by @catttam in https://github.com/grycap/oscar/pull/227\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v2.8.0...v3.0.0",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v3.0.0",
+        "name": "OSCAR v3.0.0",
+        "release_id": 139888791,
+        "tag": "v3.0.0",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v3.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/139888791",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/139888791",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v3.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2023-11-09T15:16:25Z",
+        "date_published": "2023-11-09T15:57:15Z",
+        "description": "## What's Changed\r\n* Improved description in invoking.md by @gmolto in https://github.com/grycap/oscar/pull/209\r\n* Update of documentation by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/210\r\n* Improve documentation of exposed service by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/211\r\n* Included additional default hosts in the OpenAPI spec by @gmolto in https://github.com/grycap/oscar/pull/212\r\n* Added support to SGX for SCONE by @catttam in https://github.com/grycap/oscar/pull/217\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v2.7.1...v2.7.2",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v2.7.2",
+        "name": "OSCAR v2.7.2",
+        "release_id": 128747278,
+        "tag": "v2.7.2",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v2.7.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/128747278",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/128747278",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v2.7.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2023-08-04T09:23:57Z",
+        "date_published": "2023-08-04T09:29:53Z",
+        "description": "## What's Changed\r\nImproved exposed services definition.\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/2.7.0...v2.7.1",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v2.7.1",
+        "name": "OSCAR v2.7.1",
+        "release_id": 115086269,
+        "tag": "v2.7.1",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v2.7.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/115086269",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/115086269",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v2.7.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2023-07-26T11:05:13Z",
+        "date_published": "2023-07-26T11:32:24Z",
+        "description": "## What's Changed\r\n* Exposed services by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/207\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v2.6.2...v2.7.0",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v2.7.0",
+        "name": "OSCAR v2.7.0",
+        "release_id": 113654763,
+        "tag": "v2.7.0",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v2.7.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/113654763",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/113654763",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v2.7.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2023-07-10T09:21:40Z",
+        "date_published": "2023-07-10T10:27:20Z",
+        "description": "## What's Changed\r\n* Fixed descriptions in COMPSs examples by @gmolto in https://github.com/grycap/oscar/pull/192\r\n* Improved description and graphics by @gmolto in https://github.com/grycap/oscar/pull/195\r\n* Updated OSCCAR-UI reference by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/200\r\n* Updated architecture by @gmolto in https://github.com/grycap/oscar/pull/204\r\n* Added image cache functionality by @catttam in https://github.com/grycap/oscar/pull/206\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v2.6.1...v2.6.2",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v2.6.2",
+        "name": "OSCAR v2.6.2",
+        "release_id": 111607874,
+        "tag": "v2.6.2",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v2.6.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/111607874",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/111607874",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v2.6.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2023-03-20T14:21:22Z",
+        "date_published": "2023-03-20T15:28:50Z",
+        "description": "## What's Changed\r\n* Fixed update service when there is no MinIO input by @catttam in https://github.com/grycap/oscar/pull/194\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v2.6.0...v2.6.1",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v2.6.1",
+        "name": "OSCAR v2.6.1",
+        "release_id": 96223635,
+        "tag": "v2.6.1",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v2.6.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/96223635",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/96223635",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v2.6.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "catttam",
+          "type": "User"
+        },
+        "date_created": "2023-03-14T16:26:19Z",
+        "date_published": "2023-03-14T16:38:32Z",
+        "description": "## What's Changed\r\n* Updated documentation and local registry added to local deploy by @catttam in https://github.com/grycap/oscar/pull/185\r\n* examples of compss by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/184\r\n* Adding Body Pose Example by @Dialdroid in https://github.com/grycap/oscar/pull/189\r\n* Adding changes to README.md by @Dialdroid in https://github.com/grycap/oscar/pull/190\r\n* dCache integration with OSCAR by @catttam in https://github.com/grycap/oscar/pull/193\r\n\r\n## New Contributors\r\n* @dependabot made their first contribution in https://github.com/grycap/oscar/pull/186\r\n* @Dialdroid made their first contribution in https://github.com/grycap/oscar/pull/189\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v2.5.4...v2.6.0",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v2.6.0",
+        "name": "OSCAR v2.6.0",
+        "release_id": 95587360,
+        "tag": "v2.6.0",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v2.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/95587360",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/95587360",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v2.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "srisco",
+          "type": "User"
+        },
+        "date_created": "2023-01-30T11:05:31Z",
+        "date_published": "2023-01-30T11:07:18Z",
+        "description": "## What's Changed\r\n* m43 (references to OpenFaaS) and DOC20 (cowsay synchronous invocation) by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/181\r\n* Fixed nfs-provisioner version until image bug is fixed by @catttam in https://github.com/grycap/oscar/pull/183\r\n* Update README.md by @gmolto in https://github.com/grycap/oscar/pull/182\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v2.5.3...v2.5.4",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v2.5.4",
+        "name": "OSCAR v2.5.4",
+        "release_id": 90666891,
+        "tag": "v2.5.4",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v2.5.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/90666891",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/90666891",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v2.5.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "srisco",
+          "type": "User"
+        },
+        "date_created": "2022-11-18T12:05:52Z",
+        "date_published": "2022-11-18T12:06:44Z",
+        "description": "## What's Changed\r\n* Fix FDL documentation by @gmolto in https://github.com/grycap/oscar/pull/171\r\n* Architecture check on local deploy script by @catttam in https://github.com/grycap/oscar/pull/173\r\n* Added MinIO replication documentation by @catttam in https://github.com/grycap/oscar/pull/174\r\n* Minor fixes in docs by @srisco in https://github.com/grycap/oscar/pull/175\r\n* Minor fixes in docs by @srisco in https://github.com/grycap/oscar/pull/176\r\n* Change doc for sqaaas, by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/169\r\n* Minor grammar fixes by @gmolto in https://github.com/grycap/oscar/pull/172\r\n* addind outut image that was missing by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/177\r\n* Minor changes in readme by @srisco in https://github.com/grycap/oscar/pull/178\r\n* Enlarged badge size and included additional funding by @gmolto in https://github.com/grycap/oscar/pull/179\r\n* Update YuniKorn resource management (compatible with YuniKorn's versions > v1.0.0) by @srisco in https://github.com/grycap/oscar/pull/180\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v2.5.2...v2.5.3",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v2.5.3",
+        "name": "OSCAR v2.5.3",
+        "release_id": 83531111,
+        "tag": "v2.5.3",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v2.5.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/83531111",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/83531111",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v2.5.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "srisco",
+          "type": "User"
+        },
+        "date_created": "2022-11-07T10:34:39Z",
+        "date_published": "2022-11-07T10:35:40Z",
+        "description": "## What's Changed\r\n* Fix mask-detector-workflow FDL by @srisco in https://github.com/grycap/oscar/pull/165\r\n* Add oidc authorization docs by @srisco in https://github.com/grycap/oscar/pull/166\r\n* update doc, change contributing and readme by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/167\r\n* update documentation 2:fixing files of documentation by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/168\r\n* Update oscar-ui ref by @srisco in https://github.com/grycap/oscar/pull/170\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v2.5.1...v2.5.2",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v2.5.2",
+        "name": "v2.5.2",
+        "release_id": 82248253,
+        "tag": "v2.5.2",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v2.5.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/82248253",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/82248253",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v2.5.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "srisco",
+          "type": "User"
+        },
+        "date_created": "2022-09-26T08:57:46Z",
+        "date_published": "2022-09-26T09:00:00Z",
+        "description": "## What's Changed\r\n* Added scheduler_threshold variable to service definition by @catttam in https://github.com/grycap/oscar/pull/160\r\n* Dev slangarita by @SergioLangaritaBenitez in https://github.com/grycap/oscar/pull/161\r\n* GPU parameters renamed by @catttam in https://github.com/grycap/oscar/pull/162\r\n* GPU integration  by @catttam in https://github.com/grycap/oscar/pull/163\r\n* Update ui ref by @srisco in https://github.com/grycap/oscar/pull/164\r\n\r\n\r\n**Full Changelog**: https://github.com/grycap/oscar/compare/v2.5.0...v2.5.1",
+        "html_url": "https://github.com/grycap/oscar/releases/tag/v2.5.1",
+        "name": "v2.5.1",
+        "release_id": 78113363,
+        "tag": "v2.5.1",
+        "tarball_url": "https://api.github.com/repos/grycap/oscar/tarball/v2.5.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/grycap/oscar/releases/78113363",
+        "value": "https://api.github.com/repos/grycap/oscar/releases/78113363",
+        "zipball_url": "https://api.github.com/repos/grycap/oscar/zipball/v2.5.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:22:52",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 87
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.5.2"
+      },
+      "source": "https://raw.githubusercontent.com/grycap/oscar/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

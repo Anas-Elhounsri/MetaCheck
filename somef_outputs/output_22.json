@@ -1,0 +1,505 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "danvartan@gmail.com",
+        "identifier": "https://orcid.org/0000-0001-7782-759X",
+        "type": "String",
+        "value": "Daniel Vartanian"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Vartanian",
+            "given_name": "Daniel",
+            "name": "Daniel Vartanian",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-7782-759X"
+          }
+        ],
+        "datePublished": "2025",
+        "format": "cff",
+        "title": "rutils: Utility Functions for R",
+        "type": "File_dump",
+        "url": "https://github.com/danielvartan/rutils/",
+        "value": "# --------------------------------------------\n# CITATION file created with {cffr} R package\n# See also: https://docs.ropensci.org/cffr/\n# --------------------------------------------\n \ncff-version: 1.2.0\nmessage: 'To cite package \"rutils\" in publications use:'\ntype: software\nlicense: MIT\ntitle: 'rutils: Utility Functions for R'\nversion: 0.0.0.9000\nidentifiers:\n- type: url\n  value: https://github.com/danielvartan/rutils/\nabstract: A collection of utility functions for R created by Daniel Vartanian.\nauthors:\n- family-names: Vartanian\n  given-names: Daniel\n  email: danvartan@gmail.com\n  orcid: https://orcid.org/0000-0001-7782-759X\npreferred-citation:\n  type: generic\n  title: 'rutils: Utility functions for R'\n  authors:\n  - family-names: Vartanian\n    given-names: Daniel\n    email: danvartan@gmail.com\n    orcid: https://orcid.org/0000-0001-7782-759X\n  year: '2025'\n  url: https://danielvartan.github.io/rutils\n  notes: R package\nrepository-code: https://github.com/danielvartan/rutils/issues/\nurl: https://danielvartan.github.io/rutils/\ncontact:\n- family-names: Vartanian\n  given-names: Daniel\n  email: danvartan@gmail.com\n  orcid: https://orcid.org/0000-0001-7782-759X\nreferences:\n- type: software\n  title: 'R: A Language and Environment for Statistical Computing'\n  notes: Depends\n  url: https://www.R-project.org/\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2025'\n  version: '>= 4.3'\n- type: software\n  title: broom\n  abstract: 'broom: Convert Statistical Objects into Tidy Tibbles'\n  notes: Imports\n  url: https://broom.tidymodels.org/\n  repository: https://CRAN.R-project.org/package=broom\n  authors:\n  - family-names: Robinson\n    given-names: David\n    email: admiral.david@gmail.com\n  - family-names: Hayes\n    given-names: Alex\n    email: alexpghayes@gmail.com\n    orcid: https://orcid.org/0000-0002-4985-5160\n  - family-names: Couch\n    given-names: Simon\n    email: simon.couch@posit.co\n    orcid: https://orcid.org/0000-0001-5676-5107\n  year: '2025'\n  doi: 10.32614/CRAN.package.broom\n  version: '>= 1.0.8'\n- type: software\n  title: checkmate\n  abstract: 'checkmate: Fast and Versatile Argument Checks'\n  notes: Imports\n  url: https://mllg.github.io/checkmate/\n  repository: https://CRAN.R-project.org/package=checkmate\n  authors:\n  - family-names: Lang\n    given-names: Michel\n    email: michellang@gmail.com\n    orcid: https://orcid.org/0000-0001-9754-0393\n  year: '2025'\n  doi: 10.32614/CRAN.package.checkmate\n  version: '>= 2.3.2'\n- type: software\n  title: cli\n  abstract: 'cli: Helpers for Developing Command Line Interfaces'\n  notes: Imports\n  url: https://cli.r-lib.org\n  repository: https://CRAN.R-project.org/package=cli\n  authors:\n  - family-names: Cs\u00e1rdi\n    given-names: G\u00e1bor\n    email: gabor@posit.co\n  year: '2025'\n  doi: 10.32614/CRAN.package.cli\n  version: '>= 3.6.5'\n- type: software\n  title: clipr\n  abstract: 'clipr: Read and Write from the System Clipboard'\n  notes: Imports\n  url: http://matthewlincoln.net/clipr/\n  repository: https://CRAN.R-project.org/package=clipr\n  authors:\n  - family-names: Lincoln\n    given-names: Matthew\n    email: matthew.d.lincoln@gmail.com\n    orcid: https://orcid.org/0000-0002-4387-3384\n  year: '2025'\n  doi: 10.32614/CRAN.package.clipr\n  version: '>= 0.8.0'\n- type: software\n  title: curl\n  abstract: 'curl: A Modern and Flexible Web Client for R'\n  notes: Imports\n  url: https://jeroen.r-universe.dev/curl\n  repository: https://CRAN.R-project.org/package=curl\n  authors:\n  - family-names: Ooms\n    given-names: Jeroen\n    email: jeroenooms@gmail.com\n    orcid: https://orcid.org/0000-0002-4035-0289\n  year: '2025'\n  doi: 10.32614/CRAN.package.curl\n  version: '>= 6.2.2'\n- type: software\n  title: dplyr\n  abstract: 'dplyr: A Grammar of Data Manipulation'\n  notes: Imports\n  url: https://dplyr.tidyverse.org\n  repository: https://CRAN.R-project.org/package=dplyr\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n    orcid: https://orcid.org/0000-0003-4757-117X\n  - family-names: Fran\u00e7ois\n    given-names: Romain\n    orcid: https://orcid.org/0000-0002-2444-4226\n  - family-names: Henry\n    given-names: Lionel\n  - family-names: M\u00fcller\n    given-names: Kirill\n    orcid: https://orcid.org/0000-0002-1416-3412\n  - family-names: Vaughan\n    given-names: Davis\n    email: davis@posit.co\n    orcid: https://orcid.org/0000-0003-4777-038X\n  year: '2025'\n  doi: 10.32614/CRAN.package.dplyr\n  version: '>= 1.1.4'\n- type: software\n  title: effectsize\n  abstract: 'effectsize: Indices of Effect Size'\n  notes: Imports\n  url: https://easystats.github.io/effectsize/\n  repository: https://CRAN.R-project.org/package=effectsize\n  authors:\n  - family-names: Ben-Shachar\n    given-names: Mattan S.\n    email: mattansb@msbstats.info\n    orcid: https://orcid.org/0000-0002-4287-4801\n  - family-names: Makowski\n    given-names: Dominique\n    email: dom.makowski@gmail.com\n    orcid: https://orcid.org/0000-0001-5375-9967\n  - family-names: L\u00fcdecke\n    given-names: Daniel\n    email: d.luedecke@uke.de\n    orcid: https://orcid.org/0000-0002-8895-3206\n  - family-names: Patil\n    given-names: Indrajeet\n    email: patilindrajeet.science@gmail.com\n    orcid: https://orcid.org/0000-0003-1995-6531\n  - family-names: Wiernik\n    given-names: Brenton M.\n    email: brenton@wiernik.org\n    orcid: https://orcid.org/0000-0001-9560-6336\n  - family-names: Th\u00e9riault\n    given-names: R\u00e9mi\n    email: remi.theriault@mail.mcgill.ca\n    orcid: https://orcid.org/0000-0003-4315-6788\n  - family-names: Waggoner\n    given-names: Philip\n    email: philip.waggoner@gmail.com\n    orcid: https://orcid.org/0000-0002-7825-7573\n  year: '2025'\n  doi: 10.32614/CRAN.package.effectsize\n  version: '>= 1.0.0'\n- type: software\n  title: fBasics\n  abstract: 'fBasics: Rmetrics - Markets and Basic Statistics'\n  notes: Imports\n  url: https://geobosh.github.io/fBasicsDoc/\n  repository: https://CRAN.R-project.org/package=fBasics\n  authors:\n  - family-names: Wuertz\n    given-names: Diethelm\n  - family-names: Setz\n    given-names: Tobias\n    email: tobias.setz@live.com\n  - family-names: Chalabi\n    given-names: Yohan\n  - family-names: Boshnakov\n    given-names: Georgi N.\n    email: georgi.boshnakov@manchester.ac.uk\n  year: '2025'\n  doi: 10.32614/CRAN.package.fBasics\n  version: '>= 4041.97'\n- type: software\n  title: fs\n  abstract: 'fs: Cross-Platform File System Operations Based on ''libuv'''\n  notes: Imports\n  url: https://fs.r-lib.org\n  repository: https://CRAN.R-project.org/package=fs\n  authors:\n  - family-names: Hester\n    given-names: Jim\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  - family-names: Cs\u00e1rdi\n    given-names: G\u00e1bor\n    email: csardi.gabor@gmail.com\n  year: '2025'\n  doi: 10.32614/CRAN.package.fs\n  version: '>= 1.6.6'\n- type: software\n  title: ggplot2\n  abstract: 'ggplot2: Create Elegant Data Visualisations Using the Grammar of Graphics'\n  notes: Imports\n  url: https://ggplot2.tidyverse.org\n  repository: https://CRAN.R-project.org/package=ggplot2\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n    orcid: https://orcid.org/0000-0003-4757-117X\n  - family-names: Chang\n    given-names: Winston\n    orcid: https://orcid.org/0000-0002-1576-2126\n  - family-names: Henry\n    given-names: Lionel\n  - family-names: Pedersen\n    given-names: Thomas Lin\n    email: thomas.pedersen@posit.co\n    orcid: https://orcid.org/0000-0002-5147-4711\n  - family-names: Takahashi\n    given-names: Kohske\n  - family-names: Wilke\n    given-names: Claus\n    orcid: https://orcid.org/0000-0002-7470-9261\n  - family-names: Woo\n    given-names: Kara\n    orcid: https://orcid.org/0000-0002-5125-4188\n  - family-names: Yutani\n    given-names: Hiroaki\n    orcid: https://orcid.org/0000-0002-3385-7233\n  - family-names: Dunnington\n    given-names: Dewey\n    orcid: https://orcid.org/0000-0002-9415-4582\n  - family-names: Brand\n    given-names: Teun\n    name-particle: van den\n    orcid: https://orcid.org/0000-0002-9335-7468\n  year: '2025'\n  doi: 10.32614/CRAN.package.ggplot2\n  version: '>= 3.5.2'\n- type: software\n  title: glue\n  abstract: 'glue: Interpreted String Literals'\n  notes: Imports\n  url: https://glue.tidyverse.org/\n  repository: https://CRAN.R-project.org/package=glue\n  authors:\n  - family-names: Hester\n    given-names: Jim\n    orcid: https://orcid.org/0000-0002-2739-7082\n  - family-names: Bryan\n    given-names: Jennifer\n    email: jenny@posit.co\n    orcid: https://orcid.org/0000-0002-6983-2759\n  year: '2025'\n  doi: 10.32614/CRAN.package.glue\n  version: '>= 1.8.0'\n- type: software\n  title: grDevices\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2025'\n  version: '>= 4.4'\n- type: software\n  title: hms\n  abstract: 'hms: Pretty Time of Day'\n  notes: Imports\n  url: https://hms.tidyverse.org/\n  repository: https://CRAN.R-project.org/package=hms\n  authors:\n  - family-names: M\u00fcller\n    given-names: Kirill\n    email: kirill@cynkra.com\n    orcid: https://orcid.org/0000-0002-1416-3412\n  year: '2025'\n  doi: 10.32614/CRAN.package.hms\n  version: '>= 1.1.3'\n- type: software\n  title: here\n  abstract: 'here: A Simpler Way to Find Your Files'\n  notes: Imports\n  url: https://here.r-lib.org/\n  repository: https://CRAN.R-project.org/package=here\n  authors:\n  - family-names: M\u00fcller\n    given-names: Kirill\n    email: krlmlr+r@mailbox.org\n    orcid: https://orcid.org/0000-0002-1416-3412\n  year: '2025'\n  doi: 10.32614/CRAN.package.here\n  version: '>= 1.0.1'\n- type: software\n  title: httr\n  abstract: 'httr: Tools for Working with URLs and HTTP'\n  notes: Imports\n  url: https://httr.r-lib.org/\n  repository: https://CRAN.R-project.org/package=httr\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  year: '2025'\n  doi: 10.32614/CRAN.package.httr\n  version: '>= 1.4.7'\n- type: software\n  title: janitor\n  abstract: 'janitor: Simple Tools for Examining and Cleaning Dirty Data'\n  notes: Imports\n  url: https://sfirke.github.io/janitor/\n  repository: https://CRAN.R-project.org/package=janitor\n  authors:\n  - family-names: Firke\n    given-names: Sam\n    email: samuel.firke@gmail.com\n  year: '2025'\n  doi: 10.32614/CRAN.package.janitor\n  version: '>= 2.2.1'\n- type: software\n  title: jsonlite\n  abstract: 'jsonlite: A Simple and Robust JSON Parser and Generator for R'\n  notes: Imports\n  url: https://jeroen.r-universe.dev/jsonlite\n  repository: https://CRAN.R-project.org/package=jsonlite\n  authors:\n  - family-names: Ooms\n    given-names: Jeroen\n    email: jeroenooms@gmail.com\n    orcid: https://orcid.org/0000-0002-4035-0289\n  year: '2025'\n  doi: 10.32614/CRAN.package.jsonlite\n  version: '>= 2.0.0'\n- type: software\n  title: latex2exp\n  abstract: 'latex2exp: Use LaTeX Expressions in Plots'\n  notes: Imports\n  url: https://www.stefanom.io/latex2exp/\n  repository: https://CRAN.R-project.org/package=latex2exp\n  authors:\n  - family-names: Meschiari\n    given-names: Stefano\n    email: stefano.meschiari@gmail.com\n  year: '2025'\n  doi: 10.32614/CRAN.package.latex2exp\n  version: '>= 0.9.6'\n- type: software\n  title: lifecycle\n  abstract: 'lifecycle: Manage the Life Cycle of your Package Functions'\n  notes: Imports\n  url: https://lifecycle.r-lib.org/\n  repository: https://CRAN.R-project.org/package=lifecycle\n  authors:\n  - family-names: Henry\n    given-names: Lionel\n    email: lionel@posit.co\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n    orcid: https://orcid.org/0000-0003-4757-117X\n  year: '2025'\n  doi: 10.32614/CRAN.package.lifecycle\n  version: '>= 1.0.4'\n- type: software\n  title: lubridate\n  abstract: 'lubridate: Make Dealing with Dates a Little Easier'\n  notes: Imports\n  url: https://lubridate.tidyverse.org\n  repository: https://CRAN.R-project.org/package=lubridate\n  authors:\n  - family-names: Spinu\n    given-names: Vitalie\n    email: spinuvit@gmail.com\n  - family-names: Grolemund\n    given-names: Garrett\n  - family-names: Wickham\n    given-names: Hadley\n  year: '2025'\n  doi: 10.32614/CRAN.package.lubridate\n  version: '>= 1.9.4'\n- type: software\n  title: lubritime\n  abstract: 'lubritime: An Extension for lubridate'\n  notes: Imports\n  url: https://danielvartan.github.io/lubritime/\n  authors:\n  - family-names: Vartanian\n    given-names: Daniel\n    email: danvartan@gmail.com\n    orcid: https://orcid.org/0000-0001-7782-759X\n  year: '2025'\n- type: software\n  title: magrittr\n  abstract: 'magrittr: A Forward-Pipe Operator for R'\n  notes: Imports\n  url: https://magrittr.tidyverse.org\n  repository: https://CRAN.R-project.org/package=magrittr\n  authors:\n  - family-names: Bache\n    given-names: Stefan Milton\n    email: stefan@stefanbache.dk\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@rstudio.com\n  year: '2025'\n  doi: 10.32614/CRAN.package.magrittr\n  version: '>= 2.0.3'\n- type: software\n  title: methods\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2025'\n  version: '>= 4.4'\n- type: software\n  title: moments\n  abstract: 'moments: Moments, Cumulants, Skewness, Kurtosis and Related Tests'\n  notes: Imports\n  url: https://www.r-project.org\n  repository: https://CRAN.R-project.org/package=moments\n  authors:\n  - family-names: Komsta\n    given-names: Lukasz\n    email: lukasz.komsta@umlub.pl\n  - family-names: Novomestky\n    given-names: Frederick\n    email: fnovomes@poly.edu\n  year: '2025'\n  doi: 10.32614/CRAN.package.moments\n  version: '>= 0.14.1'\n- type: software\n  title: nortest\n  abstract: 'nortest: Tests for Normality'\n  notes: Imports\n  repository: https://CRAN.R-project.org/package=nortest\n  authors:\n  - family-names: Gross\n    given-names: Juergen\n    email: gross@statistik.tu-dortmund.de\n  - family-names: Ligges\n    given-names: Uwe\n    email: ligges@statistik.tu-dortmund.de\n  year: '2025'\n  doi: 10.32614/CRAN.package.nortest\n  version: '>= 1.0.4'\n- type: software\n  title: pal\n  abstract: 'pal: Friendly Convenience/Utility Functions'\n  notes: Imports\n  url: https://pal.rpkg.dev\n  authors:\n  - family-names: Br\u00fcggemann\n    given-names: Salim\n    email: salim@rpkg.dev\n    orcid: https://orcid.org/0000-0002-5329-5987\n  year: '2025'\n- type: software\n  title: parsnip\n  abstract: 'parsnip: A Common API to Modeling and Analysis Functions'\n  notes: Imports\n  url: https://parsnip.tidymodels.org/\n  repository: https://CRAN.R-project.org/package=parsnip\n  authors:\n  - family-names: Kuhn\n    given-names: Max\n    email: max@posit.co\n  - family-names: Vaughan\n    given-names: Davis\n    email: davis@posit.co\n  year: '2025'\n  doi: 10.32614/CRAN.package.parsnip\n  version: '>= 1.3.1'\n- type: software\n  title: patchwork\n  abstract: 'patchwork: The Composer of Plots'\n  notes: Imports\n  url: https://patchwork.data-imaginist.com\n  repository: https://CRAN.R-project.org/package=patchwork\n  authors:\n  - family-names: Pedersen\n    given-names: Thomas Lin\n    email: thomasp85@gmail.com\n    orcid: https://orcid.org/0000-0002-5147-4711\n  year: '2025'\n  doi: 10.32614/CRAN.package.patchwork\n  version: '>= 1.3.0'\n- type: software\n  title: plotr\n  abstract: 'plotr: Plots Made Easy'\n  notes: Imports\n  url: https://danielvartan.github.io/plotr/\n  authors:\n  - family-names: Vartanian\n    given-names: Daniel\n    email: danvartan@gmail.com\n    orcid: https://orcid.org/0000-0001-7782-759X\n  year: '2025'\n- type: software\n  title: prettycheck\n  abstract: 'prettycheck: Pretty assertive programming'\n  notes: Imports\n  url: https://danielvartan.github.io/prettycheck/\n  authors:\n  - family-names: Vartanian\n    given-names: Daniel\n    email: danvartan@gmail.com\n    orcid: https://orcid.org/0000-0001-7782-759X\n  year: '2025'\n- type: software\n  title: psychometric\n  abstract: 'psychometric: Applied Psychometric Theory'\n  notes: Imports\n  repository: https://CRAN.R-project.org/package=psychometric\n  authors:\n  - family-names: Fletcher\n    given-names: Thomas D.\n  year: '2025'\n  doi: 10.32614/CRAN.package.psychometric\n  version: '>= 2.4'\n- type: software\n  title: purrr\n  abstract: 'purrr: Functional Programming Tools'\n  notes: Imports\n  url: https://purrr.tidyverse.org/\n  repository: https://CRAN.R-project.org/package=purrr\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n    orcid: https://orcid.org/0000-0003-4757-117X\n  - family-names: Henry\n    given-names: Lionel\n    email: lionel@posit.co\n  year: '2025'\n  doi: 10.32614/CRAN.package.purrr\n  version: '>= 1.0.4'\n- type: software\n  title: qpdf\n  abstract: 'qpdf: Split, Combine and Compress PDF Files'\n  notes: Imports\n  url: https://docs.ropensci.org/qpdf/\n  repository: https://CRAN.R-project.org/package=qpdf\n  authors:\n  - family-names: Ooms\n    given-names: Jeroen\n    email: jeroenooms@gmail.com\n    orcid: https://orcid.org/0000-0002-4035-0289\n  year: '2025'\n  doi: 10.32614/CRAN.package.qpdf\n  version: '>= 1.3.5'\n- type: software\n  title: readr\n  abstract: 'readr: Read Rectangular Text Data'\n  notes: Imports\n  url: https://readr.tidyverse.org\n  repository: https://CRAN.R-project.org/package=readr\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  - family-names: Hester\n    given-names: Jim\n  - family-names: Bryan\n    given-names: Jennifer\n    email: jenny@posit.co\n    orcid: https://orcid.org/0000-0002-6983-2759\n  year: '2025'\n  doi: 10.32614/CRAN.package.readr\n  version: '>= 2.1.5'\n- type: software\n  title: rlang\n  abstract: 'rlang: Functions for Base Types and Core R and ''Tidyverse'' Features'\n  notes: Imports\n  url: https://rlang.r-lib.org\n  repository: https://CRAN.R-project.org/package=rlang\n  authors:\n  - family-names: Henry\n    given-names: Lionel\n    email: lionel@posit.co\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  year: '2025'\n  doi: 10.32614/CRAN.package.rlang\n  version: '>= 1.1.6'\n- type: software\n  title: stats\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2025'\n  version: '>= 4.4'\n- type: software\n  title: stringr\n  abstract: 'stringr: Simple, Consistent Wrappers for Common String Operations'\n  notes: Imports\n  url: https://stringr.tidyverse.org\n  repository: https://CRAN.R-project.org/package=stringr\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  year: '2025'\n  doi: 10.32614/CRAN.package.stringr\n  version: '>= 1.5.1'\n- type: software\n  title: tidyr\n  abstract: 'tidyr: Tidy Messy Data'\n  notes: Imports\n  url: https://tidyr.tidyverse.org\n  repository: https://CRAN.R-project.org/package=tidyr\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  - family-names: Vaughan\n    given-names: Davis\n    email: davis@posit.co\n  - family-names: Girlich\n    given-names: Maximilian\n  year: '2025'\n  doi: 10.32614/CRAN.package.tidyr\n  version: '>= 1.3.1'\n- type: software\n  title: tcltk\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2025'\n  version: '>= 4.4'\n- type: software\n  title: tseries\n  abstract: 'tseries: Time Series Analysis and Computational Finance'\n  notes: Imports\n  repository: https://CRAN.R-project.org/package=tseries\n  authors:\n  - family-names: Trapletti\n    given-names: Adrian\n    email: adrian@trapletti.org\n  - family-names: Hornik\n    given-names: Kurt\n    email: Kurt.Hornik@R-project.org\n    orcid: https://orcid.org/0000-0003-4198-9911\n  year: '2025'\n  doi: 10.32614/CRAN.package.tseries\n  version: '>= 0.10.58'\n- type: software\n  title: utils\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2025'\n  version: '>= 4.4'\n- type: software\n  title: covr\n  abstract: 'covr: Test Coverage for Packages'\n  notes: Suggests\n  url: https://covr.r-lib.org\n  repository: https://CRAN.R-project.org/package=covr\n  authors:\n  - family-names: Hester\n    given-names: Jim\n    email: james.f.hester@gmail.com\n  year: '2025'\n  doi: 10.32614/CRAN.package.covr\n  version: '>= 3.6.4'\n- type: software\n  title: datasets\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Suggests\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2025'\n  version: '>= 4.4'\n- type: software\n  title: knitr\n  abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'\n  notes: Suggests\n  url: https://yihui.org/knitr/\n  repository: https://CRAN.R-project.org/package=knitr\n  authors:\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  year: '2025'\n  doi: 10.32614/CRAN.package.knitr\n  version: '>= 1.50'\n- type: software\n  title: mockr\n  abstract: 'mockr: Mocking in R'\n  notes: Suggests\n  url: https://krlmlr.github.io/mockr/\n  repository: https://CRAN.R-project.org/package=mockr\n  authors:\n  - family-names: M\u00fcller\n    given-names: Kirill\n    email: kirill@cynkra.com\n  year: '2025'\n  doi: 10.32614/CRAN.package.mockr\n  version: '>= 0.2.2'\n- type: software\n  title: rmarkdown\n  abstract: 'rmarkdown: Dynamic Documents for R'\n  notes: Suggests\n  url: https://pkgs.rstudio.com/rmarkdown/\n  repository: https://CRAN.R-project.org/package=rmarkdown\n  authors:\n  - family-names: Allaire\n    given-names: JJ\n    email: jj@posit.co\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  - family-names: Dervieux\n    given-names: Christophe\n    email: cderv@posit.co\n    orcid: https://orcid.org/0000-0003-4474-2498\n  - family-names: McPherson\n    given-names: Jonathan\n    email: jonathan@posit.co\n  - family-names: Luraschi\n    given-names: Javier\n  - family-names: Ushey\n    given-names: Kevin\n    email: kevin@posit.co\n  - family-names: Atkins\n    given-names: Aron\n    email: aron@posit.co\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  - family-names: Cheng\n    given-names: Joe\n    email: joe@posit.co\n  - family-names: Chang\n    given-names: Winston\n    email: winston@posit.co\n  - family-names: Iannone\n    given-names: Richard\n    email: rich@posit.co\n    orcid: https://orcid.org/0000-0003-3925-190X\n  year: '2025'\n  doi: 10.32614/CRAN.package.rmarkdown\n  version: '>= 2.29'\n- type: software\n  title: spelling\n  abstract: 'spelling: Tools for Spell Checking in R'\n  notes: Suggests\n  url: https://ropensci.r-universe.dev/spelling\n  repository: https://CRAN.R-project.org/package=spelling\n  authors:\n  - family-names: Ooms\n    given-names: Jeroen\n    email: jeroenooms@gmail.com\n    orcid: https://orcid.org/0000-0002-4035-0289\n  - family-names: Hester\n    given-names: Jim\n    email: james.hester@rstudio.com\n  year: '2025'\n  doi: 10.32614/CRAN.package.spelling\n  version: '>= 2.3.1'\n- type: software\n  title: testthat\n  abstract: 'testthat: Unit Testing for R'\n  notes: Suggests\n  url: https://testthat.r-lib.org\n  repository: https://CRAN.R-project.org/package=testthat\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  year: '2025'\n  doi: 10.32614/CRAN.package.testthat\n  version: '>= 3.2.3'\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/danielvartan/rutils"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/danielvartan/rutils/"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/danielvartan/rutils/"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/danielvartan/rutils/actions",
+          "https://app.codecov.io/gh/danielvartan/rutils"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-10-22T04:57:23Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-18T04:05:32Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "\ud83e\uddf0 Utility Functions for R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+        "type": "String",
+        "value": "A collection of utility functions for R created by Daniel\n  Vartanian."
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A collection of utility functions for R created by Daniel Vartanian."
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9204958609966625,
+      "result": {
+        "original_header": "Overview",
+        "type": "Text_excerpt",
+        "value": "This package is primarily intended for personal use, but you are welcome\nto use it if you find it helpful. Please note that not all functions are\nexported or documented. Access the source code to see them all. \n"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/README.qmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/danielvartan/rutils/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/danielvartan/rutils/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "danielvartan/rutils"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "rutils "
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/README.qmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://danielvartan.github.io/rutils/"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "rutils"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "rutils <a href = \"https://danielvartan.github.io/brandr/\"><img src = \"man/figures/logo.png\" align=\"right\" width=\"120\" /></a>"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install `rutils` using the\n[`remotes`](https://github.com/r-lib/remotes) package:\n\n``` r\nremotes::install_github(\"danielvartan/rutils\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/README.qmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/danielvartan/rutils/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/danielvartan/rutils/issues/"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/danielvartan/rutils/issues/"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "r, r-package, rstats, utilities"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "r-package",
+          "utilities",
+          "r",
+          "rstats"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2025 Daniel Vartanian\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "rutils <a href = \"https://danielvartan.github.io/brandr/\"><img src = \"man/figures/logo.png\" align=\"right\" width=\"120\" /></a>"
+        ],
+        "type": "Text_excerpt",
+        "value": "[![](https://img.shields.io/badge/license-MIT-green.svg)](https://choosealicense.com/licenses/mit/)\n\n`rutils` code is released under the [MIT\nlicense](https://opensource.org/license/mit/). This means you can use,\nmodify, and distribute the code as long as you include the original\nlicense in any copies of the software that you distribute.\n"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/README.qmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "rutils"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "rutils: Utility Functions for R"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "danielvartan"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+        "type": "String",
+        "value": "rutils"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 103538,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/danielvartan/rutils/main/README.qmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/danielvartan/rutils/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/danielvartan/rutils/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active - The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/README.qmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:12:09",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.0.0.9000"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.0.9000"
+      },
+      "source": "https://raw.githubusercontent.com/danielvartan/rutils/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

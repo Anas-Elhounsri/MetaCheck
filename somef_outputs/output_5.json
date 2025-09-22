@@ -1,0 +1,1760 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgements",
+        "type": "Text_excerpt",
+        "value": "Special thanks to [Jarad Niemi](https://www.jarad.me/), my advisor from\n[graduate school](https://www.stat.iastate.edu/), for first introducing me\nto the idea of [Makefiles](https://www.gnu.org/software/make/) for\nresearch. He originally set me down the path that led to `drake`.\n\nMany thanks to [Julia Lowndes](https://github.com/jules32), [Ben\nMarwick](https://github.com/benmarwick), and [Peter\nSlaughter](https://github.com/gothub) for [reviewing drake for\nrOpenSci](https://github.com/ropensci/software-review/issues/156), and to\n[Ma\u00eblle Salmon](https://github.com/maelle) for such active involvement\nas the editor. Thanks also to the following people for contributing\nearly in development.\n\n  - [Alex Axthelm](https://github.com/AlexAxthelm)\n  - [Chan-Yub Park](https://github.com/mrchypark)\n  - [Daniel Falster](https://github.com/dfalster)\n  - [Eric Nantz](https://github.com/rpodcast)\n  - [Henrik Bengtsson](https://github.com/HenrikBengtsson)\n  - [Ian Watson](https://github.com/IanAWatson)\n  - Jasper Clarkberg\n  - [Kendon Bell](https://github.com/kendonB)\n  - [Kirill M\u00fcller](https://github.com/krlmlr)\n  - [Michael Schubert](https://github.com/mschubert)\n\nCredit for images is [attributed\nhere](https://github.com/ropensci/drake/blob/main/man/figures/image-credit.md).\n\n[![ropensci\\_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "will.landau@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-1878-3253",
+        "type": "String",
+        "value": "['William', 'Michael'] Landau"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2018",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"To cite drake in publications use:\")\n\nbibentry(\n  bibtype    = \"Article\",\n  title    = \"The drake R package: a pipeline toolkit for reproducibility and high-performance computing\",\n  author   = \"William Michael Landau\",\n  journal  = \"Journal of Open Source Software\",\n  year     = 2018,\n  volume   = 3,\n  number   = 21,\n  url      = \"https://doi.org/10.21105/joss.00550\",\n  textVersion = paste(\n    \"William Michael Landau, (2018).\",\n    \"The drake R package: a pipeline toolkit for\",\n    \"reproducibility and high-performance computing.\",\n    \"Journal of Open Source Software,\",\n    \"3(21), 550, https://doi.org/10.21105/joss.00550\"\n  )\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Function reference",
+        "type": "Text_excerpt",
+        "value": "The [reference\nsection](https://docs.ropensci.org/drake/reference/index.html) lists all\nthe available functions. Here are the most important ones.\n\n  - `drake_plan()`: create a workflow data frame (like `my_plan`).\n  - `make()`: build your project.\n  - `drake_history()`: show what you built, when you built it, and the\n    function arguments you used.\n  - `r_make()`: launch a fresh\n    [`callr::r()`](https://github.com/r-lib/callr) process to build your\n    project. Called from an interactive R session, `r_make()` is more\n    reproducible than `make()`.\n  - `loadd()`: load one or more built targets into your R session.\n  - `readd()`: read and return a built target.\n  - `vis_drake_graph()`: show an interactive visual network\n    representation of your workflow.\n  - `recoverable()`: Which targets can we salvage using `make(recover =\n    TRUE)` (experimental).\n  - `outdated()`: see which targets will be built in the next `make()`.\n  - `deps_code()`: check the dependencies of a command or function.\n  - `drake_failed()`: list the targets that failed to build in the last\n    `make()`.\n  - `diagnose()`: return the full context of a build, including errors,\n    warnings, and messages.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Reference",
+        "parent_header": [
+          "Documentation"
+        ],
+        "type": "Text_excerpt",
+        "value": "  - The [reference website](https://docs.ropensci.org/drake/).\n  - The [official repository of example\n    code](https://github.com/wlandau/drake-examples). Download an\n    example workflow from here with `drake_example()`.\n  - Presentations and workshops by [Will\n    Landau](https://github.com/wlandau), [Kirill\n    M\u00fcller](https://github.com/krlmlr), [Amanda\n    Dobbyn](https://github.com/aedobbyn), [Karthik\n    Ram](https://github.com/karthik), [Sina\n    R\u00fceger](https://github.com/sinarueeger), [Christine\n    Stawitz](https://github.com/cstawitz), and others. See specific\n    links at <https://books.ropensci.org/drake/index.html#presentations>\n  - The [FAQ page](https://books.ropensci.org/drake/faq.html), which\n    links to [appropriately-labeled issues on\n    GitHub](https://github.com/ropensci/drake/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3A%22frequently+asked+question%22+).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "type": "Text_excerpt",
+        "value": "``` r\ncitation(\"drake\")\n#> \n#> To cite drake in publications use:\n#> \n#>   William Michael Landau, (2018). The drake R package: a pipeline\n#>   toolkit for reproducibility and high-performance computing. Journal\n#>   of Open Source Software, 3(21), 550,\n#>   https://doi.org/10.21105/joss.00550\n#> \n#> A BibTeX entry for LaTeX users is\n#> \n#>   @Article{,\n#>     title = {The drake R package: a pipeline toolkit for reproducibility and high-performance computing},\n#>     author = {William Michael Landau},\n#>     journal = {Journal of Open Source Software},\n#>     year = {2018},\n#>     volume = {3},\n#>     number = {21},\n#>     url = {https://doi.org/10.21105/joss.00550},\n#>   }\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Code of Conduct\n\nAs contributors and maintainers of this project, we pledge to respect all people who \ncontribute through reporting issues, posting feature requests, updating documentation,\nsubmitting pull requests or patches, and other activities.\n\nWe are committed to making participation in this project a harassment-free experience for\neveryone, regardless of level of experience, gender, gender identity and expression,\nsexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.\n\nExamples of unacceptable behavior by participants include the use of sexual language or\nimagery, derogatory comments or personal attacks, trolling, public or private harassment,\ninsults, or other unprofessional conduct.\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments,\ncommits, code, wiki edits, issues, and other contributions that are not aligned to this \nCode of Conduct. Project maintainers who do not follow the Code of Conduct may be removed \nfrom the project team.\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by \nopening an issue or contacting one or more of the project maintainers.\n\nThis Code of Conduct is adapted from the Contributor Covenant \n(http:contributor-covenant.org), version 1.0.0, available at \nhttp://contributor-covenant.org/version/1/0/0/\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/drake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/drake"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/drake"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://codecov.io/github/ropensci/drake?branch=main"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nDevelopment is a community effort, and we encourage participation.\n\n## Code of Conduct\n\nThe environment for collaboration should be friendly, inclusive, respectful, and safe for everyone, so all participants must obey [this repository's code of conduct](https://github.com/ropensci/drake/blob/main/CODE_OF_CONDUCT.md).\n\n## Issues\n\n`drake` thrives on the suggestions, questions, and bug reports you submit to the [issue tracker](https://github.com/ropensci/drake/issues). Before posting, please search both the open and closed issues to help us avoid duplication. Usage questions are welcome, but you may also wish to post to [Stack Overflow](https://stackoverflow.com) with the [`drake-r-package` tag](https://stackoverflow.com/tags/drake-r-package).\n\nBe considerate of the maintainer's time and make it as easy as possible to troubleshoot any problems you identify. Read [here](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) and [here](https://www.tidyverse.org/help/) to learn about minimal reproducible examples. Format your code according to the [tidyverse style guide](https://style.tidyverse.org/) to make it easier for others to read.\n\n## Development\n\nIf you would like to work on the code or documentation, please [fork this repository](https://help.github.com/articles/fork-a-repo/), make the changes in your fork, and then submit a [pull request](https://github.com/ropensci/drake/pulls). We will discuss your work and then hopefully merge it into the project.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "type": "Text_excerpt",
+        "value": "Development is a community effort, and we encourage participation.\nPlease read\n[CONTRIBUTING.md](https://github.com/ropensci/drake/blob/main/CONTRIBUTING.md)\nfor details.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-02-20T22:28:40Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-23T19:19:51Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "An R-focused pipeline toolkit for reproducibility and high-performance computing"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+        "type": "String",
+        "value": "A general-purpose computational engine for data\n  analysis, drake rebuilds intermediate data objects when their\n  dependencies change, and it skips work when the results are already up\n  to date.  Not every execution starts from scratch, there is native\n  support for parallel and distributed computing, and completed projects\n  have tangible evidence that they are reproducible.  Extensive\n  documentation, from beginner-friendly tutorials to practical examples\n  and more, is available at the reference website\n  <https://docs.ropensci.org/drake/> and the online manual\n  <https://books.ropensci.org/drake/>."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A general-purpose computational engine for data\n  analysis, drake rebuilds intermediate data objects when their\n  dependencies change, and it skips work when the results are already up\n  to date.  Not every execution starts from scratch, there is native\n  support for parallel and distributed computing, and completed projects\n  have tangible evidence that they are reproducible.  Extensive\n  documentation, from beginner-friendly tutorials to practical examples\n  and more, is available at the reference website\n  <https://docs.ropensci.org/drake/> and the online manual\n  <https://books.ropensci.org/drake/>."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.992904395151469,
+      "result": {
+        "original_header": "drake is superseded. Consider targets instead.",
+        "type": "Text_excerpt",
+        "value": "As of 2021-01-21, `drake` is [superseded](https://lifecycle.r-lib.org/articles/stages.html). The [`targets`](https://docs.ropensci.org/targets/) R package is the long-term successor of `drake`, and it is more robust and easier to use. Please visit <https://books.ropensci.org/targets/drake.html> for full context and advice on transitioning.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9067980042471421,
+      "result": {
+        "original_header": "The drake R package <img src=\"https://docs.ropensci.org/drake/reference/figures/logo.svg\" align=\"right\" alt=\"logo\" width=\"120\" height = \"139\" style = \"border: none; float: right;\">",
+        "type": "Text_excerpt",
+        "value": "Data analysis can be slow. A round of scientific computation can take\nseveral minutes, hours, or even days to complete. After it finishes, if\nyou update your code or data, your hard-earned results may no longer be\nvalid. How much of that valuable output can you keep, and how much do\nyou need to update? How much runtime must you endure all over again? \nFor projects in R, the `drake` package can help. It [analyzes your\nworkflow](https://books.ropensci.org/drake/plans.html), skips steps with\nup-to-date results, and orchestrates the rest with [optional distributed\ncomputing](https://books.ropensci.org/drake/hpc.html). At the end,\n`drake` provides evidence that your results match the underlying code\nand data, which increases your ability to trust your research.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9656906848039185,
+      "result": {
+        "original_header": "How it works",
+        "type": "Text_excerpt",
+        "value": "To set up a project, load your packages,\n``` r\nlibrary(drake)\nlibrary(dplyr)\nlibrary(ggplot2)\nlibrary(tidyr)\n#> \n#> Attaching package: 'tidyr'\n#> The following objects are masked from 'package:drake':\n#> \n#>     expand, gather\n```\nload your custom functions,\n``` r\ncreate_plot <- function(data) {\n  ggplot(data) +\n    geom_histogram(aes(x = Ozone)) +\n    theme_gray(24)\n}\n```\ncheck any supporting files (optional),\n``` r\n# Get the files with drake_example(\"main\").\nfile.exists(\"raw_data.xlsx\")\n#> [1] TRUE\nfile.exists(\"report.Rmd\")\n#> [1] TRUE\n```\nand plan what you are going to do.\n``` r\nplan <- drake_plan(\n  raw_data = readxl::read_excel(file_in(\"raw_data.xlsx\")),\n  data = raw_data %>%\n    mutate(Ozone = replace_na(Ozone, mean(Ozone, na.rm = TRUE))),\n  hist = create_plot(data),\n  fit = lm(Ozone ~ Wind + Temp, data),\n  report = rmarkdown::render(\n    knitr_in(\"report.Rmd\"),\n    output_file = file_out(\"report.html\"),\n    quiet = TRUE\n  )\n)\n\nplan\n#> # A tibble: 5 x 2\n#>   target   command                                                              \n#>   <chr>    <expr_lst>                                                           \n#> 1 raw_data readxl::read_excel(file_in(\"raw_data.xlsx\"))                        \u2026\n#> 2 data     raw_data %>% mutate(Ozone = replace_na(Ozone, mean(Ozone, na.rm = TR\u2026\n#> 3 hist     create_plot(data)                                                   \u2026\n#> 4 fit      lm(Ozone ~ Wind + Temp, data)                                       \u2026\n#> 5 report   rmarkdown::render(knitr_in(\"report.Rmd\"), output_file = file_out(\"re\u2026\n```\nSo far, we have just been setting the stage. Use `make()` or\n[`r_make()`](https://books.ropensci.org/drake/projects.html#safer-interactivity)\nto do the real work. Targets are built in the correct order regardless\nof the row order of `plan`.\n``` r\nmake(plan) # See also r_make().\n#> \u25b6 target raw_data\n#> \u25b6 target data\n#> \u25b6 target fit\n#> \u25b6 target hist\n#> \u25b6 target report\n```\nExcept for files like `report.html`, your output is stored in a hidden\n`.drake/` folder. Reading it back is easy.\n``` r\nreadd(data) # See also loadd().\n#> # A tibble: 153 x 6\n#>    Ozone Solar.R  Wind  Temp Month   Day\n#>    <dbl>   <dbl> <dbl> <dbl> <dbl> <dbl>\n#>  1  41       190   7.4    67     5     1\n#>  2  36       118   8      72     5     2\n#>  3  12       149  12.6    74     5     3\n#>  4  18       313  11.5    62     5     4\n#>  5  42.1      NA  14.3    56     5     5\n#>  6  28        NA  14.9    66     5     6\n#>  7  23       299   8.6    65     5     7\n#>  8  19        99  13.8    59     5     8\n#>  9   8        19  20.1    61     5     9\n#> 10  42.1     194   8.6    69     5    10\n#> # \u2026 with 143 more rows\n```\nYou may look back on your work and see room for improvement, but it\u2019s\nall good\\! The whole point of `drake` is to help you go back and change\nthings quickly and painlessly. For example, we forgot to give our\nhistogram a bin width.\n``` r\nreadd(hist)\n#> `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9622538030227382,
+      "result": {
+        "original_header": "Reproducibility with confidence",
+        "type": "Text_excerpt",
+        "value": "The R community emphasizes reproducibility. Traditional themes include\n[scientific\nreplicability](https://en.wikipedia.org/wiki/Replication_crisis),\nliterate programming with [knitr](https://yihui.org/knitr/), and\nversion control with\n[git](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control).\nBut internal consistency is important too. Reproducibility carries the\npromise that your output matches the code and data you say you used.\nWith the exception of [non-default\ntriggers](https://books.ropensci.org/drake/triggers.html) and [hasty\nmode](https://books.ropensci.org/drake/hpc.html#hasty-mode), `drake`\nstrives to keep this promise.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9469124333094603,
+      "result": {
+        "original_header": "Evidence",
+        "type": "Text_excerpt",
+        "value": "Suppose you are reviewing someone else\u2019s data analysis project for\nreproducibility. You scrutinize it carefully, checking that the datasets\nare available and the documentation is thorough. But could you re-create\nthe results without the help of the original author? With `drake`, it is\nquick and easy to find out.\n``` r\nmake(plan) # See also r_make().\n#> \u2139 unloading 1 targets from environment\n#> \u2713 All targets are already up to date.\n\noutdated(plan) # See also r_outdated().\n#> character(0)\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8378396580604441,
+      "result": {
+        "original_header": "Ease",
+        "type": "Text_excerpt",
+        "value": "When it comes time to actually rerun the entire project, you have much\nmore confidence. Starting over from scratch is trivially easy.\n``` r\nclean()    # Remove the original author's results.\nmake(plan) # Independently re-create the results from the code and input data.\n#> \u25b6 target raw_data\n#> \u25b6 target data\n#> \u25b6 target fit\n#> \u25b6 target hist\n#> \u25b6 target report\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9392898471623828,
+      "result": {
+        "original_header": "Big data efficiency",
+        "type": "Text_excerpt",
+        "value": "Select specialized data formats to increase speed and reduce memory\nconsumption. In version 7.5.2.9000 and above, the available formats are\n[\u201cfst\u201d](https://github.com/fstpackage/fst) for data frames (example\nbelow) and \u201ckeras\u201d for [Keras](https://tensorflow.rstudio.com/) models\n([example here](https://books.ropensci.org/drake/churn.html#plan)).\n``` r\nlibrary(drake)\nn <- 1e8 # Each target is 1.6 GB in memory.\nplan <- drake_plan(\n  data_fst = target(\n    data.frame(x = runif(n), y = runif(n)),\n    format = \"fst\"\n  ),\n  data_old = data.frame(x = runif(n), y = runif(n))\n)\nmake(plan)\n#> target data_fst\n#> target data_old\nbuild_times(type = \"build\")\n#> # A tibble: 2 x 4\n#>   target   elapsed              user                 system    \n#>   <chr>    <Duration>           <Duration>           <Duration>\n#> 1 data_fst 13.93s               37.562s              7.954s    \n#> 2 data_old 184s (~3.07 minutes) 177s (~2.95 minutes) 4.157s\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8918830467402279,
+      "result": {
+        "original_header": "History and provenance",
+        "type": "Text_excerpt",
+        "value": "As of version 7.5.2, `drake` tracks the history and provenance of your\ntargets: what you built, when you built it, how you built it, the\narguments you used in your function calls, and how to get the data back.\n(Disable with `make(history = FALSE)`)\n``` r\nhistory <- drake_history(analyze = TRUE)\nhistory\n#> # A tibble: 12 x 11\n#>    target current built exists hash  command   seed runtime na.rm quiet\n#>    <chr>  <lgl>   <chr> <lgl>  <chr> <chr>    <int>   <dbl> <lgl> <lgl>\n#>  1 data   TRUE    2020\u2026 TRUE   11e2\u2026 \"raw_d\u2026 1.29e9 0.011   TRUE  NA   \n#>  2 data   TRUE    2020\u2026 TRUE   11e2\u2026 \"raw_d\u2026 1.29e9 0.00400 TRUE  NA   \n#>  3 fit    TRUE    2020\u2026 TRUE   3c87\u2026 \"lm(Oz\u2026 1.11e9 0.006   NA    NA   \n#>  4 fit    TRUE    2020\u2026 TRUE   3c87\u2026 \"lm(Oz\u2026 1.11e9 0.002   NA    NA   \n#>  5 hist   FALSE   2020\u2026 TRUE   88ae\u2026 \"creat\u2026 2.10e8 0.011   NA    NA   \n#>  6 hist   TRUE    2020\u2026 TRUE   0304\u2026 \"creat\u2026 2.10e8 0.003   NA    NA   \n#>  7 hist   TRUE    2020\u2026 TRUE   0304\u2026 \"creat\u2026 2.10e8 0.009   NA    NA   \n#>  8 raw_d\u2026 TRUE    2020\u2026 TRUE   855d\u2026 \"readx\u2026 1.20e9 0.02    NA    NA   \n#>  9 raw_d\u2026 TRUE    2020\u2026 TRUE   855d\u2026 \"readx\u2026 1.20e9 0.0330  NA    NA   \n#> 10 report TRUE    2020\u2026 TRUE   5504\u2026 \"rmark\u2026 1.30e9 1.31    NA    TRUE \n#> 11 report TRUE    2020\u2026 TRUE   5504\u2026 \"rmark\u2026 1.30e9 0.413   NA    TRUE \n#> 12 report TRUE    2020\u2026 TRUE   5504\u2026 \"rmark\u2026 1.30e9 0.475   NA    TRUE \n#> # \u2026 with 1 more variable: output_file <chr>\n```\n \n  - The `quiet` column appears above because one of the `drake_plan()`\n    commands has `knit(quiet = TRUE)`.\n  - The `hash` column identifies all the previous versions of your\n    targets. As long as `exists` is `TRUE`, you can recover old data.\n  - Advanced: if you use `make(cache_log_file = TRUE)` and put the cache\n    log file under version control, you can match the hashes from\n    `drake_history()` with the `git` commit history of your code. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9135796781805182,
+      "result": {
+        "original_header": "Independent replication",
+        "type": "Text_excerpt",
+        "value": "With even more evidence and confidence, you can invest the time to\nindependently replicate the original code base if necessary. Up until\nthis point, you relied on basic `drake` functions such as `make()`, so\nyou may not have needed to peek at any substantive author-defined code\nin advance. In that case, you can stay usefully ignorant as you\nreimplement the original author\u2019s methodology. In other words, `drake`\ncould potentially improve the integrity of independent replication.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9492571524805593,
+      "result": {
+        "original_header": "Readability and transparency",
+        "type": "Text_excerpt",
+        "value": "Ideally, independent observers should be able to read your code and\nunderstand it. `drake` helps in several ways. \n  - The [drake\n    plan](https://docs.ropensci.org/drake/reference/drake_plan.html)\n    explicitly outlines the steps of the analysis, and\n    [`vis_drake_graph()`](https://docs.ropensci.org/drake/reference/vis_drake_graph.html)\n    visualizes how those steps depend on each other.\n  - `drake` takes care of the parallel scheduling and high-performance\n    computing (HPC) for you. That means the HPC code is no longer\n    tangled up with the code that actually expresses your ideas.\n  - You can [generate large collections of\n    targets](https://books.ropensci.org/drake/gsp.html) without\n    necessarily changing your code base of imported functions, another\n    nice separation between the concepts and the execution of your\n    workflow\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8913849318347725,
+      "result": {
+        "original_header": "Scale up and out.",
+        "type": "Text_excerpt",
+        "value": "Not every project can complete in a single R session on your laptop.\nSome projects need more speed or computing power. Some require a few\nlocal processor cores, and some need large high-performance computing\nsystems. But parallel computing is hard. Your tables and figures depend\non your analysis results, and your analyses depend on your datasets, so\nsome tasks must finish before others even begin. `drake` knows what to\ndo. Parallelism is implicit and automatic. See the [high-performance\ncomputing guide](https://books.ropensci.org/drake/hpc.html) for all the\ndetails.\n``` r\n# Use the spare cores on your local machine.\nmake(plan, jobs = 4)\n\n# Or scale up to a supercomputer.\ndrake_hpc_template_file(\"slurm_clustermq.tmpl\") # https://slurm.schedmd.com/\noptions(\n  clustermq.scheduler = \"clustermq\",\n  clustermq.template = \"slurm_clustermq.tmpl\"\n)\nmake(plan, parallelism = \"clustermq\", jobs = 4)\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.800809294721868,
+      "result": {
+        "original_header": "With Docker",
+        "type": "Text_excerpt",
+        "value": "  - [`drake-gitlab-docker-example`](https://gitlab.com/ecohealthalliance/drake-gitlab-docker-example):\n    A small pedagogical example workflow that leverages `drake`, Docker,\n    GitLab, and continuous integration in a reproducible analysis\n    pipeline. Created by [Noam Ross](https://www.noamross.net/).\n  - [`pleurosoriopsis`](https://github.com/joelnitta/pleurosoriopsis):\n    The workflow that supports [Ebihara *et al.* 2019. \u201cGrowth Dynamics\n    of the Independent Gametophytes of *Pleurorosiopsis makinoi*\n    (Polypodiaceae)\u201d *Bulletin of the National Science Museum Series B\n    (Botany)*\n    45:77-86.](https://www.kahaku.go.jp/research/publication/botany.html).\n    Created by [Joel Nitta](https://github.com/joelnitta). \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9483404122170911,
+      "result": {
+        "original_header": "GNU Make",
+        "type": "Text_excerpt",
+        "value": "The original idea of a time-saving reproducible build system extends\nback at least as far as [GNU Make](https://www.gnu.org/software/make/),\nwhich still aids the work of [data\nscientists](http://blog.kaggle.com/2012/10/15/make-for-data-scientists/)\nas well as the original user base of complied language programmers. In\nfact, the name \u201cdrake\u201d stands for \u201cData Frames in R for Make\u201d.\n[Make](https://kbroman.org/minimal_make/) is used widely in reproducible\nresearch. Below are some examples from [Karl Broman\u2019s\nwebsite](https://kbroman.org/minimal_make/). \nWhereas [GNU Make](https://www.gnu.org/software/make/) is\nlanguage-agnostic, `drake` is fundamentally designed for R. \n  - Instead of a\n    [Makefile](https://github.com/kbroman/preCCProbPaper/blob/master/Makefile),\n    `drake` supports an R-friendly [domain-specific\n    language](https://books.ropensci.org/drake/plans.html#large-plans)\n    for declaring targets.\n  - Targets in [GNU Make](https://www.gnu.org/software/make/) are files,\n    whereas targets in `drake` are arbitrary variables in memory.\n    (`drake` does have opt-in support for files via `file_out()`,\n    `file_in()`, and `knitr_in()`.) `drake` caches these objects in its\n    own [storage system](https://github.com/richfitz/storr) so R users\n    rarely have to think about output files.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9662280084202162,
+      "result": {
+        "original_header": "Remake",
+        "type": "Text_excerpt",
+        "value": "[remake](https://github.com/richfitz/remake) itself is no longer\nmaintained, but its founding design goals and principles live on through\n[drake](https://github.com/ropensci/drake). In fact,\n[drake](https://github.com/ropensci/drake) is a direct re-imagining of\n[remake](https://github.com/richfitz/remake) with enhanced scalability,\nreproducibility, high-performance computing, visualization, and\ndocumentation.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.949539398842111,
+      "result": {
+        "original_header": "Memoization",
+        "type": "Text_excerpt",
+        "value": "Memoization is the strategic caching of the return values of functions.\nIt is a lightweight approach to the core problem that `drake` and other\npipeline tools are trying to solve. Every time a memoized function is\ncalled with a new set of arguments, the return value is saved for future\nuse. Later, whenever the same function is called with the same\narguments, the previous return value is salvaged, and the function call\nis skipped to save time. The\n[`memoise`](https://github.com/r-lib/memoise) package is the primary\nimplementation of memoization in R. \nMemoization saves time for small projects, but it arguably does not go\nfar enough for large reproducible pipelines. In reality, the return\nvalue of a function depends not only on the function body and the\narguments, but also on any nested functions and global variables, the\ndependencies of those dependencies, and so on upstream. `drake` tracks\nthis deeper context, while [memoise](https://github.com/r-lib/memoise)\ndoes not.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9673016305699119,
+      "result": {
+        "original_header": "Literate programming",
+        "type": "Text_excerpt",
+        "value": "[Literate programming](https://rmarkdown.rstudio.com/) is the practice\nof narrating code in plain vernacular. The goal is to communicate the\nresearch process clearly, transparently, and reproducibly. Whereas\ncommented code is still mostly code, literate\n[knitr](https://yihui.org/knitr/) / [R\nMarkdown](https://rmarkdown.rstudio.com/) reports can become websites,\npresentation slides, lecture notes, serious scientific manuscripts, and\neven books.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9212379385687526,
+      "result": {
+        "original_header": "knitr and R Markdown",
+        "type": "Text_excerpt",
+        "value": "`drake` and [knitr](https://yihui.org/knitr/) are symbiotic. `drake`\u2019s\njob is to manage large computation and orchestrate the demanding tasks\nof a complex data analysis pipeline.\n[knitr](https://yihui.org/knitr/)\u2019s job is to communicate those\nexpensive results after `drake` computes them.\n[knitr](https://yihui.org/knitr/) / [R\nMarkdown](https://rmarkdown.rstudio.com/) reports are small pieces of an\noverarching `drake` pipeline. They should focus on communication, and\nthey should do as little computation as possible. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.974645430141837,
+      "result": {
+        "original_header": "Version control",
+        "type": "Text_excerpt",
+        "value": "`drake` is not a version control tool. However, it is fully compatible\nwith [`git`](https://git-scm.com/),\n[`svn`](https://en.wikipedia.org/wiki/Apache_Subversion), and similar\nsoftware. In fact, it is good practice to use\n[`git`](https://git-scm.com/) alongside `drake` for reproducible\nworkflows. \nHowever, data poses a challenge. The datasets created by `make()` can\nget large and numerous, and it is not recommended to put the `.drake/`\ncache or the `.drake_history/` logs under version control. Instead, it\nis recommended to use a data storage solution such as\nDropBox or [OSF](https://osf.io/ka7jv/wiki/home/).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.947205920638634,
+      "result": {
+        "original_header": "Containerization and R package environments",
+        "type": "Text_excerpt",
+        "value": "`drake` does not track R packages or system dependencies for changes.\nInstead, it defers to tools like [Docker](https://www.docker.com),\n[Singularity](https://sylabs.io/singularity/),\n[`renv`](https://github.com/rstudio/renv), and\n[`packrat`](https://github.com/rstudio/packrat), which create\nself-contained portable environments to reproducibly isolate and ship\ndata analysis projects. `drake` is fully compatible with these tools.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8349082711697942,
+      "result": {
+        "original_header": "workflowr",
+        "type": "Text_excerpt",
+        "value": "The `workflowr` package is a\nproject manager that focuses on literate programming, sharing over the\nweb, file organization, and version control. Its brand of\nreproducibility is all about transparency, communication, and\ndiscoverability. For an example of\n`workflowr` and `drake`\nworking together, see [this machine learning\nproject](https://github.com/pat-s/2019-feature-selection) by [Patrick\nSchratz](https://github.com/pat-s).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.tidyverse.org/lifecycle/#superseded"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Core concepts",
+        "parent_header": [
+          "Documentation"
+        ],
+        "type": "Text_excerpt",
+        "value": "The following resources explain what `drake` can do and how it works.\nThe workshop at `https://github.com/wlandau/learndrake`\ndevotes particular attention to `drake`\u2019s mental model.\n\n  - The [user manual](https://books.ropensci.org/drake/)\n  - [`drakeplanner`](https://github.com/wlandau/drakeplanner), an\n    R/Shiny app to help learn `drake` and create new projects. Run\n    locally with `drakeplanner::drakeplanner()` or access it at\n    <https://wlandau.shinyapps.io/drakeplanner>.\n  - ``https://github.com/wlandau/learndrake`, an R package\n    for teaching an extended `drake` workshop. It contains notebooks,\n    slides, Shiny apps, the latter two of which are publicly deployed.\n    See `https://github.com/wlandau/learndrake/blob/main/README.md`\n    for instructions and links.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "In practice",
+        "parent_header": [
+          "Documentation"
+        ],
+        "type": "Text_excerpt",
+        "value": "  - [Miles McBain](https://github.com/MilesMcBain)\u2019s [excellent blog\n    post](https://milesmcbain.xyz/the-drake-post/) explains the\n    motivating factors and practical issues {drake} solves for most\n    projects, how to set up a project as quickly and painlessly as\n    possible, and how to overcome common obstacles.\n  - Miles\u2019 [`dflow`](https://github.com/MilesMcBain/dflow) package\n    generates the file structure for a boilerplate `drake` project. It\n    is a more thorough alternative to `drake::use_drake()`.\n  - `drake` is heavily function-oriented by design, and Miles\u2019\n    [`fnmate`](https://github.com/MilesMcBain/fnmate) package\n    automatically generates boilerplate code and docstrings for\n    functions you mention in `drake` plans.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "`drake` projects as R packages",
+        "parent_header": [
+          "Documentation"
+        ],
+        "type": "Text_excerpt",
+        "value": "Some folks like to structure their `drake` workflows as R packages.\nExamples are below. In your own analysis packages, be sure to call\n`drake::expose_imports(yourPackage)` so `drake` can watch you package\u2019s\nfunctions for changes and rebuild downstream targets accordingly.\n\n  - [b-rodrigues/coolmlproject](https://github.com/b-rodrigues/coolmlproject)\n  - [tiernanmartin/drakepkg](https://github.com/tiernanmartin/drakepkg)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/ropensci/drake/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/drake/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 128
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/drake/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/drake"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "drake is superseded. Consider targets instead."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/drake/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://books.ropensci.org/drake/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "drake"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/drake/reference/figures/infographic.svg"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://joss.theoj.org/papers/10.21105/joss.00550/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/drake/reference/figures/workflowing.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/drake/reference/figures/commcall.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/drake/main/man/figures/unnamed-chunk-9-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/drake/reference/figures/graph.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/drake/main/man/figures/unnamed-chunk-13-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/drake/main/man/figures/unnamed-chunk-18-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/github_footer.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "You can choose among different versions of `drake`. The CRAN release\noften lags behind the [online manual](https://books.ropensci.org/drake/)\nbut may have fewer bugs.\n\n``` r\n# Install the latest stable release from CRAN.\ninstall.packages(\"drake\")\n\n# Alternatively, install the development version from GitHub.\ninstall.packages(\"devtools\")\nlibrary(devtools)\ninstall_github(\"ropensci/drake\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/drake/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/drake/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/drake/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "data-science, drake, high-performance-computing, makefile, peer-reviewed, pipeline, r, r-package, reproducibility, reproducible-research, ropensci, rstats, workflow"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "reproducibility",
+          "high-performance-computing",
+          "r",
+          "data-science",
+          "drake",
+          "makefile",
+          "pipeline",
+          "workflow",
+          "reproducible-research",
+          "rstats",
+          "r-package",
+          "ropensci",
+          "peer-reviewed"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The GNU General Public License is a free, copyleft license for\nsoftware and other kinds of works.\n\n  The licenses for most software and other practical works are designed\nto take away your freedom to share and change the works.  By contrast,\nthe GNU General Public License is intended to guarantee your freedom to\nshare and change all versions of a program--to make sure it remains free\nsoftware for all its users.  We, the Free Software Foundation, use the\nGNU General Public License for most of our software; it applies also to\nany other work released this way by its authors.  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthem if you wish), that you receive source code or can get it if you\nwant it, that you can change the software or use pieces of it in new\nfree programs, and that you know you can do these things.\n\n  To protect your rights, we need to prevent others from denying you\nthese rights or asking you to surrender the rights.  Therefore, you have\ncertain responsibilities if you distribute copies of the software, or if\nyou modify it: responsibilities to respect the freedom of others.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must pass on to the recipients the same\nfreedoms that you received.  You must make sure that they, too, receive\nor can get the source code.  And you must show them these terms so they\nknow their rights.\n\n  Developers that use the GNU GPL protect your rights with two steps:\n(1) assert copyright on the software, and (2) offer you this License\ngiving you legal permission to copy, distribute and/or modify it.\n\n  For the developers' and authors' protection, the GPL clearly explains\nthat there is no warranty for this free software.  For both users' and\nauthors' sake, the GPL requires that modified versions be marked as\nchanged, so that their problems will not be attributed erroneously to\nauthors of previous versions.\n\n  Some devices are designed to deny users access to install or run\nmodified versions of the software inside them, although the manufacturer\ncan do so.  This is fundamentally incompatible with the aim of\nprotecting users' freedom to change the software.  The systematic\npattern of such abuse occurs in the area of products for individuals to\nuse, which is precisely where it is most unacceptable.  Therefore, we\nhave designed this version of the GPL to prohibit the practice for those\nproducts.  If such problems arise substantially in other domains, we\nstand ready to extend this provision to those domains in future versions\nof the GPL, as needed to protect the freedom of users.\n\n  Finally, every program is threatened constantly by software patents.\nStates should not allow patents to restrict development and use of\nsoftware on general-purpose computers, but in those that do, we wish to\navoid the special danger that patents applied to a free program could\nmake it effectively proprietary.  To prevent this, the GPL assures that\npatents cannot be used to render the program non-free.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n                       TERMS AND CONDITIONS\n\n  0. Definitions.\n\n  \"This License\" refers to version 3 of the GNU General Public License.\n\n  \"Copyright\" also means copyright-like laws that apply to other kinds of\nworks, such as semiconductor masks.\n\n  \"The Program\" refers to any copyrightable work licensed under this\nLicense.  Each licensee is addressed as \"you\".  \"Licensees\" and\n\"recipients\" may be individuals or organizations.\n\n  To \"modify\" a work means to copy from or adapt all or part of the work\nin a fashion requiring copyright permission, other than the making of an\nexact copy.  The resulting work is called a \"modified version\" of the\nearlier work or a work \"based on\" the earlier work.\n\n  A \"covered work\" means either the unmodified Program or a work based\non the Program.\n\n  To \"propagate\" a work means to do anything with it that, without\npermission, would make you directly or secondarily liable for\ninfringement under applicable copyright law, except executing it on a\ncomputer or modifying a private copy.  Propagation includes copying,\ndistribution (with or without modification), making available to the\npublic, and in some countries other activities as well.\n\n  To \"convey\" a work means any kind of propagation that enables other\nparties to make or receive copies.  Mere interaction with a user through\na computer network, with no transfer of a copy, is not conveying.\n\n  An interactive user interface displays \"Appropriate Legal Notices\"\nto the extent that it includes a convenient and prominently visible\nfeature that (1) displays an appropriate copyright notice, and (2)\ntells the user that there is no warranty for the work (except to the\nextent that warranties are provided), that licensees may convey the\nwork under this License, and how to view a copy of this License.  If\nthe interface presents a list of user commands or options, such as a\nmenu, a prominent item in the list meets this criterion.\n\n  1. Source Code.\n\n  The \"source code\" for a work means the preferred form of the work\nfor making modifications to it.  \"Object code\" means any non-source\nform of a work.\n\n  A \"Standard Interface\" means an interface that either is an official\nstandard defined by a recognized standards body, or, in the case of\ninterfaces specified for a particular programming language, one that\nis widely used among developers working in that language.\n\n  The \"System Libraries\" of an executable work include anything, other\nthan the work as a whole, that (a) is included in the normal form of\npackaging a Major Component, but which is not part of that Major\nComponent, and (b) serves only to enable use of the work with that\nMajor Component, or to implement a Standard Interface for which an\nimplementation is available to the public in source code form.  A\n\"Major Component\", in this context, means a major essential component\n(kernel, window system, and so on) of the specific operating system\n(if any) on which the executable work runs, or a compiler used to\nproduce the work, or an object code interpreter used to run it.\n\n  The \"Corresponding Source\" for a work in object code form means all\nthe source code needed to generate, install, and (for an executable\nwork) run the object code and to modify the work, including scripts to\ncontrol those activities.  However, it does not include the work's\nSystem Libraries, or general-purpose tools or generally available free\nprograms which are used unmodified in performing those activities but\nwhich are not part of the work.  For example, Corresponding Source\nincludes interface definition files associated with source files for\nthe work, and the source code for shared libraries and dynamically\nlinked subprograms that the work is specifically designed to require,\nsuch as by intimate data communication or control flow between those\nsubprograms and other parts of the work.\n\n  The Corresponding Source need not include anything that users\ncan regenerate automatically from other parts of the Corresponding\nSource.\n\n  The Corresponding Source for a work in source code form is that\nsame work.\n\n  2. Basic Permissions.\n\n  All rights granted under this License are granted for the term of\ncopyright on the Program, and are irrevocable provided the stated\nconditions are met.  This License explicitly affirms your unlimited\npermission to run the unmodified Program.  The output from running a\ncovered work is covered by this License only if the output, given its\ncontent, constitutes a covered work.  This License acknowledges your\nrights of fair use or other equivalent, as provided by copyright law.\n\n  You may make, run and propagate covered works that you do not\nconvey, without conditions so long as your license otherwise remains\nin force.  You may convey covered works to others for the sole purpose\nof having them make modifications exclusively for you, or provide you\nwith facilities for running those works, provided that you comply with\nthe terms of this License in conveying all material for which you do\nnot control copyright.  Those thus making or running the covered works\nfor you must do so exclusively on your behalf, under your direction\nand control, on terms that prohibit them from making any copies of\nyour copyrighted material outside their relationship with you.\n\n  Conveying under any other circumstances is permitted solely under\nthe conditions stated below.  Sublicensing is not allowed; section 10\nmakes it unnecessary.\n\n  3. Protecting Users' Legal Rights From Anti-Circumvention Law.\n\n  No covered work shall be deemed part of an effective technological\nmeasure under any applicable law fulfilling obligations under article\n11 of the WIPO copyright treaty adopted on 20 December 1996, or\nsimilar laws prohibiting or restricting circumvention of such\nmeasures.\n\n  When you convey a covered work, you waive any legal power to forbid\ncircumvention of technological measures to the extent such circumvention\nis effected by exercising rights under this License with respect to\nthe covered work, and you disclaim any intention to limit operation or\nmodification of the work as a means of enforcing, against the work's\nusers, your or third parties' legal rights to forbid circumvention of\ntechnological measures.\n\n  4. Conveying Verbatim Copies.\n\n  You may convey verbatim copies of the Program's source code as you\nreceive it, in any medium, provided that you conspicuously and\nappropriately publish on each copy an appropriate copyright notice;\nkeep intact all notices stating that this License and any\nnon-permissive terms added in accord with section 7 apply to the code;\nkeep intact all notices of the absence of any warranty; and give all\nrecipients a copy of this License along with the Program.\n\n  You may charge any price or no price for each copy that you convey,\nand you may offer support or warranty protection for a fee.\n\n  5. Conveying Modified Source Versions.\n\n  You may convey a work based on the Program, or the modifications to\nproduce it from the Program, in the form of source code under the\nterms of section 4, provided that you also meet all of these conditions:\n\n    a) The work must carry prominent notices stating that you modified\n    it, and giving a relevant date.\n\n    b) The work must carry prominent notices stating that it is\n    released under this License and any conditions added under section\n    7.  This requirement modifies the requirement in section 4 to\n    \"keep intact all notices\".\n\n    c) You must license the entire work, as a whole, under this\n    License to anyone who comes into possession of a copy.  This\n    License will therefore apply, along with any applicable section 7\n    additional terms, to the whole of the work, and all its parts,\n    regardless of how they are packaged.  This License gives no\n    permission to license the work in any other way, but it does not\n    invalidate such permission if you have separately received it.\n\n    d) If the work has interactive user interfaces, each must display\n    Appropriate Legal Notices; however, if the Program has interactive\n    interfaces that do not display Appropriate Legal Notices, your\n    work need not make them do so.\n\n  A compilation of a covered work with other separate and independent\nworks, which are not by their nature extensions of the covered work,\nand which are not combined with it such as to form a larger program,\nin or on a volume of a storage or distribution medium, is called an\n\"aggregate\" if the compilation and its resulting copyright are not\nused to limit the access or legal rights of the compilation's users\nbeyond what the individual works permit.  Inclusion of a covered work\nin an aggregate does not cause this License to apply to the other\nparts of the aggregate.\n\n  6. Conveying Non-Source Forms.\n\n  You may convey a covered work in object code form under the terms\nof sections 4 and 5, provided that you also convey the\nmachine-readable Corresponding Source under the terms of this License,\nin one of these ways:\n\n    a) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by the\n    Corresponding Source fixed on a durable physical medium\n    customarily used for software interchange.\n\n    b) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by a\n    written offer, valid for at least three years and valid for as\n    long as you offer spare parts or customer support for that product\n    model, to give anyone who possesses the object code either (1) a\n    copy of the Corresponding Source for all the software in the\n    product that is covered by this License, on a durable physical\n    medium customarily used for software interchange, for a price no\n    more than your reasonable cost of physically performing this\n    conveying of source, or (2) access to copy the\n    Corresponding Source from a network server at no charge.\n\n    c) Convey individual copies of the object code with a copy of the\n    written offer to provide the Corresponding Source.  This\n    alternative is allowed only occasionally and noncommercially, and\n    only if you received the object code with such an offer, in accord\n    with subsection 6b.\n\n    d) Convey the object code by offering access from a designated\n    place (gratis or for a charge), and offer equivalent access to the\n    Corresponding Source in the same way through the same place at no\n    further charge.  You need not require recipients to copy the\n    Corresponding Source along with the object code.  If the place to\n    copy the object code is a network server, the Corresponding Source\n    may be on a different server (operated by you or a third party)\n    that supports equivalent copying facilities, provided you maintain\n    clear directions next to the object code saying where to find the\n    Corresponding Source.  Regardless of what server hosts the\n    Corresponding Source, you remain obligated to ensure that it is\n    available for as long as needed to satisfy these requirements.\n\n    e) Convey the object code using peer-to-peer transmission, provided\n    you inform other peers where the object code and Corresponding\n    Source of the work are being offered to the general public at no\n    charge under subsection 6d.\n\n  A separable portion of the object code, whose source code is excluded\nfrom the Corresponding Source as a System Library, need not be\nincluded in conveying the object code work.\n\n  A \"User Product\" is either (1) a \"consumer product\", which means any\ntangible personal property which is normally used for personal, family,\nor household purposes, or (2) anything designed or sold for incorporation\ninto a dwelling.  In determining whether a product is a consumer product,\ndoubtful cases shall be resolved in favor of coverage.  For a particular\nproduct received by a particular user, \"normally used\" refers to a\ntypical or common use of that class of product, regardless of the status\nof the particular user or of the way in which the particular user\nactually uses, or expects or is expected to use, the product.  A product\nis a consumer product regardless of whether the product has substantial\ncommercial, industrial or non-consumer uses, unless such uses represent\nthe only significant mode of use of the product.\n\n  \"Installation Information\" for a User Product means any methods,\nprocedures, authorization keys, or other information required to install\nand execute modified versions of a covered work in that User Product from\na modified version of its Corresponding Source.  The information must\nsuffice to ensure that the continued functioning of the modified object\ncode is in no case prevented or interfered with solely because\nmodification has been made.\n\n  If you convey an object code work under this section in, or with, or\nspecifically for use in, a User Product, and the conveying occurs as\npart of a transaction in which the right of possession and use of the\nUser Product is transferred to the recipient in perpetuity or for a\nfixed term (regardless of how the transaction is characterized), the\nCorresponding Source conveyed under this section must be accompanied\nby the Installation Information.  But this requirement does not apply\nif neither you nor any third party retains the ability to install\nmodified object code on the User Product (for example, the work has\nbeen installed in ROM).\n\n  The requirement to provide Installation Information does not include a\nrequirement to continue to provide support service, warranty, or updates\nfor a work that has been modified or installed by the recipient, or for\nthe User Product in which it has been modified or installed.  Access to a\nnetwork may be denied when the modification itself materially and\nadversely affects the operation of the network or violates the rules and\nprotocols for communication across the network.\n\n  Corresponding Source conveyed, and Installation Information provided,\nin accord with this section must be in a format that is publicly\ndocumented (and with an implementation available to the public in\nsource code form), and must require no special password or key for\nunpacking, reading or copying.\n\n  7. Additional Terms.\n\n  \"Additional permissions\" are terms that supplement the terms of this\nLicense by making exceptions from one or more of its conditions.\nAdditional permissions that are applicable to the entire Program shall\nbe treated as though they were included in this License, to the extent\nthat they are valid under applicable law.  If additional permissions\napply only to part of the Program, that part may be used separately\nunder those permissions, but the entire Program remains governed by\nthis License without regard to the additional permissions.\n\n  When you convey a copy of a covered work, you may at your option\nremove any additional permissions from that copy, or from any part of\nit.  (Additional permissions may be written to require their own\nremoval in certain cases when you modify the work.)  You may place\nadditional permissions on material, added by you to a covered work,\nfor which you have or can give appropriate copyright permission.\n\n  Notwithstanding any other provision of this License, for material you\nadd to a covered work, you may (if authorized by the copyright holders of\nthat material) supplement the terms of this License with terms:\n\n    a) Disclaiming warranty or limiting liability differently from the\n    terms of sections 15 and 16 of this License; or\n\n    b) Requiring preservation of specified reasonable legal notices or\n    author attributions in that material or in the Appropriate Legal\n    Notices displayed by works containing it; or\n\n    c) Prohibiting misrepresentation of the origin of that material, or\n    requiring that modified versions of such material be marked in\n    reasonable ways as different from the original version; or\n\n    d) Limiting the use for publicity purposes of names of licensors or\n    authors of the material; or\n\n    e) Declining to grant rights under trademark law for use of some\n    trade names, trademarks, or service marks; or\n\n    f) Requiring indemnification of licensors and authors of that\n    material by anyone who conveys the material (or modified versions of\n    it) with contractual assumptions of liability to the recipient, for\n    any liability that these contractual assumptions directly impose on\n    those licensors and authors.\n\n  All other non-permissive additional terms are considered \"further\nrestrictions\" within the meaning of section 10.  If the Program as you\nreceived it, or any part of it, contains a notice stating that it is\ngoverned by this License along with a term that is a further\nrestriction, you may remove that term.  If a license document contains\na further restriction but permits relicensing or conveying under this\nLicense, you may add to a covered work material governed by the terms\nof that license document, provided that the further restriction does\nnot survive such relicensing or conveying.\n\n  If you add terms to a covered work in accord with this section, you\nmust place, in the relevant source files, a statement of the\nadditional terms that apply to those files, or a notice indicating\nwhere to find the applicable terms.\n\n  Additional terms, permissive or non-permissive, may be stated in the\nform of a separately written license, or stated as exceptions;\nthe above requirements apply either way.\n\n  8. Termination.\n\n  You may not propagate or modify a covered work except as expressly\nprovided under this License.  Any attempt otherwise to propagate or\nmodify it is void, and will automatically terminate your rights under\nthis License (including any patent licenses granted under the third\nparagraph of section 11).\n\n  However, if you cease all violation of this License, then your\nlicense from a particular copyright holder is reinstated (a)\nprovisionally, unless and until the copyright holder explicitly and\nfinally terminates your license, and (b) permanently, if the copyright\nholder fails to notify you of the violation by some reasonable means\nprior to 60 days after the cessation.\n\n  Moreover, your license from a particular copyright holder is\nreinstated permanently if the copyright holder notifies you of the\nviolation by some reasonable means, this is the first time you have\nreceived notice of violation of this License (for any work) from that\ncopyright holder, and you cure the violation prior to 30 days after\nyour receipt of the notice.\n\n  Termination of your rights under this section does not terminate the\nlicenses of parties who have received copies or rights from you under\nthis License.  If your rights have been terminated and not permanently\nreinstated, you do not qualify to receive new licenses for the same\nmaterial under section 10.\n\n  9. Acceptance Not Required for Having Copies.\n\n  You are not required to accept this License in order to receive or\nrun a copy of the Program.  Ancillary propagation of a covered work\noccurring solely as a consequence of using peer-to-peer transmission\nto receive a copy likewise does not require acceptance.  However,\nnothing other than this License grants you permission to propagate or\nmodify any covered work.  These actions infringe copyright if you do\nnot accept this License.  Therefore, by modifying or propagating a\ncovered work, you indicate your acceptance of this License to do so.\n\n  10. Automatic Licensing of Downstream Recipients.\n\n  Each time you convey a covered work, the recipient automatically\nreceives a license from the original licensors, to run, modify and\npropagate that work, subject to this License.  You are not responsible\nfor enforcing compliance by third parties with this License.\n\n  An \"entity transaction\" is a transaction transferring control of an\norganization, or substantially all assets of one, or subdividing an\norganization, or merging organizations.  If propagation of a covered\nwork results from an entity transaction, each party to that\ntransaction who receives a copy of the work also receives whatever\nlicenses to the work the party's predecessor in interest had or could\ngive under the previous paragraph, plus a right to possession of the\nCorresponding Source of the work from the predecessor in interest, if\nthe predecessor has it or can get it with reasonable efforts.\n\n  You may not impose any further restrictions on the exercise of the\nrights granted or affirmed under this License.  For example, you may\nnot impose a license fee, royalty, or other charge for exercise of\nrights granted under this License, and you may not initiate litigation\n(including a cross-claim or counterclaim in a lawsuit) alleging that\nany patent claim is infringed by making, using, selling, offering for\nsale, or importing the Program or any portion of it.\n\n  11. Patents.\n\n  A \"contributor\" is a copyright holder who authorizes use under this\nLicense of the Program or a work on which the Program is based.  The\nwork thus licensed is called the contributor's \"contributor version\".\n\n  A contributor's \"essential patent claims\" are all patent claims\nowned or controlled by the contributor, whether already acquired or\nhereafter acquired, that would be infringed by some manner, permitted\nby this License, of making, using, or selling its contributor version,\nbut do not include claims that would be infringed only as a\nconsequence of further modification of the contributor version.  For\npurposes of this definition, \"control\" includes the right to grant\npatent sublicenses in a manner consistent with the requirements of\nthis License.\n\n  Each contributor grants you a non-exclusive, worldwide, royalty-free\npatent license under the contributor's essential patent claims, to\nmake, use, sell, offer for sale, import and otherwise run, modify and\npropagate the contents of its contributor version.\n\n  In the following three paragraphs, a \"patent license\" is any express\nagreement or commitment, however denominated, not to enforce a patent\n(such as an express permission to practice a patent or covenant not to\nsue for patent infringement).  To \"grant\" such a patent license to a\nparty means to make such an agreement or commitment not to enforce a\npatent against the party.\n\n  If you convey a covered work, knowingly relying on a patent license,\nand the Corresponding Source of the work is not available for anyone\nto copy, free of charge and under the terms of this License, through a\npublicly available network server or other readily accessible means,\nthen you must either (1) cause the Corresponding Source to be so\navailable, or (2) arrange to deprive yourself of the benefit of the\npatent license for this particular work, or (3) arrange, in a manner\nconsistent with the requirements of this License, to extend the patent\nlicense to downstream recipients.  \"Knowingly relying\" means you have\nactual knowledge that, but for the patent license, your conveying the\ncovered work in a country, or your recipient's use of the covered work\nin a country, would infringe one or more identifiable patents in that\ncountry that you have reason to believe are valid.\n\n  If, pursuant to or in connection with a single transaction or\narrangement, you convey, or propagate by procuring conveyance of, a\ncovered work, and grant a patent license to some of the parties\nreceiving the covered work authorizing them to use, propagate, modify\nor convey a specific copy of the covered work, then the patent license\nyou grant is automatically extended to all recipients of the covered\nwork and works based on it.\n\n  A patent license is \"discriminatory\" if it does not include within\nthe scope of its coverage, prohibits the exercise of, or is\nconditioned on the non-exercise of one or more of the rights that are\nspecifically granted under this License.  You may not convey a covered\nwork if you are a party to an arrangement with a third party that is\nin the business of distributing software, under which you make payment\nto the third party based on the extent of your activity of conveying\nthe work, and under which the third party grants, to any of the\nparties who would receive the covered work from you, a discriminatory\npatent license (a) in connection with copies of the covered work\nconveyed by you (or copies made from those copies), or (b) primarily\nfor and in connection with specific products or compilations that\ncontain the covered work, unless you entered into that arrangement,\nor that patent license was granted, prior to 28 March 2007.\n\n  Nothing in this License shall be construed as excluding or limiting\nany implied license or other defenses to infringement that may\notherwise be available to you under applicable patent law.\n\n  12. No Surrender of Others' Freedom.\n\n  If conditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot convey a\ncovered work so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you may\nnot convey it at all.  For example, if you agree to terms that obligate you\nto collect a royalty for further conveying from those to whom you convey\nthe Program, the only way you could satisfy both those terms and this\nLicense would be to refrain entirely from conveying the Program.\n\n  13. Use with the GNU Affero General Public License.\n\n  Notwithstanding any other provision of this License, you have\npermission to link or combine any covered work with a work licensed\nunder version 3 of the GNU Affero General Public License into a single\ncombined work, and to convey the resulting work.  The terms of this\nLicense will continue to apply to the part which is the covered work,\nbut the special requirements of the GNU Affero General Public License,\nsection 13, concerning interaction through a network will apply to the\ncombination as such.\n\n  14. Revised Versions of this License.\n\n  The Free Software Foundation may publish revised and/or new versions of\nthe GNU General Public License from time to time.  Such new versions will\nbe similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\n  Each version is given a distinguishing version number.  If the\nProgram specifies that a certain numbered version of the GNU General\nPublic License \"or any later version\" applies to it, you have the\noption of following the terms and conditions either of that numbered\nversion or of any later version published by the Free Software\nFoundation.  If the Program does not specify a version number of the\nGNU General Public License, you may choose any version ever published\nby the Free Software Foundation.\n\n  If the Program specifies that a proxy can decide which future\nversions of the GNU General Public License can be used, that proxy's\npublic statement of acceptance of a version permanently authorizes you\nto choose that version for the Program.\n\n  Later license versions may give you additional or different\npermissions.  However, no additional obligations are imposed on any\nauthor or copyright holder as a result of your choosing to follow a\nlater version.\n\n  15. Disclaimer of Warranty.\n\n  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY\nAPPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT\nHOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY\nOF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM\nIS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF\nALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n  16. Limitation of Liability.\n\n  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS\nTHE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\nGENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE\nUSE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF\nDATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD\nPARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),\nEVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGES.\n\n  17. Interpretation of Sections 15 and 16.\n\n  If the disclaimer of warranty and limitation of liability provided\nabove cannot be given local legal effect according to their terms,\nreviewing courts shall apply local law that most closely approximates\nan absolute waiver of all civil liability in connection with the\nProgram, unless a warranty or assumption of liability accompanies a\ncopy of the Program in return for a fee.\n\n                     END OF TERMS AND CONDITIONS\n\n            How to Apply These Terms to Your New Programs\n\n  If you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these terms.\n\n  To do so, attach the following notices to the program.  It is safest\nto attach them to the start of each source file to most effectively\nstate the exclusion of warranty; and each file should have at least\nthe \"copyright\" line and a pointer to where the full notice is found.\n\n    <one line to give the program's name and a brief idea of what it does.>\n    Copyright (C) <year>  <name of author>\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <https://www.gnu.org/licenses/>.\n\nAlso add information on how to contact you by electronic and paper mail.\n\n  If the program does terminal interaction, make it output a short\nnotice like this when it starts in an interactive mode:\n\n    <program>  Copyright (C) <year>  <name of author>\n    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `show c' for details.\n\nThe hypothetical commands `show w' and `show c' should show the appropriate\nparts of the General Public License.  Of course, your program's commands\nmight be different; for a GUI interface, you would use an \"about box\".\n\n  You should also get your employer (if you work as a programmer) or school,\nif any, to sign a \"copyright disclaimer\" for the program, if necessary.\nFor more information on this, and how to apply and follow the GNU GPL, see\n<https://www.gnu.org/licenses/>.\n\n  The GNU General Public License does not permit incorporating your program\ninto proprietary programs.  If your program is a subroutine library, you\nmay consider it more useful to permit linking proprietary applications with\nthe library.  If this is what you want to do, use the GNU Lesser General\nPublic License instead of this License.  But first, please read\n<https://www.gnu.org/licenses/why-not-lgpl.html>.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/drake/reference/figures/logo.svg"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "drake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "drake: A Pipeline Toolkit for Reproducible Computation at Scale"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+        "type": "String",
+        "value": "drake"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 1197838,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 3593,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 1198,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/drake/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/drake/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2024-12-03T19:23:08Z",
+        "date_published": "2024-12-04T11:25:31Z",
+        "description": "# Version 7.13.11\r\n\r\n* Compatibility with `igraph` >= 2.1.2.\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.11",
+        "name": "igraph patch",
+        "release_id": 188912164,
+        "tag": "7.13.11",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.11",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/188912164",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/188912164",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.11"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2024-05-15T18:16:28Z",
+        "date_published": "2024-05-15T18:32:42Z",
+        "description": "# Version 7.13.10\r\n\r\n* Remove environment locking, c.f. https://github.com/r-lib/rlang/issues/1705.\r\n* Export S3 methods.\r\n* Avoid `memo_expr()` because it causes errors on R-devel.",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.10",
+        "name": "CRAN patch",
+        "release_id": 155938524,
+        "tag": "7.13.10",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/155938524",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/155938524",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2024-03-04T14:40:19Z",
+        "date_published": "2024-03-04T14:46:51Z",
+        "description": "# Version 7.13.9\r\n\r\n* Avoid `is.R()`.",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.9",
+        "name": "Avoid `is.R()`",
+        "release_id": 144658214,
+        "tag": "7.13.9",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/144658214",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/144658214",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2023-11-06T13:42:26Z",
+        "date_published": "2023-11-06T14:25:51Z",
+        "description": "# Version 7.13.8\r\n\r\n* Fix CRAN note.\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.8",
+        "name": "clustermq CRAN check note",
+        "release_id": 128145285,
+        "tag": "7.13.8",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/128145285",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/128145285",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2023-11-06T11:30:49Z",
+        "date_published": "2023-11-06T13:15:50Z",
+        "description": "# Version 7.13.7\r\n\r\n* Fix test for CRAN.\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.7",
+        "name": "CRAN patch",
+        "release_id": 128133722,
+        "tag": "7.13.7",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/128133722",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/128133722",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2023-10-17T13:59:22Z",
+        "date_published": "2023-10-17T14:22:01Z",
+        "description": "# Version 7.13.6\r\n\r\n* Migrate to the new interface in `clustermq` 0.9.0 (@mschubert).",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.6",
+        "name": "clustermq 0.9.1 compat",
+        "release_id": 125436240,
+        "tag": "7.13.6",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/125436240",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/125436240",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2023-03-24T12:44:37Z",
+        "date_published": "2023-03-24T12:52:05Z",
+        "description": "# Version 7.13.5\r\n\r\n* Always pass a character vector to `rm()` and `remove()`.",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.5",
+        "name": "CRAN patch",
+        "release_id": 96799589,
+        "tag": "7.13.5",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/96799589",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/96799589",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2022-08-19T15:07:29Z",
+        "date_published": "2022-08-19T15:17:09Z",
+        "description": "# Version 7.13.4\r\n\r\n* Fix HTML documentation files.\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.4",
+        "name": "Fix HTML docs",
+        "release_id": 74845771,
+        "tag": "7.13.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/74845771",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/74845771",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2021-08-26T16:40:16Z",
+        "date_published": "2021-09-21T12:51:51Z",
+        "description": "# Version 7.13.3\r\n\r\n* Improve error messages from static code analysis of malformed code (#1371, @billdenney).\r\n* Handle invalid language objects in commands (#1372, @gorgitko).\r\n* Do not lock namespaces (#1373, @gorgitko).\r\n* Compatibility with `rlang` PR 1255.",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.3",
+        "name": "rlang compat",
+        "release_id": 49981241,
+        "tag": "7.13.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/49981241",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/49981241",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2021-04-22T15:38:29Z",
+        "date_published": "2021-04-22T15:53:26Z",
+        "description": "# Version 7.13.2\r\n\r\n* Update SLURM `batchtools` template file can be brewed (#1359, @pat-s).\r\n* Change start-up message to tip about `targets`.\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.2",
+        "name": "Document succession to targets.",
+        "release_id": 41851857,
+        "tag": "7.13.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/41851857",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/41851857",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau-lilly",
+          "type": "User"
+        },
+        "date_created": "2021-02-03T01:57:34Z",
+        "date_published": "2021-02-03T02:00:17Z",
+        "description": "* Add files `NOTICE` and `inst/NOTICE` to more explicitly credit code included from other open source projects. (Previously `drake` only took a decentralized approach: comments in the source to indicate the project, package, and GitHub link (if available) to any code borrowed.)\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.1",
+        "name": "Add NOTICE and inst/NOTICE",
+        "release_id": 37270716,
+        "tag": "7.13.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/37270716",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/37270716",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2021-01-01T01:05:29Z",
+        "date_published": "2021-01-01T01:06:01Z",
+        "description": "# Version 7.13.0\r\n\r\n## Bug fixes\r\n\r\n* Avoid checking printed output in test of testing infrastructure.\r\n* Use `dsl_sym()` instead of `as.symbol()` when constructing commands for `combine()` (#1340, @vkehayas).\r\n\r\n## New features\r\n\r\n* Add a new `level_separation` argument to `vis_drake_graph()` and `render_drake_graph()` to control the aspect ratio of `visNetwork` graphs (#1303, @matthewstrasiotto, @matthiasgomolka, @robitalec).\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.13.0",
+        "name": "Level separation",
+        "release_id": 35887834,
+        "tag": "7.13.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.13.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/35887834",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/35887834",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.13.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2020-10-27T17:58:10Z",
+        "date_published": "2020-10-27T17:59:00Z",
+        "description": "# Version 7.12.7\r\n\r\n* Deprecate `caching = \"master\"` in favor of `caching = \"main\"`.\r\n* Improve the error message when a valid plan is not supplied (#1334, @robitalec).\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.12.7",
+        "name": "Nomenclature",
+        "release_id": 33125169,
+        "tag": "v7.12.7",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.12.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/33125169",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/33125169",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.12.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2020-10-09T20:37:17Z",
+        "date_published": "2020-10-09T22:47:26Z",
+        "description": "# Version 7.12.6\r\n\r\n## Bug fixes\r\n\r\n* Fix defunct functions error message when using namespace (#1310, @malcolmbarrett).\r\n* Preserve names of list elements in `.data` in DSL (#1323, @shirdekel).\r\n* Use `identical()` to compare file hashes (#1324, @shirdekel).\r\n* Set `seed = TRUE` in `future::future()`.\r\n* Manually relay warnings when `parallelism = \"clustermq\"` and `caching = \"worker\"` (@richardbayes).\r\n\r\n## Enhancements\r\n\r\n* Make logs more machine-readable by sanitizing messages and preventing race conditions (#1331, @Plebejer).\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.12.6",
+        "name": "Patch",
+        "release_id": 32393200,
+        "tag": "v7.12.6",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.12.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/32393200",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/32393200",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.12.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2020-08-25T20:55:03Z",
+        "date_published": "2020-08-25T20:57:01Z",
+        "description": "## Bug fixes\r\n\r\n* Sanitize empty symbols in language columns (#1299, @odaniel1).\r\n* Handle cases where `NROW()` throws an error (#1300, `julian-tagell` on Stack Overflow).\r\n* Prohibit dynamic branching over non-branching dynamic files (#1302, @djbirke).\r\n\r\n## Enhancements\r\n\r\n* Transition to updated `lifecycle` that does not require badges to be in `man/figures`.\r\n* Improve error message for empty dynamic grouping variables (#1308, @saadaslam).\r\n* Expose the `log_worker` argument of `clustermq::workers()` to `make()` and `drake_config()` (#1305, @billdenney, @mschubert).\r\n* Set `as.is` to `TRUE` in `utils::type.convert()` (#1309, @bbolker).",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.12.5",
+        "name": "Safeguards and worker logs",
+        "release_id": 30126737,
+        "tag": "v7.12.5",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.12.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/30126737",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/30126737",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.12.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau-lilly",
+          "type": "User"
+        },
+        "date_created": "2020-06-29T15:51:00Z",
+        "date_published": "2020-06-29T15:53:42Z",
+        "description": "Fixes a documentation-related warning in the last submission (7.12.3).",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.12.4",
+        "name": "CRAN hotfix",
+        "release_id": 28030192,
+        "tag": "v7.12.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.12.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/28030192",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/28030192",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.12.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2020-06-29T14:46:54Z",
+        "date_published": "2020-06-29T14:50:38Z",
+        "description": "# Version 7.12.3\r\n\r\n## Bug fixes\r\n\r\n* `cached_planned()` and `cached_unplanned()` now work with non-standard cache locations (#1268, @Plebejer).\r\n* Set `use_cache` to `FALSE` more often (#1257, @Plebejer).\r\n* Use namespaced function calls in mtcars example instead of loading packages.\r\n* Replace the `iris` dataset with the `airquality` dataset in all documentation, examples, and tests (#1271).\r\n* Assign functions created with `code_to_function()` to the proper environment (#1275, @robitalec).\r\n* Store tracebacks as character vectors and restrict the contents of error objects to try to prevent accidental storage of large data from the environment (#1276, @billdenney).\r\n* Strongly depend on `tidyselect` (#1274, @dernst).\r\n* Avoid `txtq` lockfiles (#1232, #1239, #1280, @danwwilson, @pydupont, @mattwarkentin).\r\n\r\n## New features\r\n\r\n* Add a new `drake_script()` function to write `_drake.R` files for `r_make()` (#1282).\r\n\r\n## Enhancements\r\n\r\n* Deprecate `expose_imports()` in favor of `make(envir = getNamespace(\"yourPackage\")` (#1286, @mvarewyck).\r\n* Suppress the message recommending `r_make()` if `getOption(\"drake_r_make_message\")` is `FALSE` (#1238, @januz).\r\n* Improve the appearance of the `visNetwork` graph by using the hierarchical layout with `visEdges(smooth = list(type = \"cubicBezier\", forceDirection = TRUE))` (#1289, @mstr3336).\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.12.3",
+        "name": "Lockfile bugfix and better-looking graphs",
+        "release_id": 28027162,
+        "tag": "v7.12.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.12.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/28027162",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/28027162",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.12.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2020-06-01T02:16:33Z",
+        "date_published": "2020-06-01T02:18:16Z",
+        "description": "## Bug fixes\r\n\r\n* Invalidate old sub-targets when finalizing a dynamic target (@richardbayes). Solves a major reproducibility bug (#1260).\r\n* Prevent `splice_inner()` from dropping formal arguments shared by `c()` (#1262, @bart1).",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.12.2",
+        "name": "Important reproducibility bugfix for dynamic branching",
+        "release_id": 27082312,
+        "tag": "v7.12.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.12.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/27082312",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/27082312",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.12.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2020-05-14T19:15:47Z",
+        "date_published": "2020-05-14T19:18:27Z",
+        "description": "# Version 7.12.1\r\n\r\n## Bug fixes\r\n\r\n* Repair `subtarget_hashes.cross()` for crosses on a single grouping variable.\r\n* Repair dynamic `group()` used with specialized formats (#1236, @adamaltmejd).\r\n* Enforce `tidyselect` >= 1.0.0.\r\n\r\n## New features\r\n\r\n* Allow user-defined target names in static branching with the `.names` argument (#1240, @maciejmotyka, @januz).\r\n\r\n## Enhancements\r\n\r\n* Do not analyze dependencies of calls to `drake_plan()` (#1237, @januz).\r\n* Error message for locked cache gives paste-able error message in Windows (#1243, @billdenney).\r\n* Prevent stack traces from accidentally storing large amounts of data (#1253, @sclewis23).",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.12.1",
+        "name": "Fully custom target names in static branching",
+        "release_id": 26529525,
+        "tag": "v7.12.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.12.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/26529525",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/26529525",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.12.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2020-03-24T11:47:08Z",
+        "date_published": "2020-03-24T11:47:59Z",
+        "description": "# Version 7.12.0\r\n\r\n## Bug fixes\r\n\r\n* **Ensure up-to-date sub-targets are skipped even if the dynamic parent does not get a chance to finalize (#1209, #1211, @psadil, @kendonB).**\r\n* Restrict static transforms so they only use the upstream part of the plan (#1199, #1200, @bart1).\r\n* Correctly match the names and values of dynamic `cross()` sub-targets (#1204, @psadil). Expansion order is the same, but names are correctly matched now.\r\n* Stop trying to remove `file_out()` files in `clean()`, even when `garbage_collection` is `TRUE` (#521, @the-Hull).\r\n* Fix `keep_going = TRUE` for formatted targets (#1206).\r\n* Use the correct variable names in logger helper (`progress_bar` instead of `progress`) so that `drake` works without the `progress` package (#1208, @mbaccou).\r\n* Avoid conflict between formats and upstream dynamic targets (#1210, @psadil).\r\n* Always compute trigger metadata up front because recovery keys need it.\r\n* Deprecate and remove hasty mode and custom parallel backends (#1222).\r\n* Compartmentalize fixed runtime parameters in `config$settings` (#965).\r\n\r\n## New features\r\n\r\n* Add new functions `drake_done()` and `drake_cancelled()` (#1205).\r\n\r\n## Speedups\r\n\r\n* Avoid reading build times of dynamic sub-targets in `drake_graph_info()` (#1207).\r\n\r\n## Enhancements\r\n\r\n* Show an empty progress bar just before targets start to build when `verbose` is `2` (#1203, @kendonB).\r\n* Deprecate the `jobs` argument of `clean()`.\r\n* Show an informative error message for empty dynamic grouping variables (#1212, @kendonB).\r\n* Throw error messages if users supply dynamic targets to `drake_build()` or `drake_debug()` (#1214, @kendonB).\r\n* Log the sub-target name and index of the failing sub-target in the metadata of the sub-target and its parent (#1214, @kendonB).\r\n* Shorten the call stack in error metadata.\r\n* Deprecate and remove custom schedulers (#1222).\r\n* Deprecate `hasty_build` (#1222).\r\n* Migrate constant runtime parameters to `config$settings` (#965).\r\n* Warn the user if `file_in()`/`file_out()`/`knitr_in()` files are not literal strings (#1229).\r\n* Prohibit `file_out()` and `knitr_in()` in imported functions (#1229).\r\n* Prohibit `knitr_in()` in dynamic branching (#1229).\r\n* Improve the help file of `target()`.\r\n* Deprecate and rename progress functions to avoid potential name conflicts (`progress()` => `drake_progress()`, `running()` => `drake_running()`, `failed()` => `drake_failed()`) (#1205).",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/7.12.0",
+        "name": "Mostly bug fixes and guard rails",
+        "release_id": 24806966,
+        "tag": "7.12.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/7.12.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/24806966",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/24806966",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/7.12.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2020-03-01T02:47:42Z",
+        "date_published": "2020-03-01T02:49:12Z",
+        "description": "# Version 7.11.0\r\n\r\n## Bug fixes\r\n\r\n* Sanitize internal S3 classes for target storage (#1159, @rsangole).\r\n* Bump `digest` version to require 0.6.21 (#1166, @boshek)\r\n* Actually store output file sizes in metadata.\r\n* Use the `depend` trigger to toggle invalidation from dynamic-only dependencies, including the `max_expand` argument of `make()`.\r\n* Repair `session_info` argument parsing (and reduce calls to `utils::sessionInfo()` in tests).\r\n* Ensure compatibility with `tibble` 3.0.0.\r\n\r\n## New features\r\n\r\n* Allow dynamic files with `target(format = \"file\")` (#1168, #1127).\r\n* Implement dynamic `max_expand` on a target-by-target basis via `target()` (#1175, @kendonB).\r\n\r\n## Enhancements\r\n\r\n* Assert dependencies of formats at the very beginning of `make()`, not in `drake_config()` (#1156).\r\n* In `make(verbose = 2)`, remove the spinner and use a progress bar to track how many targets are done so far.\r\n* Reduce logging of utility functions.\r\n* Improve the aesthetics of console messages using `cli` (optional package).\r\n* Deprecate `console_log_file` in favor of `log_make` as an argument to `make()` and `drake_config()`.\r\n* Immediately relay warnings and messages in `\"loop\"` and `\"future\"` parallel backends (#400).\r\n* Warn when converting trailing dots (#1147).\r\n* Warn about imports with trailing dots on Windows (#1147).\r\n* Allow user-defined caches for the `loadd()` RStudio addin through the new `rstudio_drake_cache` global option (#1169, @joelnitta).\r\n* Change dynamic target finalization message to \"finalize\" instead of \"aggregate\" (#1176, @kendonB).\r\n* Describe the limits of `recoverable()`, e.g. dynamic branching + dynamic files.\r\n* Throw an error instead of a warning in `drake_plan()` if a grouping variable is undefined or invalid (#1182, @kendonB).\r\n* Rigorous S3 framework for static code analysis objects of type `drake_deps` and `drake_deps_ht` (#1183).\r\n* Use `rlang::trace_back()` to make `diagnose()$error$calls` nicer (#1198).\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.11.0",
+        "name": "Dynamic files",
+        "release_id": 24105307,
+        "tag": "v7.11.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.11.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/24105307",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/24105307",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.11.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2020-02-01T17:51:10Z",
+        "date_published": "2020-02-01T17:59:18Z",
+        "description": "# Version 7.10.0\r\n\r\n## Unavoidable but minor breaking changes\r\n\r\nThese changes invalidate some targets in some workflows, but they are necessary bug fixes.\r\n\r\n* Remove spurious local variables detected in `$<-()` and `@<-()` (#1144).\r\n* Avoid target names with trailing dots (#1147, @Plebejer).\r\n\r\n## Bug fixes\r\n\r\n* Handle unequal list columns in `bind_plans()` (#1136, @jennysjaarda).\r\n* Handle non-vector sub-targets in dynamic branching (#1138).\r\n* Handle calls in `analyze_assign()` (#1119, @jennysjaarda).\r\n* Restore correct environment locking (#1143, @kuriwaki).\r\n* Log `\"running\"` progress of dynamic targets.\r\n* Log dynamic targets as failed if a sub-target fails (#1158).\r\n\r\n## New features\r\n\r\n* Add a new `\"fst_tbl\"` format for large `tibble` targets (#1154, @kendonB).\r\n* Add a new `format` argument to `make()`, an optional custom storage format for targets without an explicit `target(format = ...)` in the plan (#1124).\r\n* Add a new `lock_cache` argument to `make()` to optionally suppress cache locking (#1129). (It can be annoying to interrupt `make()` repeatedly and unlock the cache manually every time.)\r\n* Add new functions `cancel()` and `cancel_if()` function to cancel targets mid-build (#1131).\r\n* Add a new `subtarget_list` argument to `loadd()` and `readd()` to optionally load a dynamic target as a list of sub-targets (#1139, @MilesMcBain).\r\n* Prohibit dynamic `file_out()` (#1141).\r\n\r\n## Enhancements\r\n\r\n* Check for illegal formats early on at the `drake_config()` level (#1156, @MilesMcBain).\r\n* Smoothly deprecate the `config` argument in all user-side functions (#1118, @vkehayas). Users can now supply the plan and other `make()` arguments directly, without bothering with `drake_config()`. Now, you only need to call `drake_config()` in the `_drake.R` file for `r_make()` and friends. Old code with `config` objects should still work. Affected functions:\r\n    * `make()`\r\n    * `outdated()`\r\n    * `drake_build()`\r\n    * `drake_debug()`\r\n    * `recoverable()`\r\n    * `missed()`\r\n    * `deps_target()`\r\n    * `deps_profile()`\r\n    * `drake_graph_info()`\r\n    * `vis_drake_graph()`\r\n    * `sankey_drake_graph()`\r\n    * `drake_graph()`\r\n    * `text_drake_graph()`\r\n    * `predict_runtime()`. Needed to rename the `targets` argument to `targets_predict` and `jobs` to `jobs_predict`.\r\n    * `predict_workers()`. Same argument name changes as `predict_runtime()`.\r\n* Because of #1118, the only remaining user-side purpose of `drake_config()` is to serve functions `r_make()` and friends.\r\n* Document the limitations of grouping variables (#1128).\r\n* Handle the `@` operator. For example, in the static code analysis of `x@y`, do not register `y` as a dependency (#1130, @famuvie).\r\n* Remove superfluous/incorrect information about imports from the output of `deps_profile()` (#1134, @kendonB).\r\n* Append hashes to `deps_target()` output (#1134, @kendonB).\r\n* Add S3 class and pretty print method for `drake_meta_()` objects objects.\r\n* Use call stacks instead of environment inheritance to power `drake_envir()` and `id_chr()` (#1132).\r\n* Allow `drake_envir()` to select the environment with imports (#882).\r\n* Improve visualization labels for dynamic targets: clarify that the listed runtime is a total runtime over all sub-targets and list the number of sub-targets.",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.10.0",
+        "name": "Down with drake_config()!",
+        "release_id": 23312461,
+        "tag": "v7.10.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.10.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/23312461",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/23312461",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.10.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2019-12-22T16:47:52Z",
+        "date_published": "2019-12-22T16:48:43Z",
+        "description": "# Version 7.9.0\r\n\r\n## Breaking changes in dynamic branching\r\n\r\n- Embrace the `vctrs` paradigm and its type stability for dynamic branching (#1105, #1106).\r\n- Accept `target` as a symbol by default in `read_trace()`. Required for the trace to make sense in #1107.\r\n\r\n## Bug fixes\r\n\r\n- Repair reference to custom HPC resources in the `\"future\"` backend (#1083, @jennysjaarda).\r\n- Properly copy data when importing targets from one cache into another (#1120, @brendanf).\r\n- Prevent dynamic vector sizes from conflicting with file sizes in metadata.\r\n\r\n## New features\r\n\r\n- Add a new `log_build_times` argument to `make()` and `drake_config()`. Allows users to disable the recording of build times. Produces a speedup of up to 20% on Macs (#1078).\r\n- Implement cache locking to prohibit concurrent calls to `make()`, `outdated(make_imports = TRUE)`, `recoverable(make_imports = TRUE)`, `vis_drake_graph(make_imports = TRUE)`, `clean()`, etc. on the same cache.\r\n- Add a new `format` trigger to invalidate targets when the specialized data format changes (#1104, @kendonB).\r\n- Add new functions `cache_planned()` and `cache_unplanned()` to help selectively clean workflows with dynamic targets (#1110, @kendonB).\r\n- Add S3 classes and pretty print methods for `drake_config()` objects and `analyze_code()` objects.\r\n- Add a new `\"qs\"` format (#1121, @kendonB).\r\n\r\n## Speedups\r\n\r\n- Avoid setting seeds for imports (#1086, @adamkski).\r\n- Avoid working directly with POSIXct times (#1086, @adamkski)\r\n- Avoid excessive calls to `%||%` (`%|||%` is faster). (#1089, @billdenney)\r\n- Remove `%||NA` due to slowness (#1089, @billdenney).\r\n- Use hash tables to speed up `is_dynamic()` and `is_subtarget()` (#1089, @billdenney).\r\n- Use `getVDigest()` instead of `digest()` (#1089, #1092, https://github.com/eddelbuettel/digest/issues/139#issuecomment-561870289, @eddelbuettel, @billdenney).\r\n- Pre-compute `backtick` and `.deparseOpts()` to speed up `deparse()` (#1086, `https://stackoverflow.com/users/516548/g-grothendieck`, @adamkski).\r\n- Pre-compute which targets exist in advance (#1095).\r\n- Avoid gratuitous cache interactions and data frame operations in `build_times()` (#1098).\r\n- Use `mget_hash()` in `progress()` (#1098).\r\n- Get target progress info only once in `drake_graph_info()` (#1098).\r\n- Speed up the retrieval of old metadata in `outdated()` (#1098).\r\n- In `make()`, avoid checking for nonexistent metadata for missing targets.\r\n- Reduce logging in `drake_config()`.\r\n\r\n## Enhancements\r\n\r\n- Write a complete project structure in `use_drake()` (#1097, @lorenzwalthert, @tjmahr).\r\n- Add a minor logger note to say how many dynamic sub-targets are registered at a time (#1102, @kendonB).\r\n- Handle dependencies that are dynamic targets but not declared as such for the current target (#1107).\r\n- Internally, the \"layout\" data structure is now called the \"workflow specification\", or \"spec\" for short. The spec is `drake`'s interpretation of the plan. In the plan, all the dependency relationships among targets and files are *implicit*. In the spec, they are all *explicit*. We get from the plan to the spec using static code analysis, e.g. `analyze_code()`.\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.9.0",
+        "name": "Speedups and better dynamic branching",
+        "release_id": 22415574,
+        "tag": "v7.9.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/22415574",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/22415574",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2019-12-02T12:08:51Z",
+        "date_published": "2019-12-02T12:10:45Z",
+        "description": "# Version 7.8.0\r\n\r\n## Bug fixes\r\n\r\n- Prevent `drake::drake_plan(x = target(...))` from throwing an error if `drake` is not loaded (#1039, @mstr3336).\r\n- Move the `transformations` lifecycle badge to the proper location in the docstring (#1040, @jeroen).\r\n- Prevent `readd()` / `loadd()` from turning an imported function into a target (#1067).\r\n- Align in-memory `disk.frame` targets with their stored values (#1077, @brendanf).\r\n\r\n## New features\r\n\r\n- Implement dynamic branching (#685).\r\n- Add a new `subtargets()` function to get the cached names of the sub-targets of a dynamic target.\r\n- Add new `subtargets` arguments to `loadd()` and `readd()` to retrieve specific sub-targets from a parent dynamic target.\r\n- Add new `get_trace()` and `read_trace()` functions to help track which values of grouping variables go into the making of dynamic sub-targets.\r\n- Add a new `id_chr()` function to get the name of the target while `make()` is running.\r\n- Implement `plot(plan)` (#1036).\r\n- `vis_drake_graph()`, `drake_graph_info()`, and `render_drake_graph()` now \r\n  take arguments that allow behavior to be defined upon selection of nodes. (#1031, @mstr3336).\r\n- Add a new `max_expand` argument to `make()` and `drake_config()` to scale down dynamic branching (#1050, @hansvancalster).\r\n\r\n## Enhancements\r\n\r\n- Document transformation functions in a way that avoids having to create true functions (#979).\r\n- Avoid always invalidating the memoized layout when we set the knitr hash.\r\n- Change the names of environments in `drake_config()` objects.\r\n- Assert that `prework` is a language object, list of language objects, or character vector (#1 at pat-s/multicore-debugging on GitHub, @pat-s).\r\n- Use an environment instead of a list for `config$layout`. Supports internal modifications by reference. Required for #685.\r\n- Clean up the code of the parallel backends.\r\n- Make `dynamic` a formal argument of `target()`.\r\n- Always lock/unlock the environment target by target, allowing informative error messages to appear more readily (#1062, @PedramNavid)\r\n- Automatically ignore `storr`s and decorated `storr`s (#1071).\r\n- Speed up memory management by avoiding a call to `setdiff()` and avoiding `names(config$envir_targets)`.\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.8.0",
+        "name": "Dynamic branching",
+        "release_id": 21894199,
+        "tag": "v7.8.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/21894199",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/21894199",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2019-10-15T00:01:21Z",
+        "date_published": "2019-10-15T00:04:06Z",
+        "description": "# Version 7.7.0\r\n\r\n## Bug fixes\r\n\r\n- Take the sum instead of the max in `dir_size()`. Incurs rehashing for some workflows, but should not invalidate any targets.\r\n\r\n## New features\r\n\r\n- Add a new `which_clean()` function to preview which targets will be invalidated by `clean()` (#1014, @pat-s).\r\n- Add serious import and export methods for the decorated `storr` (#1015, @billdenney, @noamross).\r\n- Add a new `\"diskframe\"` format for larger-than-memory data (#1004, @xiaodaigh).\r\n- Add a new `drake_tempfile()` function to help with `\"diskframe\"` format. It makes sure we are not copying large datasets across different physical storage media (#1004, @xiaodaigh).\r\n- Add new function `code_to_function()` to allow for parsing script based workflows into functions so `drake_plan()` can begin to manage the workflow and track dependencies. (#994, @thebioengineer)\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.7.0",
+        "name": "disk.frame and code_to_function()",
+        "release_id": 20696134,
+        "tag": "v7.7.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.7.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/20696134",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/20696134",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.7.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2019-09-14T20:09:12Z",
+        "date_published": "2019-09-14T20:11:27Z",
+        "description": "# Version 7.6.2\r\n\r\n## Bug fixes\r\n\r\n- Remove README.md from CRAN altogether. Also remove all links from the news and vignette. The links trigger too many CRAN notes, which made the automated checks too brittle.\r\n- Serialize formats that need serialization (like \"keras\") before sending the data from HPC workers to the master process (#989).\r\n- Check for custom-formatted files when checking checksums.\r\n- Force fst-formatted targets to plain data frames. Same goes for the new \"fst_dt\" format.\r\n- Change the meaning and behavior of `max_expand` in `drake_plan()`. `max_expand` is now the maximum number of targets produced by `map()`, `split()`, and `cross()`. For `cross()`, this reduces the number of targets (less cumbersome) and makes the subsample of targets more representative of the complete grid. It also. ensures consistent target naming when `.id` is `FALSE` (#1002). Note: `max_expand` is not for production workflows anyway, so this change does not break anything important. Unfortunately, we do lose the speed boost in `drake_plan()` originally due to `max_expand`, but `drake_plan()` is still fast, so that is not so bad.\r\n- Drop specialized formats of `NULL` targets (#998).\r\n- Prevent false grouping variables from partially tagging along in `cross()` (#1009). The same fix should apply to `map()` and `split()` too.\r\n- Respect graph topology when recovering old grouping variables for `map()` (#1010).\r\n\r\n## New features\r\n\r\n- Add a new \"fst_dt\" format for `fst`-powered saving of `data.table` objects.\r\n- Support a custom \"caching\" column of the plan to select master vs worker caching for each target individually (#988).\r\n- Make `transform` a formal argument of `target()` so that users do not have to type \"transform =\" all the time in `drake_plan()` (#993).\r\n- Migrate the documentation website from `ropensci.github.io/drake` to `docs.ropensci.org/drake`.\r\n\r\n## Enhancements\r\n\r\n- Document the HPC limitations of `target(format = \"keras\")` (#989).\r\n- Remove the now-superfluous vignette.\r\n- Wrap up console and text file logging functionality into a reference class (#964).\r\n- Deprecate the `verbose` argument in various caching functions. The location of the cache is now only printed in `make()`. This made the previous feature easier to implement.\r\n- Carry forward nested grouping variables in `combine()` (#1008).\r\n- Improve the encapsulation of hash tables in the decorated `storr` (#968).",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.6.2",
+        "name": "Continuing with efficient data formats",
+        "release_id": 19993395,
+        "tag": "v7.6.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.6.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/19993395",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/19993395",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.6.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2019-08-19T18:33:47Z",
+        "date_published": "2019-08-19T18:34:32Z",
+        "description": "Fix broken README links.",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.6.1",
+        "name": "CRAN hotfix",
+        "release_id": 19385734,
+        "tag": "v7.6.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.6.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/19385734",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/19385734",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.6.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2019-08-17T16:43:35Z",
+        "date_published": "2019-08-17T16:46:47Z",
+        "description": "# Version 7.6.0\r\n\r\n## New features\r\n\r\n- **Support specialized data storage via a decorated cache and `format` argument of `target()` (#971). This allows users to leverage faster ways to save and load targets, such as `write_fst()` for data frames and `save_model_hdf5()` for Keras models. It also improves memory because it prevents `storr` from making a serialized in-memory copy of large data objects.**\r\n- Add `tidyselect` functionality for `...` in `progress()`, analogous to `loadd()`, `build_times()`, and `clean()`.\r\n- Support S3 for user-defined generics (#959). If the generic `do_stuff()` and the method `stuff.your_class()` are defined in `envir`, and if `do_stuff()` has a call to `UseMethod(\"stuff\")`, then `drake`'s code analysis will detect `stuff.your_class()` as a dependency of `do_stuff()`.\r\n- Add authentication support for `file_in()` URLs. Requires the new `curl_handles` argument of `make()` and `drake_config()` (#981).\r\n\r\n## Bug fixes\r\n\r\n- Make `drake_plan(transform = slice())` understand `.id` and grouping variables (#963).\r\n- Repair `clean(garbage_collection = TRUE, destroy = TRUE)`. Previously it destroyed the cache before trying to collect garbage.\r\n- Ensure that `r_make()` passes informative error messages back to the calling process (#969).\r\n- Avoid downloading full contents of URLs when rehashing (#982)\r\n- Retain upstream grouping variables of `map()` and `cross()` on topologically side-by-side targets (#983).\r\n- Manually enforce the correct ordering in `dsl_left_outer_join()` so `cross()` selects the right combinations of existing targets (#986). This bug was probably introduced in the solution to #983.\r\n- Make the output of `progress()` more consistent, less dependent on whether `tidyselect` is installed.\r\n\r\n## Enhancements\r\n\r\n- Document DSL keywords as if they were true functions: `target()`, `map()`, `split()`, `cross()`, and `combine()` (#979).\r\n- Do garbage collection between the unloading and loading phases of memory management.\r\n- Keep `file_out()` files in `clean()` unless `garbage_collection` is `TRUE`. That way, `make(recover = TRUE)` is a true \"undo button\" for `clean()`. `clean(garbage_collection = TRUE)` still removes data in the cache, as well as any `file_out()` files from targets currently being cleaned.\r\n- The menu in `clean()` only appears if `garbage_collection` is `TRUE`. Also, this menu is added to `rescue_cache(garbage_collection = TRUE)`.\r\n- Reorganize the internal code files and functions to make development easier.\r\n- Move the history inside the cache folder `.drake/`. The old `.drake_history/` folder was awkward. Old histories are migrated during `drake_config()`, and `drake_history()`.\r\n- Add lifecycle badges to exported functions.\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.6.0",
+        "name": "Big data formats",
+        "release_id": 19356311,
+        "tag": "v7.6.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/19356311",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/19356311",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2019-07-21T14:39:27Z",
+        "date_published": "2019-07-21T14:41:47Z",
+        "description": "- Eliminate accidental creations of `.drake_history/` in `plan_to_code()`, `plan_to_notebook()`, and the help file examples. Should fix the note at https://win-builder.r-project.org/incoming_pretest/drake_7.5.1_20190721_153755/Debian/00check.log.\r\n- Repair long examples.\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.5.2",
+        "name": "CRAN hotfix",
+        "release_id": 18757244,
+        "tag": "v7.5.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.5.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/18757244",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/18757244",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.5.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2019-07-21T01:55:54Z",
+        "date_published": "2019-07-21T01:59:05Z",
+        "description": "# Version 7.5.0\r\n\r\n## New features\r\n\r\n- Add automated data recovery (#945). This is still experimental and disabled by default. Requires `make(recover = TRUE)`.\r\n- Add new functions `recoverable()` and `r_recoverable()` to show targets that are outdated but recoverable via `make(recover = TRUE)`.\r\n- Track the history and provenance of targets, viewable with `drake_history()`. Powered by [`txtq`](https://github.com/wlandau/txtq) (#918, #920).\r\n- Add a new `no_deps()` function, similar to `ignore()`. `no_deps()` suppresses dependency detection but still tracks changes to the literal code ([#910](https://github.com/ropensci/drake/issues/910)).\r\n- Add a new \"autoclean\" memory strategy (#917).\r\n- Export `transform_plan()`.\r\n- Allow a custom `seed` column of `drake` plans to set custom seeds (#947).\r\n- Add a new `seed` trigger to optionally ignore changes to the target seed (#947).\r\n\r\n## Enhancements\r\n\r\n- In `drake_plan()`, interpret custom columns as non-language objects (#942).\r\n- Suggest and assert `clustermq` >= 0.8.8.\r\n- Log the target name in a special column in the console log file ([#909](https://github.com/ropensci/drake/issues/909)).\r\n- Rename the \"memory\" memory strategy to \"preclean\" (with deprecation; #917).\r\n- Deprecate `ensure_workers` in `drake_config()` and `make()`.\r\n- Warn when the user supplies additional arguments to `make()` after `config` is already supplied.\r\n- Prevent users from running `make()` from inside the cache (#927).\r\n- Add `CITATION` file with JOSS paper.\r\n- In `deps_profile()`, include the seed and change the names.\r\n- Allow the user to set a different seed in `make()`. All this does is invalidate old targets.\r\n- Use `set_hash()` and `get_hash()` in `storr` to double the speed of progress tracking.\r\n\r\n## Bug fixes\r\n\r\n- In the static code analysis for dependency detection, ignore list elements referenced with `$` (#938).\r\n- Minor: handle strings embedded in language objects (#934).\r\n- Minor: supply `xxhash64` as the default hash algorithm for non-`storr` hashing if the driver does not have a hash algorithm.\r\n",
+        "html_url": "https://github.com/ropensci/drake/releases/tag/v7.5.0",
+        "name": "History, provenance, and recovery",
+        "release_id": 18753481,
+        "tag": "v7.5.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/drake/tarball/v7.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/drake/releases/18753481",
+        "value": "https://api.github.com/repos/ropensci/drake/releases/18753481",
+        "zipball_url": "https://api.github.com/repos/ropensci/drake/zipball/v7.5.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 3.3.0",
+        "version": ">= 3.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "base64url",
+        "type": "Software_application",
+        "value": "base64url",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "digest",
+        "type": "Software_application",
+        "value": "digest==>= 0.6.21",
+        "version": ">= 0.6.21"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "igraph",
+        "type": "Software_application",
+        "value": "igraph",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "methods",
+        "type": "Software_application",
+        "value": "methods",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "parallel",
+        "type": "Software_application",
+        "value": "parallel",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rlang",
+        "type": "Software_application",
+        "value": "rlang==>= 0.2.0",
+        "version": ">= 0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "storr",
+        "type": "Software_application",
+        "value": "storr==>= 1.1.0",
+        "version": ">= 1.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "tidyselect",
+        "type": "Software_application",
+        "value": "tidyselect==>= 1.0.0",
+        "version": ">= 1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "txtq",
+        "type": "Software_application",
+        "value": "txtq==>= 0.2.3",
+        "version": ">= 0.2.3"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "utils",
+        "type": "Software_application",
+        "value": "utils",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "vctrs",
+        "type": "Software_application",
+        "value": "vctrs==>= 0.2.0",
+        "version": ">= 0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:08:07",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1339
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Help and troubleshooting",
+        "type": "Text_excerpt",
+        "value": "The following resources document many known issues and challenges.\n\n  - [Frequently-asked\n    questions](https://github.com/ropensci/drake/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3A%22frequently+asked+question%22+).\n  - [Debugging and testing drake\n    projects](https://books.ropensci.org/drake/debugging.html)\n  - [Other known issues](https://github.com/ropensci/drake/issues)\n    (please search both open and closed ones).\n\nIf you are still having trouble, please submit a [new\nissue](https://github.com/ropensci/drake/issues/new) with a bug report\nor feature request, along with a minimal reproducible example where\nappropriate.\n\nThe GitHub issue tracker is mainly intended for bug reports and feature\nrequests. While questions about usage etc. are also highly encouraged,\nyou may alternatively wish to post to [Stack\nOverflow](https://stackoverflow.com) and use the [`drake-r-package`\ntag](https://stackoverflow.com/tags/drake-r-package).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "What gets done stays done.",
+        "type": "Text_excerpt",
+        "value": "Too many data science projects follow a [Sisyphean\nloop](https://en.wikipedia.org/wiki/Sisyphus):\n\n1.  Launch the code.\n2.  Wait while it runs.\n3.  Discover an issue.\n4.  Rerun from scratch.\n\nFor projects with long runtimes, this process gets tedious. But with\n`drake`, you can automatically\n\n1.  Launch the parts that changed since last time.\n2.  Skip the rest.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Use cases",
+        "parent_header": [
+          "Documentation"
+        ],
+        "type": "Text_excerpt",
+        "value": "The official [rOpenSci use\ncases](https://discuss.ropensci.org/c/usecases/10) and [associated\ndiscussion threads](https://discuss.ropensci.org/c/usecases/10) describe\napplications of `drake` in the real world. Many of these use cases are\nlinked from the [`drake` tag on the rOpenSci discussion\nforum](https://discuss.ropensci.org/tag/drake).\n\nHere are some additional applications of `drake` in real-world projects.\n\n  - [efcaguab/demografia-del-voto](https://github.com/efcaguab/demografia-del-voto)\n  - [efcaguab/great-white-shark-nsw](https://github.com/efcaguab/great-white-shark-nsw)\n  - [IndianaCHE/Detailed-SSP-Reports](https://github.com/IndianaCHE/Detailed-SSP-Reports)\n  - [joelnitta/pleurosoriopsis](https://github.com/joelnitta/pleurosoriopsis)\n  - [pat-s/pathogen-modeling](https://github.com/pat-s/pathogen-modeling)\n  - [sol-eng/tensorflow-w-r](https://github.com/sol-eng/tensorflow-w-r)\n  - [tiernanmartin/home-and-hope](https://github.com/tiernanmartin/home-and-hope)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+        "type": "String",
+        "value": "7.13.11"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "7.13.2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/drake/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

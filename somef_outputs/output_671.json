@@ -1,0 +1,589 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "ferrazlealrm@ornl.gov",
+        "type": "Agent",
+        "value": "ferrazlealrm@ornl.gov"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Oak Ridge National Laboratory",
+        "email": "thobson2@vols.utk.edu",
+        "identifier": "0000-0002-6269-7881",
+        "type": "String",
+        "value": "Tanner Hobson"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Oak Ridge National Laboratory",
+        "email": "ferrazlealrm@ornl.gov",
+        "identifier": "0000-0002-9931-8304",
+        "type": "String",
+        "value": "Ricardo M. Ferraz Leal"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Oak Ridge National Laboratory",
+        "email": "doucetm@ornl.gov",
+        "identifier": "0000-0002-5560-6478",
+        "type": "String",
+        "value": "Mathieu Doucet"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ornl-ndav/django-remote-submission"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ornl-ndav/django-remote-submission"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ornl-ndav/django-remote-submission"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2016-09-27T21:57:27Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2017-07-24"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2017-07-24"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-11-27T06:07:25Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2017-07-24"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The django-remote-submission is an asynchronous task/job queue using Celery Distributed Task Queue and Redis in-memory data structure store as message broker."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Django application to manage long running job submission, including starting the job, saving logs, and storing results."
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Django application to manage long running job submission, including starting the job, saving logs, and storing results."
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9103746467396971,
+      "result": {
+        "original_header": "Features",
+        "type": "Text_excerpt",
+        "value": "* Able to capture and receive logs and write them to a database in realtime. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/README.rst",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "type": "Text_excerpt",
+        "value": "The full documentation is at https://django-remote-submission.readthedocs.org.\n\n==========\nQuickstart\n==========\n\nInstall Django Remote Submission::\n\n    pip install django-remote-submission\n\nThen use it in a project:\n\n.. code:: python\n\n    from django_remote_submission.models import Server, Job\n    from django_remote_submission.tasks import submit_job_to_server\n\n    server = Server.objects.get_or_create(\n        title='My Server Title',\n        hostname='example.com',\n        port=22,\n    )[0]\n\n    python2_interpreter = Interpreter.objects.get_or_create(\n        name = 'python2',\n        path = '/usr/bin/python2.7 -u',\n    )[0]\n\n    python3_interpreter = Interpreter.objects.get_or_create(\n        name = 'python3',\n        path = '/usr/bin/python3.5 -u',\n    )[0]\n\n    server.interpreters.set([python2_interpreter,\n                             python3_interpreter])\n\n    job = Job.objects.get_or_create(\n        title='My Job Title',\n        program='print(\"hello world\")',\n        remote_directory='/tmp/',\n        remote_filename='test.py',\n        owner=request.user,\n        server=server,\n        interpreter=python2_interpreter,\n    )[0]\n\n    # Using delay calls celery:\n    modified_files = submit_job_to_server.delay(\n        job_pk=job.pk,\n        password=request.POST.get('password'),\n    )\n\nFor testing, sometimes is useful to bypass the remote server and run the task in the local computer.\nFor this, the ``submit_job_to_server`` routine can be called with the argument ``remote=False``.\nThe function above would be:\n\n.. code:: python\n\n    modified_files = submit_job_to_server.delay(\n        job_pk=job.pk,\n        password=request.POST.get('password'),\n        remote=False,\n    )\n\nNote that it stills use Celery. It just ignores the password passed as argument.\n\nTo avoid storing the password one can deploy the client public key in the server.\n\n.. code:: python\n\n    from django_remote_submission.tasks import copy_key_to_server\n\n    copy_key_to_server(\n        username=env.remote_user,\n        password=env.remote_password,\n        hostname=env.server_hostname,\n        port=env.server_port,\n        public_key_filename=None, # finds it automaticaly\n    )\n\nAnd it can be deleted once the session is finished:\n\n.. code:: python\n\n    from django_remote_submission.tasks import delete_key_from_server\n\n    delete_key_from_server(\n        username=env.remote_user,\n        password=env.remote_password,\n        hostname=env.server_hostname,\n        port=env.server_port,\n        public_key_filename=None,\n    )\n\n\n=================\nRunning the Tests\n=================\n\nDoes the code actually work?\n\n::\n\n    source <YOURVIRTUALENV>/bin/activate\n    (myenv) $ pip install -r requirements_test.txt\n    (myenv) $ make test\n\nSome of the tests use a test server to check the functional aspects of the\nlibrary. Specifically, it will try to connect to the server multiple times, run\nsome programs, and check that their output is correct.\n\nTo run those tests as well, copy the ``.env.base`` file to ``.env`` and modify\nthe variables as needed. If this file has not been set up, then those tests\nwill be skipped, but it won't affect the success or failure of the tests.\n\nRunning tests independtely, e.g.::\n\n    pytest -v tests/test_models.py\n    pytest -v tests/test_models.py::test_server_string_representation\n\n===================\nRunning the Example\n===================\n\nSet the ``example/.env`` file. Copy or rename ``example/.env.base`` and fill in the details of the remote machine where the ``sshd`` server is running::\n\n    EXAMPLE_PYTHON_PATH\n    EXAMPLE_PYTHON_ARGUMENTS\n    EXAMPLE_SERVER_HOSTNAME\n    EXAMPLE_SERVER_PORT\n    EXAMPLE_REMOTE_DIRECTORY\n    EXAMPLE_REMOTE_FILENAME\n    EXAMPLE_REMOTE_USER\n    EXAMPLE_REMOTE_PASSWORD\n\nSet up the example's virtualenv::\n\n    virtualenv venv\n    source venv/bin/activate\n    pip install -r requirements.txt\n\nLaunch Redis::\n\n    redis-server\n\nLaunch Celery::\n\n    cd example\n    celery -A server.celery worker --loglevel=info\n\nLaunch Django::\n\n    cd example\n    ./manage.py makemigrations\n    ./manage.py migrate\n    ./manage.py loaddata fixtures/initial_data.json\n    # You may want to create another user:\n    # python manage.py createsuperuser\n    ./manage.py runserver\n\nOpen in the browser one of the links below. The password for admin is ``admin123`` unless you prefer to use the created password::\n\n    # For the Admin Interface\n    http://localhost:8000/admin/\n    # For the REST API\n    http://localhost:8000/\n    # To test Job creation with live status update\n    http://127.0.0.1:8000/example/\n\n=============\nWeb Interface\n=============\n\nThe app provides two web sockets to see in real time the Job Status and the Log associated to a Job.\n\nThose are defined in ``routing.py``::\n\n    path=r'^/job-user/$'\n    path=r'^/job-log/(?P<job_pk>[0-9]+)/$'    \n\nThe ``example`` app comes with the Live Job Status and Live Log examples. See::\n    \n    # Jobs\n    http://127.0.0.1:8000/example/\n    # Job 123 Log\n    http://127.0.0.1:8000/logs/123/\n\nBoth files::\n\n    django-remote-submission/example/templates/example_job_status.html\n    django-remote-submission/example/templates/example_job_log.html\n\nHave the client side web socket code to interact with the ``django-remote-submission`` app.\nAlso to include the Live information on a web app it is worth looking at the celery configuration:\n\n``django-remote-submission/example/server/celery.py``\n\nand the WebSockets routing:\n\n``django-remote-submission/example/server/routing.py``\n\n============\nUseful notes\n============\n\nThe Results files are stored in MEDIA. So add to your setings something similar to:\n\n.. code:: python\n\n\tMEDIA_URL = '/media/'\n\tMEDIA_ROOT = '../dist/media'\n\nTo make media available in DEBUG mode, you might want to add to the main ``urls.py``:\n\n.. code:: python\n\n\tif settings.DEBUG:\n\t    # Serving files uploaded by a user during development\n\t    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)\n\n\n=======\nCredits\n=======\n\nTools used in rendering this package:\n\n*  Cookiecutter_\n*  `cookiecutter-djangopackage`_\n\n.. _Cookiecutter: https://github.com/audreyr/cookiecutter\n.. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage\n\nThis research used resources at the High Flux Isotope Reactor and Spallation Neutron Source, a DOE Office of Science User Facility operated by the Oak Ridge National Laboratory.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ornl-ndav/django-remote-submission/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ornl-ndav/django-remote-submission/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ornl-ndav/django-remote-submission"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/requirements.txt",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/example/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/example/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ornl-ndav/django-remote-submission/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "django-remote-submission"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "django",
+          "job submission",
+          "batch scheduling"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ISC License",
+        "spdx_id": "ISC",
+        "type": "License",
+        "url": "https://api.github.com/licenses/isc",
+        "value": "https://api.github.com/licenses/isc"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "\nISC License\n\nCopyright (c) 2017, Oak Ridge National Laboratory\n\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "ISCL"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/ISC",
+        "spdx_id": "ISC",
+        "type": "License",
+        "value": "ISC"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "django-remote-submission"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ornl-ndav"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "django-remote-submission"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 108179,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 14707,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Ruby",
+        "size": 4820,
+        "type": "Programming_language",
+        "value": "Ruby"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 4255,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 2778,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/README.rst"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mdoucet",
+          "type": "User"
+        },
+        "date_created": "2020-06-12T15:32:56Z",
+        "date_published": "2020-06-12T15:36:58Z",
+        "description": "Update for compatibility with more recent python 3.",
+        "html_url": "https://github.com/ornl-ndav/django-remote-submission/releases/tag/v2.1.1",
+        "name": "v2.1.1",
+        "release_id": 27500392,
+        "tag": "v2.1.1",
+        "tarball_url": "https://api.github.com/repos/ornl-ndav/django-remote-submission/tarball/v2.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ornl-ndav/django-remote-submission/releases/27500392",
+        "value": "https://api.github.com/repos/ornl-ndav/django-remote-submission/releases/27500392",
+        "zipball_url": "https://api.github.com/repos/ornl-ndav/django-remote-submission/zipball/v2.1.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "-e .",
+        "type": "Software_application",
+        "value": "-e .",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "-e ..",
+        "type": "Software_application",
+        "value": "-e ..",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/example/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "celery[redis]",
+        "type": "Software_application",
+        "value": "celery[redis]",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/example/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "django",
+        "type": "Software_application",
+        "value": "django~=2.0",
+        "version": "~=2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/example/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "django-celery-results",
+        "type": "Software_application",
+        "value": "django-celery-results",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/example/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "channels_redis",
+        "type": "Software_application",
+        "value": "channels_redis~=2.0",
+        "version": "~=2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/example/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "django-environ",
+        "type": "Software_application",
+        "value": "django-environ",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/example/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:38:12",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 20
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v0.11.1"
+      },
+      "source": "https://raw.githubusercontent.com/ornl-ndav/django-remote-submission/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,590 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "mail@sebastiangibb.de",
+        "identifier": "https://orcid.org/0000-0001-7406-4443",
+        "type": "String",
+        "value": "Sebastian Gibb"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Gibb",
+            "given_name": "Sebastian",
+            "name": "Sebastian Gibb",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-7406-4443"
+          }
+        ],
+        "datePublished": "2012",
+        "doi": "10.1093/bioinformatics/bts447",
+        "format": "cff",
+        "title": "MALDIquant: Quantitative Analysis of Mass Spectrometry Data",
+        "type": "File_dump",
+        "url": "https://doi.org/10.32614/CRAN.package.MALDIquant",
+        "value": "# --------------------------------------------\n# CITATION file created with {cffr} R package\n# See also: https://docs.ropensci.org/cffr/\n# --------------------------------------------\n \ncff-version: 1.2.0\nmessage: 'To cite package \"MALDIquant\" in publications use:'\ntype: software\nlicense: GPL-3.0-or-later\ntitle: 'MALDIquant: Quantitative Analysis of Mass Spectrometry Data'\nversion: 1.22.3\ndoi: 10.1093/bioinformatics/bts447\nidentifiers:\n- type: doi\n  value: 10.32614/CRAN.package.MALDIquant\n- type: url\n  value: https://github.com/sgibb/MALDIquant/\nabstract: A complete analysis pipeline for matrix-assisted laser desorption/ionization-time-of-flight\n  (MALDI-TOF) and other two-dimensional mass spectrometry data. In addition to commonly\n  used plotting and processing methods it includes distinctive features, namely baseline\n  subtraction methods such as morphological filters (TopHat) or the statistics-sensitive\n  non-linear iterative peak-clipping algorithm (SNIP), peak alignment using warping\n  functions, handling of replicated measurements as well as allowing spectra with\n  different resolutions.\nauthors:\n- family-names: Gibb\n  given-names: Sebastian\n  email: mail@sebastiangibb.de\n  orcid: https://orcid.org/0000-0001-7406-4443\npreferred-citation:\n  type: article\n  title: 'MALDIquant: a versatile R package for the analysis of mass spectrometry\n    data'\n  authors:\n  - family-names: Gibb\n    given-names: Sebastian\n    email: mail@sebastiangibb.de\n    orcid: https://orcid.org/0000-0001-7406-4443\n  - family-names: Strimmer\n    given-names: Korbinian\n  volume: '28'\n  issue: '17'\n  year: '2012'\n  doi: 10.1093/bioinformatics/bts447\n  journal: Bioinformatics\n  publisher:\n    name: Oxford University Press\n  start: '2270'\n  end: '2271'\nrepository: https://CRAN.R-project.org/package=MALDIquant\nrepository-code: https://github.com/sgibb/MALDIquant/issues/\nurl: https://strimmerlab.github.io/software/maldiquant/\ndate-released: '2024-08-19'\ncontact:\n- family-names: Gibb\n  given-names: Sebastian\n  email: mail@sebastiangibb.de\n  orcid: https://orcid.org/0000-0001-7406-4443\nreferences:\n- type: software\n  title: 'R: A Language and Environment for Statistical Computing'\n  notes: Depends\n  url: https://www.R-project.org/\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2024'\n  version: '>= 4.0.0'\n- type: software\n  title: methods\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Depends\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2024'\n- type: software\n  title: parallel\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2024'\n- type: software\n  title: knitr\n  abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'\n  notes: Suggests\n  url: https://yihui.org/knitr/\n  repository: https://CRAN.R-project.org/package=knitr\n  authors:\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  year: '2024'\n  doi: 10.32614/CRAN.package.knitr\n- type: software\n  title: testthat\n  abstract: 'testthat: Unit Testing for R'\n  notes: Suggests\n  url: https://testthat.r-lib.org\n  repository: https://CRAN.R-project.org/package=testthat\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  year: '2024'\n  doi: 10.32614/CRAN.package.testthat\n  version: '>= 0.8'\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sgibb/MALDIquant"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sgibb/MALDIquant/"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sgibb/MALDIquant/"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contact": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contact",
+        "parent_header": [
+          "MALDIquant"
+        ],
+        "type": "Text_excerpt",
+        "value": "You are welcome to:\n\n* submit suggestions and bug-reports at: <https://github.com/sgibb/MALDIquant/issues>\n* send a pull request on: <https://github.com/sgibb/MALDIquant/>\n* compose an e-mail to: <mail@sebastiangibb.de>\n\n"
+      },
+      "source": "https://github.com/sgibb/MALDIquant/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/sgibb/MALDIquant/actions",
+          "https://codecov.io/github/sgibb/MALDIquant?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/.github/workflows/codemeta-github-actions.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2012-10-07T19:48:42Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-27T02:32:59Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Quantitative Analysis of Mass Spectrometry Data"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+        "type": "String",
+        "value": "A complete analysis pipeline for matrix-assisted laser\n        desorption/ionization-time-of-flight (MALDI-TOF) and other\n        two-dimensional mass spectrometry data. In addition to commonly\n        used plotting and processing methods it includes distinctive\n        features, namely baseline subtraction methods such as\n        morphological filters (TopHat) or the statistics-sensitive\n        non-linear iterative peak-clipping algorithm (SNIP), peak\n        alignment using warping functions, handling of replicated\n        measurements as well as allowing spectra with different\n        resolutions."
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A complete analysis pipeline for matrix-assisted laser desorption/ionization-time-of-flight (MALDI-TOF) and other two-dimensional mass spectrometry data. In addition to commonly used plotting and processing methods it includes distinctive features, namely baseline subtraction methods such as morphological filters (TopHat) or the statistics-sensitive non-linear iterative peak-clipping algorithm (SNIP), peak alignment using warping functions, handling of replicated measurements as well as allowing spectra with different resolutions."
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Description",
+        "parent_header": [
+          "MALDIquant"
+        ],
+        "type": "Text_excerpt",
+        "value": "MALDIquant provides a complete analysis pipeline for\nmatrix-assisted laser desorption/ionization-time-of-flight (MALDI-TOF)\nand other two-dimensional mass spectrometry data.\n\nIn addition to commonly used plotting and processing methods it\nincludes distinctive features, namely baseline\nsubtraction methods such as morphological filters (TopHat) or the\nstatistics-sensitive non-linear iterative peak-clipping algorithm\n(SNIP), peak alignment using warping functions, handling of replicated\nmeasurements as well as allowing spectra with different resolutions.\n\nPlease visit: https://strimmerlab.github.io/software/maldiquant/\n\n"
+      },
+      "source": "https://github.com/sgibb/MALDIquant/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.9381426787833951,
+      "result": {
+        "original_header": "MALDIquant",
+        "type": "Text_excerpt",
+        "value": "Quantitative Analysis of Mass Spectrometry Data \n"
+      },
+      "source": "https://github.com/sgibb/MALDIquant/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sgibb/MALDIquant/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 25
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/sgibb/MALDIquant/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "sgibb/MALDIquant"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MALDIquant"
+      },
+      "source": "https://github.com/sgibb/MALDIquant/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://strimmerlab.github.io/software/maldiquant/"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MALDIquant"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://codecov.io/github/sgibb/MALDIquant/coverage.svg?branch=master"
+      },
+      "source": "https://github.com/sgibb/MALDIquant/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install",
+        "parent_header": [
+          "MALDIquant"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install the latest release directly from\n[CRAN](https://cran.r-project.org/web/packages/MALDIquant/index.html).\n\n```r\ninstall.packages(\"MALDIquant\")\n```\n"
+      },
+      "source": "https://github.com/sgibb/MALDIquant/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install development version (not recommended)",
+        "parent_header": [
+          "MALDIquant"
+        ],
+        "type": "Text_excerpt",
+        "value": "[GitHub](https://github.com) is not directly supported by the basic\n`install.packages` command. You could use the\n[devtools](https://cran.r-project.org/web/packages/devtools/index.html) package\nto install the development version of MALDIquant\n(you will need a complete development environment to compile the some c code).\n\n```r\ninstall.packages(\"devtools\")\nlibrary(\"devtools\")\ninstall_github(\"sgibb/MALDIquant\")\n```\n"
+      },
+      "source": "https://github.com/sgibb/MALDIquant/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/sgibb/MALDIquant/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sgibb/MALDIquant/issues/"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sgibb/MALDIquant/issues/"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cran, maldi, maldi-ims, maldi-tof-ms, mass-spectrometry, r, r-package"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "r",
+          "maldi",
+          "mass-spectrometry",
+          "r-package",
+          "cran",
+          "maldi-tof-ms",
+          "maldi-ims"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL (>= 3)"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MALDIquant"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MALDIquant: Quantitative Analysis of Mass Spectrometry Data"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "sgibb"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+        "type": "String",
+        "value": "MALDIquant"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 194563,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 17166,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 2341,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Rebol",
+        "size": 173,
+        "type": "Programming_language",
+        "value": "Rebol"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/sgibb/MALDIquant/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active - The project has reached a stable, usable state and is being actively developed.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://github.com/sgibb/MALDIquant/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:21:45",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 68
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Examples",
+        "parent_header": [
+          "MALDIquant"
+        ],
+        "type": "Text_excerpt",
+        "value": "To illustrate the application of MALDIquant for analyses of mass spectrometry\ndata please find a number of example R scripts in the\n[MALDIquantExamples](https://github.com/sgibb/MALDIquantExamples) repository.\n"
+      },
+      "source": "https://github.com/sgibb/MALDIquant/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+        "type": "String",
+        "value": "1.22.3"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.22.3"
+      },
+      "source": "https://raw.githubusercontent.com/sgibb/MALDIquant/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

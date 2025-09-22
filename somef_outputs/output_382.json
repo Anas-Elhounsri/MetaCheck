@@ -1,0 +1,707 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Earth Observation"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9100372622910335,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Max Planck Institute for Biogeochemistry, Jena, Germany",
+        "email": "dloos@bgc-jena.mpg.de",
+        "type": "String",
+        "value": "Daniel Loos"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Max Planck Institute for Biogeochemistry, Jena, Germany",
+        "email": "fcremer@bgc-jena.mpg.de",
+        "type": "String",
+        "value": "Felix Cremer"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "dloos@bgc-jena.mpg.de",
+        "given_name": "Daniel",
+        "last_name": "Loos",
+        "name": "Daniel Loos",
+        "type": "Agent",
+        "value": "Daniel Loos"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "fcremer@bgc-jena.mpg.de",
+        "given_name": "Felix",
+        "last_name": "Cremer",
+        "name": "Felix Cremer",
+        "type": "Agent",
+        "value": "Felix Cremer"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/AUTHORS",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/EarthyScience/FAIRSenDD"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/EarthyScience/FAIRSenDD.git"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/.github/workflows/deploy_website.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/.github/workflows/deploy_apps.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/.github/workflows/ogc_app_cwl.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-09-10T13:00:20Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-09-10"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-03T13:27:24Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ESA project to create a deforestation SaaS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "FAIR workflow for Sentinel-1 based Deforestation Detection"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9505886065591991,
+      "result": {
+        "original_header": "<img src='website/docs/public/logo-fairsendd.png' align=\"right\" height=\"120px\" /> FAIRSenDD: FAIR workflow for Sentinel-1 based Deforestation Detection",
+        "type": "Text_excerpt",
+        "value": "A project from the Max-Planck-Institute for Biogeochemistry to create a FAIR deforestation detection SaaS as a scientific long-term availability demonstrator for the European Space Agency.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9056690761106889,
+      "result": {
+        "original_header": "Overview",
+        "type": "Text_excerpt",
+        "value": "This repository contains code and documentation for a FAIR workflow based on the Julia package [RQADeforestation.jl](https://github.com/EarthyScience/RQADeforestation.jl). \n| directory                                    | description                                                                                      |\n| -------------------------------------------- | ------------------------------------------------------------------------------------------------ |\n| [`RQADeforestation.jl`](RQADeforestation.jl) | git submodule to the underlying Julia package                                                    |\n| [`infrastructure`](infrastructure)           | VM setup description using Terraform                                                             |\n| [`ogc-api`](ogc-api)                         | OGC API using pygeoapi                                                                           |\n| [`ogc-app-cwl`](ogc-app-cwl)                 | OGC Application Package as a CWL workflow                                                        |\n| [`website`](website)                         | [Project website](https://earthyscience.github.io/FAIRSenDD) with documentation and workflow GUI |\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9353084526616506,
+      "result": {
+        "original_header": "Funding",
+        "type": "Text_excerpt",
+        "value": "This project was funded by the European Space Agency in the Science Result Long-Term Availability & Reusability Demonstrator Initiative.\nIn addition, this project was supported by the ESA Network of Resources.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/EarthyScience/FAIRSenDD/tree/main/website/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/EarthyScience/FAIRSenDD/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://mybinder.org/v2/gh/earthyscience/fairsendd/HEAD"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/EarthyScience/FAIRSenDD/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "EarthyScience/FAIRSenDD"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": " FAIRSenDD: FAIR workflow for Sentinel-1 based Deforestation Detection"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "docker_compose",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/infrastructure/app/docker-compose.yml"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/infrastructure/app/docker-compose.yml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/website/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/website/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "package.json",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/website/package.json"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/website/package.json",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "docker_compose",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-app-cwl/docker-compose.yml"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-app-cwl/docker-compose.yml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-app-cwl/rqa/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-app-cwl/rqa/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-app-cwl/stage_out/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-app-cwl/stage_out/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/etc/cwl-example/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/etc/cwl-example/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "docker_compose",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-api/docker-compose.yml"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-api/docker-compose.yml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-api/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-api/Dockerfile",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "package.json"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/website/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/website/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/website/envs/fix_gdal.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-app-cwl/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/etc/cwl-example/run.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/EarthyScience/FAIRSenDD/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/EarthyScience/FAIRSenDD/issues"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Sentinel-1",
+          "deforestation",
+          "detection"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2024 Daniel Loos <dloos@bgc-jena.mpg.de> and contributors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/website/docs/public/ESA_NoR_logo.svg"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "FAIRSenDD"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "FAIRSenDD"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "EarthyScience"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 8221,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HCL",
+        "size": 5728,
+        "type": "Programming_language",
+        "value": "HCL"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Common Workflow Language",
+        "size": 5579,
+        "type": "Programming_language",
+        "value": "Common Workflow Language"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 3206,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TypeScript",
+        "size": 2974,
+        "type": "Programming_language",
+        "value": "TypeScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 1128,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Julia",
+        "size": 757,
+        "type": "Programming_language",
+        "value": "Julia"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 329,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 295,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Julia",
+        "type": "Programming_language",
+        "value": "Julia",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://dx.doi.org/10.1109/JSTARS.2020.3019333"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "markdown-it-mathjax3",
+        "type": "Software_application",
+        "value": "markdown-it-mathjax3@^4.3.2",
+        "version": "^4.3.2"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/website/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "vitepress",
+        "type": "Software_application",
+        "value": "vitepress@^1.6.3",
+        "version": "^1.6.3"
+      },
+      "source": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/website/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "identifier"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:37:50",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "workflows": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/ogc-app-cwl/fairsendd.cwl"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EarthyScience/FAIRSenDD/main/etc/cwl-example/example.cwl"
+      },
+      "technique": "file_exploration"
+    }
+  ]
+}

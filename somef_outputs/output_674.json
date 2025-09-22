@@ -1,0 +1,874 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8648396911007568,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "adamhsparks@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-0061-8359",
+        "type": "String",
+        "value": "Adam H. Sparks"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "edelponte@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-4398-409X",
+        "type": "String",
+        "value": "Emerson M. Del Ponte"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2019",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "\nnote <- sprintf(\"R package version %s\", meta$Version)\n\ntextVersion = paste0(\"Adam H. Sparks and Emerson Del Ponte. (2019). What's so Open About Plant Pathology? version 0.0.10. Australian National University Open Science Day. 2019-02-25, https://openplantpathology.github.io/OPP.at.ANU/\")\n\nbibentry(bibtype = \"Proceedings\",\n         title = \" What's so Open About Plant Pathology?\",\n         author = c(person(\"Adam\", \"Sparks\"), person(\"Emerson\", \"Del Ponte\")),\n         booktitle = \"Australian National University Open Science Day\",\n         address = \"Canberra, Australia\",\n         publisher = \"Australian National University\",\n         year = 2019,\n         note = note,\n         url = \"https://openplantpathology.github.io/OPP.at.ANU/\")\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to cite",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "Please cite this compendium as:\n\n> Sparks, A.H. and Del Ponte, E. M. (2019). *What\u2019s so Open About Plant\n> Pathology?*. Australian National University Open Science Day.\n> 2019-02-25. Accessed 28 Mar 2019. Online at\n> <https://doi.org/10.5281/zenodo.2575300>\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/openplantpathology/OPP.at.ANU"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/openplantpathology/OPP.at.ANU"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/openplantpathology/OPP.at.ANU"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.org/openplantpathology/OPP.at.ANU",
+          "https://ci.appveyor.com/project/adamhsparks/opp-at-anu/branch/master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nWe love pull requests from everyone. By participating in this project, you\nagree to abide by our [code of conduct](CONDUCT.md).\n\n## Getting Started\n\n* Make sure you have a [GitHub account](https://github.com/signup/free). If you are not familar with git and GitHub, take a look at <http://happygitwithr.com/> to get started.\n* [Submit a post for your issue](https://github.com/<USERNAME>/<REPO>/issues/), assuming one does not already exist.\n  * Clearly describe your issue, including steps to reproduce when it is a bug, or some justification for a proposed improvement.\n* [Fork](https://github.com/<USERNAME>/<REPO>/#fork-destination-box) the repository on GitHub to make a copy of the repository on your account. Or use this line in your shell terminal:\n\n    `git clone git@github.com:your-username/<REPO>.git`\n    \n## Making changes\n\n* Edit the files, save often, and make commits of logical units, where each commit indicates one concept\n* Follow our [style guide](http://adv-r.had.co.nz/Style.html).\n* Make sure you write [good commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).\n* Make sure you have added the necessary tests for your code changes.\n* Run _all_ the tests using `devtools::check()` to assure nothing else was accidentally broken.\n* If you need help or unsure about anything, post an update to [your issue](https://github.com/<USERNAME>/<REPO>/issues/).\n\n## Submitting your changes\n\nPush to your fork and [submit a pull request](https://github.com/<USERNAME>/<REPO>/compare/).\n\nAt this point you're waiting on us. We like to at least comment on pull requests\nwithin a few days (and, typically, one business day). We may suggest\nsome changes or improvements or alternatives.\n\nSome things you can do that will increase the chance that your pull request is accepted:\n\n* Engage in discussion on [your issue](https://github.com/<USERNAME>/<REPO>/issues/).\n* Be familiar with the backround literature cited in the [README](README.Rmd)\n* Write tests that pass.\n* Follow our [code style guide](http://adv-r.had.co.nz/Style.html).\n* Write a [good commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-02-22T07:09:25Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-03-22T08:14:17Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+        "type": "String",
+        "value": "Supplementary material for talk at ANU Open Science Day delivered by Adam H Sparks."
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Supplementary material for talk at ANU Open Science Day delivered by Adam H Sparks."
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8678609516576286,
+      "result": {
+        "original_header": "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+        "type": "Text_excerpt",
+        "value": "<img align=\"right\" width=230 style = \"margin:10px; border: 0\" src=\"man/figures/logo.png\">\nThis repository retrieves the data and code for our presentation at the\n12th International Epidemiology Workshop: \n> Sparks, A.H., Del Ponte, E.M., Everhart, S., Foster, Z.S.L., and\n> Gr\u00fcnwald, N. (2018). Compendium of R code and data for \u2018Status and\n> Best Practices for Reproducible Research In Plant Pathology\u2019. Accessed\n> 02 Jun 2018. Online at <https://doi.org/10.5281/zenodo.1250665>\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "http://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/openplantpathology/OPP.at.ANU/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to download or install",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can download the compendium as a zip from from this URL:\n<https://github.com/openplantpathology/OPP.at.ANU/archive/master.zip>\n\nOr you can install this compendium as an R package, OPP.at.ANU, from\nGitHub with:\n\n``` r\ndevtools::install_github(\"openplantpathology/OPP.at.ANU\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/openplantpathology/OPP.at.ANU/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "openplantpathology/OPP.at.ANU"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "&#79;&#80;&#80;&#64;&#65;&#78;&#85;"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OPP.at.ANU"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/172012900"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ci.appveyor.com/api/projects/status/lrr3puyl7cpo9ydu/branch/master?svg=true"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install supporting package, hrbrthemes",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "Install `hrbrthemes`, which provides the theme for the `ggplot2` graphs\nand loads the fonts.\n\nInstall the package and load it. Upon loading it follow the directions\nfor installing and loading Roboto Condensed fonts.\n\n``` r\ninstall.packages(\"hrbrthemes\", dep = TRUE)\nlibrary(hrbrthemes)\n```\n\nTake note of these instructions and execute them and then install the\nfont, Roboto Condensed on your computer as directed.\n\n``` r\nPlease use hrbrthemes::import_roboto_condensed() to install Roboto Condensed\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "macOS instructions",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use",
+          "Install supporting package, hrbrthemes",
+          "Instructions for installing Roboto Condensed on your system"
+        ],
+        "type": "Text_excerpt",
+        "value": "See <https://support.apple.com/en-us/HT201749>\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Windows instructions",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use",
+          "Install supporting package, hrbrthemes",
+          "Instructions for installing Roboto Condensed on your system"
+        ],
+        "type": "Text_excerpt",
+        "value": "See\n<https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows>\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install OPP.at.ANU",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "Now install the package using devtools and then use `browseVignettes` to\nsee the HTML version, the raw Rmd file and only the R code of the\nvignette locally.\n\n``` r\nif (!require(devtools)) {\n  install.packages(\"devtools\")\n  library(devtools)\n}\n\ndevtools::install_github(\"openplantpathology/OPP.at.ANU\",\n                         build_vignettes = TRUE,\n                         dependencies = TRUE)\n\nbrowseVignettes(\"OPP.at.ANU\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to download or install",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can download the compendium as a zip from from this URL:\n<https://github.com/openplantpathology/OPP.at.ANU/archive/master.zip>\n\nOr you can install this compendium as an R package, OPP.at.ANU, from\nGitHub with:\n\n``` r\ndevtools::install_github(\"openplantpathology/OPP.at.ANU\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/openplantpathology/OPP.at.ANU/issues"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/openplantpathology/OPP.at.ANU/issues"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2018 Adam H Sparks\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Licenses",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "**Text and figures :**\n[CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/)\n\n**Code :** See the [DESCRIPTION](DESCRIPTION) file\n\n**Data :** [CC-0](http://creativecommons.org/publicdomain/zero/1.0/)\nattribution requested in reuse\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OPP.at.ANU"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OPP.at.ANU: What's so Open About Plant Pathology?"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "openplantpathology"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+        "type": "String",
+        "value": "OPP.at.ANU"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 179,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": "3.5.3"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/openplantpathology/OPP.at.ANU/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adamhsparks",
+          "type": "User"
+        },
+        "date_created": "2019-03-28T00:19:35Z",
+        "date_published": "2019-03-28T01:08:05Z",
+        "description": "Final release",
+        "html_url": "https://github.com/openplantpathology/OPP.at.ANU/releases/tag/v0.0.10",
+        "release_id": 16398156,
+        "tag": "v0.0.10",
+        "tarball_url": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/tarball/v0.0.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/releases/16398156",
+        "value": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/releases/16398156",
+        "zipball_url": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/zipball/v0.0.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adamhsparks",
+          "type": "User"
+        },
+        "date_created": "2019-02-22T07:41:07Z",
+        "date_published": "2019-02-22T07:41:45Z",
+        "html_url": "https://github.com/openplantpathology/OPP.at.ANU/releases/tag/0.0.9-1",
+        "release_id": 15711781,
+        "tag": "0.0.9-1",
+        "tarball_url": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/tarball/0.0.9-1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/releases/15711781",
+        "value": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/releases/15711781",
+        "zipball_url": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/zipball/0.0.9-1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adamhsparks",
+          "type": "User"
+        },
+        "date_created": "2019-02-22T07:16:46Z",
+        "date_published": "2019-02-22T07:17:12Z",
+        "description": "First release",
+        "html_url": "https://github.com/openplantpathology/OPP.at.ANU/releases/tag/0.0.9",
+        "release_id": 15711516,
+        "tag": "0.0.9",
+        "tarball_url": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/tarball/0.0.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/releases/15711516",
+        "value": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/releases/15711516",
+        "zipball_url": "https://api.github.com/repos/openplantpathology/OPP.at.ANU/zipball/0.0.9"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Inactive \u2013 The project has reached a stable, usable\nstate but is no longer being actively developed; support/maintenance\nwill be provided as time\nallows.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#inactive"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "devtools",
+        "type": "Software_application",
+        "value": "devtools",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dplyr",
+        "type": "Software_application",
+        "value": "dplyr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ggplot2",
+        "type": "Software_application",
+        "value": "ggplot2",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ggthemes",
+        "type": "Software_application",
+        "value": "ggthemes",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "gsheet",
+        "type": "Software_application",
+        "value": "gsheet",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "knitr",
+        "type": "Software_application",
+        "value": "knitr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "hrbrthemes",
+        "type": "Software_application",
+        "value": "hrbrthemes",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "magrittr",
+        "type": "Software_application",
+        "value": "magrittr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rmarkdown",
+        "type": "Software_application",
+        "value": "rmarkdown",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "tidyr",
+        "type": "Software_application",
+        "value": "tidyr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "contact",
+    "contributors",
+    "faq",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:38:42",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install supporting package, hrbrthemes",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "Install `hrbrthemes`, which provides the theme for the `ggplot2` graphs\nand loads the fonts.\n\nInstall the package and load it. Upon loading it follow the directions\nfor installing and loading Roboto Condensed fonts.\n\n``` r\ninstall.packages(\"hrbrthemes\", dep = TRUE)\nlibrary(hrbrthemes)\n```\n\nTake note of these instructions and execute them and then install the\nfont, Roboto Condensed on your computer as directed.\n\n``` r\nPlease use hrbrthemes::import_roboto_condensed() to install Roboto Condensed\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "macOS instructions",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use",
+          "Install supporting package, hrbrthemes",
+          "Instructions for installing Roboto Condensed on your system"
+        ],
+        "type": "Text_excerpt",
+        "value": "See <https://support.apple.com/en-us/HT201749>\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Windows instructions",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use",
+          "Install supporting package, hrbrthemes",
+          "Instructions for installing Roboto Condensed on your system"
+        ],
+        "type": "Text_excerpt",
+        "value": "See\n<https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows>\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "macOS instructions",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use",
+          "Install supporting package, hrbrthemes",
+          "Instructions for installing Roboto Condensed on your system"
+        ],
+        "type": "Text_excerpt",
+        "value": "See <https://support.apple.com/en-us/HT201749>\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Windows instructions",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use",
+          "Install supporting package, hrbrthemes",
+          "Instructions for installing Roboto Condensed on your system"
+        ],
+        "type": "Text_excerpt",
+        "value": "See\n<https://support.microsoft.com/en-us/help/314960/how-to-install-or-remove-a-font-in-windows>\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributions",
+        "parent_header": [
+          "<a href=\"&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#79;&#80;&#80;&#64;&#65;&#78;&#85;\">&#79;&#80;&#80;&#64;&#65;&#78;&#85;</a>",
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "We welcome contributions from everyone. Before you get started, please\nsee our [contributor guidelines](CONTRIBUTING.md). Please note that this\nproject is released with a [Contributor Code of Conduct](CONDUCT.md). By\nparticipating in this project you agree to abide by its terms.\n"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.0.10"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.10"
+      },
+      "source": "https://raw.githubusercontent.com/openplantpathology/OPP.at.ANU/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "mark.padgham@email.com",
+        "type": "String",
+        "value": "Mark Padgham"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/UrbanAnalyst/ttcalib"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/UrbanAnalyst/ttcalib"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/UrbanAnalyst/ttcalib"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/UrbanAnalyst/ttcalib/actions?query=workflow%3AR-CMD-check"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-09-27T08:45:20Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-05-27T09:51:51Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Calibration of travel times to empirical data"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+        "type": "String",
+        "value": "Calibration of travel times to empirical data."
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Calibration of travel times to empirical data."
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8671082469063303,
+      "result": {
+        "original_header": "ttcalib: Calibration of travel times to empirical data",
+        "type": "Text_excerpt",
+        "value": "One metric used throughout this organisation is travel times relative to\nequivalent times taken by motorcars. This repository documents\nprocedures used to calibrate estimates of motorcar travel times to\nempirical data.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8608810179026225,
+      "result": {
+        "original_header": "Uber movement data",
+        "type": "Text_excerpt",
+        "value": "The empirical data are from [Uber movement](https://movement.uber.com/),\nwith these analyses calibrating against [data from Santiago,\nChile](https://movement.uber.com/explore/santiago/travel-times?lang=en-US).\nThe data used are the \u201cAll Data\u201d version for the first quarter of 2020,\ngrouped by \u201cHour of Day\u201d. The download tab on the website linked to\nabove also includes a link to the \u201cGeo Boundaries\u201d, which are also\nrequired. Both of these data should be saved to a local directory.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9773035421737751,
+      "result": {
+        "original_header": "OSM Network data",
+        "type": "Text_excerpt",
+        "value": "1.  Trimming to bbox of (-71.363,-33.851,-70.377,-33.113)\n2.  Constructing separate keyword-filtered subsets with keywords of:\n    \u201chighway\u201d, \u201crestriction\u201d, \u201caccess\u201d, \u201cbicycle\u201d, \u201cfoot\u201d, \u201cmotorcar\u201d,\n    \u201cmotor_vehicle\u201d, \u201cvehicle\u201d, \u201ctoll\u201d.\n3.  Converting all of these single `pbf` files to `osm` (XML) format.\n4.  Reading in each via\n    [`osmdata::osmdata_sc()`](https://docs.ropensci.org/osmdata/reference/osmdata_sc.html),\n    and combining all data into single `osmdata_sc` object.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9675019754121572,
+      "result": {
+        "original_header": "Calibration",
+        "type": "Text_excerpt",
+        "value": "1.  Calibration of waiting times both at traffic lights, and to turn\n    across oncoming traffic. The effects of these parameters was\n    examined in [a 2020 *Scientific Data* paper, \u201c*Longitudinal spatial\n    dataset on travel times and distances by different travel modes in\n    Helsinki\n    Region*](https://www.nature.com/articles/s41597-020-0413-y), which\n    implemented a complicated parametrisation of waiting times at\n    various types of intersections \u201cbased on previous research.\u201d\n2.  Calibration of estimated times to measures of network centrality.\n    These effects were examined in [a 2014 *Nature Communications*\n    paper, \u201c*Predicting commuter flows in spatial networks using a\n    radiation model based on temporal\n    ranges*](https://www.nature.com/articles/ncomms6347), which started\n    with a \u201cbase\u201d model able to predict observed travel times with an\n    r-squared correlation coefficient of 0.639. This was then increased\n    through inclusion of the effects of centrality, using a simple\n    threshold model, to 0.752. \n"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9812498209841509,
+      "result": {
+        "original_header": "Calibration to waiting times",
+        "type": "Text_excerpt",
+        "value": "Street networks were weighted for time-based routing using specific\nvalues of these two parameters, and travel times estimated for all\n320,666 observed origins and destinations in the Uber Movement data. The\nminimal-error model corresponded to an R-squared correlation of 0.782\nfor an effective waiting time at traffic lights of 8 seconds in morning\npeak hour traffic (7-10 am), or 9 seconds in afternoon traffic (3-7 pm).\nCorresponding effective waiting times to turn across oncoming traffic\nwere only 2 or 1 seconds, respectively, although these made very little\ndifference to model results compared with the effects of traffic lights.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#concept"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/UrbanAnalyst/ttcalib/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/UrbanAnalyst/ttcalib/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "UrbanAnalyst/ttcalib"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ttcalib: Calibration of travel times to empirical data"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ttcalib"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/man/figures/correlation.png"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/UrbanAnalyst/ttcalib/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/UrbanAnalyst/ttcalib/issues"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/UrbanAnalyst/ttcalib/issues"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ttcalib"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ttcalib: Calibration of travel times to empirical data"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "UrbanAnalyst"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+        "type": "String",
+        "value": "ttcalib"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 15277,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 569,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/UrbanAnalyst/ttcalib/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Project Status:\nConcept",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#project"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:21:24",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.1.0.009"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.1.0.009"
+      },
+      "source": "https://raw.githubusercontent.com/UrbanAnalyst/ttcalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

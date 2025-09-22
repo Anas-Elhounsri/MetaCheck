@@ -1,0 +1,530 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u2611\ufe0f Acknowledgments",
+        "type": "Text_excerpt",
+        "value": "Will be written soon ...\n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/JR-1991/pyDaRUS"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/.github/workflows/python-publish.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-12-28T01:03:55Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-09-19T08:03:23Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "\ud83c\udfdb- Library used to access and handle the Dataverse installation DaRUS of the University of Stuttgart."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 0.9142814437775246,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "PyDaRUS is the Python library used to programatically interact with the Dataverse installation DaRUS. It offers the creation and upload of datasets as well as download and editing of existing entries. In addition, it offers the export to and import from JSON/XML/YAML/HDF5. \n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Download and edit a dataset from Dataverse",
+        "type": "Text_excerpt",
+        "value": "\n```python\n# Retrieve a dataset from Dataverse by using the given DOI/PID\ndataset = Dataset.from_dataverse_doi(p_id, filedir=\"Examples/dataset_download/\")\n\n# Change a file\nwith open(\"Examples/dataset_download/test_file.txt\", \"w\") as f:\n    f.write(\"Has changed\")\n    \n# Add new files\ndataset.add_file(dv_path=\"nu_file.txt\", local_path=\"Examples/dataset_download/nu_file.txt\")\n\n# Edit the dataset\ndataset.process.add_method_parameters(name=\"Param3\", symbol=\"p3\", unit=\"kg\", value=100.0)\ndataset.citation.add_author(name=\"Max Mustermann\", affiliation=\"SimTech\")\n```\n\n\n```python\n# Now to update the dataset on Dataverse use 'dataset.update'.\n# Unfortunately you have to provide your contact again\n# since DaRUS wont include mails when fetchin an entry\n\ndataset.update(contact_name=\"Jan Range\", contact_mail=\"jan.range@simtech.uni-stuttgart.de\")\n```\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/JR-1991/pyDaRUS/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/Example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/Example.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/JR-1991/pyDaRUS/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "JR-1991/pyDaRUS"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/JR-1991/pyDaRUS/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2021 JR-1991\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT License"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\ud83d\udcc4 License",
+        "type": "Text_excerpt",
+        "value": "This project is licensed under the MIT License - see the LICENSE.md file for details\n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pyDaRUS"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "JR-1991"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pyDaRUS"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 199843,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jupyter Notebook",
+        "size": 4833,
+        "type": "Programming_language",
+        "value": "Jupyter Notebook"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 273,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "JR-1991",
+          "type": "User"
+        },
+        "date_created": "2022-05-24T09:30:39Z",
+        "date_published": "2022-05-24T09:34:27Z",
+        "description": "\ud83d\ude80 Support for new metadatablocks \r\n\r\n- Astrophysics\r\n- Biomedical Data\r\n- Social Sciences\r\n- Geospatial\r\n- Journals",
+        "html_url": "https://github.com/JR-1991/pyDaRUS/releases/tag/v1.0.5",
+        "name": "PyDaRUS v1.0.5",
+        "release_id": 67642104,
+        "tag": "v1.0.5",
+        "tarball_url": "https://api.github.com/repos/JR-1991/pyDaRUS/tarball/v1.0.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/JR-1991/pyDaRUS/releases/67642104",
+        "value": "https://api.github.com/repos/JR-1991/pyDaRUS/releases/67642104",
+        "zipball_url": "https://api.github.com/repos/JR-1991/pyDaRUS/zipball/v1.0.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "JR-1991",
+          "type": "User"
+        },
+        "date_created": "2022-02-22T16:00:59Z",
+        "date_published": "2022-02-22T16:02:43Z",
+        "description": "Fixes compatibility issues with older Python versions due to typing.",
+        "html_url": "https://github.com/JR-1991/pyDaRUS/releases/tag/v1.0.4",
+        "name": "PyDaRUS v1.0.4",
+        "release_id": 60147166,
+        "tag": "v1.0.4",
+        "tarball_url": "https://api.github.com/repos/JR-1991/pyDaRUS/tarball/v1.0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/JR-1991/pyDaRUS/releases/60147166",
+        "value": "https://api.github.com/repos/JR-1991/pyDaRUS/releases/60147166",
+        "zipball_url": "https://api.github.com/repos/JR-1991/pyDaRUS/zipball/v1.0.4"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "easyDataverse",
+        "type": "Software_application",
+        "value": "easyDataverse",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "fastapi",
+        "type": "Software_application",
+        "value": "fastapi",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "uvicorn",
+        "type": "Software_application",
+        "value": "uvicorn",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pydantic",
+        "type": "Software_application",
+        "value": "pydantic",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jinja2",
+        "type": "Software_application",
+        "value": "jinja2",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyDataverse",
+        "type": "Software_application",
+        "value": "pyDataverse",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pandas",
+        "type": "Software_application",
+        "value": "pandas",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyaml",
+        "type": "Software_application",
+        "value": "pyaml",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u2699\ufe0f Dependencies",
+        "parent_header": [
+          "\ud83d\ude80 Getting Started"
+        ],
+        "type": "Text_excerpt",
+        "value": "* easyDataverse\n* fastapi\n* uvicorn\n* pydantic\n* jinja2\n* pyDataverse\n* pandas\n* pyaml\n* deepdish\n* h5py\n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "run",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "identifier",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:17:30",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 10
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\ud83d\ude91 Help",
+        "type": "Text_excerpt",
+        "value": "Help will arrive soon ...\n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\ud83d\ude80 Getting Started",
+        "type": "Text_excerpt",
+        "value": "Get started with PyDaRUS by running the following command \n\n```\n# Using PyPI\npython -m pip install pyDaRUS\n```\n\nOr build by source\n```\ngit clone https://github.com/JR-1991/pyDaRUS.git\ncd pyDaRUS\npython3 setup.py install\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\ud83d\udea8 **Important note**",
+        "parent_header": [
+          "\ud83d\ude80 Getting Started"
+        ],
+        "type": "Text_excerpt",
+        "value": "Currently the dependency __pyDataverse__ is not updated to work with the new Dataverse version **5.9** and will thus fail when data is uploaded. For this, use the fork provided that fixes the problem. In order to install, follow these instructions\n\n```\npip install git+https://github.com/JR-1991/pyDataverse.git@0fcfcd3fbc6bf1aec869899f715a51dca25e91be\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\ud83d\udc0d Example program",
+        "type": "Text_excerpt",
+        "value": "The following example will demonstrate how to use pyDaRUS. Essentially, the workflow can be summarized as follows:\n\n1. Initialize the ```Dataset``` container.\n2. Choose the metadatablocks to which you'd like to write and initialize these.\n3. Enter your data to the metadatablock's fields. Use the ```add_XYZ```-methods to add compound/objects.\n4. Add the metadatablocks to the ```Dataset``` object and upload it to DaRUS.\n\nPlease note, that the interface ```easyDataverse``` will infer the ```DATAVERSE_URL``` as well as ```DATAVERSE_API_TOKEN``` from your environment variables. Thus, please make sure these are available at runtim.\n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Creating and uploading a dataset to Dataverse",
+        "parent_header": [
+          "\ud83d\udc0d Example program"
+        ],
+        "type": "Text_excerpt",
+        "value": "```python\nfrom pyDaRUS import Citation, Process, Dataset\nfrom pyDaRUS.metadatablocks.citation import SubjectEnum, IdentifierScheme\n```\n\n```python\n# Initialize Dataset\ndataset = Dataset()\n\n# Initialize metadatablocks you like to use\ncitation = Citation()\nprocess = Process()\n```\n\n\n```python\n# Fill in citation relevant fields\ncitation.title = \"Some Title\"\ncitation.subject = [SubjectEnum.chemistry]\n\n# Use add function to append compound objects without\n# having to import the corresponding class\ncitation.add_description(text=\"Some description\", date=\"1991\")\ncitation.add_author(name=\"Jan Range\", affiliation=\"SimTech\")\ncitation.add_contact(name=\"Jan Range\", email=\"jan.range@simtech.uni-stuttgart.de\")\n```\n\n\n```python\n# Fill in process relevant fields\nprocess.add_processing_methods(name=\"Some Process\", parameters=\"Param1, Param2\")\nprocess.add_method_parameters(name=\"Param1\", value=10)\nprocess.add_method_parameters(name=\"Param2\", textual_value=\"Textual\")\n```\n\n\n```python\n# Add each metadatablock to the dataset\ndataset.add_metadatablock(citation)\ndataset.add_metadatablock(process)\n```\n\n\n```python\n# If given add files and directories\ndataset.add_directory(\"Examples/dataset_upload/\")\n```\n\n\n```python\n# Finally, upload the dataset to dataverse\n# URL and API_TOKEN will be inferred from the env\np_id = dataset.upload(dataverse_name=\"playground\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/JR-1991/pyDaRUS/main/README.md",
+      "technique": "header_analysis"
+    }
+  ]
+}

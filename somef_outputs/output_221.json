@@ -1,0 +1,388 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgements",
+        "type": "Text_excerpt",
+        "value": "This [paper](https://www.researchgate.net/publication/338594130_Testing_with_Jupyter_notebooks_NoteBook_VALidation_nbval_plug-in_for_pytest) helped a lot to understand what should be achieved during the hackday:\n\nFangohr, H. & Fauske, Vidar & Kluyver, Thomas & Albert, Maximilian & Laslett, Oliver & Cort\u00e9s-Ortu\u00f1o, David & Beg, Marijan & Ragan-Kelly, Min. (2020). Testing with Jupyter notebooks: NoteBook VALidation (nbval) plug-in for pytest. \n"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0002-2497-4040",
+        "type": "String",
+        "value": "Jon Massey"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0002-9324-2775",
+        "type": "String",
+        "value": "Patrick McCann"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Lucian Oprea"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Massey",
+            "given_name": "Jon",
+            "name": "Jon Massey",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-2497-4040"
+          },
+          {
+            "family_name": "McCann",
+            "given_name": "Patrick",
+            "name": "Patrick McCann",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-9324-2775"
+          },
+          {
+            "family_name": "Oprea",
+            "given_name": "Lucian",
+            "name": "Lucian Oprea",
+            "type": "Agent"
+          }
+        ],
+        "format": "cff",
+        "title": "BDD for Jupyter Notebooks",
+        "type": "File_dump",
+        "value": "# YAML 1.2\n---\nauthors:\n  -\n    affiliation: \"University of Bristol\"\n    family-names: Massey\n    given-names: Jon\n    orcid: \"https://orcid.org/0000-0002-2497-4040\"\n  -\n    affiliation: \"University of St Andrews\"\n    family-names: McCann\n    given-names: Patrick\n    orcid: \"https://orcid.org/0000-0002-9324-2775\"\n  -\n    affiliation: Figshare\n    family-names: Oprea\n    given-names: Lucian\ncff-version: \"1.0.3\"\nlicense: MIT\nmessage: \"If you use this software, please cite it using these metadata.\"\nrepository-code: \"https://github.com/pgmccann/nbbdd\"\ntitle: \"BDD for Jupyter Notebooks\"\n"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/pgmccann/nbbdd"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/pgmccann/nbbdd"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-04-02T07:53:21Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-11-23T13:33:06Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "BDD for Jupyter Notebooks. Hackday project at SSI Collaborations Workshop 2020. #CollabW2020"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 0.9555302634287207,
+      "result": {
+        "original_header": "BDD for Jupyter Notebooks",
+        "type": "Text_excerpt",
+        "value": "The idea of this project is improve the Jupyter notebooks by adding validations but all\nthis is not something new, there is already something available as a plug in for Jupyter called [nbval](https://github.com/computationalmodelling/nbval)\nwhich work nice if you want to use the TDD approach which sometime can be a little bit painful when you are in an \nearly stage prototyping you research. Since TDD (Test Driven Development) can be a little be to much from the beginning we found that it may be helpful\nto start with a BDD (Behavior-driven development) approach by writing test cases in a natural language that \nnon-programmers can read and also serve as a documentation more or less.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/pgmccann/nbbdd/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/Demo.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/Demo.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 4
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/pgmccann/nbbdd/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pgmccann/nbbdd"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "BDD for Jupyter Notebooks"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/nbbdd.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/pgmccann/nbbdd/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "bdd, behavior-driven-development, collabw20, gherkin, jupyter, jupyter-notebook, jupyter-notebooks, python"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2020 Paddy McCann\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/http://www.opensource.org/licenses/MIT",
+        "spdx_id": "http://www.opensource.org/licenses/MIT",
+        "type": "License",
+        "value": "http://www.opensource.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "nbbdd"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "BDD for Jupyter Notebooks"
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "pgmccann"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 6289,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jupyter Notebook",
+        "size": 5185,
+        "type": "Programming_language",
+        "value": "Jupyter Notebook"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 393,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "value": "Python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/pgmccann/nbbdd/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:03:27",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ]
+}

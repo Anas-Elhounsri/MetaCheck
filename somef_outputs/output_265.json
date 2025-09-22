@@ -1,0 +1,425 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Computer Science"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Chair of Software and Systems Engineering, Department of Informatics, Technical University of Munich",
+        "email": "patrick.stoeckle@tum.de",
+        "identifier": "https://www.in.tum.de/en/i04/stoeckle/",
+        "type": "String",
+        "value": "Patrick St\u00f6ckle"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Siemens AG",
+        "email": "bernd.grobauer@siemens.com",
+        "type": "String",
+        "value": "Bernd Grobauer"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Chair of Software and Systems Engineering, Department of Informatics, Technical University of Munich",
+        "email": "alexander.pretschner@tum.de",
+        "identifier": "https://www.in.tum.de/en/i04/people/alexander-pretschner/",
+        "type": "String",
+        "value": "Alexander Pretschner"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "patrick.stoeckle@tum.de",
+        "given_name": "Patrick",
+        "last_name": "St\u00f6ckle",
+        "name": "Patrick St\u00f6ckle",
+        "type": "Agent",
+        "value": "Patrick St\u00f6ckle"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "bernd.grobauer@siemens.de",
+        "given_name": "Bernd",
+        "last_name": "Grobauer",
+        "name": "Bernd Grobauer",
+        "type": "Agent",
+        "value": "Bernd Grobauer"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "alexander.pretschner@tum.de",
+        "given_name": "Alexander",
+        "last_name": "Pretschner",
+        "name": "Alexander Pretschner",
+        "type": "Agent",
+        "value": "Alexander Pretschner"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/AUTHORS",
+      "technique": "file_exploration"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "St\u00f6ckle",
+            "given_name": "Patrick",
+            "name": "Patrick St\u00f6ckle",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0003-0193-5871"
+          },
+          {
+            "family_name": "Grobauer",
+            "given_name": "Bernd",
+            "name": "Bernd Grobauer",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Pretschner",
+            "given_name": "Alexander",
+            "name": "Alexander Pretschner",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-5573-1201"
+          }
+        ],
+        "datePublished": "2019",
+        "doi": "10.1145/3324884.3416540",
+        "format": "cff",
+        "title": "DISA Windows Server 2019 STIG Evaluation",
+        "type": "File_dump",
+        "url": "https://doi.org/10.1145/3324884.3416540",
+        "value": "cff-version: 1.2.0\ntitle: >-\n  DISA Windows Server 2019 STIG Evaluation\nmessage: >-\n  If you use this dataset, please cite it using the\n  metadata from this file.\ntype: dataset\nauthors:\n- given-names: Patrick\n  family-names: St\u00f6ckle\n  email: patrick.stoeckle@tum.de\n  affiliation: Technical University of Munich\n  orcid: 'https://orcid.org/0000-0003-0193-5871'\n  city: Munich\n  country: DE\n  website: https://www.in.tum.de/en/i04/stoeckle/\n- given-names: Bernd\n  family-names: Grobauer\n  email: bernd.grobauer@siemens.com\n  affiliation: Siemens AG\n  country: DE\n- given-names: Alexander\n  family-names: Pretschner\n  email: alexander.pretschner@tum.de\n  affiliation: Technical University of Munich\n  orcid: 'https://orcid.org/0000-0002-5573-1201'\n  city: Munich\n  country: DE\n  website: https://www.in.tum.de/en/i04/people/alexander-pretschner/\nrepository-code: 'https://github.com/tum-i4/disa-windows-server-2016'\nkeywords:\n  - Configuration management\n  - Security\npreferred-citation:\n  title: >-\n    Automated Implementation of Windows-related\n    Security-Configuration Guides\n  year: 2020\n  isbn: \"9781450367684\"\n  publisher: \n    name: Association for Computing Machinery\n    country: US\n    region: NY\n    city: New York \n  url: 'https://doi.org/10.1145/3324884.3416540'\n  doi: '10.1145/3324884.3416540'\n  pages: 13\n  start: 598\n  end: 610\n  location:\n    name: Virtual Event\n    country: AU\n  conference:\n    name: \"ASE '20\"\n  collection-type: proceedings\n  collection-title: 'Proceedings of the 35th IEEE/ACM International Conference on Automated Software Engineering'\n  authors:\n  - given-names: Patrick\n    family-names: St\u00f6ckle\n    email: patrick.stoeckle@tum.de\n    affiliation: Technical University of Munich\n    orcid: 'https://orcid.org/0000-0003-0193-5871'\n    city: Munich\n    country: DE\n    website: https://www.in.tum.de/en/i04/stoeckle/\n  - given-names: Bernd\n    family-names: Grobauer\n    email: bernd.grobauer@siemens.com\n    affiliation: Siemens AG\n    country: DE\n  - given-names: Alexander\n    family-names: Pretschner\n    email: alexander.pretschner@tum.de\n    affiliation: Technical University of Munich\n    orcid: 'https://orcid.org/0000-0002-5573-1201'\n    city: Munich\n    country: DE\n    website: https://www.in.tum.de/en/i04/people/alexander-pretschner/\n  type: conference-paper\n"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/tum-i4/disa-windows-server-2019"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/tum-i22/disa-windows-server-2019.git"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-08-10T13:41:31Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2020-08-10"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2020-08-11"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-07-19T09:46:11Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This repository is part of the paper Automated Implementation of Windows-related Security-Configuration Guides presented at the 35th IEEE/ACM International Conference on Automated Software Engineering."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This repository contains the DISA Windows Server 2019 STIG benchmark. It is represented in a Markdown/YAML-based syntax. We enriched the rules with important information to implement the benchmark automatically. The result can be either examined in the files or in an XLSX table."
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9024624705865465,
+      "result": {
+        "original_header": "DISA Windows Server 2019 STIG Evaluation",
+        "type": "Text_excerpt",
+        "value": "This repository is part of the paper *Automated Implementation of Windows-related Security-Configuration Guides* presented at the 35th IEEE/ACM International Conference on Automated Software Engineering.\nWe conducted all the steps described in our article additionally on the [DISA Windows Server 2019 STIG benchmark](https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_MS_Windows_Server_2019_V2R2_STIG_SCAP_1-2_Benchmark.zip) to demonstrate that our approach is feasible on recent security-configuration guides. \nThe benchmark itself is property of the DISA but [may be distributed or copied](https://public.cyber.mil/privacy-security/).\nThe rest of this repository is under GPL-3.0. \n"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/tum-i4/disa-windows-server-2019/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/tum-i4/disa-windows-server-2019/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "tum-i4/disa-windows-server-2019"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DISA Windows Server 2019 STIG Evaluation"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/tum-i4/disa-windows-server-2019/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/tum-i22/disa-windows-server-2019/issues"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "configuration-management, scap, scapolite, security"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Configuration Management",
+          "Security"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0+",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0+",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0+"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "disa-windows-server-2019"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DISA Windows Server 2019 STIG Evaluation"
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "tum-i4"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Markdown",
+        "type": "Programming_language",
+        "value": "Markdown",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "YAML",
+        "type": "Programming_language",
+        "value": "YAML",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/tum-i4/disa-windows-server-2019/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:13:05",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "non-software"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ]
+}

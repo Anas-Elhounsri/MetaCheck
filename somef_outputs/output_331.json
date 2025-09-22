@@ -1,0 +1,1684 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "File: Acknowledgements.txt\n\nTHIS WORK IS FUNDED IN PART BY:\n\n1.  The United States Department of Defense under Contract No. FA8702-15-D-0002\n    with Carnegie Mellon University for the operation of the Software\n    Engineering Institute, a federally funded research and development center.\n2.  The United States Department of Defense under Contract No. FA8650-18-2-7835\n    and HR0011-18-3-0007\n3.  NVIDIA, Intel, MIT Lincoln Laboratory, MathWorks, IBM, and Julia Computing.\n4.  The National Science Foundation (1514406, OAC-1740333, CCF-1629657).\n5.  The United States Department of Energy, Office of Science, ASCR Contract\n    No. DE-AC02-05CH11231.\n\n\nTHIS WORK BUILDS UPON THE FOLLOWING PRIOR WORKS:\n1.  SuiteSparse:GraphBLAS, \n    (http://faculty.cse.tamu.edu/davis/GraphBLAS.html) \n    Copyright 2017-2023  Timothy A. Davis (Author), AldenMath.com.\n    By Tim Davis, Texas A&M University. Note that while SuiteSparse:GraphBLAS\n    is itself under the Apache 2 license, any contributions derived from\n    SuiteSparse:GraphBLAS and incorporated by the Author into LAGraph are\n    contributed under the LAGraph license.\n2.  GraphBLAS Template Library (GBTL). Version 1.0.0\n    (https://github.com/cmu-sei/gbtl/blob/1.0.0)\n    Copyright 2015 Carnegie Mellon University and The Trustees of Indiana.\n    DM-0002659\n3.  GraphBLAS Template Library (GBTL). Version 3.0 (and prior versions)\n    (https://github.com/cmu-sei/gbtl/blob/3.0.0)\n    Copyright 2017-2020 Carnegie Mellon University, Battelle Memorial\n    Institute, and Authors. DM17-0037, DM18-0559, DM20-0442\n4.  Combinatorial BLAS, \n    (https://people.eecs.berkeley.edu/~aydin/CombBLAS/) \n    Copyright 2011-2018  The Regents of the University of California,\n    through Lawrence Berkeley National Laboratory (subject to receipt of any\n    required approvals from the U.S. Dept. of Energy) and University of\n    California, Santa Barbara. \n5.  GraphBLAST,\n    (https://github.com/gunrock/graphblast)\n    Copyright 2015-2019  The Regents of the University of California.\n\nLAGraph depends upon the following 3rd party libraries:\n\n    * json.h:  a simple JSON parser by Neil Henning,\n        ( https://github.com/sheredom/json.h ). Includes its own test suite.\n        required by experimental/utilities/LAGraph_SRead.c\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/LAGraph/Acknowledgments.txt",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgements",
+        "type": "Text_excerpt",
+        "value": "Markus M\u00fctzel contributed the most recent update of the SuiteSparse build\nsystem for all SuiteSparse packages, extensively porting it and modernizing it.\n\nI would also like to thank Fran\u00e7ois Bissey, Sebastien Villemot, Erik Welch, Jim\nKitchen, and Fabian Wein for their valuable feedback on the\nSuiteSparse build system and how it works with various Linux / Python distros\nand other package managers.  If you are a maintainer of a SuiteSparse packaging\nfor a Linux distro, conda-forge, R, spack, brew, vcpkg, etc, please feel free\nto contact me if there's anything I can do to make your life easier.\nI would also like to thank Raye Kimmerer for adding support for 32-bit\nrow/column indices in SPQR v4.2.0.\n\nSee also the various Acknowledgements within each package.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Texas A&M University",
+        "email": "scottk@tamu.edu",
+        "identifier": "https://orcid.org/0000-0001-8340-0824",
+        "type": "String",
+        "value": "Scott Kolodziej"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Texas A&M University",
+        "email": "davis@tamu.edu",
+        "identifier": "https://orcid.org/0000-0001-7614-6899",
+        "type": "String",
+        "value": "Timothy Davis"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Microsoft Corporation",
+        "identifier": "https://orcid.org/0000-0002-8689-5268",
+        "type": "String",
+        "value": "Nuri Yeralan"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Florida",
+        "email": "hager@ufl.edu",
+        "type": "String",
+        "value": "William Hager"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2019",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "\n@article{10.1145/3322125,\nauthor = {Davis, Timothy A.},\ntitle = {Algorithm 1000: SuiteSparse:GraphBLAS: Graph Algorithms in the Language of Sparse Linear Algebra},\nyear = {2019},\nissue_date = {December 2019},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {45},\nnumber = {4},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/3322125},\ndoi = {10.1145/3322125},\nabstract = {SuiteSparse:GraphBLAS is a full implementation of the GraphBLAS standard, which defines a set of sparse matrix operations on an extended algebra of semirings using an almost unlimited variety of operators and types. When applied to sparse adjacency matrices, these algebraic operations are equivalent to computations on graphs. GraphBLAS provides a powerful and expressive framework for creating graph algorithms based on the elegant mathematics of sparse matrix operations on a semiring. An overview of the GraphBLAS specification is given, followed by a description of the key features and performance of its implementation in the SuiteSparse:GraphBLAS package.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {dec},\narticleno = {44},\nnumpages = {25},\nkeywords = {GraphBLAS, Graph algorithms, sparse matrices}\n}\n\n@book{FA02,\n    author={T. A. Davis},\n    title={Direct Methods for Sparse Linear Systems},\n    publisher={SIAM},\n    address={Philadelphia, PA},\n    year={2006},\n    url={https://doi.org/10.1137/1.9780898718881},\n    doi={10.1137/1.9780898718881}}\n\n\n@article{10.1145/2049662.2049670,\nauthor = {Davis, Timothy A.},\ntitle = {Algorithm 915, SuiteSparseQR: Multifrontal Multithreaded Rank-Revealing Sparse QR Factorization},\nyear = {2011},\nissue_date = {November 2011},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {38},\nnumber = {1},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/2049662.2049670},\ndoi = {10.1145/2049662.2049670},\nabstract = {SuiteSparseQR is a sparse QR factorization package based on the multifrontal method. Within each frontal matrix, LAPACK and the multithreaded BLAS enable the method to obtain high performance on multicore architectures. Parallelism across different frontal matrices is handled with Intel's Threading Building Blocks library. The symbolic analysis and ordering phase pre-eliminates singletons by permuting the input matrix A into the form [R11 R12; 0 A22] where R11 is upper triangular with diagonal entries above a given tolerance. Next, the fill-reducing ordering, column elimination tree, and frontal matrix structures are found without requiring the formation of the pattern of ATA. Approximate rank-detection is performed within each frontal matrix using Heath's method. While Heath's method is not always exact, it has the advantage of not requiring column pivoting and thus does not interfere with the fill-reducing ordering. For sufficiently large problems, the resulting sparse QR factorization obtains a substantial fraction of the theoretical peak performance of a multicore computer.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {dec},\narticleno = {8},\nnumpages = {22},\nkeywords = {least-square problems, sparse matrices, QR factorization}\n}\n\n@article{10.1145/3065870,\nauthor = {Yeralan, Sencer Nuri and Davis, Timothy A. and Sid-Lakhdar, Wissam M. and Ranka, Sanjay},\ntitle = {Algorithm 980: Sparse QR Factorization on the GPU},\nyear = {2017},\nissue_date = {June 2018},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {44},\nnumber = {2},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/3065870},\ndoi = {10.1145/3065870},\nabstract = {Sparse matrix factorization involves a mix of regular and irregular computation, which is a particular challenge when trying to obtain high-performance on the highly parallel general-purpose computing cores available on graphics processing units (GPUs). We present a sparse multifrontal QR factorization method that meets this challenge and is significantly faster than a highly optimized method on a multicore CPU. Our method factorizes many frontal matrices in parallel and keeps all the data transmitted between frontal matrices on the GPU. A novel bucket scheduler algorithm extends the communication-avoiding QR factorization for dense matrices by exploiting more parallelism and by exploiting the staircase form present in the frontal matrices of a sparse multifrontal method.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {aug},\narticleno = {17},\nnumpages = {29},\nkeywords = {GPU, QR factorization, least-square problems, sparse matrices}\n}\n\n@article{10.1145/1391989.1391995,\nauthor = {Chen, Yanqing and Davis, Timothy A. and Hager, William W. and Rajamanickam, Sivasankaran},\ntitle = {Algorithm 887: CHOLMOD, Supernodal Sparse Cholesky Factorization and Update/Downdate},\nyear = {2008},\nissue_date = {October 2008},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {35},\nnumber = {3},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1391989.1391995},\ndoi = {10.1145/1391989.1391995},\nabstract = {CHOLMOD is a set of routines for factorizing sparse symmetric positive definite matrices of the form A or AAT, updating/downdating a sparse Cholesky factorization, solving linear systems, updating/downdating the solution to the triangular system Lx\u2009=\u2009b, and many other sparse matrix functions for both symmetric and unsymmetric matrices. Its supernodal Cholesky factorization relies on LAPACK and the Level-3 BLAS, and obtains a substantial fraction of the peak performance of the BLAS. Both real and complex matrices are supported. CHOLMOD is written in ANSI/ISO C, with both C and MATLABTM interfaces. It appears in MATLAB 7.2 as x\u2009=\u2009Ab when A is sparse symmetric positive definite, as well as in several other sparse matrix functions.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {oct},\narticleno = {22},\nnumpages = {14},\nkeywords = {sparse matrices, linear equations, Cholesky factorization}\n}\n\n@article{10.1145/1462173.1462176,\nauthor = {Davis, Timothy A. and Hager, William W.},\ntitle = {Dynamic Supernodes in Sparse Cholesky Update/Downdate and Triangular Solves},\nyear = {2009},\nissue_date = {February 2009},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {35},\nnumber = {4},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1462173.1462176},\ndoi = {10.1145/1462173.1462176},\nabstract = {The supernodal method for sparse Cholesky factorization represents the factor L as a set of supernodes, each consisting of a contiguous set of columns of L with identical nonzero pattern. A conventional supernode is stored as a dense submatrix. While this is suitable for sparse Cholesky factorization where the nonzero pattern of L does not change, it is not suitable for methods that modify a sparse Cholesky factorization after a low-rank change to A (an update/downdate, undefined = A \u00b1 WWT). Supernodes merge and split apart during an update/downdate. Dynamic supernodes are introduced which allow a sparse Cholesky update/downdate to obtain performance competitive with conventional supernodal methods. A dynamic supernodal solver is shown to exceed the performance of the conventional (BLAS-based) supernodal method for solving triangular systems. These methods are incorporated into CHOLMOD, a sparse Cholesky factorization and update/downdate package which forms the basis of x = Ab MATLAB when A is sparse and symmetric positive definite.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {feb},\narticleno = {27},\nnumpages = {23},\nkeywords = {sparse matrices, linear equations, Cholesky factorization}\n}\n\n\n@article{doi:10.1137/S089547980343641X,\nauthor = {Davis, Timothy A. and Hager, William W.},\ntitle = {Row Modifications of a Sparse Cholesky Factorization},\njournal = {SIAM Journal on Matrix Analysis and Applications},\nvolume = {26},\nnumber = {3},\npages = {621-639},\nyear = {2005},\ndoi = {10.1137/S089547980343641X},\nURL = {https://doi.org/10.1137/S089547980343641X },\neprint = { https://doi.org/10.1137/S089547980343641X } ,\n    abstract = { Given a sparse, symmetric positive definite matrix C and an associated sparse Cholesky factorization LDL\\$\\tr\\$, we develop sparse techniques for updating the factorization after a symmetric modification of a row and column of C. We show how the modification in the Cholesky factorization associated with this rank-2 modification of C can be computed efficiently using a sparse rank-1 technique developed in [T. A. Davis and W. W. Hager, SIAM J. Matrix Anal. Appl., 20 (1999), pp. 606--627]. We also determine how the solution of a linear system Lx = b changes after changing a row and column of C or after a rank-r change in C. }\n}\n\n\n@article{doi:10.1137/S0895479899357346,\nauthor = {Davis, Timothy A. and Hager, William W.},\ntitle = {Multiple-Rank Modifications of a Sparse Cholesky Factorization},\njournal = {SIAM Journal on Matrix Analysis and Applications},\nvolume = {22},\nnumber = {4},\npages = {997-1013},\nyear = {2001},\ndoi = {10.1137/S0895479899357346},\nURL = { https://doi.org/10.1137/S0895479899357346 },\neprint = { https://doi.org/10.1137/S0895479899357346 } ,\n    abstract = { Given a sparse symmetric positive definite matrix \\$\\mathbf{AA}\\tr\\$ and an associated sparse Cholesky factorization \\$\\mathbf{LDL}\\tr\\$ or \\$\\mathbf{LL}\\tr\\$, we develop sparse techniques for updating the factorization after either adding a collection of columns to A or deleting a collection of columns from A. Our techniques are based on an analysis and manipulation of the underlying graph structure, using the framework developed in an earlier paper on rank-1 modifications [T. A. Davis and W. W. Hager, SIAM J. Matrix Anal. Appl., 20 (1999), pp. 606--627]. Computationally, the multiple-rank update has better memory traffic and executes much faster than an equivalent series of rank-1 updates since the multiple-rank update makes one pass through L computing the new entries, while a series of rank-1 updates requires multiple passes through L. }\n}\n\n\n\n@article{doi:10.1137/S0895479897321076,\nauthor = {Davis, Timothy A. and Hager, William W.},\ntitle = {Modifying a Sparse Cholesky Factorization},\njournal = {SIAM Journal on Matrix Analysis and Applications},\nvolume = {20},\nnumber = {3},\npages = {606-627},\nyear = {1999},\ndoi = {10.1137/S0895479897321076},\nURL = { https://doi.org/10.1137/S0895479897321076 },\neprint = { https://doi.org/10.1137/S0895479897321076 } ,\n    abstract = { Given a sparse symmetric positive definite matrix \\${\\bf AA}^{\\sf T}\\$ and an associated sparse Cholesky factorization \\${\\bf LDL}^{\\sf T}\\$ or \\${\\bf LL}^{\\sf T}\\$, we develop sparse techniques for obtaining the new factorization associated with either adding a column to \\${\\bf A}\\$ or deleting a column from \\${\\bf A}\\$. Our techniques are based on an analysis and manipulation of the underlying graph structure and on ideas of Gill et al.\\ [ Math. Comp., 28 (1974), pp. 505--535] for modifying a dense Cholesky factorization. We show that our methods extend to the general case where an arbitrary sparse symmetric positive definite matrix is modified. Our methods are optimal in the sense that they take time proportional to the number of nonzero entries in \\${\\bf L}\\$ and \\${\\bf D}\\$ that change. }\n}\n\n\n@article{RENNICH2016140,\ntitle = {Accelerating sparse Cholesky factorization on GPUs},\njournal = {Parallel Computing},\nvolume = {59},\npages = {140-150},\nyear = {2016},\nnote = {Theory and Practice of Irregular Applications},\nissn = {0167-8191},\ndoi = {https://doi.org/10.1016/j.parco.2016.06.004},\nurl = {https://www.sciencedirect.com/science/article/pii/S016781911630059X},\nauthor = {Steven C. Rennich and Darko Stosic and Timothy A. Davis},\nkeywords = {Sparse, Cholesky, Factorization, GPU, Parallel},\nabstract = {Sparse factorization is a fundamental tool in scientific computing. As the major component of a sparse direct solver, it represents the dominant computational cost for many analyses. For factorizations which involve sufficient dense math, the substantial computational capability provided by GPUs (Graphics Processing Units) can help alleviate this cost. However, for many other cases, the prevalence of small/irregular dense math and the relatively slow communication between the host and device over the PCIe bus, make it challenging to significantly accelerate sparse factorization using the GPU. In this paper we describe a left-looking supernodal Cholesky factorization algorithm which permits improved utilization of the GPU when factoring sparse matrices. The central idea is to stream subtrees of the elimination tree through the GPU and perform the factorization of each subtree entirely on the GPU. This avoids the majority of the PCIe communication without the need for a complex task scheduler. Importantly, within these subtrees, many independent, small, dense operations are batched to minimize kernel launch overhead and many of these batched kernels are executed concurrently to maximize device utilization. Performance results for commonly studied matrices are presented along with suggested actions for further optimization.}\n}\n\n@article{10.1145/1024074.1024081,\nauthor = {Amestoy, Patrick R. and Davis, Timothy A. and Duff, Iain S.},\ntitle = {Algorithm 837: AMD, an Approximate Minimum Degree Ordering Algorithm},\nyear = {2004},\nissue_date = {September 2004},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {30},\nnumber = {3},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1024074.1024081},\ndoi = {10.1145/1024074.1024081},\nabstract = {AMD is a set of routines that implements the approximate minimum degree ordering algorithm to permute sparse matrices prior to numerical factorization. There are versions written in both C and Fortran 77. A MATLAB interface is included.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {sep},\npages = {381\u2013388},\nnumpages = {8},\nkeywords = {sparse matrices, Linear equations, ordering methods, minimum degree}\n}\n\n\n\n\n\n\n\n@article{doi:10.1137/S0895479894278952,\nauthor = {Amestoy, Patrick R. and Davis, Timothy A. and Duff, Iain S.},\ntitle = {An Approximate Minimum Degree Ordering Algorithm},\njournal = {SIAM Journal on Matrix Analysis and Applications},\nvolume = {17},\nnumber = {4},\npages = {886-905},\nyear = {1996},\ndoi = {10.1137/S0895479894278952},\nURL = { https://doi.org/10.1137/S0895479894278952 },\neprint = { https://doi.org/10.1137/S0895479894278952 } ,\n    abstract = { Abstract. An approximate minimum degree (AMD), ordering algorithm for preordering a symmetric sparse matrix prior to numerical factorization is presented. We use techniques based on the quotient graph for matrix factorization that allow us to obtain computationally cheap bounds for the minimum degree. We show that these bounds are often equal to the actual degree. The resulting algorithm is typically much faster than previous minimum degree ordering algorithms and produces results that are comparable in quality with the best orderings from other minimum degree algorithms. }\n}\n\n\n@article{10.1145/1024074.1024080,\nauthor = {Davis, Timothy A. and Gilbert, John R. and Larimore, Stefan I. and Ng, Esmond G.},\ntitle = {Algorithm 836: COLAMD, a Column Approximate Minimum Degree Ordering Algorithm},\nyear = {2004},\nissue_date = {September 2004},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {30},\nnumber = {3},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1024074.1024080},\ndoi = {10.1145/1024074.1024080},\nabstract = {Two codes are discussed, COLAMD and SYMAMD, that compute approximate minimum degree orderings for sparse matrices in two contexts: (1) sparse partial pivoting, which requires a sparsity preserving column pre-ordering prior to numerical factorization, and (2) sparse Cholesky factorization, which requires a symmetric permutation of both the rows and columns of the matrix being factorized. These orderings are computed by COLAMD and SYMAMD, respectively. The ordering from COLAMD is also suitable for sparse QR factorization, and the factorization of matrices of the form ATA and AAT, such as those that arise in least-squares problems and interior point methods for linear programming problems. The two routines are available both in MATLAB and C-callable forms. They appear as built-in routines in MATLAB Version 6.0.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {sep},\npages = {377\u2013380},\nnumpages = {4},\nkeywords = {sparse nonsymmetric matrices, ordering methods, Linear equations}\n}\n\n@article{10.1145/1024074.1024079,\nauthor = {Davis, Timothy A. and Gilbert, John R. and Larimore, Stefan I. and Ng, Esmond G.},\ntitle = {A Column Approximate Minimum Degree Ordering Algorithm},\nyear = {2004},\nissue_date = {September 2004},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {30},\nnumber = {3},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1024074.1024079},\ndoi = {10.1145/1024074.1024079},\nabstract = {Sparse Gaussian elimination with partial pivoting computes the factorization PAQ = LU of a sparse matrix A, where the row ordering P is selected during factorization using standard partial pivoting with row interchanges. The goal is to select a column preordering, Q, based solely on the nonzero pattern of A, that limits the worst-case number of nonzeros in the factorization. The fill-in also depends on P, but Q is selected to reduce an upper bound on the fill-in for any subsequent choice of P. The choice of Q can have a dramatic impact on the number of nonzeros in L and U. One scheme for determining a good column ordering for A is to compute a symmetric ordering that reduces fill-in in the Cholesky factorization of ATA. A conventional minimum degree ordering algorithm would require the sparsity structure of ATA to be computed, which can be expensive both in terms of space and time since ATA may be much denser than A. An alternative is to compute Q directly from the sparsity structure of A; this strategy is used by MATLAB's COLMMD preordering algorithm. A new ordering algorithm, COLAMD, is presented. It is based on the same strategy but uses a better ordering heuristic. COLAMD is faster and computes better orderings, with fewer nonzeros in the factors of the matrix.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {sep},\npages = {353\u2013376},\nnumpages = {24},\nkeywords = {linear equations, Sparse nonsymmetric matrices, ordering methods}\n}\n\n@article{10.1145/992200.992206,\nauthor = {Davis, Timothy A.},\ntitle = {Algorithm 832: UMFPACK V4.3---an Unsymmetric-Pattern Multifrontal Method},\nyear = {2004},\nissue_date = {June 2004},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {30},\nnumber = {2},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/992200.992206},\ndoi = {10.1145/992200.992206},\nabstract = {An ANSI C code for sparse LU factorization is presented that combines a column pre-ordering strategy with a right-looking unsymmetric-pattern multifrontal numerical factorization. The pre-ordering and symbolic analysis phase computes an upper bound on fill-in, work, and memory usage during the subsequent numerical factorization. User-callable routines are provided for ordering and analyzing a sparse matrix, computing the numerical factorization, solving a system with the LU factors, transposing and permuting a sparse matrix, and converting between sparse matrix representations. The simple user interface shields the user from the details of the complex sparse factorization data structures by returning simple handles to opaque objects. Additional user-callable routines are provided for printing and extracting the contents of these opaque objects. An even simpler way to use the package is through its MATLAB interface. UMFPACK is incorporated as a built-in operator in MATLAB 6.5 as x = Ab when A is sparse and unsymmetric.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {jun},\npages = {196\u2013199},\nnumpages = {4},\nkeywords = {ordering methods, multifrontal method, sparse nonsymmetric matrices, linear equations}\n}\n\n\n@article{10.1145/992200.992205,\nauthor = {Davis, Timothy A.},\ntitle = {A Column Pre-Ordering Strategy for the Unsymmetric-Pattern Multifrontal Method},\nyear = {2004},\nissue_date = {June 2004},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {30},\nnumber = {2},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/992200.992205},\ndoi = {10.1145/992200.992205},\nabstract = {A new method for sparse LU factorization is presented that combines a column pre-ordering strategy with a right-looking unsymmetric-pattern multifrontal numerical factorization. The column ordering is selected to give a good a priori upper bound on fill-in and then refined during numerical factorization (while preserving the bound). Pivot rows are selected to maintain numerical stability and to preserve sparsity. The method analyzes the matrix and automatically selects one of three pre-ordering and pivoting strategies. The number of nonzeros in the LU factors computed by the method is typically less than or equal to those found by a wide range of unsymmetric sparse LU factorization methods, including left-looking methods and prior multifrontal methods.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {jun},\npages = {165\u2013195},\nnumpages = {31},\nkeywords = {linear equations, multifrontal method, sparse nonsymmetric matrices, ordering methods}\n}\n\n@article{10.1145/305658.287640,\nauthor = {Davis, Timothy A. and Duff, Iain S.},\ntitle = {A Combined Unifrontal/Multifrontal Method for Unsymmetric Sparse Matrices},\nyear = {1999},\nissue_date = {March 1999},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {25},\nnumber = {1},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/305658.287640},\ndoi = {10.1145/305658.287640},\nabstract = {We discuss the organization of frontal matrices in multifrontal methods for the solution of large sparse sets of unsymmetric linear equations. In the multifrontal method, work on a frontal matrix can be suspended, the frontal matrix can be stored for later reuse, and a new frontal matrix can be generated. There are thus several frontal matrices stored during the factorization, and one or more of these are assembled (summed) when creating a new frontal matrix. Although this means that arbitrary sparsity patterns can be handled efficiently, extra work is required to sum the frontal matrices together and can be costly because indirect addressing is requred. The (uni)frontal method avoids this extra work by factorizing the matrix with a single frontal matrix. Rows and columns are added  to the frontal matrix, and pivot rows and columns are removed. Data movement is simpler, but higher fill-in can result if the matrix cannot be permuted into a variable-band form with small profile. We consider a combined unifrontal/multifrontal algorithm to enable general fill-in reduction orderings to be applied without the data movement of previous multifrontal approaches.  We discuss this technique in the context of a code designed for the solution of sparse systems with unsymmetric pattern.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {mar},\npages = {1\u201320},\nnumpages = {20},\nkeywords = {linear equations, frontal methods, sparse unsymmetric matrices, multifrontal methods}\n}\n\n\n\n\n\n\n\n\n@article{doi:10.1137/S0895479894246905,\nauthor = {Davis, Timothy A. and Duff, Iain S.},\ntitle = {An Unsymmetric-Pattern Multifrontal Method for Sparse LU Factorization},\njournal = {SIAM Journal on Matrix Analysis and Applications},\nvolume = {18},\nnumber = {1},\npages = {140-158},\nyear = {1997},\ndoi = {10.1137/S0895479894246905},\nURL = { https://doi.org/10.1137/S0895479894246905 },\neprint = { https://doi.org/10.1137/S0895479894246905 } ,\n    abstract = { Sparse matrix factorization algorithms for general problems are typically characterized by irregular memory access patterns that limit their performance on parallel-vector supercomputers. For symmetric problems, methods such as the multifrontal method avoid indirect addressing in the innermost loops by using dense matrix kernels. However, no efficient LU factorization algorithm based primarily on dense matrix kernels exists for matrices whose pattern is very unsymmetric. We address this deficiency and present a new unsymmetric-pattern multifrontal method based on dense matrix kernels. As in the classical multifrontal method, advantage is taken of repetitive structure in the matrix by factorizing more than one pivot in each frontal matrix, thus enabling the use of Level 2 and Level 3 BLAS. The performance is compared with the classical multifrontal method and other unsymmetric solvers on a CRAY C-98. }\n}\n\n\n@article{10.1145/2491491.2491498,\nauthor = {Davis, Timothy A.},\ntitle = {Algorithm 930: FACTORIZE: An Object-Oriented Linear System Solver for MATLAB},\nyear = {2013},\nissue_date = {July 2013},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {39},\nnumber = {4},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/2491491.2491498},\ndoi = {10.1145/2491491.2491498},\nabstract = {The MATLAB\u2122 backslash (x=Ab) is an elegant and powerful interface to a suite of high-performance factorization methods for the direct solution of the linear system Ax = b and the least-squares problem minx \u2016b - Ax\u2016. It is a meta-algorithm that selects the best factorization method for a particular matrix, whether sparse or dense. However, the simplicity and elegance of its single-character interface prohibits the reuse of its factorization for subsequent systems. Requiring MATLAB users to find the best factorization method on their own can lead to suboptimal choices; even MATLAB experts can make the wrong choice. Furthermore, naive MATLAB users have a tendency to translate mathematical expressions from linear algebra directly into MATLAB, so that x = A-1b becomes the inferior yet all-to-prevalent x=inv(A)*b. To address these issues, an object-oriented FACTORIZE method is presented. Via simple-to-use operator overloading, solving two linear systems can be written as F=factorize(A); x=Fb; y=Fc, where A is factorized only once. The selection of the best factorization method (LU, Cholesky, LDLT, QR, or a complete orthogonal decomposition for rank-deficient matrices) is hidden from the user. The mathematical expression x = A-1b directly translates into the MATLAB expression x=inverse(A)*b, which does not compute the inverse at all, but does the right thing by factorizing A and solving the corresponding triangular systems.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {jul},\narticleno = {28},\nnumpages = {18},\nkeywords = {object-oriented methods, least-square problems, matrix factorization, Linear systems}\n}\n\n\n@article{10.1145/1824801.1824814,\nauthor = {Davis, Timothy A. and Palamadai Natarajan, Ekanathan},\ntitle = {Algorithm 907: KLU, A Direct Sparse Solver for Circuit Simulation Problems},\nyear = {2010},\nissue_date = {September 2010},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {37},\nnumber = {3},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1824801.1824814},\ndoi = {10.1145/1824801.1824814},\nabstract = {KLU is a software package for solving sparse unsymmetric linear systems of equations that arise in circuit simulation applications. It relies on a permutation to Block Triangular Form (BTF), several methods for finding a fill-reducing ordering (variants of approximate minimum degree and nested dissection), and Gilbert/Peierls\u2019 sparse left-looking LU factorization algorithm to factorize each block. The package is written in C and includes a MATLAB interface. Performance results comparing KLU with SuperLU, Sparse 1.3, and UMFPACK on circuit simulation matrices are presented. KLU is the default sparse direct solver in the XyceTMcircuit simulation package developed by Sandia National Laboratories.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {sep},\narticleno = {36},\nnumpages = {17},\nkeywords = {LU factorization, circuit simulation, sparse matrices}\n}\n\n@article{10.1145/1114268.1114277,\nauthor = {Davis, Timothy A.},\ntitle = {Algorithm 849: A Concise Sparse Cholesky Factorization Package},\nyear = {2005},\nissue_date = {December 2005},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {31},\nnumber = {4},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1114268.1114277},\ndoi = {10.1145/1114268.1114277},\nabstract = {The LDL software package is a set of short, concise routines for factorizing symmetric positive-definite sparse matrices, with some applicability to symmetric indefinite matrices. Its primary purpose is to illustrate much of the basic theory of sparse matrix algorithms in as concise a code as possible, including an elegant method of sparse symmetric factorization that computes the factorization row-by-row but stores it column-by-column. The entire symbolic and numeric factorization consists of less than 50 executable lines of code. The package is written in C, and includes a MATLAB interface.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {dec},\npages = {587\u2013591},\nnumpages = {5},\nkeywords = {Cholesky factorization, linear equations, sparse matrices}\n}\n\n@article{10.1145/2049662.2049663,\nauthor = {Davis, Timothy A. and Hu, Yifan},\ntitle = {The University of Florida Sparse Matrix Collection},\nyear = {2011},\nissue_date = {November 2011},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {38},\nnumber = {1},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/2049662.2049663},\ndoi = {10.1145/2049662.2049663},\nabstract = {We describe the University of Florida Sparse Matrix Collection, a large and actively growing set of sparse matrices that arise in real applications. The Collection is widely used by the numerical linear algebra community for the development and performance evaluation of sparse matrix algorithms. It allows for robust and repeatable experiments: robust because performance results with artificially generated matrices can be misleading, and repeatable because matrices are curated and made publicly available in many formats. Its matrices cover a wide spectrum of domains, include those arising from problems with underlying 2D or 3D geometry (as structural engineering, computational fluid dynamics, model reduction, electromagnetics, semiconductor devices, thermodynamics, materials, acoustics, computer graphics/vision, robotics/kinematics, and other discretizations) and those that typically do not have such geometry (optimization, circuit simulation, economic and financial modeling, theoretical and quantum chemistry, chemical process simulation, mathematics and statistics, power networks, and other networks and graphs). We provide software for accessing and managing the Collection, from MATLAB\u2122, Mathematica\u2122, Fortran, and C, as well as an online search capability. Graph visualization of the matrices is provided, and a new multilevel coarsening scheme is proposed to facilitate this task.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {dec},\narticleno = {1},\nnumpages = {25},\nkeywords = {sparse matrices, Graph drawing, performance evaluation, multilevel algorithms}\n}\n\n\n@article{Kolodziej2019,\n  doi = {10.21105/joss.01244},\n  url = {https://doi.org/10.21105/joss.01244},\n  year = {2019},\n  publisher = {The Open Journal},\n  volume = {4},\n  number = {35},\n  pages = {1244},\n  author = {Scott P. Kolodziej and Mohsen Aznaveh and Matthew Bullock and Jarrett David and Timothy A. Davis and Matthew Henderson and Yifan Hu and Read Sandstrom},\n  title = {The SuiteSparse Matrix Collection Website Interface},\n  journal = {Journal of Open Source Software}\n}\n\n\n@article{10.1145/2513109.2513116,\nauthor = {Foster, Leslie V. and Davis, Timothy A.},\ntitle = {Algorithm 933: Reliable Calculation of Numerical Rank, Null Space Bases, Pseudoinverse Solutions, and Basic Solutions Using SuitesparseQR},\nyear = {2013},\nissue_date = {September 2013},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {40},\nnumber = {1},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/2513109.2513116},\ndoi = {10.1145/2513109.2513116},\nabstract = {The SPQR_RANK package contains routines that calculate the numerical rank of large, sparse, numerically rank-deficient matrices. The routines can also calculate orthonormal bases for numerical null spaces, approximate pseudoinverse solutions to least squares problems involving rank-deficient matrices, and basic solutions to these problems. The algorithms are based on SPQR from SuiteSparseQR (ACM Transactions on Mathematical Software 38, Article 8, 2011). SPQR is a high-performance routine for forming QR factorizations of large, sparse matrices. It returns an estimate for the numerical rank that is usually, but not always, correct. The new routines improve the accuracy of the numerical rank calculated by SPQR and reliably determine the numerical rank in the sense that, based on extensive testing with matrices from applications, the numerical rank is almost always accurately determined when our methods report that the numerical rank should be correct. Reliable determination of numerical rank is critical to the other calculations in the package. The routines work well for matrices with either small or large null space dimensions.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {oct},\narticleno = {7},\nnumpages = {23},\nkeywords = {QR factorization, pseudoinverse, Numerical rank, null space, rank revealing, sparse matrices}\n}\n\n@article{10.1145/3337792,\nauthor = {Davis, Timothy A. and Hager, William W. and Kolodziej, Scott P. and Yeralan, S. Nuri},\ntitle = {Algorithm 1003: Mongoose, a Graph Coarsening and Partitioning Library},\nyear = {2020},\nissue_date = {March 2020},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {46},\nnumber = {1},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/3337792},\ndoi = {10.1145/3337792},\nabstract = {Partitioning graphs is a common and useful operation in many areas, from parallel computing to VLSI design to sparse matrix algorithms. In this article, we introduce Mongoose, a multilevel hybrid graph partitioning algorithm and library. Building on previous work in multilevel partitioning frameworks and combinatoric approaches, we introduce novel stall-reducing and stall-free coarsening strategies, as well as an efficient hybrid algorithm leveraging (1) traditional combinatoric methods and (2) continuous quadratic programming formulations. We demonstrate how this new hybrid algorithm outperforms either strategy in isolation, and we also compare Mongoose to METIS and demonstrate its effectiveness on large and social networking (power law) graphs.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {mar},\narticleno = {7},\nnumpages = {18},\nkeywords = {vertex matching, Graph partitioning, graph coarsening}\n}\n\n\n@article{10.1145/3519024,\nauthor = {Lourenco, Christopher and Chen, Jinhao and Moreno-Centeno, Erick and Davis, Timothy A.},\ntitle = {Algorithm 1021: SPEX Left LU, Exactly Solving Sparse Linear Systems via a Sparse Left-Looking Integer-Preserving LU Factorization},\nyear = {2022},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/3519024},\ndoi = {10.1145/3519024},\nabstract = {SPEX Left LU is a software package for exactly solving unsymmetric sparse linear systems. As a component of the sparse exact (SPEX) software package, SPEX Left LU can be applied to any input matrix, A, whose entries are integral, rational, or decimal, and provides a solution to the system Ax = b which is either exact or accurate to user-specified precision. SPEX Left LU preorders the matrix A with a user-specified fill-reducing ordering and computes a left-looking LU factorization with the special property that each operation used to compute the L and U matrices is integral. Notable additional applications of this package include benchmarking the stability and accuracy of state-of-the-art linear solvers, and determining whether singular-to-double-precision matrices are indeed singular. Computationally, this paper evaluates the impact of several novel pivoting schemes in exact arithmetic, benchmarks the exact iterative solvers within Linbox, and benchmarks the accuracy of MATLAB sparse backslash. Most importantly, it is shown that SPEX Left LU outperforms the exact iterative solvers in run time on easy instances and in stability as the iterative solver fails on a sizeable subset of the tested (both easy and hard) instances. The SPEX Left LU package is written in ANSI C, comes with a MATLAB interface, and is distributed via GitHub, as a component of the SPEX software package, and as a component of SuiteSparse.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {jun},\nkeywords = {exact matrix factorization, sparse linear systems, sparse matrix algorithms, exactly solving linear systems, roundoff errors}\n}\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/CITATION.bib",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to cite the SuiteSparse meta-package and its component packages:",
+        "type": "Text_excerpt",
+        "value": "SuiteSparse is a meta-package of many packages, each with their own published\npapers.  To cite the whole collection, use the URLs:\n\n* https://github.com/DrTimothyAldenDavis/SuiteSparse\n* http://suitesparse.com (which is a forwarding URL\n        to https://people.engr.tamu.edu/davis/suitesparse.html)\n\nPlease also cite the specific papers for the packages you use.  This is a long\nlist; if you want a shorter list, just cite the most recent \"Algorithm XXX:\"\npapers in ACM TOMS, for each package.\n\n* For the MATLAB x=A\\b, see below for AMD, COLAMD, CHOLMOD, UMFPACK,\n    and SuiteSparseQR (SPQR).\n\n* for GraphBLAS, and C=AB in MATLAB (sparse-times-sparse):\n\n  T. A. Davis. Algorithm 1037: SuiteSparse:GraphBLAS: Parallel Graph Algorithms\n  in the Language of Sparse Linear Algebra. ACM Trans. Math.  Softw. 49, 3,\n  Article 28 (September 2023), 30 pages.  https://doi.org/10.1145/3577195\n\n  T. Davis, Algorithm 1000: SuiteSparse:GraphBLAS: graph algorithms in the\n  language of sparse linear algebra, ACM Trans on Mathematical Software, vol\n  45, no 4, Dec. 2019, Article No 44.  https://doi.org/10.1145/3322125.\n\n* for LAGraph:\n\n  G. Sz\u00e1rnyas et al., \"LAGraph: Linear Algebra, Network Analysis Libraries, and\n  the Study of Graph Algorithms,\" 2021 IEEE International Parallel and\n  Distributed Processing Symposium Workshops (IPDPSW), Portland, OR, USA, 2021,\n  pp. 243-252. https://doi.org/10.1109/IPDPSW52791.2021.00046.\n\n* for CSparse/CXSParse:\n\n  T. A. Davis, Direct Methods for Sparse Linear Systems, SIAM Series on the\n  Fundamentals of Algorithms, SIAM, Philadelphia, PA, 2006.\n  https://doi.org/10.1137/1.9780898718881\n\n* for SuiteSparseQR (SPQR): (also cite AMD, COLAMD):\n\n  T. A. Davis, Algorithm 915: SuiteSparseQR: Multifrontal multithreaded\n  rank-revealing sparse QR factorization, ACM Trans. on Mathematical Software,\n  38(1), 2011, pp. 8:1--8:22.  https://doi.org/10.1145/2049662.2049670\n\n* for SuiteSparseQR/GPU:\n\n  Sencer Nuri Yeralan, T. A. Davis, Wissam M. Sid-Lakhdar, and Sanjay Ranka.\n  2017. Algorithm 980: Sparse QR Factorization on the GPU.  ACM Trans. Math.\n  Softw. 44, 2, Article 17 (June 2018), 29 pages.\n  https://doi.org/10.1145/3065870\n\n* for CHOLMOD: (also cite AMD, COLAMD):\n\n  Y. Chen, T. A. Davis, W. W. Hager, and S. Rajamanickam, Algorithm 887:\n  CHOLMOD, supernodal sparse Cholesky factorization and update/downdate, ACM\n  Trans. on Mathematical Software, 35(3), 2008, pp. 22:1--22:14.\n  https://dl.acm.org/doi/abs/10.1145/1391989.1391995\n\n  T. A. Davis and W. W. Hager, Dynamic supernodes in sparse Cholesky\n  update/downdate and triangular solves, ACM Trans. on Mathematical Software,\n  35(4), 2009, pp. 27:1--27:23.  https://doi.org/10.1145/1462173.1462176\n\n* for CHOLMOD/Modify Module: (also cite AMD, COLAMD):\n\n  T. A. Davis and William W. Hager, Row Modifications of a Sparse Cholesky\n  Factorization SIAM Journal on Matrix Analysis and Applications 2005 26:3,\n  621-639.  https://doi.org/10.1137/S089547980343641X\n\n  T. A. Davis and William W. Hager, Multiple-Rank Modifications of a Sparse\n  Cholesky Factorization SIAM Journal on Matrix Analysis and Applications 2001\n  22:4, 997-1013.  https://doi.org/10.1137/S0895479899357346\n\n  T. A. Davis and William W. Hager, Modifying a Sparse Cholesky Factorization,\n  SIAM Journal on Matrix Analysis and Applications 1999 20:3, 606-627.\n  https://doi.org/10.1137/S0895479897321076\n\n* for CHOLMOD/GPU Modules:\n\n  Steven C. Rennich, Darko Stosic, Timothy A. Davis, Accelerating sparse\n  Cholesky factorization on GPUs, Parallel Computing, Vol 59, 2016, pp 140-150.\n  https://doi.org/10.1016/j.parco.2016.06.004\n\n* for AMD and CAMD:\n\n  P. Amestoy, T. A. Davis, and I. S. Duff, Algorithm 837: An approximate\n  minimum degree ordering algorithm, ACM Trans. on Mathematical Software,\n  30(3), 2004, pp. 381--388.\n  https://dl.acm.org/doi/abs/10.1145/1024074.1024081\n\n  P. Amestoy, T. A. Davis, and I. S. Duff, An approximate minimum degree\n  ordering algorithm, SIAM J. Matrix Analysis and Applications, 17(4), 1996,\n  pp. 886--905.  https://doi.org/10.1137/S0895479894278952\n\n* for COLAMD, SYMAMD, CCOLAMD, and CSYMAMD:\n\n  T. A. Davis, J. R. Gilbert, S. Larimore, E. Ng, Algorithm 836:  COLAMD, an\n  approximate column minimum degree ordering algorithm, ACM Trans. on\n  Mathematical Software, 30(3), 2004, pp. 377--380.\n  https://doi.org/10.1145/1024074.1024080\n\n  T. A. Davis, J. R. Gilbert, S. Larimore, E. Ng, A column approximate minimum\n  degree ordering algorithm, ACM Trans. on Mathematical Software, 30(3), 2004,\n  pp. 353--376.  https://doi.org/10.1145/1024074.1024079\n\n* for UMFPACK: (also cite AMD and COLAMD):\n\n  T. A. Davis, Algorithm 832:  UMFPACK - an unsymmetric-pattern multifrontal\n  method with a column pre-ordering strategy, ACM Trans. on Mathematical\n  Software, 30(2), 2004, pp. 196--199.\n  https://dl.acm.org/doi/abs/10.1145/992200.992206\n\n  T. A. Davis, A column pre-ordering strategy for the unsymmetric-pattern\n  multifrontal method, ACM Trans. on Mathematical Software, 30(2), 2004, pp.\n  165--195.  https://dl.acm.org/doi/abs/10.1145/992200.992205\n\n  T. A. Davis and I. S. Duff, A combined unifrontal/multifrontal method for\n  unsymmetric sparse matrices, ACM Trans. on Mathematical Software, 25(1),\n  1999, pp. 1--19.  https://doi.org/10.1145/305658.287640\n\n  T. A. Davis and I. S. Duff, An unsymmetric-pattern multifrontal method for\n  sparse LU factorization, SIAM J. Matrix Analysis and Computations, 18(1),\n  1997, pp. 140--158.  https://doi.org/10.1137/S0895479894246905\n\n* for the FACTORIZE m-file:\n\n  T. A. Davis, Algorithm 930: FACTORIZE, an object-oriented linear system\n  solver for MATLAB, ACM Trans. on Mathematical Software, 39(4), 2013, pp.\n  28:1-28:18.  https://doi.org/10.1145/2491491.2491498\n\n* for KLU and BTF (also cite AMD and COLAMD):\n\n  T. A. Davis and Ekanathan Palamadai Natarajan. 2010. Algorithm 907: KLU, A\n  Direct Sparse Solver for Circuit Simulation Problems. ACM Trans.  Math.\n  Softw. 37, 3, Article 36 (September 2010), 17 pages.\n  https://dl.acm.org/doi/abs/10.1145/1824801.1824814\n\n* for LDL:\n\n  T. A. Davis. Algorithm 849: A concise sparse Cholesky factorization package.\n  ACM Trans. Math. Softw. 31, 4 (December 2005), 587\u2013591.\n  https://doi.org/10.1145/1114268.1114277\n\n* for ssget and the SuiteSparse Matrix Collection:\n\n  T. A. Davis and Yifan Hu. 2011. The University of Florida sparse matrix\n  collection. ACM Trans. Math. Softw. 38, 1, Article 1 (November 2011), 25\n  pages.  https://doi.org/10.1145/2049662.2049663\n\n  Kolodziej et al., (2019). The SuiteSparse Matrix Collection Website\n  Interface. Journal of Open Source Software, 4(35), 1244.\n  https://doi.org/10.21105/joss.01244\n\n* for `spqr_rank`:\n\n  Leslie V. Foster and T. A. Davis. 2013. Algorithm 933: Reliable calculation\n  of numerical rank, null space bases, pseudoinverse solutions, and basic\n  solutions using suitesparseQR. ACM Trans. Math.  Softw. 40, 1, Article 7\n  (September 2013), 23 pages.  https://doi.org/10.1145/2513109.2513116\n\n* for Mongoose:\n\n  T. A. Davis, William W. Hager, Scott P. Kolodziej, and S. Nuri Yeralan.\n  2020. Algorithm 1003: Mongoose, a Graph Coarsening and Partitioning Library.\n  ACM Trans. Math. Softw. 46, 1, Article 7 (March 2020), 18 pages.\n  https://doi.org/10.1145/3337792\n\n* for SPEX:\n\n  Christopher Lourenco, Jinhao Chen, Erick Moreno-Centeno, and T. A.  Davis.\n  2022. Algorithm 1021: SPEX Left LU, Exactly Solving Sparse Linear Systems via\n  a Sparse Left-Looking Integer-Preserving LU Factorization. ACM Trans. Math.\n  Softw. June 2022.  https://doi.org/10.1145/3519024\n\n-----------------------------------------------------------------------------"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "## Code of Conduct:\n\nhttps://en.wikipedia.org/wiki/Golden_Rule\n\n## Scope:\n\nUniversal.  When in doubt, assume the rule applies to you as it does to\nthe most sensitive person you can imagine (your grandmother, perhaps).\nPut yourself in their shoes, and then apply the rule to them.  Then\ntreat that person in the same manner.  This addresses the one major\npossible criticism of the Golden Rule\n( https://en.wikipedia.org/wiki/Golden_Rule#Criticism )\n\n## Enforcement:\n\nContact Tim Davis, DrTimothyAldenDavis@gmail.com.  I take this very\nseriously.\n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DrTimothyAldenDavis/SuiteSparse"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ScottKolo/Mongoose"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://travis-ci.com/ScottKolo/Mongoose"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to SuiteSparse\n\nTo add an issue for a bug report (gasp!) or a feature request,\nyou can use the issue tracker on github.com, at\n[`https://github.com/DrTimothyAldenDavis/SuiteSparse/issues`]\n(https://github.com/DrTimothyAldenDavis/SuiteSparse/issues).\n\nTo contribute code, you can submit a pull request.  To do so,\nyou must first agree to the Contributor License\nin the [`Contributor_License`](Contributor_License) folder.\nSign and date it the PDF, and email it to me at\nDrTimothyAldenDavis@gmail.com.  Pull requests will only be\nincluded into SuiteSparse after I receive your email with\nthe signed PDF.\n\nDo not submit a pull request to the default branch.\nInstead, use the dev2 branch.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-10-19T17:43:53Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-04-09"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-05-25"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-17T14:49:34Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-07-25"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The official SuiteSparse library: a suite of sparse matrix algorithms authored or co-authored by Tim Davis, Texas A&M University."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python interface for SPEX"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPEX/Python/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Mongoose is a hybrid graph partitioning library."
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8926597412709981,
+      "result": {
+        "original_header": "SuiteSparse:  A Suite of Sparse matrix packages at http://suitesparse.com",
+        "type": "Text_excerpt",
+        "value": "METIS is authored by George Karypis. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9689097464477241,
+      "result": {
+        "original_header": "SuiteSparse branches",
+        "type": "Text_excerpt",
+        "value": "* dev: the default branch, with recent updates of features to appear in\n    the next stable release.  The intent is to keep this branch in\n    fully working order at all times, but the features will not be\n    finalized at any given time.\n* stable: the most recent stable release.\n* dev2: working branch.  All submitted PRs should made to this branch.\n    This branch might not always be in working order. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9011830913452049,
+      "result": {
+        "original_header": "SuiteSparse Packages",
+        "type": "Text_excerpt",
+        "value": "Packages in SuiteSparse, and files in this directory: \n  approximate minimum degree ordering.  This is the built-in AMD function in\n  MATLAB. \n  a summary of changes to SuiteSparse.  See `*/Doc/ChangeLog` for details for\n  each package. \n  sparse Cholesky factorization.  Requires AMD, COLAMD, CCOLAMD, the BLAS, and\n  LAPACK.  Optionally uses METIS.  This is `chol` and `x=A\\b` in MATLAB. \n  column approximate minimum degree ordering.  This is the built-in COLAMD\n  function in MATLAB. \n  authors (of the code): Tim Davis and Stefan Larimore \n  a concise sparse matrix package, developed for my book, \"Direct Methods for\n  Sparse Linear Systems\", published by SIAM.  Intended primarily for teaching.\n  Note that the code is (c) Tim Davis, as stated in the book. \n  For production, use CXSparse instead.  In particular, both CSparse and\n  CXSparse have the same include filename: `cs.h`.  This package is used for\n  the built-in DMPERM in MATLAB. \n  CSparse Extended.  Includes support for complex matrices and both int or long\n  integers.  Use this instead of CSparse for production use; it creates a\n  libcsparse.so (or dylib on the Mac) with the same name as CSparse.  It is a\n  superset of CSparse.  Any code that links against CSparse should also be able\n  to link against CXSparse instead. \n  a simple package that relies on almost all of SuiteSparse \n  graph algorithms in the language of linear algebra. \n  collected licenses for each package. \n  optional, to compile all of SuiteSparse using `make`, which is used as a\n  simple wrapper for `cmake` in each subproject. \n    removes all files not in distribution, including `./bin`, `./share`,\n    `./lib`, and `./include`. \n    removes all files not in distribution, but keeps compiled libraries and\n    demos, `./lib`, `./share`, and `./include`. \n  various m-files for use in MATLAB \n    list of contents \n    nested dissection ordering of regular meshes \n    `C=S*F` where `S` is sparse and `F` is full \n  sparse QR factorization.  This the built-in `qr` and `x=A\\b` in MATLAB.  Also\n  called SuiteSparseQR. \n  a demo of SuiteSparse for MATLAB \n  This is the built-in `lu` and `x=A\\b` in MATLAB. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8894164048708899,
+      "result": {
+        "original_header": "For distro maintainers (Linux, homebrew, spack, R, Octave, Trilinos, ...):",
+        "type": "Text_excerpt",
+        "value": "* CUDA acceleration:  CHOLMOD and SPQR can benefit from their CUDA kernels.  If\n  you do not have CUDA or do not want to include it in your distro, this\n  version of SuiteSparse skips the building of the `CHOLMOD_CUDA` and `SPQR_CUDA`\n  libraries, and does not link against the `GPUQREngine` and\n  `SuiteSparse_GPURuntime` libraries. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9016700189879344,
+      "result": {
+        "original_header": "About the BLAS and LAPACK libraries",
+        "type": "Text_excerpt",
+        "value": "To select your BLAS/LAPACK, see the instructions in SuiteSparseBLAS.cmake in\n`SuiteSparse_config/cmake_modules`.  If `SuiteSparse_config` finds a BLAS with\n64-bit integers (such as the Intel MKL ilp64 BLAS), it configures\n`SuiteSparse_config.h` with the `SUITESPARSE_BLAS_INT` defined as `int64_t`.\nOtherwise, if a 32-bit BLAS is found, this type is defined as `int32_t`.  If\nlater on, UMFPACK, CHOLMOD, or SPQR are compiled and linked  with a BLAS that\nhas a different integer size, you must override the definition with `-DBLAS64`\n(to assert the use of 64-bit integers in the BLAS) or `-DBLAS32`, (to assert\nthe use of 32-bit integers in the BLAS). \nWhen distributed in a binary form (such as a Debian, Ubuntu, Spack, or Brew\npackage), SuiteSparse should probably be compiled to expect a 32-bit BLAS,\nsince this is the most common case.  The default is to use a 32-bit BLAS, but\nthis can be changed by setting the cmake variable\n`SUITESPARSE_USE_64BIT_BLAS` to `ON`. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.869162644807747,
+      "result": {
+        "original_header": "Compilation options",
+        "type": "Text_excerpt",
+        "value": "  Semicolon separated list of projects to be built or `all`.\n  Default: `all` in which case the following projects are built: \n  SuiteSparse has many user-definable settings of the form `SUITESPARSE_USE_*`\n  or `(package)_USE_*` for some particular package.  In general, these settings\n  are not strict.  For example, if `SUITESPARSE_USE_OPENMP` is `ON` then OpenMP\n  is preferred, but SuiteSparse can be used without OpenMP so no error is\n  generated if OpenMP is not found.  However, if `SUITESPARSE_USE_STRICT` is\n  `ON` then all `*_USE_*` settings are treated strictly and an error occurs\n  if any are set to `ON` but the corresponding package or setting is not\n  available.  The `*_USE_SYSTEM_*` settings are always treated as strict.\n  Default: `OFF`. \n  If set to `ON`, CUDA is enabled for all of SuiteSparse.  Default: `ON`, \n  Postfix for installation target of header from SuiteSparse. Default:\n  suitesparse, so the default include directory is:\n  `CMAKE_INSTALL_PREFIX/include/suitesparse` \n  If `ON`, static libraries are built.\n  Default: `ON`, except for GraphBLAS, which takes a long time to compile so\n  the default for GraphBLAS is `OFF` unless `BUILD_SHARED_LIBS` is `OFF`. \n  GraphBLAS, LAGraph, and ParU will be vastly slower if OpenMP is not used.\n  CHOLMOD will be somewhat slower without OpenMP (as long as it still has a\n  parallel BLAS/LAPACK).  Three packages (UMFPACK, CHOLMOD, and SPQR) rely\n  heavily on parallel BLAS/LAPACK libraries and those libraries may use OpenMP\n  internally.  If you wish to disable OpenMP in an entire application, select a\n  single-threaded BLAS/LAPACK, or a parallel BLAS/LAPACK that does not use\n  OpenMP (such as the Apple Accelerate Framework).  Using a single-threaded\n  BLAS/LAPACK library will cause UMFPACK, CHOLMOD, and SPQR to be vastly\n  slower. \n  If `ON`, `SuiteSparse_config` uses OpenMP if it is available.\n  Default: `SUITESPARSE_USE_OPENMP`.\n  It is not essential and only used to let `SuiteSparse_time` call\n  `omp_get_wtime`. \n  If `ON`, use the Fortran compiler to determine how C calls Fortan, and to\n  build several optional Fortran routines. If `OFF`, use\n  `SUITESPARSE_C_TO_FORTRAN` to define how C calls Fortran.\n  WARNING: mixing C/C++/Fortran compilers from different places is not\n  recommended.  Using the Intel C compiler (icx), GNU Fortran (gfortran or\n  f95), and the Intel MKL BLAS together will result in two OpenMP libraries\n  being linked (Intel's libiomp and the GNU libgomp).  This is a recipe for\n  disaster, and the cmake scripts check this and report fatal error if it's\n  attempted.  Other cases lead to a cmake warning.  If you get the warning,\n  check your built libraries and ensure that only one OpenMP library is in\n  use (GNU: libgomp, Intel: libiomp, Clang: libomp).  If you see this case,\n  use compatible compilers, or switch Fortran off.\n  Default: `ON`. \nCHOLMOD is composed of a set of Modules that can be independently selected;\nall options default to `ON`: \n  If `OFF`, do not link against CAMD and CCOLAMD. This also disables the\n  Partition module. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9032248398213922,
+      "result": {
+        "original_header": "Possible build/install issues",
+        "type": "Text_excerpt",
+        "value": "One common issue can affect all packages:  getting the right #include files\nthat match the current libraries being built.  It's possible that your Linux\ndistro has an older copy of SuiteSparse headers in /usr/include or\n/usr/local/include, or that Homebrew has installed its suite-sparse bundle into\n/opt/homebrew/include or other places.  Old libraries can appear in in\n/usr/local/lib, /usr/lib, etc.  When building a new copy of SuiteSparse, the\ncmake build system is normally (or always?) able to avoid these, and use the\nright header for the right version of each library. \nAs an additional guard against this possible error, each time one SuiteSparse\npackage #include's a header from another one, it checks the version number in\nthe header file, and reports an #error to the compiler if a stale version is\ndetected.  In addition, the Example package checks both the header version and\nthe library version (by calling a function in each library).  If the versions\nmismatch in any way, the Example package reports an error at run time. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9607127285230805,
+      "result": {
+        "original_header": "Interfaces to SuiteSparse",
+        "type": "Text_excerpt",
+        "value": "  Many built-in methods in MATLAB and Octave rely on SuiteSparse, including\n  `C=A*B` `x=A\\b`, `L=chol(A)`, `[L,U,P,Q]=lu(A)`, `R=qr(A)`, `dmperm(A)`,\n  `p=amd(A)`, `p=colamd(A)`, ...\n  See also Mathematica, R, and many many more.  The list is too long. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "type": "Text_excerpt",
+        "value": "Refer to each package for the documentation on each package, typically in the\nDoc subfolder.\n\n-----------------------------------------------------------------------------"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ScottKolo/Mongoose/archive/v3.3.5.zip"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 285
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DrTimothyAldenDavis/SuiteSparse"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/LAGraph/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/LAGraph/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/LAGraph/rtdocs/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/LAGraph/rtdocs/requirements.txt",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPEX/Python/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPEX/Python/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/bazel/ci/docker/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/bazel/ci/docker/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/.github/workflows/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/.github/workflows/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/cmake/ci/docker/toolchain/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/cmake/ci/docker/toolchain/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/cmake/ci/docker/amd64/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/cmake/ci/docker/amd64/Dockerfile",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/LAGraph/rtdocs/make_docs.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/scripts/run_integration.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/scripts/test_integration.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/scripts/make_release.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/cpu_features/cmake/ci/doc/generate_image.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/CHOLMOD/Demo/gpu.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPQR/Demo/demo_colamd2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPQR/Demo/demo_colamd3.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPQR/Demo/demo_colamd.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPQR/Demo/demo_metis2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPQR/Demo/demo_metis3.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPQR/Demo/demo_metis.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Mongoose"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ScottKolo/Mongoose/issues"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "c, cholmod, colamd, cpp, csparse, graph-algorithms, graphblas, klu, mathematics, matlab, sparse-matrix, spqr, suitesparse, umfpack"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Mongoose",
+          "SuiteSparse",
+          "software",
+          "graph partitioning",
+          "sparse matrices",
+          "graph coarsening",
+          "edge cut",
+          "scientific software",
+          "mathematical software"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "File_dump",
+        "value": "SuiteSparse:GraphBLAS, Timothy A. Davis, (c) 2017-2025, All Rights Reserved.\nThe following Apache-2.0 applies to all of SuiteSparse:GraphBLAS,\nexcept for 3rd-party software:\n\n    SPDX-License-Identifier: Apache-2.0\n\n    Licensed under the Apache License, Version 2.0 (the \"License\");\n    you may not use SuiteSparse:GraphBLAS except in compliance with the\n    License.  You may obtain a copy of the License at\n\n        http://www.apache.org/licenses/LICENSE-2.0\n\n    Unless required by applicable law or agreed to in writing, software\n    distributed under the License is distributed on an \"AS IS\" BASIS,\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n    See the License for the specific language governing permissions and\n    limitations under the License.\n\n================================================================================\nDependencies on 3rd-party software:\n================================================================================\n\n--------------------------------------------------------------------------------\nrmm_wrap, CUDA, jitify:\n--------------------------------------------------------------------------------\n\nThe CUDA directory contains licensed OSS under the following terms:\n\nRMM\nhttp://github.com/rapidsai/rmm\nSPDX-License-Identifier: Apache-2.0\n\nJitify\nhttp://github.com/NVIDIA/jitify\nSPDX-License-Identifier: BSD-3-Clause\n\nCUB \nhttp://github.com/NVIDIA/cub\nSPDX-License-Identifier: BSD-3-Clause\n\nIn addition, any source files not part of the above packages is hereby\nlicensed under the Apache-2.0 license.\n\nCopyright 2020-2025, NVIDIA Corporation\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file expect in compilance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or imlied.\nSee the License for specific language governing permissions and \nlimitations under the License.\n\n\n\n--------------------------------------------------------------------------------\nLZ4:  SPDX-License-Identifier: BSD-2-Clause\n--------------------------------------------------------------------------------\n\nLZ4 Library\nCopyright (c) 2011-2016, Yann Collet\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice, this\n  list of conditions and the following disclaimer in the documentation and/or\n  other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n--------------------------------------------------------------------------------\ncpu_features: SPDX-License-Identifier: Apache-2.0\n--------------------------------------------------------------------------------\n\nCopyright 2017 Google LLC, Apache 2.0 license\n\nWith additional files from IBM and Intel (also Apache 2.0):\n\n    cpu_features/include/cpuinfo_ppc.h:1:// Copyright 2018 IBM (Apache 2.0)\n    cpu_features/src/impl_ppc_linux.c:1:// Copyright 2018 IBM. (Apache 2.0)\n    cpu_features/include/cpuinfo_x86.h:2:// Copyright 2020 Intel Corporation\n    cpu_features/src/impl_x86__base_implementation.inl:2:// Copyright 2020 Intel Corporation\n\n--------------------------------------------------------------------------------\ncpu_features/ndk_compat: SPDX-License-Identifier: BSD-2-Clause\n--------------------------------------------------------------------------------\n\n    Copyright (C) 2010 The Android Open Source Project\n    All rights reserved.\n    Redistribution and use in source and binary forms, with or without\n    modification, are permitted provided that the following conditions\n    are met:\n     * Redistributions of source code must retain the above copyright\n       notice, this list of conditions and the following disclaimer.\n     * Redistributions in binary form must reproduce the above copyright\n       notice, this list of conditions and the following disclaimer in\n       the documentation and/or other materials provided with the\n       distribution.\n    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n    \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS\n    FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE\n    COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\n    INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\n    BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS\n    OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED\n    AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\n    OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n    SUCH DAMAGE.\n\n\n--------------------------------------------------------------------------------\nZSTD:  SPDX-License-Identifier: BSD-3-Clause\n--------------------------------------------------------------------------------\n\nBSD License\n\nFor Zstandard software\n\nCopyright (c) 2016-present, Meta, Inc. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n * Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n * Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n * Neither the name Meta nor the names of its contributors may be used to\n   endorse or promote products derived from this software without specific\n   prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\n--------------------------------------------------------------------------------\nxxHash:  SPDX-License-Identifier: BSD-2-Clause\n--------------------------------------------------------------------------------\n\nxxHash Library\nCopyright (c) 2012-2021 Yann Collet\nAll rights reserved.\n\nBSD 2-Clause License (https://www.opensource.org/licenses/bsd-license.php)\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice, this\n  list of conditions and the following disclaimer in the documentation and/or\n  other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/GraphBLAS/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "SPDX-License-Identifier: GPL-2.0-or-later or LGPL-3.0-or-later"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPEX/Python/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0-only.html",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0-only.html",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0-only.html"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SuiteSparse"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Mongoose: A Graph Coarsening and Partitioning Library"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "DrTimothyAldenDavis"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SPEXpy"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/SPEX/Python/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 52135564,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 5708086,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MATLAB",
+        "size": 3794623,
+        "type": "Programming_language",
+        "value": "MATLAB"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 2134345,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CMake",
+        "size": 884318,
+        "type": "Programming_language",
+        "value": "CMake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Cuda",
+        "size": 307219,
+        "type": "Programming_language",
+        "value": "Cuda"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "size": 273465,
+        "type": "Programming_language",
+        "value": "Java"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 263424,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 226526,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Fortran",
+        "size": 179355,
+        "type": "Programming_language",
+        "value": "Fortran"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 65049,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Ruby",
+        "size": 51657,
+        "type": "Programming_language",
+        "value": "Ruby"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 46051,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BibTeX Style",
+        "size": 22212,
+        "type": "Programming_language",
+        "value": "BibTeX Style"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Assembly",
+        "size": 14207,
+        "type": "Programming_language",
+        "value": "Assembly"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Starlark",
+        "size": 11295,
+        "type": "Programming_language",
+        "value": "Starlark"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "M4",
+        "size": 9972,
+        "type": "Programming_language",
+        "value": "M4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 3616,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sed",
+        "size": 1692,
+        "type": "Programming_language",
+        "value": "sed"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Awk",
+        "size": 1574,
+        "type": "Programming_language",
+        "value": "Awk"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 156,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 56,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MATLAB",
+        "type": "Programming_language",
+        "value": "MATLAB",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2025-07-25T18:43:01Z",
+        "date_published": "2025-07-25T19:17:18Z",
+        "description": "July 25, 2025: version 7.11.0\r\n\r\n    * LAGraph v1.2: many new experimental algorithms, LAGraph_Random in src/\r\n    * GraphBLAS v10.1.1: risc-V vectorization, GRAPHBLAS_VANILLA (optional;\r\n        to disable GxB extensions), and workaround for gcc compiler bug on\r\n        Power and s390x processors.\r\n    * nearly all packages: cmake updates, to move static targets into separate\r\n        exports (needed for Fedora packaging)\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.11.0   *\r\n        AMD 3.3.4                   *\r\n        BTF 2.3.3                   *\r\n        CAMD 3.3.5                  *\r\n        CCOLAMD 3.3.5               *\r\n        CHOLMOD 5.3.4               *\r\n        COLAMD 3.3.5                *\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.2              *\r\n        Example 1.8.9               *\r\n        GraphBLAS 10.1.1            *\r\n        KLU 2.3.6                   *\r\n        LDL 3.3.3                   *\r\n        LAGraph 1.2.0               *\r\n        SuiteSparse_Mongoose 3.3.5  *\r\n        ParU 1.0.1                  *\r\n        RBio 4.3.5                  *\r\n        SPEX 3.2.4                  *\r\n        SPQR 4.3.5                  *\r\n        UMFPACK 6.3.6               *\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.10.3...v7.11.0",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.11.0",
+        "name": "v7.11.0 (July 25, 2025)",
+        "release_id": 235268967,
+        "tag": "v7.11.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.11.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/235268967",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/235268967",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.11.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2025-05-27T22:21:25Z",
+        "date_published": "2025-05-27T22:23:38Z",
+        "description": "May 27, 2025: version 7.11.0-beta.1\r\n\r\n    * LAGraph v1.2: many new experimental algorithms, LAGraph_Random in src/\r\n    * GraphBLAS v10.1.0: risc-V vectorization, GRAPHBLAS_VANILLA (optional;\r\n        to disable GxB extensions), and cmake revisions to ensure gcc is not\r\n        used to compile GraphBLAS on the Power or s390 processors (as a\r\n        workaround around for a bug in the gcc compiler).\r\n    * nearly all packages: cmake updates, to move static targets into separate\r\n        exports (needed for Fedora packaging)\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.11.0   *\r\n        AMD 3.3.4                   *\r\n        BTF 2.3.3                   *\r\n        CAMD 3.3.5                  *\r\n        CCOLAMD 3.3.5               *\r\n        CHOLMOD 5.3.4               *\r\n        COLAMD 3.3.5                *\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.2              *\r\n        Example 1.8.9               *\r\n        GraphBLAS 10.1.0            *\r\n        KLU 2.3.6                   *\r\n        LDL 3.3.3                   *\r\n        LAGraph 1.2.0               *\r\n        SuiteSparse_Mongoose 3.3.5  *\r\n        ParU 1.0.1                  *\r\n        RBio 4.3.5                  *\r\n        SPEX 3.2.4                  *\r\n        SPQR 4.3.5                  *\r\n        UMFPACK 6.3.6               *\r\n\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.10.1...v7.11.0-beta.1",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.11.0-beta.1",
+        "name": "v7.11.0-beta.1 (May 27, 2025)",
+        "release_id": 221392135,
+        "tag": "v7.11.0-beta.1",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.11.0-beta.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/221392135",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/221392135",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.11.0-beta.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2025-05-05T22:25:19Z",
+        "date_published": "2025-05-05T22:28:20Z",
+        "description": "May 5, 2025: version 7.10.3\r\n\r\n    * SuiteSparse_config: do not print info about the BLAS if no BLAS used,\r\n        in the cmake build script.  Added /usr/local to the build and install\r\n        paths on the Mac.\r\n    * GraphBLAS: cmake revisions and 2 bug fixes\r\n    * revised CI rules on github\r\n    * CAMD: minor typo in Makefile, for demos\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.10.3   *\r\n        AMD 3.3.3\r\n        BTF 2.3.2\r\n        CAMD 3.3.4                  *\r\n        CCOLAMD 3.3.4\r\n        CHOLMOD 5.3.2\r\n        COLAMD 3.3.4\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.1\r\n        Example 1.8.8               *\r\n        GraphBLAS 10.0.5            *\r\n        KLU 2.3.5\r\n        LDL 3.3.2\r\n        LAGraph 1.1.5\r\n        SuiteSparse_Mongoose 3.3.4\r\n        ParU 1.0.0\r\n        RBio 4.3.4\r\n        SPEX 3.2.3\r\n        SPQR 4.3.4\r\n        UMFPACK 6.3.5\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.10.2...v7.10.3",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.10.3",
+        "name": "v7.10.3 (May 5, 2025)",
+        "release_id": 216616092,
+        "tag": "v7.10.3",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.10.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/216616092",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/216616092",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.10.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2025-04-10T21:09:58Z",
+        "date_published": "2025-04-11T13:52:15Z",
+        "description": "Apr 10, 2025: version 7.10.2\r\n\r\n    * GraphBLAS v10.0.3: performance of setElement.  Update to xxHash and\r\n        cpu_features.  Octave interface updated for the Mac.\r\n    * CHOLMOD 5.3.2: use CUDA as linker, if applicable\r\n    * SuiteSparse_config 7.10.2: allow the installer to compile without\r\n        the BLAS.\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.10.2   *\r\n        AMD 3.3.3\r\n        BTF 2.3.2\r\n        CAMD 3.3.3\r\n        CCOLAMD 3.3.4\r\n        CHOLMOD 5.3.2               *\r\n        COLAMD 3.3.4\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.1\r\n        Example 1.8.7               *\r\n        GraphBLAS 10.0.3            *\r\n        KLU 2.3.5\r\n        LDL 3.3.2\r\n        LAGraph 1.1.5\r\n        SuiteSparse_Mongoose 3.3.4\r\n        ParU 1.0.0\r\n        RBio 4.3.4\r\n        SPEX 3.2.3\r\n        SPQR 4.3.4\r\n        UMFPACK 6.3.5\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.10.1...v7.10.2",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.10.2",
+        "name": "v7.10.2 (Apr 10, 2025)",
+        "release_id": 211848219,
+        "tag": "v7.10.2",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.10.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/211848219",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/211848219",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.10.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2025-03-05T12:53:00Z",
+        "date_published": "2025-03-05T13:52:57Z",
+        "description": "Mar 6, 2025: version 7.10.1\r\n\r\n    * GraphBLAS v10.0.1: bug fix, when using user-defined monoids in GrB_mxm\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.10.1   *\r\n        AMD 3.3.3\r\n        BTF 2.3.2\r\n        CAMD 3.3.3\r\n        CCOLAMD 3.3.4\r\n        CHOLMOD 5.3.1\r\n        COLAMD 3.3.4\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.1\r\n        Example 1.8.6               *\r\n        GraphBLAS 10.0.1            *\r\n        KLU 2.3.5\r\n        LDL 3.3.2\r\n        LAGraph 1.1.5\r\n        SuiteSparse_Mongoose 3.3.4\r\n        ParU 1.0.0\r\n        RBio 4.3.4\r\n        SPEX 3.2.3\r\n        SPQR 4.3.4\r\n        UMFPACK 6.3.5\r\n\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.10.0...v7.10.1",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.10.1",
+        "name": "v7.10.1 (Mar 6, 2025)",
+        "release_id": 203869295,
+        "tag": "v7.10.1",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.10.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/203869295",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/203869295",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.10.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2025-03-02T15:52:49Z",
+        "date_published": "2025-03-02T15:54:06Z",
+        "description": "Mar 3, 2025: version 7.10.0\r\n\r\n    * GraphBLAS v10.0.0: major upgrade, now supporting 32-bit/64-bit integer\r\n        indices.  Note the SO version change from 9 to 10.  GraphBLAS v10 is\r\n        upward compatible with v9, but only if the user application is\r\n        recompiled.\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.10.0   *\r\n        AMD 3.3.3\r\n        BTF 2.3.2\r\n        CAMD 3.3.3\r\n        CCOLAMD 3.3.4\r\n        CHOLMOD 5.3.1\r\n        COLAMD 3.3.4\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.1\r\n        Example 1.8.5               *\r\n        GraphBLAS 10.0.0            *\r\n        KLU 2.3.5\r\n        LDL 3.3.2\r\n        LAGraph 1.1.5\r\n        SuiteSparse_Mongoose 3.3.4\r\n        ParU 1.0.0\r\n        RBio 4.3.4\r\n        SPEX 3.2.3\r\n        SPQR 4.3.4\r\n        UMFPACK 6.3.5\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.9.0...v7.10.0",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.10.0",
+        "name": "v7.10.0 (Mar 3, 2025)",
+        "release_id": 203227165,
+        "tag": "v7.10.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.10.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/203227165",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/203227165",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.10.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2025-02-24T00:27:47Z",
+        "date_published": "2025-02-24T03:18:39Z",
+        "description": "Feb 20, 2025: version 7.9.0\r\n\r\n    * GraphBLAS v9.4.5: Added the GxB_IndexBinaryOp.  Added new JIT kernels.\r\n        Disabled more FactoryKernels to reduce compiled library size.\r\n        Added workaround for AppleClang compiler bug.\r\n    * LAGraph v1.1.5, SPEX v3.2.3, CHOLMOD 5.3.1: minor updates to github CI;\r\n        typos, reduce pedantic compiler warnings.\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.9.0    *\r\n        AMD 3.3.3\r\n        BTF 2.3.2\r\n        CAMD 3.3.3\r\n        CCOLAMD 3.3.4\r\n        CHOLMOD 5.3.1               *\r\n        COLAMD 3.3.4\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.1\r\n        Example 1.8.4               *\r\n        GraphBLAS 9.4.5             *\r\n        KLU 2.3.5\r\n        LDL 3.3.2\r\n        LAGraph 1.1.5               *\r\n        SuiteSparse_Mongoose 3.3.4\r\n        ParU 1.0.0\r\n        RBio 4.3.4\r\n        SPEX 3.2.3                  *\r\n        SPQR 4.3.4\r\n        UMFPACK 6.3.5\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.8.3...v7.9.0",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.9.0",
+        "name": "v7.9.0 (Feb 20, 2025)",
+        "release_id": 201943454,
+        "tag": "v7.9.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/201943454",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/201943454",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2024-10-22T11:43:13Z",
+        "date_published": "2024-10-22T11:49:47Z",
+        "description": "Oct 10, 2024: version 7.8.3\r\n\r\n    * ParU 1.0.0: first stable release. No change since last version\r\n        v0.3.0, except for date, version, and updates to the User Guide.\r\n    * UMFPACK 6.3.5: a few typos in comments and user guide; no change to code\r\n    * SuiteSparse_config and Example: revised to reflect ParU 1.0.0.\r\n    * SuiteSparse_config.h: removed inclusion of MATLAB mex.h in\r\n        SuiteSparse_config.h (conflicts with C++ mex files)\r\n    * KLU and RBio: revised mexFunctions to handle change in\r\n        SuiteSparse_config.h\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.8.3    *\r\n        AMD 3.3.3\r\n        BTF 2.3.2\r\n        CAMD 3.3.3\r\n        CCOLAMD 3.3.4\r\n        CHOLMOD 5.3.0\r\n        COLAMD 3.3.4\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.1\r\n        Example 1.8.3               *\r\n        GraphBLAS 9.3.1\r\n        KLU 2.3.5                   *\r\n        LDL 3.3.2\r\n        LAGraph 1.1.4\r\n        SuiteSparse_Mongoose 3.3.4\r\n        ParU 1.0.0                  *\r\n        RBio 4.3.4                  *\r\n        SPEX 3.2.1\r\n        SPQR 4.3.4\r\n        UMFPACK 6.3.5               *\r\n\r\n## What's Changed\r\n* Bump Jimver/cuda-toolkit from 0.2.16 to 0.2.18 by @dependabot in https://github.com/DrTimothyAldenDavis/SuiteSparse/pull/874\r\n* ParU 1.0.0 for SuiteSparse 7.8.3 by @DrTimothyAldenDavis in https://github.com/DrTimothyAldenDavis/SuiteSparse/pull/868\r\n* SuiteSparse 7.8.3 by @DrTimothyAldenDavis in https://github.com/DrTimothyAldenDavis/SuiteSparse/pull/877\r\n\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.8.2...v7.8.3",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.8.3",
+        "name": "v7.8.3 (Oct 10, 2024)",
+        "release_id": 181208329,
+        "tag": "v7.8.3",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.8.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/181208329",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/181208329",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.8.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2024-08-24T17:13:32Z",
+        "date_published": "2024-08-26T22:05:51Z",
+        "description": "Aug 20, 2024: version 7.8.2\r\n\r\n    * LAGraph 1.1.4: bug fix for LAGraph_MMWrite when matrix is dense\r\n    * SPEX 3.2.1: release date revised, sync with primary SPEX repo\r\n    * SuiteSparse_config, Example: modified to reflect the release of\r\n        LAGraph 1.1.4 and SPEX 3.2.1\r\n    * ParU 0.3.0: added parameter to ParU_Get\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.8.2    *\r\n        AMD 3.3.3\r\n        BTF 2.3.2\r\n        CAMD 3.3.3\r\n        CCOLAMD 3.3.4\r\n        CHOLMOD 5.3.0\r\n        COLAMD 3.3.4\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.1\r\n        Example 1.8.2               *\r\n        GraphBLAS 9.3.1\r\n        KLU 2.3.4\r\n        LDL 3.3.2\r\n        LAGraph 1.1.4               *\r\n        SuiteSparse_Mongoose 3.3.4\r\n        ParU 0.3.0                  *\r\n        RBio 4.3.3\r\n        SPEX 3.2.1                  *\r\n        SPQR 4.3.4\r\n        UMFPACK 6.3.4\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.8.1...v7.8.2",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.8.2",
+        "name": "v7.8.2 (Aug 20, 2024)",
+        "release_id": 172032295,
+        "tag": "v7.8.2",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.8.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/172032295",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/172032295",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.8.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2024-08-12T20:12:47Z",
+        "date_published": "2024-08-12T22:44:54Z",
+        "description": "Aug 12, 2024: version 7.8.1\r\n\r\n    * GraphBLAS 9.3.1: bug fix in creation of JIT package\r\n    * SuiteSparse_config, Example: modified to reflect the release of\r\n        GraphBLAS 9.3.1\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.8.1    *\r\n        AMD 3.3.3\r\n        BTF 2.3.2\r\n        CAMD 3.3.3\r\n        CCOLAMD 3.3.4\r\n        CHOLMOD 5.3.0\r\n        COLAMD 3.3.4\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.1\r\n        Example 1.8.1               *\r\n        GraphBLAS 9.3.1             *\r\n        KLU 2.3.4\r\n        LDL 3.3.2\r\n        LAGraph 1.1.3\r\n        SuiteSparse_Mongoose 3.3.4\r\n        ParU 0.2.0\r\n        RBio 4.3.3\r\n        SPEX 3.2.0\r\n        SPQR 4.3.4\r\n        UMFPACK 6.3.4\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.8.0...v7.8.1",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.8.1",
+        "name": "v7.8.1 (Aug 12, 2024)",
+        "release_id": 169864698,
+        "tag": "v7.8.1",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.8.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/169864698",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/169864698",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.8.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2024-08-05T22:46:56Z",
+        "date_published": "2024-08-05T22:50:32Z",
+        "description": "Aug 2, 2024: version 7.8.0\r\n\r\n    * ParU 0.2.0: many changes; nearing a stable release.\r\n    * CHOLMOD 5.3.0: added cholmod_query, and #define's in cholmod.h,\r\n        to query which Modules and features have been configured.\r\n    * GraphBLAS 9.3.0: simpler MATLAB install; sanitize environment variables;\r\n        code restructuring.\r\n    * SPQR 4.3.4: changes to reflect updates to CHOLMOD\r\n    * SPEX 3.2.0: control Python interface, fix build issues on Mac,\r\n        split SPEX Cholesky into LDL and Cholesky.\r\n    * SuiteSparse_config: changes to SuiteSparse timer, BLA_VENDOR.  Added\r\n        SUITESPARSE_USE_PYTHON option.  Split BLAS prototypes and macros.\r\n    * .github: new CI runner for riscv64, and other changes in CI workflows.\r\n    * AMD, CAMD, COLAMD, CCOLAMD, CXSparse, KLU, SuiteSparse_Mongoose,\r\n        RBio, UMFPACK: minor changes for MATLAB in Windows\r\n    * no changes to: BTF, CSparse, LDL, and LAGraph\r\n    * Package versions in this release: (* denotes a new version)\r\n        SuiteSparse_config 7.8.0    *\r\n        AMD 3.3.3                   *\r\n        BTF 2.3.2                   same as SuiteSparse 7.7.0\r\n        CAMD 3.3.3                  *\r\n        CCOLAMD 3.3.4               *\r\n        CHOLMOD 5.3.0               *\r\n        COLAMD 3.3.4                *\r\n        CSparse 4.3.2               same as SuiteSparse 7.7.0\r\n        CXSparse 4.4.1              *\r\n        Example 1.8.0               *\r\n        GraphBLAS 9.3.0             *\r\n        KLU 2.3.4                   *\r\n        LDL 3.3.2                   same as SuiteSparse 7.7.0\r\n        LAGraph 1.1.3               same as SuiteSparse 7.7.0\r\n        SuiteSparse_Mongoose 3.3.4  *\r\n        ParU 0.2.0                  *\r\n        RBio 4.3.3                  *\r\n        SPEX 3.2.0                  *\r\n        SPQR 4.3.4                  *\r\n        UMFPACK 6.3.4               *\r\n\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.8.0",
+        "name": "v7.8.0 (Aug 2, 2024)",
+        "release_id": 168799221,
+        "tag": "v7.8.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/168799221",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/168799221",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2024-03-26T21:14:00Z",
+        "date_published": "2024-03-26T21:21:44Z",
+        "description": "Mar 22, 2024: version 7.7.0\r\n\r\n    * SPEX 3.1.0: major revision to API, new methods.  Added SPEX_Cholesky,\r\n        SPEX_Backslash, and python interface.  MATLAB interface revised.\r\n    * Example 1.7.0: revised for change in SPEX API\r\n    * GraphBLAS 9.1.0: revised defn of C11 or MSVC complex type, bug fix\r\n    * CXSparse 4.4.0: revise malloc/calloc/realloc/free wrappers\r\n    * All others: minor changes to build system\r\n    * Package versions in this release:\r\n        SuiteSparse_config 7.7.0\r\n        AMD 3.3.2\r\n        BTF 2.3.2\r\n        CAMD 3.3.2\r\n        CCOLAMD 3.3.3\r\n        CHOLMOD 5.2.1\r\n        COLAMD 3.3.3\r\n        CSparse 4.3.2\r\n        CXSparse 4.4.0\r\n        Example 1.7.0\r\n        GraphBLAS 9.1.0\r\n        KLU 2.3.3\r\n        LDL 3.3.2\r\n        LAGraph 1.1.3\r\n        SuiteSparse_Mongoose 3.3.3\r\n        ParU 0.1.3\r\n        RBio 4.3.2\r\n        SPEX 3.1.0\r\n        SPQR 4.3.3\r\n        UMFPACK 6.3.3\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.6.1...v7.7.0",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.7.0",
+        "name": "v7.7.0 (Mar 22, 2024)",
+        "release_id": 148564888,
+        "tag": "v7.7.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.7.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/148564888",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/148564888",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.7.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2024-03-02T19:37:03Z",
+        "date_published": "2024-03-02T19:39:46Z",
+        "description": "Mar 2, 2024: version 7.6.1\r\n\r\n    * GraphBLAS 9.0.3: performance bug fix (JIT kernels were not compiled with\r\n        OpenMP, since v8.3.1), and fix to Makefile (\"make static\")\r\n    * SuiteSparse_config 7.6.1: version number, added link to math.js in README\r\n    * Package versions in this release:\r\n        SuiteSparse_config 7.6.1\r\n        AMD 3.3.1\r\n        BTF 2.3.1\r\n        CAMD 3.3.1\r\n        CCOLAMD 3.3.2\r\n        CHOLMOD 5.2.0\r\n        COLAMD 3.3.2\r\n        CSparse 4.3.1\r\n        CXSparse 4.3.1\r\n        Example 1.6.2\r\n        GraphBLAS 9.0.3\r\n        KLU 2.3.2\r\n        LDL 3.3.1\r\n        LAGraph 1.1.2\r\n        SuiteSparse_Mongoose 3.3.2\r\n        ParU 0.1.2\r\n        RBio 4.3.1\r\n        SPEX 2.3.2\r\n        SPQR 4.3.2\r\n        UMFPACK 6.3.2\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.6.0...v7.6.1",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.6.1",
+        "name": "v7.6.1 (Mar 2, 2024)",
+        "release_id": 144509643,
+        "tag": "v7.6.1",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.6.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/144509643",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/144509643",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.6.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2024-01-25T00:45:24Z",
+        "date_published": "2024-01-25T00:46:34Z",
+        "description": "Jan 20, 2024: version 7.6.0\r\n\r\n    * CHOLMOD 5.2.0: bug fix (restore ABI compatibility with 5.0.x, i.e., 5.2.0\r\n        is ABI incompatible to 5.1.x)\r\n    * SuiteSparse_config 7.6.0, Mongoose 3.3.2, COLAMD 3.3.2, CCOLAMD 3.3.2:\r\n        port Makefile to Windows\r\n    * SPQR 4.3.2: remove unused parameters\r\n    * LAGraph 1.1.2, CSparse 4.3.1, ParU 0.1.2, GraphBLAS 9.0.1:\r\n        minor updates to build system\r\n    * Example 1.6.2, UMFPACK 6.3.2, KLU 2.3.2, SuiteSparse_Mongoose 3.3.2,\r\n        SPEX 2.3.2: revise version numbers of dependent packages\r\n    * AMD, BTF, CAMD, CXSparse, LDL, RBio: unchanged\r\n    * Package versions in this release:\r\n        SuiteSparse_config 7.6.0\r\n        AMD 3.3.1\r\n        BTF 2.3.1\r\n        CAMD 3.3.1\r\n        CCOLAMD 3.3.2\r\n        CHOLMOD 5.2.0\r\n        COLAMD 3.3.2\r\n        CSparse 4.3.1\r\n        CXSparse 4.3.1\r\n        Example 1.6.2\r\n        GraphBLAS 9.0.1\r\n        KLU 2.3.2\r\n        LDL 3.3.1\r\n        LAGraph 1.1.2\r\n        SuiteSparse_Mongoose 3.3.2\r\n        ParU 0.1.2\r\n        RBio 4.3.1\r\n        SPEX 2.3.2\r\n        SPQR 4.3.2\r\n        UMFPACK 6.3.2\r\n\r\n\r\n**Full Changelog**: https://github.com/DrTimothyAldenDavis/SuiteSparse/compare/v7.5.1...v7.6.0",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.6.0",
+        "name": "v7.6.0 (Jan 20, 2024)",
+        "release_id": 138439536,
+        "tag": "v7.6.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/138439536",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/138439536",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2024-01-14T12:56:13Z",
+        "date_published": "2024-01-14T12:58:02Z",
+        "description": "Jan 12, 2024: version 7.5.1\r\n\r\n    * SuiteSparse_config: bug fix to SUITESPARSE__VERCODE macro.\r\n    * Example 1.6.1: add tests for *__VERSION macros.\r\n\r\n    * Package versions in this release:\r\n        SuiteSparse_config 7.5.1\r\n        AMD 3.3.1\r\n        BTF 2.3.1\r\n        CAMD 3.3.1\r\n        CCOLAMD 3.3.1\r\n        CHOLMOD 5.1.1\r\n        COLAMD 3.3.1\r\n        CSparse 4.3.0\r\n        CXSparse 4.3.1\r\n        Example 1.6.1\r\n        GraphBLAS 9.0.0\r\n        KLU 2.3.1\r\n        LDL 3.3.1\r\n        LAGraph 1.1.1\r\n        SuiteSparse_Mongoose 3.3.1\r\n        ParU 0.1.1\r\n        RBio 4.3.1\r\n        SPEX 2.3.1\r\n        SPQR 4.3.1\r\n        UMFPACK 6.3.1\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.5.1",
+        "name": "v7.5.1 (Jan 12, 2024)",
+        "release_id": 136979363,
+        "tag": "v7.5.1",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.5.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/136979363",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/136979363",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.5.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2024-01-11T00:08:51Z",
+        "date_published": "2024-01-11T02:03:37Z",
+        "description": "Jan 10, 2024: version 7.5.0\r\n\r\n    * Suitesparse_config: 7.5.0, to reflect the addition of GraphBLAS 9.0.0.\r\n        Minor updates to build system, including bug fixes when specifying a\r\n        specific BLAS/LAPACK library, and configuration of *.pc files.\r\n    * GraphBLAS 9.0.0: supporting the v2.1 C API;\r\n        see https://github.com/GraphBLAS/graphblas-api-c\r\n    * Example 1.6.0: using GraphBLAS 9.0.0 and SuiteSparse_config 7.5.0,\r\n        remove explicit dependencies on OpenMP, libm, GMP, and MPFR.\r\n        Add programs to test the *Config.cmake of each package.\r\n    * All other packages (except CSparse): minor updates to build system\r\n        and MATLAB interfaces\r\n\r\n    * Package versions in this release:\r\n        SuiteSparse_config 7.5.0\r\n        AMD 3.3.1\r\n        BTF 2.3.1\r\n        CAMD 3.3.1\r\n        CCOLAMD 3.3.1\r\n        CHOLMOD 5.1.1\r\n        COLAMD 3.3.1\r\n        CSparse 4.3.0 (unchanged from SuiteSparse 7.4.0)\r\n        CXSparse 4.3.1\r\n        Example 1.6.0\r\n        GraphBLAS 9.0.0\r\n        KLU 2.3.1\r\n        LDL 3.3.1\r\n        LAGraph 1.1.1\r\n        SuiteSparse_Mongoose 3.3.1\r\n        ParU 0.1.1\r\n        RBio 4.3.1\r\n        SPEX 2.3.1\r\n        SPQR 4.3.1\r\n        UMFPACK 6.3.1\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.5.0",
+        "name": "v7.5.0 (Jan 10, 2024)",
+        "release_id": 136584691,
+        "tag": "v7.5.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/136584691",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/136584691",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2023-12-30T00:18:23Z",
+        "date_published": "2023-12-30T00:53:36Z",
+        "description": "Dec 30, 2023: version 7.4.0\r\n\r\n    * major change to build system: by Markus M\u00fctzel.  Includes a\r\n        top-level CMakeLists.txt that builds all packages, and support for\r\n        pkg-config. Default location of files is now listed below, where\r\n        PACKAGE is one of the packages in SuiteSparse:\r\n        * CMAKE_INSTALL_PREFIX/include/suitesparse: include files\r\n        * CMAKE_INSTALL_PREFIX/lib: compiled libraries\r\n        * CMAKE_INSTALL_PREFIX/lib/cmake/SuiteSparse: helper *.cmake scripts\r\n            for all of SuiteSparse\r\n        * CMAKE_INSTALL_PREFIX/lib/cmake/PACKAGE: *Config.cmake scripts for a\r\n            specific package\r\n        * CMAKE_INSTALL_PREFIX/lib/pkgconfig/PACKAGE.pc: *.pc pkg-config\r\n            files with information for a specific package\r\n        Additional changes are listed below.\r\n    * LAGraph 1.1.0: new package: graph algorithms based on GraphBLAS\r\n    * ParU 0.1.0: new package: parallel unsymmetric multifrontal method,\r\n        with Mohsen Aznaveh.  This is a stable package but is tagged as 0.1.0\r\n        since the API is still subject to change.\r\n    * CHOLMOD 5.1.0: full support for sparse single precision matrices,\r\n        bug fixes in the GPU Module.\r\n    * AMD 3.3.0: minor change for CHOLMOD 5.1.0 tests\r\n    * CAMD 3.3.0: minor change for CHOLMOD 5.1.0 tests\r\n    * SuiteSparse_config 7.4.0: added wrappers for single-precision BLAS/LAPACK,\r\n        added SUITESPARSE_TIME macro.\r\n    * *_version: added methods to all package that didn't have them:\r\n        AMD, CAMD, COLAMD, CCOLAMD, BTF, CSparse, CXSparse, KLU, BTF, RBio,\r\n        SPEX, SPQR, and UMFPACK.\r\n\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.4.0",
+        "name": "v7.4.0 (Dec 30, 2023)",
+        "release_id": 135391433,
+        "tag": "v7.4.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/135391433",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/135391433",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2023-11-03T22:42:14Z",
+        "date_published": "2023-11-03T23:39:47Z",
+        "description": "CHOLMOD 5.0.1: remove \"I\" in cholmod.h, which conflicts with #include<complex.h>",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.3.1",
+        "name": "v7.3.1 (Nov 3, 2023)",
+        "release_id": 127963808,
+        "tag": "v7.3.1",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/127963808",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/127963808",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2023-10-28T13:16:47Z",
+        "date_published": "2023-10-28T13:19:08Z",
+        "description": "Oct 23, 2023: version 7.3.0\r\n\r\n    * CHOLMOD 5.0.0: initial support for sparse single precision matries.\r\n        CHOLMOD:Core replaced with CHOLMOD:Utility\r\n    * updated to require CHOLMOD 5.0.0:\r\n        Example 1.4.3, GPUQREngine 3.3.3, KLU 2.2.2, SPQR 4.2.2, UMFPACK 6.2.2\r\n    * SuiteSparseLAPACK.cmake: allow the use of BLIS/FLAME for LAPACK;\r\n        update from Theirry Thomas.\r\n    * build system: further updates to cmake, by Markus Muetzel.\r\n\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.3.0",
+        "name": "v7.3.0 (Oct 23, 2023)",
+        "release_id": 127049501,
+        "tag": "v7.3.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/127049501",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/127049501",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2023-10-16T18:57:34Z",
+        "date_published": "2023-10-19T02:35:43Z",
+        "description": "CHOLMOD 4.2.2:  minor bug fix to CHOLMOD/Supernodal when determining the # of OpenMP threads to use for assembling values into the last supernode (nthreads).  The resulting nthreads is valid, just perhaps not optimal for this last supernode.",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.2.2",
+        "name": "v7.2.2 (Oct 18, 2023)",
+        "release_id": 125723341,
+        "tag": "v7.2.2",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/125723341",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/125723341",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2023-10-13T17:29:13Z",
+        "date_published": "2023-10-13T17:33:41Z",
+        "description": "v7.2.1, Oct 13, 2023\r\n\r\n```\r\n* GraphBLAS 8.2.1: bug fix to GrB_mxm; incorrect handling of typecasting\r\n* cross-compiler support: replace check_c_source_runs with _compiles,\r\n    for GraphBLAS and SuiteSparse_config, and remove check for\r\n    getenv(\"HOME\").\r\n* cmake update: add \"None\" build type, from Antonio Rojas, for Arch Linux,\r\n    to all *Config.cmake files for all packages except CSparse (CXSparse\r\n    is built instead, and CSparse does not have CSparseConfig.cmake file)\r\n* UMFPACK v6.2.1 and GPUQREngine v3.2.1: copies internal include files\r\n    from other SuiteSparse packages (AMD and SuiteSparse_GPURuntime),\r\n    so these two packages can be built independently.\r\n```\r\n\r\n(corrected release; v7.2.1 was incorrectly released with the content of v7.2.0)\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.2.1",
+        "name": "v7.2.1 (Oct 11, 2023)",
+        "release_id": 125020113,
+        "tag": "v7.2.1",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/125020113",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/125020113",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2023-09-15T18:43:22Z",
+        "date_published": "2023-09-16T15:36:51Z",
+        "description": "Sept 8, 2023: version 7.2.0\r\n\r\n    * build system: modern cmake structure, by Markus Muetzel, @mmuetzel \r\n        Most packages updated to vX.2.0 where X is unchanged (except SPQR\r\n        and Example package).\r\n    * SPQR v4.2.0: Major SO update.  Support for int32 indices by Raye Kimmerer, @Wimmerer \r\n\r\nThis release includes GraphBLAS v8.2.0.  The next release of SuiteSparse will include GraphBLAS v9.0.0, which is already in a beta release in the GraphBLAS github repo (https://github.com/DrTimothyAldenDavis/GraphBLAS/releases/tag/v9.0.0.beta3).  That version implements the new GrB get/set methods in the v2.1 C API, and will become stable once the GraphBLAS v2.1 C API is officially released.",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.2.0",
+        "name": "v7.2.0 (Sept 16, 2023)",
+        "release_id": 121416801,
+        "tag": "v7.2.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/121416801",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/121416801",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2023-06-30T02:06:35Z",
+        "date_published": "2023-06-30T02:10:59Z",
+        "description": "June 29, 2023: version 7.1.0\r\n\r\n    * GraphBLAS v8.0.2: major update with a new JIT feature.\r\n    * build system: many changes to build systems of all packages, contributed\r\n        by Markus Muetzel.\r\n    * RBio 4.0.0: revised API: declaring many input parameters as const\r\n    * CXSparse 4.0.4: changed complex types for C++ callers\r\n\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.1.0",
+        "name": "v7.1.0 (June 29, 2023)",
+        "release_id": 110439398,
+        "tag": "v7.1.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/110439398",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/110439398",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2023-01-21T19:31:16Z",
+        "date_published": "2023-01-21T19:36:04Z",
+        "description": "Jan 20, 2023: version 7.0.1\r\n\r\n    * GraphBLAS v7.4.3: debug was left on in GrB_Matrix_removeElement\r\n    * Example package revised\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.0.1",
+        "name": "v7.0.1 (Jan 20, 2023)",
+        "release_id": 89812663,
+        "tag": "v7.0.1",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/89812663",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/89812663",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2023-01-17T06:46:46Z",
+        "date_published": "2023-01-19T00:32:39Z",
+        "description": "Jan 17, 2023: version 7.0.0\r\n\r\n    * SuiteSparse_config: now v7.0.0\r\n    * SuiteSparse_config struct: removed from external visibility to simplify\r\n        the Windows build, so that no global data is externally visible.\r\n        This requires a major version number increase from v6.x to v7.x for the\r\n        SuiteSparse meta-package (which has the same version number as\r\n        SuiteSparse_config).  Added get/set methods to SuiteSparse_config to\r\n        access the contents of the struct.\r\n    * NFORTRAN: option added to ignore any Fortran methods, even if a Fortran\r\n        compiler is available.\r\n    * port of new cmake-based build system to Windows\r\n    * UMFPACK 6.1.0: copy/serialize/deserialize methods: added new methods to\r\n        copy, serialize, and deserialize the Numeric and Symbolic objects.  By\r\n        Will Kimmerer, revised by T. Davis.\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v7.0.0",
+        "name": "v7.0.0 (Jan 17, 2023)",
+        "release_id": 89477069,
+        "tag": "v7.0.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v7.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/89477069",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/89477069",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v7.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2022-12-25T03:37:26Z",
+        "date_published": "2022-12-25T03:38:34Z",
+        "description": "Dec 23, 2022: SuiteSparse 6.0.3\r\n\r\n    * GraphBLAS v7.4.0:  added non-va_arg get/set methods.\r\n    * Mongoose v3.0.3:  change in build for test coverage\r\n\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v6.0.3",
+        "name": "v6.0.3 (Dec 23, 2022)",
+        "release_id": 87197199,
+        "tag": "v6.0.3",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v6.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/87197199",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/87197199",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v6.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2022-12-12T02:32:33Z",
+        "date_published": "2022-12-12T02:54:50Z",
+        "description": "Dec 9, 2022: SuiteSparse 6.0.2\r\n\r\n    * minor change to build system for nearly all packages: (except CSparse,\r\n        ssget, and MATLAB_Tools):  allows static linkage of all libraries.\r\n        Fortran no longer required.\r\n    * AMD 3.0.2: Fortran no longer required (amd.f and amdbar.f skipped);\r\n        minor change to build system\r\n    * BTF 2.0.2: minor change to build system\r\n    * CAMD 3.0,2: minor change to build system\r\n    * CCOLAMD 3.0.2: minor change to build system\r\n    * CHOLMOD 4.0.2: Fortran no longer required; minor change to build system\r\n    * CXSparse 4.0.2: minor change to build system\r\n    * GPUQREngine 2.0.2: minor change to build system\r\n    * GraphBLAS 7.3.3: -latomic added if needed, using ANSI C11 atomic functions\r\n        for gcc (atomic_compare_exachange_weak instead of __atomic_* variants),\r\n        chunk factor revised for GrB_mxm (generic saxpy3 method);\r\n        minor change to build system\r\n    * KLU 2.0.2: Fortran no longer required; minor change to build system\r\n    * LDL 3.0.2: minor change to build system\r\n    * Mongoose 3.0.2: fixed matrix download in python test scripts (no change\r\n        to the compiled library itself, other than the version/date);\r\n        minor change to build system\r\n    * RBio 3.0.2: minor change to build system\r\n    * SPEX 2.0.2: minor change to build system\r\n    * SPQR 3.0.2: Fortran no longer required; minor change to build system\r\n    * SuiteSparse_GPURuntime 2.0.2: minor change to build system\r\n    * SuiteSparse_config 6.0.2: override C-to-Fortran interface handling if\r\n        no Fortran compiler found; minor change to build system\r\n    * UMFPACK 6.0.2: Fortran no longer required; minor change to build system\r\n    * Example: simple package that illustrates how to use SuiteSparse\r\n        Find*.cmake modules in cmake.\r\n    * not changed from SuiteSparse v6.0.1: ssget, CSparse, MATLAB_Tools\r\n\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v6.0.2",
+        "name": "v6.0.2 (Dec 9, 2022)",
+        "release_id": 85684792,
+        "tag": "v6.0.2",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v6.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/85684792",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/85684792",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v6.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2022-11-14T00:04:25Z",
+        "date_published": "2022-11-14T00:05:44Z",
+        "description": "Nov 12, 2022: SuiteSparse 6.0.1\r\n\r\n    * BLAS: C prototypes for the Fortan BLAS were unintentionally exposed to\r\n        the user application.  Removed.  If you want to use them, see the\r\n        instructions in SuiteSparse_config.h.\r\n\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v6.0.1",
+        "name": "v6.0.1 (Nov 12, 2022)",
+        "release_id": 82926316,
+        "tag": "v6.0.1",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v6.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/82926316",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/82926316",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v6.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2022-11-10T10:00:52Z",
+        "date_published": "2022-11-10T10:04:45Z",
+        "description": "Nov 12, 2022: SuiteSparse 6.0.0\r\n\r\n    * major update: using CMake build system for all packages\r\n    * CMake Find*: all packages now have a Find*.cmake.  See\r\n        SuiteSparse_config/cmake_modules.\r\n    * integers: int (32-bit) and SuiteSparse_long (nominally 64-bit) replaced\r\n        with int32_t and int64_t.  The SuiteSparse_long #define has been\r\n        deprecated and removed.  Replace its use with int64_t in any code that\r\n        uses SuiteSparse v6.0.0 or later.  This is unlikely to change any\r\n        use of any SuiteSparse package, but since it's possible that\r\n        SuiteSparse_long was 32-bits on some platforms, the SO_VERSIION of\r\n        all packages has been increased by one.\r\n    * UMFPACK: new options to support ParU.  Single umfpack.h include file.\r\n    * CHOLMOD: Single cholmod.h include file.\r\n    * SuiteSparse/metis-5.1.0: now embedded into CHOLMOD, in a different\r\n        name space.  No longer an independent library.\r\n    * SPDX License Identifier: added to each file. No change in license.\r\n    * BLAS/LAPACK interface: now supports any Fortran BLAS/LAPACK, with\r\n        either 32-bit (default) or 64-bit integers, via FindBLAS.cmake.\r\n    * SPEX: replaces SLIP_LU\r\n\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v6.0.0",
+        "name": "v6.0.0 (Nov 12, 2022)",
+        "release_id": 82654342,
+        "tag": "v6.0.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v6.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/82654342",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/82654342",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v6.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "DrTimothyAldenDavis",
+          "type": "User"
+        },
+        "date_created": "2022-08-31T16:14:11Z",
+        "date_published": "2022-08-31T16:16:17Z",
+        "description": "Includes GraphBLAS v7.2.0.\r\n\r\n    * GraphBLAS v7.2.0:  see GraphBLAS/Doc/ChangeLog for details.\r\n        * performance:  more compact serialization (ZSTD added, now the\r\n            default compression method).\r\n        * MATLAB interface: faster linear indexing, reshape, bandwidth,\r\n            istril, istriu, isbanded, isdiag.  C(I,J)=A can now grow the\r\n            size of C.\r\n        * features: reshape methods, cube root operator, isStoredElement\r\n        * bugs: a minor bug; user-defined types were incorrectly limited to\r\n            128 bytes in size in v7.0.3.\r\n",
+        "html_url": "https://github.com/DrTimothyAldenDavis/SuiteSparse/releases/tag/v5.13.0",
+        "name": "v5.13.0 (Aug 25, 2022)",
+        "release_id": 75920582,
+        "tag": "v5.13.0",
+        "tarball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/tarball/v5.13.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/75920582",
+        "value": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/releases/75920582",
+        "zipball_url": "https://api.github.com/repos/DrTimothyAldenDavis/SuiteSparse/zipball/v5.13.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx",
+        "type": "Software_application",
+        "value": "sphinx>=8.0.0",
+        "version": ">=8.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/LAGraph/rtdocs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx_rtd_theme",
+        "type": "Software_application",
+        "value": "sphinx_rtd_theme>=0.5.2",
+        "version": ">=0.5.2"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/LAGraph/rtdocs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "breathe",
+        "type": "Software_application",
+        "value": "breathe",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/LAGraph/rtdocs/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:27:35",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1362
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "QUICK START FOR THE C/C++ LIBRARIES:",
+        "type": "Text_excerpt",
+        "value": "Type the following in this directory (requires system priviledge to do the\n`sudo make install`):\n```\n    mkdir -p build && cd build\n    cmake ..\n    cmake --build .\n    sudo cmake --install .\n```\n\nAll libraries will be created and installed into the default system-wide folder\n(/usr/local/lib on Linux).  All include files needed by the applications that\nuse SuiteSparse are installed into /usr/local/include/suitesparse (on Linux).\n\nTo build only a subset of libraries, set `SUITESPARSE_ENABLE_PROJECTS` when\nconfiguring with CMake.  E.g., to build and install CHOLMOD and CXSparse\n(including their dependencies), use the following commands:\n```\n    mkdir -p build && cd build\n    cmake -DSUITESPARSE_ENABLE_PROJECTS=\"cholmod;cxsparse\" ..\n    cmake --build .\n    sudo cmake --install .\n```\n\nFor Windows (MSVC), import the `CMakeLists.txt` file into MS Visual Studio.\nBe sure to specify the build type as Release; for example, to build SuiteSparse\non Windows in the command window, run:\n```\n    mkdir -p build && cd build\n    cmake ..\n    cmake --build . --config Release\n    cmake --install .\n```\n\nBe sure to first install all required libraries:  BLAS and LAPACK for UMFPACK,\nCHOLMOD, and SPQR, and GMP and MPFR for SPEX.  Be sure to use the latest\nlibraries; SPEX requires MPFR 4.0.2 and GMP 6.1.2 (these version numbers\ndo NOT correspond to the X.Y.Z suffix of libgmp.so.X.Y.Z and libmpfr.so.X.Y.Z;\nsee the SPEX user guide for details).\n\nTo compile the libraries and install them only in SuiteSparse/lib (not\n/usr/local/lib), do this instead in the top-level of SuiteSparse:\n```\n    mkdir -p build && cd build\n    cmake -DCMAKE_INSTALL_PREFIX=.. ..\n    cmake --build .\n    cmake --install .\n```\n\nIf you add /home/me/SuiteSparse/lib to your library search path\n(`LD_LIBRARY_PATH` in Linux), you can do the following (for example):\n```\n    S = /home/me/SuiteSparse\n    cc myprogram.c -I$(S)/include/suitesparse -lumfpack -lamd -lcholmod -lsuitesparseconfig -lm\n```\n\nTo change the C and C++ compilers, and to compile in parallel use:\n```\n    cmake -DCMAKE_C_COMPILER=gcc -DCMAKE_CXX_COMPILER==g++ ..\n```\n\nfor example, which changes the compiler to gcc and g++.\n\nThis will work on Linux/Unix and the Mac.  It should automatically detect if\nyou have the Intel compilers or not, and whether or not you have CUDA.\n\nSee `SuiteSparse_config/cmake_modules/SuiteSparsePolicy.cmake` to select your BLAS.\n\nYou may also need to add SuiteSparse/lib to your path.  If your copy of\nSuiteSparse is in /home/me/SuiteSparse, for example, then add this to your\n`~/.bashrc` file:\n\n```\nLD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/me/SuiteSparse/lib\nexport LD_LIBRARY_PATH\n```\n\nFor the Mac, use this instead:\n```\nDYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/home/me/SuiteSparse/lib\nexport DYLD_LIBRARY_PATH\n```\n\nDefault install location of files is below, where PACKAGE is one of the\npackages in SuiteSparse:\n\n    * `CMAKE_INSTALL_PREFIX/include/suitesparse/`: include files\n    * `CMAKE_INSTALL_PREFIX/lib/`: compiled libraries\n    * `CMAKE_INSTALL_PREFIX/lib/cmake/SuiteSparse/`: `*.cmake` scripts\n        for all of SuiteSparse\n    * `CMAKE_INSTALL_PREFIX/lib/cmake/PACKAGE/`: `*Config.cmake` scripts for a\n        specific package\n    * `CMAKE_INSTALL_PREFIX/lib/pkgconfig/PACKAGE.pc`: `.pc` scripts for\n        a specific package pkgconfig\n\n-----------------------------------------------------------------------------"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "QUICK START FOR MATLAB USERS (Linux or Mac):",
+        "type": "Text_excerpt",
+        "value": "Suppose you place SuiteSparse in the `/home/me/SuiteSparse` folder.\n\nAdd the `SuiteSparse/lib` folder to your run-time library path.  On Linux, add\nthis to your `~/.bashrc` script, assuming `/home/me/SuiteSparse` is the\nlocation of your copy of SuiteSparse:\n```\n    LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/me/SuiteSparse/lib\n    export LD_LIBRARY_PATH\n```\n\nFor the Mac, use this instead, in your `~/.zshrc` script, assuming you place\nSuiteSparse in `/Users/me/SuiteSparse`:\n```\n    DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/Users/me/SuiteSparse/lib\n    export DYLD_LIBRARY_PATH\n```\n\nCompile all of SuiteSparse with `make local`.\n\nNext, compile the GraphBLAS MATLAB library.  In the system shell while in the\nSuiteSparse folder, type `make gbmatlab` if you want to install it system-wide\nwith `make install`, or `make gblocal` if you want to use the library in\nyour own SuiteSparse/lib.\n\nThen in the MATLAB Command Window, cd to the SuiteSparse directory and type\n`SuiteSparse_install`.  All packages will be compiled, and several demos will be\nrun.  To run a (long!) exhaustive test, do `SuiteSparse_test`.\n\nSave your MATLAB path for future sessions with the MATLAB pathtool or savepath\ncommands.  If those methods fail because you don't have system-wide permission,\nadd the new paths to your startup.m file, normally in\nDocuments/MATLAB/startup.m.  You can also use the `SuiteSparse_paths` m-file to\nset all your paths at the start of each MATLAB session.\n\n-----------------------------------------------------------------------------"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "3.3.5"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "3.3.5"
+      },
+      "source": "https://raw.githubusercontent.com/DrTimothyAldenDavis/SuiteSparse/dev/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

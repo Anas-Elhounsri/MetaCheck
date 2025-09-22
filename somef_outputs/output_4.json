@@ -1,0 +1,876 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8107513639056873,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": null,
+        "name": "Douglas Myers-Turnbull",
+        "type": "Agent",
+        "value": "Douglas Myers-Turnbull"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Myers-Turnbull",
+            "given_name": "Douglas",
+            "name": "Douglas Myers-Turnbull",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0003-3610-4808"
+          }
+        ],
+        "datePublished": "2020",
+        "format": "cff",
+        "title": "Tyrannosaurus",
+        "type": "File_dump",
+        "value": "abstract: \"Generate beautifully modern Python projects with seamless, GitHub-based CI/CD and loads of integrations.\"\nauthors:\n  - family-names: Myers-Turnbull\n    given-names: Douglas\n    orcid: 0000-0003-3610-4808\ncff-version: 1.2.0\ndate-released: 2020-05-10 20:06:00.00:00Z\nkeywords:\n  - cookiecutter\n  - conda-build\n  - pyproject-toml\n  - python-poetry\n  - python-template\nmessage: Software reference\ntitle: Tyrannosaurus\nversion: 0.11.0\n"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/dmyersturnbull/tyrannosaurus"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/.github/workflows/pull-test.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/.github/workflows/publish.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/.github/workflows/labels.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/.github/workflows/push-main.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/.github/workflows/check.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nTyrannosaurus is licensed under the\n[Apache License, version 2.0](https://www.apache.org/licenses/LICENSE-2.0).\nNew issues and pull requests are welcome.\nFeel free to direct a question to the authors by creating an\n[issue with the _question_ tag](https://github.com/dmyersturnbull/tyrannosaurus/issues/new?assignees=&labels=kind%3A+question&template=question.md).\nContributors are asked to abide by both the\n[GitHub community guidelines](https://docs.github.com/en/site-policy/github-terms/github-community-guidelines)\nand the [Contributor Code of Conduct, version 2.0](https://www.contributor-covenant.org/version/2/0/code_of_conduct/).\n\n### Commit messages\n\nDon\u2019t worry about this too much.\nFollows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)\nand the [Angular commit guidelines](https://github.com/angular/angular/blob/master/CONTRIBUTING.md),\nalong with [Semantic Versioning](https://semver.org/spec/v2.0.0.html)\nand [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).\n\nAngular-style commit messages should get mapped to changelog sections and issue labels.\nIn this table, _Breaking_ refers to the `BREAKING CHANGE` prefix in the commit body (2nd section).\n_Refactor_ can get mapped differently depending on whether any public API is changed or removed.\nSome commits can trigger multiple changelog items (e.g. under both _Changed_ and _Removed_).\nWe deviate slightly from semantic versioning by allowing some essentially non-breaking bug fixes to\ntrigger minor version bumps. This could be, for example, a thrown exception or incorrect return\nvalue a caller could reasonably depend on the incorrect behavior.\n\n| Commit prefix   | Section   | semver | issue label(s)             |\n| --------------- | --------- | ------ | -------------------------- |\n| Breaking (body) | N/A       | major  | breaking                   |\n| `feat:`         | `Added`   | minor  | new feature or enhancement |\n| `docs:`         | `Fixed`   | patch  | documentation              |\n| `fix:` (1)      | `Fixed`   | patch  | bug                        |\n| `fix:` (2)      | `Fixed`   | minor  | bug                        |\n| `refactor:` (1) | `Changed` | major  | cleanup and/or enhancement |\n| `refactor:` (2) | `Removed` | major  | cleanup and/or enhancement |\n| `refactor:` (3) | ignored   | patch  | cleanup                    |\n| `build:`        | `Fixed`   | patch  | infrastructure             |\n| `test:`         | ignored   | patch  | tests                      |\n| `ci:`           | ignored   | never  | infrastructure             |\n| `style:`        | ignored   | never  | cleanup                    |\n\n### Pull requests\n\nPlease update `CHANGELOG.md` and add your name to the contributors in `pyproject.toml`\nso that you\u2019re credited. Run `poetry lock` and `tyrannosaurus sync` to sync metadata.\nFeel free to make a draft pull request and solicit feedback from the authors.\n\n### Publishing a new version\n\n1. Bump the version in `tool.poetry.version` in `pyproject.toml`, following the rules described below.\n2. Run `tyrannosaurus sync` so that the Poetry lock file is up-to-date\n   and metadata are synced to pyproject.toml.\n3. Create a [new release](https://github.com/dmyersturnbull/tyrannosaurus/releases/new)\n   with both the name and tag set to something like `v1.4.13` (keep the _v_).\n4. An hour later, check that the _publish on release creation_\n   [workflow](https://github.com/dmyersturnbull/tyrannosaurus/actions) passes\n   and that the PyPi, Docker Hub, and GitHub Package versions are updated as shown in the\n   shields on the readme.\n5. Check for a pull request from regro-cf-autotick-bot on the\n   [feedstock](https://github.com/conda-forge/tyrannosaurus-feedstock).\n   _If you have not changed the dependencies or version ranges_, go ahead and merge it.\n   Otherwise, [update the recipe](https://github.com/conda-forge/tyrannosaurus-feedstock/blob/main/recipe/meta.yaml)\n   with those changes under `run:`, also updating `{% set version` and `sha256` with the\n   changes from regro-cf-autotick-bot. You can alternatively re-run `tyrannosaurus recipe`\n   to generate a new recipe and copy it to the feedstock.\n6. Twenty minutes later, verify that the Conda-Forge shield is updated.\n\n#### Versioning\n\nVersioning is a subset of [Semantic Versioning](https://semver.org/spec/v2.0.0.html).\nGit tags and GitHub releases use this notation, prefixed with `v` (e.g. `v0.1.1`).\n\n- Stable releases MUST use: `major \".\" minor \".\" patch [\"+\" platform]`.\n- Pre-alpha releases MUST use: `major \".\" minor \".\" patch \"-\" build \"+\" [platform \".\"]`,\n  where `build` increments per tag starting at _0_.\n- Alpha, beta, and RC releases, if used, increment per tag starting at 1 (e.g. `alpha1`).\n  Alpha/beta/RC MUST NOT be used out of order (e.g. NOT `alpha1`, `beta1`, `alpha2`).\n  If major version > 0, releases lacking a build tag SHOULD be preceded by at least one\n  alpha, beta, or RC release.\n- If major version = 0, unstable releases MAY include a build tag.\n\n**In EBNF:**\n\n```\nversion    = major , \".\" , minor , \".\" , patch , [\"-\" , build] , [\"+\" , platform] ;\nmajor      = number ;\nminor      = number ;\npatch      = number ;\nbuild      = number | ((\"alpha\" | \"beta\" | \"rc\") , positive) ;\nplatform   = os | arch | (os , \".\" , arch) ;\nos         = tag ;\narch       = tag ;\n\n-- where (with regex):\ntag        = [a-z]+ [a-z0-9]+\npositive   = [1-9]  [0-9]+\nnumber     = [0-9]+\n```\n\n**Illustration \u2013 example release history:**\n\n1. `0.1.0`\n2. `0.1.1`\n3. `0.2.0-0 +1ca8da40`\n4. `0.2.0-1 +f1c045ae`\n5. `0.2.0`\n6. `1.0.0-0 +10f011ca`\n7. `0.2.1`\n8. `1.0.0-rc1+aa40c1cf`\n9. `1.0.0 +win11.1ca8da40`\n"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\ud83c\udf41 Contributing",
+        "parent_header": [
+          "Tyrannosaurus"
+        ],
+        "type": "Text_excerpt",
+        "value": "[New issues](https://github.com/dmyersturnbull/tyrannosaurus/issues) and pull requests are welcome.\nPlease refer to the [contributing guide](https://github.com/dmyersturnbull/tyrannosaurus/blob/master/CONTRIBUTING.md)\nand [security policy](https://github.com/dmyersturnbull/tyrannosaurus/blob/main/SECURITY.md).\nGenerated with tyrannosaurus: `tyrannosaurus new tyrannosaurus`\n\n```text\n                                              .++++++++++++.\n                                           .++HHHHHHH^^HHH+.\n                                          .HHHHHHHHHH++-+-++.\n                                         .HHHHHHHHHHH:t~~~~~\n                                        .+HHHHHHHHHHjjjjjjjj.\n                                       .+NNNNNNNNN/++/:--..\n                              ........+NNNNNNNNNN.\n                          .++++BBBBBBBBBBBBBBB.\n .tttttttt:..           .++BBBBBBBBBBBBBBBBBBB.\n+tt+.      ``         .+BBBBBBBBBBBBBBBBBBBBB+++cccc.\nttt.               .-++BBBBBBBBBBBBBBBBBBBBBB++.ccc.\n+ttt++++:::::++++++BBBBBBBBBBBBBBBBBBBBBBB+..++.\n.+TTTTTTTTTTTTTBBBBBBBBBBBBBBBBBBBBBBBBB+.    .ccc.\n  .++TTTTTTTTTTBBBBBBBBBBBBBBBBBBBBBBBB+.      .cc.\n    ..:++++++++++++++++++BBBBBB++++BBBB.\n           .......      -LLLLL+. -LLLLL.\n                        -LLLL+.   -LLLL+.\n                        +LLL+       +LLL+\n                        +LL+         +ff+\n                        +ff++         +++:\n                        ++++:\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-04-02T23:26:42Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-18T08:55:26Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Generate beautifully modern (2021+) Python projects with seamless, GitHub-based CI/CD, Docker and Conda support, and out-of-the-box integration with >30 best-practices tools and standards."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Generate beautifully modern Python projects with seamless, GitHub-based CI/CD and loads of integrations."
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9067751828561766,
+      "result": {
+        "original_header": "\ud83c\udfa8 Design / generating a new project",
+        "type": "Text_excerpt",
+        "value": "This is a modern template built with [Poetry](https://python-poetry.org/),\n[GitHub Actions](https://github.com/features/actions), and\n[no legacy files](https://dmyersturnbull.github.io/#-the-python-build-landscape) or tools.\nSee below for a [comparison to other tools](https://github.com/dmyersturnbull/tyrannosaurus#-similar-templates-and-tools).\nAlso see Tyrannosaurus\u2019s little sister\n[science-notebook-template \ud83e\uddea](https://github.com/dmyersturnbull/science-notebook-template)\nfor scientific publication repos. \n"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9326637588501013,
+      "result": {
+        "original_header": "\ud83d\udca1 Main behavior / features",
+        "type": "Text_excerpt",
+        "value": "- **Commit** \u21d2 Files are linted and verified for integrity\n- **Make a pull request** \u21d2 Code is built and tested\n- **Push to the main branch** \u21d2 Code is built and tested; code quality, coverage, and security badges are updated\n- **Make a GitHub release** \u21d2 Artifacts are sent to GitHub, PyPi, Docker Hub, the GCR, and readthedocs\n- `tox` \u21d2 Tests are run locally\n- `tyrannosaurus sync` \u21d2 Project metadata is synced to pyproject.toml\n- `tyrannosaurus update` \u21d2 New dependency versions from PyPi and/or Conda are listed\n- `tyrannosaurus [--aggressive] clean` \u21d2 Remove temp files\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9343138359415815,
+      "result": {
+        "original_header": "\ud83c\udf81 Full features / integrations",
+        "type": "Text_excerpt",
+        "value": "- Packaging and dependency management with [Poetry](https://python-poetry.org/)\n- Python 3.6 thru 3.11\n- Only modern files: _no_ manifest file, setup.py, requirements.txt, setup.cfg, or eggs\n- Continuous integration with [GitHub Actions](https://github.com/features/actions),\n  [Travis](https://www.travis-ci.com/), or\n  [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/)\n- Docker and Vagrant configuration\n- Continuous deployment to [PyPi](http://pypi.org/) and [Docker Hub](https://hub.docker.com/).\n- Deployment to the [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry);\n  plus to any other desired container registries with a simple modification.\n- Automatic attachment of [sdits](https://docs.python.org/3/distutils/sourcedist.html)\n  and [wheels](https://pythonwheels.com/) to\n  [GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)\n- Good default GitHub settings, synchronized via [Probot settings](https://github.com/probot/settings)\n- Documentation sent to [readthedocs](https://readthedocs.org/)\n- Nice documentation defaults with\n  [Sphinx extensions](https://www.sphinx-doc.org/en/master/usage/extensions/index.html)\n- Test automation with [Tox](https://tox.readthedocs.io)\n- Commit linting and changelog generation with [Commitizen](https://github.com/commitizen-tools/commitizen)\n- [Shields](https://github.com/badges/shields) with\n  [Coveralls](https://coveralls.io/),\n  [codecov](https://about.codecov.io/),\n  [CodeClimate](https://codeclimate.com/),\n  and [Scrutinizer](https://scrutinizer-ci.com/)\n  that reflect the main branch\n- Code linting with [pre-commit](https://pre-commit.com/), [Black](https://pypi.org/project/black/),\n  [Prettifier](https://prettier.io/), [Dockerfile-lint](https://github.com/Lucas-C/pre-commit-hooks-nodejs),\n  and [markdown-lint-check](https://github.com/gaurav-nelson/github-action-markdown-link-check)\n- Security analysis with [Bandit](https://github.com/PyCQA/bandit),\n  [CodeQL](https://github.com/github/codeql-action),\n  and [safety](https://github.com/pyupio/safety) \u2020\n- Static type analysis with [mypy](https://mypy.readthedocs.io)\n- [Conda-Forge](https://conda-forge.org/) [recipes](https://conda-forge.org/docs/maintainer/adding_pkgs.html#the-recipe-meta-yaml)\n  and [environment YML](https://medium.com/@balance1150/how-to-build-a-conda-environment-through-a-yaml-file-db185acf5d22)\n  with [Grayskull](https://github.com/conda-incubator/grayskull)\n  and [Tyrannosaurus](https://tyrannosaurus.readthedocs.io/)\n- IDE hints via [EditorConfig](https://editorconfig.org/) with good defaults for most languages\n- Fancy [issue labels](https://github.com/crazy-max/ghaction-github-labeler)\n- Fancy GitHub-recognized readme, license,\n  [contributing guide](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors),\n  [issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates), and\n  [pull request templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/about-issue-and-pull-request-templates)\n- Nice gitignore, dockerignore, [ChangeLog](https://keepachangelog.com), and other misc files\n- [CodeMeta](https://codemeta.github.io/user-guide/) and [CITATION.cff](https://citation-file-format.github.io/)\n- Dependency updating with [Dependabot](https://dependabot.com/)\n- `tyrannosaurus clean` to clean temp files\n- `tyrannosaurus update` that lists dependency versions to bump\n- `tyrannosaurus sync` to synchronize project metadata to pyproject.toml \u2021 \n\u2020 [Temporary issue in safety](https://github.com/pyupio/safety/issues/201)\n\u2021 This feature is experimental and does not yet support\nall [intended sync targets](https://github.com/dmyersturnbull/tyrannosaurus/issues/12). \n"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8302179240504375,
+      "result": {
+        "original_header": "\u270f\ufe0f Syncing to pyproject.toml",
+        "type": "Text_excerpt",
+        "value": "Tyrannosaurus has an optional `sync` command that synchronizes metadata from `pyproject.toml` to other files,\nso that **all of your metadata is in pyproject.toml**.\nThere are 16 available target files, including `docs/conf.py`, `tox.ini`, `.pre-commit-config.yaml`, `readthedocs.yml`,\n`.travis.yml`, and `__init__.py`.\nSettings like dev dependencies, project version, license headers, and preferred line length can be listed exactly once,\nin pyproject.toml. \n"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9193405029728987,
+      "result": {
+        "original_header": "\ud83c\udfaf Similar templates and tools",
+        "type": "Text_excerpt",
+        "value": "- An **elegant CI/CD workflow**: The workflow gets kicked off only via `git push` and GitHub releases.\n- **Interoperability with Conda**, including recipes and environment files, by mapping dependencies and metadata.\n- **Automated publishing** to PyPi, Conda-Forge, Docker Hub, the GitHub Container Registry, and readthedocs.\n- **No duplication** between project files. (Not 100%: some duplication remains.)\n- Built-in optional support for **extra/alternative tools**, such as Travis and codemeta.\n- Complete **absence of legacy tools**, files, and Python 2 support.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8959218315131795,
+      "result": {
+        "original_header": "\ud83c\udfc1 Feature table",
+        "type": "Text_excerpt",
+        "value": "**\u2020 _N int._**: Approximate number of built-in integrations with tools and standards. What counts is very roughly defined.\n**\u2021 _Modern_**: Lacks legacy files and tools. I\u2019m including Make, setuptools, pipenv, and some others.\n**Note:** [copier](https://github.com/copier-org/copier) syncs with a remote template. It\u2019s a neat idea that Tyrannosaurus lacks. \n- [hypermodern-python](https://github.com/cjolowicz/hypermodern-python)\n  ([template](https://github.com/cjolowicz/cookiecutter-hypermodern-python)), a Poetry-powered Python\n  template. It\u2019s good, but it made a few unusual choices, such as [Nox](https://github.com/theacodes/nox), which has <500 GitHub stars.\n- Both [cookiecutter-django](https://github.com/pydanny/cookiecutter-django) and\n  [django-init](https://github.com/Fueled/django-init) have fantastic setups for Django projects.\n- [Cookiecutter-docker-science](https://github.com/docker-science/cookiecutter-docker-science) is an interesting project\n  that doesn\u2019t quite fit in this list. \n"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://tyrannosaurus.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/dmyersturnbull/tyrannosaurus/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pypi.org/project/tyrannosaurus/"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 7
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "dmyersturnbull/tyrannosaurus"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Tyrannosaurus"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/docs/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/docs/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.4485186"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/dmyersturnbull/tyrannosaurus/issues"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "conda-build-recipes, cookiecutter-python, poetry, pyproject-toml, template"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "python"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "template"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pyproject-toml"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "python-poetry"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "conda-build"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "value": "https://api.github.com/licenses/apache-2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "Apache-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "tyrannosaurus"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "dmyersturnbull"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "tyrannosaurus"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 86356,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 1508,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/dmyersturnbull/tyrannosaurus/actions"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/dmyersturnbull/tyrannosaurus/blob/main/CHANGELOG.md"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://tox.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "dmyersturnbull",
+          "type": "User"
+        },
+        "date_created": "2021-10-05T18:48:24Z",
+        "date_published": "2021-10-05T18:48:58Z",
+        "html_url": "https://github.com/dmyersturnbull/tyrannosaurus/releases/tag/v0.10.4",
+        "name": "v0.10.4",
+        "release_id": 50837893,
+        "tag": "v0.10.4",
+        "tarball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/tarball/v0.10.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/50837893",
+        "value": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/50837893",
+        "zipball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/zipball/v0.10.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "dmyersturnbull",
+          "type": "User"
+        },
+        "date_created": "2021-06-14T19:28:01Z",
+        "date_published": "2021-06-14T19:28:26Z",
+        "html_url": "https://github.com/dmyersturnbull/tyrannosaurus/releases/tag/v0.10.3",
+        "name": "v0.10.3",
+        "release_id": 44594637,
+        "tag": "v0.10.3",
+        "tarball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/tarball/v0.10.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/44594637",
+        "value": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/44594637",
+        "zipball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/zipball/v0.10.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "dmyersturnbull",
+          "type": "User"
+        },
+        "date_created": "2021-05-30T22:39:00Z",
+        "date_published": "2021-05-30T22:39:47Z",
+        "html_url": "https://github.com/dmyersturnbull/tyrannosaurus/releases/tag/v0.10.2",
+        "name": "v0.10.2",
+        "release_id": 43827455,
+        "tag": "v0.10.2",
+        "tarball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/tarball/v0.10.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/43827455",
+        "value": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/43827455",
+        "zipball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/zipball/v0.10.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "dmyersturnbull",
+          "type": "User"
+        },
+        "date_created": "2021-05-30T02:11:33Z",
+        "date_published": "2021-05-30T19:36:01Z",
+        "html_url": "https://github.com/dmyersturnbull/tyrannosaurus/releases/tag/v0.10.1",
+        "name": "v0.10.1",
+        "release_id": 43824945,
+        "tag": "v0.10.1",
+        "tarball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/tarball/v0.10.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/43824945",
+        "value": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/43824945",
+        "zipball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/zipball/v0.10.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "dmyersturnbull",
+          "type": "User"
+        },
+        "date_created": "2021-05-08T23:10:19Z",
+        "date_published": "2021-05-08T23:31:54Z",
+        "html_url": "https://github.com/dmyersturnbull/tyrannosaurus/releases/tag/v0.10.0",
+        "name": "v0.10.0",
+        "release_id": 42654831,
+        "tag": "v0.10.0",
+        "tarball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/tarball/v0.10.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/42654831",
+        "value": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/42654831",
+        "zipball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/zipball/v0.10.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "dmyersturnbull",
+          "type": "User"
+        },
+        "date_created": "2021-04-04T07:06:11Z",
+        "date_published": "2021-04-04T07:07:14Z",
+        "html_url": "https://github.com/dmyersturnbull/tyrannosaurus/releases/tag/v0.9.7",
+        "name": "v0.9.7",
+        "release_id": 40911114,
+        "tag": "v0.9.7",
+        "tarball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/tarball/v0.9.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/40911114",
+        "value": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/40911114",
+        "zipball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/zipball/v0.9.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "dmyersturnbull",
+          "type": "User"
+        },
+        "date_created": "2021-01-18T23:33:42Z",
+        "date_published": "2021-01-18T23:39:51Z",
+        "html_url": "https://github.com/dmyersturnbull/tyrannosaurus/releases/tag/v0.8.9",
+        "name": "v0.8.9",
+        "release_id": 36573507,
+        "tag": "v0.8.9",
+        "tarball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/tarball/v0.8.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/36573507",
+        "value": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/releases/36573507",
+        "zipball_url": "https://api.github.com/repos/dmyersturnbull/tyrannosaurus/zipball/v0.8.9"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python",
+        "type": "Software_application",
+        "value": "python^3.9",
+        "version": "^3.9"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "tomlkit",
+        "type": "Software_application",
+        "value": "tomlkit>=0.11, <1",
+        "version": ">=0.11, <1"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "typer",
+        "type": "Software_application",
+        "value": "typer{'version': '^0.6', 'extras': ['all']}",
+        "version": {
+          "extras": [
+            "all"
+          ],
+          "version": "^0.6"
+        }
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "httpx",
+        "type": "Software_application",
+        "value": "httpx>=0.23, <1",
+        "version": ">=0.23, <1"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "grayskull",
+        "type": "Software_application",
+        "value": "grayskull^1.8",
+        "version": "^1.8"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "poetry",
+        "type": "Software_application",
+        "value": "poetry>=1.1,<2",
+        "version": ">=1.1,<2"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "virtualenv",
+        "type": "Software_application",
+        "value": "virtualenv==20.0.33",
+        "version": "==20.0.33"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "wheel",
+        "type": "Software_application",
+        "value": "wheel>=0.37,<1.0",
+        "version": ">=0.37,<1.0"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx",
+        "type": "Software_application",
+        "value": "sphinx               >=4.3,<5.0",
+        "version": ">=4.3,<5.0"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-rtd-theme",
+        "type": "Software_application",
+        "value": "sphinx-rtd-theme     >=1.0,<2.0",
+        "version": ">=1.0,<2.0"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-autoapi",
+        "type": "Software_application",
+        "value": "sphinx-autoapi       >=1.8,<2.0",
+        "version": ">=1.8,<2.0"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-copybutton",
+        "type": "Software_application",
+        "value": "sphinx-copybutton    >=0.4,<1.0",
+        "version": ">=0.4,<1.0"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "tomlkit",
+        "type": "Software_application",
+        "value": "tomlkit              >=0.7,<1.0",
+        "version": ">=0.7,<1.0"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/docs/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:07:56",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 93
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "tag": "0.11.0",
+        "type": "Release",
+        "value": "0.11.0"
+      },
+      "source": "https://raw.githubusercontent.com/dmyersturnbull/tyrannosaurus/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ]
+}

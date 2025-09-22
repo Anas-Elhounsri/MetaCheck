@@ -1,0 +1,686 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgments",
+        "parent_header": [
+          "Convert Codemeta"
+        ],
+        "type": "Text_excerpt",
+        "value": "This work was funded by the [Alfred P. Sloan Foundation](https://sloan.org/) as\npart of the [2019 Scientific Software Registry Collaboration\nWorkshop](http://asclnet.github.io/SWRegistryWorkshop). It is maintained by the California Institute of Technology Library.\n\n\n<div align=\"center\">\n  <br>\n  <a href=\"https://www.caltech.edu\">\n    <img width=\"100\" height=\"100\" src=\".graphics/caltech-round.png\">\n  </a>\n</div>\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "",
+        "type": "Agent",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech Library",
+        "email": "tmorrell@caltech.edu",
+        "identifier": "https://orcid.org/0000-0001-9266-5146",
+        "type": "String",
+        "value": "Thomas E Morrell"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Contributor Covenant Code of Conduct\n====================================\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment include:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a professional setting\n\n## Our Responsibilities\n\nProject contributors are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.\n\nProject contributors have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project contributors.\n\n## Enforcement\n\nIf a contributor engages in harassing behaviour, the project organizers may take any action they deem appropriate, including warning the offender or expelling them from online forums, online project resources, face-to-face meetings, or any other project-related activity or resource.\n\nIf you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the project team immediately.  Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team.  All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.  The project team is obligated to maintain confidentiality with regard to the reporter of an incident.  Further details of specific enforcement policies may be posted separately.\n\n## Attribution\n\nPortions of this Code of Conduct were adapted from Electron's [Contributor Covenant Code of Conduct](https://github.com/electron/electron/blob/master/CODE_OF_CONDUCT.md), which itself was adapted from the [Contributor Covenant](http://contributor-covenant.org/version/1/4), version 1.4.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/convert_codemeta"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/convert_codemeta"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/.github/workflows/tests.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Guidelines for contributing to this project\n\nAny constructive contributions &ndash; bug reports, pull requests (code or documentation), suggestions for improvements, and more &ndash; are welcome.\n\n## Conduct\n\nEveryone is asked to read and respect the [code of conduct](CODE_OF_CONDUCT.md) before participating in this project.\n\n## Coordinating work\n\nA quick way to find out what is currently in the near-term plans for this project is to look at the [GitHub issue tracker](https://github.com/mhucka/readmine/issues), but the possibilities are not limited to what you see there &ndash; if you have ideas for new features and enhancements, please feel free to write them up as a new issue or contact the developers directly!\n\n## Submitting contributions\n\nPlease feel free to contact the author directly, or even better, jump right in and use the standard GitHub approach of forking the repo and creating a pull request.  When committing code changes and submitting pull requests, please write a clear log message for your commits.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "Convert Codemeta"
+        ],
+        "type": "Text_excerpt",
+        "value": "Contributions are welcome! See [Contributing](CONTRIBUTING) for more details.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-10-28T18:31:33Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-04-11T19:04:42Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Convert and validate codemeta files using crosswalk"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Convert and validate codemeta."
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Introduction",
+        "parent_header": [
+          "Convert Codemeta"
+        ],
+        "type": "Text_excerpt",
+        "value": "This application copies some functionality of\n[codemetar](https://github.com/ropensci/codemetar), but in python. It includes\ncodemeta validation and crosswalk functions.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/convert_codemeta/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/convert_codemeta/archive/v0.2.0.zip"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/convert_codemeta/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/convert_codemeta"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Convert Codemeta"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/run-tests.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/.graphics/caltech-round.png"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "Convert Codemeta"
+        ],
+        "type": "Text_excerpt",
+        "value": "Clone from github\n\nType `pip install .`\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/convert_codemeta/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/convert_codemeta/issues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "GitHub",
+          "metadata",
+          "software",
+          "codemeta"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "Copyright (c) 2019, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors\nmay be used to endorse or promote products derived from this software without\nspecific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE\nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://data.caltech.edu/license",
+        "spdx_id": "https://data.caltech.edu/license",
+        "type": "License",
+        "value": "https://data.caltech.edu/license"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "Convert Codemeta"
+        ],
+        "type": "Text_excerpt",
+        "value": "Software produced by the Caltech Library is Copyright (C) 2019, Caltech.  This software is freely distributed under a BSD/MIT type license.  Please see the [LICENSE](LICENSE) file for more information.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "convert_codemeta"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "convert_codemeta"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 15697,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 378,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "value": "Python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "tmorrell",
+          "type": "User"
+        },
+        "date_created": "2020-12-09T22:58:43Z",
+        "date_published": "2020-12-09T23:56:05Z",
+        "description": "Modify validate function to always return True/False. ",
+        "html_url": "https://github.com/caltechlibrary/convert_codemeta/releases/tag/v0.4",
+        "name": "Make validate responses standard",
+        "release_id": 35072124,
+        "tag": "v0.4",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/tarball/v0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/35072124",
+        "value": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/35072124",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/zipball/v0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "tmorrell",
+          "type": "User"
+        },
+        "date_created": "2020-12-09T18:29:33Z",
+        "date_published": "2020-12-09T19:01:56Z",
+        "description": "This release improves the validation by changing the codemeta context to one that uses https for schema.org. This workaround will not be necessary once codemeta uses a https schema.org link, but also shouldn't have any impact on the validation results.",
+        "html_url": "https://github.com/caltechlibrary/convert_codemeta/releases/tag/v0.3",
+        "name": "Adds https workaround to validation",
+        "release_id": 35060476,
+        "tag": "v0.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/tarball/v0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/35060476",
+        "value": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/35060476",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/zipball/v0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "tmorrell",
+          "type": "User"
+        },
+        "date_created": "2020-12-07T17:28:00Z",
+        "date_published": "2020-12-07T17:29:33Z",
+        "description": "This release adds verification of the license value so the Zenodo-formatted metadata is accepted by the Zenodo API.",
+        "html_url": "https://github.com/caltechlibrary/convert_codemeta/releases/tag/v0.2",
+        "name": "Zenodo API License Formatting",
+        "release_id": 34940889,
+        "tag": "v0.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/tarball/v0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/34940889",
+        "value": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/34940889",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/zipball/v0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "tmorrell",
+          "type": "User"
+        },
+        "date_created": "2020-11-25T23:06:51Z",
+        "date_published": "2020-11-25T23:07:25Z",
+        "description": "This release fixes a bug in adding values that don't exist and the Zenodo mapping for related identifiers.",
+        "html_url": "https://github.com/caltechlibrary/convert_codemeta/releases/tag/v0.1.1",
+        "name": "Key and Zenodo Mapping Bugs",
+        "release_id": 34438865,
+        "tag": "v0.1.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/tarball/v0.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/34438865",
+        "value": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/34438865",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/zipball/v0.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "tmorrell",
+          "type": "User"
+        },
+        "date_created": "2020-11-24T00:13:42Z",
+        "date_published": "2020-11-24T19:07:56Z",
+        "description": "This is the first major release of convert_codemeta. It includes fixes for https: resolution issues with schema.org, a working conversion function with a Zenodo example, and general package installation cleanup. ",
+        "html_url": "https://github.com/caltechlibrary/convert_codemeta/releases/tag/v0.1.0",
+        "name": "Metadata Conversions and Improved Tests",
+        "release_id": 34379722,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/34379722",
+        "value": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/34379722",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "tmorrell",
+          "type": "User"
+        },
+        "date_created": "2019-12-11T23:59:53Z",
+        "date_published": "2019-12-12T00:09:25Z",
+        "description": "convert_codemeta validates and converts codemeta.json files from different formats using the codemeta crosswalk table. The design of this package is inspired by codemetar, but adds support for converting nested elements using a dotpath in the crosswalk table. It also demonstrates how more complex format conversions (mapping with logic) can be added into the package.",
+        "html_url": "https://github.com/caltechlibrary/convert_codemeta/releases/tag/v0.0.1",
+        "name": "First release of convert_codemeta",
+        "release_id": 22162753,
+        "tag": "v0.0.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/tarball/v0.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/22162753",
+        "value": "https://api.github.com/repos/caltechlibrary/convert_codemeta/releases/22162753",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/convert_codemeta/zipball/v0.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pandas",
+        "type": "Software_application",
+        "value": "pandas>=1.0.0",
+        "version": ">=1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyld[requests]",
+        "type": "Software_application",
+        "value": "pyld[requests]==1.0.5",
+        "version": "==1.0.5"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:28:38",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Getting help",
+        "parent_header": [
+          "Convert Codemeta"
+        ],
+        "type": "Text_excerpt",
+        "value": "Submit issues on GitHub, or send me a note at tmorrell@caltech.edu\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "Convert Codemeta"
+        ],
+        "type": "Text_excerpt",
+        "value": "Validate codemeta in a python script: `validate_codemeta(codemeta)`\n\nConvert to codemeta in a python script by providing the input format:\n`crosswalk(data, \"bio.tools\")`\n\nConvert from codemeta to a different format in a python script by providing both formats:\n`crosswalk(data, \"codemeta\", \"Zenodo\")`\n\nRun tests by typing `pytest tests`\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Getting help",
+        "parent_header": [
+          "Convert Codemeta"
+        ],
+        "type": "Text_excerpt",
+        "value": "Submit issues on GitHub, or send me a note at tmorrell@caltech.edu\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/convert_codemeta/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

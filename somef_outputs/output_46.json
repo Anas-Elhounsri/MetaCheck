@@ -1,0 +1,731 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Jorge Cimentada"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "cimentadaj@gmail.com",
+        "type": "String",
+        "value": "Jorge Cimentada"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2019",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader('To cite essurvey in publications use:')\n\ncitEntry(\n  entry    = 'Manual',\n  title    = 'Download Data from the European Social Survey on the Fly',\n  author   = 'Jorge Cimentada ',\n  year     = '2019',\n  note     = 'R package version 1.0.3',\n  url      = 'https://docs.ropensci.org/essurvey/',\n  textVersion = 'Cimentada, Jorge (2019). Download Data from the European Social Survey on the Fly R package version 1.0.3'\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/inst/CITATION",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/essurvey"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/essurvey"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/essurvey"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/ropensci/essurvey/actions",
+          "https://codecov.io/github/ropensci/essurvey?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING #\n\n### Bugs?\n\n* Submit an issue on the [Issues page](https://github.com/ropensci/essurvey/issues)\n\n### Issues and Pull Requests\n\nIf you are considering a pull request, you may want to open an issue first to discuss with the maintainer(s).\n\n### Code contributions\n\n* Fork this repo to your GitHub account\n* Clone your version on your account down to your machine from your account, e.g,. `git clone https://github.com/ropensci/essurvey.git`\n* Make sure to track progress upstream (i.e., on our version of `essurvey` at `ropensci/essurvey`) by doing `git remote add upstream https://github.com/ropensci/essurvey.git`. Before making changes make sure to pull changes in from upstream by doing either `git fetch upstream` then merge later or `git pull upstream` to fetch and merge in one step\n* Make your changes (bonus points for making changes on a new feature branch - see <https://guides.github.com/introduction/flow/> for how to contribute by branching, making changes, then submitting a pull request)\n* Push up to your account\n* Submit a pull request to home base (likely master branch, but check to make sure) at `ropensci/essurvey`\n\n### Discussion forum\n\nCheck out our [discussion forum](https://discuss.ropensci.org) if you think your issue requires a longer form discussion.\n\n### Prefer to Email? \n\nEmail the person listed as maintainer in the `DESCRIPTION` file of this repo.\n\nThough note that private discussions over email don't help others - of course email is totally warranted if it's a sensitive problem of any kind.\n\n### Thanks for contributing!"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-10-19T10:45:28Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-06-19T22:31:30Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Download data from the European Social Survey"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+        "type": "String",
+        "value": "Download data from the European Social Survey directly from their website <http://www.europeansocialsurvey.org/>. There are two families of functions that allow you to download and interactively check all countries and rounds available."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Download data from the European Social Survey directly from their website <http://www.europeansocialsurvey.org/>. There are two families of functions that allow you to download and interactively check all countries and rounds available."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Description",
+        "type": "Text_excerpt",
+        "value": "The European Social Survey (ESS) is an academically driven\ncross-national survey that has been conducted across Europe since its\nestablishment in 2001. Every two years, face-to-face interviews are\nconducted with newly selected, cross-sectional samples. The survey\nmeasures the attitudes, beliefs and behavior patterns of diverse\npopulations in more than thirty nations. Taken from the [ESS\nwebsite](http://www.europeansocialsurvey.org/about/).\n\nNote: The `essurvey` package was originally called `ess`. Since\n`essurvey 1.0.0` all `ess_*` functions have been deprecated in favor of\nthe `import_*` and `download_*` functions. Also, versions less than and\nincluding `essurvey 1.0.1` returned wrong countries. Please install the\nlatest CRAN/Github version.\n\nThe `essurvey` package is designed to download the ESS data as easily as\npossible. It has a few helper functions to download rounds (a term\nsynonym to waves to denote the same survey in different time points),\nrounds for a selected country and to show which rounds/countries are\navailable. Check out the vignette and other documentation in the\n[package\u2019s website](https://docs.ropensci.org/essurvey/) for more\ndetailed examples of the `essurvey` package.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.8971995873491195,
+      "result": {
+        "original_header": "Stata, SPSS and SAS users",
+        "type": "Text_excerpt",
+        "value": "I\u2019m quite aware that most ESS users don\u2019t know R, that is why the\npackage also allows to download the data in Stata, SPSS or SAS format\nwith just one line of code. Instead of the `import_*` functions, use the\n`download_*` functions.\n``` r\ndownload_rounds(c(1, 2),\n                output_dir = \"my/new/directory\",\n                format = 'spss')\n```\n \nThis will save the ESS rounds into separate folders and unzip them in\nthe specified directory (if you want to know your current directory,\ntype `getwd()`). This works the same way for `download_country()`. Be\naware that if you download the files manually you should read them into\nR with the `haven` package for all `essurvey` related functions to work. \nPlease note that this project is released with a [Contributor Code of\nConduct](https://docs.ropensci.org/essurvey/CONDUCT.html). By\nparticipating in this project you agree to abide by its terms. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/essurvey/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/essurvey/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 9
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/essurvey/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/essurvey"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/essurvey/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "essurvey"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/ropensci_footer.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "You can install and load the development version with these commands:\n\n``` r\n# install.packages(\"devtools\") in case you don't have it\ndevtools::install_github(\"ropensci/essurvey\")\n```\n\nor the stable version with:\n\n``` r\ninstall.packages(\"essurvey\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/essurvey/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/essurvey/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/essurvey/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ess, r, r-package, rstats"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "ess",
+          "r",
+          "rstats",
+          "r-package"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2018 Jorge Cimentada\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/essurvey/master/man/figures/ess_logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "essurvey"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "essurvey: Download Data from the European Social Survey on the Fly"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+        "type": "String",
+        "value": "essurvey"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 102469,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/essurvey/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/essurvey/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/essurvey/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cimentadaj",
+          "type": "User"
+        },
+        "date_created": "2022-01-10T11:13:58Z",
+        "date_published": "2022-01-10T11:14:55Z",
+        "description": "\r\n* Fixes URL creation bug (#53)",
+        "html_url": "https://github.com/ropensci/essurvey/releases/tag/v1.0.8",
+        "name": "essurvey v1.0.8",
+        "release_id": 56729160,
+        "tag": "v1.0.8",
+        "tarball_url": "https://api.github.com/repos/ropensci/essurvey/tarball/v1.0.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/essurvey/releases/56729160",
+        "value": "https://api.github.com/repos/ropensci/essurvey/releases/56729160",
+        "zipball_url": "https://api.github.com/repos/ropensci/essurvey/zipball/v1.0.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cimentadaj",
+          "type": "User"
+        },
+        "date_created": "2021-03-11T18:53:56Z",
+        "date_published": "2021-03-11T18:59:16Z",
+        "description": "\r\n- CRAN maintenance release. All vignettes are now precompiled to avoid errors when the ESS website breaks for some reason.\r\n- `ess_email` environmental variable has been renamed to `ESS_EMAIL` to comply with Github Actions standards\r\n",
+        "html_url": "https://github.com/ropensci/essurvey/releases/tag/v1.0.7",
+        "name": "essurvey v1.0.7",
+        "release_id": 39675511,
+        "tag": "v1.0.7",
+        "tarball_url": "https://api.github.com/repos/ropensci/essurvey/tarball/v1.0.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/essurvey/releases/39675511",
+        "value": "https://api.github.com/repos/ropensci/essurvey/releases/39675511",
+        "zipball_url": "https://api.github.com/repos/ropensci/essurvey/zipball/v1.0.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cimentadaj",
+          "type": "User"
+        },
+        "date_created": "2021-01-27T09:33:23Z",
+        "date_published": "2021-02-07T16:41:15Z",
+        "description": "## essurvey 1.0.6\r\n\r\n- CRAN maintenance release to fix Solaris warnings `Warning in engine$weave(file, quiet = quiet, encoding = enc) : Pandoc (>= 1.12.3) and/or pandoc-citeproc not available. Falling back to R Markdown v1` on CRAN. Tested on Rhub and all passes OK, notifying CRAN.\r\n\r\n- Removes automatic citation message when loading package. It's actually annoying.",
+        "html_url": "https://github.com/ropensci/essurvey/releases/tag/v1.0.6",
+        "name": "essurvey v1.0.6",
+        "release_id": 37640760,
+        "tag": "v1.0.6",
+        "tarball_url": "https://api.github.com/repos/ropensci/essurvey/tarball/v1.0.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/essurvey/releases/37640760",
+        "value": "https://api.github.com/repos/ropensci/essurvey/releases/37640760",
+        "zipball_url": "https://api.github.com/repos/ropensci/essurvey/zipball/v1.0.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cimentadaj",
+          "type": "User"
+        },
+        "date_created": "2019-12-11T13:08:57Z",
+        "date_published": "2019-12-11T13:56:56Z",
+        "description": "## essurvey 1.0.5\r\n\r\nCRAN maintenance release to add more informative message when the status code of the HTTP request of 'www.europeansocialsurvey.org' is more than 300.\r\n\r\n# Minor changes\r\n\r\nAll tests/examples are now excluded from running on CRAN based on the warning from Brian Ripley:\r\n\r\n'Packages which use Internet resources should fail gracefully with an\r\ninformative message if the resource is not available (and not give a check\r\nwarning nor error).'\r\n\r\nThey are all forced to run on Travis and Appveyor and this is made clear on the `cran-comments.md`\r\n",
+        "html_url": "https://github.com/ropensci/essurvey/releases/tag/v1.0.5",
+        "name": "essurvey v1.0.5",
+        "release_id": 22145106,
+        "tag": "v1.0.5",
+        "tarball_url": "https://api.github.com/repos/ropensci/essurvey/tarball/v1.0.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/essurvey/releases/22145106",
+        "value": "https://api.github.com/repos/ropensci/essurvey/releases/22145106",
+        "zipball_url": "https://api.github.com/repos/ropensci/essurvey/zipball/v1.0.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cimentadaj",
+          "type": "User"
+        },
+        "date_created": "2019-11-04T07:55:33Z",
+        "date_published": "2019-11-04T12:49:14Z",
+        "description": "Maintenance release for new European Social Survey wave (round 9).",
+        "html_url": "https://github.com/ropensci/essurvey/releases/tag/v1.0.4",
+        "name": "essurvey v1.0.4",
+        "release_id": 21189415,
+        "tag": "v1.0.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/essurvey/tarball/v1.0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/essurvey/releases/21189415",
+        "value": "https://api.github.com/repos/ropensci/essurvey/releases/21189415",
+        "zipball_url": "https://api.github.com/repos/ropensci/essurvey/zipball/v1.0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cimentadaj",
+          "type": "User"
+        },
+        "date_created": "2019-10-15T06:07:45Z",
+        "date_published": "2019-10-16T06:19:46Z",
+        "description": "## essurvey 1.0.3\r\n\r\n### Breaking changes\r\n\r\n* If you don't know which format is available for a round/country, `import_*` and `download_*` functions now accept a NULL argument which runs through `'stata'`, `'spss'` and `'sas'` formats automatically. By default, `import_*` functions have now format set to `NULL` to automatically try the three different formats. This breaks backward dependency but only slightly where it had 'stata' set as default.\r\n\r\n### New features\r\n\r\n* Users can now download SDDF (weight data) for each country/round combination of files. Functions `show_sddf_cntrounds`, `import_sddf_country` and `download_sddf_country` are now introduced. For technical purposes, `show_sddf_cntrounds` needs for the user to have set their registered ESS email with `set_email`. [#9]\r\n\r\n### Minor changes\r\n\r\n* Bumps `haven` to minimum package version 2.1.1\r\n* New package website at https://docs.ropensci.org/essurvey\r\n\r\n### Internal\r\n\r\n* `read_format_data` now tries to read data using `haven` but falls backs to `foreign` in case there's an error. This should only work for SDDF data [#38].\r\n* `read_format_data` and `read_sddf_data` now always return a list. Checking the length of data to return a data frame now happens within each `import_*` function.\r\n\r\n### Bug fixes\r\n\r\n* Removes an unnecessary if statement in `set_email` that didn't allow to overwrite the email once set.",
+        "html_url": "https://github.com/ropensci/essurvey/releases/tag/v1.0.3",
+        "name": "essurvey v1.0.3",
+        "release_id": 20732035,
+        "tag": "v1.0.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/essurvey/tarball/v1.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/essurvey/releases/20732035",
+        "value": "https://api.github.com/repos/ropensci/essurvey/releases/20732035",
+        "zipball_url": "https://api.github.com/repos/ropensci/essurvey/zipball/v1.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cimentadaj",
+          "type": "User"
+        },
+        "date_created": "2018-08-23T14:12:37Z",
+        "date_published": "2018-08-23T14:15:16Z",
+        "description": "## essurvey 1.0.2\r\n\r\n### Minor changes\r\n\r\n`show_country_rounds` checks if there are missing values and excludes them.\r\n\r\n### Breaking changes\r\n\r\n`import_all_cntrounds` and `import_country` returned incorrect countries [#31]\r\n",
+        "html_url": "https://github.com/ropensci/essurvey/releases/tag/v1.0.2",
+        "name": "essurvey v1.0.2",
+        "release_id": 12543245,
+        "tag": "v1.0.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/essurvey/tarball/v1.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/essurvey/releases/12543245",
+        "value": "https://api.github.com/repos/ropensci/essurvey/releases/12543245",
+        "zipball_url": "https://api.github.com/repos/ropensci/essurvey/zipball/v1.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cimentadaj",
+          "type": "User"
+        },
+        "date_created": "2018-06-10T15:54:56Z",
+        "date_published": "2018-06-10T15:55:38Z",
+        "description": "# MINOR CHANGES\r\n\r\nFixes test that checks the number of rounds that each country has. This test was a mistake because the rounds will change as time passes by and precise country rounds shouldn't be tested.",
+        "html_url": "https://github.com/ropensci/essurvey/releases/tag/v1.0.1",
+        "name": "essurvey v1.0.1",
+        "release_id": 11409957,
+        "tag": "v1.0.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/essurvey/tarball/v1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/essurvey/releases/11409957",
+        "value": "https://api.github.com/repos/ropensci/essurvey/releases/11409957",
+        "zipball_url": "https://api.github.com/repos/ropensci/essurvey/zipball/v1.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cimentadaj",
+          "type": "User"
+        },
+        "date_created": "2018-06-10T15:45:06Z",
+        "date_published": "2018-06-10T15:49:04Z",
+        "description": "The `ess` package has been renamed to `essurvey` for a name conflict with Emacs Speaks Statistics (ESS). See R-pkg mailing list, the post related to the release of ess-0-0-1.\r\n\r\n# BREAKING CHANGES\r\n\r\n* `ess_rounds` and `ess_all_rounds` are deprecated and will be removed in the next release. Use `import_rounds` instead [#22]\r\n\r\n* `ess_country` and `ess_all_cntrounds` are deprecated and will be removed in the next release. Use `import_countries` instead [#22]\r\n\r\n* The `your_email` argument name of `ess_*` functions has be changed to `ess_email` [#23]\r\n\r\n# NEW FEATURES\r\n\r\n* `import_rounds`, `import_all_rounds` and `download_rounds` have been introduced as\r\nreplacements of `ess_rounds` and `ess_all_rounds`. Same changes were repeated for\r\n`ess_country` and `ess_all_cntrounds` [#22]\r\n\r\n* `set_email` to set your email as environmental variable rather than write it in each call [#23]\r\n\r\n* All requests to the ESS website are now done through HTTPS rather than HTTP [#24]\r\n\r\n* Add package level documentation [#20]\r\n\r\n#  MINOR CHANGES\r\n\r\n* `ess_email` had no default value but now has `NULL` as default [#23]\r\n\r\n* The `format` argument is now checked through `match.arg` rathern than manual check [#25]",
+        "html_url": "https://github.com/ropensci/essurvey/releases/tag/v1.0.0",
+        "name": "essurvey v1.0.0",
+        "release_id": 11409992,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/essurvey/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/essurvey/releases/11409992",
+        "value": "https://api.github.com/repos/ropensci/essurvey/releases/11409992",
+        "zipball_url": "https://api.github.com/repos/ropensci/essurvey/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:16:57",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 49
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "type": "Text_excerpt",
+        "value": "First, you need to register at the ESS website, in case you haven\u2019t.\nPlease visit the\n[register](http://www.europeansocialsurvey.org/user/new) section from\nthe ESS website. If your email is not registered at their website, an\nerror will be raised prompting you to go register.\n\nSet your valid email as en environment variable.\n\n``` r\nset_email(\"your@email.com\")\n```\n\nTo explore which rounds/countries are present in the ESS use the\n`show_*()` family of functions.\n\n``` r\nlibrary(essurvey)\nshow_countries()\n#>  [1] \"Albania\"            \"Austria\"            \"Belgium\"           \n#>  [4] \"Bulgaria\"           \"Croatia\"            \"Cyprus\"            \n#>  [7] \"Czechia\"            \"Denmark\"            \"Estonia\"           \n#> [10] \"Finland\"            \"France\"             \"Germany\"           \n#> [13] \"Greece\"             \"Hungary\"            \"Iceland\"           \n#> [16] \"Ireland\"            \"Israel\"             \"Italy\"             \n#> [19] \"Kosovo\"             \"Latvia\"             \"Lithuania\"         \n#> [22] \"Luxembourg\"         \"Montenegro\"         \"Netherlands\"       \n#> [25] \"Norway\"             \"Poland\"             \"Portugal\"          \n#> [28] \"Romania\"            \"Russian Federation\" \"Serbia\"            \n#> [31] \"Slovakia\"           \"Slovenia\"           \"Spain\"             \n#> [34] \"Sweden\"             \"Switzerland\"        \"Turkey\"            \n#> [37] \"Ukraine\"            \"United Kingdom\"\n```\n\nTo download the first round to use in R:\n\n``` r\none_round <- import_rounds(1)\n```\n\nThis will return a data frame containing the first round. Typically, the\nEuropean Social Survey data files comes with a script that recodes\nmissing values to `NA` for different programs (Stata, SPSS, SAS).\n\nUse `recode_missings` to recode all values automatically.\n\n``` r\nlibrary(tidyverse)\n\none_round <-\n  import_rounds(1) %>%\n  recode_missings()\n```\n\nSee the package vignette for greater detail or see the help page with\n`?recode_missings`. You can also download several rounds by supplying\nthe number of rounds.\n\n``` r\nfive_rounds <- import_rounds(1:5)\n```\n\nThis will download all latest versions of rounds 1 through 5 and return\na list of length 5 with each round as a data frame inside the list.\n\nYou can check the available rounds with `show_rounds()` because if you\nsupply a non existent round, the function will return an error.\n\n``` r\ntwo_rounds <- import_rounds(c(1, 22))\n#> Error in round_url(rounds) : \n#> ESS round 22 is not a available. Check show_rounds() \n```\n\nAlternatively, you can download all available rounds with\n`import_all_rounds()`.\n\nYou can also download rounds by country:\n\n``` r\ndk_two <- import_country(\"Denmark\", 1:2)\n```\n\nUse `show_countries()` to see available countries and\n`show_country_rounds(\"Denmark\")` to see available rounds for chosen\ncountry. Alternatively, use `import_all_cntrounds()` to download all\navailable rounds of a country.\n\nYou should be be aware that data from the ESS survey should by analyzed\nby taking into consideration the sampling and weights of the survey. A\nuseful example comes from the work of Anthony Damico and Daniel Oberski\n[here](http://asdfree.com/european-social-survey-ess.html).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+        "type": "String",
+        "value": "1.0.8"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.0.8"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/essurvey/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,1356 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Biodiversity"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9023263818063956,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "willi@mmorris.email",
+        "identifier": "https://orcid.org/0000-0002-8686-4154",
+        "type": "String",
+        "value": "William K. Morris"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Morris",
+            "given_name": "William K.",
+            "name": "William K. Morris",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-8686-4154"
+          }
+        ],
+        "datePublished": "2025",
+        "doi": "10.5281/zenodo.3612814",
+        "format": "cff",
+        "title": "finbif",
+        "type": "File_dump",
+        "url": "https://doi.org/10.5281/zenodo.3612814",
+        "value": "# YAML 1.2\n---\nversion: \"0.9.11\"\ndate-released: 2025-08-22\ntitle: finbif\nabstract: |\n    \"The `finbif` R package is a programmatic interface to the [Finnish\n    Biodiversity Information Facility (FinBIF) API](https://api.laji.fi). FinBIF\n    aggregates Finnish biodiversity data from multiple sources in a single open\n    access portal for researchers, citizen scientists, industry and government.\n    FinBIF allows users of biodiversity information to find, access, combine and\n    visualise data on Finnish plants, animals and microorganisms. The `finbif`\n    R package makes the publicly available data in FinBIF easily accessible to\n    programmers. Biodiversity information is available on taxonomy and taxon\n    occurrence. Occurrence data can be filtered by taxon, time, location and\n    other variables. The data accessed are conveniently preformatted for\n    subsequent analyses.\"\nauthors:\n  -\n    affiliation: \"Finnish Museum of Natural History - Luomus\"\n    family-names: Morris\n    given-names: \"William K.\"\n    orcid: \"https://orcid.org/0000-0002-8686-4154\"\ncff-version: \"1.2.0\"\ndoi: \"10.5281/zenodo.3612814\"\nkeywords:\n  - api\n  - biodiversity\n  - \"biodiversity-informatics\"\n  - \"biodiversity-information\"\n  - finbif\n  - \"finbif-access\"\n  - occurrences\n  - \"r-package\"\n  - \"r-programming\"\n  - rstats\n  - species\n  - specimens\n  - taxon\n  - taxonomy\n  - \"web-services\"\nlicense: MIT\nurl: \"https://luomus.github.io/finbif/\"\nrepository-code: \"https://github.com/luomus/finbif\"\npreferred-citation:\n  authors:\n    - family-names: Morris\n      given-names: William K.\n      orcid: \"https://orcid.org/0000-0002-8686-4154\"\n  title: Introduction to the finbif package\n  type: manual\n  year: 2025\n  doi: \"10.5281/zenodo.3612814\"\n  notes: \"R package version 0.9.11\"\n  url: \"https://luomus.github.io/finbif/articles/finbif.html\"\nmessage: \"If you use this software, please cite it using these metadata.\"\n...\n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "FinBIF R package <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"120\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Data from FinBIF comes from many sources. For information on citing\nFinBIF itself and the contributed datasets please visit this link:\n\n<https://laji.fi/en/about/2986>\n\nTo cite the finbif R package in publications please use:\n\n  Morris, William K. (2025). Introduction to the finbif package. R\n  package version 0.9.11, https://doi.org/10.5281/zenodo.3612814\n\n----\n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nWe as members, contributors, and leaders pledge to make participation in our\ncommunity a harassment-free experience for everyone, regardless of age, body\nsize, visible or invisible disability, ethnicity, sex characteristics, gender\nidentity and expression, level of experience, education, socio-economic status,\nnationality, personal appearance, race, caste, color, religion, or sexual identity\nand orientation.\n\nWe pledge to act and interact in ways that contribute to an open, welcoming,\ndiverse, inclusive, and healthy community.\n\n## Our Standards\n\nExamples of behavior that contributes to a positive environment for our\ncommunity include:\n\n* Demonstrating empathy and kindness toward other people\n* Being respectful of differing opinions, viewpoints, and experiences\n* Giving and gracefully accepting constructive feedback\n* Accepting responsibility and apologizing to those affected by our mistakes,\n  and learning from the experience\n* Focusing on what is best not just for us as individuals, but for the\n  overall community\n\nExamples of unacceptable behavior include:\n\n* The use of sexualized language or imagery, and sexual attention or\n  advances of any kind\n* Trolling, insulting or derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or email\n  address, without their explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Enforcement Responsibilities\n\nCommunity leaders are responsible for clarifying and enforcing our standards of\nacceptable behavior and will take appropriate and fair corrective action in\nresponse to any behavior that they deem inappropriate, threatening, offensive,\nor harmful.\n\nCommunity leaders have the right and responsibility to remove, edit, or reject\ncomments, commits, code, wiki edits, issues, and other contributions that are\nnot aligned to this Code of Conduct, and will communicate reasons for moderation\ndecisions when appropriate.\n\n## Scope\n\nThis Code of Conduct applies within all community spaces, and also applies when\nan individual is officially representing the community in public spaces.\nExamples of representing our community include using an official e-mail address,\nposting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported to the community leaders responsible for enforcement at\n[helpdesk@laji.fi](mailto:helpdesk@laji.fi).\nAll complaints will be reviewed and investigated promptly and fairly.\n\nAll community leaders are obligated to respect the privacy and security of the\nreporter of any incident.\n\n## Enforcement Guidelines\n\nCommunity leaders will follow these Community Impact Guidelines in determining\nthe consequences for any action they deem in violation of this Code of Conduct:\n\n### 1. Correction\n\n**Community Impact**: Use of inappropriate language or other behavior deemed\nunprofessional or unwelcome in the community.\n\n**Consequence**: A private, written warning from community leaders, providing\nclarity around the nature of the violation and an explanation of why the\nbehavior was inappropriate. A public apology may be requested.\n\n### 2. Warning\n\n**Community Impact**: A violation through a single incident or series\nof actions.\n\n**Consequence**: A warning with consequences for continued behavior. No\ninteraction with the people involved, including unsolicited interaction with\nthose enforcing the Code of Conduct, for a specified period of time. This\nincludes avoiding interactions in community spaces as well as external channels\nlike social media. Violating these terms may lead to a temporary or\npermanent ban.\n\n### 3. Temporary Ban\n\n**Community Impact**: A serious violation of community standards, including\nsustained inappropriate behavior.\n\n**Consequence**: A temporary ban from any sort of interaction or public\ncommunication with the community for a specified period of time. No public or\nprivate interaction with the people involved, including unsolicited interaction\nwith those enforcing the Code of Conduct, is allowed during this period.\nViolating these terms may lead to a permanent ban.\n\n### 4. Permanent Ban\n\n**Community Impact**: Demonstrating a pattern of violation of community\nstandards, including sustained inappropriate behavior,  harassment of an\nindividual, or aggression toward or disparagement of classes of individuals.\n\n**Consequence**: A permanent ban from any sort of public interaction within\nthe community.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage],\nversion 2.1, available at\n[https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].\n\nCommunity Impact Guidelines were inspired by\n[Mozilla's code of conduct enforcement ladder][Mozilla CoC].\n\nFor answers to common questions about this code of conduct, see the FAQ at\n[https://www.contributor-covenant.org/faq][FAQ]. Translations are available\nat [https://www.contributor-covenant.org/translations][translations].\n\n[homepage]: https://www.contributor-covenant.org\n[v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html\n[Mozilla CoC]: https://github.com/mozilla/diversity\n[FAQ]: https://www.contributor-covenant.org/faq\n[translations]: https://www.contributor-covenant.org/translations\n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/luomus/finbif"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/luomus/finbif"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/luomus/finbif"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/luomus/finbif/main/.github/workflows/test-coverage.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/luomus/finbif/main/.github/workflows/check-standard.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\n### Fixing typos\n\nSmall typos or grammatical errors in documentation may be edited so long as the\nchanges are made in the _source_ file.\n\n*  YES: you edit a roxygen comment in a `.R` file below `R/`.\n*  NO: you edit an `.Rd` file below `man/`.\n\n### Prerequisites\n\nBefore you make a substantial pull request, you should always file an issue and\nmake sure someone from the team agrees that it\u2019s a problem. If you\u2019ve found a\nbug, create an associated issue and illustrate the bug with a minimal\n[reprex](https://www.tidyverse.org/help/#reprex).\n\n### Pull request process\n\n*  We recommend that you create a Git branch for each pull request (PR).\n*  Look at the build status before and after making changes.\nThe `README` contains badges for any continuous integration services used\nby the package.\n*  New code should follow the style used in the project.\n*  We use [roxygen2](https://cran.r-project.org/package=roxygen2), with\n[Markdown syntax](https://cran.r-project.org/web/packages/roxygen2/vignettes/markdown.html),\nfor documentation.\n*  We use [testthat](https://cran.r-project.org/package=testthat). Contributions\nwith test cases included are easier to accept.\n*  For user-facing changes, add a section to the top of `inst/NEWS.Rd` below the\ncurrent development version header describing the changes made followed by your\nusername, and links to relevant issue(s)/PR(s).\n\n### Code of Conduct\n\nPlease note that this project is released with a\n[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this\nproject you agree to abide by its terms.\n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "FinBIF R package <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"120\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Development is a community effort, and we encourage participation. Please read\n[the contribution guide](https://github.com/luomus/finbif/blob/main/CONTRIBUTING.md)\nfor details.\n\nPlease note that the 'finbif' project is released with a\n[Contributor Code of Conduct](https://github.com/luomus/finbif/blob/main/CODE_OF_CONDUCT.md).\nBy contributing to this project, you agree to abide by its terms.\n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-07-01T11:11:10Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-03T15:57:01Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R interface for the Finnish Biodiversity Information Facility (FinBIF) API"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+        "type": "String",
+        "value": "A programmatic interface to the 'Finnish Biodiversity Information\n    Facility' ('FinBIF') API (<https://api.laji.fi>). 'FinBIF' aggregates\n    Finnish biodiversity data from multiple sources in a single open access\n    portal for researchers, citizen scientists, industry and government.\n    'FinBIF' allows users of biodiversity information to find, access, combine\n    and visualise data on Finnish plants, animals and microorganisms. The\n    'finbif' package makes the publicly available data in 'FinBIF' easily\n    accessible to programmers. Biodiversity information is available on taxonomy\n    and taxon occurrence. Occurrence data can be filtered by taxon, time,\n    location and other variables. The data accessed are conveniently\n    preformatted for subsequent analyses."
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A programmatic interface to the 'Finnish Biodiversity Information Facility' ('FinBIF') API (<https://api.laji.fi>). 'FinBIF' aggregates Finnish biodiversity data from multiple sources in a single open access portal for researchers, citizen scientists, industry and government. 'FinBIF' allows users of biodiversity information to find, access, combine and visualise data on Finnish plants, animals and microorganisms. The 'finbif' package makes the publicly available data in 'FinBIF' easily accessible to programmers. Biodiversity information is available on taxonomy and taxon occurrence. Occurrence data can be filtered by taxon, time, location and other variables. The data accessed are conveniently preformatted for subsequent analyses."
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9924824854220803,
+      "result": {
+        "original_header": "FinBIF R package <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"120\">",
+        "type": "Text_excerpt",
+        "value": "\nThe `finbif` R package is a programmatic interface to the\n[Finnish Biodiversity Information Facility (FinBIF) API](https://api.laji.fi).\nFinBIF aggregates Finnish biodiversity data from multiple sources in a single\nopen access portal for researchers, citizen scientists, industry and government.\nFinBIF allows users of biodiversity information to find, access, combine and\nvisualise data on Finnish plants, animals and microorganisms. The `finbif`\nR package makes the publicly available data in FinBIF easily accessible to\nprogrammers. Biodiversity information is available on taxonomy and taxon\noccurrence. Occurrence data can be filtered by taxon, time, location and other\nvariables. The data accessed are conveniently preformatted for subsequent\nanalyses.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/luomus/finbif/tree/main/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "FinBIF R package <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"120\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Read the online documentation for the current stable version of\n`finbif` [here](https://luomus.github.io/finbif/), or the latest development\nversion of `finbif` [here](https://finbif-docs-dev.netlify.app).\n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/luomus/finbif/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/luomus/finbif/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "luomus/finbif"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "FinBIF R package "
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://luomus.github.io/finbif/"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "finbif"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.3612814"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "FinBIF R package <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"120\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install the current stable version of `finbif` from\n[CRAN](https://cran.r-project.org),\n\n``` r\ninstall.packages(\"finbif\")\n```\n\nYou can also install the latest development version of `finbif` from\n[GitHub](https://github.com),\n\n``` r\nremotes::install_github(\"luomus/finbif@dev\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/luomus/finbif/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/luomus/finbif/issues"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/luomus/finbif/issues"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "api, biodiversity, biodiversity-informatics, biodiversity-information, finbif, finbif-access, occurrences, r-package, r-programming, rstats, species, specimens, taxon, taxonomy, web-services"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "api",
+          "biodiversity",
+          "biodiversity-informatics",
+          "biodiversity-information",
+          "finbif",
+          "finbif-access",
+          "occurrences",
+          "r-package",
+          "r-programming",
+          "rstats",
+          "species",
+          "specimens",
+          "taxon",
+          "taxonomy",
+          "web-services"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2019-2025 LUOMUS - Finnish Museum of Natural History\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/luomus/finbif/main/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "finbif"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "finbif: Interface for the 'Finnish Biodiversity Information Facility' API"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "luomus"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+        "type": "String",
+        "value": "finbif"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 252905,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 3723,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 515,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 398,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Rez",
+        "size": 213,
+        "type": "Programming_language",
+        "value": "Rez"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/luomus/finbif/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/luomus/finbif/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2025-08-22T10:06:54Z",
+        "date_published": "2025-08-22T10:09:01Z",
+        "description": "## MINOR IMPROVEMENTS\r\n\r\n   - Added capacity to import new DarwinCore archive formatted FinBIF\r\n     download files.\r\n   - Added new variables and filters from upstream API (undocumented).",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.11",
+        "name": "finbif v0.9.11",
+        "release_id": 241779795,
+        "tag": "v0.9.11",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.11",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/241779795",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/241779795",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.11"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2025-04-15T10:17:25Z",
+        "date_published": "2025-04-15T10:20:25Z",
+        "description": "## MINOR IMPROVEMENTS\r\n\r\n   - Improvements have been made to the way errors in parsing json are handled. ",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.10",
+        "name": "finbif v0.9.10",
+        "release_id": 212451075,
+        "tag": "v0.9.10",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/212451075",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/212451075",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2024-11-05T09:47:05Z",
+        "date_published": "2024-11-05T09:49:50Z",
+        "description": "## DEFUNCT\r\n\r\n  - Importing `.ods` and `.xlsx` occurrence data files is now defunct. Users\r\n    should use `.tsv` download files only.\r\n    \r\n## MINOR IMPROVEMENTS\r\n\r\n  - Occurrence download progress indicator has been simplified.\r\n  - Location data parsing (country, region, municipality and local area) has\r\n    been improved.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.9",
+        "name": "finbif v0.9.9",
+        "release_id": 183548558,
+        "tag": "v0.9.9",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/183548558",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/183548558",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2024-08-19T10:17:52Z",
+        "date_published": "2024-08-19T10:19:45Z",
+        "description": "## DEPRECATION\r\n\r\n  - Importing `.ods` and `.xlsx` occurrence data files has been\r\n    deprecated and will be defunct in a future release.\r\n\r\n## MINOR IMPROVEMENTS\r\n\r\n  - Caching behaviour has been made more consistent.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.8",
+        "name": "finbif v0.9.8",
+        "release_id": 170838752,
+        "tag": "v0.9.8",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/170838752",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/170838752",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2024-07-23T11:48:01Z",
+        "date_published": "2024-07-23T11:49:53Z",
+        "description": "## NEW FEATURES\r\n\r\n  - Record pagination has been simplified and improved so that it should\r\n    not be possible to have duplicate records when using\r\n    `finbif_occurrences`.\r\n\r\n## MINOR IMPROVEMENTS\r\n\r\n  - `finbif_last_mod` can be used without a `filter` argument value.\r\n\r\n  - Error handling for API requests has been improved.\r\n\r\n## BUG FIXES\r\n\r\n  - Fixed an issue triggered when multi-filter set requests returned\r\n    zero results.\r\n\r\n  - Fixed bug triggered when dropping columns of all NA data.\r\n\r\n  - Fixed an issue with file-based caches timing out correctly.\r\n\r\n  - Fixed an issue triggered when selecting certain variables and zero\r\n    records were returned.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.7",
+        "name": "finbif v0.9.7",
+        "release_id": 166689195,
+        "tag": "v0.9.7",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/166689195",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/166689195",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2024-04-25T07:25:12Z",
+        "date_published": "2024-04-25T07:28:01Z",
+        "description": "#### MINOR IMPROVEMENTS\r\n\r\n  - New undocumented variable and filter `local` added from upstream\r\n    API.\r\n\r\n#### BUG FIXES\r\n\r\n  - Fixed an issue that caused more records than requested to be\r\n    returned for certain values of `n`.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.6",
+        "name": "finbif v0.9.6",
+        "release_id": 152746299,
+        "tag": "v0.9.6",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/152746299",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/152746299",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2024-03-15T14:35:37Z",
+        "date_published": "2024-03-15T14:37:04Z",
+        "description": "#### MINOR IMPROVEMENTS\r\n\r\n  - A more informative error message is given when requesting an access\r\n    token for an email address that has already been assigned one.\r\n\r\n#### BUG FIXES\r\n\r\n  - Fixed an issue with reading facts for FinBIF record download files.\r\n\r\n  - Fixed an issue with readling column names using `data.table` package\r\n    to ingest FinBIF record download files.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.5",
+        "name": "finbif v0.9.5",
+        "release_id": 146793030,
+        "tag": "v0.9.5",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/146793030",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/146793030",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2024-01-12T11:55:27Z",
+        "date_published": "2024-01-12T11:57:22Z",
+        "description": "#### NEW FEATURES\r\n\r\n  - New undocumented variable \"source\" can be selected with\r\n    `finbif_occurrence`.\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n  - Record pagination should now often require less queries of FinBIF\r\n    server and be should be faster.\r\n\r\n  - FinBIF collections field names have been sanitised.\r\n\r\n  - When filtering records by \"collection\\_id\" a full URL ID can be used\r\n    or a QName.\r\n\r\n#### BUG FIXES\r\n\r\n  - Reading zero observation data downloads will now produce a zero row\r\n    `data.frame` instead of triggering an error.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.4",
+        "name": "finbif v0.9.4",
+        "release_id": 136816186,
+        "tag": "v0.9.4",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/136816186",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/136816186",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2023-09-28T13:08:22Z",
+        "date_published": "2023-09-28T13:09:51Z",
+        "description": "#### BUG FIXES\r\n\r\n  - Fix a bug resulting in the incorrect region being assigned to\r\n    occurrences records.\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n  - New undocumented variables `institution_code` and `collection_code`\r\n    can be selected when using functions `finbif_collections` and\r\n    `finbif_occurrence`.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.3",
+        "name": "finbif v0.9.3",
+        "release_id": 122955467,
+        "tag": "v0.9.3",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/122955467",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/122955467",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2023-08-28T10:51:01Z",
+        "date_published": "2023-08-28T10:54:21Z",
+        "description": "#### BUG FIXES\r\n\r\n  - Fixed a bug triggered when localising some variables and multiple\r\n    pages of data had been requested.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.2",
+        "name": "finbif v0.9.2",
+        "release_id": 118908827,
+        "tag": "v0.9.2",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/118908827",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/118908827",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2023-06-30T06:53:45Z",
+        "date_published": "2023-06-30T06:55:50Z",
+        "description": "#### NEW FEATURES\r\n\r\n  - New option `finbif_use_cache_metadata` to set caching for metadata\r\n    only. Is ignored if `finbif_use_cache` is `TRUE`.\r\n\r\n#### BUG FIXES\r\n\r\n  - Fixed a bug triggered when trying to compute a variable from an\r\n    identifier and data returned contained zero records.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.1",
+        "name": "finbif v0.9.1",
+        "release_id": 110458625,
+        "tag": "v0.9.1",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/110458625",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/110458625",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2023-05-23T09:46:15Z",
+        "date_published": "2023-05-23T09:48:32Z",
+        "description": "#### NEW FEATURES\r\n\r\n  - New function `finbif_update_cache` can be used to update all the\r\n    cached objects that have reached their expiration and are no longer\r\n    valid.\r\n\r\n  - A restricted data API token can be explicitly declared via the\r\n    `restricted_api` argument to `finbif_occurrence`.\r\n\r\n  - Cached data can use a database as a backend by passing a `DBI`\r\n    database connection object to the package option\r\n    `finbif_cache_path`.\r\n\r\n  - Cached data can be assigned a timeout by using a number (hours)\r\n    instead of a logical value for the `cache` argument to `finbif_`\r\n    functions or the package option `finbif_use_cache`.\r\n\r\n  - Record aggregations with `finbif_occurrence` can now be combined\r\n    with multi-filter requests. Removing duplicate records or aggregate\r\n    record combinations can be controlled with the `duplicates` argument\r\n    and adding a column indicating the filter sets can be added with the\r\n    `filter_col` argument.\r\n\r\n##### BUG FIXES\r\n\r\n  - Fixed a bug causing an infinite recursion when determining page size\r\n    during record download pagination.\r\n\r\n  - Fix bug triggered when using aggregation with some selected\r\n    variables.\r\n\r\n#### DEFUNCT\r\n\r\n  - Mapping utilities `finland_map`, `breaks_xy`, `hist_xy` and the plot\r\n    method for `finbif_occ` objects are now defunct.\r\n\r\n  - User access to `finbif_records` and its classes and methods is now\r\n    defunct.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.9.0",
+        "name": "finbif v0.9.0",
+        "release_id": 103925084,
+        "tag": "v0.9.0",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/103925084",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/103925084",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2023-03-29T09:01:03Z",
+        "date_published": "2023-03-29T09:02:56Z",
+        "description": "#### DEPRECATION\r\n\r\n  - Mapping utilities `finland_map`, `breaks_xy`, `hist_xy` and the plot\r\n    method for `finbif_occ` objects have been deprecated as they are\r\n    out-of-scope.\r\n\r\n  - User access to `finbif_records` and its classes and methods is\r\n    deprecated in favour of `finbif_occurrence`.\r\n\r\n#### NEW FEATURES\r\n\r\n  - Record aggregations with `finbif_occurrence` can now include\r\n    \"individual\" and \"pair\" sums.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.8.0",
+        "name": "finbif v0.8.0",
+        "release_id": 97287843,
+        "tag": "v0.8.0",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/97287843",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/97287843",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2023-02-06T09:18:01Z",
+        "date_published": "2023-02-06T09:20:08Z",
+        "description": "#### MINOR IMPROVEMENTS\r\n\r\n  - Updated deprecated use of tidy::pivot\\_wider.\r\n\r\n  - Added new filters and variables from upstream API.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.7.2",
+        "name": "finbif v0.7.2",
+        "release_id": 91436516,
+        "tag": "v0.7.2",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.7.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/91436516",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/91436516",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.7.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2022-11-24T11:39:27Z",
+        "date_published": "2022-11-24T11:42:24Z",
+        "description": "#### NEW FEATURES\r\n\r\n  - New function `finbif_mod_date` to get last modified date for FinBIF\r\n    occurrence data.\r\n\r\n  - Region is now a selectable variable for `finbif_occurrence` and can\r\n    also be used to filter records.\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n  - For the sake of clarity \"province\" is now referred to as\r\n    \"bio-province\".\r\n\r\n  - Many variables, including `sex`, `life_stage` and `record_quality`\r\n    are now localised.\r\n\r\n  - The variable `restriction_reasons` is now referred to in the\r\n    singular as `restriction_reason`.\r\n\r\n  - For consistency, `lang` argument to `finbif_collections` has been\r\n    changed to `locale`.\r\n\r\n#### BUG FIXES\r\n\r\n  - Fixed bug that caused locale to be set incorrectly for multipage\r\n    requests.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.7.1",
+        "name": "finbif v0.7.1",
+        "release_id": 84089920,
+        "tag": "v0.7.1",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.7.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/84089920",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/84089920",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.7.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2022-09-13T12:36:33Z",
+        "date_published": "2022-09-13T12:38:40Z",
+        "description": "#### NEW FEATURES\r\n\r\n  - New function `taxon_id` that returns FinBIF taxon identifiers given\r\n    a scientific name, vernacular name or other taxon identifier.\r\n\r\n  - New filters `complete_list_taxon_id` and `complete_list_type` now\r\n    available.\r\n\r\n  - New global option `finbif_hide_progress` to suppress progress bars\r\n    when downloading, importing or processing FinBIF records.\r\n\r\n  - For the sake of clarity and consistency the term \"administrative\r\n    status\" is now refered to as \"regulatory status\" throughout.\r\n\r\n  - Regulatory status, informal taxonomic group and habitat data are now\r\n    localised.\r\n\r\n  - Option `unlist` added to `finbif_occurrence` that casts list columns\r\n    to strings. If a cell has multiple values the values are cast to a\r\n    string separated by semi-colons.\r\n\r\n  - New argument `facts` added to `finbif_occurrence` that can be used\r\n    to automatically extract facts when downloading occurrence records.\r\n\r\n#### BUG FIXES\r\n\r\n  - Fixed bug triggered by incorrect data type applied to\r\n    `taxonomic_order`.\r\n\r\n  - Fixed bug preventing locale switching of vernacular name data.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.7.0",
+        "name": "finbif v0.7.0",
+        "release_id": 77001379,
+        "tag": "v0.7.0",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.7.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/77001379",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/77001379",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.7.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2022-08-08T11:15:07Z",
+        "date_published": "2022-08-08T11:18:31Z",
+        "description": "#### NEW FEATURES\r\n\r\n  - New option to exclude all records with any NA values for any of the\r\n    selected variables added to `finbif_occurrence`.\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n  - The warning/error message returned when an invalid taxon is\r\n    requested with `finbif_occurrence` has been made more detailed,\r\n    warning the user they may be using synonyms or other invalid taxon\r\n    names.\r\n\r\n#### BUG FIXES\r\n\r\n  - Fix applied for a print method error triggered by clashing class\r\n    names.\r\n\r\n  - Fixed issue with ordering by some variables.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.6.6",
+        "name": "finbif v0.6.6",
+        "release_id": 73878822,
+        "tag": "v0.6.6",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.6.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/73878822",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/73878822",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.6.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2022-05-22T23:47:29Z",
+        "date_published": "2022-05-22T23:50:27Z",
+        "description": "#### NEW FEATURES\r\n\r\n  - New variables and filters (currently undocumented) have been added\r\n    for the forthcoming Finnish atlas of breeding birds.\r\n\r\n  - Skip rows argument added to `finbif_occurrence_load` so files can be\r\n    read in chunks.\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n  - For clarity, KKJ coordinate reference system is now refered to as\r\n    YKJ.\r\n\r\n  - When selecting all available variables for download file imports\r\n    using `finbif_occurrence_load` \"extra\" variables will no longer be\r\n    automatically added.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.6.5",
+        "name": "finbif v0.6.5",
+        "release_id": 67498990,
+        "tag": "v0.6.5",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.6.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/67498990",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/67498990",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.6.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2022-03-10T22:52:44Z",
+        "date_published": "2022-03-10T22:56:21Z",
+        "description": "#### MINOR IMPROVEMENTS\r\n\r\n  - New administrative statuses added.\r\n\r\n  - The number of (and interval between) api request retries can be\r\n    configured (currently undocumented).\r\n\r\n  - For some museum collections scientific names have been added for\r\n    non-Finnish species.\r\n\r\n  - New fields have been added to citable download imports.\r\n\r\n  - New argument `aggregate_counts` (defaulting to `TRUE`) added to\r\n    `finbif_occurrence` to toggle the inclusion of aggregation count\r\n    fields on and off.\r\n\r\n  - New bird association area, occurrence types and location tag\r\n    metadata added.\r\n\r\n  - New filters and variables (currently undocumented) added from\r\n    upstream API.\r\n\r\n#### BUG FIXES\r\n\r\n  - Fix bug triggered when printing occurrence records where all records\r\n    have no coordinate uncertainty.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.6.4",
+        "name": "finbif v0.6.4",
+        "release_id": 61548617,
+        "tag": "v0.6.4",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.6.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/61548617",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/61548617",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.6.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2022-01-04T06:31:53Z",
+        "date_published": "2022-01-04T06:35:23Z",
+        "description": "#### MINOR IMPROVEMENTS\r\n\r\n  - Argument `drop_na_facts` has been changed to `drop_facts_na` for\r\n    function `finbif_occurrence_load` to avoid problems due to partial\r\n    matching of argument `drop_na`.\r\n\r\n  - Data quality description has been appended to description field in\r\n    `data.frame` returned by `finbif_collections()`.\r\n\r\n  - Occurrence record filtering can now be done using open-ended date\r\n    ranges.\r\n\r\n  - New administrative statuses added.\r\n\r\n#### BUG FIXES\r\n\r\n  - Fix bug in importing of file downloads triggered by string quotation\r\n    errors.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.6.3",
+        "name": "finbif v0.6.3",
+        "release_id": 56352947,
+        "tag": "v0.6.3",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.6.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/56352947",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/56352947",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.6.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2021-09-03T11:35:22Z",
+        "date_published": "2021-09-03T11:37:39Z",
+        "description": "#### NEW FEATURES\r\n\r\n-   New package option, `finbif_allow_query`, with default value,\r\n    `TRUE`. If set to `FALSE` then remote API queries will trigger an\r\n    error meaning only cached requests will run if a cache is found.\r\n\r\n-   Records can now be aggregated by document.\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n-   A client-side error will be triggered if an attempt is made to\r\n    filter by taxon and aggregate data by event with\r\n    `finbif_occurrence`.\r\n\r\n#### BUG FIXES\r\n\r\n-   Fix bug preventing loading of FinBIF archives that is triggered when\r\n    all variables are selected with `select = \"all\"`.\r\n\r\n-   Fix bug preventing `finbif_occ` objects from printing when one or\r\n    more columns contain missing data only.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.6.2",
+        "name": "finbif v0.6.2",
+        "release_id": 48957026,
+        "tag": "v0.6.2",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.6.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/48957026",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/48957026",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.6.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2021-07-26T12:32:56Z",
+        "date_published": "2021-07-26T12:35:51Z",
+        "description": "#### BUG FIXES\r\n\r\n-   Fixed a regression in the last release that prevented collection\r\n    names being converted from their URIs.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.6.1",
+        "name": "finbif v0.6.1",
+        "release_id": 46765893,
+        "tag": "v0.6.1",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.6.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/46765893",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/46765893",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.6.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2021-07-26T04:33:02Z",
+        "date_published": "2021-07-26T04:36:09Z",
+        "description": "#### NEW FEATURES\r\n\r\n-   New variables `lat_euref` and `lon_euref` available for occurrence\r\n    record downloads. These new variables represent the central point of\r\n    a bounding box encompassing a record's geographic coverage in the\r\n    EUREF (ETRS89/ETRS-TM35FIN) coordinate system.\r\n\r\n-   Option now available to retain the TSV data file when loading FinBIF\r\n    occurrence data with `finbif_occurrence_load` from ZIP archive or\r\n    online reference.\r\n\r\n-   Option now available to extract \"facts\" when using\r\n    `finbif_occurrence_load` to import records from a ZIP archive. The\r\n    user must supply a named list, where the names refer to one or more\r\n    fact types: \"record\", \"event\" and/or \"document\", and the list\r\n    elements are character vectors indicating which \"facts\" to extract.\r\n\r\n-   \"Lite\" download files (occurrence record datasets of less than\r\n    10,000 records downloaded directly from laji.fi) can now be imported\r\n    using `finbif_occurrence_load`.\r\n\r\n-   New filters (currently undocumented) `ely_center_id` and `region_id`\r\n    are available for `finbif_occurrence`.\r\n\r\n-   New function, `from_schema`, to convert variable names from FinBIF\r\n    schema to other styles.\r\n\r\n-   New computed variable `date_time_ISO8601` (currently undocumented)\r\n    can be selected when creating `finbif_occ` objects.\r\n\r\n-   New computed variable `epsg` (currently undocumented). If selected,\r\n    the column will have the EPSG code of the first column that contains\r\n    geographic data.\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n-   Can now select all available variables when importing a FinBIF\r\n    download request file using `finbif_occurrence_load` with\r\n    `select = \"all\"`.\r\n\r\n-   New option, `drop_na`, to drop columns that only contain missing\r\n    data added to `finbif_occurrence` and `finbif_occurrence` load.\r\n\r\n-   User can now select columns multiple times and rename them on the\r\n    fly by using a named character vector as the value of the 'select'\r\n    argument.\r\n\r\n-   The variable `taxon_rank` is now converted to a string on the fly\r\n    via `taxon_rank_id`.\r\n\r\n-   Variables that are computed from their identifiers are now localised\r\n    when multiple languages are available.\r\n\r\n#### BUG FIXES\r\n\r\n-   Fixed bug that prevented occurrence record counting when caching was\r\n    not in use.\r\n\r\n-   Fixed bug that triggered an error when selected a variable that had\r\n    to be computed from its ID when using DWC style variable names.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.6.0",
+        "name": "finbif v0.6.0",
+        "release_id": 46744543,
+        "tag": "v0.6.0",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/46744543",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/46744543",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2021-03-29T06:40:28Z",
+        "date_published": "2021-03-29T06:44:19Z",
+        "description": "#### NEW FEATURES\r\n\r\n-   Getting records from FinBIF can now be speed up (\\~1.5x) with\r\n    asynchronous processing. If the `future` package is available and an\r\n    asynchronous strategy (e.g., `plan(multisession, workers = 2)`) is\r\n    selected then downloading records and processing them will occur\r\n    simultaneously in separate threads, often leading to a significant\r\n    speed up over sequential processing.\r\n\r\n-   Occurrence records can now be requested using multiple sets of\r\n    filters at the same time. If a list of filters (with unnamed\r\n    elements) is supplied then a record request will be made for each\r\n    set of filters and the results of all requests combined and all\r\n    duplicate records removed.\r\n\r\n-   Occurrence records can now be read directly from FinBIF download\r\n    request files. The function `finbif_occurrence_load` can load data\r\n    from a local file or remotely using a persistent identifier URI\r\n    (e.g., `http://tun.fi/HBF.49381`).\r\n\r\n-   Aggregation of records can now be performed at the recording \"event\"\r\n    level as well as the \"record\" level.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.5.0",
+        "name": "finbif v0.5.0",
+        "release_id": 40615970,
+        "tag": "v0.5.0",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/40615970",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/40615970",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2021-01-27T12:05:13Z",
+        "date_published": "2021-01-27T12:07:47Z",
+        "description": "#### NEW FEATURES\r\n\r\n-   New functions `scientific_name` and `common_name` are now available\r\n    to get scientific and common names for taxa (given a taxon name or\r\n    FinBIF ID code) or extract names from a `finbif_taxa`- class object.\r\n\r\n-   Add ability to extract complex record variables such as those\r\n    associated with record media (currently undocumented).\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n-   Collection name can be selected as a variable for occurrence\r\n    records. Previously it had to be manually translated from collection\r\n    ID.\r\n\r\n-   Variables `restriction_reasons_conservation`,\r\n    `restriction_reason_embargo` and `restriction_reason_custom` are no\r\n    longer in use upstream and can no longer be selected.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.4.1",
+        "name": "finbif v0.4.1",
+        "release_id": 36966562,
+        "tag": "v0.4.1",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.4.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/36966562",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/36966562",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.4.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2020-12-17T11:29:21Z",
+        "date_published": "2020-12-17T11:33:28Z",
+        "description": "#### NEW FEATURES\r\n\r\n  - Occurrence record requests can now be made with aggregation,\r\n    `aggregate = c(\"records\", \"species\", \"taxa\")`. This returns the\r\n    number of records, and/or species or taxa for each combination of\r\n    the selected variables instead of the occurrence records themselves.\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n  - Error is triggered when attempting to request less than one record.\r\n\r\n  - New content on requesting aggregated occurrence records added to\r\n    vignette: 2. Occurrence records from FinBIF.\r\n\r\n#### BUG FIXES\r\n\r\n  - Fixed two bugs in print method for FinBIF occurrence records that\r\n    were triggered when attempting to print only one row of data.\r\n\r\n  - Fixed bug triggering error when attempting to print occurrence\r\n    record objects with zero rows.\r\n\r\n  - Fixed bug triggered when trying to print occurrence record data with\r\n    NA values.\r\n\r\n  - Fixed bug causing incorrect subsetting of occurrence records when\r\n    using logical vectors to subset rows.\r\n\r\n  - Fixed bug that printed occurrence records with multi-element data\r\n    incorrectly when there was a single element.\r\n\r\n  - Fixed bug triggered by some system locales (\\#1).\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.4.0",
+        "name": "finbif v0.4.0",
+        "release_id": 35411883,
+        "tag": "v0.4.0",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/35411883",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/35411883",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2020-11-25T07:21:17Z",
+        "date_published": "2020-11-25T07:26:25Z",
+        "description": "\r\n#### NEW FEATURES\r\n\r\n  - Occurrence records can be ordered by the total number of records or\r\n    total number of Finnish records of the taxon (variables:\r\n    `n_total_records` & `n_total_finnish_records`, currently\r\n    undocumented).\r\n\r\n  - New Finnish occurrence status, `records_only`, added.\r\n\r\n  - New administrative statuses added to filters.\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n  - Filtering vignette updated to reflect changes to data quality\r\n    filters.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.3.1",
+        "name": "finbif v0.3.1",
+        "release_id": 34399909,
+        "tag": "v0.3.1",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/34399909",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/34399909",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2020-04-25T05:10:20Z",
+        "date_published": "2020-04-25T05:13:14Z",
+        "description": "#### NEW FEATURES\r\n\r\n  - All user facing functions with a `finbif_` prefix can now also be\r\n    used with the alternative shorter prefix `fb_`.\r\n\r\n  - Crop Wild Relative, CWR, added to admin statuses.\r\n\r\n  - There are two new utility functions, `to_dwc` and `to_native` for\r\n    converting variable names to and from Darwin Core style.\r\n\r\n  - Users can select and order by variables in Darwin Core style when\r\n    using `finbif_occurrence`.\r\n\r\n  - Some changes in variables and filters have flowed from upstream\r\n    changes to \"api.laji.fi\". The variables `is_unidentifiable`,\r\n    `record_reliable`, `collection_reliability`, `taxon_reliability`,\r\n    `taxon_reliability_message` and `taxon_reliability_source` have been\r\n    deprecated and replaced with `requires_verification`,\r\n    `requires_identification`, `record_reliability` and\r\n    `record_quality`. The filters `collection_reliability` and\r\n    `taxon_reliability` have been deprecated and replaced with\r\n    `requires_verification`, `collection_quality`, `record_reliability`,\r\n    `record_quality`, and `expert_verified`.\r\n\r\n  - Vernacular names are now localised. Users can select a language to\r\n    use for taxon vernacular names. Missing names will fallback\r\n    gracefully to other languages. A package-wide locale can be set and\r\n    is by default set to the system locale (if not set or can't be\r\n    determined it will default to English).\r\n\r\n  - New vignettes on getting occurrence records, selecting and ordering\r\n    variables, metadata and plotting have been added.\r\n\r\n#### MINOR IMPROVEMENTS\r\n\r\n  - Caching defaults to in memory caching instead of relying on the\r\n    temporary directory.\r\n\r\n  - Front matter of vignettes is now visible when using the R help\r\n    browser.\r\n\r\n  - Retired \"quiet\" option for \"on\\_check\\_fail\" argument in function\r\n    `finbif_occurrence()`.\r\n\r\n  - Improved error messages when taxa fail checking in\r\n    `finbif_occurrence()`.\r\n\r\n  - Global option to set timezone, \"finbif\\_tz\", as default value for\r\n    \"tzone\" argument to `finbif_occurrence()`. Avoids having to set\r\n    system environment variable TZ or specify \"tzone\" every time\r\n    `finbif_occurrence()` is run.\r\n\r\n  - Now when a record has no time information the start time is assumed\r\n    to be midday. Previous behaviour was to assume start time was\r\n    midnight, making errors potentially biased.\r\n\r\n  - Package options are now documented in the package level man page.\r\n\r\n  - News file is now accessible via R internal help system.\r\n\r\n  - The number of default variables selected when accessing occurrence\r\n    records has been reduced to speed up downloads and improve the\r\n    display of `finbif_occ` objects.\r\n\r\n  - The print method for occurrence record objects has been updated. It\r\n    is now aware of console width and when truncating variable values is\r\n    more considerate of the context.\r\n\r\n  - Variables can now be \"deselected\" when using the `select` argument\r\n    to `finbif_occurrence` by prepending the variable name with a \"`-`\".\r\n\r\n  - After some failures, API requests are now automatically retried up\r\n    to three times.\r\n\r\n#### BUG FIXES\r\n\r\n  - Ordering by descending variables did not work when ordering by both\r\n    ascending and descending variables.\r\n\r\n  - Fixed bug in handling of duplicates that could result in an infinite\r\n    recursion.\r\n\r\n  - Fixed bug that (when \"on\\_check\\_fail\" = \"warn\") all taxa failed\r\n    checks 'finbif\\_occurrence()' would proceed as if no taxa had been\r\n    selected.\r\n\r\n  - Fixed bug in print method for `finbif_occ` objects that caused error\r\n    when trying to display a single column objects with a list-col only.\r\n",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.3.0",
+        "name": "finbif v0.3.0",
+        "release_id": 25873908,
+        "tag": "v0.3.0",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/25873908",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/25873908",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2020-01-16T12:33:24Z",
+        "date_published": "2020-01-20T07:25:02Z",
+        "description": "### NEW FEATURES\r\n\r\n  * Add capacity to request a random sample of FinBIF records.\r\n\r\n### MINOR IMPROVEMENTS\r\n\r\n  * Add more content to vignettes.",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.2.0",
+        "name": "finbif v0.2.0",
+        "release_id": 22965612,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/22965612",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/22965612",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wkmor1",
+          "type": "User"
+        },
+        "date_created": "2019-11-14T02:31:52Z",
+        "date_published": "2019-11-20T20:25:19Z",
+        "description": "### INITIAL RELEASE",
+        "html_url": "https://github.com/luomus/finbif/releases/tag/v0.1.0",
+        "name": "finbif v0.1.0",
+        "release_id": 21633132,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/luomus/finbif/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/luomus/finbif/releases/21633132",
+        "value": "https://api.github.com/repos/luomus/finbif/releases/21633132",
+        "zipball_url": "https://api.github.com/repos/luomus/finbif/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable state and is being actively developed.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:10:02",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 7
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Getting a FinBIF access token",
+        "parent_header": [
+          "FinBIF R package <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"120\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "First load the `finbif` R package.\n\n``` r\nlibrary(finbif)\n```\n\nTo use the FinBIF API you must first request and set a personal access token.\nYou can request an API token to be sent to your email address with the function\n`finbif_get_token`.\n\n``` r\nfinbif_request_token(\"your@email.com\")\n```\n\nCopy the access token that was sent to your email and set it as the environment\nvariable `FINBIF_ACCESS_TOKEN` either for the current session,\n\n``` r\nSys.setenv(\n  FINBIF_ACCESS_TOKEN = \"xtmSOIxjPwq0pOMB1WvcZgFLU9QBklauOlonWl8K5oaLIx8RniJLrvcJU4v9H7Et\"\n)\n# Note: the above is not a real access token. Do not try using it.\n```\n, or by adding it to a `Renviron` startup file (see\n [here](https://rviews.rstudio.com/2017/04/19/r-for-enterprise-understanding-r-s-startup/)\n for details). \n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "FinBIF R package <img src=\"man/figures/logo.png\" align=\"right\" alt=\"\" width=\"120\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Download occurrence data from FinBIF.\n\n``` r\nfinbif_occurrence(\"Cygnus cygnus\", n = 100)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.9.11"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.9.11"
+      },
+      "source": "https://raw.githubusercontent.com/luomus/finbif/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

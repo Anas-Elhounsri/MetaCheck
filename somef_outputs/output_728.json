@@ -1,0 +1,961 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8524536206554651,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Bryan Brancotte",
+        "type": "Agent",
+        "value": "Bryan Brancotte"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Centre d'Informatique pour la Biologie, C3BI, Institut Pasteur, Paris, France",
+        "email": "bryan.brancotte@pasteur.fr",
+        "identifier": "0000-0001-8669-5525",
+        "type": "String",
+        "value": "Bryan Brancotte"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "French Institute of Bioinformatics, CNRS IFB-Core, Gif-sur-Yvette, France",
+        "email": "christophe.blanchet@france-bioinformatique.fr",
+        "type": "String",
+        "value": "Christophe Blanchet"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Centre d'Informatique pour la Biologie, C3BI, Institut Pasteur, Paris, France",
+        "email": "herve.menager@pasteur.fr",
+        "identifier": "0000-0002-7552-1009",
+        "type": "String",
+        "value": "Herv\u00e9 M\u00e9nager"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Brancotte",
+            "given_name": "Bryan",
+            "name": "Bryan Brancotte",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-8669-5525"
+          },
+          {
+            "family_name": "Blanchet",
+            "given_name": "Christophe",
+            "name": "Christophe Blanchet",
+            "type": "Agent"
+          },
+          {
+            "family_name": "M\u00e9nager",
+            "given_name": "Herv\u00e9",
+            "name": "Herv\u00e9 M\u00e9nager",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-7552-1009"
+          }
+        ],
+        "datePublished": "2018",
+        "doi": "10.5281/zenodo.1314288",
+        "format": "cff",
+        "title": "edam-browser",
+        "type": "File_dump",
+        "url": "https://doi.org/10.5281/zenodo.1314288",
+        "value": "cff-version: 1.0.3\nmessage: If you use this software, please cite it as below.\nauthors:\n  - family-names: Brancotte\n    given-names: Bryan\n    orcid: https://orcid.org/0000-0001-8669-5525\n  - family-names: Blanchet\n    given-names: Christophe\n  - family-names: M\u00e9nager\n    given-names: Herv\u00e9\n    orcid: https://orcid.org/0000-0002-7552-1009\ntitle: edam-browser\nversion: v1.0.1\ndoi: 10.5281/zenodo.1314288\ndate-released: 2018-07-18\nreferences:\n  - type: article\n    authors:\n    - family-names: Brancotte\n      given-names: Bryan\n      orcid: https://orcid.org/0000-0001-8669-5525\n    - family-names: Blanchet\n      given-names: Christophe\n    - family-names: M\u00e9nager\n      given-names: Herv\u00e9\n      orcid: https://orcid.org/0000-0002-7552-1009\n    title: \"A reusable tree-based web-visualization to browse EDAM ontology, and contribute to it\"\n    year: 2018\n    journal: Journal of Open Source Software\n    volume: 3\n    issue: e86\n    doi: 10.21105/joss.00698\n    url: https://doi.org/10.21105/joss.00698\n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Community code of conduct\n\nThis code of conduct outlines our expectations for the EDAM community, including the EDAM-browser project. It is based loosely on the former Open Code of Conduct from the TODO Group. We are committed to providing a welcoming and productive community for all and expect our code of conduct to be honored. Our open source community strives to be:\n\n- **Considerate:** You depend upon the work of others who in turn depend on you. You're unlikely to be fully aware of the ramifications of your proposals or actions, and the constraints others work under. Before deciding or acting, talk to others and reach a common understanding of the consequences.\n- **Constructive:** We will not agree all the time. Where we disagree, try to understand why and maintain a positive attitude in seeking a resolution, bearing in mind we share a common goal.\n- **Supportive:** Support others in their work (you depend on them!), respecting the fact that we have different levels of experience and technical ability.\n- **Open-minded:** We have a wide range of backgrounds, skills and perspectives - this diversity is a strength. Be wary of ignoring or misunderstanding another viewpoint in the vindication of your own.\n- **Respectful:** Disagreement and differences do not excuse bad manners. Never allow frustration to turn into aggressive conduct or a personal attack. A happy atmosphere is a productive one: be nice, and keep a sense of humour. If you can't be nice, be quiet.\n- **Tolerant:** Treat people fairly and equally irrespective of their background and identity, including technical ability, experience, education, race, gender, nationality, age *etc*.\n- **Wise:** We are not infallible; we will make mistakes and change our viewpoints: admit and learn from mistakes and allow others to do the same.\n\n## Conflict resolution\nIf you experience or witness unacceptable behavior, or have any other concerns, please report it by contacting any member of the CoC committee, currently [Mat\u00fa\u0161 Kala\u0161 (apapronominal)](mailto:matus.kalas@uib.no) and [Herv\u00e9 M\u00e9nager (he/him)](mailto:herve.menager@pasteur.fr). All reports will be handled with discretion.\n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/edamontology/edam-browser"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/IFB-ElixirFr/edam-browser"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# EDAM Browser contribution guidelines\n\n### Pull requests\n\nThe recommended way for contributors to submit code to EDAM Browser is to fork the repository on GitHub and then submit a pull request (PR) after committing the changes. The maintainers will then review the request before it is merged into the main branch.\n\nPlease make one PR per issue, solving multiple issues in the same PR make it harder to assess independently each solution and delay the moment changes can be merge.\n\nNo bulk reformatting, only reformat code that is already changed by the code you wrote when solving the issue you are addressing.\n\nThe contributed code will be [**licensed under EDAM Browser's license**](https://github.com/edamontology/edam-browser/blob/main/LICENSE).\nIf you did not write the code yourself, please ensure that the license is compatible, or obtain a permission from the original author to relicense the contributed code.\nPlease include license information in the contributed files. \n\n\n### Bug reports and feature requests\n\nIf you have encountered a problem with the EDAM Browser or would like to discuss a new feature or idea, please submit it to the [issue tracker](https://github.com/edamontology/edam-browser/issues) on GitHub.\n\nFor bug reports, please provide the steps that led you to this bug, a screenshot of the glitch when relevant, the custom \nJSON ontology file used when relevant, and in general all the information which would help us reproduce the bug.\n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-08-23T10:49:00Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-02-06"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-02-06"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-06-25T08:23:56Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-02-06"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Stand-alone, lightweight, and fast JavaScript browser for EDAM and other ontologies"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The EDAM Browser is a client-side web-based visualization javascript widget. Its goals are to help describing bio-related resources and service with EDAM, and to facilitate and foster community contributions to EDAM."
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The EDAM Browser is a client-side web-based visualization javascript widget. Its goals are to help describing bio-related resources and service with EDAM, and to facilitate and foster community contributions to EDAM."
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8831883891709909,
+      "result": {
+        "original_header": "EDAM stand-alone browser using D3.js",
+        "type": "Text_excerpt",
+        "value": "The EDAM Browser is a client-side web-based visualization javascript widget. Its goals are to help annotating bioscientific resources and services with EDAM, and to facilitate and foster community contributions to EDAM. \n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/edamontology/edam-browser/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/edamontology/edam-browser/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 25
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/edamontology/edam-browser/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "edamontology/edam-browser"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "EDAM stand-alone browser using D3.js"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "package.json",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "package.json"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/edamontology/edam-browser/main/start_edam_stand_alone_browser.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.21105/joss.00698"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://joss.theoj.org/papers/10.21105/joss.00698/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/edamontology/edam-browser/main/./screenshot.png"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/edamontology/edam-browser/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "edam, edam-annotations, edam-ontology, ontologies, ontology-engineering, ontology-search, ontology-services, visualization, visualization-javascript-widget"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "javascript",
+          "bioinformatics",
+          "d3js",
+          "d3.js",
+          "ontology",
+          "visualization",
+          "edamontology",
+          "ontology"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2017 French Institute of Bioinformatics\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/MIT",
+        "spdx_id": "MIT",
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "edam-browser"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "edamontology"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "edam-browser"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 133235,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 29933,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 13905,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 7283,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 5857,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 111,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bryan-brancotte",
+          "type": "User"
+        },
+        "date_created": "2021-08-19T14:55:27Z",
+        "date_published": "2021-12-29T10:31:08Z",
+        "description": "Version 2.0.0 contains:\r\n * Reading EDAM file directly from the OWL file, thanks to https://github.com/edamontology/edam2json-js: EDAM Browser does not need anymore to have the ontology converted to JSON and pushed into the repository. It reads the ontology on-the-fly from any enabled URL (concretely `https://raw.githubusercontent.com` or a CORS-enabled site).\r\n* Ability to switch between versions  (_e.g._ `1.23`, `1.25`, latest `unstable`).\r\n* Ability to open any version of EDAM, _e.g._\r\n   * the development version of EDAM, from any branch on GitHub\r\n   * community extensions such as EDAM Bioimaging\r\n* Various enhanced UX features, for example: \r\n   * one-click to copy URI\r\n   * full-screen mode\r\n   * floating detail panel (enabled by default in full screen only)\r\n   * dark mode\r\n   * resize of the tree area\r\n   * center node on click\r\n* Numerous bug fixes\r\n   * including fixes of glitches across various web browsers",
+        "html_url": "https://github.com/edamontology/edam-browser/releases/tag/v2.0.0",
+        "name": "v2.0.0: Browsing multiple versions of EDAM",
+        "release_id": 56129920,
+        "tag": "v2.0.0",
+        "tarball_url": "https://api.github.com/repos/edamontology/edam-browser/tarball/v2.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/edamontology/edam-browser/releases/56129920",
+        "value": "https://api.github.com/repos/edamontology/edam-browser/releases/56129920",
+        "zipball_url": "https://api.github.com/repos/edamontology/edam-browser/zipball/v2.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bryan-brancotte",
+          "type": "User"
+        },
+        "date_created": "2018-07-09T12:20:32Z",
+        "date_published": "2018-07-18T11:39:09Z",
+        "description": "JOSS published version",
+        "html_url": "https://github.com/edamontology/edam-browser/releases/tag/v1.0.1",
+        "release_id": 11984580,
+        "tag": "v1.0.1",
+        "tarball_url": "https://api.github.com/repos/edamontology/edam-browser/tarball/v1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/edamontology/edam-browser/releases/11984580",
+        "value": "https://api.github.com/repos/edamontology/edam-browser/releases/11984580",
+        "zipball_url": "https://api.github.com/repos/edamontology/edam-browser/zipball/v1.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bryan-brancotte",
+          "type": "User"
+        },
+        "date_created": "2018-04-30T13:28:39Z",
+        "date_published": "2018-04-30T13:29:49Z",
+        "html_url": "https://github.com/edamontology/edam-browser/releases/tag/v1.0.0",
+        "release_id": 10782085,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/edamontology/edam-browser/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/edamontology/edam-browser/releases/10782085",
+        "value": "https://api.github.com/repos/edamontology/edam-browser/releases/10782085",
+        "zipball_url": "https://api.github.com/repos/edamontology/edam-browser/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "bootstrap",
+        "type": "Software_application",
+        "value": "bootstrap@^3.4.1",
+        "version": "^3.4.1"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "d3",
+        "type": "Software_application",
+        "value": "d3@^4.13.0",
+        "version": "^4.13.0"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "edam2json-js",
+        "type": "Software_application",
+        "value": "edam2json-js@^0.3.2",
+        "version": "^0.3.2"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ga-gtag",
+        "type": "Software_application",
+        "value": "ga-gtag@^1.1.0",
+        "version": "^1.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "gh-pages",
+        "type": "Software_application",
+        "value": "gh-pages@^3.2.3",
+        "version": "^3.2.3"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jquery",
+        "type": "Software_application",
+        "value": "jquery@^3.2.1",
+        "version": "^3.2.1"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jquery-ui-bundle",
+        "type": "Software_application",
+        "value": "jquery-ui-bundle@^1.12.1-migrate",
+        "version": "^1.12.1-migrate"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jquery-ui-dist",
+        "type": "Software_application",
+        "value": "jquery-ui-dist@^1.12.1",
+        "version": "^1.12.1"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jquery-ui-themeroller",
+        "type": "Software_application",
+        "value": "jquery-ui-themeroller@^0.0.5",
+        "version": "^0.0.5"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jquery-ui-themes",
+        "type": "Software_application",
+        "value": "jquery-ui-themes@^1.12.0",
+        "version": "^1.12.0"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "parcel-bundler",
+        "type": "Software_application",
+        "value": "parcel-bundler@^1.12.5",
+        "version": "^1.12.5"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "popper.js",
+        "type": "Software_application",
+        "value": "popper.js@^1.16.1",
+        "version": "^1.16.1"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "regenerator-runtime",
+        "type": "Software_application",
+        "value": "regenerator-runtime@^0.13.7",
+        "version": "^0.13.7"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@babel/core",
+        "type": "Software_application",
+        "value": "@babel/core@^7.14.8",
+        "version": "^7.14.8"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@babel/preset-env",
+        "type": "Software_application",
+        "value": "@babel/preset-env@^7.14.9",
+        "version": "^7.14.9"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@fortawesome/fontawesome-free",
+        "type": "Software_application",
+        "value": "@fortawesome/fontawesome-free@^5.15.3",
+        "version": "^5.15.3"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cssnano",
+        "type": "Software_application",
+        "value": "cssnano@^5.0.6",
+        "version": "^5.0.6"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jshint",
+        "type": "Software_application",
+        "value": "jshint@^2.9.5",
+        "version": "^2.9.5"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "live-server",
+        "type": "Software_application",
+        "value": "live-server@^1.2.1",
+        "version": "^1.2.1"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Dependencies",
+        "parent_header": [
+          "EDAM stand-alone browser using D3.js",
+          "Third-party integration"
+        ],
+        "type": "Text_excerpt",
+        "value": "The EDAM Browser relies on D3.js 4.13.0, JQuery 3.2.1, JQuery UI 1.12.1, Boostrap 3.3.7, and Font Awesome 5.6.0\n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:51:08",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 15
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "... online",
+        "parent_header": [
+          "EDAM stand-alone browser using D3.js",
+          "Use it ..."
+        ],
+        "type": "Text_excerpt",
+        "value": "Go to https://edamontology.github.io/edam-browser/\n\n---"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "... locally",
+        "parent_header": [
+          "EDAM stand-alone browser using D3.js",
+          "Use it ..."
+        ],
+        "type": "Text_excerpt",
+        "value": "1. Download/clone the repository\n\n2. Change to working directory : `cd edam-browser`\n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Option 1: *using npm*",
+        "parent_header": [
+          "EDAM stand-alone browser using D3.js",
+          "Use it ...",
+          "... locally"
+        ],
+        "type": "Text_excerpt",
+        "value": " - `npm install`\n - `npm run dev`\n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Option 2: *using yarn*",
+        "parent_header": [
+          "EDAM stand-alone browser using D3.js",
+          "Use it ...",
+          "... locally"
+        ],
+        "type": "Text_excerpt",
+        "value": " - `yarn install`\n - `yarn dev`\n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "... with a custom ontology",
+        "parent_header": [
+          "EDAM stand-alone browser using D3.js",
+          "Use it ..."
+        ],
+        "type": "Text_excerpt",
+        "value": "EDAM Browser can render ontology described in JSON following the [schema](ontology.schema.json); see [here](https://github.com/edamontology/edam-browser/blob/main/paper.md#criteria-6) for more information on how to load a custom ontology.\n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Demo",
+        "parent_header": [
+          "EDAM stand-alone browser using D3.js",
+          "Third-party integration"
+        ],
+        "type": "Text_excerpt",
+        "value": "A demo showing you how to add the tree visualization and how you can interact with the it programmatically is available at https://edamontology.github.io/edam-browser/demo.html\n"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/edamontology/edam-browser/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

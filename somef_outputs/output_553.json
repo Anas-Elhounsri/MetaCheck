@@ -1,0 +1,417 @@
+{
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2021",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"The targets manual is part of targets. To cite targets, see below:\")\n\ncitEntry(\n  entry    = \"Article\",\n  title    = \"The targets R package: a dynamic Make-like function-oriented pipeline toolkit for reproducibility and high-performance computing\",\n  author   = \"William Michael Landau\",\n  journal  = \"Journal of Open Source Software\",\n  year     = 2021,\n  volume   = 6,\n  number   = 57,\n  pages    = 2959,\n  url      = \"https://doi.org/10.21105/joss.02959\",\n  textVersion = paste(\n    \"Landau, W. M., (2021). The targets R package: a dynamic Make-like\",\n    \"function-oriented pipeline toolkit for reproducibility and\",\n    \"high-performance computing. Journal of Open Source Software,\",\n    \"6(57), 2959, https://doi.org/10.21105/joss.02959\"\n  )\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "The `targets` R package user manual"
+        ],
+        "type": "Text_excerpt",
+        "value": "``` r\ncitation(\"targets\")\n```\n\n    To cite targets in publications use:\n\n      Landau, W. M., (2021). The targets R package: a dynamic Make-like\n      function-oriented pipeline toolkit for reproducibility and\n      high-performance computing. Journal of Open Source Software, 6(57),\n      2959, https://doi.org/10.21105/joss.02959\n\n    A BibTeX entry for LaTeX users is\n\n      @Article{,\n        title = {The targets R package: a dynamic Make-like function-oriented pipeline toolkit for reproducibility and high-performance computing},\n        author = {William Michael Landau},\n        journal = {Journal of Open Source Software},\n        year = {2021},\n        volume = {6},\n        number = {57},\n        pages = {2959},\n        url = {https://doi.org/10.21105/joss.02959},\n      }\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/README.qmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci-books/targets"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci-books/targets"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nDevelopment is a community effort, and we welcome participation.\n\n## Code of Conduct\n\nBy participating in this project, you agree to abide by the [code of conduct](https://github.com/ropensci-books/targets/blob/main/CODE_OF_CONDUCT.md).\n\n## Discussions\n\nAt <https://github.com/ropensci-books/targets/discussions>, you can post general questions, brainstorm ideas, and ask for help.\n\n## Issues\n\n<https://github.com/ropensci-books/targets/issues> is for bug reports, performance issues, maintenance tasks, and feature requests. When you post, please abide by the following guidelines.\n\n* Before posting a new issue, please take a moment to search for existing similar issues in order to avoid duplication.\n* For bug reports: if you can, please install the latest GitHub version of `targets` (i.e. `remotes::install_github(\"ropensci/targets\")`) and verify that the issue still persists.\n* Describe your issue in prose as clearly and concisely as possible.\n* Include diagnostic details about the problem, including\n    * A [reproducible example](https://github.com/tidyverse/reprex).\n    * Session info, available through `sessionInfo()` or [`reprex(si = TRUE)`](https://github.com/tidyverse/reprex).\n    * A stack trace from `traceback()` or `rlang::trace_back()`.\n    * The [SHA-1 hash](https://git-scm.com/book/en/v1/Getting-Started-Git-Basics#Git-Has-Integrity) of the GitHub commit of `targets` currently installed. `packageDescription(\"targets\")$GithubSHA1` shows you this.\n    \n## Development\n\nExternal code contributions are extremely helpful in the right circumstances. Here are the recommended steps.\n\n1. Prior to contribution, please propose your idea in a [new issue thread](https://github.com/ropensci-books/targets/issues) so you and the maintainer can define the intent and scope of your work.\n2. [Fork the repository](https://help.github.com/articles/fork-a-repo/).\n3. Follow the [GitHub flow](https://guides.github.com/introduction/flow/index.html) to create a new branch, add commits, and open a pull request.\n4. Discuss your code with the maintainer in the pull request thread.\n5. If everything looks good, the maintainer will merge your code into the project.\n\nPlease also follow these additional guidelines.\n\n* Respect the architecture and reasoning of the project.\n* If possible, keep contributions small enough to easily review manually. It is okay to split up your work into multiple pull requests.\n* Format your code according to the [tidyverse style guide](https://style.tidyverse.org/) and check your formatting with the `lint_package()` function from the [`lintr`](https://github.com/jimhester/lintr) package.\n* Describe your contribution in the project's [`NEWS.md`](https://github.com/ropensci-books/targets/blob/main/NEWS.md) file. Be sure to mention relevent GitHub issue numbers and your GitHub name as done in existing news entries.\n* If you feel contribution is substantial enough for official author or contributor status, please add yourself as an author in the  [`index.Rmd`](https://github.com/ropensci-books/targets/blob/main/index.Rmd) file and [`DESCRIPTION](https://github.com/ropensci-books/targets/blob/main/DESCRIPTION) file.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-06-17T19:13:26Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-14T12:57:28Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "User manual of the targets R pacakge"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+        "type": "String",
+        "value": "This repository is the targets R package user manual.\n  It contains in-depth discussion and walkthrough\n  of the main features of 'targets' and advice about best practices.\n  The goal is to introduce new users to 'targets' and instill\n  a thorough understanding of what it does, how it works,\n  and when to use it. The manual is implemented as a typical\n  'bookdown' project with a single '_bookdown.yml' file at the top level\n  and one R Markdown source file for each chapter. End users\n  are encouraged to read the rendered output at\n  <https://books.ropensci.org/targets>."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci-books/targets/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 33
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci-books/targets/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci-books/targets"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The targets R package user manual"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/README.qmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://books.ropensci.org/targets"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://joss.theoj.org/papers/10.21105/joss.02959/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/README.qmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "The `targets` R package user manual",
+        "type": "Text_excerpt",
+        "value": "[![ropensci](https://badges.ropensci.org/401_status.svg)](https://github.com/ropensci/software-review/issues/401)\n[![joss](https://joss.theoj.org/papers/10.21105/joss.02959/status.svg)](https://doi.org/10.21105/joss.02959)\n[![zenodo](https://zenodo.org/badge/273058618.svg)](https://zenodo.org/badge/latestdoi/273058618)\n[![status](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)\n[![check](https://github.com/ropensci-books/targets/workflows/check/badge.svg)](https://github.com/ropensci-books/targets/actions?query=workflow%3Acheck)\n[![publish](https://github.com/ropensci-books/targets/workflows/publish/badge.svg)](https://github.com/ropensci-books/targets/actions?query=workflow%3Apublish)\n\nThis repository is the [`targets`](https://github.com/ropensci/targets)\nR package user manual. It contains in-depth discussion and walkthroughs\nof the main features of [`targets`](https://github.com/ropensci/targets)\nand advice about best practices. The goal is to introduce new users to\n[`targets`](https://github.com/ropensci/targets) and instill a thorough\nunderstanding of what it does, how it works, and when to use it. The\nrendered manual is available at <https://books.ropensci.org/targets>.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/README.qmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Code of conduct",
+        "parent_header": [
+          "The `targets` R package user manual"
+        ],
+        "type": "Text_excerpt",
+        "value": "Please note that this package is released with a [Contributor Code of\nConduct](https://ropensci.org/code-of-conduct/).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/README.qmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci-books/targets/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci-books/targets/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "data-science, high-performance-computing, pipeline, r, reporoducible-research, reproducibility, rstats, statistics, targets"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2025 Eli Lilly and Company\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "targets"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci-books"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+        "type": "String",
+        "value": "targets.manual"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci-books/targets/main/README.qmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci-books/targets/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2021-01-15T13:44:24Z",
+        "date_published": "2021-01-15T14:24:38Z",
+        "html_url": "https://github.com/ropensci-books/targets/releases/tag/0.0.1",
+        "name": "First release",
+        "release_id": 36451636,
+        "tag": "0.0.1",
+        "tarball_url": "https://api.github.com/repos/ropensci-books/targets/tarball/0.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci-books/targets/releases/36451636",
+        "value": "https://api.github.com/repos/ropensci-books/targets/releases/36451636",
+        "zipball_url": "https://api.github.com/repos/ropensci-books/targets/zipball/0.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "wlandau",
+          "type": "User"
+        },
+        "date_created": "2020-10-01T02:53:27Z",
+        "date_published": "2020-10-02T04:15:32Z",
+        "html_url": "https://github.com/ropensci-books/targets/releases/tag/0.0.0.9000",
+        "name": "Initial pre-release to enable Zenodo DOI",
+        "release_id": 32076737,
+        "tag": "0.0.0.9000",
+        "tarball_url": "https://api.github.com/repos/ropensci-books/targets/tarball/0.0.0.9000",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci-books/targets/releases/32076737",
+        "value": "https://api.github.com/repos/ropensci-books/targets/releases/32076737",
+        "zipball_url": "https://api.github.com/repos/ropensci-books/targets/zipball/0.0.0.9000"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:13:27",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 28
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "non-software"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+        "type": "String",
+        "value": "1.11.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci-books/targets/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ]
+}

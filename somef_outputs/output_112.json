@@ -1,0 +1,254 @@
+{
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/conda-forge/feedstock-outputs"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/conda-forge/feedstock-outputs/main/.github/workflows/website.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-03-06T14:00:35Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-18T20:32:01Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "registry of feedstock outputs"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 0.8336017825988269,
+      "result": {
+        "original_header": "Automatic Registration of Outputs that Follow Regular Patterns",
+        "type": "Text_excerpt",
+        "value": "Some feedstocks output packages that have a regular pattern (e.g., `llvdmdev` outputs `libllvm19`, `libllvm20`, etc.).\nWe store a list of allowed output glob patterns in this [file](feedstock_outputs_autoreg_allowlist.yml). Each entry\nis a list of allowed glob patterns for the feedstock. These patterns are tested against new outputs using the Python\n`fnmatch` module. If a feedstock uploads a package that matches one of these patterns, the output is automatically\nregistered.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/conda-forge/feedstock-outputs/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8069450578647082,
+      "result": {
+        "original_header": "Adding New Outputs and Glob Patterns",
+        "type": "Text_excerpt",
+        "value": "If you make a change so that a package is produced by a different feedstock or adds an output, please make a PR\nusing the [admin-requests repo](https://github.com/conda-forge/admin-requests?tab=readme-ov-file#add-a-package-output-to-a-feedstock) to add the new output. You can add new glob patterns via the [admin-requests repo](https://github.com/conda-forge/admin-requests?tab=readme-ov-file#add-a-package-output-to-a-feedstock) as well.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/conda-forge/feedstock-outputs/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/conda-forge/feedstock-outputs/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 30
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/conda-forge/feedstock-outputs/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "conda-forge/feedstock-outputs"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "feedstock-outputs"
+      },
+      "source": "https://raw.githubusercontent.com/conda-forge/feedstock-outputs/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "bower.json",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/conda-forge/feedstock-outputs/main/outputs/b/o/w/bower.json"
+      },
+      "source": "https://raw.githubusercontent.com/conda-forge/feedstock-outputs/main/outputs/b/o/w/bower.json",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "bower.json"
+      },
+      "source": "https://raw.githubusercontent.com/conda-forge/feedstock-outputs/main/outputs/b/o/w/bower.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/conda-forge/feedstock-outputs/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "type": "License",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "value": "https://api.github.com/licenses/bsd-3-clause"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "BSD 3-Clause License\n\nCopyright (c) 2020, conda-forge\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its\n   contributors may be used to endorse or promote products derived from\n   this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/conda-forge/feedstock-outputs/main/LICENSE",
+      "technique": "file_exploration"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "feedstock-outputs"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "conda-forge"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 6928,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/conda-forge/feedstock-outputs/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:36:39",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ]
+}

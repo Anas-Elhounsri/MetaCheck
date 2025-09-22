@@ -1,0 +1,882 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgements",
+        "parent_header": [
+          "gramm"
+        ],
+        "type": "Text_excerpt",
+        "value": "gramm was inspired and/or used code from:\n- [ggplot2](http://ggplot2.org)\n- [Panda](http://www.neural-code.com/index.php/panda) for color conversion\n- [subtightplot](http://www.mathworks.com/matlabcentral/fileexchange/39664-subtightplot) for subplot creation\n- [colorbrewer2](http://colorbrewer2.org)\n- [viridis colormap](https://bids.github.io/colormap/)\n"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "German Primate Center",
+        "email": "pier.morel@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-0984-7016",
+        "type": "String",
+        "value": "Pierre Morel"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citing gramm",
+        "parent_header": [
+          "gramm",
+          "About gramm"
+        ],
+        "type": "Text_excerpt",
+        "value": "Gramm has been published in the Journal of Open Source Software. If you use gramm plots in a publication you can thus cite it using the following:\n\n[![DOI](http://joss.theoj.org/papers/10.21105/joss.00568/status.svg)](https://doi.org/10.21105/joss.00568)\n\nMorel, (2018). Gramm: grammar of graphics plotting in Matlab. Journal of Open Source Software, 3(23), 568, https://doi.org/10.21105/joss.00568\n"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/piermorel/gramm"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/piermorel/gramm"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/.github/workflows/gh-pages.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# How to contribute\n\n - **Questions**: If you have a question on the use of gramm, first look through the documentation and in particular through examples.m and the corresponding [html/examples.html](http://htmlpreview.github.io/?https://github.com/piermorel/gramm/blob/master/html/examples.html) file to see if there is not already a recipe for what you want to achieve. If not then take a look at [closed issues](https://github.com/piermorel/gramm/issues?q=is%3Aissue+is%3Aclosed) on GitHub. Finally, if you can not find an answer there, do not hesitate to create a new [issue](https://github.com/piermorel/gramm/issues) with your question: they act as a sort of FAQ.\n - **Bugs**: Known bugs are left as [open issues](https://github.com/piermorel/gramm/issues) on GitHub, if you find a new one, please report it there and include a minimal working example demonstrating how the gramm results differ from what is expected.\n - **Enhancements**: You can propose enhancements by participating in this already existing [feature wishlist](https://github.com/piermorel/gramm/issues/50) thread that serves as a more general discussion and outlines what is planned next. For very specific/simple enhancements you can create separate issues on GitHub.\n - **Modifications**: If you want to extend the functionality of gramm, you are welcome to do so! Adding new ```geom_``` or ```stat_``` functions can be relatively easy due to their modular conception, while more in-depth changes might require some discussions on the internals of gramm. For discussion create a new issue or if your modifications are ready just submit a pull request. For new features, an addition to examples.m demonstrating their use is welcome. Additionally, you can make sure that your changes do not break anything by running examples.m in its entirety and comparing its output to the figures in the ```html/``` folder. I will review the code and functionality and eventually discuss/make changes to your commit before merging when it is working satisfactorily."
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2015-12-10T15:05:58Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-01-31"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-01-31"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-17T16:28:18Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-01-31"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Gramm is a complete data visualization toolbox for Matlab. It provides an easy to use and high-level interface to produce publication-quality plots of complex data with varied statistical visualizations. Gramm is inspired by R's ggplot2 library."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Gramm is a complete data visualization toolbox for Matlab. It provides an easy to use and high-level interface to produce publication-quality plots of complex data with varied statistical visualizations. Gramm is inspired by R's ggplot2 library."
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.912467884212775,
+      "result": {
+        "original_header": "gramm",
+        "type": "Text_excerpt",
+        "value": "Gramm is a MATLAB toolbox that enables the rapid creation of complex, publication-quality figures. Its design philosophy focuses on a *declarative* approach, where users specify the desired end result, as opposed to the traditional *imperative* method involving for loops, if/else statements, etc. \nThe MATLAB implementation of `gramm` is inspired by the \"grammar of graphics\" principles ([Wilkinson 1999](http://www.springer.com/de/book/9781475731002)) and the [ggplot2](http://ggplot2.tidyverse.org/) library for R by Hadley Wickham. As a reference to this inspiration, gramm stands for **GRAM**mar of graphics for **M**ATLAB. A similar library called [Seaborn](https://seaborn.pydata.org) also exists for Python. \nGramm has been used in many publications from varied fields and is particularily suited for neuroscience, from human movement psychophysics ([Morel et al. 2017](https://doi.org/10.1371/journal.pbio.2001323)), to electrophysiology ([Morel et al. 2016](https://doi.org/10.1088/1741-2560/13/1/016002); [Ferrea et al. 2017](https://doi.org/10.1152/jn.00504.2017)), human functional imaging  ([Wan et al. 2017](https://doi.org/10.1002/hbm.23932)) and animal training ([Berger et al. 2017](https://doi.org/10.1152/jn.00614.2017)). \n"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9710809557279003,
+      "result": {
+        "original_header": "Workflow",
+        "type": "Text_excerpt",
+        "value": "The typical workflow to generate this figure with only 7 lines of code is detailed in the [\"Getting Started\" live script.](#demo-live-scripts). The figure uses data from the <code>carbig</code> dataset and represents the evolution of fuel economy of new cars with time, depending on the number of cylinders indicated by color, and regions of origin separated across subplot columns. \nHere are the main steps to generate this figure:\n1. Provide gramm with the relevant data for the figure: X and Y variables, but also the variables that will determine color, subplot rows/columns, etc.\n```matlab\nload example_data.mat %Load example dataset about cars\n\n% Create a gramm object g, provide x (year of production) and y (fuel economy) data,\n% color grouping data (number of cylinders) and select a subset of the data (even numbers of cylinders)\ng=gramm('x',cars.Model_Year,'y',cars.MPG,'color',cars.Cylinders,...\n    'subset',~mod(cars.Cylinders,2);\n% Subdivide the data in subplots horizontally by region of origin\ng.facet_grid([],cars.Origin_Region);\n```\n2. Add graphical layers to your figure: raw data layers (directly plot data as points, lines...) or statistical layers (fits, histograms, densities, summaries with confidence intervals...). One instruction is enough to add each layer, and all layers offer many customization options.\nBASH2*\n3. Optionally configure legends, title and adjust the look the figure (colors, axes, etc.)\nBASH3*\n4. Draw the figure, gramm takes care of all the annoying parts: no need to loop over colors or subplots, colors and legends are generated automatically, axes limits are taken care of, etc.\nBASH4* \n"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.877639607969922,
+      "result": {
+        "original_header": "Compatibility",
+        "type": "Text_excerpt",
+        "value": " Recent versions of gramm (3.0 and above) target MATLAB above R2018b. Older releases work in older MATLAB versions. The statistics toolbox is required for some methods: <code>stat_glm()</code>, some <code>stat_summary()</code> methods, <code>stat_density()</code>. The curve fitting toolbox or the statistics toolbox is required for <code>stat_fit()</code>. \n"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9171279471270131,
+      "result": {
+        "original_header": "Main Features",
+        "type": "Text_excerpt",
+        "value": "- Accepts X, Y, Z and grouping data in varied types and shapes (arrays, matrices, cells) \n- Multiple ways of separating groups of data:\n  - Colors, lightness, point markers, line styles, and point/line size (<code>'color'</code>, <code>'lightness'</code>, <code>'marker'</code>, <code>'linestyle'</code>,  <code>'size'</code>)\n  - Subplots by row and/or columns, or wrapping columns (<code>facet_grid()</code> and <code>facet_wrap()</code>). Multiple options for consistent axis limits across facets, rows, columns, etc. (using <code>'scale'</code> and <code>'space'</code>)\n  - Separate figures (<code>fig()</code>) \n- Multiple ways of directly plotting the data:\n  - scatter plots (<code>geom_point()</code>) and jittered scatter plot (<code>geom_jitter()</code>)\n  - lines (<code>geom_line()</code>)\n  - pre-computed confidence intervals (<code>geom_interval()</code>)\n  - bars plots (<code>geom_bar()</code>)\n  - raster plots (<code>geom_raster()</code>)\n  - labels (<code>geom_label()</code>)\n  - point counts (<code>geom_count()</code>)\n  - swarm / beeswarm plots (<code>geom_swarm()</code>)\n  - text labels (<code>geom_label()</code>) \n- Multiple statistical visualizations on the data:\n  - y data summarized by x values (uniques or binned) with confidence intervals (<code>stat_summary()</code>)\n  - histograms and density plots of x values (<code>stat_bin()</code> and <code>stat_density()</code>)\n  - box and whisker plots (<code>stat_boxplot()</code>)\n  - violin plots (<code>stat_violin()</code>)\n  - quantile-quantile plots (<code>stat_qq()</code>) of x data distribution against theoretical distribution or y data distribution.\n  - Smoothed data (<code>stat_smooth()</code>)\n  - 2D binning (<code>stat_bin2d()</code>)\n  - GLM fits (<code>stat_glm()</code>, requires statistics toolbox)\n  - Custom fits with user-provided anonymous function (<code>stat_fit()</code>)\n  - Ellipses of confidence (<code>stat_ellipse()</code>) \n- Easy export in multiple formats with a convenient <code>export()</code> method that can be called after <code>draw()</code> and maintains correct dimensions/aspect ratio. \n- All visualizations have plenty of options accessible through arguments, from computational to esthetic ones.\n- Representation of groupings can be fully customized (colormaps, ordering)\n- Multiple gramm plots can be combined in the same figure by creating a matrix of gramm objects and calling the <code>draw()</code> method on the whole matrix.\n- MATLABs axes properties are modifiable through the method <code>axe_property()</code>\n- Non-data graphical elements can be added such as reference lines or polygons (<code>geom_abline()</code>, <code>geom_vline()</code>,<code>geom_hline()</code>,<code>geom_polygon()</code>)\n- For advanced customization, handles of all graphic elements and computation results are easily available after the <code>draw()</code> through the <code>results</code> structure of the gramm object \n"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "gramm",
+          "About gramm"
+        ],
+        "type": "Text_excerpt",
+        "value": "Once the toolbox is installed, type ```doc``` in the MATLAB command window and you will see gramm in the \"Supplemental Software\" section at the bottom of the left navigation bar. From there you will have access to several live script demos and a cheat sheet with all commands in a compact format.\n"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/piermorel/gramm/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 220
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/piermorel/gramm/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "piermorel/gramm"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gramm"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.5281/zenodo.594625"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.21105/joss.00568"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/gettingstarted_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/groups_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/xy_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/timeseries_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/stacked_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/overlaid_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/gettingstarted_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://joss.theoj.org/papers/10.21105/joss.00568/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/overlaid_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/layout_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/scaling_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/images/colorlegend_export.png"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installing gramm",
+        "parent_header": [
+          "gramm",
+          "About gramm"
+        ],
+        "type": "Text_excerpt",
+        "value": "We recommend installing gramm directly through MATLAB's Add-ons explorer. Search for \"gramm\" and click Add!\n\nYou can also install gramm manually by downloading the latest .mltbx file or by adding the gramm folder from the repository to your path.\n"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/piermorel/gramm/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "data-visualization, matlab, plot, statistics, stats, visualization"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "data visualization",
+          "grouped data",
+          "visual analytics",
+          "plotting",
+          "matlab",
+          "statistical graphics"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "The MIT License (MIT)\n\nCopyright (c) 2015 Pierre Morel\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/MIT",
+        "spdx_id": "MIT",
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gramm"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "piermorel"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 7491078,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MATLAB",
+        "size": 363908,
+        "type": "Programming_language",
+        "value": "MATLAB"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 12767,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "piermorel",
+          "type": "User"
+        },
+        "date_created": "2025-07-16T09:50:07Z",
+        "date_published": "2025-07-16T10:08:29Z",
+        "description": "- Support for Matlab's new dark mode (v3.0.2)\r\n- New beeswarm plot type (v3.0)\r\n- New live scripts (.mlx) files for demonstrating typical gramm workflows with interactive elements (v3.0)\r\n- New Install through MATLAB's add on explorer with packaging of the release as a mltbx file (v3.0)\r\n- Basic html help from live scripts and cheat sheet accessible with doc (v3.0)\r\n- Updated readme page (v3.0)\r\n- Stacked option for lines (v3.0)\r\n- Compatibility with MATLAB's string type (v3.0)\r\n- Some bug fixes (v3.0)\r\n- Repository organization following Mathwork's guidelines (v3.0)",
+        "html_url": "https://github.com/piermorel/gramm/releases/tag/v3.0.2",
+        "name": "gramm 3.0.2 release",
+        "release_id": 232803396,
+        "tag": "v3.0.2",
+        "tarball_url": "https://api.github.com/repos/piermorel/gramm/tarball/v3.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/piermorel/gramm/releases/232803396",
+        "value": "https://api.github.com/repos/piermorel/gramm/releases/232803396",
+        "zipball_url": "https://api.github.com/repos/piermorel/gramm/zipball/v3.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "piermorel",
+          "type": "User"
+        },
+        "date_created": "2025-05-14T08:52:09Z",
+        "date_published": "2025-05-14T17:55:06Z",
+        "description": "- New **beeswarm** plot type\r\n- New **live scripts** (.mlx) files for demonstrating typical gramm workflows with interactive elements\r\n- New **Install through MATLAB's add on explorer** with packaging of the release as a mltbx file\r\n- Basic html help from live scripts and cheat sheet accessible with doc\r\n- Updated readme page\r\n- Stacked option for lines\r\n- Compatibility with MATLAB's string type\r\n- Some bug fixes\r\n- Repository organization following Mathwork's guidelines",
+        "html_url": "https://github.com/piermorel/gramm/releases/tag/v3.0.1",
+        "name": "gramm 3.0 release",
+        "release_id": 218635973,
+        "tag": "v3.0.1",
+        "tarball_url": "https://api.github.com/repos/piermorel/gramm/tarball/v3.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/piermorel/gramm/releases/218635973",
+        "value": "https://api.github.com/repos/piermorel/gramm/releases/218635973",
+        "zipball_url": "https://api.github.com/repos/piermorel/gramm/zipball/v3.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "piermorel",
+          "type": "User"
+        },
+        "date_created": "2024-07-10T10:21:29Z",
+        "date_published": "2024-07-10T11:19:46Z",
+        "description": "- New beeswarm plot type\r\n- New live scripts (.mlx) files for demonstrating typical gramm workflows with interactive elements\r\n- Basic html help from live scripts and cheat sheet accessible with doc\r\n- Packaging of the release as a mltbx file to allow install through MATLAB's add on explorer\r\n- Updated readme page\r\n- Some bug fixes\r\n- Repository organization following Mathwork's guidelines",
+        "html_url": "https://github.com/piermorel/gramm/releases/tag/v3.0.0",
+        "name": "gramm 3.0 release candidate 1",
+        "release_id": 164778298,
+        "tag": "v3.0.0",
+        "tarball_url": "https://api.github.com/repos/piermorel/gramm/tarball/v3.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/piermorel/gramm/releases/164778298",
+        "value": "https://api.github.com/repos/piermorel/gramm/releases/164778298",
+        "zipball_url": "https://api.github.com/repos/piermorel/gramm/zipball/v3.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "piermorel",
+          "type": "User"
+        },
+        "date_created": "2024-04-13T07:52:55Z",
+        "date_published": "2024-04-13T07:59:07Z",
+        "description": "This release lays the groundwork for proper synchronization with Matlab file exchange and the packaging of the toolbox as an add-on",
+        "html_url": "https://github.com/piermorel/gramm/releases/tag/v2.27.1",
+        "name": "Preparing add-on release on file exchange",
+        "release_id": 151017704,
+        "tag": "v2.27.1",
+        "tarball_url": "https://api.github.com/repos/piermorel/gramm/tarball/v2.27.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/piermorel/gramm/releases/151017704",
+        "value": "https://api.github.com/repos/piermorel/gramm/releases/151017704",
+        "zipball_url": "https://api.github.com/repos/piermorel/gramm/zipball/v2.27.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "piermorel",
+          "type": "User"
+        },
+        "date_created": "2024-04-11T16:40:55Z",
+        "date_published": "2024-04-11T16:43:44Z",
+        "description": "This release lays the groundwork for proper synchronization with Matlab file exchange and the packaging of the toolbox as an add-on",
+        "html_url": "https://github.com/piermorel/gramm/releases/tag/v2.27",
+        "name": "Preparing add-on release on file exchange",
+        "release_id": 150793393,
+        "tag": "v2.27",
+        "tarball_url": "https://api.github.com/repos/piermorel/gramm/tarball/v2.27",
+        "type": "Release",
+        "url": "https://api.github.com/repos/piermorel/gramm/releases/150793393",
+        "value": "https://api.github.com/repos/piermorel/gramm/releases/150793393",
+        "zipball_url": "https://api.github.com/repos/piermorel/gramm/zipball/v2.27"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "piermorel",
+          "type": "User"
+        },
+        "date_created": "2018-02-14T16:39:33Z",
+        "date_published": "2018-03-04T17:24:29Z",
+        "description": "Release corresponding to the last version of the paper for the Journal of Open Source Software.",
+        "html_url": "https://github.com/piermorel/gramm/releases/tag/2.24",
+        "name": "JOSS paper",
+        "release_id": 9930167,
+        "tag": "2.24",
+        "tarball_url": "https://api.github.com/repos/piermorel/gramm/tarball/2.24",
+        "type": "Release",
+        "url": "https://api.github.com/repos/piermorel/gramm/releases/9930167",
+        "value": "https://api.github.com/repos/piermorel/gramm/releases/9930167",
+        "zipball_url": "https://api.github.com/repos/piermorel/gramm/zipball/2.24"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "piermorel",
+          "type": "User"
+        },
+        "date_created": "2018-01-31T16:16:26Z",
+        "date_published": "2018-01-31T16:17:41Z",
+        "html_url": "https://github.com/piermorel/gramm/releases/tag/2.23",
+        "name": "JOSS submission",
+        "release_id": 9470789,
+        "tag": "2.23",
+        "tarball_url": "https://api.github.com/repos/piermorel/gramm/tarball/2.23",
+        "type": "Release",
+        "url": "https://api.github.com/repos/piermorel/gramm/releases/9470789",
+        "value": "https://api.github.com/repos/piermorel/gramm/releases/9470789",
+        "zipball_url": "https://api.github.com/repos/piermorel/gramm/zipball/2.23"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "piermorel",
+          "type": "User"
+        },
+        "date_created": "2016-08-07T09:07:10Z",
+        "date_published": "2016-08-07T09:14:40Z",
+        "html_url": "https://github.com/piermorel/gramm/releases/tag/2.5",
+        "name": "v2.5",
+        "release_id": 3830526,
+        "tag": "2.5",
+        "tarball_url": "https://api.github.com/repos/piermorel/gramm/tarball/2.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/piermorel/gramm/releases/3830526",
+        "value": "https://api.github.com/repos/piermorel/gramm/releases/3830526",
+        "zipball_url": "https://api.github.com/repos/piermorel/gramm/zipball/2.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "piermorel",
+          "type": "User"
+        },
+        "date_created": "2016-05-31T08:50:35Z",
+        "date_published": "2016-06-17T07:16:14Z",
+        "html_url": "https://github.com/piermorel/gramm/releases/tag/v2.2.3",
+        "release_id": 3465279,
+        "tag": "v2.2.3",
+        "tarball_url": "https://api.github.com/repos/piermorel/gramm/tarball/v2.2.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/piermorel/gramm/releases/3465279",
+        "value": "https://api.github.com/repos/piermorel/gramm/releases/3465279",
+        "zipball_url": "https://api.github.com/repos/piermorel/gramm/zipball/v2.2.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "piermorel",
+          "type": "User"
+        },
+        "date_created": "2016-05-26T12:57:52Z",
+        "date_published": "2016-06-17T07:15:18Z",
+        "html_url": "https://github.com/piermorel/gramm/releases/tag/v2.2.2",
+        "release_id": 3465275,
+        "tag": "v2.2.2",
+        "tarball_url": "https://api.github.com/repos/piermorel/gramm/tarball/v2.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/piermorel/gramm/releases/3465275",
+        "value": "https://api.github.com/repos/piermorel/gramm/releases/3465275",
+        "zipball_url": "https://api.github.com/repos/piermorel/gramm/zipball/v2.2.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:17:18",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 802
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "static-website"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Demo live scripts",
+        "parent_header": [
+          "gramm"
+        ],
+        "type": "Text_excerpt",
+        "value": "Typical use cases are described in these live scripts. We recommend opening the live scripts in MATLAB to benefit from interactive elements. A simplified workflow is presented below this table.\n\nTo run the files in Matlab online, you will need to add the gramm folder to your path (select the gramm folder in the files panel on the left, right click>Add to Path>Selected Folder(s)).\n\n- **Getting Started:**\n\n<img src=\"images/gettingstarted_export.png\" width=\"300\"> &emsp; [\ud83d\udc40 Preview](http://htmlpreview.github.io/?https://github.com/piermorel/gramm/blob/master/gramm/html/GettingStarted.html)&emsp;[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=piermorel/gramm&file=gramm/doc/GettingStarted.mlx)\n\n- **Explore grouped data:**\n\n<img src=\"images/groups_export.png\" width=\"300\">&emsp; [\ud83d\udc40 Preview](http://htmlpreview.github.io/?https://github.com/piermorel/gramm/blob/master/gramm/html/Groups.html)&emsp;[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=piermorel/gramm&file=gramm/doc/Groups.mlx)\n\n- **Explore X/Y data:**\n\n <img src=\"images/xy_export.png\" width=\"300\">&emsp;[\ud83d\udc40 Preview](http://htmlpreview.github.io/?https://github.com/piermorel/gramm/blob/master/gramm/html/XY.html) &emsp;[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=piermorel/gramm&file=gramm/doc/XY.mlx)\n\n\n- **Explore Time Series data:**\n\n<img src=\"images/timeseries_export.png\" width=\"300\">&emsp;[\ud83d\udc40 Preview](http://htmlpreview.github.io/?https://github.com/piermorel/gramm/blob/master/gramm/html/TimeSeries.html) &emsp;[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=piermorel/gramm&file=gramm/doc/TimeSeries.mlx)\n\n- **Explore table data from an open dataset hosted on S3:**\n\n<img src=\"images/stacked_export.png\" width=\"300\">&emsp;[\ud83d\udc40 Preview](http://htmlpreview.github.io/?https://github.com/piermorel/gramm/blob/master/gramm/html/OnlineTable.html) &emsp;[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=piermorel/gramm&file=gramm/doc/OnlineTable.mlx)\n\n- **Advanced examples:**\n\n<img src=\"images/overlaid_export.png\" width=\"300\">&emsp;[\ud83d\udc40 Preview](http://htmlpreview.github.io/?https://github.com/piermorel/gramm/blob/master/gramm/html/examples.html)&emsp;[![Open in MATLAB Online](https://www.mathworks.com/images/responsive/global/open-in-matlab-online.svg)](https://matlab.mathworks.com/open/github/v1?repo=piermorel/gramm&file=gramm/doc/examples.mlx)\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v2.23"
+      },
+      "source": "https://raw.githubusercontent.com/piermorel/gramm/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

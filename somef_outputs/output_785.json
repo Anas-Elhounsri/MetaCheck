@@ -1,0 +1,1119 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Geoinformatics"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.896213667158599,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "o2r-team@uni-muenster.de",
+        "name": "o2r project",
+        "type": "Agent",
+        "url": "https://o2r.info",
+        "value": "o2r project"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Opening Reproducible Research, University of M\u00fcnster, M\u00fcnster, Germany",
+        "email": "daniel.nuest@uni-muenster.de",
+        "identifier": "https://orcid.org/0000-0002-0024-5046",
+        "type": "String",
+        "value": "Daniel N\u00fcst"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Opening Reproducible Research, University of M\u00fcnster, M\u00fcnster, Germany",
+        "type": "String",
+        "value": "K\u00fchnel Timm"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Opening Reproducible Research, University of M\u00fcnster, M\u00fcnster, Germany",
+        "type": "String",
+        "value": "Niers Tom"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Daniel",
+        "last_name": "N\u00fcst",
+        "name": "Daniel N\u00fcst",
+        "type": "Agent",
+        "value": "Daniel N\u00fcst"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Timm",
+        "last_name": "K\u00fchnel",
+        "name": "Timm K\u00fchnel",
+        "type": "Agent",
+        "value": "Timm K\u00fchnel"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Tom",
+        "last_name": "Niers",
+        "name": "Tom Niers",
+        "type": "Agent",
+        "value": "Tom Niers"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/AUTHORS",
+      "technique": "file_exploration"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "N\u00fcst",
+            "given_name": "Daniel",
+            "name": "Daniel N\u00fcst",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-0024-5046"
+          },
+          {
+            "family_name": "K\u00fchnel",
+            "given_name": "Timm",
+            "name": "Timm K\u00fchnel",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Niers",
+            "given_name": "Tom",
+            "name": "Tom Niers",
+            "type": "Agent"
+          }
+        ],
+        "datePublished": "2018",
+        "doi": "10.5281/zenodo.3925693",
+        "format": "cff",
+        "title": "geoextent",
+        "type": "File_dump",
+        "url": "https://doi.org/10.5281/zenodo.3925693",
+        "value": "cff-version: 1.1.0\nmessage: \"If you use this software, please cite it as 'N\u00fcst, Daniel, 2018. Reproducibility Service for Executable Research Compendia: Technical Specifications and Reference Implementation. Zenodo. https://doi.org/10.5281/zenodo.2203843'.\"\nauthors:\n  - family-names: N\u00fcst\n    given-names: Daniel\n    orcid: https://orcid.org/0000-0002-0024-5046\n    affiliation: Opening Reproducible Research, University of M\u00fcnster, M\u00fcnster, Germany\n    email: daniel.nuest@uni-muenster.de\n    website: https://nuest.staff.ifgi.de/\n  - family-names: K\u00fchnel\n    given-names: Timm\n    affiliation: Opening Reproducible Research, University of M\u00fcnster, M\u00fcnster, Germany\n    website: https://github.com/Timmimim\n  - family-names: Niers\n    given-names: Tom\n    affiliation: Opening Reproducible Research, University of M\u00fcnster, M\u00fcnster, Germany\n    website: https://github.com/tnier01\ntitle: \"geoextent\"\nversion: 0.3.0\ndoi: 10.5281/zenodo.3925693\ndate-released: 2020-07-01\nlicense: MIT\nurl: https://o2r.info/erc-checker/\ncommit: baf299f304d7ad16533fbb3d74e8ffc0b63cadfa\nabstract: \"Python library for extracting geospatial extent of files and directories with multiple data formats. This project is developed as part of the DFG-funded research project Opening Reproducible Research (o2r, https://o2r.info).\"\nrepository-artifact: https://pypi.org/project/geoextent/0.3.0/\nrepository-code: https://github.com/o2r-project/geoextent/releases/tag/v0.3.0\nidentifiers:\n  - type: \"swh\"\n    value: \"swh:1:rev:41e32824d581e763c58004e498c1bf1f343ef6c7\""
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to cite",
+        "parent_header": [
+          "erc-checker"
+        ],
+        "type": "Text_excerpt",
+        "value": "To cite this software please use\n\n> _N\u00fcst, Daniel, 2018. Reproducibility Service for Executable Research Compendia: Technical Specifications and Reference Implementation. Zenodo. doi:[10.5281/zenodo.2203843](https://doi.org/10.5281/zenodo.2203843)_\n"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/o2r-project/erc-checker"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/o2r-project/erc-validator.git"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/o2r-project/erc-checker.git"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://travis-ci.org/o2r-project/erc-checker"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nWe welcome [contributions of all kinds](https://opensource.guide/how-to-contribute/), be it general feedback, code, tests, or documentation.\nThis guide documents development steps both for newcomers and maintainers of the package `erc-checker`.\n\nWhen contributing to this repository, please first discuss the change you wish to make via an [issue on GitHub](https://github.com/o2r-project/erc-checker/issues) before starting your work.\nWhile you're there, please check out the [existing issues](https://github.com/o2r-project/erc-checker/issues)  where the development ist planned, for related or similar ideas and features.\n\n**Please note we have a [code of conduct](CONDUCT.md), please follow it in all your interactions with the project.**\n\n## How to get started\n\nThe following steps assume you are familiar with JavaScript package development using the [npm](https://www.npmjs.com/) registry.\nIf not, it could be worth familiarising yourself with the [npm documentation on packages and modules](https://docs.npmjs.com/packages-and-modules/).\nWhen you start working on an issue, feel free to be frank about your skillset - we're happy to get you started from whatever level you begin on.\n\nWhen you want to contribute code or docs, first [fork](https://help.github.com/en/articles/fork-a-repo), then clone the repo:\n\n```bash\ngit clone https://github.com/<your username>/erc-checker.git\n```\n\nYou should add the main repository as a remote so you know what's going on:\n\n```bash\ngit add remote upstream https://github.com/o2r-project/erc-checker\n```\n\nInstall the package from source and make sure the tests pass:\n\n```bash\nnpm install\nnpm test\n```\n\n## Contribute JavaScript code\n\n- Create a new feature branch from the current `master` branch with a short name resembling the feature you work on\n- Make your change, be it a new feature, a bugfix, or new tests\n- Add documentation for your change\n- Add tests for your change\n- Make the tests pass\n- Add yourself to the contributor list in `package.json` if you're not there yet\n- Increment the version in `package.json`, see [semantic versioning]()\n  - Increase the _minor version_ for new features\n  - Increase the _bugfix version_ for bugfixes only\n  - Increase the _major version_ for breaking changes\n- Push your feature branch to your fork and [submit a pull request](https://help.github.com/en/articles/about-pull-requests) to the upstream's `master` branch.\n  - Please be patient until maintainers review your pull request.\n    We may suggest some changes or improvements or alternatives.\n    Feel free to ping `@nuest` if you don't hear anything after a few days.\n\n## Contribute documentation\n\nDocumentation is build based on Markdown files in the `/docs` directory and rendered into static HTML pages with [mkdocs]() using Travis CI (see `.travis.yml`).\n\n**View docs locally** using Python 3:\n\n```bash\n# Activate a Python 3 virtual environment\n# mkvirtualenv erc-checker-docs --python=python3.7\nworkon erc-checker-docs\n\n# Install required tools:\npip install -r docs/requirements.txt\n\n# Run a local server rendering the docs\nmkdocs serve --verbose\n```\n\nNow view the page at [http://127.0.0.1:8000/](http://127.0.0.1:8000/)\n\nOther commands:\n\n```bash\ncd docs/\n\nmkdocs build --clean --verbose\n```\n\n## Online documentation\n\nThe online documentation is automatically built by Travis CI, see file `.travis.yml`.\nFor background on the personal access token see [https://github.com/o2r-project/erc-spec#automated-builds](https://github.com/o2r-project/erc-spec#automated-builds).\n\n## Development hints\n\nFor debugging purposes: When running the checker with a NodeJS environment variable `DEV` set true, the result AND reject metadata will include an absolute path to the temp-directory used during the check.\n\n## Publish a new release\n\n1. Update dependencies and make sure tests still work\n1. Make the release\n   ```bash\n   # see npm version --help\n   npm version {major,minor,bugfix}\n   npm publish\n   ```\n1. Check the information on npm: https://www.npmjs.com/package/erc-checker\n1. Add release notes on GitHub: https://github.com/o2r-project/erc-checker/releases\n"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contribute",
+        "parent_header": [
+          "erc-checker"
+        ],
+        "type": "Text_excerpt",
+        "value": "All help is welcome: asking questions, providing documentation, testing, or even development.\nSee [CONTRIBUTING.md](CONTRIBUTING.md) for details.\n\nPlease note that this project is released with a [Contributor Code of Conduct](CONDUCT.md).\nBy participating in this project you agree to abide by its terms.\n"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-04-06T14:18:41Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2019-08-16"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-08-05"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-07-02T09:57:54Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2020-04-24"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "JavaScript library and CLI tool for ERC validation and comparison result checking"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CLI tool to validate an ERC (following the o2r specification)"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A JavaScript library and CLI tool for ERC result checking; part of the DFG-funded research project Opening Reproducible Research (o2r, https://o2r.info)."
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9795081884765275,
+      "result": {
+        "original_header": "erc-checker",
+        "type": "Text_excerpt",
+        "value": "The checker is part of the project Opening Reproducible Research ([o2r](http://o2r.info/)).\nIts purpose is to verify the result of reproductions of scientific papers as part of the o2r reproducibility service by means of comparing the HTML of the original and reproduced article. \n"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/o2r-project/erc-checker/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/o2r-project/erc-checker/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.npmjs.com/package/erc-checker"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 4
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/o2r-project/erc-checker/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "o2r-project/erc-checker"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "erc-checker"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "package.json",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/docs/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/docs/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "package.json"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/docs/site_build.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/etc/extract_original_paper_from_ERC.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.5281/zenodo.3925693"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.2203843"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ci.appveyor.com/api/projects/status/xbla7j4wpbwauk7p/branch/master?svg=true"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://avatars3.githubusercontent.com/u/16774537?v=3&amp;s=200"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/o2r-project/erc-checker/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/o2r-project/erc-validator/issues"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/o2r-project/erc-checker/issues"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cli"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "erc"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "executable research compendium"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "o2r"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "o2r-project"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "opening reproducible research"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "comparison"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "reproducibility"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "reproducible research"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "spatial data",
+          "scholarly communication",
+          "reproducible research"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/apache-2.0",
+        "value": "https://api.github.com/licenses/apache-2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "File_dump",
+        "value": "                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION\n\n   1. Definitions.\n\n      \"License\" shall mean the terms and conditions for use, reproduction,\n      and distribution as defined by Sections 1 through 9 of this document.\n\n      \"Licensor\" shall mean the copyright owner or entity authorized by\n      the copyright owner that is granting the License.\n\n      \"Legal Entity\" shall mean the union of the acting entity and all\n      other entities that control, are controlled by, or are under common\n      control with that entity. For the purposes of this definition,\n      \"control\" means (i) the power, direct or indirect, to cause the\n      direction or management of such entity, whether by contract or\n      otherwise, or (ii) ownership of fifty percent (50%) or more of the\n      outstanding shares, or (iii) beneficial ownership of such entity.\n\n      \"You\" (or \"Your\") shall mean an individual or Legal Entity\n      exercising permissions granted by this License.\n\n      \"Source\" form shall mean the preferred form for making modifications,\n      including but not limited to software source code, documentation\n      source, and configuration files.\n\n      \"Object\" form shall mean any form resulting from mechanical\n      transformation or translation of a Source form, including but\n      not limited to compiled object code, generated documentation,\n      and conversions to other media types.\n\n      \"Work\" shall mean the work of authorship, whether in Source or\n      Object form, made available under the License, as indicated by a\n      copyright notice that is included in or attached to the work\n      (an example is provided in the Appendix below).\n\n      \"Derivative Works\" shall mean any work, whether in Source or Object\n      form, that is based on (or derived from) the Work and for which the\n      editorial revisions, annotations, elaborations, or other modifications\n      represent, as a whole, an original work of authorship. For the purposes\n      of this License, Derivative Works shall not include works that remain\n      separable from, or merely link (or bind by name) to the interfaces of,\n      the Work and Derivative Works thereof.\n\n      \"Contribution\" shall mean any work of authorship, including\n      the original version of the Work and any modifications or additions\n      to that Work or Derivative Works thereof, that is intentionally\n      submitted to Licensor for inclusion in the Work by the copyright owner\n      or by an individual or Legal Entity authorized to submit on behalf of\n      the copyright owner. For the purposes of this definition, \"submitted\"\n      means any form of electronic, verbal, or written communication sent\n      to the Licensor or its representatives, including but not limited to\n      communication on electronic mailing lists, source code control systems,\n      and issue tracking systems that are managed by, or on behalf of, the\n      Licensor for the purpose of discussing and improving the Work, but\n      excluding communication that is conspicuously marked or otherwise\n      designated in writing by the copyright owner as \"Not a Contribution.\"\n\n      \"Contributor\" shall mean Licensor and any individual or Legal Entity\n      on behalf of whom a Contribution has been received by Licensor and\n      subsequently incorporated within the Work.\n\n   2. Grant of Copyright License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      copyright license to reproduce, prepare Derivative Works of,\n      publicly display, publicly perform, sublicense, and distribute the\n      Work and such Derivative Works in Source or Object form.\n\n   3. Grant of Patent License. Subject to the terms and conditions of\n      this License, each Contributor hereby grants to You a perpetual,\n      worldwide, non-exclusive, no-charge, royalty-free, irrevocable\n      (except as stated in this section) patent license to make, have made,\n      use, offer to sell, sell, import, and otherwise transfer the Work,\n      where such license applies only to those patent claims licensable\n      by such Contributor that are necessarily infringed by their\n      Contribution(s) alone or by combination of their Contribution(s)\n      with the Work to which such Contribution(s) was submitted. If You\n      institute patent litigation against any entity (including a\n      cross-claim or counterclaim in a lawsuit) alleging that the Work\n      or a Contribution incorporated within the Work constitutes direct\n      or contributory patent infringement, then any patent licenses\n      granted to You under this License for that Work shall terminate\n      as of the date such litigation is filed.\n\n   4. Redistribution. You may reproduce and distribute copies of the\n      Work or Derivative Works thereof in any medium, with or without\n      modifications, and in Source or Object form, provided that You\n      meet the following conditions:\n\n      (a) You must give any other recipients of the Work or\n          Derivative Works a copy of this License; and\n\n      (b) You must cause any modified files to carry prominent notices\n          stating that You changed the files; and\n\n      (c) You must retain, in the Source form of any Derivative Works\n          that You distribute, all copyright, patent, trademark, and\n          attribution notices from the Source form of the Work,\n          excluding those notices that do not pertain to any part of\n          the Derivative Works; and\n\n      (d) If the Work includes a \"NOTICE\" text file as part of its\n          distribution, then any Derivative Works that You distribute must\n          include a readable copy of the attribution notices contained\n          within such NOTICE file, excluding those notices that do not\n          pertain to any part of the Derivative Works, in at least one\n          of the following places: within a NOTICE text file distributed\n          as part of the Derivative Works; within the Source form or\n          documentation, if provided along with the Derivative Works; or,\n          within a display generated by the Derivative Works, if and\n          wherever such third-party notices normally appear. The contents\n          of the NOTICE file are for informational purposes only and\n          do not modify the License. You may add Your own attribution\n          notices within Derivative Works that You distribute, alongside\n          or as an addendum to the NOTICE text from the Work, provided\n          that such additional attribution notices cannot be construed\n          as modifying the License.\n\n      You may add Your own copyright statement to Your modifications and\n      may provide additional or different license terms and conditions\n      for use, reproduction, or distribution of Your modifications, or\n      for any such Derivative Works as a whole, provided Your use,\n      reproduction, and distribution of the Work otherwise complies with\n      the conditions stated in this License.\n\n   5. Submission of Contributions. Unless You explicitly state otherwise,\n      any Contribution intentionally submitted for inclusion in the Work\n      by You to the Licensor shall be under the terms and conditions of\n      this License, without any additional terms or conditions.\n      Notwithstanding the above, nothing herein shall supersede or modify\n      the terms of any separate license agreement you may have executed\n      with Licensor regarding such Contributions.\n\n   6. Trademarks. This License does not grant permission to use the trade\n      names, trademarks, service marks, or product names of the Licensor,\n      except as required for reasonable and customary use in describing the\n      origin of the Work and reproducing the content of the NOTICE file.\n\n   7. Disclaimer of Warranty. Unless required by applicable law or\n      agreed to in writing, Licensor provides the Work (and each\n      Contributor provides its Contributions) on an \"AS IS\" BASIS,\n      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or\n      implied, including, without limitation, any warranties or conditions\n      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A\n      PARTICULAR PURPOSE. You are solely responsible for determining the\n      appropriateness of using or redistributing the Work and assume any\n      risks associated with Your exercise of permissions under this License.\n\n   8. Limitation of Liability. In no event and under no legal theory,\n      whether in tort (including negligence), contract, or otherwise,\n      unless required by applicable law (such as deliberate and grossly\n      negligent acts) or agreed to in writing, shall any Contributor be\n      liable to You for damages, including any direct, indirect, special,\n      incidental, or consequential damages of any character arising as a\n      result of this License or out of the use or inability to use the\n      Work (including but not limited to damages for loss of goodwill,\n      work stoppage, computer failure or malfunction, or any and all\n      other commercial damages or losses), even if such Contributor\n      has been advised of the possibility of such damages.\n\n   9. Accepting Warranty or Additional Liability. While redistributing\n      the Work or Derivative Works thereof, You may choose to offer,\n      and charge a fee for, acceptance of support, warranty, indemnity,\n      or other liability obligations and/or rights consistent with this\n      License. However, in accepting such obligations, You may act only\n      on Your own behalf and on Your sole responsibility, not on behalf\n      of any other Contributor, and only if You agree to indemnify,\n      defend, and hold each Contributor harmless for any liability\n      incurred by, or claims asserted against, such Contributor by reason\n      of your accepting any such warranty or additional liability.\n\n   END OF TERMS AND CONDITIONS\n\n   APPENDIX: How to apply the Apache License to your work.\n\n      To apply the Apache License to your work, attach the following\n      boilerplate notice, with the fields enclosed by brackets \"{}\"\n      replaced with your own identifying information. (Don't include\n      the brackets!)  The text should be enclosed in the appropriate\n      comment syntax for the file format. We also recommend that a\n      file or class name and description of purpose be included on the\n      same \"printed page\" as the copyright notice for easier\n      identification within third-party archives.\n\n   Copyright {yyyy} {name of copyright owner}\n\n   Licensed under the Apache License, Version 2.0 (the \"License\");\n   you may not use this file except in compliance with the License.\n   You may obtain a copy of the License at\n\n       http://www.apache.org/licenses/LICENSE-2.0\n\n   Unless required by applicable law or agreed to in writing, software\n   distributed under the License is distributed on an \"AS IS\" BASIS,\n   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n   See the License for the specific language governing permissions and\n   limitations under the License.\n"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "Apache-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/Apache-2.0",
+        "spdx_id": "https://spdx.org/licenses/Apache-2.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/Apache-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "erc-checker"
+        ],
+        "type": "Text_excerpt",
+        "value": "o2r checker is licensed under Apache License, Version 2.0, see file `LICENSE`.\n\nCopyright (C) 2020 - o2r project. \n\n[![o2r](https://avatars3.githubusercontent.com/u/16774537?v=3&s=200)](https://o2r.info)\n"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "erc-checker"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "erc-checker"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "o2r-project"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "erc-checker"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 1950494,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 70173,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 1477,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3",
+        "type": "Programming_language",
+        "value": "Python 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nuest",
+          "type": "User"
+        },
+        "date_created": "2020-04-24T14:43:22Z",
+        "date_published": "2020-04-24T14:45:35Z",
+        "description": "Now with pixelmatch and jimp!",
+        "html_url": "https://github.com/o2r-project/erc-checker/releases/tag/v1.3.0",
+        "name": "1.3.0",
+        "release_id": 25854123,
+        "tag": "v1.3.0",
+        "tarball_url": "https://api.github.com/repos/o2r-project/erc-checker/tarball/v1.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/o2r-project/erc-checker/releases/25854123",
+        "value": "https://api.github.com/repos/o2r-project/erc-checker/releases/25854123",
+        "zipball_url": "https://api.github.com/repos/o2r-project/erc-checker/zipball/v1.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nuest",
+          "type": "User"
+        },
+        "date_created": "2018-08-05T00:21:19Z",
+        "date_published": "2020-07-02T08:46:17Z",
+        "html_url": "https://github.com/o2r-project/erc-checker/releases/tag/v1.2.0",
+        "name": "1.2.0",
+        "release_id": 28147903,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/o2r-project/erc-checker/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/o2r-project/erc-checker/releases/28147903",
+        "value": "https://api.github.com/repos/o2r-project/erc-checker/releases/28147903",
+        "zipball_url": "https://api.github.com/repos/o2r-project/erc-checker/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable state and is being actively developed.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ajv",
+        "type": "Software_application",
+        "value": "ajv@^5.5.2",
+        "version": "^5.5.2"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "base64-arraybuffer",
+        "type": "Software_application",
+        "value": "base64-arraybuffer@^0.2.0",
+        "version": "^0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "colors",
+        "type": "Software_application",
+        "value": "colors@^1.4.0",
+        "version": "^1.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "commander",
+        "type": "Software_application",
+        "value": "commander@^4.1.1",
+        "version": "^4.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "debug",
+        "type": "Software_application",
+        "value": "debug@^4.1.1",
+        "version": "^4.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "deglob",
+        "type": "Software_application",
+        "value": "deglob@o2r-project/deglob#master",
+        "version": "o2r-project/deglob#master"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "fs",
+        "type": "Software_application",
+        "value": "fs@0.0.1-security",
+        "version": "0.0.1-security"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "image-size",
+        "type": "Software_application",
+        "value": "image-size@^0.8.3",
+        "version": "^0.8.3"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jimp",
+        "type": "Software_application",
+        "value": "jimp@^0.9.6",
+        "version": "^0.9.6"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "leven",
+        "type": "Software_application",
+        "value": "leven@^3.1.0",
+        "version": "^3.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "levenshtein",
+        "type": "Software_application",
+        "value": "levenshtein@^1.0.5",
+        "version": "^1.0.5"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "node-htmldiff",
+        "type": "Software_application",
+        "value": "node-htmldiff@^0.9.3",
+        "version": "^0.9.3"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "object-sizeof",
+        "type": "Software_application",
+        "value": "object-sizeof@^1.5.3",
+        "version": "^1.5.3"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pixelmatch",
+        "type": "Software_application",
+        "value": "pixelmatch@^5.1.0",
+        "version": "^5.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pngjs",
+        "type": "Software_application",
+        "value": "pngjs@^3.4.0",
+        "version": "^3.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "promise",
+        "type": "Software_application",
+        "value": "promise@^8.1.0",
+        "version": "^8.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rewire",
+        "type": "Software_application",
+        "value": "rewire@^4.0.1",
+        "version": "^4.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "chai",
+        "type": "Software_application",
+        "value": "chai@^4.2.0",
+        "version": "^4.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mocha",
+        "type": "Software_application",
+        "value": "mocha@^6.2.3",
+        "version": "^6.2.3"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "tmp",
+        "type": "Software_application",
+        "value": "tmp@^0.1.0",
+        "version": "^0.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mkdocs",
+        "type": "Software_application",
+        "value": "mkdocs",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mkdocs-cinder",
+        "type": "Software_application",
+        "value": "mkdocs-cinder",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pymdown-extensions",
+        "type": "Software_application",
+        "value": "pymdown-extensions",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pygments",
+        "type": "Software_application",
+        "value": "pygments",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/docs/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:06:50",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "1.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/o2r-project/erc-checker/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9537897923081926,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/persistent_url_resolver"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-11-30T18:22:51Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-06-26T21:51:42Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This repository contains a new version of Caltech Library's Persistent URL Resolver, based on AWS S3."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 0.8701504708417256,
+      "result": {
+        "original_header": "Persistent URL Resolver",
+        "type": "Text_excerpt",
+        "value": "Resolve existing Persistent URLs in Eprints and Caltech Library DOIs using AWS\nS3\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/persistent_url_resolver/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/persistent_url_resolver/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/persistent_url_resolver"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Persistent URL Resolver"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Setup",
+        "parent_header": [
+          "Persistent URL Resolver"
+        ],
+        "type": "Text_excerpt",
+        "value": "Create a S3 bucket using the AWS console, say resolver.library.caltech.edu.\nYou can turn on logging if you like.  For now turn off all public access\nrestrictions (we don't care if people can read bucket contents).  Then go to\nbucket properties and turn on static website hosting (use index.html as the\ndocument root and error.html as the error location).  \nThen under permissions add public access for \"List objects\".\n\nGo to AWS IAM and select policies.  Create a new policy that allows S3 access\nto only the resolver.library.caltech.edu bucket and any object.  \nSet up a user in AWS AIM (I created a new user \"resolver\"), and provide it only\nprogrammatic access (no need for it to have a password).  Select \"Attach\nexisting policies dierectly\", and select the policy you just created. Create\nthe user and you'll get credentials.  Edit ~/.aws/credentials and add\n\n    [resolver]   \n    aws_secret_access_key = \n    aws_access_key_id =   \n\nresolver is the profile we'll use to hold these credentials.  You should have\nin ~/.aws/config\n\n[default]\nregion = us-west-2\n\nor whatever AWS region you're using.  \n\nCopy error.html, logos, and css.css to the S3 bucket.\n\nIn order to get https, we need to set up a cloudfront distribution.  First go\nto S3 settings under static website hosting and copy the domain name - it will\nbe something like\n\"resolver.library.caltech.edu.s3-website-us-west-2.amazonaws.com\".\nNow go to cloudfront in AWS and create a Web distribution.\nPaste the S3 url as Origin Domain Name- do not use the default S3 autocomplete.  \nFor now allow both HTTP and HTTPS.  All the defaults should be fine.\nNote that it may take awhile to deploy your site if you have many objects. \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/persistent_url_resolver/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "Copyright (c) 2016-2018, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\nlist of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors\nmay be used to endorse or promote products derived from this software without\nspecific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/LICENSE",
+      "technique": "file_exploration"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "persistent_url_resolver"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 19656,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 1797,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 1044,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 752,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "boto3",
+        "type": "Software_application",
+        "value": "boto3 >= 1.20.24",
+        "version": ">= 1.20.24"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "requests",
+        "type": "Software_application",
+        "value": "requests >= 2.21",
+        "version": ">= 2.21"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "progressbar2",
+        "type": "Software_application",
+        "value": "progressbar2",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "py_dataset",
+        "type": "Software_application",
+        "value": "py_dataset == 1.0.1",
+        "version": "== 1.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/persistent_url_resolver/main/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:25:49",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ]
+}

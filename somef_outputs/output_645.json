@@ -1,0 +1,1132 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgments",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "The photograph of a sheep from the species _Ovis vignei_ shown near the top of this page is the work of user [Fabrice Stoger](https://commons.wikimedia.org/wiki/User:Fstoger), who provided it to [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:20170309_2597_Ulley-Leh_Urial.jpg) on 2017-03-09 under the terms of a [Creative Commons Attribution-Share Alike 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/deed.en). I cropped the original and added a mild drop shadow with the help of [ImageMagick](https://imagemagick.org/index.php) (version 7.1.1-23) using the following command on macOS 13.6.3:\n\n```sh\nconvert urial-cropped.jpg \\\n    \\( +clone -background black -shadow 10x15+0+10 \\) \\\n    +swap -background transparent -layers merge +repage urial.png\n```\n\nThis program makes use of numerous open-source packages, without which Urial could not have been developed.  I want to acknowledge this debt.  In alphabetical order, the packages are:\n\n* [appscript](http://appscript.sourceforge.net/py-appscript/doc.html) &ndash; Apple event bridge for controlling scriptable Mac OS X applications\n* [flake8](https://github.com/pycqa/flake8) &ndash; Python code linter and style analyzer\n* [jq](https://jqlang.github.io/jq/) &ndash; JSON data processing tool\n* [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) &ndash; CLI interface for using [markdownlint](https://github.com/DavidAnson/markdownlint) to lint Markdown files\n* [plac](http://micheles.github.io/plac/) &ndash; a command line argument parser\n* [pytest-cov](https://github.com/pytest-dev/pytest-cov) &ndash; coverage reports for use with `pytest`\n* [pytest-mock](https://pypi.org/project/pytest-mock/) &ndash; wrapper around the `mock` package for use with `pytest`\n* [pytest](https://docs.pytest.org/en/stable/) &ndash; testing framework\n* [setuptools](https://github.com/pypa/setuptools) &ndash; library for `setup.py`\n* [shiv](https://github.com/linkedin/shiv) &ndash; utility for building fully self-contained Python \"zipapps\"\n* [Sidetrack](https://github.com/caltechlibrary/sidetrack) &ndash; simple debug logging/tracing package\n* [Twine](https://github.com/pypa/twine) &ndash; utilities for publishing Python packages on [PyPI](https://pypi.org)\n* [uritools](https://pypi.org/project/uritools/) &ndash; functions for parsing, classifying and composing URIs and URI references\n* [wheel](https://pypi.org/project/wheel/) &ndash; setuptools extension for building Python wheels\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "California Institute of Technology Library",
+        "email": "mhucka@caltech.edu",
+        "identifier": "https://orcid.org/0000-0001-9105-5960",
+        "type": "String",
+        "value": "Michael Hucka"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Hucka",
+            "given_name": "Michael",
+            "name": "Michael Hucka",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-9105-5960"
+          }
+        ],
+        "datePublished": "2024",
+        "format": "cff",
+        "title": "Urial (URI Addition tooL)",
+        "type": "File_dump",
+        "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it using the metadata from this file.\"\nauthors:\n  - family-names: Hucka\n    given-names: Michael\n    email: mhucka@caltech.edu\n    orcid: https://orcid.org/0000-0001-9105-5960\ntitle: \"Urial (URI Addition tooL)\"\nabstract: Add/update URIs in macOS Finder comments.\nversion: 1.2.0\ndate-released: 2024-01-15\nrepository-code: \"https://github.com/mhucka/urial\"\nlicense: MIT\ntype: software\nkeywords:\n  - software\n  - macOS\n  - URI\n  - desktop software\n"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+        "type": "Text_excerpt",
+        "value": "Urial (_**URI** **a**ddition too**l**_) is a simple but intelligent command-line tool to add, view, or replace URIs in macOS Finder comments.\n\n[![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat-square)](https://github.com/mhucka/urial/blob/main/LICENSE)\n[![Python](https://img.shields.io/badge/Python-3.8+-brightgreen.svg?style=flat-square)](http://shields.io)\n[![PyPI](https://img.shields.io/pypi/v/urial.svg?style=flat-square&color=orange&label=PyPI)](https://pypi.org/project/urial/)\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Table of contents",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "* [Introduction](#introduction)\n* [Installation](#installation)\n* [Usage](#usage)\n* [Getting help](#getting-help)\n* [Contributing](#contributing)\n* [License](#license)\n* [Acknowledgments](#acknowledgments)\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Default behavior<img alt=\"Screenshot of a Finder info dialog.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/finder-get-info-screenshot.png\" width=\"300px\" align=\"right\">",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Without any optional flags or arguments to modify its behavior, `urial` expects to be given at least two argument values.  The first value should be a URI, and the second value should be the path of a file whose Finder comment is to be updated with the given URI.\n\nIf the current Finder comment for the file is empty, then `urial` will simply write the URI into the Finder comment. An example of the result is shown in the screenshot at right.\n\nIf the Finder comment is _not_ empty, `urial` will edit the comment to update the substring that has the same kind of URI (meaning, one that uses the same URI scheme), and then only if `urial` finds such a substring in the Finder comment.  For example, if the file \"somefile.md\" has a Finder comment with an existing `x-devonthink-item` URI string somewhere inside of it, then the following command,\n\n```sh\nurial  x-devonthink-item://8A1A0F18-0686-802-26F33443  somefile.md\n```\n\nwill make `urial` rewrite **just the URI part of the comment** to be the new URI given on the command line.\n\nIf the Finder comment is not empty but also does _not_ contain a URI with the same scheme as the one given on the command line, then the Finder comment is not changed, unless a suitable value for the option `--mode` is given (see below).\n\n`urial` is careful to match based on URI schemes to make it more robust against accidentally matching other URIs that may exist in a Finder comment. So, for example, If you supply a URI that has a `x-devonthink-item` scheme type, it will _look_ only for `x-devonthink-item` URIs and will not match other URIs; if you supply a URI that has a `zotero` scheme type, it will look only for `zotero` URIs; and so on.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "URI detection",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The full syntax of URIs is complex. The characters that can appear in URIs (according to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986)) include periods, semicolons, question marks, dollar signs, exclamation points, parentheses, square brackets, and more. Here are some examples of valid yet potentially surprising URIs:\n\n```text\npaparazzi:http://www.caltech.edu\nhttps://en.wikipedia.org/wiki/Bracket_(disambiguation)\nz39.50s://lx2.loc.gov:210/lcdb?9=84243207\nldap://[2001:db8::7]/c=GB?a?b\nhttp://wayback.archive.org/web/*/http://www.alexa.com/topsites\nprefs:root=General&path=VPN/DNS\n```\n\nURIs are difficult to detect when they're embedded in human language text. One can't assume that URIs are delineated by whitespace characters, because a human or software tool may have written a Finder comment without being careful to delimit URIs from the rest of the text. Even worse, URI syntax according to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) allows for a scheme name followed by an empty path, which means that in the following text,\n\n```text\nOriginal source: x-devonthink-item://40C401DB-8A1D-4B1D-032FB186D85A.\n```\n\na strict interpretation requires that the string `source:` is considered a valid URI. (In addition, the trailing period is, strictly speaking, part of the second URI). This is probably not what the author intended.\n\nThese strict interpretations are usually unhelpful in Urial's domain of application. For this reason, `urial` tries to be intelligent about recognizing URIs in Finder comments by applying the following rules:\n\n1) it will assume that the following characters are not part of a URI if they come at the end of something that otherwise looks like a URI: `.` `,` `:` `;` `'` `?` `!` `$` `(` `[`\n2) it will assume that `)` and `]` characters at the end of something that looks like a URI are not part of the URI if there is no opening `(` or `[` character in the rest of the URI\n3) it will ignore strings that could be URIs with empty path components (e.g., `something:`, `abc-def:`, etc.)\n\nTo disable this behavior, use the <code>--strict</code> option; then, the program will assume that URIs are separated from text only by (1) whitespace characters and (2) the characters `<` `>` `^` `\"` <code>&#96;</code> `{` and `}`, and it will not ignore potential URIs with empty paths.\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Options for handling existing Finder comments",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The `--mode` option can be used to change the behavior described above. The following are the possible values for this option:\n\n* `append`: in this mode, if the URI is _not_ found in the Finder comment string, `urial` will append the given URI to the end of the comment; otherwise (if the comment string already contains the URI) it will do nothing.\n* `prepend`: in this mode, if the URI is _not_ found in the Finder comment string, `urial` will prepend the given URI to the front of the comment; otherwise (if the comment string already contains the URI) it will do nothing.\n* `overwrite`: the program will overwrite the Finder comment completely with the given URI string, no matter what the Finder comment string contains (even if it already contains the given URI).\n* `update`: (default) if a URI of the same kind exists in the comment, `urial` will replace only the URI portion of the comment string (preserving the rest of the comment string), else (if a URI is NOT found in the comment string) it will do nothing.\n\nNote carefully that `--mode overwrite` makes `urial` replace unconditionally the entire Finder comment.  In other words, `--mode overwrite` will change a Finder comment such as\n\n```txt\nBlah blah blah. URI. More blah blah blah.\n```\n\nto just\n\n```txt\nURI\n```\n\nassuming that `URI` is the URI given to `urial` on the command line.  If you want to update the URI to a new value and leave rest of the text the same, use `--mode update` or simply don't provide a value for `--mode` (because `update` is the default action).\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Printing the Finder comment",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Instead of writing a Finder comment, `urial` can be used to print an existing comment via the `--print` option. The `--print` option takes a required argument, which can be either `comment` or `uri`; the former causes `urial` to print the entire Finder comment of the file, and the latter just the URI(s) found in the comment. For example, given a file named \"somefile.md\", the following command will extract and print any URI(s) found anywhere in the Finder comment text:\n\n```sh\nurial --print uri somefile.md\n```\n\nIf more than one URI is found in the Finder comment, they will be printed separately to the terminal, one per line.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Additional command-line options",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "If given the `--version` option, this program will print the version and other information, and exit without doing anything else.\n\nBy default, this program will use macOS dialogs to report errors or other issues.  The option `--no-gui` will make it print messages only on the command line, without using GUI dialogs.\n\nIf given the `--debug` argument, this program will output a detailed trace of what it is doing. The trace will be sent to the destination given as the value of the option, which can be `-` (i.e., a dash) to indicate console output, or a file path to send the output to a file.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment include:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a professional setting\n\n## Our Responsibilities\n\nProject contributors are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.\n\nProject contributors have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project contributors.\n\n## Enforcement\n\nIf a contributor engages in harassing behaviour, the project organizer(s) may take any action they deem appropriate, including warning the offender or expelling them from online forums, online project resources, face-to-face meetings, or any other project-related activity or resource.\n\nIf you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the project team immediately.  Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team.  All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.  The project team is obligated to maintain confidentiality with regard to the reporter of an incident.  Further details of specific enforcement policies may be posted separately.\n\n## Attribution\n\nPortions of this Code of Conduct were adapted from Electron's [Contributor Covenant Code of Conduct](https://github.com/electron/electron/blob/main/CODE_OF_CONDUCT.md), which itself was adapted from the [Contributor Covenant](http://contributor-covenant.org/version/1/4), version 1.4.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mhucka/urial"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mhucka/urial"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mhucka/urial/main/.github/workflows/python-linter.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mhucka/urial/main/.github/workflows/markdown-linter.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Guidelines for contributing to this project\n\nAny constructive contributions &ndash; bug reports, pull requests (code or documentation), suggestions for improvements, and more &ndash; are welcome.\n\n## Conduct\n\nEveryone is asked to read and respect the [code of conduct](CODE_OF_CONDUCT.md) before participating in this project.\n\n## Coordinating work\n\nA quick way to find out what is currently in the near-term plans for this project is to look at the [GitHub issue tracker](https://github.com/mhucka/urial/issues), but the possibilities are not limited to what you see there &ndash; if you have ideas for new features and enhancements, please feel free to write them up as a new issue or contact the developers directly!\n\n## Submitting contributions\n\nPlease feel free to contact the primary author (Mike Hucka) directly, or even better, jump right in and use the standard GitHub approach of forking the repo and creating a pull request.  When committing code changes and submitting pull requests, please write a clear log message for your commits.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "I would be happy to receive your help and participation if you are interested.  Everyone is asked to read and respect the [code of conduct](CONDUCT.md) when participating in this project.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-12-05T19:38:38Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2021-12-05"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-01-16"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-04-15T18:25:30Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Urial (URI Addition tooL) intelligently updates URIs stored in Finder comments of macOS files"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Add/update URIs in macOS Finder comments"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Introduction",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "_Urial_ (a loose acronym of <em><ins><b>URI</b></ins> <ins><b>a</b></ins>ddition too<ins><b>l</b></ins></em>) is a command-line program written in Python 3 that allows you to read, write and update URIs in the macOS Finder comments of a file. Urial makes it easier to create scripts (e.g., in Bash/Bourne shell syntax, or AppleScripts) that keep those URIs updated.  You can find an example of how the author uses this program with [DEVONthink](https://www.devontechnologies.com/apps/devonthink) in the project [wiki](https://github.com/mhucka/urial/wiki).\n\nIncidentally, the [urial](https://en.wikipedia.org/wiki/Urial) (properly known as _Ovis vignei_) are a kind of wild sheep native to Central and South Asia.  They are listed by the [IUCN](https://en.wikipedia.org/wiki/International_Union_for_Conservation_of_Nature) as a [vulnerable species](https://www.iucnredlist.org/species/54940655/195296049) and their population continues to twindle due to human activity, hunting, and climate change.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Summary of command-line options*",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The following table summarizes all the command line options available.\n\n| Short&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   | Long&nbsp;form&nbsp;opt&nbsp;&nbsp; | Meaning | Default |  |\n|---------- |-------------------|--------------------------------------|---------|---|\n| `-h`      | `--help`          | Display help text and exit | | |\n| `-m`      | `--mode` _M_      | Approach for handling existing comments | `update` | \u2691 |\n| `-p`      | `--print` _P_     | Print Finder comment or URIs therein, and exit  | | \u2605 |\n| `-s`      | `--strict`        | Be strict about URI syntax | Don't be pedantic | |\n| `-U`      | `--no-gui`        | Print errors & warnings to terminal | Use GUI dialogs | |\n| `-V`      | `--version`       | Display program version info, and exit | | |\n| `-@`_OUT_ | `--debug` _OUT_   | Debugging mode; write trace to _OUT_ | Normal mode | \u2b25 |\n\n\u2691 &nbsp; Available values are `append`, `prepend`, `overwrite`, and `update`.<br>\n\u2605 &nbsp; Available values are `comment` and `uri`.<br>\n\u2b25 &nbsp; To write to the console, use the character `-` as the value of _OUT_; otherwise, _OUT_ must be the name of a file where the output should be written.<br>\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/mhucka/urial/wiki"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Alternative 1: downloading the ready-to-run program*",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "A binary, ready-to-run version of `urial` is available that only needs a Python interpreter version 3.8 or higher on your computer. Happily, that's the case for macOS 10.15 and later. To be sure, first check the version of the program `python3` that you get by running the following command in a terminal and inspecting the results:\n\n```sh\npython3 --version\n```\n\n(Note: if this is the first time you've run `python3` on your system, macOS will ask if you want to install certain additional software components. Let it do so.) Make sure the version is at least 3.8. Note that if you are running a macOS version before 10.15, you will need to manually install Python 3.8 or later.\n\nNext,\n\n1. <img align=\"right\" width=\"350px\" alt=\"Screenshot of Urial binary programs available for downloading from GitHub.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/shiv-releases.png\"/>Go to the [latest release on GitHub](https://github.com/mhucka/urial/releases) and find the **Assets**\n2. **Download** the ZIP file whose name contains the version of Python on your computer\n3. **Unzip** the file (if your browser didn't unzip it)\n4. **Open the folder** that gets created (it will have a name like `urial-1.0.0-macos-python3.8`)\n5. Look inside for `urial` and **move it** to a location where you put other command-line programs (such as `/usr/local/bin`).\n\nIf you want to put it in `/usr/local/bin` but that folder does not exist on your computer yet, you can create it by opening a terminal window and running the following command (_prior_ to moving `urial` into `/usr/local/bin`):\n\n```shell\nsudo mkdir /usr/local/bin\n```\n\nThe following is an example command that you can type in a terminal to move `urial` there:\n\n```shell\nsudo mv urial /usr/local/bin\n```\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mhucka/urial/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mhucka/urial/archive/main.zip"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/mhucka/urial/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mhucka/urial"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Urial"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mhucka/urial/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mhucka/urial/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "urial"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mhucka/urial/raw/main/.graphics/shiv-releases.png"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mhucka/urial/raw/main/.graphics/finder-get-info-screenshot.png"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "There are multiple ways of installing the program `urial`, ranging from downloading a self-contained, single-file, ready-to-run program, to installing it as a typical Python program using `pip`.  Please choose the alternative that suits you.\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Alternative 2: installation using `pipx`*",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can use [pipx](https://pypa.github.io/pipx/) to install `urial`. Pipx will install it into a separate Python environment that isolates the dependencies needed by `urial` from other Python programs on your system, and yet the resulting `urial` program wil be executable from any shell &ndash; like any normal program on your computer. If you do not already have `pipx` on your system, it can be installed in a variety of easy ways and it is best to consult [Pipx's installation guide](https://pypa.github.io/pipx/installation/) for instructions. Once you have pipx on your system, you can install `urial` with the following command:\n\n```sh\npipx install urial\n```\n\nPipx can also let you run `urial` directly using `pipx run urial`, although in that case, you must always prefix every `urial` command with `pipx run`.  Consult the [documentation for `pipx run`](https://github.com/pypa/pipx#walkthrough-running-an-application-in-a-temporary-virtual-environment) for more information.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Alternative 3: installation using `pip`*",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "The instructions below assume you have a Python 3 interpreter installed on your computer.  Note that the default on macOS at least through 10.14 (Mojave) is Python **2** &ndash; please first install Python version 3 and familiarize yourself with running Python programs on your system before proceeding further.\n\nYou should be able to install `urial` with [`pip`](https://pip.pypa.io/en/stable/installing/) for Python&nbsp;3.  To install `urial` from the [Python package repository (PyPI)](https://pypi.org), run the following command:\n\n```sh\npython3 -m pip install urial\n```\n\nAs an alternative to getting it from [PyPI](https://pypi.org), you can use `pip` to install `urial` directly from GitHub:\n\n```sh\npython3 -m pip install git+https://github.com/mhucka/urial.git\n```\n\n_If you already installed `urial` once before_, and want to update to the latest version, add `--upgrade` to the end of either command line above.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Alternative 4: installation from sources*",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "If  you prefer to install `urial` directly from the source code, you can do that too. To get a copy of the files, you can clone the GitHub repository:\n\n```sh\ngit clone https://github.com/mhucka/urial\n```\n\nAlternatively, you can download the files as a ZIP archive using this link directly from your browser using this link: <https://github.com/mhucka/urial/archive/refs/heads/main.zip>\n\nNext, after getting a copy of the files,  run `setup.py` inside the code directory:\n\n```sh\ncd urial\npython3 setup.py install\n```\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/mhucka/urial/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mhucka/urial/issues"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cli, command-line, command-line-tool, finder, macos, metadata, python, python3, uri, url, utility"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "software",
+          "metadata",
+          "macOS",
+          "Finder"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Copyright 2024 by Michael Hucka.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \u201cSoftware\u201d), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \u201cAS IS\u201d, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://github.com/mhucka/urial/blob/main/LICENSE",
+        "spdx_id": "https://github.com/mhucka/urial/blob/main/LICENSE",
+        "type": "License",
+        "value": "https://github.com/mhucka/urial/blob/main/LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "This software is Copyright \u00a9 2024 by Michael Hucka.  This software is freely distributed under the terms of the MIT License.  Please see the [LICENSE](LICENSE) file for more information.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mhucka/urial/raw/main/.graphics/urial.png"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "urial"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Urial (URI Addition tooL)"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "mhucka"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_distribution": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pypi.org/project/urial/"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 34230,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 13288,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "url": "https://www.python.org/",
+        "value": "Python",
+        "version": "3.8"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/mhucka/urial/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mhucka/urial/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2024-01-16T15:34:52Z",
+        "date_published": "2024-01-16T15:35:58Z",
+        "description": "Changes in this version:\n\n* Fix incorrect version in `__init__.py` and update Makefile to do it.\n",
+        "html_url": "https://github.com/mhucka/urial/releases/tag/v1.2.1",
+        "name": "Release 1.2.1",
+        "release_id": 137244901,
+        "tag": "v1.2.1",
+        "tarball_url": "https://api.github.com/repos/mhucka/urial/tarball/v1.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mhucka/urial/releases/137244901",
+        "value": "https://api.github.com/repos/mhucka/urial/releases/137244901",
+        "zipball_url": "https://api.github.com/repos/mhucka/urial/zipball/v1.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2024-01-16T01:08:59Z",
+        "date_published": "2024-01-16T01:10:30Z",
+        "description": "Changes in this version:\n\n* Switch to MIT license and drop mention of Caltech (the latter as a result of discussions at work).\n* Update some files for git and metadata to follow my latest template versions of those files.\n* Add `.flake8` and `.editorconfig` files.\n* Split out requirements for linting Python code into `requirements-lint.txt`.\n* Added GitHub Actions workflows for linting code and Markdown files automatically.\n* Fix some lint warnings in `__main__.py`.\n* Update the `Makefile`.\n* Use an image of a urial, instead of the stylized line drawing.\n",
+        "html_url": "https://github.com/mhucka/urial/releases/tag/v1.2.0",
+        "name": "Release 1.2.0",
+        "release_id": 137132826,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/mhucka/urial/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mhucka/urial/releases/137132826",
+        "value": "https://api.github.com/repos/mhucka/urial/releases/137132826",
+        "zipball_url": "https://api.github.com/repos/mhucka/urial/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2023-12-23T00:34:44Z",
+        "date_published": "2023-12-23T00:35:19Z",
+        "description": "This release fixes a bug in the arguments to the `OSAX` constructor, which takes different arguments in the latest release of the `appscript` package.\n",
+        "html_url": "https://github.com/mhucka/urial/releases/tag/v1.1.2",
+        "name": "Release 1.1.2",
+        "release_id": 134958497,
+        "tag": "v1.1.2",
+        "tarball_url": "https://api.github.com/repos/mhucka/urial/tarball/v1.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mhucka/urial/releases/134958497",
+        "value": "https://api.github.com/repos/mhucka/urial/releases/134958497",
+        "zipball_url": "https://api.github.com/repos/mhucka/urial/zipball/v1.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2023-12-22T23:39:59Z",
+        "date_published": "2023-12-22T23:40:48Z",
+        "description": "Changes in this release:\n\n* Updated dependencies.\n* Updated format of `CITATION.cff`\n",
+        "html_url": "https://github.com/mhucka/urial/releases/tag/v1.1.1",
+        "name": "Release 1.1.1",
+        "release_id": 134956865,
+        "tag": "v1.1.1",
+        "tarball_url": "https://api.github.com/repos/mhucka/urial/tarball/v1.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mhucka/urial/releases/134956865",
+        "value": "https://api.github.com/repos/mhucka/urial/releases/134956865",
+        "zipball_url": "https://api.github.com/repos/mhucka/urial/zipball/v1.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2023-04-12T19:56:44Z",
+        "date_published": "2023-04-12T19:58:03Z",
+        "description": "For help on installing and using Urial, please see the [project front page](https://github.com/mhucka/urial#table-of-contents).\r\n\r\n## Summary of changes in this release\r\n* Added `--mode prepend`, similar to `--mode append` but to prepend the URI to the front of the Finder comment instead of appending it to the end.\r\n* Updated versions of dependencies in `requirements.txt`.\r\n* Added `requirements-dev.txt`.\r\n* Improved `codemeta.json`.\r\n* Updated `Makefile`.\r\n\r\nTo learn how to use Urial, the best resource currently is the [README in the GitHub repo](https://github.com/mhucka/urial#usage).\r\n\r\n## Self-contained runnable copies of Urial\r\n\r\nCopies of ready-to-run executable versions of Urial are included with this release. They need a Python interpreter version 3.8 or higher installed on your computer. Happily, that's the case for macOS 10.15 and later. To be sure, first check the version of the program `python3` that you get by running the following command in a terminal and inspecting the results:\r\n```sh\r\npython3 --version\r\n```\r\n\r\n(Note: if this is the first time you've run `python3` on your system, macOS will ask if you want to install certain additional software components. Let it do so.) Make sure the version is at least 3.8. Note that if you are running a macOS version before 10.15, you will need to manually install Python 3.8 or later.\r\n\r\nNext,\r\n\r\n1. In the files attached to this release, look for a ZIP file with a name that contains your version of Python\r\n2. Click on that ZIP file to download it\r\n3. Unzip the file (if your browser did not automatically unzip it for you)\r\n4. Open the folder thus created (it will have a name like `urial-1.0.0-macos-python3.8`)\r\n5. Look inside for `urial` and move it to a location where you put other command-line programs (such as `/usr/local/bin`). \r\n\r\nIf you want to put it in `/usr/local/bin` but that folder does not exist on your computer yet, you can create it by opening a terminal window and running the following command (_prior_ to moving `urial` into `/usr/local/bin`):\r\n```shell\r\nsudo mkdir /usr/local/bin\r\n```\r\n\r\nThe following is an example command that you can type in a terminal to move Urial there:\r\n```shell\r\nsudo mv urial /usr/local/bin\r\n```",
+        "html_url": "https://github.com/mhucka/urial/releases/tag/v1.1.0",
+        "name": "Release 1.1.0",
+        "release_id": 99196721,
+        "tag": "v1.1.0",
+        "tarball_url": "https://api.github.com/repos/mhucka/urial/tarball/v1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mhucka/urial/releases/99196721",
+        "value": "https://api.github.com/repos/mhucka/urial/releases/99196721",
+        "zipball_url": "https://api.github.com/repos/mhucka/urial/zipball/v1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-12-27T22:59:53Z",
+        "date_published": "2021-12-27T23:01:21Z",
+        "description": "This is the first public release of Urial. This version improves parsing of URIs in Finder comments, and the release now includes ready-to-run binary executables for macOS.\r\n\r\n## Self-contained runnable copies of Urial\r\n\r\nCopies of ready-to-run executable versions of Urial are included with this release. They need a Python interpreter version 3.8 or higher installed on your computer. Happily, that's the case for macOS 10.15 and later. To be sure, first check the version of the program `python3` that you get by running the following command in a terminal and inspecting the results:\r\n```sh\r\npython3 --version\r\n```\r\n\r\n(Note: if this is the first time you've run `python3` on your system, macOS will ask if you want to install certain additional software components. Let it do so.) Make sure the version is at least 3.8. Note that if you are running a macOS version before 10.15, you will need to manually install Python 3.8 or later.\r\n\r\nNext,\r\n\r\n1. In the files attached to this release, look for a ZIP file with a name that contains your version of Python\r\n2. Click on that ZIP file to download it\r\n3. Unzip the file (if your browser did not automatically unzip it for you)\r\n4. Open the folder thus created (it will have a name like `urial-1.0.0-macos-python3.8`)\r\n5. Look inside for `urial` and move it to a location where you put other command-line programs (such as `/usr/local/bin`). \r\n\r\nIf you want to put it in `/usr/local/bin` but that folder does not exist on your computer yet, you can create it by opening a terminal window and running the following command (_prior_ to moving `urial` into `/usr/local/bin`):\r\n```shell\r\nsudo mkdir /usr/local/bin\r\n```\r\n\r\nThe following is an example command that you can type in a terminal to move Urial there:\r\n```shell\r\nsudo mv urial /usr/local/bin\r\n```",
+        "html_url": "https://github.com/mhucka/urial/releases/tag/v1.0.0",
+        "name": "Release 1.0.0",
+        "release_id": 56056244,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/mhucka/urial/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mhucka/urial/releases/56056244",
+        "value": "https://api.github.com/repos/mhucka/urial/releases/56056244",
+        "zipball_url": "https://api.github.com/repos/mhucka/urial/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-12-26T22:28:26Z",
+        "date_published": "2021-12-26T22:29:01Z",
+        "description": "This release updates `requirements.txt` for some missing dependencies.\n",
+        "html_url": "https://github.com/mhucka/urial/releases/tag/v0.0.4",
+        "name": "Release 0.0.4",
+        "release_id": 56009437,
+        "tag": "v0.0.4",
+        "tarball_url": "https://api.github.com/repos/mhucka/urial/tarball/v0.0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mhucka/urial/releases/56009437",
+        "value": "https://api.github.com/repos/mhucka/urial/releases/56009437",
+        "zipball_url": "https://api.github.com/repos/mhucka/urial/zipball/v0.0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-12-26T22:03:54Z",
+        "date_published": "2021-12-26T22:04:52Z",
+        "description": "Changes in this release:\n\n* Added new option `--strict`.\n* Added new option `--print`.\n* Rewrote URI-matching code to use functions from the [uritools](https://github.com/tkem/uritools/) package.\n",
+        "html_url": "https://github.com/mhucka/urial/releases/tag/v0.0.3",
+        "name": "Release 0.0.3",
+        "release_id": 56009098,
+        "tag": "v0.0.3",
+        "tarball_url": "https://api.github.com/repos/mhucka/urial/tarball/v0.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mhucka/urial/releases/56009098",
+        "value": "https://api.github.com/repos/mhucka/urial/releases/56009098",
+        "zipball_url": "https://api.github.com/repos/mhucka/urial/zipball/v0.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-12-07T19:40:49Z",
+        "date_published": "2021-12-07T19:41:44Z",
+        "description": "Fix bug in handling command-line arguments when installed using `pip` or `pipx`.\n",
+        "html_url": "https://github.com/mhucka/urial/releases/tag/v0.0.2",
+        "name": "Release 0.0.2",
+        "release_id": 54821309,
+        "tag": "v0.0.2",
+        "tarball_url": "https://api.github.com/repos/mhucka/urial/tarball/v0.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mhucka/urial/releases/54821309",
+        "value": "https://api.github.com/repos/mhucka/urial/releases/54821309",
+        "zipball_url": "https://api.github.com/repos/mhucka/urial/zipball/v0.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-12-07T18:57:34Z",
+        "date_published": "2021-12-07T18:58:45Z",
+        "description": "First complete version for testing.\n",
+        "html_url": "https://github.com/mhucka/urial/releases/tag/v0.0.1",
+        "name": "Release 0.0.1",
+        "release_id": 54819104,
+        "tag": "v0.0.1",
+        "tarball_url": "https://api.github.com/repos/mhucka/urial/tarball/v0.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/mhucka/urial/releases/54819104",
+        "value": "https://api.github.com/repos/mhucka/urial/releases/54819104",
+        "zipball_url": "https://api.github.com/repos/mhucka/urial/zipball/v0.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "appscript",
+        "type": "Software_application",
+        "value": "appscript     == 1.2.2",
+        "version": "== 1.2.2"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "plac",
+        "type": "Software_application",
+        "value": "plac          == 1.4.2",
+        "version": "== 1.4.2"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sidetrack",
+        "type": "Software_application",
+        "value": "sidetrack     == 2.0.1",
+        "version": "== 2.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools    >= 67.0.0",
+        "version": ">= 67.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "uritools",
+        "type": "Software_application",
+        "value": "uritools      == 4.0.2",
+        "version": "== 4.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "run",
+    "contact",
+    "contributors",
+    "faq",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:32:12",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 7
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Getting help",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Some notes about how the author uses this program can be found in the [wiki](https://github.com/mhucka/urial/wiki).\n\nIf you find an issue, please submit it in [the GitHub issue tracker](https://github.com/mhucka/urial/issues) for this repository.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "This program expects to be given one or more arguments on the command line, as described below.  Optional arguments begin with dashes and modify the program's behavior.\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Default behavior<img alt=\"Screenshot of a Finder info dialog.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/finder-get-info-screenshot.png\" width=\"300px\" align=\"right\">",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Without any optional flags or arguments to modify its behavior, `urial` expects to be given at least two argument values.  The first value should be a URI, and the second value should be the path of a file whose Finder comment is to be updated with the given URI.\n\nIf the current Finder comment for the file is empty, then `urial` will simply write the URI into the Finder comment. An example of the result is shown in the screenshot at right.\n\nIf the Finder comment is _not_ empty, `urial` will edit the comment to update the substring that has the same kind of URI (meaning, one that uses the same URI scheme), and then only if `urial` finds such a substring in the Finder comment.  For example, if the file \"somefile.md\" has a Finder comment with an existing `x-devonthink-item` URI string somewhere inside of it, then the following command,\n\n```sh\nurial  x-devonthink-item://8A1A0F18-0686-802-26F33443  somefile.md\n```\n\nwill make `urial` rewrite **just the URI part of the comment** to be the new URI given on the command line.\n\nIf the Finder comment is not empty but also does _not_ contain a URI with the same scheme as the one given on the command line, then the Finder comment is not changed, unless a suitable value for the option `--mode` is given (see below).\n\n`urial` is careful to match based on URI schemes to make it more robust against accidentally matching other URIs that may exist in a Finder comment. So, for example, If you supply a URI that has a `x-devonthink-item` scheme type, it will _look_ only for `x-devonthink-item` URIs and will not match other URIs; if you supply a URI that has a `zotero` scheme type, it will look only for `zotero` URIs; and so on.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "URI detection",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The full syntax of URIs is complex. The characters that can appear in URIs (according to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986)) include periods, semicolons, question marks, dollar signs, exclamation points, parentheses, square brackets, and more. Here are some examples of valid yet potentially surprising URIs:\n\n```text\npaparazzi:http://www.caltech.edu\nhttps://en.wikipedia.org/wiki/Bracket_(disambiguation)\nz39.50s://lx2.loc.gov:210/lcdb?9=84243207\nldap://[2001:db8::7]/c=GB?a?b\nhttp://wayback.archive.org/web/*/http://www.alexa.com/topsites\nprefs:root=General&path=VPN/DNS\n```\n\nURIs are difficult to detect when they're embedded in human language text. One can't assume that URIs are delineated by whitespace characters, because a human or software tool may have written a Finder comment without being careful to delimit URIs from the rest of the text. Even worse, URI syntax according to [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986) allows for a scheme name followed by an empty path, which means that in the following text,\n\n```text\nOriginal source: x-devonthink-item://40C401DB-8A1D-4B1D-032FB186D85A.\n```\n\na strict interpretation requires that the string `source:` is considered a valid URI. (In addition, the trailing period is, strictly speaking, part of the second URI). This is probably not what the author intended.\n\nThese strict interpretations are usually unhelpful in Urial's domain of application. For this reason, `urial` tries to be intelligent about recognizing URIs in Finder comments by applying the following rules:\n\n1) it will assume that the following characters are not part of a URI if they come at the end of something that otherwise looks like a URI: `.` `,` `:` `;` `'` `?` `!` `$` `(` `[`\n2) it will assume that `)` and `]` characters at the end of something that looks like a URI are not part of the URI if there is no opening `(` or `[` character in the rest of the URI\n3) it will ignore strings that could be URIs with empty path components (e.g., `something:`, `abc-def:`, etc.)\n\nTo disable this behavior, use the <code>--strict</code> option; then, the program will assume that URIs are separated from text only by (1) whitespace characters and (2) the characters `<` `>` `^` `\"` <code>&#96;</code> `{` and `}`, and it will not ignore potential URIs with empty paths.\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Options for handling existing Finder comments",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The `--mode` option can be used to change the behavior described above. The following are the possible values for this option:\n\n* `append`: in this mode, if the URI is _not_ found in the Finder comment string, `urial` will append the given URI to the end of the comment; otherwise (if the comment string already contains the URI) it will do nothing.\n* `prepend`: in this mode, if the URI is _not_ found in the Finder comment string, `urial` will prepend the given URI to the front of the comment; otherwise (if the comment string already contains the URI) it will do nothing.\n* `overwrite`: the program will overwrite the Finder comment completely with the given URI string, no matter what the Finder comment string contains (even if it already contains the given URI).\n* `update`: (default) if a URI of the same kind exists in the comment, `urial` will replace only the URI portion of the comment string (preserving the rest of the comment string), else (if a URI is NOT found in the comment string) it will do nothing.\n\nNote carefully that `--mode overwrite` makes `urial` replace unconditionally the entire Finder comment.  In other words, `--mode overwrite` will change a Finder comment such as\n\n```txt\nBlah blah blah. URI. More blah blah blah.\n```\n\nto just\n\n```txt\nURI\n```\n\nassuming that `URI` is the URI given to `urial` on the command line.  If you want to update the URI to a new value and leave rest of the text the same, use `--mode update` or simply don't provide a value for `--mode` (because `update` is the default action).\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Printing the Finder comment",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Instead of writing a Finder comment, `urial` can be used to print an existing comment via the `--print` option. The `--print` option takes a required argument, which can be either `comment` or `uri`; the former causes `urial` to print the entire Finder comment of the file, and the latter just the URI(s) found in the comment. For example, given a file named \"somefile.md\", the following command will extract and print any URI(s) found anywhere in the Finder comment text:\n\n```sh\nurial --print uri somefile.md\n```\n\nIf more than one URI is found in the Finder comment, they will be printed separately to the terminal, one per line.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Additional command-line options",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "If given the `--version` option, this program will print the version and other information, and exit without doing anything else.\n\nBy default, this program will use macOS dialogs to report errors or other issues.  The option `--no-gui` will make it print messages only on the command line, without using GUI dialogs.\n\nIf given the `--debug` argument, this program will output a detailed trace of what it is doing. The trace will be sent to the destination given as the value of the option, which can be `-` (i.e., a dash) to indicate console output, or a file path to send the output to a file.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Getting help",
+        "parent_header": [
+          "Urial<img width=\"25%\" align=\"right\" alt=\"Line drawing of the head of a urial sheep. Credit: Vectors Point for the Noun Project.\" src=\"https://github.com/mhucka/urial/raw/main/.graphics/urial.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Some notes about how the author uses this program can be found in the [wiki](https://github.com/mhucka/urial/wiki).\n\nIf you find an issue, please submit it in [the GitHub issue tracker](https://github.com/mhucka/urial/issues) for this repository.\n\n"
+      },
+      "source": "https://github.com/mhucka/urial/blob/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.2.1"
+      },
+      "source": "https://raw.githubusercontent.com/mhucka/urial/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

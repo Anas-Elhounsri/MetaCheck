@@ -1,0 +1,676 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9797957297180024,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "tgurney@unomaha.edu",
+        "type": "Agent",
+        "value": "tgurney@unomaha.edu"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "dosocs2",
+        "last_name": "is written by Thomas T. Gurney.",
+        "name": "dosocs2 is written by Thomas T. Gurney.",
+        "type": "Agent",
+        "value": "dosocs2 is written by Thomas T. Gurney."
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "The",
+        "last_name": "original DoSOCS was written by Zachary McFarland; no code from DoSOCS",
+        "name": "The original DoSOCS was written by Zachary McFarland; no code from DoSOCS",
+        "type": "Agent",
+        "value": "The original DoSOCS was written by Zachary McFarland; no code from DoSOCS"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "remains",
+        "last_name": "in dosocs2.",
+        "name": "remains in dosocs2.",
+        "type": "Agent",
+        "value": "remains in dosocs2."
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Thanks",
+        "last_name": "also to these contributors to documentation:",
+        "name": "Thanks also to these contributors to documentation:",
+        "type": "Agent",
+        "value": "Thanks also to these contributors to documentation:"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Sebastian",
+        "last_name": "Schuberth",
+        "name": "Sebastian Schuberth",
+        "type": "Agent",
+        "value": "Sebastian Schuberth"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/AUTHORS",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DoSOCSv2/DoSOCSv2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DoSOCSv2/DoSOCSv2"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Contributing to DoSOCS\n-----------------------\n\nThe contribution rules for DoSOCS are currently being rewritten. You are\nwelcome to create issues, but we can't accept pull requests from the community\nat this time.\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2015-05-28T18:44:08Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-01-16T17:23:57Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SPDX 2.0 document creation and storage"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SPDX 2.0 document creation and storage"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9343795960146662,
+      "result": {
+        "original_header": "dosocs2",
+        "type": "Text_excerpt",
+        "value": "The discovery and presentation of software package license information is a complex\nproblem facing organizations that rely on open source software within their \ninnovation streams. dosocs2 enables creation of an SPDX document for any \nsoftware package to represent associated license information. In addition, dosocs2 \ncan be used in the creation and continuous maintenance of an inventory of all \nopen-source software used in an organization. The primary audience for dosocs2 is open source\nsoftware teams seeking to advance the representation and maintenance of open source \nsoftware package license information.  \n[SPDX](http://www.spdx.org) is a standard format for communicating information\nabout the contents of a software package, including license and copyright\ninformation. dosocs2 supports the SPDX 2.0 standard, released in May 2015. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9362079094315238,
+      "result": {
+        "original_header": "Current deviations from SPDX 2.0 specification",
+        "type": "Text_excerpt",
+        "value": "* Exactly one package per document is required. (SPDX 2.0 allows zero or more\n  packages per document.)\n* Files in a document can only exist within a package. (SPDX 2.0 allows files\n  to exist outside of a package.)\n* Checksums are always assumed to be SHA-256. (SPDX 2.0 permits SHA-1, SHA-256,\n  and MD5)\n* A file may be an artifact of only one project.\n* License expression syntax is not parsed; license expressions are interpreted as license\n  names that are not on the SPDX license list.\n* Deprecated fields from SPDX 1.2 (reviewer info and file dependencies) are not supported. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8467943873672368,
+      "result": {
+        "original_header": "History",
+        "type": "Text_excerpt",
+        "value": "dosocs2 aims to fill the same role as DoSOCS, but with support for SPDX 2.x, a\nlarger feature set, and a more modular implementation, among other changes. \n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Step 1 - Download and install",
+        "parent_header": [
+          "dosocs2",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "[Grab the source tarball for the latest\nrelease](https://github.com/ttgurney/dosocs2/releases) and use `pip` to install\nit as a package. Replace `0.x.x` with the latest release version number.\n\nI recommend doing this inside a Python\n[virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/), but it\nis not a requirement. If you are not inside a virtualenv you may have to run\n`pip` as root (not recommended!).\n\n\n    $ tar xf 0.x.x.tar.gz\n    $ pip install ./DoSOCSv2-0.x.x\n\nThen run the install script for the default license scanner:\n\n    $ ./DoSOCSv2-0.x.x/scripts/install-nomos.sh\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/DoSOCSv2/DoSOCSv2/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 20
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DoSOCSv2/DoSOCSv2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "dosocs2"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/setup.py",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/scripts/install-nomos.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/dev-tools/build-rpm.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/dev-tools/release.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pyup.io/repos/github/UShan89/DoSOCSv2/shield.svg"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pyup.io/repos/github/UShan89/DoSOCSv2/python-3-shield.svg"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pyup.io/repos/github/UShan89/DoSOCSv2/shield.svg"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pyup.io/repos/github/UShan89/DoSOCSv2/python-3-shield.svg"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://cloud.githubusercontent.com/assets/656208/20320341/30b9468c-ab37-11e6-8e3f-c63543b85453.png"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Step 1 - Download and install",
+        "parent_header": [
+          "dosocs2",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "[Grab the source tarball for the latest\nrelease](https://github.com/ttgurney/dosocs2/releases) and use `pip` to install\nit as a package. Replace `0.x.x` with the latest release version number.\n\nI recommend doing this inside a Python\n[virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/), but it\nis not a requirement. If you are not inside a virtualenv you may have to run\n`pip` as root (not recommended!).\n\n\n    $ tar xf 0.x.x.tar.gz\n    $ pip install ./DoSOCSv2-0.x.x\n\nThen run the install script for the default license scanner:\n\n    $ ./DoSOCSv2-0.x.x/scripts/install-nomos.sh\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Step 2 (Optional) - Change the default configuration",
+        "parent_header": [
+          "dosocs2",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "Not required, but strongly recommended, is to generate an initial config\nfile:\n\n    $ dosocs2 newconfig\n    dosocs2: wrote config file to /home/tom/.config/dosocs2/dosocs2.conf\n\nThe default config points to a SQLite database stored in your home directory.\nFor example, for user `tom`, this database would be created at\n`/home/tom/.config/dosocs2/dosocs2.sqlite3`. If you like, you can open the\nconfig file and change the `connection_uri` variable to use a different\nlocation for the database.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Step 3 (Optional) - Add PostgreSQL configuration",
+        "parent_header": [
+          "dosocs2",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "Follow this step if you want to use PostgreSQL instead of SQLite for the\nSPDX database.\n\nYou will have to create the `spdx` (or whatever name you want) role and\ndatabase yourself.  I recommend setting a different password than the\none given...:\n\n    $ sudo -u postgres psql\n    psql (9.3.9)\n    Type \"help\" for help.\n\n    postgres=# create role spdx with login password 'spdx';\n    CREATE ROLE\n    postgres=# create database spdx with owner spdx;\n    CREATE DATABASE\n\nThen change the `connection_uri` variable in your `dosocs2.conf`:\n\n    # connection_uri = postgresql://user:pass@host:port/database\n    connection_uri = postgresql://spdx:spdx@localhost:5432/spdx\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Step 4 - Database setup",
+        "parent_header": [
+          "dosocs2",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "Finally, to create all necessary tables and views in the database:\n\n    $ dosocs2 dbinit\n\nYou only need to do this once. **This command will drop all\nexisting tables from your SPDX database, so be careful!**\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "spdx license licenses"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "value": "https://api.github.com/licenses/gpl-2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 2, June 1991\n\n Copyright (C) 1989, 1991 Free Software Foundation, Inc.,\n 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The licenses for most software are designed to take away your\nfreedom to share and change it.  By contrast, the GNU General Public\nLicense is intended to guarantee your freedom to share and change free\nsoftware--to make sure the software is free for all its users.  This\nGeneral Public License applies to most of the Free Software\nFoundation's software and to any other program whose authors commit to\nusing it.  (Some other Free Software Foundation software is covered by\nthe GNU Lesser General Public License instead.)  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthis service if you wish), that you receive source code or can get it\nif you want it, that you can change the software or use pieces of it\nin new free programs; and that you know you can do these things.\n\n  To protect your rights, we need to make restrictions that forbid\nanyone to deny you these rights or to ask you to surrender the rights.\nThese restrictions translate to certain responsibilities for you if you\ndistribute copies of the software, or if you modify it.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must give the recipients all the rights that\nyou have.  You must make sure that they, too, receive or can get the\nsource code.  And you must show them these terms so they know their\nrights.\n\n  We protect your rights with two steps: (1) copyright the software, and\n(2) offer you this license which gives you legal permission to copy,\ndistribute and/or modify the software.\n\n  Also, for each author's protection and ours, we want to make certain\nthat everyone understands that there is no warranty for this free\nsoftware.  If the software is modified by someone else and passed on, we\nwant its recipients to know that what they have is not the original, so\nthat any problems introduced by others will not reflect on the original\nauthors' reputations.\n\n  Finally, any free program is threatened constantly by software\npatents.  We wish to avoid the danger that redistributors of a free\nprogram will individually obtain patent licenses, in effect making the\nprogram proprietary.  To prevent this, we have made it clear that any\npatent must be licensed for everyone's free use or not licensed at all.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n                    GNU GENERAL PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. This License applies to any program or other work which contains\na notice placed by the copyright holder saying it may be distributed\nunder the terms of this General Public License.  The \"Program\", below,\nrefers to any such program or work, and a \"work based on the Program\"\nmeans either the Program or any derivative work under copyright law:\nthat is to say, a work containing the Program or a portion of it,\neither verbatim or with modifications and/or translated into another\nlanguage.  (Hereinafter, translation is included without limitation in\nthe term \"modification\".)  Each licensee is addressed as \"you\".\n\nActivities other than copying, distribution and modification are not\ncovered by this License; they are outside its scope.  The act of\nrunning the Program is not restricted, and the output from the Program\nis covered only if its contents constitute a work based on the\nProgram (independent of having been made by running the Program).\nWhether that is true depends on what the Program does.\n\n  1. You may copy and distribute verbatim copies of the Program's\nsource code as you receive it, in any medium, provided that you\nconspicuously and appropriately publish on each copy an appropriate\ncopyright notice and disclaimer of warranty; keep intact all the\nnotices that refer to this License and to the absence of any warranty;\nand give any other recipients of the Program a copy of this License\nalong with the Program.\n\nYou may charge a fee for the physical act of transferring a copy, and\nyou may at your option offer warranty protection in exchange for a fee.\n\n  2. You may modify your copy or copies of the Program or any portion\nof it, thus forming a work based on the Program, and copy and\ndistribute such modifications or work under the terms of Section 1\nabove, provided that you also meet all of these conditions:\n\n    a) You must cause the modified files to carry prominent notices\n    stating that you changed the files and the date of any change.\n\n    b) You must cause any work that you distribute or publish, that in\n    whole or in part contains or is derived from the Program or any\n    part thereof, to be licensed as a whole at no charge to all third\n    parties under the terms of this License.\n\n    c) If the modified program normally reads commands interactively\n    when run, you must cause it, when started running for such\n    interactive use in the most ordinary way, to print or display an\n    announcement including an appropriate copyright notice and a\n    notice that there is no warranty (or else, saying that you provide\n    a warranty) and that users may redistribute the program under\n    these conditions, and telling the user how to view a copy of this\n    License.  (Exception: if the Program itself is interactive but\n    does not normally print such an announcement, your work based on\n    the Program is not required to print an announcement.)\n\nThese requirements apply to the modified work as a whole.  If\nidentifiable sections of that work are not derived from the Program,\nand can be reasonably considered independent and separate works in\nthemselves, then this License, and its terms, do not apply to those\nsections when you distribute them as separate works.  But when you\ndistribute the same sections as part of a whole which is a work based\non the Program, the distribution of the whole must be on the terms of\nthis License, whose permissions for other licensees extend to the\nentire whole, and thus to each and every part regardless of who wrote it.\n\nThus, it is not the intent of this section to claim rights or contest\nyour rights to work written entirely by you; rather, the intent is to\nexercise the right to control the distribution of derivative or\ncollective works based on the Program.\n\nIn addition, mere aggregation of another work not based on the Program\nwith the Program (or with a work based on the Program) on a volume of\na storage or distribution medium does not bring the other work under\nthe scope of this License.\n\n  3. You may copy and distribute the Program (or a work based on it,\nunder Section 2) in object code or executable form under the terms of\nSections 1 and 2 above provided that you also do one of the following:\n\n    a) Accompany it with the complete corresponding machine-readable\n    source code, which must be distributed under the terms of Sections\n    1 and 2 above on a medium customarily used for software interchange; or,\n\n    b) Accompany it with a written offer, valid for at least three\n    years, to give any third party, for a charge no more than your\n    cost of physically performing source distribution, a complete\n    machine-readable copy of the corresponding source code, to be\n    distributed under the terms of Sections 1 and 2 above on a medium\n    customarily used for software interchange; or,\n\n    c) Accompany it with the information you received as to the offer\n    to distribute corresponding source code.  (This alternative is\n    allowed only for noncommercial distribution and only if you\n    received the program in object code or executable form with such\n    an offer, in accord with Subsection b above.)\n\nThe source code for a work means the preferred form of the work for\nmaking modifications to it.  For an executable work, complete source\ncode means all the source code for all modules it contains, plus any\nassociated interface definition files, plus the scripts used to\ncontrol compilation and installation of the executable.  However, as a\nspecial exception, the source code distributed need not include\nanything that is normally distributed (in either source or binary\nform) with the major components (compiler, kernel, and so on) of the\noperating system on which the executable runs, unless that component\nitself accompanies the executable.\n\nIf distribution of executable or object code is made by offering\naccess to copy from a designated place, then offering equivalent\naccess to copy the source code from the same place counts as\ndistribution of the source code, even though third parties are not\ncompelled to copy the source along with the object code.\n\n  4. You may not copy, modify, sublicense, or distribute the Program\nexcept as expressly provided under this License.  Any attempt\notherwise to copy, modify, sublicense or distribute the Program is\nvoid, and will automatically terminate your rights under this License.\nHowever, parties who have received copies, or rights, from you under\nthis License will not have their licenses terminated so long as such\nparties remain in full compliance.\n\n  5. You are not required to accept this License, since you have not\nsigned it.  However, nothing else grants you permission to modify or\ndistribute the Program or its derivative works.  These actions are\nprohibited by law if you do not accept this License.  Therefore, by\nmodifying or distributing the Program (or any work based on the\nProgram), you indicate your acceptance of this License to do so, and\nall its terms and conditions for copying, distributing or modifying\nthe Program or works based on it.\n\n  6. Each time you redistribute the Program (or any work based on the\nProgram), the recipient automatically receives a license from the\noriginal licensor to copy, distribute or modify the Program subject to\nthese terms and conditions.  You may not impose any further\nrestrictions on the recipients' exercise of the rights granted herein.\nYou are not responsible for enforcing compliance by third parties to\nthis License.\n\n  7. If, as a consequence of a court judgment or allegation of patent\ninfringement or for any other reason (not limited to patent issues),\nconditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot\ndistribute so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you\nmay not distribute the Program at all.  For example, if a patent\nlicense would not permit royalty-free redistribution of the Program by\nall those who receive copies directly or indirectly through you, then\nthe only way you could satisfy both it and this License would be to\nrefrain entirely from distribution of the Program.\n\nIf any portion of this section is held invalid or unenforceable under\nany particular circumstance, the balance of the section is intended to\napply and the section as a whole is intended to apply in other\ncircumstances.\n\nIt is not the purpose of this section to induce you to infringe any\npatents or other property right claims or to contest validity of any\nsuch claims; this section has the sole purpose of protecting the\nintegrity of the free software distribution system, which is\nimplemented by public license practices.  Many people have made\ngenerous contributions to the wide range of software distributed\nthrough that system in reliance on consistent application of that\nsystem; it is up to the author/donor to decide if he or she is willing\nto distribute software through any other system and a licensee cannot\nimpose that choice.\n\nThis section is intended to make thoroughly clear what is believed to\nbe a consequence of the rest of this License.\n\n  8. If the distribution and/or use of the Program is restricted in\ncertain countries either by patents or by copyrighted interfaces, the\noriginal copyright holder who places the Program under this License\nmay add an explicit geographical distribution limitation excluding\nthose countries, so that distribution is permitted only in or among\ncountries not thus excluded.  In such case, this License incorporates\nthe limitation as if written in the body of this License.\n\n  9. The Free Software Foundation may publish revised and/or new versions\nof the General Public License from time to time.  Such new versions will\nbe similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\nEach version is given a distinguishing version number.  If the Program\nspecifies a version number of this License which applies to it and \"any\nlater version\", you have the option of following the terms and conditions\neither of that version or of any later version published by the Free\nSoftware Foundation.  If the Program does not specify a version number of\nthis License, you may choose any version ever published by the Free Software\nFoundation.\n\n  10. If you wish to incorporate parts of the Program into other free\nprograms whose distribution conditions are different, write to the author\nto ask for permission.  For software which is copyrighted by the Free\nSoftware Foundation, write to the Free Software Foundation; we sometimes\nmake exceptions for this.  Our decision will be guided by the two goals\nof preserving the free status of all derivatives of our free software and\nof promoting the sharing and reuse of software generally.\n\n                            NO WARRANTY\n\n  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY\nFOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN\nOTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES\nPROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED\nOR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS\nTO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE\nPROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,\nREPAIR OR CORRECTION.\n\n  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR\nREDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,\nINCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING\nOUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED\nTO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY\nYOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER\nPROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.\n\n                     END OF TERMS AND CONDITIONS\n\n            How to Apply These Terms to Your New Programs\n\n  If you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these terms.\n\n  To do so, attach the following notices to the program.  It is safest\nto attach them to the start of each source file to most effectively\nconvey the exclusion of warranty; and each file should have at least\nthe \"copyright\" line and a pointer to where the full notice is found.\n\n    <one line to give the program's name and a brief idea of what it does.>\n    Copyright (C) <year>  <name of author>\n\n    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License along\n    with this program; if not, write to the Free Software Foundation, Inc.,\n    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\n\nAlso add information on how to contact you by electronic and paper mail.\n\nIf the program is interactive, make it output a short notice like this\nwhen it starts in an interactive mode:\n\n    Gnomovision version 69, Copyright (C) year name of author\n    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `show c' for details.\n\nThe hypothetical commands `show w' and `show c' should show the appropriate\nparts of the General Public License.  Of course, the commands you use may\nbe called something other than `show w' and `show c'; they could even be\nmouse-clicks or menu items--whatever suits your program.\n\nYou should also get your employer (if you work as a programmer) or your\nschool, if any, to sign a \"copyright disclaimer\" for the program, if\nnecessary.  Here is a sample; alter the names:\n\n  Yoyodyne, Inc., hereby disclaims all copyright interest in the program\n  `Gnomovision' (which makes passes at compilers) written by James Hacker.\n\n  <signature of Ty Coon>, 1 April 1989\n  Ty Coon, President of Vice\n\nThis General Public License does not permit incorporating your program into\nproprietary programs.  If your program is a subroutine library, you may\nconsider it more useful to permit linking proprietary applications with the\nlibrary.  If this is what you want to do, use the GNU Lesser General\nPublic License instead of this License.\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "GNU General Public License v2 or later (GPLv2+)"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License and Copyright",
+        "parent_header": [
+          "dosocs2"
+        ],
+        "type": "Text_excerpt",
+        "value": "Copyright \u00a9 2015 University of Nebraska at Omaha\n\ndosocs2 is free software: you can redistribute it and/or modify it under the\nterms of the GNU General Public License as published by the Free Software\nFoundation, either version 2 of the License, or (at your option) any later\nversion. See the file LICENSE for more details.\n\nAll associated documentation is licensed under the terms of the Creative\nCommons Attribution Share-Alike 3.0 license. See the file CC-BY-SA-3.0 for more\ndetails.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DoSOCSv2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "DoSOCSv2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "dosocs2"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 108114,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 2396,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 396,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "date_created": "2016-02-16T15:34:56Z",
+        "date_published": "2016-02-16T15:41:12Z",
+        "description": "# v0.16.1 includes the following changes\n\n\u2022ExtractedLicenseText\n\u2022Nomos ignore_pattern bug fix\n\nDoSOCSv2 has project scan capability. For using `dosocs2 scanproject` contact DoSOCSv2 organization.\n",
+        "html_url": "https://github.com/DoSOCSv2/DoSOCSv2/releases/tag/v0.16.1",
+        "name": "v0.16.1",
+        "release_id": 2624580,
+        "tag": "v0.16.1",
+        "tarball_url": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/tarball/v0.16.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/releases/2624580",
+        "value": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/releases/2624580",
+        "zipball_url": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/zipball/v0.16.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "date_created": "2016-02-15T17:11:54Z",
+        "date_published": "2016-02-15T20:46:29Z",
+        "description": "# Changes include:\n\n\u2022ExtractedLicenseText\n\u2022Nomos ignore_pattern bug fix\n",
+        "html_url": "https://github.com/DoSOCSv2/DoSOCSv2/releases/tag/v0.16.0-Alplha",
+        "name": "v0.16.0-Alpha",
+        "release_id": 2619191,
+        "tag": "v0.16.0-Alplha",
+        "tarball_url": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/tarball/v0.16.0-Alplha",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/releases/2619191",
+        "value": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/releases/2619191",
+        "zipball_url": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/zipball/v0.16.0-Alplha"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "date_created": "2015-11-05T19:00:42Z",
+        "date_published": "2015-11-05T19:05:03Z",
+        "description": "- Many bug fixes\n- Much-improved test suite\n- New module system for scanners, with auto-discovery of new scanners\n- New fixture system for DB initialization, with auto-discovery (replaces license list auto-download)\n- Streamlined config system\n  - Global config in /etc no longer used\n- Updated documentation\n",
+        "html_url": "https://github.com/DoSOCSv2/DoSOCSv2/releases/tag/v0.16.0",
+        "name": "v0.16.0",
+        "release_id": 2079463,
+        "tag": "v0.16.0",
+        "tarball_url": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/tarball/v0.16.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/releases/2079463",
+        "value": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/releases/2079463",
+        "zipball_url": "https://api.github.com/repos/DoSOCSv2/DoSOCSv2/zipball/v0.16.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Dependencies",
+        "parent_header": [
+          "dosocs2"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Python 2.7.x\n\nOptional:\n- PostgreSQL 8.x or later version (can be on a separate machine)\n\nPython libraries:\n- All Python dependencies are handled automatically by `pip`.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:48:02",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 16
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "dosocs2"
+        ],
+        "type": "Text_excerpt",
+        "value": "The simplest use case is scanning a package, generating a\ndocument, and printing an SPDX document in one shot:\n\n    $ dosocs2 oneshot package.tar.gz\n    dosocs2: package.tar.gz: package_id: 1\n    dosocs2: running nomos on package 1\n    dosocs2: package.tar.gz: document_id: 1\n    [... document output here ...]\n\nAlso works on directories:\n\n    $ dosocs2 oneshot ./path/to/directory\n\nThe scan results and other collected metadata are saved in the database\nso that subsequent document generations will be much faster.\n\nTo just scan a package and store its information in the database:\n\n    $ dosocs2 scan package.tar.gz\n    dosocs2: package_tar_gz: package_id: 456\n    dosocs2: running nomos on package 456\n\nIn the default configuration, if a scanner is not specified, only `nomos`\nis run by default. It gathers license information, but is a bit slow.\nOne can use the `-s` option to explicitly specify which scanners to run:\n\n    $ dosocs2 scan -s nomos_deep,dummy package.tar.gz\n    dosocs2: package_tar_gz: package_id: 456\n    dosocs2: running nomos_deep on package 456\n    dosocs2: running dummy on package 456\n\nAfter `dosocs2 scan`, no SPDX document has yet been created.\nTo create one in the database (specifying the package ID):\n\n    $ dosocs2 generate 456\n    dosocs2: (package_id 456): document_id: 123\n\nThen, to compile and output the document in tag-value format:\n\n    $ dosocs2 print 123\n    [... document output here ...]\n\nUse `dosocs2 --help` to get the full help text. The `doc` directory\nhere also provides more detailed information about how `dosocs2` works\nand how to use it.\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Potential Organizational Use of dosocs2",
+        "parent_header": [
+          "dosocs2"
+        ],
+        "type": "Text_excerpt",
+        "value": "![alt text](https://cloud.githubusercontent.com/assets/656208/20320341/30b9468c-ab37-11e6-8e3f-c63543b85453.png)\n"
+      },
+      "source": "https://raw.githubusercontent.com/DoSOCSv2/DoSOCSv2/master/README.md",
+      "technique": "header_analysis"
+    }
+  ]
+}

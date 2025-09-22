@@ -1,0 +1,557 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Timoth\u00e9e Giraud"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "timothee.giraud@cnrs.fr",
+        "identifier": "https://orcid.org/0000-0002-1932-3323",
+        "type": "String",
+        "value": "Timoth\u00e9e Giraud"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Laurent Beauguitte"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Marianne Gu\u00e9rois"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Giraud",
+            "given_name": "Timoth\u00e9e",
+            "name": "Timoth\u00e9e Giraud",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-1932-3323"
+          },
+          {
+            "family_name": "Beauguitte",
+            "given_name": "Laurent",
+            "name": "Laurent Beauguitte",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Gu\u00e9rois",
+            "given_name": "Marianne",
+            "name": "Marianne Gu\u00e9rois",
+            "type": "Agent"
+          }
+        ],
+        "datePublished": "2015",
+        "format": "cff",
+        "title": "flows: Selections on Flow Matrices, Statistics on Selected Flows, Map and Graph Visualisations",
+        "type": "File_dump",
+        "url": "https://github.com/riatelab/flows",
+        "value": "# -----------------------------------------------------------\n# CITATION file created with {cffr} R package, v0.5.0\n# See also: https://docs.ropensci.org/cffr/\n# -----------------------------------------------------------\n \ncff-version: 1.2.0\nmessage: 'To cite package \"flows\" in publications use:'\ntype: software\nlicense: GPL-3.0-only\ntitle: 'flows: Selections on Flow Matrices, Statistics on Selected Flows, Map and\n  Graph Visualisations'\nversion: 2.0.0\nabstract: 'The analysis and representation of flows often presuppose a selection to\n  facilitate interpretation. Various methods have been proposed for selecting flows,\n  one of the most widely used being based on major flows: it selects only the most\n  important flows, absolute or relative, on a local or global scale. These methods\n  often highlight hierarchies between locations, but the loss of information caused\n  by selection is rarely taken into account. It therefore seems useful to propose\n  statistical indicators to assess the loss of information and the characteristics\n  of selected flows. We provide functions that select flows (main, dominant or major\n  flows), provide statistics on selections and offer visualizations in the form of\n  maps and graphs. See Beauguitte et al (2015) <doi:10.4000/netcom.2134>.'\nauthors:\n- family-names: Giraud\n  given-names: Timoth\u00e9e\n  email: timothee.giraud@cnrs.fr\n  orcid: https://orcid.org/0000-0002-1932-3323\n- family-names: Beauguitte\n  given-names: Laurent\n- family-names: Gu\u00e9rois\n  given-names: Marianne\nrepository-code: https://github.com/riatelab/flows\nurl: https://github.com/riatelab/flows\ncontact:\n- family-names: Giraud\n  given-names: Timoth\u00e9e\n  email: timothee.giraud@cnrs.fr\n  orcid: https://orcid.org/0000-0002-1932-3323\nkeywords:\n- cran\n- flows\n- r\n- r-package\nreferences:\n- type: software\n  title: 'R: A Language and Environment for Statistical Computing'\n  notes: Depends\n  url: https://www.R-project.org/\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2023'\n  institution:\n    name: R Foundation for Statistical Computing\n  version: '>= 3.6.0'\n- type: software\n  title: igraph\n  abstract: 'igraph: Network Analysis and Visualization'\n  notes: Imports\n  url: https://r.igraph.org/\n  repository: https://CRAN.R-project.org/package=igraph\n  authors:\n  - family-names: Cs\u00e1rdi\n    given-names: G\u00e1bor\n    email: csardi.gabor@gmail.com\n    orcid: https://orcid.org/0000-0001-7098-9676\n  - family-names: Nepusz\n    given-names: Tam\u00e1s\n    email: ntamas@gmail.com\n    orcid: https://orcid.org/0000-0002-1451-338X\n  - family-names: Traag\n    given-names: Vincent\n    orcid: https://orcid.org/0000-0003-3170-3879\n  - family-names: Horv\u00e1t\n    given-names: Szabolcs\n    email: szhorvat@gmail.com\n    orcid: https://orcid.org/0000-0002-3100-523X\n  - family-names: Zanini\n    given-names: Fabio\n    email: fabio.zanini@unsw.edu.au\n    orcid: https://orcid.org/0000-0001-7097-8539\n  - family-names: Noom\n    given-names: Daniel\n  - family-names: M\u00fcller\n    given-names: Kirill\n    email: kirill@cynkra.com\n    orcid: https://orcid.org/0000-0002-1416-3412\n  year: '2023'\n- type: software\n  title: graphics\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2023'\n  institution:\n    name: R Foundation for Statistical Computing\n- type: software\n  title: mapsf\n  abstract: 'mapsf: Thematic Cartography'\n  notes: Imports\n  url: https://riatelab.github.io/mapsf/\n  repository: https://CRAN.R-project.org/package=mapsf\n  authors:\n  - family-names: Giraud\n    given-names: Timoth\u00e9e\n    email: timothee.giraud@cnrs.fr\n    orcid: https://orcid.org/0000-0002-1932-3323\n  year: '2023'\n- type: software\n  title: utils\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2023'\n  institution:\n    name: R Foundation for Statistical Computing\n- type: software\n  title: stats\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2023'\n  institution:\n    name: R Foundation for Statistical Computing\n- type: software\n  title: sna\n  abstract: 'sna: Tools for Social Network Analysis'\n  notes: Suggests\n  url: https://statnet.org\n  repository: https://CRAN.R-project.org/package=sna\n  authors:\n  - family-names: Butts\n    given-names: Carter T.\n    email: buttsc@uci.edu\n  year: '2023'\n- type: software\n  title: sf\n  abstract: 'sf: Simple Features for R'\n  notes: Suggests\n  url: https://r-spatial.github.io/sf/\n  repository: https://CRAN.R-project.org/package=sf\n  authors:\n  - family-names: Pebesma\n    given-names: Edzer\n    email: edzer.pebesma@uni-muenster.de\n    orcid: https://orcid.org/0000-0001-8049-7069\n  year: '2023'\n- type: software\n  title: knitr\n  abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'\n  notes: Suggests\n  url: https://yihui.org/knitr/\n  repository: https://CRAN.R-project.org/package=knitr\n  authors:\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  year: '2023'\n- type: software\n  title: rmarkdown\n  abstract: 'rmarkdown: Dynamic Documents for R'\n  notes: Suggests\n  url: https://pkgs.rstudio.com/rmarkdown/\n  repository: https://CRAN.R-project.org/package=rmarkdown\n  authors:\n  - family-names: Allaire\n    given-names: JJ\n    email: jj@posit.co\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  - family-names: Dervieux\n    given-names: Christophe\n    email: cderv@posit.co\n    orcid: https://orcid.org/0000-0003-4474-2498\n  - family-names: McPherson\n    given-names: Jonathan\n    email: jonathan@posit.co\n  - family-names: Luraschi\n    given-names: Javier\n  - family-names: Ushey\n    given-names: Kevin\n    email: kevin@posit.co\n  - family-names: Atkins\n    given-names: Aron\n    email: aron@posit.co\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  - family-names: Cheng\n    given-names: Joe\n    email: joe@posit.co\n  - family-names: Chang\n    given-names: Winston\n    email: winston@posit.co\n  - family-names: Iannone\n    given-names: Richard\n    email: rich@posit.co\n    orcid: https://orcid.org/0000-0003-3925-190X\n  year: '2023'\n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/flows"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/flows"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/flows"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2015-03-19T15:16:17Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-04-14T14:12:52Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Flow selection and analysis"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+        "type": "String",
+        "value": "The analysis and representation of flows often presuppose a selection\n    to facilitate interpretation. Various methods have been proposed for selecting\n    flows, one of the most widely used being based on major flows: it selects only\n    the most important flows, absolute or relative, on a local or global scale.\n    These methods often highlight hierarchies between locations, but the loss of\n    information caused by selection is rarely taken into account. We\n    propose statistical indicators to assess the loss of information\n    and the characteristics of selected flows. We provide functions that select\n    flows (main, dominant or major flows), provide statistics on selections and\n    offer visualizations in the form of maps and graphs.\n    See Beauguitte et al (2015) <doi:10.4000/netcom.2134>."
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The analysis and representation of flows often presuppose a selection to facilitate interpretation. Various methods have been proposed for selecting flows, one of the most widely used being based on major flows: it selects only the most important flows, absolute or relative, on a local or global scale. These methods often highlight hierarchies between locations, but the loss of information caused by selection is rarely taken into account. It therefore seems useful to propose statistical indicators to assess the loss of information and the characteristics of selected flows. We provide functions that select flows (main, dominant or major flows), provide statistics on selections and offer visualizations in the form of maps and graphs. See Beauguitte et al (2015) <doi:10.4000/netcom.2134>."
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.979608355478727,
+      "result": {
+        "original_header": "`flows`: Selections on flow matrices, statistics on selected flows, cartographic and graphic visualizations <img src=\"man/figures/logo.png\" align=\"right\" width=\"140\"/>",
+        "type": "Text_excerpt",
+        "value": "\nThe analysis and representation of flows often presuppose a selection to\nfacilitate interpretation. Various methods have been proposed for\nselecting flows, one of the most widely used being based on major flows:\nit selects only the most important flows, absolute or relative, on a\nlocal or global scale. These methods often highlight hierarchies between\nlocations, but the loss of information caused by selection is rarely\ntaken into account. It therefore seems useful to propose statistical\nindicators to assess the loss of information and the characteristics of\nselected flows. We provide functions that select flows (main, dominant\nor major flows), provide statistics on selections and offer\nvisualizations in the form of maps and graphs.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9224147921986446,
+      "result": {
+        "original_header": "Ressources",
+        "type": "Text_excerpt",
+        "value": "- [Beauguitte, L., Giraud, T. et Gu\u00e9rois, M. (2015). Un outil pour la\n  s\u00e9lection et la visualisation de flux : le package flows. Netcom,\n  29(3/4), 399-408.](https://journals.openedition.org/netcom/2134)\n  <small>(This paper is in French and refers to previous versions of the\n  package.)</small>\n- Package vignette\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/flows/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/riatelab/flows/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "riatelab/flows"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "flows: Selections on flow matrices, statistics on selected flows, cartographic and graphic visualizations "
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "flows"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/flows/master/man/figures/unnamed-chunk-3-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "`flows`: Selections on flow matrices, statistics on selected flows, cartographic and graphic visualizations <img src=\"man/figures/logo.png\" align=\"right\" width=\"140\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install the development version of flows from GitHub with:\n\n``` r\nremotes::install_github(\"riatelab/flows\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/riatelab/flows/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/flows/issues"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/riatelab/flows/issues"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cran, flows, r, r-package"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/flows/master/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "flows"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "flows: Selections on Flow Matrices, Statistics on Selected Flows, Map and Graph Visualisations"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "riatelab"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+        "type": "String",
+        "value": "flows"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 32917,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/flows/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/riatelab/flows/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rCarto",
+          "type": "User"
+        },
+        "date_created": "2016-06-06T09:10:32Z",
+        "date_published": "2016-06-07T11:53:55Z",
+        "description": "Release date: 2016-06-06\n- faster prepflows function\n- correct reference\n- add reference to netcom paper\n- add a README\n",
+        "html_url": "https://github.com/riatelab/flows/releases/tag/v1.1.1",
+        "name": "CRAN Version",
+        "release_id": 3389634,
+        "tag": "v1.1.1",
+        "tarball_url": "https://api.github.com/repos/riatelab/flows/tarball/v1.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/riatelab/flows/releases/3389634",
+        "value": "https://api.github.com/repos/riatelab/flows/releases/3389634",
+        "zipball_url": "https://api.github.com/repos/riatelab/flows/zipball/v1.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rCarto",
+          "type": "User"
+        },
+        "date_created": "2015-10-06T08:57:56Z",
+        "date_published": "2016-02-04T12:48:32Z",
+        "description": "Changes:\n- Link added to the vignette on the flows-package documentation\n- Modification of the density formula in statmat (diagonal excluded)\n- Correction/simplification of domflows function; only one vector of weight is required\n- Slight modification on the vignette related to the previous change\n",
+        "html_url": "https://github.com/riatelab/flows/releases/tag/v1.1",
+        "name": "On cran",
+        "release_id": 2552389,
+        "tag": "v1.1",
+        "tarball_url": "https://api.github.com/repos/riatelab/flows/tarball/v1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/riatelab/flows/releases/2552389",
+        "value": "https://api.github.com/repos/riatelab/flows/releases/2552389",
+        "zipball_url": "https://api.github.com/repos/riatelab/flows/zipball/v1.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:21:12",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 15
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "`flows`: Selections on flow matrices, statistics on selected flows, cartographic and graphic visualizations <img src=\"man/figures/logo.png\" align=\"right\" width=\"140\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "Example of a dominant flows analysis on commuters data:\n\n``` r\nlibrary(sf)\nlibrary(flows)\nlibrary(mapsf)\n# Import datasets\nnav <- read.csv(system.file(\"csv/nav.csv\", package = \"flows\"))\n# Trnasform to wide\nmat <- prepare_mat(x = nav, i = \"i\", j = \"j\", fij = \"fij\")\n# import spatial objects\nUA <- st_read(system.file(\"gpkg/GE.gpkg\", package = \"flows\"), \n              layer = \"urban_area\", quiet = TRUE)\nGE <- st_read(system.file(\"gpkg/GE.gpkg\", package = \"flows\"), \n              layer = \"region\", quiet = TRUE)\n# Map\nmf_map(GE, col = \"#c6deba\")\nout <- map_nodal_flows(mat = mat, x = UA,\n                       inches = .17,\n                       col_node = c('red', 'orange', 'yellow'),\n                       col_flow = \"grey30\",\n                       breaks = c(4,100,1000,2500,8655),\n                       lwd = c(1,4,8,16), add = TRUE)\nmf_label(out$nodes[out$nodes$w>6000,], var = 'name',\n         halo = TRUE, overlap = FALSE, pos = 4)\nmf_title(\"Dominant Flows of Commuters\")\nmf_credits(\"INSEE, 2011\")\nmf_scale(50)\n```\n\n![](man/figures/unnamed-chunk-3-1.png)\n"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+        "type": "String",
+        "value": "2.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/riatelab/flows/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

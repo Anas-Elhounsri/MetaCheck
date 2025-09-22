@@ -1,0 +1,918 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9813110301449932,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/burgerLinker"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/burgerLinker.git"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-02-16T12:19:30Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2021-02-16T13:19:31Z+0100"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-25T11:57:13Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2022-09-21T11:03:01Z+0200"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Command line tool for linking civil registries"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Command line tool for linking civil registries"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.925673989406733,
+      "result": {
+        "original_header": "Purpose",
+        "type": "Text_excerpt",
+        "value": "This tool is being developed to improve and replace the current [LINKS](https://iisg.amsterdam/en/hsn/projects/links) software. Points of improvement are:\n- extremely fast and scalable matching procedure (using Levenshtein automaton and HDT);\n- searches candidate matches based on main individuals and relations, or if need be, allows for matching of the main individual only. (Thus the focus is on finding candidate matches (recall), not the quality of possible matches (precision), that is being developed via another CLARIAH tool);\n- when matching two individuals with multiple first names, at least two names need to be similar in order to find a candidate match; when matching individuals with multiple first names to individuals with only one first name any first name that is identical results in a match(!);\n- blocking is not required (i.e. all candidate records can be considered for matching, with no restrictions on their registration date or location, and no requirements on blocking parts of their individual names);\n- candidate matches contain detailed metadata on why they are suggested, and can be saved in different formats (CSV and RDF are covered in the current version);\n- allows family and life course reconstruction (by computing the transitive closure over all detected links);\n- open software. \n"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8425317964051674,
+      "result": {
+        "original_header": "Data",
+        "type": "Text_excerpt",
+        "value": "In its current version, the tool cannot be used to match entities from just any source. The current tool is solely focused on the linkage of civil records, relying on the sanguineous relations on the civil record, modelled according to our [Civil Registries schema](assets/CIV.ttl). An overview of the Civil Registries schema is available as a [PNG file](/assets/CIV.png), and you can browse it on [Druid](https://druid.datalegend.net/LINKS/civ).\n \n"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9415931401077309,
+      "result": {
+        "original_header": "Previous work",
+        "type": "Text_excerpt",
+        "value": "So far, (Dutch) civil records have been linked by bespoke programming by researchers, sometimes supported by engineers. Specifically the IISG-LINKS program has a pipeline to link these records and provide them to the Central Bureau of Genealogy (CBG). Because the number of records has grown over time and the IISG-LINKS takes an enormous amount of time (weeks) to LINK all records currently present, *burgerLinker* is designed to do this much faster (full sample takes less than 48 hours). \nThe Golden Agents project has brought about [Lenticular Lenses](https://www.goldenagents.org/tools/lenticular-lenses/) a tool designed to link persons across sources of various nature. We have engaged with the Lenticular Lenses team on multiple occasions (a demo-presentation, two person-vocabulary workshops, and a specific between-teams-workshop). From those meetings we have adopted the [ROAR vocabulary](https://leonvanwissen.nl/vocab/roar/docs/) for work in CLARIAH-WP4. On the specific *burgerLinker* and lenticular lenses tool, however we found that the prerequisite in Lenticular Lenses to allow for heterogenous sources, conflicted with the *burgerLinker* prerequisite to be fast: one reason for it to be fast is the limited set of sources that *burgerLinker* allows for. \nThe only other set of initiatives that we are aware of are bespoke programming initiatives by domain specific researchers, with country and time specific rules for linking in for example R. These linkage tools are on the whole slow. What we did do is make our own rule set for linking modular, to allow in the future for country and time specific rule sets to be incorporated in *burgerLinker*. \n**Update** At the ESSHC 2023 we learned of [population-linkage](https://github.com/stacs-srg/population-linkage) and [hope](https://github.com/stacs-srg/population-linkage/issues/4) to set up talks to discuss the similarities and differences in our approaches. Also at the ESSHC 2023, we learned of the Norwegian effort for historical record linking: [https://github.com/uit-hdl/rhd-linking](https://github.com/uit-hdl/rhd-linking) (for documentation see: [https://munin.uit.no/handle/10037/28399](https://munin.uit.no/handle/10037/28399)). \n"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9607510023738831,
+      "result": {
+        "original_header": "Tool functionalities",
+        "type": "Text_excerpt",
+        "value": "- `Between_B_M`: link *parents of newborns* in Birth Certificates to *brides & grooms* in Marriage Certificates (reconstructs family ties) \n- `Between_B_D`: link *parents of newborns* in Birth Certificates to *deceased & partner* in Death Certificates (reconstructs family ties) \n- `Between_M_M`: link *parents of brides/grooms* in Marriage Certificates to *brides & grooms* in Marriage Certificates (reconstructs family ties) \n- `Between_D_M`: link *parents of deceased* in Death Certificates to *brides & grooms* in Marriage Certificates (reconstructs family ties) \n- `Closure`: compute the transitive closure, that is, assign a single id to observations that refer to each other, to get a unique identifier per 'individual'. The output of this function is a new RDF dataset, where linked observations of individuals are replaced by the same identifier in the civil registries dataset. Note: no extra filtering is done in this step. \n"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8076070784228331,
+      "result": {
+        "original_header": "Possible direct extensions",
+        "type": "Text_excerpt",
+        "value": "It would be possible to add more general matching functionalities that are not dependent on the Civil Registries schema.\nOne possible way would be to provide a JSON Schema as an additional input to any given dataset, specifying the (i) Classes that the user wish to match their instances (e.g. sourceClass: iisg:Newborn ; targetClass: iisg:Groom), and the (ii) Properties that should be considered in the matching (e.g. schema:givenName; schema:familyName). \n"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#inactive"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/burgerLinker/wiki"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/burgerLinker/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/CLARIAH/burgerLinker/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CLARIAH/burgerLinker"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "burgerLinker"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation requirements",
+        "parent_header": [
+          "**burgerLinker -** Civil Registries Linking Tool"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Only the [JAVA Runtime Environment (JRE)](https://www.oracle.com/java/technologies/javase-jre8-downloads.html), which is free and installed on almost every computer these days.\n"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/CLARIAH/burgerLinker/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/burgerLinker/issues"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2021 CLARIAH\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/http://spdx.org/licenses/MIT",
+        "spdx_id": "http://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "http://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "burgerLinker"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "burgerLinker"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "ontologies": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/assets/CIV.ttl"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/assets/schema/CIV.ttl"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "CLARIAH"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "iisg.amsterdam.burgerLinker"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "size": 210376,
+        "type": "Programming_language",
+        "value": "Java"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 14905,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "type": "Programming_language",
+        "value": "Java",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/CLARIAH/burgerLinker/blob//README.md"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "title": null,
+        "type": "Scholarly_article",
+        "url": "https://ceur-ws.org/Vol-2695/paper6.pdf",
+        "value": null
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "raadjoe",
+          "type": "User"
+        },
+        "date_created": "2023-04-28T13:53:13Z",
+        "date_published": "2023-04-28T13:58:16Z",
+        "description": "This version fixes a problem caused by external libraries when running burgerLinker in terminal ",
+        "html_url": "https://github.com/CLARIAH/burgerLinker/releases/tag/v0.7",
+        "name": "burgerLinker v0.7",
+        "release_id": 101287387,
+        "tag": "v0.7",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/tarball/v0.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/101287387",
+        "value": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/101287387",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/zipball/v0.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "raadjoe",
+          "type": "User"
+        },
+        "date_created": "2022-06-06T20:49:20Z",
+        "date_published": "2022-06-06T20:56:27Z",
+        "description": "This version fixes a bug in the closure function and updates the HDT library to the latest version (v 3.0.2)",
+        "html_url": "https://github.com/CLARIAH/burgerLinker/releases/tag/v0.6",
+        "name": "burgerLinker v0.6",
+        "release_id": 68764739,
+        "tag": "v0.6",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/tarball/v0.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/68764739",
+        "value": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/68764739",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/zipball/v0.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "raadjoe",
+          "type": "User"
+        },
+        "date_created": "2021-09-03T14:25:21Z",
+        "date_published": "2021-09-03T14:32:27Z",
+        "description": "This version supports one-to-one matching, using the `--singleInd` flag.\r\n\r\nExample: for matching newborns to deceased individuals (with a maximum Levenshtein distance of 2) without the requirement of matching their parents as well, you can use the following command:\r\n\r\n`java -jar burgerLinker.jar --function Within_B_D --inputData dataDirectory/myCivilRegistries.hdt --outputDir . --maxLev 2 --singleInd`\r\n",
+        "html_url": "https://github.com/CLARIAH/burgerLinker/releases/tag/v0.5",
+        "name": "burgerLinker v0.5",
+        "release_id": 48968396,
+        "tag": "v0.5",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/tarball/v0.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/48968396",
+        "value": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/48968396",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/zipball/v0.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "raadjoe",
+          "type": "User"
+        },
+        "date_created": "2021-08-25T19:15:42Z",
+        "date_published": "2021-08-25T19:19:42Z",
+        "description": "Closure function covers all types of links",
+        "html_url": "https://github.com/CLARIAH/burgerLinker/releases/tag/0.4",
+        "name": "burgerLinker v0.4",
+        "release_id": 48454025,
+        "tag": "0.4",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/tarball/0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/48454025",
+        "value": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/48454025",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/zipball/0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "raadjoe",
+          "type": "User"
+        },
+        "date_created": "2021-05-05T09:33:02Z",
+        "date_published": "2021-05-06T07:43:03Z",
+        "description": "Bug fixes, and added the following tool parameters:\r\n\r\n`--ignoreDate` (optional, default = False) add this flag without a value (i.e. True) for ignoring the date consistency check before saving a link. By default, the tool only saves links that are temporally consistent (e.g. when linking newborns to deceased individuals, the tool checks whether the date of death is later than the individual's date of birth)\r\n\r\n`--ignoreBlock:`(optional, default = False) add this flag without a value (i.e. True) for not requiring the equality of the last names' first letter of the matched individuals. By default, the tool only saves links between individuals that at least have the same first letter of their last names\r\n",
+        "html_url": "https://github.com/CLARIAH/burgerLinker/releases/tag/0.3",
+        "name": "burgerLinker v0.3",
+        "release_id": 42522401,
+        "tag": "0.3",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/tarball/0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/42522401",
+        "value": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/42522401",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/zipball/0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "raadjoe",
+          "type": "User"
+        },
+        "date_created": "2021-04-16T20:09:48Z",
+        "date_published": "2021-03-02T08:41:36Z",
+        "description": "This is the first release of the burgerLinker tool. This version, released as a Runnable JAR file, supports the following functionalities:\r\n- `ShowDatasetStats`\r\n- `ConvertToHDT`\r\n- `Within_B_M`\r\n- `Within_B_D`\r\n- `Between_B_M`\r\n- `Between_B_D`\r\n- `Between_M_M`\r\n- `Between_D_M`\r\n- `Closure`",
+        "html_url": "https://github.com/CLARIAH/burgerLinker/releases/tag/v0.2",
+        "name": "burgerLinker v0.2",
+        "release_id": 39102330,
+        "tag": "v0.2",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/tarball/v0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/39102330",
+        "value": "https://api.github.com/repos/CLARIAH/burgerLinker/releases/39102330",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/burgerLinker/zipball/v0.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "hdt-java-core",
+        "type": "Software_application",
+        "value": "hdt-java-core==3.0.2",
+        "version": "3.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "hdt-jena",
+        "type": "Software_application",
+        "value": "hdt-jena==3.0.2",
+        "version": "3.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jcommander",
+        "type": "Software_application",
+        "value": "jcommander==1.78",
+        "version": "1.78"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "junit",
+        "type": "Software_application",
+        "value": "junit==3.8.1",
+        "version": "3.8.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "liblevenshtein",
+        "type": "Software_application",
+        "value": "liblevenshtein==3.0.0",
+        "version": "3.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "log4j-core",
+        "type": "Software_application",
+        "value": "log4j-core==2.17.2",
+        "version": "2.17.2"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "opencsv",
+        "type": "Software_application",
+        "value": "opencsv==5.2",
+        "version": "5.2"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "progressbar",
+        "type": "Software_application",
+        "value": "progressbar==0.8.1",
+        "version": "0.8.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rocksdbjni",
+        "type": "Software_application",
+        "value": "rocksdbjni==6.12.7",
+        "version": "6.12.7"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "slf4j-api",
+        "type": "Software_application",
+        "value": "slf4j-api==1.7.5",
+        "version": "1.7.5"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "slf4j-log4j12",
+        "type": "Software_application",
+        "value": "slf4j-log4j12==1.7.5",
+        "version": "1.7.5"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "junit",
+        "type": "Software_application",
+        "value": "junit.junit",
+        "version": "3.8.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jcommander",
+        "type": "Software_application",
+        "value": "com.beust.jcommander",
+        "version": "1.78"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "liblevenshtein",
+        "type": "Software_application",
+        "value": "com.github.universal-automata.liblevenshtein",
+        "version": "3.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "slf4j-api",
+        "type": "Software_application",
+        "value": "org.slf4j.slf4j-api",
+        "version": "2.0.7"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "slf4j-reload4j ",
+        "type": "Software_application",
+        "value": "org.slf4j.slf4j-reload4j ",
+        "version": "2.0.7"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "hdt-java-core",
+        "type": "Software_application",
+        "value": "org.rdfhdt.hdt-java-core",
+        "version": "3.0.9"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "log4j-core",
+        "type": "Software_application",
+        "value": "org.apache.logging.log4j.log4j-core",
+        "version": "2.20.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rocksdbjni",
+        "type": "Software_application",
+        "value": "org.rocksdb.rocksdbjni",
+        "version": "8.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "progressbar",
+        "type": "Software_application",
+        "value": "me.tongfei.progressbar",
+        "version": "0.8.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "opencsv",
+        "type": "Software_application",
+        "value": "com.opencsv.opencsv",
+        "version": "5.2"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation requirements",
+        "parent_header": [
+          "**burgerLinker -** Civil Registries Linking Tool"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Only the [JAVA Runtime Environment (JRE)](https://www.oracle.com/java/technologies/javase-jre8-downloads.html), which is free and installed on almost every computer these days.\n"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Input requirements",
+        "parent_header": [
+          "**burgerLinker -** Civil Registries Linking Tool"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Only one RDF dataset, describing the civil registries that are modelled according to our simple [Civil Registries schema](assets/CIV.png) (see [Wiki](https://github.com/CLARIAH/burgerLinker/wiki/Adapting-the-data-model) for more details regarding the data model and the conversion to RDF).\n\n- For efficient querying (i.e. lower memory usage with fast search), the matching tool requires the dataset to be compressed and given as an [HDT](http://www.rdfhdt.org/what-is-hdt/) file with its index. The tool allows the conversion of any valid RDF file to HDT using the `--function convertToHDT` (see Example 2 below).\n"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Main dependencies",
+        "parent_header": [
+          "**burgerLinker -** Civil Registries Linking Tool"
+        ],
+        "type": "Text_excerpt",
+        "value": "This tool mainly rely on two open-source libraries:\n- [Levenshtein automata](https://github.com/universal-automata/liblevenshtein-java) (MIT License)\n- [RDF-HDT](https://github.com/rdfhdt/hdt-java) (LGPL License)\n"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:16:25",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 14
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Use case",
+        "parent_header": [
+          "**burgerLinker -** Civil Registries Linking Tool"
+        ],
+        "type": "Text_excerpt",
+        "value": "Historians use archival records to describe persons' lives. Each record (e.g. a marriage record) just describes a point in time. Hence historians try to link multiple records on the same person to describe a life course. This tool focuses on \"just\" the linkage of civil records. By doing so, pedigrees of humans can be created over multiple generations for research on social inequality, especially in the part of health sciences where the focus is on gene-social contact interactions.\n"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Examples",
+        "parent_header": [
+          "**burgerLinker -** Civil Registries Linking Tool"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Example 1. Run the help command of the software:\n\n`java -jar burgerLinker.jar --help`\n\n---\n\n- Example 2. Generate an HDT file and its index from an RDF dataset:\n\n`java -jar burgerLinker.jar --function ConvertToHDT --inputData dataDirectory/myCivilRegistries.nq --outputDir .`\n\nThis will generate the HDT file 'myCivilRegistries.hdt' and its index 'myCivilRegistries.hdt.index' in the same directory.\nThe index should be kept in the same directory of the HDT file to speed up all queries.\n\n:warning:\n\nThis is the most memory-intensive step of the tool. Therefore, for avoiding running out of memory for larger datasets, we recommend (i) running this step on a machine with enough memory, and (ii) changing the initial lower bound and upper bound of the JAVA heap memory size, by adding the `-Xms` and `-Xmx` flags.\n\nAs an example, here are the flags used for generating the HDT file of all Dutch birth and marriage certificates:\n\n`java -Xms64g -Xmx96g -jar burgerLinker.jar --function ConvertToHDT --inputData dataDirectory/myCivilRegistries.nq --outputDir .`\n\n---\n\n- Example 3. Merge two HDT files into one:\n\n`java -jar burgerLinker.jar --function ConvertToHDT --inputData dataDirectory/hdt1.hdt,dataDirectory/hdt2.hdt --outputDir . `\n\nThis will generate a third HDT file 'merged-dataset.hdt' and its index 'merged-dataset.hdt.index' in the same directory.\n\n:warning:\n\nThe two HDT files given as input are only separated by `,` (without empty space)\n\n---\n\n- Example 4. Link *parents of newborns* to *brides & grooms*:\n\n`java -jar burgerLinker.jar --function Between_B_M --inputData dataDirectory/myCivilRegistries.hdt --outputDir . --format CSV  --maxLev 3 --fixedLev`\n\nThese arguments indicate that the user wants to:\n\n    [Between_B_M] link parents of newborns in Birth Certificates to brides and grooms in Marriage Certificates,\n    [dataDirectory/myCivilRegistries.hdt] in the civil registries dataset myCivilRegistries.hdt modelled according to our civil registries RDF schema,\n    [.] save the detected links in the current directory,\n    [CSV] as a CSV file,\n    [3] allowing a maximum Levenshtein of 3 per name (first name or last name),\n    [fixedLev] independently from the length of the name.\n\n---\n\n- Example 5. Family Reconstruction\n\n`java -jar burgerLinker.jar --function closure --inputData dataDirectory/myCivilRegistries.hdt --outputDir myResultsDirectory `\n\nThis command computes the transitive closure of all links existing in the directory `myResultsDirectory`, and generates a new `finalDataset.nt.gz` dataset in this directory by replacing all matched individuals' identifiers from the `myCivilRegistries.hdt` input dataset with the same unique identifier.\n\n**How?**\n\nThe directory `myResultsDirectory` must contain the CSV files that resulted from the linking functions described above, without changing the file names (the tool finds these files using a regular expression search in this directory). It can contain one, or all of the following CSV files, with X being any integer from 0 to 4:\n- within-B-M-maxLev-X.csv\n- within-B-D-maxLev-X.csv\n- between-B-M-maxLev-X.csv\n- between-B-D-maxLev-X.csv\n- between-M-M-maxLev-X.csv\n- between-D-M-maxLev-X.csv\n\nThe function will first transform the links in these CSV files, that are asserted between identifiers of certificates, into links between individuals. Since identity links are transitive and symmetric, this function computes the transitive closure of all these transformed individual links, and generates new identifiers for each resulted equivalence class.\n\nExample:\n- :newborn1 owl:sameAs :bride1\n- :bride1 owl:sameAs :mother1\n\nThis means that all these identifiers (:newborn1, :bride1, and :mother1) refer to the same individual, appearing in different roles in different civil certificates. This function generates a new dataset, replacing all occurrences of these three identifiers with a single unique identifier (e.g. :i-1). This process allows the reconstruction of historical families, without the need of writing complex queries or following a large number of identity links across the dataset.\n\n- Example 6. Link individuals without the requirement of linking one of the parents\n\nConvert a file hkh-maids.nt to HDT\n`java -jar burgerLinker.jar --function convertToHDT --inputData maids/maids-dataset/maids.nt --outputDir maids/maids-dataset/`\n\nMerge the resulting HDT dataset of hkh-maids to the HDT file of the marriages:\n`nohup java -Xms128g -Xmx192g -jar burgerLinker.jar --function convertToHDT --inputData maids/maids-dataset/maids.hdt,civ-reg-2021/HDT/marriages.hdt --outputDir maids/maids-and-marriages-dataset/ &`\n\nRun Within_B_M with the singleInd flag on the resulted mergedDataset:\n`nohup java -Xms128g -Xmx192g -jar burgerLinker.jar --function within_B_M --inputData maids/maids-and-marriages-dataset/merged-dataset.hdt --outputDir maids/results/ --maxLev 1 --ignoreDate --singleInd &`\n\nLinks are saved in the following CSV file (around 100K links detected with the above parameters):\n`maids/results/within_b_m-maxLev-1-singleInd-ignoreDate/results/within-B-M-maxLev-1-singleInd-ignoreDate.csv`\n\nNB: when running burgerLinker with nohup, the progress of the linking is saved in the nohup.out file. You can track the progress using `tail -f :\ntail -f nohup.out`.\n\n---"
+      },
+      "source": "https://github.com/CLARIAH/burgerLinker/blob//README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.1-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "0.0.1-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/burgerLinker/main/pom.xml",
+      "technique": "code_parser"
+    }
+  ]
+}

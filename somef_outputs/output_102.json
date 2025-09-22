@@ -1,0 +1,845 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgements",
+        "type": "Text_excerpt",
+        "value": "I would like to thank Fran\u00e7ois Bissey, Sebastien Villemot, Erik Welch, Jim\nKitchen, Markus M\u00fctzel, and Fabian Wein for their valuable feedback on the\nSuiteSparse build system and how it works with various Linux / Python distros\nand other package managers.  If you are a maintainer of a SuiteSparse packaging\nfor a Linux distro, conda-forge, R, spack, brew, vcpkg, etc, please feel free\nto contact me if there's anything I can do to make your life easier.\nI would also like to thank Raye Kimmerer for adding support for 32-bit\nrow/column indices in SPQR v4.2.0.\n\nSee also the various Acknowledgements within each package.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Texas A&M University",
+        "email": "scottk@tamu.edu",
+        "identifier": "https://orcid.org/0000-0001-8340-0824",
+        "type": "String",
+        "value": "Scott Kolodziej"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Texas A&M University",
+        "email": "davis@tamu.edu",
+        "identifier": "https://orcid.org/0000-0001-7614-6899",
+        "type": "String",
+        "value": "Timothy Davis"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Microsoft Corporation",
+        "identifier": "https://orcid.org/0000-0002-8689-5268",
+        "type": "String",
+        "value": "Nuri Yeralan"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Florida",
+        "email": "hager@ufl.edu",
+        "type": "String",
+        "value": "William Hager"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2019",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "\n@article{10.1145/3322125,\nauthor = {Davis, Timothy A.},\ntitle = {Algorithm 1000: SuiteSparse:GraphBLAS: Graph Algorithms in the Language of Sparse Linear Algebra},\nyear = {2019},\nissue_date = {December 2019},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {45},\nnumber = {4},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/3322125},\ndoi = {10.1145/3322125},\nabstract = {SuiteSparse:GraphBLAS is a full implementation of the GraphBLAS standard, which defines a set of sparse matrix operations on an extended algebra of semirings using an almost unlimited variety of operators and types. When applied to sparse adjacency matrices, these algebraic operations are equivalent to computations on graphs. GraphBLAS provides a powerful and expressive framework for creating graph algorithms based on the elegant mathematics of sparse matrix operations on a semiring. An overview of the GraphBLAS specification is given, followed by a description of the key features and performance of its implementation in the SuiteSparse:GraphBLAS package.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {dec},\narticleno = {44},\nnumpages = {25},\nkeywords = {GraphBLAS, Graph algorithms, sparse matrices}\n}\n\n@book{FA02,\n    author={T. A. Davis},\n    title={Direct Methods for Sparse Linear Systems},\n    publisher={SIAM},\n    address={Philadelphia, PA},\n    year={2006},\n    url={https://doi.org/10.1137/1.9780898718881},\n    doi={10.1137/1.9780898718881}}\n\n\n@article{10.1145/2049662.2049670,\nauthor = {Davis, Timothy A.},\ntitle = {Algorithm 915, SuiteSparseQR: Multifrontal Multithreaded Rank-Revealing Sparse QR Factorization},\nyear = {2011},\nissue_date = {November 2011},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {38},\nnumber = {1},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/2049662.2049670},\ndoi = {10.1145/2049662.2049670},\nabstract = {SuiteSparseQR is a sparse QR factorization package based on the multifrontal method. Within each frontal matrix, LAPACK and the multithreaded BLAS enable the method to obtain high performance on multicore architectures. Parallelism across different frontal matrices is handled with Intel's Threading Building Blocks library. The symbolic analysis and ordering phase pre-eliminates singletons by permuting the input matrix A into the form [R11 R12; 0 A22] where R11 is upper triangular with diagonal entries above a given tolerance. Next, the fill-reducing ordering, column elimination tree, and frontal matrix structures are found without requiring the formation of the pattern of ATA. Approximate rank-detection is performed within each frontal matrix using Heath's method. While Heath's method is not always exact, it has the advantage of not requiring column pivoting and thus does not interfere with the fill-reducing ordering. For sufficiently large problems, the resulting sparse QR factorization obtains a substantial fraction of the theoretical peak performance of a multicore computer.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {dec},\narticleno = {8},\nnumpages = {22},\nkeywords = {least-square problems, sparse matrices, QR factorization}\n}\n\n@article{10.1145/3065870,\nauthor = {Yeralan, Sencer Nuri and Davis, Timothy A. and Sid-Lakhdar, Wissam M. and Ranka, Sanjay},\ntitle = {Algorithm 980: Sparse QR Factorization on the GPU},\nyear = {2017},\nissue_date = {June 2018},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {44},\nnumber = {2},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/3065870},\ndoi = {10.1145/3065870},\nabstract = {Sparse matrix factorization involves a mix of regular and irregular computation, which is a particular challenge when trying to obtain high-performance on the highly parallel general-purpose computing cores available on graphics processing units (GPUs). We present a sparse multifrontal QR factorization method that meets this challenge and is significantly faster than a highly optimized method on a multicore CPU. Our method factorizes many frontal matrices in parallel and keeps all the data transmitted between frontal matrices on the GPU. A novel bucket scheduler algorithm extends the communication-avoiding QR factorization for dense matrices by exploiting more parallelism and by exploiting the staircase form present in the frontal matrices of a sparse multifrontal method.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {aug},\narticleno = {17},\nnumpages = {29},\nkeywords = {GPU, QR factorization, least-square problems, sparse matrices}\n}\n\n@article{10.1145/1391989.1391995,\nauthor = {Chen, Yanqing and Davis, Timothy A. and Hager, William W. and Rajamanickam, Sivasankaran},\ntitle = {Algorithm 887: CHOLMOD, Supernodal Sparse Cholesky Factorization and Update/Downdate},\nyear = {2008},\nissue_date = {October 2008},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {35},\nnumber = {3},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1391989.1391995},\ndoi = {10.1145/1391989.1391995},\nabstract = {CHOLMOD is a set of routines for factorizing sparse symmetric positive definite matrices of the form A or AAT, updating/downdating a sparse Cholesky factorization, solving linear systems, updating/downdating the solution to the triangular system Lx\u2009=\u2009b, and many other sparse matrix functions for both symmetric and unsymmetric matrices. Its supernodal Cholesky factorization relies on LAPACK and the Level-3 BLAS, and obtains a substantial fraction of the peak performance of the BLAS. Both real and complex matrices are supported. CHOLMOD is written in ANSI/ISO C, with both C and MATLABTM interfaces. It appears in MATLAB 7.2 as x\u2009=\u2009Ab when A is sparse symmetric positive definite, as well as in several other sparse matrix functions.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {oct},\narticleno = {22},\nnumpages = {14},\nkeywords = {sparse matrices, linear equations, Cholesky factorization}\n}\n\n@article{10.1145/1462173.1462176,\nauthor = {Davis, Timothy A. and Hager, William W.},\ntitle = {Dynamic Supernodes in Sparse Cholesky Update/Downdate and Triangular Solves},\nyear = {2009},\nissue_date = {February 2009},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {35},\nnumber = {4},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1462173.1462176},\ndoi = {10.1145/1462173.1462176},\nabstract = {The supernodal method for sparse Cholesky factorization represents the factor L as a set of supernodes, each consisting of a contiguous set of columns of L with identical nonzero pattern. A conventional supernode is stored as a dense submatrix. While this is suitable for sparse Cholesky factorization where the nonzero pattern of L does not change, it is not suitable for methods that modify a sparse Cholesky factorization after a low-rank change to A (an update/downdate, undefined = A \u00b1 WWT). Supernodes merge and split apart during an update/downdate. Dynamic supernodes are introduced which allow a sparse Cholesky update/downdate to obtain performance competitive with conventional supernodal methods. A dynamic supernodal solver is shown to exceed the performance of the conventional (BLAS-based) supernodal method for solving triangular systems. These methods are incorporated into CHOLMOD, a sparse Cholesky factorization and update/downdate package which forms the basis of x = Ab MATLAB when A is sparse and symmetric positive definite.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {feb},\narticleno = {27},\nnumpages = {23},\nkeywords = {sparse matrices, linear equations, Cholesky factorization}\n}\n\n\n@article{doi:10.1137/S089547980343641X,\nauthor = {Davis, Timothy A. and Hager, William W.},\ntitle = {Row Modifications of a Sparse Cholesky Factorization},\njournal = {SIAM Journal on Matrix Analysis and Applications},\nvolume = {26},\nnumber = {3},\npages = {621-639},\nyear = {2005},\ndoi = {10.1137/S089547980343641X},\nURL = {https://doi.org/10.1137/S089547980343641X },\neprint = { https://doi.org/10.1137/S089547980343641X } ,\n    abstract = { Given a sparse, symmetric positive definite matrix C and an associated sparse Cholesky factorization LDL\\$\\tr\\$, we develop sparse techniques for updating the factorization after a symmetric modification of a row and column of C. We show how the modification in the Cholesky factorization associated with this rank-2 modification of C can be computed efficiently using a sparse rank-1 technique developed in [T. A. Davis and W. W. Hager, SIAM J. Matrix Anal. Appl., 20 (1999), pp. 606--627]. We also determine how the solution of a linear system Lx = b changes after changing a row and column of C or after a rank-r change in C. }\n}\n\n\n@article{doi:10.1137/S0895479899357346,\nauthor = {Davis, Timothy A. and Hager, William W.},\ntitle = {Multiple-Rank Modifications of a Sparse Cholesky Factorization},\njournal = {SIAM Journal on Matrix Analysis and Applications},\nvolume = {22},\nnumber = {4},\npages = {997-1013},\nyear = {2001},\ndoi = {10.1137/S0895479899357346},\nURL = { https://doi.org/10.1137/S0895479899357346 },\neprint = { https://doi.org/10.1137/S0895479899357346 } ,\n    abstract = { Given a sparse symmetric positive definite matrix \\$\\mathbf{AA}\\tr\\$ and an associated sparse Cholesky factorization \\$\\mathbf{LDL}\\tr\\$ or \\$\\mathbf{LL}\\tr\\$, we develop sparse techniques for updating the factorization after either adding a collection of columns to A or deleting a collection of columns from A. Our techniques are based on an analysis and manipulation of the underlying graph structure, using the framework developed in an earlier paper on rank-1 modifications [T. A. Davis and W. W. Hager, SIAM J. Matrix Anal. Appl., 20 (1999), pp. 606--627]. Computationally, the multiple-rank update has better memory traffic and executes much faster than an equivalent series of rank-1 updates since the multiple-rank update makes one pass through L computing the new entries, while a series of rank-1 updates requires multiple passes through L. }\n}\n\n\n\n@article{doi:10.1137/S0895479897321076,\nauthor = {Davis, Timothy A. and Hager, William W.},\ntitle = {Modifying a Sparse Cholesky Factorization},\njournal = {SIAM Journal on Matrix Analysis and Applications},\nvolume = {20},\nnumber = {3},\npages = {606-627},\nyear = {1999},\ndoi = {10.1137/S0895479897321076},\nURL = { https://doi.org/10.1137/S0895479897321076 },\neprint = { https://doi.org/10.1137/S0895479897321076 } ,\n    abstract = { Given a sparse symmetric positive definite matrix \\${\\bf AA}^{\\sf T}\\$ and an associated sparse Cholesky factorization \\${\\bf LDL}^{\\sf T}\\$ or \\${\\bf LL}^{\\sf T}\\$, we develop sparse techniques for obtaining the new factorization associated with either adding a column to \\${\\bf A}\\$ or deleting a column from \\${\\bf A}\\$. Our techniques are based on an analysis and manipulation of the underlying graph structure and on ideas of Gill et al.\\ [ Math. Comp., 28 (1974), pp. 505--535] for modifying a dense Cholesky factorization. We show that our methods extend to the general case where an arbitrary sparse symmetric positive definite matrix is modified. Our methods are optimal in the sense that they take time proportional to the number of nonzero entries in \\${\\bf L}\\$ and \\${\\bf D}\\$ that change. }\n}\n\n\n@article{RENNICH2016140,\ntitle = {Accelerating sparse Cholesky factorization on GPUs},\njournal = {Parallel Computing},\nvolume = {59},\npages = {140-150},\nyear = {2016},\nnote = {Theory and Practice of Irregular Applications},\nissn = {0167-8191},\ndoi = {https://doi.org/10.1016/j.parco.2016.06.004},\nurl = {https://www.sciencedirect.com/science/article/pii/S016781911630059X},\nauthor = {Steven C. Rennich and Darko Stosic and Timothy A. Davis},\nkeywords = {Sparse, Cholesky, Factorization, GPU, Parallel},\nabstract = {Sparse factorization is a fundamental tool in scientific computing. As the major component of a sparse direct solver, it represents the dominant computational cost for many analyses. For factorizations which involve sufficient dense math, the substantial computational capability provided by GPUs (Graphics Processing Units) can help alleviate this cost. However, for many other cases, the prevalence of small/irregular dense math and the relatively slow communication between the host and device over the PCIe bus, make it challenging to significantly accelerate sparse factorization using the GPU. In this paper we describe a left-looking supernodal Cholesky factorization algorithm which permits improved utilization of the GPU when factoring sparse matrices. The central idea is to stream subtrees of the elimination tree through the GPU and perform the factorization of each subtree entirely on the GPU. This avoids the majority of the PCIe communication without the need for a complex task scheduler. Importantly, within these subtrees, many independent, small, dense operations are batched to minimize kernel launch overhead and many of these batched kernels are executed concurrently to maximize device utilization. Performance results for commonly studied matrices are presented along with suggested actions for further optimization.}\n}\n\n@article{10.1145/1024074.1024081,\nauthor = {Amestoy, Patrick R. and Davis, Timothy A. and Duff, Iain S.},\ntitle = {Algorithm 837: AMD, an Approximate Minimum Degree Ordering Algorithm},\nyear = {2004},\nissue_date = {September 2004},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {30},\nnumber = {3},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1024074.1024081},\ndoi = {10.1145/1024074.1024081},\nabstract = {AMD is a set of routines that implements the approximate minimum degree ordering algorithm to permute sparse matrices prior to numerical factorization. There are versions written in both C and Fortran 77. A MATLAB interface is included.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {sep},\npages = {381\u2013388},\nnumpages = {8},\nkeywords = {sparse matrices, Linear equations, ordering methods, minimum degree}\n}\n\n\n\n\n\n\n\n@article{doi:10.1137/S0895479894278952,\nauthor = {Amestoy, Patrick R. and Davis, Timothy A. and Duff, Iain S.},\ntitle = {An Approximate Minimum Degree Ordering Algorithm},\njournal = {SIAM Journal on Matrix Analysis and Applications},\nvolume = {17},\nnumber = {4},\npages = {886-905},\nyear = {1996},\ndoi = {10.1137/S0895479894278952},\nURL = { https://doi.org/10.1137/S0895479894278952 },\neprint = { https://doi.org/10.1137/S0895479894278952 } ,\n    abstract = { Abstract. An approximate minimum degree (AMD), ordering algorithm for preordering a symmetric sparse matrix prior to numerical factorization is presented. We use techniques based on the quotient graph for matrix factorization that allow us to obtain computationally cheap bounds for the minimum degree. We show that these bounds are often equal to the actual degree. The resulting algorithm is typically much faster than previous minimum degree ordering algorithms and produces results that are comparable in quality with the best orderings from other minimum degree algorithms. }\n}\n\n\n@article{10.1145/1024074.1024080,\nauthor = {Davis, Timothy A. and Gilbert, John R. and Larimore, Stefan I. and Ng, Esmond G.},\ntitle = {Algorithm 836: COLAMD, a Column Approximate Minimum Degree Ordering Algorithm},\nyear = {2004},\nissue_date = {September 2004},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {30},\nnumber = {3},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1024074.1024080},\ndoi = {10.1145/1024074.1024080},\nabstract = {Two codes are discussed, COLAMD and SYMAMD, that compute approximate minimum degree orderings for sparse matrices in two contexts: (1) sparse partial pivoting, which requires a sparsity preserving column pre-ordering prior to numerical factorization, and (2) sparse Cholesky factorization, which requires a symmetric permutation of both the rows and columns of the matrix being factorized. These orderings are computed by COLAMD and SYMAMD, respectively. The ordering from COLAMD is also suitable for sparse QR factorization, and the factorization of matrices of the form ATA and AAT, such as those that arise in least-squares problems and interior point methods for linear programming problems. The two routines are available both in MATLAB and C-callable forms. They appear as built-in routines in MATLAB Version 6.0.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {sep},\npages = {377\u2013380},\nnumpages = {4},\nkeywords = {sparse nonsymmetric matrices, ordering methods, Linear equations}\n}\n\n@article{10.1145/1024074.1024079,\nauthor = {Davis, Timothy A. and Gilbert, John R. and Larimore, Stefan I. and Ng, Esmond G.},\ntitle = {A Column Approximate Minimum Degree Ordering Algorithm},\nyear = {2004},\nissue_date = {September 2004},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {30},\nnumber = {3},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1024074.1024079},\ndoi = {10.1145/1024074.1024079},\nabstract = {Sparse Gaussian elimination with partial pivoting computes the factorization PAQ = LU of a sparse matrix A, where the row ordering P is selected during factorization using standard partial pivoting with row interchanges. The goal is to select a column preordering, Q, based solely on the nonzero pattern of A, that limits the worst-case number of nonzeros in the factorization. The fill-in also depends on P, but Q is selected to reduce an upper bound on the fill-in for any subsequent choice of P. The choice of Q can have a dramatic impact on the number of nonzeros in L and U. One scheme for determining a good column ordering for A is to compute a symmetric ordering that reduces fill-in in the Cholesky factorization of ATA. A conventional minimum degree ordering algorithm would require the sparsity structure of ATA to be computed, which can be expensive both in terms of space and time since ATA may be much denser than A. An alternative is to compute Q directly from the sparsity structure of A; this strategy is used by MATLAB's COLMMD preordering algorithm. A new ordering algorithm, COLAMD, is presented. It is based on the same strategy but uses a better ordering heuristic. COLAMD is faster and computes better orderings, with fewer nonzeros in the factors of the matrix.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {sep},\npages = {353\u2013376},\nnumpages = {24},\nkeywords = {linear equations, Sparse nonsymmetric matrices, ordering methods}\n}\n\n@article{10.1145/992200.992206,\nauthor = {Davis, Timothy A.},\ntitle = {Algorithm 832: UMFPACK V4.3---an Unsymmetric-Pattern Multifrontal Method},\nyear = {2004},\nissue_date = {June 2004},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {30},\nnumber = {2},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/992200.992206},\ndoi = {10.1145/992200.992206},\nabstract = {An ANSI C code for sparse LU factorization is presented that combines a column pre-ordering strategy with a right-looking unsymmetric-pattern multifrontal numerical factorization. The pre-ordering and symbolic analysis phase computes an upper bound on fill-in, work, and memory usage during the subsequent numerical factorization. User-callable routines are provided for ordering and analyzing a sparse matrix, computing the numerical factorization, solving a system with the LU factors, transposing and permuting a sparse matrix, and converting between sparse matrix representations. The simple user interface shields the user from the details of the complex sparse factorization data structures by returning simple handles to opaque objects. Additional user-callable routines are provided for printing and extracting the contents of these opaque objects. An even simpler way to use the package is through its MATLAB interface. UMFPACK is incorporated as a built-in operator in MATLAB 6.5 as x = Ab when A is sparse and unsymmetric.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {jun},\npages = {196\u2013199},\nnumpages = {4},\nkeywords = {ordering methods, multifrontal method, sparse nonsymmetric matrices, linear equations}\n}\n\n\n@article{10.1145/992200.992205,\nauthor = {Davis, Timothy A.},\ntitle = {A Column Pre-Ordering Strategy for the Unsymmetric-Pattern Multifrontal Method},\nyear = {2004},\nissue_date = {June 2004},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {30},\nnumber = {2},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/992200.992205},\ndoi = {10.1145/992200.992205},\nabstract = {A new method for sparse LU factorization is presented that combines a column pre-ordering strategy with a right-looking unsymmetric-pattern multifrontal numerical factorization. The column ordering is selected to give a good a priori upper bound on fill-in and then refined during numerical factorization (while preserving the bound). Pivot rows are selected to maintain numerical stability and to preserve sparsity. The method analyzes the matrix and automatically selects one of three pre-ordering and pivoting strategies. The number of nonzeros in the LU factors computed by the method is typically less than or equal to those found by a wide range of unsymmetric sparse LU factorization methods, including left-looking methods and prior multifrontal methods.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {jun},\npages = {165\u2013195},\nnumpages = {31},\nkeywords = {linear equations, multifrontal method, sparse nonsymmetric matrices, ordering methods}\n}\n\n@article{10.1145/305658.287640,\nauthor = {Davis, Timothy A. and Duff, Iain S.},\ntitle = {A Combined Unifrontal/Multifrontal Method for Unsymmetric Sparse Matrices},\nyear = {1999},\nissue_date = {March 1999},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {25},\nnumber = {1},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/305658.287640},\ndoi = {10.1145/305658.287640},\nabstract = {We discuss the organization of frontal matrices in multifrontal methods for the solution of large sparse sets of unsymmetric linear equations. In the multifrontal method, work on a frontal matrix can be suspended, the frontal matrix can be stored for later reuse, and a new frontal matrix can be generated. There are thus several frontal matrices stored during the factorization, and one or more of these are assembled (summed) when creating a new frontal matrix. Although this means that arbitrary sparsity patterns can be handled efficiently, extra work is required to sum the frontal matrices together and can be costly because indirect addressing is requred. The (uni)frontal method avoids this extra work by factorizing the matrix with a single frontal matrix. Rows and columns are added  to the frontal matrix, and pivot rows and columns are removed. Data movement is simpler, but higher fill-in can result if the matrix cannot be permuted into a variable-band form with small profile. We consider a combined unifrontal/multifrontal algorithm to enable general fill-in reduction orderings to be applied without the data movement of previous multifrontal approaches.  We discuss this technique in the context of a code designed for the solution of sparse systems with unsymmetric pattern.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {mar},\npages = {1\u201320},\nnumpages = {20},\nkeywords = {linear equations, frontal methods, sparse unsymmetric matrices, multifrontal methods}\n}\n\n\n\n\n\n\n\n\n@article{doi:10.1137/S0895479894246905,\nauthor = {Davis, Timothy A. and Duff, Iain S.},\ntitle = {An Unsymmetric-Pattern Multifrontal Method for Sparse LU Factorization},\njournal = {SIAM Journal on Matrix Analysis and Applications},\nvolume = {18},\nnumber = {1},\npages = {140-158},\nyear = {1997},\ndoi = {10.1137/S0895479894246905},\nURL = { https://doi.org/10.1137/S0895479894246905 },\neprint = { https://doi.org/10.1137/S0895479894246905 } ,\n    abstract = { Sparse matrix factorization algorithms for general problems are typically characterized by irregular memory access patterns that limit their performance on parallel-vector supercomputers. For symmetric problems, methods such as the multifrontal method avoid indirect addressing in the innermost loops by using dense matrix kernels. However, no efficient LU factorization algorithm based primarily on dense matrix kernels exists for matrices whose pattern is very unsymmetric. We address this deficiency and present a new unsymmetric-pattern multifrontal method based on dense matrix kernels. As in the classical multifrontal method, advantage is taken of repetitive structure in the matrix by factorizing more than one pivot in each frontal matrix, thus enabling the use of Level 2 and Level 3 BLAS. The performance is compared with the classical multifrontal method and other unsymmetric solvers on a CRAY C-98. }\n}\n\n\n@article{10.1145/2491491.2491498,\nauthor = {Davis, Timothy A.},\ntitle = {Algorithm 930: FACTORIZE: An Object-Oriented Linear System Solver for MATLAB},\nyear = {2013},\nissue_date = {July 2013},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {39},\nnumber = {4},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/2491491.2491498},\ndoi = {10.1145/2491491.2491498},\nabstract = {The MATLAB\u2122 backslash (x=Ab) is an elegant and powerful interface to a suite of high-performance factorization methods for the direct solution of the linear system Ax = b and the least-squares problem minx \u2016b - Ax\u2016. It is a meta-algorithm that selects the best factorization method for a particular matrix, whether sparse or dense. However, the simplicity and elegance of its single-character interface prohibits the reuse of its factorization for subsequent systems. Requiring MATLAB users to find the best factorization method on their own can lead to suboptimal choices; even MATLAB experts can make the wrong choice. Furthermore, naive MATLAB users have a tendency to translate mathematical expressions from linear algebra directly into MATLAB, so that x = A-1b becomes the inferior yet all-to-prevalent x=inv(A)*b. To address these issues, an object-oriented FACTORIZE method is presented. Via simple-to-use operator overloading, solving two linear systems can be written as F=factorize(A); x=Fb; y=Fc, where A is factorized only once. The selection of the best factorization method (LU, Cholesky, LDLT, QR, or a complete orthogonal decomposition for rank-deficient matrices) is hidden from the user. The mathematical expression x = A-1b directly translates into the MATLAB expression x=inverse(A)*b, which does not compute the inverse at all, but does the right thing by factorizing A and solving the corresponding triangular systems.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {jul},\narticleno = {28},\nnumpages = {18},\nkeywords = {object-oriented methods, least-square problems, matrix factorization, Linear systems}\n}\n\n\n@article{10.1145/1824801.1824814,\nauthor = {Davis, Timothy A. and Palamadai Natarajan, Ekanathan},\ntitle = {Algorithm 907: KLU, A Direct Sparse Solver for Circuit Simulation Problems},\nyear = {2010},\nissue_date = {September 2010},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {37},\nnumber = {3},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1824801.1824814},\ndoi = {10.1145/1824801.1824814},\nabstract = {KLU is a software package for solving sparse unsymmetric linear systems of equations that arise in circuit simulation applications. It relies on a permutation to Block Triangular Form (BTF), several methods for finding a fill-reducing ordering (variants of approximate minimum degree and nested dissection), and Gilbert/Peierls\u2019 sparse left-looking LU factorization algorithm to factorize each block. The package is written in C and includes a MATLAB interface. Performance results comparing KLU with SuperLU, Sparse 1.3, and UMFPACK on circuit simulation matrices are presented. KLU is the default sparse direct solver in the XyceTMcircuit simulation package developed by Sandia National Laboratories.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {sep},\narticleno = {36},\nnumpages = {17},\nkeywords = {LU factorization, circuit simulation, sparse matrices}\n}\n\n@article{10.1145/1114268.1114277,\nauthor = {Davis, Timothy A.},\ntitle = {Algorithm 849: A Concise Sparse Cholesky Factorization Package},\nyear = {2005},\nissue_date = {December 2005},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {31},\nnumber = {4},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/1114268.1114277},\ndoi = {10.1145/1114268.1114277},\nabstract = {The LDL software package is a set of short, concise routines for factorizing symmetric positive-definite sparse matrices, with some applicability to symmetric indefinite matrices. Its primary purpose is to illustrate much of the basic theory of sparse matrix algorithms in as concise a code as possible, including an elegant method of sparse symmetric factorization that computes the factorization row-by-row but stores it column-by-column. The entire symbolic and numeric factorization consists of less than 50 executable lines of code. The package is written in C, and includes a MATLAB interface.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {dec},\npages = {587\u2013591},\nnumpages = {5},\nkeywords = {Cholesky factorization, linear equations, sparse matrices}\n}\n\n@article{10.1145/2049662.2049663,\nauthor = {Davis, Timothy A. and Hu, Yifan},\ntitle = {The University of Florida Sparse Matrix Collection},\nyear = {2011},\nissue_date = {November 2011},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {38},\nnumber = {1},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/2049662.2049663},\ndoi = {10.1145/2049662.2049663},\nabstract = {We describe the University of Florida Sparse Matrix Collection, a large and actively growing set of sparse matrices that arise in real applications. The Collection is widely used by the numerical linear algebra community for the development and performance evaluation of sparse matrix algorithms. It allows for robust and repeatable experiments: robust because performance results with artificially generated matrices can be misleading, and repeatable because matrices are curated and made publicly available in many formats. Its matrices cover a wide spectrum of domains, include those arising from problems with underlying 2D or 3D geometry (as structural engineering, computational fluid dynamics, model reduction, electromagnetics, semiconductor devices, thermodynamics, materials, acoustics, computer graphics/vision, robotics/kinematics, and other discretizations) and those that typically do not have such geometry (optimization, circuit simulation, economic and financial modeling, theoretical and quantum chemistry, chemical process simulation, mathematics and statistics, power networks, and other networks and graphs). We provide software for accessing and managing the Collection, from MATLAB\u2122, Mathematica\u2122, Fortran, and C, as well as an online search capability. Graph visualization of the matrices is provided, and a new multilevel coarsening scheme is proposed to facilitate this task.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {dec},\narticleno = {1},\nnumpages = {25},\nkeywords = {sparse matrices, Graph drawing, performance evaluation, multilevel algorithms}\n}\n\n\n@article{Kolodziej2019,\n  doi = {10.21105/joss.01244},\n  url = {https://doi.org/10.21105/joss.01244},\n  year = {2019},\n  publisher = {The Open Journal},\n  volume = {4},\n  number = {35},\n  pages = {1244},\n  author = {Scott P. Kolodziej and Mohsen Aznaveh and Matthew Bullock and Jarrett David and Timothy A. Davis and Matthew Henderson and Yifan Hu and Read Sandstrom},\n  title = {The SuiteSparse Matrix Collection Website Interface},\n  journal = {Journal of Open Source Software}\n}\n\n\n@article{10.1145/2513109.2513116,\nauthor = {Foster, Leslie V. and Davis, Timothy A.},\ntitle = {Algorithm 933: Reliable Calculation of Numerical Rank, Null Space Bases, Pseudoinverse Solutions, and Basic Solutions Using SuitesparseQR},\nyear = {2013},\nissue_date = {September 2013},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {40},\nnumber = {1},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/2513109.2513116},\ndoi = {10.1145/2513109.2513116},\nabstract = {The SPQR_RANK package contains routines that calculate the numerical rank of large, sparse, numerically rank-deficient matrices. The routines can also calculate orthonormal bases for numerical null spaces, approximate pseudoinverse solutions to least squares problems involving rank-deficient matrices, and basic solutions to these problems. The algorithms are based on SPQR from SuiteSparseQR (ACM Transactions on Mathematical Software 38, Article 8, 2011). SPQR is a high-performance routine for forming QR factorizations of large, sparse matrices. It returns an estimate for the numerical rank that is usually, but not always, correct. The new routines improve the accuracy of the numerical rank calculated by SPQR and reliably determine the numerical rank in the sense that, based on extensive testing with matrices from applications, the numerical rank is almost always accurately determined when our methods report that the numerical rank should be correct. Reliable determination of numerical rank is critical to the other calculations in the package. The routines work well for matrices with either small or large null space dimensions.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {oct},\narticleno = {7},\nnumpages = {23},\nkeywords = {QR factorization, pseudoinverse, Numerical rank, null space, rank revealing, sparse matrices}\n}\n\n@article{10.1145/3337792,\nauthor = {Davis, Timothy A. and Hager, William W. and Kolodziej, Scott P. and Yeralan, S. Nuri},\ntitle = {Algorithm 1003: Mongoose, a Graph Coarsening and Partitioning Library},\nyear = {2020},\nissue_date = {March 2020},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nvolume = {46},\nnumber = {1},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/3337792},\ndoi = {10.1145/3337792},\nabstract = {Partitioning graphs is a common and useful operation in many areas, from parallel computing to VLSI design to sparse matrix algorithms. In this article, we introduce Mongoose, a multilevel hybrid graph partitioning algorithm and library. Building on previous work in multilevel partitioning frameworks and combinatoric approaches, we introduce novel stall-reducing and stall-free coarsening strategies, as well as an efficient hybrid algorithm leveraging (1) traditional combinatoric methods and (2) continuous quadratic programming formulations. We demonstrate how this new hybrid algorithm outperforms either strategy in isolation, and we also compare Mongoose to METIS and demonstrate its effectiveness on large and social networking (power law) graphs.},\njournal = {ACM Trans. Math. Softw.},\nmonth = {mar},\narticleno = {7},\nnumpages = {18},\nkeywords = {vertex matching, Graph partitioning, graph coarsening}\n}\n\n\n@article{10.1145/3519024,\nauthor = {Lourenco, Christopher and Chen, Jinhao and Moreno-Centeno, Erick and Davis, Timothy A.},\ntitle = {Algorithm&nbsp;1XXX: SPEX Left LU, Exactly Solving Sparse Linear Systems via a Sparse Left-Looking Integer-Preserving LU Factorization},\nyear = {2022},\npublisher = {Association for Computing Machinery},\naddress = {New York, NY, USA},\nissn = {0098-3500},\nurl = {https://doi.org/10.1145/3519024},\ndoi = {10.1145/3519024},\nabstract = {SPEX Left LU is a software package for exactly solving unsymmetric sparse linear systems. As a component of the sparse exact (SPEX) software package, SPEX Left LU can be applied to any input matrix, A, whose entries are integral, rational, or decimal, and provides a solution to the system Ax = b which is either exact or accurate to user-specified precision. SPEX Left LU preorders the matrix A with a user-specified fill-reducing ordering and computes a left-looking LU factorization with the special property that each operation used to compute the L and U matrices is integral. Notable additional applications of this package include benchmarking the stability and accuracy of state-of-the-art linear solvers, and determining whether singular-to-double-precision matrices are indeed singular. Computationally, this paper evaluates the impact of several novel pivoting schemes in exact arithmetic, benchmarks the exact iterative solvers within Linbox, and benchmarks the accuracy of MATLAB sparse backslash. Most importantly, it is shown that SPEX Left LU outperforms the exact iterative solvers in run time on easy instances and in stability as the iterative solver fails on a sizeable subset of the tested (both easy and hard) instances. The SPEX Left LU package is written in ANSI C, comes with a MATLAB interface, and is distributed via GitHub, as a component of the SPEX software package, and as a component of SuiteSparse.},\nnote = {Just Accepted},\njournal = {ACM Trans. Math. Softw.},\nmonth = {feb},\nkeywords = {exact matrix factorization, sparse linear systems, sparse matrix algorithms, exactly solving linear systems, roundoff errors}\n}\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/CITATION.bib",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to cite the SuiteSparse meta-package and its component packages:",
+        "type": "Text_excerpt",
+        "value": "SuiteSparse is a meta-package of many packages, each with their own published\npapers.  To cite the whole collection, use the URLs:\n\n    * https://github.com/DrTimothyAldenDavis/SuiteSparse\n    * http://suitesparse.com (which is a forwarding URL\n        to https://people.engr.tamu.edu/davis/suitesparse.html)\n\nPlease also cite the specific papers for the packages you use.  This is a long\nlist; if you want a shorter list, just cite the most recent \"Algorithm XXX:\"\npapers in ACM TOMS, for each package.\n\n    * For the MATLAB x=A\\b, see below for AMD, COLAMD, CHOLMOD, UMFPACK,\n        and SuiteSparseQR (SPQR).\n\n    * for GraphBLAS, and `C=A*B` in MATLAB (sparse-times-sparse):\n\n        T. A. Davis. Algorithm 1037: SuiteSparse:GraphBLAS: Parallel Graph\n        Algorithms in the Language of Sparse Linear Algebra. ACM Trans. Math.\n        Softw. 49, 3, Article 28 (September 2023), 30 pages.\n        https://doi.org/10.1145/3577195\n\n        T. Davis, Algorithm 1000: SuiteSparse:GraphBLAS: graph algorithms in\n        the language of sparse linear algebra, ACM Trans on Mathematical\n        Software, vol 45, no 4, Dec. 2019, Article No 44.\n        https://doi.org/10.1145/3322125.\n\n    * for CSparse/CXSParse:\n\n        T. A. Davis, Direct Methods for Sparse Linear Systems, SIAM Series on\n        the Fundamentals of Algorithms, SIAM, Philadelphia, PA, 2006.\n        https://doi.org/10.1137/1.9780898718881\n\n    * for SuiteSparseQR (SPQR): (also cite AMD, COLAMD):\n\n        T. A. Davis, Algorithm 915: SuiteSparseQR: Multifrontal multithreaded\n        rank-revealing sparse QR factorization, ACM Trans. on Mathematical\n        Software, 38(1), 2011, pp. 8:1--8:22.\n        https://doi.org/10.1145/2049662.2049670\n\n    * for SuiteSparseQR/GPU:\n\n        Sencer Nuri Yeralan, T. A. Davis, Wissam M. Sid-Lakhdar, and Sanjay\n        Ranka. 2017. Algorithm 980: Sparse QR Factorization on the GPU.  ACM\n        Trans. Math. Softw. 44, 2, Article 17 (June 2018), 29 pages.\n        https://doi.org/10.1145/3065870\n\n    * for CHOLMOD: (also cite AMD, COLAMD):\n\n        Y. Chen, T. A. Davis, W. W. Hager, and S. Rajamanickam, Algorithm 887:\n        CHOLMOD, supernodal sparse Cholesky factorization and update/downdate,\n        ACM Trans. on Mathematical Software, 35(3), 2008, pp. 22:1--22:14.\n        https://dl.acm.org/doi/abs/10.1145/1391989.1391995\n\n        T. A. Davis and W. W. Hager, Dynamic supernodes in sparse Cholesky\n        update/downdate and triangular solves, ACM Trans. on Mathematical\n        Software, 35(4), 2009, pp. 27:1--27:23.\n        https://doi.org/10.1145/1462173.1462176\n\n    * for CHOLMOD/Modify Module: (also cite AMD, COLAMD):\n\n        T. A. Davis and William W. Hager, Row Modifications of a Sparse\n        Cholesky Factorization SIAM Journal on Matrix Analysis and Applications\n        2005 26:3, 621-639\n        https://doi.org/10.1137/S089547980343641X\n\n        T. A. Davis and William W. Hager, Multiple-Rank Modifications of a\n        Sparse Cholesky Factorization SIAM Journal on Matrix Analysis and\n        Applications 2001 22:4, 997-1013\n        https://doi.org/10.1137/S0895479899357346\n\n        T. A. Davis and William W. Hager, Modifying a Sparse Cholesky\n        Factorization, SIAM Journal on Matrix Analysis and Applications 1999\n        20:3, 606-627\n        https://doi.org/10.1137/S0895479897321076\n\n    * for CHOLMOD/GPU Modules:\n\n        Steven C. Rennich, Darko Stosic, Timothy A. Davis, Accelerating sparse\n        Cholesky factorization on GPUs, Parallel Computing, Vol 59, 2016, pp\n        140-150.\n        https://doi.org/10.1016/j.parco.2016.06.004\n\n    * for AMD and CAMD:\n\n        P. Amestoy, T. A. Davis, and I. S. Duff, Algorithm 837: An approximate\n        minimum degree ordering algorithm, ACM Trans. on Mathematical Software,\n        30(3), 2004, pp. 381--388.\n        https://dl.acm.org/doi/abs/10.1145/1024074.1024081\n\n        P. Amestoy, T. A. Davis, and I. S. Duff, An approximate minimum degree\n        ordering algorithm, SIAM J. Matrix Analysis and Applications, 17(4),\n        1996, pp. 886--905.\n        https://doi.org/10.1137/S0895479894278952\n\n    * for COLAMD, SYMAMD, CCOLAMD, and CSYMAMD:\n\n        T. A. Davis, J. R. Gilbert, S. Larimore, E. Ng, Algorithm 836:  COLAMD,\n        an approximate column minimum degree ordering algorithm, ACM Trans. on\n        Mathematical Software, 30(3), 2004, pp. 377--380.\n        https://doi.org/10.1145/1024074.1024080\n\n        T. A. Davis, J. R. Gilbert, S. Larimore, E. Ng, A column approximate\n        minimum degree ordering algorithm, ACM Trans. on Mathematical Software,\n        30(3), 2004, pp. 353--376.\n        https://doi.org/10.1145/1024074.1024079\n\n    * for UMFPACK: (also cite AMD and COLAMD):\n\n        T. A. Davis, Algorithm 832:  UMFPACK - an unsymmetric-pattern\n        multifrontal method with a column pre-ordering strategy, ACM Trans. on\n        Mathematical Software, 30(2), 2004, pp. 196--199.\n        https://dl.acm.org/doi/abs/10.1145/992200.992206\n\n        T. A. Davis, A column pre-ordering strategy for the unsymmetric-pattern\n        multifrontal method, ACM Trans. on Mathematical Software, 30(2), 2004,\n        pp. 165--195.\n        https://dl.acm.org/doi/abs/10.1145/992200.992205\n\n        T. A. Davis and I. S. Duff, A combined unifrontal/multifrontal method\n        for unsymmetric sparse matrices, ACM Trans. on Mathematical Software,\n        25(1), 1999, pp. 1--19.\n        https://doi.org/10.1145/305658.287640\n\n        T. A. Davis and I. S. Duff, An unsymmetric-pattern multifrontal method\n        for sparse LU factorization, SIAM J. Matrix Analysis and Computations,\n        18(1), 1997, pp. 140--158.\n        https://doi.org/10.1137/S0895479894246905\n\n    * for the FACTORIZE m-file:\n\n        T. A. Davis, Algorithm 930: FACTORIZE, an object-oriented linear system\n        solver for MATLAB, ACM Trans. on Mathematical Software, 39(4), 2013,\n        pp. 28:1-28:18.\n        https://doi.org/10.1145/2491491.2491498\n\n    * for KLU and BTF (also cite AMD and COLAMD):\n\n        T. A. Davis and Ekanathan Palamadai Natarajan. 2010. Algorithm 907:\n        KLU, A Direct Sparse Solver for Circuit Simulation Problems. ACM Trans.\n        Math. Softw. 37, 3, Article 36 (September 2010), 17 pages.\n        https://dl.acm.org/doi/abs/10.1145/1824801.1824814\n\n    * for LDL:\n\n        T. A. Davis. Algorithm 849: A concise sparse Cholesky factorization\n        package. ACM Trans. Math. Softw. 31, 4 (December 2005), 587\u2013591.\n        https://doi.org/10.1145/1114268.1114277\n\n    * for ssget and the SuiteSparse Matrix Collection:\n\n        T. A. Davis and Yifan Hu. 2011. The University of Florida sparse\n        matrix collection. ACM Trans. Math. Softw. 38, 1, Article 1 (November\n        2011), 25 pages.\n        https://doi.org/10.1145/2049662.2049663\n\n        Kolodziej et al., (2019). The SuiteSparse Matrix Collection Website\n        Interface. Journal of Open Source Software, 4(35), 1244,\n        https://doi.org/10.21105/joss.01244\n\n    * for `spqr_rank`:\n\n        Leslie V. Foster and T. A. Davis. 2013. Algorithm 933: Reliable\n        calculation of numerical rank, null space bases, pseudoinverse\n        solutions, and basic solutions using suitesparseQR. ACM Trans. Math.\n        Softw. 40, 1, Article 7 (September 2013), 23 pages.\n        https://doi.org/10.1145/2513109.2513116\n\n    * for Mongoose:\n\n        T. A. Davis, William W. Hager, Scott P. Kolodziej, and S. Nuri Yeralan.\n        2020. Algorithm 1003: Mongoose, a Graph Coarsening and Partitioning\n        Library. ACM Trans. Math. Softw. 46, 1, Article 7 (March 2020), 18\n        pages.\n        https://doi.org/10.1145/3337792\n\n    * for SPEX:\n\n        Christopher Lourenco, Jinhao Chen, Erick Moreno-Centeno, and T. A.\n        Davis. 2022. Algorithm 1021: SPEX Left LU, Exactly Solving Sparse\n        Linear Systems via a Sparse Left-Looking Integer-Preserving LU\n        Factorization. ACM Trans. Math. Softw. June 2022.\n        https://doi.org/10.1145/3519024\n\n-----------------------------------------------------------------------------"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "## Code of Conduct:\n\nhttps://en.wikipedia.org/wiki/Golden_Rule\n\n## Scope:\n\nUniversal.  When in doubt, assume the rule applies to you as it does to\nthe most sensitive person you can imagine (your grandmother, perhaps).\nPut yourself in their shoes, and then apply the rule to them.  Then\ntreat that person in the same manner.  This addresses the one major\npossible criticism of the Golden Rule\n( https://en.wikipedia.org/wiki/Golden_Rule#Criticism )\n\n## Enforcement:\n\nContact Tim Davis, DrTimothyAldenDavis@gmail.com.  I take this very\nseriously.\n"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/deepin-community/suitesparse"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ScottKolo/Mongoose"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://travis-ci.com/ScottKolo/Mongoose"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/.github/workflows/call-chatOps.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/.github/workflows/call-build-tag.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/.github/workflows/call-auto-tag.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/.github/workflows/backup-to-gitlab.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/.github/workflows/call-build-deb.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to SuiteSparse\n\nTo add an issue for a bug report (gasp!) or a feature request,\nyou can use the issue tracker on github.com, at\n[`https://github.com/DrTimothyAldenDavis/SuiteSparse/issues`]\n(https://github.com/DrTimothyAldenDavis/SuiteSparse/issues).\n\nTo contribute code, you can submit a pull request.  To do so,\nyou must first agree to the Contributor License Agreement\n[`CONTRIBUTOR-LICENSE.txt`](CONTRIBUTOR-LICENSE.txt).\nPrint a copy of the txt file (as a PDF), sign and date it,\nand email it to me at DrTimothyAldenDavis@gmail.com.  Pull\nrequests will only be included into SuiteSparse after I receive\nyour email with the signed PDF.\n\nDo not submit a pull request to the default branch.\nInstead, use the dev or dev2 branches.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-08-15T15:19:16Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-04-09"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-05-25"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-10-09T10:47:40Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2023-09-18"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Mongoose is a hybrid graph partitioning library."
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8926597412709981,
+      "result": {
+        "original_header": "SuiteSparse:  A Suite of Sparse matrix packages at http://suitesparse.com",
+        "type": "Text_excerpt",
+        "value": "METIS is authored by George Karypis. \n"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9689097464477241,
+      "result": {
+        "original_header": "SuiteSparse branches",
+        "type": "Text_excerpt",
+        "value": "    * dev: the default branch, with recent updates of features to appear in\n        the next stable release.  The intent is to keep this branch in\n        fully working order at all times, but the features will not be\n        finalized at any given time.\n    * stable: the most recent stable release.\n    * dev2: working branch.  All submitted PRs should made to this branch.\n        This branch might not always be in working order. \n"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9292188826948057,
+      "result": {
+        "original_header": "About the BLAS and LAPACK libraries",
+        "type": "Text_excerpt",
+        "value": "NOTE: Use of the Intel MKL BLAS is strongly recommended.  In a 2019 test,\nOpenBLAS caused result in severe performance degradation.  The reason for this\nis being investigated, and this may be resolved in the near future. \nTo select your BLAS/LAPACK, see the instructions in SuiteSparseBLAS.cmake in\n`SuiteSparse_config/cmake_modules`.  If `SuiteSparse_config` finds a BLAS with\n64-bit integers (such as the Intel MKL ilp64 BLAS), it configures\n`SuiteSparse_config.h` with the `SUITESPARSE_BLAS_INT` defined as `int64_t`.\nOtherwise, if a 32-bit BLAS is found, this type is defined as `int32_t`.  If\nlater on, UMFPACK, CHOLMOD, or SPQR are compiled and linked  with a BLAS that\nhas a different integer size, you must override the definition with -DBLAS64\n(to assert the use of 64-bit integers in the BLAS) or -DBLAS32, (to assert the\nuse of 32-bit integers in the BLAS). \nWhen distributed in a binary form (such as a Debian, Ubuntu, Spack, or Brew\npackage), SuiteSparse should probably be compiled to expect a 32-bit BLAS,\nsince this is the most common case.  The default is to use a 32-bit BLAS, but\nthis can be changed in SuiteSparseBLAS.cmake or by compiling with\n`-DALLOW_64BIT_BLAS=1`. \n"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8975154992563044,
+      "result": {
+        "original_header": "SuiteSparse Packages",
+        "type": "Text_excerpt",
+        "value": "Packages in SuiteSparse, and files in this directory: \n    AMD         approximate minimum degree ordering.  This is the built-in AMD\n                function in MATLAB.\n                authors: Tim Davis, Patrick Amestoy, Iain Duff \n    ChangeLog   a summary of changes to SuiteSparse.  See */Doc/ChangeLog\n                for details for each package. \n    CHOLMOD     sparse Cholesky factorization.  Requires AMD, COLAMD, CCOLAMD,\n                the BLAS, and LAPACK.  Optionally uses METIS.  This is chol and\n                x=A\\b in MATLAB.\n                author for all modules: Tim Davis\n                CHOLMOD/Modify module authors: Tim Davis and William W. Hager \n    COLAMD      column approximate minimum degree ordering.  This is the\n                built-in COLAMD function in MATLAB.\n                authors (of the code): Tim Davis and Stefan Larimore\n                Algorithm design collaborators: Esmond Ng, John Gilbert \n    CSparse     a concise sparse matrix package, developed for my\n                book, \"Direct Methods for Sparse Linear Systems\",\n                published by SIAM.  Intended primarily for teaching.\n                Note that the code is (c) Tim Davis, as stated in the book.\n                For production, use CXSparse instead.  In particular, both\n                CSparse and CXSparse have the same include filename: cs.h.\n                This package is used for the built-in DMPERM in MATLAB.\n                author: Tim Davis \n    CXSparse    CSparse Extended.  Includes support for complex matrices\n                and both int or long integers.  Use this instead of CSparse\n                for production use; it creates a libcsparse.so (or *dylib on\n                the Mac) with the same name as CSparse.  It is a superset\n                of CSparse.  Any code that links against CSparse should\n                also be able to link against CXSparse instead.\n                author: Tim Davis, David Bateman \n    Makefile    optional, to compile all of SuiteSparse \n                make distclean  removes all files not in distribution, including\n                                ./bin, ./share, ./lib, and ./include. \n                make clean      removes all files not in distribution, but\n                                keeps compiled libraries and demoes, ./lib,\n                                ./share, and ./include. \n                Contents.m      list of contents\n                dimacs10        loads matrices for DIMACS10 collection\n                Factorize       object-oriented x=A\\b for MATLAB\n                find_components finds connected components in an image\n                GEE             simple Gaussian elimination\n                getversion.m    determine MATLAB version\n                gipper.m        create MATLAB archive\n                hprintf.m       print hyperlinks in command window\n                LINFACTOR       predecessor to Factorize package\n                MESHND          nested dissection ordering of regular meshes\n                pagerankdemo.m  illustrates how PageRank works\n                SFMULT          C=S*F where S is sparse and F is full\n                shellgui        display a seashell\n                sparseinv       sparse inverse subset\n                spok            check if a sparse matrix is valid\n                spqr_rank       SPQR_RANK package.  MATLAB toolbox for rank\n                                deficient sparse matrices: null spaces,\n                                reliable factorizations, etc.  With Leslie\n                                Foster, San Jose State Univ.\n                SSMULT          C=A*B where A and B are both sparse\n                SuiteSparseCollection    for the SuiteSparse Matrix Collection\n                waitmex         waitbar for use inside a mexFunction \n    UMFPACK     sparse LU factorization.  Requires AMD and the BLAS.\n                This is the built-in lu and x=A\\b in MATLAB.\n                author: Tim Davis\n                algorithm design collaboration: Iain Duff \nSome codes optionally use METIS 5.1.0.  This package is located in SuiteSparse\nin the `CHOLMOD/SuiteSparse_metis` directory.  Its use is optional.  To compile\nCHOLMOD without it, use the CMAKE_OPTIONS=\"-DNPARTITION=1\" setting.  The use of\nMETIS can improve ordering quality for some matrices, particularly large 3D\ndiscretizations.  METIS has been slightly modified for use in SuiteSparse; see\nthe `CHOLMOD/SuiteSparse_metis/README.txt` file for details. \n"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8997745412409287,
+      "result": {
+        "original_header": "Compilation options",
+        "type": "Text_excerpt",
+        "value": "    ENABLE_CUDA:        if set to true, CUDA is enabled for the project.\n                        Default: true for CHOLMOD and SPQR; false otherwise \n    NSTATIC:            if true, static libraries are not built.\n                        Default: false, except for GraphBLAS, which\n                        takes a long time to compile so the default for\n                        GraphBLAS is true.  For Mongoose, the NSTATIC setting\n                        is treated as if it always false, since the mongoose\n                        program is built with the static library. \n    NOPENMP             if true: OpenMP is not used.  Default: false.\n                        UMFPACK, CHOLMOD, SPQR, and GraphBLAS will be slow.\n                        Note that BLAS and LAPACK may still use OpenMP\n                        internally; if you wish to disable OpenMP in an entire\n                        application, select a single-threaded BLAS/LAPACK.\n                        WARNING: GraphBLAS may not be thread-safe if built\n                        without OpenMP (see the User Guide for details). \nCHOLMOD is composed of a set of Modules that can be independently selected;\nall options default to false: \n"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/deepin-community/suitesparse/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ScottKolo/Mongoose/archive/v3.2.1.zip"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/deepin-community/suitesparse/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "deepin-community/suitesparse"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/cpu_features/ci/docker/toolchain/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/cpu_features/ci/docker/toolchain/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/cpu_features/ci/docker/amd64/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/cpu_features/ci/docker/amd64/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/cpu_features/.github/workflows/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/cpu_features/.github/workflows/Dockerfile",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/cpu_features/ci/doc/generate_image.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/cpu_features/scripts/run_integration.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/cpu_features/scripts/test_integration.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/cpu_features/scripts/make_release.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/CHOLMOD/Demo/gpu.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/SPQR/Demo/demo_colamd2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/SPQR/Demo/demo_colamd3.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/SPQR/Demo/demo_colamd.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/SPQR/Demo/demo_metis2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/SPQR/Demo/demo_metis3.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/SPQR/Demo/demo_metis.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Mongoose"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/deepin-community/suitesparse/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ScottKolo/Mongoose/issues"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Mongoose",
+          "SuiteSparse",
+          "software",
+          "graph partitioning",
+          "sparse matrices",
+          "graph coarsening",
+          "edge cut",
+          "scientific software",
+          "mathematical software"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "File_dump",
+        "value": "SuiteSparse:GraphBLAS, Timothy A. Davis, (c) 2017-2023, All Rights Reserved.\nThe following Apache-2.0 applies to all of SuiteSparse:GraphBLAS,\nexcept for 3rd-party software:\n\n    SPDX-License-Identifier: Apache-2.0\n\n    Licensed under the Apache License, Version 2.0 (the \"License\");\n    you may not use SuiteSparse:GraphBLAS except in compliance with the\n    License.  You may obtain a copy of the License at\n\n        http://www.apache.org/licenses/LICENSE-2.0\n\n    Unless required by applicable law or agreed to in writing, software\n    distributed under the License is distributed on an \"AS IS\" BASIS,\n    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n    See the License for the specific language governing permissions and\n    limitations under the License.\n\n================================================================================\nDependencies on 3rd-party software:\n================================================================================\n\n--------------------------------------------------------------------------------\nrmm_wrap, CUDA, jitify:\n--------------------------------------------------------------------------------\n\nThe CUDA directory contains licensed OSS under the following terms:\n\nRMM\nhttp://github.com/rapidsai/rmm\nSPDX-License-Identifier: Apache-2.0\n\nJitify\nhttp://github.com/NVIDIA/jitify\nSPDX-License-Identifier: BSD-3-Clause\n\nCUB \nhttp://github.com/NVIDIA/cub\nSPDX-License-Identifier: BSD-3-Clause\n\nIn addition, any source files not part of the above packages is hereby\nlicensed under the Apache-2.0 license.\n\nCopyright 2020-2023, NVIDIA Corporation\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file expect in compilance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or imlied.\nSee the License for specific language governing permissions and \nlimitations under the License.\n\n\n\n--------------------------------------------------------------------------------\nLZ4:  SPDX-License-Identifier: BSD-2-Clause\n--------------------------------------------------------------------------------\n\nLZ4 Library\nCopyright (c) 2011-2016, Yann Collet\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice, this\n  list of conditions and the following disclaimer in the documentation and/or\n  other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n--------------------------------------------------------------------------------\ncpu_features: SPDX-License-Identifier: Apache-2.0\n--------------------------------------------------------------------------------\n\nCopyright 2017 Google LLC, Apache 2.0 license\n\nWith additional files from IBM and Intel (also Apache 2.0):\n\n    cpu_features/include/cpuinfo_ppc.h:1:// Copyright 2018 IBM (Apache 2.0)\n    cpu_features/src/impl_ppc_linux.c:1:// Copyright 2018 IBM. (Apache 2.0)\n    cpu_features/include/cpuinfo_x86.h:2:// Copyright 2020 Intel Corporation\n    cpu_features/src/impl_x86__base_implementation.inl:2:// Copyright 2020 Intel Corporation\n\n--------------------------------------------------------------------------------\ncpu_features/ndk_compat: SPDX-License-Identifier: BSD-2-Clause\n--------------------------------------------------------------------------------\n\n    Copyright (C) 2010 The Android Open Source Project\n    All rights reserved.\n    Redistribution and use in source and binary forms, with or without\n    modification, are permitted provided that the following conditions\n    are met:\n     * Redistributions of source code must retain the above copyright\n       notice, this list of conditions and the following disclaimer.\n     * Redistributions in binary form must reproduce the above copyright\n       notice, this list of conditions and the following disclaimer in\n       the documentation and/or other materials provided with the\n       distribution.\n    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n    \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\n    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS\n    FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE\n    COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\n    INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\n    BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS\n    OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED\n    AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\n    OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\n    OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n    SUCH DAMAGE.\n\n\n--------------------------------------------------------------------------------\nZSTD:  SPDX-License-Identifier: BSD-3-Clause\n--------------------------------------------------------------------------------\n\nBSD License\n\nFor Zstandard software\n\nCopyright (c) 2016-present, Meta, Inc. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n * Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n * Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n * Neither the name Meta nor the names of its contributors may be used to\n   endorse or promote products derived from this software without specific\n   prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n\n--------------------------------------------------------------------------------\nxxHash:  SPDX-License-Identifier: BSD-2-Clause\n--------------------------------------------------------------------------------\n\nxxHash Library\nCopyright (c) 2012-2021 Yann Collet\nAll rights reserved.\n\nBSD 2-Clause License (https://www.opensource.org/licenses/bsd-license.php)\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice, this\n  list of conditions and the following disclaimer in the documentation and/or\n  other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/GraphBLAS/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0-only.html",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0-only.html",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0-only.html"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "suitesparse"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Mongoose: A Graph Coarsening and Partitioning Library"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "deepin-community"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 47644765,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MATLAB",
+        "size": 3808290,
+        "type": "Programming_language",
+        "value": "MATLAB"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 2793625,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 1754425,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CMake",
+        "size": 525703,
+        "type": "Programming_language",
+        "value": "CMake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "size": 273465,
+        "type": "Programming_language",
+        "value": "Java"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Cuda",
+        "size": 231137,
+        "type": "Programming_language",
+        "value": "Cuda"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 226541,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 216900,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Fortran",
+        "size": 179355,
+        "type": "Programming_language",
+        "value": "Fortran"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Ruby",
+        "size": 51657,
+        "type": "Programming_language",
+        "value": "Ruby"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 33449,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 19867,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Assembly",
+        "size": 14207,
+        "type": "Programming_language",
+        "value": "Assembly"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jupyter Notebook",
+        "size": 10094,
+        "type": "Programming_language",
+        "value": "Jupyter Notebook"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 2411,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sed",
+        "size": 1692,
+        "type": "Programming_language",
+        "value": "sed"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Awk",
+        "size": 1567,
+        "type": "Programming_language",
+        "value": "Awk"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 156,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MATLAB",
+        "type": "Programming_language",
+        "value": "MATLAB",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:31:19",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "QUICK START FOR MATLAB USERS (Linux or Mac):",
+        "type": "Text_excerpt",
+        "value": "Suppose you place SuiteSparse in the /home/me/SuiteSparse folder.\n\nAdd the SuiteSparse/lib folder to your run-time library path.  On Linux, add\nthis to your ~/.bashrc script, assuming /home/me/SuiteSparse is the location of\nyour copy of SuiteSparse:\n\n    LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/me/SuiteSparse/lib\n    export LD_LIBRARY_PATH\n\nFor the Mac, use this instead, in your ~/.zshrc script, assuming you place\nSuiteSparse in /Users/me/SuiteSparse:\n\n    DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/Users/me/SuiteSparse/lib\n    export DYLD_LIBRARY_PATH\n\nCompile all of SuiteSparse with \"make local\".\n\nNext, compile the GraphBLAS MATLAB library.  In the system shell while in the\nSuiteSparse folder, type \"make gbmatlab\" if you want to install it system-wide\nwith \"make install\", or \"make gblocal\" if you want to use the library in\nyour own SuiteSparse/lib.\n\nThen in the MATLAB Command Window, cd to the SuiteSparse directory and type\n`SuiteSparse_install`.  All packages will be compiled, and several demos will be\nrun.  To run a (long!) exhaustive test, do `SuiteSparse_test`.\n\nSave your MATLAB path for future sessions with the MATLAB pathtool or savepath\ncommands.  If those methods fail because you don't have system-wide permission,\nadd the new paths to your startup.m file, normally in\nDocuments/MATLAB/startup.m.  You can also use the `SuiteSparse_paths` m-file to\nset all your paths at the start of each MATLAB session.\n\n-----------------------------------------------------------------------------"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "QUICK START FOR THE C/C++ LIBRARIES:",
+        "type": "Text_excerpt",
+        "value": "For Linux and Mac: type the following in this directory (requires system\npriviledge to do the `sudo make install`):\n\n    make\n    sudo make install\n\nAll libraries will be created and copied into the default system-wide folder\n(/usr/local/lib on Linux).  All include files need by the applications that use\nSuiteSparse are copied into /usr/local/include (on Linux).\n\nFor Windows, import each `*/CMakeLists.txt` file into MS Visual Studio.\nA single top-level CMake script is being considered as a feature in the\nfuture.  Be sure to specify the build type as Release; for example, to\nbuild `SuiteSparse_config` on Windows in the command window:\n\n    cd SuiteSparse_config/build\n    cmake ..\n    cmke --build . --config Release\n\nBe sure to first install all required libraries:  BLAS and LAPACK for UMFPACK,\nCHOLMOD, and SPQR, and GMP and MPFR for SPEX.  Be sure to use the latest\nlibraries; SPEX requires MPFR 4.0.2 and GMP 6.1.2 (these version numbers\ndo NOT correspond to the X.Y.Z suffix of libgmp.so.X.Y.Z and libmpfr.so.X.Y.Z;\nsee the SPEX user guide for details).\n\nTo compile the libraries and install them only in SuiteSparse/lib (not\n/usr/local/lib), do this instead in the top-level of SuiteSparse:\n\n    make local\n\nIf you add /home/me/SuiteSparse/lib to your library search path\n(`LD_LIBRARY_PATH` in Linux), you can do the following (for example):\n\n    S = /home/me/SuiteSparse\n    cc myprogram.c -I$(S)/include -lumfpack -lamd -lcholmod -lsuitesparseconfig -lm\n\nTo change the C and C++ compilers, and to compile in parallel use:\n\n    CC=gcc CX=g++ JOBS=32 make\n\nfor example, which changes the compiler to gcc and g++, and runs make with\n'make -j32', in parallel with 32 jobs.\n\nThis will work on Linux/Unix and the Mac.  It should automatically detect if\nyou have the Intel compilers or not, and whether or not you have CUDA.\n\nNOTE: Use of the Intel MKL BLAS is strongly recommended.  The OpenBLAS can\n(rarely) result in severe performance degradation, in CHOLMOD in particular.\nThe reason for this is still under investigation and might already be resolved\nin the current version of OpenBLAS.  See\n`SuiteSparse_config/cmake_modules/SuiteSparsePolicy.cmake` to select your BLAS.\n\nYou may also need to add SuiteSparse/lib to your path.  If your copy of\nSuiteSparse is in /home/me/SuiteSparse, for example, then add this to your\n~/.bashrc file:\n\n    LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/me/SuiteSparse/lib\n    export LD_LIBRARY_PATH\n\nFor the Mac, use this instead:\n\n    DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/home/me/SuiteSparse/lib\n    export DYLD_LIBRARY_PATH\n\n-----------------------------------------------------------------------------"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "3.2.1"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "3.2.1"
+      },
+      "source": "https://raw.githubusercontent.com/deepin-community/suitesparse/master/Mongoose/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,710 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9781303274082104,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech Library",
+        "email": "rsdoiel@caltech.edu",
+        "type": "String",
+        "value": "R. S. Doiel"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Doiel",
+            "given_name": "R. S.",
+            "name": "R. S. Doiel",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0003-0900-6903"
+          }
+        ],
+        "datePublished": "2025",
+        "format": "cff",
+        "title": "wsfn",
+        "type": "File_dump",
+        "value": "\ncff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\ntype: software\ntitle: wsfn\nabstract: \"A golang package providing simple static http services.\"\nauthors:\n  - family-names: Doiel\n    given-names: R. S.\n    orcid: https://orcid.org/0000-0003-0900-6903\n    email: rsdoiel@caltech.edu\n\ncontacts:\n  - family-names: \n    given-names: \n\nrepository-code: \"https://github.com/caltechlibrary/wsfn\"\nversion: 0.0.13\ndate-released: 2025-04-14\n\nlicense-url: \"https://caltechlibrary.github.io/wsfn/LICENSE\"\nkeywords:\n  - go\n  - web service\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/wsfn"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/wsfn"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-11-10T17:02:11Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-04-14"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-06T22:23:18Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-04-14"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Go package for standardize web service functionality across our library's go projects"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A golang package providing simple static http services."
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9366042482097061,
+      "result": {
+        "original_header": "wsfn",
+        "type": "Text_excerpt",
+        "value": "_wsfn_ is a package for common web functions Caltech Library uses \nin various Golang based Caltech Library tools and services. The goal \nis to standardize our handling of web interactions. \n+ wsfn.CORSPolicy is a structure for adding CORS headers to a http Handler\n+ StaticRouter is a http Handler Function for working with static routes\n+ RedirectRouter handles simple target prefix, destination prefix redirect handling\n    + AddRedirectRoute adds a target prefix and destination prefix\n    + HasRedirectRoutes return true if any redirect routes are configured\n    + RedirectRouter uses the internal redirect data to handle redirects\n+ ReverseProxy router lets front other web services. \n\nAn example **webserver** is also provided to demonstrate some of the\nfunctionality available with this package. The **webserver** is\nintended for instructional purposes only and shouldn't be used in a\nproduction setting. \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/wsfn/tree/main/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/wsfn/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/wsfn/releases"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/wsfn"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "wsfn"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/installer.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Installation for development of **wsfn**\n===========================================\n\n**wsfn** A golang package providing simple static http services.\n\nQuick install with curl or irm\n------------------------------\n\nThere is an experimental installer.sh script that can be run with the following command to install latest table release. This may work for macOS, Linux and if you\u2019re using Windows with the Unix subsystem. This would be run from your shell (e.g. Terminal on macOS).\n\n~~~shell\ncurl https://caltechlibrary.github.io/wsfn/installer.sh | sh\n~~~\n\nThis will install the programs included in wsfn in your `$HOME/bin` directory.\n\nIf you are running Windows 10 or 11 use the Powershell command below.\n\n~~~ps1\nirm https://caltechlibrary.github.io//installer.ps1 | iex\n~~~\n\nInstalling from source\n----------------------\n\n### Required software\n\n\n### Steps\n\n1. git clone https://github.com/caltechlibrary/wsfn\n2. Change directory into the `wsfn` directory\n3. Make to build, test and install\n\n~~~shell\ngit clone https://github.com/caltechlibrary/wsfn\ncd wsfn\nmake\nmake test\nmake install\n~~~\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/INSTALL.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/wsfn/issues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary, web-service"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "go",
+          "web service"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "\nCopyright (c) 2023, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://caltechlibrary.github.io/wsfn/LICENSE",
+        "spdx_id": "https://caltechlibrary.github.io/wsfn/LICENSE",
+        "type": "License",
+        "value": "https://caltechlibrary.github.io/wsfn/LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "wsfn"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "wsfn"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "size": 59961,
+        "type": "Programming_language",
+        "value": "Go"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 43944,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 17923,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 15202,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 6964,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 5344,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "PowerShell",
+        "size": 2616,
+        "type": "Programming_language",
+        "value": "PowerShell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Lua",
+        "size": 195,
+        "type": "Programming_language",
+        "value": "Lua"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "type": "Programming_language",
+        "value": "Go",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2025-04-14T21:54:40Z",
+        "date_published": "2025-04-14T21:55:46Z",
+        "description": "This is a maintenance release compiled with Go version 1.24.2 and updated dependencies.\r\n\r\n\r\n## What's Changed\r\n* Bump golang.org/x/crypto from 0.32.0 to 0.35.0 by @dependabot in https://github.com/caltechlibrary/wsfn/pull/2\r\n\r\n## New Contributors\r\n* @dependabot made their first contribution in https://github.com/caltechlibrary/wsfn/pull/2\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/wsfn/compare/v0.0.12...v0.0.13",
+        "html_url": "https://github.com/caltechlibrary/wsfn/releases/tag/v0.0.13",
+        "name": "v0.0.13",
+        "release_id": 212326768,
+        "tag": "v0.0.13",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/wsfn/tarball/v0.0.13",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/wsfn/releases/212326768",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/releases/212326768",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/wsfn/zipball/v0.0.13"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2025-02-27T20:36:08Z",
+        "date_published": "2025-02-27T21:26:10Z",
+        "description": "This is a maintenance release compiled with Go version 1.24.0\r\n\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/wsfn/compare/v0.0.11...v0.0.1",
+        "html_url": "https://github.com/caltechlibrary/wsfn/releases/tag/v0.0.12",
+        "name": "v0.0.12 maintenance release.",
+        "release_id": 202894141,
+        "tag": "v0.0.12",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/wsfn/tarball/v0.0.12",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/wsfn/releases/202894141",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/releases/202894141",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/wsfn/zipball/v0.0.12"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2024-01-06T02:02:47Z",
+        "date_published": "2024-01-06T02:03:44Z",
+        "description": "updated dependency versions.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/wsfn/compare/v0.0.10...v0.0.11",
+        "html_url": "https://github.com/caltechlibrary/wsfn/releases/tag/v0.0.11",
+        "name": "maintenance release",
+        "release_id": 136041903,
+        "tag": "v0.0.11",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/wsfn/tarball/v0.0.11",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/wsfn/releases/136041903",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/releases/136041903",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/wsfn/zipball/v0.0.11"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-05-26T19:52:06Z",
+        "date_published": "2023-05-26T19:57:32Z",
+        "description": "This is a maintenance release modernizing the build process and documentation handling.  It also includes an added function to read a redirects CSV into a map[string]string. Also included is a curl installer.sh for stream lining installations on macOS and Linux.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/wsfn/compare/v0.0.9...v0.0.10",
+        "html_url": "https://github.com/caltechlibrary/wsfn/releases/tag/v0.0.10",
+        "name": "maintenance release",
+        "release_id": 104452540,
+        "tag": "v0.0.10",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/wsfn/tarball/v0.0.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/wsfn/releases/104452540",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/releases/104452540",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/wsfn/zipball/v0.0.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-02-21T17:39:37Z",
+        "date_published": "2023-02-21T17:42:53Z",
+        "description": "This is just a maintenance release to pickup updates of imported modules.  Assumes Go 1.20.",
+        "html_url": "https://github.com/caltechlibrary/wsfn/releases/tag/v0.0.9",
+        "name": "maintenance release",
+        "release_id": 93195353,
+        "tag": "v0.0.9",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/wsfn/tarball/v0.0.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/wsfn/releases/93195353",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/releases/93195353",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/wsfn/zipball/v0.0.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2021-07-26T17:57:14Z",
+        "date_published": "2021-07-26T17:59:21Z",
+        "description": "This release sees improvements in the build process and primarily the addition of supporting ES6 modules with Content-Type text/javascript for files ending in \".mjs\".\r\n",
+        "html_url": "https://github.com/caltechlibrary/wsfn/releases/tag/v0.0.8",
+        "name": "Added support for JavaScript module extension",
+        "release_id": 46785675,
+        "tag": "v0.0.8",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/wsfn/tarball/v0.0.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/wsfn/releases/46785675",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/releases/46785675",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/wsfn/zipball/v0.0.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2021-02-18T00:57:45Z",
+        "date_published": "2021-02-18T01:01:23Z",
+        "description": "Consolidated the code into a single wsfn.go package file. Added support for go1.16 modules.",
+        "html_url": "https://github.com/caltechlibrary/wsfn/releases/tag/v0.0.7",
+        "name": "go1.16 support and code consolidation",
+        "release_id": 38200811,
+        "tag": "v0.0.7",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/wsfn/tarball/v0.0.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/wsfn/releases/38200811",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/releases/38200811",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/wsfn/zipball/v0.0.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2019-05-14T17:43:37Z",
+        "date_published": "2019-05-14T17:54:00Z",
+        "description": "A few funcs were added to wsfn to make it easy to support a simple type of redirect definition based on common path prefixes. Given a list of target prefixes they can be redirected by replacing the target prefix with the associated destination prefix before passing back an Header redirect to the browser.  Internal wsfn now has a couple non-public variables that maintain a list of sorted keys as well as a map of target and destination. Added public functions include\r\n\r\n+ RedirectRouter() \r\n+ HasRedirectRoutes()\r\n+ AddRedirectRoute()\r\n",
+        "html_url": "https://github.com/caltechlibrary/wsfn/releases/tag/v0.0.3",
+        "name": "Simple RedirectRouter functionality added.",
+        "release_id": 17348735,
+        "tag": "v0.0.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/wsfn/tarball/v0.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/wsfn/releases/17348735",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/releases/17348735",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/wsfn/zipball/v0.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2018-09-24T20:56:28Z",
+        "date_published": "2018-09-24T21:50:23Z",
+        "description": "This is a minor change in the behavior for StaticRouter() handler.  If the request url.Path has an extension of \".wasm\" then a content type is applied of \"application/wasm\" so you can server out WebAssembly programs via the _ws_ web server utility.",
+        "html_url": "https://github.com/caltechlibrary/wsfn/releases/tag/v0.0.2",
+        "name": "Added WASM content check in response in _ws_",
+        "release_id": 13067929,
+        "tag": "v0.0.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/wsfn/tarball/v0.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/wsfn/releases/13067929",
+        "value": "https://api.github.com/repos/caltechlibrary/wsfn/releases/13067929",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/wsfn/zipball/v0.0.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Go >= 1.24.2",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "GNU Make > 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Pandoc >= 3.1",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "CMTools >= 0.0.23",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:02:07",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.13"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/wsfn/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

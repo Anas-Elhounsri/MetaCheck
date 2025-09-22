@@ -1,0 +1,1617 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u2665\ufe0e Acknowledgments",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "The [vector artwork](https://thenounproject.com/term/archive/1590047/) used as a starting point for the logo for this repository was created by [Cuby Design](https://thenounproject.com/back1design1/) for the [Noun Project](https://thenounproject.com).  It is licensed under the Creative Commons [Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/deed.en) license.  The vector graphics was modified by Mike Hucka to change the color.\n\n[Nick Stiffler](https://github.com/nickstiffler) from the [microPublication.org team](https://www.micropublication.org/contact-us/) helped figure out the requirements for PMC output (introduced in Microarchiver version 1.9), helped guide development of Microarchiver/PubArchiver, and engaged in many discussions about microPublication.org's needs.\n\nPubArchiver makes use of numerous open-source packages, without which it would have been effectively impossible to develop PubArchiver with the resources we had.  We want to acknowledge this debt.  In alphabetical order, the packages are:\n\n* [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) &ndash; an HTML parsing library\n* [bun](https://github.com/caltechlibrary/bun) &ndash; a set of basic user interface classes and functions\n* [commonpy](https://github.com/caltechlibrary/commonpy) &ndash; a collection of commonly-useful Python functions\n* [crossrefapi](https://github.com/fabiobatalha/crossrefapi) &ndash; a python library that implements the Crossref API\n* [dateparser](https://github.com/scrapinghub/dateparser) &ndash; parser for human-readable dates\n* [humanize](https://github.com/jmoiron/humanize) &ndash; make numbers more easily readable by humans\n* [lxml](https://lxml.de) &ndash; an XML parsing library for Python\n* [Pillow](https://github.com/python-pillow/Pillow) &ndash; a fork of the Python Imaging Library\n* [plac](http://micheles.github.io/plac/) &ndash; a command line argument parser\n* [recordclass](https://github.com/intellimath/recordclass) &ndash; a mutable version of Python named tuples\n* [setuptools](https://github.com/pypa/setuptools) &ndash; library for `setup.py`\n* [sidetrack](https://github.com/caltechlibrary/sidetrack) &ndash; simple debug logging/tracing package\n* [slack-cli](https://github.com/rockymadden/slack-cli) &ndash; a command-line interface to Slack written in [Bash](https://www.gnu.org/software/bash/) ([caltechlibrary modified version](https://github.com/caltechlibrary/slack-cli/tree/files.upload-deprecation))\n* [urllib3](https://urllib3.readthedocs.io/en/latest/) &ndash; a powerful HTTP library for Python\n* [xmltodict](https://github.com/martinblech/xmltodict) &ndash; a module to make working with XML feel like working with JSON\n\nFinally, we are grateful for computing &amp; institutional resources made available by the California Institute of Technology.\n    \n<div align=\"middle\">\n  <a href=\"https://www.caltech.edu\">\n    <img align=\"center\" width=\"80\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/caltech-round.png?raw=true\">\n  </a>\n  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n  <a href=\"https://micropublication.org\">\n    <img align=\"center\" height=\"60\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/micropublication-logo-main.png?raw=true\">\n  </a>\n  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\n  <a href=\"http://thepromptjournal.com\">\n    <img align=\"center\" height=\"60\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/prompt-logo.jpg?raw=true\">\n  </a>\n\n</div>\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "application_domain": [
+    {
+      "confidence": 0.8891343832506383,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech Library",
+        "email": "mhucka@caltech.edu",
+        "identifier": "https://orcid.org/0000-0001-9105-5960",
+        "type": "String",
+        "value": "Michael Hucka"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech Library",
+        "email": "tmorrell@caltech.edu",
+        "identifier": "https://orcid.org/0000-0001-9266-5146",
+        "type": "String",
+        "value": "Thomas E Morrell"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Hucka",
+            "given_name": "Michasel",
+            "name": "Michasel Hucka",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-9105-5960"
+          }
+        ],
+        "datePublished": "2022",
+        "doi": "10.22002/20100",
+        "format": "cff",
+        "title": "PubArchiver: send journals to Portico and PMC",
+        "type": "File_dump",
+        "url": "https://doi.org/10.22002/20100",
+        "value": "# YAML 1.2\n---\nauthors: \n  -\n    affiliation: \"Caltech Library\"\n    given-names: Michasel\n    family-names: Hucka\n    orcid: \"0000-0001-9105-5960\"\ncff-version: \"1.1.0\"\nmessage: \"If you use this software, please cite it using these metadata.\"\nrepository-code: \"https://github.com/caltechlibrary/pubarchiver\"\ntitle: \"PubArchiver: send journals to Portico and PMC\"\ndate-released: 2022-04-12\nversion: \"2.1.2\"\ndoi: 10.22002/20100\nkeywords: \n  - archiving\n  - preservation\n  - Portico\n  - PubMed Central\n...\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Contributor Covenant Code of Conduct\n====================================\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment include:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a professional setting\n\n## Our Responsibilities\n\nProject contributors are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.\n\nProject contributors have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project contributors.\n\n## Enforcement\n\nIf a contributor engages in harassing behaviour, the project organizers may take any action they deem appropriate, including warning the offender or expelling them from online forums, online project resources, face-to-face meetings, or any other project-related activity or resource.\n\nIf you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the project team immediately.  Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team.  All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.  The project team is obligated to maintain confidentiality with regard to the reporter of an incident.  Further details of specific enforcement policies may be posted separately.\n\n## Attribution\n\nPortions of this Code of Conduct were adapted from Electron's [Contributor Covenant Code of Conduct](https://github.com/electron/electron/blob/master/CODE_OF_CONDUCT.md), which itself was adapted from the [Contributor Covenant](http://contributor-covenant.org/version/1/4), version 1.4.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pubarchiver"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pubarchiver"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/.github/workflows/codeql-analysis.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Guidelines for contributing to this project\n\nAny constructive contributions &ndash; bug reports, pull requests (code or documentation), suggestions for improvements, and more &ndash; are welcome.\n\n## Conduct\n\nEveryone is asked to read and respect the [code of conduct](CODE_OF_CONDUCT.md) before participating in this project.\n\n## Coordinating work\n\nA quick way to find out what is currently on people's plates and our near-term plans is to look at the [GitHub issue tracker](https://github.com/caltechlibrary/pubarchiver/issues) for this project, but the possibilities are not limited to what you see there &ndash; if you have ideas for new features and enhancements, please feel free to write them up as a new issue or contact the developers directly!\n\n## Submitting contributions\n\nPlease feel free to contact the author directly, or even better, jump right in and use the standard GitHub approach of forking the repo and creating a pull request.  When committing code changes and submitting pull requests, please write a clear log message for your commits.  One-line messages are fine for small changes, but bigger changes should look like this:\n\n    $ git commit -m \"A brief summary of the commit\n    > \n    > A paragraph describing what changed and its impact.\"\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u266c Contributing",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "We would be happy to receive your help and participation with enhancing `pubarchiver`!  Please visit the [guidelines for contributing](CONTRIBUTING.md) for some tips on getting started.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-12-14T22:33:21Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-30T21:13:39Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Package up microPublication.org and other journals for archiving into Portico and PMC"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Package microPublication.org publications for Portico."
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u2600 Introduction",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "The Caltech Library is the publisher of a few academic journals and provides services for them. The services include archiving in a [dark archive](http://preservationmatters.blogspot.com/2013/05/light-dark-and-dim-archives-what-are.html) (specifically, [Portico](https://www.portico.org)) as well as submitting articles to [PMC](https://www.ncbi.nlm.nih.gov/pmc/).  The archiving process involves pulling down articles from the journals and packaging them up in a format suitable for sending to the archives.  PubArchiver is a program to help automate this process.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Summary of command-line options*",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u25b6\ufe0e Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The following table summarizes all the command line options available. (Note: on Windows computers, `/` must be used as the prefix character instead of `-`):\n\n| Short&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Long&nbsp;form&nbsp;opt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Meaning | Default | |\n|---------|-------------------|----------------------|---------|--|\n| `-a`_A_ | `--after-date`_A_ | Only get articles published after date _A_ | Get all articles | \u2b25 |\n| `-C`    | `--no-color`      | Don't color-code info messages | Color-code terminal output |\n| `-d`_D_ | `--dest`_D_       | Destination for archive: Portico or PMC | Portico | |\n| `-f`_F_ | `--doi-file`_F_   | Only get articles whose DOIs are in file _F_ | Get all articles | |\n| `-j`_J_ | `--journal`_J_    | Work with journal _J_ | | \u2605 |\n| `-l`    | `--list-dois`     | Print a list of all known DOIs & exit | Do other actions instead | |\n| `-o`_O_ | <nobr><code>--output-dir</code></nobr>_O_ | Write output in directory _O_ | Write in current dir | |\n| `-p`    | `--preview`       | Preview what would be archived & exit | Obtain the articles | |\n| `-q`    | `--quiet`         | Only print important messages | Be chatty while working | |\n| `-r`_R_ | `--rep-file`_R_   | Write list of article & results in file _R_ | Don't write a report | |\n| `-s`_S_ | `--rep-fmt`_S_    | With `-r`, write either `html` or `csv` | `csv` | |\n| `-t`_T_ | `--rep-title`_T_  | With `-r`, use _T_ as the report title | Use the current date | |\n| `-V`    | `--version`       | Print program version info & exit | Do other actions instead | |\n| `-X`    | `--no-check`      | Don't validate JATS XML files | Validate JATS XML | |\n| `-Z`    | `--no-zip`        | Don't put output into one ZIP archive | ZIP up the output | |\n| `-@`_OUT_ | `--debug`_OUT_  | Debugging mode; write trace to _OUT_ | Normal mode | \u2691 |\n\n\u2b25 &nbsp; Enclose the date in quotes if it contains space characters; e.g., `\"12 Dec 2014\"`.<br>\n\u2605 &nbsp; Required argument.<br>\n\u2691 &nbsp; To write to the console, use the character `-` (a single dash) as the value of _OUT_; otherwise, _OUT_ must be the name of a file where the output should be written.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.8667579134975544,
+      "result": {
+        "original_header": "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+        "type": "Text_excerpt",
+        "value": "A program that creates archives of articles from specific journal sites (currently [microPublication](https://www.micropublication.org) and [Prompt](https://thepromptjournal.com/index.php/prompt)) for sending to [Portico](https://www.portico.org) and [PMC](https://www.ncbi.nlm.nih.gov/pmc/). \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9382453867337484,
+      "result": {
+        "original_header": "\u2761 Authors and history",
+        "type": "Text_excerpt",
+        "value": "[Tom Morrell](https://github.com/tmorrell) developed the original algorithm for extracting metadata from DataCite and creating XML files for use with Portico submissions of microPublication.org articles.  Starting with that original script, [Mike Hucka](https://github.com/mhucka) created the much-expanded Microarchiver program (later renamed to PubArchiver). \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pubarchiver/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/pubarchiver"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PubArchiver"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/scripts/test-pmc.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/scripts/test-portico.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/scripts/helpers.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://data.caltech.edu/records/20100"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/.graphics/caltech-round.png?raw=true"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u273a Installation",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "There are multiple ways of installing PubArchiver.  Please choose the alternative that suits you.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Alternative 1: installing PubArchiver using `pipx`*",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u273a Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can use [pipx](https://pypa.github.io/pipx/) to install PubArchiver. Pipx will install it into a separate Python environment that isolates the dependencies needed by PubArchiver from other Python programs on your system, and yet the resulting `pubarchiver` command wil be executable from any shell &ndash; like any normal program on your computer. If you do not already have `pipx` on your system, it can be installed in a variety of easy ways and it is best to consult [Pipx's installation guide](https://pypa.github.io/pipx/installation/) for instructions. Once you have pipx on your system, you can install PubArchiver with the following command:\n```sh\npipx install pubarchiver\n```\n\nPipx can also let you run PubArchiver directly using `pipx run pubarchiver`, although in that case, you must always prefix every `pubarchiver` command with `pipx run`.  Consult the [documentation for `pipx run`](https://github.com/pypa/pipx#walkthrough-running-an-application-in-a-temporary-virtual-environment) for more information.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Alternative 2: installing PubArchiver using `pip`*",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u273a Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "The instructions below assume you have a Python 3 interpreter installed on your computer.  Note that the default on macOS at least through 10.14 (Mojave) is Python **2** &ndash; please first install Python version 3 and familiarize yourself with running Python programs on your system before proceeding further.\n\nOn **Linux**, **macOS**, and **Windows** operating systems, you should be able to install `pubarchiver` with [`pip`](https://pip.pypa.io/en/stable/installing/) for Python&nbsp;3.  To install `pubarchiver` from the [Python package repository (PyPI)](https://pypi.org), run the following command:\n```sh\npython3 -m pip install pubarchiver\n```\n\nAs an alternative to getting it from [PyPI](https://pypi.org), you can use `pip` to install `pubarchiver` directly from GitHub:\n```sh\npython3 -m pip install git+https://github.com/calitechlibrary/pubarchiver.git\n```\n\n_If you already installed PubArchiver once before_, and want to update to the latest version, add `--upgrade` to the end of either command line above.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Alternative 3: installing PubArchiver from sources*",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u273a Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "If  you prefer to install PubArchiver directly from the source code, you can do that too. To get a copy of the files, you can clone the GitHub repository:\n```sh\ngit clone https://github.com/caltechlibrary/pubarchiver\n```\n\nAlternatively, you can download the files as a ZIP archive using this link directly from your browser using this link: <https://github.com/caltechlibrary/pubarchiver/archive/refs/heads/main.zip>\n\nNext, after getting a copy of the files,  run `setup.py` inside the code directory:\n```sh\ncd pubarchiver\npython3 setup.py install\n```\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/pubarchiver/issues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "archive, archiving, crossref, crossref-data, datacite, datacite-metadata, jats, jats-xml, journal, pmc, portico, preservation, publications"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "GitHub",
+          "metadata",
+          "software"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "Copyright (c) 2018-2022, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors\nmay be used to endorse or promote products derived from this software without\nspecific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE\nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://data.caltech.edu/license",
+        "spdx_id": "https://data.caltech.edu/license",
+        "type": "License",
+        "value": "https://data.caltech.edu/license"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u2625 License",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Copyright &copy; 2019-2022, Caltech.  This software is freely distributed under a BSD 3-clause license.  Please see the [LICENSE](LICENSE) file for more information.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/.graphics/prompt-logo.jpg?raw=true"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pubarchiver"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PubArchiver"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_distribution": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pypi.org/project/pubarchiver/"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 63161,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 21071,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 6518,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "value": "Python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://urllib3.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2022-04-12T18:32:42Z",
+        "date_published": "2022-04-12T18:33:22Z",
+        "description": "This version supports parsing the `<correctionDoi>` field in the microPublication XML article list.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v2.1.2",
+        "name": "Release 2.1.2",
+        "release_id": 64278060,
+        "tag": "v2.1.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v2.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/64278060",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/64278060",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v2.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2022-04-09T18:58:14Z",
+        "date_published": "2022-04-09T18:58:22Z",
+        "description": "This version fixes a bug with the generation of zip files for PMC.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v2.1.1",
+        "name": "Release 2.1.1",
+        "release_id": 64035186,
+        "tag": "v2.1.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v2.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/64035186",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/64035186",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v2.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2022-04-08T18:34:24Z",
+        "date_published": "2022-04-08T18:35:13Z",
+        "description": "This version supports microPublication.org's new XML service.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v2.1.0",
+        "name": "Release 2.1.0",
+        "release_id": 63997666,
+        "tag": "v2.1.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v2.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/63997666",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/63997666",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v2.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-06-01T18:26:35Z",
+        "date_published": "2021-06-01T18:26:57Z",
+        "description": "This release  fixes a couple of issues:\n\n* The default network timeout was too short to get large PDF files from micropublication.org. Fixed by tripling the timeout duration.\n* Image conversion exceeded an internal default in the Python Pillow package being used for image conversion. Fixed by disabling the size check.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.12.1",
+        "name": "Release 1.12.1",
+        "release_id": 43929532,
+        "tag": "v1.12.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.12.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/43929532",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/43929532",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.12.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-04-17T00:18:05Z",
+        "date_published": "2021-04-17T00:18:27Z",
+        "description": "Reports can now be written in _both_ CSV and HTML formats.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.12.0",
+        "name": "Release 1.12.0",
+        "release_id": 41574497,
+        "tag": "v1.12.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.12.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/41574497",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/41574497",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.12.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2021-04-16T23:30:27Z",
+        "date_published": "2021-04-16T23:30:41Z",
+        "description": "* Add support for producing reports in HTML format.\n* Add support for specifying the title of the report.\n* Fix incorrect count of articles in ZIP file comments.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.11.0",
+        "name": "Release 1.11.0",
+        "release_id": 41573428,
+        "tag": "v1.11.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.11.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/41573428",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/41573428",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.11.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-12-10T02:17:27Z",
+        "date_published": "2020-12-10T02:18:45Z",
+        "description": "Changes in this version:\n\n* Test for more signs of failure in `upload-to-pmc.sh`.\n* Make some very tiny tweaks to the format of logs.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.10.7",
+        "name": "Release 1.10.7",
+        "release_id": 35075721,
+        "tag": "v1.10.7",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.10.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/35075721",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/35075721",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.10.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-12-04T01:19:44Z",
+        "date_published": "2020-12-04T01:20:56Z",
+        "description": "This release fixes problems in getting a consistent run-time environment by\nassuming the use of Python `virtualenv` to lock in a specific version of\nPython and dependencies.  It also fixes a bug in one of the workflow scripts\nin which the lack of a mail message body caused the mail command to hang\nindefinitely.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.10.6",
+        "name": "Release 1.10.6",
+        "release_id": 34799370,
+        "tag": "v1.10.6",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.10.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/34799370",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/34799370",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.10.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-12-01T00:45:44Z",
+        "date_published": "2020-12-01T00:46:52Z",
+        "description": "This release fixes a bug in the workflow script for uploading to PMC, and adds another helper function to `scripts/helpers.sh`.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.10.5",
+        "name": "Release 1.10.5",
+        "release_id": 34608338,
+        "tag": "v1.10.5",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.10.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/34608338",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/34608338",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.10.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-10-23T21:54:18Z",
+        "date_published": "2020-10-23T21:54:51Z",
+        "description": "This release fixes a bug in the date handling by the workflow scripts.  The value of the `--after-date` argument to `microarchiver` was set to the date it ran, which caused it to miss articles published on the date that it ran.  The value of the date should have been modified to include the day it last ran so that the date comparison was correct.  (Thanks to Nick Stiffler for catching and reporting the problem.)\n\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.10.4",
+        "name": "Release 1.10.4",
+        "release_id": 33000074,
+        "tag": "v1.10.4",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.10.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/33000074",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/33000074",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.10.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-10-23T21:46:14Z",
+        "date_published": "2020-10-23T21:48:13Z",
+        "description": "Ignore this release.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.10.3",
+        "name": "Ignore this release",
+        "release_id": 32999904,
+        "tag": "v1.10.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.10.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/32999904",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/32999904",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.10.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-10-14T00:15:09Z",
+        "date_published": "2020-10-14T00:16:37Z",
+        "description": "This release does not change any microarchiver functionality or behavior.  The only changes are in the workflow scripts that run microarchiver for uploading files to Portico and PMC.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.10.2",
+        "name": "Release 1.10.2",
+        "release_id": 32536998,
+        "tag": "v1.10.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.10.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/32536998",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/32536998",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.10.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-10-12T15:01:55Z",
+        "date_published": "2020-10-12T15:02:16Z",
+        "description": "Changes in this version:\n\n* Fix behavior when DataCite has no data for an article: `microarchiver` was _meant_ to flag the article and keep going, but instead it treated it as a fatal error.\n* Fix some documentation errors about the numeric codes returned by `microarchiver`.\n* Minor other improvements.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.10.1",
+        "name": "Release 1.10.1",
+        "release_id": 32458486,
+        "tag": "v1.10.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.10.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/32458486",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/32458486",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.10.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-10-12T01:55:28Z",
+        "date_published": "2020-10-12T01:57:48Z",
+        "description": "This version changes the behavior of the `-@` command-line option, such that exceptions encountered when running with the `-@` option do _not_ cause `microarchiver` to drop into an interactive debugger.  The old behavior turned out to be unhelpful in practice, and moreover, it mixed two behaviors into one command-line flag.  The latter was problematic when running `microarchiver` from scripts.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.10.0",
+        "name": "Release 1.10.0",
+        "release_id": 32431644,
+        "tag": "v1.10.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.10.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/32431644",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/32431644",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.10.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-10-11T03:31:58Z",
+        "date_published": "2020-10-11T03:32:27Z",
+        "description": "This version removes an unnecessary dependency on wxPython.  A GUI interface was never completed for Microarchiver, and while the starting code is still in the code base in case we try to build a GUI, it doesn't have to be hooked in at this point.  Removing the internal references to the GUI code allows the wxPython requirement to be removed, which in turn simplifies and speeds up installation.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.9.4",
+        "name": "Release 1.9.4",
+        "release_id": 32414023,
+        "tag": "v1.9.4",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.9.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/32414023",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/32414023",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.9.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-09-25T21:51:45Z",
+        "date_published": "2020-09-25T21:59:44Z",
+        "description": "Changes in this release:\n\n* Simplify PMC upload script.\n* Add missing Python package requirement to requirements.txt.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.9.3",
+        "name": "Release 1.9.3",
+        "release_id": 31833380,
+        "tag": "v1.9.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.9.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/31833380",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/31833380",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.9.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-09-25T20:10:07Z",
+        "date_published": "2020-09-25T20:11:00Z",
+        "description": "There are no API or functional changes in this release.  The changes are:\n\n* Fix broken logos and images in README.md.\n* Replace local version of `debug.py` with the use of [Sidetrack](https://github.com/caltechlibrary/sidetrack).\n* Use newer approach to recording version and other metadata in `__init__.py` and the release procedure codified in `Makefile`.\n* Minor internal changes.\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.9.2",
+        "name": "Release 1.9.2",
+        "release_id": 31830078,
+        "tag": "v1.9.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.9.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/31830078",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/31830078",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.9.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-07-15T18:27:03Z",
+        "date_published": "2020-07-15T18:28:29Z",
+        "description": "This release fixes [issue #2](https://github.com/caltechlibrary/microarchiver/issues/2), that the volume number in file names was being incorrectly determined.\r\n\r\nThe file [CHANGES](CHANGES.md) contains a more complete change log that includes information about previous releases.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.9.1",
+        "name": "Release 1.9.1 \u2013\u00a0Minor bug fix",
+        "release_id": 28598863,
+        "tag": "v1.9.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.9.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/28598863",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/28598863",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.9.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-07-13T19:30:18Z",
+        "date_published": "2020-07-13T19:36:37Z",
+        "description": "Summary of changes in this release:\r\n\r\n* Now supports output for PMC using new command-line option `-s`.\r\n* Renamed the JATS XML file after the pattern _issn_-_volume_-_doi_.xml, to make it more compatible with output generated for PMC.\r\n* Removed any alpha channels and convert images to RGB.\r\n* Runs ZIP files through a simple validation step after creating them.\r\n* Added missing dependencies to [`requirements.txt`](requirements.txt).\r\n* Some internal code changes.\r\n\r\nThe file [CHANGES](CHANGES.md) contains a more complete change log that includes information about previous releases.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.9.0",
+        "name": "Release 1.9.0 \u2013\u00a0PMC output",
+        "release_id": 28516334,
+        "tag": "v1.9.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/28516334",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/28516334",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-04-09T22:10:45Z",
+        "date_published": "2020-04-09T22:12:09Z",
+        "description": "Instead of quitting with an error if the file given to `-a` is empty, `microarchiver` will now just print a warning.\r\n\r\nThe file [CHANGES](CHANGES.md) contains a more complete change log that includes information about previous releases.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.8.0",
+        "name": "Release 1.8.0 \u2013\u00a0Minor behavioral change",
+        "release_id": 25378899,
+        "tag": "v1.8.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/25378899",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/25378899",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-04-04T03:00:37Z",
+        "date_published": "2020-04-04T03:01:51Z",
+        "description": "* Store JATS XML for each article, as well as any image referenced in the JATS data. Images are converted to uncompressed TIFF before being stored.\r\n* Perform JATS validation for each article by default.\r\n* Add `-X` option to disable automatic JATS DTD validation.\r\n* Change `-a` option to accept a file containing either a list of DOIs or the XML format sent by micropublication.org.\r\n* Change exit code numbering scheme.\r\n* Communicate number of failures in terms of exit codes; see [README](README.md) for more details.\r\n* Test if date given to `-d` is syntactically correct but not a valid date.\r\n* Refactor and change some internal code.\r\n* Fix miscellaneous bugs.\r\n\r\nThe file [CHANGES](CHANGES.md) contains a more complete change log that includes information about previous releases.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.7.0",
+        "name": "Release 1.7.0 \u2013\u00a0New features and changes",
+        "release_id": 25193047,
+        "tag": "v1.7.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.7.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/25193047",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/25193047",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.7.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-10-16T18:24:43Z",
+        "date_published": "2019-10-16T18:26:15Z",
+        "description": "* Catch and handle no-content errors more gracefully.\r\n* Detect mangled XML returned by micropublication.org and handle it more gracefully.\r\n\r\nThe file [CHANGES](CHANGES.md) contains a more complete change log that includes information about previous releases.\r\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.6.3",
+        "name": "Release 1.6.3 \u2013 Bugfix release",
+        "release_id": 20752388,
+        "tag": "v1.6.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.6.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/20752388",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/20752388",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.6.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-09-22T00:42:14Z",
+        "date_published": "2019-09-22T00:45:11Z",
+        "description": "This release fixes a crash-causing bug in writing the comment string into\u00a0the zip file resulting from a reference to a no-longer-existing package attribute.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.6.2",
+        "name": "Version 1.6.2 \u2013\u00a0Bugfix release",
+        "release_id": 20160012,
+        "tag": "v1.6.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.6.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/20160012",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/20160012",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.6.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-09-20T16:46:44Z",
+        "date_published": "2019-09-20T16:48:09Z",
+        "description": "This fixes broken handling of the debug output destination and updates the `README.md` to reflect the currently available command-line options.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.6.1",
+        "name": "Version 1.6.1 \u2013\u00a0Minor bugfix release",
+        "release_id": 20144538,
+        "tag": "v1.6.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.6.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/20144538",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/20144538",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.6.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-09-19T21:01:00Z",
+        "date_published": "2019-09-19T21:04:14Z",
+        "description": "This release changes the debug flag `-@` to accept an argument for where to send the debug output trace. The behavior change of `-@` is not backward compatible; it will no longer work without an argument value.\r\n\r\nThe only other change concerns internal modifications to put metadata in `setup.cfg` and change how Microarchiver gets the metadata internally.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.6.0",
+        "name": "Release 1.6.0 \u2013\u00a0New debug options",
+        "release_id": 20122610,
+        "tag": "v1.6.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/20122610",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/20122610",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-09-18T17:27:24Z",
+        "date_published": "2019-09-18T17:55:39Z",
+        "description": "This fixes some minor internal bugs.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.5.1",
+        "name": "Version 1.5.1 \u2013 Minor internal bug fixes",
+        "release_id": 20086474,
+        "tag": "v1.5.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.5.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/20086474",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/20086474",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.5.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-09-03T20:52:44Z",
+        "date_published": "2019-09-03T20:53:48Z",
+        "description": "This release primarily adds the `-g` option for printing the XML article list from the server.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.5.0",
+        "name": "Version 1.5.0 \u2013\u00a0New feature for getting raw list of articles",
+        "release_id": 19730204,
+        "tag": "v1.5.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/19730204",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/19730204",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-08-29T23:26:03Z",
+        "date_published": "2019-08-29T23:32:15Z",
+        "description": "This release changes (really, fixes) a minor behavior where it previously would create an empty output directory even if nothing was going to be written. It also adds a script for use with cron for running microarchiver on a regular basis and uploading the results to Portico.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.4.0",
+        "name": "Version 1.4.0 \u2013\u00a0add script for use with cron",
+        "release_id": 19639151,
+        "tag": "v1.4.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/19639151",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/19639151",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-08-29T22:11:06Z",
+        "date_published": "2019-08-29T22:12:16Z",
+        "description": "Skip creation of archive zip file if there are no articles to archive. This can happen when using `--after-date`.",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.3.0",
+        "name": "Version 1.3.0 \u2013\u00a0Don't write empty archives",
+        "release_id": 19637847,
+        "tag": "v1.3.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/19637847",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/19637847",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-08-29T19:06:46Z",
+        "date_published": "2019-08-29T20:06:44Z",
+        "description": "* Improved installation instructions.\r\n* Changed debug flag from `-Z` to `-@`.\r\n* Internal code changes for message printing & colorization.\r\n",
+        "html_url": "https://github.com/caltechlibrary/pubarchiver/releases/tag/v1.2.0",
+        "name": "Version 1.2.0 \u2013 minor code changes and fixes",
+        "release_id": 19635174,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/19635174",
+        "value": "https://api.github.com/repos/caltechlibrary/pubarchiver/releases/19635174",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/pubarchiver/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "beautifulsoup4",
+        "type": "Software_application",
+        "value": "beautifulsoup4   >= 4.9.3",
+        "version": ">= 4.9.3"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "bun",
+        "type": "Software_application",
+        "value": "bun              >= 0.0.8",
+        "version": ">= 0.0.8"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "commonpy",
+        "type": "Software_application",
+        "value": "commonpy         >= 1.8.2",
+        "version": ">= 1.8.2"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "crossrefapi",
+        "type": "Software_application",
+        "value": "crossrefapi      >= 1.5.0",
+        "version": ">= 1.5.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dateparser",
+        "type": "Software_application",
+        "value": "dateparser       >= 1.0.0",
+        "version": ">= 1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "humanize",
+        "type": "Software_application",
+        "value": "humanize         >= 3.9.0",
+        "version": ">= 3.9.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lxml",
+        "type": "Software_application",
+        "value": "lxml             >= 4.6.3",
+        "version": ">= 4.6.3"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Pillow",
+        "type": "Software_application",
+        "value": "Pillow           >= 8.3.2",
+        "version": ">= 8.3.2"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "plac",
+        "type": "Software_application",
+        "value": "plac             >= 1.3.3",
+        "version": ">= 1.3.3"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pypubsub",
+        "type": "Software_application",
+        "value": "pypubsub         >= 4.0.3",
+        "version": ">= 4.0.3"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "recordclass",
+        "type": "Software_application",
+        "value": "recordclass      >= 0.14.3",
+        "version": ">= 0.14.3"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools       >= 58.3.0",
+        "version": ">= 58.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sidetrack",
+        "type": "Software_application",
+        "value": "sidetrack        >= 2.0.0",
+        "version": ">= 2.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "urllib3",
+        "type": "Software_application",
+        "value": "urllib3          >= 1.26.5",
+        "version": ">= 1.26.5"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "xmltodict",
+        "type": "Software_application",
+        "value": "xmltodict        >= 0.12.0",
+        "version": ">= 0.12.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:27:31",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 4
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Writing a report*",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u25b6\ufe0e Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "As it works, `pubarchiver` writes information to the terminal about the articles it puts into the archive, including whether any problems are encountered.  To save this information to a file, use the option `--rep-file` (or `-r` for short), which will make `pubarchiver` write a report file.  By default, the format of the report file is [CSV](https://en.wikipedia.org/wiki/Comma-separated_values); the option `--rep-fmt` (or `-s` for short) can be used to select `csv` or `html` (or both) as the format.  The title of the report will be based on the current date, unless the option `--rep-title` (or `-t` for short) is used to supply a different title.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u2047 Getting help and support",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/caltechlibrary/pubarchiver/issues) for this repository.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u25b6\ufe0e Usage",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "PubArchiver is a command-line program.  The installation process should put a program named `pubarchiver` in a location normally searched by your shell interpreter.  For help with usage at any time, run `pubarchiver` with the option `--help` (or `-h` for short).\n\n```bash\npubarchiver -h\n```\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Basic usage*",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u25b6\ufe0e Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Options to `pubarchiver` use a dash (`-`) as the prefix character on macOS and Linux, and forward slash (`/`) on Windows.\n\nThe journal whose articles are to be archived must be indicated using the required option `--journal` (or `-j` for short). To see a list of supported journals, you can use `--journal list` like this:\n\n```bash\npubarchiver --journal list\n```\n\nIf not given any additional options besides a `--journal` option to select the journal, `pubarchiver` will proceed to contact the journal website as well as either [DataCite](https://datacite.org) or [Crossref](https://www.crossref.org), and create an archive containing articles and their metadata for all articles published to date by the journal.  The options below can be used to select articles and influence other `pubarchiver` behaviors.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Printing information without doing anything*",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u25b6\ufe0e Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The option `--list-dois` (or `-l` for short) can be used to obtain a list of all DOIs for all articles published by the selected journal. When `--list-dois` is used, `pubarchiver` prints the list to the terminal and exits without doing further work. This can be useful if you intend to use the `--doi-file` option discussed below.\n\nIf given the option `--preview` (or `-p` for short), `pubarchiver` will _only_ print a list of articles it will archive and stop short of creating the archive. This is useful to see what would be produced without actually doing it.  Note, however, that because it does not attempt to download the articles and associated files, it cannot report errors that _might_ occur when actually creating an archive.  Consequently, do not use the output of `--preview` as a prediction of eventual success or failure.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Selecting the archive format and archive output location*",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u25b6\ufe0e Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The value supplied after the option `--dest` (or `-d` for short) can be used to tell `pubarchiver` the intended destination where the archive will be sent.  The option changes the structure and content of the archive created by `pubarchiver`. The possible alternatives are `portico` and `pmc`. Portico is assumed to be the default destination if no `--dest` option is given. \n\nBy default, `pubarchiver` will write its output to a new subdirectory it creates in the directory from which `pubarchiver` is being run. The option `--output-dir` (or `/o` on Windows) can be used to select a different location. For example,\n\n```bash\npubarchiver --journal micropublication --output-dir /tmp/micropub\n```\n\nThe materials for each article will be written to an individual subdirectory named after the DOI of the article.  The output for each article will consist of an XML metadata file describing the article, the article itself in PDF format, and (if the journal provides [JATS](https://jats.nlm.nih.gov)) a subdirectory named `jats` containing the article in JATS XML format along with any image that may appear in the article.  The image is always converted to uncompressed TIFF format, because it is considered a good preservation format. The PMC structure follows the _naming and delivery_ specifications defined at https://www.ncbi.nlm.nih.gov/pmc/pub/filespec-delivery/.\n\nUnless the option `--no-zip` (or `-Z` for short) is given, the output will be archived in [ZIP](https://en.wikipedia.org/wiki/Zip_(file_format)) format.  If the output structure (as determine by the `--dest` option) is being generated for PMC, each article will be put into its own individual ZIP archive; else, the default action is to put the collected output of all articles into a single ZIP archive file.  The option `--no-zip` makes `pubarchiver` leave the output unarchived in the directory determined by the `--output-dir` option.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Selecting a subset of articles*",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u25b6\ufe0e Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "If the option `--after-date` is given, `pubarchiver` will download only articles whose publication dates are _after_ the given date.  Valid date descriptors are those accepted by the Python [dateparser](https://pypi.org/project/dateparser/) library.  Make sure to enclose descriptions within single or double quotes.  Examples:\n\n```\n  pubarchiver --after-date \"2014-08-29\"   ....\n  pubarchiver --after-date \"12 Dec 2014\"  ....\n  pubarchiver --after-date \"July 4, 2013\"  ....\n  pubarchiver --after-date \"2 weeks ago\"  ....\n```\n\nThe option `--doi-file` (or `-f` for short) can be used to tell `pubarchiver` to read a file containing DOIs and only fetch those particular articles instead of asking the journal for all articles.  The format of the file indicated after the `--doi-file` option must be a simple text file containing one DOI per line.\n\nThe selection by date performed by the `--after-date` option is performed after reading the list of articles using the `--doi-file` option if present, and thus can be used to filter by date the articles whose DOIs are provided.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Additional command-line options*",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u25b6\ufe0e Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "When `pubarchiver` downloads the JATS XML version of articles from the journal site, it will by default validate the XML content against the JATS DTD.  To skip the XML validation step, use the option `--no-check` (or `-X` for short).\n\n`pubarchiver` will print informational messages as it works. To reduce messages to only warnings and errors, use the option `--quiet` (or `-q` for short). Also, output is color-coded by default unless the `--no-color` option (or `-C` for short) is given; this option can be helpful if the color control sequences create problems for your terminal emulator.\n\nIf given the `--debug` option (or `-@` for short), this program will output a detailed real-time trace of what it is doing.  The output will be written to the given destination, which can be a dash character (`-`) to indicate console output, or a file path.\n\nIf given the `--version` option (or `-V` for short), this program will print version information and exit without doing anything else.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Return values",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">",
+          "\u25b6\ufe0e Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "This program exits with a return code of `0` if no problems are encountered while fetching data from the server.  It returns a nonzero value otherwise, following conventions for use in shells such as bash which only understand return code values of `0` to `255`.  If no network is detected, it returns a value of 1; if it is interrupted (e.g., using `ctrl-c`) it returns a value of `2`; if it encounters a fatal error, it returns a value of `3`.  If it encounters any non-fatal problems (such as a missing PDF file or JATS validation error), it returns a nonzero value equal to 100 + the number of articles that had failures.   Summarizing the possible return codes:\n\n| Return value | Meaning |\n|:------------:|---------|\n| `0`          | No errors were encountered &ndash; success |\n| `1`          | No network detected &ndash; cannot proceed |\n| `2`          | The user interrupted program execution |\n| `3`          | An exception or fatal error occurred |\n| `100` + _n_  | Encountered non-fatal problems on a total of _n_ articles |\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u2047 Getting help and support",
+        "parent_header": [
+          "PubArchiver<img width=\"12%\" align=\"right\" src=\"https://github.com/caltechlibrary/pubarchiver/blob/main/.graphics/pubarchiver-logo.png?raw=true\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/caltechlibrary/pubarchiver/issues) for this repository.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.1.2"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/pubarchiver/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

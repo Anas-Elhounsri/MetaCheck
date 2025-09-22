@@ -1,0 +1,695 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Austin Koontz"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "austinkoontz11@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-6103-5896",
+        "type": "String",
+        "value": "Austin Koontz"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "will.pearse@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-6241-3164",
+        "type": "String",
+        "value": "William D. Pearse"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "SymbiotaR2"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you use SymbiotaR2 as a component to publication, we ask that you \nproperly cite this R package. Use `citation(\"SymbiotaR2\")` to see how to \ncite SymbiotaR2.\n"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/SymbiotaR2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/pearselab/SymbiotaR2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/pearselab/SymbiotaR2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.org/ropensci/SymbiotaR2",
+          "https://codecov.io/gh/ropensci/SymbiotaR2"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING #\n\n### Fixing typos\n\nSmall typos or grammatical errors in documentation may be edited directly using\nthe GitHub web interface, so long as the changes are made in the _source_ file.\n\n*  YES: you edit a roxygen comment in a `.R` file below `R/`.\n*  NO: you edit an `.Rd` file below `man/`.\n\n### Prerequisites\n\nBefore you make a substantial pull request, you should always file an issue and\nmake sure someone from the team agrees that it\u2019s a problem. If you\u2019ve found a\nbug, create an associated issue and illustrate the bug with a minimal \n[reprex](https://www.tidyverse.org/help/#reprex).\n\n### Pull request process\n\n*  We recommend that you create a Git branch for each pull request (PR).  \n*  Look at the Travis and AppVeyor build status before and after making changes.\nThe `README` should contain badges for any continuous integration services used\nby the package.  \n*  We recommend the tidyverse [style guide](http://style.tidyverse.org).\nYou can use the [styler](https://CRAN.R-project.org/package=styler) package to\napply these styles, but please don't restyle code that has nothing to do with \nyour PR.  \n*  We use [roxygen2](https://cran.r-project.org/package=roxygen2).  \n*  We use [testthat](https://cran.r-project.org/package=testthat). Contributions\nwith test cases included are easier to accept.  \n*  For user-facing changes, add a bullet to the top of `NEWS.md` below the\ncurrent development version header describing the changes made followed by your\nGitHub username, and links to relevant issue(s)/PR(s).\n\n### Code of Conduct\n\nPlease note that the SymbiotaR2 project is released with a\n[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this\nproject you agree to abide by its terms.\n\n### See rOpenSci [contributing guide](https://devguide.ropensci.org/contributingguide.html)\nfor further details.\n\n### Discussion forum\n\nCheck out our [discussion forum](https://discuss.ropensci.org) if\n\n* you have a question, an use case, or otherwise not a bug or feature request for the software itself.\n* you think your issue requires a longer form discussion.\n\n### Prefer to Email? \n\nEmail the person listed as maintainer in the `DESCRIPTION` file of this repo.\n\nThough note that private discussions over email don't help others - of course email is totally warranted if it's a sensitive problem of any kind.\n\n### Thanks for contributing!\n\nThis contributing guide is adapted from the tidyverse contributing guide available at https://raw.githubusercontent.com/r-lib/usethis/master/inst/templates/tidy-contributing.md \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-06-05T17:34:58Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-01-26T22:26:19Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SymbiotaR2: an R package for accessing and downloading from Symbiota2 portals"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+        "type": "String",
+        "value": "Download data from Symbiota2 portals using Symbiota's\n    API. Covers the Checklists, Collections, Crowdsource, Exsiccati,\n    Glossary, ImageProcessor, Key, Media, Occurrence, Reference, Taxa,\n    Traits, and UserRoles API families. Each Symbiota2 portal owner\n    can load their own plugins (and modified code), and so this\n    package may not cover every possible API endpoint from a given\n    Symbiota2 instance."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Download data from Symbiota2 portals using Symbiota's\n    API. Covers the Checklists, Collections, Crowdsource, Exsiccati,\n    Glossary, ImageProcessor, Key, Media, Occurrence, Reference, Taxa,\n    Traits, and UserRoles API families. Each Symbiota2 portal owner\n    can load their own plugins (and modified code), and so this\n    package may not cover every possible API endpoint from a given\n    Symbiota2 instance."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9628479575834686,
+      "result": {
+        "original_header": "SymbiotaR2",
+        "type": "Text_excerpt",
+        "value": "Austin Koontz, Benjamin Brandt, Curtis Dyreson, and William D. Pearse\n \n"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9738450816035236,
+      "result": {
+        "original_header": "Overview",
+        "type": "Text_excerpt",
+        "value": "Designed to assist students, taxonomists, educators, and anyone\nworking with biological specimens,\n[Symbiota](https://symbiota.org/docs/) is an open-source content\nmanagement system designed to integrate virtual biodiversity\ndatabases. Over 750 natural history collections use Symbiota, which\nhas motivated the development of the Symbiota2 update to the Symbiota\nplatform. This package, _SymbiotaR2_, allows users to access and\ndownload specimen- and observation-based data from a published\nSymbiota2 portal. If you're looking for something similar for the\noriginal Symbiota, take a look at\n[rSymbiota](https://github.com/FranzKrah/rSymbiota). \n"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8881294783812682,
+      "result": {
+        "original_header": "(For developers) Unit tests",
+        "type": "Text_excerpt",
+        "value": "All of the package functions come with tests, for both pulling a\nsingle Symbiota2 resource (using the `id` argument), or a collection\nof resources (using `page`). Tests for each function are contained in\nthe `tests/testthat` directory. Running these tests requires you have\naccess to a fully configured Symbiota2 test instance, complete with\ndemo data, which is both time-consuming to setup and then\ntime/bandwidth-consuming to run the tests. We therefore release cached\ndata downloads, generated using `vcr`, for use with this package. \n1. Setup a Symbiota2 instance with the canned example data.\n2. If you are adding support for a new API endpoint, make a new file\n   in `tests/testthat` for your tests. Otherwise, add to one of the\n   existing files.\n3. Write your test, following the coding style of the other tests,\n   particularly with respect to setting up the `vcr` _cassette_. Note\n   that the folder `fixtures` contains the cassettes, and that\n   `SymbiotaR2` makes use of the file\n   `tests/testthat/helper-SymbiotaR2.R` to setup the automatic\n   tests. See point 4 below.\n4. When writing/checking your test, set the `url` variable at the top\n   of the script to be wherever your test instance is. When committing\n   your code to submit a pull request (see point 5), change it to the\n   address at the top of the other tests (currently\n   `http://a02235015-6.bluezone.usu.edu/api/`).\n5. When you are finished, submit a pull request to the `master` branch\n   of this repository. Please use the pull request template and follow\n   the contributor guidelines. \nHere is an example of what a piece of testing code may look like:\n```{R}\ncontext(\"AccessStats\")\nvcr::use_cassette(name = \"AccessStats_id\", {\n  data <- AccessStats(id = 4, url = url)\n})\ntest_that(\"AccessStats_id\", {\n  expect_equal(length(data), 12)\n  expect_type(data, \"list\")\n})\n```\n \nThe `data <- AccessStates(url = url, id = 4)` line is the Symbiota2\ncall, and the `test_that` block below it contains the test\nconditions--here, that the `data` object is a `list` of\nlength 12. \n \n"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9513835577218287,
+      "result": {
+        "original_header": "Contributions",
+        "type": "Text_excerpt",
+        "value": "As the underlying Symbiota2 API and the R package are still \nbeing worked on, we generally recommend holding off\non any package development until these are finalized.\nIf you're interested in contributing to the\npackage in the future, though, please [drop one of us an email and\nwe'll let you know when we're ready](http://pearselab.com/team.html)! \nPlease note that this package is released with a [Contributor Code\nof\nConduct](https://ropensci.org/code-of-conduct/).\nBy contributing to this project, you agree to abide by its terms. \n"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#wip"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "<a name=\"portspec\"></a>Setting up a default portal for download",
+        "parent_header": [
+          "SymbiotaR2"
+        ],
+        "type": "Text_excerpt",
+        "value": "Calling `SymbiotaR2_setup` will specify a default portal URL to use for \nall subsequent SymbiotaR2 calls made within your R session.\nSpecifing a different `url` argument will let you refer to\na portal besides the default. The code below offers an example:\n\n```{R}\nSymbiotaR2_setup(\"http://imaginary-symbiota-portal.com/api\")\nCoordinates() # Download from http://imaginary-symbiota-portal.com/api\nCoordinates(\"http://another-imaginary-portal.com/api\") # Download from a different portal\n```\n\nIf the `append` argument in your `SymbiotaR2_setup` call is set to \n`TRUE`, then the specified `url` argument will be saved as the default\nto your `.Rprofile`, allowing it to be used everytime you start up `R`.\n"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/SymbiotaR2/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/SymbiotaR2/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/SymbiotaR2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SymbiotaR2"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SymbiotaR2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/190439935"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.21105/joss.02917"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.travis-ci.org/ropensci/Symbiota2.svg"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://joss.theoj.org/papers/10.21105/joss.02917/status.svg"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/ropensci_footer.png"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/SymbiotaR2/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/pearselab/SymbiotaR2/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/pearselab/SymbiotaR2/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "database, library, r, specimen-records, symbiota, symbiota2, symbiota2-portal"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "symbiota2-portal",
+          "database",
+          "library",
+          "r",
+          "symbiota",
+          "specimen-records",
+          "symbiota2"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2020 Austin Koontz\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SymbiotaR2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SymbiotaR2: Downloading Data from Symbiota2 Portals into R"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+        "type": "String",
+        "value": "SymbiotaR2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 60549,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 652,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "akoontz11",
+          "type": "User"
+        },
+        "date_created": "2020-12-02T20:24:42Z",
+        "date_published": "2020-12-02T20:36:35Z",
+        "description": "This is the first release of the SymbiotaR2 R package, with [rOpenSci](https://github.com/ropensci). As this repository is being watched by Zenodo, this release should create a Zenodo version and DOI.",
+        "html_url": "https://github.com/ropensci/SymbiotaR2/releases/tag/v1.0.0",
+        "name": "SymbiotaR2 Initial Release",
+        "release_id": 34715363,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/SymbiotaR2/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/SymbiotaR2/releases/34715363",
+        "value": "https://api.github.com/repos/ropensci/SymbiotaR2/releases/34715363",
+        "zipball_url": "https://api.github.com/repos/ropensci/SymbiotaR2/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "WIP \u2013 Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#wip"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "httr",
+        "type": "Software_application",
+        "value": "httr==>= 1.0.0",
+        "version": ">= 1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rjson",
+        "type": "Software_application",
+        "value": "rjson==>= 0.2.20",
+        "version": ">= 0.2.20"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "fs",
+        "type": "Software_application",
+        "value": "fs==>= 1.2.6",
+        "version": ">= 1.2.6"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "curl",
+        "type": "Software_application",
+        "value": "curl==>= 3.3",
+        "version": ">= 3.3"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:50:28",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example workflow for SymbiotaR2",
+        "parent_header": [
+          "SymbiotaR2"
+        ],
+        "type": "Text_excerpt",
+        "value": "In general, there are four steps for using SymbiotaR2:\n\n1. Determine the URL of the Symbiota2 portal you wish to access data\n   from; its \"API endpoint\" is probably its web address with \"api\"\n   appended to it (see below). Remember that your particular portal\n   may not have enabled data download.\n2. Load the SymbiotaR2 package (see [Installation](#inst) below for\n   install instructions).\n3. Find the function corresponding to the kind of data you wish to\npull from the Symbiota2 portal (e.g., `Coordinates` for co-ordinate\ndata).\n    - Functions are named after the resources they download, and are\n  grouped according to the relevant API call.\n    - Note that, because each Symbiota2 portal owner can load their\n  own plugins into the API, it's possible that not every API endpoint\n  will be covered.\n    - You can find a full list by typing `library(help=SymbiotaR2)`\n4. Call the function, specifying the Symbiota2 portal using the `url`\nargument (see [Example](#ex) and [Portal Specification](#portspec)\nbelow).\n\nThe R code below provides an example of how to install a `Coordinates` \nresource from an example Symbiota2 portal\n\n```{R}\n# Step 1 - Find the URL\nmyURL <- \"http://imaginary-symbiota2-portal.com/api\"\n# Step 2 - Install the package (only required the first time you're using it)\ninstall.packages(\"SymbiotaR2\") \n# Step 3 - Load the package\nlibrary(SymbiotaR2)\n# Step 4 - Choose the kind of data you want\nlibrary(help=SymbiotaR2)\n# Step 5 - Download your data\nmyCoordinates <- Coordinates(url = myURL)\n```\n\nFrom here, the `myCoordinates` object can be used as desired.\n"
+      },
+      "source": "https://github.com/ropensci/SymbiotaR2/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.0-1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/SymbiotaR2/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

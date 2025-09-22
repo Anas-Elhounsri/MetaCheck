@@ -1,0 +1,2072 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Matthew L. Fidler"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "matthew.fidler@gmail.com",
+        "identifier": "https://orcid.org/0000-0001-8538-6691",
+        "type": "String",
+        "value": "Matthew L. Fidler"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "hallowkm@uga.edu",
+        "type": "String",
+        "value": "Melissa Hallow"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "wwang8198@gmail.com",
+        "type": "String",
+        "value": "Wenping Wang"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Matthew L. Fidler (core team/developer/manual)",
+        "name": "* Matthew L. Fidler (core team/developer/manual)",
+        "type": "Agent",
+        "value": "* Matthew L. Fidler (core team/developer/manual)"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Melissa Hallow (tutorial writer)",
+        "name": "* Melissa Hallow (tutorial writer)",
+        "type": "Agent",
+        "value": "* Melissa Hallow (tutorial writer)"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Wenping Wang (core team/developer)",
+        "name": "* Wenping Wang (core team/developer)",
+        "type": "Agent",
+        "value": "* Wenping Wang (core team/developer)"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Zufar Mulyukov -- Wrote initial version of `rxShiny()` with modifications from Matthew Fidler",
+        "name": "* Zufar Mulyukov -- Wrote initial version of `rxShiny()` with modifications from Matthew Fidler",
+        "type": "Agent",
+        "value": "* Zufar Mulyukov -- Wrote initial version of `rxShiny()` with modifications from Matthew Fidler"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Alan Hindmarsh -- Lsoda author",
+        "name": "* Alan Hindmarsh -- Lsoda author",
+        "type": "Agent",
+        "value": "* Alan Hindmarsh -- Lsoda author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Awad H. Al-Mohy -- Al-Mohy matrix exponential author",
+        "name": "* Awad H. Al-Mohy -- Al-Mohy matrix exponential author",
+        "type": "Agent",
+        "value": "* Awad H. Al-Mohy -- Al-Mohy matrix exponential author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Ernst Hairer -- dop853 author",
+        "name": "* Ernst Hairer -- dop853 author",
+        "type": "Agent",
+        "value": "* Ernst Hairer -- dop853 author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Gerhard Wanner -- dop853 author",
+        "name": "* Gerhard Wanner -- dop853 author",
+        "type": "Agent",
+        "value": "* Gerhard Wanner -- dop853 author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Goro Fuji -- Timsort author",
+        "name": "* Goro Fuji -- Timsort author",
+        "type": "Agent",
+        "value": "* Goro Fuji -- Timsort author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Hadley Wickham -- Author of original findLhs in RxODE, also original author of .s3register (used with permission to anyone, both changed by Matthew Fidler)",
+        "name": "* Hadley Wickham -- Author of original findLhs in RxODE, also original author of .s3register (used with permission to anyone, both changed by Matthew Fidler)",
+        "type": "Agent",
+        "value": "* Hadley Wickham -- Author of original findLhs in RxODE, also original author of .s3register (used with permission to anyone, both changed by Matthew Fidler)"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Jack Dongarra -- LApack author",
+        "name": "* Jack Dongarra -- LApack author",
+        "type": "Agent",
+        "value": "* Jack Dongarra -- LApack author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Linda Petzold -- LSODA",
+        "name": "* Linda Petzold -- LSODA",
+        "type": "Agent",
+        "value": "* Linda Petzold -- LSODA"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Martin Maechler -- expm author, used routines from there for inductive linearization",
+        "name": "* Martin Maechler -- expm author, used routines from there for inductive linearization",
+        "type": "Agent",
+        "value": "* Martin Maechler -- expm author, used routines from there for inductive linearization"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Morwenn -- Timsort author",
+        "name": "* Morwenn -- Timsort author",
+        "type": "Agent",
+        "value": "* Morwenn -- Timsort author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Nicholas J. Higham -- Author of Al-mohy matrix exponential",
+        "name": "* Nicholas J. Higham -- Author of Al-mohy matrix exponential",
+        "type": "Agent",
+        "value": "* Nicholas J. Higham -- Author of Al-mohy matrix exponential"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Roger B. Sidje -- expokit matrix exponential author",
+        "name": "* Roger B. Sidje -- expokit matrix exponential author",
+        "type": "Agent",
+        "value": "* Roger B. Sidje -- expokit matrix exponential author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Simon Frost -- thread safe C implementation of liblsoda",
+        "name": "* Simon Frost -- thread safe C implementation of liblsoda",
+        "type": "Agent",
+        "value": "* Simon Frost -- thread safe C implementation of liblsoda"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Kevin Ushey -- Original author of fast factor, modified by Matthew Filder",
+        "name": "* Kevin Ushey -- Original author of fast factor, modified by Matthew Filder",
+        "type": "Agent",
+        "value": "* Kevin Ushey -- Original author of fast factor, modified by Matthew Filder"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Yu Feng -- thread safe liblsoda",
+        "name": "* Yu Feng -- thread safe liblsoda",
+        "type": "Agent",
+        "value": "* Yu Feng -- thread safe liblsoda"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Matt Dowle -- forder primary author (version modified by Matthew Fidler to allow different type of threading and exclude grouping)",
+        "name": "* Matt Dowle -- forder primary author (version modified by Matthew Fidler to allow different type of threading and exclude grouping)",
+        "type": "Agent",
+        "value": "* Matt Dowle -- forder primary author (version modified by Matthew Fidler to allow different type of threading and exclude grouping)"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Cleve Moler -- LApack author",
+        "name": "* Cleve Moler -- LApack author",
+        "type": "Agent",
+        "value": "* Cleve Moler -- LApack author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "David Cooley -- Author of fast_factor which was modified and now is used RxODE to quickly create factors for IDs without sorting them like R does",
+        "name": "* David Cooley -- Author of fast_factor which was modified and now is used RxODE to quickly create factors for IDs without sorting them like R does",
+        "type": "Agent",
+        "value": "* David Cooley -- Author of fast_factor which was modified and now is used RxODE to quickly create factors for IDs without sorting them like R does"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Drew Schmidt -- Drew Schmidt author of edits for exponential matrix utility taken from R package expm",
+        "name": "* Drew Schmidt -- Drew Schmidt author of edits for exponential matrix utility taken from R package expm",
+        "type": "Agent",
+        "value": "* Drew Schmidt -- Drew Schmidt author of edits for exponential matrix utility taken from R package expm"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Arun Srinivasan -- forder secondary author (version modified by Matthew Fidler to allow different type of threading, indexing and exclude grouping)",
+        "name": "* Arun Srinivasan -- forder secondary author (version modified by Matthew Fidler to allow different type of threading, indexing and exclude grouping)",
+        "type": "Agent",
+        "value": "* Arun Srinivasan -- forder secondary author (version modified by Matthew Fidler to allow different type of threading, indexing and exclude grouping)"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Sherwin Sy -- Weight based dosing example",
+        "name": "* Sherwin Sy -- Weight based dosing example",
+        "type": "Agent",
+        "value": "* Sherwin Sy -- Weight based dosing example"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Justin Wilkins -- Documentation updates, logo and testing",
+        "name": "* Justin Wilkins -- Documentation updates, logo and testing",
+        "type": "Agent",
+        "value": "* Justin Wilkins -- Documentation updates, logo and testing"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Emma Schwager -- [R IJK distribution](https://github.com/biobakery/banocc/blob/master/R/rlkj.R) author",
+        "name": "* Emma Schwager -- [R IJK distribution](https://github.com/biobakery/banocc/blob/master/R/rlkj.R) author",
+        "type": "Agent",
+        "value": "* Emma Schwager -- [R IJK distribution](https://github.com/biobakery/banocc/blob/master/R/rlkj.R) author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "J Coligne -- dop853 fortran author",
+        "name": "* J Coligne -- dop853 fortran author",
+        "type": "Agent",
+        "value": "* J Coligne -- dop853 fortran author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Bill Denney -- Documentation updates, manual and minor bug fixes",
+        "name": "* Bill Denney -- Documentation updates, manual and minor bug fixes",
+        "type": "Agent",
+        "value": "* Bill Denney -- Documentation updates, manual and minor bug fixes"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Tim Waterhouse -- Fixed one bug with mac working directories",
+        "name": "* Tim Waterhouse -- Fixed one bug with mac working directories",
+        "type": "Agent",
+        "value": "* Tim Waterhouse -- Fixed one bug with mac working directories"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Richard Upton -- Helped with solving the ADVAN linCmt() solutions",
+        "name": "* Richard Upton -- Helped with solving the ADVAN linCmt() solutions",
+        "type": "Agent",
+        "value": "* Richard Upton -- Helped with solving the ADVAN linCmt() solutions"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Dirk Eddelbuettel -- Made some fixes for the Rcpp changes require R strict headers",
+        "name": "* Dirk Eddelbuettel -- Made some fixes for the Rcpp changes require R strict headers",
+        "type": "Agent",
+        "value": "* Dirk Eddelbuettel -- Made some fixes for the Rcpp changes require R strict headers"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Ross Ihaka -- R author",
+        "name": "* Ross Ihaka -- R author",
+        "type": "Agent",
+        "value": "* Ross Ihaka -- R author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "Robert Gentleman -- R author",
+        "name": "* Robert Gentleman -- R author",
+        "type": "Agent",
+        "value": "* Robert Gentleman -- R author"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "*",
+        "last_name": "R core team -- R authors",
+        "name": "* R core team -- R authors",
+        "type": "Agent",
+        "value": "* R core team -- R authors"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/authors.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2015",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "year <- format(Sys.time(), \"%Y\")\nnote <- sprintf(\"R package version %s\", meta$Version)\n\nbibentry(bibtype = \"Manual\",\n         title = \"{RxODE}: Facilities for Simulating from ODE-Based Models\",\n         author = c(person(\"Matthew L. \", \"Fidler\"),\n                    person(\"Melissa\", \"Hallow\"),\n                    person(\"Justin\", \"Wilkins\"),\n                    person(\"Wenping\", \"Wang\")),\n         year = year,\n         note = note,\n         url = \"https://CRAN.R-project.org/package=RxODE\")\n\n\nbibentry(bibtype=\"Article\",\n         title=\"A Tutorial on RxODE: Simulating Differential Equation Pharmacometric Models in R\",\n         author = c(person(\"Wenping\", \"Wang\"),\n                    person(\"K Melissa\", \"Hallow\"),\n                    person(\"David A\", \"James\")),\n         journal = \"CPT: Pharmacometrics \\\\& Systems Pharmacology\",\n         year = \"2015\",\n         volume = \"5\",\n         pages = \"3--10\",\n         number = \"1\",\n         month = \"nov\",\n         abstract = \"This tutorial presents the application of an R package, RxODE, that facilitates quick, efficient simulations of ordinary differential equation models completely within R. Its application is illustrated through simulation of design decision effects on an adaptive dosing regimen. The package provides an efficient, versatile way to specify dosing scenarios and to perform simulation with variability with minimal custom coding. Models can be directly translated to Rshiny applications to facilitate interactive, real-time evaluation/iteration on simulation scenarios.\",\n         address =\"Hoboken\",\n         issn = \"2163-8306\",\n         publisher = \"John Wiley and Sons Inc.\",\n         url = \"https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4728294/\")\n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/inst/CITATION",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/nlmixrdevelopment/RxODE"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/nlmixrdevelopment/RxODE/"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://nlmixrdevelopment.github.io/RxODE/"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.org/nlmixrdevelopment/RxODE",
+          "https://ci.appveyor.com/project/mattfidler/rxode",
+          "https://codecov.io/github/nlmixrdevelopment/RxODE?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-03-28T14:29:13Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-07T04:13:32Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "RxODE is an R package that facilitates easy simulations in R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+        "type": "String",
+        "value": "Facilities for running simulations from ordinary\n    differential equation ('ODE') models, such as pharmacometrics and other\n    compartmental models.  A compilation manager translates the ODE model\n    into C, compiles it, and dynamically loads the object code into R for\n    improved computational efficiency.  An event table object facilitates\n    the specification of complex dosing regimens (optional) and sampling\n    schedules.  NB: The use of this package requires both C and\n    Fortran compilers, for details on their use with R please see\n    Section 6.3, Appendix A, and Appendix D in the \"R Administration and\n    Installation\" manual. Also the code is mostly released under GPL.  The\n    'VODE' and 'LSODA' are in the public domain.  The information is available\n    in the inst/COPYRIGHTS."
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Facilities for running simulations from ordinary\n    differential equation (ODE) models, such as pharmacometrics and other\n    compartmental models.  A compilation manager translates the ODE model\n    into C, compiles it, and dynamically loads the object code into R for\n    improved computational efficiency.  An event table object facilitates\n    the specification of complex dosing regimens (optional) and sampling\n    schedules.  NB: The use of this package requires both C and\n    Fortran compilers, for details on their use with R please see\n    Section 6.3, Appendix A, and Appendix D in the \"R Administration and\n    Installation\" manual. Also the code is mostly released under GPL.  The\n    VODE and LSODA are in the public domain.  The information is available\n    in the inst/COPYRIGHTS."
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.948850018174507,
+      "result": {
+        "original_header": "Overview",
+        "type": "Text_excerpt",
+        "value": "**RxODE** is an R package for solving and simulating from ode-based\nmodels. These models are convert the RxODE mini-language to C and\ncreate a compiled dll for fast solving. ODE solving using RxODE has a\nfew key parts: \n - `RxODE()` which creates the C code for fast ODE solving based on a\n   [simple syntax](https://nlmixrdevelopment.github.io/RxODE/articles/RxODE-syntax.html) related to Leibnitz notation.\n - The event data, which can be:\n   - a `NONMEM` or `deSolve` [compatible data frame](https://nlmixrdevelopment.github.io/RxODE/articles/RxODE-event-types.html), or\n   - created with `et()` or `EventTable()` for [easy simulation of events](https://nlmixrdevelopment.github.io/RxODE/articles/RxODE-event-table.html)\n   - The data frame can be augmented by adding\n     [time-varying](https://nlmixrdevelopment.github.io/RxODE/articles/RxODE-covariates.html#time-varying-covariates)\n     or adding [individual covariates](https://nlmixrdevelopment.github.io/RxODE/articles/RxODE-covariates.html#individual-covariates) (`iCov=` as needed)\n - `rxSolve()` which solves the system of equations using initial\n   conditions and parameters to make predictions\n   - With multiple subject data, [this may be\n     parallelized](https://nlmixrdevelopment.github.io/RxODE/articles/RxODE-speed.html).\n   - With single subject the [output data frame is adaptive](https://nlmixrdevelopment.github.io/RxODE/articles/RxODE-data-frame.html)\n   - Covariances and other metrics of uncertanty can be used to\n     [simulate while solving](https://nlmixrdevelopment.github.io/RxODE/articles/RxODE-sim-var.html)\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8987900831873006,
+      "result": {
+        "original_header": "ODE solving",
+        "type": "Text_excerpt",
+        "value": "This is a brief comparison of pharmacometric ODE solving R packages to\n`RxODE`. \n-   [mrgsolve](https://CRAN.R-project.org/package=mrgsolve), which uses\n    C++ lsoda solver to solve ODE systems. The user is required to write\n    hybrid R/C++ code to create a mrgsolve model which is translated to\n    C++ for solving. \n    Unlike `RxODE`, `mrgsolve` does not currently support symbolic\n    manipulation of ODE systems, like automatic Jacobian calculation or\n    forward sensitivity calculation (`RxODE` currently supports this and\n    this is the basis of\n    [nlmixr](https://CRAN.R-project.org/package=nlmixr)'s FOCEi\n    algorithm) \n    Like `RxODE`, `dMod` supports symbolic manipulation of ODE systems\n    and calculates forward sensitivities and adjoint sensitivities of\n    systems. \n    Unlike `RxODE`, `dMod` is not thread-safe since `deSolve` is not yet\n    thread-safe. \nAnd there is one package that is not released on CRAN: \n-   [PKPDsim](https://github.com/InsightRX/PKPDsim) which defines models\n    in an R-like syntax and converts the system to compiled code. \n    `PKPDsim` is not thread-safe. \nThe open pharmacometrics open source community is fairly friendly, and\nthe RxODE maintainers has had positive interactions with all of the\nODE-solving pharmacometric projects listed.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9310020398166334,
+      "result": {
+        "original_header": "PK Solved systems",
+        "type": "Text_excerpt",
+        "value": "`RxODE` supports 1-3 compartment models with gradients (using stan\nmath's auto-differentiation). This currently uses the same equations as\n`PKADVAN` to allow time-varying covariates. \n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9305025447424091,
+      "result": {
+        "original_header": "The following packages for solved PK systems are on CRAN",
+        "type": "Text_excerpt",
+        "value": "-   [mrgsolve](https://CRAN.R-project.org/package=mrgsolve) currently\n    has 1-2 compartment (poly-exponential models) models built-in. The\n    solved systems and ODEs cannot currently be mixed.\n-   [pmxTools](https://github.com/kestrel99/pmxTools) currently have 1-3\n    compartment (super-positioning) models built-in. This is a R-only\n    implementation.\n-   [PKPDmodels](https://CRAN.R-project.org/package=PKPDmodels)\n    has a one-compartment model with gradients.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.938910591551731,
+      "result": {
+        "original_header": "Non-CRAN libraries:",
+        "type": "Text_excerpt",
+        "value": "-   [PKADVAN](https://github.com/abuhelwa/PKADVAN_Rpackage) Provides 1-3\n    compartment models using non-superpositioning. This allows\n    time-varying covariates.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/nlmixrdevelopment/RxODE/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 13
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "nlmixrdevelopment/RxODE"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "RxODE"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://nlmixrdevelopment.github.io/RxODE/"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "RxODE"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://codecov.io/github/nlmixrdevelopment/RxODE/coverage.svg"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/man/figures/README-intro-central-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/man/figures/README-intro-effect-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "---\neditor_options: \n  markdown: \n    wrap: 72\n---\n\nYou can install the released version of RxODE from\n[CRAN](https://CRAN.R-project.org) with:\n\n``` {.r}\ninstall.packages(\"RxODE\")\n```\n\nYou can install the development version of RxODE with\n\n``` {.r}\ndevtools::install_github(\"nlmixrdevelopment/RxODE\")\n```\n\nTo build models with RxODE, you need a working c compiler. To use\nparallel threaded solving in RxODE, this c compiler needs to support\nopen-mp.\n\nYou can check to see if R has working c compiler you can check with:\n\n``` {.r}\n## install.packages(\"pkgbuild\")\npkgbuild::has_build_tools(debug = TRUE)\n```\n\nIf you do not have the toolchain, you can set it up as described by the\nplatform information below:\n\n### Windows\n\nIn windows you may simply use installr to install rtools:\n\n``` {.r}\ninstall.packages(\"installr\")\nlibrary(installr)\ninstall.rtools()\n```\n\nAlternatively you can\n[download](https://cran.r-project.org/bin/windows/Rtools/) and install\nrtools directly.\n\n### Mac OSX\n\nTo get the most speed you need OpenMP enabled and compile RxODE with\nthat compiler. There are various options and the most up to date\ndiscussion about this is likely the [data.table installation faq for\nMacOS](https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac).\nThe last thing to keep in mind is that `RxODE` uses the code very\nsimilar to the original `lsoda` which requires the `gfortran` compiler\nto be setup as well as the `OpenMP` compilers.\n\nIf you are going to be using `RxODE` and `nlmixr` together and have an\nolder mac computer, I would suggest trying the following:\n\n```r\nlibrary(symengine)\n```\n\nIf this crashes your R session then the binary does not work with your\nMac machine.  To be able to run nlmixr, you will need to compile this\npackage manually.  I will proceed assuming you have `homebrew`\ninstalled on your system.\n\nOn your system terminal you will need to install the dependencies to\ncompile `symengine`:\n\n```sh\nbrew install cmake gmp mpfr libmpc\n```\n\nAfter installing the dependencies, you need to reinstall `symengine`:\n\n```r\ninstall.packages(\"symengine\", type=\"source\")\nlibrary(symengine)\n```\n\n### Linux\n\nTo install on linux make sure you install `gcc` (with openmp support)\nand `gfortran` using your distribution's package manager.\n\n## Development Version\n\nSince the development version of RxODE uses StanHeaders, you will need\nto make sure your compiler is setup to support C++14, as described in\nthe [rstan setup\npage](https://github.com/stan-dev/rstan/wiki/RStan-Getting-Started#configuration-of-the-c-toolchain).\nFor R 4.0, I do not believe this requires modifying the windows\ntoolchain any longer (so it is much easier to setup).\n\nOnce the C++ toolchain is setup appropriately, you can install the\ndevelopment version from\n[GitHub](https://github.com/nlmixrdevelopment/RxODE) with:\n\n``` {.r}\n# install.packages(\"devtools\")\ndevtools::install_github(\"nlmixrdevelopment/RxODE\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/man-roxygen/rmdhunks/RxODE-install-hunk.Rmd",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "RxODE"
+        ],
+        "type": "Text_excerpt",
+        "value": "\n\n\n\n\n\n\nYou can install the released version of RxODE from\n[CRAN](https://CRAN.R-project.org) with:\n\n``` {.r}\ninstall.packages(\"RxODE\")\n```\n\nYou can install the development version of RxODE with\n\n``` {.r}\ndevtools::install_github(\"nlmixrdevelopment/RxODE\")\n```\n\nTo build models with RxODE, you need a working c compiler. To use\nparallel threaded solving in RxODE, this c compiler needs to support\nopen-mp.\n\nYou can check to see if R has working c compiler you can check with:\n\n``` {.r}\n## install.packages(\"pkgbuild\")\npkgbuild::has_build_tools(debug = TRUE)\n```\n\nIf you do not have the toolchain, you can set it up as described by the\nplatform information below:\n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Windows",
+        "parent_header": [
+          "RxODE",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "In windows you may simply use installr to install rtools:\n\n``` {.r}\ninstall.packages(\"installr\")\nlibrary(installr)\ninstall.rtools()\n```\n\nAlternatively you can\n[download](https://cran.r-project.org/bin/windows/Rtools/) and install\nrtools directly.\n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Mac OSX",
+        "parent_header": [
+          "RxODE",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "To get the most speed you need OpenMP enabled and compile RxODE with\nthat compiler. There are various options and the most up to date\ndiscussion about this is likely the [data.table installation faq for\nMacOS](https://github.com/Rdatatable/data.table/wiki/Installation#openmp-enabled-compiler-for-mac).\nThe last thing to keep in mind is that `RxODE` uses the code very\nsimilar to the original `lsoda` which requires the `gfortran` compiler\nto be setup as well as the `OpenMP` compilers.\n\nIf you are going to be using `RxODE` and `nlmixr` together and have an\nolder mac computer, I would suggest trying the following:\n\n```r\nlibrary(symengine)\n```\n\nIf this crashes your R session then the binary does not work with your\nMac machine.  To be able to run nlmixr, you will need to compile this\npackage manually.  I will proceed assuming you have `homebrew`\ninstalled on your system.\n\nOn your system terminal you will need to install the dependencies to\ncompile `symengine`:\n\n```sh\nbrew install cmake gmp mpfr libmpc\n```\n\nAfter installing the dependencies, you need to reinstall `symengine`:\n\n```r\ninstall.packages(\"symengine\", type=\"source\")\nlibrary(symengine)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Linux",
+        "parent_header": [
+          "RxODE",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "To install on linux make sure you install `gcc` (with openmp support)\nand `gfortran` using your distribution's package manager.\n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/nlmixrdevelopment/RxODE/issues/"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/nlmixrdevelopment/RxODE/issues"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The GNU General Public License is a free, copyleft license for\nsoftware and other kinds of works.\n\n  The licenses for most software and other practical works are designed\nto take away your freedom to share and change the works.  By contrast,\nthe GNU General Public License is intended to guarantee your freedom to\nshare and change all versions of a program--to make sure it remains free\nsoftware for all its users.  We, the Free Software Foundation, use the\nGNU General Public License for most of our software; it applies also to\nany other work released this way by its authors.  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthem if you wish), that you receive source code or can get it if you\nwant it, that you can change the software or use pieces of it in new\nfree programs, and that you know you can do these things.\n\n  To protect your rights, we need to prevent others from denying you\nthese rights or asking you to surrender the rights.  Therefore, you have\ncertain responsibilities if you distribute copies of the software, or if\nyou modify it: responsibilities to respect the freedom of others.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must pass on to the recipients the same\nfreedoms that you received.  You must make sure that they, too, receive\nor can get the source code.  And you must show them these terms so they\nknow their rights.\n\n  Developers that use the GNU GPL protect your rights with two steps:\n(1) assert copyright on the software, and (2) offer you this License\ngiving you legal permission to copy, distribute and/or modify it.\n\n  For the developers' and authors' protection, the GPL clearly explains\nthat there is no warranty for this free software.  For both users' and\nauthors' sake, the GPL requires that modified versions be marked as\nchanged, so that their problems will not be attributed erroneously to\nauthors of previous versions.\n\n  Some devices are designed to deny users access to install or run\nmodified versions of the software inside them, although the manufacturer\ncan do so.  This is fundamentally incompatible with the aim of\nprotecting users' freedom to change the software.  The systematic\npattern of such abuse occurs in the area of products for individuals to\nuse, which is precisely where it is most unacceptable.  Therefore, we\nhave designed this version of the GPL to prohibit the practice for those\nproducts.  If such problems arise substantially in other domains, we\nstand ready to extend this provision to those domains in future versions\nof the GPL, as needed to protect the freedom of users.\n\n  Finally, every program is threatened constantly by software patents.\nStates should not allow patents to restrict development and use of\nsoftware on general-purpose computers, but in those that do, we wish to\navoid the special danger that patents applied to a free program could\nmake it effectively proprietary.  To prevent this, the GPL assures that\npatents cannot be used to render the program non-free.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n                       TERMS AND CONDITIONS\n\n  0. Definitions.\n\n  \"This License\" refers to version 3 of the GNU General Public License.\n\n  \"Copyright\" also means copyright-like laws that apply to other kinds of\nworks, such as semiconductor masks.\n\n  \"The Program\" refers to any copyrightable work licensed under this\nLicense.  Each licensee is addressed as \"you\".  \"Licensees\" and\n\"recipients\" may be individuals or organizations.\n\n  To \"modify\" a work means to copy from or adapt all or part of the work\nin a fashion requiring copyright permission, other than the making of an\nexact copy.  The resulting work is called a \"modified version\" of the\nearlier work or a work \"based on\" the earlier work.\n\n  A \"covered work\" means either the unmodified Program or a work based\non the Program.\n\n  To \"propagate\" a work means to do anything with it that, without\npermission, would make you directly or secondarily liable for\ninfringement under applicable copyright law, except executing it on a\ncomputer or modifying a private copy.  Propagation includes copying,\ndistribution (with or without modification), making available to the\npublic, and in some countries other activities as well.\n\n  To \"convey\" a work means any kind of propagation that enables other\nparties to make or receive copies.  Mere interaction with a user through\na computer network, with no transfer of a copy, is not conveying.\n\n  An interactive user interface displays \"Appropriate Legal Notices\"\nto the extent that it includes a convenient and prominently visible\nfeature that (1) displays an appropriate copyright notice, and (2)\ntells the user that there is no warranty for the work (except to the\nextent that warranties are provided), that licensees may convey the\nwork under this License, and how to view a copy of this License.  If\nthe interface presents a list of user commands or options, such as a\nmenu, a prominent item in the list meets this criterion.\n\n  1. Source Code.\n\n  The \"source code\" for a work means the preferred form of the work\nfor making modifications to it.  \"Object code\" means any non-source\nform of a work.\n\n  A \"Standard Interface\" means an interface that either is an official\nstandard defined by a recognized standards body, or, in the case of\ninterfaces specified for a particular programming language, one that\nis widely used among developers working in that language.\n\n  The \"System Libraries\" of an executable work include anything, other\nthan the work as a whole, that (a) is included in the normal form of\npackaging a Major Component, but which is not part of that Major\nComponent, and (b) serves only to enable use of the work with that\nMajor Component, or to implement a Standard Interface for which an\nimplementation is available to the public in source code form.  A\n\"Major Component\", in this context, means a major essential component\n(kernel, window system, and so on) of the specific operating system\n(if any) on which the executable work runs, or a compiler used to\nproduce the work, or an object code interpreter used to run it.\n\n  The \"Corresponding Source\" for a work in object code form means all\nthe source code needed to generate, install, and (for an executable\nwork) run the object code and to modify the work, including scripts to\ncontrol those activities.  However, it does not include the work's\nSystem Libraries, or general-purpose tools or generally available free\nprograms which are used unmodified in performing those activities but\nwhich are not part of the work.  For example, Corresponding Source\nincludes interface definition files associated with source files for\nthe work, and the source code for shared libraries and dynamically\nlinked subprograms that the work is specifically designed to require,\nsuch as by intimate data communication or control flow between those\nsubprograms and other parts of the work.\n\n  The Corresponding Source need not include anything that users\ncan regenerate automatically from other parts of the Corresponding\nSource.\n\n  The Corresponding Source for a work in source code form is that\nsame work.\n\n  2. Basic Permissions.\n\n  All rights granted under this License are granted for the term of\ncopyright on the Program, and are irrevocable provided the stated\nconditions are met.  This License explicitly affirms your unlimited\npermission to run the unmodified Program.  The output from running a\ncovered work is covered by this License only if the output, given its\ncontent, constitutes a covered work.  This License acknowledges your\nrights of fair use or other equivalent, as provided by copyright law.\n\n  You may make, run and propagate covered works that you do not\nconvey, without conditions so long as your license otherwise remains\nin force.  You may convey covered works to others for the sole purpose\nof having them make modifications exclusively for you, or provide you\nwith facilities for running those works, provided that you comply with\nthe terms of this License in conveying all material for which you do\nnot control copyright.  Those thus making or running the covered works\nfor you must do so exclusively on your behalf, under your direction\nand control, on terms that prohibit them from making any copies of\nyour copyrighted material outside their relationship with you.\n\n  Conveying under any other circumstances is permitted solely under\nthe conditions stated below.  Sublicensing is not allowed; section 10\nmakes it unnecessary.\n\n  3. Protecting Users' Legal Rights From Anti-Circumvention Law.\n\n  No covered work shall be deemed part of an effective technological\nmeasure under any applicable law fulfilling obligations under article\n11 of the WIPO copyright treaty adopted on 20 December 1996, or\nsimilar laws prohibiting or restricting circumvention of such\nmeasures.\n\n  When you convey a covered work, you waive any legal power to forbid\ncircumvention of technological measures to the extent such circumvention\nis effected by exercising rights under this License with respect to\nthe covered work, and you disclaim any intention to limit operation or\nmodification of the work as a means of enforcing, against the work's\nusers, your or third parties' legal rights to forbid circumvention of\ntechnological measures.\n\n  4. Conveying Verbatim Copies.\n\n  You may convey verbatim copies of the Program's source code as you\nreceive it, in any medium, provided that you conspicuously and\nappropriately publish on each copy an appropriate copyright notice;\nkeep intact all notices stating that this License and any\nnon-permissive terms added in accord with section 7 apply to the code;\nkeep intact all notices of the absence of any warranty; and give all\nrecipients a copy of this License along with the Program.\n\n  You may charge any price or no price for each copy that you convey,\nand you may offer support or warranty protection for a fee.\n\n  5. Conveying Modified Source Versions.\n\n  You may convey a work based on the Program, or the modifications to\nproduce it from the Program, in the form of source code under the\nterms of section 4, provided that you also meet all of these conditions:\n\n    a) The work must carry prominent notices stating that you modified\n    it, and giving a relevant date.\n\n    b) The work must carry prominent notices stating that it is\n    released under this License and any conditions added under section\n    7.  This requirement modifies the requirement in section 4 to\n    \"keep intact all notices\".\n\n    c) You must license the entire work, as a whole, under this\n    License to anyone who comes into possession of a copy.  This\n    License will therefore apply, along with any applicable section 7\n    additional terms, to the whole of the work, and all its parts,\n    regardless of how they are packaged.  This License gives no\n    permission to license the work in any other way, but it does not\n    invalidate such permission if you have separately received it.\n\n    d) If the work has interactive user interfaces, each must display\n    Appropriate Legal Notices; however, if the Program has interactive\n    interfaces that do not display Appropriate Legal Notices, your\n    work need not make them do so.\n\n  A compilation of a covered work with other separate and independent\nworks, which are not by their nature extensions of the covered work,\nand which are not combined with it such as to form a larger program,\nin or on a volume of a storage or distribution medium, is called an\n\"aggregate\" if the compilation and its resulting copyright are not\nused to limit the access or legal rights of the compilation's users\nbeyond what the individual works permit.  Inclusion of a covered work\nin an aggregate does not cause this License to apply to the other\nparts of the aggregate.\n\n  6. Conveying Non-Source Forms.\n\n  You may convey a covered work in object code form under the terms\nof sections 4 and 5, provided that you also convey the\nmachine-readable Corresponding Source under the terms of this License,\nin one of these ways:\n\n    a) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by the\n    Corresponding Source fixed on a durable physical medium\n    customarily used for software interchange.\n\n    b) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by a\n    written offer, valid for at least three years and valid for as\n    long as you offer spare parts or customer support for that product\n    model, to give anyone who possesses the object code either (1) a\n    copy of the Corresponding Source for all the software in the\n    product that is covered by this License, on a durable physical\n    medium customarily used for software interchange, for a price no\n    more than your reasonable cost of physically performing this\n    conveying of source, or (2) access to copy the\n    Corresponding Source from a network server at no charge.\n\n    c) Convey individual copies of the object code with a copy of the\n    written offer to provide the Corresponding Source.  This\n    alternative is allowed only occasionally and noncommercially, and\n    only if you received the object code with such an offer, in accord\n    with subsection 6b.\n\n    d) Convey the object code by offering access from a designated\n    place (gratis or for a charge), and offer equivalent access to the\n    Corresponding Source in the same way through the same place at no\n    further charge.  You need not require recipients to copy the\n    Corresponding Source along with the object code.  If the place to\n    copy the object code is a network server, the Corresponding Source\n    may be on a different server (operated by you or a third party)\n    that supports equivalent copying facilities, provided you maintain\n    clear directions next to the object code saying where to find the\n    Corresponding Source.  Regardless of what server hosts the\n    Corresponding Source, you remain obligated to ensure that it is\n    available for as long as needed to satisfy these requirements.\n\n    e) Convey the object code using peer-to-peer transmission, provided\n    you inform other peers where the object code and Corresponding\n    Source of the work are being offered to the general public at no\n    charge under subsection 6d.\n\n  A separable portion of the object code, whose source code is excluded\nfrom the Corresponding Source as a System Library, need not be\nincluded in conveying the object code work.\n\n  A \"User Product\" is either (1) a \"consumer product\", which means any\ntangible personal property which is normally used for personal, family,\nor household purposes, or (2) anything designed or sold for incorporation\ninto a dwelling.  In determining whether a product is a consumer product,\ndoubtful cases shall be resolved in favor of coverage.  For a particular\nproduct received by a particular user, \"normally used\" refers to a\ntypical or common use of that class of product, regardless of the status\nof the particular user or of the way in which the particular user\nactually uses, or expects or is expected to use, the product.  A product\nis a consumer product regardless of whether the product has substantial\ncommercial, industrial or non-consumer uses, unless such uses represent\nthe only significant mode of use of the product.\n\n  \"Installation Information\" for a User Product means any methods,\nprocedures, authorization keys, or other information required to install\nand execute modified versions of a covered work in that User Product from\na modified version of its Corresponding Source.  The information must\nsuffice to ensure that the continued functioning of the modified object\ncode is in no case prevented or interfered with solely because\nmodification has been made.\n\n  If you convey an object code work under this section in, or with, or\nspecifically for use in, a User Product, and the conveying occurs as\npart of a transaction in which the right of possession and use of the\nUser Product is transferred to the recipient in perpetuity or for a\nfixed term (regardless of how the transaction is characterized), the\nCorresponding Source conveyed under this section must be accompanied\nby the Installation Information.  But this requirement does not apply\nif neither you nor any third party retains the ability to install\nmodified object code on the User Product (for example, the work has\nbeen installed in ROM).\n\n  The requirement to provide Installation Information does not include a\nrequirement to continue to provide support service, warranty, or updates\nfor a work that has been modified or installed by the recipient, or for\nthe User Product in which it has been modified or installed.  Access to a\nnetwork may be denied when the modification itself materially and\nadversely affects the operation of the network or violates the rules and\nprotocols for communication across the network.\n\n  Corresponding Source conveyed, and Installation Information provided,\nin accord with this section must be in a format that is publicly\ndocumented (and with an implementation available to the public in\nsource code form), and must require no special password or key for\nunpacking, reading or copying.\n\n  7. Additional Terms.\n\n  \"Additional permissions\" are terms that supplement the terms of this\nLicense by making exceptions from one or more of its conditions.\nAdditional permissions that are applicable to the entire Program shall\nbe treated as though they were included in this License, to the extent\nthat they are valid under applicable law.  If additional permissions\napply only to part of the Program, that part may be used separately\nunder those permissions, but the entire Program remains governed by\nthis License without regard to the additional permissions.\n\n  When you convey a copy of a covered work, you may at your option\nremove any additional permissions from that copy, or from any part of\nit.  (Additional permissions may be written to require their own\nremoval in certain cases when you modify the work.)  You may place\nadditional permissions on material, added by you to a covered work,\nfor which you have or can give appropriate copyright permission.\n\n  Notwithstanding any other provision of this License, for material you\nadd to a covered work, you may (if authorized by the copyright holders of\nthat material) supplement the terms of this License with terms:\n\n    a) Disclaiming warranty or limiting liability differently from the\n    terms of sections 15 and 16 of this License; or\n\n    b) Requiring preservation of specified reasonable legal notices or\n    author attributions in that material or in the Appropriate Legal\n    Notices displayed by works containing it; or\n\n    c) Prohibiting misrepresentation of the origin of that material, or\n    requiring that modified versions of such material be marked in\n    reasonable ways as different from the original version; or\n\n    d) Limiting the use for publicity purposes of names of licensors or\n    authors of the material; or\n\n    e) Declining to grant rights under trademark law for use of some\n    trade names, trademarks, or service marks; or\n\n    f) Requiring indemnification of licensors and authors of that\n    material by anyone who conveys the material (or modified versions of\n    it) with contractual assumptions of liability to the recipient, for\n    any liability that these contractual assumptions directly impose on\n    those licensors and authors.\n\n  All other non-permissive additional terms are considered \"further\nrestrictions\" within the meaning of section 10.  If the Program as you\nreceived it, or any part of it, contains a notice stating that it is\ngoverned by this License along with a term that is a further\nrestriction, you may remove that term.  If a license document contains\na further restriction but permits relicensing or conveying under this\nLicense, you may add to a covered work material governed by the terms\nof that license document, provided that the further restriction does\nnot survive such relicensing or conveying.\n\n  If you add terms to a covered work in accord with this section, you\nmust place, in the relevant source files, a statement of the\nadditional terms that apply to those files, or a notice indicating\nwhere to find the applicable terms.\n\n  Additional terms, permissive or non-permissive, may be stated in the\nform of a separately written license, or stated as exceptions;\nthe above requirements apply either way.\n\n  8. Termination.\n\n  You may not propagate or modify a covered work except as expressly\nprovided under this License.  Any attempt otherwise to propagate or\nmodify it is void, and will automatically terminate your rights under\nthis License (including any patent licenses granted under the third\nparagraph of section 11).\n\n  However, if you cease all violation of this License, then your\nlicense from a particular copyright holder is reinstated (a)\nprovisionally, unless and until the copyright holder explicitly and\nfinally terminates your license, and (b) permanently, if the copyright\nholder fails to notify you of the violation by some reasonable means\nprior to 60 days after the cessation.\n\n  Moreover, your license from a particular copyright holder is\nreinstated permanently if the copyright holder notifies you of the\nviolation by some reasonable means, this is the first time you have\nreceived notice of violation of this License (for any work) from that\ncopyright holder, and you cure the violation prior to 30 days after\nyour receipt of the notice.\n\n  Termination of your rights under this section does not terminate the\nlicenses of parties who have received copies or rights from you under\nthis License.  If your rights have been terminated and not permanently\nreinstated, you do not qualify to receive new licenses for the same\nmaterial under section 10.\n\n  9. Acceptance Not Required for Having Copies.\n\n  You are not required to accept this License in order to receive or\nrun a copy of the Program.  Ancillary propagation of a covered work\noccurring solely as a consequence of using peer-to-peer transmission\nto receive a copy likewise does not require acceptance.  However,\nnothing other than this License grants you permission to propagate or\nmodify any covered work.  These actions infringe copyright if you do\nnot accept this License.  Therefore, by modifying or propagating a\ncovered work, you indicate your acceptance of this License to do so.\n\n  10. Automatic Licensing of Downstream Recipients.\n\n  Each time you convey a covered work, the recipient automatically\nreceives a license from the original licensors, to run, modify and\npropagate that work, subject to this License.  You are not responsible\nfor enforcing compliance by third parties with this License.\n\n  An \"entity transaction\" is a transaction transferring control of an\norganization, or substantially all assets of one, or subdividing an\norganization, or merging organizations.  If propagation of a covered\nwork results from an entity transaction, each party to that\ntransaction who receives a copy of the work also receives whatever\nlicenses to the work the party's predecessor in interest had or could\ngive under the previous paragraph, plus a right to possession of the\nCorresponding Source of the work from the predecessor in interest, if\nthe predecessor has it or can get it with reasonable efforts.\n\n  You may not impose any further restrictions on the exercise of the\nrights granted or affirmed under this License.  For example, you may\nnot impose a license fee, royalty, or other charge for exercise of\nrights granted under this License, and you may not initiate litigation\n(including a cross-claim or counterclaim in a lawsuit) alleging that\nany patent claim is infringed by making, using, selling, offering for\nsale, or importing the Program or any portion of it.\n\n  11. Patents.\n\n  A \"contributor\" is a copyright holder who authorizes use under this\nLicense of the Program or a work on which the Program is based.  The\nwork thus licensed is called the contributor's \"contributor version\".\n\n  A contributor's \"essential patent claims\" are all patent claims\nowned or controlled by the contributor, whether already acquired or\nhereafter acquired, that would be infringed by some manner, permitted\nby this License, of making, using, or selling its contributor version,\nbut do not include claims that would be infringed only as a\nconsequence of further modification of the contributor version.  For\npurposes of this definition, \"control\" includes the right to grant\npatent sublicenses in a manner consistent with the requirements of\nthis License.\n\n  Each contributor grants you a non-exclusive, worldwide, royalty-free\npatent license under the contributor's essential patent claims, to\nmake, use, sell, offer for sale, import and otherwise run, modify and\npropagate the contents of its contributor version.\n\n  In the following three paragraphs, a \"patent license\" is any express\nagreement or commitment, however denominated, not to enforce a patent\n(such as an express permission to practice a patent or covenant not to\nsue for patent infringement).  To \"grant\" such a patent license to a\nparty means to make such an agreement or commitment not to enforce a\npatent against the party.\n\n  If you convey a covered work, knowingly relying on a patent license,\nand the Corresponding Source of the work is not available for anyone\nto copy, free of charge and under the terms of this License, through a\npublicly available network server or other readily accessible means,\nthen you must either (1) cause the Corresponding Source to be so\navailable, or (2) arrange to deprive yourself of the benefit of the\npatent license for this particular work, or (3) arrange, in a manner\nconsistent with the requirements of this License, to extend the patent\nlicense to downstream recipients.  \"Knowingly relying\" means you have\nactual knowledge that, but for the patent license, your conveying the\ncovered work in a country, or your recipient's use of the covered work\nin a country, would infringe one or more identifiable patents in that\ncountry that you have reason to believe are valid.\n\n  If, pursuant to or in connection with a single transaction or\narrangement, you convey, or propagate by procuring conveyance of, a\ncovered work, and grant a patent license to some of the parties\nreceiving the covered work authorizing them to use, propagate, modify\nor convey a specific copy of the covered work, then the patent license\nyou grant is automatically extended to all recipients of the covered\nwork and works based on it.\n\n  A patent license is \"discriminatory\" if it does not include within\nthe scope of its coverage, prohibits the exercise of, or is\nconditioned on the non-exercise of one or more of the rights that are\nspecifically granted under this License.  You may not convey a covered\nwork if you are a party to an arrangement with a third party that is\nin the business of distributing software, under which you make payment\nto the third party based on the extent of your activity of conveying\nthe work, and under which the third party grants, to any of the\nparties who would receive the covered work from you, a discriminatory\npatent license (a) in connection with copies of the covered work\nconveyed by you (or copies made from those copies), or (b) primarily\nfor and in connection with specific products or compilations that\ncontain the covered work, unless you entered into that arrangement,\nor that patent license was granted, prior to 28 March 2007.\n\n  Nothing in this License shall be construed as excluding or limiting\nany implied license or other defenses to infringement that may\notherwise be available to you under applicable patent law.\n\n  12. No Surrender of Others' Freedom.\n\n  If conditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot convey a\ncovered work so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you may\nnot convey it at all.  For example, if you agree to terms that obligate you\nto collect a royalty for further conveying from those to whom you convey\nthe Program, the only way you could satisfy both those terms and this\nLicense would be to refrain entirely from conveying the Program.\n\n  13. Use with the GNU Affero General Public License.\n\n  Notwithstanding any other provision of this License, you have\npermission to link or combine any covered work with a work licensed\nunder version 3 of the GNU Affero General Public License into a single\ncombined work, and to convey the resulting work.  The terms of this\nLicense will continue to apply to the part which is the covered work,\nbut the special requirements of the GNU Affero General Public License,\nsection 13, concerning interaction through a network will apply to the\ncombination as such.\n\n  14. Revised Versions of this License.\n\n  The Free Software Foundation may publish revised and/or new versions of\nthe GNU General Public License from time to time.  Such new versions will\nbe similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\n  Each version is given a distinguishing version number.  If the\nProgram specifies that a certain numbered version of the GNU General\nPublic License \"or any later version\" applies to it, you have the\noption of following the terms and conditions either of that numbered\nversion or of any later version published by the Free Software\nFoundation.  If the Program does not specify a version number of the\nGNU General Public License, you may choose any version ever published\nby the Free Software Foundation.\n\n  If the Program specifies that a proxy can decide which future\nversions of the GNU General Public License can be used, that proxy's\npublic statement of acceptance of a version permanently authorizes you\nto choose that version for the Program.\n\n  Later license versions may give you additional or different\npermissions.  However, no additional obligations are imposed on any\nauthor or copyright holder as a result of your choosing to follow a\nlater version.\n\n  15. Disclaimer of Warranty.\n\n  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY\nAPPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT\nHOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY\nOF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM\nIS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF\nALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n  16. Limitation of Liability.\n\n  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS\nTHE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\nGENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE\nUSE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF\nDATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD\nPARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),\nEVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGES.\n\n  17. Interpretation of Sections 15 and 16.\n\n  If the disclaimer of warranty and limitation of liability provided\nabove cannot be given local legal effect according to their terms,\nreviewing courts shall apply local law that most closely approximates\nan absolute waiver of all civil liability in connection with the\nProgram, unless a warranty or assumption of liability accompanies a\ncopy of the Program in return for a fee.\n\n                     END OF TERMS AND CONDITIONS\n\n            How to Apply These Terms to Your New Programs\n\n  If you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these terms.\n\n  To do so, attach the following notices to the program.  It is safest\nto attach them to the start of each source file to most effectively\nstate the exclusion of warranty; and each file should have at least\nthe \"copyright\" line and a pointer to where the full notice is found.\n\n    <one line to give the program's name and a brief idea of what it does.>\n    Copyright (C) <year>  <name of author>\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <https://www.gnu.org/licenses/>.\n\nAlso add information on how to contact you by electronic and paper mail.\n\n  If the program does terminal interaction, make it output a short\nnotice like this when it starts in an interactive mode:\n\n    <program>  Copyright (C) <year>  <name of author>\n    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `show c' for details.\n\nThe hypothetical commands `show w' and `show c' should show the appropriate\nparts of the General Public License.  Of course, your program's commands\nmight be different; for a GUI interface, you would use an \"about box\".\n\n  You should also get your employer (if you work as a programmer) or school,\nif any, to sign a \"copyright disclaimer\" for the program, if necessary.\nFor more information on this, and how to apply and follow the GNU GPL, see\n<https://www.gnu.org/licenses/>.\n\n  The GNU General Public License does not permit incorporating your program\ninto proprietary programs.  If your program is a subroutine library, you\nmay consider it more useful to permit linking proprietary applications with\nthe library.  If this is what you want to do, use the GNU Lesser General\nPublic License instead of this License.  But first, please read\n<https://www.gnu.org/licenses/why-not-lgpl.html>."
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL (>= 3)"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-2.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-2.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "RxODE"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "RxODE: Facilities for Simulating from ODE-Based Models"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "nlmixrdevelopment"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+        "type": "String",
+        "value": "RxODE"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 1582086,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 1441572,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 1040878,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Fortran",
+        "size": 194102,
+        "type": "Programming_language",
+        "value": "Fortran"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GAP",
+        "size": 5709,
+        "type": "Programming_language",
+        "value": "GAP"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 472,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": "3.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/nlmixrdevelopment/RxODE/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2022-01-10T15:20:33Z",
+        "date_published": "2022-01-18T03:24:00Z",
+        "description": "- As requested by CRAN, fix the -Wpointer-sign warnings\r\n- Change handling of missing covariates while interpolating \"nocb\" so that the time-varying covariates use \"nocb\" interpolation (#469)\r\n\r\nNote that v1.1.3 was never released to CRAN",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v1.1.4",
+        "name": "v1.1.4",
+        "release_id": 57335931,
+        "tag": "v1.1.4",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v1.1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/57335931",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/57335931",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v1.1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2021-10-27T02:24:29Z",
+        "date_published": "2021-11-04T04:00:49Z",
+        "description": "# RxODE 1.1.2\r\n\r\n* Fix subject initialization of `focei` problem (#464)\r\n\r\n* Fix LHS offset to allow internal threading and more parallel\r\n  processing in the future.\r\n\r\n* Remove warnings for duration and rate\r\n\r\n* Don't export pillar methods any more (simply register at load if present)\r\n\r\n* As requested by CRAN, change fortran and C binding for BLAS an LINPACK\r\n\r\n## What's Changed\r\n* Issue 464 try2 by @mattfidler in https://github.com/nlmixrdevelopment/RxODE/pull/466\r\n* Avoid exporting pillar methods by @krlmlr in https://github.com/nlmixrdevelopment/RxODE/pull/467\r\n\r\n## New Contributors\r\n* @krlmlr made their first contribution in https://github.com/nlmixrdevelopment/RxODE/pull/467\r\n\r\n**Full Changelog**: https://github.com/nlmixrdevelopment/RxODE/compare/v1.1.1...v1.1.2",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v1.1.2",
+        "name": "RxODE 1.1.2",
+        "release_id": 52652337,
+        "tag": "v1.1.2",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v1.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/52652337",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/52652337",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v1.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2021-09-01T01:27:56Z",
+        "date_published": "2021-09-03T20:35:51Z",
+        "description": "* Fix the LTO issue that CRAN identified.\r\n\r\n* Move the omp files so they come first to support clang13, as identified by CRAN.\r\n\r\n* For now, be a little more conservative in `dur()` and `rate()`\r\n  warnings because `linCmt()` models in `nlmixr` currently produce\r\n  irrelevant warnings.",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v1.1.1",
+        "name": " RxODE 1.1.1",
+        "release_id": 48992894,
+        "tag": "v1.1.1",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v1.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/48992894",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/48992894",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v1.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2021-08-05T23:55:58Z",
+        "date_published": "2021-08-07T17:01:11Z",
+        "description": "# RxODE 1.1.0\r\n\r\n* Always calculate \"nolhs\" for using numeric differences when the\r\n  inner problem. This allows the inner problem to fallback to a finite\r\n  difference approximation to the focei objective function.\r\n\r\n* Updated the parser C code grammar using latest dparser CRAN package\r\n\r\n* Added a new cbind function that is used to mix data frame input with\r\n  simulated individual parameters and residual parameters,\r\n  `rxCbindStudyIndividual()`.\r\n\r\n* Now data frame input can be mixed with simulating from omega and\r\n  sigma matrices (though not yet in nested simulations)\r\n\r\n* Race conditions when simulating random numbers is solved by chunking\r\n  each simulation into groups that will always be performed per each\r\n  thread.  This way the simulation is now reproducible regardless of\r\n  load.  Because of the chunking, simulations with random numbers generated\r\n  inside of it are now threaded by default (though a warning is\r\n  produced about the simulation only be reproducible when run with the\r\n  same number of threads)\r\n\r\n* Simulations were double checked and made sure to use the engine\r\n  reserved for each core run in parallel; Some of the random\r\n  generators were not taking random numbers from the correct engine,\r\n  which was corrected.  Therefore, simulations from this version are\r\n  expected to be different (in parallel) than previous versions.\r\n\r\n* Added function `rxSetSeed()` to set the internal RxODE seed instead\r\n  of grabbing it from a uniform random number tied to the original R\r\n  seed.  This will avoid the possibility of [duplicate\r\n  seeds](https://tinyurl.com/m62v3kv9) and is the best practice.\r\n\r\n* Updating parameter pointers is done once per ID and locked based on\r\n  ID to remove the recursion in #399, but still have the correct\r\n  behavior see #430\r\n\r\n* Parsing updated to retain \"param()\" in normalized model, #432.\r\n\r\n* Handle edge case of interpolation at first index correctly, fixes #433\r\n\r\n* Instead of storing each dose information sequentially, store dose\r\n  information at the same index of the `evid` defining the dose.  This\r\n  memory rewrite is to fix the issue #435.\r\n  \r\n* Start using strict headers as it is required for the forthcoming\r\n  release of `Rcpp`.  Thanks to Dirk Eddelbuettel for some of the\r\n  fixes and alerting us to this change.\r\n\r\n* Check arguments for `add.dosing()` more strictly. See Issue #441\r\n\r\n* Issue a warning when either `dur()` or `rate()` is in the model but\r\n  the modeled rate and duration is not included in the event table.\r\n  \r\n* When the data requires a modeled rate and modeled duration but it is\r\n  not in the model, warn about the mismatch in data\r\n  \r\n* Added a back-door for debugging. If you specify\r\n  `options(RxODE.debug=TRUE)` then each solve saves the solving\r\n  information to the file `\"last-rxode.qs\"` before actually solving\r\n  the system.\r\n  \r\n* Only will try to solve RxODE problems on compatible models; If the\r\n  model is not supported it will throw an error instead of crashing\r\n  (See #449)\r\n  \r\n* Turn off parallel ODE solving whenever the system needs to sort\r\n  times based on model dosing.  Currently this type of solving is not\r\n  thread safe.\r\n  \r\n* Update timsort headers to latest version. ",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v1.1.0",
+        "name": "RxODE 1.1.0",
+        "release_id": 47478446,
+        "tag": "v1.1.0",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/47478446",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/47478446",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2021-05-10T17:40:52Z",
+        "date_published": "2021-05-11T13:42:36Z",
+        "description": "# RxODE 1.0.9\r\n\r\n* At the request of CRAN, stripping the debugging symbols for the CRAN\r\n  release is no longer performed.  This means a larger binary size for\r\n  RxODE in this release.\r\n\r\n* At the request of CRAN the `liblsoda` code has been changed so that\r\n  the memory in C defined by `_C()` is now defined by `_rxC()`. This\r\n  will be seen in some of the error messages, which will no longer\r\n  match the error messages of unmodified liblsoda.\r\n\r\n* `iCov` behavior has shifted to merge on the input event dataset.\r\n  See Issue #409; This is more in line with expectations of `iCov`\r\n  behavior, and reduces the amount of code needed to maintain `iCov`.\r\n\r\n  The `iCov` in the pipeline is no longer supported because it simply\r\n  is a merge with the event dataset.\r\n\r\n  This can be a breaking change depending on the code you use.  Note\r\n  that clinical trial simulations, resampling is likely better than\r\n  trying to fill out `iCov` for every individual which was the prior\r\n  use.\r\n\r\n* Bug fix for crashes with string covariates or factor covariates,\r\n  issue #410. Also factor column names are compared with case\r\n  insensitivity just like the rest of the column names for event\r\n  tables or data sets in `RxODE`.",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v1.0.9",
+        "name": "RxODE 1.0.9",
+        "release_id": 42773098,
+        "tag": "v1.0.9",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v1.0.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/42773098",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/42773098",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v1.0.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2021-04-09T18:08:02Z",
+        "date_published": "2021-04-12T19:04:07Z",
+        "description": "* Fix issue #399",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v1.0.8",
+        "name": "v1.0.8",
+        "release_id": 41299466,
+        "tag": "v1.0.8",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v1.0.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/41299466",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/41299466",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v1.0.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2021-04-05T18:39:31Z",
+        "date_published": "2021-04-08T23:45:03Z",
+        "description": "* Change syntax vignette to use markdown option\r\n  `screenshot.force=FALSE`.  This should get rid of the `webshot`\r\n  error\r\n\r\n* Change to depend on dparser 1.3.0, which has some memory fixes\r\n",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v1.0.7",
+        "name": "v1.0.7",
+        "release_id": 41155073,
+        "tag": "v1.0.7",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v1.0.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/41155073",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/41155073",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v1.0.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2021-03-21T18:02:20Z",
+        "date_published": "2021-03-22T21:40:01Z",
+        "description": "# RxODE 1.0.6\r\n\r\n* RxODE imports but does not link to `checkmate` any longer.  This change\r\n   should make recompilation of RxODE to work with different releases\r\n   of `checkmate` unnecessary.\r\n\r\n* Default Solaris solver changed back to \"lsoda\"\r\n\r\n* Fix Bug #393, where in certain circumstances `rxSolve(...,theta=)`\r\n  did not solve for all subjects.\r\n\r\n* Will not ignore NEWS and README when building the package so that\r\n  they will show up on CRAN.  You can also access the news by\r\n  `news(package=\"RxODE\")`\r\n\r\n* Changed `ODR` model names from time id to `_rx` followed by the\r\n  `md5` hash id and a per-session counter id; For packages the id is\r\n  `_rxp` followed by the `md5` hash and a per-session counter id.\r\n\r\n* Changed `qs` to be more conservative in hash creation. Add a check\r\n  hash as well as NOT using altrep stringfish representation.\r\n",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v1.0.6",
+        "name": "v1.0.6",
+        "release_id": 40189362,
+        "tag": "v1.0.6",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v1.0.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/40189362",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/40189362",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v1.0.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2021-03-09T19:04:27Z",
+        "date_published": "2021-03-10T02:08:41Z",
+        "description": "* Maintainance release -- use `std::floor` and cast variables to\r\n  `double` for internal C functions.  This should allow a successful\r\n  compile on Solaris CRAN.\r\n\r\n* Changed `units` from an Imports to a Suggests to allow testing on\r\n  Solaris rhub\r\n\r\n* Changed `ODR` model names from time id to `_rx` followed by the\r\n  `md5` hash id; For packages the id is `_rxp` followed by the `md5`\r\n  hash.\r\n\r\n* Removed AD linear compartment solutions for Windows R 3.6, though\r\n  they still work for Windows R 4.0 (You can get them back for Windows\r\n  R 3.6 if you install `BH` 1.66.0-1 and then recompile from source).\r\n\r\n   - This will cause `nlmixr` to fail with solved systems on Windows 3.6.\r\n     Currently the Stan Headers do not compile on this system so they are\r\n     disabled at this time.\r\n\r\n * RxODE imports but does not link to `qs` any longer; This change\r\n   should make recompilation of RxODE to work with different releases\r\n   of `qs` unnecessary.\r\n\r\n * RxODE now checks for binary compatibility for `Rcpp`, `dparser`,\r\n   `checkmate`, and `PreciseSums`",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v1.0.5",
+        "name": "v1.0.5",
+        "release_id": 39560895,
+        "tag": "v1.0.5",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v1.0.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/39560895",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/39560895",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v1.0.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2021-02-24T15:17:41Z",
+        "date_published": "2021-02-24T15:19:42Z",
+        "description": "## Breaking changes\r\n\r\n* RxODE can only use supported functions (could be breaking); You may\r\n  add your own functions with `rxFun` and their derivatives with `rxD`\r\n\r\n* RxODE now uses its own internal truncated multivariate normal\r\n  simulations based on the threefry sitmo library.  Therefore random\r\n  numbers generated within `RxODE` like providing\r\n  `rxSolve(...,omega=)` will have different results with this new\r\n  random number generator.  This was done to allow internal re-sampling\r\n  of sigmas/etas with thread-safe random number generators (calling R\r\n  through `mvnfast` or R's simulation engines are not thread safe).\r\n\r\n* `RxODE` now moved the precise sum/product type options for `sum()`\r\n  and `prod()` to `rxSolve` or `rxControl`\r\n\r\n* `cvPost` now will returned a named list of matrices if the input\r\n  matrix was named\r\n\r\n* `rxSolve` will now return an integer `id` instead of a factor `id`\r\n  when `id` is integer or integerish (as defined by checkmate).\r\n  Otherwise a factor will be returned.\r\n\r\n* When mixing ODEs and `linCmt()` models, the `linCmt()` compartments\r\n  are 1 and possibly 2 instead of right after the last internal ODE.\r\n  This is more aligned with how PK/PD models are typically defined.\r\n\r\n* `EVID=3` and `EVID=4` now (possibly) reset time as well.  This\r\n  occurs when the input dataset is sorted before solving.\r\n\r\n* When `EVID=2` is present, an `evid` column is output to distinguish\r\n  `evid=0` and `evid=2`\r\n\r\n## New features\r\n\r\n* Add the ability to order input parameters with the `param()`\r\n  pseudo-function\r\n\r\n* Add the ability to resample covariates with `resample=TRUE` or\r\n  `resample=c(\"SEX\", \"CRCL\")`.  You can resample all the covariates by\r\n  `ID` with `resampleID=TRUE` or resample the covariates without\r\n  respect to `ID` with `resampleID=FALSE`\r\n\r\n* Comparison of factors/strings is now supported in `RxODE`; Therefore\r\n  ID==\"Study-1\" is now allowed.\r\n\r\n* Completion for elements of `rxSolve()` objects, and `et()`\r\n  objects have been added (accessed through `$`)\r\n\r\n* Completion of `rxSolve()` arguments are now included since they are\r\n  part of the main method\r\n\r\n* Allow simulation with zero matrices, that provide the simulation\r\n  without variability.  This affects `rxSolve` as well as `rxMvnrnd` and\r\n  `cvPost` (which will give a zero matrix whenever one is specified)\r\n\r\n* `et()` can dose with `length(amt) > 1` as long as the other\r\n  arguments can create a event table.\r\n\r\n* Rstudio notebook output makes more sense\r\n\r\n* Printing upgraded to cli 2.0\r\n\r\n* Caching of internal C data setup is now supported increasing speed\r\n  of `optim` code when:\r\n  - Event Table doesn't change\r\n  - The size of the parameters doesn't change\r\n  - `inits` do not change (though you can specify them as `cmt(0)=...`\r\n    in the model and change them by parameters)\r\n  - See Issue #109\r\n\r\n* Allow `while(logical)` statements with ability to break out if them\r\n  by `break`. The while has an escape valve controlled by `maxwhere`\r\n  which by default is 10000 iterations. It can be change with\r\n  `rxSolve(..., maxwhere = NNN)`\r\n\r\n* Allow accessing different time-varying components of an input\r\n  dataset for each individual with:\r\n\r\n  - `lag(var, #)`\r\n  - `lead(var, #)`\r\n  - `first(var)`\r\n  - `last(var)`\r\n  - `diff(var)`\r\n\r\nEach of these are similar to the R `lag`, `lead`, `first`, `last` and\r\n`diff`.  However when undefined, it returns `NA`\r\n\r\n* Allow sticky left-handed side of the equation; This means for an\r\n  observation the left handed values are saved for the next\r\n  observations and then reassigned to the last calculated value.\r\n\r\n  This allows NONMEM-style of calculating parameters like tad:\r\n\r\n```r\r\nmod1 <-RxODE({\r\n    KA=2.94E-01;\r\n    CL=1.86E+01;\r\n    V2=4.02E+01;\r\n    Q=1.05E+01;\r\n    V3=2.97E+02;\r\n    Kin=1;\r\n    Kout=1;\r\n    EC50=200;\r\n    C2 = centr/V2;\r\n    C3 = peri/V3;\r\n    d/dt(depot) =-KA*depot;\r\n    d/dt(centr) = KA*depot - CL*C2 - Q*C2 + Q*C3;\r\n    d/dt(peri)  =                    Q*C2 - Q*C3;\r\n    d/dt(eff)  = Kin - Kout*(1-C2/(EC50+C2))*eff;\r\n    if (!is.na(amt)){\r\n        tdose <- time\r\n    } else {\r\n        tad <- time - tdose\r\n    }\r\n})\r\n```\r\n\r\nIt is still simpler to use:\r\n\r\n```r\r\nmod1 <-RxODE({\r\n    KA=2.94E-01;\r\n    CL=1.86E+01;\r\n    V2=4.02E+01;\r\n    Q=1.05E+01;\r\n    V3=2.97E+02;\r\n    Kin=1;\r\n    Kout=1;\r\n    EC50=200;\r\n    C2 = centr/V2;\r\n    C3 = peri/V3;\r\n    d/dt(depot) =-KA*depot;\r\n    d/dt(centr) = KA*depot - CL*C2 - Q*C2 + Q*C3;\r\n    d/dt(peri)  =                    Q*C2 - Q*C3;\r\n    d/dt(eff)  = Kin - Kout*(1-C2/(EC50+C2))*eff;\r\n    tad <- time - tlast\r\n})\r\n```\r\nIf the `lhs` parameters haven't been defined yet, they are `NA`\r\n\r\n* Now the NONMEM-style `newind` flag can be used to initialize `lhs`\r\n  parameters.\r\n\r\n* Added `tad()`, `tad(cmt)` functions for time since last dose and time\r\n  since last dose for a compartment; Also added time after first dose\r\n  and time after first dose for a compartment `tafd()`, `tafd(cmt)`;\r\n  time of last dose `tlast()`, `tlast(cmt)` and dose number\r\n  `dosenum()` (currently not for each compartment)\r\n\r\n* Changed linear solved systems to use \"advan\" style `linCmt()`\r\n  solutions, to allow correct solutions of time-varying covariates\r\n  values with solved systems; As such, the solutions may be slightly\r\n  different.  Infusions to the depot compartment are now supported.\r\n\r\n\r\n* Added sensitivity auto-differentiation of `linCmt()` solutions.\r\n  This allows sensitivities of `linCmt()` solutions and enables\r\n  `nlmixr` focei to support solved systems.\r\n  - One solution is to use Stan's auto-differentiation which requires\r\n    `C++14`\r\n\r\n* When calculating the empirical Bayesian estimates for with `rxInner`\r\n  (used for nlmixr's 'focei') ignore any variable beginning with `rx_`\r\n  and `nlmixr_` to hide internal variables from table output.  This\r\n  also added `tad=tad()` and `dosenum=dosenum()` to the `ebe` output\r\n  allowing grouping by id, dose number and use TAD for individual plot\r\n  stratification.\r\n\r\n* Added ability to prune branching with `rxPrune`. This converts\r\n  `if`/`else` or `ifelse` to single line statements without any\r\n  `if`/`then` branching within them.\r\n\r\n* Added ability to take more complex conditional expressions, including:\r\n  - `ifelse(expr, yes, no)`\r\n  - `x = (x==1)*1 + (!(x==1))*2`\r\n  - `if (logic){ expr} else if (logic) {expr} else {}`.  The preferred\r\n    syntax is still only `if`/`else` and the corresponding parsed code\r\n    reflects this preference.\r\n    - Note `ifelse` is not allowed as an ODE compartment or a variable.\r\n\r\n* Switched to `symengine` instead of using `sympy`\r\n  - Remove dependence on python.\r\n  - Since symengine is C-based and doesn't require the python\r\n    interface it is much faster than `sympy`, though some functions in\r\n    `sympy` are no longer accessible.\r\n  - Also symengine requires R 3.6, so now RxODE requires R 3.6\r\n\r\n* Added new ODE solving method \"indLin\", or inductive linearization.\r\n  When the full model is a linear ODE system this becomes simply the\r\n  matrix exponential solution.  Currently this requires a different\r\n  setup.\r\n\r\n* Added arbitrary function definition to RxODE using `rxFun`\r\n  - Requires function, arguments and corresponding C-code\r\n  - Derivatives (if required) can be added to the derivative table\r\n    `rxD`.  When taking deviates without a derivative function, RxODE\r\n    will use numerical differences.\r\n\r\n* Will error if RxODE does not know of a function that you are trying\r\n  to use; This could be a breaking change.  Currently:\r\n  - C's functions from `math.h` are supported\r\n  - R's function returning and taking doubles are supported\r\n  - Other functions can be added using `rxFun` and `rxD`\r\n\r\n* Added `NA`, `NaN`, `Inf` and `+Inf` handling to a RxODE model.  Can\r\n  be useful to diagnose problems in models and provide alternate\r\n  solutions. In addition, added R-like functions `is.nan`, `is.na`,\r\n  `is.finite` and `is.infinite` which can be called within the RxODE\r\n  block.\r\n\r\n* Allowed the following data variables can be accessed (but not\r\n  assigned or used as a state):\r\n  - `cmt`\r\n  - `dvid`\r\n  - `addl`\r\n  - `ss`\r\n  - `amt`\r\n  - `rate`\r\n  - `id` which requires calling the id as factor `ID==\"1\"` for\r\n    instance.\r\n\r\n* Kept `evid` and `ii` as restricted items since they are not part of\r\n  the covariate table and are restricted in use.\r\n\r\n* Added the following random number generators; They are thread safe\r\n  (based on `threefry` `sitmo` and c++11) and your simulations with\r\n  them will depend on the number of cores used in your simulation (Be\r\n  careful about reproducibility with large number of threads; Also\r\n  use parallel-solve type of RxODE simulations to avoid the [birthday\r\n  problem](https://www.johndcook.com/blog/2016/01/29/random-number-generator-seed-mistakes/)).\r\n\r\n\r\n  During ODE solving, the values of these are `0`, but while\r\n  calculating the final output the variable is randomized at least for\r\n  every output. These are:\r\n\r\n  - `rxnorm()` and `rxnormV()` (low discrepancy normal)\r\n  - `rxcauchy()`\r\n  - `rxchisq()`\r\n  - `rxexp()`\r\n  - `rxf()`\r\n  - `rxgamma()`\r\n  - `rxbeta()`\r\n  - `rxgeom()`\r\n  - `rxpois()`\r\n  - `rxt()`\r\n  - `rxunif()`\r\n  - `rxweibull()`\r\n\r\n  In addition, while initializing the system, the following values are\r\n  simulated and retained for each individual:\r\n\r\n  - `rinorm()` and `rinormV()` (low discrepancy normal)\r\n  - `ricauchy()`\r\n  - `richisq()`\r\n  - `riexp()`\r\n  - `rif()`\r\n  - `rigamma()`\r\n  - `ribeta()`\r\n  - `rigeom()`\r\n  - `ripois()`\r\n  - `rit()`\r\n  - `riunif()`\r\n  - `riweibull()`\r\n\r\n* Added `simeta()` which simulates a new `eta` when called based\r\n  on the possibly truncated normal `omega` specified by the original\r\n  simulation.  This simulation occurs at the same time as the ODE is\r\n  initialized or when an ODE is missing, before calculating the final\r\n  output values.  The `omega` will reflect whatever study is being simulated.\r\n\r\n*  Added `simeps()` which simulates a new `eps` from the possibly\r\n  truncated normal `sigma` at the same time as calculating the final\r\n  output values. Before this time, the `sigma` variables are zero.\r\n\r\n  All these change the solving to single thread by default to make sure the\r\n  simulation is reproducible. With high loads/difficult problems the\r\n  random number generator may be on a different thread and give a\r\n  different number than another computer/try.\r\n\r\n  Also please note that the `clang` and `gcc` compiler use different\r\n  methods to create the more complex random numbers.  Therefore\r\n  `MacOS` random numbers will be different than `Linux`/`Windows` at\r\n  this time (with the exception of uniform numbers).\r\n\r\n  These numbers are still non-correlated random numbers (based on the\r\n  sitmo test) with the exception of the vandercorput distributions, so\r\n  if you increase the number of threads (cores=...) the results should\r\n  still be valid, though maybe harder to reproduce.  The faster the\r\n  random number generation, the more likely these results will be\r\n  reproduced across platforms.\r\n\r\n* Added the ability to integrate standard deviations/errors of omega\r\n  diagonals and sigma diagonals.  This is done by specifying the omega\r\n  diagonals in the theta matrix and having them represent the\r\n  variabilities or standard deviations. Then these standard deviations\r\n  are simulated along with the correlations using the IJK correlation\r\n  matrix (omega dimension < 10) or a correlation matrix or Inverse\r\n  Wishart-based correlation matrix (omega dimension > 10).  The\r\n  information about how to simulate this is in the variability\r\n  simulation vignette.\r\n\r\n* Now have a method to use `lotri` to simulate between occasion\r\n  variability and other levels of nesting.\r\n\r\n* Added lower gamma functions See Issue #185\r\n\r\n* Upgraded comparison sort to timsort 2.0.1\r\n\r\n* Changed in-place sort to a modified radix sort from\r\n  `data.table`.  The radix search was modified to:\r\n - Work directly with `RxODE` internal solved structures\r\n - Assume no infinite values or `NA`/`NaN` values of time\r\n - Always sort time in ascending order\r\n - Changed sorting to run in a single thread instead of taking over\r\n   all the threads like data.table\r\n\r\n* Changed method for setting/getting number of threads based on\r\n  `data.table`'s method\r\n\r\n* Added function `rxDerived` which will calculate derived parameters\r\n  for 1, 2, and 3 compartment models\r\n\r\n* More descriptive errors when types of input are different than expected\r\n\r\n## Engine changes\r\n\r\n* Moved many C functions to C++.  CRAN OpenMP support requires C++\r\n  only when C and C++ are mixed.  See:\r\n\r\n  https://stackoverflow.com/questions/54056594/cran-acceptable-way-of-linking-to-openmp-some-c-code-called-from-rcpp\r\n\r\n* No longer produces C code that create the model variables. Instead,\r\n  use `qs` to serialize, compress and encode in base91 and then write\r\n  the string into the C file. The `qs` package then decodes all of\r\n  that into the model variables.  This also increases the compilation\r\n  speed for models in RxODE.\r\n\r\n* Pre-compile RxODE headers once (if cache is enabled), which\r\n  increases compilation speed for models in RxODE\r\n\r\n* `RxODE`'s translation from the mini-language to C has been refactored\r\n\r\n## Bug fixes:\r\n - Occasionally RxODE misidentified dual `lhs`/`param` values.  An\r\n   additional check is performed so that this does not happen.\r\n\r\n - For solved matrices with similar names (like \"tadd\" and \"tad\")\r\n   RxODE will now prefer exact matches instead of the first match\r\n   found when accessing the items with `$tad`.\r\n\r\n - A fix where all ID information is kept with `keep=c(\"\"...\"\")`\r\n\r\n - Transit compartment models using the `transit` ODE or variable are\r\n   now allowed.  Also check for more internally parsed items (see\r\n   Issue #145).\r\n\r\n - Bug fix for `etSeq` and `etRep` where greater than 2 items were\r\n   mis-calculated",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v1.0.4",
+        "name": "v1.0.4",
+        "release_id": 38660762,
+        "tag": "v1.0.4",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v1.0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/38660762",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/38660762",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v1.0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2020-10-12T02:05:52Z",
+        "date_published": "2020-10-19T01:56:46Z",
+        "description": "- Fix Asan Issue for CRAN.",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.2-1",
+        "name": "v0.9.2-1",
+        "release_id": 32732873,
+        "tag": "v0.9.2-1",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.2-1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/32732873",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/32732873",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.2-1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2020-03-12T19:24:20Z",
+        "date_published": "2020-03-13T13:16:21Z",
+        "description": "* New plotting engine\r\n* Various bug fixes for upcoming R 4.0 release:\r\n  - Dropped some imports for 21 imports restriction\r\n  - Fixed incompatibility with new `ggplot2` 3.3.0\r\n  - Fixed allowing `NA`s in RxODE dataset\r\n  - Fixed setting all compartment default values for bioavailability, rate, etc.\r\n  - Added additional protection against floating point -> NaN for power functions\r\n* Added 2 learnr tutorials",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.2-0",
+        "name": "CRAN 0.9.2-0",
+        "release_id": 24502012,
+        "tag": "v0.9.2-0",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.2-0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/24502012",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/24502012",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.2-0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2020-01-06T20:39:13Z",
+        "date_published": "2020-01-12T04:55:55Z",
+        "description": "Minor namespace/documentation changes for R 4.0 compatibility ",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.1-9",
+        "name": "CRAN release for R 4.0 compatibility",
+        "release_id": 22768549,
+        "tag": "v0.9.1-9",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.1-9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/22768549",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/22768549",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.1-9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-11-12T14:21:31Z",
+        "date_published": "2019-11-12T17:11:58Z",
+        "description": "* Added the ability to have an input parameter to be assigned to a new\r\n  value (Issue #135)\r\n* Added LINPACK authors as contributors\r\n* Added a `NEWS.md` file to track changes to the package\r\n",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.1-8",
+        "name": "v0.9.1-8",
+        "release_id": 21412608,
+        "tag": "v0.9.1-8",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.1-8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/21412608",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/21412608",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.1-8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-10-23T14:08:22Z",
+        "date_published": "2019-10-23T14:58:55Z",
+        "description": "This is the release candidate for v0.9.1-7",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.1-7-rc1",
+        "name": "Release candidate for v0.9.1-7",
+        "release_id": 20919305,
+        "tag": "v0.9.1-7-rc1",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.1-7-rc1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/20919305",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/20919305",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.1-7-rc1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-09-11T21:42:29Z",
+        "date_published": "2019-09-11T22:42:25Z",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.1-6",
+        "release_id": 19926873,
+        "tag": "v0.9.1-6",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.1-6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/19926873",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/19926873",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.1-6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-09-09T14:24:34Z",
+        "date_published": "2019-09-09T14:27:54Z",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.1-5",
+        "name": "CRAN Release 0.9.1-4 + bugfix for openmp on windows",
+        "release_id": 19852886,
+        "tag": "v0.9.1-5",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.1-5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/19852886",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/19852886",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.1-5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-08-28T03:02:04Z",
+        "date_published": "2019-09-09T14:25:19Z",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.1-4",
+        "name": "CRAN Release",
+        "release_id": 19852777,
+        "tag": "v0.9.1-4",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.1-4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/19852777",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/19852777",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.1-4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-08-02T04:49:32Z",
+        "date_published": "2019-08-02T04:55:08Z",
+        "description": "Fixes some memory leaks in valgrind;  Now all memory leaks do not directly depend on RxODE.",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.1-2",
+        "name": "CRAN Release",
+        "release_id": 19032308,
+        "tag": "v0.9.1-2",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.1-2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/19032308",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/19032308",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.1-2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-07-24T14:50:12Z",
+        "date_published": "2019-07-30T13:04:20Z",
+        "description": "CRAN fix for atlas crash",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.1-1",
+        "name": "v0.9.1-1",
+        "release_id": 18955717,
+        "tag": "v0.9.1-1",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.1-1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/18955717",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/18955717",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.1-1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-07-12T13:18:41Z",
+        "date_published": "2019-07-12T20:08:27Z",
+        "description": "Bug fix release for new compiler checks.",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.1-0",
+        "name": "CRAN Release",
+        "release_id": 18588359,
+        "tag": "v0.9.1-0",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.1-0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/18588359",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/18588359",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.1-0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-05-30T20:33:22Z",
+        "date_published": "2019-05-30T23:52:42Z",
+        "description": "# New Features\r\n- Major event table changes:\r\n  - Support NONMEM-style events\r\n  - New function `et` that specify nonmem-style events directly\r\n  - In addition to a compartment number, you can use a compartment name\r\n  - Has a `dur` data item in addition to a `rate` data item\r\n  - Events tables can be combined with `c`, `seq` and `rep`\r\n  - Events and event times can now be simulated\r\n  - Events are now a specialized data.frame\r\n  - Prior methods `eventTable` `add.dosing` `add.sampling` etc still work.\r\n  - If sampling times are missing, RxODE will now impute some sampling times.\r\n- Solving updates:\r\n  - Now can add dosing events that are either classic `RxODE` events (`addDosing=NA`), NONMEM-style events (`addDosing=TRUE`), or  expanded NONMEM-style events (`addDosing=TRUE, subsetNonmem=FALSE`).  Default is still `addDosing=FALSE` or only return observations and `evid=2` events.\r\n  - Can simulated from truncated multivariate normal or t distributions by speciying the upper and lower bounds of the parameters in the model.  `thetaLower`, `thetaUpper`, `omegaLower`, `omegaUpper`, `sigmaLower`, and `sigmaUpper` are the parameters that can be used for this type of simulation.\r\n   - Can specify individual non-time varying covariates for simulation with the `iCov` option.\r\n   - Can specify parameters to `keep` from the original dataset with the `keep` option.\r\n- Solved system updates\r\n   - In solved systems with `linCmt()`, a theoretical compartment that can be dosed or have event-based properties are the `depot` or `central` compartments.\r\n   - oral, IV, modeled duration and rate to central compartmen as well as bioavabilities can all be mixed in the new linear compartment model implementation.\r\n   - The linear compartment `depot` and `central` compartments are the last compartments in the RxODE model (when mixing ODE and solved systems)  Without a `ka`, the `depot` compartment is not defined.  It is easier to specify `cmt=\"depot\"` or `cmt=\"central\"` then to count the compartments.\r\n- Convienience function: `confint` to produce confidence bands from a large simulation\r\n- Model syntax and parsing changes\r\n  - Compartments can now have event-based attributes like: \r\n     - Bioavialibility for dosing events `f(cmt)=`\r\n     - Lag time for dosing events `lag(cmt)=`\r\n     - Modeled duration `dur(cmt)=`\r\n     - Modeled rate `rate(cmt)=`\r\n     - This is in addition to the prior compartment initial condition attribute `cmt(0)=`\r\n  - Model-based times can be specified by `mtime()=`\r\n  - Compartment order (and compartment number) can be specified with `cmt(compartmentName)`\r\n  - Model language items that were not frequently used or are not compatible with R syntax (like the `!` factorial operator) were were removed.\r\n  - Other under the hood parsing was optimized, speeding up RxODE->C ODE code translation\r\n  - Model parsing errors have been changed to be a little more legible for example:\r\n\r\n```r\r\n> RxODE(\"d/dt(a) = /y+3\")\r\nRxODE Model Syntax Error:\r\n=====================================================================\r\n\r\nRxODE syntax error after '=':\r\n:001: d/dt(a) = /y+3\r\n              ~~^\r\n=====================================================================\r\n\r\n```\r\n\r\ninstead of  simply `syntax error after '='`\r\n\r\n# Breaking Changes\r\n- Time varying covariates should be in the input dataset instead of being specified by the `cov` solving option.  This option is no longer supported.\r\n- Some mostly unused model syntax features have been removed.  If you were using them and you think they are important feel free to open an issue, though the justification would have to be high because there are other ways to specify the same feature.",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.0-6",
+        "name": "v0.9.0-6 CRAN release",
+        "release_id": 17694328,
+        "tag": "v0.9.0-6",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.0-6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/17694328",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/17694328",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.0-6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-04-16T02:30:42Z",
+        "date_published": "2019-04-16T03:29:15Z",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.0-5",
+        "name": "v0.9.0-5",
+        "release_id": 16783437,
+        "tag": "v0.9.0-5",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.0-5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/16783437",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/16783437",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.0-5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-04-12T02:07:46Z",
+        "date_published": "2019-04-12T02:10:30Z",
+        "description": "- Add simpler block matrix specification\r\n- Tag to make an additional nlmixr installer.",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.0-3",
+        "name": "v0.9.0-3",
+        "release_id": 16716424,
+        "tag": "v0.9.0-3",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.0-3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/16716424",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/16716424",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.0-3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-04-10T21:29:19Z",
+        "date_published": "2019-04-10T21:44:53Z",
+        "description": "Temporary directory fix that allows people other than me to use RxODE with compiled versions.",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.0-2",
+        "name": "v0.9.0-2",
+        "release_id": 16686669,
+        "tag": "v0.9.0-2",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.0-2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/16686669",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/16686669",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.0-2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-04-09T19:33:38Z",
+        "date_published": "2019-04-09T20:35:35Z",
+        "description": "- linear compartment model fixes\r\n- use temporary directory for cached models\r\n- give an error for conditions (if/else) that depend on ETAs",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.0-1",
+        "name": "v0.9.0-1",
+        "release_id": 16658786,
+        "tag": "v0.9.0-1",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.0-1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/16658786",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/16658786",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.0-1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2019-04-08T02:08:52Z",
+        "date_published": "2019-04-08T03:30:28Z",
+        "description": "- This version has support for NONMEM-style data and expanded linCmt() support",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.9.0-0",
+        "name": "v0.9.0-0",
+        "release_id": 16610150,
+        "tag": "v0.9.0-0",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.9.0-0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/16610150",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/16610150",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.9.0-0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2018-09-24T14:56:49Z",
+        "date_published": "2018-09-25T23:18:44Z",
+        "description": "- Fix the Solaris issues IDed by Prof. Ripley\r\n- Add ability to output `TAD` as `tad = t-tlast`",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.8.0-8",
+        "name": "CRAN v0.8.0-8",
+        "release_id": 13093138,
+        "tag": "v0.8.0-8",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.8.0-8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/13093138",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/13093138",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.8.0-8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2018-09-21T16:50:20Z",
+        "date_published": "2018-09-24T14:34:56Z",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.8.0-7",
+        "name": "v0.8.0-7 on CRAN",
+        "release_id": 13058958,
+        "tag": "v0.8.0-7",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.8.0-7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/13058958",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/13058958",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.8.0-7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mattfidler",
+          "type": "User"
+        },
+        "date_created": "2018-09-18T03:51:34Z",
+        "date_published": "2018-09-18T03:52:07Z",
+        "html_url": "https://github.com/nlmixrdevelopment/RxODE/releases/tag/v0.8.0-6",
+        "name": "VPC fixes",
+        "release_id": 12948972,
+        "tag": "v0.8.0-6",
+        "tarball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/tarball/v0.8.0-6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/12948972",
+        "value": "https://api.github.com/repos/nlmixrdevelopment/RxODE/releases/12948972",
+        "zipball_url": "https://api.github.com/repos/nlmixrdevelopment/RxODE/zipball/v0.8.0-6"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 3.5.0",
+        "version": ">= 3.5.0"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Matrix",
+        "type": "Software_application",
+        "value": "Matrix",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "PreciseSums",
+        "type": "Software_application",
+        "value": "PreciseSums==>= 0.3",
+        "version": ">= 0.3"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R.utils",
+        "type": "Software_application",
+        "value": "R.utils",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Rcpp",
+        "type": "Software_application",
+        "value": "Rcpp==>= 0.12.3",
+        "version": ">= 0.12.3"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "brew",
+        "type": "Software_application",
+        "value": "brew",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cli",
+        "type": "Software_application",
+        "value": "cli",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "crayon",
+        "type": "Software_application",
+        "value": "crayon",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "digest",
+        "type": "Software_application",
+        "value": "digest",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dparser",
+        "type": "Software_application",
+        "value": "dparser==>= 0.1.8",
+        "version": ">= 0.1.8"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ggforce",
+        "type": "Software_application",
+        "value": "ggforce",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ggplot2",
+        "type": "Software_application",
+        "value": "ggplot2",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "inline",
+        "type": "Software_application",
+        "value": "inline",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "magrittr",
+        "type": "Software_application",
+        "value": "magrittr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "memoise",
+        "type": "Software_application",
+        "value": "memoise",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "methods",
+        "type": "Software_application",
+        "value": "methods",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mvnfast",
+        "type": "Software_application",
+        "value": "mvnfast",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "n1qn1",
+        "type": "Software_application",
+        "value": "n1qn1==>= 6.0.1-2",
+        "version": ">= 6.0.1-2"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pillar",
+        "type": "Software_application",
+        "value": "pillar",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rex",
+        "type": "Software_application",
+        "value": "rex",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sys",
+        "type": "Software_application",
+        "value": "sys",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "units",
+        "type": "Software_application",
+        "value": "units==>= 0.6-0",
+        "version": ">= 0.6-0"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "utils",
+        "type": "Software_application",
+        "value": "utils",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "assertthat",
+        "type": "Software_application",
+        "value": "assertthat",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lotri",
+        "type": "Software_application",
+        "value": "lotri",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "remotes",
+        "type": "Software_application",
+        "value": "remotes",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:09:47",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 55
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Illustrated Example",
+        "type": "Text_excerpt",
+        "value": "\nThe model equations can be specified through a text string, a model\nfile or an R expression. Both differential and algebraic equations are\npermitted. Differential equations are specified by `d/dt(var_name) = `. Each\nequation can be separated by a semicolon.\n\nTo load `RxODE` package and compile the model: \n\n\n```r\nlibrary(RxODE)\n#> RxODE 1.1.0 using 4 threads (see ?getRxThreads)\n#>   no cache: create with `rxCreateCache()`\n\nmod1 <-RxODE({\n    C2 = centr/V2;\n    C3 = peri/V3;\n    d/dt(depot) =-KA*depot;\n    d/dt(centr) = KA*depot - CL*C2 - Q*C2 + Q*C3;\n    d/dt(peri)  =                    Q*C2 - Q*C3;\n    d/dt(eff)  = Kin - Kout*(1-C2/(EC50+C2))*eff;\n})\n#> \n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Specify ODE parameters and initial conditions",
+        "parent_header": [
+          "Illustrated Example"
+        ],
+        "type": "Text_excerpt",
+        "value": "Model parameters can be defined as named vectors. Names of parameters in\nthe vector must be a superset of parameters in the ODE model, and the\norder of parameters within the vector is not important. \n\n\n```r\ntheta <- \n   c(KA=2.94E-01, CL=1.86E+01, V2=4.02E+01, # central \n     Q=1.05E+01,  V3=2.97E+02,              # peripheral\n     Kin=1, Kout=1, EC50=200)               # effects\n```\n\nInitial conditions (ICs) can be defined through a vector as well.  If the\nelements are not specified, the initial condition for the compartment\nis assumed to be zero.\n\n\n\n```r\ninits <- c(eff=1);\n```\n\nIf you want to specify the initial conditions in the model you can add:\n\n```\neff(0) = 1\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Specify Dosing and sampling in RxODE",
+        "parent_header": [
+          "Illustrated Example"
+        ],
+        "type": "Text_excerpt",
+        "value": "`RxODE` provides a simple and very flexible way to specify dosing and\nsampling through functions that generate an event table. First, an\nempty event table is generated through the \"eventTable()\" function:\n\n\n```r\nev <- eventTable(amount.units='mg', time.units='hours')\n```\n\nNext, use the `add.dosing()` and `add.sampling()` functions of the\n`EventTable` object to specify the dosing (amounts, frequency and/or\ntimes, etc.) and observation times at which to sample the state of the\nsystem.  These functions can be called multiple times to specify more\ncomplex dosing or sampling regiments.  Here, these functions are used\nto specify 10mg BID dosing for 5 days, followed by 20mg QD dosing for\n5 days:\n\n\n```r\nev$add.dosing(dose=10000, nbr.doses=10, dosing.interval=12)\nev$add.dosing(dose=20000, nbr.doses=5, start.time=120,\n              dosing.interval=24)\nev$add.sampling(0:240)\n```\n\nIf you wish you can also do this with the `mattigr` pipe operator `%>%`\n\n\n```r\nev <- eventTable(amount.units=\"mg\", time.units=\"hours\") %>%\n  add.dosing(dose=10000, nbr.doses=10, dosing.interval=12) %>%\n  add.dosing(dose=20000, nbr.doses=5, start.time=120,\n             dosing.interval=24) %>%\n  add.sampling(0:240)\n```\n\nThe functions `get.dosing()` and `get.sampling()` can be used to\nretrieve information from the event table.\n\n\n```r\nhead(ev$get.dosing())\n#>   id low time high       cmt   amt rate ii addl evid ss dur\n#> 1  1  NA    0   NA (default) 10000    0 12    9    1  0   0\n#> 2  1  NA  120   NA (default) 20000    0 24    4    1  0   0\n```\n\n\n```r\nhead(ev$get.sampling())\n#>   id low time high   cmt amt rate ii addl evid ss dur\n#> 1  1  NA    0   NA (obs)  NA   NA NA   NA    0 NA  NA\n#> 2  1  NA    1   NA (obs)  NA   NA NA   NA    0 NA  NA\n#> 3  1  NA    2   NA (obs)  NA   NA NA   NA    0 NA  NA\n#> 4  1  NA    3   NA (obs)  NA   NA NA   NA    0 NA  NA\n#> 5  1  NA    4   NA (obs)  NA   NA NA   NA    0 NA  NA\n#> 6  1  NA    5   NA (obs)  NA   NA NA   NA    0 NA  NA\n```\n\nYou may notice that these are similar to NONMEM event tables; If you\nare more familiar with NONMEM data and events you could use them\ndirectly with the event table function `et`\n\n\n```r\nev  <- et(amountUnits=\"mg\", timeUnits=\"hours\") %>%\n  et(amt=10000, addl=9,ii=12,cmt=\"depot\") %>%\n  et(time=120, amt=2000, addl=4, ii=14, cmt=\"depot\") %>%\n  et(0:240) # Add sampling \n```\n\nYou can see from the above code, you can dose to the compartment named\nin the RxODE model.  This slight deviation from NONMEM can reduce the\nneed for compartment renumbering.\n\nThese events can also be combined and expanded (to multi-subject\nevents and complex regimens) with `rbind`, `c`, `seq`, and `rep`. For\nmore information about creating complex dosing regimens using RxODE\nsee the [RxODE events\nvignette](https://nlmixrdevelopment.github.io/RxODE.doc/articles/RxODE-events.html).\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Solving ODEs",
+        "parent_header": [
+          "Illustrated Example"
+        ],
+        "type": "Text_excerpt",
+        "value": "The ODE can now be solved by calling the model object's `run` or `solve`\nfunction. Simulation results for all variables in the model are stored\nin the output matrix x. \n\n\n```r\nx <- mod1$solve(theta, ev, inits);\nknitr::kable(head(x))\n```\n\n\n\n| time|       C2|        C3|     depot|    centr|      peri|      eff|\n|----:|--------:|---------:|---------:|--------:|---------:|--------:|\n|    0|  0.00000| 0.0000000| 10000.000|    0.000|    0.0000| 1.000000|\n|    1| 44.37555| 0.9198298|  7452.765| 1783.897|  273.1895| 1.084664|\n|    2| 54.88296| 2.6729825|  5554.370| 2206.295|  793.8758| 1.180825|\n|    3| 51.90343| 4.4564927|  4139.542| 2086.518| 1323.5783| 1.228914|\n|    4| 44.49738| 5.9807076|  3085.103| 1788.795| 1776.2702| 1.234610|\n|    5| 36.48434| 7.1774981|  2299.255| 1466.670| 2131.7169| 1.214742|\n\nYou can also solve this and create a RxODE data frame:\n\n\n\n```r\nx <- mod1 %>% rxSolve(theta, ev, inits);\nx\n#> \u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582 Solved RxODE object \u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\n#> \u2500\u2500 Parameters (x$params): \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n#>      V2      V3      KA      CL       Q     Kin    Kout    EC50 \n#>  40.200 297.000   0.294  18.600  10.500   1.000   1.000 200.000 \n#> \u2500\u2500 Initial Conditions (x$inits): \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n#> depot centr  peri   eff \n#>     0     0     0     1 \n#> \u2500\u2500 First part of data (object): \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n#> # A tibble: 241 x 7\n#>    time    C2    C3  depot centr  peri   eff\n#>     [h] <dbl> <dbl>  <dbl> <dbl> <dbl> <dbl>\n#> 1     0   0   0     10000     0     0   1   \n#> 2     1  44.4 0.920  7453. 1784.  273.  1.08\n#> 3     2  54.9 2.67   5554. 2206.  794.  1.18\n#> 4     3  51.9 4.46   4140. 2087. 1324.  1.23\n#> 5     4  44.5 5.98   3085. 1789. 1776.  1.23\n#> 6     5  36.5 7.18   2299. 1467. 2132.  1.21\n#> # \u2026 with 235 more rows\n#> \u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\u2582\n```\n\nThis returns a modified data frame.  You can see the compartment\nvalues in the plot below:\n\n\n```r\nlibrary(ggplot2)\nplot(x,C2) + ylab(\"Central Concentration\")\n```\n\n<img src=\"man/figures/README-intro-central-1.png\" title=\"plot of chunk intro-central\" alt=\"plot of chunk intro-central\" width=\"100%\" />\n\nOr, \n\n\n```r\nplot(x,eff)  + ylab(\"Effect\")\n```\n\n<img src=\"man/figures/README-intro-effect-1.png\" title=\"plot of chunk intro-effect\" alt=\"plot of chunk intro-effect\" width=\"100%\" />\n\nNote that the labels are automatically labeled with the units from the\ninitial event table. RxODE extracts `units` to label the plot (if they\nare present).\n"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+        "type": "String",
+        "value": "1.1.6"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.9.0.6"
+      },
+      "source": "https://raw.githubusercontent.com/nlmixrdevelopment/RxODE/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

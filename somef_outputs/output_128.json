@@ -1,0 +1,1234 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "git"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0002-1637-6526",
+        "type": "String",
+        "value": "Michael Hirsch"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/scivision/gitMC"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/scivision/gitmc"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/scivision/gitmc/actions"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/scivision/gitMC/main/.github/workflows/ci.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/scivision/gitMC/main/.github/workflows/publish-python-package.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2016-07-21T04:41:17Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-07-21"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-03-09T20:53:49Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concurrent, pure Python  asyncio + Git: manage large (100+) numbers of Git repos"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concurrent, pipelined, platform-agnostic Git utilities for managing a large number of Git repositories"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concurrent, pure Python asyncio + Git: manage large (100+) numbers of Git repos"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8260510467632886,
+      "result": {
+        "original_header": "GitMC -- concurrent asynchronous Git Utilities for operations on massive numbers of Git repos",
+        "type": "Text_excerpt",
+        "value": "Platform-independent (Linux/Mac/Windows) Git utilities, useful for managing large (100+) numbers of Git repos.\nSpeed is an emphasis throughout, with concurrency via Python stdlib\n[asyncio](https://docs.python.org/3/library/asyncio.html)\nvia\n[asyncio.create_subprocess_exec](https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.create_subprocess_exec)\nand pipelining makes operations in effect 100x faster overall as the coroutines simultaneously wait for Git operations (particularly remote operations like \"fetch\" and \"pull\").\nWe have implemented individual concurrent subprocess timeout using\n[asyncio.wait_for](https://docs.python.org/3/library/asyncio-task.html#asyncio.wait_for)\nso that one Git operation hanging doesn't cause other Git operations to fail--this is good for when a Git login popup may go unnoticed by the human. \n"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/scivision/gitMC/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/scivision/gitMC/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "scivision/gitMC"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "GitMC -- concurrent asynchronous Git Utilities for operations on massive numbers of Git repos"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "10.5281/zenodo.3885497"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.3339891"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install",
+        "parent_header": [
+          "GitMC -- concurrent asynchronous Git Utilities for operations on massive numbers of Git repos"
+        ],
+        "type": "Text_excerpt",
+        "value": "Install Git in a way accessible from the command line line\n\n* Mac: `brew install git`\n* Linux: `apt install git`\n* Windows: command line [Git](https://git-scm.com/download/win).\n\n```sh\npython -m pip install -e .\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/scivision/gitMC/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/scivision/gitmc/issues"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "git, python-asyncio"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concurrent"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "asynchronous"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "asyncio"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "git"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "GitHub"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ssh"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "git"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gitMC"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "GitMC"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "scivision"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gitutils"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 31924,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "value": "Python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/scivision/gitMC/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2024-01-13T23:09:52Z",
+        "date_published": "2024-01-13T23:11:40Z",
+        "description": "bugfix for v1.12.0: a typo made \"commit but not pushed\" not be detected with \"git stat\". This is fixed.\r\n\r\ngitstat add `--serial` option to run non-asyncio version.",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.12.1",
+        "name": "bugfix: gitstat missed commit not push",
+        "release_id": 136960529,
+        "tag": "v1.12.1",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.12.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/136960529",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/136960529",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.12.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2023-09-06T20:15:47Z",
+        "date_published": "2023-09-06T20:16:47Z",
+        "description": "Timeout individual Git operations instead of overall, allowing one operation to timeout without aborting all other pending operations.\r\n\r\nThis is especially useful for \"git pull\" and \"git fetch\". It's implemented in src/gitutils/git.py:subprocess_asyncio().\r\nThe calling async function calls with asyncio.wait_for() to implement and catch the timeout. ",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.12.0",
+        "name": "functionalize asyncio.subprocess, improve logic",
+        "release_id": 120183835,
+        "tag": "v1.12.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.12.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/120183835",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/120183835",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.12.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2023-03-07T05:25:23Z",
+        "date_published": "2023-03-07T05:29:50Z",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.11.0",
+        "name": "gitpull,gitfetch: no prompt default. Python >= 3.9",
+        "release_id": 94722341,
+        "tag": "v1.11.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.11.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/94722341",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/94722341",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.11.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2023-01-02T19:43:27Z",
+        "date_published": "2023-01-02T19:45:09Z",
+        "description": "PEP621: use pyproject.toml only",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.10.1",
+        "name": "pyproject.toml only",
+        "release_id": 87717624,
+        "tag": "v1.10.1",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.10.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/87717624",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/87717624",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.10.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2022-04-11T00:24:05Z",
+        "date_published": "2022-04-11T01:31:05Z",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.10.0",
+        "name": "enhance CI, test connection fetchpull, python >= 3.8 required",
+        "release_id": 64068456,
+        "tag": "v1.10.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.10.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/64068456",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/64068456",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.10.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-06-11T05:47:07Z",
+        "date_published": "2021-06-11T05:47:54Z",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.9.0",
+        "name": "git{pull,fetch}: print what's changed on remote",
+        "release_id": 44458010,
+        "tag": "v1.9.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/44458010",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/44458010",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-02-16T18:59:20Z",
+        "date_published": "2021-02-16T19:00:49Z",
+        "description": "Older Git makes these mass branch-switching and checking operations cumbersome, so require newer Git for reliability.",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.8.3",
+        "name": "require Git >= 2.23 for gitbranch",
+        "release_id": 38125135,
+        "tag": "v1.8.3",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.8.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/38125135",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/38125135",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.8.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-02-08T03:47:11Z",
+        "date_published": "2021-02-08T03:51:41Z",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.8.2",
+        "name": "git_branch: compatible with old Git",
+        "release_id": 37719829,
+        "tag": "v1.8.2",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.8.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/37719829",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/37719829",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.8.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-12-17T03:42:41Z",
+        "date_published": "2020-12-17T03:44:48Z",
+        "description": "gitbranch: default to [\"main\", \"master\"] as defaults",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.8.1",
+        "name": "gitbranch: multiple default branches",
+        "release_id": 35393870,
+        "tag": "v1.8.1",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.8.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/35393870",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/35393870",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.8.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-09-14T05:57:12Z",
+        "date_published": "2020-09-14T05:58:57Z",
+        "description": "* Use asyncio more effectively to emit results \"as_completed\" which is essential for very large numbers of repos\r\n* allow `python -m gitutils.branch` and similar as alternative way to run",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.8.0",
+        "name": "Improve asynchronous, python -m runnable",
+        "release_id": 31233826,
+        "tag": "v1.8.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/31233826",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/31233826",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-07-29T15:53:45Z",
+        "date_published": "2020-07-29T15:57:34Z",
+        "description": "* fix bug in ActOnChanged that ignored directory specified\r\n* add tests for ActOnChanged\r\n* require Python >= 3.7 for cleaner/robust code",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.7.0",
+        "name": "fix ActOnChanged, Python >= 3.7, increase test coverage",
+        "release_id": 29079569,
+        "tag": "v1.7.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.7.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/29079569",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/29079569",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.7.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-07-20T06:39:54Z",
+        "date_published": "2020-07-20T06:43:40Z",
+        "description": "use pytest fixtures to be more robust than __file__",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.6.3",
+        "name": "test robustness w/o __file__",
+        "release_id": 28725493,
+        "tag": "v1.6.3",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.6.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/28725493",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/28725493",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.6.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-07-19T22:13:49Z",
+        "date_published": "2020-07-19T22:17:19Z",
+        "description": "* remove unused code for amending email address, use git-filter-repo instead\r\n* don't print repo name if password needed-log and we assume most repos are public",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.6.2",
+        "name": "cleanup",
+        "release_id": 28718567,
+        "tag": "v1.6.2",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.6.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/28718567",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/28718567",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.6.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-06-08T15:37:01Z",
+        "date_published": "2020-06-08T15:38:01Z",
+        "description": "more python packaging best practices",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.6.1",
+        "name": "use src/ layout",
+        "release_id": 27332018,
+        "tag": "v1.6.1",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.6.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/27332018",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/27332018",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.6.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-06-08T15:31:03Z",
+        "date_published": "2020-06-08T15:32:20Z",
+        "description": "use best practices and dedupe code by putting CLI in __main__.py",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.6.0",
+        "name": "use __main__.py",
+        "release_id": 27331770,
+        "tag": "v1.6.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/27331770",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/27331770",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-05-08T21:57:16Z",
+        "date_published": "2020-05-08T21:59:32Z",
+        "description": "For the common situation where repos need credentials that aren't automatically available via a credential manager or SSH Agent, gitpull and gitfetch will now log a one-line error message instead of too verbose error message defaults from Git.",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.5.3",
+        "name": "git{pull,fetch} one-line error if credentials needed",
+        "release_id": 26331725,
+        "tag": "v1.5.3",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.5.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/26331725",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/26331725",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.5.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-04-08T18:39:11Z",
+        "date_published": "2020-04-08T18:42:19Z",
+        "description": "* more use of iterators where it makes sense to do so (without adding overhead to small lists)\r\n* improve test robustness",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.5.2",
+        "name": "Quality, test improvements",
+        "release_id": 25333859,
+        "tag": "v1.5.2",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.5.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/25333859",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/25333859",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.5.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-12-13T18:48:09Z",
+        "date_published": "2019-12-13T18:49:37Z",
+        "description": "* moved GitHub utilities to [PyGithub-utils](https://github.com/scivision/pygithub-utils)\r\n* moved CI to GitHub Actions\r\n* log per-repo errors so you can tell which repo is causing terse error messages\r\n* black code style\r\n* simplify asyncio runner standin\r\n* make package prerequisite-free",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.5.0",
+        "name": "log error, move github to github-utils",
+        "release_id": 22219064,
+        "tag": "v1.5.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/22219064",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/22219064",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-07-17T17:55:31Z",
+        "date_published": "2019-07-17T18:10:50Z",
+        "description": "* fix get_repos() so that it also works for organization private repos\r\n* add azure pipelines CI\r\n* add test coverage",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.4.0",
+        "name": "Add azure, fix get_repos for private orgs",
+        "release_id": 18682384,
+        "tag": "v1.4.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/18682384",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/18682384",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-07-12T20:37:22Z",
+        "date_published": "2019-07-12T20:42:54Z",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.3.4",
+        "name": "Dedupe, simplify, improve concurrency",
+        "release_id": 18589018,
+        "tag": "v1.3.4",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.3.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/18589018",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/18589018",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.3.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-07-10T12:14:20Z",
+        "date_published": "2019-07-10T12:16:54Z",
+        "description": "Allow use with Python >= 3.6. It would be much more cumbersome to enable Python 3.5 and not worthwhile with upcoming Python 3.5 deprecation. Major packages such as Django and major commercial software have already dropped Python 3.5 support from current development work.",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.3.3",
+        "name": "Enable Python >= 3.6, template asyncio.run alternatives",
+        "release_id": 18522118,
+        "tag": "v1.3.3",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.3.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/18522118",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/18522118",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.3.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-07-02T02:10:18Z",
+        "date_published": "2019-07-02T02:12:01Z",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.3.2",
+        "name": "CI integration test, ActOnChanged.py -p preview",
+        "release_id": 18346889,
+        "tag": "v1.3.2",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.3.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/18346889",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/18346889",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.3.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-06-14T15:06:49Z",
+        "date_published": "2019-06-14T15:09:07Z",
+        "description": "Explicitly note the fallback for Windows and Python 3.7. Python &ge; 3.8 makes this the [default event loop policy for Windows](https://docs.python.org/3/library/asyncio-policy.html#asyncio.DefaultEventLoopPolicy):\r\n\r\nasyncio.WindowsProactorEventLoopPolicy\r\n",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.3.1",
+        "name": "Note fallback for Python 3.7",
+        "release_id": 18002222,
+        "tag": "v1.3.1",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/18002222",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/18002222",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-06-14T14:44:40Z",
+        "date_published": "2019-06-14T14:50:55Z",
+        "description": "requires Python &ge; 3.7 to reduce platform-dependent boilerplate for asyncio",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.3.0",
+        "name": "Increase use of pipelining and concurrency",
+        "release_id": 18001646,
+        "tag": "v1.3.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/18001646",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/18001646",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-06-04T17:08:03Z",
+        "date_published": "2019-06-04T17:09:37Z",
+        "description": "SetArchive.py is a new script that allows mass-archiving of repos starting with a name pattern for a user or organization.\r\n\r\nGenerally modernized the CI template.",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.2.4",
+        "name": "added \"SetArchive.py\"",
+        "release_id": 17776761,
+        "tag": "v1.2.4",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.2.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/17776761",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/17776761",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.2.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-03-29T17:29:21Z",
+        "date_published": "2019-03-29T20:29:28Z",
+        "description": "Get almost instant total of a user's GitHub stars by: \r\n\r\n```sh\r\npython GithubStarTotal.py username\r\n```\r\n\r\nalso cleaned up project internals more.",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.2.3",
+        "name": "Find GitHub total star count fast",
+        "release_id": 16446451,
+        "tag": "v1.2.3",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.2.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/16446451",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/16446451",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.2.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-03-25T01:45:02Z",
+        "date_published": "2019-03-25T01:48:14Z",
+        "description": "Simplify / cleanup generators. Put all printing functions outside generators themselves for better speed.",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.2.2",
+        "name": "simplify",
+        "release_id": 16314455,
+        "tag": "v1.2.2",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/16314455",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/16314455",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-03-13T20:23:27Z",
+        "date_published": "2019-03-13T20:24:55Z",
+        "description": "Throughout the program, used iterators in pipelines instead of lists where it was straightforward to do so. Perhaps more to come in the future.",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.2.1",
+        "name": "Performance: pipelining",
+        "release_id": 16098423,
+        "tag": "v1.2.1",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/16098423",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/16098423",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-03-13T17:45:37Z",
+        "date_published": "2019-03-13T17:52:46Z",
+        "description": "* General cleanup and prettifying of output\r\n* speedups from concurrent `asyncio` operations",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.2.0",
+        "name": "concurrent operations, documentation, cleanup",
+        "release_id": 16094892,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/16094892",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/16094892",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2018-10-08T03:08:09Z",
+        "date_published": "2018-10-08T03:17:19Z",
+        "html_url": "https://github.com/scivision/gitMC/releases/tag/v1.1.6",
+        "name": "Make API consistent, naming better, functionalize, speedup",
+        "release_id": 13294713,
+        "tag": "v1.1.6",
+        "tarball_url": "https://api.github.com/repos/scivision/gitMC/tarball/v1.1.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/scivision/gitMC/releases/13294713",
+        "value": "https://api.github.com/repos/scivision/gitMC/releases/13294713",
+        "zipball_url": "https://api.github.com/repos/scivision/gitMC/zipball/v1.1.6"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pygit2",
+        "type": "Software_application",
+        "value": "pygit2",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools>=61.0.0",
+        "version": ">=61.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "wheel",
+        "type": "Software_application",
+        "value": "wheel",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:45:06",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 11
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "GitMC -- concurrent asynchronous Git Utilities for operations on massive numbers of Git repos"
+        ],
+        "type": "Text_excerpt",
+        "value": "`gitbranch`\n: Tells of any non-master branches under directory ~/code\n\n`python -m gitutils.git_email`\n: list all contributor email addresses. To fix unwanted emails use [Git-filter-repo](https://www.scivision.dev/git-update-email-address/)\n\n`find_missing_file`\n: find directories missing exact fullpath to file\n\n`find_matching_file`\n: find directories matching exact fullpath to file\n"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Sync large number of git repos",
+        "parent_header": [
+          "GitMC -- concurrent asynchronous Git Utilities for operations on massive numbers of Git repos",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "These assume numerous subdirectories under `~/code`.\nThey work very quickly for large numbers (100+) of repos.\n\n* `gitstat` check if any local repos have pending changes\n* `gitpull` Git pulls all repos (suggest `gitfetch` instead)\n* `gitfetch` Git fetches all repos, printing a summary of files changed on remote\n\nPlace an empty file `.nogit` in a subdirectory to skip it.\n"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "[optional] speedup with https pull",
+        "parent_header": [
+          "GitMC -- concurrent asynchronous Git Utilities for operations on massive numbers of Git repos",
+          "Usage",
+          "Sync large number of git repos"
+        ],
+        "type": "Text_excerpt",
+        "value": "For public repos, to make the Git remote checking go at least twice as fast, and significantly reduce the computational burden when SSH is used for `git push` (as is recommended), consider the \"pushInsteadOf\" global Git config.\nTo do this, when cloning a public repo (including ones you're a collaborator on), use `git clone https://`.\nThis global SSH push config one-time does SSH push for HTTPS-cloned repos:\n\n```sh\ngit config --global url.\"ssh://github.com/\".pushInsteadOf https://github.com/\n```\n\nThe pattern matching can be made for all sites by omitting `github.com` from the command above, or you can refine it for each site, or even for specific usernames by editing the command above.\nFor private repos, simply clone with SSH as usual\n"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Preview all changed Jekyll files",
+        "parent_header": [
+          "GitMC -- concurrent asynchronous Git Utilities for operations on massive numbers of Git repos",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "This is for a website made using\n[Jekyll](https://www.scivision.dev/create-jekyll-github-pages-website)\nor\n[Hugo](https://github.com/scivision/hugo-flex-example):\n\n```sh\nActOnChanged . -p\n```\n\nIt shows web page previews of all pages changed locally--start the Jekyll or Hugo debug server first e.g. `hugo serve`\n"
+      },
+      "source": "https://raw.githubusercontent.com/scivision/gitMC/main/README.md",
+      "technique": "header_analysis"
+    }
+  ]
+}

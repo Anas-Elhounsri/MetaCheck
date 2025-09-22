@@ -1,0 +1,841 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9370868015783932,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "Leila.Feddoul@uni-jena.de",
+        "name": "Leila Feddoul",
+        "type": "Agent",
+        "url": "https://orcid.org/0000-0001-8896-8208",
+        "value": "Leila Feddoul"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Heinz Nixdorf Chair for Distributed Information Systems, Friedrich Schiller University Jena, Jena, Germany",
+        "email": "Leila.Feddoul@uni-jena.de",
+        "identifier": "https://orcid.org/0000-0001-8896-8208",
+        "type": "String",
+        "value": "Leila Feddoul"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "Candidate Generation and Evaluation"
+        ],
+        "type": "Text_excerpt",
+        "value": "```\n@inproceedings{DBLP:conf/semweb/Feddoul0S22,\n  author       = {Leila Feddoul and\n                  Frank L{\\\"{o}}ffler and\n                  Sirko Schindler},\n  editor       = {Lucie{-}Aim{\\'{e}}e Kaffee and\n                  Simon Razniewski and\n                  Gabriel Amaral and\n                  Kholoud Saad Alghamdi},\n  title        = {Analysis of Consistency between Wikidata and Wikipedia categories},\n  booktitle    = {Proceedings of the 3rd Wikidata Workshop 2022 co-located with the\n                  21st International Semantic Web Conference (ISWC2022), Virtual Event,\n                  Hanghzou, China, October 2022},\n  series       = {{CEUR} Workshop Proceedings},\n  volume       = {3262},\n  publisher    = {CEUR-WS.org},\n  year         = {2022},\n  url          = {https://ceur-ws.org/Vol-3262/paper4.pdf}\n}\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Leila Feddoul and\nFrank L{\\\"{o}}ffler and\nSirko Schindler",
+        "format": "bibtex",
+        "title": "Analysis of Consistency between Wikidata and Wikipedia categories",
+        "type": "Text_excerpt",
+        "url": "https://ceur-ws.org/Vol-3262/paper4.pdf",
+        "value": "@inproceedings{DBLP:conf/semweb/Feddoul0S22,\n    url = {https://ceur-ws.org/Vol-3262/paper4.pdf},\n    year = {2022},\n    publisher = {CEUR-WS.org},\n    volume = {3262},\n    series = {{CEUR} Workshop Proceedings},\n    booktitle = {Proceedings of the 3rd Wikidata Workshop 2022 co-located with the\n21st International Semantic Web Conference (ISWC2022), Virtual Event,\nHanghzou, China, October 2022},\n    title = {Analysis of Consistency between Wikidata and Wikipedia categories},\n    editor = {Lucie{-}Aim{\\'{e}}e Kaffee and\nSimon Razniewski and\nGabriel Amaral and\nKholoud Saad Alghamdi},\n    author = {Leila Feddoul and\nFrank L{\\\"{o}}ffler and\nSirko Schindler},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/fusion-jena/wiki-category-consistency"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/fusion-jena/wiki-category-consistency"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-07-27T11:54:02Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2022-07-27"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2022-07-27"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-12-19T16:01:32Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Source code for Evaluating the consistency between Wikipedia and Wikidata categories"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Source code for Evaluating the consistency between Wikipedia and Wikidata categories"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Source code for Evaluating the consistency between Wikipedia and Wikidata categories"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.967892574753534,
+      "result": {
+        "original_header": "Consistency between Wikidata and Wikipedia Categories",
+        "type": "Text_excerpt",
+        "value": "- We perform an analysis of consistencies between [Wikipedia category](https://en.wikipedia.org/wiki/Wikipedia:Categorization) members and their Wikidata counterpart entities retrieved by executing the SPARQL queries attached to the Wikidata categories under the property [Wikidata SPARQL query equivalent](https://www.wikidata.org/wiki/Property:P3921).\n- We focus on comparing the member sets of the two sources, and automatically investigating possible reasons making them not identical, in addition to a comparison of the consistency of the information provided within the Wikidata category itself.\n- For that, we propose a pipeline for the generation and evaluation of relevant data (categories and Wikidata/Wikipedia entities sets).\n- Wikipedia category members are retrieved by traversing the Wikipedia category hierarchy in all available languages.\n- This repository provides the steps needed to either reproduce the current results or conduct a new experiment using other Wikipedia/Wikidata versions.\n- The pipeline works using both Wikipedia/Wikidata public endpoints and SQL/JSON dumps.\n- Our experiments were run using **the Wikidata JSON dump of 2022-05-02 and the Wikipedia SQL dumps of 2022-05-01**.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://dumps.wikimedia.org/enwiki/"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/fusion-jena/wiki-category-consistency/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fusion-jena/wiki-category-consistency"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Consistency between Wikidata and Wikipedia Categories"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "package.json",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "package.json"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/518437897"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.6913134"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.6913282"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.6913332"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/figs/approach.png"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/fusion-jena/wiki-category-consistency/issues"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "wikidata, wikipedia, wikipedia-category"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Wikidata"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Wikipedia"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Wikidata",
+          "Wikipedia",
+          "Wikipedia Category"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2022 Friedrich Schiller University Jena\nCopyright (c) 2022 German Aerospace Center (DLR)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "Candidate Generation and Evaluation"
+        ],
+        "type": "Text_excerpt",
+        "value": "This project is licensed under the [MIT License](https://github.com/fusion-jena/wiki-category-consistency/blob/master/LICENSE).\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "wiki-category-consistency"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "wiki-category-consistency"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "fusion-jena"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "wiki-category-consistency"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 172828,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "type": "Programming_language",
+        "value": "JavaScript",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://ceur-ws.org/Vol-3262/paper4.pdf"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leilafedd",
+          "type": "User"
+        },
+        "date_created": "2022-08-04T15:30:43Z",
+        "date_published": "2022-08-04T15:39:42Z",
+        "description": "Source code for Evaluating the consistency between Wikipedia and Wikidata categories.\r\n\r\n**Change log**\r\n- minor : update README and metadata",
+        "html_url": "https://github.com/fusion-jena/wiki-category-consistency/releases/tag/v1.0.2",
+        "name": "wiki-category-consistency v1.0.2",
+        "release_id": 73662149,
+        "tag": "v1.0.2",
+        "tarball_url": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/tarball/v1.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/releases/73662149",
+        "value": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/releases/73662149",
+        "zipball_url": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/zipball/v1.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leilafedd",
+          "type": "User"
+        },
+        "date_created": "2022-07-28T08:44:10Z",
+        "date_published": "2022-07-28T08:46:40Z",
+        "description": "Source code for Evaluating the consistency between Wikipedia and Wikidata categories. \r\n\r\n**Change log**\r\n- minor : uncomment part of code",
+        "html_url": "https://github.com/fusion-jena/wiki-category-consistency/releases/tag/v1.0.1",
+        "name": "wiki-category-consistency v1.0.1",
+        "release_id": 73038326,
+        "tag": "v1.0.1",
+        "tarball_url": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/tarball/v1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/releases/73038326",
+        "value": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/releases/73038326",
+        "zipball_url": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/zipball/v1.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leilafedd",
+          "type": "User"
+        },
+        "date_created": "2022-07-27T13:23:39Z",
+        "date_published": "2022-07-27T13:39:05Z",
+        "description": "Source code for Evaluating the consistency between Wikipedia and Wikidata categories.",
+        "html_url": "https://github.com/fusion-jena/wiki-category-consistency/releases/tag/v1.0.0",
+        "name": "wiki-category-consistency v1.0.0",
+        "release_id": 72963528,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/releases/72963528",
+        "value": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/releases/72963528",
+        "zipball_url": "https://api.github.com/repos/fusion-jena/wiki-category-consistency/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JSONStream",
+        "type": "Software_application",
+        "value": "JSONStream@^1.3.5",
+        "version": "^1.3.5"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "better-sqlite3",
+        "type": "Software_application",
+        "value": "better-sqlite3@^7.5.0",
+        "version": "^7.5.0"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "bunyan",
+        "type": "Software_application",
+        "value": "bunyan@^1.8.15",
+        "version": "^1.8.15"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cli-progress",
+        "type": "Software_application",
+        "value": "cli-progress@^3.10.0",
+        "version": "^3.10.0"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cross-fetch",
+        "type": "Software_application",
+        "value": "cross-fetch@^3.1.5",
+        "version": "^3.1.5"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "glob",
+        "type": "Software_application",
+        "value": "glob@^7.2.0",
+        "version": "^7.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "glob-promise",
+        "type": "Software_application",
+        "value": "glob-promise@^4.2.0",
+        "version": "^4.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lodash",
+        "type": "Software_application",
+        "value": "lodash@^4.17.21",
+        "version": "^4.17.21"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mariadb",
+        "type": "Software_application",
+        "value": "mariadb@^2.5.4",
+        "version": "^2.5.4"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mkdirp",
+        "type": "Software_application",
+        "value": "mkdirp@^1.0.4",
+        "version": "^1.0.4"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "path",
+        "type": "Software_application",
+        "value": "path@^0.12.7",
+        "version": "^0.12.7"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "unbzip2-stream",
+        "type": "Software_application",
+        "value": "unbzip2-stream@^1.4.3",
+        "version": "^1.4.3"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@babel/cli",
+        "type": "Software_application",
+        "value": "@babel/cli@^7.17.0",
+        "version": "^7.17.0"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@babel/core",
+        "type": "Software_application",
+        "value": "@babel/core@^7.17.2",
+        "version": "^7.17.2"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@babel/node",
+        "type": "Software_application",
+        "value": "@babel/node@^7.16.8",
+        "version": "^7.16.8"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@babel/preset-env",
+        "type": "Software_application",
+        "value": "@babel/preset-env@^7.16.11",
+        "version": "^7.16.11"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@babel/register",
+        "type": "Software_application",
+        "value": "@babel/register@^7.17.0",
+        "version": "^7.17.0"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "node version >= v14.16.1",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:54:06",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "non-software"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "1.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/fusion-jena/wiki-category-consistency/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

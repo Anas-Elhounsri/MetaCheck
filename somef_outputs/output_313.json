@@ -1,0 +1,579 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9853049318290431,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Washington",
+        "email": "camdev@uw.edu",
+        "identifier": "http://orcid.org/0000-0002-6579-111X",
+        "type": "String",
+        "value": "Cameron Devine"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Washington",
+        "email": "garbini@uw.edu",
+        "type": "String",
+        "value": "Joseph L. Garbini"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "rpicone@stmartin.edu ",
+        "identifier": "http://orcid.org/0000-0002-5091-5175",
+        "type": "String",
+        "value": "Rico A. R. Picone"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, sex characteristics, gender identity and expression,\nlevel of experience, education, socio-economic status, nationality, personal\nappearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\n  advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at camdev@uw.edu. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see\nhttps://www.contributor-covenant.org/faq\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CameronDevine/StateMint"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CameronDevine/StateMint"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nWe welcome contributions in the form of bug reports, bug fixes, improvements to the documentation, ideas for enhancements, or the enhancements themselves!\n\nYou can find a [list of current issues](https://github.com/CameronDevine/StateMint/issues) in the project's GitHub repository. Feel free to tackle any existing bugs or enhancement ideas by submitting a [pull request](https://github.com/CameronDevine/StateMint/pulls). Some issues may be marked as `beginner-friendly`. These issues are a great place to start working with StateMint, if you're new here.\n\n## Bug Reports\n\n* Please include a short (but detailed) code snippet or explanation for reproducing the problem. Attach or include a link to any input files that will be needed to reproduce the error.\n* Explain the behavior you expected, and how what you got differed.\n* Include the full text of any error messages that are printed on the screen or found in the browser console.\n\n## Pull Requests\n\n* **Make sure the test suite passes** on your computer. To do this, run `python TestSuite.py` from the `python` directory, `make test` from the `web` directory, or run the `TestSuite.nb` notebook from the `mathematica` directory, depending on what code has been changed.\n* _Always_ add tests and docs for your code.\n* Please reference relevant GitHub issues in your commit messages using `#123`.\n* Changes should be [PEP8](https://www.python.org/dev/peps/pep-0008/) and [PEP257](https://www.python.org/dev/peps/pep-0257/) compatible, although this project uses tabs instead of spaces.\n* Keep style fixes to a separate commit to make your pull request more readable.\n* Docstrings should follow the [Google style](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html).\n* When you start working on a pull request, start by creating a new branch pointing at the latest commit on [GitHub master](https://github.com/CameronDevine/StateMint/tree/master).\n* The copyright policy is detailed in the [`LICENSE`](https://github.com/CameronDevine/StateMint/blob/master/LICENSE).\n\n## Meta\n\nThanks to the useful [contributing guide of thermostate](https://github.com/bryanwweber/thermostate/blob/master/CONTRIBUTING.md), which served as an inspiration and starting point for this guide.\n"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "contributors": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributors",
+        "parent_header": [
+          "StateMint"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Cameron Devine, Dept. of Mechanical Engineering, University of Washington: Python Package and Web Interface\n- [Rico Picone](http://ricopic.one), Dept. of Mechanical Engineering, St. Martin's University: Mathematica Package Maintenence\n- Joseph Garbini, Dept. of Mechanical Engineering, University of Washington: Original Mathematica Package and Web Interface Terminology\n- [Gavin Basuel](http://gavinbasuel.com), 1G Media & Design: Web Interface User Experience Design\n"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-04-13T06:25:22Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-11-04T14:45:57Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This is a set of tools to symbolically determine the differential equation of a dynamic system given its elemental and constraint equations."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This library is used to take the elemental equations and constraint equations of a system and find a differential equation in a standard form. This script is a port from a Mathematica notebook with the same functionality but was ported to allow it to be run using an AWS Lambda function, allowing anyone to run the code without having Python/sympy or Mathematica installed."
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9586877998278702,
+      "result": {
+        "original_header": "StateMint",
+        "type": "Text_excerpt",
+        "value": "StateMint is a set of tools to symbolically determine the differential equation describing the dynamics of a system.\nAs inputs these tools take the elemental and constraint equations of a system.\nA [tutorial](tutorial.md) is available which covers how to prepare equations for use with these tools.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9180116955494131,
+      "result": {
+        "original_header": "Mathematica",
+        "type": "Text_excerpt",
+        "value": "The Mathematica [package](mathematica) was the original implementation of this tool.\nAn [example](mathematica/Example.nb) of how to use the Mathematica package is provided.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9386772827917348,
+      "result": {
+        "original_header": "Python",
+        "type": "Text_excerpt",
+        "value": "A Python [package](python) was also created to provide an open source implementation of this tool using [SymPy](http://www.sympy.org).\nThis package allows anyone to use this tool on their own computer without having to obtain a license for proprietary software.\nAn [example](python/Example.ipynb) of how to use the Python package is also provided.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9109439140481604,
+      "result": {
+        "original_header": "Web Interface",
+        "type": "Text_excerpt",
+        "value": "A [web interface](web) is also available which uses the Python package as a backend.\nThis package allows anyone to use this tool without the need to install any software.\nAn example of this interface is running at [statemint.stmartin.edu](http://statemint.stmartin.edu).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CameronDevine/StateMint/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/python/Example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/python/Example.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/CameronDevine/StateMint/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CameronDevine/StateMint"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "StateMint"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/requirements.txt",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/python/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/python/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/python/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/python/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.2633330"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://jose.theoj.org/papers/7caec95b5db5c18d8a14cbc42fef7bb7/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/CameronDevine/StateMint/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "algebra",
+          "system dynamics",
+          "calculator",
+          "computer algebra system",
+          "symbolic math"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "type": "License",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "value": "https://api.github.com/licenses/bsd-3-clause"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/BSD",
+        "spdx_id": "BSD",
+        "type": "License",
+        "value": "BSD"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "StateMint"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "CameronDevine"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_distribution": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pypi.org/project/StateMint/"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Mathematica",
+        "size": 2591012,
+        "type": "Programming_language",
+        "value": "Mathematica"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 94033,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 58222,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 38617,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jupyter Notebook",
+        "size": 30912,
+        "type": "Programming_language",
+        "value": "Jupyter Notebook"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 5828,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 4268,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 4210,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 2518,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python/requirements.txt",
+        "type": "Software_application",
+        "value": "python/requirements.txt",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sympy",
+        "type": "Software_application",
+        "value": "sympy>=0.7.3",
+        "version": ">=0.7.3"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/python/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/python/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/python/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "documentation",
+    "usage",
+    "faq",
+    "support"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:23:05",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v2.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/CameronDevine/StateMint/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

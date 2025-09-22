@@ -1,0 +1,456 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "mark.padgham@email.com",
+            "value": "Mark Padgham"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "mark.padgham@email.com",
+        "type": "String",
+        "value": "Mark Padgham"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/hypertidy/geoarea"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/hypertidy/geoarea"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/hypertidy/geoarea"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/hypertidy/geoarea/actions?query=workflow%3AR-CMD-check",
+          "https://github.com/hypertidy/geoarea/actions?query=workflow%3Apkgcheck",
+          "https://codecov.io/gh/hypertidy/geoarea"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to geoarea\n\n## Opening issues\n\nThe easiest way to note any behavioural curiosities or to request any new\nfeatures is by opening a [github issue](https://github.com/hypertidy/geoarea/issues).\n\n\n## Development guidelines\n\nIf you'd like to contribute changes to `geoarea`, we use [the GitHub\nflow](https://guides.github.com/introduction/flow/index.html) for proposing,\nsubmitting, reviewing, and accepting changes. If you haven't done this before,\nthere's a nice overview of git [here](http://r-pkgs.had.co.nz/git.html), as well\nas best practices for submitting pull requests\n[here](http://r-pkgs.had.co.nz/git.html#pr-make).\n\n\n## Code of Conduct\n\nWe want to encourage a warm, welcoming, and safe environment for contributing to\nthis project. See the\n[code of conduct](https://github.com/hypertidy/geoarea/blob/master/CONDUCT.md) for\nmore information.\n"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-10-19T12:14:31Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-10-19T16:08:50Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Lightweight and fast calculation of areas of geo-polygons "
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+        "type": "String",
+        "value": "Dependency-free, ultra fast calculation of geodesic areas, using\n    the the reference nanometre-accuracy libraries of Karney (2013)\n    <doi:10.1007/s00190-012-0578-z>, as used by the 'sf' package. The main\n    function accepts a single input of two columns containing the longitude and\n    latitude coordinates, assumed to be a polygon and represented in WSG84\n    projection, and returns the area in square metres, and perimeter in metres."
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Dependency-free, ultra fast calculation of geodesic areas, using the the reference nanometre-accuracy libraries of Karney (2013) <doi:10.1007/s00190-012-0578-z>, as used by the 'sf' package. The main function accepts a single input of two columns containing the longitude and latitude coordinates, assumed to be a polygon and represented in WSG84 projection, and returns the area in square metres, and perimeter in metres."
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9604257813911752,
+      "result": {
+        "original_header": "geoarea",
+        "type": "Text_excerpt",
+        "value": "An ultra-lightweight, zero-dependency package for very fast calculation\nof geodesic polygon areas. Calculation is based on the [\u201cgeographiclib\u201d\ncode of Charles Karney](https://doi.org/10.1007/s00190-012-0578-z),\navailable at \\[<https://github.com/geographiclib/geographiclib-c>\\]\n<https://github.com/geographiclib/geographiclib-c>\\](<https://github.com/geographiclib/geographiclib-c>).\nThese calculations are available in many other libraries and R packages,\nand are notably included in [the \u2018PROJ\u2019 library](https://proj.org/), and\nused by many packages which bundles depend on that library, including\nand . All such packages, as well as the package which includes the C++\nversion of the C code bundled here, are large and generally packages,\nrequiring extensive installation of a wide range of dependent libraries.\nThe `geoarea` package in contrast does not depend on any other packages,\nand is much \u201clighter weight\u201d than any of these alternatives. \nThe package contains one single function, `geoarea()`, which, like in\nthe sibling package, [`geodist`](https://github.com/hypertidy/geodist),\naims to provide the fastest way of calculating areas of polygons\nexpressed in longitude and latitude coordinates. This speed is primarily\nthrough this package foregoing any pre-processing stages such as\ncoordinate reference system checking or transformations. All input\nvalues are passed directly to the core C routines, and return a single\nvector of two values quantifying the area and perimeter of the input\npolygon. \n"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8553405706993018,
+      "result": {
+        "original_header": "Benchmark",
+        "type": "Text_excerpt",
+        "value": "The following benchmarks the calculations of this package with the\nequivalent C++ routines included with [the `geosphere`\npackage](https://cran.r-project.org/package=geosphere), and [the `sf`\npackage](https://cran.r-project.org/package=sf).\n``` r\nlibrary (bench)\nlibrary (sf)\nlibrary (geosphere)\nlats <- c (-72.9, -71.9, -74.9, -74.3, -77.5, -77.4, -71.7, -65.9, -65.7,\n           -66.6, -66.9, -69.8, -70.0, -71.0, -77.3, -77.9, -74.7)\nlons <- c (-74, -102, -102, -131, -163, 163, 172, 140, 113, 88, 59, 25, -4,\n           -14, -33, -46, -61)\nxy <- cbind (lons, lats)\nxys <- sf::st_polygon (list (rbind (xy, xy [1, ]))) |>\n    sf::st_sfc (crs = 4326)\n\nbench::mark (\n    geoarea (xy),\n    geoarea (xy, spherical = TRUE),\n    geosphere::areaPolygon (xy),\n    sf::st_area (xys),\n    check = FALSE)\n#> # A tibble: 4 \u00d7 6\n#>   expression                         min   median `itr/sec` mem_alloc `gc/sec`\n#>   <bch:expr>                    <bch:tm> <bch:tm>     <dbl> <bch:byt>    <dbl>\n#> 1 geoarea(xy)                    21.48\u00b5s  22.98\u00b5s    42857.      368B     0   \n#> 2 geoarea(xy, spherical = TRUE)   5.62\u00b5s   6.46\u00b5s   148198.      368B    14.8 \n#> 3 geosphere::areaPolygon(xy)     23.99\u00b5s  25.36\u00b5s    39153.      368B     3.92\n#> 4 sf::st_area(xys)                3.43ms   3.51ms      281.    2.95MB     6.38\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "http://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/hypertidy/geoarea/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/hypertidy/geoarea/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "hypertidy/geoarea"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geoarea"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geoarea"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/hypertidy/geoarea/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/hypertidy/geoarea/issues"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/hypertidy/geoarea/issues"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "YEAR: 2018\nCOPYRIGHT HOLDER: Mark Padgham\n"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geoarea"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geoarea: Fast, Dependency-Free Geodesic Area Calculations"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "hypertidy"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+        "type": "String",
+        "value": "geoarea"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 117919,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 3268,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 348,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/hypertidy/geoarea/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/hypertidy/geoarea/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:23:51",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.0.1.007"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.1.007"
+      },
+      "source": "https://raw.githubusercontent.com/hypertidy/geoarea/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

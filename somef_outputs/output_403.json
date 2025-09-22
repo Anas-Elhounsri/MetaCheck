@@ -1,0 +1,759 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "mike.mahoney.218@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-2402-304X",
+        "type": "String",
+        "value": "Michael Mahoney"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Mahoney",
+            "given_name": "Michael",
+            "name": "Michael Mahoney",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0003-2402-304X"
+          }
+        ],
+        "datePublished": "2022",
+        "doi": "10.21105/joss.04388",
+        "format": "cff",
+        "title": "unifir: A Unifying API for Calling the 'Unity' '3D' Video Game Engine",
+        "type": "File_dump",
+        "url": "https://doi.org/10.21105/joss.04388",
+        "value": "# -----------------------------------------------------------\n# CITATION file created with {cffr} R package, v0.3.0\n# See also: https://docs.ropensci.org/cffr/\n# -----------------------------------------------------------\n \ncff-version: 1.2.0\nmessage: 'To cite package \"unifir\" in publications use:'\ntype: software\nlicense: MIT\ntitle: 'unifir: A Unifying API for Calling the ''Unity'' ''3D'' Video Game Engine'\nversion: 0.2.1.9000\ndoi: 10.21105/joss.04388\nabstract: Functions for the creation and manipulation of scenes and objects within\n  the 'Unity' '3D' video game engine (<https://unity.com/>). Specific focuses include\n  the creation and import of terrain data and 'GameObjects' as well as scene management.\nauthors:\n- family-names: Mahoney\n  given-names: Michael\n  email: mike.mahoney.218@gmail.com\n  orcid: https://orcid.org/0000-0003-2402-304X\npreferred-citation:\n  type: article\n  title: 'unifir: A Unifying API for Working with Unity in R'\n  authors:\n  - family-names: Mahoney\n    given-names: Michael J.\n  - family-names: Beier\n    given-names: Colin M.\n  - family-names: Ackerman\n    given-names: Aidan C.\n  year: '2022'\n  publisher:\n    name: The Open Journal\n  volume: '7'\n  issue: '73'\n  journal: Journal of Open Source Software\n  doi: 10.21105/joss.04388\n  url: https://doi.org/10.21105/joss.04388\n  start: '4388'\nrepository: https://CRAN.R-project.org/package=unifir\nrepository-code: https://github.com/ropensci/unifir\nurl: https://docs.ropensci.org/unifir/\ncontact:\n- family-names: Mahoney\n  given-names: Michael\n  email: mike.mahoney.218@gmail.com\n  orcid: https://orcid.org/0000-0003-2402-304X\nkeywords:\n- cran\n- cran-r\n- r\n- rstats\n- unifir\n- unity\n- unity3d\n- visualization\nreferences:\n- type: software\n  title: 'R: A Language and Environment for Statistical Computing'\n  notes: Depends\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2022'\n  url: https://www.R-project.org/\n  institution:\n    name: R Foundation for Statistical Computing\n  version: '>= 3.5.0'\n- type: software\n  title: glue\n  abstract: 'glue: Interpreted String Literals'\n  notes: Imports\n  authors:\n  - family-names: Hester\n    given-names: Jim\n    orcid: https://orcid.org/0000-0002-2739-7082\n  - family-names: Bryan\n    given-names: Jennifer\n    email: jenny@rstudio.com\n    orcid: https://orcid.org/0000-0002-6983-2759\n  year: '2022'\n  url: https://CRAN.R-project.org/package=glue\n- type: software\n  title: methods\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2022'\n  url: https://www.R-project.org/\n  institution:\n    name: R Foundation for Statistical Computing\n- type: software\n  title: proceduralnames\n  abstract: 'proceduralnames: Several Methods for Procedural Name Generation'\n  notes: Imports\n  authors:\n  - family-names: Mahoney\n    given-names: Michael\n    email: mike.mahoney.218@gmail.com\n    orcid: https://orcid.org/0000-0003-2402-304X\n  year: '2022'\n  url: https://CRAN.R-project.org/package=proceduralnames\n- type: software\n  title: R6\n  abstract: 'R6: Encapsulated Classes with Reference Semantics'\n  notes: Imports\n  authors:\n  - family-names: Chang\n    given-names: Winston\n    email: winston@stdout.org\n  year: '2022'\n  url: https://CRAN.R-project.org/package=R6\n- type: software\n  title: utils\n  abstract: 'R: A Language and Environment for Statistical Computing'\n  notes: Imports\n  authors:\n  - name: R Core Team\n  location:\n    name: Vienna, Austria\n  year: '2022'\n  url: https://www.R-project.org/\n  institution:\n    name: R Foundation for Statistical Computing\n- type: software\n  title: terrainr\n  abstract: 'terrainr: Landscape Visualizations in R and ''Unity'''\n  notes: Suggests\n  authors:\n  - family-names: Mahoney\n    given-names: Michael\n    email: mike.mahoney.218@gmail.com\n    orcid: https://orcid.org/0000-0003-2402-304X\n  year: '2022'\n  url: https://CRAN.R-project.org/package=terrainr\n- type: software\n  title: covr\n  abstract: 'covr: Test Coverage for Packages'\n  notes: Suggests\n  authors:\n  - family-names: Hester\n    given-names: Jim\n    email: james.f.hester@gmail.com\n  year: '2022'\n  url: https://CRAN.R-project.org/package=covr\n- type: software\n  title: knitr\n  abstract: 'knitr: A General-Purpose Package for Dynamic Report Generation in R'\n  notes: Suggests\n  authors:\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  year: '2022'\n  url: https://CRAN.R-project.org/package=knitr\n- type: software\n  title: lintr\n  abstract: 'lintr: A ''Linter'' for R Code'\n  notes: Suggests\n  authors:\n  - family-names: Hester\n    given-names: Jim\n    email: james.f.hester@gmail.com\n  - family-names: Angly\n    given-names: Florent\n  - family-names: Hyde\n    given-names: Russ\n  - family-names: Chirico\n    given-names: Michael\n  - family-names: Ren\n    given-names: Kun\n  - family-names: Rosenstock\n    given-names: Alexander\n  year: '2022'\n  url: https://CRAN.R-project.org/package=lintr\n- type: software\n  title: pkgdown\n  abstract: 'pkgdown: Make Static HTML Documentation for a Package'\n  notes: Suggests\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@rstudio.com\n    orcid: https://orcid.org/0000-0003-4757-117X\n  - family-names: Hesselberth\n    given-names: Jay\n    orcid: https://orcid.org/0000-0002-6299-179X\n  - family-names: Salmon\n    given-names: Ma\u00eblle\n    orcid: https://orcid.org/0000-0002-2815-0399\n  year: '2022'\n  url: https://CRAN.R-project.org/package=pkgdown\n- type: software\n  title: rmarkdown\n  abstract: 'rmarkdown: Dynamic Documents for R'\n  notes: Suggests\n  authors:\n  - family-names: Allaire\n    given-names: JJ\n    email: jj@rstudio.com\n  - family-names: Xie\n    given-names: Yihui\n    email: xie@yihui.name\n    orcid: https://orcid.org/0000-0003-0645-5666\n  - family-names: McPherson\n    given-names: Jonathan\n    email: jonathan@rstudio.com\n  - family-names: Luraschi\n    given-names: Javier\n    email: javier@rstudio.com\n  - family-names: Ushey\n    given-names: Kevin\n    email: kevin@rstudio.com\n  - family-names: Atkins\n    given-names: Aron\n    email: aron@rstudio.com\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@rstudio.com\n  - family-names: Cheng\n    given-names: Joe\n    email: joe@rstudio.com\n  - family-names: Chang\n    given-names: Winston\n    email: winston@rstudio.com\n  - family-names: Iannone\n    given-names: Richard\n    email: rich@rstudio.com\n    orcid: https://orcid.org/0000-0003-3925-190X\n  year: '2022'\n  url: https://CRAN.R-project.org/package=rmarkdown\n- type: software\n  title: styler\n  abstract: 'styler: Non-Invasive Pretty Printing of R Code'\n  notes: Suggests\n  authors:\n  - family-names: M\u00fcller\n    given-names: Kirill\n    email: krlmlr+r@mailbox.org\n  - family-names: Walthert\n    given-names: Lorenz\n    email: lorenz.walthert@icloud.com\n  year: '2022'\n  url: https://CRAN.R-project.org/package=styler\n- type: software\n  title: testthat\n  abstract: 'testthat: Unit Testing for R'\n  notes: Suggests\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@rstudio.com\n  year: '2022'\n  url: https://CRAN.R-project.org/package=testthat\n  version: '>= 3.0.0'\n- type: software\n  title: terra\n  abstract: 'terra: Spatial Data Analysis'\n  notes: Suggests\n  authors:\n  - family-names: Hijmans\n    given-names: Robert J.\n    email: r.hijmans@gmail.com\n    orcid: https://orcid.org/0000-0001-5872-2872\n  year: '2022'\n  url: https://rspatial.org/terra/\n- type: software\n  title: sf\n  abstract: 'sf: Simple Features for R'\n  notes: Suggests\n  authors:\n  - family-names: Pebesma\n    given-names: Edzer\n    email: edzer.pebesma@uni-muenster.de\n    orcid: https://orcid.org/0000-0001-8049-7069\n  year: '2022'\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citing unifir",
+        "parent_header": [
+          "unifir: A Unifying API for Working with Unity in R <img src='man/figures/logo.png' align=\"right\" height=\"138\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "To cite unifir in publications please use:\n\n> Mahoney M. J., Beier C. M., and Ackerman, A. C. (2022). unifir: A\n> Unifying API for Working with Unity in R. Journal of Open Source\n> Software, 7(73), 4388, <https://doi.org/10.21105/joss.04388>\n\nA BibTeX entry for LaTeX users is:\n\n``` bibtex\n  @Article{,\n    year = {2022},\n    publisher = {The Open Journal},\n    volume = {7},\n    number = {73},\n    pages = {4388},\n    author = {Michael J. Mahoney and Colin M. Beier and Aidan C. Ackerman},\n    title = {{unifir:} A Unifying {API} for Working with {Unity} in {R}},\n    journal = {Journal of Open Source Software},\n    doi = {10.21105/joss.04388},\n    url = {https://doi.org/10.21105/joss.04388},\n  }\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nWe as members, contributors, and leaders pledge to make participation in our\ncommunity a harassment-free experience for everyone, regardless of age, body\nsize, visible or invisible disability, ethnicity, sex characteristics, gender\nidentity and expression, level of experience, education, socio-economic status,\nnationality, personal appearance, race, religion, or sexual identity and\norientation.\n\nWe pledge to act and interact in ways that contribute to an open, welcoming,\ndiverse, inclusive, and healthy community.\n\n## Our Standards\n\nExamples of behavior that contributes to a positive environment for our\ncommunity include:\n\n* Demonstrating empathy and kindness toward other people\n* Being respectful of differing opinions, viewpoints, and experiences\n* Giving and gracefully accepting constructive feedback\n* Accepting responsibility and apologizing to those affected by our mistakes,\nand learning from the experience\n* Focusing on what is best not just for us as individuals, but for the overall\ncommunity\n\nExamples of unacceptable behavior include:\n\n* The use of sexualized language or imagery, and sexual attention or\nadvances of any kind\n* Trolling, insulting or derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or email\naddress, without their explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\nprofessional setting\n\n## Enforcement Responsibilities\n\nCommunity leaders are responsible for clarifying and enforcing our standards\nof acceptable behavior and will take appropriate and fair corrective action in\nresponse to any behavior that they deem inappropriate, threatening, offensive,\nor harmful.\n\nCommunity leaders have the right and responsibility to remove, edit, or reject\ncomments, commits, code, wiki edits, issues, and other contributions that are\nnot aligned to this Code of Conduct, and will communicate reasons for moderation\ndecisions when appropriate.\n\n## Scope\n\nThis Code of Conduct applies within all community spaces, and also applies\nwhen an individual is officially representing the community in public spaces.\nExamples of representing our community include using an official e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported to the community leaders responsible for enforcement at mike.mahoney.218@gmail.com. \nAll complaints will be reviewed and investigated promptly and fairly.\n\nAll community leaders are obligated to respect the privacy and security of the\nreporter of any incident.\n\n## Enforcement Guidelines\n\nCommunity leaders will follow these Community Impact Guidelines in determining\nthe consequences for any action they deem in violation of this Code of Conduct:\n\n### 1. Correction\n\n**Community Impact**: Use of inappropriate language or other behavior deemed\nunprofessional or unwelcome in the community.\n\n**Consequence**: A private, written warning from community leaders, providing\nclarity around the nature of the violation and an explanation of why the\nbehavior was inappropriate. A public apology may be requested.\n\n### 2. Warning\n\n**Community Impact**: A violation through a single incident or series of\nactions.\n\n**Consequence**: A warning with consequences for continued behavior. No\ninteraction with the people involved, including unsolicited interaction with\nthose enforcing the Code of Conduct, for a specified period of time. This\nincludes avoiding interactions in community spaces as well as external channels\nlike social media. Violating these terms may lead to a temporary or permanent\nban.\n\n### 3. Temporary Ban\n\n**Community Impact**: A serious violation of community standards, including\nsustained inappropriate behavior.\n\n**Consequence**: A temporary ban from any sort of interaction or public\ncommunication with the community for a specified period of time. No public or\nprivate interaction with the people involved, including unsolicited interaction\nwith those enforcing the Code of Conduct, is allowed during this period.\nViolating these terms may lead to a permanent ban.\n\n### 4. Permanent Ban\n\n**Community Impact**: Demonstrating a pattern of violation of community\nstandards, including sustained inappropriate behavior, harassment of an\nindividual, or aggression toward or disparagement of classes of individuals.\n\n**Consequence**: A permanent ban from any sort of public interaction within the\ncommunity.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage],\nversion 2.0,\navailable at <https://www.contributor-covenant.org/version/2/0/code_of_conduct.html>.\n\nCommunity Impact Guidelines were inspired by [Mozilla's code of conduct\nenforcement ladder](https://github.com/mozilla/diversity).\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see the FAQ at\n<https://www.contributor-covenant.org/faq>. Translations are available at <https://www.contributor-covenant.org/translations>.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/unifir"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/unifir"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/unifir"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/ropensci/unifir/actions",
+          "https://app.codecov.io/gh/ropensci/unifir?branch=main"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to unifir\n\nThis outlines how to propose a change to unifir. \nFor more detailed info about contributing to this, and other tidyverse packages, please see the\n[**development contributing guide**](https://rstd.io/tidy-contrib). \n\n## Fixing typos\n\nYou can fix typos, spelling mistakes, or grammatical errors in the documentation directly using the GitHub web interface, as long as the changes are made in the _source_ file. \nThis generally means you'll need to edit [roxygen2 comments](https://roxygen2.r-lib.org/articles/roxygen2.html) in an `.R`, not a `.Rd` file. \nYou can find the `.R` file that generates the `.Rd` by reading the comment in the first line.\n\n## Bigger changes\n\nIf you want to make a bigger change, it's a good idea to first file an issue and make sure someone from the team agrees that it\u2019s needed. \nIf you\u2019ve found a bug, please file an issue that illustrates the bug with a minimal \n[reprex](https://www.tidyverse.org/help/#reprex) (this will also help you write a unit test, if needed).\n\n### Pull request process\n\n*   Fork the package and clone onto your computer. If you haven't done this before, we recommend using `usethis::create_from_github(\"mikemahoney218/unifir\", fork = TRUE)`.\n\n*   Install all development dependencies with `devtools::install_dev_deps()`, and then make sure the package passes R CMD check by running `devtools::check()`. \n    If R CMD check doesn't pass cleanly, it's a good idea to ask for help before continuing. \n*   Create a Git branch for your pull request (PR). We recommend using `usethis::pr_init(\"brief-description-of-change\")`.\n\n*   Make your changes, commit to git, and then create a PR by running `usethis::pr_push()`, and following the prompts in your browser.\n    The title of your PR should briefly describe the change.\n    The body of your PR should contain `Fixes #issue-number`.\n\n*  For user-facing changes, add a bullet to the top of `NEWS.md` (i.e. just below the first header). Follow the style described in <https://style.tidyverse.org/news.html>.\n\n### Code style\n\n*   New code should follow the tidyverse [style guide](https://style.tidyverse.org). \n    You can use the [styler](https://CRAN.R-project.org/package=styler) package to apply these styles, but please don't restyle code that has nothing to do with your PR.  \n\n*  We use [roxygen2](https://cran.r-project.org/package=roxygen2), with [Markdown syntax](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd-formatting.html), for documentation.  \n\n*  We use [testthat](https://cran.r-project.org/package=testthat) for unit tests. \n   Contributions with test cases included are easier to accept.  \n\n## Code of Conduct\n\nPlease note that the unifir project is released with a\n[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this\nproject you agree to abide by its terms.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-06-03T20:06:53Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-03-25T02:06:58Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A unifying interface for calling Unity from R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+        "type": "String",
+        "value": "Functions for the creation and manipulation of scenes and objects\n    within the 'Unity' '3D' video game engine (<https://unity.com/>). Specific\n    focuses include the creation and import of terrain data and 'GameObjects' as\n    well as scene management."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Functions for the creation and manipulation of scenes and objects within the 'Unity' '3D' video game engine (<https://unity.com/>). Specific focuses include the creation and import of terrain data and 'GameObjects' as well as scene management."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9431187690731185,
+      "result": {
+        "original_header": "unifir: A Unifying API for Working with Unity in R <img src='man/figures/logo.png' align=\"right\" height=\"138\" />",
+        "type": "Text_excerpt",
+        "value": "\nunifir is a unifying API for creating and managing\n[Unity](https://unity.com/) scenes directly from R (without requiring\nGUI interaction). Users are able to write natural-feeling R code to\ncreate \u201cscripts\u201d (C# programs) composed of \u201cprops\u201d (C# methods) which\nproduce scenes inside the Unity engine. While it is entirely possible to\ncreate fleshed-out Unity scenes through this package, unifir is\nprimarily designed around being easy to wrap in other packages, so that\nany number of packages interacting with Unity can all share a common\nframework. \nOpen your new project from UnityHub, open the scene you created with\n`save_scene`, and you\u2019ll see the outputs from your script right in front\nof you! To learn more, check out the vignettes that ship with the\npackage \u2013 particularly [the one for how to use unifir to make\nscenes](https://docs.ropensci.org/unifir/articles/unifir-user-guide.html)\nand [the one for how to extend unifir in your own\npackages](https://docs.ropensci.org/unifir/articles/unifir-dev-guide.html). \nRight now, unifir wraps the elements of the Unity API that I\u2019ve found\nuseful in my own work, principally focused around creating GameObjects,\nlights, player controllers, and terrain surfaces. If you are interested\nin pieces of the API that haven\u2019t made it into unifir yet, please open\nan issue or a PR!\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9221922786083682,
+      "result": {
+        "original_header": "Why do this?",
+        "type": "Text_excerpt",
+        "value": "There\u2019s been a lot of interest in using immersive virtual environments\nfor research on topics including [science\ncommunication](https://doi.org/10.1080/13658816.2020.1830997),\n[landscape planning](https://doi.org/10.1016/j.apgeog.2019.102102),\n[environmental economics](https://doi.org/10.1016/j.jeem.2008.08.002)\nand beyond. This is an incredibly exciting area of research, which looks\nlikely to present new methods for participatory planning, data\nvisualization, and skill training. However, right now, much of the\nresearch in this area relies upon closed-source tooling which puts up\nhurdles in front of the equitability, accessibility, and\ninteroperability of the field. In addition, a challenge when assessing\nhand-build environments (say to assess participant preferences between\ntwo scenes) is that us as researchers might accidentally \u201ctilt the\nscales\u201d in favor of our preferred option, by putting a little more\neffort into making the scene we personally prefer look more\naesthetically pleasing than the alternative. \nunifir is a first step towards an open-source, fully reproducible\napproach for constructing immersive virtual environments. While it\ncurrently only targets Unity, a proprietary source-available game\nengine, unifir hopes to improve the openness and interoperability of\nimmersive virtual environments by encoding all of the decisions involved\nin building a scene in standard R and C# code. A partially open system\nis better than a fully closed one, and if other game engines become more\nfeasible options for large scale immersive virtual environments, unifir\nmay be extended to support those as well.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9332212511641388,
+      "result": {
+        "original_header": "Code of Conduct",
+        "type": "Text_excerpt",
+        "value": "Please note that the unifir project is released with a [Contributor Code\nof Conduct](https://docs.ropensci.org/unifir/CODE_OF_CONDUCT.html). By\ncontributing to this project, you agree to abide by its terms.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "https://www.repostatus.org/#active",
+          "https://lifecycle.r-lib.org/articles/stages.html#maturing-1"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/unifir/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/unifir/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/unifir"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "unifir: A Unifying API for Working with Unity in R "
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/unifir/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "unifir"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.21105/joss.04388"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://joss.theoj.org/papers/10.21105/joss.04388/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://joss.theoj.org/papers/10.21105/joss.04388/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/github_footer.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "unifir: A Unifying API for Working with Unity in R <img src='man/figures/logo.png' align=\"right\" height=\"138\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "The easiest way to install unifir is to install it directly from\nR-Universe:\n\n``` r\n# Enable universe(s) by rOpenSci\noptions(repos = c(\n  mikemahoney218 = 'https://ropensci-universe.dev',\n  CRAN = 'https://cloud.r-project.org'))\n\n# Install unifir\ninstall.packages('unifir')\n```\n\nYou can also install unifir from [GitHub](https://github.com/) with:\n\n``` r\n# install.packages(\"remotes\")\nremotes::install_github(\"ropensci/unifir\")\n```\n\nNote that right now there is no release version of unifir; all published\nversions are considered \u201cdevelopment\u201d versions. While the unifir API is\nsolidifying, it is not yet solid, and breaking changes may happen at any\ntime.\n\nWhile unifir can be used by itself, you\u2019ll probably want to [install\nUnity](https://unity.com/download) in order to actually make Unity\nprojects.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/unifir/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/unifir/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/unifir/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cran, cran-r, r, rstats, unifir, unity, unity3d, visualization"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "rstats",
+          "cran",
+          "cran-r",
+          "r",
+          "unifir",
+          "visualization",
+          "unity",
+          "unity3d"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2021 unifir authors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "unifir"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "unifir: A Unifying API for Calling the 'Unity' '3D' Video Game Engine"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+        "type": "String",
+        "value": "unifir"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 100327,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C#",
+        "size": 14013,
+        "type": "Programming_language",
+        "value": "C#"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/unifir/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/unifir/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mikemahoney218",
+          "type": "User"
+        },
+        "date_created": "2024-02-01T17:28:37Z",
+        "date_published": "2024-02-01T18:22:23Z",
+        "description": "* New `print.unifir_script` method hides some of the R6 internals backing the\n  package, and makes my dissertation chapter render nicer.\n* Bug fixes:\n    * Removed trailing commas in some calls to `glue()` to fix errors on R devel (#17)\n",
+        "html_url": "https://github.com/ropensci/unifir/releases/tag/v0.2.4",
+        "name": "unifir 0.2.4",
+        "release_id": 139557045,
+        "tag": "v0.2.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/unifir/tarball/v0.2.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/unifir/releases/139557045",
+        "value": "https://api.github.com/repos/ropensci/unifir/releases/139557045",
+        "zipball_url": "https://api.github.com/repos/ropensci/unifir/zipball/v0.2.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mikemahoney218",
+          "type": "User"
+        },
+        "date_created": "2022-12-02T17:38:34Z",
+        "date_published": "2022-12-04T15:15:28Z",
+        "description": "* Bug fixes:\r\n    * Fixed bug where spaces in path to Unity would cause `unity_version()` and \r\n      `create_project()` to fail.\r\n    * Fixed `InstantiatePrefab` C# requirements to now include `UnityEditor`.\r\n    * Fixed test for new sf and terra versions.\r\n    * `associate_coordinates()` will now only reproject if both objects have\r\n      coordinate reference systems.\r\n* Documentation changes:\r\n    * Added citation information.\r\n",
+        "html_url": "https://github.com/ropensci/unifir/releases/tag/v0.2.3",
+        "name": "unifir 0.2.3",
+        "release_id": 84919115,
+        "tag": "v0.2.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/unifir/tarball/v0.2.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/unifir/releases/84919115",
+        "value": "https://api.github.com/repos/ropensci/unifir/releases/84919115",
+        "zipball_url": "https://api.github.com/repos/ropensci/unifir/zipball/v0.2.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mikemahoney218",
+          "type": "User"
+        },
+        "date_created": "2022-08-11T14:10:36Z",
+        "date_published": "2022-08-11T14:12:39Z",
+        "description": "* Redocumented to keep the package on CRAN.\r\n* Internal changes:\r\n  * `action()` is now much more modular, outsourcing to a handful of new \r\n    internal functions\r\n",
+        "html_url": "https://github.com/ropensci/unifir/releases/tag/v0.2.2",
+        "name": "unifir 0.2.2",
+        "release_id": 74208720,
+        "tag": "v0.2.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/unifir/tarball/v0.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/unifir/releases/74208720",
+        "value": "https://api.github.com/repos/ropensci/unifir/releases/74208720",
+        "zipball_url": "https://api.github.com/repos/ropensci/unifir/zipball/v0.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mikemahoney218",
+          "type": "User"
+        },
+        "date_created": "2022-05-13T13:27:09Z",
+        "date_published": "2022-05-13T14:20:09Z",
+        "description": "# unifir 0.2.1\r\nThis is intentionally a very small patch release, intended to fix three problems:\r\n\r\n* Provides an appropriate citation via `citation(\"unifir\")` and in the README\r\n* Addresses a failing test on M1 macs\r\n* Uses `match.arg()` in appropriate places\r\n",
+        "html_url": "https://github.com/ropensci/unifir/releases/tag/v0.2.1",
+        "name": "unifir v0.2.1",
+        "release_id": 66810458,
+        "tag": "v0.2.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/unifir/tarball/v0.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/unifir/releases/66810458",
+        "value": "https://api.github.com/repos/ropensci/unifir/releases/66810458",
+        "zipball_url": "https://api.github.com/repos/ropensci/unifir/zipball/v0.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mikemahoney218",
+          "type": "User"
+        },
+        "date_created": "2022-05-03T13:53:56Z",
+        "date_published": "2022-05-04T14:05:04Z",
+        "description": "# unifir 0.2.0\r\n\r\nThis is the first version of unifir to land on CRAN\r\n\r\n* Improvements and bug fixes:\r\n    * `find_unity()` now doesn't escape its Unity path (so the string returned \r\n      is the actual path to the Unity engine, not a quoted version). \r\n      Accordingly, `action()` now wraps `unity` in `shQuote()`. (#4)\r\n    * `add_default_tree()` now imports its trees standing upright by default. \r\n      If you manually set `x_rotation` to 0, however, the trees will import as \r\n      sideways as ever. (#7)\r\n    * Examples are now tested (and work) (#8 1d5b1f3)\r\n    * `create_terrain()` handles non-local terrain files (#6)\r\n    * `unifir_prop()` now checks to make sure `script` exists and is a \r\n      `unifir_script`. Previously this errored with a baffling message about\r\n      long vectors.\r\n* Documentation changes:\r\n    * Vignettes have been fleshed out, and a full example added to the \r\n      user-facing vignette. (#7)\r\n    * Return values are better documented (#5)\r\n    * Functions are consistently linked and documentation formatting is now\r\n      more consistent (#5)\r\n    * `find_unity()` doesn't now have a weird break in its documentation \r\n      sections\r\n    * The README now links to vignettes and explains why anyone would want\r\n      to deal with Unity in the first place",
+        "html_url": "https://github.com/ropensci/unifir/releases/tag/v0.2.0",
+        "name": "unifir v0.2.0",
+        "release_id": 66024197,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/unifir/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/unifir/releases/66024197",
+        "value": "https://api.github.com/repos/ropensci/unifir/releases/66024197",
+        "zipball_url": "https://api.github.com/repos/ropensci/unifir/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mikemahoney218",
+          "type": "User"
+        },
+        "date_created": "2022-05-03T13:53:56Z",
+        "date_published": "2022-05-11T15:05:50Z",
+        "description": "This release is specifically intended to create a Zenodo copy of the release, in order to have a software DOI pre-JOSS publication. It is identical to v0.2.0.",
+        "html_url": "https://github.com/ropensci/unifir/releases/tag/joss",
+        "name": "unifir JOSS release",
+        "release_id": 66594203,
+        "tag": "joss",
+        "tarball_url": "https://api.github.com/repos/ropensci/unifir/tarball/joss",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/unifir/releases/66594203",
+        "value": "https://api.github.com/repos/ropensci/unifir/releases/66594203",
+        "zipball_url": "https://api.github.com/repos/ropensci/unifir/zipball/joss"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mikemahoney218",
+          "type": "User"
+        },
+        "date_created": "2022-01-25T15:57:00Z",
+        "date_published": "2022-01-25T16:10:34Z",
+        "description": "This is the first released version of the unifir package! Clocking in at 25 exported functions, 2 vignettes, and 88% code coverage, this package is the first stab at creating a unified API for calling Unity from R.",
+        "html_url": "https://github.com/ropensci/unifir/releases/tag/v0.1.0",
+        "name": "unifir v0.1.0",
+        "release_id": 57936295,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/unifir/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/unifir/releases/57936295",
+        "value": "https://api.github.com/repos/ropensci/unifir/releases/57936295",
+        "zipball_url": "https://api.github.com/repos/ropensci/unifir/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:41:46",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 29
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.2.4.9000"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.2.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/unifir/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

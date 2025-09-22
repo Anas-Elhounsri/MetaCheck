@@ -1,0 +1,759 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Weixin Cai"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "UC Berkeley",
+        "email": "wcai@berkeley.edu",
+        "identifier": "0000-0003-2680-3066",
+        "type": "String",
+        "value": "Wilson Cai"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of California, Berkeley",
+        "email": "nhejazi@berkeley.edu ",
+        "identifier": "0000-0002-7127-2789",
+        "type": "String",
+        "value": "Nima Hejazi"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2016",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"To cite 'adaptest' in publications, please use:\")\n\ncitEntry(\n    entry        = \"Article\",\n    doi          = \"NA\",\n    url          = \"NA\",\n    year         = \"2016\",\n    month        = \"Nov\",\n    publisher    = \"The Open Journal\",\n    volume       = \"1\",\n    number       = \"X\",\n    author       = \"Weixin Cai, Alan Hubbard, Nima Hejazi\",\n    title        = \"adaptest: Data-adaptive test statistics for\n                    high-dimensional multiple testing\",\n    journal      = \"The Journal of Open Source Software\",\n    textVersion  = paste(\"Cai, W, Hubbard, A, and Hejazi, N (2016).\",\n            \"adaptest: Data-adaptive test statistics for\n            high-dimensional multiple testing.\",\n            \"Journal of Open Source Software, 1(X).\",\n            \"X\")\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "R/`adaptest`"
+        ],
+        "type": "Text_excerpt",
+        "value": "After using the `adaptest` R package, please cite the following\n\n``` \n  @article{cai2018adaptest,\n    doi = {10.21105/joss.00161},\n    url = {https://doi.org/10.21105/joss.00161},\n    year  = {2018},\n    month = {October},\n    publisher = {The Open Journal},\n    volume = {3},\n    number = {30},\n    author = {Cai, Weixin and Hubbard, Alan E and Hejazi, Nima S},\n    title = {{adaptest}: Data-Adaptive Statistics for High-Dimensional\n      Testing in {R}},\n    journal = {The Journal of Open Source Software}\n  }\n\n  @article{cai2018+adaptive,\n    url = {https://arxiv.org/abs/1704.07008},\n    year  = {2018+},\n    author = {Cai, Weixin and Hejazi, Nima S and Hubbard, Alan E},\n    title = {Data-adaptive statistics for multiple hypothesis testing in\n      high-dimensional settings}\n  }\n```\n\n-----\n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "References",
+        "parent_header": [
+          "R/`adaptest`"
+        ],
+        "type": "Text_excerpt",
+        "value": "<div id=\"refs\" class=\"references\">\n\n<div id=\"ref-cai2018data\">\n\nCai, Weixin, Nima S Hejazi, and Alan E Hubbard. n.d. \u201cData-Adaptive\nStatistics for Multiple Hypothesis Testing in High-Dimensional\nSettings.\u201d <https://arxiv.org/abs/1704.07008>.\n\n</div>\n\n<div id=\"ref-hubbard2016statistical\">\n\nHubbard, Alan E, Sara Kherad-Pajouh, and Mark J van der Laan. 2016.\n\u201cStatistical Inference for Data Adaptive Target Parameters.\u201d *The\nInternational Journal of Biostatistics* 12 (1): 3\u201319.\n\n</div>\n\n</div>\n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Cai, Weixin and Hubbard, Alan E and Hejazi, Nima S",
+        "doi": "10.21105/joss.00161",
+        "format": "bibtex",
+        "title": "{adaptest}: Data-Adaptive Statistics for High-Dimensional\nTesting in {R}",
+        "type": "Text_excerpt",
+        "url": "https://doi.org/10.21105/joss.00161",
+        "value": "@article{cai2018adaptest,\n    journal = {The Journal of Open Source Software},\n    title = {{adaptest}: Data-Adaptive Statistics for High-Dimensional\nTesting in {R}},\n    author = {Cai, Weixin and Hubbard, Alan E and Hejazi, Nima S},\n    number = {30},\n    volume = {3},\n    publisher = {The Open Journal},\n    month = {October},\n    year = {2018},\n    url = {https://doi.org/10.21105/joss.00161},\n    doi = {10.21105/joss.00161},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Cai, Weixin and Hejazi, Nima S and Hubbard, Alan E",
+        "format": "bibtex",
+        "title": "Data-adaptive statistics for multiple hypothesis testing in\nhigh-dimensional settings",
+        "type": "Text_excerpt",
+        "url": "https://arxiv.org/abs/1704.07008",
+        "value": "@article{cai2018+adaptive,\n    title = {Data-adaptive statistics for multiple hypothesis testing in\nhigh-dimensional settings},\n    author = {Cai, Weixin and Hejazi, Nima S and Hubbard, Alan E},\n    year = {2018+},\n    url = {https://arxiv.org/abs/1704.07008},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/wilsoncai1992/adaptest"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/wilsoncai1992/adaptest"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/wilsoncai1992/adaptest"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to `adaptest` development\n\nThe goal of this guide is to help you get up and contributing to `adaptest` as\nquickly as possible. The guide is divided into two main pieces:\n\n1. Filing a bug report or feature request in an issue.\n2. Suggesting a change via a pull request.\n\n## Issues\n\nWhen filing an issue, the most important thing is to include a minimal\nreproducible example (MRE) so that we can quickly verify the problem, and then\nfigure out how to fix it. There are three things you need to include to make\nyour example reproducible: required packages, data, code.\n\n1.  **Packages** should be loaded at the top of the script, so it's easy to\n    see which ones the example needs.\n\n2.  The easiest way to include **data** is to use `dput()` to generate the R\n    code to recreate it. For example, to recreate the `mtcars` dataset in R, I'd\n    perform the following steps:\n\n       1. Run `dput(mtcars)` in R\n       2. Copy the output\n       3. In my reproducible script, type `mtcars <- ` then paste.\n\n    But even better is if you can create a `data.frame()` with just a handful\n    of rows and columns that still illustrates the problem.\n\n3.  Spend a little bit of time ensuring that your **code** is easy for others to\n    read:\n\n    * make sure you've used spaces and your variable names are concise, but\n      informative\n\n    * use comments to indicate where your problem lies\n\n   * do your best to remove everything that is not related to the problem. The\n     shorter your code is, the easier it is to understand.\n\nYou can check you have actually made a reproducible example by starting up a\nfresh R session and pasting your script in.\n\n(Unless you've been specifically asked for it, please don't include the output\nof `sessionInfo()`.)\n\n## Pull requests\n\nTo contribute a change to `adaptest`, you follow these steps:\n\n1. Create a branch in git and make your changes.\n2. Push branch to GitHub and issue pull request (PR).\n3. Discuss the pull request.\n4. Iterate until either we accept the PR or decide that it's not a good fit for\n   `adaptest`.\n\nIf you're not familiar with git or github, please start by reading\n<http://r-pkgs.had.co.nz/git.html>\n\nPull requests will be evaluated against a checklist:\n\n1.  __Motivation__. Your pull request should clearly and concisely motivates the\n   need for change. Unfortunately, the package authors do not have much time to\n   analyze pull requests in detail, so you need to describe the problem and show\n   how your pull request solves it as concisely as possible.\n\n   Also include this motivation in `NEWS` so that when a new release of\n   `adaptest` comes out it's easy for users to see what's changed. Add your\n   item at the top of the file and use markdown for formatting. The\n   news item should end with `(@yourGithubUsername, #the_issue_number)`.\n\n2.  __Only related changes__. Before you submit your pull request, please\n    check to make sure that you haven't accidentally included any unrelated\n    changes. These make it harder to see exactly what's changed, and to\n    evaluate any unexpected side effects.\n\n    Each PR corresponds to a git branch, so if you expect to submit\n    multiple changes make sure to create multiple branches. If you have\n    multiple changes that depend on each other, start with the first one\n    and don't submit any others until the first one has been processed.\n\n3.  __Use `tidyverse` coding style__. Please follow the\n    [official adaptest style](http://adv-r.had.co.nz/Style.html). Maintaining\n    a consistent style across the whole code base makes it much easier to\n    jump into the code. If you're modifying existing `adaptest` code that\n    doesn't follow the style guide, a separate pull request to fix the\n    style would be greatly appreciated.\n\n4.  If you're adding new parameters or a new function, you'll also need\n    to document them with [roxygen](https://github.com/klutometis/roxygen).\n    Make sure to re-run `devtools::document()` on the code before submitting.\n\n    Currently, `adaptest` uses the development version of roxygen2, which you\n    can get with `install_github(\"klutometis/roxygen\")`. This will be\n    available on CRAN in the near future.\n\n5.  If you're adding a new graphical feature, please add a short example\n    to the appropriate function.\n\nThis seems like a lot of work but don't worry if your pull request isn't\nperfect. A pull request is a process, and unless you've submitted a few in the\npast it's unlikely that your pull request will be accepted as is.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2016-07-02T06:40:42Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-11-21"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-11-21"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-01-05T23:34:16Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-11-21"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Data-adaptive testing under high-dimensions"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+        "type": "String",
+        "value": "Data-adaptive test statistics represent a general methodology for\n    performing multiple hypothesis testing on effects sizes while maintaining\n    honest statistical inference when operating in high-dimensional settings\n    (<doi here>). The utilities provided here extend the use of this general\n    methodology to many common data analytic challenges that arise in modern\n    computational and genomic biology."
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The `adaptest` R package is a tool for performing multiple testing on effects sizes under high-dimensional settings, using the approach of data-adaptive statistical target parameters and inference."
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8325355953571445,
+      "result": {
+        "original_header": "R/`adaptest`",
+        "type": "Text_excerpt",
+        "value": "> Data-adaptive statistics for multiple testing in high-dimensional\n> biology \n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9839357267275306,
+      "result": {
+        "original_header": "What\u2019s `adaptest`?",
+        "type": "Text_excerpt",
+        "value": "The `adaptest` R package is a tool for performing multiple testing on\neffect sizes in high-dimensional settings, using the approach of\ndata-adaptive statistical target parameters and inference. For technical\ndetails on the data-adaptive multiple testing procedure, consult Cai,\nHejazi, and Hubbard (n.d.). For an introduction to statistical inference\nprocedures using data-adaptive target parameters, the interested reader\nis directed to Hubbard, Kherad-Pajouh, and van der Laan (2016). \n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8121506357505465,
+      "result": {
+        "original_header": "Funding",
+        "type": "Text_excerpt",
+        "value": "The development of this software was supported in part through grants\nfrom the National Institutes of Health: [P42\nES004705-29](https://projectreporter.nih.gov/project_info_details.cfm?aid=9260357&map=y)\nand [T32\nLM012417-02](https://projectreporter.nih.gov/project_info_description.cfm?aid=9248418&icde=37849831&ddparam=&ddvalue=&ddsub=&cr=1&csb=default&cs=ASC&pball=). \n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/wilsoncai1992/adaptest/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/wilsoncai1992/adaptest/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/wilsoncai1992/adaptest/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "wilsoncai1992/adaptest"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R/adaptest"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://www.bioconductor.org/shields/build/release/bioc/adaptest.svg"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://bioconductor.org/shields/years-in-bioc/adaptest.svg"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://bioconductor.org/shields/downloads/adaptest.svg"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://joss.theoj.org/papers/10.21105/joss.00161/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "R/`adaptest`"
+        ],
+        "type": "Text_excerpt",
+        "value": "For standard use, install from\n[Bioconductor](https://bioconductor.org/packages/adaptest) using\n[`BiocManager`](https://CRAN.R-project.org/package=BiocManager):\n\n``` r\nif (!requireNamespace(\"BiocManager\", quietly=TRUE)) {\n    install.packages(\"BiocManager\")\n}\nBiocManager::install(\"adaptest\")\n```\n\nTo contribute, install the *development version* (i.e., branch\n**`master`**) from GitHub via\n[`devtools`](https://www.rstudio.com/products/rpackages/devtools/):\n\n``` r\ndevtools::install_github(\"wilsoncai1992/adaptest\")\n```\n\nCurrent and prior [Bioconductor](https://bioconductor.org) releases are\navailable under branches with numbers prefixed by \u201cRELEASE\\_\u201d. For\nexample, to install the version of this package available via\nBioconductor 3.7, use\n\n``` r\ndevtools::install_github(\"wilsoncai1992/adaptest\", ref = \"RELEASE_3_7\")\n```\n\n***Note*: As the first stable release of this package was through\nBioconductor v3.7, the minimum version of\n[R](https://www.r-project.org/) required to install `adaptest` is 3.5.0\n(codename \u201cJoy in Playing\u201d).**\n\n-----\n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/wilsoncai1992/adaptest/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/wilsoncai1992/adaptest/issues"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "multiple testing",
+          "Data-adaptive target parameter",
+          "targeted maximum likelihood estimator",
+          "cross-validation"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "value": "https://api.github.com/licenses/gpl-2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 2, June 1991\n\n Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>\n 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The licenses for most software are designed to take away your\nfreedom to share and change it.  By contrast, the GNU General Public\nLicense is intended to guarantee your freedom to share and change free\nsoftware--to make sure the software is free for all its users.  This\nGeneral Public License applies to most of the Free Software\nFoundation's software and to any other program whose authors commit to\nusing it.  (Some other Free Software Foundation software is covered by\nthe GNU Lesser General Public License instead.)  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthis service if you wish), that you receive source code or can get it\nif you want it, that you can change the software or use pieces of it\nin new free programs; and that you know you can do these things.\n\n  To protect your rights, we need to make restrictions that forbid\nanyone to deny you these rights or to ask you to surrender the rights.\nThese restrictions translate to certain responsibilities for you if you\ndistribute copies of the software, or if you modify it.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must give the recipients all the rights that\nyou have.  You must make sure that they, too, receive or can get the\nsource code.  And you must show them these terms so they know their\nrights.\n\n  We protect your rights with two steps: (1) copyright the software, and\n(2) offer you this license which gives you legal permission to copy,\ndistribute and/or modify the software.\n\n  Also, for each author's protection and ours, we want to make certain\nthat everyone understands that there is no warranty for this free\nsoftware.  If the software is modified by someone else and passed on, we\nwant its recipients to know that what they have is not the original, so\nthat any problems introduced by others will not reflect on the original\nauthors' reputations.\n\n  Finally, any free program is threatened constantly by software\npatents.  We wish to avoid the danger that redistributors of a free\nprogram will individually obtain patent licenses, in effect making the\nprogram proprietary.  To prevent this, we have made it clear that any\npatent must be licensed for everyone's free use or not licensed at all.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n                    GNU GENERAL PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. This License applies to any program or other work which contains\na notice placed by the copyright holder saying it may be distributed\nunder the terms of this General Public License.  The \"Program\", below,\nrefers to any such program or work, and a \"work based on the Program\"\nmeans either the Program or any derivative work under copyright law:\nthat is to say, a work containing the Program or a portion of it,\neither verbatim or with modifications and/or translated into another\nlanguage.  (Hereinafter, translation is included without limitation in\nthe term \"modification\".)  Each licensee is addressed as \"you\".\n\nActivities other than copying, distribution and modification are not\ncovered by this License; they are outside its scope.  The act of\nrunning the Program is not restricted, and the output from the Program\nis covered only if its contents constitute a work based on the\nProgram (independent of having been made by running the Program).\nWhether that is true depends on what the Program does.\n\n  1. You may copy and distribute verbatim copies of the Program's\nsource code as you receive it, in any medium, provided that you\nconspicuously and appropriately publish on each copy an appropriate\ncopyright notice and disclaimer of warranty; keep intact all the\nnotices that refer to this License and to the absence of any warranty;\nand give any other recipients of the Program a copy of this License\nalong with the Program.\n\nYou may charge a fee for the physical act of transferring a copy, and\nyou may at your option offer warranty protection in exchange for a fee.\n\n  2. You may modify your copy or copies of the Program or any portion\nof it, thus forming a work based on the Program, and copy and\ndistribute such modifications or work under the terms of Section 1\nabove, provided that you also meet all of these conditions:\n\n    a) You must cause the modified files to carry prominent notices\n    stating that you changed the files and the date of any change.\n\n    b) You must cause any work that you distribute or publish, that in\n    whole or in part contains or is derived from the Program or any\n    part thereof, to be licensed as a whole at no charge to all third\n    parties under the terms of this License.\n\n    c) If the modified program normally reads commands interactively\n    when run, you must cause it, when started running for such\n    interactive use in the most ordinary way, to print or display an\n    announcement including an appropriate copyright notice and a\n    notice that there is no warranty (or else, saying that you provide\n    a warranty) and that users may redistribute the program under\n    these conditions, and telling the user how to view a copy of this\n    License.  (Exception: if the Program itself is interactive but\n    does not normally print such an announcement, your work based on\n    the Program is not required to print an announcement.)\n\nThese requirements apply to the modified work as a whole.  If\nidentifiable sections of that work are not derived from the Program,\nand can be reasonably considered independent and separate works in\nthemselves, then this License, and its terms, do not apply to those\nsections when you distribute them as separate works.  But when you\ndistribute the same sections as part of a whole which is a work based\non the Program, the distribution of the whole must be on the terms of\nthis License, whose permissions for other licensees extend to the\nentire whole, and thus to each and every part regardless of who wrote it.\n\nThus, it is not the intent of this section to claim rights or contest\nyour rights to work written entirely by you; rather, the intent is to\nexercise the right to control the distribution of derivative or\ncollective works based on the Program.\n\nIn addition, mere aggregation of another work not based on the Program\nwith the Program (or with a work based on the Program) on a volume of\na storage or distribution medium does not bring the other work under\nthe scope of this License.\n\n  3. You may copy and distribute the Program (or a work based on it,\nunder Section 2) in object code or executable form under the terms of\nSections 1 and 2 above provided that you also do one of the following:\n\n    a) Accompany it with the complete corresponding machine-readable\n    source code, which must be distributed under the terms of Sections\n    1 and 2 above on a medium customarily used for software interchange; or,\n\n    b) Accompany it with a written offer, valid for at least three\n    years, to give any third party, for a charge no more than your\n    cost of physically performing source distribution, a complete\n    machine-readable copy of the corresponding source code, to be\n    distributed under the terms of Sections 1 and 2 above on a medium\n    customarily used for software interchange; or,\n\n    c) Accompany it with the information you received as to the offer\n    to distribute corresponding source code.  (This alternative is\n    allowed only for noncommercial distribution and only if you\n    received the program in object code or executable form with such\n    an offer, in accord with Subsection b above.)\n\nThe source code for a work means the preferred form of the work for\nmaking modifications to it.  For an executable work, complete source\ncode means all the source code for all modules it contains, plus any\nassociated interface definition files, plus the scripts used to\ncontrol compilation and installation of the executable.  However, as a\nspecial exception, the source code distributed need not include\nanything that is normally distributed (in either source or binary\nform) with the major components (compiler, kernel, and so on) of the\noperating system on which the executable runs, unless that component\nitself accompanies the executable.\n\nIf distribution of executable or object code is made by offering\naccess to copy from a designated place, then offering equivalent\naccess to copy the source code from the same place counts as\ndistribution of the source code, even though third parties are not\ncompelled to copy the source along with the object code.\n\n  4. You may not copy, modify, sublicense, or distribute the Program\nexcept as expressly provided under this License.  Any attempt\notherwise to copy, modify, sublicense or distribute the Program is\nvoid, and will automatically terminate your rights under this License.\nHowever, parties who have received copies, or rights, from you under\nthis License will not have their licenses terminated so long as such\nparties remain in full compliance.\n\n  5. You are not required to accept this License, since you have not\nsigned it.  However, nothing else grants you permission to modify or\ndistribute the Program or its derivative works.  These actions are\nprohibited by law if you do not accept this License.  Therefore, by\nmodifying or distributing the Program (or any work based on the\nProgram), you indicate your acceptance of this License to do so, and\nall its terms and conditions for copying, distributing or modifying\nthe Program or works based on it.\n\n  6. Each time you redistribute the Program (or any work based on the\nProgram), the recipient automatically receives a license from the\noriginal licensor to copy, distribute or modify the Program subject to\nthese terms and conditions.  You may not impose any further\nrestrictions on the recipients' exercise of the rights granted herein.\nYou are not responsible for enforcing compliance by third parties to\nthis License.\n\n  7. If, as a consequence of a court judgment or allegation of patent\ninfringement or for any other reason (not limited to patent issues),\nconditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot\ndistribute so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you\nmay not distribute the Program at all.  For example, if a patent\nlicense would not permit royalty-free redistribution of the Program by\nall those who receive copies directly or indirectly through you, then\nthe only way you could satisfy both it and this License would be to\nrefrain entirely from distribution of the Program.\n\nIf any portion of this section is held invalid or unenforceable under\nany particular circumstance, the balance of the section is intended to\napply and the section as a whole is intended to apply in other\ncircumstances.\n\nIt is not the purpose of this section to induce you to infringe any\npatents or other property right claims or to contest validity of any\nsuch claims; this section has the sole purpose of protecting the\nintegrity of the free software distribution system, which is\nimplemented by public license practices.  Many people have made\ngenerous contributions to the wide range of software distributed\nthrough that system in reliance on consistent application of that\nsystem; it is up to the author/donor to decide if he or she is willing\nto distribute software through any other system and a licensee cannot\nimpose that choice.\n\nThis section is intended to make thoroughly clear what is believed to\nbe a consequence of the rest of this License.\n\n  8. If the distribution and/or use of the Program is restricted in\ncertain countries either by patents or by copyrighted interfaces, the\noriginal copyright holder who places the Program under this License\nmay add an explicit geographical distribution limitation excluding\nthose countries, so that distribution is permitted only in or among\ncountries not thus excluded.  In such case, this License incorporates\nthe limitation as if written in the body of this License.\n\n  9. The Free Software Foundation may publish revised and/or new versions\nof the General Public License from time to time.  Such new versions will\nbe similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\nEach version is given a distinguishing version number.  If the Program\nspecifies a version number of this License which applies to it and \"any\nlater version\", you have the option of following the terms and conditions\neither of that version or of any later version published by the Free\nSoftware Foundation.  If the Program does not specify a version number of\nthis License, you may choose any version ever published by the Free Software\nFoundation.\n\n  10. If you wish to incorporate parts of the Program into other free\nprograms whose distribution conditions are different, write to the author\nto ask for permission.  For software which is copyrighted by the Free\nSoftware Foundation, write to the Free Software Foundation; we sometimes\nmake exceptions for this.  Our decision will be guided by the two goals\nof preserving the free status of all derivatives of our free software and\nof promoting the sharing and reuse of software generally.\n\n                            NO WARRANTY\n\n  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY\nFOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN\nOTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES\nPROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED\nOR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS\nTO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE\nPROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,\nREPAIR OR CORRECTION.\n\n  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR\nREDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,\nINCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING\nOUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED\nTO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY\nYOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER\nPROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.\n\n                     END OF TERMS AND CONDITIONS\n\n            How to Apply These Terms to Your New Programs\n\n  If you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these terms.\n\n  To do so, attach the following notices to the program.  It is safest\nto attach them to the start of each source file to most effectively\nconvey the exclusion of warranty; and each file should have at least\nthe \"copyright\" line and a pointer to where the full notice is found.\n\n    {description}\n    Copyright (C) {year}  {fullname}\n\n    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License along\n    with this program; if not, write to the Free Software Foundation, Inc.,\n    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\n\nAlso add information on how to contact you by electronic and paper mail.\n\nIf the program is interactive, make it output a short notice like this\nwhen it starts in an interactive mode:\n\n    Gnomovision version 69, Copyright (C) year name of author\n    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `show c' for details.\n\nThe hypothetical commands `show w' and `show c' should show the appropriate\nparts of the General Public License.  Of course, the commands you use may\nbe called something other than `show w' and `show c'; they could even be\nmouse-clicks or menu items--whatever suits your program.\n\nYou should also get your employer (if you work as a programmer) or your\nschool, if any, to sign a \"copyright disclaimer\" for the program, if\nnecessary.  Here is a sample; alter the names:\n\n  Yoyodyne, Inc., hereby disclaims all copyright interest in the program\n  `Gnomovision' (which makes passes at compilers) written by James Hacker.\n\n  {signature of Ty Coon}, 1 April 1989\n  Ty Coon, President of Vice\n\nThis General Public License does not permit incorporating your program into\nproprietary programs.  If your program is a subroutine library, you may\nconsider it more useful to permit linking proprietary applications with the\nlibrary.  If this is what you want to do, use the GNU Lesser General\nPublic License instead of this License.\n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-2"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/GPL-2",
+        "spdx_id": "GPL-2",
+        "type": "License",
+        "value": "GPL-2"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "R/`adaptest`"
+        ],
+        "type": "Text_excerpt",
+        "value": "\u00a9 2017-2018 [Wilson Cai](https://statistics.berkeley.edu/~wcai)\n\nThe software contents of this repository are distributed under the GPL-2\nlicense. See file `LICENSE` for details.\n\n-----\n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ci.appveyor.com/api/projects/status/github/wilsoncai1992/adaptest?branch=master&amp;svg=true"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "adaptest"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "wilsoncai1992"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+        "type": "String",
+        "value": "adaptest"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 59986,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 4244,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 775,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.html"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_papers": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://arxiv.org/abs/1704.07008>.\n\n</div>\n\n<div id=\"ref-hubbard2016statistical\">\n\nHubbard, Alan E, Sara Kherad-Pajouh, and Mark J van der Laan. 2016.\n\u201cStatistical Inference for Data Adaptive Target Parameters.\u201d *The\nInternational Journal of Biostatistics* 12 (1"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://arxiv.org/abs/1704.07008},\n    year  = {2018+},\n    author = {Cai, Weixin and Hejazi, Nima S and Hubbard, Alan E},\n    title = {Data-adaptive statistics for multiple hypothesis testing in\n      high-dimensional settings}\n  }\n```\n\n-----\n\n## Funding\n\nThe development of this software was supported in part through grants\nfrom the National Institutes of Health: [P42\nES004705-29](https://projectreporter.nih.gov/project_info_details.cfm?aid=9260357&map=y"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nhejazi",
+          "type": "User"
+        },
+        "date_created": "2018-10-31T06:36:56Z",
+        "date_published": "2018-10-31T06:39:07Z",
+        "description": "Updated release of this package via [Bioconductor](https://bioconductor.org), available at https://bioconductor.org/packages/adaptest as part of the Bioconductor 3.8 release as of 30 October 2018. Requires [R](https://www.r-project.org/) v3.5.0+.",
+        "html_url": "https://github.com/wilsoncai1992/adaptest/releases/tag/v.1.2.0",
+        "name": "Bioconductor v3.8 release",
+        "release_id": 13747813,
+        "tag": "v.1.2.0",
+        "tarball_url": "https://api.github.com/repos/wilsoncai1992/adaptest/tarball/v.1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/wilsoncai1992/adaptest/releases/13747813",
+        "value": "https://api.github.com/repos/wilsoncai1992/adaptest/releases/13747813",
+        "zipball_url": "https://api.github.com/repos/wilsoncai1992/adaptest/zipball/v.1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nhejazi",
+          "type": "User"
+        },
+        "date_created": "2018-10-15T21:31:19Z",
+        "date_published": "2018-10-18T17:27:36Z",
+        "description": "Updated release of this package via [Bioconductor](https://bioconductor.org), available at https://bioconductor.org/packages/adaptest as part of the Bioconductor 3.8 release; current as of October/November 2018. Requires [R](https://www.r-project.org/) v3.5.0+.",
+        "html_url": "https://github.com/wilsoncai1992/adaptest/releases/tag/v1.1.0",
+        "name": "Bioconductor v3.8 pre-release",
+        "release_id": 13515096,
+        "tag": "v1.1.0",
+        "tarball_url": "https://api.github.com/repos/wilsoncai1992/adaptest/tarball/v1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/wilsoncai1992/adaptest/releases/13515096",
+        "value": "https://api.github.com/repos/wilsoncai1992/adaptest/releases/13515096",
+        "zipball_url": "https://api.github.com/repos/wilsoncai1992/adaptest/zipball/v1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nhejazi",
+          "type": "User"
+        },
+        "date_created": "2018-04-30T14:35:50Z",
+        "date_published": "2018-10-15T20:37:35Z",
+        "description": "Initial release of this package via [Bioconductor](https://bioconductor.org), available at https://bioconductor.org/packages/adaptest as part of the Bioconductor 3.7 release; current as of April/May 2018. Requires [R](https://www.r-project.org/) v3.5.0+.",
+        "html_url": "https://github.com/wilsoncai1992/adaptest/releases/tag/v1.0.0",
+        "name": "Bioconductor v3.7 release",
+        "release_id": 13387215,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/wilsoncai1992/adaptest/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/wilsoncai1992/adaptest/releases/13387215",
+        "value": "https://api.github.com/repos/wilsoncai1992/adaptest/releases/13387215",
+        "zipball_url": "https://api.github.com/repos/wilsoncai1992/adaptest/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:25:56",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example",
+        "parent_header": [
+          "R/`adaptest`"
+        ],
+        "type": "Text_excerpt",
+        "value": "For details on how to best use the `adaptest` R package, please consult\nthe most recent [package\nvignette](https://bioconductor.org/packages/release/bioc/vignettes/adaptest/inst/doc/differentialExpression.html)\navailable through the [Bioconductor\nproject](https://bioconductor.org/packages/adaptest).\n\n-----\n"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+        "type": "String",
+        "value": "1.7.1"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v1.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/wilsoncai1992/adaptest/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

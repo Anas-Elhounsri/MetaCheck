@@ -1,0 +1,1131 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "adrianmpw@gmail.com",
+        "name": "Adrian Price-Whelan",
+        "type": "Agent",
+        "value": "Adrian Price-Whelan"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "http://orcid.org/0000-0003-0872-7098",
+        "type": "String",
+        "value": "Adrian Price-Whelan"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Adrian M. Price-Whelan",
+        "doi": "10.21105/joss.00388",
+        "format": "bibtex",
+        "title": "Gala: A Python package for galactic dynamics",
+        "type": "Text_excerpt",
+        "url": "https://doi.org/10.21105%2Fjoss.00388",
+        "value": "@article{gala,\n    journal = {The Journal of Open Source Software},\n    title = {Gala: A Python package for galactic dynamics},\n    author = {Adrian M. Price-Whelan},\n    number = {18},\n    volume = {2},\n    publisher = {The Open Journal},\n    month = {oct},\n    year = {2017},\n    url = {https://doi.org/10.21105%2Fjoss.00388},\n    doi = {10.21105/joss.00388},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "All `gala` community members are expected to abide by the\n[Astropy Project Code of Conduct](http://www.astropy.org/code_of_conduct.html).\n"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/adrn/gala"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/adrn/gala.git"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/adrn/gala"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/adrn/gala/main/.github/workflows/wheels.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/adrn/gala/main/.github/workflows/cron-tests.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/adrn/gala/main/.github/workflows/tutorials.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/adrn/gala/main/.github/workflows/tests.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributors": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributors",
+        "type": "Text_excerpt",
+        "value": "See the `AUTHORS.rst <https://github.com/adrn/gala/blob/main/AUTHORS.rst>`_\nfile for a complete list of contributors to the project.\n"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2014-03-10T00:56:18Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-13T14:23:17Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Galactic and gravitational dynamics in Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Galactic dynamics in Python"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Gala is an Astropy-affiliated Python package for galactic dynamics. Python enables wrapping low-level languages (e.g., C) for speed without losing flexibility or ease-of-use in the user-interface. The API for Gala was designed to provide a class-based and user-friendly interface to fast (C or Cython-optimized) implementations of common operations such as gravitational potential and force evaluation, orbit integration, dynamical transformations, and chaos indicators for nonlinear dynamics. Gala also relies heavily on and interfaces well with the implementations of physical units and astronomical coordinate systems in the Astropy package (astropy.units and astropy.coordinates)."
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9366130085613922,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "Gala is a Python package for Galactic and gravitational dynamics. \n"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/README.rst",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gala.adrian.pw"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "type": "Text_excerpt",
+        "value": "|Documentation Status|\n\nThe documentation for ``Gala`` is hosted on `Read the docs\n<http://gala.adrian.pw>`__.\n"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "http://gala-astro.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/adrn/gala/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 61
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/adrn/gala/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "adrn/gala"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/adrn/gala/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://dx.doi.org/10.21105/joss.00388"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation and Dependencies",
+        "type": "Text_excerpt",
+        "value": "|conda| |PyPI|\n\nThe easiest way to get Gala is to install with pip or conda.\n\nThe recommended install method is to use ``pip``::\n\n   pip install gala\n\nIf you are on Linux or Mac, you can also install ``gala`` with conda using the\nconda-forge channel::\n\n    conda install gala --channel conda-forge\n\nSee the `installation\ninstructions <http://gala.adrian.pw/en/latest/install.html>`_ in the\n`documentation <http://gala.adrian.pw>`__ for more information.\n"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/adrn/gala/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "astronomy, astrophysics, astropy-affiliated, dynamics, physics, python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "astronomy"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "dynamics"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "The MIT License (MIT)\n\nCopyright (c) 2012-2024 Adrian M. Price-Whelan\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://github.com/adrn/gala/blob/main/LICENSE",
+        "spdx_id": "https://github.com/adrn/gala/blob/main/LICENSE",
+        "type": "License",
+        "value": "https://github.com/adrn/gala/blob/main/LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "type": "Text_excerpt",
+        "value": "|License|\n\nCopyright 2013-2024 Adrian Price-Whelan and contributors.\n\n``Gala`` is free software made available under the MIT License. For details see\nthe `LICENSE <https://github.com/adrn/gala/blob/main/LICENSE>`_ file.\n\n.. |Coverage Status| image:: https://codecov.io/gh/adrn/gala/branch/main/graph/badge.svg\n   :target: https://codecov.io/gh/adrn/gala\n.. |Build status| image:: https://github.com/adrn/gala/actions/workflows/tests.yml/badge.svg\n   :target: https://github.com/adrn/gala/actions/workflows/tests.yml\n.. |License| image:: http://img.shields.io/badge/license-MIT-blue.svg?style=flat\n   :target: https://github.com/adrn/gala/blob/main/LICENSE\n.. |PyPI| image:: https://badge.fury.io/py/gala.svg\n   :target: https://badge.fury.io/py/gala\n.. |conda| image:: https://anaconda.org/conda-forge/gala/badges/version.svg\n   :target: https://anaconda.org/conda-forge/gala\n.. |Documentation Status| image:: https://readthedocs.org/projects/gala-astro/badge/?version=latest\n   :target: http://gala-astro.readthedocs.io/en/latest/?badge=latest\n.. |Affiliated package| image:: https://img.shields.io/badge/astropy-affiliated%20package-orange.svg\n   :target: http://astropy.org/affiliated\n.. |JOSS| image:: http://joss.theoj.org/papers/10.21105/joss.00388/status.svg\n   :target: http://joss.theoj.org/papers/10.21105/joss.00388\n.. |DOI| image:: https://zenodo.org/badge/17577779.svg\n   :target: https://zenodo.org/badge/latestdoi/17577779\n.. |ASCL| image:: https://img.shields.io/badge/ascl-1707.006-blue.svg?colorB=262255\n   :target: http://ascl.net/1707.006\n.. |logo| image:: https://gala.adrian.pw/en/latest/_static/Gala_Logo_RGB.png\n   :target: https://github.com/adrn/gala\n   :width: 400\n"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gala"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Gala: Galactic astronomy and gravitational dynamics"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "adrn"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gala"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 818025,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 189859,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Cython",
+        "size": 180533,
+        "type": "Programming_language",
+        "value": "Cython"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 26582,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 3701,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/adrn/gala/main/README.rst"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2025-08-21T23:50:46Z",
+        "date_published": "2025-08-22T00:13:37Z",
+        "description": "This is a bugfix release that fixes two bugs with the `EXPPotential` interface.\r\n\r\nThis includes changes from:\r\n* exp: fix composite potentials by @lgarrison https://github.com/adrn/gala/pull/444\r\n* exp: improve file path handling by @lgarrison https://github.com/adrn/gala/pull/445\r\n\r\n**Full Changelog**: https://github.com/adrn/gala/compare/v1.10.0...v1.10.1",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.10.1",
+        "name": "v1.10.1",
+        "release_id": 241676379,
+        "tag": "v1.10.1",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.10.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/241676379",
+        "value": "https://api.github.com/repos/adrn/gala/releases/241676379",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.10.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2025-07-31T12:30:02Z",
+        "date_published": "2025-07-31T14:24:44Z",
+        "description": "## What's Changed\r\n* Tiny PR changing one final Integrator.run() by @TomWagg in https://github.com/adrn/gala/pull/389\r\n* Bump pypa/cibuildwheel from 2.20.0 to 2.21.0 by @dependabot[bot] in https://github.com/adrn/gala/pull/390\r\n* Bump pypa/cibuildwheel from 2.21.0 to 2.21.1 by @dependabot[bot] in https://github.com/adrn/gala/pull/391\r\n* Add a simulation unit system class by @adrn in https://github.com/adrn/gala/pull/392\r\n* Bump codecov/codecov-action from 4.5.0 to 5.1.2 by @dependabot[bot] in https://github.com/adrn/gala/pull/401\r\n* Bump pypa/cibuildwheel from 2.21.1 to 2.22.0 by @dependabot[bot] in https://github.com/adrn/gala/pull/398\r\n* Detect pre/post Scipy 1.15 for derivative function behavior by @adrn in https://github.com/adrn/gala/pull/404\r\n* Switch to using dynamically-allocated arrays to avoid arbitrary limit on N bodies by @adrn in https://github.com/adrn/gala/pull/403\r\n* Bump pypa/cibuildwheel from 2.22.0 to 2.23.0 by @dependabot[bot] in https://github.com/adrn/gala/pull/406\r\n* Bump codecov/codecov-action from 5.1.2 to 5.4.0 by @dependabot[bot] in https://github.com/adrn/gala/pull/405\r\n* Bump pypa/cibuildwheel from 2.23.0 to 2.23.1 by @dependabot[bot] in https://github.com/adrn/gala/pull/407\r\n* Use dynamically allocated arrays for potential components in CCompositePotential by @adrn in https://github.com/adrn/gala/pull/409\r\n* Bump pypa/cibuildwheel from 2.23.1 to 2.23.2 by @dependabot[bot] in https://github.com/adrn/gala/pull/408\r\n* Pass floats to agama setUnits instead of unit objects by @adrn in https://github.com/adrn/gala/pull/410\r\n* Update mockstreams.rst by @segasai in https://github.com/adrn/gala/pull/411\r\n* Add short circuit for C potential evaluation when position does not require a shift/rotation by @adrn in https://github.com/adrn/gala/pull/414\r\n* Enable dense output for dop853 integrator (and refactor the way integration is done here) by @adrn in https://github.com/adrn/gala/pull/416\r\n* Bump pypa/cibuildwheel from 2.23.2 to 2.23.3 by @dependabot[bot] in https://github.com/adrn/gala/pull/418\r\n* Bump codecov/codecov-action from 5.4.0 to 5.4.2 by @dependabot[bot] in https://github.com/adrn/gala/pull/412\r\n* Fix bug with passing array length 1 as progenitor mass to mock stream generator by @adrn in https://github.com/adrn/gala/pull/419\r\n* Fix bug with setting value of G in simulation unit system by @adrn in https://github.com/adrn/gala/pull/420\r\n* Allow specifying plot units as a UnitSystem instance by @adrn in https://github.com/adrn/gala/pull/421\r\n* Add ability to use string parameters as potential parameters by @adrn in https://github.com/adrn/gala/pull/422\r\n* Bump codecov/codecov-action from 5.4.2 to 5.4.3 by @dependabot[bot] in https://github.com/adrn/gala/pull/424\r\n* Bump pypa/cibuildwheel from 2.23.3 to 3.0.0 by @dependabot[bot] in https://github.com/adrn/gala/pull/426\r\n* add EXP potential by @lgarrison in https://github.com/adrn/gala/pull/413\r\n* Fix powerlaw cutoff potential normalization by @adrn in https://github.com/adrn/gala/pull/425\r\n* Don't check that EXP potential is zero at infinity by @adrn in https://github.com/adrn/gala/pull/427\r\n* Add precommit hooks and run on all files by @adrn in https://github.com/adrn/gala/pull/429\r\n* exp: return nan instead of crashing the interpreter by @lgarrison in https://github.com/adrn/gala/pull/430\r\n* exp doc tweaks by @lgarrison in https://github.com/adrn/gala/pull/431\r\n* build(deps): bump pypa/cibuildwheel from 3.0.0 to 3.0.1 by @dependabot[bot] in https://github.com/adrn/gala/pull/434\r\n* chore: update pre-commit hooks by @pre-commit-ci[bot] in https://github.com/adrn/gala/pull/432\r\n* Add convenience properties to compute M200, R200, c200 from NFWPotential instance by @adrn in https://github.com/adrn/gala/pull/436\r\n* Improve docstrings in some places by @adrn in https://github.com/adrn/gala/pull/428\r\n\r\n## New Contributors\r\n* @lgarrison made their first contribution in https://github.com/adrn/gala/pull/413\r\n* @pre-commit-ci[bot] made their first contribution in https://github.com/adrn/gala/pull/432\r\n\r\n**Full Changelog**: https://github.com/adrn/gala/compare/v1.9.1...v1.10.0",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.10.0",
+        "name": "v1.10.0",
+        "release_id": 236597856,
+        "tag": "v1.10.0",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.10.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/236597856",
+        "value": "https://api.github.com/repos/adrn/gala/releases/236597856",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.10.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2024-08-26T23:56:49Z",
+        "date_published": "2024-08-27T00:50:13Z",
+        "description": "## What's Changed\r\n\r\nNote: This release fixes the wheel builds for linux and mac and no new features or bug fixes are included. See [v1.9.0](https://github.com/adrn/gala/releases/tag/v1.9.0) for a list of features and fixes in this major version.\r\n\r\n* Install gsl into container and reenable mac wheels by @adrn in https://github.com/adrn/gala/pull/388\r\n\r\n\r\n**Full Changelog**: https://github.com/adrn/gala/compare/v1.9.0...v1.9.1",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.9.1",
+        "name": "v1.9.1",
+        "release_id": 172044921,
+        "tag": "v1.9.1",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.9.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/172044921",
+        "value": "https://api.github.com/repos/adrn/gala/releases/172044921",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.9.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2024-08-22T16:51:48Z",
+        "date_published": "2024-08-22T17:16:56Z",
+        "description": "## What's Changed\r\n* Bump FedericoCarboni/setup-ffmpeg from 2 to 3 by @dependabot in https://github.com/adrn/gala/pull/354\r\n* Bump codecov/codecov-action from 3.1.4 to 3.1.5 by @dependabot in https://github.com/adrn/gala/pull/356\r\n* Bump pypa/cibuildwheel from 2.16.2 to 2.16.4 by @dependabot in https://github.com/adrn/gala/pull/357\r\n* Bump codecov/codecov-action from 3.1.5 to 4.0.1 by @dependabot in https://github.com/adrn/gala/pull/359\r\n* Only upload to testpypi on push to main, and update upload/download artifact by @adrn in https://github.com/adrn/gala/pull/361\r\n* Bug fix in FardalStreamDF. by @jl3937 in https://github.com/adrn/gala/pull/358\r\n* Bump pypa/cibuildwheel from 2.16.4 to 2.16.5 by @dependabot in https://github.com/adrn/gala/pull/360\r\n* Bump codecov/codecov-action from 4.0.1 to 4.1.0 by @dependabot in https://github.com/adrn/gala/pull/363\r\n* Fix Potential.plot_rotation_curve() when an ax is provided by @adrn in https://github.com/adrn/gala/pull/362\r\n* Enable passing a multiprocessing/parallel pool when computing SCF coefficients by @adrn in https://github.com/adrn/gala/pull/364\r\n* Bump pypa/cibuildwheel from 2.16.5 to 2.17.0 by @dependabot in https://github.com/adrn/gala/pull/365\r\n* Fix inefficient nbody orbit reorder by @adrn in https://github.com/adrn/gala/pull/366\r\n* Added Burkert cpotential by @HSouch in https://github.com/adrn/gala/pull/367\r\n* Fix passing nbody instance to mockstream.run with save_all=False by @adrn in https://github.com/adrn/gala/pull/369\r\n* Add implementation of make_getter (removed from astropy) by @adrn in https://github.com/adrn/gala/pull/377\r\n* Compatibility with numpy 2.0 by @adrn in https://github.com/adrn/gala/pull/387\r\n* Bump pypa/cibuildwheel from 2.17.0 to 2.20.0 by @dependabot in https://github.com/adrn/gala/pull/385\r\n* Remove unused modules by @AlexKurek in https://github.com/adrn/gala/pull/384\r\n* deprecate Integrator.run for integrator.call by @nstarman in https://github.com/adrn/gala/pull/355\r\n* Added \"from_r0\" to Burkert potential by @HSouch in https://github.com/adrn/gala/pull/370\r\n* Implement Chen+24 particle spray model by @ybillchen in https://github.com/adrn/gala/pull/386\r\n\r\n## New Contributors\r\n* @jl3937 made their first contribution in https://github.com/adrn/gala/pull/358\r\n* @HSouch made their first contribution in https://github.com/adrn/gala/pull/367\r\n* @AlexKurek made their first contribution in https://github.com/adrn/gala/pull/384\r\n* @ybillchen made their first contribution in https://github.com/adrn/gala/pull/386\r\n\r\n**Full Changelog**: https://github.com/adrn/gala/compare/v1.8.1...v1.9.0",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.9.0",
+        "name": "v1.9.0",
+        "release_id": 171522613,
+        "tag": "v1.9.0",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/171522613",
+        "value": "https://api.github.com/repos/adrn/gala/releases/171522613",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2024-01-02T02:11:33Z",
+        "date_published": "2024-01-02T02:22:39Z",
+        "description": "## What's Changed\r\n* Bump actions/download-artifact from 3 to 4 by @dependabot in https://github.com/adrn/gala/pull/348\r\n* Update citbuildwheel process and upload to testpypi  by @adrn in https://github.com/adrn/gala/pull/352\r\n\r\n\r\n**Full Changelog**: https://github.com/adrn/gala/compare/v1.8.0...v1.8.1",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.8.1",
+        "name": "v1.8.1",
+        "release_id": 135492450,
+        "tag": "v1.8.1",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.8.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/135492450",
+        "value": "https://api.github.com/repos/adrn/gala/releases/135492450",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.8.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2023-12-23T15:09:39Z",
+        "date_published": "2023-12-23T15:11:09Z",
+        "description": "## What's Changed\r\n* pass time through plot functions, and reformat with black by @adrn in https://github.com/adrn/gala/pull/332\r\n* Update default_flow_style in yaml serialization by @adrn in https://github.com/adrn/gala/pull/335\r\n* Bump actions/checkout from 3 to 4 by @dependabot in https://github.com/adrn/gala/pull/336\r\n* GSL warnings for discrete SCF functions by @TomWagg in https://github.com/adrn/gala/pull/337\r\n* IO for SCF potentials by @TomWagg in https://github.com/adrn/gala/pull/338\r\n* Added a guiding radius method and test by @adrn in https://github.com/adrn/gala/pull/340\r\n* Add a way to convert Gala potential instances to Agama potential instances by @adrn in https://github.com/adrn/gala/pull/341\r\n* BLD: pin extension-helpers to 1.* following upstream recommendation by @neutrinoceros in https://github.com/adrn/gala/pull/343\r\n* Fix compatibility with Astropy v6.0 by @adrn in https://github.com/adrn/gala/pull/345\r\n* Bump conda-incubator/setup-miniconda from 2 to 3 by @dependabot in https://github.com/adrn/gala/pull/342\r\n* Bump actions/setup-python from 4 to 5 by @dependabot in https://github.com/adrn/gala/pull/347\r\n\r\n## New Contributors\r\n* @neutrinoceros made their first contribution in https://github.com/adrn/gala/pull/343\r\n\r\n**Full Changelog**: https://github.com/adrn/gala/compare/v1.7.1...v1.8.0",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.8.0",
+        "name": "v1.8.0",
+        "release_id": 134978306,
+        "tag": "v1.8.0",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/134978306",
+        "value": "https://api.github.com/repos/adrn/gala/releases/134978306",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2023-08-05T13:43:43Z",
+        "date_published": "2023-08-05T14:47:35Z",
+        "description": "This is a maintenance release. See the [changelog from v1.7](https://github.com/adrn/gala/releases/tag/v1.7) for new features.\r\n\r\n**Full Changelog**: https://github.com/adrn/gala/compare/v1.7...v1.7.1",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.7.1",
+        "name": "v1.7.1",
+        "release_id": 115304390,
+        "tag": "v1.7.1",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.7.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/115304390",
+        "value": "https://api.github.com/repos/adrn/gala/releases/115304390",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.7.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2023-08-05T10:43:05Z",
+        "date_published": "2023-08-05T10:56:30Z",
+        "description": "## What's Changed\r\n* Fixed the oph19_to_icrs function by @sophialilleengen in https://github.com/adrn/gala/pull/312\r\n* Fix test warnings and failures by @adrn in https://github.com/adrn/gala/pull/315\r\n* Clean up gala.coordinates and overhaul great circle coordinate frame  by @adrn in https://github.com/adrn/gala/pull/314\r\n* Fix bug with estimate_period by @adrn in https://github.com/adrn/gala/pull/316\r\n* Add method to export MN3 potential into three MN potentials by @adrn in https://github.com/adrn/gala/pull/317\r\n* A few minor fixes by @adrn in https://github.com/adrn/gala/pull/318\r\n* Add MilkyWayPotential2022 by @adrn in https://github.com/adrn/gala/pull/324\r\n* Bump dfm/rtds-action from 1.0.3 to 1.1.0 by @dependabot in https://github.com/adrn/gala/pull/323\r\n* Bump codecov/codecov-action from 3.1.1 to 3.1.4 by @dependabot in https://github.com/adrn/gala/pull/322\r\n* Fix compiler issue with solout in dop853 integrator by @adrn in https://github.com/adrn/gala/pull/327\r\n* Speedup Nbody and add new integrator functionality by @adrn in https://github.com/adrn/gala/pull/321\r\n* V21 frame by @adrn in https://github.com/adrn/gala/pull/328\r\n\r\n\r\n**Full Changelog**: https://github.com/adrn/gala/compare/v1.6.1...v1.7 and https://github.com/adrn/gala/blob/main/CHANGES.rst",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.7",
+        "name": "v1.7",
+        "release_id": 115277540,
+        "tag": "v1.7",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/115277540",
+        "value": "https://api.github.com/repos/adrn/gala/releases/115277540",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2022-11-07T13:50:37Z",
+        "date_published": "2022-11-07T13:53:59Z",
+        "description": "Changelog included below:\r\n\r\nNew Features\r\n------------\r\n\r\n- Added a ``.replicate()`` method to Potential classes to enable copying\r\n  potential objects but modifying some parameter values.\r\n\r\n- Added a new potential class ``MN3ExponentialDiskPotential`` based on Smith et\r\n  al. (2015): an approximation of the potential generated by a double\r\n  exponential disk using a sum of three Miyamoto-Nagai disks.\r\n\r\n- The ``Orbit.estimate_period()`` method now returns period estimates in all\r\n  phase-space components instead of just the radial period.\r\n\r\n- Added a ``store_all`` flag to the integrators to control whether to save\r\n  phase-space information for all timesteps or only the final timestep.\r\n\r\n- Added a ``plot_rotation_curve()`` method to all potential objects to make a 1D plot\r\n  of the circular velocity curve.\r\n\r\n- Added a new potential for representing multipole expansions ``MultipolePotential``.\r\n\r\n- Added a new potential ``CylSplinePotential`` for flexible representation of\r\n  axisymmetric potentials by allowing passing in grids of potential values\r\n  evaluated grids of R, z values (like the ``CylSpline`` potential in Agama).\r\n\r\n- Added a ``show_time`` flag to ``Orbit.animate()`` to control whether to show the\r\n  current timestep.\r\n\r\n- Changed ``Orbit.animate()`` to allow for different ``marker_style`` and\r\n  ``segment_style`` options for individual orbits by passing a list of dicts instead\r\n  of just a dict.\r\n\r\n- Added an experimental new class ``SCFInterpolatedPotential`` that accepts a time\r\n  series of coefficients and interpolates the coefficient values to any evaluation time.\r\n\r\nBug fixes\r\n---------\r\n\r\n- Fixed a bug where the ``NFWPotential`` energy was nan when evaluating at the\r\n  origin, and added tests for all potentials to check for a finite value of the\r\n  potential at the origin (when expected).\r\n\r\n- Fixed a bug in ``NFWPotential.from_M200_c()`` where the incorrect scale radius\r\n  was computed (Cython does not always use Python 3 division rules for dividing\r\n  integers!).\r\n\r\n- Fixed a bug in the (C-level/internal) estimation of the 2nd derivative of the\r\n  potential, used to generate mock streams, that affects non-conservative force\r\n  fields.\r\n\r\nAPI changes\r\n-----------\r\n\r\n- The ``Orbit.estimate_period()`` method now returns period estimates in all\r\n  phase-space components instead of just the radial period.",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.6.1",
+        "name": "v1.6.1",
+        "release_id": 82270590,
+        "tag": "v1.6.1",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.6.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/82270590",
+        "value": "https://api.github.com/repos/adrn/gala/releases/82270590",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.6.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2022-03-03T15:06:35Z",
+        "date_published": "2022-03-03T15:13:21Z",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.5",
+        "name": "v1.5",
+        "release_id": 60897972,
+        "tag": "v1.5",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/60897972",
+        "value": "https://api.github.com/repos/adrn/gala/releases/60897972",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2021-07-02T00:22:03Z",
+        "date_published": "2021-07-02T00:23:47Z",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.4.1",
+        "release_id": 45594078,
+        "tag": "v1.4.1",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.4.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/45594078",
+        "value": "https://api.github.com/repos/adrn/gala/releases/45594078",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.4.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2021-07-01T22:56:15Z",
+        "date_published": "2021-07-01T23:18:01Z",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.4",
+        "release_id": 45592449,
+        "tag": "v1.4",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/45592449",
+        "value": "https://api.github.com/repos/adrn/gala/releases/45592449",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2020-10-27T14:02:11Z",
+        "date_published": "2020-10-30T12:48:27Z",
+        "description": "See the changelog for updates.",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.3",
+        "name": "v1.3",
+        "release_id": 33269364,
+        "tag": "v1.3",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/33269364",
+        "value": "https://api.github.com/repos/adrn/gala/releases/33269364",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2020-07-13T19:06:43Z",
+        "date_published": "2020-07-13T19:08:05Z",
+        "description": "Minor release to enable building pip wheels, and to support building on Windows.",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.2",
+        "release_id": 28515487,
+        "tag": "v1.2",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/28515487",
+        "value": "https://api.github.com/repos/adrn/gala/releases/28515487",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2020-03-08T18:50:51Z",
+        "date_published": "2020-03-08T19:33:42Z",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.1",
+        "name": "v1.1",
+        "release_id": 24328806,
+        "tag": "v1.1",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/24328806",
+        "value": "https://api.github.com/repos/adrn/gala/releases/24328806",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2020-02-07T20:10:51Z",
+        "date_published": "2020-02-07T20:15:07Z",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.0.1",
+        "name": "Gala v1.0.1",
+        "release_id": 23493241,
+        "tag": "v1.0.1",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/23493241",
+        "value": "https://api.github.com/repos/adrn/gala/releases/23493241",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2019-04-13T22:13:13Z",
+        "date_published": "2019-04-13T22:12:49Z",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v1.0",
+        "name": "v1.0",
+        "release_id": 16734895,
+        "tag": "v1.0",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/16734895",
+        "value": "https://api.github.com/repos/adrn/gala/releases/16734895",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2018-04-24T01:29:21Z",
+        "date_published": "2018-04-24T01:33:59Z",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v0.3",
+        "name": "v0.3",
+        "release_id": 10685019,
+        "tag": "v0.3",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/10685019",
+        "value": "https://api.github.com/repos/adrn/gala/releases/10685019",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2017-10-07T20:09:43Z",
+        "date_published": "2017-10-07T20:17:50Z",
+        "description": "gala is an Astropy-affiliated Python package for galactic dynamics. Python enables wrapping low-level languages (e.g., C) for speed without losing flexibility or ease-of-use in the user-interface. The API for gala was designed to provide a class-based and user-friendly interface to fast (C or Cython-optimized) implementations of common operations such as gravitational potential and force evaluation, orbit integration, dynamical transformations, and chaos indicators for nonlinear dynamics. gala also relies heavily on and interfaces well with the implementations of physical units and astronomical coordinate systems in the Astropy package (astropy.units and astropy.coordinates).",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v0.2.2",
+        "name": "v0.2.2",
+        "release_id": 8035903,
+        "tag": "v0.2.2",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v0.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/8035903",
+        "value": "https://api.github.com/repos/adrn/gala/releases/8035903",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v0.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2017-07-19T09:37:52Z",
+        "date_published": "2017-07-21T11:59:12Z",
+        "description": "Gala is a Python package for Galactic astronomy and gravitational dynamics. The bulk of the package centers around implementations of gravitational potentials, numerical integration, and nonlinear dynamics.",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v0.2.1",
+        "name": "v0.2.1",
+        "release_id": 7122362,
+        "tag": "v0.2.1",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v0.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/7122362",
+        "value": "https://api.github.com/repos/adrn/gala/releases/7122362",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v0.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "adrn",
+          "type": "User"
+        },
+        "date_created": "2016-10-16T16:35:51Z",
+        "date_published": "2017-02-23T20:06:24Z",
+        "description": "Gala is a Python package for Galactic astronomy and gravitational dynamics. The bulk of the package centers around implementations of gravitational potentials, numerical integration, and nonlinear dynamics.\n",
+        "html_url": "https://github.com/adrn/gala/releases/tag/v0.1.3",
+        "name": "v0.1.3",
+        "release_id": 5554288,
+        "tag": "v0.1.3",
+        "tarball_url": "https://api.github.com/repos/adrn/gala/tarball/v0.1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/adrn/gala/releases/5554288",
+        "value": "https://api.github.com/repos/adrn/gala/releases/5554288",
+        "zipball_url": "https://api.github.com/repos/adrn/gala/zipball/v0.1.3"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy>=1.26.4",
+        "version": ">=1.26.4"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scipy",
+        "type": "Software_application",
+        "value": "scipy>=1.12",
+        "version": ">=1.12"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "astropy",
+        "type": "Software_application",
+        "value": "astropy>=6.0",
+        "version": ">=6.0"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyyaml",
+        "type": "Software_application",
+        "value": "pyyaml",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cython",
+        "type": "Software_application",
+        "value": "cython>=0.29",
+        "version": ">=0.29"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools>=77.0.3",
+        "version": ">=77.0.3"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "wheel",
+        "type": "Software_application",
+        "value": "wheel",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools_scm",
+        "type": "Software_application",
+        "value": "setuptools_scm",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "extension-helpers",
+        "type": "Software_application",
+        "value": "extension-helpers==1.*",
+        "version": "==1.*"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy>=2.0",
+        "version": ">=2.0"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cython",
+        "type": "Software_application",
+        "value": "cython",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pybind11",
+        "type": "Software_application",
+        "value": "pybind11",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation and Dependencies",
+        "type": "Text_excerpt",
+        "value": "|conda| |PyPI|\n\nThe easiest way to get Gala is to install with pip or conda.\n\nThe recommended install method is to use ``pip``::\n\n   pip install gala\n\nIf you are on Linux or Mac, you can also install ``gala`` with conda using the\nconda-forge channel::\n\n    conda install gala --channel conda-forge\n\nSee the `installation\ninstructions <http://gala.adrian.pw/en/latest/install.html>`_ in the\n`documentation <http://gala.adrian.pw>`__ for more information.\n"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:56:21",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 141
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v1.3"
+      },
+      "source": "https://raw.githubusercontent.com/adrn/gala/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

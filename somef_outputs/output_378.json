@@ -1,0 +1,774 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8808065301014238,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "o.watson@imperial.ac.uk",
+        "identifier": "https://orcid.org/0000-0003-2374-0741",
+        "type": "String",
+        "value": "OJ Watson"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/OJWatson/magenta"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/OJWatson/magenta"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://travis-ci.org/ojwatson/magenta"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributors": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributors",
+        "parent_header": [
+          "magenta"
+        ],
+        "type": "Text_excerpt",
+        "value": "------------\n- [OJ Watson](https://github.com/ojwatson)\n- [Bob Verity](https://github.com/bobverity)\n- [Joel Hellewell](https://github.com/jhellewell14)\n- [Hannah Slater](https://github.com/hannahslater)\n\n**Maintainer:** OJ Watson (oj.watson@imperial.ac.uk)\n"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-02-25T09:56:02Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-06-05T15:22:51Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Malaria Genomic Transmission Model"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+        "type": "String",
+        "value": "Individual-based simulation model of malaria epidemiology and genomics.\n  magenta extends the imperial malaria model by tracking the infection history of \n  individuals. With this additional genetic characteristics of the parasite can be \n  assessed, including resistance."
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Individual-based simulation model of malaria epidemiology and genomics.\n  magenta extends the imperial malaria model by tracking the infection history of \n  individuals. With this additional genetic characteristics of the parasite can be \n  assessed."
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9539712347202802,
+      "result": {
+        "original_header": "Motivation",
+        "type": "Text_excerpt",
+        "value": "`magenta` is an individual-based simulation model of malaria epidemiology and parasite genetics, which was designed to extends the Imperial malaria model by tracking the infection history of individuals. With this addition, genetic characteristics of the parasite can be assessed for looking at both neutral genetic variation as well as loci under selection.  \nThe model is written in C++/Rcpp and interfaced with R, incorporating both the deterministic version of the Imperial College Transmission model developed by Joel Hellewell and Hannah Slater, which helps initialise the model near equilbrium. In addition it is used to quickly the mosquito feeding behaviour, which is passed to `magenta` in order to increase its speed.    \n \n"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#wip"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "magenta"
+        ],
+        "type": "Text_excerpt",
+        "value": "-------------\n\n*magenta* is documented on a [dedicated\n website](https://ojwatson.github.io/magenta).\n\nThis includes the following vignettes:\n\n- **`Introduction`**: general introduction to the design of `magenta` and how to use it\n- **`Loggers`**: brief overview of the logging information returned by `magenta`\n- **`Resistance`**: (under development) description of how to simulate resistance\n"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/OJWatson/magenta/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/OJWatson/magenta/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OJWatson/magenta"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "magenta"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ojwatson.github.io/magenta/"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "magenta"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "magenta"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can also install `rdhs` from github with:\n\n\n```r\n#install.packages(\"devtools\")\ndevtools::install_github(\"OJWatson/rdhs\")\n```\n\nNote that on Windows, a toolkit (Rtools) needs to be installed separately for devtools to work. \n\nOnce installed, the package can be loaded using:\n\n\n```r\n# Load the package\nlibrary(magenta)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/OJWatson/magenta/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/OJWatson/magenta/issues"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/OJWatson/magenta/issues"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "YEAR: 2019\nCOPYRIGHT HOLDER: OJ Watson\n"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "magenta"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "magenta: Individual-Based Simulation Model of Malaria Epidemiology and Genomics"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "OJWatson"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+        "type": "String",
+        "value": "magenta"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 785552,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 338968,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 251176,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 227683,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OJWatson/magenta/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/OJWatson/magenta/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/OJWatson/magenta/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2024-02-01T23:07:55Z",
+        "date_published": "2024-02-01T23:08:10Z",
+        "html_url": "https://github.com/OJWatson/magenta/releases/tag/v1.3.2",
+        "name": "Release magenta 1.3.2",
+        "release_id": 139592795,
+        "tag": "v1.3.2",
+        "tarball_url": "https://api.github.com/repos/OJWatson/magenta/tarball/v1.3.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/OJWatson/magenta/releases/139592795",
+        "value": "https://api.github.com/repos/OJWatson/magenta/releases/139592795",
+        "zipball_url": "https://api.github.com/repos/OJWatson/magenta/zipball/v1.3.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2022-01-20T20:10:36Z",
+        "date_published": "2022-01-20T20:10:52Z",
+        "html_url": "https://github.com/OJWatson/magenta/releases/tag/v1.3.1",
+        "name": "Release magenta 1.3.1",
+        "release_id": 57609555,
+        "tag": "v1.3.1",
+        "tarball_url": "https://api.github.com/repos/OJWatson/magenta/tarball/v1.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/OJWatson/magenta/releases/57609555",
+        "value": "https://api.github.com/repos/OJWatson/magenta/releases/57609555",
+        "zipball_url": "https://api.github.com/repos/OJWatson/magenta/zipball/v1.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2021-03-18T23:42:27Z",
+        "date_published": "2021-03-18T23:42:46Z",
+        "html_url": "https://github.com/OJWatson/magenta/releases/tag/v1.3.0",
+        "name": "Release magenta 1.3.0",
+        "release_id": 40036936,
+        "tag": "v1.3.0",
+        "tarball_url": "https://api.github.com/repos/OJWatson/magenta/tarball/v1.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/OJWatson/magenta/releases/40036936",
+        "value": "https://api.github.com/repos/OJWatson/magenta/releases/40036936",
+        "zipball_url": "https://api.github.com/repos/OJWatson/magenta/zipball/v1.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "OJWatson",
+          "type": "User"
+        },
+        "date_created": "2020-05-26T03:55:04Z",
+        "date_published": "2020-09-22T20:04:56Z",
+        "html_url": "https://github.com/OJWatson/magenta/releases/tag/v.1.2",
+        "name": "v.1.2",
+        "release_id": 31673159,
+        "tag": "v.1.2",
+        "tarball_url": "https://api.github.com/repos/OJWatson/magenta/tarball/v.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/OJWatson/magenta/releases/31673159",
+        "value": "https://api.github.com/repos/OJWatson/magenta/releases/31673159",
+        "zipball_url": "https://api.github.com/repos/OJWatson/magenta/zipball/v.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "OJWatson",
+          "type": "User"
+        },
+        "date_created": "2019-08-15T20:14:51Z",
+        "date_published": "2019-12-18T21:10:05Z",
+        "description": "Model version used in simulation of results at https://www.biorxiv.org/content/10.1101/793554v1",
+        "html_url": "https://github.com/OJWatson/magenta/releases/tag/v.1.0",
+        "name": "v.1.0",
+        "release_id": 22336616,
+        "tag": "v.1.0",
+        "tarball_url": "https://api.github.com/repos/OJWatson/magenta/tarball/v.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/OJWatson/magenta/releases/22336616",
+        "value": "https://api.github.com/repos/OJWatson/magenta/releases/22336616",
+        "zipball_url": "https://api.github.com/repos/OJWatson/magenta/zipball/v.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "WIP \u2013 Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#wip"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 2.10",
+        "version": ">= 2.10"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dde",
+        "type": "Software_application",
+        "value": "dde",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dplyr",
+        "type": "Software_application",
+        "value": "dplyr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ggplot2",
+        "type": "Software_application",
+        "value": "ggplot2",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "magrittr",
+        "type": "Software_application",
+        "value": "magrittr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "odin",
+        "type": "Software_application",
+        "value": "odin",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "progress",
+        "type": "Software_application",
+        "value": "progress",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Rcpp",
+        "type": "Software_application",
+        "value": "Rcpp==>= 0.12.7",
+        "version": ">= 0.12.7"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "redux",
+        "type": "Software_application",
+        "value": "redux",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "reshape2",
+        "type": "Software_application",
+        "value": "reshape2",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rlang",
+        "type": "Software_application",
+        "value": "rlang",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "statmod",
+        "type": "Software_application",
+        "value": "statmod",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "stringdist",
+        "type": "Software_application",
+        "value": "stringdist",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "stringi",
+        "type": "Software_application",
+        "value": "stringi",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "https://sysreqs.r-hub.io/get/cxx11",
+        "type": "Software_application",
+        "value": "https://sysreqs.r-hub.io/get/cxx11",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "usage",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:37:09",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+        "type": "String",
+        "value": "1.3.5"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/OJWatson/magenta/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

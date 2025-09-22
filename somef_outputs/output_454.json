@@ -1,0 +1,790 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgements",
+        "parent_header": [
+          "PyNomaly"
+        ],
+        "type": "Text_excerpt",
+        "value": "- The authors of LoOP (Local Outlier Probabilities)\n    - Hans-Peter Kriegel\n    - Peer Kr\u00f6ger\n    - Erich Schubert\n    - Arthur Zimek\n- [NASA Jet Propulsion Laboratory](https://jpl.nasa.gov/)\n    - [Kyle Hundman](https://github.com/khundman)\n    - [Ian Colwell](https://github.com/iancolwell)\n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "vc@valentino.io",
+        "type": "Agent",
+        "value": "vc@valentino.io"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "NASA Jet Propulsion Laboratory",
+        "email": "vconstan@jpl.caltech.edu",
+        "identifier": "http://orcid.org/0000-0002-5279-4143",
+        "type": "String",
+        "value": "Valentino Constantinou"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "References",
+        "parent_header": [
+          "PyNomaly"
+        ],
+        "type": "Text_excerpt",
+        "value": "1. Breunig M., Kriegel H.-P., Ng R., Sander, J. LOF: Identifying Density-based Local Outliers. ACM SIGMOD International Conference on Management of Data (2000). [PDF](http://www.dbs.ifi.lmu.de/Publikationen/Papers/LOF.pdf).\n2. Kriegel H., Kr\u00f6ger P., Schubert E., Zimek A. LoOP: Local Outlier Probabilities. 18th ACM conference on Information and knowledge management, CIKM (2009). [PDF](http://www.dbs.ifi.lmu.de/Publikationen/Papers/LoOP1649.pdf).\n3. Goldstein M., Uchida S. A Comparative Evaluation of Unsupervised Anomaly Detection Algorithms for Multivariate Data. PLoS ONE 11(4): e0152173 (2016).\n4. Hamlet C., Straub J., Russell M., Kerlin S. An incremental and approximate local outlier probability algorithm for intrusion detection and its evaluation. Journal of Cyber Security Technology (2016). [DOI](http://www.tandfonline.com/doi/abs/10.1080/23742917.2016.1226651?journalCode=tsec20).\n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Valentino Constantinou",
+        "doi": "10.21105/joss.00845",
+        "format": "bibtex",
+        "title": "{PyNomaly}: Anomaly detection using Local Outlier Probabilities ({LoOP}).",
+        "type": "Text_excerpt",
+        "url": "https://doi.org/10.21105/joss.00845",
+        "value": "@article{Constantinou2018,\n    journal = {Journal of Open Source Software},\n    title = {{PyNomaly}: Anomaly detection using Local Outlier Probabilities ({LoOP}).},\n    author = {Valentino Constantinou},\n    pages = {845},\n    number = {30},\n    volume = {3},\n    publisher = {The Open Journal},\n    month = {oct},\n    year = {2018},\n    url = {https://doi.org/10.21105/joss.00845},\n    doi = {10.21105/joss.00845},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/vc1492a/PyNomaly"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/vc1492a/PyNomaly"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.github.com/vc1492a/PyNomaly"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/.github/workflows/release-please.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/.github/workflows/tests.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "PyNomaly"
+        ],
+        "type": "Text_excerpt",
+        "value": "Please use the issue tracker to report any erroneous behavior or desired \nfeature requests. \n\nIf you would like to contribute to development, please fork the repository and make \nany changes to a branch which corresponds to an open issue. Hot fixes \nand bug fixes can be represented by branches with the prefix `fix/` versus \n`feature/` for new capabilities or code improvements. Pull requests will \nthen be made from these branches into the repository's `dev` branch \nprior to being pulled into `main`. \n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Commit Messages and Releases",
+        "parent_header": [
+          "PyNomaly",
+          "Contributing"
+        ],
+        "type": "Text_excerpt",
+        "value": "**Your commit messages are important** - here's why. \n\nPyNomaly leverages [release-please](https://github.com/googleapis/release-please-action) to help automate the release process using the [Conventional Commits](https://www.conventionalcommits.org/) specification. When pull requests are opened to the `main` branch, release-please will collate the git commit messages and prepare an organized changelog and release notes. This process can be completed because of the Conventional Commits specification. \n\nConventional Commits provides an easy set of rules for creating an explicit commit history; which makes it easier to write automated tools on top of. This convention dovetails with SemVer, by describing the features, fixes, and breaking changes made in commit messages. You can check out examples [here](https://www.conventionalcommits.org/en/v1.0.0/#examples). Make a best effort to use the specification when contributing to Infactory code as it dramatically eases the documentation around releases and their features, breaking changes, bug fixes and documentation updates. \n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Tests",
+        "parent_header": [
+          "PyNomaly",
+          "Contributing"
+        ],
+        "type": "Text_excerpt",
+        "value": "When contributing, please ensure to run unit tests and add additional tests as \nnecessary if adding new functionality. To run the unit tests, use `pytest`: \n\n```\npython3 -m pytest --cov=PyNomaly -s -v\n```\n\nTo run the tests with Numba enabled, simply set the flag `NUMBA` in `test_loop.py` \nto `True`. Note that a drop in coverage is expected due to portions of the code \nbeing compiled upon code execution. \n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-05-19T20:51:20Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-05-07"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-05-07"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-10T00:03:15Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-05-07"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Anomaly detection using LoOP: Local Outlier Probabilities, a local density based outlier detection method providing an outlier score in the range of [0,1]."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Python 3 implementation of LoOP: Local Outlier Probabilities, a local density based outlier detection method providing an outlier score in the range of [0,1]."
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Anomaly detection using Local Outlier Probabilities (LoOP)."
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9654739644472954,
+      "result": {
+        "original_header": "PyNomaly",
+        "type": "Text_excerpt",
+        "value": "PyNomaly is a Python 3 implementation of LoOP (Local Outlier Probabilities).\nLoOP is a local density based outlier detection method by Kriegel, Kr\u00f6ger, Schubert, and Zimek which provides outlier\nscores in the range of [0,1] that are directly interpretable as the probability of a sample being an outlier.  \nPyNomaly is a core library of [deepchecks](https://github.com/deepchecks/deepchecks), [OmniDocBench](https://github.com/opendatalab/OmniDocBench) and [pysad](https://github.com/selimfirat/pysad).  \nThe outlier score of each sample is called the Local Outlier Probability.\nIt measures the local deviation of density of a given sample with\nrespect to its neighbors as Local Outlier Factor (LOF), but provides normalized\noutlier scores in the range [0,1]. These outlier scores are directly interpretable\nas a probability of an object being an outlier. Since Local Outlier Probabilities provides scores in the\nrange [0,1], practitioners are free to interpret the results according to the application. \nLike LOF, it is local in that the anomaly score depends on how isolated the sample is\nwith respect to the surrounding neighborhood. Locality is given by k-nearest neighbors,\nwhose distance is used to estimate the local density. By comparing the local density of a sample to the\nlocal densities of its neighbors, one can identify samples that lie in regions of lower\ndensity compared to their neighbors and thus identify samples that may be outliers according to their Local\nOutlier Probability. \n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9058159984909406,
+      "result": {
+        "original_header": "Implementation",
+        "type": "Text_excerpt",
+        "value": "This Python 3 implementation uses Numpy and the formulas outlined in\n[LoOP: Local Outlier Probabilities](http://www.dbs.ifi.lmu.de/Publikationen/Papers/LoOP1649.pdf)\nto calculate the Local Outlier Probability of each sample.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9045340831936969,
+      "result": {
+        "original_header": "Specifying a Distance Matrix",
+        "type": "Text_excerpt",
+        "value": "Note that in order to maintain alignment with the LoOP definition of closest neighbors, \nan additional neighbor is added when using [scikit-learn's NearestNeighbors](https://scikit-learn.org/1.5/modules/neighbors.html) since `NearestNeighbors` \nincludes the point itself when calculating the cloest neighbors (whereas the LoOP method does not include distances to point itself). \n```python\nimport numpy as np\nfrom sklearn.neighbors import NearestNeighbors\n\ndata = np.array([\n    [43.3, 30.2, 90.2],\n    [62.9, 58.3, 49.3],\n    [55.2, 56.2, 134.2],\n    [48.6, 80.3, 50.3],\n    [67.1, 60.0, 55.9],\n    [421.5, 90.3, 50.0]\n])\n\n# Generate distance and neighbor matrices\nn_neighbors = 3 # the number of neighbors according to the LoOP definition \nneigh = NearestNeighbors(n_neighbors=n_neighbors+1, metric='hamming')\nneigh.fit(data)\nd, idx = neigh.kneighbors(data, return_distance=True)\n\n# Remove self-distances - you MUST do this to preserve the same results as intended by the definition of LoOP\nindices = np.delete(indices, 0, 1)\ndistances = np.delete(distances, 0, 1)\n\n# Fit and return scores\nm = loop.LocalOutlierProbability(distance_matrix=d, neighbor_matrix=idx, n_neighbors=n_neighbors+1).fit()\nscores = m.local_outlier_probabilities\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9773111924905987,
+      "result": {
+        "original_header": "Streaming Data",
+        "type": "Text_excerpt",
+        "value": "PyNomaly also contains an implementation of Hamlet et. al.'s modifications\nto the original LoOP approach [[4](http://www.tandfonline.com/doi/abs/10.1080/23742917.2016.1226651?journalCode=tsec20)],\nwhich may be used for applications involving streaming data or where rapid calculations may be necessary.\nFirst, the standard LoOP algorithm is used on \"training\" data, with certain attributes of the fitted data\nstored from the original LoOP approach. Then, as new points are considered, these fitted attributes are\ncalled when calculating the score of the incoming streaming data due to the use of averages from the initial\nfit, such as the use of a global value for the expected value of the probabilistic distance. Despite the potential\nfor increased error when compared to the standard approach, it may be effective in streaming applications where\nrefitting the standard approach over all points could be computationally expensive. \n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9264380327394138,
+      "result": {
+        "original_header": "Notes",
+        "type": "Text_excerpt",
+        "value": "When calculating the LoOP score of incoming data, the original fitted scores are not updated.\nIn some applications, it may be beneficial to refit the data periodically. The stream functionality\nalso assumes that either data or a distance matrix (or value) will be used across in both fitting\nand streaming, with no changes in specification between steps.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9078490672380957,
+      "result": {
+        "original_header": "Versioning",
+        "type": "Text_excerpt",
+        "value": "[Semantic versioning](http://semver.org/) is used for this project. If contributing, please conform to semantic\nversioning guidelines when submitting a pull request.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/vc1492a/PyNomaly/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 37
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/vc1492a/PyNomaly/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "vc1492a/PyNomaly"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PyNomaly"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://joss.theoj.org/papers/f4d2cfe680768526da7c1f6a2c103266/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/images/scores.png"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/images/scores_clust.png"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/images/cluster_assignments.png"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/images/scores_by_distance_metric.png"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/images/scores_stream.png"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/vc1492a/PyNomaly/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "anomalies, anomaly-detection, machine-learning, nearest-neighbors, outlier-detection, outlier-scores, outliers, probability"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "outlier"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "anomaly"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "detection"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "machine"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "learning"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "probability"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "machine learning",
+          "unsupervised learning",
+          "outlier detection",
+          "anomaly detection",
+          "nearest neighbors",
+          "statistics",
+          "probability"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Apache License 2.0",
+        "spdx_id": "Apache-2.0",
+        "type": "File_dump",
+        "value": "Copyright 2017 Valentino Constantinou.\n\nLicensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License."
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "Apache License, Version 2.0"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/Apache 2.0",
+        "spdx_id": "Apache 2.0",
+        "type": "License",
+        "value": "Apache 2.0"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "PyNomaly"
+        ],
+        "type": "Text_excerpt",
+        "value": "This project is licensed under the Apache 2.0 license.\n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PyNomaly"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "vc1492a"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PyNomaly"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 64011,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 1775,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "vc1492a",
+          "type": "User"
+        },
+        "date_created": "2024-10-18T14:56:34Z",
+        "date_published": "2024-10-18T14:58:48Z",
+        "description": "## What's Changed\r\n* Merge readme.md changes into main branch  by @vc1492a in https://github.com/vc1492a/PyNomaly/pull/53\r\n* 54 add regression tests for refactor validation by @IroNEDR in https://github.com/vc1492a/PyNomaly/pull/55\r\n* merge dev into feature branch by @IroNEDR in https://github.com/vc1492a/PyNomaly/pull/56\r\n* Move continuous integration from Travis CI to Github Actions by @IroNEDR in https://github.com/vc1492a/PyNomaly/pull/58\r\n* Add regression test and new test pipeline to main branch - no new version by @IroNEDR in https://github.com/vc1492a/PyNomaly/pull/59\r\n* small readme.md tweaks by @vc1492a in https://github.com/vc1492a/PyNomaly/pull/60\r\n\r\n## New Contributors\r\n* @IroNEDR made their first contribution in https://github.com/vc1492a/PyNomaly/pull/55\r\n\r\n**Full Changelog**: https://github.com/vc1492a/PyNomaly/compare/0.3.3...0.3.4",
+        "html_url": "https://github.com/vc1492a/PyNomaly/releases/tag/0.3.4",
+        "name": "0.3.4",
+        "release_id": 180707813,
+        "tag": "0.3.4",
+        "tarball_url": "https://api.github.com/repos/vc1492a/PyNomaly/tarball/0.3.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/vc1492a/PyNomaly/releases/180707813",
+        "value": "https://api.github.com/repos/vc1492a/PyNomaly/releases/180707813",
+        "zipball_url": "https://api.github.com/repos/vc1492a/PyNomaly/zipball/0.3.4"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy>=1.12.0",
+        "version": ">=1.12.0"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python-utils",
+        "type": "Software_application",
+        "value": "python-utils>=2.3.0",
+        "version": ">=2.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Dependencies",
+        "parent_header": [
+          "PyNomaly"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Python 3.8 - 3.13\n- numpy >= 1.16.3\n- python-utils >= 2.3.0\n- (optional) numba >= 0.45.1\n\nNumba just-in-time (JIT) compiles the function with calculates the Euclidean \ndistance between observations, providing a reduction in computation time \n(significantly when a large number of observations are scored). Numba is not a \nrequirement and PyNomaly may still be used solely with numpy if desired\n(details below). \n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:54:29",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 328
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Quick Start",
+        "parent_header": [
+          "PyNomaly"
+        ],
+        "type": "Text_excerpt",
+        "value": "First install the package from the Python Package Index:\n\n```shell\npip install PyNomaly # or pip3 install ... if you're using both Python 3 and 2.\n```\n\nAlternatively, you can use conda to install the package from conda-forge:\n\n```shell\nconda install conda-forge::pynomaly\n```\nThen you can do something like this:\n\n```python\nfrom PyNomaly import loop\nm = loop.LocalOutlierProbability(data).fit()\nscores = m.local_outlier_probabilities\nprint(scores)\n```\nwhere *data* is a NxM (N rows, M columns; 2-dimensional) set of data as either a Pandas DataFrame or Numpy array.\n\nLocalOutlierProbability sets the *extent* (in integer in value of 1, 2, or 3) and *n_neighbors* (must be greater than 0) parameters with the default\nvalues of 3 and 10, respectively. You're free to set these parameters on your own as below:\n\n```python\nfrom PyNomaly import loop\nm = loop.LocalOutlierProbability(data, extent=2, n_neighbors=20).fit()\nscores = m.local_outlier_probabilities\nprint(scores)\n```\n\nThis implementation of LoOP also includes an optional *cluster_labels* parameter. This is useful in cases where regions\nof varying density occur within the same set of data. When using *cluster_labels*, the Local Outlier Probability of a\nsample is calculated with respect to its cluster assignment.\n\n```python\nfrom PyNomaly import loop\nfrom sklearn.cluster import DBSCAN\ndb = DBSCAN(eps=0.6, min_samples=50).fit(data)\nm = loop.LocalOutlierProbability(data, extent=2, n_neighbors=20, cluster_labels=list(db.labels_)).fit()\nscores = m.local_outlier_probabilities\nprint(scores)\n```\n\n**NOTE**: Unless your data is all the same scale, it may be a good idea to normalize your data with z-scores or another\nnormalization scheme prior to using LoOP, especially when working with multiple dimensions of varying scale.\nUsers must also appropriately handle missing values prior to using LoOP, as LoOP does not support Pandas\nDataFrames or Numpy arrays with missing values.\n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Utilizing Numba and Progress Bars",
+        "parent_header": [
+          "PyNomaly",
+          "Quick Start"
+        ],
+        "type": "Text_excerpt",
+        "value": "It may be helpful to use just-in-time (JIT) compilation in the cases where a lot of \nobservations are scored. Numba, a JIT compiler for Python, may be used \nwith PyNomaly by setting `use_numba=True`:\n\n```python\nfrom PyNomaly import loop\nm = loop.LocalOutlierProbability(data, extent=2, n_neighbors=20, use_numba=True, progress_bar=True).fit()\nscores = m.local_outlier_probabilities\nprint(scores)\n```\n\nNumba must be installed if the above to use JIT compilation and improve the \nspeed of multiple calls to `LocalOutlierProbability()`, and PyNomaly has been \ntested with Numba version 0.45.1. An example of the speed difference that can \nbe realized with using Numba is avaialble in `examples/numba_speed_diff.py`. \n\nYou may also choose to print progress bars _with our without_ the use of numba \nby passing `progress_bar=True` to the `LocalOutlierProbability()` method as above.\n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Choosing Parameters",
+        "parent_header": [
+          "PyNomaly",
+          "Quick Start"
+        ],
+        "type": "Text_excerpt",
+        "value": "The *extent* parameter controls the sensitivity of the scoring in practice. The parameter corresponds to\nthe statistical notion of an outlier defined as an object deviating more than a given lambda (*extent*)\ntimes the standard deviation from the mean. A value of 2 implies outliers deviating more than 2 standard deviations\nfrom the mean, and corresponds to 95.0% in the empirical \"three-sigma\" rule. The appropriate parameter should be selected\naccording to the level of sensitivity needed for the input data and application. The question to ask is whether it is\nmore reasonable to assume outliers in your data are 1, 2, or 3 standard deviations from the mean, and select the value\nlikely most appropriate to your data and application.\n\nThe *n_neighbors* parameter defines the number of neighbors to consider about\neach sample (neighborhood size) when determining its Local Outlier Probability with respect to the density\nof the sample's defined neighborhood. The idea number of neighbors to consider is dependent on the\ninput data. However, the notion of an outlier implies it would be considered as such regardless of the number\nof neighbors considered. One potential approach is to use a number of different neighborhood sizes and average\nthe results for reach observation. Those observations which rank highly with varying neighborhood sizes are\nmore than likely outliers. This is one potential approach of selecting the neighborhood size. Another is to\nselect a value proportional to the number of observations, such an odd-valued integer close to the square root\nof the number of observations in your data (*sqrt(n_observations*).\n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Iris Data Example",
+        "parent_header": [
+          "PyNomaly"
+        ],
+        "type": "Text_excerpt",
+        "value": "We'll be using the well-known Iris dataset to show LoOP's capabilities. There's a few things you'll need for this\nexample beyond the standard prerequisites listed above:\n- matplotlib 2.0.0 or greater\n- PyDataset 0.2.0 or greater\n- scikit-learn 0.18.1 or greater\n\nFirst, let's import the packages and libraries we will need for this example.\n\n```python\nfrom PyNomaly import loop\nimport pandas as pd\nfrom pydataset import data\nimport numpy as np\nfrom sklearn.cluster import DBSCAN\nimport matplotlib.pyplot as plt\nfrom mpl_toolkits.mplot3d import Axes3D\n```\n\nNow let's create two sets of Iris data for scoring; one with clustering and the other without.\n\n```python\n# import the data and remove any non-numeric columns\niris = pd.DataFrame(data('iris').drop(columns=['Species']))\n```\n\nNext, let's cluster the data using DBSCAN and generate two sets of scores. On both cases, we will use the default\nvalues for both *extent* (0.997) and *n_neighbors* (10).\n\n```python\ndb = DBSCAN(eps=0.9, min_samples=10).fit(iris)\nm = loop.LocalOutlierProbability(iris).fit()\nscores_noclust = m.local_outlier_probabilities\nm_clust = loop.LocalOutlierProbability(iris, cluster_labels=list(db.labels_)).fit()\nscores_clust = m_clust.local_outlier_probabilities\n```\n\nOrganize the data into two separate Pandas DataFrames.\n\n```python\niris_clust = pd.DataFrame(iris.copy())\niris_clust['scores'] = scores_clust\niris_clust['labels'] = db.labels_\niris['scores'] = scores_noclust\n```\n\nAnd finally, let's visualize the scores provided by LoOP in both cases (with and without clustering).\n\n```python\nfig = plt.figure(figsize=(7, 7))\nax = fig.add_subplot(111, projection='3d')\nax.scatter(iris['Sepal.Width'], iris['Petal.Width'], iris['Sepal.Length'],\nc=iris['scores'], cmap='seismic', s=50)\nax.set_xlabel('Sepal.Width')\nax.set_ylabel('Petal.Width')\nax.set_zlabel('Sepal.Length')\nplt.show()\nplt.clf()\nplt.cla()\nplt.close()\n\nfig = plt.figure(figsize=(7, 7))\nax = fig.add_subplot(111, projection='3d')\nax.scatter(iris_clust['Sepal.Width'], iris_clust['Petal.Width'], iris_clust['Sepal.Length'],\nc=iris_clust['scores'], cmap='seismic', s=50)\nax.set_xlabel('Sepal.Width')\nax.set_ylabel('Petal.Width')\nax.set_zlabel('Sepal.Length')\nplt.show()\nplt.clf()\nplt.cla()\nplt.close()\n\nfig = plt.figure(figsize=(7, 7))\nax = fig.add_subplot(111, projection='3d')\nax.scatter(iris_clust['Sepal.Width'], iris_clust['Petal.Width'], iris_clust['Sepal.Length'],\nc=iris_clust['labels'], cmap='Set1', s=50)\nax.set_xlabel('Sepal.Width')\nax.set_ylabel('Petal.Width')\nax.set_zlabel('Sepal.Length')\nplt.show()\nplt.clf()\nplt.cla()\nplt.close()\n```\n\nYour results should look like the following:\n\n**LoOP Scores without Clustering**\n![LoOP Scores without Clustering](https://github.com/vc1492a/PyNomaly/blob/main/images/scores.png)\n\n**LoOP Scores with Clustering**\n![LoOP Scores with Clustering](https://github.com/vc1492a/PyNomaly/blob/main/images/scores_clust.png)\n\n**DBSCAN Cluster Assignments**\n![DBSCAN Cluster Assignments](https://github.com/vc1492a/PyNomaly/blob/main/images/cluster_assignments.png)\n\n\nNote the differences between using LocalOutlierProbability with and without clustering. In the example without clustering, samples are\nscored according to the distribution of the entire data set. In the example with clustering, each sample is scored\naccording to the distribution of each cluster. Which approach is suitable depends on the use case.\n\n**NOTE**: Data was not normalized in this example, but it's probably a good idea to do so in practice.\n"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/readme.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/vc1492a/PyNomaly/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

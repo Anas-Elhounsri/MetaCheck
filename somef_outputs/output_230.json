@@ -1,0 +1,749 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8764682982606589,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/Starlink/pal"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2012-08-20T21:58:46Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-09T06:48:16Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Positional Astronomy Library"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 0.9854526785844197,
+      "result": {
+        "original_header": "PAL - Positional Astronomy Library",
+        "type": "Text_excerpt",
+        "value": "The PAL library is a partial re-implementation of Pat Wallace's popular SLALIB\nlibrary written in C using a Gnu GPL license and layered on top of the IAU's\nSOFA library (or the BSD-licensed ERFA) where appropriate.\nPAL attempts to stick to the SLA C API where\npossible although `palObs()` has a more C-like API than the equivalent\n`slaObs()` function. In most cases it is enough to simply change the function\nprefix of a routine in order to link against PAL rather than SLALIB. Routines\ncalling SOFA use modern nutation and precession models so will return slightly\ndifferent answers than native SLALIB. PAL functions not available in SOFA were\nported from the Fortran version of SLALIB that ships as part of the Starlink\nsoftware and uses a GPL licence. \n"
+      },
+      "source": "https://raw.githubusercontent.com/Starlink/pal/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8546417625836469,
+      "result": {
+        "original_header": "Building",
+        "type": "Text_excerpt",
+        "value": "`--without-starlink` forces the configure script to forget about any Starlink\nconfigurations. This is the safe option if you run into problems when using\na simple `--prefix` for building outside of Starlink. The configure script\nwill assume Starlink is not being used by looking to see if\n`STARCONF_DEFAULT_PREFIX` environment variable is set. You may run into problems if\n`STARCONF_DEFAULT_PREFIX` is set but you use `--without-starlink`.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/Starlink/pal/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8526574430864087,
+      "result": {
+        "original_header": "Language Bindings",
+        "type": "Text_excerpt",
+        "value": "A Perl binding of PAL is available (<https://github.com/timj/perl-Astro-PAL>) named `Astro::PAL`\nand is available from CPAN at <https://metacpan.org/module/Astro::PAL>. This is a standalone\ndistribution that comes with its own copies of PAL and SOFA and so can be installed directly\nfrom the `cpan` shell. \nA Python binding of PAL is available (<https://github.com/Starlink/palpy>). This is a standalone\ndistribution that comes with its own copies of PAL and SOFA. \nThe Starlink AST (<http://www.starlink.ac.uk/ast>) library now uses PAL and can be built\neither with a private PAL or with an external PAL.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/Starlink/pal/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "PAL - Positional Astronomy Library"
+        ],
+        "type": "Text_excerpt",
+        "value": "The description paper for PAL is: [\"_PAL: A Positional Astronomy Library_\"](http://adsabs.harvard.edu/abs/2013ASPC..475..307J),\nJenness, T. & Berry, D. S., in _Astronomical Data Anaysis Software and Systems XXII_,\nFriedel, D. N. (ed), ASP Conf. Ser. **475**, p307.\n\nPAL is registered with the ASCL as [ascl:1606.002](http://ascl.net/1606.002).\n\nPlease consider citing the ADASS paper or the ASCL entry if you make use of this software.\n"
+      },
+      "source": "https://raw.githubusercontent.com/Starlink/pal/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/Starlink/pal/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 14
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/Starlink/pal/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Starlink/pal"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PAL - Positional Astronomy Library"
+      },
+      "source": "https://raw.githubusercontent.com/Starlink/pal/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/5487324"
+      },
+      "source": "https://raw.githubusercontent.com/Starlink/pal/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/Starlink/pal/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "astronomy, c, wcs"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "value": "https://api.github.com/licenses/lgpl-3.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pal"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "Starlink"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 691802,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 339602,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BibTeX Style",
+        "size": 39861,
+        "type": "Programming_language",
+        "value": "BibTeX Style"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 5573,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "M4",
+        "size": 5439,
+        "type": "Programming_language",
+        "value": "M4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 4843,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 3217,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/Starlink/pal/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2018-09-01T21:39:46Z",
+        "date_published": "2018-09-01T21:40:47Z",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.9.8",
+        "name": "PAL v0.9.8: Add palRanorm",
+        "release_id": 12688887,
+        "tag": "v0.9.8",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.9.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/12688887",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/12688887",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.9.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2016-12-19T21:12:36Z",
+        "date_published": "2016-12-19T22:59:54Z",
+        "description": "- Enable light deflection in palAmpqk.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.9.7",
+        "name": "PAL: Version 0.9.7",
+        "release_id": 4962505,
+        "tag": "v0.9.7",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.9.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/4962505",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/4962505",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.9.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2016-12-19T19:39:39Z",
+        "date_published": "2016-12-19T19:43:02Z",
+        "description": "- Add light deflection to palAmpqk. SLALIB always had it but for some reason\n  the relevant piece of code never got ported to PAL.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.9.5",
+        "name": "PAL v0.9.5",
+        "release_id": 4960868,
+        "tag": "v0.9.5",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.9.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/4960868",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/4960868",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.9.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2016-12-16T21:49:57Z",
+        "date_published": "2016-12-16T21:51:08Z",
+        "description": "- Add light deflection to palMapqkz (thanks to Scott Daniel)\n- Add test for palMapqk (thanks to Scott Daniel)\n- Correctly disable documentation build when running outside of a Starlink\n  environment.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.9.4",
+        "name": "PAL v0.9.4",
+        "release_id": 4945448,
+        "tag": "v0.9.4",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.9.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/4945448",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/4945448",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.9.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2015-04-28T17:51:10Z",
+        "date_published": "2015-04-28T17:51:55Z",
+        "description": "- Minor documentation cleanups\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.9.1",
+        "name": "PAL Version 0.9.1",
+        "release_id": 1228663,
+        "tag": "v0.9.1",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.9.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/1228663",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/1228663",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.9.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2015-01-01T20:24:47Z",
+        "date_published": "2015-01-01T20:26:35Z",
+        "description": "- Add `palPcd` and `palUnpcd`\n- Update latex style for SUN/267\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.9.0",
+        "name": "V0.9.0",
+        "release_id": 818968,
+        "tag": "v0.9.0",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/818968",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/818968",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2014-11-18T17:40:00Z",
+        "date_published": "2014-12-31T22:11:54Z",
+        "description": "Add `palEcleq`\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.8.0",
+        "name": "v0.8.0",
+        "release_id": 818093,
+        "tag": "v0.8.0",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/818093",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/818093",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2014-08-28T01:46:40Z",
+        "date_published": "2014-08-28T01:47:16Z",
+        "description": "Add `palVers` function to obtain PAL version information.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.6.0",
+        "name": "PAL v0.6.0",
+        "release_id": 519831,
+        "tag": "v0.6.0",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/519831",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/519831",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2014-08-18T22:28:43Z",
+        "date_published": "2014-08-18T22:34:58Z",
+        "description": "The configure script was getting confused if run outside of\nStarlink without using `--without-starlink`. This was because\n$STARLINK is set in the script if it is not set and the\nconfigure script was assuming `$STARLINK` would be unset\noutside of a Starlink environment. The configure script\nnow keys off `$STARLINK_DIR` but that may interact badly\nif `STARLINK_DIR` is set and `--without-starlink` is used.\n\nAn experimental SConstruct build script is now available\nfor users of scons.\n\nSUN/267 has been synced up with the associated source files.\n\npalIntin now respects the `isblank` configure check (as it\nshould have done all along).\n\nMinor clean ups of some source prologues.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.5.1",
+        "name": "Minor build cleanups",
+        "release_id": 499201,
+        "tag": "v0.5.1",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.5.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/499201",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/499201",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.5.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2014-07-29T21:39:14Z",
+        "date_published": "2014-07-29T21:43:48Z",
+        "description": "Now works with ERFA https://github.com/liberfa/erfa. The configure script has been modified to first check for ERFA and then check for SOFA.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.5.0",
+        "name": "Version 0.5.0 of PAL",
+        "release_id": 458918,
+        "tag": "v0.5.0",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/458918",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/458918",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2014-07-29T21:38:45Z",
+        "date_published": "2014-07-29T21:41:37Z",
+        "description": "New routines ported from SLA: `palRefv`, `palAtmdsp`\nNew routine inherited from SOFA: `palRefcoq`\n\nMinimum SOFA version now 2013-12-02\n\n`palObs`: Now includes telescope positions for APEX and NANTEN2\n\nThe `autotools` build scripts now require `autoconf` version 2.69.\n\nThanks to Github user @nega0 for some BSD build fixes.\n\nA subset of the routines have been relicensed using LGPL to allow them to be included in the AST library. Thanks to Patrick Wallace for giving this permission.\n\nA paper on PAL has been published at ADASS:  http://adsabs.harvard.edu/abs/2013ASPC..475..307J\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.4.0",
+        "name": "Version 0.4.0 of PAL",
+        "release_id": 458915,
+        "tag": "v0.4.0",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/458915",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/458915",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2012-08-28T00:10:15Z",
+        "date_published": "2013-09-10T00:17:29Z",
+        "description": "Add refraction code and support `palOap` and `palAop`. For closer compatibility with SLA for testing purposes the refraction routines internally use clones of slaNutc, `slaEqeqx`, `slaGmst` and `slaGeoc`. Once the code has been verified further the PAL/SOFA routines will be used instead. Switching routines seems to change the results in `palTest` by about 0.05 arcsec.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.3.0",
+        "release_id": 41489,
+        "tag": "v0.3.0",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/41489",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/41489",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2012-08-23T21:13:35Z",
+        "date_published": "2013-09-10T00:20:43Z",
+        "description": "Improve configure script when not in a Starlink build environment. Use\n\n```\n./configure --prefix=/path/to/install\n```\n\nwhen Starlink is not available and add `--without-starlink` if Starlink is present but should not be used.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.2.0",
+        "release_id": 41490,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/41490",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/41490",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2012-08-23T04:52:02Z",
+        "date_published": "2013-09-10T00:22:03Z",
+        "description": "Explcitly look for `libm` rather than relying on SOFA to pull it in.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.1.5",
+        "release_id": 41491,
+        "tag": "v0.1.5",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.1.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/41491",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/41491",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.1.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2012-08-23T04:51:38Z",
+        "date_published": "2013-09-10T00:22:50Z",
+        "description": "Check for `isblank()` function and fall back if it is missing.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.1.4",
+        "release_id": 41492,
+        "tag": "v0.1.4",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/41492",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/41492",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2012-08-23T04:53:52Z",
+        "date_published": "2013-09-10T00:23:20Z",
+        "description": "Improve `copysign()` detection.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.1.3",
+        "release_id": 41494,
+        "tag": "v0.1.3",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/41494",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/41494",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2012-08-23T04:53:21Z",
+        "date_published": "2013-09-10T00:23:49Z",
+        "description": "Check for `copysign()` C99 function and fall back if it is missing.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.1.2",
+        "release_id": 41495,
+        "tag": "v0.1.2",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/41495",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/41495",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2012-08-23T04:52:58Z",
+        "date_published": "2013-09-10T00:24:46Z",
+        "description": "The `palDrange` function has been modified so that it now returns `+PI` if the supplied angle is `+PI` (previously, it returned `-PI` in these cases).\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.1.1",
+        "release_id": 41497,
+        "tag": "v0.1.1",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/41497",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/41497",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "timj",
+          "type": "User"
+        },
+        "date_created": "2012-08-23T04:50:10Z",
+        "date_published": "2013-09-10T00:28:21Z",
+        "description": "Initial release with sufficient SLALIB API for [Starlink](https://github.com/Starlink/starlink Starlink) AST and the [`Astro::Coords`](https://github.com/timj/perl-Astro-Coords) perl module.\n",
+        "html_url": "https://github.com/Starlink/pal/releases/tag/v0.1.0",
+        "release_id": 41498,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/Starlink/pal/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/Starlink/pal/releases/41498",
+        "value": "https://api.github.com/repos/Starlink/pal/releases/41498",
+        "zipball_url": "https://api.github.com/repos/Starlink/pal/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Requirements",
+        "parent_header": [
+          "PAL - Positional Astronomy Library"
+        ],
+        "type": "Text_excerpt",
+        "value": "Requires that either the SOFA C library or the ERFA library variant\n(which has a more permissive license than SOFA) be installed.  The\n`configure` script will abort if neither SOFA nor ERFA can be\nfound. SOFA can be obtained either from <http://www.iausofa.org> or\nfrom an unofficial github repository (with a configure script) at\n<https://github.com/Starlink/sofa/downloads>.  ERFA can be downloaded\nfrom <https://github.com/liberfa/erfa>.\n"
+      },
+      "source": "https://raw.githubusercontent.com/Starlink/pal/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:05:21",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 30
+      },
+      "technique": "GitHub_API"
+    }
+  ]
+}

@@ -1,0 +1,868 @@
+{
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jackwasey/icd"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/.github/workflows/codeql-analysis.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to `icd`\n\nI'm delighted to welcome code, documentation, tests and bug report from the many `icd` package users. I love feedback on how people are using the package. Feel free to email me or write soemthing in github. If you want `icd` to work differently, or do new things, then the best way is to file a [github issue](https://github.com/jackwasey/icd/issues): there are probably others who have the same or similar needs, and they, or I, may have already thought about them.\n\nA substantial amount of code has now been contributed to the package. Contributions of any kind to `icd` are very welcome. See the [GitHub issues page](https://github.com/jackwasey/icd/issues) to see open issues and feature requests. Documentation, vignettes and examples are very welcome, especially if accompanied by real-world data.\n\nTo build `icd`, `Rcpp` must be compiled from source. This happens automatically on Linux, but on Mac and Windows, the following may sometimes be required, especially after upgrading R itself. This is a limitation of the R build system.\n\n```{r eval = FALSE, echo = TRUE}\ninstall.packages(\"Rcpp\", type = \"source\")\n```\n\n## Issues\n\nIf you find that an ICD code doesn't give the comorbidity or description you expect, this is an issue! If some code runs too slowly to be useful, this is also an issue. As people run more and more real world data through `icd`, more problems will undoubtedly pop up, and may be trivial to fix, so please share these experiences with other users by making [github issues](https://github.com/jackwasey/icd/issues).\n\nThe [github issues](https://github.com/jackwasey/icd/issues) also sketch out future plans and suggestions for the package.\n\n## Coding standards\n\nContributions should follow the coding standard seen elsewhere in the package, which is defined by both the [general recommendations](http://adv-r.had.co.nz/Style.html) of Hadley Wickham, and the `.lintr` file in the project root directory. I'd prefer that [new dependencies](http://www.tinyverse.org) aren't included unless absolutely necessary.\n\n## Testing\n\nNew user-facing code should be covered by the test suite. Code which generates data off-line for inclusion in the package ideally has some unit tests on the code itself, or its output data.\n\n## Security vulnerabilities\n\nIn the unlikely event of a security vulnerability, which is not due to R itself, please email me directly and do not file a github issue immediately.\n\nThanks!\n\nJack Wasey\n"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2014-06-21T18:59:03Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-06T05:30:01Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "*New maintainer/owner needed* Fast ICD-10 and ICD-9 comorbidities, decoding and validation in R. NB use main instead of master for default branch."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+        "type": "String",
+        "value": "Calculate comorbidities, medical risk scores, and\n    work very quickly and precisely with ICD-9 and ICD-10 codes. This\n    package enables a work flow from raw tables of ICD codes in hospital\n    databases to comorbidities. ICD-9 and ICD-10 comorbidity mappings from\n    Quan (Deyo and Elixhauser versions), Elixhauser and AHRQ included.\n    Common ambiguities and code formats are handled. Comorbidity\n    computation includes Hierarchical Condition Codes, and an\n    implementation of AHRQ Clinical Classifications. Risk scores include\n    those of Charlson and van Walraven.  US Clinical Modification, Word\n    Health Organization, Belgian and French ICD-10 codes are supported,\n    most of which are downloaded on demand."
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Introduction",
+        "parent_header": [
+          "*Need new maintainer/owner* Fast comorbidities from ICD-9 and ICD-10 codes, decoding, manipulation and validation"
+        ],
+        "type": "Text_excerpt",
+        "value": "Calculate comorbidities, medical risk scores, and work very quickly and\nprecisely with ICD-9 and ICD-10 codes. This package enables a work flow\nfrom raw tables of ICD codes in hospital databases to comorbidities.\nICD-9 and ICD-10 comorbidity mappings from Quan (Deyo and Elixhauser\nversions), Elixhauser and AHRQ included. Common ambiguities and code\nformats are handled. Comorbidity computation includes Hierarchical\nCondition Codes, and an implementation of AHRQ Clinical Classifications.\nRisk scores include those of Charlson and van Walraven. US Clinical\nModification, Word Health Organization, Belgian and French ICD-10 codes\nare supported, most of which are downloaded on demand.\n\n`icd` is used by many researchers around the world who work in public\nhealth, epidemiology, clinical research, nutrition, journalism, health\nadministration, insurance, and more. I\u2019m grateful for contact from\npeople in these fields for their feedback and code contributions, and\nI\u2019m pleased to say that `icd` has been used in works like the\n[Pulitzer finalist](http://www.pulitzer.org/finalists/staff-propublica)\nwork on [maternal\ndeath](http://www.pulitzer.org/finalists/staff-propublica) by\n[ProPublica](https://www.propublica.org).\n"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Comorbidities example: make \u201cTable 1\u201d summary data",
+        "parent_header": [
+          "*Need new maintainer/owner* Fast comorbidities from ICD-9 and ICD-10 codes, decoding, manipulation and validation"
+        ],
+        "type": "Text_excerpt",
+        "value": "A common requirement for medical research involving patients is\ndetermining new or existing comorbidities. This is often reported in\n*Table 1* of research papers to demonstrate the similarity or\ndifferences of groups of patients. This package is focussed on fast and\naccurate generation of this comorbidity information from raw lists of\nICD-9 and ICD-10 codes.\n\nHere we are using the US National Hospital Discharge Survey 2010 data\nfrom the [nhds](https://github.com/jackwasey/nhds) package. For the sake\nof example, let us compare emergency to other admissions. A real table\nwould have more patient features; this primarily demonstrates how to get\nICD codes into your Table 1.\n\nNHDS 2010 comorbidities to demonstrate Table One creation. Presented as\ncounts (percentage prevalence in group).\n\n``` r\nnhds <- nhds::nhds2010\n# get the comorbidities using the Quan-Deyo version of the Charlson categories\ncmb <- icd::comorbid_quan_deyo(nhds, abbrev_names = FALSE)\nnhds <- cbind(nhds, cmb, stringsAsFactors = FALSE)\nY <- nhds$adm_type == \"emergency\"\ntab_dat <- vapply(\n  unname(unlist(icd_names_charlson)),\n  function(x) {\n    c(sprintf(\"%i (%.2f%%)\", \n              sum(nhds[Y, x]), \n              100 * mean(nhds[Y, x])),\n      sprintf(\"%i (%.2f%%)\",\n              sum(nhds[!Y, x]),\n              100 * mean(nhds[!Y, x])))\n  },\n  character(2)\n)\nknitr::kable(t(tab_dat), col.names = c(\"Emergency\", \"Not emergency\"))\n```\n\n|                                             | Emergency      | Not emergency |\n| :------------------------------------------ | :------------- | :------------ |\n| Myocardial Infarction                       | 2707 (3.69%)   | 1077 (1.38%)  |\n| Congestive Heart Failure                    | 12339 (16.84%) | 5628 (7.19%)  |\n| Periphral Vascular Disease                  | 3798 (5.18%)   | 3042 (3.89%)  |\n| Cerebrovascular Disease                     | 5329 (7.27%)   | 2748 (3.51%)  |\n| Dementia                                    | 2175 (2.97%)   | 728 (0.93%)   |\n| Chronic Pulmonary Disease                   | 11989 (16.36%) | 6762 (8.64%)  |\n| Connective Tissue Disease-Rheumatic Disease | 1527 (2.08%)   | 1131 (1.44%)  |\n| Peptic Ulcer Disease                        | 1044 (1.42%)   | 473 (0.60%)   |\n| Mild Liver Disease                          | 2030 (2.77%)   | 1011 (1.29%)  |\n| Diabetes without complications              | 14399 (19.65%) | 9125 (11.66%) |\n| Diabetes with complications                 | 2719 (3.71%)   | 1449 (1.85%)  |\n| Paraplegia and Hemiplegia                   | 1386 (1.89%)   | 852 (1.09%)   |\n| Renal Disease                               | 9322 (12.72%)  | 4604 (5.88%)  |\n| Cancer                                      | 2724 (3.72%)   | 3496 (4.47%)  |\n| Moderate or Severe Liver Disease            | 893 (1.22%)    | 352 (0.45%)   |\n| Metastatic Carcinoma                        | 2100 (2.87%)   | 1663 (2.12%)  |\n| HIV/AIDS                                    | 0 (0.00%)      | 0 (0.00%)     |\n"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.9916865631485609,
+      "result": {
+        "original_header": "Features",
+        "type": "Text_excerpt",
+        "value": "  - find comorbidities of patients based on ICD-9 or ICD-10 codes,\n    e.g.\u00a0Cancer, Heart Disease\n      - several standard mappings of ICD codes to comorbidities are\n        included (Quan, Deyo, Elixhauser, AHRQ, PCCC)\n      - *very fast* assignment of ICD codes to comorbidities (using\n        novel matrix multiplication algorithm and C++ internally \u2013 see\n        \u2018efficiency\u2019 vignette for details)\n  - use your existing wide or long data format, icd can guess which\n    columns are ICD-9 or ICD-10 codes.\n  - explain and summarize groups of ICD codes in natural language, using\n    ICD editions from the WHO, USA, France and Belgium. Many different\n    annual editions of these data are available, and these may be\n    downloaded automatically when used, or in bulk with\n    `download_all_icd_data()`.\n  - Charlson and Van Walraven score calculations\n  - Hierarchical Condition Codes (HCC) from CMS\n  - Clinical Classifications Software (CCS) comorbidities from AHRQ\n  - Pediatric Complex Chronic Condition comorbidities\n  - AHRQ ICD-10 procedure code classification\n  - correct conversion between different representations of ICD codes,\n    with and without a decimal points, leading and trailing characters\n    (this is not trivial for ICD-9-CM). ICD-9 to ICD-10 cross-walk is\n    not yet implemented\n  - comprehensive test suite to increase confidence in accurate\n    processing of ICD codes\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9681957744188292,
+      "result": {
+        "original_header": "ICD-9 codes",
+        "type": "Text_excerpt",
+        "value": "ICD-9 codes are still in heavy use around the world, particularly in the\nUSA where the ICD-9-CM (Clinical Modification) was in widespread use\nuntil the end of 2015. ICD-10 has been used worldwide for reporting\ncause of death for more than a decade, and ICD-11 is due to be released\nin 2019. ICD-10-CM is now the primary coding scheme for US hospital\nadmission and discharge diagnoses used for regulatory purposes and\nbilling. A vast amount of electronic patient data is recorded with ICD-9\ncodes of some kind: this package enables their use in R alongside\nICD-10. \nICD-9 codes are not numbers, and great care is needed when matching\nindividual codes and ranges of codes. It is easy to make mistakes, hence\nthe need for this package. ICD-9 codes can be presented in *short* 5\ncharacter format, or *decimal* format, with a decimal place separating\nthe code into two groups. There are also codes beginning with V and E\nwhich have different validation rules. Zeroes after a decimal place are\nmeaningful, so numeric ICD-9 codes cannot be used in most cases. In\naddition, most clinical databases contain invalid codes, and even\ndecimal and non-decimal format codes in different places. This package\nprimarily deals with ICD-9-CM (Clinical Modification) codes, but should\nbe applicable or easily extendable to the original WHO ICD-9 system.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8733435176486695,
+      "result": {
+        "original_header": "ICD-10 codes",
+        "type": "Text_excerpt",
+        "value": "ICD-10 has a somewhat simpler format, with consistent use of a letter,\nthen two alphanumeric characters. However, especially for ICD-10-CM,\nthere are a multitude of qualifiers, e.g.\u00a0specifying recurrence,\nlaterality, which vastly increase the number of possible codes. This\npackage recognizes validity of codes by syntax alone, or whether the\ncodes appear in a canonical list. There is not yet the capability of\nconverting between ICD-9 and ICD-10, but comorbidities can be generated\nfrom older ICD-9 codes and newer ICD-10 codes in parallel, and the\ncomorbidities can then be compared.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/jackwasey/icd/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jackwasey/icd/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 62
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/jackwasey/icd/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "jackwasey/icd"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "icd"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/benchmarks/icd-JSS3447-replication/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/benchmarks/icd-JSS3447-replication/Dockerfile",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/bibfix.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/build-quick.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/build-full.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/tidy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/check-env.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/format.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/publish.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/dump-env.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/install-quick.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/configure-and-build.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/gdb_fun.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/check-quick.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/travis-yaml-check.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/check-jit.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/appveyor-yaml-check.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/check-plus.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/rprof-one-cmd.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/check-cran.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/install-full.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/DESCRIPTION-minimalize.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/find-icd-home.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/tools/check-full.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://jackwasey.github.io/icd/"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ci.appveyor.com/api/projects/status/9ncfgxht3n5i8t60/branch/main?svg=true"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://codecov.io/github/jackwasey/icd/coverage.svg?branch=main"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/man/figures/README-example-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/jackwasey/icd/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jackwasey/icd/issues"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "charlson, charlson-comorbidity-index, comorbidities, comorbidity, cran, icd, icd-10, icd-9, icd-codes"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "icd"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "jackwasey"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+        "type": "String",
+        "value": "icd"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 960447,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 142221,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 66068,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "SAS",
+        "size": 22816,
+        "type": "Programming_language",
+        "value": "SAS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 21844,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "M4",
+        "size": 10388,
+        "type": "Programming_language",
+        "value": "M4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 5789,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 5505,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 632,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 380,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jackwasey/icd/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jackwasey",
+          "type": "User"
+        },
+        "date_created": "2018-05-02T12:32:50Z",
+        "date_published": "2018-05-02T12:36:18Z",
+        "description": "# Version 3.0\r\n * major improvement in comorbidity calculation speed using matrix multiplication behind the scenes. ICD-10 codes were slower than ICD-9 code comorbidities before, and are now 1.5 - 2 orders of magnitude faster.\r\n * Added AHRQ clinical condition software (CCS) classification for ICD-9 and ICD-10, thanks to Vitaly Druker, fixes #127\r\n * added 'charlson' synonyms for 'quan_deyo', e.g. Charlson comorbidities can now be found using `comorbid_charlson(patient_data)`\r\n * Added AHRQ clinical condition software (CCS) classification for ICD-9 and ICD-10, thanks to Vitaly Druker, fixes #127\r\n * function names have lost the 'icd_' prefix, old names kept for compatiblity, but easier now to write `comorbid(patient_data)`, and `icd::comorbid` may also be used, and which many consider good practice.\r\n * Assume C++11, which is now four years old, enabling code simplification\r\n * rename all functions to remove the icd_, people can use the concise icd:: if library(icd) was not callled\r\n * deprecated rarely or unused code, including %i9in%\r\n ",
+        "html_url": "https://github.com/jackwasey/icd/releases/tag/v3.0.0",
+        "name": "Scalable comorbidities with sparse matrix multiplication",
+        "release_id": 10812522,
+        "tag": "v3.0.0",
+        "tarball_url": "https://api.github.com/repos/jackwasey/icd/tarball/v3.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/jackwasey/icd/releases/10812522",
+        "value": "https://api.github.com/repos/jackwasey/icd/releases/10812522",
+        "zipball_url": "https://api.github.com/repos/jackwasey/icd/zipball/v3.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jackwasey",
+          "type": "User"
+        },
+        "date_created": "2015-09-04T09:42:09Z",
+        "date_published": "2015-09-04T09:50:02Z",
+        "description": "Obscure memory access error corrected. Other minor updates.\n",
+        "html_url": "https://github.com/jackwasey/icd/releases/tag/v1.2.1",
+        "name": "Need for speed bugfix",
+        "release_id": 1767940,
+        "tag": "v1.2.1",
+        "tarball_url": "https://api.github.com/repos/jackwasey/icd/tarball/v1.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/jackwasey/icd/releases/1767940",
+        "value": "https://api.github.com/repos/jackwasey/icd/releases/1767940",
+        "zipball_url": "https://api.github.com/repos/jackwasey/icd/zipball/v1.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jackwasey",
+          "type": "User"
+        },
+        "date_created": "2015-04-21T16:58:33Z",
+        "date_published": "2015-04-21T17:15:29Z",
+        "description": "Perhaps it is an obsession, but for reproducible research, I think it is important to extract data from source wherever possible. ICD-9-CM code definitions are scattered between very old formal documents, text files (with no hierarchical information) and a monstrous RTF document with everything on it. The RTF is not in any way designed to be machine readable for anything other than display, but, with difficulty, can be parsed to get the data.\n\nThis version derives ICD-9 codes from the RTF and plain text sources. Previously, `icd9` relied on scraping some heading data from an unofficial web site. For the end user, this means greater fidelity to the actual specification (which changes annually), and improved processing of ICD-9 code ranges, e.g. finding parent codes common to a subset of codes in a list, and thus enabling summaries of otherwise complicated lists.\n\nThe OpenMP parallelization and C++11 optimization are now working to the satisfaction of CRAN (and Solaris and OS X compilers), using a configure script which builds the right `Makevars` each installation. I haven't benchmarked `-O3` compiler flag, but this is likely to give a boost.\n\nOther changes and many small improvements and bug fixes are listed in NEWS.md and the git log.\n",
+        "html_url": "https://github.com/jackwasey/icd/releases/tag/v1.2",
+        "name": "1.2 - need for speed and the monstrous RTF ",
+        "release_id": 1196386,
+        "tag": "v1.2",
+        "tarball_url": "https://api.github.com/repos/jackwasey/icd/tarball/v1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/jackwasey/icd/releases/1196386",
+        "value": "https://api.github.com/repos/jackwasey/icd/releases/1196386",
+        "zipball_url": "https://api.github.com/repos/jackwasey/icd/zipball/v1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jackwasey",
+          "type": "User"
+        },
+        "date_created": "2015-03-15T05:02:36Z",
+        "date_published": "2015-03-15T14:34:04Z",
+        "description": "Major change is parallelization and much more efficient coding of comorbidity assignment.\nBug fixes.\n",
+        "html_url": "https://github.com/jackwasey/icd/releases/tag/v1.1",
+        "name": "CRAN release 1.1 with big speed improvements",
+        "release_id": 1051964,
+        "tag": "v1.1",
+        "tarball_url": "https://api.github.com/repos/jackwasey/icd/tarball/v1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/jackwasey/icd/releases/1051964",
+        "value": "https://api.github.com/repos/jackwasey/icd/releases/1051964",
+        "zipball_url": "https://api.github.com/repos/jackwasey/icd/zipball/v1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jackwasey",
+          "type": "User"
+        },
+        "date_created": "2015-01-26T23:37:31Z",
+        "date_published": "2015-01-27T10:13:31Z",
+        "description": "-    Calculate Charlson scores\n-    Sum distinct comorbidities or diagnoses by patient\n-    Core rewrite in C++ for 50+ times speed improvement. 100,000 patients assigned comorbidities in ~2 seconds.\n-    Simplified handling validation of codes. No longer done in every function.\n-    Most functions now guess the ICD-9 code type automatically (e.g. 00321 vs 003.21)\n-    Reduced external dependencies down to Rcpp and checkmate (a very lightweight and fast function argument checker)\n-    Bug fixes (see github)\n-    API changes\n  -    no more validation except in the icd9IsValidXxx functions. Removed stopIfInvalidIcd9, icd9InvalidActions\n  -    internalized utility functions. They are also packaged and tested in jwutil\n  -    deprecated icd9ValidXxx in favour of icd9IsValidXxx\n  -    deprecated icd9ComorbditiesXxx replacing with briefer icd9ComorbidXxx\n  -    stopped exporting benchmarking and SAS code processing.\n",
+        "html_url": "https://github.com/jackwasey/icd/releases/tag/v1.0",
+        "name": "Major update",
+        "release_id": 888378,
+        "tag": "v1.0",
+        "tarball_url": "https://api.github.com/repos/jackwasey/icd/tarball/v1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/jackwasey/icd/releases/888378",
+        "value": "https://api.github.com/repos/jackwasey/icd/releases/888378",
+        "zipball_url": "https://api.github.com/repos/jackwasey/icd/zipball/v1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:11:08",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 248
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to get help",
+        "parent_header": [
+          "*Need new maintainer/owner* Fast comorbidities from ICD-9 and ICD-10 codes, decoding, manipulation and validation"
+        ],
+        "type": "Text_excerpt",
+        "value": "Look at the help files for details and examples of almost every function\nin this package. There are several vignettes showing the main features\n(See list with `vignette(package = \"icd\")`):\n\n  - Introduction `vignette(\"introduction\", package = \"icd\")`\n  - Charlson scores `vignette(\"charlson-scores\", package = \"icd\")`\n  - Examples using ICD-10 codes `vignette(\"ICD-10\", package = \"icd\")`\n  - CMS Hierarchical Condition Codes (HCC) `vignette(\"CMS-HCC\", package\n    = \"icd\")`\n  - Pediatric Complex Chronic Conditions (PCCC) `vignette(\"PCCC\",\n    package = \"icd\")`\n  - Working with ICD code ranges `vignette(\"ranges\", package = \"icd\")`\n  - Comparing comorbidity maps `vignette(\"compare-maps\", package =\n    \"icd\")`\n  - Paper detailing efficient matrix method of comorbidities\n    `vignette(\"efficiency\", package = \"icd\")`\n\nMany users have emailed me directly for help, and I\u2019ll do what I can,\nbut it is often better to examine or add to the list of\n[issues](https://github.com/jackwasey/icd) so we can help each other.\nAdvanced users may look at the [source\ncode](https://github.com/jackwasey/icd), particularly the extensive test\nsuite which exercises all the key functions.\n\n``` r\n?comorbid\n?comorbid_hcc\n?explain_code\n?is_valid\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Examples",
+        "parent_header": [
+          "*Need new maintainer/owner* Fast comorbidities from ICD-9 and ICD-10 codes, decoding, manipulation and validation"
+        ],
+        "type": "Text_excerpt",
+        "value": "See also the vignettes and examples embedded in the help for each\nfunction for more. Here\u2019s a taste:\n\n``` r\n# install.packages(\"icd\")\nlibrary(icd)\n\n# Typical diagnostic code data, with many-to-many relationship\npatient_data\n#>   visit_id  icd9\n#> 1     1000 40201\n#> 2     1000  2258\n#> 3     1000  7208\n#> 4     1000 25001\n#> 5     1001 34400\n#> 6     1001  4011\n#> 7     1002  4011\n#> 8     1000  <NA>\n\n# get comorbidities using Quan's application of Deyo's Charlson comorbidity groups\ncomorbid_charlson(patient_data)\n#>         MI   CHF   PVD Stroke Dementia Pulmonary Rheumatic   PUD LiverMild\n#> 1000 FALSE  TRUE FALSE  FALSE    FALSE     FALSE     FALSE FALSE     FALSE\n#> 1001 FALSE FALSE FALSE  FALSE    FALSE     FALSE     FALSE FALSE     FALSE\n#> 1002 FALSE FALSE FALSE  FALSE    FALSE     FALSE     FALSE FALSE     FALSE\n#>         DM  DMcx Paralysis Renal Cancer LiverSevere  Mets   HIV\n#> 1000  TRUE FALSE     FALSE FALSE  FALSE       FALSE FALSE FALSE\n#> 1001 FALSE FALSE      TRUE FALSE  FALSE       FALSE FALSE FALSE\n#> 1002 FALSE FALSE     FALSE FALSE  FALSE       FALSE FALSE FALSE\n\n# or go straight to the Charlson scores:\ncharlson(patient_data)\n#> 1000 1001 1002 \n#>    2    2    0\n\n# plot summary of Uranium Cancer Registry sample data using AHRQ comorbidities\nplot_comorbid(uranium_pathology)\n```\n\n![](man/figures/README-example-1.png)\n"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Comorbidities example: make \u201cTable 1\u201d summary data",
+        "parent_header": [
+          "*Need new maintainer/owner* Fast comorbidities from ICD-9 and ICD-10 codes, decoding, manipulation and validation"
+        ],
+        "type": "Text_excerpt",
+        "value": "A common requirement for medical research involving patients is\ndetermining new or existing comorbidities. This is often reported in\n*Table 1* of research papers to demonstrate the similarity or\ndifferences of groups of patients. This package is focussed on fast and\naccurate generation of this comorbidity information from raw lists of\nICD-9 and ICD-10 codes.\n\nHere we are using the US National Hospital Discharge Survey 2010 data\nfrom the [nhds](https://github.com/jackwasey/nhds) package. For the sake\nof example, let us compare emergency to other admissions. A real table\nwould have more patient features; this primarily demonstrates how to get\nICD codes into your Table 1.\n\nNHDS 2010 comorbidities to demonstrate Table One creation. Presented as\ncounts (percentage prevalence in group).\n\n``` r\nnhds <- nhds::nhds2010\n# get the comorbidities using the Quan-Deyo version of the Charlson categories\ncmb <- icd::comorbid_quan_deyo(nhds, abbrev_names = FALSE)\nnhds <- cbind(nhds, cmb, stringsAsFactors = FALSE)\nY <- nhds$adm_type == \"emergency\"\ntab_dat <- vapply(\n  unname(unlist(icd_names_charlson)),\n  function(x) {\n    c(sprintf(\"%i (%.2f%%)\", \n              sum(nhds[Y, x]), \n              100 * mean(nhds[Y, x])),\n      sprintf(\"%i (%.2f%%)\",\n              sum(nhds[!Y, x]),\n              100 * mean(nhds[!Y, x])))\n  },\n  character(2)\n)\nknitr::kable(t(tab_dat), col.names = c(\"Emergency\", \"Not emergency\"))\n```\n\n|                                             | Emergency      | Not emergency |\n| :------------------------------------------ | :------------- | :------------ |\n| Myocardial Infarction                       | 2707 (3.69%)   | 1077 (1.38%)  |\n| Congestive Heart Failure                    | 12339 (16.84%) | 5628 (7.19%)  |\n| Periphral Vascular Disease                  | 3798 (5.18%)   | 3042 (3.89%)  |\n| Cerebrovascular Disease                     | 5329 (7.27%)   | 2748 (3.51%)  |\n| Dementia                                    | 2175 (2.97%)   | 728 (0.93%)   |\n| Chronic Pulmonary Disease                   | 11989 (16.36%) | 6762 (8.64%)  |\n| Connective Tissue Disease-Rheumatic Disease | 1527 (2.08%)   | 1131 (1.44%)  |\n| Peptic Ulcer Disease                        | 1044 (1.42%)   | 473 (0.60%)   |\n| Mild Liver Disease                          | 2030 (2.77%)   | 1011 (1.29%)  |\n| Diabetes without complications              | 14399 (19.65%) | 9125 (11.66%) |\n| Diabetes with complications                 | 2719 (3.71%)   | 1449 (1.85%)  |\n| Paraplegia and Hemiplegia                   | 1386 (1.89%)   | 852 (1.09%)   |\n| Renal Disease                               | 9322 (12.72%)  | 4604 (5.88%)  |\n| Cancer                                      | 2724 (3.72%)   | 3496 (4.47%)  |\n| Moderate or Severe Liver Disease            | 893 (1.22%)    | 352 (0.45%)   |\n| Metastatic Carcinoma                        | 2100 (2.87%)   | 1663 (2.12%)  |\n| HIV/AIDS                                    | 0 (0.00%)      | 0 (0.00%)     |\n"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to get help",
+        "parent_header": [
+          "*Need new maintainer/owner* Fast comorbidities from ICD-9 and ICD-10 codes, decoding, manipulation and validation"
+        ],
+        "type": "Text_excerpt",
+        "value": "Look at the help files for details and examples of almost every function\nin this package. There are several vignettes showing the main features\n(See list with `vignette(package = \"icd\")`):\n\n  - Introduction `vignette(\"introduction\", package = \"icd\")`\n  - Charlson scores `vignette(\"charlson-scores\", package = \"icd\")`\n  - Examples using ICD-10 codes `vignette(\"ICD-10\", package = \"icd\")`\n  - CMS Hierarchical Condition Codes (HCC) `vignette(\"CMS-HCC\", package\n    = \"icd\")`\n  - Pediatric Complex Chronic Conditions (PCCC) `vignette(\"PCCC\",\n    package = \"icd\")`\n  - Working with ICD code ranges `vignette(\"ranges\", package = \"icd\")`\n  - Comparing comorbidity maps `vignette(\"compare-maps\", package =\n    \"icd\")`\n  - Paper detailing efficient matrix method of comorbidities\n    `vignette(\"efficiency\", package = \"icd\")`\n\nMany users have emailed me directly for help, and I\u2019ll do what I can,\nbut it is often better to examine or add to the list of\n[issues](https://github.com/jackwasey/icd) so we can help each other.\nAdvanced users may look at the [source\ncode](https://github.com/jackwasey/icd), particularly the extensive test\nsuite which exercises all the key functions.\n\n``` r\n?comorbid\n?comorbid_hcc\n?explain_code\n?is_valid\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+        "type": "String",
+        "value": "4.0.9.9000"
+      },
+      "source": "https://raw.githubusercontent.com/jackwasey/icd/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ]
+}

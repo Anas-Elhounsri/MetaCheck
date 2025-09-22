@@ -1,0 +1,895 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.949743076975088,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Ifremer",
+        "email": "steven.piel@ifremer.fr",
+        "type": "String",
+        "value": "Steven PIEL"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          {
+            "email": "sophie.bregent@altran.com",
+            "name": "Sophie Bregent",
+            "organization": "Altran",
+            "url": null,
+            "value": "Sophie Bregent"
+          },
+          {
+            "email": "sebastien.crouzille@altran.com",
+            "name": "Sebastien Crouzille",
+            "organization": "Altran",
+            "url": null,
+            "value": "Sebastien Crouzille"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "name": "Ifremer",
+            "type": "Agent"
+          }
+        ],
+        "datePublished": "2007",
+        "format": "cff",
+        "title": "OCTOPUS Software",
+        "type": "File_dump",
+        "url": "https://doi.org/10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0",
+        "value": "# This CITATION.cff file was generated with cffinit.\n# Visit https://bit.ly/cffinit to generate yours today!\n\ncff-version: 1.2.0\ntitle: OCTOPUS Software\nmessage: >-\n  A multiformat checker, converter ans splitter tool for\n  SeaDataNet standards. It is a unique and ergonomic tool\n  for many format conversions.\ntype: software\nauthors:\n  - name: Ifremer\n    address: 1625 route de Sainte-Anne\n    city: Plouzan\u00e9\n    post-code: '29280'\n    country: FR\n    location: Bretagne\n    website: 'https://www.seadatanet.org/'\n    email: sdn-userdesk@seadatanet.org\nidentifiers:\n  - type: url\n    value: 'https://doi.org/10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0'\nrepository-code: 'https://github.com/seadatanet/octopus'\nurl: 'https://www.seadatanet.org/Software/OCTOPUS'\nabstract: >-\n  OCTOPUS is a multiformat splitter & converter tool for\n  SeaDataNet (SDN) formats. It is a unique and ergonomic\n  tool for many format conversions.\n\n  The following conversions are possible with OCTOPUS:\n  - Non SDN MedAtlas to SDN MedAtlas\n  - Non SDN MedAtlas to SDN ODV\n  - Non SDN MedAtlas to SDN NetCDF\n  - Non SDN NetCDF Shipboard ADCP to SDN NetCDF\n  - SDN MedAtlas to SDN ODV\n  - SDN MedAtlas to SDN NetCDF\n  - SDN ODV to SDN NetCDF\n  - SDN NetCDF to SDN ODV\n\n  And for marine geophysical data:\n  - MGDv81 to SDN ODV\n  - MGDv98 to SDN ODV\n\n  OCTOPUS also allows:\n  - to split a multistation file into monostation ones\n  - to extract 1 to n stations from a multistation file and\n  export them into another multistation file or several\n  monostation ones\n  - to check the compliance of SDN MedAtlas, SDN ODV, SDN\n  NetCDF and HFRadar NetCDF formats\n  - to check the compliance of ODV variant SDN formats for\n  biology, microlitter and flow cytometry\n  - to convert EGO glider files to SDN netCDF (CFPoint)\n  format\n  - to generate the SDN coupling table\nkeywords:\n  - SeaDataNet\n  - check\n  - convertion\n  - split\n  - ODV\n  - netCDF\n  - MedAtlas\n  - MGD\n  - EGO\n  - ADCP\n  - ODV variants\n  - Biology (BODV)\n  - Flow cytometry\n  - Microlitter in water column (MODV)\n  - Microlitter in sediments (SODV)\n  - CDI\nlicense: LGPL-3.0\nversion: '3.0'\ndate-released: '2007-06-39'\n"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/seadatanet/octopus"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/seadatanet/octopus"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributors": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributors",
+        "parent_header": [
+          "OCTOPUS Software (multiformat checker, splitter and converter tool for <a href=\"https://archimer.ifremer.fr/doc/00454/56547/\">SeaDataNet formats</a>)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Project Supervisor:\n\n- [Steven PIEL](https://github.com/spiel-ifremer), [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France, [ORCID:0009-0008-1759-5254](https://orcid.org/0009-0008-1759-5254)\n\nDevelopers:\n\n- S\u00e9bastien CROUZILLE, Capgemini Engineering, Brest, France\n- Pierre MAHOUDO, Capgemini Engineering, Brest, France\n\nActual Contributors:\n\n- Vincent FACHERO, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France\n- Julie GATTI, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France, [ORCID:0000-0001-9327-4366](https://orcid.org/0000-0001-9327-4366)\n- Fran\u00e7oise LE HINGRAT, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France\n- C\u00e9cile PERTUISOT, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France, [ORCID:0000-0002-5474-2224](https://orcid.org/0000-0002-5474-2224)\n- Marine VERNET, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France, [ORCID:0000-0002-3906-5579](https://orcid.org/0000-0002-3906-5579)\n\nPast Contributors:\n\n- Sophie BREGENT, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France\n- Mich\u00e8le FICHAUT, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France, [ORCID:0000-0001-5900-6149](https://orcid.org/0000-0001-5900-6149)\n- Leo LE LONQUER, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France\n- Vanessa TOSELLO, [Ifremer](https://edmo.seadatanet.org/report/486), Brest, France, [ORCID:0009-0009-7337-5245](https://orcid.org/0009-0009-7337-5245)\n"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-07-03T14:05:23Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2015-07-03"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2015-07-03"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-02T08:45:26Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-09-19"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OCTOPUS: a multiformat checker, splitter and converter tool for SeaDataNet standards. It is a unique and ergonomic tool for many format conversions."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OCTOPUS is a multiformat checker, splitter and converter tool for SeaDataNet (SDN) formats. It is a unique and ergonomic tool for many format conversions."
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9207125980307896,
+      "result": {
+        "original_header": "Overview",
+        "type": "Text_excerpt",
+        "value": "OCTOPUS is a **multiformat checker, splitter and converter tool** for [SeaDataNet (SDN) formats](https://archimer.ifremer.fr/doc/00454/56547/). It is a unique and ergonomic tool for many format conversions. \nAnd for marine geophysical data: \n- to split a multistation file into monostation ones\n- to extract 1 to n stations from a multistation file and export them into another multistation file or several monostation ones\n- to check the compliance of SDN MedAtlas, SDN ODV, SDN NetCDF and HFRadar NetCDF formats\n- to check the compliance of ODV variant SDN formats for biology, microlitter and flow cytometry\n- to convert EGO glider files to SDN netCDF (CFPoint) format\n- to generate the SDN coupling table\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/seadatanet/octopus/tree/main/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/seadatanet/octopus/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/seadatanet/octopus/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://files.seadatanet.org/Logiciels/octopus-1.11.0-Win.zip"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/seadatanet/octopus/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "seadatanet/octopus"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "OCTOPUS Software (multiformat checker, splitter and converter tool for SeaDataNet formats)"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/seadatanet/octopus/main/build/octopus.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/seadatanet/octopus/main/build/octopus_java9.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/seadatanet/octopus/main/build/linux/octopus.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.12770/097e42fc-1aeb-4683-a781-35d92fa307f0"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Supported Environments",
+        "parent_header": [
+          "OCTOPUS Software (multiformat checker, splitter and converter tool for <a href=\"https://archimer.ifremer.fr/doc/00454/56547/\">SeaDataNet formats</a>)",
+          "Requirements, Supported Environments, Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "The standalone version version doesn't require Java.\n\nOctopus is available for multiple platforms: Windows, Linux. 32 bits platforms are not supported.\n"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "OCTOPUS Software (multiformat checker, splitter and converter tool for <a href=\"https://archimer.ifremer.fr/doc/00454/56547/\">SeaDataNet formats</a>)",
+          "Requirements, Supported Environments, Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "Download the Octopus software from [SeaDataNet portal](https://www.seadatanet.org/Software/OCTOPUS/Download-Octopus-1.10.0).\n\nSimply choose the version according to your system (Linux/Windows), and your Java configuration (\"classic\", \"standalone\").\nCopy the zip file on your computer and unzip it. The change log is available in OCTOPUS menu `help> about`\n"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/seadatanet/octopus/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cdi, checker, common, converter, data, ego, index, medatlas, modv, netcdf, oceanography, octopus, seadatanet, sodv, splitter"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "SeaDataNet",
+          "check",
+          "convertion",
+          "split",
+          "ODV",
+          "netCDF",
+          "MedAtlas",
+          "MGD",
+          "EGO",
+          "ADCP",
+          "ODV variants",
+          "Biology (BODV)",
+          "Flow cytometry",
+          "Microlitter in water column (MODV)",
+          "Microlitter in sediments (SODV)",
+          "CDI"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "value": "https://api.github.com/licenses/lgpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/LGPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/LGPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/LGPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Please refer to http://java.com/license\n"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/jre/linux/64bits/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "OCTOPUS Software (multiformat checker, splitter and converter tool for <a href=\"https://archimer.ifremer.fr/doc/00454/56547/\">SeaDataNet formats</a>)"
+        ],
+        "type": "Text_excerpt",
+        "value": "[GNU Lesser General Public License v3.0 only](https://spdx.org/licenses/LGPL-3.0-only.html)"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.seadatanet.org/var/storage/images/_aliases/fullsize/media/seadatanet2-media/illustrations_sdc_sdn2_sdn/octopus_logo_2/10256-1-eng-GB/Octopus_logo_2.png"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "octopus"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Octopus"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "seadatanet"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_distribution": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          {
+            "id": "nexus-ifremer-release",
+            "name": "maven-release",
+            "url": "https://nexus.ifremer.fr/repository/maven-private-release/"
+          },
+          {
+            "id": "nexus-ifremer-snapshot",
+            "name": "maven-snapshot",
+            "url": "https://nexus.ifremer.fr/repository/maven-private-snapshot/"
+          },
+          {
+            "id": "gitlab-sdn-maven",
+            "url": "https://gitlab.ifremer.fr/api/v4/groups/seadatanet/-/packages/maven"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fr.ifremer.octopus"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Roff",
+        "size": 663792,
+        "type": "Programming_language",
+        "value": "Roff"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "size": 300328,
+        "type": "Programming_language",
+        "value": "Java"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 30762,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 10473,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 6391,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "type": "Programming_language",
+        "value": "Java",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "medatlasreader",
+        "type": "Software_application",
+        "value": "fr.ifremer.seadatanet.medatlasreader",
+        "version": "0.45-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mgd",
+        "type": "Software_application",
+        "value": "fr.ifremer.mgd",
+        "version": "1.24-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "SoftwareVersionApi-javax",
+        "type": "Software_application",
+        "value": "fr.ifremer.SoftwareVersionApi-javax",
+        "version": "3.1.2"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "apache-any23-encoding",
+        "type": "Software_application",
+        "value": "org.apache.any23.apache-any23-encoding",
+        "version": "1.1"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "derby",
+        "type": "Software_application",
+        "value": "org.apache.derby.derby",
+        "version": "10.12.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "slf4j-api",
+        "type": "Software_application",
+        "value": "org.slf4j.slf4j-api",
+        "version": "1.7.28"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "axis",
+        "type": "Software_application",
+        "value": "org.apache.axis.axis",
+        "version": "1.4"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jaxrpc-api",
+        "type": "Software_application",
+        "value": "javax.xml.jaxrpc-api",
+        "version": "1.1"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "commons-discovery",
+        "type": "Software_application",
+        "value": "commons-discovery.commons-discovery",
+        "version": "0.5"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "wsdl4j",
+        "type": "Software_application",
+        "value": "wsdl4j.wsdl4j",
+        "version": "1.6.3"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "commons-lang",
+        "type": "Software_application",
+        "value": "commons-lang.commons-lang",
+        "version": "2.6"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "commons-cli",
+        "type": "Software_application",
+        "value": "commons-cli.commons-cli",
+        "version": "1.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "commons-io",
+        "type": "Software_application",
+        "value": "commons-io.commons-io",
+        "version": "2.4"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "log4j-api",
+        "type": "Software_application",
+        "value": "org.apache.logging.log4j.log4j-api",
+        "version": "2.17.1"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "log4j-core",
+        "type": "Software_application",
+        "value": "org.apache.logging.log4j.log4j-core",
+        "version": "2.17.1"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "junit",
+        "type": "Software_application",
+        "value": "junit.junit",
+        "version": "4.12"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "activation",
+        "type": "Software_application",
+        "value": "javax.activation.activation",
+        "version": "1.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "javax.mail",
+        "type": "Software_application",
+        "value": "com.sun.mail.javax.mail",
+        "version": "1.5.5"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Requirements",
+        "parent_header": [
+          "OCTOPUS Software (multiformat checker, splitter and converter tool for <a href=\"https://archimer.ifremer.fr/doc/00454/56547/\">SeaDataNet formats</a>)",
+          "Requirements, Supported Environments, Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "### Requirements\n\nOctopus is written in Java.\n\nOctopus is available in 2 versions:\n\n- a \"classic\" version, without Java. It requires java 1.8.0_131 or greater (but lower than 1.9) already installed in the system.\n- a \"standalone\" version, with Java 1.8.0_201 bundled into it (located in the `octopus/jre` directory).\n"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Supported Environments",
+        "parent_header": [
+          "OCTOPUS Software (multiformat checker, splitter and converter tool for <a href=\"https://archimer.ifremer.fr/doc/00454/56547/\">SeaDataNet formats</a>)",
+          "Requirements, Supported Environments, Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "The standalone version version doesn't require Java.\n\nOctopus is available for multiple platforms: Windows, Linux. 32 bits platforms are not supported.\n"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "faq",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:59:21",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Support",
+        "parent_header": [
+          "OCTOPUS Software (multiformat checker, splitter and converter tool for <a href=\"https://archimer.ifremer.fr/doc/00454/56547/\">SeaDataNet formats</a>)",
+          "Software metadata"
+        ],
+        "type": "Text_excerpt",
+        "value": "For any support or question please contact [sdn-userdesk@seadatanet.org](mailto:sdn-userdesk@seadatanet.org)\n"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Get started",
+        "parent_header": [
+          "OCTOPUS Software (multiformat checker, splitter and converter tool for <a href=\"https://archimer.ifremer.fr/doc/00454/56547/\">SeaDataNet formats</a>)"
+        ],
+        "type": "Text_excerpt",
+        "value": "OCTOPUS can be used in interactive mode or in batch mode.\n\nFor settings and details of all other available functions, please refer to the [user manual](https://www.seadatanet.org/content/download/698/file/SDN_OCTOPUS_UserManual.pdf).\n"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.11.0"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "1.11.1-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/seadatanet/octopus/main/pom.xml",
+      "technique": "code_parser"
+    }
+  ]
+}

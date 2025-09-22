@@ -1,0 +1,1209 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Christophe Laures"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to make participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, sex characteristics, gender identity and expression,\nlevel of experience, education, socio-economic status, nationality, personal\nappearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\n  advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies within all project spaces, and it also applies when\nan individual is representing the project or its community in public spaces.\nExamples of representing a project or community include using an official\nproject e-mail address, posting via an official social media account, or acting\nas an appointed representative at an online or offline event. Representation of\na project may be further defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at [perf-support](mailto:perf-support@lists.kit.edu). All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see\nhttps://www.contributor-covenant.org/faq\n"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/EOSC-synergy/eosc-perf-frontend"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/EOSC-synergy/eosc-perf-frontend.git"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nContributions are welcome, and they are greatly appreciated!\nWhen contributing to this repository, please first discuss the change you wish to make via issue,\nemail, or any other method with the owners of this repository before making a change.\n\nPlease note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.\n\n\n## Reporting bugs\nReport bugs at https://github.com/EOSC-synergy/eosc-perf-frontend/issues\n\nIf you are reporting a bug, please include:\n\n* Your operating system name and version.\n* Any details about your local setup that might be helpful in troubleshooting.\n* If you can, provide detailed steps to reproduce the bug.\n* If you don't have steps to reproduce the bug, just note your observations in\n  as much detail as you can. Questions to start a discussion about the issue\n  are welcome.\n\n### Submit Feedback\nThe best way to send feedback is to file an issue at the follwing URL:\n\nhttps://github.com/EOSC-synergy/eosc-perf-frontend/issues\n\nIf you are proposing a feature:\n\n* Explain in detail how it would work.\n* Keep the scope as narrow as possible, to make it easier to implement.\n* Remember that this is a volunteer-driven project, and that contributions\n  are welcome :)\n\n## Pull Request Process\n\nYou are welcome to open Pull Requests for either fixing a bug, adding a new feature, contributing to the documentation, etc.\n\n1. Fork the repository and create a new branch from `main`.\n2. If you\u2019ve fixed a bug or added code that should be tested, add tests!\n3. Document your code using [jsdoc](https://jsdoc.app/index.html).\n4. Ensure the test suite passes: `yarn test`.\n5. Make sure your code lints (for example via `yarn lint`).\n6. Ensure your code is formatted using [prettier](https://prettier.io/).\n7. Update the README.md with details of changes, e.g. new environment variables, exposed ports, container parameters etc.\n8. Name your commits using [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).\n9. Push the changes to your fork.\n10. Create a Pull Request to this repository.\n11. Review and address comments on your pull request.\n\n\n## Coding Standards\n* [prettier](https://prettier.io/) is used for formatting\n* [yarn](https://yarnpkg.com/) is our package manager\n* The app is built on [next.js](https://nextjs.org/)\n* Tests are run using [Jest](https://jestjs.io/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)\n* [axios](https://axios-http.com/docs/intro) and [react-query](https://react-query-v3.tanstack.com/) used for API communication\n* The UI is built on [bootstrap](https://getbootstrap.com/) and [react-bootstrap](https://react-bootstrap.github.io/)\n* Comparison diagrams are generated using [Apache ECharts](https://echarts.apache.org/en/index.html) and [Chart.js](https://www.chartjs.org/)\n* [oidc-client-ts](https://github.com/authts/oidc-client-ts) is used for authentication\n"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-03-28T14:31:32Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-11-08T01:57:17Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "EOSC-Perf Frontend"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "eosc-perf-frontend is the Frontend of the EOSC Performance service, a web service to compare computing resources."
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/EOSC-synergy/eosc-perf-frontend/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/EOSC-synergy/eosc-perf-frontend/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "EOSC-synergy/eosc-perf-frontend"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "EOSC-Performance Frontend"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "package.json",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "docker_compose",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/.sqa/docker-compose.yml"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/.sqa/docker-compose.yml",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "package.json"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/EOSC-synergy/eosc-perf-frontend/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/EOSC-synergy/eosc-perf-frontend/issues"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2020 Project EOSC-synergy\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/public/images/eosc-perf-logo.4.svg"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "eosc-perf-frontend"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "eosc-perf-frontend"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "EOSC-synergy"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "frontend-app"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TypeScript",
+        "size": 227563,
+        "type": "Programming_language",
+        "value": "TypeScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 25974,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 2165,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 1773,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "SCSS",
+        "size": 190,
+        "type": "Programming_language",
+        "value": "SCSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "typescript",
+        "type": "Programming_language",
+        "value": "typescript",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "javascript",
+        "type": "Programming_language",
+        "value": "javascript",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.5281/zenodo.7366362"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "TheChristophe",
+          "type": "User"
+        },
+        "date_created": "2022-11-23T12:39:42Z",
+        "date_published": "2022-11-26T18:00:32Z",
+        "description": "feat: Add saerch by execution date\r\nfeat: Add tag filter to search\r\n\r\nfix: Result table loading overlay\r\nfix: Make docker build again",
+        "html_url": "https://github.com/EOSC-synergy/eosc-perf-frontend/releases/tag/v1.3.0",
+        "name": "v1.3.0",
+        "release_id": 84241147,
+        "tag": "v1.3.0",
+        "tarball_url": "https://api.github.com/repos/EOSC-synergy/eosc-perf-frontend/tarball/v1.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/EOSC-synergy/eosc-perf-frontend/releases/84241147",
+        "value": "https://api.github.com/repos/EOSC-synergy/eosc-perf-frontend/releases/84241147",
+        "zipball_url": "https://api.github.com/repos/EOSC-synergy/eosc-perf-frontend/zipball/v1.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "TheChristophe",
+          "type": "User"
+        },
+        "date_created": "2022-11-09T13:22:28Z",
+        "date_published": "2022-11-26T17:57:19Z",
+        "description": "feat: Add url to benchmark submit form\r\nfeat: Add filters to url\r\nfeat: Implement browser memory for benchmark columns\r\nfeat: Add SSR for results page, remember columns in URL\r\nfeat: Add clear selection button\r\nfeat: Add links to documentation to header\r\nfeat: Show version/tag in footer\r\n\r\nfix: Disable refetching auth metadata every time on gaining focus\r\nfix: Revert to previous oidc library\r\nfix: Broken page when no data could be fetched in SSR\r\nfix: Attempt fixing not-registered label\r\nfix: Display \"Not registered\" if not registered\r\nfix: Remove dead NEXT_PUBLIC_API_HOST value\r\nfix: Add some margin to collapsed navbar\r\nfix: Clean up Dockerfile .git versioning\r\nfix: Move npm build to CMD in production\r\nfix: Add .git to dockerfile for git version in footer\r\nfix: Disable clear selection button if no selection\r\nfix: Make version tag smaller, move to own line\r\nfix: Add theme color for safari overscroll\r\nfix: Make footer stay at bottom of page\r\n",
+        "html_url": "https://github.com/EOSC-synergy/eosc-perf-frontend/releases/tag/v1.2.0",
+        "name": "v1.2.0",
+        "release_id": 84241086,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/EOSC-synergy/eosc-perf-frontend/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/EOSC-synergy/eosc-perf-frontend/releases/84241086",
+        "value": "https://api.github.com/repos/EOSC-synergy/eosc-perf-frontend/releases/84241086",
+        "zipball_url": "https://api.github.com/repos/EOSC-synergy/eosc-perf-frontend/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@eosc-perf/eosc-perf-client",
+        "type": "Software_application",
+        "value": "@eosc-perf/eosc-perf-client@^1.0.0-SNAPSHOT.202309140158",
+        "version": "^1.0.0-SNAPSHOT.202309140158"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@popperjs/core",
+        "type": "Software_application",
+        "value": "@popperjs/core@^2.11.7",
+        "version": "^2.11.7"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "axios",
+        "type": "Software_application",
+        "value": "axios@^1.5.0",
+        "version": "^1.5.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "bootstrap",
+        "type": "Software_application",
+        "value": "bootstrap@^5.3.1",
+        "version": "^5.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "chart.js",
+        "type": "Software_application",
+        "value": "chart.js@^4.4.0",
+        "version": "^4.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "clsx",
+        "type": "Software_application",
+        "value": "clsx@^2.0.0",
+        "version": "^2.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "echarts",
+        "type": "Software_application",
+        "value": "echarts@^5.4.3",
+        "version": "^5.4.3"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "echarts-for-react",
+        "type": "Software_application",
+        "value": "echarts-for-react@^3.0.2",
+        "version": "^3.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "echarts-stat",
+        "type": "Software_application",
+        "value": "echarts-stat@^1.2.0",
+        "version": "^1.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lodash",
+        "type": "Software_application",
+        "value": "lodash@^4.17.21",
+        "version": "^4.17.21"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "next",
+        "type": "Software_application",
+        "value": "next@^13.4.19",
+        "version": "^13.4.19"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "next-transpile-modules",
+        "type": "Software_application",
+        "value": "next-transpile-modules@^10.0.1",
+        "version": "^10.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "oidc-client-ts",
+        "type": "Software_application",
+        "value": "oidc-client-ts@^2.2.5",
+        "version": "^2.2.5"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "prismjs",
+        "type": "Software_application",
+        "value": "prismjs@^1.29.0",
+        "version": "^1.29.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "qs",
+        "type": "Software_application",
+        "value": "qs@^6.11.2",
+        "version": "^6.11.2"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react",
+        "type": "Software_application",
+        "value": "react@^18.2.0",
+        "version": "^18.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-bootstrap",
+        "type": "Software_application",
+        "value": "react-bootstrap@^2.8.0",
+        "version": "^2.8.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-bootstrap-icons",
+        "type": "Software_application",
+        "value": "react-bootstrap-icons@^1.10.3",
+        "version": "^1.10.3"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-chartjs-2",
+        "type": "Software_application",
+        "value": "react-chartjs-2@^5.2.0",
+        "version": "^5.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-datepicker",
+        "type": "Software_application",
+        "value": "react-datepicker@^4.17.0",
+        "version": "^4.17.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-dom",
+        "type": "Software_application",
+        "value": "react-dom@^18.2.0",
+        "version": "^18.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-hook-form",
+        "type": "Software_application",
+        "value": "react-hook-form@^7.46.1",
+        "version": "^7.46.1"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-oidc-context",
+        "type": "Software_application",
+        "value": "react-oidc-context@^2.3.0",
+        "version": "^2.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-query",
+        "type": "Software_application",
+        "value": "react-query@^3.39.3",
+        "version": "^3.39.3"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sass",
+        "type": "Software_application",
+        "value": "sass@^1.67.0",
+        "version": "^1.67.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "uuid",
+        "type": "Software_application",
+        "value": "uuid@^9.0.1",
+        "version": "^9.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@babel/cli",
+        "type": "Software_application",
+        "value": "@babel/cli@^7.17.6",
+        "version": "^7.17.6"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@babel/core",
+        "type": "Software_application",
+        "value": "@babel/core@^7.17.8",
+        "version": "^7.17.8"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@babel/preset-env",
+        "type": "Software_application",
+        "value": "@babel/preset-env@^7.16.8",
+        "version": "^7.16.8"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@next/bundle-analyzer",
+        "type": "Software_application",
+        "value": "@next/bundle-analyzer@^12.1.1",
+        "version": "^12.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@next/eslint-plugin-next",
+        "type": "Software_application",
+        "value": "@next/eslint-plugin-next@^12.1.1",
+        "version": "^12.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@stoplight/prism-cli",
+        "type": "Software_application",
+        "value": "@stoplight/prism-cli@^4.8.0",
+        "version": "^4.8.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@testing-library/jest-dom",
+        "type": "Software_application",
+        "value": "@testing-library/jest-dom@^5.16.3",
+        "version": "^5.16.3"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@testing-library/react",
+        "type": "Software_application",
+        "value": "@testing-library/react@^13.4.0",
+        "version": "^13.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/lodash",
+        "type": "Software_application",
+        "value": "@types/lodash@^4.14.198",
+        "version": "^4.14.198"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/node",
+        "type": "Software_application",
+        "value": "@types/node@^18.11.9",
+        "version": "^18.11.9"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/prismjs",
+        "type": "Software_application",
+        "value": "@types/prismjs@^1.16.6",
+        "version": "^1.16.6"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/qs",
+        "type": "Software_application",
+        "value": "@types/qs@^6.9.7",
+        "version": "^6.9.7"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/react",
+        "type": "Software_application",
+        "value": "@types/react@^18.0.24",
+        "version": "^18.0.24"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/react-datepicker",
+        "type": "Software_application",
+        "value": "@types/react-datepicker@^4.3.2",
+        "version": "^4.3.2"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/react-highlight",
+        "type": "Software_application",
+        "value": "@types/react-highlight@^0.12.5",
+        "version": "^0.12.5"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@types/uuid",
+        "type": "Software_application",
+        "value": "@types/uuid@^8.3.3",
+        "version": "^8.3.3"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@typescript-eslint/eslint-plugin",
+        "type": "Software_application",
+        "value": "@typescript-eslint/eslint-plugin@^5.61.0",
+        "version": "^5.61.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "@typescript-eslint/parser",
+        "type": "Software_application",
+        "value": "@typescript-eslint/parser@^5.61.0",
+        "version": "^5.61.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "commit-and-tag-version",
+        "type": "Software_application",
+        "value": "commit-and-tag-version@^11.2.3",
+        "version": "^11.2.3"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cross-env",
+        "type": "Software_application",
+        "value": "cross-env@^7.0.3",
+        "version": "^7.0.3"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cypress",
+        "type": "Software_application",
+        "value": "cypress@^13.2.0",
+        "version": "^13.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint",
+        "type": "Software_application",
+        "value": "eslint@^8.49.0",
+        "version": "^8.49.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint-config-next",
+        "type": "Software_application",
+        "value": "eslint-config-next@^13.4.19",
+        "version": "^13.4.19"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint-config-prettier",
+        "type": "Software_application",
+        "value": "eslint-config-prettier@^9.0.0",
+        "version": "^9.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint-plugin-cypress",
+        "type": "Software_application",
+        "value": "eslint-plugin-cypress@^2.14.0",
+        "version": "^2.14.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint-plugin-eslint-comments",
+        "type": "Software_application",
+        "value": "eslint-plugin-eslint-comments@^3.2.0",
+        "version": "^3.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint-plugin-github",
+        "type": "Software_application",
+        "value": "eslint-plugin-github@^4.10.0",
+        "version": "^4.10.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "eslint-plugin-prettier",
+        "type": "Software_application",
+        "value": "eslint-plugin-prettier@^5.0.0",
+        "version": "^5.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jest",
+        "type": "Software_application",
+        "value": "jest@^29.7.0",
+        "version": "^29.7.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "msw",
+        "type": "Software_application",
+        "value": "msw@^1.3.1",
+        "version": "^1.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "openapi-typescript-codegen",
+        "type": "Software_application",
+        "value": "openapi-typescript-codegen@^0.25.0",
+        "version": "^0.25.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "prettier",
+        "type": "Software_application",
+        "value": "prettier@^3.0.3",
+        "version": "^3.0.3"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "react-test-renderer",
+        "type": "Software_application",
+        "value": "react-test-renderer@^18.2.0",
+        "version": "^18.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ts-node",
+        "type": "Software_application",
+        "value": "ts-node@^10.9.1",
+        "version": "^10.9.1"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "typedoc",
+        "type": "Software_application",
+        "value": "typedoc@^0.25.1",
+        "version": "^0.25.1"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "typescript",
+        "type": "Software_application",
+        "value": "typescript@^5.2.2",
+        "version": "^5.2.2"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "webpack-bundle-analyzer",
+        "type": "Software_application",
+        "value": "webpack-bundle-analyzer@^4.9.1",
+        "version": "^4.9.1"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "run": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "To run the frontend separately:",
+        "parent_header": [
+          "EOSC-Performance Frontend",
+          "Instructions"
+        ],
+        "type": "Text_excerpt",
+        "value": "1. (optional) Set up a `.env.local` file, overriding any values from .env\n   Available fields to overwrite: \n   ```\n   NEXT_PUBLIC_OAUTH_AUTHORITY=<any url>\n   NEXT_PUBLIC_OIDC_CLIENT_ID=<any oauth client id registered on the authority>\n   NEXT_PUBLIC_API_ROUTE=development | production | <any url>\n   NEXT_PUBLIC_OIDC_REDIRECT_HOST=<any url>\n   ```\n2. Install dependencies: `npm install`\n3. - If deploying as production: `npm run build`, `npm run start`\n   - If developing: `npm run dev`\n"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "To run the whole EOSC Performance Platform",
+        "parent_header": [
+          "EOSC-Performance Frontend",
+          "Instructions"
+        ],
+        "type": "Text_excerpt",
+        "value": "Please refer to the [central repository](https://github.com/EOSC-synergy/eosc-perf) for more information.\n"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:15:58",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "non-software"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "1.4.3"
+      },
+      "source": "https://raw.githubusercontent.com/EOSC-synergy/eosc-perf-frontend/main/package.json",
+      "technique": "code_parser"
+    }
+  ]
+}

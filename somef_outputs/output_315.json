@@ -1,0 +1,676 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "seismology, civil engineering"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Southern California Earthquake Center/University of Southern California",
+        "email": "fsilva@usc.edu",
+        "type": "String",
+        "value": "Fabio Silva"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Southern California Earthquake Center/University of Southern California",
+        "email": "maechlin@usc.edu",
+        "identifier": " http://orcid.org/0000-0002-9221-7068",
+        "type": "String",
+        "value": "Philip Maechling"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Credits",
+        "type": "Text_excerpt",
+        "value": "Development of BBP is a group effort. Developers that have contributed to the BBP docker software are listed in the [CREDITS.md](CREDITS.md) file in this repository.\n"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to make participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, sex characteristics, gender identity and expression,\nlevel of experience, education, socio-economic status, nationality, personal\nappearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\n  advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies within all project spaces, and it also applies when\nan individual is representing the project or its community in public spaces.\nExamples of representing a project or community include using an official\nproject e-mail address, posting via an official social media account, or acting\nas an appointed representative at an online or offline event. Representation of\na project may be further defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at software@scec.org. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 1.4,\navailable at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html\n\nFor answers to common questions about this code of conduct, see\nhttps://www.contributor-covenant.org/faq\n"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/SCECcode/create_bbp_docker"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sceccode/bbp"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to the SCEC Broadband Platform (BBP) System\n\nThis document provides an overview on how to contribute to BBP, and will provide step-by-step instructions on a practical contribution workflow.\n\n## Getting Started\n\n* Make sure you have an active GitHub account\n* Download and install git\n* Read the git documentation\n* Install the main branch of the SCECcode/bbp.git repository\n* If you haven't worked with Git Forks before, make sure to read the documentation linked below.\n\n## Submitting a Pull Request\n\nPull requests are great! Please submit them to us! Here's how:\n\n1. Fork the repo. [Some helping info](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)\n2. Make a new branch. For features/additions base your new branch at `dev`.\n3. Add a test! Only pull requests for documentation and refactoring do not require a test.\n4. Make sure the tests pass. Run `./run_tests.sh` in the top-level directory of the repo.\n5. Push your changes to your fork and submit a pull request. Make sure to set the branch to `ucvm:dev`.\n6. Wait for our review. There may be some suggested changes or improvements. Changes can be made after\nthe pull request has been opening by simply adding more commits to your branch.\n\nPull requests can be changed after they are opened, so create a pull request as early as possible.\nThis allows us to provide feedback during development and to answer any questions.\n\nPlease make sure to set the correct branch for your pull request. Also, please do not include large files in your pull request.\nIf you feel that you need to add large files, let us know and we can figure something out.\n\n## Submitting an Issue\n\nPlease open an issue if you want to ask a question about BBP.\n\n* Please search through the past issues to see if your question or the bug has already been addressed\n* Please apply the correct tag to your issue so others can search\n\nIf you want to submit a bug report, please provide the information below:\n* BBP version, Python version, and Platform (Linux, Windows, Mac OSX, etc)\n* How did you install BBP (Docker, from source...)\n* Please provide a short, complete, and correct example that demonstrates the issue.\n* If this broke in a recent update, please tell us when it used to work.\n\n## Additional Resources\n* [Working with Git Forks](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks)\n* [Style Guide](http://google.github.io/styleguide/pyguide.html)\n* [Docs or it doesn\u2019t exist](https://lukeplant.me.uk/blog/posts/docs-or-it-doesnt-exist/)\n* Performance Tips:\n  * [Python](https://wiki.python.org/moin/PythonSpeed/PerformanceTips)\n  * [NumPy and ctypes](https://scipy-cookbook.readthedocs.io/)\n  * [SciPy](https://www.scipy.org/docs.html)\n  * [NumPy Book](http://csc.ucdavis.edu/~chaos/courses/nlp/Software/NumPyBook.pdf)\n"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "type": "Text_excerpt",
+        "value": "We welcome contributions to the BBP software framework. An overview of the process for contributing seismic models or software updates to the BBP Project is provided in the [BBP contribution](CONTRIBUTING.md) guidelines. BBP contributors agree to abide by the code of conduct found in our [Code of Conduct](CODE_OF_CONDUCT.md) guidelines.\n"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-07-28T19:15:27Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2007-06-01"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2007-12-01"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-03-22T21:33:04Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2021-12-01"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Dockerfile and associated scripts for creating dockerized version of SCEC Broadband Platform"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The Southern California Earthquake Center (SCEC) Broadband Platform (BBP) is a software system that can generate 0-20+ Hz seismograms for historical and scenario earthquakes in California, Eastern North America, and Japan using several alternative computational methods."
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Description:",
+        "type": "Text_excerpt",
+        "value": "The Southern California Earthquake Center (SCEC) Broadband Platform (BBP) is a software system that can generate 0-20+ Hz seismograms for historical and scenario earthquakes in California, Eastern North America, and Japan using several alternative computational methods.\n\nThis repo contains tools to create a dockerized version of the SCEC Broadband Platform. The scripts, codes, configuration files in this repo create and run a dockerized version of the BBP software that is posted in SCEC github repo: [https://github.com/sceccode/bbp]\n"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/SCECcode/bbp_docker/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/sceccode/ucvm/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/SCECcode/create_bbp_docker/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/SCECcode/create_bbp_docker/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sceccode/bbp.git"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/SCECcode/create_bbp_docker/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SCECcode/create_bbp_docker"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/Dockerfile",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/build_bbp.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/run_bbp.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/clean_bbp.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/tag_one.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/wget.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/sceccode/bbp_docker/wiki/images/SRL_Cover_v8.png"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "BBP Installation Options:",
+        "type": "Text_excerpt",
+        "value": "BBP was developed to support seismic simulations run on high-performance computing systems, so it is designed to compile and run on Linux-based computers. Before installing BBP from source code, they should be aware that there are other ways to get access to BBP without installing the software on your own Linux computer. Below we outline several of the options:\n1. [BBP Docker Images](https://github.com/sceccode/bbp_docker) Users can run BBP in Docker on their local computers including laptops. Users can install free Docker software on most computers (e.g. Linux, MacOS, Windows) then run an BBP Docker image in a terminal window on their computer. \n2. [Installation Instructions for Linux Systems:](https://github.com/sceccode/ucvm/wiki) User can install BBP on Linux system. Advanced users that want to install many of the BBP simulation regions and validation events, or that want to run many simultaneous simulations. \n"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Building a BBP Docker Image:",
+        "parent_header": [
+          "BBP Installation Options:"
+        ],
+        "type": "Text_excerpt",
+        "value": "A description of the steps needed to build a new BBP Docker image are provided in the bbp_docker wiki.\n"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/SCECcode/create_bbp_docker/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sceccode/bbp/issues"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "ground motion simulation",
+          "earthquake",
+          "seismic hazard"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "type": "License",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "value": "https://api.github.com/licenses/bsd-3-clause"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/BSD-3-Clause",
+        "spdx_id": "https://spdx.org/licenses/BSD-3-Clause",
+        "type": "License",
+        "value": "https://spdx.org/licenses/BSD-3-Clause"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "type": "Text_excerpt",
+        "value": "The BBP software is distributed under the BSD 3-Clause open-source license. Please see the [LICENSE.txt](LICENSE.txt) file for more information.\n"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "create_bbp_docker"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The SCEC Broadband Platform"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "SCECcode"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 4845,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 1631,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python3",
+        "type": "Programming_language",
+        "value": "Python3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "type": "Programming_language",
+        "value": "C",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "FORTRAN",
+        "type": "Programming_language",
+        "value": "FORTRAN",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.1785/0220140125"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Python v3.7",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Matplotlib 1.4.3+",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "NumPy 1.14.2+",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "SciPy 1.0.0+",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Pyproj 1.9.2+",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "GNU compilers (gcc, gfortran) 5.1.1+",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "FFTW library 3.3.4+",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "run": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Running an Existing BBP Docker Image:",
+        "parent_header": [
+          "BBP Installation Options:"
+        ],
+        "type": "Text_excerpt",
+        "value": "BBP Docker images contains BBP software which can be run without a significant installation process. Users install the Docker client on their Laptops, and then use the Docker client software to run BBP Docker images. Docker client software is available as a free software download for several operating systems including MacOS, Windows, and Linux.\n\n1. Install Docker Client on User Computer and Start Docker Client\n- Docker Client download from [Dockerhub](https://hub.docker.com)\n- Increase Docker configuration to 2 CPUs and 50GB memory\n\n2. Open a terminal window on your local computer, and create a directory where you will run BBP\n- mkdir /Users/maechlin/bbp_docker\n- cd /Users/maechlin/bbp_docker\n\n3. Create a \"target\" directory where BBP files are input/output\n- cd /Users/maechlin/bbp_docker\n- mkdir target\n- ls /Users/maechlin/bbp_docker/target\n\n4. Open a terminal window and start the BBP Docker image using the docker run command below. The BBP image will be downloaded from Dockerhub. The image is about 80GB so download time may be minutes or longer.\n- docker run --rm -it --mount type=bind,source=\"$(pwd)\"/target,destination=/app/target  sceccode/bbp_19_8_0:211210\n\n5. The images starts and users sees a Linux bash shell command line prompt as user \"bbp\" in directory: /app/target\n \n7. Run a the bbp text-based interface:\n- $run_bbpy.py\n\n8. The files generated by the default validation simulation will be saved to the target directory on the users host computer. Inside the container, the BBP output files are written to /app/target\n\n9. The files written to the /app/target directory are available after the container exits.\n"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:24:11",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Support:",
+        "type": "Text_excerpt",
+        "value": "Support for BBP docker images is provided by that Southern California Earthquake Center (SCEC) Research Computing Group. This group supports several research software distributions including UCVM. Users can report issues and feature requests using UCVM's github-based issue tracking link below. Developers will also respond to emails sent to the SCEC software contact listed below.\n1. [BBP Docker Github Issue Tracker:](https://github.com/SCECcode/bbp_docker/issues)\n2. Email Contact: software@scec.usc.edu\n"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v19.8.0-python3"
+      },
+      "source": "https://raw.githubusercontent.com/SCECcode/create_bbp_docker/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

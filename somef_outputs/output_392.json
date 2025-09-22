@@ -1,0 +1,549 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "mike.mahoney.218@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-2402-304X",
+        "type": "String",
+        "value": "Michael Mahoney"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mikemahoney218/mvdf"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mikemahoney218/mvdf"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://codecov.io/gh/mikemahoney218/mvdf"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING #\n\n### Fixing typos\n\nSmall typos or grammatical errors in documentation may be edited directly using\nthe GitHub web interface, so long as the changes are made in the _source_ file.\n\n*  YES: you edit a roxygen comment in a `.R` file below `R/`.\n*  NO: you edit an `.Rd` file below `man/`.\n\n### Prerequisites\n\nBefore you make a substantial pull request, you should always file an issue and\nmake sure someone from the team agrees that it\u2019s a problem. If you\u2019ve found a\nbug, create an associated issue and illustrate the bug with a minimal \n[reprex](https://www.tidyverse.org/help/#reprex).\n\n### Pull request process\n\n*  We recommend that you create a Git branch for each pull request (PR).  \n*  Look at the GitHub build status before and after making changes.\nThe `README` should contain badges for any continuous integration services used\nby the package.  \n*  We recommend the tidyverse [style guide](http://style.tidyverse.org).\nYou can use the [styler](https://CRAN.R-project.org/package=styler) package to\napply these styles, but please don't restyle code that has nothing to do with \nyour PR.  \n*  We use [roxygen2](https://cran.r-project.org/package=roxygen2).  \n*  We use [testthat](https://cran.r-project.org/package=testthat). Contributions\nwith test cases included are easier to accept.  \n*  For user-facing changes, add a bullet to the top of `NEWS.md` below the\ncurrent development version header describing the changes made followed by your\nGitHub username, and links to relevant issue(s)/PR(s).\n\n### Code of Conduct\n\nPlease note that the terrainr project is released with a\n[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this\nproject you agree to abide by its terms.\n\n### See rOpenSci [contributing guide](https://devguide.ropensci.org/contributingguide.html)\nfor further details.\n\n### Discussion forum\n\nCheck out our [discussion forum](https://discuss.ropensci.org) if\n\n* you have a question, an use case, or otherwise not a bug or feature request for the software itself.\n* you think your issue requires a longer form discussion.\n\n### Prefer to Email? \n\nEmail the person listed as maintainer in the `DESCRIPTION` file of this repo.\n\nThough note that private discussions over email don't help others - of course email is totally warranted if it's a sensitive problem of any kind.\n\n### Thanks for contributing!\n\nThis contributing guide is adapted from the tidyverse contributing guide available at https://raw.githubusercontent.com/r-lib/usethis/master/inst/templates/tidy-contributing.md \n"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-11-22T22:03:28Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-10-17T06:24:28Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Minimum Viable Data Format for using R as a front-end for the Blender 3D Rendering Engine"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+        "type": "String",
+        "value": "A small, self-contained, minimum viable data format providing a \n    standard interface for using R as a front-end for the Blender 3D rendering\n    program. The core approach centers around an S4 class, 'mvdf', with getter,\n    setter, and validation methods designed to be extended for more specific \n    rendering approaches."
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A small, self-contained, minimum viable data format providing a \n    standard interface for using R as a front-end for the Blender 3D rendering\n    program. The core approach centers around an S4 class, 'mvdf', with getter,\n    setter, and validation methods designed to be extended for more specific \n    rendering approaches."
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8913527346447091,
+      "result": {
+        "original_header": "mvdf: a standardized approach to using R as a frontend for the Blender 3D rendering program <a href='https://mikemahoney218.github.io/mvdf'><img src='man/figures/logo.png' align=\"right\" height=\"138\" /></a>",
+        "type": "Text_excerpt",
+        "value": "\nThe goal of mvdf is to provide a standardized approach to using R as a\nfrontend for the [Blender](https://www.blender.org/) 3D rendering\nprogram. \nPlease note that this package is in early development; breaking changes\ncan and will happen as better approaches become evident.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9735007634476234,
+      "result": {
+        "original_header": "What\u2019s an MVDF anyway?",
+        "type": "Text_excerpt",
+        "value": "The `mvdf` package proposes a standard approach to using R as a frontend\ninterface for the Blender 3D rendering program. By breaking the\ndevelopment of rendering into three distinct steps \u2013 *importing* data\nfrom disparate sources into a standardized format, *manipulating* that\nformat through a standard set of tools, and creating 3D renderings from\nstandardized formats via *exporter* functions \u2013 `mvdf` forms the\ncornerstone of an easily-extensible framework for producing data-driven\n3D renders. \nThe approach centers around creating special objects from our data that\nwe can then create renderings. The simplest of these objects is an\n`mvdf_obj`, which just needs an x, y, and z position:\n``` r\nlibrary(mvdf)\niris_mvdf <- mvdf_obj(\n  data = iris, \n  x = Sepal.Length,\n  y = Sepal.Width,\n  z = Petal.Length\n)\n```\nWith our object successfully created, we can then chain together a few\nfunctions to make a Python script that will render our data when run\ninside Blender:\n``` r\nlibrary(magrittr) # For the %>% pipe\n\nrender_script <- \n  # Delete placeholder objects and import standard Python modules\n  create_blender_frontmatter() %>%\n  # Add cubes at each point in space in our mvdf\n  add_mesh_primitive(object = iris_mvdf,\n                     primitive = \"cube\", \n                     size = 0.2) %>% \n  # Save the output to save_render.blend\n  add_blender_endmatter(filepath = \"save_render.blend\") \n```\nAnd we can then execute that script from R using `execute_render`:\n``` r\nexecute_render(render_script)\n```\nThis script will produce a Blender file (\u201csave\\_render.blend\u201d) with\ncubes at each point in space specified in our mvdf, with the end result\nlooking something like this:\n``` r\nknitr::include_graphics(\"vignettes/iris_cubes.jpg\")\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "https://www.tidyverse.org/lifecycle/#experimental",
+          "https://www.repostatus.org/#wip"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mikemahoney218/mvdf/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/mikemahoney218/mvdf/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mikemahoney218/mvdf"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mvdf: a standardized approach to using R as a frontend for the Blender 3D rendering program "
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://mikemahoney218.github.io/mvdf/"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mvdf"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/vignettes/iris_cubes.jpg"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "mvdf: a standardized approach to using R as a frontend for the Blender 3D rendering program <a href='https://mikemahoney218.github.io/mvdf'><img src='man/figures/logo.png' align=\"right\" height=\"138\" /></a>"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install the development version of `mvdf` from GitHub via:\n\n``` r\nremotes::install_github(\"mikemahoney218/mvdf\")\n```\n\nYou\u2019ll also need to install [Blender](https://www.blender.org/download/)\nseparately. mvdf is tested against the current release of Blender and is\nnot guaranteed to work with older versions; in particular, some basic\noperations may fail with Blender \\< 2.80.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/mikemahoney218/mvdf/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mikemahoney218/mvdf/issues"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mikemahoney218/mvdf/issues"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "blender, cran, r, r-package, rstats"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "r",
+          "rstats",
+          "r-package",
+          "blender",
+          "cran"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2020 mvdf authors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mvdf"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mvdf: A Minimum Viable Data Format for 3D Rendering via Blender"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "mikemahoney218"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+        "type": "String",
+        "value": "mvdf"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 53535,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/mikemahoney218/mvdf/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "WIP \u2013 Initial development is in progress, but there\nhas not yet been a stable, usable release suitable for the\npublic.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#wip"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 3.5",
+        "version": ">= 3.5"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "methods",
+        "type": "Software_application",
+        "value": "methods",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rlang",
+        "type": "Software_application",
+        "value": "rlang",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "glue",
+        "type": "Software_application",
+        "value": "glue",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "proceduralnames",
+        "type": "Software_application",
+        "value": "proceduralnames",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:39:32",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 16
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.0.0.9000"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.0.9000"
+      },
+      "source": "https://raw.githubusercontent.com/mikemahoney218/mvdf/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

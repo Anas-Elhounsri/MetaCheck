@@ -1,0 +1,1500 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": null,
+        "name": "Jon Herman",
+        "type": "Agent",
+        "value": "Jon Herman"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": null,
+        "name": "Will Usher",
+        "type": "Agent",
+        "value": "Will Usher"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": null,
+        "name": "Takuya Iwanaga",
+        "type": "Agent",
+        "value": "Takuya Iwanaga"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Oxford",
+        "email": "william.usher@ouce.ox.ac.uk",
+        "identifier": "http://orcid.org/0000-0001-9367-1791",
+        "type": "String",
+        "value": "Will Usher"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of California, Davis",
+        "email": "jdherman@ucdavis.edu",
+        "identifier": "http://orcid.org/0000-0002-4081-3175",
+        "type": "String",
+        "value": "jdherman"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Iwanaga",
+            "given_name": "Takuya",
+            "name": "Takuya Iwanaga",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-8173-0870"
+          },
+          {
+            "family_name": "Usher",
+            "given_name": "Will",
+            "name": "Will Usher",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-9367-1791"
+          },
+          {
+            "family_name": "Herman",
+            "given_name": "Jon",
+            "name": "Jon Herman",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-4081-3175"
+          }
+        ],
+        "datePublished": "2022",
+        "doi": "10.21105/joss.00097",
+        "format": "cff",
+        "title": "SALib: An open-source Python library for sensitivity analysis",
+        "type": "File_dump",
+        "url": "https://doi.org/10.21105/joss.00097",
+        "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\nauthors:\n- family-names: \"Iwanaga\"\n  given-names: \"Takuya\"\n  orcid: \"0000-0001-8173-0870\"\n- family-names: \"Usher\"\n  given-names: \"Will\"\n  orcid: \"0000-0001-9367-1791\"\n- family-names: \"Herman\"\n  given-names: \"Jon\"\n  orcid: \"0000-0002-4081-3175\"\ntitle: \"SALib: An open-source Python library for sensitivity analysis\"\nversion: 1.4.6.1\ndoi: 10.21105/joss.00097\ndate-released: 2022-05-01\nurl: \"https://github.com/SALib/SALib\"\npreferred-citation:\n  type: article\n  authors:\n  - family-names: \"Iwanaga\"\n    given-names: \"Takuya\"\n    orcid: \"0000-0001-8173-0870\"\n  - family-names: \"Usher\"\n    given-names: \"Will\"\n    orcid: \"0000-0001-9367-1791\"\n  - family-names: \"Herman\"\n    given-names: \"Jon\"\n    orcid: \"0000-0002-4081-3175\"\n  doi: \"10.18174/sesmo.18155\"\n  journal: \"Socio-Environmental Systems Modelling\"\n  month: 5\n  start: 1 # First page number\n  end: 15 # Last page number\n  title: \"Toward SALib 2.0: Advancing the accessibility and interpretability of global sensitivity analyses\"\n  issue: 1\n  volume: 4\n  year: 2022\n"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to cite SALib",
+        "parent_header": [
+          "Sensitivity Analysis Library (SALib)"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you would like to use our software, please cite it using the following:\n\n    Iwanaga, T., Usher, W., & Herman, J. (2022).\n    Toward SALib 2.0: Advancing the accessibility and interpretability of global sensitivity analyses.\n    Socio-Environmental Systems Modelling, 4, 18155.\n    doi:10.18174/sesmo.18155\n\n    Herman, J. and Usher, W. (2017) SALib: An open-source Python library for\n    sensitivity analysis. Journal of Open Source Software, 2(9).\n    doi:10.21105/joss.00097\n\n|paper status|\n\nIf you use BibTeX, cite using the following entries::\n\n    @article{Iwanaga2022,\n      title = {Toward {SALib} 2.0: {Advancing} the accessibility and interpretability of global sensitivity analyses},\n      volume = {4},\n      url = {https://sesmo.org/article/view/18155},\n      doi = {10.18174/sesmo.18155},\n      journal = {Socio-Environmental Systems Modelling},\n      author = {Iwanaga, Takuya and Usher, William and Herman, Jonathan},\n      month = may,\n      year = {2022},\n      pages = {18155},\n    }\n\n    @article{Herman2017,\n      doi = {10.21105/joss.00097},\n      url = {https://doi.org/10.21105/joss.00097},\n      year  = {2017},\n      month = {jan},\n      publisher = {The Open Journal},\n      volume = {2},\n      number = {9},\n      author = {Jon Herman and Will Usher},\n      title = {{SALib}: An open-source Python library for Sensitivity Analysis},\n      journal = {The Journal of Open Source Software}\n    }\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Iwanaga, Takuya and Usher, William and Herman, Jonathan",
+        "doi": "10.18174/sesmo.18155",
+        "format": "bibtex",
+        "title": "Toward {SALib} 2.0: {Advancing} the accessibility and interpretability of global sensitivity analyses",
+        "type": "Text_excerpt",
+        "url": "https://sesmo.org/article/view/18155",
+        "value": "@article{Iwanaga2022,\n    pages = {18155},\n    year = {2022},\n    month = {May},\n    author = {Iwanaga, Takuya and Usher, William and Herman, Jonathan},\n    journal = {Socio-Environmental Systems Modelling},\n    doi = {10.18174/sesmo.18155},\n    url = {https://sesmo.org/article/view/18155},\n    volume = {4},\n    title = {Toward {SALib} 2.0: {Advancing} the accessibility and interpretability of global sensitivity analyses},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Jon Herman and Will Usher",
+        "doi": "10.21105/joss.00097",
+        "format": "bibtex",
+        "title": "{SALib}: An open-source Python library for Sensitivity Analysis",
+        "type": "Text_excerpt",
+        "url": "https://doi.org/10.21105/joss.00097",
+        "value": "@article{Herman2017,\n    journal = {The Journal of Open Source Software},\n    title = {{SALib}: An open-source Python library for Sensitivity Analysis},\n    author = {Jon Herman and Will Usher},\n    number = {9},\n    volume = {2},\n    publisher = {The Open Journal},\n    month = {jan},\n    year = {2017},\n    url = {https://doi.org/10.21105/joss.00097},\n    doi = {10.21105/joss.00097},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, gender identity and expression, level of experience,\nnationality, personal appearance, race, religion, or sexual identity and\norientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\nadvances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at wusher{THATSIGN}kth.se. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at [http://contributor-covenant.org/version/1/4][version]\n\n[homepage]: http://contributor-covenant.org\n[version]: http://contributor-covenant.org/version/1/4/\n"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/SALib/SALib"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/SALib/SALib"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/.github/workflows/test.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/.github/workflows/lint.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nAdmins: [Will Usher](https://github.com/willu47) and [Jon Herman](https://github.com/jdherman)\n\nThanks to all those who have [contributed so far](https://github.com/SALib/SALib/graphs/contributors)!\n\n## Asking Questions, Reporting Bugs\n\nWe use GitHub issues to keep track of bugs and to answer questions about the use\nof the library.\n\nFor bugs, [create a new issue](https://github.com/SALib/SALib/issues/new)\non GitHub. Use this to describe the nature of the bug and\nthe conditions needed to recreate it, including operating system and Python version.\n\nIf you have a question on interpretation of results, then we may be able to help.\n\nWe cannot answer specific implementation questions (such as 'how do I run my model\nwith SALib?')\n\nYou can format your questions using GitHub Markdown, which makes it easy to [paste in short snippets of code](https://help.github.com/articles/creating-and-highlighting-code-blocks/). If including a very long Python error traceback, please use a GitHub [gist](https://gist.github.com/).\n\n## Contributing Code\n\nTo contribute new code, submit a pull request. There are two instances in which you may want to contribute code: to fix a bug, or to add a new feature, such as a new sensitivity analysis method.\n\n### Making a development environment\n\nNote: We **strongly** recommend using a virtual environment setup, such as\n`venv` or `conda`.\n\nFirst, fork a copy of the main SALib repository in GitHub onto your own\naccount and then create your local repository via:\n\n```sh\ngit clone git@github.com:YOURUSERNAME/SALib.git\ncd SALib\n```\n\nNext, set up your development environment.\n\nWith `conda` installed (through\n[Miniforge or Mambaforge](https://github.com/conda-forge/miniforge),\n[Miniconda](https://docs.conda.io/en/latest/miniconda.html) or\n[Anaconda](https://www.anaconda.com/products/individual)), execute the\nfollowing commands at the terminal from the base directory of your\n[SALib](https://github.com/SALib/SALib) clone:\n\n```sh\n# Create an environment with all development dependencies\nconda env create -f environment.yml  # works with `mamba` too\n# Activate the environment\nconda activate SALib\n```\n\nFinally, you can install SALib in editable mode in your environment:\n\n```sh\npip install -e .\n```\n\n### Fixing a Bug\n\nFirst, create a new issue on GitHub with the label `bug`. Use this to describe the nature of the bug and the conditions needed to recreate it.\n\nThen, please create a new branch with the name `bug_xxx` where xxx is the number of the issue.\n\nIf possible, write a test which reproduces the bug. The tests are stored in the `SALib/tests/` folder, and are run using `pytest` from the root folder of the library.\nYou can run the tests with the command `pytest` from the root project directory. Individual tests can be run with by specifying a file, or file and test function.\n\nFor example:\n\n```bash\n$ pytest  # run all tests\n$ pytest tests/test_file.py  # run tests within a specific file\n$ pytest tests/test_file.py::specific_function  # run a specific test\n```\n\nThen, fix the bug in the code so that the test passes.\n\nSubmit a pull request with a descriptive title and reference the issue in the text. Once a pull request is submitted, the tests will run on Travis CI. If these tests pass, we will review and merge in your changes.\n\n### Adding a new method\n\nMethods in SALib follow a decoupled sample/analysis workflow. In other words, the generation of parameter samples and the calculation of sensitivity indices can be performed in two separate steps. This is because many users have models in languages other than Python, so sending data to/from the model is left to the user. All methods should support a command-line interface on top of the Python functions.\n\nTo add a new method, create an issue on GitHub with the label `add_method`, if one does not already exist. Please describe the method, and link to the peer reviewed article in which the method is described. The master branch should only contain published methods. First check the current [open issues with this label](https://github.com/SALib/SALib/labels/add_method) for inspiration or to see if someone is already working on a certain method.\n\nWe use GitHub issues to track ideas for  and [enhancements](https://github.com/SALib/SALib/labels/enhancement).  If you are looking to contribute new methods to the library, check the labels for inspiration or to ensure you are not duplicating another's work.\n\nThen, create a new branch with a useful name, such as `new_method_method_name`. Methods should consist of:\n\n* A sampling module (a `method_name.py` file in `SALib.sample`). This will contain, among other things, a function `sample(problem, ...)` that accepts a problem dictionary and returns a numpy array of samples, one column for each parameter. See [SALib.sample.saltelli](https://github.com/SALib/SALib/blob/main/SALib/sample/saltelli.py) for an example.\n\n* An analysis module (a `method_name.py` file in `SALib.analyze`). This will contain a function analyze(problem, ...) that returns a dictionary of sensitivity indices. See [SALib.analyze.sobol](https://github.com/SALib/SALib/blob/main/SALib/analyze/sobol.py) for an example.\n\n* An example shell script and python file in the `examples` folder, ideally using a test function included in SALib such as the Ishigami or Sobol-G functions.\n\n* Docstrings for the `sample` and `analyze` functions that include citations. Please add an entry to `docs/index.rst` to add your method documentation to the concise API reference.\n\n* All contributed methods should also provide functions to support their use through the command line interface (CLI). These are `cli_parse()` and `cli_action()` to parse command line options and to run the sampling and analysis respectively. See the implementations in [SALib.analyze.delta](https://github.com/SALib/SALib/blob/consolidate-cli/SALib/analyze/delta.py) for an example.\n\n* Tests in the `tests` folder.  We're using Travis CI and Coveralls. Ideally, every new function will have one or more corresponding tests to check that errors are raised for invalid inputs, and that functions return matrices of the proper sizes. (For example [see here](https://github.com/SALib/SALib/blob/main/tests/test_sobol.py). But at a minimum, please include a regression test for the Ishigami function, in the same format as all of the other methods [see here](https://github.com/SALib/SALib/blob/main/tests/test_regression.py). This will at least ensure that future updates don't break your code!\n\nFinally, submit a pull request. Either @willu47 or @jdherman will review the pull request and merge in your changes.\n\n\n### Other Enhancements\n\nContributions not related to new methods are also welcome. These might include new test functions (see [SALib.test_functions](https://github.com/SALib/SALib/tree/main/SALib/test_functions) for how these are set up), or other code that is general across some or all of the methods. This general code is currently included in [SALib.util.\\_\\_init\\_\\_.py](https://github.com/SALib/SALib/blob/main/SALib/util/__init__.py).\n\n\n### Other Development Comments\n\nMost of the sampling techniques make heavy use of pseudo-random number\ngenerators.\nWe use primarily `numpy.random` as the python standard library\n`random` library is inconsistent across Python 2 and 3.\nWhen writing tests for methods which use these random number generators, set the seeds using `numpy.random.seed(SEED)`\nwhere `SEED` is a fixed integer.\nThis will ensure that your tests are repeatable.\n\n### Notes about scope\n\n* SALib contains a few basic types of plots, especially for the Morris method. Indicative results can be made by calling the [`.plot()` method](https://salib.readthedocs.io/en/main/basics.html#basic-plotting)\n* However, we generally assume that plot types and styles are left to the user, as these are often application-specific. Users interested in more complex plot types should check out the [savvy](https://github.com/houghb/savvy) library, which is built on top of SALib.\n\nThanks again!\n\n## Making a release\n\nFollowing is the process that the development team follows in order to make\na release:\n\n1. Document overview of changes since last release in `CHANGELOG.md`\n2. Build locally using `hatch build`, and verify the content of the artifacts\n3. Tag release with version number and push to SALib repo\n4. Check that release has been deployed to PyPI\n5. Check documentation is built and deployed to readthedocs (http://salib.readthedocs.org)\n6. Check that auto-generated PR is auto-merged on the conda-forge feedstock repo (conda-forge/salib-feedstock)\n7. Update development roadmap on GitHub\n\n## Building a local copy of the documentation\n\nAssuming the current location is the project root (the `SALib` directory):\n\n```bash\n$ conda install pydata-sphinx-theme myst-parser -c conda-forge\n$ sphinx-build -b html docs docs/html\n```\n\nA copy of the documentation will be in the `docs/html` directory.\nOpen `index.html` to view it.\n"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to contribute",
+        "parent_header": [
+          "Sensitivity Analysis Library (SALib)"
+        ],
+        "type": "Text_excerpt",
+        "value": "See `here <CONTRIBUTING.md>`__ for how to contribute to SALib.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2013-05-30T13:38:10Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-10-18"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-10-18"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-18T19:06:32Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-10-18"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Sensitivity Analysis Library in Python. Contains Sobol, Morris, FAST, and other methods."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Tools for global sensitivity analysis. Contains Sobol', Morris, FAST, DGSM, PAWN, HDMR, Moment Independent and fractional factorial methods"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Sensitivity Analysis Library in Python (Numpy). Contains Sobol, Morris, Fractional Factorial and FAST methods."
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9329098721923417,
+      "result": {
+        "original_header": "Sensitivity Analysis Library (SALib)",
+        "type": "Text_excerpt",
+        "value": "Python implementations of commonly used sensitivity analysis methods.\nUseful in systems modeling to calculate the effects of model inputs or\nexogenous factors on outputs of interest. \n"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://salib.readthedocs.io"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/SALib/SALib/tree/main/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://salib.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/SALib/SALib/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/SALib/SALib/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 251
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/SALib/SALib/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SALib/SALib"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Sensitivity Analysis Library (SALib)"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/examples/morris/morris.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/examples/sobol/sobol.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/examples/fast/fast.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/examples/enhanced_hdmr/enhanced_hdmr.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/examples/dgsm/dgsm.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/examples/hdmr/hdmr.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/examples/delta/delta.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/examples/rbd_fast/rbd_fast.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/examples/ff/ff.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/examples/pawn/pawn.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.5281/zenodo.160164"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/SALib/SALib/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "global-sensitivity-analysis, joss, morris, numpy, python, salib, sensitivity-analysis, sensitivity-analysis-library, sobol, uncertainty, uncertainty-quantification"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "sensitivity analysis",
+          "Python",
+          "uncertainty",
+          "variance-based",
+          "global sensitivity analysis",
+          "fractional factorial",
+          "Method of Morris",
+          "elementary effects"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "The MIT License (MIT)\n\nCopyright (c) 2013-2017 Jon Herman, Will Usher, and others.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/MIT",
+        "spdx_id": "MIT",
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "Sensitivity Analysis Library (SALib)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Copyright (C) 2012-2019 Jon Herman, Will Usher, and others. Versions v0.5 and\nlater are released under the `MIT license <LICENSE.md>`__.\n\n.. |Build Status| image:: https://travis-ci.com/SALib/SALib.svg?branch=master\n   :target: https://travis-ci.com/SALib/SALib\n.. |Coverage Status| image:: https://img.shields.io/coveralls/SALib/SALib.svg\n   :target: https://coveralls.io/r/SALib/SALib\n.. |Code Issues| image:: https://www.quantifiedcode.com/api/v1/project/ed62e70f899e4ec8af4ea6b2212d4b30/badge.svg\n   :target: https://www.quantifiedcode.com/app/project/ed62e70f899e4ec8af4ea6b2212d4b30\n.. |paper status| image:: http://joss.theoj.org/papers/431262803744581c1d4b6a95892d3343/status.svg\n   :target: http://joss.theoj.org/papers/431262803744581c1d4b6a95892d3343\n"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SALib"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "SALib"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SALib"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 2443560,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 40231,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 142,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/SALib/SALib"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2023-01-08T00:57:42Z",
+        "date_published": "2023-01-08T01:02:35Z",
+        "description": "Sobol' bug fixes and documentation updates\r\n\r\n## What's Changed\r\n* Fix log2 in Sobol' exponent check by @tupui in https://github.com/SALib/SALib/pull/546\r\n* WIP: Documentation fixes for Sphinx and website by @ConnectedSystems in https://github.com/SALib/SALib/pull/540\r\n* Changes to address test deprecation warnings by @ConnectedSystems in https://github.com/SALib/SALib/pull/548\r\n\r\n\r\n**Full Changelog**: https://github.com/SALib/SALib/compare/v1.4.6.1...v1.4.7",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.7",
+        "name": "v1.4.7",
+        "release_id": 88223802,
+        "tag": "v1.4.7",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/88223802",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/88223802",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2022-10-19T01:18:18Z",
+        "date_published": "2022-10-17T23:30:02Z",
+        "description": "Quick release with fix to allow 0 skipping of sobol' sequence.\r\n\r\n## What's Changed\r\n* Fix skip_values integer check by @tupui in https://github.com/SALib/SALib/pull/542\r\n\r\n\r\n**Full Changelog**: https://github.com/SALib/SALib/compare/v1.4.6...v1.4.6.1",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.6.1",
+        "name": "v1.4.6.1",
+        "release_id": 80142127,
+        "tag": "v1.4.6.1",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.6.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/80142127",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/80142127",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.6.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2022-10-02T03:16:07Z",
+        "date_published": "2022-10-02T02:59:31Z",
+        "description": "## Highlights\r\n\r\n- Performance improvements to HDMR (~50% decrease in runtime for the Ishigami function)\r\n- New Sobol' sampler (interfaced with SciPy) which supports sequence scrambling\r\n- New heatmap visualization\r\n- Improvements to documentation for Morris, PAWN and HDMR methods.\r\n- New documentation website, thanks to @tupui and @sahin-abdullah\r\n\r\n\r\n## What's Changed\r\n* Support additional positional arguments when using parallel evaluators/analyses by @ConnectedSystems in https://github.com/SALib/SALib/pull/473\r\n* Add Oakley 2004 test function (Resolve #379) by @ConnectedSystems in https://github.com/SALib/SALib/pull/474\r\n* Update example results in document by @ConnectedSystems in https://github.com/SALib/SALib/pull/477\r\n* Docs: correct plural. by @brenthuisman in https://github.com/SALib/SALib/pull/476\r\n* Improve listing of compatible sampling methods by @ConnectedSystems in https://github.com/SALib/SALib/pull/482\r\n* Updated Sobol' direction numbers by @ConnectedSystems in https://github.com/SALib/SALib/pull/491\r\n* Update hdmr.py by @idiomaticrefactoring in https://github.com/SALib/SALib/pull/496\r\n* Raise error when a single parameter/group is detected [OO-based only] by @ConnectedSystems in https://github.com/SALib/SALib/pull/484\r\n* Fix for #480 - eFAST analysis erroring by @ConnectedSystems in https://github.com/SALib/SALib/pull/481\r\n* add GitHub URL for PyPi by @andriyor in https://github.com/SALib/SALib/pull/502\r\n* Expanded Morris docs by @ConnectedSystems in https://github.com/SALib/SALib/pull/489\r\n* Expanded docs for the PAWN method by @ConnectedSystems in https://github.com/SALib/SALib/pull/490\r\n* Better Triangular Distribution by @BrandonSLockey in https://github.com/SALib/SALib/pull/509\r\n* Add missing parameters to docstrings by @schmitts in https://github.com/SALib/SALib/pull/434\r\n* Support for grouped parameters with the PAWN method by @ConnectedSystems in https://github.com/SALib/SALib/pull/512\r\n* Migrate to hatchling and migrate CI to GitHub actions by @tupui in https://github.com/SALib/SALib/pull/527\r\n* Make Pathos optional by @tupui in https://github.com/SALib/SALib/pull/522\r\n* Add Sobol' sampler from SciPy by @tupui in https://github.com/SALib/SALib/pull/519\r\n* Allow seed as CLI option by @ConnectedSystems in https://github.com/SALib/SALib/pull/530\r\n* Use pydata-sphinx-theme by @tupui in https://github.com/SALib/SALib/pull/523\r\n* Update version switcher by @tupui in https://github.com/SALib/SALib/pull/533\r\n* Sobol': Handle zero variance edge case by @ConnectedSystems in https://github.com/SALib/SALib/pull/505\r\n* Heatmap by @ConnectedSystems in https://github.com/SALib/SALib/pull/526\r\n* Handle DMIM zero variance case by @ConnectedSystems in https://github.com/SALib/SALib/pull/536\r\n* HDMR Performance improvements by @ConnectedSystems in https://github.com/SALib/SALib/pull/511\r\n* HDMR Docstring by @sahin-abdullah in https://github.com/SALib/SALib/pull/538\r\n* Triang dist bounds fix by @ConnectedSystems in https://github.com/SALib/SALib/pull/537\r\n* Pre-release documentation updates by @ConnectedSystems in https://github.com/SALib/SALib/pull/539\r\n\r\n## New Contributors\r\n* @brenthuisman made their first contribution in https://github.com/SALib/SALib/pull/476\r\n* @idiomaticrefactoring made their first contribution in https://github.com/SALib/SALib/pull/496\r\n* @andriyor made their first contribution in https://github.com/SALib/SALib/pull/502\r\n* @BrandonSLockey made their first contribution in https://github.com/SALib/SALib/pull/509\r\n* @tupui made their first contribution in https://github.com/SALib/SALib/pull/527\r\n\r\n**Full Changelog**: https://github.com/SALib/SALib/compare/v1.4.5...v1.4.6",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.6",
+        "name": "v1.4.6",
+        "release_id": 78777266,
+        "tag": "v1.4.6",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/78777266",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/78777266",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2022-09-25T09:29:23Z",
+        "date_published": "2022-09-24T12:49:05Z",
+        "description": "v1.4.6 Release Candidate.\r\n\r\nA full release will be done if no issues are encountered.\r\n## What's Changed\r\n* Support additional positional arguments when using parallel evaluators/analyses by @ConnectedSystems in https://github.com/SALib/SALib/pull/473\r\n* Add Oakley 2004 test function (Resolve #379) by @ConnectedSystems in https://github.com/SALib/SALib/pull/474\r\n* Update example results in document by @ConnectedSystems in https://github.com/SALib/SALib/pull/477\r\n* Docs: correct plural. by @brenthuisman in https://github.com/SALib/SALib/pull/476\r\n* Improve listing of compatible sampling methods by @ConnectedSystems in https://github.com/SALib/SALib/pull/482\r\n* Updated Sobol' direction numbers by @ConnectedSystems in https://github.com/SALib/SALib/pull/491\r\n* Update hdmr.py by @idiomaticrefactoring in https://github.com/SALib/SALib/pull/496\r\n* Raise error when a single parameter/group is detected [OO-based only] by @ConnectedSystems in https://github.com/SALib/SALib/pull/484\r\n* Fix for #480 - eFAST analysis erroring by @ConnectedSystems in https://github.com/SALib/SALib/pull/481\r\n* add GitHub URL for PyPi by @andriyor in https://github.com/SALib/SALib/pull/502\r\n* Expanded Morris docs by @ConnectedSystems in https://github.com/SALib/SALib/pull/489\r\n* Expanded docs for the PAWN method by @ConnectedSystems in https://github.com/SALib/SALib/pull/490\r\n* Better Triangular Distribution by @BrandonSLockey in https://github.com/SALib/SALib/pull/509\r\n* Add missing parameters to docstrings by @schmitts in https://github.com/SALib/SALib/pull/434\r\n* Support for grouped parameters with the PAWN method by @ConnectedSystems in https://github.com/SALib/SALib/pull/512\r\n* Migrate to hatchling and migrate CI to GitHub actions by @tupui in https://github.com/SALib/SALib/pull/527\r\n* Make Pathos optional by @tupui in https://github.com/SALib/SALib/pull/522\r\n* Add Sobol' sampler from SciPy by @tupui in https://github.com/SALib/SALib/pull/519\r\n* Allow seed as CLI option by @ConnectedSystems in https://github.com/SALib/SALib/pull/530\r\n* Use pydata-sphinx-theme by @tupui in https://github.com/SALib/SALib/pull/523\r\n* Update version switcher by @tupui in https://github.com/SALib/SALib/pull/533\r\n* Sobol': Handle zero variance edge case by @ConnectedSystems in https://github.com/SALib/SALib/pull/505\r\n* Heatmap by @ConnectedSystems in https://github.com/SALib/SALib/pull/526\r\n* Handle DMIM zero variance case by @ConnectedSystems in https://github.com/SALib/SALib/pull/536\r\n* HDMR Performance improvements by @ConnectedSystems in https://github.com/SALib/SALib/pull/511\r\n* HDMR Docstring by @sahin-abdullah in https://github.com/SALib/SALib/pull/538\r\n* Triang dist bounds fix by @ConnectedSystems in https://github.com/SALib/SALib/pull/537\r\n\r\n## New Contributors\r\n* @brenthuisman made their first contribution in https://github.com/SALib/SALib/pull/476\r\n* @idiomaticrefactoring made their first contribution in https://github.com/SALib/SALib/pull/496\r\n* @andriyor made their first contribution in https://github.com/SALib/SALib/pull/502\r\n* @BrandonSLockey made their first contribution in https://github.com/SALib/SALib/pull/509\r\n* @tupui made their first contribution in https://github.com/SALib/SALib/pull/527\r\n\r\n**Full Changelog**: https://github.com/SALib/SALib/compare/v1.4.5...v1.4.6-rc",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.6-rc",
+        "name": "v1.4.6 Release Candidate",
+        "release_id": 78046589,
+        "tag": "v1.4.6-rc",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.6-rc",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/78046589",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/78046589",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.6-rc"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2022-06-05T10:40:15Z",
+        "date_published": "2022-06-22T01:38:16Z",
+        "description": "Second beta release of v1.4.6\r\n\r\n## What's Changed\r\n* Expanded Morris docs by @ConnectedSystems in https://github.com/SALib/SALib/pull/489\r\n* Expanded docs for the PAWN method by @ConnectedSystems in https://github.com/SALib/SALib/pull/490\r\n* Better Triangular Distribution by @BrandonSLockey in https://github.com/SALib/SALib/pull/509\r\n\r\n## New Contributors\r\n* @BrandonSLockey made their first contribution in https://github.com/SALib/SALib/pull/509\r\n\r\n**Full Changelog**: https://github.com/SALib/SALib/compare/v1.4.6-beta.0...v1.4.6-beta.1",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.6-beta.1",
+        "name": "Second v1.4.6 beta release",
+        "release_id": 69996628,
+        "tag": "v1.4.6-beta.1",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.6-beta.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/69996628",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/69996628",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.6-beta.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2022-03-15T11:41:23Z",
+        "date_published": "2022-02-06T04:38:56Z",
+        "description": "## What's Changed\r\n* Support additional positional arguments when using parallel evaluators/analyses by @ConnectedSystems in https://github.com/SALib/SALib/pull/473\r\n* Add Oakley 2004 test function (Resolve #379) by @ConnectedSystems in https://github.com/SALib/SALib/pull/474\r\n* Update example results in document by @ConnectedSystems in https://github.com/SALib/SALib/pull/477\r\n* Docs: correct plural. by @brenthuisman in https://github.com/SALib/SALib/pull/476\r\n* Improve listing of compatible sampling methods by @ConnectedSystems in https://github.com/SALib/SALib/pull/482\r\n* Updated Sobol' direction numbers by @ConnectedSystems with help from @Xifus in https://github.com/SALib/SALib/pull/491\r\n* Update hdmr.py by @zjzh in https://github.com/SALib/SALib/pull/496\r\n* Raise error when a single parameter/group is detected [OO-based only] by @ConnectedSystems in https://github.com/SALib/SALib/pull/484\r\n* Fix for #480 - eFAST analysis erroring by @ConnectedSystems in https://github.com/SALib/SALib/pull/481\r\n\r\n## New Contributors\r\n* @brenthuisman made their first contribution in https://github.com/SALib/SALib/pull/476\r\n* @zjzh made their first contribution in https://github.com/SALib/SALib/pull/496\r\n\r\n**Full Changelog**: https://github.com/SALib/SALib/compare/v1.4.5...v1.4.6-beta.0",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.6-beta.0",
+        "name": "v1.4.6 beta release",
+        "release_id": 58795929,
+        "tag": "v1.4.6-beta.0",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.6-beta.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/58795929",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/58795929",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.6-beta.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2021-09-04T05:26:37Z",
+        "date_published": "2021-09-04T09:49:51Z",
+        "description": "- Adjusted Saltelli sampling to follow recommendation of Owen (2020) \r\n  (http://arxiv.org/abs/2008.08051; https://github.com/scipy/scipy/pull/10844#issuecomment-672186615)\r\n- Initial support for parallel analysis\r\n- Updated Sobol' G-function analytic results (PR #464, Issues #335 #461)\r\n- Sobol' analysis: Optional storage of intermediate resample results to allow analysis of variation (PR #462)\r\n\r\n### Documentation\r\n\r\n- Updated Salteli sampling examples to use powers of 2 following recommendations\r\n- Added `citations.cff` file\r\n\r\n### Development\r\n\r\n- Upgrade PyScaffold to v4\r\n- Replaced recommonmark with MyST (PR #466)",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.5",
+        "name": "v1.4.5",
+        "release_id": 49006746,
+        "tag": "v1.4.5",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/49006746",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/49006746",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2021-07-01T12:34:47Z",
+        "date_published": "2021-07-01T12:39:24Z",
+        "description": "Minor update to allow no skip values in Saltelli/Sobol' sampling (#443)\r\n\r\nSee: https://github.com/SALib/SALib/issues/442 for context",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.0.2",
+        "name": "Hotfix v1.4.0.2",
+        "release_id": 45557302,
+        "tag": "v1.4.0.2",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/45557302",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/45557302",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2021-06-29T13:22:39Z",
+        "date_published": "2021-06-29T13:36:20Z",
+        "description": "Hotfix to address wheel dependency when installing SALib with `venv`",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.0.1",
+        "name": "Hotfix release for venv users",
+        "release_id": 45424658,
+        "tag": "v1.4.0.1",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/45424658",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/45424658",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2021-06-27T08:02:49Z",
+        "date_published": "2021-04-21T13:19:31Z",
+        "description": "v1.4.0 Release\r\n\r\nShortlist of changes since v1.3.x\r\n\r\n### Added\r\n\r\n- High Dimensional Model Representation (HDMR) method (PR #275)\r\n- PAWN method (PR #415)\r\n- Support for sampling/analysis method chaining (PR #339)\r\n- Support for truncated normal distribution (PR #383)\r\n- Confidence Interval estimation for FAST-based methods (PR #375)\r\n- Initial support for parallel model evaluation\r\n\r\n### Documentation\r\n\r\n- Defining non-uniform sampling now explicitly documented\r\n- Many general documentation improvements\r\n- Added FAQ\r\n\r\n### Development\r\n\r\n- Generalized support for non-uniform sampling methods (PR #346)",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.0",
+        "name": "v1.4.0 Release",
+        "release_id": 41777013,
+        "tag": "v1.4.0",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/41777013",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/41777013",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2021-04-21T13:11:40Z",
+        "date_published": "2021-04-21T13:22:20Z",
+        "description": "- Many documentation improvements\r\n- Explicitly mention extended FAST in documentation\r\n- Saltelli sampling: Warnings displayed when selected samples do not meet \r\n  requirements (PR #416).\r\n- Conversion to DataFrame when groups are defined with Sobol' results\r\n  (PR #413 and Issue #387)\r\n- Group sampling and analysis enabled for Sobol' and morris\r\n- Enhanced DataFrame support for groups",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.3.13",
+        "name": "v1.3.13",
+        "release_id": 41777202,
+        "tag": "v1.3.13",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.3.13",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/41777202",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/41777202",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.3.13"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2020-11-19T11:32:22Z",
+        "date_published": "2020-11-19T11:52:22Z",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.0-beta.0",
+        "name": "Public beta",
+        "release_id": 34169154,
+        "tag": "v1.4.0-beta.0",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.0-beta.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/34169154",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/34169154",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.0-beta.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2020-11-12T15:10:34Z",
+        "date_published": "2020-11-12T15:20:20Z",
+        "description": "Documentation Hotfix: Address broken link in documentation for RBD-FAST (thanks @Vaibhavdixit02)",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.3.12",
+        "name": "SALib v1.3.12",
+        "release_id": 33862099,
+        "tag": "v1.3.12",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.3.12",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/33862099",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/33862099",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.3.12"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2020-10-24T06:49:37Z",
+        "date_published": "2020-10-24T07:06:01Z",
+        "description": "This pre-release includes a fix that prevented method chaining from working correctly.",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.0.dev3",
+        "name": "v1.4.0 development release",
+        "release_id": 33006742,
+        "tag": "v1.4.0.dev3",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.0.dev3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/33006742",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/33006742",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.0.dev3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2020-10-24T06:49:37Z",
+        "date_published": "2020-10-24T06:10:26Z",
+        "description": "- Improved documentation\r\n- Continued improvements to method chaining approach\r\n- HDMR method (thanks to @sahin-abdullah)\r\n- Better plotting support\r\n- Confidence interval estimation for FAST and RBD-FAST\r\n",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.4.0.dev2",
+        "name": "v1.4.0 development pre-release",
+        "release_id": 33006317,
+        "tag": "v1.4.0.dev2",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.4.0.dev2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/33006317",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/33006317",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.4.0.dev2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ConnectedSystems",
+          "type": "User"
+        },
+        "date_created": "2020-09-30T14:52:08Z",
+        "date_published": "2020-09-30T15:20:03Z",
+        "description": "- HDMR method\r\n- New ProblemSpec class\r\n- Method chaining approach\r\n- Better plotting support\r\n- Unified `print_to_console` output (with the exception of HDMR results)\r\n- Improved documentation\r\n- Initial FAQ added",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.3.12.dev0",
+        "name": "Development pre-release",
+        "release_id": 31998239,
+        "tag": "v1.3.12.dev0",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.3.12.dev0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/31998239",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/31998239",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.3.12.dev0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jdherman",
+          "type": "User"
+        },
+        "date_created": "2019-09-02T19:22:47Z",
+        "date_published": "2019-09-02T19:25:23Z",
+        "description": "- Basic sensitivity index plotting (bar plot)\r\n- Clean duplicate options\r\n- Bugfixes",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.3.8",
+        "name": "SALib v1.3.8",
+        "release_id": 19701788,
+        "tag": "v1.3.8",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.3.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/19701788",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/19701788",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.3.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jdherman",
+          "type": "User"
+        },
+        "date_created": "2019-06-08T19:40:42Z",
+        "date_published": "2019-06-08T19:42:49Z",
+        "description": "bugfixes",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.3.7",
+        "name": "SALib v1.3.7",
+        "release_id": 17869698,
+        "tag": "v1.3.7",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.3.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/17869698",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/17869698",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.3.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jdherman",
+          "type": "User"
+        },
+        "date_created": "2019-04-30T11:29:27Z",
+        "date_published": "2019-05-08T18:53:53Z",
+        "description": "Update testing framework and small bug fixes",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.3.4",
+        "name": "SALib v1.3.4",
+        "release_id": 17230390,
+        "tag": "v1.3.4",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.3.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/17230390",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/17230390",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.3.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jdherman",
+          "type": "User"
+        },
+        "date_created": "2018-11-25T19:03:48Z",
+        "date_published": "2018-11-25T19:06:32Z",
+        "description": "Major changes:\r\n- Consolidated command-line interface (refer to new scripts in `examples/` directory)\r\n- Ability to convert results to pandas dataframe\r\n(thanks to @ConnectedSystems for these updates)\r\n\r\nIn addition to several small bugfixes.",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.2",
+        "name": "SALib v1.2",
+        "release_id": 14173225,
+        "tag": "v1.2",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/14173225",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/14173225",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "willu47",
+          "type": "User"
+        },
+        "date_created": "2017-08-30T16:14:17Z",
+        "date_published": "2017-08-30T16:32:53Z",
+        "description": "# SALib Version 1.1.0\r\n\r\n## New Features\r\n\r\n- Refactored Method of Morris so the Ruano et al. local approach is default\r\n\r\n## Bug Fixes\r\n\r\n- Inputs to morris.analyze are provided as floats\r\n- Removed calls to standard random library as inconsistent between Python 2 & 3\r\n- First row in Sobol sequences should be zero, not empty\r\n\r\n## Documentation\r\n\r\n- Added a Code of Conduct\r\n- Added DAETools, BCMD and others to citations - thanks for using SALib!\r\n- Removed misleading keyword arguments in docs and readme examples\r\n- Updated documentation for Method of Morris following refactor\r\n- Improved existing documentation where lacking e.g. for fractional factorial\r\n  method\r\n\r\n## Development Features\r\n\r\n- Implemented automatic deployment to PyPi\r\n- Fixed a bug preventing automatic deployment to PyPi upon tagging a branch\r\n- Removed postgres from travis config",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.1.0",
+        "name": "SALib v1.1.0",
+        "release_id": 7577201,
+        "tag": "v1.1.0",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/7577201",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/7577201",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jdherman",
+          "type": "User"
+        },
+        "date_created": "2017-01-07T23:39:54Z",
+        "date_published": "2017-01-08T00:17:39Z",
+        "description": "Stable version with fixes to documentation and testing suggested by reviewers.\r\n\r\nAlso some other small bugfixes.\r\n",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.0.2",
+        "name": "SALib: JOSS Paper",
+        "release_id": 5097023,
+        "tag": "v1.0.2",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/5097023",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/5097023",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "willu47",
+          "type": "User"
+        },
+        "date_created": "2016-10-11T15:17:44Z",
+        "date_published": "2016-10-11T15:18:57Z",
+        "description": "Release of our stable version of SALIB to coincide with an submission to [JOSS](joss.theoj.org):\n- Added a paper for submission to the Journal of Open-source Software\n- Updated back-end for documentation on read-the-docs\n- Updated the back-end for version introspection using PyScaffold, rather than versioneer\n- Updated the Travis-CI scripts\n- Moved the tests out of the SALib package and migrated to using pytest\n",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v1.0.0",
+        "name": "Launch of SALib!",
+        "release_id": 4346697,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/4346697",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/4346697",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jdherman",
+          "type": "User"
+        },
+        "date_created": "2016-02-24T05:10:50Z",
+        "date_published": "2016-02-24T05:17:08Z",
+        "description": "This release adds improved sampling for the Morris method (thanks to @JoerivanEngelen ) and group sampling/analysis for the Sobol method (thanks to @calvinwhealton ).\r\n\r\n@calvinwhealton has also added non-uniform distributions to the Sobol sampling. This will be a baseline for adding this to the other methods in the future.\r\n\r\nAlso includes several minor bug fixes.\r\n",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v0.7.1",
+        "name": "SALib: Improvements to Morris sampling and Sobol groups/distributions",
+        "release_id": 2676465,
+        "tag": "v0.7.1",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v0.7.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/2676465",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/2676465",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v0.7.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "willu47",
+          "type": "User"
+        },
+        "date_created": "2015-09-23T15:02:55Z",
+        "date_published": "2015-09-23T15:22:34Z",
+        "description": "- @dhadka has kindly contributed a wealth of documentation to the project, including doc strings in every module\r\n- We no longer test for numpy <1.8.0 and matplotlib < 1.4.3, and these requirements are implemented in a new setup script.\r\n",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v0.7",
+        "name": "SALib: New documentation, doc strings and installation requirements",
+        "release_id": 1856495,
+        "tag": "v0.7",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v0.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/1856495",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/1856495",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v0.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jdherman",
+          "type": "User"
+        },
+        "date_created": "2015-08-29T19:05:02Z",
+        "date_published": "2015-08-29T19:08:02Z",
+        "description": "New option to run analyze.sobol function in parallel using multiprocessing\r\n",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v0.6.3",
+        "name": "SAlib: Parallel option for Sobol method",
+        "release_id": 1740802,
+        "tag": "v0.6.3",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v0.6.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/1740802",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/1740802",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v0.6.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "willu47",
+          "type": "User"
+        },
+        "date_created": "2015-08-25T14:44:28Z",
+        "date_published": "2015-08-25T10:29:30Z",
+        "description": "This release does not contain any new functionality, but SALib now is citable using a Digital Object Identifier (DOI), which can be found in the readme.\r\n\r\nSome minor updates are included:\r\n- morris: sigma has been removed from the grouped-morris results and plots, replaced by mu_star_conf - a bootstrapped confidence interval.  Mu_star_conf is not equivalent to sigma when used in the non-grouped method of morris, but its all we have when using groups.\r\n- some minor updates to the tests in the plotting module\r\n",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v0.6.2",
+        "name": "SALib: Citable package",
+        "release_id": 1718765,
+        "tag": "v0.6.2",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v0.6.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/1718765",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/1718765",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v0.6.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jdherman",
+          "type": "User"
+        },
+        "date_created": "2015-07-09T19:10:34Z",
+        "date_published": "2015-07-09T19:14:48Z",
+        "description": "- Set up to include and test plotting functions\r\n- Specific plotting functions for Morris\r\n- Fractional Factorial SA from Saltelli et al.\r\n- Repo transferred to SALib organization, update setup and URLs\r\n- Small bugfixes\r\n",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v0.6",
+        "name": "SALib v0.6",
+        "release_id": 1517288,
+        "tag": "v0.6",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v0.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/1517288",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/1517288",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v0.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jdherman",
+          "type": "User"
+        },
+        "date_created": "2015-05-08T12:59:11Z",
+        "date_published": "2015-05-08T15:01:02Z",
+        "description": "- Vectorized bootstrap calculations for Morris and Sobol\r\n- Optional trajectory optimization with Gurobi, and tests for it\r\n- Several minor bugfixes\r\n\r\nStarting with v0.5, SALib is released under the MIT license.\r\n",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v0.5",
+        "name": "SALib v0.5",
+        "release_id": 1275251,
+        "tag": "v0.5",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v0.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/1275251",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/1275251",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v0.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jdherman",
+          "type": "User"
+        },
+        "date_created": "2015-01-30T20:01:32Z",
+        "date_published": "2015-01-30T20:05:33Z",
+        "description": "Better Python API without requiring file read/write to the OS. Consistent functional API to sampling methods so that they return numpy matrices. Analysis methods now accept numpy matrices instead of data file names. This does not change the CLI at all, but makes it much easier to use from native Python.\r\n\r\nAlso expanded tests for regression and the Sobol method.\r\n",
+        "html_url": "https://github.com/SALib/SALib/releases/tag/v0.4",
+        "name": "SALib v0.4",
+        "release_id": 902720,
+        "tag": "v0.4",
+        "tarball_url": "https://api.github.com/repos/SALib/SALib/tarball/v0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/SALib/SALib/releases/902720",
+        "value": "https://api.github.com/repos/SALib/SALib/releases/902720",
+        "zipball_url": "https://api.github.com/repos/SALib/SALib/zipball/v0.4"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy>=2.0",
+        "version": ">=2.0"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scipy",
+        "type": "Software_application",
+        "value": "scipy>=1.9.3",
+        "version": ">=1.9.3"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib>=3.5",
+        "version": ">=3.5"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pandas",
+        "type": "Software_application",
+        "value": "pandas>=2.0",
+        "version": ">=2.0"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "multiprocess",
+        "type": "Software_application",
+        "value": "multiprocess",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "hatchling",
+        "type": "Software_application",
+        "value": "hatchling",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "hatch-vcs",
+        "type": "Software_application",
+        "value": "hatch-vcs",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:58:23",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 945
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Quick Start",
+        "parent_header": [
+          "Sensitivity Analysis Library (SALib)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Procedural approach\n~~~~~~~~~~~~~~~~~~~\n\n.. code:: python\n\n    from SALib.sample import saltelli\n    from SALib.analyze import sobol\n    from SALib.test_functions import Ishigami\n    import numpy as np\n\n    problem = {\n      'num_vars': 3,\n      'names': ['x1', 'x2', 'x3'],\n      'bounds': [[-np.pi, np.pi]]*3\n    }\n\n    # Generate samples\n    param_values = saltelli.sample(problem, 1024)\n\n    # Run model (example)\n    Y = Ishigami.evaluate(param_values)\n\n    # Perform analysis\n    Si = sobol.analyze(problem, Y, print_to_console=True)\n    # Returns a dictionary with keys 'S1', 'S1_conf', 'ST', and 'ST_conf'\n    # (first and total-order indices with bootstrap confidence intervals)\n\nIt's also possible to specify the parameter bounds in a file with 3\ncolumns:\n\n::\n\n    # name lower_bound upper_bound\n    P1 0.0 1.0\n    P2 0.0 5.0\n    ...etc.\n\nThen the ``problem`` dictionary above can be created from the\n``read_param_file`` function:\n\n.. code:: python\n\n    from SALib.util import read_param_file\n    problem = read_param_file('/path/to/file.txt')\n    # ... same as above\n\nLots of other options are included for parameter files, as well as a\ncommand-line interface. See the `advanced\nsection in the documentation <https://salib.readthedocs.io/en/latest/advanced.html>`__.\n\n\nMethod chaining approach\n~~~~~~~~~~~~~~~~~~~~~~~~\n\nChaining calls is supported from SALib v1.4\n\n.. code:: python\n\n    from SALib import ProblemSpec\n    from SALib.test_functions import Ishigami\n\n    import numpy as np\n\n\n    # By convention, we assign to \"sp\" (for \"SALib Problem\")\n    sp = ProblemSpec({\n      'names': ['x1', 'x2', 'x3'],   # Name of each parameter\n      'bounds': [[-np.pi, np.pi]]*3,  # bounds of each parameter\n      'outputs': ['Y']               # name of outputs in expected order\n    })\n\n    (sp.sample_saltelli(1024, calc_second_order=True)\n       .evaluate(Ishigami.evaluate)\n       .analyze_sobol(print_to_console=True))\n\n    print(sp)\n\n    # Samples, model results and analyses can be extracted:\n    print(sp.samples)\n    print(sp.results)\n    print(sp.analysis)\n\n    # Basic plotting functionality is also provided\n    sp.plot()\n\n\nThe above is equivalent to the procedural approach shown previously.\n\nAlso check out the `FAQ <https://github.com/SALib/SALib/tree/main/FAQ.md>`__ and\n`examples <https://github.com/SALib/SALib/tree/main/examples>`__ for a\nfull description of options for each method.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Projects that use SALib",
+        "parent_header": [
+          "Sensitivity Analysis Library (SALib)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Many projects now use the Global Sensitivity Analysis features provided by\nSALib. Here is a selection:\n\nSoftware\n~~~~~~~~\n\n* `The City Energy Analyst <https://github.com/architecture-building-systems/CEAforArcGIS>`_\n* `pynoddy <https://github.com/flohorovicic/pynoddy>`_\n* `savvy <https://github.com/houghb/savvy>`_\n* `rhodium <https://github.com/Project-Platypus/Rhodium>`_\n* `pySur <https://github.com/MastenSpace/pysur>`_\n* `EMA workbench <https://github.com/quaquel/EMAworkbench>`_\n* `Brain/Circulation Model Developer <https://github.com/bcmd/BCMD>`_\n* `DAE Tools <http://daetools.com/>`_\n* `agentpy <https://github.com/JoelForamitti/agentpy>`_\n* `uncertainpy <https://github.com/simetenn/uncertainpy>`_\n* `CLIMADA <https://github.com/CLIMADA-project/climada_python>`_\n\nBlogs\n~~~~~\n\n* `Sensitivity Analysis in Python <http://www.perrygeo.com/sensitivity-analysis-in-python.html>`_\n* `Sensitivity Analysis with SALib <http://keyboardscientist.weebly.com/blog/sensitivity-analysis-with-salib>`_\n* `Running Sobol using SALib <https://waterprogramming.wordpress.com/2013/08/05/running-sobol-sensitivity-analysis-using-salib/>`_\n* `Extensions of SALib for more complex sensitivity analyses <https://waterprogramming.wordpress.com/2014/02/11/extensions-of-salib-for-more-complex-sensitivity-analyses/>`_\n\nVideos\n~~~~~~\n\n* `PyData Presentation on SALib <https://youtu.be/gkR_lz5OptU>`_\n\nIf you would like to be added to this list, please submit a pull request,\nor create an issue.\n\nMany thanks for using SALib.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v1.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/SALib/SALib/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,500 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "Ihsan.Khaliq@usq.edu.au",
+        "type": "String",
+        "value": "Ihanul Khaliq"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "Adam.Sparks@dpird.wa.gov.au",
+        "identifier": "https://orcid.org/0000-0002-0061-8359",
+        "type": "String",
+        "value": "Adam H. Sparks"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "year <- sub(\"-.*\", \"\", meta$Date)\nnote <- sprintf(\"R package version %s\", meta$Version)\n\nbibentry(bibtype = \"Manual\",\n         title = \"{spatiotemporaldynamics}: A research compendium to accompany 'Spatiotemporaldynamics of Ascochyta blight in chickpea'\",\n         author = c(person(\"Ihsanul\", \"Khaliq\"),\n                  person(\"Adam H.\", \"Sparks\")),\n         year = year,\n         note = note,\n         url = \"https://github.com/IhsanKhaliq/spatiotemporaldynamics\",\n         DOI = \"10.5281/zenodo.4563709\")\n\ntextVersion =\n  paste0(\"Ihsanul Khaliq and Adam H. Sparks (\",\n         year,\n         \"). spatiotemporaldynamics: A research compendium to accompany 'Spatiotemporaldynamics of Ascochyta blight in chickpea\",\n         note, \". DOI: 10.5281/zenodo.4563709\")\n"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "Spatiotemporal development of Ascochyta blight in chickpea from primary infection foci: insights from plant, pathogen and the environment interactions to inform an epidemic risk"
+        ],
+        "type": "Text_excerpt",
+        "value": "As these analysis notes are an integral part of the paper and have their own DOI, it is kindly requested that you cite the full research compendium as follows:\n> Ihsanul Khaliq. Spatiotemporaldynamics: A research compendium to accompany 'Spatiotemporal dynamics of Ascochyta blight in chickpea`. Available at https://zenodo.org/record/4563709\n\n"
+      },
+      "source": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/IhsanKhaliq/spatiotemporaldynamics"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/IhsanKhaliq/spatiotemporaldynamics"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-01-19T22:58:37Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-07-26T05:36:02Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Spatiotemporal dynamics of Ascochyta blight in chickpea"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+        "type": "String",
+        "value": "Research compendium documenting data visualisation and generalised\n            linear mixed models fitting to determine the spatiotemporal dynamics of\n            chickpea Ascochyta blight in chickpea from primary infection foci in\n            studies conducted in Queensland, AU during the 2020 winter \n            cropping season."
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Research compendium documenting data visualisation and generalised\n            additive model (GAM) fitting for the spatiotemporal dynamics of\n            chickpea Ascochyta blight spread in the paddock from research\n            studies conducted in Queensland, AU during the 2020 winter \n            cropping season."
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9948963749842678,
+      "result": {
+        "original_header": "Spatiotemporal development of Ascochyta blight in chickpea from primary infection foci: insights from plant, pathogen and the environment interactions to inform an epidemic risk",
+        "type": "Text_excerpt",
+        "value": "The goal of of this project is to investigate the spatiotemporal development of Ascochyta blight from primary infection foci, and to investigate the key environmental factors influencing disease progress in space and time.  \n"
+      },
+      "source": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9373786108305182,
+      "result": {
+        "original_header": "Abstract",
+        "type": "Text_excerpt",
+        "value": "Ascochyta blight epidemics have been observed in many countries since the early 1900s but studies on an interaction between the amount of inoculum, environmental factors and the spatiotemporal development of Ascochyta blight are rare due to the historic emphasis on developing resistant cultivars and chemical control of the disease. I used generalised linear mixed models to investigate key environmental factors affecting the spatiotemporal development of Ascochyta blight from primary infection foci. Briefly, four replicate plots (20 m\u2009\u00d7\u200920 m) of a susceptible chickpea cultivar were planted at two different locations (Billa Billa and Tosari) in Queensland, Australia. Four naturally infested stubble pieces were placed at the centre of each newly emerged chickpea plot 14 days after sowing. The number of infected plants was counted in 1 m2 observation quadrats at the distances of 3, 6 and 9 m in a concentric arrangement. The number of infected plants increased with each assessment date, approaching 100% plant infections at the time of final assessment. The rate of disease progress was significantly faster at Tosari. The rate of disease progress significantly decreased as the distance from the primary infection foci increased. There was a significant positive effect of an optimum temperature, increasing rainfall and omni-directional wind. The influence of wind speed was not significant. The finding that single infection foci were enough to spread disease across whole plots indicate that limited inoculum is not a barrier in the development of an epiphytotic under conducive conditions. \n"
+      },
+      "source": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9671872452016583,
+      "result": {
+        "original_header": "Reproducibility and data availability",
+        "type": "Text_excerpt",
+        "value": "This analysis is packaged and fully reproducible. All data from this work are included in this repository and R package in the \"inst/extdata\" folder. The code used in the statistical analyses and data visualisation is available to run in R Markdown vignettes, including extra instruction for which I did not have space in the paper. These are also archived and documented with Zenodo,https://doi.org/10.5281/zenodo.4563709, for reuse \nA user-friendly website of this research compendium is available here, <https://ihsankhaliq.github.io/spatiotemporaldynamics/>.\nInterested parties may wish to view the code for visualisation pipeline as well as models fitting. These are available under the \"Articles\" menu item of the [web page](https://ihsankhaliq.github.io/spatiotemporaldynamics/).  \n"
+      },
+      "source": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9573014310490625,
+      "result": {
+        "original_header": "Contributions",
+        "type": "Text_excerpt",
+        "value": "Contributions from everyone is welcomed. Before you get started, please see our [contributor guidelines](CONTRIBUTING.html).Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.html). By participating in this project you agree to abide by its terms. \n"
+      },
+      "source": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.tidyverse.org/lifecycle/#stable"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/IhsanKhaliq/spatiotemporaldynamics/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "IhsanKhaliq/spatiotemporaldynamics"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Spatiotemporal development of Ascochyta blight in chickpea from primary infection foci: insights from plant, pathogen and the environment interactions to inform an epidemic risk"
+      },
+      "source": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "spatiotemporaldynamics"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.4563709"
+      },
+      "source": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/IhsanKhaliq/spatiotemporaldynamics/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2021 Ihsan Khaliq\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "spatiotemporaldynamics"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "spatiotemporaldynamics: Spatiotemporal dynamics of chickpea ascochyta blight spread in the paddock"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "IhsanKhaliq"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+        "type": "String",
+        "value": "spatiotemporaldynamics"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 3985,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "IhsanKhaliq",
+          "type": "User"
+        },
+        "date_created": "2021-07-02T05:49:47Z",
+        "date_published": "2021-07-13T02:33:57Z",
+        "description": "This release reports that the paper has been published and available at https://doi.org/10.1007/s10658-021-02324-6\r\n",
+        "html_url": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/releases/tag/1.2",
+        "name": "Paper published",
+        "release_id": 46093301,
+        "tag": "1.2",
+        "tarball_url": "https://api.github.com/repos/IhsanKhaliq/spatiotemporaldynamics/tarball/1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/IhsanKhaliq/spatiotemporaldynamics/releases/46093301",
+        "value": "https://api.github.com/repos/IhsanKhaliq/spatiotemporaldynamics/releases/46093301",
+        "zipball_url": "https://api.github.com/repos/IhsanKhaliq/spatiotemporaldynamics/zipball/1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "IhsanKhaliq",
+          "type": "User"
+        },
+        "date_created": "2021-05-30T05:36:11Z",
+        "date_published": "2021-02-26T06:50:28Z",
+        "description": "Second release of spatiotemporaldynamics repository",
+        "html_url": "https://github.com/IhsanKhaliq/spatiotemporaldynamics/releases/tag/1.1",
+        "name": "Second release",
+        "release_id": 38783535,
+        "tag": "1.1",
+        "tarball_url": "https://api.github.com/repos/IhsanKhaliq/spatiotemporaldynamics/tarball/1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/IhsanKhaliq/spatiotemporaldynamics/releases/38783535",
+        "value": "https://api.github.com/repos/IhsanKhaliq/spatiotemporaldynamics/releases/38783535",
+        "zipball_url": "https://api.github.com/repos/IhsanKhaliq/spatiotemporaldynamics/zipball/1.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 2.10",
+        "version": ">= 2.10"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:05:16",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+        "type": "String",
+        "value": "1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/IhsanKhaliq/spatiotemporaldynamics/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

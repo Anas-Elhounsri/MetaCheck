@@ -1,0 +1,906 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "marco.sciaini@posteo.net",
+            "value": "Marco Sciaini"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "sciaini.marco@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-3042-5435",
+        "type": "String",
+        "value": "Marco Sciaini"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "matthias.fritsch@forst.uni-goettingen.de",
+        "type": "String",
+        "value": "Matthias Fritsch"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "simpkinscraig063@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-3212-1379",
+        "type": "String",
+        "value": "Craig Simpkins"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "cedricphilippscherer@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-0465-2543",
+        "type": "String",
+        "value": "C\u00e9dric Scherer"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0002-3990-4897",
+        "type": "String",
+        "value": "Sebastian Han\u00df"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2018",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"To cite NLMR in publications use:\")\n\ncitEntry(entry = \"Article\",\n         title        = \"NLMR and landscapetools:\ue002 An\ue002 integrated\ue002 environment\ue002 for\ue002 simulating\ue002 and\ue002 modifying\ue002 neutral\ue002 landscape\ue002 models\ue002 in\ue002 R\",\n         author       = personList(as.person(\"Marco Sciaini\"),\n                                   as.person(\"Matthias Fritsch\"),\n                                   as.person(\"Cedric Scherer\"),\n                                   as.person(\"Craig E. Simpkins\")),\n         journal = \"Methods in Ecololgy and Evolution\",\n         volume = \"00\",\n         pages = \"1--9\",\n         year         = \"2018\",\n         url          = \"https://doi.org/10.1111/2041-210X.13076\",\n         \n         textVersion  =\n             paste(\"Sciaini M, Fritsch M, Scherer C, Simpkins CE. NLMR and landscapetools: An integrated environment for simulating and modifying neutral landscape models in R. Methods Ecol Evol. 2018;9:2240\u20132248.\"))\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/inst/CITATION",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/NLMR"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mhesselbarth/NLMR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.org/ropensci/NLMR",
+          "https://ci.appveyor.com/project/ropensci/NLMR",
+          "https://codecov.io/gh/ropensci/NLMR"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING #\n\n### Please contribute!\n\nWe love collaboration.\n\n### Bugs?\n\n* Submit an issue on the Issues page [here](https://github.com/ropensci/nlmr/issues)\n\n### Code contributions\n\n* Fork this repo to your Github account\n* Clone your version on your account down to your machine from your account, e.g,. `git clone https://github.com/<yourgithubusername>/nlmr.git`\n* Make sure to track progress upstream (i.e., on our version of `scrubr` at `ropensci/scrubr`) by doing `git remote add upstream https://github.com/ropensci/nlmr.git`. Before making changes make sure to pull changes in from upstream by doing either `git fetch upstream` then merge later or `git pull upstream` to fetch and merge in one step\n* Make your changes (bonus points for making changes on a new branch)\n* If you alter package functionality at all (e.g., the code itself, not just documentation)\nplease do write some tests to cover the new functionality.\n* Push up to your account\n* Submit a pull request to home base at `ropensci/nlmr`\n\n### Questions? Get in touch: [sciaini.marco@gmail.com](mailto:sciaini.marco@gmail.com)\n\n### Thanks for contributing!\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-08-04T15:34:40Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-04-29T13:47:15Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "\ud83d\udce6 R package to simulate neutral landscape models \ud83c\udfd4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+        "type": "String",
+        "value": "Provides neutral landscape models (<doi:10.1007/BF02275262>,\n    <http://sci-hub.tw/10.1007/bf02275262>).  Neutral landscape models\n    range from \"hard\" neutral models (completely random distributed), to\n    \"soft\" neutral models (definable spatial characteristics) and generate\n    landscape patterns that are independent of ecological processes.\n    Thus, these patterns can be used as null models in landscape ecology.\n    'NLMR' combines a large number of algorithms from other published\n    software for simulating neutral landscapes. The simulation results are\n    obtained in a spatial data format (raster* objects from the 'raster'\n    package) and can, therefore, be used in any sort of raster data\n    operation that is performed with standard observation data."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Provides neutral landscape models (<doi:10.1007/BF02275262>,\n    <http://sci-hub.tw/10.1007/bf02275262>).  \n    Neutral landscape models range from \"hard\" \n    neutral models (completely random distributed), to \"soft\" neutral models \n    (definable spatial characteristics) and generate landscape patterns that are \n    independent of ecological processes.\n    Thus, these patterns can be used as null models in landscape ecology. 'nlmr' \n    combines a large number of algorithms from other published software for \n    simulating neutral landscapes. The simulation results are obtained in a\n    geospatial data format (raster* objects from the 'raster' package) and can,\n    therefore, be used in any sort of raster data operation that is performed \n    with standard observation data.                                                                                                  "
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.984930557284007,
+      "result": {
+        "original_header": "NLMR <img src=\"man/figures/logo.png\" align=\"right\" width=\"150\" />",
+        "type": "Text_excerpt",
+        "value": "**NLMR** is an `R` package for simulating **n**eutral **l**andscape\n**m**odels (NLM). Designed to be a generic framework like\n[NLMpy](https://pypi.python.org/pypi/nlmpy), it leverages the ability to\nsimulate the most common NLM that are described in the ecological\nliterature. **NLMR** builds on the advantages of the **raster** package\nand returns all simulation as `RasterLayer` objects, thus ensuring a\ndirect compatibility to common GIS tasks and a flexible and simple\nusage. Furthermore, it simulates NLMs within a self-contained,\nreproducible framework.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8004501410885849,
+      "result": {
+        "original_header": "See also",
+        "type": "Text_excerpt",
+        "value": "**NLMR** was split during its development process - to have a minimal\ndependency version for simulating neutral landscape models and an\nutility toolbox to facilitate workflows with raster data. If you are\ninterested in merging, visualizing or further handling neutral landscape\nmodels have a look at the\n[landscapetools](https://github.com/ropensci/landscapetools/) package.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8128169465811865,
+      "result": {
+        "original_header": "Meta",
+        "type": "Text_excerpt",
+        "value": "-   Please [report any issues or\n    bugs](https://github.com/ropensci/NLMR/issues/new/).\n-   License: GPL3\n-   Get citation information for `NLMR` in R doing\n    `citation(package = 'NLMR')`\n    -   Additionally, we keep a [record of\n        publications](https://ropensci.github.io/NLMR/articles/publication_record.html/)\n        that use **NLMR**. Hence, if you used **NLMR** please [file an\n        issue on GitHub](https://github.com/ropensci/NLMR/issues/new/)\n        so we can add it to the list.\n-   We are very open to contributions - if you are interested check out\n    our [Contributor Guidelines](CONTRIBUTING.md).\n    -   Please note that this project is released with a [Contributor\n        Code of Conduct](CONDUCT.md). By participating in this project\n        you agree to abide by its terms. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.tidyverse.org/lifecycle/#maturing"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/NLMR/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/ropensci/NLMR/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/NLMR/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 17
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/NLMR/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/NLMR"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "NLMR "
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.github.io/NLMR/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "NLMR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://wol-prod-cdn.literatumonline.com/cms/attachment/b963a726-ed88-4ede-863c-a65451f91d0f/mee313076-fig-0001-m.jpg"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/github_footer.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "NLMR <img src=\"man/figures/logo.png\" align=\"right\" width=\"150\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "NLMR is not available on CRAN at the moment (see #95). The only way to\ninstall NLMR at the moment is:\n\n``` r\n# install.packages(\"remotes\")\nremotes::install_github(\"cran/RandomFieldsUtils\")\nremotes::install_github(\"cran/RandomFields\")\nremotes::install_github(\"ropensci/NLMR\")\n```\n\nWindows users need to install RTools first. Rtools provides a compiler\nand some helpers to compile code for R in Windows. Download Rtools from\nhere: <https://cran.r-project.org/bin/windows/Rtools/> and select the\nappropriate Rtools version (4.0 with R 4.x.x)\n\nInstall Rtools in a directory with no fancy characters in its path,\ne.g.\u00a0`C:\\R\\Rtools` is safe. To install, right click on the\n`Rtools40.exe` and select \u201cRun as administrator\u201d. During the\ninstallation make sure to select \u201cAdd Rtools to PATH\u201d. Otherwise, accept\nall defaults for everything else.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/NLMR/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/NLMR/issues/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/NLMR/issues/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "landscape-ecology, neutral-landscape-model, peer-reviewed, r, r-package, rstats, spatial"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/NLMR/master/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "NLMR"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "NLMR: Simulating Neutral Landscape Models"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+        "type": "String",
+        "value": "NLMR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 69330,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 19449,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 2816,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bitbacchus",
+          "type": "User"
+        },
+        "date_created": "2021-09-17T15:16:22Z",
+        "date_published": "2021-09-21T12:01:07Z",
+        "description": " \r\nWe seem to have some inconsistencies in the version numbers. v0.6 is equal to v1.1 on CRAN\r\n",
+        "html_url": "https://github.com/ropensci/NLMR/releases/tag/v0.6",
+        "name": "NLMR v0.6 and v1.1 CRAN RELEASE",
+        "release_id": 49977817,
+        "tag": "v0.6",
+        "tarball_url": "https://api.github.com/repos/ropensci/NLMR/tarball/v0.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/NLMR/releases/49977817",
+        "value": "https://api.github.com/repos/ropensci/NLMR/releases/49977817",
+        "zipball_url": "https://api.github.com/repos/ropensci/NLMR/zipball/v0.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "marcosci",
+          "type": "User"
+        },
+        "date_created": "2018-11-16T09:15:44Z",
+        "date_published": "2018-11-19T06:54:53Z",
+        "html_url": "https://github.com/ropensci/NLMR/releases/tag/0.4",
+        "name": "NLMR v0.4 CRAN RELEASE",
+        "release_id": 14070637,
+        "tag": "0.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/NLMR/tarball/0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/NLMR/releases/14070637",
+        "value": "https://api.github.com/repos/ropensci/NLMR/releases/14070637",
+        "zipball_url": "https://api.github.com/repos/ropensci/NLMR/zipball/0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "marcosci",
+          "type": "User"
+        },
+        "date_created": "2018-04-03T14:04:31Z",
+        "date_published": "2018-04-03T14:05:50Z",
+        "html_url": "https://github.com/ropensci/NLMR/releases/tag/v0.3",
+        "name": "NLMR v0.3 CRAN release",
+        "release_id": 10371443,
+        "tag": "v0.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/NLMR/tarball/v0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/NLMR/releases/10371443",
+        "value": "https://api.github.com/repos/ropensci/NLMR/releases/10371443",
+        "zipball_url": "https://api.github.com/repos/ropensci/NLMR/zipball/v0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "marcosci",
+          "type": "User"
+        },
+        "date_created": "2018-03-16T17:24:07Z",
+        "date_published": "2018-03-16T18:21:15Z",
+        "description": "We splitted the package into two autonomous packages:\r\n- nlmr\r\n- landscapetools\r\n\r\n... to ensure minimal dependencies in nlmr",
+        "html_url": "https://github.com/ropensci/NLMR/releases/tag/0.3.0",
+        "name": "nlmr",
+        "release_id": 10127837,
+        "tag": "0.3.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/NLMR/tarball/0.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/NLMR/releases/10127837",
+        "value": "https://api.github.com/repos/ropensci/NLMR/releases/10127837",
+        "zipball_url": "https://api.github.com/repos/ropensci/NLMR/zipball/0.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "marcosci",
+          "type": "User"
+        },
+        "date_created": "2018-02-16T13:42:29Z",
+        "date_published": "2018-02-19T14:21:20Z",
+        "html_url": "https://github.com/ropensci/NLMR/releases/tag/0.2.1",
+        "name": "v 0.2.1",
+        "release_id": 9735412,
+        "tag": "0.2.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/NLMR/tarball/0.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/NLMR/releases/9735412",
+        "value": "https://api.github.com/repos/ropensci/NLMR/releases/9735412",
+        "zipball_url": "https://api.github.com/repos/ropensci/NLMR/zipball/0.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "marcosci",
+          "type": "User"
+        },
+        "date_created": "2018-01-10T08:39:31Z",
+        "date_published": "2018-01-10T08:44:54Z",
+        "description": "# Changes\r\n- Small bug fixes\r\n- New neutral landscape models\r\n- nlm_wheys: Simulates a wheyed neutral landscape model\r\n- Parameter p in nlm_curds now controls the proportion of habitat instead of the amount of matrix\r\n- Implemented new theme theme_nlm\r\n- Functions to coerce raster to tibbles and vice versa (for facetting with ggplot2)\r\n- We now have unit tests covering the main functionality of the package\r\n- Removed several packages as dependencies",
+        "html_url": "https://github.com/ropensci/NLMR/releases/tag/0.2.0",
+        "name": "Version 0.2.0",
+        "release_id": 9175171,
+        "tag": "0.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/NLMR/tarball/0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/NLMR/releases/9175171",
+        "value": "https://api.github.com/repos/ropensci/NLMR/releases/9175171",
+        "zipball_url": "https://api.github.com/repos/ropensci/NLMR/zipball/0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "marcosci",
+          "type": "User"
+        },
+        "date_created": "2017-11-30T13:21:08Z",
+        "date_published": "2017-12-01T08:29:17Z",
+        "description": "Accepted on CRAN",
+        "html_url": "https://github.com/ropensci/NLMR/releases/tag/0.1.0",
+        "name": "first release",
+        "release_id": 8730487,
+        "tag": "0.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/NLMR/tarball/0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/NLMR/releases/8730487",
+        "value": "https://api.github.com/repos/ropensci/NLMR/releases/8730487",
+        "zipball_url": "https://api.github.com/repos/ropensci/NLMR/zipball/0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 3.1.0",
+        "version": ">= 3.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "checkmate",
+        "type": "Software_application",
+        "value": "checkmate",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dplyr",
+        "type": "Software_application",
+        "value": "dplyr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "RandomFields",
+        "type": "Software_application",
+        "value": "RandomFields",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "raster",
+        "type": "Software_application",
+        "value": "raster",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "spatstat.random",
+        "type": "Software_application",
+        "value": "spatstat.random",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "spatstat.geom",
+        "type": "Software_application",
+        "value": "spatstat.geom",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "stats",
+        "type": "Software_application",
+        "value": "stats",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "tibble",
+        "type": "Software_application",
+        "value": "tibble",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "fasterize",
+        "type": "Software_application",
+        "value": "fasterize",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sf",
+        "type": "Software_application",
+        "value": "sf",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Rcpp",
+        "type": "Software_application",
+        "value": "Rcpp",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "https://sysreqs.r-hub.io/get/cxx11",
+        "type": "Software_application",
+        "value": "https://sysreqs.r-hub.io/get/cxx11",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:14:00",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 65
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example",
+        "parent_header": [
+          "NLMR <img src=\"man/figures/logo.png\" align=\"right\" width=\"150\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "Each neutral landscape models is simulated with a single function (all\nstarting with `nlm_`) in `NLMR`, e.g.:\n\n``` r\nrandom_cluster <- NLMR::nlm_randomcluster(nrow = 100,\n                                      ncol = 100,\n                                      p    = 0.5,\n                                      ai   = c(0.3, 0.6, 0.1),\n                                      rescale = FALSE)\n\nrandom_curdling <- NLMR::nlm_curds(curds = c(0.5, 0.3, 0.6),\n                              recursion_steps = c(32, 6, 2))\n\n\nmidpoint_displacememt <- NLMR::nlm_mpd(ncol = 100,\n                                 nrow = 100,\n                                 roughness = 0.61)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+        "type": "String",
+        "value": "1.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.4.2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/NLMR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

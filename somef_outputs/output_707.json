@@ -1,0 +1,574 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8978944670228556,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "eli.pousson@gmail.com",
+        "identifier": "https://orcid.org/0000-0001-8280-1706",
+        "type": "String",
+        "value": "Eli Pousson"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/elipousson/mapbaltimore"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/elipousson/mapbaltimore"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/elipousson/mapbaltimore"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://app.codecov.io/gh/elipousson/mapbaltimore?branch=main"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-10-09T15:07:01Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-03T15:36:24Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "\ud83d\uddfa\ud83c\udfd9 Map Baltimore neighborhoods and local open data"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+        "type": "String",
+        "value": "This package provides data from the Baltimore City, the state\n    of Maryland, and other sources, functions to access additional data,\n    and function to create and modify simple maps of Baltimore\n    neighborhoods using sf and ggplot2."
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This package provides data from the Baltimore City, the state of Maryland, and other sources, functions to access additional data, and function to create and modify simple maps of Baltimore neighborhoods using sf and ggplot2."
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9881599347770827,
+      "result": {
+        "original_header": "mapbaltimore <img src=\"man/figures/logo.png\" align=\"right\" height=\"123\"/>",
+        "type": "Text_excerpt",
+        "value": "\nThe goal of the mapbaltimore package is to provide an easy way to create\nmaps of Baltimore neighborhoods, Council districts, and other areas\nusing open data on schools, housing, parks, and public transit.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8689128321312234,
+      "result": {
+        "original_header": "Data and reproducibility",
+        "type": "Text_excerpt",
+        "value": "The intent for this package is to always provide the most current\nversion of the included administrative data. If the underlying data is\nupdated on an rolling basis, the corresponding dataset for mapbaltimore\nwill be updated with changes noted in the changelog. If the underlying\ndata is updated less frequently or requires some special review, the\nolder versions may be archived with a year appended to the end of the\ndataset name. \nPackage datasets that are currently known to be outdated included: \n- `csas`: Multiple attribute names are outdated.\n- `neighborhoods`: A new version is now included as `neighborhoods_2020`\n- `police_districts`: A new version is now included as\n  `police_districts_2023` \n"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8962385654772153,
+      "result": {
+        "original_header": "Required packages",
+        "type": "Text_excerpt",
+        "value": "mapbaltimore relies on a several other non-CRAN packages that I am\nactively developing. I split off many of the mapping and data access\nfunctions originally created for mapbaltimore into three more general\npackages that are imported by mapbaltimore: \nThe package uses [my fork of the esri2sf R\npackage](https://github.com/elipousson/esri2sf/) to access city and\nstate FeatureLayers for building permit data, crime data, and 311\nservice requests and other data sources.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9850789755768916,
+      "result": {
+        "original_header": "Baltimore and Maryland data packages",
+        "type": "Text_excerpt",
+        "value": "- [bcpss](https://elipousson.github.io/bcpss/): Tabular and spatial data\n  from the Baltimore City School system.\n- [mapmaryland](https://elipousson.github.io/mapmaryland/): Statewide\n  spatial data from the U.S. Census Bureau and other sources along with\n  data access functions for working with the Maryland Open Data portal\n  and Maryland iMap service.\n- [baltimorecensus](https://elipousson.github.io/baltimorecensus/): Data\n  downloaded with the tigris package.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8187603452227498,
+      "result": {
+        "original_header": "Inspirational packages",
+        "type": "Text_excerpt",
+        "value": "The development of mapbaltimore was inspired in part by a handful of\nother \u201cplace-based\u201d R packages for cities: \nAt the national level, [tigris](https://github.com/walkerke/tigris)\nprovides access to boundary data for all geographies used by the U.S.\nCensus Bureau. mapbaltimore uses tigris to download all of the U.S.\nCensus geographies that are included with the package. \nOutside the U.S., there are similar packages that provide access to\nvaried boundary data for Brazil\n[geobr](https://github.com/ipeaGIT/geobr), Uruguay\n[geouy](https://github.com/RichDeto/geouy), Chile\n[chilemapas](https://github.com/pachamaltese/chilemapas) and Mexico\n[mxmaps](https://github.com/diegovalle/mxmaps).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "https://lifecycle.r-lib.org/articles/stages.html#experimental",
+          "https://www.repostatus.org/#active"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/elipousson/mapbaltimore/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/elipousson/mapbaltimore/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "elipousson/mapbaltimore"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mapbaltimore "
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://elipousson.github.io/mapbaltimore/"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mapbaltimore"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/man/figures/README-unnamed-chunk-5-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/man/figures/README-unnamed-chunk-6-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "mapbaltimore <img src=\"man/figures/logo.png\" align=\"right\" height=\"123\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install this development version (including Suggested packages)\nfrom [GitHub](https://github.com/) with:\n\n``` r\n# install.packages(\"pak\")\npak::pkg_install(\"elipousson/mapbaltimore\", dependencies = TRUE)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/elipousson/mapbaltimore/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/elipousson/mapbaltimore/issues"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/elipousson/mapbaltimore/issues"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "baltimore, r, r-package, rspatial"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "baltimore",
+          "rspatial",
+          "r-package",
+          "r"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2020 Eli Pousson\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mapbaltimore"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mapbaltimore: Make maps for Baltimore City with open data"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "elipousson"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+        "type": "String",
+        "value": "mapbaltimore"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 401442,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/elipousson/mapbaltimore/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:47:07",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 18
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Examples",
+        "parent_header": [
+          "mapbaltimore <img src=\"man/figures/logo.png\" align=\"right\" height=\"123\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "``` r\nlibrary(sf)\n#> Linking to GEOS 3.11.0, GDAL 3.5.3, PROJ 9.1.0; sf_use_s2() is TRUE\nlibrary(ggplot2)\nlibrary(mapbaltimore)\n\ntheme_set(theme_void())\n```\n\nmapbaltimore is most useful for convenient access to Baltimore spatial\ndata from neighborhoods to streets to parks.\n\nYou can download a neighborhood boundary:\n\n``` r\ndowntown <- get_baltimore_area(\n  type = \"neighborhood\",\n  name = \"Downtown\"\n)\n\ndowntown_boundary <- geom_sf(\n  data = downtown,\n  color = \"darkorange\",\n  fill = NA,\n  linewidth = 0.75,\n  linetype = \"dashed\"\n)\n\ndplyr::glimpse(downtown)\n#> Rows: 1\n#> Columns: 6\n#> $ name     <chr> \"Downtown\"\n#> $ type     <chr> \"Residential\"\n#> $ acres    <dbl> 260.7037\n#> $ osm_id   <chr> \"12792276\"\n#> $ wikidata <chr> \"Q3038329\"\n#> $ geometry <MULTIPOLYGON [m]> MULTIPOLYGON (((-8527684 47...\n```\n\nAnd then use the neighborhood (or another location) to filter data for\nthat area:\n\n``` r\ndowntown_streets <- get_area_streets(downtown)\n\ndowntown_map <- ggplot() +\n  geom_sf(data = downtown_streets, color = \"gray70\") +\n  downtown_boundary\n```\n\nThe package datasets are typically based on official city or state\nsources but have been updated to remove outdated information and\nincorporate related information. For example, the parks data includes\nalternate names and OpenStreetMap identifiers:\n\n``` r\ndowntown_parks <- getdata::get_location_data(downtown, data = parks)\n```\n\nzoning data has been labelled and categorized based on the city zoning\ncode:\n\n``` r\ndowntown_zoning <- getdata::get_location_data(downtown, data = zoning, dist = 500, unit = \"m\")\n\nggplot() +\n  geom_sf(data = downtown_zoning, aes(fill = category_zoning), alpha = 0.3) +\n  downtown_boundary\n```\n\n<img src=\"man/figures/README-unnamed-chunk-5-1.png\" width=\"80%\" />\n\nThe package includes a few bundled GeoPackage files with data on trees,\nvegetated areas, and unimproved properties. It also includes functions\nfor caching even larger datasets with edge of pavement geometry, parcel\nboundaries, and street centerline data for the Baltimore metro area.\n\n``` r\ndowntown_trees <- getdata::get_location_data(downtown, data = \"trees\", package = \"mapbaltimore\", dist = 100, unit = \"m\")\n\nggplot() +\n  geom_sf(data = downtown_trees, color = \"darkgreen\", alpha = 0.25) +\n  downtown_boundary\n```\n\n<img src=\"man/figures/README-unnamed-chunk-6-1.png\" width=\"80%\" />\n\nNote, while the code for this package is released under an MIT license,\nthe data is a mix of public domain and\n[CC0](https://creativecommons.org/publicdomain/zero/1.0/) sources.\n"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.1.1.9001"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.1.1.9001"
+      },
+      "source": "https://raw.githubusercontent.com/elipousson/mapbaltimore/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

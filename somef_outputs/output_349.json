@@ -1,0 +1,1265 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "teuben@astro.umd.edu",
+        "type": "Agent",
+        "value": "teuben@astro.umd.edu"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "NEMO",
+        "last_name": "was originally written by Joshua Barnes, Piet Hut, and Peter Teuben.",
+        "name": "NEMO was originally written by Joshua Barnes, Piet Hut, and Peter Teuben.",
+        "type": "Agent",
+        "value": "NEMO was originally written by Joshua Barnes, Piet Hut, and Peter Teuben."
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Initial",
+        "last_name": "development occured mostly in 1985-1987 at the Institute",
+        "name": "Initial development occured mostly in 1985-1987 at the Institute",
+        "type": "Agent",
+        "value": "Initial development occured mostly in 1985-1987 at the Institute"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "for",
+        "last_name": "Advanced Study, Princeton, NJ by these authors. Peter Teuben has",
+        "name": "for Advanced Study, Princeton, NJ by these authors. Peter Teuben has",
+        "type": "Agent",
+        "value": "for Advanced Study, Princeton, NJ by these authors. Peter Teuben has"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "been",
+        "last_name": "the maintainer of NEMO since. There is also a derived version,",
+        "name": "been the maintainer of NEMO since. There is also a derived version,",
+        "type": "Agent",
+        "value": "been the maintainer of NEMO since. There is also a derived version,"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "ZENO,",
+        "last_name": "in development by Joshua Barnes.",
+        "name": "ZENO, in development by Joshua Barnes.",
+        "type": "Agent",
+        "value": "ZENO, in development by Joshua Barnes."
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "There",
+        "last_name": "have been many many contributions, authors are (hopefully all)",
+        "name": "There have been many many contributions, authors are (hopefully all)",
+        "type": "Agent",
+        "value": "There have been many many contributions, authors are (hopefully all)"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "listed",
+        "last_name": "in the unix manual page \"man/man5/authors.5\", accessible with",
+        "name": "listed in the unix manual page \"man/man5/authors.5\", accessible with",
+        "type": "Agent",
+        "value": "listed in the unix manual page \"man/man5/authors.5\", accessible with"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "the",
+        "last_name": "command \"man authors\" once NEMO has been loaded in the shell.",
+        "name": "the command \"man authors\" once NEMO has been loaded in the shell.",
+        "type": "Agent",
+        "value": "the command \"man authors\" once NEMO has been loaded in the shell."
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/AUTHORS",
+      "technique": "file_exploration"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/CITATION.cff"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "type": "Text_excerpt",
+        "value": "Please use the following citation if you use NEMO in your work\n\n\n     @INPROCEEDINGS{1995ASPC...77..398T,\n            author = {{Teuben}, P.},\n             title = \"{The Stellar Dynamics Toolbox NEMO}\",\n         booktitle = {Astronomical Data Analysis Software and Systems IV},\n              year = 1995,\n            editor = {{Shaw}, R.~A. and {Payne}, H.~E. and {Hayes}, J.~J.~E.},\n            series = {Astronomical Society of the Pacific Conference Series},\n            volume = {77},\n             month = jan,\n             pages = {398},\n            adsurl = {https://ui.adsabs.harvard.edu/abs/1995ASPC...77..398T},\n           adsnote = {Provided by the SAO/NASA Astrophysics Data System}\n     }\n\n\n![A Real Bar](docs/figures/realbar1.png)\n\n[taken from this example script](https://teuben.github.io/nemo/examples/realbar.html)\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "{Teuben}, P.",
+        "format": "bibtex",
+        "title": "{The Stellar Dynamics Toolbox NEMO}",
+        "type": "Text_excerpt",
+        "value": "@inproceedings{1995ASPC...77..398T,\n    adsnote = {Provided by the SAO/NASA Astrophysics Data System},\n    adsurl = {https://ui.adsabs.harvard.edu/abs/1995ASPC...77..398T},\n    pages = {398},\n    month = {January},\n    volume = {77},\n    series = {Astronomical Society of the Pacific Conference Series},\n    editor = {{Shaw}, R.~A. and {Payne}, H.~E. and {Hayes}, J.~J.~E.},\n    year = {1995},\n    booktitle = {Astronomical Data Analysis Software and Systems IV},\n    title = {{The Stellar Dynamics Toolbox NEMO}},\n    author = {{Teuben}, P.},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/teuben/nemo"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/teuben/nemo"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/.github/workflows/ccpp.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Dependencies\n\nBuilding NEMO requires following minimum dependencies:\n\n* Unix tools, such as: make, csh, bash, git\n* C/C++/Fortran compiler\n* pgplot (optional, but highly recommended)\n\n# git\n\n\nThere are two ways you could have obtained the NEMO source code:\n\n\n1. You cloned from the *upstream* : https://github.com/teuben/nemo . This is fine\nif you just want to compile and run, but not ideal if you make modifications and\nwant to share them back to the *upstream* via a *pull request* (PR). You\ncan however \"repair\" your local repo, discussed below, and still submit a PR.\n\n2. You [forked](https://guides.github.com/activities/forking/) NEMO\nfrom the *upstream*, and cloned it locally from the repo in your own\ngithub account. This is the ideal method, but you will still need to\nset the *upstream* manually if you used github.com. See also the\n**gh** command below for an even easier way.\n\n3. Sadly on github.com you will also find a **zip** copy of the repo\nthat does actually work fine, except it's a frozen snapshot and cannot\nbe efficiently used to collaborate. However, if you cannot install git,\nthis is probably the only way to bootstrap yourself. For example\nhttps://github.com/teuben/nemo/archive/refs/heads/master.zip , which\nwill create a directory *nemo-master*. Other branches are available\nthrough similar zip file construct.\n\nFamiliarize yourself with the concept of a pull request on github. There\nare some links at the bottom of this document.\n\nFor those github tokens will use the https://github.com/teuben/nemo adress,\nwhereas ssh keys will use git@github.com:teuben/nemo as the URL.\n\n\n## gh:   github CLI\n\nYou can safely skip this section if you prefer to work via github.com, though the **gh** command\ndescribed here is by far the fastest and easiest way to work with the github ecosystem, because it\nworks from the command line. You just\nhave to intall yet another tool for this.\n\nIf you can use conda, installation can be done as follows:\n\n      conda install gh --channel conda-forge  \n\nbut see also [manual installing instructions](https://github.com/cli/cli#installation),\nafter this you need to authenticate once via your github account:\n\n      gh auth login\n\nafter which you could create your own fork, clone locally, and set the *upstream* all\nin just one step:\n\n      gh repo fork https://github.com/teuben/nemo\n\nIf all is well, the following commands should show the correct *origin* and *upstream*:\n\n      git remote -v\n\n      origin git@github.com:YOURNAME/nemo.git\n      upstream git@github.com:teuben/nemo.git\n\nfor both the (fetch) and (push). None of these should be blank! You are now ready for working\nin your own branches and issue a pull request (PR). \n\n## 2. Cloning your personal fork\n\nThis section can be skipped if you use the **gh repo fork** method described before this.\n\nIf you have cloned your own fork on github.com, you should now clone it\n\n      git clone https://github.com/YOURNAME/nemo\n\nyou only need to set the upstream:\n\n      git remote add upstream https://github.com/teuben/nemo\n\nand you are ready for creating a PR (from a branch of course).\n\n## 1. Cloning the official upstream\n\nIf you happened to have cloned the official *upstream*\n\n      git clone https://github.com/teuben/nemo\n\nthen things are a bit more complicated, because you should have cloned your\nfork. However, the following commands will fix this\n(assuming you also went to github.com and made that fork):\n\n      git remote rename origin upstream\n      git remote add    origin https://github.com/YOURNAME/nemo\n\nAgain, the **gh** command now gives a single line shortcut to all this:\n\n      gh repo fork https://github.com/teuben/nemo\n\n## Keeping your clone in sync\n\nYou should regularly make sure your local master branch\nis in sync with the upstream master branch. This allows you\nto work in local branches, and be up to date by branching off the\ntip of this upstream master branch. Here's a recipe for that\nin your local clone:\n\n      git checkout master\n      git fetch upstream\n      git merge upstream/master\n      git status\n      git push\n\n## Working in a branch\n\nAssuming your own master is in sync with the upstream master,\nhere is a typical example to work in a branch, using a branchname **b1**\n\n      git branch b1\n      git checkout b1\n      \n      ## edit/add your files; test them; commit them, e.g.\n      git commit -m \"my comment\"  existing_file\n      git add new_file\n      git commit -m \"my command\"  new_file\n          \n      git push -u origin b1\n\nNow you can issue a pull request on this branch **b1**.\n\nIf you have become a fan on the **gh pr** method, here's the recipe for this:\n\n      git checkout -b b1\n        <<edit, test, commit>>\n      gh pr create \n\nonce the branch has been merged, you don't need it locally anymore, so delete it\n\n      git branch -d b1\n      git push origin --delete b1\n\n\n## Common work in a branch\n\nLets say there is a new development idea, lets call it \"table2\", and others will\nshare the development in this \"table2\" branch, but until the development is done, this is not\nmerged to the master yet. \n\n1. NEMO (*upstream*) itself will start making this new development branch:\n\n      git checkout -b table2\n      ...\n      git push --set-upstream origin table2\n\t  \n2. others will do then branch off this new branch (user *astroumd* is used as example here):\n\n      gh repo fork https://github.com/teuben/nemo nemo\n      cd nemo\n      git remote add upstream  https://github.com/teuben/nemo\n      git fetch upstream\n      git checkout -b myTable3\n      git merge upstream/table2\n      ...\n      git push --set-upstream origin myTable3\n\t  \n   on github.com/astroumd/nemo you can then do a pull request from astroumd::myTable3 to teuben:table2. An \n   alternative (next item) is that the upstream person would pull in myTable3 and tests locally\n\n3. NEMO, optionally, creates an alias site \"astroumd\" and merge from their myTable3 branch to check out the code\n\n      git checkout table2\n      git remote add  astroumd  https://github.com/astroumd/nemo\n      git pull astroumd\n      git merge [--no-ff] astroumd/myTable3\n      .... (resolve conflicts)\n      git push\n\n4. after this, all collaborators will need to merge these back:\n\n      git checkout myTable3\n      git fetch upstream\n      git merge upstream/table2\n\n## Memorable git options\n\n1.  Show all files modified in a branch AAA \n\n      git diff master...AAA --name-status --diff-filter=M\n\n2.  When was a branch created\n\n      git show --summary `git merge-base AAA master`\n      gitk --all --select-commit=`git merge-base foo master`\n\n3. To see which files belonged in a commit, find the sha (e.g. via \"git log\" or \"git log file\" if \n   you know the file that belonged to it), then\n\n      git diff-tree --no-commit-id --name-only -r SHA\n\t \n4. Difference between two SHA's\n\n      git diff <commit-id> <commit-id>\n\n## PR with github CLI\n\nRecapping working with \"github CLI\" (gh)\n\nStep 1 from the submitter of the PR:\n\n      gh repo fork https://github.com/teuben/nemo\n      cd nemo\n      git checkout -b teuben1\n      $EDITOR index.md\n      gh pr create \n\nOnce the branch has been merged by the upstream, there is no need to keep it.\nIt can be removed as follows:\n\n      git branch -d teuben1\n      git push origin --delete teuben1\n\nStep 2 by the receiver of the PR:\n\n\n\n\t\n\n# Tests\n\nFrom the top level directory in NEMO there are a few basics regression tests and benchmarks:\n\n      make check\n      make bench5\n      make bench\n\nThe **check** target depends on the many **Testfile** files sprinkled throughout NEMO.\n\nThe **bench5** target currently runs 6 NEMO programs all designed to run 5 seconds on\nsome particular processor that your NEMO compilation can now be compared to. The default\n*speed* for that processor is defined to be 1000, anything larger is a faster processor.\nCurrently in 2023 we're approaching a single core score of 2000!\n\n\nThe **bench** target is still under development, and has a more\ndiverse set of programs, all controlled by sprinkled **Benchfile**\nfiles. See the script **src/scripts/nemo.bench**.\n\n# Debugging\n\nMost applications are built using *make* variables defined in the **$NEMOLIB/makedefs** file.\nAlthough not recommended, \nhacking is always possible by directly editing this file, with the caveat you are then\nbypassing the **configure** step of the install, which also does modify some other files.\nNotably the **falcON** package has some extra dependancies that start with configure.\n\nNEMO uses a set of hierarchical Makefiles, and many things (see google) have been written why they\nare bad. But we don't recurse!\n\n## Debuggging NEMO applications\n\nConsult the local Makefile of the application. You should be able to override the compiler (CC=, CXX=, FC=)\nand related options. If the application was integrated into NEMO, there should be a line\n\n      include $(NEMOLIB)/makedefs\n\nin that Makefile, and check the Makefile which are used.\n\n\nAn example:\n\n      cd $NEMO/usr/trenti/CGS\n      make clean install FC=flang FFLAGS=-O3\n      make bench2\n\nwould create an alternate (and as it happens twice as fast as with gfortran) of the CGS N-body integrator.\n\n\n# References\n\nSome references on git workflows:\n\n* https://docs.github.com/en/github/getting-started-with-github/fork-a-repo\n* https://github.blog/open-source/git/how-the-github-cli-can-now-enable-triangular-workflows/\n* https://docs.astropy.org/en/latest/development/development_details.html\n* https://www.atlassian.com/git/tutorials/comparing-workflows\n* https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow\n* https://physics.mnstate.edu/craig/git-novice or the new-style https://swcarpentry.github.io/git-novice/\n* https://www.sitepoint.com/quick-tip-sync-your-fork-with - gone\n* https://how-to.dev/how-git-stores-data\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-12-21T12:51:18Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-27T00:51:15Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "a Stellar Dynamics Toolbox (Not Everybody Must Observe)"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python tools to aid in using NEMO in python"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9843559425329391,
+      "result": {
+        "original_header": "History",
+        "type": "Text_excerpt",
+        "value": "This is the 4th major release of NEMO,  and although data are compatible\nwith earlier releases, old source code may need to be tweaked a\nbit to compile and link in the newer releases. Some compatibility with ZENO\nis also advertised. A brief history of NEMO: \n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8233201529969374,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "NEMO is a toolbox for stellar dynamics, particle simulations, stellar orbits,\nimage processing and tabular data manipulation. Documentation is maintained\nin the github pages, https://teuben.github.io/nemo , and a manual in\nhttps://astronemo.readthedocs.io \n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/teuben/nemo/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/teuben/nemo/tree/master/src/nbody/evolve/aarseth/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation and Help",
+        "type": "Text_excerpt",
+        "value": "There are several additional entry points if you are starting out with NEMO,\nbetween them there is unavoidable duplication, but here they are:\n\n* readthedocs: https://astronemo.readthedocs.io/en/latest/\n* github pages: https://teuben.github.io/nemo  (yes, these are the 1990s style webpages we used to maintain)\n* all unix style man pages for all levels: https://teuben.github.io/nemo/man_html/index1.html\n* the nemo man page https://teuben.github.io/nemo/man_html/nemo.1.html\n* software carpentry: https://teuben.github.io/nemo-lesson \n* AAS 443 [iPoster](https://aas243-aas.ipostersessions.com/?s=85-F6-32-6F-83-00-4E-79-54-7F-C0-25-77-D7-0D-7B)\n* an installation example in bash jupyter notebook style: https://github.com/teuben/nemo/blob/master/scripts/notebooks/installing.ipynb\n* contributing to NEMO: https://github.com/teuben/nemo/blob/master/CONTRIBUTING.md\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/teuben/nemo/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/teuben/nemo/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/nemo_start_example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/nemo_start_example.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/usr/hannorein/nemo/rebound1.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/usr/hannorein/nemo/rebound1.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/notebooks/amuse_for_nemo.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/notebooks/amuse_for_nemo.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/notebooks/pynbody.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/notebooks/pynbody.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/notebooks/aarseth.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/notebooks/aarseth.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/notebooks/installing.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/notebooks/installing.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 51
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/teuben/nemo/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "teuben/nemo"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/docs/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/docs/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/zinstall.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/nemo_build.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/usr/zeno/zeno_start.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/usr/jwallin/spam2snap.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/usr/dehnen/falcON/falcON_start.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/docs/install_nemo.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/centering.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/mkplummer.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/edge_gbt.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/edge_aca.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/nemo1995.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/plummer_collision.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/ellfit.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/exp1.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/radprof-animation.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/mktt72.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/mkmh97.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/csh/m16.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/templates/ex2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/scripts/templates/ex0.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/tools/unproto/acc.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/tools/unproto/cpp.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/tools/tkrun/testscript.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/tutor/mp/wait3.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/tutor/main/main.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/tutor/main/maine.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/tutor/main/sip.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/scripts/nemo_merging.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/scripts/nemo_functions.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/scripts/progress_bar.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/scripts/sbatch_nemo.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/scripts/mk_nemo_start.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/scripts/MAKE_macro.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/scripts/make_pgdisp_ow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/scripts/bench/parallel.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/scripts/bench/ccdgen.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/docs/figures/realbar1.png"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/docs/figures/realbar1.png"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "There are a few different ways to install NEMO.\nWe cover an annotated example in this\n[bash notebook](scripts/notebooks/installing.ipynb)\nor the deprecated\n[bash notebook](example.ipynb).\n\nAnd here is a simple\nexample that works most of the time on most Linux (including WSL) distros:\n\n         git clone https://github.com/teuben/nemo\n         cd nemo\n         ./configure --with-yapp=pgplot\n         make build check bench5\n         source nemo_start.sh\n\nIf you plan to modify code and submit pull requests, the github CLI is recommended,\nthough you can of course also clone the upstream manually\n(see also [CONTRIBUTING.md](CONTRIBUTING.md)):\n\n         gh repo fork https://github.com/teuben/nemo\n\nAfter installation, rebuilding NEMO to ensure you have all updates can be done as follows:\n\n         cd $NEMO\n         git pull\n         make rebuild\n\nthis may be overkill for some situations, but gets the job done.\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "python",
+        "parent_header": [
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "There is now a small python component to NEMO, in the **nemopy** module.\n\n         cd $NEMO\n         pip install -e .\n\nbut this will depend on the details of how your python environment exists (virtual, conda etc.).\nWe leave this to the user.\n\t\t "
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/teuben/nemo/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fits-files, galactic-astronomy, image-analysis, nbody-gravity, orbital-simulation, tabular-data"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "astronomy"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "value": "https://api.github.com/licenses/gpl-2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "BSD"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/src/nbody/glnemo/LICENSE"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "nemo"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "teuben"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "astroNEMO"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 10342043,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 3918392,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Fortran",
+        "size": 2863360,
+        "type": "Programming_language",
+        "value": "Fortran"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 612078,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 594453,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 421128,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "PostScript",
+        "size": 362228,
+        "type": "Programming_language",
+        "value": "PostScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Roff",
+        "size": 253801,
+        "type": "Programming_language",
+        "value": "Roff"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jupyter Notebook",
+        "size": 157966,
+        "type": "Programming_language",
+        "value": "Jupyter Notebook"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 153215,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Pascal",
+        "size": 127562,
+        "type": "Programming_language",
+        "value": "Pascal"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 97058,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Perl",
+        "size": 69254,
+        "type": "Programming_language",
+        "value": "Perl"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Assembly",
+        "size": 52282,
+        "type": "Programming_language",
+        "value": "Assembly"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "NASL",
+        "size": 52179,
+        "type": "Programming_language",
+        "value": "NASL"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "M4",
+        "size": 47075,
+        "type": "Programming_language",
+        "value": "M4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Yacc",
+        "size": 26738,
+        "type": "Programming_language",
+        "value": "Yacc"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Tcl",
+        "size": 10639,
+        "type": "Programming_language",
+        "value": "Tcl"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "QMake",
+        "size": 5945,
+        "type": "Programming_language",
+        "value": "QMake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 4047,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Lex",
+        "size": 1421,
+        "type": "Programming_language",
+        "value": "Lex"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Awk",
+        "size": 1137,
+        "type": "Programming_language",
+        "value": "Awk"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BitBake",
+        "size": 1001,
+        "type": "Programming_language",
+        "value": "BitBake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "POV-Ray SDL",
+        "size": 1001,
+        "type": "Programming_language",
+        "value": "POV-Ray SDL"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Module Management System",
+        "size": 866,
+        "type": "Programming_language",
+        "value": "Module Management System"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "DIGITAL Command Language",
+        "size": 485,
+        "type": "Programming_language",
+        "value": "DIGITAL Command Language"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Ruby",
+        "size": 456,
+        "type": "Programming_language",
+        "value": "Ruby"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "AMPL",
+        "size": 416,
+        "type": "Programming_language",
+        "value": "AMPL"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/README.install"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/nemo/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://astronemo.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpydoc",
+        "type": "Software_application",
+        "value": "numpydoc>=0.9.1",
+        "version": ">=0.9.1"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx",
+        "type": "Software_application",
+        "value": "sphinx>=4.1.1",
+        "version": ">=4.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-rtd-theme",
+        "type": "Software_application",
+        "value": "sphinx-rtd-theme",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx_inline_tabs",
+        "type": "Software_application",
+        "value": "sphinx_inline_tabs",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-rtd-theme",
+        "type": "Software_application",
+        "value": "sphinx-rtd-theme",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-mermaid",
+        "type": "Software_application",
+        "value": "sphinxcontrib-mermaid",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/docs/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "identifier"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:31:16",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 71
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation and Help",
+        "type": "Text_excerpt",
+        "value": "There are several additional entry points if you are starting out with NEMO,\nbetween them there is unavoidable duplication, but here they are:\n\n* readthedocs: https://astronemo.readthedocs.io/en/latest/\n* github pages: https://teuben.github.io/nemo  (yes, these are the 1990s style webpages we used to maintain)\n* all unix style man pages for all levels: https://teuben.github.io/nemo/man_html/index1.html\n* the nemo man page https://teuben.github.io/nemo/man_html/nemo.1.html\n* software carpentry: https://teuben.github.io/nemo-lesson \n* AAS 443 [iPoster](https://aas243-aas.ipostersessions.com/?s=85-F6-32-6F-83-00-4E-79-54-7F-C0-25-77-D7-0D-7B)\n* an installation example in bash jupyter notebook style: https://github.com/teuben/nemo/blob/master/scripts/notebooks/installing.ipynb\n* contributing to NEMO: https://github.com/teuben/nemo/blob/master/CONTRIBUTING.md\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "header_analysis"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Examples",
+        "type": "Text_excerpt",
+        "value": "If you want to quickly see something work, here are the commands to\nmake a classic 1911 Plummer sphere of just 10 particles, print the positions, plot\nthe positions and view the contents of its binary file:\n\n         mkplummer p10.dat 10\n         snapprint p10.dat\n         snapplot p10.dat\n         tsf p10.dat\n\nand here is an example of creating the 4 major data objects on the fly in NEMO\n(table, snapshot, image, orbit), showing off the command line interface and\nuse of Unix pipes, with a dash denoting the piped file:\n\n         tabgen -  | tabplot -\n         mkplummer - 100 | snapplot - \n         ccdgen out=- object=gauss spar=1,20 size=128 | ccdplot - \n         mkorbit - 0 1 0  0.4 0 0 potname=plummer | orbint - - nsteps=1000 dt=0.05 | orbplot - \n\nor graphically showing the pipes through arrows:\n\n```mermaid\n   graph LR;\n   A[tabgen]-->B[tabplot]\n\n   C[mkplummer]-->D[snapplot]\n\n   E[ccdgen]-->F[ccdplot]\n   \n   G[mkorbit]-->H[orbint]\n   H-->I[orbplot]\n```\n\nThere are more examples of scripts and figures in\nhttps://teuben.github.io/nemo/examples/ \nand an example ipython notebook is shown here\nhttps://github.com/teuben/nemo/blob/master/nemo_start_example.ipynb\nfor something completely different.\n\nA reproducable example is given in this notebook. To run this from the command line\nand print the phase space coordinates of the first particle, use this:\n\n      mkplummer - 10 seed=123| snapprint -  | head -1\n      ### nemo Debug Info: x y z vx vy vz \n      -0.609486 -0.221687 -0.450963 -0.0766784 -0.209397 0.396561 \n\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/nemo/master/README.install",
+      "technique": "header_analysis"
+    }
+  ]
+}

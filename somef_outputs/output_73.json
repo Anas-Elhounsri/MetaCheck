@@ -1,0 +1,587 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "josep.pueyo@udg.edu",
+        "identifier": "https://orcid.org/0000-0002-1236-5651",
+        "type": "String",
+        "value": "Josep Pueyo-Ros"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2023",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "bibentry(\n  bibtype  = \"Manual\",\n  title    = \"CRediTas. A tiny package to generate CRediT author statements\",\n  author   = \"Josep Pueyo-Ros\",\n  year     = 2023,\n  url      = \"https://docs.ropensci.org/CRediTas/\",\n  doi      = \"10.5281/zenodo.7845945\"\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "CRediTas"
+        ],
+        "type": "Text_excerpt",
+        "value": "``` r\ncitation(\"CRediTas\")\n```\n\n    ## To cite package 'CRediTas' in publications use:\n    ## \n    ##   Pueyo-Ros J (2023). _CRediTas. A tiny package to generate CRediT\n    ##   author statements_. doi:10.5281/zenodo.7845945\n    ##   <https://doi.org/10.5281/zenodo.7845945>,\n    ##   <https://docs.ropensci.org/CRediTas/>.\n    ## \n    ## A BibTeX entry for LaTeX users is\n    ## \n    ##   @Manual{,\n    ##     title = {CRediTas. A tiny package to generate CRediT author statements},\n    ##     author = {Josep Pueyo-Ros},\n    ##     year = {2023},\n    ##     url = {https://docs.ropensci.org/CRediTas/},\n    ##     doi = {10.5281/zenodo.7845945},\n    ##   }\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/CRediTas"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/CRediTas/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/CRediTas"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/CRediTas"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/CRediTas/actions/workflows/R-CMD-check.yaml"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-02-23T10:53:20Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-25T11:44:23Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "credit is a tiny package to generate CRediT author statements (https://credit.niso.org/).      It provides three functions: create a template, read it back and generate the CRediT author statement in a text file."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+        "type": "String",
+        "value": "A tiny package to generate CRediT author statements (<https://credit.niso.org/>). \n    It provides three functions: create a template, read it back and generate the CRediT author statement in a text file."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CRediTas is a tiny package to generate CRediT author statements (<https://credit.niso.org/>). It provides three functions: create a template, read it back and generate the CRediT author statement in a text file."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8925537745717865,
+      "result": {
+        "original_header": "CRediTas",
+        "type": "Text_excerpt",
+        "value": "\nThe goal of CRediTas is to facilitate the tedious job of creating\n[CRediT authors statements](https://credit.niso.org/) for scientific\npublications. Normally, the first author of a scientific paper organizes\na table in a spreadsheet where all the authors self-state their\ncontributions. Often too, it is the first author responsibility to state\nthe contributions of all co-authors. However, at the end, the\ninformation has to be translated to the CRediT statement format of\n\u201cAuthor 1: roles Authors 2: roles \u2026\u201d which is prone to errors and\ntedious, especially if there are many co-authors. The CRediTas package\naims to make this easier by providing a template to be filled in form of\na table (csv) and then converting this table to CRediT statement format.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9883323430583296,
+      "result": {
+        "original_header": "Related packages",
+        "type": "Text_excerpt",
+        "value": "- [tenzing](https://github.com/marton-balazs-kovacs/tenzing/): Tenzing,\n  an easy-to-use web-based app, allows researchers to generate reports\n  about the contribution of each team member on a project using CRediT,\n  for insertion into their manuscripts and for publishers to potentially\n  incorporate into article metadata.\n- [contribution](https://github.com/openbiox/contribution): The goal of\n  contribution is to generate contribution table for credit assignment\n  in a project. This is inspired by Nick Steinmetz (see twitter\n  <https://twitter.com/SteinmetzNeuro/status/1147241138291527681>).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/CRediTas/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/CRediTas/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/CRediTas"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CRediTas"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/CRediTas/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CRediTas"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/605528165"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "CRediTas"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install the development version of CRediTas from\n[r-universe](https://r-universe.dev/) with:\n\n``` r\ninstall.packages(\"CRediTas\", repos = \"https://ropensci.r-universe.dev\")\n```\n\nOr you can install de long term release version from\n[CRAN](https://CRAN.R-project.org/package=CRediTas) as usual:\n\n``` r\ninstall.packages(\"CRediTas\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/CRediTas/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/CRediTas/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/CRediTas/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "r, r-package, rstats"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "r",
+          "r-package",
+          "rstats"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2023 Josep Pueyo-Ros\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CRediTas"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CRediTas: Generate CRediT Author Statements"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+        "type": "String",
+        "value": "CRediTas"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 11839,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/CRediTas/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/CRediTas/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/CRediTas/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jospueyo",
+          "type": "User"
+        },
+        "date_created": "2025-08-25T11:36:42Z",
+        "date_published": "2025-08-25T11:40:25Z",
+        "description": "Version 0.3.0\r\n\r\nRead news.md to check changes",
+        "html_url": "https://github.com/ropensci/CRediTas/releases/tag/0.3.0",
+        "name": "Version 0.3.0",
+        "release_id": 242237435,
+        "tag": "0.3.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/CRediTas/tarball/0.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/CRediTas/releases/242237435",
+        "value": "https://api.github.com/repos/ropensci/CRediTas/releases/242237435",
+        "zipball_url": "https://api.github.com/repos/ropensci/CRediTas/zipball/0.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jospueyo",
+          "type": "User"
+        },
+        "date_created": "2023-04-18T05:11:50Z",
+        "date_published": "2023-04-19T14:04:14Z",
+        "description": "This release is to connect the repository with Zenodo",
+        "html_url": "https://github.com/ropensci/CRediTas/releases/tag/Zenodo_v0.2.0",
+        "name": "Zenodo release (version 0.2.0)",
+        "release_id": 100061717,
+        "tag": "Zenodo_v0.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/CRediTas/tarball/Zenodo_v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/CRediTas/releases/100061717",
+        "value": "https://api.github.com/repos/ropensci/CRediTas/releases/100061717",
+        "zipball_url": "https://api.github.com/repos/ropensci/CRediTas/zipball/Zenodo_v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jospueyo",
+          "type": "User"
+        },
+        "date_created": "2023-04-12T09:57:01Z",
+        "date_published": "2023-04-18T05:05:12Z",
+        "description": "## Breaking changes\r\n\r\n- Package name changed to CRediTas (#1)\r\n- All function renamed to follow object_verb() convention. (#4)\r\n    - `create_template` is `template_create`\r\n    - `read_template` is `template_read`\r\n    - `write_cras` is `cras_write`\r\n- `file` argument in `cras_write` and in `template_create` no longer default to `NULL`, they are not provided by default. If missing, they behave like the old `NULL` value. \r\n\r\n## New features\r\n\r\n- `cras_write` integrates better with literate programming such as rmarkdown and \r\nquarto. When file is NULL (new default), instead of writing a file, the \r\nfunction returns a string with the CRediT Author Statement. It works well with \r\ninline code in rmarkdown and quarto documents: \r\n`r cras_write(cras_table, markdown = TRUE)` (#2\r\n- `cras_write` includes a new argument `drop_authors`, if set to `FALSE`, the authors without contributions are not removed from the statement. (#6)\r\n\r\n## Minor improvements and fixes\r\n\r\n- The roles are created using the function roles_get() instead of hard coded. (#3)\r\n- The former allows to check if authors\u2019 roles are up-to-date comparing with\r\n[CRediT] (https://credit.niso.org/) (#3)\r\n- Improvements on the documentation of all functions (#6)\r\n- In `cras_write`, the default of `markdown` argument is `TRUE`. \r\n- Added some checks to `template_read` to ensure that the format is correct. (#6)\r\n- Added reviewers of ROpenScience to `DESCRIPTION`. \r\n- CSS fixed in pkgdown.\r\n- Description added to `template_create` documentation.\r\n- Option to use `fix()` to edit the template is added to `README` and `get_started` vignette.\r\n- Related packages added to `README`.\r\n- `template_create` is more performant thanks to using `matrix` instead of `data.frame` to create the empty contributions.\r\n\r\n**Full Changelog**: https://github.com/ropensci/CRediTas/commits/v0.2.0",
+        "html_url": "https://github.com/ropensci/CRediTas/releases/tag/v0.2.0",
+        "name": "CRediTas 0.2.0",
+        "release_id": 99847707,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/CRediTas/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/CRediTas/releases/99847707",
+        "value": "https://api.github.com/repos/ropensci/CRediTas/releases/99847707",
+        "zipball_url": "https://api.github.com/repos/ropensci/CRediTas/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:21:52",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 9
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example",
+        "parent_header": [
+          "CRediTas"
+        ],
+        "type": "Text_excerpt",
+        "value": "The workflow is meant to work with three basic functions. First, we\ncreate a template table. It can be created as a `data.frame` and being\npopulated in R. Or as a csv file and being populated in your preferred\ncsv editor.\n\n``` r\nlibrary(CRediTas)\n\ntemplate_create(authors = c(\"Alexander Humboldt\", \"Carl Ritter\"), file = tempfile())\n\ncras_table <- template_create(authors = c(\"Friedrich Ratzel\", \n                                          \"Pau Vidal de la Blache\", \n                                          \"Pau Vila\",\n                                          \"\u00c9lis\u00e9e Reclus\"))\nknitr::kable(cras_table)\n```\n\n| Authors | Conceptualization | Methodology | Software | Validation | Formal analysis | Investigation | Resources | Data curation | Writing - original draft | Writing - review & editing | Visualization | Supervision | Project administration | Funding acquisition |\n|:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| Friedrich Ratzel | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Pau Vidal de la Blache | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| Pau Vila | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| \u00c9lis\u00e9e Reclus | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n\nAs you can see, the table is empty. So you must provide the information\nof who did what. You can use the `fix` function to fill the template\ndirectly in R:\n\n``` r\nfix(cras_table)\n```\n\nIf you wrote the template to a file, then you can read it back to R as\nfollows:\n\n``` r\ncras_table <- template_read(path_to_your_csv_file)\n```\n\nOnce the `cras_table` is populated, for instance:\n\n| Authors | Conceptualization | Methodology | Software | Validation | Formal analysis | Investigation | Resources | Data curation | Writing - original draft | Writing - review & editing | Visualization | Supervision | Project administration | Funding acquisition |\n|:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| Friedrich Ratzel | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 0 | 1 | 1 | 1 |\n| Pau Vidal de la Blache | 0 | 0 | 0 | 0 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 1 | 1 | 0 |\n| Pau Vila | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| \u00c9lis\u00e9e Reclus | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 0 | 1 | 0 |\n\nA text file can be generated following the CRediT author statement\nformat. Since `drop = TRUE` by default, the authors without contribution\nare removed from the statement, Pau Vila in this case.\n\n``` r\ntextfile <- tempfile()\n\ncras_write(cras_table, textfile, markdown = TRUE, quiet = TRUE)\n```\n\nIf you open the text file, you will find this:\n\n**Friedrich Ratzel:** Investigation, Resources, Data curation, Writing -\noriginal draft, Writing - review & editing, Supervision, Project\nadministration, Funding acquisition. **Pau Vidal de la Blache:** Formal\nanalysis, Investigation, Resources, Data curation, Supervision, Project\nadministration. **\u00c9lis\u00e9e Reclus:** Conceptualization, Methodology,\nValidation, Data curation, Writing - review & editing, Project\nadministration.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.3.0.9000"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/CRediTas/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

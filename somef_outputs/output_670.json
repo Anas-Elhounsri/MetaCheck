@@ -1,0 +1,1300 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9834142535913694,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech Library",
+        "email": "rsdoiel@caltech.edu",
+        "type": "String",
+        "value": "R. S. Doiel"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Doiel",
+            "given_name": "R. S.",
+            "name": "R. S. Doiel",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0003-0900-6903"
+          }
+        ],
+        "datePublished": "2024",
+        "format": "cff",
+        "title": "eprinttools",
+        "type": "File_dump",
+        "value": "\ncff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\ntype: software\ntitle: eprinttools\nabstract: \"Command line tools, Golang package and Python module for working with the EPrints 3.x REST API\"\nauthors:\n  - family-names: Doiel\n    given-names: R. S.\n    orcid: https://orcid.org/0000-0003-0900-6903\n    email: rsdoiel@caltech.edu\n\ncontacts:\n  - family-names: Doiel\n    given-names: R. S.\n    orcid: https://orcid.org/0000-0003-0900-6903\n    email: rsdoiel@caltech.edu\n\nrepository-code: \"https://github.com/caltechlibrary/eprinttools\"\nversion: 1.3.11\ndate-released: 2024-04-14\n\nlicense-url: \"https://caltechlibrary.github.io/eprinttools/LICENSE\"\nkeywords:\n  - metadata\n  - repository\n  - EPrints\n  - CrossRef\n  - DataCite\n  - software\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/eprinttools"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/eprinttools"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2016-03-12T00:24:02Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-03-08"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-04-14"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-29T20:52:14Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-04-14"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "EPrintTools is a Go package, command line utilities and a service for working with EPrints 3.3.x EPrint XML and REST API"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Command line tools, Golang package and Python module for working with the EPrints 3.x REST API"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9898446162262451,
+      "result": {
+        "original_header": "eprinttools",
+        "type": "Text_excerpt",
+        "value": "This is a collection of command line tools and a web service written in Go for working with EPrints 3.3.x EPrint XML, the EPrint REST API and directly with the EPrints MySQL repository database(s). It is used by Caltech Library to render our <https://feeds.library.caltech.edu> website as well as for migrating content into a new repository system. Some of the command line tools maybe of more generatl interest while others are specific to Caltech Library's needs. Much of the test code presumes access to our repositories so is specific to our needs.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/README.html",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9330115764084086,
+      "result": {
+        "original_header": "Related GitHub projects",
+        "type": "Text_excerpt",
+        "value": "- [py_dataset](https://github.com/caltechlibrary/py_dataset), This Python module provides access to dataset collections which we use as intermediate storage for JSON documents and related attachments.\n- [AMES](https://github.com/caltechlibrary/ames), The eprintools command line programs have been made available to Python via the AMES project. This include support for both read and write to EPrints repository systems. \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/README.html",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "inactive"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/eprinttools/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/eprinttools/release/latest"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/eprinttools"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "eprinttools"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/README.html",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/installer.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/examples/eprints-recently-published-feed.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Installation for development of **eprinttools**\n===========================================\n\n**eprinttools** Command line tools, services, Golang package and Python module for working with the EPrints 3.x REST API\n\nQuick install with curl or irm\n------------------------------\n\nThere is an experimental installer.sh script that can be run with the following command to install latest table release. This may work for macOS, Linux and if you\u2019re using Windows with the Unix subsystem. This would be run from your shell (e.g. Terminal on macOS).\n\n~~~shell\ncurl https://caltechlibrary.github.io/eprinttools/installer.sh | sh\n~~~\n\nThis will install the programs included in eprinttools in your `$HOME/bin` directory.\n\nIf you are running Windows 10 or 11 use the Powershell command below.\n\n~~~ps1\nirm https://caltechlibrary.github.io//installer.ps1 | iex\n~~~\n\nInstalling from source\n----------------------\n\n### Required software\n\n- Go &gt;&#x3D; 1.24.2\n- GNU Make &gt; 3\n- Pandoc &gt; 3\n- CMTools &gt;&#x3D; 0.0.23\n\n### Steps\n\n1. git clone https://github.com/caltechlibrary/eprinttools\n2. Change directory into the `eprinttools` directory\n3. Make to build, test and install\n\n~~~shell\ngit clone https://github.com/caltechlibrary/eprinttools\ncd eprinttools\nmake\nmake test\nmake install\n~~~\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/INSTALL.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/eprinttools/issues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "eprints"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "metadata",
+          "repository",
+          "EPrints",
+          "CrossRef",
+          "DataCite",
+          "software"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "\nCopyright (c) 2022, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://caltechlibrary.github.io/eprinttools/LICENSE",
+        "spdx_id": "https://caltechlibrary.github.io/eprinttools/LICENSE",
+        "type": "License",
+        "value": "https://caltechlibrary.github.io/eprinttools/LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "eprinttools"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "eprinttools"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "size": 1054412,
+        "type": "Programming_language",
+        "value": "Go"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 218283,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 147140,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 31866,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 26863,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 22053,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 6410,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "PowerShell",
+        "size": 2015,
+        "type": "Programming_language",
+        "value": "PowerShell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 1317,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Lua",
+        "size": 195,
+        "type": "Programming_language",
+        "value": "Lua"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go >= 1.24.2",
+        "type": "Programming_language",
+        "value": "Go >= 1.24.2",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/README.html"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/README.txt"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2025-04-15T01:47:03Z",
+        "date_published": "2025-04-15T01:54:51Z",
+        "description": "updated module depencies per issue #68. Added another report showing all non published and non submitted status and eprintid.\r\n\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/v1.3.10...v1.3.11",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.3.11",
+        "name": "v1.3.11",
+        "release_id": 212359908,
+        "tag": "v1.3.11",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.3.11",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/212359908",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/212359908",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.3.11"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2025-04-14T21:57:11Z",
+        "date_published": "2025-04-14T22:58:28Z",
+        "description": "updated module depencies per issue #68.\r\n\r\n\r\n## What's Changed\r\n\r\n* build(deps): bump golang.org/x/crypto from 0.31.0 to 0.35.0 by @dependabot in https://github.com/caltechlibrary/eprinttools/pull/68\r\n\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/v1.3.9...v1.3.10",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.3.10",
+        "name": "v1.3.10",
+        "release_id": 212333521,
+        "tag": "v1.3.10",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.3.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/212333521",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/212333521",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.3.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2024-12-17T21:27:19Z",
+        "date_published": "2024-12-17T21:32:55Z",
+        "description": "updated module depencies per issue #67.\r\n\r\n## What's Changed\r\n* build(deps): bump golang.org/x/crypto from 0.20.0 to 0.31.0 by @dependabot in https://github.com/caltechlibrary/eprinttools/pull/67\r\n\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/v1.3.8...v1.3.9",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.3.9",
+        "name": "maintenance release",
+        "release_id": 191275879,
+        "tag": "v1.3.9",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.3.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/191275879",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/191275879",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.3.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2024-02-26T23:48:36Z",
+        "date_published": "2024-06-10T22:12:46Z",
+        "description": "This release includes the option to pass a YAML file (in additional to the JSON version) of a configuration to ep3apid.  The YAML support was added to make it easier to create configuration scripts for ep3apid.\r\n",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.3.8",
+        "name": "Minor update to configuration for ep3apid",
+        "release_id": 159755175,
+        "tag": "v1.3.8",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.3.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/159755175",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/159755175",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.3.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2024-02-26T23:40:58Z",
+        "date_published": "2024-02-26T23:48:17Z",
+        "description": "Updated to Go 1.22 and various package updates.",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.3.7",
+        "name": "Maintenance release",
+        "release_id": 143719945,
+        "tag": "v1.3.7",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.3.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/143719945",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/143719945",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.3.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-09-15T17:36:52Z",
+        "date_published": "2023-09-15T17:43:15Z",
+        "description": "v1.3.6 now requires simplified package v0.0.21 do to integration of ROR into Funder struct.",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.3.6",
+        "name": "Dependency updates",
+        "release_id": 121338955,
+        "tag": "v1.3.6",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.3.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/121338955",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/121338955",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.3.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-07-31T19:19:33Z",
+        "date_published": "2023-07-31T19:26:30Z",
+        "description": "This release brings uses the simplified package v0.0.19 in the crosswalk functionality.",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.3.4",
+        "name": "Maintenance release",
+        "release_id": 114552914,
+        "tag": "v1.3.4",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.3.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/114552914",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/114552914",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.3.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-06-06T21:53:15Z",
+        "date_published": "2023-06-06T22:06:33Z",
+        "description": "This release includes some bug fixes and now uses crossrefapi v1.0.4. Article numbers should map correctly from CrossRef.",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.3.3",
+        "name": "Bug fixes, crossrefapi update",
+        "release_id": 107582492,
+        "tag": "v1.3.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.3.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/107582492",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/107582492",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.3.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-05-16T16:14:02Z",
+        "date_published": "2023-05-16T16:19:26Z",
+        "description": "This release is primarily documentation improvements to explain the new installation procedure for macOS and Linux.  A few bugs were fixed along the way. \r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/v1.3.0...v1.3.1",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.3.1",
+        "name": "Documentation cleanup, fixed version bug in doi2eprintxml",
+        "release_id": 103190176,
+        "tag": "v1.3.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/103190176",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/103190176",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-04-13T18:03:44Z",
+        "date_published": "2023-04-13T18:12:07Z",
+        "description": "This minor release reflects splitting the simple record handling into it's own package. When you use the `-json` and `-simple` options in `doi2eprintxml` you now get different record structures, the first is a JSON representation of the EPrint XML and the latter reflects the simplified record model shared with the irdmtools package and tools. EPrinttools now depends on [simplified](https://github.com/caltechlibrary/simplified) v0.0.3 or better to compile.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/v1.2.5...v1.3.0",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.3.0",
+        "name": "Simplified records now separate package",
+        "release_id": 99440231,
+        "tag": "v1.3.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/99440231",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/99440231",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-03-10T23:26:18Z",
+        "date_published": "2023-03-10T23:28:49Z",
+        "description": "This release changes are focused on improvement of the simple record model and crosswalk for migrating content from EPrints to Invenio-RDM. This has involved some minor mapping of values as URI to simple strings and adjust the model to more closely reflect what can be imported directly into Invenio-RDM.",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.2.5",
+        "name": "identifier handling and role mapping",
+        "release_id": 95264497,
+        "tag": "v1.2.5",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.2.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/95264497",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/95264497",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.2.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-03-03T23:59:17Z",
+        "date_published": "2023-03-04T00:12:08Z",
+        "description": "This release features changes around the simple record JSON support. The model is being brought closer to that which can be easily imported into InvenioRDM with minor fixups.\r\n\r\n",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.2.4",
+        "name": "refining simple records",
+        "release_id": 94481157,
+        "tag": "v1.2.4",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.2.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/94481157",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/94481157",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.2.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-03-03T00:45:22Z",
+        "date_published": "2023-03-03T00:51:47Z",
+        "description": "This release focus on fixes for migrating EPrint records to Invenio-RDM using an intermediate \"simple\" record format.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/v1.2.2...v1.2.3",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.2.3",
+        "name": "simple record improvements",
+        "release_id": 94355930,
+        "tag": "v1.2.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.2.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/94355930",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/94355930",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.2.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-02-02T19:53:38Z",
+        "date_published": "2023-02-02T22:16:43Z",
+        "description": "This release focuses on cleaning and allowing for migration of the simplified (largely Invenio-RDM 11 compatible) data model into it own package. The crosswalk function's signature has changed as a result of that eventual migration. The simplified record model to support the current record structure of Invenio-RDM 11 as much as is clear.\r\n",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.2.2",
+        "name": "Bug fixes, crosswalk signature changes",
+        "release_id": 91183759,
+        "tag": "v1.2.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/91183759",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/91183759",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-11-28T23:46:16Z",
+        "date_published": "2022-11-28T23:47:11Z",
+        "description": "This release primarily cleans up the build process and updates the documentation adding support for generating man pages.\r\n",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v.1.2.1",
+        "name": "build cleanup and documentation",
+        "release_id": 84391319,
+        "tag": "v.1.2.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v.1.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/84391319",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/84391319",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v.1.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-11-09T00:52:52Z",
+        "date_published": "2022-11-09T00:57:26Z",
+        "description": "This release features a minor enhancement to the EP3 extended API. In the JSON output for an EPrint record it now includes two additional fields if available, \"deposited_on\" and \"deposited_by\" if user information is available.\r\n-\r\neputil option to talk to the extended API show retrieving both EPrint XML and JSON in the help.  If the `-json` option is included with eputil when accessing the extended API then the content returned should be in JSON and if not present it'll be EPrint XML when retrieving individual EPrint records.",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.2.0",
+        "name": "Enhanced extended API",
+        "release_id": 82467921,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/82467921",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/82467921",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-09-20T18:42:24Z",
+        "date_published": "2022-09-20T18:50:38Z",
+        "description": "doi2eprintxml.exe running on Windows 10 was generating duplicate IDNumber/OfficialURL values. Might be how the time library functions slightly differently under Windows versus Unix.  The bug report was DR-441. I added an incremented value to generating the IDNumber attribute.  This seems to solve the problem for now.  Using an actual UUID would make more sense in long run if problem persists.",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.1.9",
+        "name": "Bug fixes",
+        "release_id": 77690276,
+        "tag": "v1.1.9",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.1.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/77690276",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/77690276",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.1.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-07-26T20:31:31Z",
+        "date_published": "2022-07-26T21:25:48Z",
+        "description": "This release fixed a regression in EPrint ID Number handling introduce after v1.1.4. It also removes the snap/snapacraft.xml file since EPrint Tools doesn't fit the snapcraft deployment model very well.",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/v1.1.8",
+        "name": "Regression bug fix",
+        "release_id": 72902261,
+        "tag": "v1.1.8",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/v1.1.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/72902261",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/72902261",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/v1.1.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-04-13T22:24:43Z",
+        "date_published": "2022-04-13T22:27:01Z",
+        "description": "This release adds support for building snaps of EPrintTools.\r\n\r\n## What's Changed\r\n* Added snap definition to next by @rsdoiel in https://github.com/caltechlibrary/eprinttools/pull/61\r\n* Next, snap support by @rsdoiel in https://github.com/caltechlibrary/eprinttools/pull/62\r\n\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/1.1.6...1.1.7",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.7",
+        "name": "Added snap support",
+        "release_id": 64413686,
+        "tag": "1.1.7",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/64413686",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/64413686",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-04-12T20:42:30Z",
+        "date_published": "2022-04-12T20:47:53Z",
+        "description": "The *eputil* cli has been updated. It now supports some configuration via environment. See `eputil -h` for details. Added a demo Python scripts called *pseudo-baggit.py* that shows how you might embed *eputil* in a Python program for processing EPrints metadata.\r\n",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.6",
+        "name": "Updated eputil cli",
+        "release_id": 64292204,
+        "tag": "1.1.6",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/64292204",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/64292204",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-04-05T23:50:36Z",
+        "date_published": "2022-04-05T23:58:29Z",
+        "description": "This release fixes bugs in ep3apid import. Import should now populate the reviewer field in the eprint table.\r\n\r\n## What's Changed\r\n* Next by @rsdoiel in https://github.com/caltechlibrary/eprinttools/pull/60\r\n\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/1.1.4...1.1.5",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.5",
+        "name": "Bug fixes for ep3apid import functionality",
+        "release_id": 63699649,
+        "tag": "1.1.5",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/63699649",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/63699649",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-02-18T22:48:08Z",
+        "date_published": "2022-02-18T22:53:01Z",
+        "description": "Fixed parameter handling that got mangled when switching back to flag for processing parameters.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/1.1.3...1.1.4",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.4",
+        "name": "Bug fixes in doi2eprintxml parameter handling",
+        "release_id": 59945386,
+        "tag": "1.1.4",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/59945386",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/59945386",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-02-11T22:23:36Z",
+        "date_published": "2022-02-11T22:26:17Z",
+        "description": "This is primarily a bug fix release related to ep3apid.\r\n\r\n## What's Changed\r\n* Merge 1.1.3-next into proposed release 1.1.3 by @rsdoiel in https://github.com/caltechlibrary/eprinttools/pull/57\r\n\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/1.1.2...1.1.3",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.3",
+        "name": "1.1.3 is a bug fix release",
+        "release_id": 59386229,
+        "tag": "1.1.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/59386229",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/59386229",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-01-13T18:05:56Z",
+        "date_published": "2022-01-13T18:09:45Z",
+        "description": "This release fixes a bug when generating the EPrint id_number and official_url for doi2eprintxml.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/1.1.1...1.1.2",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.2",
+        "name": "1.1.2 bug fixes",
+        "release_id": 57042835,
+        "tag": "1.1.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/57042835",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/57042835",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2021-12-03T00:58:34Z",
+        "date_published": "2021-12-07T00:37:03Z",
+        "description": "This release is a combination of bug fixes and minor enhancement to ep3apid and EPrint XML generation. Included in 1.1.1 is a sketch of a Python client for working with ep3apid.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/1.1.0...1.1.1",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.1",
+        "name": "1.1.1 Bug fixes, more configuration in settings.json and more end points in ep3apid",
+        "release_id": 54753098,
+        "tag": "1.1.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54753098",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54753098",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2021-12-03T00:58:34Z",
+        "date_published": "2021-12-06T20:18:03Z",
+        "description": "This releases fixed a bug in how timestamps were encoded in ranged end points in ep3apid.  This was identified through testing with feeds' harvesting.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/1.1.0...1.1.1-rc5",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.1-rc5",
+        "name": "More bug fixes in ep3piad",
+        "release_id": 54739678,
+        "tag": "1.1.1-rc5",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.1-rc5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54739678",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54739678",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.1-rc5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2021-12-03T00:58:34Z",
+        "date_published": "2021-12-03T01:04:46Z",
+        "description": "Close issue #47. The clsrules rule set and settings.json now supports a \"strip_tags\" rule which will strip HTML/XML tags from an imported Abstract. This includes imports from ep3apid and also works in doi2eprintxml.",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.1-rc4",
+        "name": "1.1.1 Release Candidate 4: Bug fixes, added \"strip_tags\" behavior",
+        "release_id": 54543945,
+        "tag": "1.1.1-rc4",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.1-rc4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54543945",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54543945",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.1-rc4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2021-12-02T01:05:33Z",
+        "date_published": "2021-12-02T01:15:00Z",
+        "description": "Bug fixes, issues 43 (revisited), 44, 45, 46, 48, 49 closed.\r\n\r\nAdded `/{REPO_ID}/is-public/{EPRINT_ID}` end point to check if an eprint record \"is public\" (i.e. is eprint_status = \"archive\" and metadata_visibility = \"show\").\r\n\r\nFor key lists added `?eprint_status=...` option support in the ep3apid service.\r\n\r\nThe following fields in configuration were moved from the outer scope to per repository scope -- \"default_official_url\", \"default_collection\", \"default_rights\", \"default_refereed\", \"default_status\".\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/1.1.0...1.1.1-rc3",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.1-rc3",
+        "name": "1.1.1 Release Candidate 3: Bug fixes, added end points",
+        "release_id": 54456446,
+        "tag": "1.1.1-rc3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.1-rc3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54456446",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54456446",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.1-rc3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2021-12-01T00:37:24Z",
+        "date_published": "2021-12-01T00:41:43Z",
+        "description": "Primarily Bug fixes from 1.1.1-rc1 (release) and 1.1.1-next branch.  The eputil command line tool now can function as a client to the Extended EPrints API service.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/1.1.0...1.1.1-rc2",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.1-rc2",
+        "name": "1.1.1 Release Candidate 2",
+        "release_id": 54369967,
+        "tag": "1.1.1-rc2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.1-rc2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54369967",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54369967",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.1-rc2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2021-11-24T22:16:56Z",
+        "date_published": "2021-11-24T22:25:29Z",
+        "description": "Mostly bug fixes. Added user end points, eprint-import requires a user id for sending the imported eprint to the correct buffer. Sets eprint_status to buffer. Fixed some alignment issues in data, added more tests.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/eprinttools/compare/1.1.0...1.1.1-rc1",
+        "html_url": "https://github.com/caltechlibrary/eprinttools/releases/tag/1.1.1-rc1",
+        "name": "1.1.1 release candidate 1",
+        "release_id": 54033871,
+        "tag": "1.1.1-rc1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/tarball/1.1.1-rc1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54033871",
+        "value": "https://api.github.com/repos/caltechlibrary/eprinttools/releases/54033871",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprinttools/zipball/1.1.1-rc1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "py_dataset",
+        "type": "Software_application",
+        "value": "py_dataset >= v0.1.9",
+        "version": ">= v0.1.9"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "progressbar2",
+        "type": "Software_application",
+        "value": "progressbar2 >= v4.0.0",
+        "version": ">= v4.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Go >= 1.24.2",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "GNU Make > 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Pandoc > 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "CMTools >= 0.0.23",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:38:01",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Go base code",
+        "parent_header": [
+          "eprinttools"
+        ],
+        "type": "Text_excerpt",
+        "value": "The programs:\n\n- [eputil](eputil.1.md) is a command line utility for interacting (e.g. harvesting) JSON and XML from EPrints' REST API\n    - minimal configuration (because it does so much less!)\n- [epfmt](epfmt.1.md) is a command line utility to pretty print EPrints XML and convert to/from JSON including a simplified JSON inspired by DataCite and Invenion 3\n- [doi2eprintxml](doi2eprintxml.1.md) is a command line program for turning metadata harvested from CrossRef and DataCite into an EPrint XML document based on one or more supplied DOI\n- [ep3apid](ep3apid.1.md) is a Unix style web service for interacting with an EPrint repository via a localhost proxy. It includes the ability to get restricted key lists as well as retrieve a simplified JSON record representing an EPrints record\n- [ep3harvester](ep3harvester.1.md) is an EPrints 3.x metadata harvesting tool working at the MySQL 8 level for EPrints content. It harvests the contents into a MySQL 8 database, one table per eprints repository storing the harvested metadata in JSON columns. This tool can also harvest CSV files with information for people and groups referenced in the EPrints repositories.\n- [ep3genfeeds](ep3genfeeds.1.md) is used to genate the JSON documents that drive our feeds website.\n- [ep3datasets](ep3datasets.1.md) is a tool to generate [dataset collections](https://github.com/caltechlibrary/dataset) from previously harvested EPrints repositories\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/README.html",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Use cases",
+        "parent_header": [
+          "eprinttools"
+        ],
+        "type": "Text_excerpt",
+        "value": "Two primary use cases have driven development of EPrinttools\n\n1. Reusing the metadata and content in our EPrints 3.3.16 repositories (see [Caltech Library Feeds](https://feeds.library.caltech.edu)\n2. Populating our EPrints repository from standardize data sources (see [Acacia Project](https://github.com/caltechlibrary/Acacia)).\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/README.html",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.3.11"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprinttools/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

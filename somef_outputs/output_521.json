@@ -1,0 +1,753 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9716305851133479,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "cboettig@gmail.com",
+        "identifier": "http://orcid.org/0000-0002-1642-628X",
+        "type": "String",
+        "value": "Carl Boettiger"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "kshtzgupta1@berkeley.edu",
+        "type": "String",
+        "value": "Kshitiz Gupta"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2011",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"To cite the RAM Legacy Stock Assessment Database please follow these instructions.If you are using any of the older versions(1.0, 2.0, 2.5, 3.0, 4.3) then please just cite the paper in the format given below. If you are using any of the latest versions(4.40\u00b8 4.41, 4.44) then in addition to citing the paper please also cite that particular version of the database in the format given below:\")\n\ncitEntry(\n  entry = 'article',\n  title = 'Evaluating the knowledge base and status of commercially exploited marine species with the RAM Legacy Stock Assessment Database.',\n  author = c(person('Daniel', 'Ricard', role = 'aut'),\n             person('C\u00f3il\u00edn', 'Minto', role = 'aut'),\n             person(c('Olaf', 'P.'), 'Jensen', role = 'aut'),\n             person(c('Julia', 'K.'), 'Baum', role = 'aut')),\n  journal      = 'Fish and Fisheries',\n  year         = '2011',\n  doi          = '10.1111/j.1467-2979.2011.00435.x',\n  textVersion  = paste('Ricard, D., Minto, C., Jensen, O.P. and Baum, J.K. (2012)', '\"Evaluating the knowledge base and status of commercially exploited marine species with the RAM Legacy Stock Assessment Database\".', 'Fish and Fisheries 13 (4) 380-398. DOI: 10.1111/j.1467-2979.2011.00435.x')\n)\n\ncitEntry(\n  entry = 'misc',\n  author = c(person('RAM Legacy Stock Assessment Database')),\n  title = 'RAM Legacy Stock Assessment Database v4.44',\n  year = '2018',\n  doi = '10.5281/zenodo.2542919',\n  url = 'https://doi.org/10.5281/zenodo.2542919',\n  textVersion = paste('RAM Legacy Stock Assessment Database. (2018).', 'RAM Legacy Stock Assessment Database v4.44', '(Version v4.44) [Data set]. Zenodo.', 'http://doi.org/10.5281/zenodo.2542919')\n)\n\ncitEntry(\n  entry = 'misc',\n  author = c(person('RAM Legacy Stock Assessment Database')),\n  title = 'RAM Legacy Stock Assessment Database v4.41',\n  year = '2018',\n  doi = '10.5281/zenodo.2542927',\n  url = 'https://doi.org/10.5281/zenodo.2542927',\n  textVersion = paste('RAM Legacy Stock Assessment Database. (2018).', 'RAM Legacy Stock Assessment Database v4.41', '(Version v4.41) [Data set]. Zenodo.', 'http://doi.org/10.5281/zenodo.2542927')\n)\n\ncitEntry(\n  entry = 'misc',\n  author = c(person('RAM Legacy Stock Assessment Database')),\n  title = 'RAM Legacy Stock Assessment Database v4.40',\n  year = '2018',\n  doi = '10.5281/zenodo.2542935',\n  url = 'https://doi.org/10.5281/zenodo.2542935',\n  textVersion = paste('RAM Legacy Stock Assessment Database. (2018).', 'RAM Legacy Stock Assessment Database v4.40', '(Version v4.40) [Data set]. Zenodo.', 'http://doi.org/10.5281/zenodo.2542935')\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "ramlegacy"
+        ],
+        "type": "Text_excerpt",
+        "value": "Current and older versions of the RAM Legacy Database are [archived in\nZenodo](https://zenodo.org/communities/rlsadb/), each version with its\nown unique DOI. The suggested format for citing data is:\n\nRAM Legacy Stock Assessment Database. 2018. Version\n4.44-assessment-only. Released 2018-12-22. Accessed \\[Date accessed\nYYYY-MM-DD\\]. Retrieved from\n[DOI:10.5281/zenodo.2542919.](https://zenodo.org/record/2542919#.XE-rFs9KjBI)\n\nThe primary publication describing the RAM Legacy Stock Assessment\nDatabase, and suggested citation for general use is:\n\nRicard, D., Minto, C., Jensen, O.P. and Baum, J.K. (2012) Evaluating the\nknowledge base and status of commercially exploited marine species with\nthe RAM Legacy Stock Assessment Database. Fish and Fisheries 13 (4)\n380-398.\n[DOI: 10.1111/j.1467-2979.2011.00435.x](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-2979.2011.00435.x)\n\nSeveral [publications](https://sites.uw.edu/ramlegac/publications/) have\nrelied on the RAM Legacy Stock Assessment\nDatabase.\n\n[![ropensci\\_footer](https://ropensci.org/public_images/ropensci_footer.png)](https://ropensci.org)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Code of Conduct\n\nAs contributors and maintainers of this project, we pledge to respect all people who \ncontribute through reporting issues, posting feature requests, updating documentation,\nsubmitting pull requests or patches, and other activities.\n\nWe are committed to making participation in this project a harassment-free experience for\neveryone, regardless of level of experience, gender, gender identity and expression,\nsexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.\n\nExamples of unacceptable behavior by participants include the use of sexual language or\nimagery, derogatory comments or personal attacks, trolling, public or private harassment,\ninsults, or other unprofessional conduct.\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments,\ncommits, code, wiki edits, issues, and other contributions that are not aligned to this \nCode of Conduct. Project maintainers who do not follow the Code of Conduct may be removed \nfrom the project team.\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by \nopening an issue or contacting one or more of the project maintainers.\n\nThis Code of Conduct is adapted from the Contributor Covenant \n(https:contributor-covenant.org), version 1.0.0, available at \nhttps://contributor-covenant.org/version/1/0/0/\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ramlegacy"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ramlegacy"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ramlegacy"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.com/kshtzgupta1/ramlegacy",
+          "https://codecov.io/github/kshtzgupta1/ramlegacy?branch=master",
+          "https://ci.appveyor.com/project/kshtzgupta1/ramlegacy"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to `ramlegacy`\n\nThank you for any and all contributions! Following these guidelines will help streamline the process of contributing and make sure that we're all on the same page. While we ask that you read this guide and follow it to the best of your abilities, we welcome contributions from all, regardless of your level of experience.\n\nBy participating in this project, you agree to abide by the [code of conduct](https://github.com/ropensci/ramlegacy/blob/master/CONDUCT.md).\n\n# Types of contributions \n\nFollowing types of contributions are always welcome:\n\n- Identify areas for future development ([open an Issue](https://github.com//ramlegacy/issues))\n- Identify issues/bugs ([open an Issue](https://github.com/ropensci/ramlegacy/issues))\n- Write tutorials/vignettes ([open a Pull Request](https://github.com/ropensci/ramlegacy/pulls) to contribute to the ones here, or make your own elsewhere and send us a link)\n- Add functionality ([open a Pull Request](https://github.com/ropensci/ramlegacy/pulls))\n- Fix bugs ([open a Pull Request](https://github.com/ropensci/ramlegacy/pulls))\n\n\n# How to contribute code\n\n- Fork the repository\n- Clone the repository from GitHub to your computer e.g,. `git clone https://github.com/ropensci/ramlegacy.git`\n- Make sure to track progress upstream (i.e., on our version of `ramlegacy` at `ropensci/ramlegacy`)\n  - `git remote add upstream https://github.com/ropensci/ramlegacy.git`\n  - Before making changes make sure to pull changes in from upstream with `git pull upstream`\n- Make your changes\n  - For changes beyond minor typos, add an item to NEWS.md describing the changes and add yourself to the DESCRIPTION file as a contributor\n- Push to your GitHub account\n- Submit a pull request to home base (likely master branch, but check to make sure) at `ropensci/ramlegacy`\n\n# Code formatting\n\n- In general follow the convention of <https://r-pkgs.had.co.nz/r.html#style> (snake_case functions and argument names, etc.)\n- Use explicit package imports (i.e. package_name::package_function) and avoid @import if at all possible\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-09-03T19:55:57Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-12-08T01:49:54Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R :package: to download, cache and read in different versions of the RAM Legacy Stock Assessment Data Base, an online compilation of stock assessment results for commercially exploited marine populations from around the world."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+        "type": "String",
+        "value": "Contains functions to download, cache and read in 'Excel' version of the\n    RAM Legacy Stock Assessment Data Base, an online compilation of stock assessment\n    results for commercially exploited marine populations from around the world. \n    The database is named after Dr. Ransom A. Myers whose original stock-recruitment database,\n    is no longer being updated. More information about the database can be found at\n    <https://ramlegacy.org/>. Ricard, D., Minto, C., Jensen, O.P. and Baum, J.K. (2012) <doi:10.1111/j.1467-2979.2011.00435.x>."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Contains functions to download, cache and read in Excel version of the\n    RAM Legacy Stock Assessment Data Base, an online compilation of stock assessment\n    results for commercially exploited marine populations from around the world. More\n    information about the database can be found at <https://ramlegacy.org/>. Ricard, D.,\n    Minto, C., Jensen, O.P. and Baum, J.K. (2012) Evaluating the knowledge base and\n    status of commercially exploited marine species with the RAM Legacy Stock Assessment\n    Database. Fish and Fisheries 13 (4) 380-398 <doi:10.1111/j.1467-2979.2011.00435.x>."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.929142236755283,
+      "result": {
+        "original_header": "ramlegacy",
+        "type": "Text_excerpt",
+        "value": "`ramlegacy` is an R package that supports caching and reading in\ndifferent versions of the RAM Legacy Stock Assessment Data Base, an\nonline compilation of stock assessment results for commercially\nexploited marine populations from around the world. More information\nabout the database can be found [here.](https://www.ramlegacy.org/)\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8739947549813762,
+      "result": {
+        "original_header": "What does `ramlegacy` do?",
+        "type": "Text_excerpt",
+        "value": "  - Provides a function `download_ramlegacy()`, to download all the\n    available versions of the RAM Legacy Stock Assessment Excel Database\n    and cache them on the user\u2019s computer as serialized RDS objects.\n    This way once a version has been downloaded it doesn\u2019t need to be\n    re-downloaded for subsequent analysis.\n  - Supports reading in specified tables or all tables from a cached\n    version of the database through a function `load_ramlegacy()`\n  - Provides a function `ram_dir()` to view the path of the location\n    where the downloaded database was cached.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.973880451618361,
+      "result": {
+        "original_header": "Similar Projects",
+        "type": "Text_excerpt",
+        "value": "1.  [`ramlegacy`](https://github.com/seananderson/ramlegacy) Sean\n    Anderson has a namesake package that appears to be a stalled project\n    on Github (last updated 9 months ago). However, unlike this package\n    which supports downloading and reading in the Excel version of the\n    database, Sean Anderson\u2019s project downloads the Microsoft Access\n    version and converts it to a local sqlite3 database. \n2.  [`RAMlegacyr`](https://github.com/ashander/RAMlegacyr) `RAMlegacyr`\n    is an older package last updated in 2015. Similar to Sean Anderson\u2019s\n    project, the package seems to be an R interface for the Microsoft\n    Access version of the RAM Legacy Stock Assessment Database and\n    provides a set of functions using RPostgreSQL to connect to the\n    database.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#wip"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ramlegacy/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ramlegacy/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 6
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/ramlegacy/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/ramlegacy"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ramlegacy"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/ramlegacy"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ramlegacy"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/ropensci_footer.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "ramlegacy"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install the development version from\n[Github](https://github.com/ropensci/ramlegacy) with:\n\n``` r\ninstall.packages(\"devtools\")\nlibrary(devtools)\ninstall_github(\"ropensci/ramlegacy\")\n```\n\nTo ensure that the vignette is installed along with the package make\nsure to remove `--no-build-vignettes` from the `build_opts` in\n`install_github`\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/ramlegacy/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ramlegacy/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ramlegacy/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fisheries, marine-biology, r, r-package, ramlegacy, ropensci, rstats, stock-assessment"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "ramlegacy",
+          "fisheries",
+          "fish",
+          "marine",
+          "database",
+          "assessment",
+          "RAM",
+          "Legacy",
+          "download",
+          "read",
+          "cache",
+          "ropensci",
+          "r",
+          "rstats",
+          "r-package"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "YEAR: 2019\nCOPYRIGHT HOLDER: Kshitiz Gupta, Carl Boettiger\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ci.appveyor.com/api/projects/status/github/ropensci/ramlegacy?branch=master&amp;svg=true"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ramlegacy"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ramlegacy: Download and Read RAM Legacy Stock Assessment Database"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+        "type": "String",
+        "value": "ramlegacy"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 39100,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": "3.5.3"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/ramlegacy/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kshtzgupta1",
+          "type": "User"
+        },
+        "date_created": "2019-04-14T16:29:22Z",
+        "date_published": "2019-04-14T19:16:40Z",
+        "description": "* Package now supports downloading and reading newer versions (v4.40, v4.41, v4.44) along with the older versions (v4.3, v3.0, v2.5, v2.0, 1.0)\r\n* Removed the loading behavior of `library(ramlegacy)` leaving the loading solely to `load_ramlegacy`\r\n* Instead of assigning all the tables to global environment `load_ramlegacy` now just returns a list of tables that can be specified through the `tables` argument.\r\n* Modified `download_ramlegacy` and `load_ramlegacy` so that that while the default is still to download and read in the dataframes from the `rappdirs` directory the functions now also support downloading to a location chosen by the user and reading from that location.",
+        "html_url": "https://github.com/ropensci/ramlegacy/releases/tag/v0.2.0",
+        "release_id": 16752096,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/ramlegacy/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/ramlegacy/releases/16752096",
+        "value": "https://api.github.com/repos/ropensci/ramlegacy/releases/16752096",
+        "zipball_url": "https://api.github.com/repos/ropensci/ramlegacy/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Software_application",
+        "value": "R==>= 2.10",
+        "version": ">= 2.10"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cli",
+        "type": "Software_application",
+        "value": "cli==>= 1.0.0",
+        "version": ">= 1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "crayon",
+        "type": "Software_application",
+        "value": "crayon==>= 1.3.4",
+        "version": ">= 1.3.4"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "httr",
+        "type": "Software_application",
+        "value": "httr==>= 1.3.1",
+        "version": ">= 1.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rappdirs",
+        "type": "Software_application",
+        "value": "rappdirs==>= 0.3.1",
+        "version": ">= 0.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "readxl",
+        "type": "Software_application",
+        "value": "readxl==>= 1.1.0",
+        "version": ">= 1.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:06:46",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "ramlegacy"
+        ],
+        "type": "Text_excerpt",
+        "value": "Please see the ramlegacy\n[vignette](https://docs.ropensci.org/ramlegacy/articles/ramlegacy.html)\nfor more detailed examples and additional package functionality.\n\nStart by loading the package using `library`.\n\n``` r\nlibrary(ramlegacy)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "download_ramlegacy",
+        "parent_header": [
+          "ramlegacy",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "`download_ramlegacy()` downloads the specified version of **RAM Legacy\nStock Assessment Excel Database** and then saves it as an RDS object in\nuser\u2019s application data directory as detected by the\n[rappdirs](https://CRAN.R-project.org/package=rappdirs) package. This\nlocation is also where `load_ramlegacy()` by default will look for the\ndownloaded database.\n\n``` r\n# downloads version 4.44\ndownload_ramlegacy(version = \"4.44\")\n```\n\nIf version is not specified then `download_ramlegacy` defaults to\ndownloading current latest version (4.44) :\n\n``` r\n# downloads current latest version 4.44\ndownload_ramlegacy()\n```\n\nThe latest versions of the RAM Legacy Database are [archived in\nZenodo](https://zenodo.org/communities/rlsadb/) but the older versions\n(v4.3, v3.0, v2.5, v2.0, v1.0) are not. To ensure access to these older\nversions of the database `download_ramlegacy` supports downloading them\nfrom this [Github\nrepository](https://www.github.com/kshtzgupta1/ramlegacy-assets/):\n\n``` r\n# downloads older version 4.3\ndownload_ramlegacy(version = \"4.3\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "load_ramlegacy",
+        "parent_header": [
+          "ramlegacy",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "After the specified version of the database has been downloaded and\ncached on your local machine through `download_ramlegacy` you can call\n`load_ramlegacy` to obtain a list of specific tables/all the tables from\nthat version of the database. If version is not specified but tables is\nthen `load_ramlegacy` defaults to returning a list containing the\nspecified dataframes from the latest version (currently 4.44). If both\nversion and tables are not specified then `load_ramlegacy` defaults to\nreturning a list containing all the dataframes in the latest version\n(currently 4.44)\n\n``` r\n# get a list containing area and bioparams tables from\n# version 4.3 of the database\nload_ramlegacy(version = \"4.3\", tables = c(\"area\", \"bioparams\"))\n\n# get a list containing area and bioparams tables from version 4.44\n# of the database\nload_ramlegacy(version = \"4.44\", tables = c(\"area\", \"bioparams\"))\n\n# if tables is specified but version is not then the function defaults\n# to returning a list containing the specified tables from the current\n# latest version 4.44\nload_ramlegacy(tables = c(\"area\", \"bioparams\"))\n\n# since both tables and version are not specified the function returns\n# a list containing all the tables from the current latest version 4.44\nload_ramlegacy()\n```\n\nTo learn more about the different tables present in the database, what\nthe various acronyms mean and the different stock summaries accompanying\nthe databases please see this\n[page.](https://docs.ropensci.org/ramlegacy/articles/tables_description.html)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "ram_dir",
+        "parent_header": [
+          "ramlegacy",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "To view the exact path where a certain version of the database was\ndownloaded and cached by `download_ramlegacy` you can run `ram_dir(vers\n= 'version')`, specifying the version number inside the function call:\n\n``` r\n# download version 4.44\ndownload_ramlegacy(version = \"4.44\")\n\n# view the location where version 4.44 of the database was\n# downloaded and cached\nram_dir(vers = \"4.44\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ramlegacy/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

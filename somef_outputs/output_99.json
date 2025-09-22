@@ -1,0 +1,1433 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Bioinformatic"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "jean.cury@normalesup.org",
+        "name": "Jean Cury",
+        "type": "Agent",
+        "value": "Jean Cury"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "bneron@pasteur.fr",
+        "name": "Bertrand Neron",
+        "type": "Agent",
+        "value": "Bertrand Neron"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Bioinformatics and Biostatistics Hub, Institut Pasteur, Universit\u00e9 de Paris Cit\u00e9, 75015 Paris, France",
+        "email": "bneron@pasteur.fr",
+        "type": "String",
+        "value": "Bertrand N\u00e9ron"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Molecular diversity of microbes, Institut Pasteur, Universit\u00e9 de Paris Cit\u00e9, CNRS UMR3525, 75015 Paris, France",
+        "email": "jean.cury@normalesup.org",
+        "type": "String",
+        "value": "Jean Cury"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Microbial Evolutionary Genomics, Institut Pasteur, Universit\u00e9 de Paris Cit\u00e9, CNRS UMR3525, 75015 Paris, France",
+        "email": "erocha@pasteur.fr",
+        "type": "String",
+        "value": "Eduardo Rocha"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/CITATION.cff"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "type": "Text_excerpt",
+        "value": "The paper is published in Microorganism.\n\nN\u00e9ron, Bertrand, Eloi Littner, Matthieu Haudiquet, Amandine Perrin, Jean Cury, and Eduardo P.C. Rocha. 2022. \n**IntegronFinder 2.0: Identification and Analysis of Integrons across Bacteria, with a Focus on Antibiotic Resistance in Klebsiella** \nMicroorganisms 10, no. 4: 700. https://doi.org/10.3390/microorganisms10040700\n\n Please cite also the following articles:\n\n - Nawrocki, E.P. and Eddy, S.R. (2013)\n   **Infernal 1.1: 100-fold faster RNA homology searches.**\n   *Bioinformatics, 29, 2933-2935.*\n - Eddy, S.R. (2011)\n   **Accelerated Profile HMM Searches.**\n   *PLoS Comput Biol, 7, e1002195.*\n - Hyatt, D., Chen, G.L., Locascio, P.F., Land, M.L., Larimer, F.W. and Hauser, L.J. (2010)\n   **Prodigal: prokaryotic gene recognition and translation initiation site identification.**\n   *BMC Bioinformatics, 11, 119.*\n\nand if you use the function `--func_annot` which uses *NCBIfam-AMRFinder* hmm profiles:\n\n - Haft, DH et al., Nucleic Acids Res. 2018 Jan 4;46(D1):D851-D860 PMID: 29112715 \n \n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/gem-pasteur/Integron_Finder"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/gem-pasteur/macsyfinder/"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/gem-pasteur/Integron_Finder"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/gem-pasteur/Integron_Finder/actions"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/.github/workflows/ruff.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/.github/workflows/testing.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# How to contribute\n\nWelcome! By visiting this page,\nyou've taken the first step toward becoming a contributor to integron_finder!\n\n## What skills do I need?\n\nIf you know Python3, you can contribute to the code.\nWe also use [pandas](https://pandas.pydata.org/) and\n[numpy](http://www.numpy.org/) libraries.\n\nAnd there are also many ways to contribute to the project without programming.\nIf you'd like to get involved in design,\nsupport, testing, documentation, or other types of contributions.\n\n\n## How Can I Contribute?\n\nWe use Github to host the project, to submit an issue or a pull request,\nyou have to create a GitHub account.\n\n### Reporting Bugs\n\nThis section guides you through submitting a bug report for integron_finder.\nFollowing these guidelines helps maintainers and the community understand your report,\nreproduce the behavior, and find related reports.\n\nBefore creating bug reports, please check [this list](#before-submitting-a-bug-report)\nas you might find out that you don't need to create one.\nWhen you are creating a bug report, please\n[include as many details as possible](#how-do-i-submit-a-good-bug-report).\nFill out [the required template](.github/ISSUE_TEMPLATE.md), the information it asks for helps us resolve issues faster.\n\n> **Note:**\n> If you find a **Closed** issue that seems like it is the same thing that you're experiencing,\n> open a new issue and include a link to the original issue in the body of your new one.\n\n#### Before Submitting A Bug Report\n\n* **Perform a [cursory search](https://github.com/gem-pasteur/Integron_Finder/issues?q=is%3Aopen+is%3Aissue+label%3Abug)** to see if the problem has already been reported.\nIf it has **and the issue is still open**, add a comment to the existing issue instead of opening a new one.\n\n\n#### How Do I Submit A (Good) Bug Report?\n\nBugs are tracked as [GitHub issues](https://guides.github.com/features/issues/).\nCreate an issue on that repository and provide the following information by filling in the template.\nExplain the problem and include additional details to help maintainers reproduce the problem:\n\n* **Use a clear and descriptive title** for the issue to identify the problem.\n* **Describe the exact steps which reproduce the problem** in as many details as possible.\n  Which command exactly you used in the terminal.\n  When listing steps, **don't just say what you did, but explain how you did it**.\n* **Provide specific examples to demonstrate the steps**.\n  Include links to files or GitHub projects, or copy/pasteable snippets, which you use in those examples.\n  If you're providing snippets in the issue, use [Markdown code blocks](https://help.github.com/articles/markdown-basics/#multiple-lines).\n* **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.\n* **Explain which behavior you expected to see instead and why.**\n* **If you're reporting that integron_finder crashed**,\n  include a crash report with a stack trace from the operating system.\n  Include the crash report in the issue in a [code block](https://help.github.com/articles/markdown-basics/#multiple-lines),\n  a [file attachment](https://help.github.com/articles/file-attachments-on-issues-and-pull-requests/),\n  or put it in a [gist](https://gist.github.com/) and provide link to that gist.\n* **If the problem wasn't triggered by a specific action**, describe what you were doing before the problem happened\n  and share more information using the guidelines below.\n\n##### Provide more context by answering these questions:\n\n* **Did the problem start happening recently** (e.g. after updating to a new version of integron_finder) or was this always a problem?\n* If the problem started happening recently, **can you reproduce the problem in an older version of integron_finder?**\n  What's the most recent version in which the problem doesn't happen? You can download older versions of integron_finder from\n  [the releases page](https://github.com/gem-pasteur/integron_finder/releases).\n* **Can you reliably reproduce the issue?** If not, provide details about how often the problem happens and under which conditions it normally happens.\n* If the problem is related to working with files (e.g. opening and editing files),\n\n### Suggesting Enhancements\n\nThis section guides you through submitting an enhancement suggestion for integron_finder,\nincluding completely new features and minor improvements to existing functionality.\nFollowing these guidelines helps maintainers and the community understand your suggestion :pencil:\nand find related suggestions :mag_right:.\n\nBefore creating enhancement suggestions, please check [this list](#before-submitting-an-enhancement-suggestion)\nas you might find out that you don't need to create one.\nWhen you are creating an enhancement suggestion, please [include as many details as possible](#how-do-i-submit-a-good-enhancement-suggestion).\nFill in [the template](.github/ISSUE_TEMPLATE.md), including the steps that you imagine you would take if the feature you're requesting existed.\n\n#### Before Submitting An Enhancement Suggestion\n\n* **Check if you're using [the latest version of integron_finder](https://github.com/gem-pasteur/integron_finder/releases)**.\n* **Perform a [cursory search](https://github.com/gem-pasteur/integron_finder/issues?q=is%3Aopen+is%3Aissue+label%3Aenhancement)**\n  to see if the enhancement has already been suggested.\n  If it has, add a comment to the existing issue instead of opening a new one.\n\n#### How Do I Submit A (Good) Enhancement Suggestion?\n\nEnhancement suggestions are tracked as [GitHub issues](https://guides.github.com/features/issues/).\n\n* **Use a clear and descriptive title** for the issue to identify the suggestion.\n* **Provide a step-by-step description of the suggested enhancement** in as many details as possible.\n* **Provide specific examples to demonstrate the steps**.\n  Include copy/pasteable snippets which you use in those examples, as [Markdown code blocks](https://help.github.com/articles/markdown-basics/#multiple-lines).\n* **Describe the current behavior** and **explain which behavior you expected to see instead** and why.\n* **Explain why this enhancement would be useful** to most integron_finder users.\n* **Specify which version of integron_finder you're using.** You can get the exact version by running `integron_finder --version` in your terminal.\n* **Specify the name and version of the OS you're using.**\n\n### Your First Code Contribution\n\nUnsure where to begin contributing to integron_finder? You can start by looking through these `beginner` and `help-wanted` issues:\n\n* [Beginner issues][beginner] - issues which should only require a few lines of code, and a test or two.\n* [Help wanted issues][help-wanted] - issues which should be a bit more involved than `beginner` issues.\n\n### Pull Requests\n\n#### Process\n\n1. Follow the existing code style precedent. This does not need to be strictly\n   defined as there are many thousands of lines of examples. Note the lack\n   of tabs anywhere in the project, parentheses and spacing, curly bracket\n   locations, source code layout, variable scoping, etc. and follow the\n   project's standards.\n2. For any new functionality, please write a test to be added to Continuous\n   Integration (Travis) to test it (tests can be found in the `tests/`\n   directory).\n3. The project's default copyright and header have been included in any new\n   source files.\n4. Make sure you have implemented a tests and all tests `python tests/run_tests.py`\n   succeed before submitting the PR.\n5. Is the code human understandable? This can be accomplished via a clear code\n   style as well as documentation and/or comments.\n6. The pull request will be reviewed by others, and the final merge must be\n   done by the Integron_finder project lead.\n7. Documentation must be provided if necessary ([next section](#documentation-style-guide))\n8. Fill in [the required template](PULL_REQUEST_TEMPLATE.md)\n9. Do not include issue numbers in the PR title\n\n### Style guides\n\n### Git Commit Messages\n\n* Limit the first line to 72 characters or less\n* Reference issues and pull requests liberally after the first line\n* Consider starting the commit message with an applicable emoji:\n    * :art: `:art:` when improving the format/structure of the code\n    * :sparkles: `:sparkles:` when implement a new feature\n    * :memo: `:pencil2:` when writing docs\n    * :bug: `:bug:` when fixing a bug\n    * :white_check_mark: `:white_check_mark:` when adding tests\n    * :fire: `:fire:` when removing code or files\n    * :arrow_up: `:arrow_up:` when upgrading dependencies\n    * :arrow_down: `:arrow_down:` when downgrading dependencies\n\n\n### Python Style guide\n\n*integron_finder* (from version 2.0) is written in Python3.\nWe try to follow the [zen of python](https://www.python.org/dev/peps/pep-0020/) principles,\nand we adopted the [pep8](https://www.python.org/dev/peps/pep-0008/) coding style.\nAdd docstring compatible with sphinx in [restructuredtext]() format.\nIn docstring describe all parameters and types as well as the return, and error raise\n directly by the method when applicable.\n\n```python\ndef foo(param_1, param_2):\n    \"\"\"\n    foo do bla bla ...\n\n    :param param_1: what is the param 1\n    :type param_1: str\n    :param str param_2: what is the param 2,\n                      when it is a basic type, it can be specified \"on line\"\n    :returns: what is returned by foo\n    :rtype: list of strings\n    :raise RuntimeError: when param_1 is longer than param_2\n    \"\"\"\n    if len(param_1) > len(param_2):\n        raise RuntimeError()\n    ...\n```\nINtegron_Finder project adopt ruff as linter, all the code must pass the `ruff check` step.\nTo avoid to push incorrect code *IF* *use pre-commit*. So perform `pre-commit install` once you set up your environment\n(see developper_guide/installation for more details)\n\n### Documentation Style guide\n\n* We use [sphinx](http://www.sphinx-doc.org/en/stable/) with reStructuredText syntax to document the project.\n* We have separate user and developer documentation.\n* In developer documentation before diving head first in detailed documentation,\n  you should try to get an overview of how your code works.\n* We have a new page for each new scripts.\n* In developer documentation don't forget the api reference section,\n  document every classes, methods (even private) or functions.\n* In user documentation add examples, command lines, input and output.\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "Integron Finder"
+        ],
+        "type": "Text_excerpt",
+        "value": "We encourage contributions, bug report, enhancement ...\n\nBut before to do that we encourage to read [the contributing guide](CONTRIBUTING.md).\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "contributors": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Developers:\n    \n    - Jean Cury <https://github.com/jeanrjc>; <https://jeancury.frama.site/>\n    - Bertrand N\u00e9ron <https://github.com/bneron>; <https://orcid.org/0000-0002-0220-0482>\n    - Amandine Perrin <amandine.perrin@pasteur.fr> ; <https://github.com/asetgem> \n    \n# Contributors:\n    \n    - Kenzo-Hugo Hillion <https://github.com/khillion>\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/CONTRIBUTORS.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2015-06-16T19:42:30Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2015-06-19"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-13T20:53:23Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-06-05"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Bioinformatics tool to find integrons in bacterial genomes"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Integron Finder aims at detecting integrons in DNA sequences."
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Integron_Finder is a program that detects integrons in DNA sequences."
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://integronfinder.readthedocs.io/en/latest/"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/gem-pasteur/Integron_Finder/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/gem-pasteur/Integron_Finder/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pypi.org/project/integron-finder/"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 23
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "gem-pasteur/Integron_Finder"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Integron Finder"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "Integron Finder"
+        ],
+        "type": "Text_excerpt",
+        "value": "Although a system wide installation is possible and supported, many distribution do not allow it.\nSo we describe bellow some user wide installation procedures.\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "For user",
+        "parent_header": [
+          "Integron Finder",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "    pip install --user integron_finder==2.xx\n\nfor more installation options, or for developer installation see documentation\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "In a virtualenv",
+        "parent_header": [
+          "Integron Finder",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "To avoid interaction with the system libraries you can install integron_finder in a [virtualenv](https://docs.python.org/3/library/venv.html).\n\n1. create and activate the virtualenv\n   ```bash\n    python -m venv Integron_Finder\n    ./Integron_Finder/bin/activate\n   ```\n2. install integron_finder\n    ```bash\n    (Integron_Finder) python -m pip install integron_finder\n    ```\n   all libraries will be located in `Integron_Finder` directory\n3. when you want to quit the virtualenv\n    ```bash\n    (Integron_Finder) deactivate\n    ```\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Container",
+        "parent_header": [
+          "Integron Finder",
+          "Installation",
+          "In a virtualenv"
+        ],
+        "type": "Text_excerpt",
+        "value": "For reproducibility and easy way to use integron_finder without installing\nthird party software (hmmsearch, prodigal, ...) or libraries, we provide containers based on docker.\n\nhttps://hub.docker.com/r/gempasteur/integron_finder\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Docker",
+        "parent_header": [
+          "Integron Finder",
+          "Installation",
+          "In a virtualenv",
+          "Container"
+        ],
+        "type": "Text_excerpt",
+        "value": "The computation are perform under IF user in /home/IF inside the container. \nSo You have to mount a directory from the host in the container to exchange data \n(inputs data, and results) from the host and the container. \n\nThe shared directory must be writable by the IF user or overwrite the user in the container by your id (see example below)\n\n```\nmkdir shared_dir\ncd shared_dir\ndocker run -v $PWD:/home/IF -u $(id -u ${USER}):$(id -g ${USER}) integron_finder:2.0rc9 --local-max --circ --keep-tmp NZ_CP016323.fna\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Singularity",
+        "parent_header": [
+          "Integron Finder",
+          "Installation",
+          "In a virtualenv",
+          "Container"
+        ],
+        "type": "Text_excerpt",
+        "value": "As the docker image is registered in docker hub you can also use it directly with *Singularity*. \nUnlike *docker*, you have not to worry about shared directory, your `home` and `/tmp` are automatically shared.\n\n```\nsingularity run -H ${HOME} docker://gempasteur/integron_finder:2.0rc9  --local-max --circ --keep-tmp NZ_CP016323.fna\n```\n\nor use *-b* option if the data is not in your home.\n\n```\nsingularity run -H ${HOME} -b <the directory containing data> docker://gempasteur/integron_finder:2.0rc9 --local-max --circ --keep-tmp NZ_CP016323.fna\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Conda installation",
+        "parent_header": [
+          "Integron Finder",
+          "Installation",
+          "In a virtualenv"
+        ],
+        "type": "Text_excerpt",
+        "value": "From 2.0 version, Integron_Finder is available as [conda](https://conda.io/docs/index.html) package.\nIntegron_finder is in [bioconda](https://bioconda.github.io/) channel.\n(The advantage with this solution is that it will install prodigal, hmmer, and infernal too.)\n\n1. install conda\n2. Set up channels:\n\n        conda config --add channels defaults\n        conda config --add channels conda-forge\n        conda config --add channels bioconda\n\n3. install integron_finder:\n\n        conda install integron_finder\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "For developer",
+        "parent_header": [
+          "Integron Finder",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you want to develop or submit a patch on this software you are welcome.\nSee [Developer installation](https://integronfinder.readthedocs.io/en/latest/developer_guide/dev_guide.html#developer-installation) \nin documentation.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/gem-pasteur/Integron_Finder/issues"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/gem-pasteur/Integron_Finder/issues"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "bacterial-genomes, bioinformatics, identification"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "science"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "research"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "bioinformatics"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "genomic"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "prokaryote"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "integron"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "antibioyic resistance"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "integron",
+          "genomic",
+          "antibiotic resistance",
+          "bioinformatic"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "GPL-3.0-or-later"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Licence:",
+        "parent_header": [
+          "Integron Finder"
+        ],
+        "type": "Text_excerpt",
+        "value": "* Integron Finder is developed and released under [open source licence GPLv3](https://opensource.org/licenses/GPL-3.0)\n  (see COPYING file)\n* *NCBIfam-AMRFinder* is provided by NCBI and accessible here: https://ftp.ncbi.nlm.nih.gov/hmm/NCBIfam-AMRFinder/2021-06-01.1/NCBIfam-AMRFinder.LIB\n* The other data files:\n    * *attc_4.cm*\n    * *integron_integrase.hmm*\n    * *phage-int.hmm*     \n  are licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)\n  [![CC BY-NC-SA](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)\n   "
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Integron_Finder"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Integron_Finder"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "gem-pasteur"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_distribution": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pypi.org/project/integron_finder/"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "integron_finder"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "F*",
+        "size": 32108100,
+        "type": "Programming_language",
+        "value": "F*"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 692624,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ReScript",
+        "size": 54782,
+        "type": "Programming_language",
+        "value": "ReScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Nextflow",
+        "size": 11210,
+        "type": "Programming_language",
+        "value": "Nextflow"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Roff",
+        "size": 1600,
+        "type": "Programming_language",
+        "value": "Roff"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 30,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3",
+        "type": "Programming_language",
+        "value": "Python 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.3390/microorganisms10040700"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/gem-pasteur/Integron_Finder"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://integronfinder.readthedocs.io/en/latest/user_guide/changes.html"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://integronfinder.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jeanrjc",
+          "type": "User"
+        },
+        "date_created": "2022-05-02T13:48:49Z",
+        "date_published": "2023-09-29T16:05:38Z",
+        "description": "More info here : https://www.mdpi.com/2076-2607/10/4/700",
+        "html_url": "https://github.com/gem-pasteur/Integron_Finder/releases/tag/v2.0.2",
+        "name": "IntegronFinder V2",
+        "release_id": 123147757,
+        "tag": "v2.0.2",
+        "tarball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/tarball/v2.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/123147757",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/123147757",
+        "zipball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/zipball/v2.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bneron",
+          "type": "User"
+        },
+        "date_created": "2016-11-14T13:48:37Z",
+        "date_published": "2016-11-14T14:24:01Z",
+        "description": "- fix  #18\n- improve installer (now use pip):\n  \n  ```\n  $ pip install integron_finder\n  ```\n",
+        "html_url": "https://github.com/gem-pasteur/Integron_Finder/releases/tag/v1.5.1",
+        "name": "Version 1.5.1",
+        "release_id": 4652253,
+        "tag": "v1.5.1",
+        "tarball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/tarball/v1.5.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/4652253",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/4652253",
+        "zipball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/zipball/v1.5.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jeanrjc",
+          "type": "User"
+        },
+        "date_created": "2016-05-02T06:28:54Z",
+        "date_published": "2016-05-02T09:48:27Z",
+        "description": "A few changes:\n- Fix issue #16 \n- Update pandas functions --> **NOT working with pandas 0.15 anymore, need to update to 0.18 (Beware, it will not work with pandas 0.19, yet)**\n",
+        "html_url": "https://github.com/gem-pasteur/Integron_Finder/releases/tag/v1.5.0",
+        "name": "Version 1.5.0",
+        "release_id": 3138904,
+        "tag": "v1.5.0",
+        "tarball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/tarball/v1.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/3138904",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/3138904",
+        "zipball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/zipball/v1.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jeanrjc",
+          "type": "User"
+        },
+        "date_created": "2016-03-11T14:54:58Z",
+        "date_published": "2016-03-11T15:04:35Z",
+        "description": "Version used for the response to the reviewer.\n\nSome improvements:\n- Better parsing of hmm files and cm files\n- fix bug preventing the extension of the local search (lead to a significant increase in sensitivity)\n- Improve Doc \n",
+        "html_url": "https://github.com/gem-pasteur/Integron_Finder/releases/tag/1.4",
+        "name": "Version 1.4",
+        "release_id": 2793394,
+        "tag": "1.4",
+        "tarball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/tarball/1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/2793394",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/2793394",
+        "zipball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/zipball/1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jeanrjc",
+          "type": "User"
+        },
+        "date_created": "2015-11-09T12:35:35Z",
+        "date_published": "2015-11-09T12:36:47Z",
+        "description": "Some improvement, especially with\n- the functional annotation part.\n- hmm parser\n- doc\n",
+        "html_url": "https://github.com/gem-pasteur/Integron_Finder/releases/tag/v1.3",
+        "release_id": 2094441,
+        "tag": "v1.3",
+        "tarball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/tarball/v1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/2094441",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/2094441",
+        "zipball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/zipball/v1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jeanrjc",
+          "type": "User"
+        },
+        "date_created": "2015-09-18T17:56:41Z",
+        "date_published": "2015-09-18T18:01:35Z",
+        "description": "-  Improved doc\n-   Small re-organization of the output file architecture for better UX.\n\nVersion used for beta-testing\n",
+        "html_url": "https://github.com/gem-pasteur/Integron_Finder/releases/tag/1.2",
+        "release_id": 1835766,
+        "tag": "1.2",
+        "tarball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/tarball/1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/1835766",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/1835766",
+        "zipball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/zipball/1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jeanrjc",
+          "type": "User"
+        },
+        "date_created": "2015-07-31T10:25:07Z",
+        "date_published": "2015-07-31T10:27:44Z",
+        "description": "- Change script name\n- Add installer\n- Improve formatting\n- Fix various small bugs\n\nThis released was used for the paper.\n",
+        "html_url": "https://github.com/gem-pasteur/Integron_Finder/releases/tag/v1.1",
+        "release_id": 1612026,
+        "tag": "v1.1",
+        "tarball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/tarball/v1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/1612026",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/1612026",
+        "zipball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/zipball/v1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jeanrjc",
+          "type": "User"
+        },
+        "date_created": "2015-06-22T21:26:55Z",
+        "date_published": "2015-06-22T21:29:43Z",
+        "description": "Fix Backend for pdf rendering. \n",
+        "html_url": "https://github.com/gem-pasteur/Integron_Finder/releases/tag/v1.0.1",
+        "release_id": 1447591,
+        "tag": "v1.0.1",
+        "tarball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/tarball/v1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/1447591",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/1447591",
+        "zipball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/zipball/v1.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jeanrjc",
+          "type": "User"
+        },
+        "date_created": "2015-06-19T12:04:20Z",
+        "date_published": "2015-06-19T13:34:25Z",
+        "description": "First stable release which should work.\n",
+        "html_url": "https://github.com/gem-pasteur/Integron_Finder/releases/tag/v1.0",
+        "release_id": 1437556,
+        "tag": "v1.0",
+        "tarball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/tarball/v1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/1437556",
+        "value": "https://api.github.com/repos/gem-pasteur/Integron_Finder/releases/1437556",
+        "zipball_url": "https://api.github.com/repos/gem-pasteur/Integron_Finder/zipball/v1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy>=1.26",
+        "version": ">=1.26"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib>=3.8",
+        "version": ">=3.8"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pandas",
+        "type": "Software_application",
+        "value": "pandas>=2",
+        "version": ">=2"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "biopython",
+        "type": "Software_application",
+        "value": "biopython>=1.82",
+        "version": ">=1.82"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "colorlog",
+        "type": "Software_application",
+        "value": "colorlog",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "https://www.python.org/ftp/python/3.13.3/Python-3.13.3.tar.xz",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "https://pypi.org/project/pandas/2.2.3/",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "https://pypi.org/project/numpy/2.2.5/",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "https://pypi.org/project/biopython/1.85/",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "https://pypi.org/project/matplotlib/3.10.1/",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "https://pypi.org/pypi/colorlog/",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "http://eddylab.org/software/hmmer/hmmer-3.4.tar.gz",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "http://eddylab.org/infernal/infernal-1.1.5.tar.gz",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "https://github.com/hyattpd/Prodigal/archive/refs/tags/v2.6.3.tar.gz",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pygraphviz",
+        "type": "Software_application",
+        "value": "pygraphviz",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-rtd-theme",
+        "type": "Software_application",
+        "value": "sphinx-rtd-theme",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx_autodoc_typehints",
+        "type": "Software_application",
+        "value": "sphinx_autodoc_typehints",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-applehelp",
+        "type": "Software_application",
+        "value": "sphinxcontrib-applehelp",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-devhelp",
+        "type": "Software_application",
+        "value": "sphinxcontrib-devhelp",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-htmlhelp",
+        "type": "Software_application",
+        "value": "sphinxcontrib-htmlhelp",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-jsmath",
+        "type": "Software_application",
+        "value": "sphinxcontrib-jsmath",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-qthelp",
+        "type": "Software_application",
+        "value": "sphinxcontrib-qthelp",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-serializinghtml",
+        "type": "Software_application",
+        "value": "sphinxcontrib-serializinghtml",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-svg2pdfconverter",
+        "type": "Software_application",
+        "value": "sphinxcontrib-svg2pdfconverter",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/doc/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Dependencies",
+        "parent_header": [
+          "Integron Finder"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Python >=3.10\n- Pandas >=2\n- Numpy >=1.26\n- Biopython >=1.82\n- Matplotlib >=3.8\n- colorlog\n- HMMER >=3.1b2,<=3.3.2\n- INFERNAL >=1.1.2,<=1.1.4\n- Prodigal >=2.6.2,<=V2.6.3\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:30:32",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 81
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "Integron Finder"
+        ],
+        "type": "Text_excerpt",
+        "value": "```\nusage: integron_finder [-h] [--local-max] [--func-annot] [--cpu CPU] [-dt DISTANCE_THRESHOLD] [--outdir OUTDIR] [--union-integrases]\n                       [--cmsearch CMSEARCH] [--hmmsearch HMMSEARCH] [--prodigal PRODIGAL] [--path-func-annot PATH_FUNC_ANNOT] [--gembase]\n                       [--gembase-path GEMBASE_PATH] [--annot-parser ANNOT_PARSER] [--prot-file PROT_FILE] [--attc-model ATTC_MODEL]\n                       [--evalue-attc EVALUE_ATTC] [--calin-threshold CALIN_THRESHOLD] [--keep-palindromes] [--no-proteins]\n                       [--promoter-attI] [--max-attc-size MAX_ATTC_SIZE] [--min-attc-size MIN_ATTC_SIZE] [--eagle-eyes] [--pdf] [--gbk]\n                       [--keep-tmp] [--split-results] [--circ | --linear] [--topology-file TOPOLOGY_FILE] [--version] [--mute] [-v] [-q]\n                       replicon\n\npositional arguments:\n  replicon              Path to the replicon file (in fasta format), eg : path/to/file.fst or file.fst\n\noptional arguments:\n  -h, --help            show this help message and exit\n  --local-max           Allows thorough local detection (slower but more sensitive and do not increase false positive rate).\n  --func-annot          Functional annotation of CDS associated with integrons HMM files are needed in Func_annot folder.\n  --cpu CPU             Number of CPUs used by INFERNAL and HMMER. Increasing too much (usually above 4) may decrease performance. \n  -dt DISTANCE_THRESHOLD, --distance-thresh DISTANCE_THRESHOLD\n                        Two elements are aggregated if they are distant of DISTANCE_THRESH [4000]bp or less\n  --outdir OUTDIR       Set the output directory (default: current)\n  --union-integrases    Instead of taking intersection of hits from Phage_int profile (Tyr recombinases) and integron_integrase profile,\n                        use the union of the hits\n  --cmsearch CMSEARCH   Complete path to cmsearch if not in PATH. eg: /usr/local/bin/cmsearch\n  --hmmsearch HMMSEARCH\n                        Complete path to hmmsearch if not in PATH. eg: /usr/local/bin/hmmsearch\n  --prodigal PRODIGAL   Complete path to prodigal if not in PATH. eg: /usr/local/bin/prodigal\n  --path-func-annot PATH_FUNC_ANNOT\n                        Path to file containing all hmm bank paths (one per line)\n  --gembase             Use gembase formatted protein file instead of Prodigal. Folder structure must be preserved\n  --gembase-path GEMBASE_PATH\n                        path to the gembase root directory (needed only if the replicon file is not locatedin gembase-path)\n  --annot-parser ANNOT_PARSER\n                        the path to the parser to use to get information from protein file.\n  --prot-file PROT_FILE\n                        The path to the proteins file used for annotations\n  --attc-model ATTC_MODEL\n                        Path or file to the attc model (Covariance Matrix).\n  --evalue-attc EVALUE_ATTC\n                        Set evalue threshold to filter out hits above it (default: 1)\n  --calin-threshold CALIN_THRESHOLD\n                        keep 'CALIN' only if attC sites number >= calin-threshold (default: 2)\n  --keep-palindromes    For a given hit, if the palindromic version is found, don't remove the one with highest evalue.\n  --no-proteins         Don't annotate CDS and don't find integrase, just look for attC sites.\n  --promoter-attI       Search also for promoter and attI sites. (default False)\n  --max-attc-size MAX_ATTC_SIZE\n                        Set maximum value fot the attC size (default: 200bp)\n  --min-attc-size MIN_ATTC_SIZE\n                        set minimum value fot the attC size (default: 40bp)\n  --eagle-eyes          Synonym of --local-max. Like a soaring eagle in the sky, catching rabbits (or attC sites) by surprise.\n  --circ                Set the default topology for replicons to 'circular'\n  --linear              Set the default topology for replicons to 'linear'\n  --topology-file TOPOLOGY_FILE\n                        The path to a file where the topology for each replicon is specified.\n  --version             show program's version number and exit\n  --mute                mute the log on stdout.(continue to log on integron_finder.out)\n\nOutput options:\n  --pdf                 For each complete integron, a simple graphic of the region is depicted (in pdf format)\n  --gbk                 generate a GenBank file with the sequence annotated with the same annotations than .integrons file.\n  --keep-tmp            keep intermediate results. This results are stored in directory named tmp_<replicon id>\n  --split-results       Instead of merging integron results from all replicon in one file, keep them in separated files.\n\n  -v, --verbose         Increase verbosity of output (can be cumulative : -vv)\n  -q, --quiet           Decrease verbosity of output (can be cumulative : -qq)\n\n```\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example",
+        "parent_header": [
+          "Integron Finder",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "    integron_finder --local-max --func-annot mysequences.fst\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Output :",
+        "parent_header": [
+          "Integron Finder",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "By default, integron_finder will output 3 files under Results_Integron_Finder_mysequences:\n\n- `mysequences.integrons` : A file with all integrons and their elements detected in all sequences in the input file.\n- `mysequences.summary` : A summary file with the number and type of integrons per sequence.\n- `integron_finder.out` : A copy standard output. The stdout can be silenced with the argument --mute\n\nThe amount of log in the standard output can be controlled with `--verbose` for more or `--quiet` for less, \nand both are cumulative arguments, eg. `-vv` or `-qq`.\n\nOther files can be created on demand:\n\n- `--gbk`: Creates a Genbank files with all the annotations found (present in the .integrons file)\n- `--pdf`: Creates a simple pdf graphic with complete integrons\n- `--keep-tmp`: Keep temporary files. See Keep intermediate files for more.\n"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.0.6"
+      },
+      "source": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "workflows": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/gem-pasteur/Integron_Finder/master/parallel_integron_finder.nf"
+      },
+      "technique": "file_exploration"
+    }
+  ]
+}

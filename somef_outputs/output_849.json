@@ -1,0 +1,590 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Web"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.914880740150271,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "myrmecocystus@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-1444-9135",
+        "type": "String",
+        "value": "Scott Chamberlain"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sckott/fauxpas"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sckott/fauxpas"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sckott/fauxpas"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/sckott/fauxpas/main/.github/workflows/build-docs.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/sckott/fauxpas/main/.github/workflows/R-check.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING\n\n### Bugs?\n\n* Submit an issue on the [Issues page](https://github.com/sckott/fauxpas/issues)\n\n### Issues and Pull Requests\n\nIf you are considering a pull request, you may want to open an issue first to discuss with the maintainer(s).\n\n### Code contributions\n\n* Fork this repo to your GitHub account\n* Clone your version on your account down to your machine from your account, e.g,. `git clone https://github.com/<yourgithubusername>/fauxpas.git`\n* Make sure to track progress upstream (i.e., on our version of `fauxpas` at `sckott/fauxpas`) by doing `git remote add upstream https://github.com/sckott/fauxpas.git`. Before making changes make sure to pull changes in from upstream by doing either `git fetch upstream` then merge later or `git pull upstream` to fetch and merge in one step\n* Make your changes (bonus points for making changes on a new feature branch - see <https://guides.github.com/introduction/flow/> for how to contribute by branching, making changes, then submitting a pull request)\n* Push up to your account\n* Submit a pull request to home base (likely main branch, but check to make sure) at `sckott/fauxpas`\n\n### Thanks for contributing!\n"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2016-04-13T20:33:33Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-03-22T11:20:01Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fauxpas does http errors"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+        "type": "String",
+        "value": "HTTP error helpers. Methods included for general purpose HTTP \n    error handling, as well as individual methods for every HTTP status\n    code, both via status code numbers as well as their descriptive names.\n    Supports ability to adjust behavior to stop, message or warning.\n    Includes ability to use custom whisker template to have any configuration\n    of status code, short description, and verbose message. Currently \n    supports integration with 'crul', 'curl', and 'httr'."
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "HTTP error helpers. Methods included for general purpose HTTP error handling, as well as individual methods for every HTTP status code, both via status code numbers as well as their descriptive names. Supports ability to adjust behavior to stop, message or warning. Includes ability to use custom whisker template to have any configuration of status code, short description, and verbose message. Currently supports integration with 'crul', 'curl', and 'httr'."
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8888577687895175,
+      "result": {
+        "original_header": "fauxpas",
+        "type": "Text_excerpt",
+        "value": "* HTTP error classes more in line with Ruby/Python/Etc.\n* An error class for each HTTP status in case a user wants to\nbe specific to an HTTP status code, and general purpose handlers\nfor any error\n* Work with any of the major R http clients: `crul`, `curl`, `httr`, (maybe\n`RCurl` later)\n* Provide flexiblity for what to do on an HTTP error, including\ncustom functions and message templates \n"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sckott/fauxpas/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/sckott/fauxpas/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "sckott/fauxpas"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fauxpas"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://sckott.github.io/fauxpas/"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fauxpas"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install",
+        "parent_header": [
+          "fauxpas"
+        ],
+        "type": "Text_excerpt",
+        "value": "CRAN version\n\n\n```r\ninstall.packages(\"fauxpas\")\n```\n\nDev version\n\n\n```r\nremotes::install_github(\"sckott/fauxpas\")\n```\n\n\n```r\nlibrary(\"fauxpas\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/sckott/fauxpas/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sckott/fauxpas/issues"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/sckott/fauxpas/issues"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "error-handling, http, r, r-package, rstats"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "http",
+          "https",
+          "API",
+          "web-services",
+          "curl",
+          "errors",
+          "error"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "YEAR: 2018\nCOPYRIGHT HOLDER: Scott Chamberlain\n"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fauxpas"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fauxpas: HTTP Error Helpers"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "sckott"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+        "type": "String",
+        "value": "fauxpas"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 188303,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 693,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/sckott/fauxpas/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/sckott/fauxpas/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2020-04-13T15:49:57Z",
+        "date_published": "2020-04-13T15:51:45Z",
+        "description": "### NEW FEATURES\r\n\r\n* changed default for parameter `behavior` in function `http()` to `auto` instead of `stop` (#12)\r\n* `http()` gains new parameter `muffle` (logical) to optionally muffle any warning/message from http status codes in series  (#12)",
+        "html_url": "https://github.com/sckott/fauxpas/releases/tag/v0.5.0",
+        "name": "fauxpas v0.5.0",
+        "release_id": 25452748,
+        "tag": "v0.5.0",
+        "tarball_url": "https://api.github.com/repos/sckott/fauxpas/tarball/v0.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/sckott/fauxpas/releases/25452748",
+        "value": "https://api.github.com/repos/sckott/fauxpas/releases/25452748",
+        "zipball_url": "https://api.github.com/repos/sckott/fauxpas/zipball/v0.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2018-03-01T03:13:48Z",
+        "date_published": "2018-03-01T03:19:27Z",
+        "description": "### NEW FEATURES\r\n\r\n* New function `find_error_class()` for a user to get a `HTTP*` class object with just the status code (#10)\r\n* Added a vignette (#4)\r\n* Added an additional object type that fauxpas responds to: the `Response` from the `webmockr` package and the `VcrResponse` from the `vcr` package (#9)\r\n\r\n### MINOR IMPROVEMENTS\r\n\r\n* `behavior_type` variable in the `Error` class object is now a private variable, and can be set with a new method `$set_behavior()` (#7)\r\n* For `http*()` S3 list methods added additional checks for response objects from `curl` package that are simple lists, so are challenging to verify (#5)\r\n* Added tests for all `http*` methods via a generator (#11)\r\n\r\n### BUG FIXES\r\n\r\n* Fixed `message_template` behavior, see above related comment about new message template param (#8)",
+        "html_url": "https://github.com/sckott/fauxpas/releases/tag/v0.2.0",
+        "name": "fauxpas v0.2.0 ",
+        "release_id": 9886351,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/sckott/fauxpas/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/sckott/fauxpas/releases/9886351",
+        "value": "https://api.github.com/repos/sckott/fauxpas/releases/9886351",
+        "zipball_url": "https://api.github.com/repos/sckott/fauxpas/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2016-11-16T01:24:12Z",
+        "date_published": "2016-11-16T01:28:14Z",
+        "description": "### NEW FEATURES\n- Released to CRAN.\n",
+        "html_url": "https://github.com/sckott/fauxpas/releases/tag/v0.1.0",
+        "name": "fauxpas v0.1.0",
+        "release_id": 4666856,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/sckott/fauxpas/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/sckott/fauxpas/releases/4666856",
+        "value": "https://api.github.com/repos/sckott/fauxpas/releases/4666856",
+        "zipball_url": "https://api.github.com/repos/sckott/fauxpas/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:19:47",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 14
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "use with crul",
+        "parent_header": [
+          "fauxpas"
+        ],
+        "type": "Text_excerpt",
+        "value": "```r\nlibrary(\"crul\")\ncli <- HttpClient$new(\"https://httpbin.org/status/414\")\nres <- cli$get()\nhttp(res)\n#> Error: Request-URI Too Long (HTTP 414).\nhttp414(res)\n#> Error: Request-URI Too Long (HTTP 414).\n```\n\n\n```r\nx <- HTTPRequestURITooLong$new()\nx$do_verbose(res)\n#> Error: Request-URI Too Long (HTTP 414).\n#> - The server is refusing to service the request because the Request-URI is\n#>    longer than the server is willing to interpret. This rare condition is only likely\n#>    to occur when a client has improperly converted a POST request to a GET request\n#>    with long query information, when the client has descended into a URI black hole\n#>    of redirection (e.g., a redirected URI prefix that points to a suffix of itself),\n#>    or when the server is under attack by a client attempting to exploit security\n#>    holes present in some servers using fixed-length buffers for reading or\n#>    manipulating the Request-URI.\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "use with curl",
+        "parent_header": [
+          "fauxpas"
+        ],
+        "type": "Text_excerpt",
+        "value": "```r\nlibrary(\"curl\")\nh <- curl::new_handle()\ncurl::handle_setopt(h)\nresp <- curl::curl_fetch_memory(\"https://httpbin.org/status/404\", h)\nhttp(resp)\n#> Error: Not Found (HTTP 404).\nhttp404(resp)\n#> Error: Not Found (HTTP 404).\n```\n\n\n```r\nx <- HTTPNotFound$new()\nx$do_verbose(resp)\n#> Error:  Not Found (HTTP 404).\n#>  - The server has not found anything matching the Request-URI. No indication is\n#> given of whether the condition is temporary or permanent. The 410 (Gone) status\n#> code SHOULD be used if the server knows, through some internally configurable\n#> mechanism, that an old resource is permanently unavailable and has no forwarding\n#> address. #> This status code is commonly used when the server does not wish to\n#> reveal exactly why the request has been refused, or when no other response is\n#> applicable.\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "use with httr",
+        "parent_header": [
+          "fauxpas"
+        ],
+        "type": "Text_excerpt",
+        "value": "```r\nlibrary(\"httr\")\nres <- GET(\"https://httpbin.org/status/405\")\nhttp405(res)\n#> Error: Method Not Allowed (HTTP 405).\n```\n\n\n```r\nx <- HTTPMethodNotAllowed$new()\nx$do_verbose(res)\n#> Error: Method Not Allowed (HTTP 405).\n#>  - The method specified in the Request-Line is not allowed for the resource\n#> identified by the Request-URI. The response MUST include an Allow header\n#> containing a list of valid methods for the requested resource.\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.5.4"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.5.2"
+      },
+      "source": "https://raw.githubusercontent.com/sckott/fauxpas/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

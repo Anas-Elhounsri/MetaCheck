@@ -1,0 +1,374 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgments",
+        "parent_header": [
+          "NicheBarcoding"
+        ],
+        "type": "Text_excerpt",
+        "value": "\r\nWe thank reviewer [ldecicco-USGS](https://github.com/ldecicco-USGS) for comments on an early \r\nversion of the package.\r\n\r\nThis research was supported by the Natural Science Foundation of China (32200343, 32170421), \r\nBeijing Municipal Natural Science Foundation (5232001), Chinese Academy of Sciences President\u2019s \r\nInternational Fellowship Initiative program (2024PVC0046), Support Project of High-level Teachers \r\nin Beijing Municipal Universities in the Period of 14th Five\u2013year Plan (BPHR20220114), National \r\nKey Research and Development Program of China (2023YFC2606600), and Academy for Multidisciplinary \r\nStudies, Capital Normal University.\r\n"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2024",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"To cite excluder in publications, please use:\")\n\ncitEntry(entry =  \"article\",\n         title        = \"Environmental Niche Models Improve Species Identification in DNA Barcoding\",\n         author       = personList(as.person(\"Cai-qing Yang\")),\n         author       = personList(as.person(\"Ying Wang\")),\n         author       = personList(as.person(\"Xin-hai Li\")),\n         author       = personList(as.person(\"Jing Li\")),\n         author       = personList(as.person(\"Bing Yang\")),\n         author       = personList(as.person(\"Michael. C. Orr\")),\n         author       = personList(as.person(\"Ai-bing Zhang\")),\n         year         = \"2024\",\n         journal      = \"R package version 1.8.\",\n         url          = \"https://github.com/Yangcq-Ivy/NicheBarcoding\",\n         textVersion  = \"Yang, C. Q., Y. Wang, X. H. Li, J. Li, B. Yang, M. C. Orr, A. B. Zhang (2024). Environmental Niche Models Improve Species Identification in DNA Barcoding. R package version 1.8. https://github.com/Yangcq-Ivy/NicheBarcoding\"\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citing this package",
+        "parent_header": [
+          "NicheBarcoding"
+        ],
+        "type": "Text_excerpt",
+        "value": "\r\nTo cite `{NicheBarcoding}`, use:\r\n\r\n> Yang, C. Q., Y. Wang, X. H. Li, J. Li, B. Yang, M. C. Orr, A. B. Zhang (2024). \r\n> Environmental Niche Models Improve Species Identification in DNA Barcoding. \r\n> R package version 1.8. <https://github.com/Yangcq-Ivy/NicheBarcoding>\r\n\r"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/Yangcq-Ivy/NicheBarcoding"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/Yangcq-Ivy/NicheBarcoding"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/CONTRIBUTING.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-12-04T15:26:06Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-11-10T09:30:36Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+        "type": "String",
+        "value": "Species Identification using DNA Barcodes Integrated with \n             Environmental Niche Models."
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9442107060380859,
+      "result": {
+        "original_header": "NicheBarcoding",
+        "type": "Text_excerpt",
+        "value": "\r\nThis is a quick guide to getting started with the two main functions.\r\n\r\n\r \n"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9518973709294473,
+      "result": {
+        "original_header": "Functions",
+        "type": "Text_excerpt",
+        "value": "\r\nThis package provides three primary actions:\r\n\r\n-   `NBSI` and `NBSI2` functions execute the main identification\r\n    integrating both DNA barcoding and ecological niche modeling.\r\n-   `extractSpeInfo`, `niche.Model.Build`, `pseudo.present.points` \r\n    and `pseudo.absent.points` functions are the extractable intermediate\r\n    steps of `NBSI` and `NBSI2` that execute information extraction,\r\n    niche modeling and pseudo points generation.\r\n-   `monophyly.prop`, `spe.mantel.test` and `niche.PCA` functions \r\n    execute the analysis of the characteristics of reference or/and query \r\n    datasets, including the phylogenetic monophyletic proportion, the\r\n    correlation between interspecific pairwise genetic distance and \r\n    ecological distance, and the principal component analysis of ecological\r\n    niche between datasets.\r\n\r\n\r \n"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.962413127243713,
+      "result": {
+        "original_header": "Scenario 0",
+        "type": "Text_excerpt",
+        "value": "\r\nThis is the typical situation for most users, where the users have DNA barcodes of species under study for both reference and query samples, with coordinates of species / samples recorded from their own collections. \r\n\r\n``` r\r\n#################################################################\r\n### Scenario 0\r\n### NBSI  DNA barcodes + coordinates of species distribution \r\n###       available (using online climate data)\r\n#################################################################\r\n\r\nlibrary(ape)\r\ndata(LappetMoths)\r\nref.seq<-LappetMoths$ref.seq\r\nque.seq<-LappetMoths$que.seq\r\n\r\nNBSI.out<-NBSI(ref.seq,que.seq,ref.add=NULL,\r\n               model=\"MAXENT\",\r\n               en.vir=en.vir,bak.vir=bak.vir)\r\nNBSI.out\r\n```\r\n\r\nIn addition, the coordinates collected from [`GBIF`](https://www.gbif.org/) or published literature can also be included through the `ref.add` parameter. \r\n\r\nWhen you have an additional reference coordinates information, run:\r\n\r\nBASH2*\r\n\r \n"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9593873518244822,
+      "result": {
+        "original_header": "Scenario 1",
+        "type": "Text_excerpt",
+        "value": "\r\nIn this case, users may already have species identified by another barcoding method. \r\n\r\nThey attempt to further confirm their identifications with niche models built by environmental data. \r\n\r\nThe function `NBSI2` is especially designed for this purpose.\r\n\r\n``` r\r\n#################################################################\r\n### Scenario 1 \r\n### NBSI2   species identified by other methods or barcodes + \r\n###         coordinates of species distribution available \r\n###         (for using online climatic data)\r\n#################################################################\r\n\r\ndata(LappetMoths)\r\nbarcode.identi.result<-LappetMoths$barcode.identi.result\r\nref.infor<-LappetMoths$ref.infor\r\nque.infor<-LappetMoths$que.infor\r\n\r\nNBSI2.out<-NBSI2(ref.infor=ref.infor,que.infor=que.infor,\r\n                 barcode.identi.result=barcode.identi.result,\r\n                 model=\"MAXENT\",\r\n                 en.vir=en.vir,bak.vir=bak.vir)\r\nNBSI2.out\r\n```\r\n\r \n"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9039994430714022,
+      "result": {
+        "original_header": "Scenario 2",
+        "type": "Text_excerpt",
+        "value": "\r\nSometimes users may have species identified by other methods or barcodes alone, or their own environmental data collected by themselves (or alternative online sources).\r\n\r\nObviously, users no longer need to provide species distribution data (coordinates), or use the online environmental data in this case. \r\n\r\nThey should prepare two environmental datasets for both reference and query samples.\r\n\r\n``` r\r\n#################################################################\r\n### Scenario 2\r\n### NBSI2   species identified by other methods or barcodes + \r\n###         users possessing their own environmental data\r\n#################################################################\r\n\r\ndata(LappetMoths)\r\nbarcode.identi.result<-LappetMoths$barcode.identi.result\r\nref.env<-LappetMoths$ref.env\r\nque.env<-LappetMoths$que.env\r\n\r\nNBSI2.out2<-NBSI2(ref.env=ref.env,que.env=que.env,\r\n                  barcode.identi.result=barcode.identi.result,\r\n                  model=\"MAXENT\",\r\n                  en.vir=en.vir,bak.vir=bak.vir)\r\nNBSI2.out2\r\n```\r\n\r\nComplete examples can also be found in the help documentation of each functions.\r\n\r\nUsers can also read the manual to learn more.\r\n\r \n"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/Yangcq-Ivy/NicheBarcoding/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/Yangcq-Ivy/NicheBarcoding/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Yangcq-Ivy/NicheBarcoding"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "NicheBarcoding"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "NicheBarcoding"
+        ],
+        "type": "Text_excerpt",
+        "value": "\r\nYou can install the stable released version of `{NicheBarcoding}` from\r\n[GitHub](https://github.com/) with:\r\n\r\n``` r\r\n# install.packages(\"devtools\")\r\ndevtools::install_github(\"Yangcq-Ivy/NicheBarcoding\")\r\n```\r\n\r\nor directly install from [CRAN](https://cran.r-project.org/) with:\r\n\r\n``` r\r\ninstall.packages(\"NicheBarcoding\")\r\n```\r\n\r"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/Yangcq-Ivy/NicheBarcoding/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/Yangcq-Ivy/NicheBarcoding"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+        "type": "String",
+        "value": "GPL (>= 3)"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "NicheBarcoding"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "Yangcq-Ivy"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+        "type": "String",
+        "value": "NicheBarcoding"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 80125,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "somef_missing_categories": [
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:20:28",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "NicheBarcoding"
+        ],
+        "type": "Text_excerpt",
+        "value": "\r\n``` r\r\nrm(list=ls())\r\nlibrary(NicheBarcoding)\r\n```\r\n\r\nLoad the example bioclimatic layers first.\r\n\r\n``` r\r\ndata(en.vir)\r\ndata(bak.vir)\r\n```\r\n\r\nor if you want to download the complete bioclimatic layers from online \r\n[`worldclim`](https://www.worldclim.org/), run:\r\n\r\n``` r\r\nenvir<-raster::getData(\"worldclim\",download=FALSE,var=\"bio\",res=2.5)\r\nen.vir<-raster::brick(envir)\r\n\r\n# Generate random background points\r\nback<-dismo::randomPoints(mask=en.vir,n=5000,ext=NULL,extf=1.1,\r\n                          excludep=TRUE,prob=FALSE,\r\n                          cellnumbers=FALSE,tryf=3,warn=2,\r\n                          lonlatCorrection=TRUE)\r\nbak.vir<-raster::extract(en.vir,back)\r\n```\r\n\r\nHere, users can start running the main functions from three different scenarios below.\r\n\r"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+        "type": "String",
+        "value": "1.8"
+      },
+      "source": "https://raw.githubusercontent.com/Yangcq-Ivy/NicheBarcoding/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,1286 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgements",
+        "type": "Text_excerpt",
+        "value": "Development of this software tool was supported by the Swiss National Science Foundation within the project \u201cDistant\nListening \u2013 The Development of Harmony over Three Centuries (1700\u20132000)\u201d (Grant no. 182811). This project is being\nconducted at the Latour Chair in Digital and Cognitive Musicology, generously funded by Mr. Claude Latour.\n\n.. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold\n    :alt: Project generated with PyScaffold\n    :target: https://pyscaffold.org/\n"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Music"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Digital and Cognitive Musicology Lab, \u00c9cole Polytechnique F\u00e9d\u00e9rale de Lausanne",
+        "email": "johannes.hentschel@epfl.ch",
+        "identifier": "https://orcid.org/0000-0002-1986-9545",
+        "type": "String",
+        "value": "Johannes Hentschel"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/johentsch/ms3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/johentsch/ms3.git"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/johentsch/ms3/main/.github/workflows/release-please.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Making Changes &amp; Contributing",
+        "type": "Text_excerpt",
+        "value": "This project uses `pre-commit <https://pre-commit.com/>`__ to ensure code quality. If you are a developer,\nplease make sure to install it before making any changes::\n\n    cd ms3\n    pip install -e \".[dev]\" # includes \"pip install pre-commit\"\n    pre-commit install\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-05-04T14:14:34Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2020-05-03"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2020-07-06"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-05-29T13:16:18Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A parser for annotated MuseScore 3 files."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A parser for MuseScore 3 files and data factory for annotated music corpora."
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8861401333705746,
+      "result": {
+        "original_header": "Statement of need",
+        "type": "Text_excerpt",
+        "value": "Here comes a list of functionalities to help you decide if this library could be useful for you. \n* parses MuseScore 3 and 4 files, dispensing with lossy conversion to musicXML. The file formats in question are \n"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8883684623211754,
+      "result": {
+        "type": "Text_excerpt",
+        "value": ".. These are examples of badges you might want to add to your README:\n   please update the URLs accordingly \n"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/johentsch/ms3/tree/main/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://ms3.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/johentsch/ms3/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 4
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/johentsch/ms3/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "johentsch/ms3"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Statement of need"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/johentsch/ms3/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/johentsch/ms3/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/johentsch/ms3/main/docs/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/docs/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "ms3 requires Python >= 3.10 (type ``python3 --version`` to check). Once you have switched to a virtual environment\nthat has Python 3.10 installed you can pip-install the library via one of the two commands::\n\n    python3 -m pip install ms3\n    pip install ms3\n\nIf successful, the installation will make the ``ms3`` commands available in your PATH (try by typing ``ms3``).\n"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/johentsch/ms3/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/johentsch/ms3/issues"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "corpus, corpus-data, corpus-generator, corpus-processing, corpus-tools, musescore, musescore2, musescore3, musescore4, music-score, music-scores, parser, sheet-music, sheet-music-parser, tsv, tsv-files, tsv-format, xml-parser, xml-parser-library, xml-parsing"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "python",
+          "music",
+          "scores",
+          "corpus",
+          "corpora",
+          "data",
+          "musescore",
+          "tab-separated values"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/AGPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/AGPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/AGPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": ".. _license:\n\n=======\nLicense\n=======\n\n.. include:: ../LICENSE.txt\n"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/docs/license.rst",
+      "technique": "file_exploration"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ms3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ms3"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "johentsch"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 1363990,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 21746,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3",
+        "type": "Programming_language",
+        "value": "Python 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2025-03-11T23:58:07Z",
+        "date_published": "2025-03-11T23:58:23Z",
+        "description": "## [2.6.0](https://github.com/johentsch/ms3/compare/v2.5.4...v2.6.0) (2025-03-11)\n\n\n### Features\n\n* adds the --dirty parameter to ms3 transform which allows one to use the command on a dirty repository ([6a33678](https://github.com/johentsch/ms3/commit/6a3367829165f686f57ecfb3a80f2d2274dc88fd))\n* adds the helper check_and_create_unresolved and uses it to not resolve the CLI --out parameter ([214bc52](https://github.com/johentsch/ms3/commit/214bc52ae022324fe31d7c4a815eae77fddcf4dd))\n* updates relative file paths in ms3 transform -D (i.e., concatenating metadata) ([4398a25](https://github.com/johentsch/ms3/commit/4398a25e9c05091f485e4f2b69bebf0bf2af40d5))\n* ms3 convert without -a now looks for metadata to convert only the files indicated there ([994d206](https://github.com/johentsch/ms3/commit/994d2063394c68d664349eb256f5f1edf086daaa))\n* the ms3 convert command now differentiates between a relative and an absolute target directory ([0546bdc](https://github.com/johentsch/ms3/commit/0546bdcc6866dedf6fa4cee10904a3b5914ce86e))\n\n\n### Bug Fixes\n\n* catches bug caused by empty &lt;trackName&gt; tags in the instrumentation header of a MuseScore file ([aa0979a](https://github.com/johentsch/ms3/commit/aa0979aaa7a2929ae839ad1566921e9382cd85af))\n* do not remove spaces from tempo markings (in the chords tables) ([9294db8](https://github.com/johentsch/ms3/commit/9294db81746f25fade1e73846c84bbaa345dc21c))\n* fixes bug that caused add_quarterbeats_col() to file in the special case where column \"mc\" is missing yet \"quarterbeats\" is present ([7441cab](https://github.com/johentsch/ms3/commit/7441cab4b4e4cd3f0702644704aeb488a18e4eaf))\n* fixes bug that caused Piece.get_parsed_tsv() to fail ([7c268fd](https://github.com/johentsch/ms3/commit/7c268fd0d2faea71b01522e461031316d4a27162))",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.6.0",
+        "name": "v2.6.0",
+        "release_id": 205161312,
+        "tag": "v2.6.0",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/205161312",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/205161312",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2025-02-28T00:24:46Z",
+        "date_published": "2025-02-28T00:25:01Z",
+        "description": "## [2.5.4](https://github.com/johentsch/ms3/compare/v2.5.3...v2.5.4) (2025-02-28)\n\n\n### Bug Fixes\n\n* adds \"quarterbeats_playthrough\" to the correctly parsed columns ([77c05ac](https://github.com/johentsch/ms3/commit/77c05acde4123220c4814b1a247ac23a7aa4f5e8))\n* adds concat_metadata.py ([a2465be](https://github.com/johentsch/ms3/commit/a2465bee6d56b0f6d1e2a9f9e02a01276825f401))\n* fixes a small bug re: missing columns and prepares the code for integration into utils ([4b8c740](https://github.com/johentsch/ms3/commit/4b8c74007ac13a4f9762d1edddad8c6863065bc5))",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.5.4",
+        "name": "v2.5.4",
+        "release_id": 202923657,
+        "tag": "v2.5.4",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.5.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/202923657",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/202923657",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.5.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2024-09-26T09:57:26Z",
+        "date_published": "2024-09-26T09:57:40Z",
+        "description": "## [2.5.3](https://github.com/johentsch/ms3/compare/v2.5.2...v2.5.3) (2024-09-26)\n\n\n### Bug Fixes\n\n* pins numpy&lt;2.0.0 ([b75e671](https://github.com/johentsch/ms3/commit/b75e67104d1ac0e0d8118b04696cf92acc96593d))\n* replaces webcolors constant with the local one introduced in b680f452 ([06dad93](https://github.com/johentsch/ms3/commit/06dad933ceaba08aa49c5181b1024103c4749a3c))\n* update syntax of inplace operations ([b34a323](https://github.com/johentsch/ms3/commit/b34a323b63d8432850d67122200c7814aeb19a01))",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.5.3",
+        "name": "v2.5.3",
+        "release_id": 177027154,
+        "tag": "v2.5.3",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.5.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/177027154",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/177027154",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.5.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2024-08-06T13:54:49Z",
+        "date_published": "2024-08-06T13:55:05Z",
+        "description": "## [2.5.2](https://github.com/johentsch/ms3/compare/v2.5.1...v2.5.2) (2024-08-06)\n\n\n### Bug Fixes\n\n* hardcodes CSS_COLORS rather than creating it from a webcolors constant (fixes [#115](https://github.com/johentsch/ms3/issues/115)) ([b680f45](https://github.com/johentsch/ms3/commit/b680f452e77d421f4b8124d46ad6f1b5ee15d7a3))",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.5.2",
+        "name": "v2.5.2",
+        "release_id": 168917893,
+        "tag": "v2.5.2",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.5.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/168917893",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/168917893",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.5.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2024-05-23T13:17:22Z",
+        "date_published": "2024-05-23T13:17:35Z",
+        "description": "## [2.5.1](https://github.com/johentsch/ms3/compare/v2.5.0...v2.5.1) (2024-05-23)\n\n\n### Bug Fixes\n\n* enables ignoring the COMPETING_MEASURE_INFO_WARNING ([5c727dd](https://github.com/johentsch/ms3/commit/5c727ddb652f5b2a0f6739663cdcd61b9f6801a4))\n* resolves [#112](https://github.com/johentsch/ms3/issues/112) ([2f03b79](https://github.com/johentsch/ms3/commit/2f03b79efad442efeaaeb25baee92c4f0a9542ea))",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.5.1",
+        "name": "v2.5.1",
+        "release_id": 157125409,
+        "tag": "v2.5.1",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.5.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/157125409",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/157125409",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.5.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2024-05-23T09:53:41Z",
+        "date_published": "2024-05-23T09:53:55Z",
+        "description": "## [2.5.0](https://github.com/johentsch/ms3/compare/v2.4.4...v2.5.0) (2024-05-23)\n\n\n### Features\n\n* adds helper function write_soup_to_mscx_file() ([48fa73c](https://github.com/johentsch/ms3/commit/48fa73cd6e0a0fa5c57741c603a9781a15b0adac))\n\n\n### Bug Fixes\n\n* for scores that encode multiple parts, take into account only the main score ([6115ea6](https://github.com/johentsch/ms3/commit/6115ea67ab47fa37cfd6d251830d4adac35b3daa))\n\n\n### Documentation\n\n* updates CONTRIBUTING.rst ([4689897](https://github.com/johentsch/ms3/commit/4689897ce5c32f5775fc1a8f60961a31349b8682))",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.5.0",
+        "name": "v2.5.0",
+        "release_id": 157081706,
+        "tag": "v2.5.0",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/157081706",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/157081706",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2024-01-22T04:24:14Z",
+        "date_published": "2024-01-22T04:24:28Z",
+        "description": "## [2.4.4](https://github.com/johentsch/ms3/compare/v2.4.3...v2.4.4) (2024-01-21)\n\n\n### Documentation\n\n* updates changelog ([70fd82e](https://github.com/johentsch/ms3/commit/70fd82ec744e13d2b718f3d637b5fac44eaf9115))",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.4.4",
+        "name": "v2.4.4",
+        "release_id": 137918338,
+        "tag": "v2.4.4",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.4.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/137918338",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/137918338",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.4.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "github-actions[bot]",
+          "type": "Bot"
+        },
+        "date_created": "2024-01-16T11:25:59Z",
+        "date_published": "2024-01-16T11:26:13Z",
+        "description": "## [2.4.3](https://github.com/johentsch/ms3/compare/v2.4.2...v2.4.3) (2024-01-16)\n\n\n### Bug Fixes\n\n* makes utility functions more robust against missing data ([f408de3](https://github.com/johentsch/ms3/commit/f408de319177a62aeff2a77c9fec95d807429682))\n\n\n### Documentation\n\n* converts CHANGELOG rst =&gt; md and adds the release-please workflow ([04e26cb](https://github.com/johentsch/ms3/commit/04e26cbfd8f93313fd57720efe7b5851e625846f))\n* updates changelog ([306cea7](https://github.com/johentsch/ms3/commit/306cea7ea85d850a7bd2c3a398826a7b8d8bc7e4))",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.4.3",
+        "name": "v2.4.3",
+        "release_id": 137202308,
+        "tag": "v2.4.3",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.4.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/137202308",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/137202308",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.4.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-12-29T17:46:51Z",
+        "date_published": "2024-01-16T11:22:27Z",
+        "description": "**Full Changelog**: https://github.com/johentsch/ms3/compare/v2.4.1...v2.4.2",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.4.2",
+        "name": "v2.4.2 Bugfix",
+        "release_id": 137201850,
+        "tag": "v2.4.2",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.4.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/137201850",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/137201850",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.4.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-11-24T01:46:43Z",
+        "date_published": "2024-01-16T11:20:33Z",
+        "description": "**Full Changelog**: https://github.com/johentsch/ms3/compare/v2.4.0...v2.4.1",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.4.1",
+        "name": "v2.4.1 Bugfixes",
+        "release_id": 137201604,
+        "tag": "v2.4.1",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.4.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/137201604",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/137201604",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.4.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-10-20T17:22:24Z",
+        "date_published": "2023-10-20T17:23:32Z",
+        "description": "* adds ``git_revision`` and ``git_tag`` to frictionless JSON descriptors whenever the git repo is clean (5b76a815)\r\n  * This includes the new property ``Corpus.repo`` that makes the ``git.Repo`` object available if applicable.\r\n* adds ``--force`` to ``ms3 compare`` and ``ms3 review`` commands, allowing to output comparison files (potentially\r\n  including the ``compared_against`` metadata key) even if no differences were found (5b76a815)\r\n",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.4.0",
+        "name": "v2.4.0 Adds version info to all frictionless (JSON) descriptors",
+        "release_id": 126045650,
+        "tag": "v2.4.0",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/126045650",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/126045650",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-10-19T20:02:53Z",
+        "date_published": "2023-10-19T20:15:15Z",
+        "description": "These cause some intimidating output when using the ms3 precommit hook and should be ignored.",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.3.1",
+        "name": "v2.3.1 Ignoring pandas 2.1.0 FutureWarning",
+        "release_id": 125869294,
+        "tag": "v2.3.1",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/125869294",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/125869294",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-10-19T18:08:15Z",
+        "date_published": "2023-10-19T18:09:15Z",
+        "description": "## What's Changed\r\n\r\n* Adds 'ms3 precommit' and makes the repo usable as a hook by @johentsch in https://github.com/johentsch/ms3/pull/106\r\n    * The new `ms3 precommit` command is simply a wrapper around `ms3 review` that accepts the `--files` arguments as positional arguments. This is required for the command to be useable as an entry point for a [Git pre-commit](https://pre-commit.com/), which passes the paths of modified or added files as positional arguments. In addition, the command executes `git add -A` after the review so that all changed files are included.\r\n  * This is to work in the first version of the new, localized, DCML annotation workflow that runs on the annotator's machine before committing, rather than on a GitHub runner after pushing. Things that might be changed in the future:\r\n    * The `ms3 precommit` command could convert the positional arguments into a regular expression to be passed to `-i/--include` instead of using the deprecated `--files`.\r\n    * At some point a mechanism might be needed that makes it possible for the hook to ignore warnings that were already there, i.e., which are not caused/added by the current commit. Currently one would have to remove `--fail` from the repo's args configuration but that would let all warnings pass and would be besides the point.\r\n  * New method `score.mscx.update_metadata()` to facilitate (manual) updating of the key-value pairs.\r\n  * Comparison files come with the metadata key `compared_against=<commit hash>` when the comparison has been performed against a particular git revision.\r\n  * `\"LATEST_VERSION\"` is now accepted as argument to `git_revision` and resolves to the latest version tag (falling back to the current HEAD if the repo has no tags)\r\n* Extended excerpting functionality by @leobruneau in https://github.com/johentsch/ms3/pull/105\r\n  *  It is now possible to replace head and tail of an excerpt with rests. This does not look pretty but it is an easy way to create audio excerpts starting and ending at the given points in time.\r\n  * It is now possible to set an arbitrary tempo by inserting an invisible metronome mark at the beginning of excerpts.\r\n  * `score.mscx.store_phrase_excerpts()` makes use of this to omit notes before and after the actual phrase\r\n  * new methods accessible via `score.mscx`:\r\n    * `store_measures()`\r\n    * `store_within_phrase_excerpts()`\r\n    * `store_phrase_endings()`\r\n    * `store_random_excerpts()` \r\n\r\n\r\n**Full Changelog**: https://github.com/johentsch/ms3/compare/v2.2.2...v2.3.0",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.3.0",
+        "name": "ms3 v2.3.0 can be used as pre-commit hook",
+        "release_id": 125852752,
+        "tag": "v2.3.0",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/125852752",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/125852752",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-09-19T12:39:51Z",
+        "date_published": "2023-09-21T06:26:04Z",
+        "description": "**Full Changelog**: https://github.com/johentsch/ms3/compare/v2.2.1...v2.2.2",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.2.2",
+        "name": "ms3 v2.2.2: bugfixes",
+        "release_id": 121980340,
+        "tag": "v2.2.2",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/121980340",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/121980340",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-09-04T09:11:15Z",
+        "date_published": "2023-09-04T09:11:54Z",
+        "description": "## What's Changed\r\n* Form label columns by @johentsch in https://github.com/johentsch/ms3/pull/98\r\n\r\n\r\n**Full Changelog**: https://github.com/johentsch/ms3/compare/v2.2.0...v2.2.1",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.2.1",
+        "name": "v2.2.1",
+        "release_id": 119787040,
+        "tag": "v2.2.1",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/119787040",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/119787040",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-09-02T17:06:31Z",
+        "date_published": "2023-09-02T10:45:07Z",
+        "description": "## What's Changed\r\n* Changing the instrumentation to \"Drumset\" by @arinaLozhkina in https://github.com/johentsch/ms3/pull/84\r\n  * More robust updating of score instrumentation by modifying `metadata.tsv` and calling `ms3 metadata --instrumentation`\r\n  * Ensures playback with the correct MIDI instrument\r\n  * Handles a change to `Drumset` correctly in terms of changing clef, removing key signature, and playback \r\n* MSCX class API for creating score excerpts by @leobruneau in https://github.com/johentsch/ms3/pull/91\r\n  * score excerpts can now be stored using `score.mscx.store_excerpt()`\r\n  * batch excerpt creation via `MSCX.store_phrase_excerpts()` and `MSCX.store_random_excerpts()`\r\n* Improved algorithm for computing `mc_offset` including bugfix by @johentsch in https://github.com/johentsch/ms3/pull/95\r\n* Updated schema mechanism following the first trial by @johentsch in https://github.com/johentsch/ms3/pull/97\r\n  * `quarterbeats_all_endings` column now added to all facet dataframes by default\r\n  * schema URLs now use the dedicated [DCMLab/frictionless_schemas](https://github.com/DCMLab/frictionless_schemas/) and the amount of required schemas was reduced drastically\r\n    * no schemas are stored for `events` anymore\r\n    * `rests` and `notes_and_rests` do not include non-sensical empty columns anymore\r\n    * `chords` is the only remaining facet where the abundance of schemas due to high combinatoriality of column names is (somewhat) justified.\r\n  * Renamed columns:\r\n    * in unfolded dataframes, `quarterbeats` is now called `quarterbeats_playthrough`\r\n    * in the `chords` facet, `metronome_visible` is now called `tempo_visible` \r\n* PyScaffold update\r\n  * documentation now hosted at https://ms3.readthedocs.io/\r\n  * adds `tox`\r\n\r\n## New Contributors\r\n* @leobruneau made their first contribution in https://github.com/johentsch/ms3/pull/91\r\n\r\n**Full Changelog**: https://github.com/johentsch/ms3/compare/v2.1.1...v2.2.0",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.2.0",
+        "name": "ms3 v2.2.0 New features, new schemas",
+        "release_id": 119691168,
+        "tag": "v2.2.0",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/119691168",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/119691168",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-08-29T18:05:58Z",
+        "date_published": "2023-08-29T18:07:52Z",
+        "description": "* Message headers in ``.warnings`` files now come without trailing `` --``.\r\n* This version is able to correctly IGNORED_WARNINGS even if the header ends on a trailing `` --`` (copied from a\r\n  ``.warnings`` file generated by an older version of ms3).\r\n* adds the low-level function `ms3.bs4_parser._MSCX_bs4.make_excerpt` that returns the new object type\r\n  `ms3.bs4_parser.Excerpt`. High-level API in preparation (#91).",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.1.1",
+        "name": "ms3 v2.1.1",
+        "release_id": 119119282,
+        "tag": "v2.1.1",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/119119282",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/119119282",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-08-14T18:52:40Z",
+        "date_published": "2023-08-14T18:54:56Z",
+        "description": "This update includes a few minor bug fixes but some heavy updating of the code internals:\r\n\r\n* pandas>=2.0.0 is now supported\r\n* the ``@function_logger`` decorator has been removed and replaced with a function argument that defaults to the\r\n  ``module_logger``\r\n* all modules which have seen a commit since the previous tag have been fully linted using pre-commit hooks\r\n* the filelock problem that made a couple of test fail under Windows since the early days has been resolved (by using\r\n  pytest's ``tmp_path`` fixture instad of ``NamedTemporaryFile``).\r\n* ``make_ml()`` (responsible for creating measure tables) was refactored and should be much more legible (and easier\r\n  to adapt and extend in the future)\r\n\r\n\r\n**Full Changelog**: https://github.com/johentsch/ms3/compare/v2.0.1...v2.1.0",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.1.0",
+        "name": "ms3 v2.1.0: Loads of code cosmetics (and support for pandas 2)",
+        "release_id": 117214255,
+        "tag": "v2.1.0",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/117214255",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/117214255",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-08-02T15:33:48Z",
+        "date_published": "2023-08-02T15:45:09Z",
+        "description": "## What's Changed\r\n* Allow metronome mark to appear in MC 2 by @johentsch in https://github.com/johentsch/ms3/pull/86\r\n\r\n\r\n**Full Changelog**: https://github.com/johentsch/ms3/compare/v2.0.0...v2.0.1",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.0.1",
+        "name": "ms3 v2.0.1",
+        "release_id": 114843810,
+        "tag": "v2.0.1",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/114843810",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/114843810",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-07-17T12:19:28Z",
+        "date_published": "2023-07-17T12:19:48Z",
+        "description": "\r\n## Breaking changes\r\n\r\n-   Renamed MultiIndex levels:\r\n    -   The column `fname` has been renamed to `piece`. This concerns especially `metadata.tsv` where it is used as index, but also the MultiIndex of concatenated facets such as those output by `Parse.get_facet()` or `ms3 transform`.\r\n    -   The last (right-most) index level, which used to be called `<facet>_i` in some cases, is now consistently called `i`.\r\n-   When extracting TSV files:\r\n    -   The possibility to assign custom suffixes to the extracted facets has been replaced by default suffixes separated by a full stop. For example, the notes for the MuseScore file `MS3/filename.mscx` will be extracted to `notes/filename.notes.tsv` by default.\r\n    -   Every extracted TSV file comes with a JSON descriptor file following the [frictionless specification](https://specs.frictionlessdata.io/) for metadata. This replaces the `csv-metadata.json` files that were following the [CSV on the Web](https://csvw.org/) specification.\r\n    -   The frictionless schemas used in the JSON descriptor files are stored in the `schemas` folder of the ms3 package in YAML format. Their filenames are truncated hashes computed from the included column/field names and they are stored in a folder pertaining to the facet in question. This comes with the advantage that schemas do not have to be written out in every descriptor: Instead, the `schema` field contains the URL of the schema file, allowing to update the schema specifications at a later point, e.g. with added or more elaborate descriptions.\r\n    -   Validation errors are written into `.errors` files stored next to the resource descriptor in question.\r\n-   The command `ms3 transform`, by default, outputs the concatenated facets as a single ZIP file that comes with a [frictionless DataPackage descriptor](https://specs.frictionlessdata.io/) (for the parameters added to the command, see below). The concatenated files are now named `<corpus_name>.<facet>.tsv` (previously `concatenated_<facet>.tsv`).\r\n\r\n## New features\r\n\r\n-   It is now possible to batch-edit the instrumentation in many scores at once by changing the relevant column(s) in `metadata.tsv` and calling `ms3 metadata --instrumentation`.\r\n-   Since `ms3 transform` now outputs zipped [frictionless DataPackages](https://specs.frictionlessdata.io/) by default (meaning that all concatenated facets are described in the same package descriptor JSON file), it comes with additional parameters:\r\n    -   `--unzipped` to output the package as uncompressed TSV files rather than as single ZIP file.\r\n    -   `--resources` to create a frictionless resource descriptor per concatenated facet instead of a package descriptor.\r\n    -   `--safe` to prevent overwriting existing files.\r\n-   The `ms3 extract` command now has a `--corpuswise` option allowing to parse and extract one corpus after the other, avoiding the need to parse all scores at once and keep them in memory before beginning the extraction.\r\n-   The parser throws a warning if a score does not have a metronome mark at the beginning (which can be hidden). This is to encourage the inclusion of information on the basic beat unit (in 6/8 meter, e.g., the metronome unit is typically a dotted quarter) and pace to every score for better comparability.\r\n\r\n## Bugfixes\r\n\r\n-   For the `IGNORED_WARNINGS` file.\r\n-   For the `--threshold` argument of the `ms3 review` command.\r\n-   Writing and reading the `volta_mcs` column of `metadata.tsv`.\r\n-   #60, #63, #78, #79\r\n\r\n## Internal changes\r\n\r\n-   `utils.py` has been turned into a Python package containing the mocules `constants`, `functions`, and `frictionless`.\r\n-   Not using the `frac` alias for `fractions.Fraction` anymore.\r\n-   The version number is not manually stored as a constant, instead it is automatically written into `_version.py` upon initialization.\r\n\r\n## Other\r\n\r\nThis version contains the final version of the paper *A parser for MuseScore 3 files and data factory for annotated music corpora* for publication in the Journal of Open Source Software (JOSS).\r\n",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v2.0.0",
+        "name": "ms3 v2.0.0",
+        "release_id": 112487968,
+        "tag": "v2.0.0",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v2.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/112487968",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/112487968",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v2.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-07-17T10:31:22Z",
+        "date_published": "2023-07-17T10:34:17Z",
+        "description": "This last version of ms3 1.x uses the `_version.py` file introduced in 8f40b16c",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v1.2.12",
+        "name": "ms3 v1.2.12",
+        "release_id": 112475308,
+        "tag": "v1.2.12",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v1.2.12",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/112475308",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/112475308",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v1.2.12"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-07-13T17:42:06Z",
+        "date_published": "2023-07-13T17:53:02Z",
+        "description": "* stops writing the version of ms3 into the `.warnings` files to avoid merge conflicts\r\n* bugfixes for\r\n  * handling IGNORED_WARNINGS\r\n  * ms3 review command\r\n  * overview table written to README",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v1.2.11",
+        "name": "ms3 v1.2.11",
+        "release_id": 112154073,
+        "tag": "v1.2.11",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v1.2.11",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/112154073",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/112154073",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v1.2.11"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-06-13T14:21:29Z",
+        "date_published": "2023-06-13T14:24:10Z",
+        "description": "* merges old_tests with new_tests\r\n* correct handling of ``labels_cfg``\r\n* refrains from calling ``logging.basicConfig()``\r\n* unknown TSV types now default to ``labels``\r\n* ``conti`` now recognized as abbreviation for \"continuation idea\"\r\n* suppresses warnings about multiple \"Fingering_text\" values",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v1.2.10",
+        "name": "ms3 v1.2.10",
+        "release_id": 108385619,
+        "tag": "v1.2.10",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v1.2.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/108385619",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/108385619",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v1.2.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-05-11T15:34:10Z",
+        "date_published": "2023-05-11T15:37:26Z",
+        "description": "* when updating ``README.md``:\r\n  * make 2nd-level heading ``## Overview`` (instead of first-level)\r\n  * don't output ms3 version (to avoid merge conflicts)\r\n* small bugfixes in ``ms3 review`` command",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v1.2.9",
+        "name": "ms3 v1.2.9",
+        "release_id": 102662028,
+        "tag": "v1.2.9",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v1.2.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/102662028",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/102662028",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v1.2.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-05-02T15:33:33Z",
+        "date_published": "2023-05-02T15:35:32Z",
+        "description": "* `operations.insert_labels_into_score()` filters pieces exactly one facet to be inserted (e.g. `labels`),\r\n  not a fuzzy regex (e.g., which would include `form_labels` in the filter)",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v1.2.8",
+        "name": "ms3 v1.2.8",
+        "release_id": 101601105,
+        "tag": "v1.2.8",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v1.2.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/101601105",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/101601105",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v1.2.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-04-28T13:50:56Z",
+        "date_published": "2023-04-28T13:51:39Z",
+        "description": "* warning files omit system-dependend information from warning headers (6764476)\r\n* bugfixes",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v1.2.7",
+        "name": "ms3 v1.2.7",
+        "release_id": 101286767,
+        "tag": "v1.2.7",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v1.2.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/101286767",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/101286767",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v1.2.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-04-26T16:46:52Z",
+        "date_published": "2023-04-26T16:48:11Z",
+        "description": "* changes the behaviour of the `ms3 review` command \r\n  * after coloring out-of-label notes, issue one warning per dubious label\r\n  * rather than one `warnings.log` file per corpus, create one `<fname>.warnings` file per piece in the `reviewed` folder\r\n* makes `ms3 empty` work under the new CLI (d8f661a)",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v1.2.6",
+        "name": "ms3 v1.2.6",
+        "release_id": 100985222,
+        "tag": "v1.2.6",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v1.2.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/100985222",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/100985222",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v1.2.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-03-23T18:04:04Z",
+        "date_published": "2023-03-23T18:13:08Z",
+        "description": "* `Corpus` and `Piece` come with the new method `count_pieces()`\r\n* `ms3 transform -D` to concatenate only metadata works\r\n* `View.fnames_with_incomplete_facets = False` enforces selected facets if some have been excluded",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v1.2.5",
+        "name": "ms3 v1.2.5",
+        "release_id": 96687818,
+        "tag": "v1.2.5",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v1.2.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/96687818",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/96687818",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v1.2.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-02-18T19:32:55Z",
+        "date_published": "2023-02-18T19:33:50Z",
+        "description": "* segment_by_criterion warns if not IntervalIndex is present d2602617\r\n* adds missing arguments 'unfold' and 'interval_index' to Piece.get_parsed() 71f8c3e4\r\n* when iterating through pieces, skip fnames that don't have any files under the current view fdce948f\r\n\r\n",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v1.2.4",
+        "release_id": 92923387,
+        "tag": "v1.2.4",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v1.2.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/92923387",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/92923387",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v1.2.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "johentsch",
+          "type": "User"
+        },
+        "date_created": "2023-02-10T03:27:02Z",
+        "date_published": "2023-02-10T03:28:24Z",
+        "description": "* Piece.get_facet() gets parameter 'force' which defaults to False (analogous to the other methods),\r\n  in order to avoid unsolicited score parsing.\r\n* improves `ms3 transform`:\r\n  * parse only facets to be concatenated (rather than all TSV files)\r\n  * do not accidentally output metadata if not requested\r\n* prevents including 'volta_mcs' in metadata of pieces that don't have voltas",
+        "html_url": "https://github.com/johentsch/ms3/releases/tag/v1.2.3",
+        "name": "ms3 1.2.3",
+        "release_id": 91973102,
+        "tag": "v1.2.3",
+        "tarball_url": "https://api.github.com/repos/johentsch/ms3/tarball/v1.2.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/johentsch/ms3/releases/91973102",
+        "value": "https://api.github.com/repos/johentsch/ms3/releases/91973102",
+        "zipball_url": "https://api.github.com/repos/johentsch/ms3/zipball/v1.2.3"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools>=46.1.0",
+        "version": ">=46.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools_scm[toml]",
+        "type": "Software_application",
+        "value": "setuptools_scm[toml]>=5",
+        "version": ">=5"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "https://musescore.org/en/3.6.2 (optional)",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jupyter_sphinx",
+        "type": "Software_application",
+        "value": "jupyter_sphinx",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "linkify-it-py",
+        "type": "Software_application",
+        "value": "linkify-it-py",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "myst_nb",
+        "type": "Software_application",
+        "value": "myst_nb",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pydata_sphinx_theme",
+        "type": "Software_application",
+        "value": "pydata_sphinx_theme",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx",
+        "type": "Software_application",
+        "value": "sphinx",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-argparse",
+        "type": "Software_application",
+        "value": "sphinx-argparse",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-programoutput",
+        "type": "Software_application",
+        "value": "sphinxcontrib-programoutput",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/docs/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:20:09",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 49
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Parsing a single score",
+        "parent_header": [
+          "Quick demo"
+        ],
+        "type": "Text_excerpt",
+        "value": ".. code-block:: python\n\n    import ms3\n    score = ms3.Score('musescore_file.mscz')\n"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Parsing a corpus",
+        "parent_header": [
+          "Quick demo"
+        ],
+        "type": "Text_excerpt",
+        "value": ".. code-block:: python\n\n    import ms3\n    corpus = ms3.Corpus('score_directory')\n    corpus.parse()\n"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Parsing several corpora",
+        "parent_header": [
+          "Quick demo"
+        ],
+        "type": "Text_excerpt",
+        "value": ".. code-block:: python\n\n    import ms3\n    corpora = ms3.Parse('my_research_corpora')\n    corpora.parse()\n\n\n.. _pyscaffold-notes:\n"
+      },
+      "source": "https://raw.githubusercontent.com/johentsch/ms3/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ]
+}

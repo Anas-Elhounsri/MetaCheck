@@ -1,0 +1,734 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9984531820670567,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Carl Boettiger"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "cboettig@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-1642-628X",
+        "type": "String",
+        "value": "Carl Boettiger"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Code of Conduct\n\nAs contributors and maintainers of this project, we pledge to respect all people who \ncontribute through reporting issues, posting feature requests, updating documentation,\nsubmitting pull requests or patches, and other activities.\n\nWe are committed to making participation in this project a harassment-free experience for\neveryone, regardless of level of experience, gender, gender identity and expression,\nsexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.\n\nExamples of unacceptable behavior by participants include the use of sexual language or\nimagery, derogatory comments or personal attacks, trolling, public or private harassment,\ninsults, or other unprofessional conduct.\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments,\ncommits, code, wiki edits, issues, and other contributions that are not aligned to this \nCode of Conduct. Project maintainers who do not follow the Code of Conduct may be removed \nfrom the project team.\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by \nopening an issue or contacting one or more of the project maintainers.\n\nThis Code of Conduct is adapted from the Contributor Covenant \n(http://contributor-covenant.org), version 1.0.0, available at \nhttp://contributor-covenant.org/version/1/0/0/\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/virtuoso"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/virtuoso"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/virtuoso"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.org/ropensci/virtuoso",
+          "https://ci.appveyor.com/project/cboettig/virtuoso/branch/master",
+          "https://codecov.io/github/ropensci/virtuoso?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to virtuoso\n\nThis outlines how to propose a change to virtuoso. For more detailed\ninfo about contributing to this, and other tidyverse packages, please see the\n[**development contributing guide**](https://rstd.io/tidy-contrib).\n\n### Fixing typos\n\nSmall typos or grammatical errors in documentation may be edited directly using\nthe GitHub web interface, so long as the changes are made in the _source_ file.\n\n*  YES: you edit a roxygen comment in a `.R` file below `R/`.\n*  NO: you edit an `.Rd` file below `man/`.\n\n### Prerequisites\n\nBefore you make a substantial pull request, you should always file an issue and\nmake sure someone from the team agrees that it\u2019s a problem. If you\u2019ve found a\nbug, create an associated issue and illustrate the bug with a minimal \n[reprex](https://www.tidyverse.org/help/#reprex).\n\n### Pull request process\n\n*  We recommend that you create a Git branch for each pull request (PR).  \n*  Look at the Travis and AppVeyor build status before and after making changes.\nThe `README` should contain badges for any continuous integration services used\nby the package.  \n*  New code should follow the tidyverse [style guide](http://style.tidyverse.org).\nYou can use the [styler](https://CRAN.R-project.org/package=styler) package to\napply these styles, but please don't restyle code that has nothing to do with \nyour PR.  \n*  We use [roxygen2](https://cran.r-project.org/package=roxygen2), with\n[Markdown syntax](https://cran.r-project.org/web/packages/roxygen2/vignettes/markdown.html), \nfor documentation.  \n*  We use [testthat](https://cran.r-project.org/package=testthat). Contributions\nwith test cases included are easier to accept.  \n*  For user-facing changes, add a bullet to the top of `NEWS.md` below the\ncurrent development version header describing the changes made followed by your\nGitHub username, and links to relevant issue(s)/PR(s).\n\n### Code of Conduct\n\nPlease note that the virtuoso project is released with a\n[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this\nproject you agree to abide by its terms.\n\n### See tidyverse [development contributing guide](https://rstd.io/tidy-contrib)\nfor further details.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-11-02T21:21:45Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-04-29T13:21:54Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ":package: Interact with Virtuoso Open Source database instances from R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+        "type": "String",
+        "value": "Provides users with a simple and convenient\n             mechanism to manage and query a 'Virtuoso' database using the 'DBI' (Data-Base Interface)\n             compatible 'ODBC' (Open Database Connectivity) interface.\n             'Virtuoso' is a high-performance \"universal server,\" which can act\n             as both a relational database, supporting standard Structured Query\n             Language ('SQL') queries, while also supporting data following the\n             Resource Description Framework ('RDF') model for Linked Data.\n             'RDF' data can be queried using 'SPARQL' ('SPARQL' Protocol and 'RDF' Query Language)\n             queries, a graph-based query that supports semantic reasoning.\n             This allows users to leverage the performance of local or remote 'Virtuoso' servers using\n             popular 'R' packages such as 'DBI' and 'dplyr', while also providing a \n             high-performance solution for working with large 'RDF' 'triplestores' from 'R.'\n             The package also provides helper routines to install, launch, and manage\n             a 'Virtuoso' server locally on 'Mac', 'Windows' and 'Linux' platforms using\n             the standard interactive installers from the 'R' command-line.  By \n             automatically handling these setup steps, the package can make using 'Virtuoso'\n             considerably faster and easier for a most users to deploy in a local\n             environment. Managing the bulk import of triples\n             from common serializations with a single intuitive command is another key\n             feature of this package.  Bulk import performance can be tens to\n             hundreds of times faster than the comparable imports using existing 'R' tools,\n             including 'rdflib' and 'redland' packages."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Provides users with a simple and convenient\n             mechanism to manage and query a 'Virtuoso' database using the 'DBI' (DataBase Interface)\n             compatible 'ODBC' (Open Database Connectivity) interface.\n             'Virtuoso' is a high-performance \"universal server,\" which can act\n             as both a relational database, supporting standard Structured Query\n             Language ('SQL') queries, while also supporting data following the\n             Resource Description Framework ('RDF') model for Linked Data.\n             'RDF' data can be queried using 'SPARQL' ('SPARQL' Protocol and 'RDF' Query Language)\n             queries, a graph-based query that supports semantic reasoning.\n             This allows users to leverage the performance of local or remote 'Virtuoso' servers using\n             popular 'R' packages such as 'DBI' and 'dplyr', while also providing a \n             high-performance solution for working with large 'RDF' triplestores from 'R.'\n             The package also provides helper routines to install, launch, and manage\n             a 'Virtuoso' server locally on 'Mac', 'Windows' and 'Linux' platforms using\n             the standard interactive installers from the 'R' command-line.  By \n             automatically handling these setup steps, the package can make using 'Virtuoso'\n             considerably faster and easier for a most users to deploy in a local\n             environment. Managing the bulk import of triples\n             from common serializations with a single intuitive command is another key\n             feature of this package.  Bulk import performance can be tens to\n             hundreds of times faster than the comparable imports using existing 'R' tools,\n             including 'rdflib' and 'redland' packages.  "
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9421947160789863,
+      "result": {
+        "original_header": "virtuoso <img src=\"man/figures/logo.svg\" align=\"right\" alt=\"\" width=\"120\" />",
+        "type": "Text_excerpt",
+        "value": "The goal of virtuoso is to provide an easy interface to Virtuoso RDF\ndatabase from R.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8073069123851365,
+      "result": {
+        "original_header": "DSL",
+        "type": "Text_excerpt",
+        "value": "The bulk loader can be used to quickly import existing sets of triples.\n``` r\nexample <- system.file(\"extdata\", \"person.nq\", package = \"virtuoso\")\nvos_import(con, example)\n```\nCan also read in compressed formats as well. Remember to set the pattern\nmatch appropriately. This is convenient because N-Quads compress\nparticularly well, often by a factor of 20 (or rather, can be\nparticularly large when uncompressed, owing to the repeated property and\nsubject URIs).\n``` r\nex <- system.file(\"extdata\", \"library.nq.gz\", package = \"virtuoso\")\nvos_import(con, ex)\n```\n`vos_import` invisibly returns a table of the loaded files, with error\nmessage and loading times. If a file cannot be imported, an error\nmessage is returned:\n``` r\nbad_file <- system.file(\"extdata\", \"bad_quads.nq\", package = \"virtuoso\")\nvos_import(con, bad_file)\n#> Error: Error importing: bad_quads.nq 37000 SP029: NQuads RDF loader, line 2: Undefined namespace prefix at ITIS:1000000\n```\nWe can now query the imported data using SPARQL.\n``` r\ndf <- vos_query(con, \n\"SELECT ?p ?o \n WHERE { ?s ?p ?o .\n        ?s a <http://schema.org/Person>\n       }\")\nhead(df)\n#>                                                 p                        o\n#> 1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type http://schema.org/Person\n#> 2                      http://schema.org/jobTitle                Professor\n#> 3                          http://schema.org/name                 Jane Doe\n#> 4                     http://schema.org/telephone           (425) 123-4567\n#> 5                           http://schema.org/url   http://www.janedoe.com\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9077937931977942,
+      "result": {
+        "original_header": "Server controls",
+        "type": "Text_excerpt",
+        "value": "We can control any `virtuoso` server started with `vos_start()` using a\nseries of helper commands.\n``` r\nvos_status()\n#> latest log entry: 21:43:06 PL LOG: No more files to load. Loader has finished,\n#> [1] \"sleeping\"\n```\nAdvanced usage note: `vos_start()` invisibly returns a `processx` object\nwhich we can pass to other server control functions, or access the\nembedded `processx` control methods directly. The `virtuoso` package\nalso caches this object in an environment so that it can be accessed\ndirectly without having to keep track of an object in the global\nenvironment. Use `vos_process()` to return the `processx` object. For\nexample:\n``` r\nlibrary(ps)\np <- vos_process()\nps_is_running(p)\n#> [1] TRUE\nps_cpu_times(p)\n#>            user          system   children_user children_system \n#>            1.61            0.29            0.00            0.00\nps_suspend(p)\n#> NULL\nps_resume(p)\n#> NULL\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.tidyverse.org/lifecycle/#maturing"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/virtuoso/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/virtuoso/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/virtuoso/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/virtuoso"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "virtuoso "
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "virtuoso"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ci.appveyor.com/api/projects/status/x5r18x1cvu6khksd/branch/master?svg=true"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/ropensci_footer.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "---\ntitle: \"Introduction: Virtuoso Installation and Configuration\"\nauthor: \"Carl Boettiger\"\ndate: \"`r Sys.Date()`\"\noutput: rmarkdown::html_vignette\nvignette: >\n  %\\VignetteIndexEntry{Installation}\n  %\\VignetteEngine{knitr::rmarkdown}\n  %\\VignetteEncoding{UTF-8}\n---\n\n```{r setup, include = FALSE}\nknitr::opts_chunk$set(\n  collapse = TRUE,\n  comment = \"#>\"\n)\n```\n\n\n[Virtuoso](https://en.wikipedia.org/wiki/Virtuoso_Universal_Server) is a high-performance \"universal server\" that can act as both a relational database (supporting standard SQL queries) and an RDF triplestore, (supporting SPARQL queries).  \nVirtuoso supports communication over the standard ODBC interface, and so R users can potentially connect to Virtuoso merely by installing the server and using the `odbc` R package.  However, installation can present a few gotchas to users unfamiliar with Virtuoso.  This package seeks to streamline the process of installing, managing, and querying a Virtuoso server.  While the package can be also be used merely to provide a standard `DBI` connection to an RDBS, e.g. as a `dplyr` back-end, Virtuoso's popularity and performance is particularly notable with respect to RDF data and SPARQL queries, so most examples focus on those use cases.\n\n## Installation\n\nThe `virtuoso` package provides installation helpers for both Mac OSX and Windows users through the function `vos_install()`.  At the time of writing, the Mac OS X installer uses Homebrew to install the Virtuoso Open Source server (similar to the `hugo` installer in RStudio's `blogdown`).  On Windows, `vos_install()` downloads and executes the Windows self-extracting archive (`.exe` file), which will open a standard installation dialog in interactive mode, or be run automatically if not run in an interactive session.  No automated installer is provided for Linux systems; Linux users are encouraged to simply install the appropriate binaries for their distribution (e.g. `apt-get install -y virtuoso-opensource` on Debian/Ubuntu systems). \n\n## Configuration\n\nVirtuoso Open Source configuration is controlled by a `virtouso.ini` file, which sets, among other things, which directories can be accessed for tasks such as bulk import, as well as performance tweaks such as available memory.  Unfortunately, the Virtuoso server process (`virtuoso-t` application) cannot start without a path to an appropriate config file, and the installers (e.g. on both Windows and Linux) frequently install an example `virtuoso.ini` to a location which can be hard to find and for which users do not have permission to edit directly. Moreover, the file format is not always intuitive to edit.  The `virtuoso` package thus helps locate this file and provides a helper function, `vos_configure()`, to create and modify this configuration file.  Because reasonable defaults are also provided by this function, users should usually not need to call this function manually.  `vos_configure()` is called automatically from `vos_start()` if the path to a `virtuoso.ini` file is not passed to `vos_start()`.  \n\nIn addition to configuring Virtuoso's settings through a `virtuoso.ini` file, the other common barrier is setting up the driver for the ODBC connection.  Some installers (Mac, Linux) do not automatically add the appropriate driver to an active `odbcinst.ini` file with a predictable Driver Server Name, which we need to know to initiate the ODBC connection.  An internal helper function handles identifying drivers and establishing the appropriate `odcinst.ini` automatically when necessary. \n\n## Server management\n\nLastly, Virtuoso Open Source is often run as a system service, starting when the operating system starts.  This is often undesirable, as the casual laptop user does not want the service running all the time, and can be difficult to control for users unfamiliar with managing such background services on their operating systems.  Instead of this behavior, the `virtuoso` package provides an explicit interface to control the external server. The server only starts when created by `vos_start()`, and ends automatically when the R process ends, or can be killed, paused, or resumed at any time from R (e.g. via `vos_kill()`).  Helper utilities can also query the status and logs of the server from R.  As with most database servers, data persists to disk, at an appropriate location for the OS determined by `rappdirs` package, and a helper utility, `vos_delete_db()` can remove this persistent storage location.  \n\nUsers can also connect directly to any existing (local or remote) Virtuoso instance by passing the appropriate information to `vos_connect()`, which can be convenient for queries.  \n\n\nNote that he Virtuoso back-end provided by the R package `rdflib` can also connect to any Virtuoso server created by the `virtuoso` R package, though queries loading and queries through the `redland` libraries used by `rdflib` will generally be slower than direct calls over ODBC via the `virtuoso` package functions, often dramatically so for large triplestores. \n\n\n\n\n\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/vignettes/installation.Rmd",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "virtuoso <img src=\"man/figures/logo.svg\" align=\"right\" alt=\"\" width=\"120\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install the development version of virtuoso from GitHub with:\n\n``` r\nremotes::install_github(\"ropensci/virtuoso\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/virtuoso/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/virtuoso/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/virtuoso/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2018 Carl Boettiger\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/virtuoso/master/man/figures/logo.svg"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "virtuoso"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "virtuoso: Interface to 'Virtuoso' using 'ODBC'"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+        "type": "String",
+        "value": "virtuoso"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 53000,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/virtuoso/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cboettig",
+          "type": "User"
+        },
+        "date_created": "2020-01-10T20:38:35Z",
+        "date_published": "2020-01-10T21:08:21Z",
+        "description": "See [changelog](https://docs.ropensci.org/virtuoso/news/index.html)",
+        "html_url": "https://github.com/ropensci/virtuoso/releases/tag/0.1.4",
+        "name": "v0.1.4",
+        "release_id": 22755191,
+        "tag": "0.1.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/virtuoso/tarball/0.1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/virtuoso/releases/22755191",
+        "value": "https://api.github.com/repos/ropensci/virtuoso/releases/22755191",
+        "zipball_url": "https://api.github.com/repos/ropensci/virtuoso/zipball/0.1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "cboettig",
+          "type": "User"
+        },
+        "date_created": "2018-12-04T07:38:02Z",
+        "date_published": "2018-12-04T07:44:51Z",
+        "description": "Virtuoso is a high-performance \"universal server,\" which can act\r\nas both a relational database (supporting standard SQL queries),\r\nand an Resource Description Framework (RDF) triplestore, supporting \r\nSPARQL queries and semantic reasoning. The virtuoso package R provides\r\nR users with a DBI-compatible connection to the Virtuoso database. \r\nThe package also provides helper routines to install, launch, and manage\r\na Virtuoso server locally on Mac, Windows and Linux platforms using\r\nthe standard interactive installers from the R command-line.  By \r\nautomatically handling these setup steps, the package can make Virtuoso\r\nconsiderably faster and easier for a most users to deploy in a local\r\nenvironment. While this can be used as a normal dplyr backend, Virtuoso \r\nexcels when used as a RDF triplestore.  Managing the bulk import of triples\r\nfrom common serializations with a single intuitive command is another key\r\nfeature of the Virtuoso R package.  Bulk import performance can be tens to\r\nhundreds of times faster than the comparable imports using existing R tools,\r\nincluding rdflib and redland packages. \r\n\r\n**initial release for ropensci onboarding**",
+        "html_url": "https://github.com/ropensci/virtuoso/releases/tag/v0.1.1",
+        "name": " R interface to Virtuoso using ODBC",
+        "release_id": 14331596,
+        "tag": "v0.1.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/virtuoso/tarball/v0.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/virtuoso/releases/14331596",
+        "value": "https://api.github.com/repos/ropensci/virtuoso/releases/14331596",
+        "zipball_url": "https://api.github.com/repos/ropensci/virtuoso/zipball/v0.1.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "odbc",
+        "type": "Software_application",
+        "value": "odbc",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "processx",
+        "type": "Software_application",
+        "value": "processx",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "DBI",
+        "type": "Software_application",
+        "value": "DBI",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "utils",
+        "type": "Software_application",
+        "value": "utils",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ini",
+        "type": "Software_application",
+        "value": "ini",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rappdirs",
+        "type": "Software_application",
+        "value": "rappdirs",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "curl",
+        "type": "Software_application",
+        "value": "curl",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "fs",
+        "type": "Software_application",
+        "value": "fs",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "digest",
+        "type": "Software_application",
+        "value": "digest",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ps",
+        "type": "Software_application",
+        "value": "ps",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:15:20",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 9
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Getting Started",
+        "parent_header": [
+          "virtuoso <img src=\"man/figures/logo.svg\" align=\"right\" alt=\"\" width=\"120\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "``` r\nlibrary(virtuoso)\n```\n\nFor Mac users, `virtuoso` package includes a utility function to install\nand configure a local Virtuoso Open Source instance using Homebrew.\nOtherwise, simply install the Virtuoso Open Source edition for your\noperating system.\n\n``` r\nvos_install()\n#> Virtuoso is already installed.\n```\n\nWe can now start our Virtuoso server from R:\n\n``` r\nvos_start()\n#> PROCESS 'virtuoso-t', running, pid 14318.\n#> Server is now starting up, this may take a few seconds...\n#> latest log entry: 21:43:06 Server online at 1111 (pid 14318)\n```\n\nOnce the server is running, we can connect to the database.\n\n``` r\ncon <- vos_connect()\n```\n\nOur connection is now live, and accepts SPARQL queries directly.\n\n``` r\nDBI::dbGetQuery(con, \"SPARQL SELECT * WHERE { ?s ?p ?o } LIMIT 4\")\n#>                                                                              s\n#> 1                   http://www.openlinksw.com/virtrdf-data-formats#default-iid\n#> 2          http://www.openlinksw.com/virtrdf-data-formats#default-iid-nullable\n#> 3          http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank\n#> 4 http://www.openlinksw.com/virtrdf-data-formats#default-iid-nonblank-nullable\n#>                                                 p\n#> 1 http://www.w3.org/1999/02/22-rdf-syntax-ns#type\n#> 2 http://www.w3.org/1999/02/22-rdf-syntax-ns#type\n#> 3 http://www.w3.org/1999/02/22-rdf-syntax-ns#type\n#> 4 http://www.w3.org/1999/02/22-rdf-syntax-ns#type\n#>                                                         o\n#> 1 http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat\n#> 2 http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat\n#> 3 http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat\n#> 4 http://www.openlinksw.com/schemas/virtrdf#QuadMapFormat\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Going further",
+        "parent_header": [
+          "virtuoso <img src=\"man/figures/logo.svg\" align=\"right\" alt=\"\" width=\"120\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "Please see the package vignettes for more information:\n\n  - [details on Virtuoso Installation &\n    configuration](https://docs.ropensci.org/virtuoso/articles/installation.html)\n  - [The Data Lake: richer examples of RDF\n    use](https://docs.ropensci.org/virtuoso/articles/articles/datalake.html)\n\n-----\n\nPlease note that the `virtuoso` R package is released with a\n[Contributor Code of\nConduct](https://docs.ropensci.org/virtuoso/CODE_OF_CONDUCT.html). By\ncontributing to this project, you agree to abide by its terms.\n\n[![ropensci\\_footer](https://ropensci.org/public_images/ropensci_footer.png)](https://ropensci.org)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.1.8"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.1.4"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/virtuoso/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

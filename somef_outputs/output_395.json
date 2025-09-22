@@ -1,0 +1,1445 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Geospatial"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8971169857950627,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Scott Chamberlain"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "myrmecocystus@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-1444-9135",
+        "type": "String",
+        "value": "Scott Chamberlain"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Jeroen Ooms"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Jeroen Ooms"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Edzer Pebesma"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Scott Chamberlain"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Scott Chamberlain"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2005",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"To cite package sp in publications use:\")\n\nbibentry(bibtype=\"Article\",\n  author       = c(person((\"Edzer J.\"), \"Pebesma\"),\n                   person(c(\"Roger\"), \"Bivand\")),\n  title        = \"Classes and methods for spatial data in {R}\",\n  journal      = \"R News\",\n  year         = 2005,\n  volume       = 5,\n  number       = 2,\n  pages        = \"9--13\",\n  month        = \"November\",\n  url          = \"https://CRAN.R-project.org/doc/Rnews/\"\n)\n\nbibentry(bibtype=\"book\",\n  author       = c(person(c(\"Roger S.\"), \"Bivand\"), person(c(\"Edzer\"), \"Pebesma\"), person(c(\"Virgilio\"), c(\"Gomez-Rubio\"))),\n  title        = \"Applied spatial data analysis with {R}, Second edition\",\n  year         = \"2013\",\n  publisher    = \"Springer, NY\",\n  url          = \"https://asdar-book.org/\"\n)\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/CITATION",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Code of Conduct\n\nAs contributors and maintainers of this project, we pledge to respect all people who \ncontribute through reporting issues, posting feature requests, updating documentation,\nsubmitting pull requests or patches, and other activities.\n\nWe are committed to making participation in this project a harassment-free experience for\neveryone, regardless of level of experience, gender, gender identity and expression,\nsexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.\n\nExamples of unacceptable behavior by participants include the use of sexual language or\nimagery, derogatory comments or personal attacks, trolling, public or private harassment,\ninsults, or other unprofessional conduct.\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments,\ncommits, code, wiki edits, issues, and other contributions that are not aligned to this \nCode of Conduct. Project maintainers who do not follow the Code of Conduct may be removed \nfrom the project team.\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by \nopening an issue or contacting one or more of the project maintainers.\n\nThis Code of Conduct is adapted from the Contributor Covenant \n(https://contributor-covenant.org), version 1.0.0, available at \nhttps://contributor-covenant.org/version/1/0/0/\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/geojson"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/RcppCore/Rcpp"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/edzer/sp/ https://edzer.github.io/sp/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jeroen/protolite\n        https://jeroen.r-universe.dev/protolite"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://travis-ci.org/ropensci/geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING #\n\n### Bugs?\n\n* Submit an issue on the [Issues page](https://github.com/ropensci/geojson/issues)\n\n### Code contributions\n\n* Fork this repo to your Github account\n* Clone your version on your account down to your machine from your account, e.g,. `git clone https://github.com/<yourgithubusername>/geojson.git`\n* Make sure to track progress upstream (i.e., on our version of `geojson` at `ropensci/geojson`) by doing `git remote add upstream https://github.com/ropensci/geojson.git`. Before making changes make sure to pull changes in from upstream by doing either `git fetch upstream` then merge later or `git pull upstream` to fetch and merge in one step\n* Make your changes (bonus points for making changes on a new feature branch)\n* Push up to your account\n* Submit a pull request to home base at `ropensci/geojson`\n\n### Also, check out our [discussion forum](https://discuss.ropensci.org)\n\n### Prefer to Email? Get in touch: [myrmecocystus@gmail.com](mailto:myrmecocystus@gmail.com)\n\n### Thanks for contributing!\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2016-04-01T17:36:59Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-08-10T00:43:11Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "GeoJSON classes for R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+        "type": "String",
+        "value": "Classes for 'GeoJSON' to make working with 'GeoJSON' easier.\n    Includes S3 classes for 'GeoJSON' classes with brief summary output,\n    and a few methods such as extracting and adding bounding boxes,\n    properties, and coordinate reference systems; working with \n    newline delimited 'GeoJSON'; and serializing to/from 'Geobuf' binary 'GeoJSON' \n    format."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Classes for 'GeoJSON' to make working with 'GeoJSON' easier.\n    Includes S3 classes for 'GeoJSON' classes with brief summary output,\n    and a few methods such as extracting and adding bounding boxes,\n    properties, and coordinate reference systems; working with \n    newline delimited 'GeoJSON'; linting through the 'geojsonlint' \n    package; and serializing to/from 'Geobuf' binary 'GeoJSON' \n    format."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+        "type": "String",
+        "value": "The 'Rcpp' package provides R functions as well as C++ classes which\n offer a seamless integration of R and C++. Many R data types and objects can be\n mapped back and forth to C++ equivalents which facilitates both writing of new\n code as well as easier integration of third-party libraries. Documentation\n about 'Rcpp' is provided by several vignettes included in this package, via the\n 'Rcpp Gallery' site at <https://gallery.rcpp.org>, the paper by Eddelbuettel and\n Francois (2011, <doi:10.18637/jss.v040.i08>), the book by Eddelbuettel (2013,\n <doi:10.1007/978-1-4614-6868-4>) and the paper by Eddelbuettel and Balamuta (2018,\n <doi:10.1080/00031305.2017.1375990>); see 'citation(\"Rcpp\")' for details."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+        "type": "String",
+        "value": "A reasonably fast JSON parser and generator, optimized for statistical \n    data and the web. Offers simple, flexible tools for working with JSON in R, and\n    is particularly powerful for building pipelines and interacting with a web API. \n    The implementation is based on the mapping described in the vignette (Ooms, 2014).\n    In addition to converting JSON data from/to R objects, 'jsonlite' contains \n    functions to stream, validate, and prettify JSON data. The unit tests included \n    with the package verify that all edge cases are encoded and decoded consistently \n    for use with dynamic data in systems and applications."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+        "type": "String",
+        "value": "Classes and methods for spatial\n  data; the classes document where the spatial location information\n  resides, for 2D or 3D data. Utility functions are provided, e.g. for\n  plotting data as maps, spatial selection, as well as methods for\n  retrieving coordinates, for subsetting, print, summary, etc. From this\n  version, evolution status is set to '2L' using 'sf' in place of 'rgdal',\n  see <https://r-spatial.org/r/2023/05/15/evolution4.html> for details.\n  Retiring packages 'maptools', 'rgdal' and 'rgeos' will be dropped by\n  October 2023."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+        "type": "String",
+        "value": "Classes for 'GeoJSON' to make working with 'GeoJSON' easier.\n    Includes S3 classes for 'GeoJSON' classes with brief summary output,\n    and a few methods such as extracting and adding bounding boxes,\n    properties, and coordinate reference systems; working with \n    newline delimited 'GeoJSON'; and serializing to/from 'Geobuf' binary 'GeoJSON' \n    format."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+        "type": "String",
+        "value": "Pure C++ implementations for reading and writing several common data \n    formats based on Google protocol-buffers. Currently supports 'rexp.proto' for \n    serialized R objects, 'geobuf.proto' for binary geojson, and 'mvt.proto' for \n    vector tiles. This package uses the auto-generated C++ code by protobuf-compiler, \n    hence the entire serialization is optimized at compile time. The 'RProtoBuf' \n    package on the other hand uses the protobuf runtime library to provide a general-\n    purpose toolkit for reading and writing arbitrary protocol-buffer data in R."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+        "type": "String",
+        "value": "Classes for 'GeoJSON' to make working with 'GeoJSON' easier.\n    Includes S3 classes for 'GeoJSON' classes with brief summary output,\n    and a few methods such as extracting and adding bounding boxes,\n    properties, and coordinate reference systems; working with \n    newline delimited 'GeoJSON'; linting through the 'geojsonlint' \n    package; and serializing to/from 'Geobuf' binary 'GeoJSON' \n    format."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9025543691522051,
+      "result": {
+        "original_header": "geojson",
+        "type": "Text_excerpt",
+        "value": "`geojson` aims to deal only with geojson data in a lightweight way. \nThe package [geoops](https://github.com/sckott/geoops) supports\nmanipulations on the classes defined in this package. This package is\nused within [geojsonio](https://github.com/ropensci/geojsonio) to make\nsome tasks easier.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8087781245683959,
+      "result": {
+        "original_header": "geojson class",
+        "type": "Text_excerpt",
+        "value": "Essentially a character string with S3 class `geojson` attached to make\nit easy to perform operations on\n``` r\nx <- \"{\\\"type\\\":\\\"FeatureCollection\\\",\\\"features\\\":[{\\\"type\\\":\\\"Feature\\\",\\\"geometry\\\":{\\\"type\\\":\\\"Point\\\",\\\"coordinates\\\":[-99.74,32.45]},\\\"properties\\\":{}}]}\"\nas.geojson(x)\n#> <geojson> \n#>   type:  FeatureCollection \n#>   features (n): 1 \n#>   features (geometry / length) [first 5]:\n#>     Point / 2\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/geojson/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 9
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/geojson/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/geojson"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/examples/ConvolveBenchmarks/overhead.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/examples/ConvolveBenchmarks/buildAndRun.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/geojson/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://www.rcpp.org"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://dirk.eddelbuettel.com/code/rcpp.html"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://jeroen.r-universe.dev/jsonlite\n        https://arxiv.org/abs/1403.2805"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/geojson/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/github_footer.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "geojson"
+        ],
+        "type": "Text_excerpt",
+        "value": "Stable CRAN version\n\n``` r\ninstall.packages(\"geojson\")\n```\n\nDev version\n\n``` r\nremotes::install_github(\"ropensci/geojson\")\n```\n\n``` r\nlibrary(\"geojson\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/geojson/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/geojson/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/geojson/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/RcppCore/Rcpp/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jeroen/jsonlite/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/edzer/sp/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/geojson/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jeroen/protolite/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/geojson/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "bbox, crs, geobuf, geojson, geospatial, ndgeojson, r, r-package, rstats, spatial"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "geojson",
+          "geospatial",
+          "conversion",
+          "data",
+          "input-output",
+          "bbox",
+          "polygon",
+          "geobuf",
+          "spatial",
+          "rstats",
+          "r",
+          "r-package",
+          "crs",
+          "ndgeojson"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "YEAR: 2020\nCOPYRIGHT HOLDER: Scott Chamberlain\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+        "type": "String",
+        "value": "GPL (>= 2)"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+        "type": "String",
+        "value": "GPL (>= 2)"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geojson"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geojson: Classes for 'GeoJSON'"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+        "type": "String",
+        "value": "geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+        "type": "String",
+        "value": "Rcpp"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+        "type": "String",
+        "value": "jsonlite"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+        "type": "String",
+        "value": "sp"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+        "type": "String",
+        "value": "geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+        "type": "String",
+        "value": "protolite"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+        "type": "String",
+        "value": "geojson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 5998138,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 3794914,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 691025,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 50582,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 38792,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 11064,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 2743,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 1088,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": "4.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/geojson/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/geojson/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2020-06-23T19:36:20Z",
+        "date_published": "2020-06-23T19:37:43Z",
+        "description": "### MINOR IMPROVEMENTS\r\n\r\n* fixes for test suite: skip package check warnings when geojsonlint not available, and skip tests that would use geojsonlint (#40)",
+        "html_url": "https://github.com/ropensci/geojson/releases/tag/v0.3.4",
+        "name": "geojson v0.3.4",
+        "release_id": 27832386,
+        "tag": "v0.3.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/geojson/tarball/v0.3.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/geojson/releases/27832386",
+        "value": "https://api.github.com/repos/ropensci/geojson/releases/27832386",
+        "zipball_url": "https://api.github.com/repos/ropensci/geojson/zipball/v0.3.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2019-01-31T05:58:06Z",
+        "date_published": "2019-01-31T06:25:24Z",
+        "description": "### BUG FIXES\r\n\r\n* fix typo within `ndgeo_read()` (#39)",
+        "html_url": "https://github.com/ropensci/geojson/releases/tag/v0.3.2",
+        "name": "geojson v0.3.2",
+        "release_id": 15283085,
+        "tag": "v0.3.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/geojson/tarball/v0.3.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/geojson/releases/15283085",
+        "value": "https://api.github.com/repos/ropensci/geojson/releases/15283085",
+        "zipball_url": "https://api.github.com/repos/ropensci/geojson/zipball/v0.3.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2019-01-18T19:05:12Z",
+        "date_published": "2019-01-18T19:06:29Z",
+        "description": "### NEW FEATURES\r\n\r\n* package gains two new functions for working with newline-delimited GeoJSON: `ndgeo_write()` and `ndgeo_read()`. `ndgeo_write()` leverages `writeLines()` to write to disk, while `ndgeo_read()` leverages a modified version of `jsonlite::stream_in()` to stream in line by line. `ndgeo_write()` works only with the geojson package classes `geofeature` and `geofeaturecollection` (#31) (#38)\r\n* `as.geojson()` generic gains a new method for `sf`, see `showMethods('as.geojson')` to see methods available. The method is only available if you have `sf` installed  (#30) thanks @cpsievert\r\n\r\n### MINOR IMPROVEMENTS\r\n\r\n* add examples of using geobuf capabilities to the README (#35)\r\n* in `as.geojson()` now throw warning message from `jsonlite` when json is invalid to help user sort out what's wrong with their JSON when the input is not valid JSON (#32)\r\n* speed up for an internal method `asc()` to use `stringi::stri_replace_all()` if installed, and if not fall back to using `gsub()`\r\n* replace usage of `tibble::data_frame()` with `tibble::tibble()` throughout package\r\n\r\n### BUG FIXES\r\n\r\n* change to `print.geojson()` to not calculate and print the bounding box because for very large geojson can take a very long time. Also changed to precomputing everything so printing geojson objects is fast (#36)\r\n* fix to `geo_bbox()` to handle negative coordinates (#33) (#34) thanks very much @aoles",
+        "html_url": "https://github.com/ropensci/geojson/releases/tag/v0.3.0",
+        "name": "geojson v0.3.0",
+        "release_id": 15061499,
+        "tag": "v0.3.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/geojson/tarball/v0.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/geojson/releases/15061499",
+        "value": "https://api.github.com/repos/ropensci/geojson/releases/15061499",
+        "zipball_url": "https://api.github.com/repos/ropensci/geojson/zipball/v0.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2017-11-07T22:28:12Z",
+        "date_published": "2017-11-08T00:53:56Z",
+        "description": "### NEW FEATURES\r\n\r\n* gains new function `to_geojson` convert GeoJSON character\r\nstring to the approriate GeoJSON class by detecting GeoJSON\r\ntype automatically. this makes some other tasks easier\r\n(#28) (#29)\r\n\r\n### MINOR IMPROVEMENTS\r\n\r\n* Improve `as.geojson` function to do print summary on\r\nall GeoJSON types well, not just GeometryCollection\r\nand FeatureCollection (#27)",
+        "html_url": "https://github.com/ropensci/geojson/releases/tag/v0.2.0",
+        "name": "geojson v0.2.0",
+        "release_id": 8425131,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/geojson/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/geojson/releases/8425131",
+        "value": "https://api.github.com/repos/ropensci/geojson/releases/8425131",
+        "zipball_url": "https://api.github.com/repos/ropensci/geojson/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2017-10-23T23:51:19Z",
+        "date_published": "2017-10-23T23:57:31Z",
+        "description": "### MINOR IMPROVEMENTS\r\n\r\n* Changed `properties_add()` to give back the same class object\r\nas that given to the function. In addition, correctly adds properties\r\nto FeatureCollection objects as well. (#22)\r\n* Added properties fxns tests\r\n\r\n### BUG FIXES\r\n\r\n* Fixed bug in `print.featurecollection()` that was not calculating and \r\nprinting number of features correctly (#24)",
+        "html_url": "https://github.com/ropensci/geojson/releases/tag/v0.1.4",
+        "name": "geojson v0.1.4",
+        "release_id": 8229701,
+        "tag": "v0.1.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/geojson/tarball/v0.1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/geojson/releases/8229701",
+        "value": "https://api.github.com/repos/ropensci/geojson/releases/8229701",
+        "zipball_url": "https://api.github.com/repos/ropensci/geojson/zipball/v0.1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2017-02-28T21:24:44Z",
+        "date_published": "2017-02-28T21:36:03Z",
+        "description": "### BUG FIXES\n- Fixed bug in internal function that checked for existence\n  of a Suggested package (#17)\n",
+        "html_url": "https://github.com/ropensci/geojson/releases/tag/v0.1.2",
+        "name": "geojson v0.1.2",
+        "release_id": 5598928,
+        "tag": "v0.1.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/geojson/tarball/v0.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/geojson/releases/5598928",
+        "value": "https://api.github.com/repos/ropensci/geojson/releases/5598928",
+        "zipball_url": "https://api.github.com/repos/ropensci/geojson/zipball/v0.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2016-11-15T21:59:13Z",
+        "date_published": "2016-11-15T22:18:09Z",
+        "description": "### NEW FEATURES\n- Released to CRAN\n",
+        "html_url": "https://github.com/ropensci/geojson/releases/tag/v0.1.0",
+        "name": "geojson v0.1.0",
+        "release_id": 4668753,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/geojson/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/geojson/releases/4668753",
+        "value": "https://api.github.com/repos/ropensci/geojson/releases/4668753",
+        "zipball_url": "https://api.github.com/repos/ropensci/geojson/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "methods",
+        "type": "Software_application",
+        "value": "methods",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sp",
+        "type": "Software_application",
+        "value": "sp",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jsonlite",
+        "type": "Software_application",
+        "value": "jsonlite==>= 1.6",
+        "version": ">= 1.6"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "protolite",
+        "type": "Software_application",
+        "value": "protolite==>= 1.8",
+        "version": ">= 1.8"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jqr",
+        "type": "Software_application",
+        "value": "jqr==>= 1.1.0",
+        "version": ">= 1.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "magrittr",
+        "type": "Software_application",
+        "value": "magrittr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lazyeval",
+        "type": "Software_application",
+        "value": "lazyeval",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:40:05",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 32
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.3.5.9000"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.3.4"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+        "type": "String",
+        "value": "1.0.11"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/Rcpp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+        "type": "String",
+        "value": "1.8.7"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/jsonlite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+        "type": "String",
+        "value": "2.0-0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/sp/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+        "type": "String",
+        "value": "0.3.5"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+        "type": "String",
+        "value": "2.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/new/protolite/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+        "type": "String",
+        "value": "0.3.4"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/geojson/main/revdep/library/geojson/old/geojson/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ]
+}

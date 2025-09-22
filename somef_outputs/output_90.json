@@ -1,0 +1,1235 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u263a\ufe0e Acknowledgments",
+        "parent_header": [
+          "eprints2bags<img width=\"100px\" align=\"right\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "The [vector artwork](https://thenounproject.com/search/?q=bag&i=1002779) of a bag used as a logo for this repository was created by [StoneHub](https://thenounproject.com/stonehub/) from the Noun Project.  It is licensed under the Creative Commons [CC-BY 3.0](https://creativecommons.org/licenses/by/3.0/) license.\n\nWe thank the following people for suggestions and ideas that led to improvements in `eprints2bags`: Robert Doiel, Tom Morrell, Tommy Keswick.\n\n`eprints2bags` makes use of numerous open-source packages, without which it would have been effectively impossible to develop `eprints2bags` with the resources we had.  We want to acknowledge this debt.  In alphabetical order, the packages are:\n\n* [bagit](https://github.com/LibraryOfCongress/bagit-python) &ndash; Python library for working with [BagIt](https://tools.ietf.org/html/draft-kunze-bagit-17) style packages\n* [colorama](https://github.com/tartley/colorama) &ndash; makes ANSI escape character sequences work under MS Windows terminals\n* [dateparser](https://pypi.org/project/dateparser/) &ndash; parse dates in almost any string format\n* [humanize](https://github.com/jmoiron/humanize) &ndash; helps write large numbers in a more human-readable form\n* [ipdb](https://github.com/gotcha/ipdb) &ndash; the IPython debugger\n* [keyring](https://github.com/jaraco/keyring) &ndash; access the system keyring service from Python\n* [lxml](https://lxml.de) &ndash; an XML parsing library for Python\n* [plac](http://micheles.github.io/plac/) &ndash; a command line argument parser\n* [psutil](https://github.com/giampaolo/psutil) &ndash; process and system utilities\n* [requests](http://docs.python-requests.org) &ndash; an HTTP library for Python\n* [setuptools](https://github.com/pypa/setuptools) &ndash; library for `setup.py`\n* [termcolor](https://pypi.org/project/termcolor/) &ndash; ANSI color formatting for output in terminal\n* [twine](https://github.com/pypa/twine/) &ndash; Twine is a utility for publishing Python packages on PyPI\n* [urllib3](https://urllib3.readthedocs.io/en/latest/) &ndash; HTTP client library for Python\n* [validators](https://github.com/kvesteri/validators) &ndash; data validation package for Python\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech Library",
+        "email": "mhucka@caltech.edu",
+        "identifier": "https://orcid.org/0000-0001-9105-5960",
+        "type": "String",
+        "value": "Michael Hucka"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Hucka",
+            "given_name": "Michael",
+            "name": "Michael Hucka",
+            "type": "Agent",
+            "url": "https://orid.org/0000-0001-9105-5960"
+          }
+        ],
+        "datePublished": "2023",
+        "format": "cff",
+        "title": "A program for downloading records from an EPrints server and creating BagIt packages out of them.",
+        "type": "File_dump",
+        "value": "cff-version: 1.2\nmessage: \"If you use this software, please cite it using these metadata.\"\ntitle: \"A program for downloading records from an EPrints server and creating BagIt packages out of them.\"\nauthors:\n  - family-names: Hucka\n    given-names: Michael\n    affiliation: \"Caltech Library\"\n    orcid: \"https://orid.org/0000-0001-9105-5960\"\nversion: \"1.10.3\"\nabstract: Download EPrints content and save it in BagIt-format bags.\nrepository-code: \"https://github.com/caltechlibrary/eprints2bags\"\ntype: software\nlicense-url: \"https://github.com/caltechlibrary/eprints2bags/blob/main/LICENSE\"\nkeywords:\n  - EPrints\n  - BagIt\n  - archive\ndate-released: \"2023-05-04\"\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Contributor Covenant Code of Conduct\n====================================\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment include:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a professional setting\n\n## Our Responsibilities\n\nProject contributors are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.\n\nProject contributors have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project contributors.\n\n## Enforcement\n\nIf a contributor engages in harassing behaviour, the project organizers may take any action they deem appropriate, including warning the offender or expelling them from online forums, online project resources, face-to-face meetings, or any other project-related activity or resource.\n\nIf you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of the project team immediately.  Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team.  All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.  The project team is obligated to maintain confidentiality with regard to the reporter of an incident.  Further details of specific enforcement policies may be posted separately.\n\n## Attribution\n\nPortions of this Code of Conduct were adapted from Electron's [Contributor Covenant Code of Conduct](https://github.com/electron/electron/blob/master/CODE_OF_CONDUCT.md), which itself was adapted from the [Contributor Covenant](http://contributor-covenant.org/version/1/4), version 1.4.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/eprints2bags"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/eprints2bags"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.github/workflows/codeql-analysis.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Guidelines for contributing to this project\n\nAny constructive contributions &ndash; bug reports, pull requests (code or documentation), suggestions for improvements, and more &ndash; are welcome.\n\n## Conduct\n\nEveryone is asked to read and respect the [code of conduct](CODE_OF_CONDUCT.md) before participating in this project.\n\n## Coordinating work\n\nA quick way to find out what is currently on people's plates and our near-term plans is to look at the [GitHub issue tracker](https://github.com/caltechlibrary/eprints2bags/issues) for this project, but the possibilities are not limited to what you see there &ndash; if you have ideas for new features and enhancements, please feel free to write them up as a new issue or contact the developers directly!\n\n## Submitting contributions\n\nPlease feel free to contact the author directly, or even better, jump right in and use the standard GitHub approach of forking the repo and creating a pull request.  When committing code changes and submitting pull requests, please write a clear log message for your commits.  One-line messages are fine for small changes, but bigger changes should look like this:\n\n    $ git commit -m \"A brief summary of the commit\n    > \n    > A paragraph describing what changed and its impact.\"\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u266c Contributing &mdash; info for developers",
+        "parent_header": [
+          "eprints2bags<img width=\"100px\" align=\"right\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "We would be happy to receive your help and participation with enhancing `eprints2bags`!  Please visit the [guidelines for contributing](CONTRIBUTING.md) for some tips on getting started.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-12-04T22:01:14Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-03-15T09:46:29Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Download records and documents from an EPrints server and put them in BagIt format."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A program for downloading records from an EPrints server and creating BagIt packages out of them."
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u2600 Introduction",
+        "parent_header": [
+          "eprints2bags<img width=\"100px\" align=\"right\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Materials in EPrints must be extracted before they can be moved to a long-term preservation system or dark archive.  _Eprints2bags_ is a self-contained program that encapsulates the processes needed to download records and documents from EPrints, bundle up individual records in [BagIt](https://en.wikipedia.org/wiki/BagIt) packages, and create single-file archives (e.g., in [ZIP](https://en.wikipedia.org/wiki/Zip_(file_format)) format) of each bag.  The program is written in Python 3 and works over a network using an EPrints server's REST API.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Summary of command-line options*",
+        "parent_header": [
+          "eprints2bags<img width=\"100px\" align=\"right\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png\">",
+          "\u25b6\ufe0e Using Eprints2bags"
+        ],
+        "type": "Text_excerpt",
+        "value": "The following table summarizes all the command line options available. (Note: on Windows computers, `/` must be used as the prefix character instead of `-`):\n\n| Short&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   | Long&nbsp;form&nbsp;opt&nbsp;&nbsp; | Meaning | Default |  |\n|---------|-------------------|----------------------|---------|---|\n| `-a`_A_ | `--api-url`_A_    | Use _A_ as the server's REST API URL | | \u2691 |\n| `-b`_B_ | `--bag-action`_B_ | Do _B_ with each record directory | Bag and archive  | \u2726 |\n| `-c`_C_ | `--processes`_C_  | No. of processes during bag creation | &frac12; the number of CPUs | |\n| `-e`_E_ | `--end-action`_E_ | Do _E_ with the entire set of records | Nothing | \u2726 |\n| `-h`    | `--help`          | Print help info and exit | | |\n| `-i`_I_ | `--id-list`_I_    | Records to get (can be a file name) | Fetch all records from the server | |\n| `-k`    | `--keep-going`    | Don't count missing records as an error | Stop if encounter missing record | |\n| `-l`_L_ | `--lastmod`_L_    | Filter by last-modified date/time | Don't filter by date/time | |\n| `-n`_N_ | `--name-base`_N_  | Prefix directory names with _N_ | Use record number only | |\n| `-o`_O_ | `--output-dir`_O_ | Write outputs in the directory _O_ | Write in the current directory |  |\n| `-q`    | `--quiet`         | Don't print info messages while working | Be chatty while working | |\n| `-s`_S_ | `--status`_S_     | Filter by status(s) in _S_ | Don't filter by status | |\n| `-u`_U_ | `--user`_U_       | User name for EPrints server login | |\n| `-p`_P_ | `--password`_U_   | Password for EPrints proxy login | |\n| `-t`_T_ | `--arch-type`_T_  | Use archive type _T_ | Uncompressed ZIP | \u2662 |\n| `-C`    | `--no-color`      | Don't color-code the output | Use colors in the terminal output | |\n| `-K`    | `--no-keyring`    | Don't use a keyring/keychain | Store login info in keyring | |\n| `-R`    | `--reset`         | Reset user login & password used | Reuse previous credentials |\n| `-V`    | `--version`       | Print program version info and exit | Do other actions instead | |\n| `-@`_OUT_ | `--debug`_OUT_    | Debugging mode; write trace to _OUT_ | Normal mode | \u2690 |\n\n \u2691 &nbsp; Required argument.<br>\n\u2726 &nbsp; Possible values: `none`, `bag`, `bag-and-archive`.<br>\n\u2662 &nbsp; Possible values: `uncompressed-zip`, `compressed-zip`, `uncompressed-tar`, `compressed-tar`.<br>\n\u2690 &nbsp; To write to the console, use the character `-` as the value of _OUT_; otherwise, _OUT_ must be the name of a file where the output should be written.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.8829636405421816,
+      "result": {
+        "original_header": "*Specifying what to do with the records*",
+        "type": "Text_excerpt",
+        "value": "Each directory will contain an [EPrints XML](https://wiki.eprints.org/w/XML_Export_Format) file and additional document file(s) associated with the EPrints record in question.  Documents associated with each record will be fetched over the network.  The list of documents for each record is determined from XML file, in the `<documents>` element.  Certain EPrints internal documents such as `indexcodes.txt` and preview images are ignored. \nThe type of archive made when `bag-and-archive` mode is used for the `-b` option can be changed using the option `-t` (or `/t` on Windows).  The possible values are: `compressed-zip`, `uncompressed-zip`, `compressed-tar`, and `uncompressed-tar`.  As mentioned above, the default is `uncompressed-zip` (used if no `-t` option is given).  [ZIP](https://en.wikipedia.org/wiki/Zip_(file_format)) is the default because it is more widely recognized and supported than [tar](https://en.wikipedia.org/wiki/Tar_(computing)) format, and _uncompressed_ ZIP is used because file corruption is generally more damaging to a compressed archive than an uncompressed one.  Since the main use case for `eprints2bags` is to archive contents for long-term storage, avoiding compression seems safer. \nThe ZIP archive file will be written with a text comment describing the contents of the archive.  This comment can be viewed by ZIP utilities (e.g., using `zipinfo -z` on Unix/Linux and macOS).  The following is an example of a comment and the information it contains:\n```\n~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\nAbout this archive file:\n\nThis is an archive of a file directory organized in BagIt v1.0 format.\nThe bag contains the content from the EPrints record located at\nhttp://resolver.caltech.edu/CaltechAUTHORS:SHIjfm98\n\nThe software used to create this archive file was:\neprints2bags version 1.3.1 <https://github.com/caltechlibrary/eprints2bags>\n\nThe following is the metadata contained in bag-info.txt:\nBag-Software-Agent: bagit.py v1.7.0 <https://github.com/LibraryOfCongress/bagit-python>\nBagging-Date: 2018-12-13\nExternal-Description: Archive of EPrints record and document files\nExternal-Identifier: http://resolver.caltech.edu/CaltechAUTHORS:SHIjfm98\nInternal-Sender-Identifier: https://authors.library.caltech.edu/id/eprint/355\nPayload-Oxum: 4646541.2\n~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\n```\n \nFinally, the overall collection of EPrints records (whether the records are bagged and archived, or just bagged, or left as-is) can optionally be itself put into a bag and/or put in a ZIP archive.  This behavior can be changed with the option `-e` (`/e` on Windows).  Like `-b`, this option takes the possible values `none`, `bag`, and `bag-and-archive`.  The default is `none`.  If the value `bag` is used, a top-level bag containing the individual EPrints bags is created out of the output directory (the location given by the `-o` option); if the value `bag-and-archive` is used, the bag is also put into a single-file archive.  (In other words, the result will be a ZIP archive of a bag whose data directory contains other ZIP archives of bags.)  For safety, `eprints2bags` will refuse to do `bag` or `bag-and-archive` unless a separate output directory is given via the `-o` option; otherwise, this would restructure the current directory where `eprints2bags` is running &ndash; with potentially unexpected or even catastrophic results.  (Imagine if the current directory were the user's home directory!) \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8192585030820151,
+      "result": {
+        "original_header": "*Server credentials*",
+        "type": "Text_excerpt",
+        "value": "Downloading documents usually requires supplying a user login and password to the EPrints server.  By default, this program uses the operating system's keyring/keychain functionality to get a user name and password.  If the information does not exist from a previous run of `eprints2bags`, it will query the user interactively for the user name and password, and unless the `-K` argument (`/K` on Windows) is given, store them in the user's keyring/keychain so that it does not have to ask again in the future.  It is also possible to supply the information directly on the command line using the `-u` and `-p` options (or `/u` and `/p` on Windows), but this is discouraged because it is insecure on multiuser computer systems. \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8400080553173463,
+      "result": {
+        "original_header": "Additional notes and considerations",
+        "type": "Text_excerpt",
+        "value": "Beware that some file systems have limitations on the number of subdirectories that can be created, which directly impacts how many record subdirectories can be created by this program.  `eprints2bags` attempts to guess the type of file system where the output is being written and warn the user if the number of records exceeds known maximums (e.g., 31,998 subdirectories for the [ext2](https://en.wikipedia.org/wiki/Ext2) and [ext3](https://en.wikipedia.org/wiki/Ext3) file systems in Linux), but its internal table does not include all possible file systems and it may not be able to warn users in all cases.  If you encounter file system limitations on the number of subdirectories that can be created, a simple solution is to manually create an intermediate level of subdirectories under the destination given to `-o`, then run `eprints2bags` multiple times, each time indicating a different subrange of records to the `-i` option and a different subdirectory to `-o`, such that the number of records written to each destination is below the file system's limit on total number of directories. \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8131111366582786,
+      "result": {
+        "original_header": "\u2605 Do you like it?",
+        "type": "Text_excerpt",
+        "value": "If you like this software, don't forget to give this repo a star on GitHub to show your support! \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9709672913502757,
+      "result": {
+        "original_header": "\u2761 History",
+        "type": "Text_excerpt",
+        "value": "In 2018, [Betsy Coles](https://github.com/betsycoles) wrote a [set of Perl scripts](https://github.com/caltechlibrary/eprints2dpn) and described a workflow for bagging contents from Caltech's EPrints-based [Caltech Collection of Open Digital Archives (CODA)](https://libguides.caltech.edu/CODA) server.  The original code is still available in this repository in the [historical](historical) subdirectory.  In late 2018, Mike Hucka sought to expand the functionality of the original tools and generalize them in anticipation of having to stop using DPN because on 2018-12-04, DPN announced they were shutting down. Thus was born _Eprints2bags_. \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/eprints2bags/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/eprints2bags/archive/1.10.3.zip"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/eprints2bags"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "eprints2bags"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/historical/bag_for_dpn.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags-asciinema.png"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/caltech-round.png"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u273a Installation instructions",
+        "parent_header": [
+          "eprints2bags<img width=\"100px\" align=\"right\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "The instructions below assume you have a Python interpreter installed on your computer; if that's not the case, please first install Python and familiarize yourself with running Python programs on your system.\n\nOn **Linux**, **macOS**, and **Windows** operating systems, you should be able to install `eprints2bags` with [`pip`](https://pip.pypa.io/en/stable/installing/).  If you don't have the `pip` package or are uncertain if you do, first run the following command in a terminal command line interpreter: \n```\nsudo python3 -m ensurepip\n```\n\nThen, to install `eprints2bags` from the Python package repository, run the following command:\n```\npython3 -m pip install eprints2bags --user --upgrade\n```\n\nAs an alternative to getting it from PyPI, you can instruct `pip` to install `eprints2bags` directly from the GitHub repository:\n```sh\npython3 -m pip install git+https://github.com/caltechlibrary/eprints2bags.git --user --upgrade\n```\n\nOn Linux and macOS systems, assuming that the installation proceeds normally, you should end up with a program called `eprints2bags` in a location normally searched by your terminal shell for commands.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/eprints2bags/issues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "archives, bagit, digital-repositories, eprints, preservation"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "EPrints",
+          "BagIt",
+          "archive"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "Copyright (c) 2019-2023, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors\nmay be used to endorse or promote products derived from this software without\nspecific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE\nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://github.com/caltechlibrary/eprints2bags/blob/master/LICENSE",
+        "spdx_id": "https://github.com/caltechlibrary/eprints2bags/blob/master/LICENSE",
+        "type": "License",
+        "value": "https://github.com/caltechlibrary/eprints2bags/blob/master/LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u262e\ufe0e Copyright and license",
+        "parent_header": [
+          "eprints2bags<img width=\"100px\" align=\"right\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Copyright (C) 2019&ndash;2023, Caltech.  This software is freely distributed under a BSD/MIT type license.  Please see the [LICENSE](LICENSE) file for more information.\n    \n<div align=\"center\">\n  <a href=\"https://www.caltech.edu\">\n    <img width=\"100\" height=\"100\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/caltech-round.png\">\n  </a>\n</div>\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "eprints2bags"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "eprints2bags"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_distribution": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pypi.org/project/eprints2bags/"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 67725,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Perl",
+        "size": 16706,
+        "type": "Programming_language",
+        "value": "Perl"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 8739,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 483,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "value": "Python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://urllib3.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2023-05-04T23:25:48Z",
+        "date_published": "2023-05-04T23:26:16Z",
+        "description": "This version fixes a minor error in `CITATION.cff`.\n",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/v1.10.3",
+        "name": "Release 1.10.3",
+        "release_id": 101946678,
+        "tag": "v1.10.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/v1.10.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/101946678",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/101946678",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/v1.10.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2023-05-04T23:18:50Z",
+        "date_published": "2023-05-04T23:21:04Z",
+        "description": "This version only updates information in `CITATION.cff`, `codemeta.json`, and a few other files. There are no functional changes in this release.\n",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/v1.10.2",
+        "name": "Release 1.10.2",
+        "release_id": 101946471,
+        "tag": "v1.10.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/v1.10.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/101946471",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/101946471",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/v1.10.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2022-04-05T18:25:23Z",
+        "date_published": "2022-04-05T18:25:54Z",
+        "description": "Changes in this version:\n* Fix reference to wrong exception name in network code.\n* Add missing import of `aenum` to `requirements.txt`\n",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/v1.10.1",
+        "name": "Release 1.10.1",
+        "release_id": 63661706,
+        "tag": "v1.10.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/v1.10.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/63661706",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/63661706",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/v1.10.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2022-04-04T20:00:34Z",
+        "date_published": "2022-04-04T20:01:01Z",
+        "description": "Changes in this release:\n\n* Removed delay option `-y`. Servers should probably implement throttling if rates are a problem, and anyway, the default value was probably too short to be of any use, so it's unlikely this option was of any use anyway.\n* Switched to using `cpu_count()` from Python `os` package instead of our own custom code.\n* Switched to using [Sidetrack](https://github.com/caltechlibrary/sidetrack) instead of original internal debug logging code.\n* Switched to using [Bun](https://github.com/caltechlibrary/bun) for basic terminal output.\n* Switched to using [CommonPy](https://github.com/caltechlibrary/commonpy) for common utilities.\n* Internally, use different approach to recording version number and other metadata.\n* Updated and refactored `Makefile`.\n* Added `CITATION.cff` file.\n* Refactored and update internal code.\n* Renamed branch `master` to `main`.\n",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/v1.10.0",
+        "name": "Release 1.10.0",
+        "release_id": 63560055,
+        "tag": "v1.10.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/v1.10.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/63560055",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/63560055",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/v1.10.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2020-07-04T01:10:15Z",
+        "date_published": "2020-07-04T01:21:05Z",
+        "description": "**Critical fix** &ndash; this version fixes a bug that caused `eprints2bags` to write zero-length data files when used with newer versions of Python.  **You should upgrade your copy of `eprints2bags` to this version**.  This version also reports skipped records separately from missing records (in the final summary at the end of a run).\r\n\r\nThe file [CHANGES](CHANGES.md) contains a more complete change log that includes information about previous releases.",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/v1.9.2",
+        "name": "Release 1.9.2",
+        "release_id": 28213919,
+        "tag": "v1.9.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/v1.9.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/28213919",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/28213919",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/v1.9.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-11-09T22:03:32Z",
+        "date_published": "2019-11-09T22:04:07Z",
+        "description": "This release updates the README file to explain how to install from PyPI, and fixes some internal files related to producing releases on PyPI.",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/v1.9.1",
+        "name": "Release 1.9.1",
+        "release_id": 21342650,
+        "tag": "v1.9.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/v1.9.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/21342650",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/21342650",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/v1.9.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-11-09T01:04:08Z",
+        "date_published": "2019-11-09T01:05:51Z",
+        "description": "Changes in this release:\r\n\r\n* Fixed issue #9: out-of-order id lists are ignored.\r\n* Added fix by [Tom Morrell](https://github.com/tmorrell) to `files.py` for when output is in the current directory.\r\n* Changed the debug option `-@` to accept an argument for where to send the debug output trace. The behavior change of `-@` is not backward compatible.\r\n* Internally, package metadata is now stored in `setup.cfg`.  Also, there is no `eprints2bags/__version__.py` anymore, and instead, some special code in `eprints2bags/__init__.py` extracts package-level variables directly from the installation created by `pip`.\r\n* Redesigned the icon for `eprints2bags` to tie into Eprints a little bit better.\r\n* Changed Caltech logo used on the bottom of the README.md file.  The previous logo is only approved by Caltech for use in certain official contexts.\r\n* Fixed various small errors in the README.md file.\r\n* Released on PyPI.\r\n\r\nThe file [CHANGES](CHANGES.md) contains a more complete change log that includes information about previous releases.",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/v1.9.0",
+        "name": "Version 1.9.0",
+        "release_id": 21335393,
+        "tag": "v1.9.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/v1.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/21335393",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/21335393",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/v1.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-01-24T00:22:41Z",
+        "date_published": "2019-01-24T18:33:41Z",
+        "description": "This minor release improves handling of server and network connectivity issues by pausing and retrying a few times before giving up completely.",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/1.8.2",
+        "name": "Version 1.8.2",
+        "release_id": 15166146,
+        "tag": "1.8.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/1.8.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/15166146",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/15166146",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/1.8.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-01-23T16:59:37Z",
+        "date_published": "2019-01-23T17:07:18Z",
+        "description": "This minor release fixes a performance issue introduced in the previous release, related to how multiple processes were used.  The program is back to the speed it was before 1.8.0.",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/1.8.1",
+        "name": "Version 1.8.1",
+        "release_id": 15140023,
+        "tag": "1.8.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/1.8.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/15140023",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/15140023",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/1.8.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-01-22T02:32:44Z",
+        "date_published": "2019-01-22T03:01:29Z",
+        "description": "This release brings significant changes to the behavior and user interface.  First, if desired, `eprints2bags` can now create a top-level bag containing the archived bags it creates.  This top-level bag itself can also be put into a single-file archive if desired.  This behavior is controlled by the new option `-e` in combination with the (renamed) option `-b` and the new option `-t`.  (The default behavior remains _not_ to create an overall bag or archive.)  Along with these changes, several existing command-line arguments have changed names and abbreviations.  Please see the help text for the new names.  Finally, a new option `-c` is available for changing the number of processes used during the bagging step to calculate checksums, and `eprints2bags` now uses multiple processes for that step by default.\r\n\r\nThe file [CHANGES](CHANGES.md) contains a more complete change log that includes information about previous releases.",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/1.8.0",
+        "name": "Version 1.8.0",
+        "release_id": 15100992,
+        "tag": "1.8.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/1.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/15100992",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/15100992",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/1.8.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-01-17T21:32:29Z",
+        "date_published": "2019-01-17T21:47:11Z",
+        "description": "The following are the main changes in this release:\r\n\r\n* The new command-line option `--status` (`-s` for short) allows you to specify values of the `<eprint_status>` field that should be used to filter candidate records.  When this option is given, `eprints2bags` will only keep those records having a status value that appears in the comma-separated argument to `-s`.  Putting a caret character (`^`) in front of the status (or status list) negates the sense, so that `eprints2bags` will only keep those records whose `<eprints_status>` field value is *not* among those given.  Examples: `eprints2bags -s archive -a ...` or `eprints2bags -s ^inbox,buffer,deletion -a ...`.\r\n* The file comments written to the ZIP archive file have been corrected to state the version of the BagIt format that is actually being used. (It's v0.97, not v1.0, though I don't think the differences matter for this program.)",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/1.7.0",
+        "name": "Version 1.7.0",
+        "release_id": 15042419,
+        "tag": "1.7.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/1.7.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/15042419",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/15042419",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/1.7.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2019-01-09T03:48:55Z",
+        "date_published": "2019-01-09T03:53:08Z",
+        "description": "The following are the main changes in this release:\r\n* This release adds a new command-line option `--lastmod` (`-l` for short) that allows the user to specify a date/time stamp, to return only those records whose last-modified date/time stamp is no older than the given description.  Valid descriptors are those accepted by the Python dateparser library. Example: `eprints2bags --lastmod \"yesterday at noon\" -a ...`.\r\n* This release also fixes a bug in parsing the values handed to `--id-list`.\r\n\r\nThe file [CHANGES](CHANGES.md) contains a more complete change log that includes information about previous releases.\r\n",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/1.6.0",
+        "name": "Version 1.6.0",
+        "release_id": 14869711,
+        "tag": "1.6.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/1.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/14869711",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/14869711",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/1.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2018-12-19T21:15:08Z",
+        "date_published": "2018-12-19T21:18:03Z",
+        "description": "Main changes in this release:\r\n\r\n* `eprints2bags` now determines which derived files to ignore for a given record by looking at the `<relation>` element for each `<document>` listed in the `<documents>` element of a record , and checking if the relationship is `isVolatileVersionOf`.  This makes it possible to ignore thumbnail images no matter what format or file name they have. \r\n* `eprints2bags` also now stores user login & password information on a per-server basis, instead of (as previously) using a single login & password for all servers.\r\n* Some newly-discovered bugs fixed.\r\n\r\nThe file [CHANGES](https://github.com/caltechlibrary/eprints2bags/blob/master/CHANGES.md) contains a more complete change log that includes information about previous releases.",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/1.5.0",
+        "name": "Version 1.5.0",
+        "release_id": 14625719,
+        "tag": "1.5.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/1.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/14625719",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/14625719",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/1.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2018-12-14T21:50:03Z",
+        "date_published": "2018-12-14T21:56:40Z",
+        "description": "This release has numerous important bug fixes and other changes.\r\n\r\n* fixes an important network handling bug that could cause incomplete records to be saved\r\n* fixes bugs in handling network exceptions while downloading content from servers\r\n* improves detection of file system limitations\r\n* fixes bugs in handling some command-line arguments\r\n* makes `-o` an optional command-line argument\r\n* fixes several Python package import issues\r\n* renames `CONDUCT.md` to [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) so that GitHub can find it\r\n* adds [`CONTRIBUTING.md`](CONTRIBUTING.md)\r\n* updates the documentation.  \r\n\r\nThis release also fixes some other minor bugs and includes some internal code refactoring.",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/1.4.0",
+        "name": "Version 1.4.0",
+        "release_id": 14547630,
+        "tag": "1.4.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/1.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/14547630",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/14547630",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/1.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2018-12-13T18:49:20Z",
+        "date_published": "2018-12-13T19:00:59Z",
+        "description": "Major user-visible changes in this release:\r\n\r\n* `eprints2bags` now generates uncompressed [ZIP](https://en.wikipedia.org/wiki/Zip_(file_format)) archives of bags by default, instead of using the compressed [tar](https://en.wikipedia.org/wiki/Tar_(computing)) format.  This was done in the belief that ZIP format is more widely supported and because compressed archive file contents may be more difficult to recover if the archive file becomes corrupted. Using uncompressed ZIP hopefully reduces the chances of problems over the long term. \r\n\r\n* `eprints2bags` now uses the operating system's keychain/keyring services to store the user name and password between runs, for convenience and (hopefully) better security. \r\n\r\n* Some of the the command-line options have been changed.",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/1.3.0",
+        "name": "Version 1.3.0",
+        "release_id": 14522813,
+        "tag": "1.3.0",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/1.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/14522813",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/14522813",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/1.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mhucka",
+          "type": "User"
+        },
+        "date_created": "2018-12-12T02:17:25Z",
+        "date_published": "2018-12-12T02:52:34Z",
+        "description": "This is the first full release of eprints2bags, a program that encapsulates the processes needed to gather [EPrints](https://en.wikipedia.org/wiki/EPrints) materials and bundle them up in [BagIt](https://en.wikipedia.org/wiki/BagIt) bags. The program works over a network using an EPrints server's REST API. It downloads a subset of records or all records, and bags them up individually. Eprints2bags is a command-line tool written in Python 3.\r\n\r\nFeatures include support for different ways of supplying the list of records to be bagged, and the ability to store login & password credentials using the normal keychain/keyring functionality provided by the user's operating system.",
+        "html_url": "https://github.com/caltechlibrary/eprints2bags/releases/tag/1.2.1",
+        "name": "Version 1.2.1",
+        "release_id": 14481230,
+        "tag": "1.2.1",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/tarball/1.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/14481230",
+        "value": "https://api.github.com/repos/caltechlibrary/eprints2bags/releases/14481230",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/eprints2bags/zipball/1.2.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "aenum",
+        "type": "Software_application",
+        "value": "aenum        >= 3.1.0",
+        "version": ">= 3.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "bagit",
+        "type": "Software_application",
+        "value": "bagit        >= 1.8.1",
+        "version": ">= 1.8.1"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "bun",
+        "type": "Software_application",
+        "value": "bun          == 0.0.8",
+        "version": "== 0.0.8"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "commonpy",
+        "type": "Software_application",
+        "value": "commonpy     >= 1.9.1",
+        "version": ">= 1.9.1"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dateparser",
+        "type": "Software_application",
+        "value": "dateparser   >= 0.7.0",
+        "version": ">= 0.7.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "humanize",
+        "type": "Software_application",
+        "value": "humanize     >= 0.5.1",
+        "version": ">= 0.5.1"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "keyring",
+        "type": "Software_application",
+        "value": "keyring      >= 12.2.0",
+        "version": ">= 12.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "keyrings.alt",
+        "type": "Software_application",
+        "value": "keyrings.alt >= 3.1",
+        "version": ">= 3.1"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lxml",
+        "type": "Software_application",
+        "value": "lxml         >= 4.2.5",
+        "version": ">= 4.2.5"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "plac",
+        "type": "Software_application",
+        "value": "plac         >= 1.0.0",
+        "version": ">= 1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "psutil",
+        "type": "Software_application",
+        "value": "psutil       >= 5.4",
+        "version": ">= 5.4"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pypubsub",
+        "type": "Software_application",
+        "value": "pypubsub     >= 4.0.0",
+        "version": ">= 4.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "requests",
+        "type": "Software_application",
+        "value": "requests     >= 2.19.1",
+        "version": ">= 2.19.1"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rich",
+        "type": "Software_application",
+        "value": "rich         >= 5.2.0",
+        "version": ">= 5.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools   >= 41.0.1",
+        "version": ">= 41.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sidetrack",
+        "type": "Software_application",
+        "value": "sidetrack    >= 1.0.0",
+        "version": ">= 1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "urllib3",
+        "type": "Software_application",
+        "value": "urllib3      >= 1.23",
+        "version": ">= 1.23"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "validators",
+        "type": "Software_application",
+        "value": "validators   >= 0.12.3",
+        "version": ">= 0.12.3"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "identifier",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:24:45",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 4
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u2047 Getting help and support",
+        "parent_header": [
+          "eprints2bags<img width=\"100px\" align=\"right\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/caltechlibrary/eprints2bags/issues) for this repository.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Specifying which records to get*",
+        "parent_header": [
+          "eprints2bags<img width=\"100px\" align=\"right\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png\">",
+          "\u25b6\ufe0e Using Eprints2bags"
+        ],
+        "type": "Text_excerpt",
+        "value": "The EPrints records to be written will be limited to the list of EPrints numbers found in the file given by the option `-i` (or `/i` on Windows).  If no `-i` option is given, this program will download all the contents available at the given EPrints server.  The value of `-i` can also be one or more integers separated by commas (e.g., `-i 54602,54604`), or a range of numbers separated by a dash (e.g., `-i 1-100`, which is interpreted as the list of numbers 1, 2, ..., 100 inclusive), or some combination thereof.  In those cases, the records written will be limited to those numbered.\n\nIf the `-l` option (or `/l` on Windows) is given, the records will be additionally filtered to return only those whose last-modified date/time stamp is no older than the given date/time description.  Valid descriptors are those accepted by the Python [dateparser](https://pypi.org/project/dateparser/) library.  Make sure to enclose descriptions within single or double quotes.  Examples:\n\n```\neprints2bags -l \"2 weeks ago\" -a ....\neprints2bags -l \"2014-08-29\"  -a ....\neprints2bags -l \"12 Dec 2014\" -a ....\neprints2bags -l \"July 4, 2013\" -a ....\n```\n\nIf the `-s` option (or `/s` on Windows) is given, the records will also be filtered to include only those whose `<eprint_status>` element value is one of the listed status codes.  Comparisons are done in a case-insensitive manner.  Putting a caret character (`^`) in front of the status (or status list) negates the sense, so that `eprints2bags` will only keep those records whose `<eprint_status>` value is _not_ among those given.  Examples:\n\n```\neprints2bags -s archive -a ...\neprints2bags -s ^inbox,buffer,deletion -a ...\n```\n\nBoth lastmod and status filering are done after the `-i` argument is processed.\n\nBy default, if an error occurs when requesting a record from the EPrints server, it stops execution of `eprints2bags`.  Common causes of errors include missing records implied by the arguments to `-i`, missing files associated with a given record, and files inaccessible due to permissions errors.  If the option `-k` (or `/k` on Windows) is given, `eprints2bags` will attempt to keep going upon encountering missing records, or missing files within records, or similar errors.  Option `-k` is particularly useful when giving a range of numbers with the `-i` option, as it is common for EPrints records to be updated or deleted and gaps to be left in the numbering.  (Running without `-i` will skip over gaps in the numbering because the available record numbers will be obtained directly from the server, which is unlike the user providing a list of record numbers that may or may not exist on the server.  However, even without `-i`, errors may still result from permissions errors or other causes.)\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "*Basic usage examples*",
+        "parent_header": [
+          "eprints2bags<img width=\"100px\" align=\"right\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png\">",
+          "\u25b6\ufe0e Using Eprints2bags"
+        ],
+        "type": "Text_excerpt",
+        "value": "Running `eprints2bags` then consists of invoking the program like any other program on your system.  The following is a simple example showing how to get a single record (#85447) from Caltech's [CODA](https://libguides.caltech.edu/CODA) EPrints server (with user name and password blanked out here for security reasons):\n\n```\n# eprints2bags -o /tmp/eprints -i 85447 -a https://authors.library.caltech.edu/rest -u XXXXX -p XXXXX\n\nBeginning to process 1 EPrints entry.\nOutput will be written under directory \"/tmp/eprints\"\n======================================================================\nGetting record with id 85447\nCreating /tmp/eprints/85447\nDownloading https://authors.library.caltech.edu/85447/1/1-s2.0-S0164121218300517-main.pdf\nMaking bag out of /tmp/eprints/85447\nCreating tarball /tmp/eprints/85447.tgz\n======================================================================\nDone. Wrote 1 EPrints record to /tmp/eprints/.\n```\n\nThe following is a screen cast to give a sense for what it's like to run `eprints2bags`. Click on the following image:\n\n<p align=\"center\">\n  <a href=\"https://asciinema.org/a/kUg8werG8YPobFKgPhsJnHwBi\"><img width=\"80%\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags-asciinema.png\" alt=\"Screencast of simple eprints2bags demo\"></a>\n</p>\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "\u2047 Getting help and support",
+        "parent_header": [
+          "eprints2bags<img width=\"100px\" align=\"right\" src=\"https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/.graphics/eprints2bags.png\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you find an issue, please submit it in [the GitHub issue tracker](https://github.com/caltechlibrary/eprints2bags/issues) for this repository.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.10.3"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/eprints2bags/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

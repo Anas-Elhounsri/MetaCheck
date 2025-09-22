@@ -1,0 +1,501 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "dghoshal@lbl.gov",
+        "type": "Agent",
+        "value": "dghoshal@lbl.gov"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Devarshi",
+        "last_name": "Ghoshal (dghoshal@lbl.gov)",
+        "name": "Devarshi Ghoshal\t(dghoshal@lbl.gov)",
+        "type": "Agent",
+        "value": "Devarshi Ghoshal\t(dghoshal@lbl.gov)"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "given_name": "Lavanya",
+        "last_name": "Ramakrishnan (lramakrishnan@lbl.gov)",
+        "name": "Lavanya Ramakrishnan \t(lramakrishnan@lbl.gov)",
+        "type": "Agent",
+        "value": "Lavanya Ramakrishnan \t(lramakrishnan@lbl.gov)"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/AUTHORS",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/dghoshal-lbl/madats"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://uda.lbl.gov"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "uda.lbl.gov"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "How To Contribute\n-----------------\n\nFollowing contributions are welcome to the MaDaTS repository.\n\n* bug fixes and feature enhancements\n* update MaDaTS documentation\n* verify and test new releases\n\nContributions will be reviewed (via GitHub pull requests) by the owners\nof the repository before being merged by a committer.\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/CONTRIBUTING",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-05-03T19:46:22Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-02-21"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-02-21"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-11-09T18:30:03Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-02-21"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Managing Data on Tiered Storage for Scientific Workflows"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Managing Data on Tiered Storage for Scientific Workflows"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8989815053207407,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "**************************************************************************\nMaDaTS: Managing Data on Tiered Storage for Scientific Workflows \nMaDaTS provides an integrated data management and workflow execution\nframework on multi-tiered storage systems. Users of MaDaTS can execute\na workflow by either specifying the workflow stages in a YAML description\nfile, or use the API to manage workflows and associated data. Some examples\nof specifying the workflow description and using the API are provided in\nthe examples/ directory. \nThe MaDaTS API provides simple data abstractions for managing workflow and\ndata on multi-tiered storage. It takes a data-driven approach to executing\nworkflows, where a workflow is mapped to a Virtual Data Space (VDS) consisting\nof virtual data objects. A user simply creates a VDS and adds virtual data\nobjects to the VDS, and MaDaTS takes care of all the necessary data movements\nand bindings to seamlessly manage a workflow and associated data across multiple\nstorage tiers. \n"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/dghoshal-lbl/madats/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/dghoshal-lbl/madats/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "dghoshal-lbl/madats"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "EXECUTION SETUP",
+        "type": "Text_excerpt",
+        "value": "The environment variable `MADATS_HOME` should be set prior to using MaDaTS.\nThe setup script creates a MADATS_HOME file that can be sourced prior to\nusing MaDaTS as:\n\n       source MADATS_HOME\n\nAlternatively, users can set `MADATS_HOME` as:\n\n       # BASH / ZSH\n       export MADATS_HOME=</path/to/madats/source/directory>\n\n       # CSH / TCSH\n       setenv MADATS_HOME </path/to/madats/source/directory>\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/dghoshal-lbl/madats/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "scientific workflows",
+          "data management",
+          "multi-tiered storage",
+          "high performance computing"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "*** License Agreement ***\n\nManaging Data on Tiered Storage for Scientific Workflows (MaDaTS)\nCopyright (c) 2018, The Regents of the University of California,\nthrough Lawrence Berkeley National Laboratory (subject to receipt\nof any required approvals from the U.S. Dept. of Energy). All rights\nreserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n(1) Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n\n(2) Redistributions in binary form must reproduce the above copyright\nnotice, this list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n\n(3) Neither the name of the University of California, Lawrence Berkeley\nNational Laboratory, U.S. Dept. of Energy nor the names of its contributors\nmay be used to endorse or promote products derived from this software\nwithout specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/BSD",
+        "spdx_id": "BSD",
+        "type": "License",
+        "value": "BSD"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "LICENSE",
+        "type": "Text_excerpt",
+        "value": "3-Clause BSD License.\nCopyright (c) 2018, The Regents of the University of California,\nthrough Lawrence Berkeley National Laboratory (subject to receipt\nof any required approvals from the U.S. Dept. of Energy). All rights\nreserved."
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "madats"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "dghoshal-lbl"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "MaDaTS"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 161741,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 671,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "dghoshal-lbl",
+          "type": "User"
+        },
+        "date_created": "2018-08-10T17:22:40Z",
+        "date_published": "2018-08-10T17:25:04Z",
+        "description": "First major release of MaDaTS: an integrated data management and workflow execution framework on multi-tiered storage systems.",
+        "html_url": "https://github.com/dghoshal-lbl/madats/releases/tag/v1.1.2",
+        "name": "MaDaTSv1.1.2",
+        "release_id": 12353401,
+        "tag": "v1.1.2",
+        "tarball_url": "https://api.github.com/repos/dghoshal-lbl/madats/tarball/v1.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/dghoshal-lbl/madats/releases/12353401",
+        "value": "https://api.github.com/repos/dghoshal-lbl/madats/releases/12353401",
+        "zipball_url": "https://api.github.com/repos/dghoshal-lbl/madats/zipball/v1.1.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyyaml",
+        "type": "Software_application",
+        "value": "pyyaml>=4.2b1",
+        "version": ">=4.2b1"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "six",
+        "type": "Software_application",
+        "value": "six>=1.4.1",
+        "version": ">=1.4.1"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pytest",
+        "type": "Software_application",
+        "value": "pytest>=3.4.0",
+        "version": ">=3.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scandir",
+        "type": "Software_application",
+        "value": "scandir==1.9.0",
+        "version": "==1.9.0"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "PRE-REQUISITES",
+        "type": "Text_excerpt",
+        "value": "* Python (>= 2.7)\n* pip (>= 9.0)\n"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:33:32",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example",
+        "type": "Text_excerpt",
+        "value": "In order to manage data and workflow, users need to create virtual data objects\nand tasks, and add them to a Virtual Data Space (VDS). Data and tasks of the\nworkflow are managed through MaDaTS by simply calling the `manage` function.\nAn example listing the steps to manage a workflow and its data through MaDaTS\nis given below.\n\n\timport madats\n\t\n\t# Create a Virtual Data Space (VDS)\n\tvds = madats.VirtualDataSpace()\n\n\t# Create Virtual Data Object\n\tvdo = madats.VirtualDataObject('/path/to/data')\n\n\t# Create a Task\n\ttask = madats.Task(command='/application/program')\n\ttask.params = ['arg1', 'arg2', vdo]\n\n\t# Associate tasks to virtual data objects\n\tvdo.producers = [task]\n\n\t# Add the virtual data object to the VDS\n\tvds.add(vdo)\n\n\t# Manage data and workflow execution through MaDaTS\n\tmadats.manage(vds)\n\nIt is important to note how MaDaTS uses data as the first-class\ncitizen. Everything in MaDaTS is centered around virtual data objects.\nTasks are specified as *producers* and *consumers* of virtual data\nobjects. A VDS is a collection of several virtual data objects that\nthat represent the data of a workflow.\n\nIn addition to creating a VDS step-by-step as shown above, users\ncan also map a workflow into VDS. MaDaTS provides the `map` function\nthat takes as input a YAML description of a workflow, or a dict-like\nobject (similar to JSON). \n\n       import madats\n\n       # Map a YAML workflow description to VDS\n       vds = madats.map('workflow/description/yaml', language='yaml') \n\n$MADATS_HOME/examples/madats_workflow.yaml specifies a description file\nfor a sample workflow. The examples/ directory also contains examples that\ndescribe different ways of specifying a workflow and data management properties\nin MaDaTS.\n"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v1.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/dghoshal-lbl/madats/master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

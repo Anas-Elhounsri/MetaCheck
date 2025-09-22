@@ -1,0 +1,1091 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "elin.waring@gmail.com",
+        "type": "String",
+        "value": "Elin Waring"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "msquinn@google.com",
+        "type": "String",
+        "value": "Michael Quinn"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "amcnamara@smith.edu",
+        "type": "String",
+        "value": "Amelia McNamara"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "earino@gmail.com",
+        "type": "String",
+        "value": "Eduardo Arino de la Rubia"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "haozhu233@gmail.com",
+        "type": "String",
+        "value": "Hao Zhu"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "sellis18@jhmi.edu",
+        "type": "String",
+        "value": "Shannon Ellis"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/skimr"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/skimr/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/skimr/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/ropensci/skimr/actions?workflow=R-CMD-check",
+          "https://app.codecov.io/gh/ropensci/skimr"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nContributions to `skimr` whether in the form of bug fixes, issue reports, new\ncode or documentation improvement are welcome. Please use the github issue\ntracker. For any pull request please link to or open a corresponding issue in\nthe issue tracker. Please ensure that you have notifications turned on and\nrespond to questions, comments or needed changes promptly.\n\n## Understanding the scope of skimr\n\n`skimr` solves a very specific set of problems focused on the compact, flexible\nand useful display of summary data in the console. By itself it is not intended\nas a replacement for packages that create publication ready tables. The basic\nconcept is that of \"skimming\" a data frame or tibble to get an overview of the\ndata it contains.\n\nOne intended group of users is students in a first semester statistics class. As\nsuch, the package is focused on data types that are widely used. One general\nguideline is that if a data type is not found in the `datasets` package it will\nnot be directly supported in `skimr`. Fortunately, `skim()` has a generic\ninternal function for handling a variety of data types `get_skimmers()`. See the\ndocumentation for that function or the vignette \"Supporting additional objects\"\nfor documentation on how to do this.\n\nSimilarly, `skimr` is deeply tied to the `tidyverse` and `dplyr` in particular.\nThe comes with a lot of benefits, but some constraints too. Most importantly,\ndata processed by `skim()` needs to be an object that inherits from a data frame\nor in a form that can be coerced to a data frame.\n\n## Tests\n\n`skimr` uses `testthat` for testing. Please try to provide 100% test coverage\nfor any submitted code and always check that existing tests continue to pass. If\nyou are a beginner and need help with writing a test, mention this in the issue\nand we will try to help.\n\n## Pull requests\n\nPull requests should be against the _develop_ branch not the main branch. You\ncan set this when creating your pull request. Please make a separately named\nbranch to submit. Keep each branch for a complete specific issue. If you create\na pull request by editing in the GitHub web editor and you end up with multiple\npull requests, note that in your issue comments.\n\n## Code style\n\nWe follow the [tidyverse style guide](http://style.tidyverse.org/).\n\n## Pre commits\n\nTo enforce coding style and support development, we rely on [pre-commit.com],\nand the [R precommit package](https://github.com/lorenzwalthert/precommit). This\ntool runs a series of additional checks for your code before `git commit`\ncompletes.\n\nTo install the package and enable precommits, run the following:\n\n```\n# once on your system\nremotes::install_github(\"lorenzwalthert/precommit\")\nprecommit::install_precommit()\n\n# once in every git repo either\n# * after cloning a repo that already uses pre-commit or\n# * if you want introduce pre-commit to this repo\nprecommit::use_precommit()\n```\n\nThe checks will run automatically from there.\n\n## Code of Conduct\n\nWhen contributing to `skimr` you must follow the [code of conduct defined by rOpenSci](https://ropensci.org/code-of-conduct/).\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "skimr <a href='https://docs.ropensci.org/skimr/'>"
+        ],
+        "type": "Text_excerpt",
+        "value": "We welcome issue reports and pull requests, including potentially adding\nsupport for commonly used variable classes. However, in general, we\nencourage users to take advantage of skimr\u2019s flexibility to add their\nown customized classes. Please see the\n[contributing](https://docs.ropensci.org/skimr/CONTRIBUTING.html) and\n[conduct](https://ropensci.org/code-of-conduct/) documents.\n\n[![ropenci\\_footer](https://ropensci.org/public_images/ropensci_footer.png)](https://ropensci.org)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-05-25T19:04:26Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-11T17:36:58Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A frictionless, pipeable approach to dealing with summary statistics"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+        "type": "String",
+        "value": "A simple to use summary function that can be used with pipes\n    and displays nicely in the console. The default summary statistics may\n    be modified by the user as can the default formatting.  Support for\n    data frames and vectors is included, and users can implement their own\n    skim methods for specific object types as described in a vignette.\n    Default summaries include support for inline spark graphs.\n    Instructions for managing these on specific operating systems are\n    given in the \"Using skimr\" vignette and the README."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A simple to use summary function that can be used with pipes and displays nicely in the console. The default summary statistics may be modified by the user as can the default formatting. Support for data frames and vectors is included, and users can implement their own skim methods for specific object types as described in a vignette. Default summaries include support for inline spark graphs. Instructions for managing these on specific operating systems are given in the \"skimr\" vignette and the README."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Presentation is in a compact horizontal format:",
+        "parent_header": [
+          "skimr <a href='https://docs.ropensci.org/skimr/'>",
+          "Skim statistics in the console"
+        ],
+        "type": "Text_excerpt",
+        "value": "    skim(iris)\n\n    ## \u2500\u2500 Data Summary \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n    ##                            Values\n    ## Name                       iris  \n    ## Number of rows             150   \n    ## Number of columns          5     \n    ## _______________________          \n    ## Column type frequency:           \n    ##   factor                   1     \n    ##   numeric                  4     \n    ## ________________________         \n    ## Group variables            None  \n    ## \n    ## \u2500\u2500 Variable type: factor \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n    ##   skim_variable n_missing complete_rate ordered n_unique top_counts               \n    ## 1 Species               0             1 FALSE          3 set: 50, ver: 50, vir: 50\n    ## \n    ## \u2500\u2500 Variable type: numeric \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n    ##   skim_variable n_missing complete_rate mean    sd  p0 p25  p50 p75 p100 hist \n    ## 1 Sepal.Length          0             1 5.84 0.828 4.3 5.1 5.8  6.4  7.9 \u2586\u2587\u2587\u2585\u2582\n    ## 2 Sepal.Width           0             1 3.06 0.436 2   2.8 3    3.3  4.4 \u2581\u2586\u2587\u2582\u2581\n    ## 3 Petal.Length          0             1 3.76 1.77  1   1.6 4.35 5.1  6.9 \u2587\u2581\u2586\u2587\u2582\n    ## 4 Petal.Width           0             1 1.20 0.762 0.1 0.3 1.3  1.8  2.5 \u2587\u2581\u2587\u2585\u2583\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Has a useful summary function",
+        "parent_header": [
+          "skimr <a href='https://docs.ropensci.org/skimr/'>",
+          "Skim statistics in the console"
+        ],
+        "type": "Text_excerpt",
+        "value": "    skim(iris) |>\n      summary()\n\n    ## \u2500\u2500 Data Summary \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n    ##                            Values\n    ## Name                       iris  \n    ## Number of rows             150   \n    ## Number of columns          5     \n    ## _______________________          \n    ## Column type frequency:           \n    ##   factor                   1     \n    ##   numeric                  4     \n    ## ________________________         \n    ## Group variables            None\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.8817574746217531,
+      "result": {
+        "original_header": "skimr <a href='https://docs.ropensci.org/skimr/'>",
+        "type": "Text_excerpt",
+        "value": "\n`skimr` provides a frictionless approach to summary statistics which\nconforms to the [principle of least\nsurprise](https://en.wikipedia.org/wiki/Principle_of_least_astonishment),\ndisplaying summary statistics the user can skim quickly to understand\ntheir data. It handles different data types and returns a `skim_df`\nobject which can be included in a pipeline or displayed nicely for the\nhuman reader. \n**Note: `skimr` version 2 has major changes when skimr is used\nprogrammatically. Upgraders should review this document, the release\nnotes and vignettes carefully.**\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9557895320285708,
+      "result": {
+        "original_header": "Skim statistics in the console",
+        "type": "Text_excerpt",
+        "value": "-   Provides a larger set of statistics than `summary()`, including\n    missing, complete, n, and sd.\n-   reports each data types separately\n-   handles dates, logicals, and a variety of other types\n-   supports spark-bar and spark-line based on the [pillar\n    package](https://github.com/r-lib/pillar).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9601658094893739,
+      "result": {
+        "original_header": "Knitted results",
+        "type": "Text_excerpt",
+        "value": "Simply skimming a data frame will produce the horizontal print layout\nshown above. We provide a `knit_print` method for the types of objects\nin this package so that similar results are produced in documents. To\nuse this, make sure the `skimmed` object is the last item in your code\nchunk. \nData summary \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9117936058909019,
+      "result": {
+        "original_header": "Customizing skimr",
+        "type": "Text_excerpt",
+        "value": "Although skimr provides opinionated defaults, it is highly customizable.\nUsers can specify their own statistics, change the formatting of\nresults, create statistics for new classes and develop skimmers for data\nstructures that are not data frames.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8784603336269667,
+      "result": {
+        "original_header": "Specify your own statistics and classes",
+        "type": "Text_excerpt",
+        "value": "Users can specify their own statistics using a list combined with the\n`skim_with()` function factory. `skim_with()` returns a new `skim`\nfunction that can be called on your data. You can use this factory to\nproduce summaries for any type of column within your data. \nBut you can also helpers from the `tidyverse` to create new anonymous\nfunctions that set particular function arguments. The behavior is the\nsame as in `purrr` or `dplyr`, with both `.` and `.x` as acceptable\npronouns. Setting the `append = FALSE` argument uses only those\nfunctions that you\u2019ve provided. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8784205918373549,
+      "result": {
+        "original_header": "Skimming other objects",
+        "type": "Text_excerpt",
+        "value": "`skimr` also provides a small API for writing packages that provide\ntheir own default summary functions for data types not covered above. It\nrelies on R S3 methods for the `get_skimmers` function. This function\nshould return a `sfl`, similar to customization within `skim_with()`,\nbut you should also provide a value for the `class` argument. Here\u2019s an\nexample. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.936825778622182,
+      "result": {
+        "original_header": "Printing spark histograms and line graphs in knitted documents",
+        "type": "Text_excerpt",
+        "value": "Spark-bar and spark-line work in the console, but may not work when you\nknit them to a specific document format. The same session that produces\na correctly rendered HTML document may produce an incorrectly rendered\nPDF, for example. This issue can generally be addressed by changing\nfonts to one with good building block (for histograms) and Braille\nsupport (for line graphs). For example, the open font \u201cDejaVu Sans\u201d from\nthe `extrafont` package supports these. You may also want to try\nwrapping your results in `knitr::kable()`. Please see the vignette on\nusing fonts for details. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9405154868097589,
+      "result": {
+        "original_header": "Inspirations",
+        "type": "Text_excerpt",
+        "value": "-   [TextPlots](https://github.com/sunetos/TextPlots.jl) for use of\n    Braille characters \n-   [spark](https://github.com/holman/spark) for use of block\n    characters. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/ropensci/skimr/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/skimr/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/skimr/main/inst/other_docs/skimr_in_jupyter.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/inst/other_docs/skimr_in_jupyter.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 80
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/skimr/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/skimr"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "skimr "
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/skimr/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "skimr"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/ropensci_footer.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "skimr <a href='https://docs.ropensci.org/skimr/'>"
+        ],
+        "type": "Text_excerpt",
+        "value": "The current released version of `skimr` can be installed from CRAN. If\nyou wish to install the current build of the next release you can do so\nusing the following:\n\n    # install.packages(\"devtools\")\n    devtools::install_github(\"ropensci/skimr\")\n\nThe APIs for this branch should be considered reasonably stable but\nstill subject to change if an issue is discovered.\n\nTo install the version with the most recent changes that have not yet\nbeen incorporated in the main branch (and may not be):\n\n    devtools::install_github(\"ropensci/skimr\", ref = \"develop\")\n\nDo not rely on APIs from the develop branch, as they are likely to\nchange.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/skimr/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/skimr/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/skimr/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "peer-reviewed, r, r-package, ropensci, rstats, summary-statistics, unconf, unconf17"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "skimr"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "skimr: Compact and Flexible Summaries of Data"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+        "type": "String",
+        "value": "skimr"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 1368483,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 135508,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jupyter Notebook",
+        "size": 5109,
+        "type": "Programming_language",
+        "value": "Jupyter Notebook"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/skimr/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2025-07-26T00:17:04Z",
+        "date_published": "2025-07-27T18:06:04Z",
+        "description": "* Updated handling of spark graphs for Windows when UTF-8 is supported.\n* Test modernization, thanks to @olivroy\n* Updated documentation to use base pipe\n* Updated to no longer import magrittr and import rlang .data\n\n### MINOR IMPROVEMENTS\n* Fixed documentation links\n",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v2.2.0",
+        "name": "skimr 2.2.0",
+        "release_id": 235465227,
+        "tag": "v2.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v2.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/235465227",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/235465227",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v2.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2022-12-23T01:44:31Z",
+        "date_published": "2022-12-23T15:48:14Z",
+        "description": "Updated to work with newer version of `{purrr}`.",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v2.1.5",
+        "name": "skimr 2.1.5",
+        "release_id": 87093058,
+        "tag": "v2.1.5",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v2.1.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/87093058",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/87093058",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v2.1.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "michaelquinn32",
+          "type": "User"
+        },
+        "date_created": "2022-05-09T17:38:47Z",
+        "date_published": "2022-05-09T17:43:41Z",
+        "description": "### NEW FEATURES\r\n\r\n*   skim() used within a function now prints the data frame name.\r\n*   we have improved the interaction between focus() and the print methods.\r\n    *  columns selected in focus() are shown in the correct order\r\n    *  some edge cases relating to empty skim types have been improved\r\n    *  you can control the width rule line for the printed subtables with an\r\n       option: `skimr_table_header_width`. The default is to use the\r\n       console width, i.e. the value of the `width` option.\r\n\r\n*   we have improved performance when handling large data with many columns.\r\n\r\n### MINOR IMPROVEMENTS\r\n\r\n*   Replace the Suppporting Additional Objects vignette\r\n    with Extending skimr.  Remove sf from Suggests.\r\n*   Default support for `haven_labelled` columns is now supported. These\r\n    columns are summarized using skimmers for the underlying data, typically\r\n    either numeric or character.\r\n    \r\n### BUG FIXES\r\n\r\n*   A `skim_list` (most commonly generated by the `partition()` function) also\r\n    inherits from a `list`",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v2.1.4",
+        "name": "v2.1.4",
+        "release_id": 66398436,
+        "tag": "v2.1.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v2.1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/66398436",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/66398436",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v2.1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "michaelquinn32",
+          "type": "User"
+        },
+        "date_created": "2021-03-06T17:53:00Z",
+        "date_published": "2021-03-16T17:38:22Z",
+        "description": "### MINOR IMPROVEMENTS\r\n\r\n*   Add support for data tables when dtplyr is used.\r\n*   Improve tests.\r\n",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v2.1.3",
+        "name": "v2.1.3",
+        "release_id": 39149612,
+        "tag": "v2.1.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v2.1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/39149612",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/39149612",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v2.1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2020-07-05T15:41:28Z",
+        "date_published": "2020-07-06T15:03:35Z",
+        "description": "Mainly updating tests to match the new `knitr` release but also adding support for Timespan and updating a vignette.",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v2.1.2",
+        "name": "V2.1.2",
+        "release_id": 28261068,
+        "tag": "v2.1.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v2.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/28261068",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/28261068",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v2.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2019-11-12T20:24:56Z",
+        "date_published": "2019-11-13T01:22:43Z",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/2.0",
+        "name": "Skimr v2 Release",
+        "release_id": 21425359,
+        "tag": "2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/21425359",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/21425359",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2019-11-10T04:22:39Z",
+        "date_published": "2019-11-10T04:30:47Z",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/V2RC1.4",
+        "release_id": 21344286,
+        "tag": "V2RC1.4",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/V2RC1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/21344286",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/21344286",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/V2RC1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2019-11-09T18:32:15Z",
+        "date_published": "2019-11-10T03:05:44Z",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/V2RC1.3",
+        "release_id": 21343927,
+        "tag": "V2RC1.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/V2RC1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/21343927",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/21343927",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/V2RC1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2019-11-07T01:39:56Z",
+        "date_published": "2019-11-07T03:02:54Z",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/V2RC1.2",
+        "release_id": 21275446,
+        "tag": "V2RC1.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/V2RC1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/21275446",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/21275446",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/V2RC1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2019-10-28T02:42:03Z",
+        "date_published": "2019-10-29T03:12:41Z",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v2-RC-1.1",
+        "release_id": 21041174,
+        "tag": "v2-RC-1.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v2-RC-1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/21041174",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/21041174",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v2-RC-1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2019-10-26T13:12:04Z",
+        "date_published": "2019-10-26T13:40:26Z",
+        "description": "This previews a major release that breaks backward compatibility.",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v2-RC-1",
+        "name": "Release candidate for skimr v2",
+        "release_id": 20997967,
+        "tag": "v2-RC-1",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v2-RC-1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/20997967",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/20997967",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v2-RC-1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2019-05-27T00:30:34Z",
+        "date_published": "2019-05-27T08:20:07Z",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v1.0.6",
+        "name": "v1.0.6",
+        "release_id": 17601562,
+        "tag": "v1.0.6",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v1.0.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/17601562",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/17601562",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v1.0.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2019-04-10T01:03:24Z",
+        "date_published": "2019-04-10T11:44:35Z",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v1.0.6-rc3",
+        "release_id": 16672073,
+        "tag": "v1.0.6-rc3",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v1.0.6-rc3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/16672073",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/16672073",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v1.0.6-rc3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2019-04-02T08:58:44Z",
+        "date_published": "2019-04-02T09:02:26Z",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v1.0.6-rc2",
+        "name": "v1.0.6-rc2",
+        "release_id": 16496114,
+        "tag": "v1.0.6-rc2",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v1.0.6-rc2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/16496114",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/16496114",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v1.0.6-rc2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2019-04-01T12:42:10Z",
+        "date_published": "2019-04-01T12:49:37Z",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v1.0.6-rc",
+        "release_id": 16474727,
+        "tag": "v1.0.6-rc",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v1.0.6-rc",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/16474727",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/16474727",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v1.0.6-rc"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2018-06-06T23:57:14Z",
+        "date_published": "2018-06-07T20:04:39Z",
+        "description": "### NEW FEATURES\r\n  * You can use skim_with() with a nest list of functions:\r\n     `skim_with(.list = mylist)` or `skim_with(!!!mylist)`\r\n  * More polished display of subtables in default printing.\r\n\r\n### BUG FIXES\r\n  * Fix issue with conflict between knitr and skimr versions \r\n     of kable() that occurred intermittently.\r\n  * Do not skim a class when the skimmer list is empty for that class.\r\n  * Fix a mistake in a test of skim_print for top counts.",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/1.0.3",
+        "name": "skimr 1.0.3 (2018-06-06)",
+        "release_id": 11378475,
+        "tag": "1.0.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/1.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/11378475",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/11378475",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/1.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2018-04-10T20:44:29Z",
+        "date_published": "2018-04-10T20:47:23Z",
+        "description": "New CRAN release containing a number of bug fixes and improvements.\r\n\r\n### NEW FEATURES\r\n  * You can create skimmers with the formula syntax from `rlang`:\r\n    `skim_with(iqr = ~IQR(.x, na.rm = TRUE))`.\r\n\r\n### MAJOR CHANGES\r\n  * The median label has been changed to p50 for consistency with \r\n     the previous changes to p0 and p100. \r\n\r\n#### MINOR IMPROVEMENTS\r\n   * Impovements and corrections to to readme and other documentation.\r\n   * New vignette showing defaults for skimmers and formats.\r\n   * Vector output match data frame output more closely.\r\n   * Add minimum required version for testhat.\r\n   * Add minimum requred version for knitr.\r\n\r\n### BUG FIXES\r\n  * You can use `skim_with()` to add and remove skimmers at the same time, i.e.\r\n    `skim_with(iqr = IQR, hist = NULL)` works as expected.\r\n  * Histograms work when Inf or -Inf are present.\r\n  * Change seq( ) parameter to length.out to avoid problems with name matching.\r\n  * Summary should not display a data frame name of \".\" \r\n    (which occurs when piping begins with the data frame).",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/v1.0.2",
+        "name": "v1.0.2",
+        "release_id": 10484264,
+        "tag": "v1.0.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/v1.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/10484264",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/10484264",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/v1.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "elinw",
+          "type": "User"
+        },
+        "date_created": "2018-01-10T03:35:31Z",
+        "date_published": "2018-01-10T03:42:22Z",
+        "description": "### NEW FEATURES\r\n  * Add support for spark plots on Windows\r\n\r\n### MAJOR CHANGES\r\n  * `spark_line()` and `spark_bar()` are no longer exported\r\n  * Default statistics for numeric changed from `min(x)` and `max(x)` to \r\n    `quantile(x, probs = 0)` and `quantile(x, probs = 1)`. These changes\r\n    lead to more predictable behaviors when a column is all NA values.\r\n\r\n#### MINOR IMPROVEMENTS\r\n  * Add minimimum required version for stringr\r\n  * Improve documentation in general, especially those related to fonts\r\n\r\n### BUG FIXES\r\n  * Fix issue where a histogram for data with all `NA`s threw an error\r\n  * Suppress progress bars from `dplyr::do()`",
+        "html_url": "https://github.com/ropensci/skimr/releases/tag/1.0.1",
+        "name": "skimr 1.0.1 (2018-01-09)",
+        "release_id": 9173097,
+        "tag": "1.0.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/skimr/tarball/1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/skimr/releases/9173097",
+        "value": "https://api.github.com/repos/ropensci/skimr/releases/9173097",
+        "zipball_url": "https://api.github.com/repos/ropensci/skimr/zipball/1.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "usage",
+    "faq"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:27:44",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1133
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Built in support for strings, lists and other column classes",
+        "parent_header": [
+          "skimr <a href='https://docs.ropensci.org/skimr/'>",
+          "Skim statistics in the console"
+        ],
+        "type": "Text_excerpt",
+        "value": "    skim(dplyr::starwars)\n\n    ## \u2500\u2500 Data Summary \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n    ##                            Values         \n    ## Name                       dplyr::starwars\n    ## Number of rows             87             \n    ## Number of columns          14             \n    ## _______________________                   \n    ## Column type frequency:                    \n    ##   character                8              \n    ##   list                     3              \n    ##   numeric                  3              \n    ## ________________________                  \n    ## Group variables            None           \n    ## \n    ## \u2500\u2500 Variable type: character \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n    ##   skim_variable n_missing complete_rate min max empty n_unique whitespace\n    ## 1 name                  0         1       3  21     0       87          0\n    ## 2 hair_color            5         0.943   4  13     0       11          0\n    ## 3 skin_color            0         1       3  19     0       31          0\n    ## 4 eye_color             0         1       3  13     0       15          0\n    ## 5 sex                   4         0.954   4  14     0        4          0\n    ## 6 gender                4         0.954   8   9     0        2          0\n    ## 7 homeworld            10         0.885   4  14     0       48          0\n    ## 8 species               4         0.954   3  14     0       37          0\n    ## \n    ## \u2500\u2500 Variable type: list \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n    ##   skim_variable n_missing complete_rate n_unique min_length max_length\n    ## 1 films                 0             1       24          1          7\n    ## 2 vehicles              0             1       11          0          2\n    ## 3 starships             0             1       16          0          5\n    ## \n    ## \u2500\u2500 Variable type: numeric \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n    ##   skim_variable n_missing complete_rate  mean    sd p0   p25 p50   p75 p100 hist \n    ## 1 height                6         0.931 175.   34.8 66 167   180 191    264 \u2582\u2581\u2587\u2585\u2581\n    ## 2 mass                 28         0.678  97.3 169.  15  55.6  79  84.5 1358 \u2587\u2581\u2581\u2581\u2581\n    ## 3 birth_year           44         0.494  87.6 155.   8  35    52  72    896 \u2587\u2581\u2581\u2581\u2581\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Support for spark histograms",
+        "parent_header": [
+          "skimr <a href='https://docs.ropensci.org/skimr/'>",
+          "Limitations of current version"
+        ],
+        "type": "Text_excerpt",
+        "value": "With versions of R before 4.2.1, there are known issues with printing\nthe spark-histogram characters when printing a data frame. For example,\n`\"\u2582\u2585\u2587\"` is printed as `\"<U+2582><U+2585><U+2587>\"`. This longstanding\nproblem [originates in the low-level\ncode](https://stat.ethz.ch/pipermail/r-devel/2015-May/071250.html) for\nprinting dataframes. While some cases have been addressed, there are,\nfor example, reports of this issue in Emacs ESS. While this is a deep\nissue, there is [ongoing work to address it in base\nR](https://blog.r-project.org/2020/05/02/utf-8-support-on-windows/). We\nrecommend upgrading to at least R 4.2.1 to address this issue.\n\nThis means that while `skimr` can render the histograms to the console\nand in RMarkdown documents, it cannot in other circumstances. This\nincludes:\n\n-   converting a `skimr` data frame to a vanilla R data frame, but\n    tibbles render correctly\n-   in the context of rendering to a pdf using an engine that does not\n    support utf-8.\n\nOne workaround for showing these characters in Windows is to set the\nCTYPE part of your locale to Chinese/Japanese/Korean with\n`Sys.setlocale(\"LC_CTYPE\", \"Chinese\")`. The helper function\n`fix_windows_histograms()` does this for you.\n\nAnd last but not least, we provide `skim_without_charts()` as a\nfallback. This makes it easy to still get summaries of your data, even\nif unicode issues continue.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+        "type": "String",
+        "value": "2.2.1.9000"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.1.5"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/skimr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

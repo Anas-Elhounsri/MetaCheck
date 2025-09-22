@@ -1,0 +1,685 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgements",
+        "parent_header": [
+          "phylogram"
+        ],
+        "type": "Text_excerpt",
+        "value": "This software was developed at \n[Victoria University of Wellington](http://www.victoria.ac.nz/) \nwith funding from a Rutherford Foundation Postdoctoral Research Fellowship \naward from the Royal Society of New Zealand.\n\n\n[![ropensci_footer](https://ropensci.org/public_images/ropensci_footer.png)](https://ropensci.org)\n"
+      },
+      "source": "https://github.com/ropensci/phylogram/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Shaun Wilkinson"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "shaunpwilkinson@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-7332-7931",
+        "type": "String",
+        "value": "Shaun Wilkinson"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "simon.davy@vuw.ac.nz",
+        "identifier": "https://orcid.org/0000-0003-3584-5356",
+        "type": "String",
+        "value": "Simon Davy"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2018",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"To cite phylogram in publications use:\")\n\ncitEntry(entry = \"Manual\",\n   title = \"{phylogram}: an R package for phylogenetic analysis with nested lists\",\n   author = personList(as.person(\"Shaun P. Wilkinson\"), as.person(\"Simon K. Davy\")),\n   url = \"http://joss.theoj.org/papers/10.21105/joss.00790\",\n   journal = \"Journal of Open Source Software\",\n   volume = \"3\",\n   pages = \"790\",\n   year   = \"2018\",\n   doi = \"10.21105/joss.00790\",\n   textVersion =\n   paste0(\"Wilkinson SP, Davy SK (2018) phylogram: an R package for phylogenetic \",\n          \"analysis with nested lists. Journal of Open Source Software 3:790. \",\n          \"DOI: 10.21105/joss.00790\")\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/inst/CITATION",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/phylogram"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://github.com/ropensci/phylogram"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://github.com/ropensci/phylogram"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.org/shaunpwilkinson/phylogram",
+          "https://codecov.io/github/shaunpwilkinson/phylogram"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING #\n\n### Bugs?\n\n* Submit an issue on the [Issues page](https://github.com/ropensci/phylogram/issues)\n\n### Issues and Pull Requests\n\nIf you are considering a pull request, you may want to open an issue first to discuss with the maintainer(s).\n\n### Code contributions\n\n* Fork this repo to your GitHub account\n* Clone your version on your account down to your machine from your account, e.g,. `git clone https://github.com/<yourgithubusername>/phylogram.git`\n* Make sure to track progress upstream (i.e., on our version of `phylogram` at `ropensci/phylogram`) by doing `git remote add upstream https://github.com/ropensci/phylogram.git`. Before making changes make sure to pull changes in from upstream by doing either `git fetch upstream` then merge later or `git pull upstream` to fetch and merge in one step\n* Make your changes (bonus points for making changes on a new feature branch - see <https://guides.github.com/introduction/flow/> for how to contribute by branching, making changes, then submitting a pull request)\n* Push up to your account\n* Submit a pull request to home base (likely master branch, but check to make sure) at `ropensci/phylogram`\n\n### Discussion forum\n\nCheck out our [discussion forum](https://discuss.ropensci.org) if you think your issue requires a longer form discussion.\n\n### Prefer to Email? \n\nEmail the person listed as maintainer in the `DESCRIPTION` file of this repo.\n\nThough note that private discussions over email don't help others - of course email is totally warranted if it's a sensitive problem of any kind.\n\n### Thanks for contributing!\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-01-17T02:07:39Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-04-18T08:58:07Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Dendrograms for Evolutionary Analysis"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+        "type": "String",
+        "value": "Contains functions for developing phylogenetic trees as\n    deeply-nested lists (\"dendrogram\" objects).\n    Enables bi-directional conversion between dendrogram and\n    \"phylo\" objects\n    (see Paradis et al (2004) <doi:10.1093/bioinformatics/btg412>),\n    and features several tools for command-line tree\n    manipulation and import/export via Newick parenthetic text."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Contains functions for developing phylogenetic trees as\n    deeply-nested lists (\"dendrogram\" objects).\n    Enables bi-directional conversion between dendrogram and\n    \"phylo\" objects\n    (see Paradis et al (2004) <doi:10.1093/bioinformatics/btg412>),\n    and features several tools for command-line tree\n    manipulation and import/export via Newick parenthetic text."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9876093878525793,
+      "result": {
+        "original_header": "phylogram",
+        "type": "Text_excerpt",
+        "value": "The **phylogram** R package is a tool for for developing \nphylogenetic trees as deeply-nested lists known as \"dendrogram\" objects. \nIt provides functions for conversion between \"dendrogram\" and \n\"phylo\" class objects, as well as several tools for command-line tree \nmanipulation and import/export via Newick parenthetic text.\nThis improves accessibility to the comprehensive range of object-specific \nanalytical and tree-visualization functions found across a wide array of \nbioinformatic R packages. \n"
+      },
+      "source": "https://github.com/ropensci/phylogram/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "http://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/phylogram/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/phylogram/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/phylogram"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "phylogram"
+      },
+      "source": "https://github.com/ropensci/phylogram/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/phylogram"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "phylogram"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.21105/joss.00790"
+      },
+      "source": "https://github.com/ropensci/phylogram/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.1293634"
+      },
+      "source": "https://github.com/ropensci/phylogram/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://joss.theoj.org/papers/10.21105/joss.00790/status.svg"
+      },
+      "source": "https://github.com/ropensci/phylogram/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/ropensci_footer.png"
+      },
+      "source": "https://github.com/ropensci/phylogram/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "phylogram"
+        ],
+        "type": "Text_excerpt",
+        "value": "To download **phylogram** from CRAN and load the package, run\n\n```R\ninstall.packages(\"phylogram\")\nlibrary(\"phylogram\")\n```\n\nTo download the latest development version from GitHub, run:\n\n```R\ndevtools::install_github(\"ropensci/phylogram\", build_vignettes = TRUE) \nlibrary(\"phylogram\")\n```\n\n"
+      },
+      "source": "https://github.com/ropensci/phylogram/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/phylogram/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://github.com/ropensci/phylogram/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://github.com/ropensci/phylogram/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "peer-reviewed, r, r-package, rstats"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "phylogram"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "phylogram: Dendrograms for Evolutionary Analysis"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+        "type": "String",
+        "value": "phylogram"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 29134,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 4646,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": "3.4.4"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/phylogram/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/phylogram/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "shaunpwilkinson",
+          "type": "User"
+        },
+        "date_created": "2018-06-20T10:56:39Z",
+        "date_published": "2018-06-20T11:12:09Z",
+        "description": "# phylogram 2.1.0\r\n* Addresses performance issues when converting between \"dendrogram\" and \"phylo\" objects\r\n* More examples and detail added to vignette\r\n* `as.cladogram` replaces `ultrametricize`\r\n* `read.dendrogram` now wraps `ape::read.tree` and converts to dendrogram via `as.dendrogram.phylo`\r\n\r\n",
+        "html_url": "https://github.com/ropensci/phylogram/releases/tag/v2.1.0",
+        "name": "phylogram 2.1.0",
+        "release_id": 11566194,
+        "tag": "v2.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/phylogram/tarball/v2.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/phylogram/releases/11566194",
+        "value": "https://api.github.com/repos/ropensci/phylogram/releases/11566194",
+        "zipball_url": "https://api.github.com/repos/ropensci/phylogram/zipball/v2.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "shaunpwilkinson",
+          "type": "User"
+        },
+        "date_created": "2018-04-24T04:33:29Z",
+        "date_published": "2018-04-24T05:32:04Z",
+        "description": "This release includes two new methods for converting between \"dendrogram\" and \"phylo\" objects, `as.dendrogram.phylo` and `as.phylo.dendrogram`. From version 2.0.0 all k-mer counting and clustering functions have been migrated to the **kmer** package. ",
+        "html_url": "https://github.com/ropensci/phylogram/releases/tag/v2.0",
+        "name": "phylogram version 2.0",
+        "release_id": 10686694,
+        "tag": "v2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/phylogram/tarball/v2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/phylogram/releases/10686694",
+        "value": "https://api.github.com/repos/ropensci/phylogram/releases/10686694",
+        "zipball_url": "https://api.github.com/repos/ropensci/phylogram/zipball/v2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "shaunpwilkinson",
+          "type": "User"
+        },
+        "date_created": "2017-06-14T02:44:04Z",
+        "date_published": "2017-06-15T04:11:34Z",
+        "description": "phylogram v1.0.0 released on CRAN 2017-06-12.",
+        "html_url": "https://github.com/ropensci/phylogram/releases/tag/v1.0.0",
+        "name": "Initial CRAN release",
+        "release_id": 6719825,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/phylogram/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/phylogram/releases/6719825",
+        "value": "https://api.github.com/repos/ropensci/phylogram/releases/6719825",
+        "zipball_url": "https://api.github.com/repos/ropensci/phylogram/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ape",
+        "type": "Software_application",
+        "value": "ape==>= 4.0",
+        "version": ">= 4.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "methods",
+        "type": "Software_application",
+        "value": "methods",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "stats",
+        "type": "Software_application",
+        "value": "stats",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:20:23",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 11
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "support": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Help",
+        "parent_header": [
+          "phylogram"
+        ],
+        "type": "Text_excerpt",
+        "value": "An overview of the package with links to the function documentation can be found by running\n\n```R\n?phylogram\n```\n\nIf you experience a problem using this package please\neither raise it as an issue on [GitHub](http://github.com/ropensci/phylogram/issues) \nor post it on the **phylogram** [google group](https://groups.google.com/group/phylogram).\n\n"
+      },
+      "source": "https://github.com/ropensci/phylogram/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example: reading and writing trees",
+        "parent_header": [
+          "phylogram"
+        ],
+        "type": "Text_excerpt",
+        "value": "Consider the simple example of a tree with three members named \n\"A\", \"B\" and \"C\", where \"B\" and \"C\" are more closely related\nto eachother than they are to \"A\". \nAn unweighted Newick string for this tree would be \"(A,(B,C));\".\nThis text can be imported as a \ndendrogram object using the `read.dendrogram` function \nas follows:\n\n```R\nlibrary(\"phylogram\")\nnewick <- \"(A,(B,C));\"\nx <- read.dendrogram(text = newick)\nplot(x)\n```\n\nThe following command writes the object back to the console in \nNewick format without edge weights:\n\n```R\nwrite.dendrogram(x, edges = FALSE)\n```\n\nThe syntax is similar when reading and writing text files, \nexcept that the `text` argument is replaced by `file` and a \nvalid file path is passed to the function.\n\nTo convert the dendrogram to a \"phylo\" object, run\n\n```R\ny <- as.phylo(x)\n```\n\nThese and more examples are available in the package vignette.\nTo view the vignette, run `vignette(\"phylogram-vignette\")` or access it \ndirectly from [CRAN](https://CRAN.R-project.org/package=phylogram).\n\n"
+      },
+      "source": "https://github.com/ropensci/phylogram/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+        "type": "String",
+        "value": "2.1.0.9000"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.1.0.9000"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/phylogram/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

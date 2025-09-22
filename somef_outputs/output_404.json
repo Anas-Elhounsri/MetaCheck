@@ -1,0 +1,936 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Engineering"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.960949539461463,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Karlsruhe Institute of Technology, Institute of Thermal Turbomachinery",
+        "email": "matthias.probst@kit.edu",
+        "identifier": "https://orcid.org/0000-0001-8729-0482",
+        "type": "String",
+        "value": "Matthias Probst"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Probst",
+            "given_name": "Matthias",
+            "name": "Matthias Probst",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-8729-0482"
+          }
+        ],
+        "datePublished": "2025",
+        "doi": "10.5281/zenodo.15849353",
+        "format": "cff",
+        "title": "ssnolib (1.5.1.3)",
+        "type": "File_dump",
+        "url": "https://doi.org/10.5281/zenodo.15849353",
+        "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\nauthors:\n  - family-names: \"Probst\"\n    given-names: \"Matthias\"\n    orcid: \"https://orcid.org/0000-0001-8729-0482\"\ntitle: \"ssnolib (1.5.1.3)\"\nversion: 1.5.1.3\ndoi: 10.5281/zenodo.15849353\ndate-released: 2025-08-10\nurl: \"https://github.com/matthiasprobst/ssnolib\""
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/matthiasprobst/ssnolib"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/matthiasprobst/ssnolib"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/.github/workflows/tests.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-09-01T16:12:41Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-14T14:16:14Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python library for working with the SSNO ontology."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python library for working with the SSNO ontology. "
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9727776476921876,
+      "result": {
+        "original_header": "ssnolib: Library for the simple standard name ontology SSNO",
+        "type": "Text_excerpt",
+        "value": "A Python library to work with the [SSNO ontology](https://matthiasprobst.github.io/ssno/1.5.1). It provides Python classes\nfor the ontology classes and facilitates the creation of JSON-LD files. JSON-LD files are both human- and machine-readable \nand most importantly machine-actionable. The library can be integrated in you data (conversion) pipelines. \n> **_NOTE:_** The version of the library corresponds to the version of the ontology it supports. Hence, 1.5.0.1 refers \n> to the ontology version 1.5.0 and the last part (.1) is the patch version of this library. \n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "ssnolib: Library for the simple standard name ontology SSNO"
+        ],
+        "type": "Text_excerpt",
+        "value": "Please find the online documentation [here](https://ssnolib.readthedocs.io/en/latest/). What you will find, is \neffectively the rendered versions of the Jupyter Notebooks under `/docs/tutorials/`. \n\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://ssnolib.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/matthiasprobst/ssnolib/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/docs/tutorials/StandardName.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/docs/tutorials/StandardName.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/docs/tutorials/Qualifications.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/docs/tutorials/Qualifications.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/docs/tutorials/Agents.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/docs/tutorials/Agents.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/docs/tutorials/referencing_StandardNameTables.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/docs/tutorials/referencing_StandardNameTables.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/docs/tutorials/StandardNameTable.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/docs/tutorials/StandardNameTable.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "matthiasprobst/ssnolib"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ssnolib: Library for the simple standard name ontology SSNO"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/./docs/Screenshot_webapp.png"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "ssnolib: Library for the simple standard name ontology SSNO"
+        ],
+        "type": "Text_excerpt",
+        "value": "```bash\npip install ssnolib\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Extras",
+        "parent_header": [
+          "ssnolib: Library for the simple standard name ontology SSNO",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "To be able to work with the local web app (using flask):\n    \n```bash\npip install ssnolib[app]\n```\n\nTo be able to read standard name tables in XML format (e.g. the cfconvetions.org standard name table), you need to add\nthe `xml` extra:\n\n```bash\npip installssnolib[xml]\n``` \n\nTo be able to read standard name table from YAML files, you need to add the `yaml` extra:\n\n```bash\npip install ssnolib[yaml]\n``` \n\n## Documentation\n\nA complete documentation is still under development. However, the docstrings of the classes and methods should be\nsufficient to get started. Also have a look at the [Tutorial Notebook](docs/Tutorial.ipynb) or following class diagram\nand the [examples](#examples) below.\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2024 MatthiasProbst\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ssnolib"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ssnolib"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "matthiasprobst"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 282638,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 43200,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 30270,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 160,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 126,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3",
+        "type": "Programming_language",
+        "value": "Python 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3.8",
+        "type": "Programming_language",
+        "value": "Python 3.8",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3.9",
+        "type": "Programming_language",
+        "value": "Python 3.9",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3.10",
+        "type": "Programming_language",
+        "value": "Python 3.10",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3.11",
+        "type": "Programming_language",
+        "value": "Python 3.11",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3.12",
+        "type": "Programming_language",
+        "value": "Python 3.12",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2025-08-14T14:19:51Z",
+        "date_published": "2025-08-14T14:22:58Z",
+        "description": "# v1.5.1.3\r\n\r\n- upgrade to ontolutils v0.19.2\r\n- it is enforced to use base-uri (e.g. a DOI URL) when calling `to_jsonld()` from `StandardNameTable` to ensure that the standard\r\n  names\r\n  are unique\r\n- add `skos.Note`\r\n- bugfix `hasDomainConceptSet`\r\n- bugfix downloading Table via Distribution.",
+        "html_url": "https://github.com/matthiasprobst/ssnolib/releases/tag/v1.5.1.3",
+        "name": "v1.5.1.3",
+        "release_id": 239991533,
+        "tag": "v1.5.1.3",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/tarball/v1.5.1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/239991533",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/239991533",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/zipball/v1.5.1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2025-05-18T10:50:49Z",
+        "date_published": "2025-05-18T10:53:24Z",
+        "description": "- correctly testing vector qualifications\r\n- improve on description generation when constructing a standard name from qualifications and transformations\r\n",
+        "html_url": "https://github.com/matthiasprobst/ssnolib/releases/tag/v1.5.1.2",
+        "name": "v1.5.1.2",
+        "release_id": 219334435,
+        "tag": "v1.5.1.2",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/tarball/v1.5.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/219334435",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/219334435",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/zipball/v1.5.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2025-03-30T18:03:31Z",
+        "date_published": "2025-03-30T18:05:58Z",
+        "description": "# Changes\r\n\r\n- Qualification is subclass of `DomainConceptSet` and `StandardNameModification`\r\n- add readthedocs documentation: https://ssnolib.readthedocs.io/en/latest/index.html\r\n",
+        "html_url": "https://github.com/matthiasprobst/ssnolib/releases/tag/v1.5.1.0",
+        "name": "v1.5.1.0",
+        "release_id": 209219475,
+        "tag": "v1.5.1.0",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/tarball/v1.5.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/209219475",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/209219475",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/zipball/v1.5.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2025-03-23T13:49:34Z",
+        "date_published": "2025-03-23T13:50:48Z",
+        "description": "# Changes\r\n\r\n- hotfix in function `get_standard_name`",
+        "html_url": "https://github.com/matthiasprobst/ssnolib/releases/tag/v1.5.0.1",
+        "name": "v1.5.0.1",
+        "release_id": 207692881,
+        "tag": "v1.5.0.1",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/tarball/v1.5.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/207692881",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/207692881",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/zipball/v1.5.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2025-03-23T13:37:14Z",
+        "date_published": "2025-03-23T13:38:36Z",
+        "description": "# Changes\r\n\r\n- update to newer version of the ontology",
+        "html_url": "https://github.com/matthiasprobst/ssnolib/releases/tag/v1.5.0.0",
+        "name": "v1.5.0.0",
+        "release_id": 207692356,
+        "tag": "v1.5.0.0",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/tarball/v1.5.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/207692356",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/207692356",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/zipball/v1.5.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2025-03-16T14:29:14Z",
+        "date_published": "2025-03-16T14:30:24Z",
+        "description": "# Changes\r\n\r\n- update to newer version of the ontology\r\n- restrict ontolutils dependency to version >0.14.1 and <1.0.0\r\n- bugfixes parsing the standard name table\r\n- add streamlit app to semantically enrich hdf5 files",
+        "html_url": "https://github.com/matthiasprobst/ssnolib/releases/tag/v1.4.0.0",
+        "name": "v1.4.0.0",
+        "release_id": 206092294,
+        "tag": "v1.4.0.0",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/tarball/v1.4.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/206092294",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/206092294",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/zipball/v1.4.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2024-12-27T21:23:18Z",
+        "date_published": "2024-12-27T21:27:51Z",
+        "description": "# v1.3.0.2\r\n\r\n- Resource identifier need not be a URL\r\n- update ontolutils dependency",
+        "html_url": "https://github.com/matthiasprobst/ssnolib/releases/tag/v1.3.0.2",
+        "name": "v1.3.0.2",
+        "release_id": 192516444,
+        "tag": "v1.3.0.2",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/tarball/v1.3.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/192516444",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/192516444",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/zipball/v1.3.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2024-11-27T18:39:44Z",
+        "date_published": "2024-12-15T14:31:52Z",
+        "description": "Initial Version corresponding to ontology version [1.3.0](https://matthiasprobst.github.io/ssno/1.3.0/)",
+        "html_url": "https://github.com/matthiasprobst/ssnolib/releases/tag/v1.3.0.1",
+        "name": "v1.3.0.1",
+        "release_id": 190823231,
+        "tag": "v1.3.0.1",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/tarball/v1.3.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/190823231",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/190823231",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/zipball/v1.3.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2024-10-28T18:15:12Z",
+        "date_published": "2024-10-28T18:17:24Z",
+        "description": "bugfix package data",
+        "html_url": "https://github.com/matthiasprobst/ssnolib/releases/tag/v1.3.0.1a4",
+        "name": "v1.3.0.1a4",
+        "release_id": 182318540,
+        "tag": "v1.3.0.1a4",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/tarball/v1.3.0.1a4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/182318540",
+        "value": "https://api.github.com/repos/matthiasprobst/ssnolib/releases/182318540",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/ssnolib/zipball/v1.3.0.1a4"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools>=78.1.1",
+        "version": ">=78.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "wheel",
+        "type": "Software_application",
+        "value": "wheel",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rdflib",
+        "type": "Software_application",
+        "value": "rdflib>=7.0.0",
+        "version": ">=7.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ontolutils",
+        "type": "Software_application",
+        "value": "ontolutils>=0.19.2,<1.0.0",
+        "version": ">=0.19.2,<1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pydantic[email]",
+        "type": "Software_application",
+        "value": "pydantic[email]>=2.7.4,<=2.10.6",
+        "version": ">=2.7.4,<=2.10.6"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "appdirs",
+        "type": "Software_application",
+        "value": "appdirs>=1.4.4",
+        "version": ">=1.4.4"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python-dateutil",
+        "type": "Software_application",
+        "value": "python-dateutil>=2.9.0",
+        "version": ">=2.9.0"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "requests",
+        "type": "Software_application",
+        "value": "requests>=2.32.4",
+        "version": ">=2.32.4"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pint",
+        "type": "Software_application",
+        "value": "pint>=0.21.1",
+        "version": ">=0.21.1"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "run": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Graphically (locally run Web App)",
+        "parent_header": [
+          "ssnolib: Library for the simple standard name ontology SSNO",
+          "Quickstart"
+        ],
+        "type": "Text_excerpt",
+        "value": "There are 2 apps:\n\n1. A `streamlit` app to semantically enrich HDF5 files. This app is available with the installation of the `hdf` extra.\n2. A `flask` app to create and manage Standard Name Tables. This app is available with the installation of the `app` extra.\n\nTo install the web app, run the following command:\n```bash\npip install ssnolib[app,hdf]\n```\n\nTo start the GUI, run the following command:\n```bash\nssnolib --h5sn\n```\nor\n```bash\nssnolib --app\n```\nThis will start a local development server with the default port 5000 and the local host IP: `https://127.0.0.1:5000/`\n(see image below).\n\n**Note**: The web app is work in progress! Some errors might not be caught correctly. Also, you should not expose this \nweb app to the public. However, feel free to use it locally in your project. I am happy to receive feedback or \ncontributions to enhance the web interface! Thanks!\n\n<img src=\"./docs/Screenshot_webapp.png\" width=\"300\" />\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "identifier",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:41:57",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example Codes",
+        "parent_header": [
+          "ssnolib: Library for the simple standard name ontology SSNO"
+        ],
+        "type": "Text_excerpt",
+        "value": "The code below gives a quick insight using the *sSNOlib* classes:\n\n```python\nimport ssnolib\nfrom ssnolib.dcat import Distribution\n\ndistribution = Distribution(\n    title='XML Table',\n    download_URL='https://cfconventions.org/Data/cf-standard-names/current/src/cf-standard-name-table.xml',\n    media_type='application/xml'\n)\nsnt = ssnolib.StandardNameTable(title='CF Standard Name Table (latest version)',\n                                distribution=distribution)\nprint(snt.model_dump_jsonld(base_uri=\"https://local.org#\"))\n```\n\nThe last line dumps the object to a JSON-LD string:\n\n```json\n{\n    \"@context\": {\n        \"owl\": \"https://www.w3.org/2002/07/owl#\",\n        \"rdfs\": \"http://www.w3.org/2000/01/rdf-schema#\",\n        \"dcat\": \"http://www.w3.org/ns/dcat#\",\n        \"dcterms\": \"http://purl.org/dc/terms/\",\n        \"prov\": \"http://www.w3.org/ns/prov#\",\n        \"ssno\": \"https://matthiasprobst.github.io/ssno#\"\n    },\n    \"@type\": \"ssno:StandardNameTable\",\n    \"@id\": \"https://local.org#Ncbf5f941ea5447aa9ce212a2bb8d0be2\",\n    \"dcterms:title\": \"CF Standard Name Table (latest version)\",\n    \"dcat:distribution\": [\n        {\n            \"@type\": \"dcat:Distribution\",\n            \"@id\": \"https://local.org#Nce83c15ff61640e68ba4468ebf016787\",\n            \"dcterms:title\": \"XML Table\",\n            \"dcat:downloadURL\": \"https://cfconventions.org/Data/cf-standard-names/current/src/cf-standard-name-table.xml\",\n            \"dcat:mediaType\": \"https://www.iana.org/assignments/media-types/application/xml\"\n        }\n    ]\n}\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Examples",
+        "parent_header": [
+          "ssnolib: Library for the simple standard name ontology SSNO"
+        ],
+        "type": "Text_excerpt",
+        "value": "Describe a Standard Name Table, e.g. the one from cfconventions.org:\n\n```python\nimport ssnolib\nfrom ssnolib.dcat import Distribution\n\n# Create a distribution object (downloadable XML file containing the standard name table)\ndistribution = Distribution(title='XML Table',\n                            downloadURL='https://cfconventions.org/Data/cf-standard-names/current/src/cf-standard-name-table.xml',\n                            mediaType='application/xml')\n\n# Create a standard name table object\nsnt = ssnolib.StandardNameTable(\n    id=\"_:standard_name_table_v79\",  # blank node ID for now, prefix will be added later (base_uri)\n    title='CF Standard Name Table v79',\n    distribution=[distribution, ])\n\n# To describe this standard name table, we can export the JSON-LD file:\nwith open('cf79.jsonld', 'w', encoding='utf-8') as f:\n    f.write(snt.model_dump_jsonld(base_uri=\"https://local.org#\"))\n```\n\nThe corresponding JSON-LD file looks like this (showing only 2 standard names for shortness):\n\n```json\n{\n    \"@context\": {\n        \"owl\": \"https://www.w3.org/2002/07/owl#\",\n        \"rdfs\": \"http://www.w3.org/2000/01/rdf-schema#\",\n        \"dcat\": \"http://www.w3.org/ns/dcat#\",\n        \"dcterms\": \"http://purl.org/dc/terms/\",\n        \"prov\": \"http://www.w3.org/ns/prov#\",\n        \"ssno\": \"https://matthiasprobst.github.io/ssno#\"\n    },\n    \"@type\": \"ssno:StandardNameTable\",\n    \"@id\": \"https://local.org#N82e22ada2da9427fba343d0f978e98e9\",\n    \"dcterms:title\": \"CF Standard Name Table v79\",\n    \"dcat:distribution\": [\n        {\n            \"@type\": \"dcat:Distribution\",\n            \"@id\": \"https://local.org#N8588e715cf1e4216ba142eea6f1b297d\",\n            \"dcterms:title\": \"XML Table\",\n            \"dcat:downloadURL\": \"https://cfconventions.org/Data/cf-standard-names/current/src/cf-standard-name-table.xml\",\n            \"dcat:mediaType\": \"https://www.iana.org/assignments/media-types/application/xml\"\n        }\n    ]\n}\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Standard name to JSON-LD",
+        "parent_header": [
+          "ssnolib: Library for the simple standard name ontology SSNO",
+          "Examples"
+        ],
+        "type": "Text_excerpt",
+        "value": "A standard name alone can be described like this:\n\n```python\nimport ssnolib\n\nair_temp = ssnolib.StandardName(standardName='air_temperature',\n                                canonicalUnits='K',\n                                description='Air temperature is the bulk temperature of the air, not the surface (skin) temperature.')\n\n# write to JSON-LD\nwith open('air_temperature.jsonld', 'w') as f:\n    f.write(air_temp.model_dump_jsonld())\n```\n\nThe corresponding JSON-LD file:\n\n```json\n{\n    \"@context\": {\n        \"owl\": \"https://www.w3.org/2002/07/owl#\",\n        \"rdfs\": \"http://www.w3.org/2000/01/rdf-schema#\",\n        \"skos\": \"http://www.w3.org/2004/02/skos/core#\",\n        \"ssno\": \"https://matthiasprobst.github.io/ssno#\",\n        \"dcat\": \"http://www.w3.org/ns/dcat#\"\n    },\n    \"@type\": \"ssno:StandardName\",\n    \"@id\": \"_:Naaf73045ffbe415f9ad28cc3daacd3e6\",\n    \"ssno:canonicalUnits\": \"http://qudt.org/vocab/unit/K\",\n    \"ssno:standardName\": \"air_temperature\",\n    \"ssno:description\": \"Air temperature is the bulk temperature of the air, not the surface (skin) temperature.\"\n}\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.5.1.3"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/ssnolib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

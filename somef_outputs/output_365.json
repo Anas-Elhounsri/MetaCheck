@@ -1,0 +1,1574 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Geology"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9407020902208894,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Jacobs, NASA Johnson Space Center",
+        "email": "@volcan01010",
+        "identifier": "http://orcid.org/0000-0002-2461-7748",
+        "type": "String",
+        "value": "Kayla Iacovino"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Iceland",
+        "email": "@volcan01010",
+        "type": "String",
+        "value": "Simon Matthews"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Cambridge",
+        "email": "@volcan01010",
+        "type": "String",
+        "value": "Penny E. Wieser"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Jacobs, NASA Johnson Space Center",
+        "email": "@volcan01010",
+        "type": "String",
+        "value": "Gordon M. Moore"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Geneva",
+        "email": "@volcan01010",
+        "type": "String",
+        "value": "Florence B\u00e9gu\u00e9"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Iacovino",
+            "given_name": "Kayla",
+            "name": "Kayla Iacovino",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-2461-7748"
+          },
+          {
+            "family_name": "Matthews",
+            "given_name": "Simon",
+            "name": "Simon Matthews",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Wieser",
+            "given_name": "Penny E.",
+            "name": "Penny E. Wieser",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Moore",
+            "given_name": "Gordon M.",
+            "name": "Gordon M. Moore",
+            "type": "Agent"
+          },
+          {
+            "family_name": "B\u00e9gu\u00e9",
+            "given_name": "Florence",
+            "name": "Florence B\u00e9gu\u00e9",
+            "type": "Agent"
+          }
+        ],
+        "format": "cff",
+        "title": "VESIcal Part I: An open-source thermodynamic model engine for mixed volatile (H2O-CO2) solubility in silicate melts",
+        "type": "File_dump",
+        "value": "# YAML 1.2\n---\nauthors: \n  -\n    affiliation: \"Jacobs/NASA Johnson Space Center\"\n    family-names: Iacovino\n    given-names: Kayla\n    orcid: \"https://orcid.org/0000-0002-2461-7748\"\n  -\n    affiliation: \"University of Iceland, Institute of Earth Sciences\"\n    family-names: Matthews\n    given-names: Simon\n  -\n    affiliation: \"University of Cambridge, Department of Earth Sciences\"\n    family-names: Wieser\n    given-names: \"Penny E.\"\n  -\n    affiliation: \"Jacobs/NASA Johnson Space Center\"\n    family-names: Moore\n    given-names: \"Gordon M.\"\n  -\n    affiliation: \"University of Geneva, Department of Earth Sciences\"\n    family-names: \"B\u00e9gu\u00e9\"\n    given-names: Florence\ncff-version: \"1.1.0\"\nlicense: MIT\nmessage: \"If you use this software, please cite it using these metadata.\"\nrepository-code: \"https://github.com/kaylai/VESIcal\"\ntitle: \"VESIcal Part I: An open-source thermodynamic model engine for mixed volatile (H2O-CO2) solubility in silicate melts\"\nversion: \"1.0.1\"\n..."
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/citation.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/kaylai/VESIcal"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/kaylai/VESIcal"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "VESIcal"
+        ],
+        "type": "Text_excerpt",
+        "value": "Issues are tracked on [GitHub](https://github.com/kaylai/VESIcal/issues).\n\nPatches may be submitted via a [Github pull request](https://github.com/kaylai/VESIcal/pulls). All changes should include tests (VESIcal uses python's unittest library) and pass [flake8](https://pypi.org/project/flake8/).\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-03-24T19:34:01Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2021-06-22"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2021-06-22"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-03T07:04:20Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2021-06-22"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A generalized python library for calculating and plotting various things related to mixed volatile (H2O-CO2) solubility in silicate melts."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A generalized python library for calculating and plotting various things related to mixed volatile (H2O-CO2) solubility in silicate melts."
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "\n        tasplot is a Python module that adds the names of volcanic rock\n        types to a plot of total alkali versus silica data"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/VESIcal/tasplot/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "\n        tasplot is a Python module that adds the names of volcanic rock\n        types to a plot of total alkali versus silica data"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/build/lib/VESIcal/tasplot/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8743924400893891,
+      "result": {
+        "original_header": "VESIcal",
+        "type": "Text_excerpt",
+        "value": "A generalized python library for calculating and plotting various things related to mixed volatile (H2O-CO2) solubility in silicate melts. \n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "VESIcal"
+        ],
+        "type": "Text_excerpt",
+        "value": "Check here first for all your VESIcal questions! And be sure to read the manuscripts.\n\n   - Read all of our documentation, inlcuding quickstart guides here: https://vesical.readthedocs.io/en/latest/\n   - Check our our YouTube channel for videos on how to use VESIcal here: https://www.youtube.com/channel/UCpvCCs5KMXzOxXWm0seF8Qw\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Interactive versions of manuscripts",
+        "parent_header": [
+          "VESIcal",
+          "Documentation"
+        ],
+        "type": "Text_excerpt",
+        "value": "   - Curvenote/AGU Notebooks Now! implementation of VESIcal Part I manuscript: [Manuscript on Curvenote](https://agu.curve.space/articles/NN0001)\n   - Direct link to interactive jupyter notebook version of VESIcal Part I manuscript: [Manuscript on Binder](https://agu-binder.curvenote.dev/user/2be900e9-fb5d-4-9778d16a48c.zip-4wrcztow/lab/tree/Manuscript.ipynb?token=EzBUfh6US4qFq4UW0MSkYA)\n   - Jupyter Notebook hub with VESIcal: [![Manuscript on Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/kaylai/vesical-binder/HEAD)\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "PDF versions of manuscripts",
+        "parent_header": [
+          "VESIcal",
+          "Documentation"
+        ],
+        "type": "Text_excerpt",
+        "value": "   - [VESIcal Part I: An Open-Source Thermodynamic Model Engine for Mixed Volatile (H2O-CO2) Solubility in Silicate Melts](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2020EA001584)\n   - [VESIcal Part II: A critical approach to volatile solubility modelling using an open-source Python3 engine](https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021EA001932)\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://vesical.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/kaylai/VESIcal/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/kaylai/VESIcal"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/You%20Tube%20Examples/Saturation_pressure_example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/You%20Tube%20Examples/Saturation_pressure_example.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/You%20Tube%20Examples/Introduction_Example_different_functions.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/You%20Tube%20Examples/Introduction_Example_different_functions.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_eqfluid.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_eqfluid.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_import.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_import.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/notebook-saving.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/notebook-saving.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_normalize.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_normalize.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_satP.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_satP.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/adv_newcalcs.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/adv_newcalcs.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_isobarsandisopleths.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_isobarsandisopleths.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_degassing.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_degassing.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_dissolved.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/ex_dissolved.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/MagmaSat_Crashing.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/jupyter_notebooks/MagmaSat_Crashing.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/videos/Verbose_Demo_1/VESIcal_demo_video1.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/videos/Verbose_Demo_1/VESIcal_demo_video1.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Generic_Methods_Text.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Generic_Methods_Text.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/CreateTableForLatex.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/CreateTableForLatex.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Manuscript.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Manuscript.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/MagmaSat/S5_Testing_Magmasat.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/MagmaSat/S5_Testing_Magmasat.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Model_Hybridization/S10_Model_Hybridization.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Model_Hybridization/S10_Model_Hybridization.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Cerro_Negro_Calculations/S8_CerroNegro_isobar_comparison.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Cerro_Negro_Calculations/S8_CerroNegro_isobar_comparison.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Dixon/S2_Testing_Dixon_1997_VolatileCalc.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Dixon/S2_Testing_Dixon_1997_VolatileCalc.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Liu/S4_Testing_Liu_et_al_2005.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Liu/S4_Testing_Liu_et_al_2005.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Isobar_Comparison_Plotter/S9_Isobar_Comparison_Plotter.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Isobar_Comparison_Plotter/S9_Isobar_Comparison_Plotter.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Shishkina/S7_Testing_Shishkina_et_al_2014.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Shishkina/S7_Testing_Shishkina_et_al_2014.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Allison/S1_Testing_Allison_et_al_2019.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Allison/S1_Testing_Allison_et_al_2019.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Iacono-Marziano/S3_Testing_Iacono-Marziano_et_al_2012.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Iacono-Marziano/S3_Testing_Iacono-Marziano_et_al_2012.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Moore/S6_Testing_Moore_et_al_1998.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/manuscript/Supplement/JupyterNotebooks/Moore/S6_Testing_Moore_et_al_1998.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/Calibration/Calibration_Datasets_Specific_Warnings.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/Calibration/Calibration_Datasets_Specific_Warnings.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/Calibration/Calibration_Plotting.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/Calibration/Calibration_Plotting.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 10
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "kaylai/VESIcal"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "VESIcal"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/requirements.txt",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/VESIcal/tasplot/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/VESIcal/tasplot/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/build/lib/VESIcal/tasplot/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/build/lib/VESIcal/tasplot/setup.py",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "10.5281/zenodo.4914503"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.5095382"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation and online use",
+        "parent_header": [
+          "VESIcal"
+        ],
+        "type": "Text_excerpt",
+        "value": "In general, VESIcal can be accessed and used in a variety of ways. From most flexible (advanced) to least flexible (novice), these are:\n\n   - local installation of the VESIcal library\n   - through the ENKI server (recommended for most users)\n   - through a [jupyter notebook version of the VESIcal manuscript](https://agu-binder.curvenote.dev/user/2be900e9-fb5d-4-9778d16a48c.zip-4wrcztow/lab/tree/Manuscript.ipynb?token=EzBUfh6US4qFq4UW0MSkYA).\n   - via the web-app [https://vesical.anvil.app/](https://vesical.anvil.app/)\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "VESIcal on the ENKI server",
+        "parent_header": [
+          "VESIcal",
+          "Installation and online use"
+        ],
+        "type": "Text_excerpt",
+        "value": "VESIcal requires installation of not only the VESIcal library but also some other python libraries, one of which is a bit tricky to install (ENKI/thermoengine aka the engine behind MELTS). But, we have a solution! All dependencies and the latest version of VESIcal are all installed on the ENKI server, within a Jupyter Notebook Hub. Steps to use VESIcal on the ENKI server are:\n\n   1. Create a (free) GitLab account, which you'll use to sign into ENKI here: https://gitlab.com/users/sign_up\n   2. Email ENKI PI Mark Ghiorso at ghiorso@ofm-research.org with your GitLab username and requet access to the ENKI server.\n   3. Access the ENKI Production Server by going to http://enki-portal.org/ and clicking \"SERVERS\" > \"PRODUCTION SERVER\"\n   4. Sign in with your GitLab credentials: You are now in your own jupyter notebook workspace! You can upload and create files here. They won't be accessible to anyone else. \n   5. Click the green \"CLOSE THIS SCREEN\" button\n   6. Create a new notebook by clicking the blue plus button and then selecting Python3 under Notebook. Or select from the menu File > New > Notebook\n   7. Be sure to import VESIcal as v at the top of your file, and now you are ready to get to work!\n\nSee video tutorials on our ReadTheDocs page for more.\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installing locally",
+        "parent_header": [
+          "VESIcal",
+          "Installation and online use"
+        ],
+        "type": "Text_excerpt",
+        "value": "**Important! Thermoengine must be installed!**\n Please see below for details on how to install thermoengine, the python implementation of MELTS/MagmaSat  \n\nFirst, obtain Python3.x if you do not already have it installed. If you are new to python, we recommend installing it via [anaconda3](https://www.anaconda.com/products/individual). VESIcal can be installed with one line. Open a terminal and type the following:\n\n```\npip install VESIcal\n```\n\nCheck that the installation worked by entering the following lines into a terminal:\n\n```\npython\nimport VESIcal as v\n```\n\nIf no output is returned, VESIcal has installed properly! You will very likely, however, see a warning telling you that no module named 'thermoengine' could be found. The installation you performed via pip attempts to install all dependencies (other libraries that VESIcal requires), but thermoengine is not available via pip and so must be manually installed.\n\nDependencies that should automatically be installed for you are:\n\n   - pandas\n   - numpy\n   - matplotlib\n   - cycler\n   - abc\n   - scipy\n   - sys\n   - sympy\n   - copy\n\nIf any warnings related to these libraries appear, try installing them as you did VESIcal: with 'pip install [package]'.\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installing thermoengine",
+        "parent_header": [
+          "VESIcal",
+          "Installation and online use"
+        ],
+        "type": "Text_excerpt",
+        "value": "Thermoengine is the ENKI implementation of MELTS (MagmaSat), which is the default solubility model implemented in VESIcal. VESIcal cannot be run without thermoengine at this time, however a VESIcal-lite that does not include MagmaSat is planned. To install thermoengine, please refer to the ENKI documentation here: https://gitlab.com/ENKI-portal/ThermoEngine.\n\nIn almost all cases you will need to install thermoengine using docker. The thermoengine devs have kindly put together a docker image for you. We suggest you follow those instructions here: https://gitlab.com/ENKI-portal/ThermoEngine/-/tree/master/#running-a-container-image-locally.\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "volatile solubility",
+          "volcanology",
+          "petrology",
+          "igneous"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2020 Kayla Iacovino and Simon Matthews\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/VESIcal/tasplot/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/build/lib/VESIcal/tasplot/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "VESIcal"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "VESIcal"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "kaylai"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "TASplot"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/VESIcal/tasplot/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "TASplot"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/build/lib/VESIcal/tasplot/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jupyter Notebook",
+        "size": 12049945,
+        "type": "Programming_language",
+        "value": "Jupyter Notebook"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 1450320,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 1780,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3",
+        "type": "Programming_language",
+        "value": "Python 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/VESIcal/tasplot/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/build/lib/VESIcal/tasplot/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "reference_publication": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.1029/2020EA001584"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2024-04-12T18:31:07Z",
+        "date_published": "2024-04-12T18:32:43Z",
+        "description": "This fixes the bug outlined in issue https://github.com/kaylai/VESIcal/issues/188, or rather provides a workaround for the bug in thermoengine that was causing it.\r\n\r\nAlso fixed some flake8 complaints, and made some of the unit tests more robust to machine error and random thermoengine errors (see issue https://github.com/kaylai/VESIcal/issues/197).\r\n\r\nThe testing routine passes on the ENKI server.",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.2.9",
+        "name": "v1.2.9",
+        "release_id": 150975164,
+        "tag": "v1.2.9",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.2.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/150975164",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/150975164",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.2.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2024-03-29T20:24:00Z",
+        "date_published": "2024-03-29T20:25:00Z",
+        "description": "- Fixed bug in calculate_degassing_path() where the default final_pressure() value was set to 100 bars instead of 1 bar. \r\n- Added code to silence unhelpful \"Duan Driver\" warning messages from thermoengine. \r\n- Made significant updates to the unittest testing routines.\r\n",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.2.8",
+        "name": "v1.2.8",
+        "release_id": 149057692,
+        "tag": "v1.2.8",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.2.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/149057692",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/149057692",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.2.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2024-03-21T19:37:10Z",
+        "date_published": "2024-03-21T19:39:06Z",
+        "description": "- Fixed bug where a cation concentration would not be returned from get_composition() if the Sample was given in oxides and vice versa.\r\n- Added more user warnings on get_composition()\r\n- Added unit tests for get_composition()",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.2.7",
+        "name": "Version 1.2.7",
+        "release_id": 147801415,
+        "tag": "v1.2.7",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.2.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/147801415",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/147801415",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.2.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2024-03-21T19:13:28Z",
+        "date_published": "2024-03-21T19:20:43Z",
+        "description": "**User updates**\r\n- Update data frame handling to be compatible with pandas 2.0\r\n\r\n**Developer updates**\r\n- Updated manuscript supplementary Jupyter notebooks with proper titles\r\n- Updated requirements.txt with newer versions of bumpy, spicy, simply, and setting == for pandas 1.2.3\r\n- Fixed RunTests file to execute with double click",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.2.6",
+        "name": "Version 1.2.6",
+        "release_id": 147798840,
+        "tag": "v1.2.6",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.2.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/147798840",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/147798840",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.2.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2023-10-23T21:20:30Z",
+        "date_published": "2023-10-23T21:29:21Z",
+        "description": "- Fixed bug where different models returned different variable types. All models now should return variables, where relevant, as np.float instead of python's native float type.\r\n- Added redirection of more stdout when making thermoengine calls, to get rid of as many unnecessary MagmaSat warnings as possible. Some duanDriver and Element error warnings remain (hope to be fixed in a future version)",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.2.5",
+        "name": "Version 1.2.5",
+        "release_id": 126330379,
+        "tag": "v1.2.5",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.2.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/126330379",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/126330379",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.2.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2023-01-03T19:03:08Z",
+        "date_published": "2023-01-03T19:04:04Z",
+        "description": "Fixed bug where a degassing path could not be calculated for some models using a numpy array as a pressure input. Now, a user can pass, for example np.arange(450, 200, -1) to calculate a degassing path from 450 to 200 bars in steps of 1 bar.\r\n",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.2.4",
+        "name": "Version 1.2.4",
+        "release_id": 87810309,
+        "tag": "v1.2.4",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.2.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/87810309",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/87810309",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.2.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2022-11-22T00:06:27Z",
+        "date_published": "2022-11-22T00:08:54Z",
+        "description": "Critical bug fix. With the update to matplotlib v3.6.0, styles were renamed. Namely, the \"seaborn-colorblind\" style used in VESIcal was updated to \"seaborn-v0_8-colorblind\". This change caused VESIcal to not import at all if matplotlib >=3.6.0 was installed. Try/Except block was added to first try \"seaborn-colorblind\" and then except to use \"seaborn-v0_8-colorblind\" in order to prevent VESIcal from breaking if older or newer versions of matplotlib are used.",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.2.3",
+        "name": "Version 1.2.3",
+        "release_id": 83813815,
+        "tag": "v1.2.3",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.2.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/83813815",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/83813815",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.2.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2022-06-23T19:05:11Z",
+        "date_published": "2022-06-23T19:06:35Z",
+        "description": "Fixed bug in MagmaSat model. To be internally consistent between MagmaSat calculations and between MagmaSat and other models, we now force \u201cfixedvolatiles\u201d normalization on any sample when performing MagmaSat calculations. This makes VESIcal\u2019s behavior consistent with the behavior of the MagmaSat app, which may treat input H2O and CO2 contents as either dissolved in the melt or in the system (melt + fluid). This fixes a bug where a user might calculate the saturation pressure, then when calculating the equilibrium fluid composition at that pressure, VESIcal would say the composition is undersaturated. Results in very small differences to the equilibrium_fluid_comp() results, within error of the model (on the order of 0.01 mole fraction difference for H2O or CO2 in the fluid). The saturation pressure results are unchanged as they already performed a \u201cfixedvolatiles\u201d normalization. See pull request #170 for details.",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.2.2",
+        "name": "Version 1.2.2",
+        "release_id": 70427205,
+        "tag": "v1.2.2",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.2.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/70427205",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/70427205",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.2.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2022-06-20T18:08:14Z",
+        "date_published": "2022-06-20T19:24:42Z",
+        "description": "Fixed small bug in the Iacono-Marziano model. In most cases this will result in either a very small difference to the calculated results or no difference at all.",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.2.1",
+        "name": "Version 1.2.1",
+        "release_id": 69874935,
+        "tag": "v1.2.1",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/69874935",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/69874935",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2022-06-01T21:18:03Z",
+        "date_published": "2022-06-01T21:20:34Z",
+        "description": "A small but mighty update comes to VESIcal v1.2.0. VESIcal can now be used without the isntallation of the thermoengine library (which can only be built from source on a mac or run via a docker image on a PC or linux machine). MagmaSat, VESIcal\u2019s default model, requires thermoengine to run. We chose MagmaSat as the default model for a reason (it\u2019s usually the best model to use), but there are plenty of cases where access to the other models and not to MagmaSat is desired.\r\n\r\nThe usage of VESIcal remains unchanged in the new version. Simply install using pip (see [Installation](https://github.com/kaylai/VESIcal/releases/install.html)) and get to work. If you do not have thermoengine installed, remember to specify which model to use in each calculation performed.",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.2.0",
+        "name": "Version 1.2.0",
+        "release_id": 68389317,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/68389317",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/68389317",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2022-04-21T20:30:19Z",
+        "date_published": "2022-04-21T20:31:40Z",
+        "description": "- Fixed bug where users could not calculate or plot degassing paths for compositions with only one volatile. \r\n- Fixed bug where degassing paths in MagmaSat were not calculated down to 1 bar.",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.1.1",
+        "name": "Version 1.1.1",
+        "release_id": 65010323,
+        "tag": "v1.1.1",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/65010323",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/65010323",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2022-04-21T16:50:26Z",
+        "date_published": "2022-04-21T16:51:49Z",
+        "description": "New in version 1.1.0 is VESIcal\u2019s thermo package. This package begins to introduce more calculations that a user might wish to perform. In this version, we have added the ability to calculate the density of a liquid (using DensityX, Iacovino and Till, 2019) and the viscosity of a liquid (Giordano et al., 2008). Check out the tutorials to learn how to use these functions, which use the same syntax as all other core calculations.",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.1.0",
+        "name": "Version 1.1.0",
+        "release_id": 64985900,
+        "tag": "v1.1.0",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/64985900",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/64985900",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "simonwmatthews",
+          "type": "User"
+        },
+        "date_created": "2022-03-07T21:06:21Z",
+        "date_published": "2022-03-07T21:10:58Z",
+        "description": "Changelog:\r\n\r\n- Directed H2O driver warnings (sometimes generated when running MagmaSat) into the void, so that they will not print inside Jupyter Notebooks as started happening with the latest version of ipython or jupyter.",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.0.4",
+        "name": "Version 1.0.4",
+        "release_id": 61204159,
+        "tag": "v1.0.4",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/61204159",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/61204159",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2022-01-18T21:20:35Z",
+        "date_published": "2022-01-18T21:23:03Z",
+        "description": "Changelog:\r\n\r\n- Batch calculations for calculate_equilibrium_fluid_comp() with the MagmaSat (default) model can now take the verbose argument. If passed as verbose=True, the calculation will return the mass and weight proportion of fluid in equilibrium with the system. Previously this only worked for single sample calculations.",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.0.3",
+        "name": "Version 1.0.3",
+        "release_id": 57408045,
+        "tag": "v1.0.3",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/57408045",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/57408045",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "kaylai",
+          "type": "User"
+        },
+        "date_created": "2021-06-14T16:11:39Z",
+        "date_published": "2021-06-22T22:37:15Z",
+        "description": "This release is the version of VESIcal finalized for publication alongside the companion manuscript accepted for publication in the AGU journal Earth and Space Sciences.",
+        "html_url": "https://github.com/kaylai/VESIcal/releases/tag/v1.0.1",
+        "name": "Version 1.0.1",
+        "release_id": 45062261,
+        "tag": "v1.0.1",
+        "tarball_url": "https://api.github.com/repos/kaylai/VESIcal/tarball/v1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/kaylai/VESIcal/releases/45062261",
+        "value": "https://api.github.com/repos/kaylai/VESIcal/releases/45062261",
+        "zipball_url": "https://api.github.com/repos/kaylai/VESIcal/zipball/v1.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy==1.26.3",
+        "version": "==1.26.3"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scipy",
+        "type": "Software_application",
+        "value": "scipy==1.11.4",
+        "version": "==1.11.4"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sympy",
+        "type": "Software_application",
+        "value": "sympy==1.9",
+        "version": "==1.9"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pandas",
+        "type": "Software_application",
+        "value": "pandas==2.1.4",
+        "version": "==2.1.4"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib==3.8.2",
+        "version": "==3.8.2"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "openpyxl",
+        "type": "Software_application",
+        "value": "openpyxl==3.1.2",
+        "version": "==3.1.2"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx",
+        "type": "Software_application",
+        "value": "sphinx>=1.4",
+        "version": ">=1.4"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx_rtd_theme",
+        "type": "Software_application",
+        "value": "sphinx_rtd_theme",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ipykernel",
+        "type": "Software_application",
+        "value": "ipykernel",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "nbsphinx",
+        "type": "Software_application",
+        "value": "nbsphinx",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pandas",
+        "type": "Software_application",
+        "value": "pandas",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ipynb",
+        "type": "Software_application",
+        "value": "ipynb",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scipy",
+        "type": "Software_application",
+        "value": "scipy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sympy",
+        "type": "Software_application",
+        "value": "sympy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mock",
+        "type": "Software_application",
+        "value": "mock",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/docs/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:34:35",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 33
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation and online use",
+        "parent_header": [
+          "VESIcal"
+        ],
+        "type": "Text_excerpt",
+        "value": "In general, VESIcal can be accessed and used in a variety of ways. From most flexible (advanced) to least flexible (novice), these are:\n\n   - local installation of the VESIcal library\n   - through the ENKI server (recommended for most users)\n   - through a [jupyter notebook version of the VESIcal manuscript](https://agu-binder.curvenote.dev/user/2be900e9-fb5d-4-9778d16a48c.zip-4wrcztow/lab/tree/Manuscript.ipynb?token=EzBUfh6US4qFq4UW0MSkYA).\n   - via the web-app [https://vesical.anvil.app/](https://vesical.anvil.app/)\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "VESIcal on the ENKI server",
+        "parent_header": [
+          "VESIcal",
+          "Installation and online use"
+        ],
+        "type": "Text_excerpt",
+        "value": "VESIcal requires installation of not only the VESIcal library but also some other python libraries, one of which is a bit tricky to install (ENKI/thermoengine aka the engine behind MELTS). But, we have a solution! All dependencies and the latest version of VESIcal are all installed on the ENKI server, within a Jupyter Notebook Hub. Steps to use VESIcal on the ENKI server are:\n\n   1. Create a (free) GitLab account, which you'll use to sign into ENKI here: https://gitlab.com/users/sign_up\n   2. Email ENKI PI Mark Ghiorso at ghiorso@ofm-research.org with your GitLab username and requet access to the ENKI server.\n   3. Access the ENKI Production Server by going to http://enki-portal.org/ and clicking \"SERVERS\" > \"PRODUCTION SERVER\"\n   4. Sign in with your GitLab credentials: You are now in your own jupyter notebook workspace! You can upload and create files here. They won't be accessible to anyone else. \n   5. Click the green \"CLOSE THIS SCREEN\" button\n   6. Create a new notebook by clicking the blue plus button and then selecting Python3 under Notebook. Or select from the menu File > New > Notebook\n   7. Be sure to import VESIcal as v at the top of your file, and now you are ready to get to work!\n\nSee video tutorials on our ReadTheDocs page for more.\n"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/kaylai/VESIcal/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

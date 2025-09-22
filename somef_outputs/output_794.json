@@ -1,0 +1,666 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Christoph Sax"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "christoph.sax@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-7192-7044",
+        "type": "String",
+        "value": "Christoph Sax"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "2021",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "bibentry(\n  bibtype      = \"Manual\",\n  title        = \"tsbox: Class-Agnostic Time Series in in {R}\",\n  author       = c(person(given = \"Christoph\",\n                          family = \"Sax\",\n                          email = \"christoph.sax@gmail.com\")),\n  note         = \"{R package}\",\n  url          = \"https://docs.ropensci.org/tsbox/\",\n  year         = 2021,\n\n  header       = \"To cite tsbox in publications use:\"\n)\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/inst/CITATION",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/tsbox"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/tsbox"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/tsbox"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/tsbox/actions"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING #\n\n### Fixing typos\n\nSmall typos or grammatical errors in documentation may be edited directly using\nthe GitHub web interface, so long as the changes are made in the _source_ file.\n\n*  YES: you edit a roxygen comment in a `.R` file below `R/`.\n*  NO: you edit an `.Rd` file below `man/`.\n\n### Prerequisites\n\nBefore you make a substantial pull request, you should always file an issue and\nmake sure someone from the team agrees that it\u2019s a problem. If you\u2019ve found a\nbug, create an associated issue and illustrate the bug with a minimal \n[reprex](https://www.tidyverse.org/help/#reprex).\n\n### Pull request process\n\n*  We recommend that you create a Git branch for each pull request (PR).  \n*  Look at the Travis and AppVeyor build status before and after making changes.\nThe `README` should contain badges for any continuous integration services used\nby the package.  \n*  We recommend the tidyverse [style guide](http://style.tidyverse.org).\nYou can use the [styler](https://CRAN.R-project.org/package=styler) package to\napply these styles, but please don't restyle code that has nothing to do with \nyour PR.  \n*  We use [roxygen2](https://cran.r-project.org/package=roxygen2).  \n*  We use [testthat](https://cran.r-project.org/package=testthat). Contributions\nwith test cases included are easier to accept.  \n*  For user-facing changes, add a bullet to the top of `NEWS.md` below the\ncurrent development version header describing the changes made followed by your\nGitHub username, and links to relevant issue(s)/PR(s).\n\n### Code of Conduct\n\nPlease note that the tsbox project is released with a\n[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this\nproject you agree to abide by its terms.\n\n### See rOpenSci [contributing guide](https://devguide.ropensci.org/contributingguide.html)\nfor further details.\n\n### Discussion forum\n\nCheck out our [discussion forum](https://discuss.ropensci.org) if\n\n* you have a question, an use case, or otherwise not a bug or feature request for the software itself.\n* you think your issue requires a longer form discussion.\n\n### Prefer to Email? \n\nEmail the person listed as maintainer in the `DESCRIPTION` file of this repo.\n\nThough note that private discussions over email don't help others - of course email is totally warranted if it's a sensitive problem of any kind.\n\n### Thanks for contributing!\n\nThis contributing guide is adapted from the tidyverse contributing guide available at https://raw.githubusercontent.com/r-lib/usethis/master/inst/templates/tidy-contributing.md \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-03-07T13:06:53Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-03-22T08:14:28Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "tsbox: Class-Agnostic Time Series in R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+        "type": "String",
+        "value": "Time series toolkit with identical behavior for all\n  time series classes: 'ts','xts', 'data.frame', 'data.table', 'tibble', 'zoo',\n  'timeSeries', 'tsibble', 'tis' or 'irts'. Also converts reliably between these classes."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Time series toolkit with identical behavior for all time series classes: 'ts','xts', 'data.frame', 'data.table', 'tibble', 'zoo', 'timeSeries', 'tsibble', 'tis' or 'irts'. Also converts reliably between these classes."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8836298568813219,
+      "result": {
+        "original_header": "tsbox: Class-Agnostic Time Series in R",
+        "type": "Text_excerpt",
+        "value": "\nThe R ecosystem knows a [vast\nnumber](https://CRAN.R-project.org/view=TimeSeries) of time series\nstandards. Instead of creating the ultimate\n[15th](https://xkcd.com/927/) time series class, tsbox provides a set of\ntools that are **agnostic towards the existing standards**. The tools\nalso allow you to handle time series as plain data frames, thus making\nit easy to deal with time series in a\n[dplyr](https://CRAN.R-project.org/package=dplyr) or\n[data.table](https://CRAN.R-project.org/package=data.table) workflow. \nSee [tsbox.help](https://docs.ropensci.org/tsbox/) for the full\ndocumentation of the package. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9868079492703452,
+      "result": {
+        "original_header": "Convert everything to everything",
+        "type": "Text_excerpt",
+        "value": "tsbox is built around a set of converters, which convert time series\nstored as **ts**, **xts**, **data.frame**, **data.table**, **tibble**,\n**zoo**, **zooreg**, **tsibble**, **tibbletime**, **timeSeries**,\n**irts** or **tis** to each other:\n``` r\nlibrary(tsbox)\nx.ts <- ts_c(fdeaths, mdeaths)\nx.xts <- ts_xts(x.ts)\nx.df <- ts_df(x.xts)\nx.dt <- ts_dt(x.df)\nx.tbl <- ts_tbl(x.dt)\nx.zoo <- ts_zoo(x.tbl)\nx.zooreg <- ts_zoo(x.zoo)\nx.tsibble <- ts_tsibble(x.zooreg)\nx.tibbletime <- ts_tibbletime(x.tsibble)\nx.timeSeries <- ts_timeSeries(x.tibbletime)\nx.irts <- ts_irts(x.tibbletime)\nx.tis <- ts_tis(x.irts)\nall.equal(ts_ts(x.tis), x.ts)\n#> [1] TRUE\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8215418439042115,
+      "result": {
+        "original_header": "Time series of the world, unite!",
+        "type": "Text_excerpt",
+        "value": "A set of helper functions makes it easy to combine or align multiple\ntime series of all classes:\n``` r\n# collect time series as multiple time series\nts_c(ts_dt(EuStockMarkets), AirPassengers)\nts_c(EuStockMarkets, mdeaths)\n\n# combine time series to a new, single time series\nts_bind(ts_dt(mdeaths), AirPassengers)\nts_bind(ts_xts(AirPassengers), ts_tbl(mdeaths))\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9432677376788207,
+      "result": {
+        "original_header": "And plot just about everything",
+        "type": "Text_excerpt",
+        "value": "Plotting all kinds of classes and frequencies is as simple as it should\nbe. And we finally get a legend! \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/tsbox/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 12
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/tsbox/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/tsbox"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "tsbox: Class-Agnostic Time Series in R"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/tsbox/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "tsbox"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/tsbox/master/vignettes/fig/myfig.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/tsbox/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/tsbox/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/tsbox/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "graphics, r, time-series"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "r",
+          "time-series",
+          "graphics"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://blog.cynkra.com/posts/2019-04-10-tsbox-01/tsbox-cheatsheet-small.jpg"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "tsbox"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "tsbox: Class-Agnostic Time Series"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+        "type": "String",
+        "value": "tsbox"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 236863,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/tsbox/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "christophsax",
+          "type": "User"
+        },
+        "date_created": "2021-09-16T06:29:11Z",
+        "date_published": "2021-09-16T18:03:06Z",
+        "description": "# tsbox 0.3.1 (2021-09-16)\r\n\r\n## Bug fixes\r\n\r\n- Fix CRAN issues on Mac\r\n\r\n\r\n# tsbox 0.3.0 (2021-07-26)\r\n\r\n## Features\r\n\r\n- export ts_first_of_period #178\r\n- regular zoo and xts can be processed #175, #189\r\n- ts_na_interpolation() exported and added to examples in ?ts_examples #127\r\n- support regular timestamps in tsibble #196\r\n- ensure time is always ordered #202\r\n- ts_index(): base period can be entered as a range #188\r\n- ts_frequency() also works for weeks, sec, min, hours #183\r\n",
+        "html_url": "https://github.com/ropensci/tsbox/releases/tag/0.3.1",
+        "name": "tsbox 0.3.1 (2021-09-16)",
+        "release_id": 49697115,
+        "tag": "0.3.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/tsbox/tarball/0.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/tsbox/releases/49697115",
+        "value": "https://api.github.com/repos/ropensci/tsbox/releases/49697115",
+        "zipball_url": "https://api.github.com/repos/ropensci/tsbox/zipball/0.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "christophsax",
+          "type": "User"
+        },
+        "date_created": "2019-08-06T06:48:11Z",
+        "date_published": "2019-08-06T07:33:27Z",
+        "description": "## Features\r\n\r\n- Construction of expressions for data.tables are done problerly and now\r\n  are able to contain spaces or non-ASCII characters\r\n  (#151, thanks @stefanfritsch)\r\n- ts_default() puts data frames in default order (ids, time, value) (#166)\r\n- Consistent handling of non-default colnames and colorder in data frames (#166)\r\n- Support for 'tis' time series (#150)\r\n- Support for 'irts' time series, from package tseries\r\n- Tweakes color schemes\r\n\r\n## Bug fixes\r\n\r\n- High-frequency conversion works with daylight saving time (#152)\r\n- Do not run x13binary in tests on Solaris (#143)\r\n- Use `key = id` when creating a tsibble (#156)\r\n- ts_trend passes arguments to loess (#147)\r\n- ts_summary works with single or irregular observations (#145, #146)\r\n- ts_frequency handles na.rm correctly (#148)\r\n- handles data sets from tsibbledata (#164)\r\n- ts_lag handles negative `by` argument correctly (#177)\r\n",
+        "html_url": "https://github.com/ropensci/tsbox/releases/tag/0.2",
+        "name": "tsbox 0.2.0 (2019-08-06)",
+        "release_id": 19098548,
+        "tag": "0.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/tsbox/tarball/0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/tsbox/releases/19098548",
+        "value": "https://api.github.com/repos/ropensci/tsbox/releases/19098548",
+        "zipball_url": "https://api.github.com/repos/ropensci/tsbox/zipball/0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "christophsax",
+          "type": "User"
+        },
+        "date_created": "2019-04-03T10:07:35Z",
+        "date_published": "2019-04-15T14:56:31Z",
+        "description": "## Changes\r\n\r\n- Rectangular structures (`data.frame`, `tibble`, `data.table`) keep explicit\r\n  NAs by default. Use `ts_na_omit()` to make explicit NAs implicit. As\r\n  previously, `ts_regular()` makes implicit NAs explicit.\r\n\r\n\r\n## New Functions and Features\r\n\r\n- `ts_default`, new function to change column names to defaults (time, value), so\r\n  that no auto detection is performed afterwards (#118)\r\n- `ts_summary`, returns a data frame with summary information of a ts-boxable\r\n  object. Also used to extract time series properties (`ts_summary(x)$start`,\r\n  `ts_summary(x)$freq`, etc.)\r\n- `ts_regular` gains `fill` argument, to specify replacement value for `NA` (#101)\r\n- `ts_pc`, `ts_pcy`, `ts_diff`, `ts_diffy` have been rewritten and are much\r\n  faster. They now return a series of the same length as the input, with `NA`s\r\n  at the beginning.\r\n- `ts_pca`, new function to calculate annualized percentage change rate\r\n- `ts_span` gains `extend` argument, to add explicit `NA`s\r\n\r\n\r\n## Bug fixes\r\n\r\n- `ts_apply` pass on arguments. This allows functions generated by ts_ to pass\r\n  on additional arguments. E.g., `ts_seas(AirPassengers, x11 = \"\")` (#115, #103)\r\n- unnamed `tslist` objects of length 1 don't get an id anymore (#116)\r\n- `ts_span` various fixes, boundary specification by shift string (`\"1 year\"`)\r\n  or period now works as expected, also for non-heuristic series, such as\r\n  `EuStockMarkets` (#106)\r\n- time column of daily data is treated as Date and survives two way conversion\r\n  (#114, #137)\r\n- `ts_pick`, error if picked series is not in data (#100)\r\n- error when data contains duplicated series (#102)\r\n- `ts_plot`, improved axis labels for high frequency series (#117)\r\n- fixed tsibble to anything conversion\r\n\r\n\r\n## Deprecated\r\n\r\n- `ts_start`, `ts_end`, use `ts_summary(x)$start` and `ts_summary(x)$end`\r\n  instead.",
+        "html_url": "https://github.com/ropensci/tsbox/releases/tag/0.1",
+        "name": "tsbox 0.1.0 (2019-04-03)",
+        "release_id": 16769457,
+        "tag": "0.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/tsbox/tarball/0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/tsbox/releases/16769457",
+        "value": "https://api.github.com/repos/ropensci/tsbox/releases/16769457",
+        "zipball_url": "https://api.github.com/repos/ropensci/tsbox/zipball/0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "christophsax",
+          "type": "User"
+        },
+        "date_created": "2018-06-18T22:20:49Z",
+        "date_published": "2018-06-18T22:26:20Z",
+        "description": "## Features\r\n\r\n- Support for tibbletime time series (#90)\r\n\r\n## Bug fixes\r\n\r\n- Automatically detect numbers or text from 1600 to 2200 as time column (#92)\r\n- Fix to correctly ensure uniqueness of non unique id combinations (#93)\r\n- Fix to correctly parse POSIXct columns for monthly data in different time \r\n  zones. Remove two way testing for daily series with POSIXct columns. This \r\n  should fix mac binary build on CRAN (#97)",
+        "html_url": "https://github.com/ropensci/tsbox/releases/tag/0.0.3",
+        "name": "tsbox 0.0.3 (2018-06-18)",
+        "release_id": 11537774,
+        "tag": "0.0.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/tsbox/tarball/0.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/tsbox/releases/11537774",
+        "value": "https://api.github.com/repos/ropensci/tsbox/releases/11537774",
+        "zipball_url": "https://api.github.com/repos/ropensci/tsbox/zipball/0.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "christophsax",
+          "type": "User"
+        },
+        "date_created": "2018-05-12T15:57:05Z",
+        "date_published": "2018-05-15T15:36:07Z",
+        "description": "## Features\r\n\r\n- initial version",
+        "html_url": "https://github.com/ropensci/tsbox/releases/tag/0.0.2",
+        "name": "tsbox 0.0.2 (2018-05-12)",
+        "release_id": 11009419,
+        "tag": "0.0.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/tsbox/tarball/0.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/tsbox/releases/11009419",
+        "value": "https://api.github.com/repos/ropensci/tsbox/releases/11009419",
+        "zipball_url": "https://api.github.com/repos/ropensci/tsbox/zipball/0.0.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:08:28",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 150
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Use same functions for time series classes",
+        "parent_header": [
+          "tsbox: Class-Agnostic Time Series in R"
+        ],
+        "type": "Text_excerpt",
+        "value": "Because this works reliably, it is easy to write functions that work for\nall classes. So whether we want to **smooth**, **scale**,\n**differentiate**, **chain**, **forecast**, **regularize** or\n**seasonally adjust** a time series, we can use the same commands to\nwhatever time series class at hand:\n\n``` r\nts_trend(x.ts)\nts_pc(x.xts)\nts_pcy(x.df)\nts_lag(x.dt)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.4.2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.3.1.9005"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/tsbox/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

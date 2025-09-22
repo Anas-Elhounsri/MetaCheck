@@ -1,0 +1,527 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "system administration"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech Library",
+        "email": "rsdoiel@caltech.edu",
+        "identifier": "https://orcid.org/0000-0003-0900-6903",
+        "type": "String",
+        "value": "Robert Doiel"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Doiel",
+            "given_name": "Robert",
+            "name": "Robert Doiel",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0003-0900-6903"
+          }
+        ],
+        "datePublished": "2022",
+        "format": "cff",
+        "title": "admin-shell-scripts",
+        "type": "File_dump",
+        "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\ntype: software\ntitle: \"admin-shell-scripts\"\nabstract: \"This is a collection of Bash scripts used by Caltech Library\nto manage Ubuntu Servers and support our data infrastructure.\"\nauthors:\n  - family-names: Doiel\n    given-names: Robert\n    orcid: \"https://orcid.org/0000-0003-0900-6903\"\n\nrepository-code: \"git+https://github.com/caltechlibrary/admin-shell-scripts\"\nversion: 0.0.3\nlicense-url: \"https://spdx.org/licenses/BSD-3-Clause-Clear\"\n\ndate-released: 2022-10-19\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/admin-shell-scripts"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/caltechlibrary/admin-shell-scripts"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-10-19T21:01:17Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2022-10-19"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2022-10-19"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-06T22:10:12Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2022-10-19"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A collection of administrative shell scripts for working with Ubuntu Server machines."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "This is a collection of Bash scripts used by Caltech Library to manage Ubuntu Servers and support our data infrastructure."
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "Admin Shell Scripts"
+        ],
+        "type": "Text_excerpt",
+        "value": "Each script includes supports for \"-h\" and \"--help\".\nThe output of the help option is suitable to process\nwith Pandoc into a manual page.\n\n```\n    mkdir -p man/man1\n    check-for-reboot.bash -h |\\\n    pandoc --from markdown --to man -s \\\n    >man/man1/check-for-reboot.1\n```\n\nCheck the man page or [user manual](user-manual.html) for\ndocumentation on individual scripts.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/admin-shell-scripts/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/releases"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/admin-shell-scripts/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/admin-shell-scripts"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Admin Shell Scripts"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "Admin Shell Scripts"
+        ],
+        "type": "Text_excerpt",
+        "value": "1. Clone this repository\n2. Make sure Pandoc is installed\n3. Run make and make install\n\nBy default it will install scripts in `$HOME/bin` and manpages\nin `$HOME/man`.  If you need to install in `/usr/local` run make\nwith the prefix option.\n\nInstall in your home directory\n\n```\n    git clone https://github.com/caltechlibrary/admin-shell-scripts\n    cd admin-shell-scripts\n    make\n    make install\n```\n\nInstall in `/usr/local`\n\n```\n    git clone https://github.com/caltechlibrary/admin-shell-scripts\n    cd admin-shell-scripts\n    make\n    sudo make install prefix=/usr/local\n```\n\nUninstall from your home diriectory\n\n\n```\n    cd admin-shell-scripts\n    make uninstall\n```\n\nUninstall form `/usr/local`\n\n```\n    cd admin-shell-scripts\n    sudo make uninstall prefix=/usr/local\n```\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/admin-shell-scripts/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/admin-shell-scripts/issues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "system-administration"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "\nCopyright (c) 2022, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/BSD-3-Clause-Clear",
+        "spdx_id": "https://spdx.org/licenses/BSD-3-Clause-Clear",
+        "type": "License",
+        "value": "https://spdx.org/licenses/BSD-3-Clause-Clear"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "admin-shell-scripts"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "admin-shell-scripts"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 43944,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 22772,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 12623,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 7336,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 2981,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Lua",
+        "size": 195,
+        "type": "Programming_language",
+        "value": "Lua"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Bash",
+        "type": "Programming_language",
+        "value": "Bash",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Make",
+        "type": "Programming_language",
+        "value": "Make",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2022-10-19T23:24:03Z",
+        "date_published": "2022-10-19T23:46:06Z",
+        "description": "This is the working proof of concept for our scripts.",
+        "html_url": "https://github.com/caltechlibrary/admin-shell-scripts/releases/tag/0.0.3",
+        "name": "Initial working scripts implemented",
+        "release_id": 80393011,
+        "tag": "0.0.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/admin-shell-scripts/tarball/0.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/admin-shell-scripts/releases/80393011",
+        "value": "https://api.github.com/repos/caltechlibrary/admin-shell-scripts/releases/80393011",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/admin-shell-scripts/zipball/0.0.3"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "bash",
+        "type": "Software_application",
+        "value": "bash",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "make",
+        "type": "Software_application",
+        "value": "make",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pandoc",
+        "type": "Software_application",
+        "value": "pandoc",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mysql",
+        "type": "Software_application",
+        "value": "mysql",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "makepasswd",
+        "type": "Software_application",
+        "value": "makepasswd",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jq",
+        "type": "Software_application",
+        "value": "jq",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Requirements",
+        "parent_header": [
+          "Admin Shell Scripts"
+        ],
+        "type": "Text_excerpt",
+        "value": "Aside from the standard Unix/POSIX system utilities\nthe following commands are needed by one or more shell scripts.\n\n- bash\n- make\n- pandoc\n- makepasswd\n- mysql\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:45:50",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.3"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/admin-shell-scripts/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

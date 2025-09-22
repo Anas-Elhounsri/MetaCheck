@@ -1,0 +1,877 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Scientific"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "WIAS Berlin",
+        "type": "String",
+        "value": "Jan Philipp Thiele"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Thiele",
+            "given_name": "Jan Philipp",
+            "name": "Jan Philipp Thiele",
+            "type": "Agent"
+          }
+        ],
+        "datePublished": "2024",
+        "doi": "https://doi.org/10.48550/arXiv.2408.08840",
+        "format": "cff",
+        "title": "ideal.II: a Galerkin Space-Time Extension to the Finite Element Library deal.II",
+        "type": "File_dump",
+        "url": "https://doi.org/https://doi.org/10.48550/arXiv.2408.08840",
+        "value": "title: \"ideal.II: a Galerkin Space-Time Extension to the Finite Element Library\n  deal.II\"\nauthors:\n  - given-names: Jan Philipp\n    family-names: Thiele\n    affiliation: WIAS Berlin\ncff-version: 1.2.0\nmessage: If you use this software, please cite it using the metadata from this file.\ntype: software\ndoi: https://doi.org/10.48550/arXiv.2408.08840\nabstract: An extension to the finite element library deal.II (www.dealii.org)\n  for tensor-product space-time finite elements\nkeywords:\n  - Space time finite elements\n  - finite elements\n  - MPI\nlicense: LGPL-3.0\nrepository-code: https://github.com/instatdealii/idealii\ndate-released: 2024-08-15\nversion: v1.0.0\n"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to cite ideal.II",
+        "parent_header": [
+          "ideal.II an extension to deal.II for tensor-product space-time finite elements"
+        ],
+        "type": "Text_excerpt",
+        "value": "The software metapaper is currently in preparation. Once published the readme will be updated accordingly.\n\nIf you write a paper using results obtained with the help of ideal.II, please cite the following reference: \n\n1. Jan Philipp Thiele, \n   ideal.II: a Galerkin space-time extension to the finite element library deal.II,\n   preprint(2024), arXiv 2408.08840\n   \n~~~~~\n    @misc{idealII,\n\t    archiveprefix = {arXiv},\n\t    author = {Thiele, Jan Philipp},\n\t    eprint = {2408.08840},\n    \tprimaryclass = {math.NA},\n\t    title = {ideal.{II}: a Galerkin Space-Time Extension to the Finite Element Library deal.{II}},\n\t    year = {preprint(2024), \\url{https://arxiv.org/abs/2408.08840}}\n    }\n~~~~~\n   \n2. Please also cite deal.II as explained [here](https://dealii.org/publications.html)\n    "
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/Readme.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Thiele, Jan Philipp",
+        "format": "bibtex",
+        "title": "ideal.{II}: a Galerkin Space-Time Extension to the Finite Element Library deal.{II}",
+        "type": "Text_excerpt",
+        "value": "@misc{idealII,\n    year = {preprint(2024), \\url{https://arxiv.org/abs/2408.08840}},\n    title = {ideal.{II}: a Galerkin Space-Time Extension to the Finite Element Library deal.{II}},\n    primaryclass = {math.NA},\n    eprint = {2408.08840},\n    author = {Thiele, Jan Philipp},\n    archiveprefix = {arXiv},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/Readme.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/instatdealii/idealii"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/instatdealii/idealii"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/instatdealii/idealii/main/.github/workflows/dependency-review.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/instatdealii/idealii/main/.github/workflows/dealii930.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/instatdealii/idealii/main/.github/workflows/dealii940.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/instatdealii/idealii/main/.github/workflows/dealii950.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/instatdealii/idealii/main/.github/workflows/documentation.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/instatdealii/idealii/main/.github/workflows/dealii942.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/instatdealii/idealii/main/.github/workflows/indent.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/instatdealii/idealii/main/.github/workflows/scorecard.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2022-08-26T15:47:24Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2022-08-26"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-08-15"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-05-23T07:17:45Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-08-15"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "An extension to the finite element library deal.II (www.dealii.org) for tensor-product space-time finite elements"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9835640006147645,
+      "result": {
+        "original_header": "ideal.II an extension to deal.II for tensor-product space-time finite elements",
+        "type": "Text_excerpt",
+        "value": "This library provides classes and functions to solve instationary partial differential equations by \nusing space-time finite elements i.e. finite elements in both time and space. \nIt heavily builds on the 1 to 3d finite element capabilities of [deal.II](www.dealii.org) \nso you should make yourself familiar with solving stationary problems with that library first. \n"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/Readme.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "ideal.II an extension to deal.II for tensor-product space-time finite elements"
+        ],
+        "type": "Text_excerpt",
+        "value": "A full documentation including the underlying mathematics (WIP)\ncan be found [here](https://instatdealii.github.io/idealii/dev).\n\nThe doxygen API Reference of the library functions can be found \n[here](https://instatdealii.github.io/idealii/dev/doxygen).\n\n\n\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/Readme.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/instatdealii/idealii/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/instatdealii/idealii/releases/tag/v1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/instatdealii/idealii/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "instatdealii/idealii"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ideal.II an extension to deal.II for tensor-product space-time finite elements"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/Readme.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.48550/arXiv.2408.08840"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to install ideal.II",
+        "parent_header": [
+          "ideal.II an extension to deal.II for tensor-product space-time finite elements"
+        ],
+        "type": "Text_excerpt",
+        "value": "First you need to install deal.II by following the instructions on their [site](https://dealii.org/current/readme.html).\nIf you plan on using parallel linear algebra and other advanced features of deal.II and ideal.II \nyou should use either the [cmake superbuild](www.github.com/jpthiele/dealii-cmake-superbuild) or [candi](www.github.com/dealii/candi). \nNote down the installation directory of deal.II (for example ~/Software/dealii)\n\nThe installation of ideal.II is based on CMake as well, the steps are as follows.\n\n1. Choose an installation directory for ideal.II (for example ~/Software/idealii)\n\n2. Open a console and go to a directory where you want to download the source files (e.g. ~/Downloads) and clone the repository \n\n~~~~~\n    cd ~/Downloads\n    git clone https://github.com/instatdealii/idealii\n~~~~~\n\n3. After cloning is finished execute the following commands (with the above directory examples write\n  ~/Software/dealii instead of <path_to_your_deal_installation> and ~/Software/idealii instead of <path_to_install_idealii_in>\n \n~~~~~\n    cd idealii   \n    cmake -S. -Bbuild -DDEAL_II_DIR=<path_to_your_deal_installation> -DCMAKE_INSTALL_PREFIX=<path_to_install_idealii_in> \n    cmake --build build\n    cmake --install build\n~~~~~\n"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/Readme.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/instatdealii/idealii/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/instatdealii/idealii/issues"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Space time finite elements",
+          "finite elements",
+          "MPI"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU Lesser General Public License v3.0",
+        "spdx_id": "LGPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/lgpl-3.0",
+        "value": "https://api.github.com/licenses/lgpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary."
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/LGPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/LGPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/LGPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "idealii"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ideal.II: a Galerkin Space-Time Extension to the Finite Element Library deal.II"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "instatdealii"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 216119,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CMake",
+        "size": 16561,
+        "type": "Programming_language",
+        "value": "CMake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "type": "Programming_language",
+        "value": "C++",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CMake",
+        "type": "Programming_language",
+        "value": "CMake",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Hack",
+        "type": "Programming_language",
+        "value": "Hack",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/instatdealii/idealii/main/Readme.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_papers": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://arxiv.org/abs/2408.08840}}\n    }\n~~~~~\n   \n2. Please also cite deal.II as explained [here](https://dealii.org/publications.html"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/Readme.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "jpthiele",
+          "type": "User"
+        },
+        "date_created": "2024-08-15T19:36:36Z",
+        "date_published": "2024-08-15T19:47:55Z",
+        "description": "# Initial version\r\n\r\n- Four example steps showing usage of the library\r\n  - step-1: Heat equation as a prototypical example\r\n  - step-2: Stokes equation as an example for coupled problems\r\n  - step-3: Heat equation (again) to show usage of MPI parallel linear algebra\r\n  - step-4: Navier-Stokes equation as an example of a nonlinear coupled problem\r\n- Doxygen API documentation of the libraries classes and functions\r\n- Sphinx based main documentation \r\n  - Explanation of the underlying mathematics (still WIP)\r\n  - Documentation of all examples including an introduction, commented source code and discussion of results\r\n   ",
+        "html_url": "https://github.com/instatdealii/idealii/releases/tag/v1.0.0",
+        "name": "v1.0.0",
+        "release_id": 170426963,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/instatdealii/idealii/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/instatdealii/idealii/releases/170426963",
+        "value": "https://api.github.com/repos/instatdealii/idealii/releases/170426963",
+        "zipball_url": "https://api.github.com/repos/instatdealii/idealii/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "www.github.com/dealii/dealii",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "breathe",
+        "type": "Software_application",
+        "value": "breathe==4.36.0",
+        "version": "==4.36.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "docutils",
+        "type": "Software_application",
+        "value": "docutils==0.21.2",
+        "version": "==0.21.2"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pathspec",
+        "type": "Software_application",
+        "value": "pathspec==0.12.1",
+        "version": "==0.12.1"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Pygments",
+        "type": "Software_application",
+        "value": "Pygments==2.19.1",
+        "version": "==2.19.1"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python-dateutil",
+        "type": "Software_application",
+        "value": "python-dateutil==2.9.0.post0",
+        "version": "==2.9.0.post0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Sphinx",
+        "type": "Software_application",
+        "value": "Sphinx==8.2.3",
+        "version": "==8.2.3"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-autobuild",
+        "type": "Software_application",
+        "value": "sphinx-autobuild==2024.10.3",
+        "version": "==2024.10.3"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-copybutton",
+        "type": "Software_application",
+        "value": "sphinx-copybutton==0.5.2",
+        "version": "==0.5.2"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-minipres",
+        "type": "Software_application",
+        "value": "sphinx-minipres==0.2.1",
+        "version": "==0.2.1"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-rtd-dark-mode",
+        "type": "Software_application",
+        "value": "sphinx-rtd-dark-mode==1.3.0",
+        "version": "==1.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-rtd-theme",
+        "type": "Software_application",
+        "value": "sphinx-rtd-theme==3.0.2",
+        "version": "==3.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-rtd-theme-ext-color-contrast",
+        "type": "Software_application",
+        "value": "sphinx-rtd-theme-ext-color-contrast==0.3.2",
+        "version": "==0.3.2"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-tabs",
+        "type": "Software_application",
+        "value": "sphinx-tabs==3.4.7",
+        "version": "==3.4.7"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinx-togglebutton",
+        "type": "Software_application",
+        "value": "sphinx-togglebutton==0.3.2",
+        "version": "==0.3.2"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-applehelp",
+        "type": "Software_application",
+        "value": "sphinxcontrib-applehelp==2.0.0",
+        "version": "==2.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-devhelp",
+        "type": "Software_application",
+        "value": "sphinxcontrib-devhelp==2.0.0",
+        "version": "==2.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-htmlhelp",
+        "type": "Software_application",
+        "value": "sphinxcontrib-htmlhelp==2.1.0",
+        "version": "==2.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-jquery",
+        "type": "Software_application",
+        "value": "sphinxcontrib-jquery==4.1",
+        "version": "==4.1"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-jsmath",
+        "type": "Software_application",
+        "value": "sphinxcontrib-jsmath==1.0.1",
+        "version": "==1.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-qthelp",
+        "type": "Software_application",
+        "value": "sphinxcontrib-qthelp==2.0.0",
+        "version": "==2.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-serializinghtml",
+        "type": "Software_application",
+        "value": "sphinxcontrib-serializinghtml==2.0.0",
+        "version": "==2.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-serializinghtml",
+        "type": "Software_application",
+        "value": "sphinxcontrib-serializinghtml==2.0.0",
+        "version": "==2.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "sphinxcontrib-video",
+        "type": "Software_application",
+        "value": "sphinxcontrib-video==0.4.1",
+        "version": "==0.4.1"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/doc/sphinx/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:41:23",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to use ideal.II in your codes",
+        "parent_header": [
+          "ideal.II an extension to deal.II for tensor-product space-time finite elements"
+        ],
+        "type": "Text_excerpt",
+        "value": "Take a look at one of the example steps and copy the CMakeLists.txt file from there into your project directory. \nSet the correct project name and sources and then call the following commands from your project directory.\n\n~~~~~\n    cmake -S. -Bbuild -DIDEAL_II_DIR=<path_to_install_idealii_in>\n    cmake --build build\n~~~~~\n\nThen the executable will be inside the build subdirectory. \n"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/Readme.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/instatdealii/idealii/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

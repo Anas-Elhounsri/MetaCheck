@@ -1,0 +1,874 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "bjodah@gmail.com",
+        "given_name": "Bjoern",
+        "last_name": "I. Dahlgren",
+        "name": "Bjoern I. Dahlgren",
+        "type": "Agent",
+        "value": "Bjoern I. Dahlgren"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/AUTHORS",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "KTH Royal Institute of Technology",
+        "email": "bjodah@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-0596-0222",
+        "type": "String",
+        "value": "Bj\u00f6rn Dahlgren"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/joss-paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citing",
+        "parent_header": [
+          "pyneqsys"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you make use of pyneqsys in e.g. academic work you may cite the following peer-reviewed publication:\n\n.. image:: http://joss.theoj.org/papers/10.21105/joss.00531/status.svg\n   :target: https://doi.org/10.21105/joss.00531\n   :alt: Journal of Open Source Software DOI\n\nDepending on what underlying solver you are using you should also cite the appropriate paper\n(you can look at the list of references in the JOSS article). If you need to reference,\nin addition to the paper, a specific point version of pyneqsys (for e.g. reproducibility)\nyou can get per-version DOIs from the zendodo archive:\n\n.. image:: https://zenodo.org/badge/43504371.svg\n   :target: https://zenodo.org/badge/latestdoi/43504371\n   :alt: Zenodo DOI\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/bjodah/pyneqsys"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/bjodah/pyneqsys"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/joss-paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "parent_header": [
+          "pyneqsys"
+        ],
+        "type": "Text_excerpt",
+        "value": "Contributors are welcome to suggest improvements at https://github.com/bjodah/pyneqsys\n(see further details `here <CONTRIBUTING.rst>`_).\n"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2015-10-01T15:26:21Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-01-08"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/joss-paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-01-08"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/joss-paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-23T14:25:21Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2018-01-08"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/joss-paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Solve symbolically defined systems of non-linear equations numerically."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Solve symbolically defined systems of non-linear equations numerically"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/joss-paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8806026676042062,
+      "result": {
+        "original_header": "pyneqsys",
+        "type": "Text_excerpt",
+        "value": "The numerical root finding is perfomed using either: \nIn addition to offering a unified interface to different solvers, pyneqsys\ncan also derive the Jacobian analytically (when using ``pyneqsys.SymbolicSys``).\nThis is useful since doing so manually is widely recognized as both tedious and error\nprone. \nIn addition to deriving the Jacobian analytically the symbolic representation can for\nexample apply row-reduce. This is usful for when you have a overdetermined system (\nformed from e.g. applying conservation laws) and want to solve the system by\nroot-finding rather than using a least-square optimization of e.g. Levenberg-Marquardt\nstyle. \nLast, but not the least having a symbolic representation of your system of equations\nallows you to generate publication quality latex representations of your equations (through\nSymPy's latex printer) from a **single** source\u2012no more error prone hand-rewriting of the same\nequations in another format for presentation! \n"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/README.rst",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8961600931144398,
+      "result": {
+        "original_header": "Licensing",
+        "type": "Text_excerpt",
+        "value": "The source code is Open Source and is released under the simplified 2-clause BSD license. See LICENSE_ for further details. \n"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/README.rst",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "pyneqsys"
+        ],
+        "type": "Text_excerpt",
+        "value": "Autogenerated API documentation for latest stable release is found here:\n`<https://bjodah.github.io/pyneqsys/latest>`_\n(and the development version for the current master branch is found here:\n`<http://hera.physchem.kth.se/~pyneqsys/branches/master/html>`_).\n"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/bjodah/pyneqsys/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/index.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/index.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/custom_solvers.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/custom_solvers.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/multiprecision.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/multiprecision.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/chem_equil_ammonia.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/chem_equil_ammonia.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/conditional.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/conditional.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/varied_param.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/varied_param.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 6
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "bjodah/pyneqsys"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pyneqsys"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/environment/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/environment/Dockerfile",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/update-gh-pages.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/post_release.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/prepare_deploy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/ci.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/host-jupyter-using-docker.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/release.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/run_tests.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/check_clean_repo_on_master.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/render_notebooks.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/render_index.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/generate_docs.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/scripts/build_conda_recipe.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "http://dx.doi.org/10.5281/zenodo.1156898"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/joss-paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "pyneqsys"
+        ],
+        "type": "Text_excerpt",
+        "value": "Simplest way to install pyneqsys and its dependencies is through the `conda package manager <http://conda.pydata.org/docs/>`_:\n\n::\n\n   $ conda install -c bjodah pyneqsys pytest\n   $ pytest --pyargs pyneqsys\n\nOptional dependencies\n~~~~~~~~~~~~~~~~~~~~~\nIf you used ``conda`` to install pyneqsys_ you can skip this section.\nBut if you use ``pip`` you may want to know that the default installation\nof ``pyneqsys`` only requires SciPy::\n\n   $ pip install pyneqsys\n   $ pytest --pyargs pyneqsys -rs\n\nThe above command should finish without errors but with some skipped tests.\nThe reason for why some tests are skipped should be because missing optional solvers.\nTo install the optional solvers you will first need to install third party libraries for\nthe solvers and then their python bindings. The 3rd party requirements are as follows:\n\n- `pykinsol <https://github.com/bjodah/pykinsol>`_ (requires SUNDIALS_ ==2.7.0)\n- `levar <https://github.com/bjodah/levmar>`_\n- `mpmath <http://www.mpmath.org>`_\n\n\nif you want to see what packages need to be installed on a Debian based system you may look at this\n`Dockerfile <scripts/environment/Dockerfile>`_.\n\nIf you manage to install all three external libraries you may install pyneqsys with the option \"all\"::\n\n  $ pip install pyneqsys[all]\n  $ pytest --pyargs pyneqsys -rs\n\nnow there should be no skipped tests. If you try to install pyneqsys on a machine where you do not have\nroot permissions you may find the flag ``--user`` helpful when using pip. Also if there are multiple\nversions of python installed you may want to invoke python for an explicit version of python, e.g.::\n\n  $ python3.6 -m pip install --user pyneqsys[all]\n\nsee `setup.py <setup.py>`_ for the exact list of requirements.\n\n.. _SUNDIALS: https://computation.llnl.gov/projects/sundials\n\nUsing Docker\n~~~~~~~~~~~~\nIf you have `Docker <https://www.docker.com>`_ installed, you may use it to host a jupyter\nnotebook server::\n\n  $ ./scripts/host-jupyter-using-docker.sh . 8888\n\nthe first time you run the command some dependencies will be downloaded. When the installation\nis complete there will be a link visible which you can open in your browser. You can also run\nthe test suite using the same docker-image::\n\n  $ ./scripts/host-jupyter-using-docker.sh . 0\n\nthere will be one skipped test (due to symengine missing in this pip installed environment) and\nquite a few instances of RintimeWarning.\n"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "least-squares, nonlinear-equations, root-finding, symbolic-manipulation, sympy"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "nonlinear-equations",
+          "least-squares",
+          "root-finding",
+          "symbolic-manipulation"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/joss-paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "type": "License",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "value": "https://api.github.com/licenses/bsd-2-clause"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "Copyright (c) 2015-2018, Bj\u00f6rn Dahlgren\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n  Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n  Redistributions in binary form must reproduce the above copyright notice, this\n  list of conditions and the following disclaimer in the documentation and/or\n  other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/BSD",
+        "spdx_id": "BSD",
+        "type": "License",
+        "value": "BSD"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/joss-paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pyneqsys"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "bjodah"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 71512,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 14551,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 3806,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 2447,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Jupyter Notebook",
+        "size": 1946,
+        "type": "Programming_language",
+        "value": "Jupyter Notebook"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 1061,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/README.rst"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bjodah",
+          "type": "User"
+        },
+        "date_created": "2020-11-24T12:40:30Z",
+        "date_published": "2020-11-24T12:43:17Z",
+        "description": "Solve symbolically defined systems of non-linear equations numerically.",
+        "html_url": "https://github.com/bjodah/pyneqsys/releases/tag/v0.5.7",
+        "name": "pyneqsys-0.5.7",
+        "release_id": 34359875,
+        "tag": "v0.5.7",
+        "tarball_url": "https://api.github.com/repos/bjodah/pyneqsys/tarball/v0.5.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/bjodah/pyneqsys/releases/34359875",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/releases/34359875",
+        "zipball_url": "https://api.github.com/repos/bjodah/pyneqsys/zipball/v0.5.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bjodah",
+          "type": "User"
+        },
+        "date_created": "2018-10-27T14:06:24Z",
+        "date_published": "2018-10-27T14:07:03Z",
+        "description": "Solve symbolically defined systems of non-linear equations numerically.",
+        "html_url": "https://github.com/bjodah/pyneqsys/releases/tag/v0.5.6",
+        "name": "pyneqsys-0.5.6",
+        "release_id": 13690941,
+        "tag": "v0.5.6",
+        "tarball_url": "https://api.github.com/repos/bjodah/pyneqsys/tarball/v0.5.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/bjodah/pyneqsys/releases/13690941",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/releases/13690941",
+        "zipball_url": "https://api.github.com/repos/bjodah/pyneqsys/zipball/v0.5.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bjodah",
+          "type": "User"
+        },
+        "date_created": "2018-10-26T14:01:47Z",
+        "date_published": "2018-10-26T14:02:26Z",
+        "description": "Solve symbolically defined systems of non-linear equations numerically.",
+        "html_url": "https://github.com/bjodah/pyneqsys/releases/tag/v0.5.5",
+        "name": "pyneqsys-0.5.5",
+        "release_id": 13678110,
+        "tag": "v0.5.5",
+        "tarball_url": "https://api.github.com/repos/bjodah/pyneqsys/tarball/v0.5.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/bjodah/pyneqsys/releases/13678110",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/releases/13678110",
+        "zipball_url": "https://api.github.com/repos/bjodah/pyneqsys/zipball/v0.5.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bjodah",
+          "type": "User"
+        },
+        "date_created": "2018-01-24T17:37:12Z",
+        "date_published": "2018-01-24T17:38:21Z",
+        "description": "Solve symbolically defined systems of non-linear equations numerically.",
+        "html_url": "https://github.com/bjodah/pyneqsys/releases/tag/v0.5.4",
+        "name": "pyneqsys-0.5.4",
+        "release_id": 9371495,
+        "tag": "v0.5.4",
+        "tarball_url": "https://api.github.com/repos/bjodah/pyneqsys/tarball/v0.5.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/bjodah/pyneqsys/releases/9371495",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/releases/9371495",
+        "zipball_url": "https://api.github.com/repos/bjodah/pyneqsys/zipball/v0.5.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bjodah",
+          "type": "User"
+        },
+        "date_created": "2018-01-22T11:50:52Z",
+        "date_published": "2018-01-22T12:08:00Z",
+        "description": "Solve symbolically defined systems of non-linear equations numerically. ",
+        "html_url": "https://github.com/bjodah/pyneqsys/releases/tag/v0.5.3",
+        "name": "pyneqsys-0.5.3",
+        "release_id": 9329200,
+        "tag": "v0.5.3",
+        "tarball_url": "https://api.github.com/repos/bjodah/pyneqsys/tarball/v0.5.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/bjodah/pyneqsys/releases/9329200",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/releases/9329200",
+        "zipball_url": "https://api.github.com/repos/bjodah/pyneqsys/zipball/v0.5.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bjodah",
+          "type": "User"
+        },
+        "date_created": "2018-01-17T22:29:57Z",
+        "date_published": "2018-01-17T22:32:48Z",
+        "description": "SHA256(pyneqsys-0.5.2.tar.gz)= 19cba2c7bfede6da5a6d579e13aa5a8def651c1036a6fa5e3c3ab162ba73fe36",
+        "html_url": "https://github.com/bjodah/pyneqsys/releases/tag/v0.5.2",
+        "name": "pyneqsys-0.5.2",
+        "release_id": 9278439,
+        "tag": "v0.5.2",
+        "tarball_url": "https://api.github.com/repos/bjodah/pyneqsys/tarball/v0.5.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/bjodah/pyneqsys/releases/9278439",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/releases/9278439",
+        "zipball_url": "https://api.github.com/repos/bjodah/pyneqsys/zipball/v0.5.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bjodah",
+          "type": "User"
+        },
+        "date_created": "2018-01-08T20:01:24Z",
+        "date_published": "2018-01-08T20:02:08Z",
+        "description": "[pyneqsys-0.5.1.tar.gz](https://github.com/bjodah/pyneqsys/files/1612873/pyneqsys-0.5.1.tar.gz)\r\n",
+        "html_url": "https://github.com/bjodah/pyneqsys/releases/tag/v0.5.1",
+        "name": "pyneqsys-0.5.1",
+        "release_id": 9151460,
+        "tag": "v0.5.1",
+        "tarball_url": "https://api.github.com/repos/bjodah/pyneqsys/tarball/v0.5.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/bjodah/pyneqsys/releases/9151460",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/releases/9151460",
+        "zipball_url": "https://api.github.com/repos/bjodah/pyneqsys/zipball/v0.5.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bjodah",
+          "type": "User"
+        },
+        "date_created": "2016-11-07T18:25:55Z",
+        "date_published": "2016-11-07T18:26:50Z",
+        "description": "Solve symbolically defined systems of non-linear equations numerically.\n\nSHA256(pyneqsys-0.4.4.tar.gz)= cdd1f1b5dec690b0c763b3da4bbaaed43fd5ce7275503c4513dd560ae2e06308\n",
+        "html_url": "https://github.com/bjodah/pyneqsys/releases/tag/v0.4.4",
+        "name": "pyneqsys-0.4.4",
+        "release_id": 4593723,
+        "tag": "v0.4.4",
+        "tarball_url": "https://api.github.com/repos/bjodah/pyneqsys/tarball/v0.4.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/bjodah/pyneqsys/releases/4593723",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/releases/4593723",
+        "zipball_url": "https://api.github.com/repos/bjodah/pyneqsys/zipball/v0.4.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bjodah",
+          "type": "User"
+        },
+        "date_created": "2016-11-07T17:45:45Z",
+        "date_published": "2016-11-07T17:47:00Z",
+        "description": "Solve symbolically defined systems of non-linear equations numerically.\n\nSHA256(pyneqsys-0.4.3.tar.gz)= ae37ede2d209fca77cbad51b7b2889181ed5dbf15e84425f62bbfc35866c0bea\n",
+        "html_url": "https://github.com/bjodah/pyneqsys/releases/tag/v0.4.3",
+        "name": "pyneqsys-0.4.3",
+        "release_id": 4593293,
+        "tag": "v0.4.3",
+        "tarball_url": "https://api.github.com/repos/bjodah/pyneqsys/tarball/v0.4.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/bjodah/pyneqsys/releases/4593293",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/releases/4593293",
+        "zipball_url": "https://api.github.com/repos/bjodah/pyneqsys/zipball/v0.4.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "bjodah",
+          "type": "User"
+        },
+        "date_created": "2016-06-03T13:11:00Z",
+        "date_published": "2016-06-03T13:12:13Z",
+        "description": "Solving of symbolic systems of non-linear equations numerically.\n",
+        "html_url": "https://github.com/bjodah/pyneqsys/releases/tag/v0.4.2",
+        "name": "pyneqsys-0.4.2",
+        "release_id": 3367851,
+        "tag": "v0.4.2",
+        "tarball_url": "https://api.github.com/repos/bjodah/pyneqsys/tarball/v0.4.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/bjodah/pyneqsys/releases/3367851",
+        "value": "https://api.github.com/repos/bjodah/pyneqsys/releases/3367851",
+        "zipball_url": "https://api.github.com/repos/bjodah/pyneqsys/zipball/v0.4.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "support"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:05:34",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 52
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Examples",
+        "parent_header": [
+          "pyneqsys"
+        ],
+        "type": "Text_excerpt",
+        "value": "Example reformulated from `SciPy documentation <http://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.root.html>`_:\n\n.. code:: python\n\n   >>> from pyneqsys.symbolic import SymbolicSys\n   >>> neqsys = SymbolicSys.from_callback(\n   ...     lambda x: [(x[0] - x[1])**3/2 + x[0] - 1,\n   ...                (x[1] - x[0])**3/2 + x[1]], 2)\n   >>> x, info = neqsys.solve([1, 0])\n   >>> assert info['success']\n   >>> print(x)\n   [0.8411639 0.1588361]\n\nhere we did not need to enter the jacobian manually, SymPy did that for us.\nFor expressions containing transcendental functions we need to provide a\n\"backend\" keyword arguemnt to enable symbolic derivation of the jacobian:\n\n.. code:: python\n\n   >>> import math\n   >>> def powell(x, params, backend=math):\n   ...     A, exp = params[0], backend.exp\n   ...     return A*x[0]*x[1] - 1, exp(-x[0]) + exp(-x[1]) - (1 + A**-1)\n   >>> powell_sys = SymbolicSys.from_callback(powell, 2, 1, names='x0 x1'.split())\n   >>> x, info = powell_sys.solve([1, 1], [1000.0])\n   >>> assert info['success']\n   >>> print(', '.join(['%.6e' % _ for _ in sorted(x)]))\n   1.477106e-04, 6.769996e+00\n\npyneqsys also allows the user to solve a system of equations for a span of\nvalues for a parameter, and optionally plot the result vs. the varied value:\n\n.. code:: python\n\n   >>> import matplotlib.pyplot as plt\n   >>> import numpy as np\n   >>> x0_varied, x0_idx = np.linspace(1e3, 3e3), 0\n   >>> all_x, all_info = powell_sys.solve_and_plot_series(x, [1000.0], x0_varied, x0_idx)\n   >>> plt.savefig('example.png')\n\n.. image:: https://raw.githubusercontent.com/bjodah/pyneqsys/master/examples/example.png\n\nFor more examples look see\n`examples/ <https://github.com/bjodah/pyneqsys/tree/master/examples>`_, and rendered jupyter notebooks here:\n`<http://hera.physchem.kth.se/~pyneqsys/branches/master/examples>`_\n\nRun notebooks using binder\n~~~~~~~~~~~~~~~~~~~~~~~~~~\nUsing only a web-browser (and an internet connection) it is possible to explore the\nnotebooks here: (by the courtesy of the people behind mybinder)\n\n.. image:: http://mybinder.org/badge.svg\n   :target: https://mybinder.org/v2/gh/bjodah/pyneqsys/d8775becc6f30b4d3e7920f53d5f318c0672195b?filepath=index.ipynb\n   :alt: Binder\n"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v0.5.1"
+      },
+      "source": "https://raw.githubusercontent.com/bjodah/pyneqsys/master/joss-paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

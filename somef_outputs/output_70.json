@@ -1,0 +1,672 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geodesy"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0002-1637-6526",
+        "type": "String",
+        "value": "Michael Hirsch"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Hirsch",
+            "given_name": "Michael",
+            "name": "Michael Hirsch",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0002-1637-6526"
+          }
+        ],
+        "datePublished": "2021",
+        "doi": "10.5281/zenodo.4589680",
+        "format": "cff",
+        "title": "maptran3d",
+        "type": "File_dump",
+        "url": "https://doi.org/10.5281/zenodo.4589680",
+        "value": "cff-version: 1.2.0\nauthors:\n  - family-names: Hirsch\n    given-names: Michael\n    orcid: https://orcid.org/0000-0002-1637-6526\ntitle: maptran3d\ndoi: 10.5281/zenodo.4589680\ndate-released: 2021-11-21\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/geospace-code/maptran3d"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/geospace-code/maptran3d"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/geospace-code/maptran3d/actions"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/.github/workflows/ci.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-08-09T19:12:24Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-04-17T08:22:35Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2021-11-21"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Modern Fortran 3D coordinate conversions for geospace ecef enu eci "
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Fortran coordinate transforms and geodesy"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8405863561692919,
+      "result": {
+        "original_header": "Maptran 3D",
+        "type": "Text_excerpt",
+        "value": "The modern Fortran API is simple like PyMap3D and Matlab Mapping Toolbox.\n`elemental` procedures are used throughout to enable seamless support of scalar or array coordinate inputs.\n```fortran\nuse maptran\n\ncall geodetic2ecef(lat,lon,alt, x,y,z)\ncall geodetic2aer(lat,lon,alt, observer_lat, observer_lon, observer_alt)\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "active"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/geospace-code/maptran3d/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/geospace-code/maptran3d/releases"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "geospace-code/maptran3d"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Maptran 3D"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "10.5281/zenodo.4589680"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/144193557"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/geospace-code/maptran3d/issues"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "coordinate-conversions, coordinate-transformation, fortran2018, geodesy, modern-fortran"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "geodesy",
+          "mapping"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause \"Simplified\" License",
+        "spdx_id": "BSD-2-Clause",
+        "type": "License",
+        "url": "https://api.github.com/licenses/bsd-2-clause",
+        "value": "https://api.github.com/licenses/bsd-2-clause"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "BSD 2-Clause License\n\nCopyright (c) 2018, Michael Hirsch, Ph.D.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice,\n  this list of conditions and the following disclaimer in the documentation\n  and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/BSD-2-Clause",
+        "spdx_id": "https://spdx.org/licenses/BSD-2-Clause",
+        "type": "License",
+        "value": "https://spdx.org/licenses/BSD-2-Clause"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "maptran3d"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "maptran3d"
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "geospace-code"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Fortran",
+        "size": 44444,
+        "type": "Programming_language",
+        "value": "Fortran"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CMake",
+        "size": 3445,
+        "type": "Programming_language",
+        "value": "CMake"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Meson",
+        "size": 479,
+        "type": "Programming_language",
+        "value": "Meson"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Fortran",
+        "type": "Programming_language",
+        "value": "Fortran",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/geospace-code/maptran3d/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-11-22T03:52:18Z",
+        "date_published": "2021-11-22T03:54:48Z",
+        "description": "since we're only doing one precision at a time (this could be improved), simply use compiler flags",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.2.0",
+        "name": "simplify real precision",
+        "release_id": 53811021,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/53811021",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/53811021",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-03-09T03:13:29Z",
+        "date_published": "2021-03-09T03:13:51Z",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.1.4",
+        "name": "cmake packaging",
+        "release_id": 39483486,
+        "tag": "v1.1.4",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/39483486",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/39483486",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2021-02-07T03:54:15Z",
+        "date_published": "2021-02-07T03:57:52Z",
+        "description": "use Fortran polymorphism to cleanup program internals\r\n\r\ncleanup CMake code",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.1.3",
+        "name": "refactoring, cleanup",
+        "release_id": 37550302,
+        "tag": "v1.1.3",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/37550302",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/37550302",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-04-19T16:46:18Z",
+        "date_published": "2020-04-19T16:48:20Z",
+        "description": "* use configure_file instead of preprocessing\r\n* use `implicit none (type, external)`",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.1.2",
+        "name": "quality, robustness",
+        "release_id": 25656622,
+        "tag": "v1.1.2",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/25656622",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/25656622",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2020-03-13T10:32:42Z",
+        "date_published": "2020-03-13T10:36:22Z",
+        "description": "CI: use new github actions preinstalled packages",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.1.1",
+        "name": "refactor, modularize, cleanup",
+        "release_id": 24497628,
+        "tag": "v1.1.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/24497628",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/24497628",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-12-09T03:31:48Z",
+        "date_published": "2019-12-09T03:34:38Z",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.1.0",
+        "name": "modularize, cleanup build and metadata",
+        "release_id": 22062272,
+        "tag": "v1.1.0",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/22062272",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/22062272",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-01-10T15:52:52Z",
+        "date_published": "2019-01-10T15:58:17Z",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.0.5",
+        "name": "real64 default, lib-only for old compilers",
+        "release_id": 14907459,
+        "tag": "v1.0.5",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.0.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/14907459",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/14907459",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.0.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-01-10T06:52:55Z",
+        "date_published": "2019-01-10T06:54:37Z",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.0.4",
+        "name": "more singularity handling and cases tested",
+        "release_id": 14895320,
+        "tag": "v1.0.4",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/14895320",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/14895320",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2019-01-08T22:06:08Z",
+        "date_published": "2019-01-08T22:10:37Z",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.0.3",
+        "name": "Add meson build, correct altitude bug, handle singularities",
+        "release_id": 14865993,
+        "tag": "v1.0.3",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/14865993",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/14865993",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2018-11-30T20:04:16Z",
+        "date_published": "2018-11-30T20:12:15Z",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.0.2",
+        "name": "bugfix: uninit variables, cleanup build, compile-time polymorphism",
+        "release_id": 14289623,
+        "tag": "v1.0.2",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/14289623",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/14289623",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "scivision",
+          "type": "User"
+        },
+        "date_created": "2018-09-28T20:57:40Z",
+        "date_published": "2018-09-28T21:00:06Z",
+        "html_url": "https://github.com/geospace-code/maptran3d/releases/tag/v1.0.1",
+        "name": "ECEF2geodetic closed form",
+        "release_id": 13158538,
+        "tag": "v1.0.1",
+        "tarball_url": "https://api.github.com/repos/geospace-code/maptran3d/tarball/v1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/geospace-code/maptran3d/releases/13158538",
+        "value": "https://api.github.com/repos/geospace-code/maptran3d/releases/13158538",
+        "zipball_url": "https://api.github.com/repos/geospace-code/maptran3d/zipball/v1.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:21:24",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 15
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "non-software"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ]
+}

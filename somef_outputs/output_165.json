@@ -1,0 +1,478 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgments",
+        "parent_header": [
+          "Fmt"
+        ],
+        "type": "Text_excerpt",
+        "value": "This project would not be possible with Oberon so a giant thank you\ngoes to Niklaus Wirth, J\u00fcrg Gutknecht, Martin Reiser, Paul Reed et el.\n\nA big thanks also goes to Karl Landstr\u00f6m for creating OBNC a very nice\nopen source Oberon-7 compiler.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "rsdoiel@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-0900-6903",
+        "type": "String",
+        "value": "Robert Doiel"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rsdoiel/fmt"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rsdoiel/fmt"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-05-01T20:07:25Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-12-26T16:24:59Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A string formatting module for working with INTEGER and REAL values in Oberon-7."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "An Oberon-7 module for formatting INTEGER and REAL values as strings. It is designed to work with Karl Landstrom's OBNC compiler."
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8771676618058863,
+      "result": {
+        "original_header": "Fmt",
+        "type": "Text_excerpt",
+        "value": "An experimental Oberon-7 module to provide format functions\nfor INTEGER and REAL values. It is inspired by Karl Landstr\u00f6m's\nOBNC oberon compiler and his extension library.  \n \n"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concept"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rsdoiel/fmt/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rsdoiel/fmt/releases"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/rsdoiel/fmt/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "rsdoiel/fmt"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Fmt"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "\n# Fmt\n\nAn experimental Oberon-7 module to provide formatting\nprocedures for INTEGER and REAL values inspired by Karl \nLandstr\u00f6m's OBNC oberon compiler and his extension library.  \n\n## Installation\n\n### Prerequisite\n\nThis repository assumes you have installed Karl Landstr\u00f6m's\n[OBNC](https://miasap.se/obnc/) compiler v0.16.1 or better.\nIt assumes you have a working C tool chain configured (e.g. \nclang, gcc, make). If you can compile and install Karl's extenions\nmodules [obnc-libext-0.7.0.tar.gz](https://miasap.se/obnc/downloads/obnc-libext_0.7.0.tar.gz) then you should be able to install this\npackage.\n\n### Setup\n\nThe installation process was inspired by Karl's scripts for\n`https://miasap.se/obnc/downloads/obnc-libext_0.7.0.tar.gz` \nand mirrors that process and most of those assumptions.\n\nThe basic process is\n\n1. build\n2. test\n3. install\n\nIn the shell I do\n\n```bash\n    ./build.bash && ./test.bash && ./install.bash\n```\n\nBy default modules are installed relative to your home \ndirectory but if you want to install them in a system \ndirectory for other users (e.g. `/usr/local`) then try\n\n```bash\n    ./build.bash && ./test.bash && ./install.bash --prefix=/usr/local\n```\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/INSTALL.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Setup",
+        "parent_header": [
+          "Fmt",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "The installation process was inspired by Karl's scripts for\n`https://miasap.se/obnc/downloads/obnc-libext_0.7.0.tar.gz` \nand mirrors that process and most of those assumptions.\n\nThe basic process is\n\n1. build\n2. test\n3. install\n\nIn the shell I do\n\n```bash\n    ./build.bash && ./test.bash && ./install.bash\n```\n\nBy default modules are installed relative to your home \ndirectory but if you want to install them in a system \ndirectory for other users (e.g. `/usr/local`) then try\n\n```bash\n    ./build.bash && ./test.bash && ./install.bash --prefix=/usr/local\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/rsdoiel/fmt/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rsdoiel/fmt/issues"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "module, oberon, oberon-07"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "Oberon",
+          "Oberon-7",
+          "OBNC",
+          "module"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "type": "License",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "value": "https://api.github.com/licenses/bsd-3-clause"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "BSD 3-Clause License\n\nCopyright (c) 2020, R. S. Doiel\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\n   this list of conditions and the following disclaimer in the documentation\n   and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its\n   contributors may be used to endorse or promote products derived from\n   this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\nSERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://opensource.org/licenses/BSD-3-Clause",
+        "spdx_id": "https://opensource.org/licenses/BSD-3-Clause",
+        "type": "License",
+        "value": "https://opensource.org/licenses/BSD-3-Clause"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "parent_header": [
+          "Fmt"
+        ],
+        "type": "Text_excerpt",
+        "value": "This software is freely distributed under a BSD/MIT type license.  Please see the [LICENSE](LICENSE) file for more information.\n"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "fmt"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Fmt"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "rsdoiel"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 11582,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 8993,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 6697,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 6018,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Modula-2",
+        "size": 4428,
+        "type": "Programming_language",
+        "value": "Modula-2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 2159,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 1529,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Oberon",
+        "type": "Programming_language",
+        "value": "Oberon",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Obeorn-7",
+        "type": "Programming_language",
+        "value": "Obeorn-7",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/rsdoiel/fmt/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Prerequisite",
+        "parent_header": [
+          "Fmt",
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "This repository assumes you have installed Karl Landstr\u00f6m's\n[OBNC](https://miasap.se/obnc/) compiler v0.16.1 or better.\nIt assumes you have a working C tool chain configured (e.g. \nclang, gcc, make). If you can compile and install Karl's extenions\nmodules [obnc-libext-0.7.0.tar.gz](https://miasap.se/obnc/downloads/obnc-libext_0.7.0.tar.gz) then you should be able to install this\npackage.\n"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:52:08",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "Fmt"
+        ],
+        "type": "Text_excerpt",
+        "value": "This module is intended to be used with other Obeorn-7 programs\nand module. This is an example of retrieving the Unix epoch.\n\n```Oberon\n    MODULE Fmt;\n      IMPORT Out;\n    VAR\n      i : INTEGER;\n      r : REAL;\n      fmt : ARRAY 24 OF CHAR;\n      dest : ARRAY 128 OF CHAR;\n\n    BEGIN\n      i := 42;\n      Fmt.Int(i, \"%4d\", dest);\n      Out.String(\"Formatted i: \");Out.String(dest);Out.Ln;\n      r := 42.0;\n      Fmt.Real(i, \"%4.2f\", dest);\n      Out.String(\"Formatted r: \");Out.String(dest);Out.Ln;\n    END Fmt.\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/rsdoiel/fmt/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

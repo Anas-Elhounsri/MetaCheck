@@ -1,0 +1,1225 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9496204809713417,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "clemens@nevrome.de",
+        "identifier": "https://orcid.org/0000-0003-3448-5715",
+        "type": "String",
+        "value": "Clemens Schmid"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "dirk.seidensticker@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-8155-7702",
+        "type": "String",
+        "value": "Dirk Seidensticker"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "knitter@geographie.uni-kiel.de",
+        "identifier": "https://orcid.org/0000-0003-3014-4497",
+        "type": "String",
+        "value": "Daniel Knitter"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "martin.hinz@iaw.unibe.ch",
+        "identifier": "https://orcid.org/0000-0002-9904-6548",
+        "type": "String",
+        "value": "Martin Hinz"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "matzigdavid@gmail.com",
+        "identifier": "https://orcid.org/0000-0001-7349-5401",
+        "type": "String",
+        "value": "David Matzig"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "hamer@geographie.uni-kiel.de",
+        "identifier": "https://orcid.org/0000-0002-5943-5020",
+        "type": "String",
+        "value": "Wolfgang Hamer"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "kschmuetz@ufg.uni-kiel.de",
+        "type": "String",
+        "value": "Kay Schmuetz"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "datePublished": "1914",
+        "format": "bibtex",
+        "type": "File_dump",
+        "value": "citHeader(\"To cite c14bazAAR in publications use:\")\n\ncitEntry(\n  entry   = \"Article\",\n  title   = \"{c14bazAAR}: An {R} package for downloading and preparing {C14} dates from different source databases\",\n  author  = personList(as.person(\"Clemens Schmid\"), as.person(\"Dirk Seidensticker\"), as.person(\"Martin Hinz\")),\n  journal = \"Journal of Open Source Software\",\n  volume  = 4,\n  number  = 43,\n  pages   = 1914,\n  month   = \"nov\",\n  year    = 2019,\n  doi     = \"10.21105/joss.01914\",\n  url     = \"https://doi.org/10.21105/joss.01914\",\n  textVersion = paste(\n    \"Schmid et al., (2019).\",\n    \"c14bazAAR: An R package for downloading and preparing C14\",\n    \"dates from different source databases.\",\n    \"Journal of Open Source Software, 4(43), 1914,\",\n    \"https://doi.org/10.21105/joss.01914\"\n  )\n)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/inst/CITATION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "type": "Text_excerpt",
+        "value": "Schmid et al., (2019). c14bazAAR: An R package for downloading and preparing C14 dates from different source databases. Journal of Open Source Software, 4(43), 1914, https://doi.org/10.21105/joss.01914\n\n```\n@Article{Schmid2019,\n  title = {{c14bazAAR}: An {R} package for downloading and preparing {C14} dates from different source databases},\n  author = {Clemens Schmid and Dirk Seidensticker and Martin Hinz},\n  journal = {Journal of Open Source Software},\n  volume = {4},\n  number = {43},\n  pages = {1914},\n  month = {nov},\n  year = {2019},\n  doi = {10.21105/joss.01914},\n  url = {https://doi.org/10.21105/joss.01914},\n}\n```\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Clemens Schmid and Dirk Seidensticker and Martin Hinz",
+        "doi": "10.21105/joss.01914",
+        "format": "bibtex",
+        "title": "{c14bazAAR}: An {R} package for downloading and preparing {C14} dates from different source databases",
+        "type": "Text_excerpt",
+        "url": "https://doi.org/10.21105/joss.01914",
+        "value": "@article{Schmid2019,\n    url = {https://doi.org/10.21105/joss.01914},\n    doi = {10.21105/joss.01914},\n    year = {2019},\n    month = {nov},\n    pages = {1914},\n    number = {43},\n    volume = {4},\n    journal = {Journal of Open Source Software},\n    author = {Clemens Schmid and Dirk Seidensticker and Martin Hinz},\n    title = {{c14bazAAR}: An {R} package for downloading and preparing {C14} dates from different source databases},\n}"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/c14bazAAR"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/c14bazAAR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/c14bazAAR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/ropensci/c14bazAAR/actions/workflows/check-release.yaml",
+          "https://codecov.io/github/ropensci/c14bazAAR?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nWe love pull requests from everyone. By participating in this project, you\nagree to abide by our [code of conduct](CONDUCT.md).\n\n## Getting Started\n\n* Make sure you have a [GitHub account](https://github.com/signup/free). If you are not familar with git and GitHub, take a look at <http://happygitwithr.com/> to get started.\n* [Submit a post for your issue](https://github.com/ropensci/c14bazAAR/issues/), assuming one does not already exist.\n  * Clearly describe your issue, including steps to reproduce when it is a bug, or some justification for a proposed improvement.\n* [Fork](https://github.com/ropensci/c14bazAAR/#fork-destination-box) the repository on GitHub to make a copy of the repository on your account. Or use this line in your shell terminal:\n\n    `git clone git@github.com:your-username/c14bazAAR.git`\n    \n## Making changes\n\n* Edit the files, save often, and make commits of logical units, where each commit indicates one concept\n* Follow a good [style guide](http://adv-r.had.co.nz/Style.html).\n* Make sure you write [good commit messages](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html).\n* Make sure you have added the necessary tests for your code changes.\n* Run _all_ the tests using `devtools::check()` to assure nothing else was accidentally broken.\n* If you need help or unsure about anything, post an update to [your issue](https://github.com/ropensci/c14bazAAR/issues/).\n\n## Submitting your changes\n\nPush to your fork and [submit a pull request](https://github.com/ropensci/c14bazAAR/compare/).\n\nAt this point you're waiting on us. We like to at least comment on pull requests\nwithin a few days. We may suggest some changes or improvements or alternatives.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "type": "Text_excerpt",
+        "value": "If you would like to contribute to this project, please start by reading our [Guide to Contributing](https://github.com/ropensci/c14bazAAR/blob/master/CONTRIBUTING.md). Please note that this project is released with a Contributor [Code of Conduct](https://github.com/ropensci/c14bazAAR/blob/master/CONDUCT.md). By participating in this project you agree to abide by its terms.\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Adding database getter functions",
+        "parent_header": [
+          "Contributing"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you want to add another radiocarbon database to c14bazAAR (maybe from the list [here](https://github.com/ropensci/c14bazAAR/issues/2)) you can follow this checklist to apply all the necessary changes to the package:\n\n1. Add your database to the [variable_reference table](https://github.com/ropensci/c14bazAAR/blob/master/data-raw/variable_reference.csv) and map the database variables to the variables of c14bazAAR and other databases.\n2. Write the getter function `get_[The Database Name]` in an own script file: **get_[the database name].R**. For the script file names we used a lowercase version of the database name. The getter functions have a standardized layout and always yield an object of the class `c14_date_list`. Please look at some of the available functions to get an idea how it is supposed to look like and which checks it has to include. Make sure not to store data outside of `tempdir()`. Some databases include non-radiocarbon dates: Make sure to filter them out -- c14bazAAR so far only works with radiocarbon dates.\n3. Add the following roxygen2 tags above the function definition to include it in the package documentation.\n\n```\n#' @rdname db_getter_backend\n#' @export\n```\n\n4. Update the package documentation with roxygen2.\n5. Add the database url(s) to the [db_info table](https://github.com/ropensci/c14bazAAR/blob/master/data-raw/db_info_table.csv) to make `get_db_url(\"[the database name]\")` work.\n6. Run the data-raw/data_prep.R script to update the data objects in the package. Only this enables the changes made in step 5. You should test your changes now by running the respective getter function.\n7. Add the getter function your wrote in 2 to the functions vector in [`get_all_parser_functions()`](https://github.com/ropensci/c14bazAAR/blob/master/R/get_c14data.R#L128).\n8. Document the addition of the new function in the NEWS.md file.\n9. Add the new database to the list of *Currently available databases* in the DESCRIPTION file.\n10. Add your function to the database list in the README file [here](https://github.com/ropensci/c14bazAAR#databases).\n11. Update the README map figure by running the script [README_map_figure.R](https://github.com/ropensci/c14bazAAR/blob/master/figures/README_map_figure.R).\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Pre-submission testing",
+        "parent_header": [
+          "Contributing"
+        ],
+        "type": "Text_excerpt",
+        "value": "Before submitting patches or new getter functions via a pull request, we ask you to check the following items:\n\n1. The package works and all functions are usable\n2. The package documentation is up-to-date and represents the functions correctly\n3. The test coverage of the package functions is sufficient\n4. `DESCRIPTION` is up-to-date with the latest version number and database list\n5. `README.md` is up-to-date\n6. `NEWS.md` is up-to-date and includes the latest changes\n7. **Package checks ran and did not yield any ERRORS, WARNINGS or NOTES**\n8. Spellcheck with `devtools::spell_check()` ran and did yield not only false-positives\n9. codemeta.json is up-to-date (can be updated with `codemetar::write_codemeta()`)\n10. `inst/CITATION` is up-to-date\n11. The package does not make external changes without explicit user permission. It does not write to the file system, change options, install packages, quit R, send information over the internet, open external software, etc.\n12. No reverse dependencies break because of the new package version (`devtools::revdep_check()`)\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Versioning",
+        "parent_header": [
+          "Contributing"
+        ],
+        "type": "Text_excerpt",
+        "value": "Version numbers (releases) follow the [semantic versioning schema](https://semver.org/) and consist of mayor and minor releases as well as patches.\n\n* **x**.y.z: a **mayor** release will be made once an existing function is radically changed or removed and thus the package API is changed.\n* x.**y**.z: a **minor** release contains new parsers and auxiliary functions.\n* x.y.**z**: a **patch** updates existing parsers and functions.\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-07-28T12:22:38Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-31T12:56:06Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R Package - Download and Prepare C14 Dates from Different Source Databases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+        "type": "String",
+        "value": "Query different C14 date databases and apply basic data cleaning, merging and calibration steps. Currently available databases: 14cpalaeolithic, 14sea, adrac, agrichange, aida, austarch, bda, calpal, caribbean, eubar, euroevol, irdd, jomon, katsianis, kiteeastafrica, medafricarbon, mesorad, neonet, neonetatl, nerd, p3k14c, pacea, palmisano, rado.nb, rxpand, sard, xronos."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Query different C14 date databases and apply basic data cleaning, merging and calibration steps. Currently available databases: 14cpalaeolithic, 14sea, adrac, agrichange, aida, austarch, bda, calpal, caribbean, eubar, euroevol, irdd, jomon, katsianis, kiteeastafrica, medafricarbon, mesorad, neonet, neonetatl, nerd, p3k14c, pacea, palmisano, rado.nb, rxpand, sard, xronos."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9421965666630362,
+      "result": {
+        "original_header": "Databases",
+        "type": "Text_excerpt",
+        "value": "| Database | Description |\n|----------|-------------|\n| [**14cpalaeolithic**](https://ees.kuleuven.be/geography/projects/14c-palaeolithic) <br> 2025-03-19 (V32) <br> [`get_c14data(\"14cpalaeolithic\")`](R/get_14cpalaeolithic.R) | Radiocarbon Palaeolithic Europe Database. |\n| [**14sea**](http://www.14sea.org/) <br> 2017-01-29 <br> [`get_c14data(\"14sea\")`](R/get_14sea.R) | 14C database for Southeast Europe and Anatolia (10,000\u20133000 calBC). |\n|  [**adrac**](https://github.com/dirkseidensticker/aDRAC) <br> latest <br> [`get_c14data(\"adrac\")`](R/get_adrac.R) | Archives des datations radiocarbone d'Afrique centrale by Dirk Seidensticker. |\n| [**agrichange**](https://zenodo.org/record/4541470) <br> 2021-05-21 <br> [`get_c14data(\"agrichange\")`](R/get_agrichange.R) | Radiocarbon dates associated to Neolithic contexts (ca. 5900 \u2013 2000 cal BC) from the northwestern Mediterranean Arch to the High Rhine area by [H\u00e9ctor Mart\u00ednez-Grau, Berta Morell-Rovira & Ferran Antol\u00edn](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.72/) (2021). |\n| [**AIDA**](https://github.com/apalmisano82/AIDA) <br> latest <br> [`get_c14data(\"aida\")`](R/get_aida.R) | Archive of Italian radiocarbon DAtes Alessio Palmisano, Andrew Bevan, Alex Kabelindde, Neil Roberts & Stephen Shennan (2021). |\n| [**austarch**](https://archaeologydataservice.ac.uk/archives/view/austarch_na_2014/) <br> 2013-11-28 <br> [`get_c14data(\"austarch\")`](R/get_austarch.R) | A Database of 14C and Luminescence Ages from Archaeological Sites in Australia by [Alan N. Williams, Sean Ulm, Mike Smith, Jill Reid](https://intarch.ac.uk/journal/issue36/6/williams.html). |\n| [**BDA**](https://nakala.fr/10.34847/nkl.dde9fnm8) <br> 2020-03-29 <br> [`get_c14data(\"bda\")`](R/get_bda.R) | Base de Donn\u00e9es Arch\u00e9ologiques by Thomas Perrin (1994). |\n| [**calpal**](https://uni-koeln.academia.edu/BernhardWeninger/CalPal) <br> 2020-08-20 <br> [`get_c14data(\"calpal\")`](R/get_calpal.R) | Radiocarbon Database of the CalPal software package by Bernhard Weninger. See [nevrome/CalPal-Database](https://github.com/nevrome/CalPal-Database) for an interface. |\n| [**caribbean**](https://github.com/philriris/caribbean-14C/) <br> 2021-05-21 <br> [`get_c14data(\"caribbean\")`](R/get_caribbean.R) | A compilation of 2147 anthropogenic radiocarbon (14C) dates for the Caribbean region from 504 sites across 57 islands by Phil Riris (2021). |\n| [**eubar**](https://telearchaeology.org/eubar-c14-database/) <br> 2017-10-02 <br> [`get_c14data(\"eubar\")`](R/get_eubar.R) | A database of 14C measurements for the European Bronze Age by [Gacomo Capuzzo](https://telearchaeology.org/EUBAR/). |\n| [**euroevol**](https://discovery.ucl.ac.uk/1469811/) <br> 2015-07-09 <br> [`get_c14data(\"euroevol\")`](R/get_euroevol.R) | Cultural Evolution of Neolithic Europe Dataset by [Katie Manning, Sue Colledge, Enrico Crema, Stephen Shennan and Adrian Timpson](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.40/). |\n| [**irdd**](https://sites.google.com/site/chapplearchaeology/irish-radiocarbon-dendrochronological-dates) <br> 2018-08-13 <br> [`get_c14data(\"irdd\")`](R/get_irdd.R) | [Robert M Chapple](https://doi.org/10.5281/zenodo.3367518)'s Catalogue of Radiocarbon Determinations & Dendrochronology Dates is a free-to-download resource for Irish archaeology. |\n| [**jomon**](https://github.com/ercrema/jomonPhasesAndPopulation) <br> latest <br> [`get_c14data(\"jomon\")`](R/get_jomon.R) | A multi-proxy inference of J\u014dmon population dynamics using bayesian phase models, residential data, and summed probability distribution of 14C dates [Enrico R. Crema and Ken'ichi Kobayashi](https://www.sciencedirect.com/science/article/pii/S0305440320300583) (2020). |\n| [**katsianis**](https://rdr.ucl.ac.uk/articles/Dataset_for_An_Aegean_history_and_archaeology_written_through_radiocarbon_dates/12489137/1) <br> 2020-08-20 <br> [`get_c14data(\"katsianis\")`](R/get_katsianis.R) | An Aegean History and Archaeology Written through Radiocarbon Dates [Markos Katsianis, Andrew Bevan, Giorgos Styliaras & Yannis Maniatis](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.65/) (2020). |\n| [**kiteeastafrica**](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/NJLNRJ) <br> 2016-04-28 <br> [`get_c14data(\"kiteeastafrica\")`](R/get_kiteeastafrica.R) | Radiocarbon dates from eastern Africa in the CARD2.0 format by [Colin Courtney Mustaphi, Rob Marchant](https://www.openquaternary.com/articles/10.5334/oq.22/). |\n| [**MedAfriCarbon**](https://zenodo.org/record/3689716#.XnSHp4hKiUk) <br> 2020-03-20 <br> [`get_c14data(\"medafricarbon\")`](R/get_medafricarbon.R) | The MedAfriCarbon Radiocarbon Database and [Web Application](https://theia.arch.cam.ac.uk/MedAfriCarbon/). Archaeological Dynamics in Mediterranean Africa, ca. 9600\u2013700 BC by [Giulio Lucarini, Toby Wilkinson, Enrico R. Crema, Augusto Palombini, Andrew Bevan and Cyprian Broodbank](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.60/) (2020). |\n| [**MesoRAD**](https://github.com/eehh-stanford/price2020) <br> 2020-09-01 (V1.1) <br> [`get_c14data(\"mesorad\")`](R/get_mesorad.R) | Data for End-to-end Bayesian analysis of 14C dates reveals new insights into lowland Maya demography by [Michael Holton Price, Jos\u00e9 M. Capriles, Julie A. Hoggarth, Kyle Bocinsky, Claire E. Ebert, James Holland Jones](https://doi.org/10.1101/2020.07.02.185256). |\n| [**neonet**](https://github.com/zoometh/neonet) <br> 2023-12-08 (V2)  <br>  [`get_c14data(\"neonet\")`](R/neonet.R) | NeoNet Med. Radiocarbon Dates for the Late Mesolithic/Early Neolithic Transition in the North Central-Western Mediterranean Basin by [Thomas Huet, Miriam Cubas, Juan F. Gibaja, F. Xavier Oms, Niccol\u00f2 Mazzucco](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.87). |\n| [**neonetatl**](https://github.com/zoometh/neonet) <br> 2023-12-08 (V1)  <br> [`get_c14data(\"neonetatl\")`](R/neonetatl.R) | NeoNet Atlantic. Radiocarbon Dates for the Late Mesolithic/Early Neolithic Transition in the Southern European Atlantic Coast by [Thomas Huet, Ana Catarina Bas\u00edlio, Ant\u00f3nio Faustino Carvalho, Miriam Cubas, Juan F. Gibaja, El\u00edas L\u00f3pez-Romero, F. Xavier Oms, Niccol\u00f2 Mazzucco](https://doi.org/10.13131/unipi/z332-ye56). |\n| [**NERD**](https://github.com/apalmisano82/NERD) <br> latest <br> [`get_c14data(\"nerd\")`](R/get_nerd.R) | Near East Radiocarbon Dates Alessio Palmisano, Andrew Bevan, Dan Lawrence & Stephen Shennan (2021). |\n| [**pacea**](http://www.paleoanthro.org/media/journal/content/PA20110001_S01.zip) <br> 2020-01-22 <br> [`get_c14data(\"pacea\")`](R/get_pacea.R) | PACEA Geo-Referenced Radiocarbon Database for the late Middle Paleolithic, Upper Paleolithic, and initial Holocene in Europe by [Francesco D'Errico, William E. Banks, Marian Vanhaeren, V\u00e9ronique Laroulandie and Mathieu Langlais](http://www.paleoanthro.org/media/journal/content/PA20110001.pdf) (2011).. |\n| [**palmisano**](https://dx.doi.org/10.14324/000.ds.1575442) <br> 2017-09-23 <br> [`get_c14data(\"palmisano\")`](R/get_palmisano.R) | Regional Demographic Trends and Settlement Patterns in Central Italy: Archaeological Sites and Radiocarbon Dates by [Alessio Palmisano, Andrew Bevan and Stephen Shennan](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.43/) (2018). |\n| [**p3k14c**](https://github.com/people3k) <br> 2022-06-10 (2022.06) <br> [`get_c14data(\"p3k14c\")`](R/get_p3k14c.R) | p3k14c: A synthetic global database of archaeological radiocarbon dates by [Darcy Bird, Lux Miranda, Marc Vander Linden, Robinson, Erick, R. Kyle Bocinsky, Chris Nicholson, Jos\u00e9 M. Capriles, Judson Byrd Finley, Eugenia M. Gayo, Adolfo Gil, Jade d\u2019Alpoim Guedes, Julie A. Hoggarth, Andrea Kay, Emma Loftus, Umberto Lombardo, Madeline Mackie, Alessio Palmisano, Steinar Solheim, Robert L. Kelly, and Jacob Freeman](https://doi.org/10.1038/s41597-022-01118-7) (2022). c14bazAAR only features the latest [\"scrubbed and fuzzed\" dataset](https://core.tdar.org/dataset/459172/p3k14c-scrubbed) included in the [p3k14c package](https://github.com/people3k/p3k14c). |\n| [**rado.nb**](https://radonb.ufg.uni-kiel.de) <br> latest <br> [`get_c14data(\"rado.nb\")`](R/get_rado.nb.R) | Database for European 14C dates for the Neolithic, the Bronze Age and the Early Iron Age. [Christoph Rinne, Jutta Kneisel, Martin Hinz, Martin Furholt, Nina Krischke, Johannes M\u00fcller, Dirk Raetzel-Fabian, Marcel Rodens, Karl-G\u00f6ran Sj\u00f6gren, Helle Vandkilde and Hans-Peter Wotzka](https://radonb.ufg.uni-kiel.de). |\n| [**rxpand**](https://github.com/jgregoriods/rxpand) <br> 2020-10-20 <br> [`get_c14data(\"rxpand\")`](R/get_rxpand.R) | Radiocarbon dates for the spread of farming and ceramics in tropical South America by Jonas Gregorio de Souza. |\n| [**sard**](https://github.com/emmaloftus/Southern-African-Radiocarbon-Database) <br> 2021-03-01 <br> [`get_c14data(\"sard\")`](R/get_sard.R) | Southern-African-Radiocarbon-Database by [Emma Loftus, Peter J. Mitchell & Christopher Bronk Ramsey](https://www.cambridge.org/core/journals/antiquity/article/abs/an-archaeological-radiocarbon-database-for-southern-africa/26FE99E995C4507015704D552CB0C196). |\n| [**XRONOS**](https://xronos.ch) <br> latest <br> [`get_c14data(\"xronos\")`](R/get_xronos.R)  | Open Access Database for absolute chronological archaeological information by Martin Hinz, Joe Roe and Clemens Schmid.\n \n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9536053777163435,
+      "result": {
+        "original_header": "Deprecated databases",
+        "type": "Text_excerpt",
+        "value": "* [**radon**](https://radon.ufg.uni-kiel.de/): Central European and Scandinavian database of 14C dates for the Neolithic and Early Bronze Age by [Dirk Raetzel-Fabian, Martin Furholt, Martin Hinz, Johannes M\u00fcller, Christoph Rinne, Karl-G\u00f6ran Sj\u00f6gren und Hans-Peter Wotzka](https://www.jna.uni-kiel.de/index.php/jna/article/view/65).\n* [**radonb**](https://radon-b.ufg.uni-kiel.de/): Database for European 14C dates for the Bronze and Early Iron Age by Jutta Kneisel, Martin Hinz, Christoph Rinne.\n* [**context**](http://context-database.uni-koeln.de/): Collection of radiocarbon dates from sites in the Near East and neighboring regions (20.000 - 5.000 calBC) by Utz B\u00f6hner and Daniel Schyle.\n \n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9647382403763988,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "c14bazAAR is an R package to query different openly accessible radiocarbon date databases. It allows basic data cleaning, calibration and merging. If you're not familiar with R other tools (such as ) to search for radiocarbon dates might be better suited for your needs. \nIf you want to use data downloaded with c14bazAAR for your research, you have to cite the respective source databases. Most databases have a preferred way of citation that also may change over time with new versions and publications. Please check the  to find out more. The output of c14bazAAR does not contain the full citations of the individual dates, but only a short reference tag. For further information you have to consult the source databases. \n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Download",
+        "parent_header": [
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "c14bazAAR contains a growing selection of getter functions to download radiocarbon date databases. [Here's](#databases) a list of all available databases. You can download all dates at once with [`get_c14data(\"all\")`](https://github.com/ropensci/c14bazAAR/blob/master/R/get_c14data.R). The getters download the data, adjust the variable selection according to a defined [variable key](https://github.com/ropensci/c14bazAAR/blob/master/data-raw/variable_reference.csv) and transform the resulting list into a `c14_date_list`. \n\nSee `?get_c14data` for more information.\n\n```\nx <- get_c14data(\"all\")\n```\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/c14bazAAR/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 12
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/c14bazAAR"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/c14bazAAR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "c14bazAAR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.17605/OSF.IO/3DS6A"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.21105/joss.01914"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://joss.theoj.org/papers/10.21105/joss.01914/status.svg"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/man/figures/README_map_figure.jpeg"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ropensci.org/public_images/ropensci_footer.png"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "We recommend to install the stable version from the [R-universe](https://r-universe.dev/) repository of [rOpenSci](https://ropensci.org/) with the following command (in your R console):\n\n```\ninstall.packages(\"c14bazAAR\", repos = c(ropensci = \"https://ropensci.r-universe.dev\"))\n```\n\nThe development version can be installed from github with the following command (in your R console):\n\n```\nif(!require('remotes')) install.packages('remotes')\nremotes::install_github(\"ropensci/c14bazAAR\")\n```\n\nBoth versions are up-to-date and include all databases and features. Installing the development version on Windows requires the toolchain bundle [Rtools](https://cran.r-project.org/bin/windows/Rtools/).\n\nThe package needs a lot of other packages -- many of them only necessary for specific tasks. Functions that require certain packages you don't have installed yet will stop and ask you to enable them. Please do so with [`install.packages()`](https://www.r-bloggers.com/installing-r-packages/) to download and install the respective packages from CRAN.\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/c14bazAAR/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/c14bazAAR/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "archaeology, r, radiocarbon-dates"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "radiocarbon-dates",
+          "archaeology",
+          "r"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v2.0",
+        "spdx_id": "GPL-2.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-2.0",
+        "value": "https://api.github.com/licenses/gpl-2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 2, June 1991\n\n Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>\n 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The licenses for most software are designed to take away your\nfreedom to share and change it.  By contrast, the GNU General Public\nLicense is intended to guarantee your freedom to share and change free\nsoftware--to make sure the software is free for all its users.  This\nGeneral Public License applies to most of the Free Software\nFoundation's software and to any other program whose authors commit to\nusing it.  (Some other Free Software Foundation software is covered by\nthe GNU Lesser General Public License instead.)  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthis service if you wish), that you receive source code or can get it\nif you want it, that you can change the software or use pieces of it\nin new free programs; and that you know you can do these things.\n\n  To protect your rights, we need to make restrictions that forbid\nanyone to deny you these rights or to ask you to surrender the rights.\nThese restrictions translate to certain responsibilities for you if you\ndistribute copies of the software, or if you modify it.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must give the recipients all the rights that\nyou have.  You must make sure that they, too, receive or can get the\nsource code.  And you must show them these terms so they know their\nrights.\n\n  We protect your rights with two steps: (1) copyright the software, and\n(2) offer you this license which gives you legal permission to copy,\ndistribute and/or modify the software.\n\n  Also, for each author's protection and ours, we want to make certain\nthat everyone understands that there is no warranty for this free\nsoftware.  If the software is modified by someone else and passed on, we\nwant its recipients to know that what they have is not the original, so\nthat any problems introduced by others will not reflect on the original\nauthors' reputations.\n\n  Finally, any free program is threatened constantly by software\npatents.  We wish to avoid the danger that redistributors of a free\nprogram will individually obtain patent licenses, in effect making the\nprogram proprietary.  To prevent this, we have made it clear that any\npatent must be licensed for everyone's free use or not licensed at all.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n                    GNU GENERAL PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. This License applies to any program or other work which contains\na notice placed by the copyright holder saying it may be distributed\nunder the terms of this General Public License.  The \"Program\", below,\nrefers to any such program or work, and a \"work based on the Program\"\nmeans either the Program or any derivative work under copyright law:\nthat is to say, a work containing the Program or a portion of it,\neither verbatim or with modifications and/or translated into another\nlanguage.  (Hereinafter, translation is included without limitation in\nthe term \"modification\".)  Each licensee is addressed as \"you\".\n\nActivities other than copying, distribution and modification are not\ncovered by this License; they are outside its scope.  The act of\nrunning the Program is not restricted, and the output from the Program\nis covered only if its contents constitute a work based on the\nProgram (independent of having been made by running the Program).\nWhether that is true depends on what the Program does.\n\n  1. You may copy and distribute verbatim copies of the Program's\nsource code as you receive it, in any medium, provided that you\nconspicuously and appropriately publish on each copy an appropriate\ncopyright notice and disclaimer of warranty; keep intact all the\nnotices that refer to this License and to the absence of any warranty;\nand give any other recipients of the Program a copy of this License\nalong with the Program.\n\nYou may charge a fee for the physical act of transferring a copy, and\nyou may at your option offer warranty protection in exchange for a fee.\n\n  2. You may modify your copy or copies of the Program or any portion\nof it, thus forming a work based on the Program, and copy and\ndistribute such modifications or work under the terms of Section 1\nabove, provided that you also meet all of these conditions:\n\n    a) You must cause the modified files to carry prominent notices\n    stating that you changed the files and the date of any change.\n\n    b) You must cause any work that you distribute or publish, that in\n    whole or in part contains or is derived from the Program or any\n    part thereof, to be licensed as a whole at no charge to all third\n    parties under the terms of this License.\n\n    c) If the modified program normally reads commands interactively\n    when run, you must cause it, when started running for such\n    interactive use in the most ordinary way, to print or display an\n    announcement including an appropriate copyright notice and a\n    notice that there is no warranty (or else, saying that you provide\n    a warranty) and that users may redistribute the program under\n    these conditions, and telling the user how to view a copy of this\n    License.  (Exception: if the Program itself is interactive but\n    does not normally print such an announcement, your work based on\n    the Program is not required to print an announcement.)\n\nThese requirements apply to the modified work as a whole.  If\nidentifiable sections of that work are not derived from the Program,\nand can be reasonably considered independent and separate works in\nthemselves, then this License, and its terms, do not apply to those\nsections when you distribute them as separate works.  But when you\ndistribute the same sections as part of a whole which is a work based\non the Program, the distribution of the whole must be on the terms of\nthis License, whose permissions for other licensees extend to the\nentire whole, and thus to each and every part regardless of who wrote it.\n\nThus, it is not the intent of this section to claim rights or contest\nyour rights to work written entirely by you; rather, the intent is to\nexercise the right to control the distribution of derivative or\ncollective works based on the Program.\n\nIn addition, mere aggregation of another work not based on the Program\nwith the Program (or with a work based on the Program) on a volume of\na storage or distribution medium does not bring the other work under\nthe scope of this License.\n\n  3. You may copy and distribute the Program (or a work based on it,\nunder Section 2) in object code or executable form under the terms of\nSections 1 and 2 above provided that you also do one of the following:\n\n    a) Accompany it with the complete corresponding machine-readable\n    source code, which must be distributed under the terms of Sections\n    1 and 2 above on a medium customarily used for software interchange; or,\n\n    b) Accompany it with a written offer, valid for at least three\n    years, to give any third party, for a charge no more than your\n    cost of physically performing source distribution, a complete\n    machine-readable copy of the corresponding source code, to be\n    distributed under the terms of Sections 1 and 2 above on a medium\n    customarily used for software interchange; or,\n\n    c) Accompany it with the information you received as to the offer\n    to distribute corresponding source code.  (This alternative is\n    allowed only for noncommercial distribution and only if you\n    received the program in object code or executable form with such\n    an offer, in accord with Subsection b above.)\n\nThe source code for a work means the preferred form of the work for\nmaking modifications to it.  For an executable work, complete source\ncode means all the source code for all modules it contains, plus any\nassociated interface definition files, plus the scripts used to\ncontrol compilation and installation of the executable.  However, as a\nspecial exception, the source code distributed need not include\nanything that is normally distributed (in either source or binary\nform) with the major components (compiler, kernel, and so on) of the\noperating system on which the executable runs, unless that component\nitself accompanies the executable.\n\nIf distribution of executable or object code is made by offering\naccess to copy from a designated place, then offering equivalent\naccess to copy the source code from the same place counts as\ndistribution of the source code, even though third parties are not\ncompelled to copy the source along with the object code.\n\n  4. You may not copy, modify, sublicense, or distribute the Program\nexcept as expressly provided under this License.  Any attempt\notherwise to copy, modify, sublicense or distribute the Program is\nvoid, and will automatically terminate your rights under this License.\nHowever, parties who have received copies, or rights, from you under\nthis License will not have their licenses terminated so long as such\nparties remain in full compliance.\n\n  5. You are not required to accept this License, since you have not\nsigned it.  However, nothing else grants you permission to modify or\ndistribute the Program or its derivative works.  These actions are\nprohibited by law if you do not accept this License.  Therefore, by\nmodifying or distributing the Program (or any work based on the\nProgram), you indicate your acceptance of this License to do so, and\nall its terms and conditions for copying, distributing or modifying\nthe Program or works based on it.\n\n  6. Each time you redistribute the Program (or any work based on the\nProgram), the recipient automatically receives a license from the\noriginal licensor to copy, distribute or modify the Program subject to\nthese terms and conditions.  You may not impose any further\nrestrictions on the recipients' exercise of the rights granted herein.\nYou are not responsible for enforcing compliance by third parties to\nthis License.\n\n  7. If, as a consequence of a court judgment or allegation of patent\ninfringement or for any other reason (not limited to patent issues),\nconditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot\ndistribute so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you\nmay not distribute the Program at all.  For example, if a patent\nlicense would not permit royalty-free redistribution of the Program by\nall those who receive copies directly or indirectly through you, then\nthe only way you could satisfy both it and this License would be to\nrefrain entirely from distribution of the Program.\n\nIf any portion of this section is held invalid or unenforceable under\nany particular circumstance, the balance of the section is intended to\napply and the section as a whole is intended to apply in other\ncircumstances.\n\nIt is not the purpose of this section to induce you to infringe any\npatents or other property right claims or to contest validity of any\nsuch claims; this section has the sole purpose of protecting the\nintegrity of the free software distribution system, which is\nimplemented by public license practices.  Many people have made\ngenerous contributions to the wide range of software distributed\nthrough that system in reliance on consistent application of that\nsystem; it is up to the author/donor to decide if he or she is willing\nto distribute software through any other system and a licensee cannot\nimpose that choice.\n\nThis section is intended to make thoroughly clear what is believed to\nbe a consequence of the rest of this License.\n\n  8. If the distribution and/or use of the Program is restricted in\ncertain countries either by patents or by copyrighted interfaces, the\noriginal copyright holder who places the Program under this License\nmay add an explicit geographical distribution limitation excluding\nthose countries, so that distribution is permitted only in or among\ncountries not thus excluded.  In such case, this License incorporates\nthe limitation as if written in the body of this License.\n\n  9. The Free Software Foundation may publish revised and/or new versions\nof the General Public License from time to time.  Such new versions will\nbe similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\nEach version is given a distinguishing version number.  If the Program\nspecifies a version number of this License which applies to it and \"any\nlater version\", you have the option of following the terms and conditions\neither of that version or of any later version published by the Free\nSoftware Foundation.  If the Program does not specify a version number of\nthis License, you may choose any version ever published by the Free Software\nFoundation.\n\n  10. If you wish to incorporate parts of the Program into other free\nprograms whose distribution conditions are different, write to the author\nto ask for permission.  For software which is copyrighted by the Free\nSoftware Foundation, write to the Free Software Foundation; we sometimes\nmake exceptions for this.  Our decision will be guided by the two goals\nof preserving the free status of all derivatives of our free software and\nof promoting the sharing and reuse of software generally.\n\n                            NO WARRANTY\n\n  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY\nFOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN\nOTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES\nPROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED\nOR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS\nTO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE\nPROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,\nREPAIR OR CORRECTION.\n\n  12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR\nREDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,\nINCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING\nOUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED\nTO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY\nYOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER\nPROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.\n\n                     END OF TERMS AND CONDITIONS\n\n            How to Apply These Terms to Your New Programs\n\n  If you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these terms.\n\n  To do so, attach the following notices to the program.  It is safest\nto attach them to the start of each source file to most effectively\nconvey the exclusion of warranty; and each file should have at least\nthe \"copyright\" line and a pointer to where the full notice is found.\n\n    {description}\n    Copyright (C) {year}  {fullname}\n\n    This program is free software; you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation; either version 2 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License along\n    with this program; if not, write to the Free Software Foundation, Inc.,\n    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.\n\nAlso add information on how to contact you by electronic and paper mail.\n\nIf the program is interactive, make it output a short notice like this\nwhen it starts in an interactive mode:\n\n    Gnomovision version 69, Copyright (C) year name of author\n    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `show c' for details.\n\nThe hypothetical commands `show w' and `show c' should show the appropriate\nparts of the General Public License.  Of course, the commands you use may\nbe called something other than `show w' and `show c'; they could even be\nmouse-clicks or menu items--whatever suits your program.\n\nYou should also get your employer (if you work as a programmer) or your\nschool, if any, to sign a \"copyright disclaimer\" for the program, if\nnecessary.  Here is a sample; alter the names:\n\n  Yoyodyne, Inc., hereby disclaims all copyright interest in the program\n  `Gnomovision' (which makes passes at compilers) written by James Hacker.\n\n  {signature of Ty Coon}, 1 April 1989\n  Ty Coon, President of Vice\n\nThis General Public License does not permit incorporating your program into\nproprietary programs.  If your program is a subroutine library, you may\nconsider it more useful to permit linking proprietary applications with the\nlibrary.  If this is what you want to do, use the GNU Lesser General\nPublic License instead of this License.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-2 | file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-2.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-2.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "type": "Text_excerpt",
+        "value": "For the code in this project apply the terms and conditions of GNU GENERAL PUBLIC LICENSE Version 2. The source databases are published under different licenses.\n\n[![ropensci_footer](https://ropensci.org/public_images/ropensci_footer.png)](https://ropensci.org)\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/man/figures/logo.png"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "c14bazAAR"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "c14bazAAR: Download and Prepare C14 Dates from Different Source Databases"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+        "type": "String",
+        "value": "c14bazAAR"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 130968,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 6364,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/c14bazAAR/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2025-08-31T12:56:01Z",
+        "date_published": "2025-08-31T13:01:13Z",
+        "description": "see [NEWS.md](https://github.com/ropensci/c14bazAAR/blob/master/NEWS.md)",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/5.2.0",
+        "name": "Trou de la M\u00e8re Clochette",
+        "release_id": 243719395,
+        "tag": "5.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/5.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/243719395",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/243719395",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/5.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2025-02-08T12:19:02Z",
+        "date_published": "2025-02-08T12:30:04Z",
+        "description": "see [NEWS.md](https://github.com/ropensci/c14bazAAR/blob/master/NEWS.md)",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/5.1.0",
+        "name": "Argissa Magoula",
+        "release_id": 199192232,
+        "tag": "5.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/5.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/199192232",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/199192232",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/5.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2024-05-31T14:43:03Z",
+        "date_published": "2024-05-31T14:56:42Z",
+        "description": "see [NEWS.md](https://github.com/ropensci/c14bazAAR/blob/master/NEWS.md)",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/5.0.0",
+        "name": "Bacho Kiro",
+        "release_id": 158363198,
+        "tag": "5.0.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/5.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/158363198",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/158363198",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/5.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2024-01-16T14:48:16Z",
+        "date_published": "2024-01-16T14:58:59Z",
+        "description": "see [NEWS.md](https://github.com/ropensci/c14bazAAR/blob/master/NEWS.md)",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/4.1.0",
+        "name": "Abri de la Combe-Gr\u00e8ze",
+        "release_id": 137237250,
+        "tag": "4.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/4.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/137237250",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/137237250",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/4.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2023-07-28T15:05:56Z",
+        "date_published": "2023-07-28T15:21:28Z",
+        "description": "see NEWS.md",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/4.0.0",
+        "name": "Grotta delle Arene Candide",
+        "release_id": 114009651,
+        "tag": "4.0.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/4.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/114009651",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/114009651",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/4.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2023-03-05T17:40:10Z",
+        "date_published": "2023-03-05T17:50:52Z",
+        "description": "see NEWS.md",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/3.4.1",
+        "name": "Bad Cannstatt",
+        "release_id": 94560764,
+        "tag": "3.4.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/3.4.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/94560764",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/94560764",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/3.4.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2022-02-02T10:04:14Z",
+        "date_published": "2022-02-02T10:07:56Z",
+        "description": "see NEWS.md",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/3.4.0",
+        "name": "Sitio Moreno",
+        "release_id": 58500702,
+        "tag": "3.4.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/3.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/58500702",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/58500702",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/3.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2021-09-02T13:00:46Z",
+        "date_published": "2021-09-02T13:04:52Z",
+        "description": "see NEWS.md",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/3.1.0",
+        "name": "Grotta dell'Uzzo",
+        "release_id": 48890275,
+        "tag": "3.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/3.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/48890275",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/48890275",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/3.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2021-08-26T15:45:03Z",
+        "date_published": "2021-08-26T15:46:03Z",
+        "description": "see NEWS.md",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/2.4.1",
+        "name": "St. Ann's Bay",
+        "release_id": 48512434,
+        "tag": "2.4.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/2.4.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/48512434",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/48512434",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/2.4.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2021-04-26T13:36:29Z",
+        "date_published": "2021-04-26T13:40:37Z",
+        "description": "see NEWS.md",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/2.3.0",
+        "name": "Loma Mendoza",
+        "release_id": 42007157,
+        "tag": "2.3.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/2.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/42007157",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/42007157",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/2.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2021-04-06T16:47:22Z",
+        "date_published": "2021-04-06T18:00:37Z",
+        "description": "see NEWS.md",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/2.1.0",
+        "name": "Mobaka",
+        "release_id": 41013688,
+        "tag": "2.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/2.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/41013688",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/41013688",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/2.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2021-03-25T20:03:11Z",
+        "date_published": "2021-03-25T20:20:28Z",
+        "description": "see NEWS.md",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/2.0.0",
+        "name": "Olympia",
+        "release_id": 40440580,
+        "tag": "2.0.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/2.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/40440580",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/40440580",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/2.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2021-01-21T11:50:48Z",
+        "date_published": "2021-01-21T11:56:28Z",
+        "description": "New release with a multitude of new parser functions and bugfixes as documented in the NEWS.md file. \r\n\r\nWe will use semantic versioning in the future.",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/1.3.0",
+        "name": "Magdalenenberg",
+        "release_id": 36708622,
+        "tag": "1.3.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/1.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/36708622",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/36708622",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/1.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2020-01-12T15:44:25Z",
+        "date_published": "2020-01-14T13:27:17Z",
+        "description": "see NEWS.md for a list of updates since 1.0.3",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/1.2.0",
+        "name": "Third CRAN release version",
+        "release_id": 22824570,
+        "tag": "1.2.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/22824570",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/22824570",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2019-08-02T17:05:04Z",
+        "date_published": "2019-08-02T17:07:25Z",
+        "description": "see NEWS.md for a list of updates since 1.0.2",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/1.0.3",
+        "name": "Second CRAN release version",
+        "release_id": 19047048,
+        "tag": "1.0.3",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/1.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/19047048",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/19047048",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/1.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2018-10-19T10:19:45Z",
+        "date_published": "2018-10-29T08:18:56Z",
+        "description": "Stable basic implementation of the main planned features. Thanks to @ISAAKiel for the help!",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/1.0.2",
+        "name": "First CRAN release version",
+        "release_id": 13703449,
+        "tag": "1.0.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/1.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/13703449",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/13703449",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/1.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "nevrome",
+          "type": "User"
+        },
+        "date_created": "2017-10-31T16:44:36Z",
+        "date_published": "2017-11-03T13:10:25Z",
+        "description": "This tag marks the end of the lonely and sad development. The future is bright.\r\n\r\nBasic class functions and some queries implemented. ",
+        "html_url": "https://github.com/ropensci/c14bazAAR/releases/tag/0.0.1",
+        "name": "lone wolf",
+        "release_id": 8374107,
+        "tag": "0.0.1",
+        "tarball_url": "https://api.github.com/repos/ropensci/c14bazAAR/tarball/0.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/c14bazAAR/releases/8374107",
+        "value": "https://api.github.com/repos/ropensci/c14bazAAR/releases/8374107",
+        "zipball_url": "https://api.github.com/repos/ropensci/c14bazAAR/zipball/0.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable state and is being actively developed.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:07:30",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 31
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "How to use",
+        "type": "Text_excerpt",
+        "value": "The package contains a set of getter functions (see below) to query the databases. Thereby not every available variable from every archive is downloaded. Instead c14bazAAR focuses on a [selection](https://github.com/ropensci/c14bazAAR/blob/master/data-raw/variable_definition.csv) of the most important and most common variables to achieve a certain degree of standardization. The downloaded dates are stored in the custom S3 class `c14_date_list` which acts as a wrapper around the [tibble](https://tibble.tidyverse.org/) class and provides specific class methods.\n\nA workflow to download and prepare all dates could look like this:\n\n```\nlibrary(c14bazAAR)\nlibrary(magrittr)\n\nget_c14data(\"all\") %>%\n  remove_duplicates() %>%\n  calibrate() %>%\n  determine_country_by_coordinate()\n```\n\nIt takes quite some time to run all of this and it's probably not necessary for your use case. Here's a list of the main tasks c14bazAAR can handle. That allows you to pick what you need:\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Calibration",
+        "parent_header": [
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "The [`calibrate()`](https://github.com/ropensci/c14bazAAR/blob/master/R/c14_date_list_calibrate.R) function calibrates all valid dates in a `c14_date_list` individually with [`Bchron::BchronCalibrate()`](https://github.com/andrewcparnell/Bchron/blob/master/R/BchronCalibrate.R). It provides two different types of output: calprobdistr and calrange.\n\nSee `?calibrate` for more information.\n\n```\nx %>% calibrate()\n```\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Country attribution",
+        "parent_header": [
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "Filtering 14C dates by country is useful for spatial filtering. Most databases provide the variable country, but they don't rely on a unified naming convention and therefore use various terms to represent the same entity. The function [`determine_country_by_coordinate()`](https://github.com/ropensci/c14bazAAR/blob/master/R/c14_date_list_spatial_determine_country_by_coordinate.R) determines the country a date is coming from by intersecting its spatial coordinates with polygons from [`rworldxtra::countriesHigh`](https://github.com/AndySouth/rworldxtra).\n\nSee `?country_attribution` for more information.\n\n```\nx %>% determine_country_by_coordinate()\n```\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Duplicates",
+        "parent_header": [
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "Some of the source databases already contain duplicated dates and for sure you'll have some if you combine different databases. As a result of the long history of these archives, which includes even mutual absorption, duplicates make up a significant proportion of combined datasets. It's not trivial to find and deal with theses duplicates, because they are not exactly identical between databases: Sometimes they are linked to conflicting and mutually exclusive context information.\n\nFor an automatic search and removal based on identical lab numbers we wrote [`remove_duplicates()`](https://github.com/ropensci/c14bazAAR/blob/master/R/c14_date_list_duplicates_remove.R). This functions offers several options on how exactly duplicates should be treated.\n\nIf you call `remove_duplicates()` with the option `mark_only = TRUE` then no data is removed, but you can inspect the duplicate groups identified.\n\nSee `?duplicates` for more information.\n\n```\nx %>% remove_duplicates()\n```\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Conversion",
+        "parent_header": [
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "A c14_date_list can be directly converted to other R data structures. So far only [`as.sf()`](https://github.com/ropensci/c14bazAAR/blob/master/R/c14_date_list_convert.R) is implemented. The sf package provides great tools to manipulate and plot spatial vector data. This simplifies certain spatial operations with the date point cloud.\n\nSee `?as.sf` for more information.\n\n```\nx %>% as.sf()\n```\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Technical functions",
+        "parent_header": [
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "c14_date_lists are constructed with [`as.c14_date_list`](https://github.com/ropensci/c14bazAAR/blob/master/R/c14_date_list_basic.R). This function takes data.frames or tibbles and adds the c14_date_list class tag. It also calls [`order_variables()`](https://github.com/ropensci/c14bazAAR/blob/master/R/c14_date_list_order_variables.R) to establish a certain variable order and [`enforce_types()`](https://github.com/ropensci/c14bazAAR/blob/master/R/c14_date_list_enforce_types.R) which converts all variables to the correct data type. There are custom `print()`, `format()` and `plot()` methods for c14_date_lists.\n\nThe [`fuse()`](https://github.com/ropensci/c14bazAAR/blob/master/R/c14_date_list_fuse.R) function allows to rowbind multiple c14_date_lists.\n\nSee `?as.c14_date_list` and `?fuse`.\n\n```\nx1 <- data.frame(\n  c14age = 2000,\n  c14std = 30\n) %>% as.c14_date_list()\n\nx2 <- fuse(x1, x1)\n```\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Plotting radiocarbon data",
+        "parent_header": [
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "c14bazAAR only provides a very basic `plot` function for `c14_date_list`s. The [simple plotting vignette](https://github.com/ropensci/c14bazAAR/blob/master/vignettes/simple_plotting.Rmd) introduces some techniques to help you get started with more sophisticated visualization.\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Other radiocarbon packages",
+        "parent_header": [
+          "How to use"
+        ],
+        "type": "Text_excerpt",
+        "value": "There are several R packages that provide functions to calibrate, analyze or model radiocarbon dates: e.g. [oxcAAR](https://github.com/ISAAKiel/oxcAAR), [rcarbon](https://github.com/ahb108/rcarbon), [Bchron](https://github.com/andrewcparnell/Bchron)\n\nThey usually have a simple, vector based interface and you can use `c14_date_list` columns as input.\n\n```\nrcarbon::calibrate(x = x$c14age, error = x$c14std)\n```\n"
+      },
+      "source": "https://github.com/ropensci/c14bazAAR/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+        "type": "String",
+        "value": "5.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "5.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/c14bazAAR/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

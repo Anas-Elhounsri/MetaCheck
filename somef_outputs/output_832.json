@@ -1,0 +1,596 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8616666666666666,
+      "result": {
+        "type": "String",
+        "value": "Reinforcement Learning"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "thomas.cassimon@uantwerpen.be",
+        "identifier": "https://orcid.org/0000-0002-7471-2508",
+        "type": "String",
+        "value": "Thomas Cassimon"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "reinout.eyckerman@uantwerpen.be",
+        "identifier": "https://orcid.org/0000-0002-9352-7981",
+        "type": "String",
+        "value": "Reinout Eyckerman"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/imec-idlab/deep-sea-treasure"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-08-20T12:09:03Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-21T08:01:24Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Deep Sea Treasure Environment for Multi-Objective Optimization Research"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A `gym` environment for the DeepSeaTreasure problem originally proposed by Vamplew et al."
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9939686566251835,
+      "result": {
+        "original_header": "API",
+        "type": "Text_excerpt",
+        "value": "This section will provide you with a detailed description of the API we offer, and how you can use it.\nIn general, our API matches that of OpenAI's gym package.\nThis library contains 1 environment (`DeepSeaTreasure-v0`) and 2 wrappers (`FuelWrapper` and `VamplewWrapper`).\nIn order to aid reproducibility, we include a package version, and source-code commit hash in the python code (`deep_sea_treasure.__version__.VERSION` and `deep_sea_treasure.__version__.COMMIT_HASH`). \nThe environment we created is a modified version of the environment originally showcased in the paper by [Vamplew et al.](https://doi.org/10.1007/s10994-010-5232-5)\nIn our version, the agent can move around by providing an acceleration on both the x- and y- direction.\nBy default, accelerations are discrete, going from -3 to +3. It is the agent's goal to find the largest possible treasure, in the shortest amount of time.\nThis immediately creates a tricky situation for any agent attempting to learn in this environment,\nsince the agent has to deal with two conflicting objectives: time and treasure. This is also reflected in the reward we return from the environment,\nsince this is a 2-element vector (1 element for each objective).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8683650832753996,
+      "result": {
+        "original_header": "Wrappers",
+        "type": "Text_excerpt",
+        "value": "When wrapping this environment, users should take care to ensure that their `debug_dict` always contains at least an `env` value,\nidentifying the wrapper that created the dict, and an `inner` value, that contains the debugging information from the wrapped environment.\nThis is important if you want to use the renderer to render debug information,\nsince the renderer is only capable of rendering debug information from the core environment itself. \n"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9823028959100529,
+      "result": {
+        "original_header": "General",
+        "type": "Text_excerpt",
+        "value": "All environments and wrappers in this repository provide a `reward_space` attribute,\nsimilar to the `observation_space` and `action_space` attributes normally present in gym environments.\nThe main purpose behind this is to allow an external observer to determine the number of objectives. \n"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9543446682580901,
+      "result": {
+        "original_header": "<a href=\"deep_sea_treasure/deep_sea_treasure_v0.py\">`DeepSeaTreasureV0`</a>",
+        "type": "Text_excerpt",
+        "value": "```python\nfrom deep_sea_treasure import DeepSeaTreasureV0\n```\nThis is the core environment, creation is handled by the `new()` static method.\nThis is the recommended way of creating environments, since it provides meaningful arguments for changing the various settings for the environment.\nBeyond this, there is also a constructor that accepts a dictionary of settings, this was mainly done to retain compatibility with RL frameworks like RLLib.\nInternally, the `new()` method simply fills a dictionary, and delegates to the constructor.\nThe constructor uses JSON schemas along with a couple of extra `assert`s to verify the correctness of a given configuration.\nThe exact schema can be found in [deep_sea_treasure.schema.json](deep_sea_treasure/schema/deep_sea_treasure.schema.json), and is also returned by `DeepSeaTreasureV0.schema()`.\nA copy of the default configuration can be obtained through `DeepSeaTreasureV0.default_config()`.\nThe table below describes the various options offered by the `new()` method. \n| Option                    | Type                                  | Meaning |\n| ------------------------- | ------------------------------------- | ------- |\n| `treasure_values`         | `List[List[Union[List[int], float]]]` | This option serves two purposes: It shapes the seabed, and determines the value of each treasure. It is an array of `((x, y), treasure)` tuples.\n| `acceleration_levels`     | `List[int]`                           | This option provides a list of discrete acceleration levels. Each level should be a positive integer number. Upon creation, the numbers with inverted sign will be used for accelerating left and up, while the numbers themselves signify acceleration either right (x) or down (y).\n| `implicit_collision_constraint`\t| `bool`\t\t\t\t\t\t| When this option is enabled, the reward function will be reduced to below its minimum when the submarine causes a collision. This is also reflected in the `reward_space.low`, the values in this array will be 1 below the minimum attainable through normal actions in the environment.\n| `max_steps`               | `int`                                 | The environment has 2 ending conditions: 1. The submarine finds a treasure 2. The maximum number of steps is reached, this option sets the maximum allowed number of steps.\n| `max_velocity`            | `float`                               | The environment limits the absolute value of the submarine's maximum velocity to this number, to prevent overflow-related physics shenanigans from occurring.\n| `render_grid`             | `bool`                                | If this option is enabled, a grid will be shown when rendering the environment, showing the discrete spaces where the submarine can reside.\n| `render_treasure_values`  | `bool`                                | If this option is enabled, the value of each treasure will be rendered on top of the treasure, making the rendering slightly clearer.\n| `theme`                   | `Theme`                               | We allow the customization of the rendering through the use of the `Theme` class, in conjunction with the `DeepSeaTreasureV0Renderer`, this option allows the user to specify the `Theme` to use when rendering, the default `Theme` is returned by `Theme.default()`. \n"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8247037383697361,
+      "result": {
+        "original_header": "Observation Space",
+        "type": "Text_excerpt",
+        "value": "```python\nBox\n```\nThe observation in this environment is a 2 x N matrix, with N equal to `len(treasure_values) + 1`.\nThe first column in the matrix (`obs[:, 0]`) contains the submarine's current velocity.\nThe next N columns contain the submarine's position, relative to each of the treasures.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9708261408116499,
+      "result": {
+        "original_header": "<a href=\"deep_sea_treasure/fuel_wrapper.py\">`FuelWrapper`</a>",
+        "type": "Text_excerpt",
+        "value": "```python\nfrom deep_sea_treasure import FuelWrapper\n```\nThe `FuelWrapper` is a wrapper for the DeepSeaTreasureV0 environment that adds a third objective, fuel consumption.\nFuel consumption is similar to time, in the sense that the reward for this will be negative at each timestep.\nIt differs from time in the sense that the consumed fuel depends on the action taken.\nAccelerating 1 in either dimension will usually cost 1 fuel, but accelerating 3 usually costs 3 fuel.\nThe addition of this mechanic makes high accelerations followed by coasting an attractive strategy.\nCreation of this wrapper is handled by the `new()` static method.\nThis is the recommended way of creating wrappers, since it provides meaningful arguments for changing the various settings for the environment.\nBeyond this, there is also a constructor that accepts a [`gym.Env`](https://gym.openai.com/docs/#environments) and a dictionary of settings,\nthis was mainly done to retain compatibility with RL frameworks like RLLib.\nInternally, the `new()` method simply fills a dictionary, and delegates to the constructor.\nThe constructor uses JSON schemas along with a couple of extra `assert`s to verify the correctness of a given configuration.\nThe exact schema can be found in [fuel_wrapper.schema.json](deep_sea_treasure/schema/fuel_wrapper.schema.json). \n#### Observation Space\n_Same as DeepSeaTreasureV0._ \n"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9273974731515041,
+      "result": {
+        "original_header": "<a href=\"deep_sea_treasure/vamplew_wrapper.py\">`VamplewWrapper`</a>",
+        "type": "Text_excerpt",
+        "value": "```python\nfrom deep_sea_treasure import VamplewWrapper\n```\nThe `VamplewWrapper` is a wrapper intended to undo the modifications we made to the core [`DeepSeaTreasureV0`](deep_sea_treasure/deep_sea_treasure_v0.py) environment.\nIt wraps both the action and observation space, to make sure the environment matches the original setup by [Vamplew et al.](https://doi.org/10.1007/s10994-010-5232-5) exactly.\nThis means that the `VamplewWrapper` has a different action and observation space from the original `DeepSeaTreasureV0` environment.\nThe `VamplewWrapper` can wrap the `FuelWrapper`, but not the other way around, due to action-space incompatibility.\nCreation of this wrapper is handled by the `new()` static method.\nThis is the recommended way of creating wrappers, since it provides meaningful arguments for changing the various settings for the environment.\nBeyond this, there is also a constructor that accepts a [`gym.Env`](https://gym.openai.com/docs/#environments) and a dictionary of settings,\nthis was mainly done to retain compatibility with RL frameworks like RLLib.\nInternally, the `new()` method simply fills a dictionary, and delegates to the constructor.\nThe constructor uses JSON schemas along with a couple of extra `assert`s to verify the correctness of a given configuration.\nThe exact schema can be found in [vamplew_wrapper.schema.json](deep_sea_treasure/schema/vamplew_wrapper.schema.json). \n\n| Option        | Type   | Meaning |\n| ------------- | ------ | ------- |\n| `enable_idle` | `bool` | When true, this option enables a 5th action in this environment, idle. This allows the submarine to sit still and do nothing. \n\n#### Observation Space\n```python\nBox\n```\nThe observation in this environment is a 2-element vector, containing the submarine's current row and column. \n#### Reward Space\n_Same as DeepSeaTreasureV0._\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/imec-idlab/deep-sea-treasure/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "imec-idlab/deep-sea-treasure"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DeepSeaTreasure Environment"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.5227091"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master//res/Deep-Sea-Treasure-v0.gif"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "DeepSeaTreasure Environment"
+        ],
+        "type": "Text_excerpt",
+        "value": "In order to get started with this environment, you can install it using the following command:\n```shell\npython3 -m pip install  deep_sea_treasure --upgrade\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Mozilla Public License 2.0",
+        "spdx_id": "MPL-2.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mpl-2.0",
+        "value": "https://api.github.com/licenses/mpl-2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v2",
+        "spdx_id": "GPL-2.0",
+        "type": "File_dump",
+        "value": "\nMozilla Public License\nVersion 2.0\n1. Definitions\n\n1.1. \u201cContributor\u201d\n\n    means each individual or legal entity that creates, contributes to the creation of, or owns Covered Software.\n1.2. \u201cContributor Version\u201d\n\n    means the combination of the Contributions of others (if any) used by a Contributor and that particular Contributor\u2019s Contribution.\n1.3. \u201cContribution\u201d\n\n    means Covered Software of a particular Contributor.\n1.4. \u201cCovered Software\u201d\n\n    means Source Code Form to which the initial Contributor has attached the notice in Exhibit A, the Executable Form of such Source Code Form, and Modifications of such Source Code Form, in each case including portions thereof.\n1.5. \u201cIncompatible With Secondary Licenses\u201d\n\n    means\n\n        that the initial Contributor has attached the notice described in Exhibit B to the Covered Software; or\n\n        that the Covered Software was made available under the terms of version 1.1 or earlier of the License, but not also under the terms of a Secondary License.\n\n1.6. \u201cExecutable Form\u201d\n\n    means any form of the work other than Source Code Form.\n1.7. \u201cLarger Work\u201d\n\n    means a work that combines Covered Software with other material, in a separate file or files, that is not Covered Software.\n1.8. \u201cLicense\u201d\n\n    means this document.\n1.9. \u201cLicensable\u201d\n\n    means having the right to grant, to the maximum extent possible, whether at the time of the initial grant or subsequently, any and all of the rights conveyed by this License.\n1.10. \u201cModifications\u201d\n\n    means any of the following:\n\n        any file in Source Code Form that results from an addition to, deletion from, or modification of the contents of Covered Software; or\n\n        any new file in Source Code Form that contains any Covered Software.\n\n1.11. \u201cPatent Claims\u201d of a Contributor\n\n    means any patent claim(s), including without limitation, method, process, and apparatus claims, in any patent Licensable by such Contributor that would be infringed, but for the grant of the License, by the making, using, selling, offering for sale, having made, import, or transfer of either its Contributions or its Contributor Version.\n1.12. \u201cSecondary License\u201d\n\n    means either the GNU General Public License, Version 2.0, the GNU Lesser General Public License, Version 2.1, the GNU Affero General Public License, Version 3.0, or any later versions of those licenses.\n1.13. \u201cSource Code Form\u201d\n\n    means the form of the work preferred for making modifications.\n1.14. \u201cYou\u201d (or \u201cYour\u201d)\n\n    means an individual or a legal entity exercising rights under this License. For legal entities, \u201cYou\u201d includes any entity that controls, is controlled by, or is under common control with You. For purposes of this definition, \u201ccontrol\u201d means (a) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (b) ownership of more than fifty percent (50%) of the outstanding shares or beneficial ownership of such entity.\n\n2. License Grants and Conditions\n2.1. Grants\n\nEach Contributor hereby grants You a world-wide, royalty-free, non-exclusive license:\n\n    under intellectual property rights (other than patent or trademark) Licensable by such Contributor to use, reproduce, make available, modify, display, perform, distribute, and otherwise exploit its Contributions, either on an unmodified basis, with Modifications, or as part of a Larger Work; and\n\n    under Patent Claims of such Contributor to make, use, sell, offer for sale, have made, import, and otherwise transfer either its Contributions or its Contributor Version.\n\n2.2. Effective Date\n\nThe licenses granted in Section 2.1 with respect to any Contribution become effective for each Contribution on the date the Contributor first distributes such Contribution.\n2.3. Limitations on Grant Scope\n\nThe licenses granted in this Section 2 are the only rights granted under this License. No additional rights or licenses will be implied from the distribution or licensing of Covered Software under this License. Notwithstanding Section 2.1(b) above, no patent license is granted by a Contributor:\n\n    for any code that a Contributor has removed from Covered Software; or\n\n    for infringements caused by: (i) Your and any other third party\u2019s modifications of Covered Software, or (ii) the combination of its Contributions with other software (except as part of its Contributor Version); or\n\n    under Patent Claims infringed by Covered Software in the absence of its Contributions.\n\nThis License does not grant any rights in the trademarks, service marks, or logos of any Contributor (except as may be necessary to comply with the notice requirements in Section 3.4).\n2.4. Subsequent Licenses\n\nNo Contributor makes additional grants as a result of Your choice to distribute the Covered Software under a subsequent version of this License (see Section 10.2) or under the terms of a Secondary License (if permitted under the terms of Section 3.3).\n2.5. Representation\n\nEach Contributor represents that the Contributor believes its Contributions are its original creation(s) or it has sufficient rights to grant the rights to its Contributions conveyed by this License.\n2.6. Fair Use\n\nThis License is not intended to limit any rights You have under applicable copyright doctrines of fair use, fair dealing, or other equivalents.\n2.7. Conditions\n\nSections 3.1, 3.2, 3.3, and 3.4 are conditions of the licenses granted in Section 2.1.\n3. Responsibilities\n3.1. Distribution of Source Form\n\nAll distribution of Covered Software in Source Code Form, including any Modifications that You create or to which You contribute, must be under the terms of this License. You must inform recipients that the Source Code Form of the Covered Software is governed by the terms of this License, and how they can obtain a copy of this License. You may not attempt to alter or restrict the recipients\u2019 rights in the Source Code Form.\n3.2. Distribution of Executable Form\n\nIf You distribute Covered Software in Executable Form then:\n\n    such Covered Software must also be made available in Source Code Form, as described in Section 3.1, and You must inform recipients of the Executable Form how they can obtain a copy of such Source Code Form by reasonable means in a timely manner, at a charge no more than the cost of distribution to the recipient; and\n\n    You may distribute such Executable Form under the terms of this License, or sublicense it under different terms, provided that the license for the Executable Form does not attempt to limit or alter the recipients\u2019 rights in the Source Code Form under this License.\n\n3.3. Distribution of a Larger Work\n\nYou may create and distribute a Larger Work under terms of Your choice, provided that You also comply with the requirements of this License for the Covered Software. If the Larger Work is a combination of Covered Software with a work governed by one or more Secondary Licenses, and the Covered Software is not Incompatible With Secondary Licenses, this License permits You to additionally distribute such Covered Software under the terms of such Secondary License(s), so that the recipient of the Larger Work may, at their option, further distribute the Covered Software under the terms of either this License or such Secondary License(s).\n3.4. Notices\n\nYou may not remove or alter the substance of any license notices (including copyright notices, patent notices, disclaimers of warranty, or limitations of liability) contained within the Source Code Form of the Covered Software, except that You may alter any license notices to the extent required to remedy known factual inaccuracies.\n3.5. Application of Additional Terms\n\nYou may choose to offer, and to charge a fee for, warranty, support, indemnity or liability obligations to one or more recipients of Covered Software. However, You may do so only on Your own behalf, and not on behalf of any Contributor. You must make it absolutely clear that any such warranty, support, indemnity, or liability obligation is offered by You alone, and You hereby agree to indemnify every Contributor for any liability incurred by such Contributor as a result of warranty, support, indemnity or liability terms You offer. You may include additional disclaimers of warranty and limitations of liability specific to any jurisdiction.\n4. Inability to Comply Due to Statute or Regulation\n\nIf it is impossible for You to comply with any of the terms of this License with respect to some or all of the Covered Software due to statute, judicial order, or regulation then You must: (a) comply with the terms of this License to the maximum extent possible; and (b) describe the limitations and the code they affect. Such description must be placed in a text file included with all distributions of the Covered Software under this License. Except to the extent prohibited by statute or regulation, such description must be sufficiently detailed for a recipient of ordinary skill to be able to understand it.\n5. Termination\n\n5.1. The rights granted under this License will terminate automatically if You fail to comply with any of its terms. However, if You become compliant, then the rights granted under this License from a particular Contributor are reinstated (a) provisionally, unless and until such Contributor explicitly and finally terminates Your grants, and (b) on an ongoing basis, if such Contributor fails to notify You of the non-compliance by some reasonable means prior to 60 days after You have come back into compliance. Moreover, Your grants from a particular Contributor are reinstated on an ongoing basis if such Contributor notifies You of the non-compliance by some reasonable means, this is the first time You have received notice of non-compliance with this License from such Contributor, and You become compliant prior to 30 days after Your receipt of the notice.\n\n5.2. If You initiate litigation against any entity by asserting a patent infringement claim (excluding declaratory judgment actions, counter-claims, and cross-claims) alleging that a Contributor Version directly or indirectly infringes any patent, then the rights granted to You by any and all Contributors for the Covered Software under Section 2.1 of this License shall terminate.\n\n5.3. In the event of termination under Sections 5.1 or 5.2 above, all end user license agreements (excluding distributors and resellers) which have been validly granted by You or Your distributors under this License prior to termination shall survive termination.\n6. Disclaimer of Warranty\n\nCovered Software is provided under this License on an \u201cas is\u201d basis, without warranty of any kind, either expressed, implied, or statutory, including, without limitation, warranties that the Covered Software is free of defects, merchantable, fit for a particular purpose or non-infringing. The entire risk as to the quality and performance of the Covered Software is with You. Should any Covered Software prove defective in any respect, You (not any Contributor) assume the cost of any necessary servicing, repair, or correction. This disclaimer of warranty constitutes an essential part of this License. No use of any Covered Software is authorized under this License except under this disclaimer.\n7. Limitation of Liability\n\nUnder no circumstances and under no legal theory, whether tort (including negligence), contract, or otherwise, shall any Contributor, or anyone who distributes Covered Software as permitted above, be liable to You for any direct, indirect, special, incidental, or consequential damages of any character including, without limitation, damages for lost profits, loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses, even if such party shall have been informed of the possibility of such damages. This limitation of liability shall not apply to liability for death or personal injury resulting from such party\u2019s negligence to the extent applicable law prohibits such limitation. Some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so this exclusion and limitation may not apply to You.\n8. Litigation\n\nAny litigation relating to this License may be brought only in the courts of a jurisdiction where the defendant maintains its principal place of business and such litigation shall be governed by laws of that jurisdiction, without reference to its conflict-of-law provisions. Nothing in this Section shall prevent a party\u2019s ability to bring cross-claims or counter-claims.\n9. Miscellaneous\n\nThis License represents the complete agreement concerning the subject matter hereof. If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable. Any law or regulation which provides that the language of a contract shall be construed against the drafter shall not be used to construe this License against a Contributor.\n10. Versions of the License\n10.1. New Versions\n\nMozilla Foundation is the license steward. Except as provided in Section 10.3, no one other than the license steward has the right to modify or publish new versions of this License. Each version will be given a distinguishing version number.\n10.2. Effect of New Versions\n\nYou may distribute the Covered Software under the terms of the version of the License under which You originally received the Covered Software, or under the terms of any subsequent version published by the license steward.\n10.3. Modified Versions\n\nIf you create software not governed by this License, and you want to create a new license for such software, you may create and use a modified version of this License if you rename the license and remove any references to the name of the license steward (except to note that such modified license differs from this License).\n10.4. Distributing Source Code Form that is Incompatible With Secondary Licenses\n\nIf You choose to distribute Source Code Form that is Incompatible With Secondary Licenses under the terms of this version of the License, the notice described in Exhibit B of this License must be attached.\nExhibit A - Source Code Form License Notice\n\n    This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at https://mozilla.org/MPL/2.0/.\n\nIf it is not possible or desirable to put the notice in a particular file, then You may include the notice in a location (such as a LICENSE file in a relevant directory) where a recipient would be likely to look for such a notice.\n\nYou may add additional accurate notices of copyright ownership.\nExhibit B - \u201cIncompatible With Secondary Licenses\u201d Notice\n\n    This Source Code Form is \u201cIncompatible With Secondary Licenses\u201d, as defined by the Mozilla Public License, v. 2.0.\n"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/LICENSE.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "deep-sea-treasure"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "DeepSeaTreasure"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "imec-idlab"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 86198,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "value": "Python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ThomasCassimon",
+          "type": "User"
+        },
+        "date_created": "2021-12-09T09:00:53Z",
+        "date_published": "2021-12-09T09:02:21Z",
+        "description": "Maximum Pareto Front Size was raised from 128 to 1024.",
+        "html_url": "https://github.com/imec-idlab/deep-sea-treasure/releases/tag/v2.0.2",
+        "name": "v2.0.2",
+        "release_id": 54937703,
+        "tag": "v2.0.2",
+        "tarball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/tarball/v2.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/54937703",
+        "value": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/54937703",
+        "zipball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/zipball/v2.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "Vesyrak",
+          "type": "User"
+        },
+        "date_created": "2021-11-30T13:03:44Z",
+        "date_published": "2021-11-30T13:08:09Z",
+        "description": "Fix: \r\n- observation space datatype is now equal to observation datatype",
+        "html_url": "https://github.com/imec-idlab/deep-sea-treasure/releases/tag/v2.0.1",
+        "name": "2.0.1",
+        "release_id": 54321113,
+        "tag": "v2.0.1",
+        "tarball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/tarball/v2.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/54321113",
+        "value": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/54321113",
+        "zipball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/zipball/v2.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ThomasCassimon",
+          "type": "User"
+        },
+        "date_created": "2021-09-24T09:06:21Z",
+        "date_published": "2021-09-24T09:07:44Z",
+        "description": "\"theme\" field is now None when the configuration is exported using `.config()`. When a config is loaded through the constructor, and the theme is not filled in, it will be filled in using `Theme.default()`.",
+        "html_url": "https://github.com/imec-idlab/deep-sea-treasure/releases/tag/v2.0.0",
+        "name": "2.0.0",
+        "release_id": 50191059,
+        "tag": "v2.0.0",
+        "tarball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/tarball/v2.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/50191059",
+        "value": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/50191059",
+        "zipball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/zipball/v2.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ThomasCassimon",
+          "type": "User"
+        },
+        "date_created": "2021-09-15T07:41:02Z",
+        "date_published": "2021-09-15T07:43:26Z",
+        "description": "Added Zenodo metadata file.",
+        "html_url": "https://github.com/imec-idlab/deep-sea-treasure/releases/tag/v1.1.2",
+        "name": "1.1.2",
+        "release_id": 49579642,
+        "tag": "v1.1.2",
+        "tarball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/tarball/v1.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/49579642",
+        "value": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/49579642",
+        "zipball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/zipball/v1.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ThomasCassimon",
+          "type": "User"
+        },
+        "date_created": "2021-09-06T09:54:54Z",
+        "date_published": "2021-09-06T10:14:29Z",
+        "description": "Metadata was tweaked and improved, minor README improvements.",
+        "html_url": "https://github.com/imec-idlab/deep-sea-treasure/releases/tag/v1.1.1",
+        "name": "1.1.1",
+        "release_id": 49062170,
+        "tag": "v1.1.1",
+        "tarball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/tarball/v1.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/49062170",
+        "value": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/49062170",
+        "zipball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/zipball/v1.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ThomasCassimon",
+          "type": "User"
+        },
+        "date_created": "2021-09-02T07:24:47Z",
+        "date_published": "2021-09-02T07:28:20Z",
+        "description": "Adds `.config()` method to environment and all wrappers to allow researchers to easily report their complete configuration.\r\nSome minor tweaks were made to the README, and data files for the Pareto-fronts are now included.",
+        "html_url": "https://github.com/imec-idlab/deep-sea-treasure/releases/tag/v1.1.0",
+        "name": "1.1.0",
+        "release_id": 48868664,
+        "tag": "v1.1.0",
+        "tarball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/tarball/v1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/48868664",
+        "value": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/48868664",
+        "zipball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/zipball/v1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "ThomasCassimon",
+          "type": "User"
+        },
+        "date_created": "2021-08-20T13:30:18Z",
+        "date_published": "2021-08-20T13:41:55Z",
+        "description": "This is the first release of the Deep Sea Treasure software and corresponds to [version 1.0.1](https://pypi.org/project/deep-sea-treasure/1.0.1/) on PyPi.org",
+        "html_url": "https://github.com/imec-idlab/deep-sea-treasure/releases/tag/v1.0.1",
+        "name": "Initial Release",
+        "release_id": 48182562,
+        "tag": "v1.0.1",
+        "tarball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/tarball/v1.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/48182562",
+        "value": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/releases/48182562",
+        "zipball_url": "https://api.github.com/repos/imec-idlab/deep-sea-treasure/zipball/v1.0.1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "gym",
+        "type": "Software_application",
+        "value": "gym",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jsonschema",
+        "type": "Software_application",
+        "value": "jsonschema",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy>=1.21",
+        "version": ">=1.21"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pygame",
+        "type": "Software_application",
+        "value": "pygame",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:16:52",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 13
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example",
+        "parent_header": [
+          "DeepSeaTreasure Environment"
+        ],
+        "type": "Text_excerpt",
+        "value": "After installing the environment, you can get started using it like this:\n```python\nimport pygame\nimport numpy as np\nimport time\n\nimport deep_sea_treasure\nfrom deep_sea_treasure import DeepSeaTreasureV0\n\n# Make sure experiment are reproducible, so people can use the exact same versions\nprint(f\"Using DST {deep_sea_treasure.__version__.VERSION} ({deep_sea_treasure.__version__.COMMIT_HASH})\")\n\ndst: DeepSeaTreasureV0 = DeepSeaTreasureV0.new(\n\tmax_steps=1000,\n\trender_treasure_values=True\n)\n\ndst.render()\n\nstop: bool = False\ntime_reward: int = 0\n\nwhile not stop:\n\tevents = pygame.event.get()\n\n\taction = (np.asarray([0, 0, 0, 1, 0, 0, 0]), np.asarray([0, 0, 0, 1, 0, 0, 0]))\n\n\tfor event in events:\n\t\tif event.type == pygame.KEYDOWN:\n\t\t\tif event.key == pygame.K_LEFT:\n\t\t\t\taction = (np.asarray([0, 0, 1, 0, 0, 0, 0]), np.asarray([0, 0, 0, 1, 0, 0, 0]))\n\t\t\telif event.key == pygame.K_RIGHT:\n\t\t\t\taction = (np.asarray([0, 0, 0, 0, 1, 0, 0]), np.asarray([0, 0, 0, 1, 0, 0, 0]))\n\t\t\tif event.key == pygame.K_UP:\n\t\t\t\taction = (np.asarray([0, 0, 0, 1, 0, 0, 0]), np.asarray([0, 0, 1, 0, 0, 0, 0]))\n\t\t\telif event.key == pygame.K_DOWN:\n\t\t\t\taction = (np.asarray([0, 0, 0, 1, 0, 0, 0]), np.asarray([0, 0, 0, 0, 1, 0, 0]))\n\n\t\t\tif event.key in {pygame.K_ESCAPE}:\n\t\t\t\tstop = True\n\n\t\tif event.type == pygame.QUIT:\n\t\t\tstop = True\n\n\t_, reward, done, debug_info = dst.step(action)\n\ttime_reward += int(reward[1])\n\n\tif done:\n\t\tprint(f\"Found treasure worth {float(reward[0]):5.2f} after {abs(time_reward)} timesteps!\")\n\t\ttime_reward = 0\n\n\tif not stop:\n\t\tdst.render()\n\t\ttime.sleep(0.25)\n\n\tif done:\n\t\tdst.reset()\n```\n\nThis will allow you to play around in the environment, and move the sub around, finding treasures!\n"
+      },
+      "source": "https://raw.githubusercontent.com/imec-idlab/deep-sea-treasure/master/README.md",
+      "technique": "header_analysis"
+    }
+  ]
+}

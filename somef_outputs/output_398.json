@@ -1,0 +1,579 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9067001132388468,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "ilya@boyandin.me",
+            "value": "Ilya Boyandin"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "ilya@boyandin.me",
+        "identifier": "https://orcid.org/0000-0001-5585-7587",
+        "type": "String",
+        "value": "Ilya Boyandin"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Boyandin",
+            "given_name": "Ilya",
+            "name": "Ilya Boyandin",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-5585-7587"
+          },
+          {
+            "family_name": "Kotov",
+            "given_name": "Egor",
+            "name": "Egor Kotov",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-6690-5345"
+          }
+        ],
+        "datePublished": "2024",
+        "doi": "10.32614/CRAN.package.flowmapblue",
+        "format": "cff",
+        "title": "flowmapblue: Flow Map Rendering",
+        "type": "File_dump",
+        "url": "https://doi.org/10.32614/CRAN.package.flowmapblue",
+        "value": "# --------------------------------------------\n# CITATION file created with {cffr} R package\n# See also: https://docs.ropensci.org/cffr/\n# --------------------------------------------\n \ncff-version: 1.2.0\nmessage: 'To cite package \"flowmapblue\" in publications use:'\ntype: software\nlicense: MIT\ntitle: 'flowmapblue: Flow Map Rendering'\nversion: 0.0.2\ndoi: 10.32614/CRAN.package.flowmapblue\nabstract: Create interactive flow maps using 'FlowmapBlue' 'TypeScript' library <https://github.com/FlowmapBlue/FlowmapBlue>,\n  which is a free tool for representing aggregated numbers of movements between geographic\n  locations as flow maps. It is used to visualize urban mobility, commuting behavior,\n  bus, subway and air travels, bicycle sharing, human and bird migration, refugee\n  flows, freight transportation, trade, supply chains, scientific collaboration, epidemiological\n  and historical data and many other topics. The package allows to either create standalone\n  flow maps in form of 'htmlwidgets' and save them in 'HTML' files, or integrate flow\n  maps into 'Shiny' applications.\nauthors:\n- family-names: Boyandin\n  given-names: Ilya\n  email: ilya@boyandin.me\n  orcid: https://orcid.org/0000-0001-5585-7587\n- family-names: Kotov\n  given-names: Egor\n  email: kotov.egor@gmail.com\n  orcid: https://orcid.org/0000-0001-6690-5345\npreferred-citation:\n  type: manual\n  title: Flowmap.blue widget for R\n  authors:\n  - family-names: Boyandin\n    given-names: Ilya\n    email: ilya@boyandin.me\n    orcid: https://orcid.org/0000-0001-5585-7587\n  year: '2024'\n  url: https://github.com/FlowmapBlue/flowmapblue.R\n  doi: 10.32614/CRAN.package.flowmapblue\nrepository-code: https://github.com/FlowmapBlue/flowmapblue.R\nurl: https://flowmapblue.github.io/flowmapblue.R/\ncontact:\n- family-names: Kotov\n  given-names: Egor\n  email: kotov.egor@gmail.com\n  orcid: https://orcid.org/0000-0001-6690-5345\nkeywords:\n- datavis\n- mobility\n- mobility-data\n- movement-data\n- rstats\n- rstudio\nreferences:\n- type: software\n  title: 'R: A Language and Environment for Statistical Computing'\n  notes: Depends\n  url: https://www.R-project.org/\n  authors:\n  - name: R Core Team\n  institution:\n    name: R Foundation for Statistical Computing\n    address: Vienna, Austria\n  year: '2024'\n  version: '>= 2.10'\n- type: software\n  title: htmlwidgets\n  abstract: 'htmlwidgets: HTML Widgets for R'\n  notes: Imports\n  url: https://github.com/ramnathv/htmlwidgets\n  repository: https://CRAN.R-project.org/package=htmlwidgets\n  authors:\n  - family-names: Vaidyanathan\n    given-names: Ramnath\n  - family-names: Xie\n    given-names: Yihui\n  - family-names: Allaire\n    given-names: JJ\n  - family-names: Cheng\n    given-names: Joe\n    email: joe@posit.co\n  - family-names: Sievert\n    given-names: Carson\n    email: carson@posit.co\n    orcid: https://orcid.org/0000-0002-4958-2844\n  - family-names: Russell\n    given-names: Kenton\n  year: '2024'\n- type: software\n  title: quarto\n  abstract: 'quarto: R Interface to ''Quarto'' Markdown Publishing System'\n  notes: Suggests\n  url: https://quarto-dev.github.io/quarto-r/\n  repository: https://CRAN.R-project.org/package=quarto\n  authors:\n  - family-names: Allaire\n    given-names: JJ\n    email: jj@posit.co\n    orcid: https://orcid.org/0000-0003-0174-9868\n  - family-names: Dervieux\n    given-names: Christophe\n    email: cderv@posit.co\n    orcid: https://orcid.org/0000-0003-4474-2498\n  year: '2024'\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/FlowmapBlue/flowmapblue.R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/FlowmapBlue/flowmapblue.R"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/FlowmapBlue/flowmapblue.R"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-06-29T12:10:04Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-18T21:32:01Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Flowmap.blue widget for R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+        "type": "String",
+        "value": "Create interactive flow maps using 'FlowmapBlue' 'TypeScript'\n    library <https://github.com/FlowmapBlue/FlowmapBlue>, which is a free\n    tool for representing aggregated numbers of movements between\n    geographic locations as flow maps. It is used to visualize urban\n    mobility, commuting behavior, bus, subway and air travels, bicycle\n    sharing, human and bird migration, refugee flows, freight\n    transportation, trade, supply chains, scientific collaboration,\n    epidemiological and historical data and many other topics. The package\n    allows to either create standalone flow maps in form of 'htmlwidgets'\n    and save them in 'HTML' files, or integrate flow maps into 'Shiny'\n    applications."
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Create interactive flow maps using 'FlowmapBlue' 'TypeScript' library <https://github.com/FlowmapBlue/FlowmapBlue>, which is a free tool for representing aggregated numbers of movements between geographic locations as flow maps. It is used to visualize urban mobility, commuting behavior, bus, subway and air travels, bicycle sharing, human and bird migration, refugee flows, freight transportation, trade, supply chains, scientific collaboration, epidemiological and historical data and many other topics. The package allows to either create standalone flow maps in form of 'htmlwidgets' and save them in 'HTML' files, or integrate flow maps into 'Shiny' applications."
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9709332274934355,
+      "result": {
+        "original_header": "Flowmap.blue R widget <a href=\"https://flowmapblue.github.io/flowmapblue.R/\"><img src=\"man/figures/logo.png\" align=\"right\" width=\"200\" alt=\"flowmapblue website\" /></a>",
+        "type": "Text_excerpt",
+        "value": "This is a [Flowmap.blue](https://www.flowmap.blue/) widget for R. Create\ninteractive flow maps using\n[`FlowmapBlue`](https://github.com/FlowmapBlue/FlowmapBlue) TypeScript\nlibrary, which is a free tool for representing aggregated numbers of\nmovements between geographic locations as flow maps. It is used to\nvisualize urban mobility, commuting behavior, bus, subway and air\ntravels, bicycle sharing, human and bird migration, refugee flows,\nfreight transportation, trade, supply chains, scientific collaboration,\nepidemiological and historical data and many other topics. The package\nallows to either create standalone flow maps in form of \u2018htmlwidgets\u2019\nand save them in \u2018HTML\u2019 files, or integrate flow maps into \u2018Shiny\u2019\napplications. \nAs an alternative, you may also consider using R to populate a\nspreadsheet for publishing on [Flowmap.blue](https://www.flowmap.blue/)\nas described in this [excellent blog\npost](https://doodles.mountainmath.ca/blog/2020/01/06/flow-maps/).\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/README.qmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/FlowmapBlue/flowmapblue.R/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 11
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/FlowmapBlue/flowmapblue.R/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "FlowmapBlue/flowmapblue.R"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Flowmap.blue R widget "
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/README.qmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://flowmapblue.github.io/flowmapblue.R/"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "flowmapblue"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.32614/CRAN.package.flowmapblue"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/README.qmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/man/figures/demo.png"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/README.qmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "Flowmap.blue R widget <a href=\"https://flowmapblue.github.io/flowmapblue.R/\"><img src=\"man/figures/logo.png\" align=\"right\" width=\"200\" alt=\"flowmapblue website\" /></a>"
+        ],
+        "type": "Text_excerpt",
+        "value": "Install from CRAN:\n\n``` r\ninstall.packages(\"flowmapblue\")\n```\n\nTo install the development version from GitHub you will need to install\n`remotes` if you don\u2019t have it yet:\n\n``` r\nif (!require(\"remotes\")) install.packages(\"remotes\")\n\nremotes::install_github(\"FlowmapBlue/flowmapblue.R\",\n  force = TRUE, dependencies = TRUE)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/README.qmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/FlowmapBlue/flowmapblue.R/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/FlowmapBlue/flowmapblue.R/issues"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/FlowmapBlue/flowmapblue.R/issues"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "datavis, mobility, mobility-data, movement-data, rstats, rstudio"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "mobility",
+          "datavis",
+          "rstats",
+          "rstudio",
+          "movement-data",
+          "mobility-data"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright 2020 Ilya Boyandin\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/README.qmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "flowmapblue.R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "flowmapblue: Flow Map Rendering"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "FlowmapBlue"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+        "type": "String",
+        "value": "flowmapblue"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 9840,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 676,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/README.qmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/FlowmapBlue/flowmapblue.R/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "e-kotov",
+          "type": "User"
+        },
+        "date_created": "2024-09-03T17:00:38Z",
+        "date_published": "2024-09-05T17:27:35Z",
+        "description": "* Fixed DESCRIPTION\n\n* Improved documentation for `flowmapblueOutput` and `renderFlowmapblue`\n\n* Fixed missing `\\value` tags in the documentation\n",
+        "html_url": "https://github.com/FlowmapBlue/flowmapblue.R/releases/tag/v0.0.2",
+        "name": "flowmapblue 0.0.2",
+        "release_id": 173699322,
+        "tag": "v0.0.2",
+        "tarball_url": "https://api.github.com/repos/FlowmapBlue/flowmapblue.R/tarball/v0.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/FlowmapBlue/flowmapblue.R/releases/173699322",
+        "value": "https://api.github.com/repos/FlowmapBlue/flowmapblue.R/releases/173699322",
+        "zipball_url": "https://api.github.com/repos/FlowmapBlue/flowmapblue.R/zipball/v0.0.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:40:35",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 61
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Quick example",
+        "parent_header": [
+          "Flowmap.blue R widget <a href=\"https://flowmapblue.github.io/flowmapblue.R/\"><img src=\"man/figures/logo.png\" align=\"right\" width=\"200\" alt=\"flowmapblue website\" /></a>"
+        ],
+        "type": "Text_excerpt",
+        "value": "Setup your Mapbox access token. You can obtain a free token by signing\nup at [Mapbox](https://account.mapbox.com/).\n\n``` r\nSys.setenv(MAPBOX_API_TOKEN = \"YOUR_MAPBOX_ACCESS_TOKEN\")\n```\n\n``` r\nlibrary(flowmapblue)\n\n# load locations and flows for Switzerland\ndata(ch_locations)\ndata(ch_flows)\n\nflowmap <- flowmapblue(\n ch_locations,\n ch_flows,\n mapboxAccessToken = Sys.getenv('MAPBOX_API_TOKEN'),\n clustering = TRUE,\n darkMode = TRUE,\n animation = FALSE\n)\n\n# view the map\nflowmap\n```\n\nHere is a [nice intro blog\npost](https://www.paulamoraga.com/blog/2020-07-11-mobility.html) by\nPaula Moraga.\n\nFor more examples with time and date in flows data, as well as\nintegration with Shiny, see the Quick Start vignette and documentation\nfor the package functions at\n<https://flowmapblue.github.io/flowmapblue.R/>.\n"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/README.qmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/FlowmapBlue/flowmapblue.R/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

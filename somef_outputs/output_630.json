@@ -1,0 +1,752 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8727748091800743,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Karlsruhe Institute of Technology, Institute of Thermal Turbomachinery",
+        "email": "matthias.probst@kit.edu",
+        "identifier": "https://orcid.org/0000-0001-8729-0482",
+        "type": "String",
+        "value": "Matthias Probst"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/matthiasprobst/pivmetalib"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/matthiasprobst/pivmetalib"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/.github/workflows/tests.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-01-23T10:25:41Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-05-29T15:04:00Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Python library for working with the pivmeta ontology."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Python library for working with the pivmeta ontology."
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8791826694162701,
+      "result": {
+        "original_header": "pivmetalib",
+        "type": "Text_excerpt",
+        "value": "A Python library and high-level interface to work with the [pivmeta ontology](https://matthiasprobst.github.io/pivmeta/). \nIt allows to describe PIV recordings, software, hardware and other related entities in a state-of-the-art and good\nscientific practice compliant way. \nThe library depends on [ontolutils](https://ontology-utils.readthedocs.io/en/latest/), which provides the \nobject-oriented interface to the ontology and the JSON-LD serialization. \n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation and Usage",
+        "parent_header": [
+          "pivmetalib"
+        ],
+        "type": "Text_excerpt",
+        "value": "This library mainly implements the ontology in form of `pydantic` model classes. The *pivmeta* ontology uses other\nontologies and builds on top of them. Thus, some central classes from ontologies like *schema.org*, *prov*, *dcat* and\n*m4i* are implemented, too.\n\nPractical examples on how to use the library can be found in docs-folder (\ne.g. [Describe a PIV recording](docs/Describe_a_PIV_recording.ipynb)).\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/matthiasprobst/pivmetalib/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/docs/Describe_PIV_eval_with_openPIV.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/docs/Describe_PIV_eval_with_openPIV.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/docs/Describe_a_PIV_recording.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/docs/Describe_a_PIV_recording.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/docs/Describe_PIV_Result_File.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/docs/Describe_PIV_Result_File.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/docs/GettingStarted.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/docs/GettingStarted.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/docs/StandardNameTableForPIV/Publish%20PIV%20Standard%20Name%20Table.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/docs/StandardNameTableForPIV/Publish%20PIV%20Standard%20Name%20Table.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/matthiasprobst/pivmetalib/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "matthiasprobst/pivmetalib"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pivmetalib"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "pivmetalib",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The package is available on PyPI and can be installed via pip:\n```bash\npip install pivmetalib\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/matthiasprobst/pivmetalib/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Copyright (c) 2012-2023 Scott Chacon and others\n\nPermission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE\nLIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION\nOF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pivmetalib"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "pivmetalib"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "matthiasprobst"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 157256,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 126,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3",
+        "type": "Programming_language",
+        "value": "Python 3",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3.8",
+        "type": "Programming_language",
+        "value": "Python 3.8",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3.9",
+        "type": "Programming_language",
+        "value": "Python 3.9",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3.10",
+        "type": "Programming_language",
+        "value": "Python 3.10",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3.11",
+        "type": "Programming_language",
+        "value": "Python 3.11",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python 3.12",
+        "type": "Programming_language",
+        "value": "Python 3.12",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://ontology-utils.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://openpiv.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2025-02-05T15:49:30Z",
+        "date_published": "2025-02-05T15:51:33Z",
+        "description": "# Changes\r\n- update to new ontology version 2.0.0",
+        "html_url": "https://github.com/matthiasprobst/pivmetalib/releases/tag/v2.0.0.0",
+        "name": "v2.0.0.0",
+        "release_id": 198616571,
+        "tag": "v2.0.0.0",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/pivmetalib/tarball/v2.0.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/pivmetalib/releases/198616571",
+        "value": "https://api.github.com/repos/matthiasprobst/pivmetalib/releases/198616571",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/pivmetalib/zipball/v2.0.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2025-01-25T20:30:32Z",
+        "date_published": "2025-01-25T20:31:02Z",
+        "description": "Adapt to ontology version v1.1.1",
+        "html_url": "https://github.com/matthiasprobst/pivmetalib/releases/tag/v1.1.1.0",
+        "name": "v1.1.1.0",
+        "release_id": 196788184,
+        "tag": "v1.1.1.0",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/pivmetalib/tarball/v1.1.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/pivmetalib/releases/196788184",
+        "value": "https://api.github.com/repos/matthiasprobst/pivmetalib/releases/196788184",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/pivmetalib/zipball/v1.1.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2024-12-15T18:06:32Z",
+        "date_published": "2024-12-15T18:10:40Z",
+        "description": "First library version for ontology version [1.0.0](https://matthiasprobst.github.io/pivmeta/1.0.0/)",
+        "html_url": "https://github.com/matthiasprobst/pivmetalib/releases/tag/v1.0.0.0",
+        "name": "v1.0.0.0",
+        "release_id": 190833094,
+        "tag": "v1.0.0.0",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/pivmetalib/tarball/v1.0.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/pivmetalib/releases/190833094",
+        "value": "https://api.github.com/repos/matthiasprobst/pivmetalib/releases/190833094",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/pivmetalib/zipball/v1.0.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2024-10-28T12:33:22Z",
+        "date_published": "2024-10-28T12:36:31Z",
+        "html_url": "https://github.com/matthiasprobst/pivmetalib/releases/tag/v0.1.0rc8",
+        "name": "v0.1.0rc8",
+        "release_id": 182241231,
+        "tag": "v0.1.0rc8",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/pivmetalib/tarball/v0.1.0rc8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/pivmetalib/releases/182241231",
+        "value": "https://api.github.com/repos/matthiasprobst/pivmetalib/releases/182241231",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/pivmetalib/zipball/v0.1.0rc8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "matthiasprobst",
+          "type": "User"
+        },
+        "date_created": "2024-08-13T14:56:45Z",
+        "date_published": "2024-08-13T14:57:43Z",
+        "description": "Release candidate for first working version.",
+        "html_url": "https://github.com/matthiasprobst/pivmetalib/releases/tag/v0.1.0rc1",
+        "name": "v0.1.0rc",
+        "release_id": 169992235,
+        "tag": "v0.1.0rc1",
+        "tarball_url": "https://api.github.com/repos/matthiasprobst/pivmetalib/tarball/v0.1.0rc1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/matthiasprobst/pivmetalib/releases/169992235",
+        "value": "https://api.github.com/repos/matthiasprobst/pivmetalib/releases/169992235",
+        "zipball_url": "https://api.github.com/repos/matthiasprobst/pivmetalib/zipball/v0.1.0rc1"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools>=54",
+        "version": ">=54"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "wheel",
+        "type": "Software_application",
+        "value": "wheel",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rdflib",
+        "type": "Software_application",
+        "value": "rdflib>=7.0.0",
+        "version": ">=7.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "appdirs",
+        "type": "Software_application",
+        "value": "appdirs>=1.4.4",
+        "version": ">=1.4.4"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "simplejson",
+        "type": "Software_application",
+        "value": "simplejson>=3.19.2",
+        "version": ">=3.19.2"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python-dateutil",
+        "type": "Software_application",
+        "value": "python-dateutil>=2.9.0",
+        "version": ">=2.9.0"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "requests",
+        "type": "Software_application",
+        "value": "requests>=2.32.3",
+        "version": ">=2.32.3"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ontolutils",
+        "type": "Software_application",
+        "value": "ontolutils>=0.13.3",
+        "version": ">=0.13.3"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "ssnolib",
+        "type": "Software_application",
+        "value": "ssnolib>=1.5.1.1",
+        "version": ">=1.5.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "identifier",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:29:21",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example of describing a PIV software:",
+        "parent_header": [
+          "pivmetalib",
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "It is very helpful to provide a description of the used PIV software together with the PIV recording. This can be done\nusing the `PIVSoftware` class from the `pivmeta` module. The following example shows how to describe the OpenPIV \nsoftware. Put the resulting JSON-LD to your website, data repository or other places to make your data FAIR. \nOther users or software can then easily understand and use your data.\n\n```python\nfrom pivmetalib import pivmeta, prov\n\nsoftware = pivmeta.PIVSoftware(\n    author=prov.Organization(\n        name='OpenPIV',\n        url='https://github.com/OpenPIV/openpiv-python',\n    ),\n    description='OpenPIV is an open source Particle Image Velocimetry analysis software written in Python and Cython',\n    software_version=\"0.26.0a0\",\n    has_documentation='https://openpiv.readthedocs.io/en/latest/',\n)\n\nfrom pprint import pprint\n\npprint(software.model_dump(exclude_none=True)\n```\n\nThis will result in the following JSON-LD representation:\n\n```bash\n{\n    \"@context\": {\n        \"@import\": \"https://raw.githubusercontent.com/matthiasprobst/pivmeta/main/pivmeta_context.jsonld\"\n    },\n    \"@graph\": [\n        {\n            \"@id\": \"https://local-domain.org/9c0696ff-7b0f-43a5-9d36-afca62f0f374\",\n            \"@type\": \"prov:Organization\",\n            \"foaf:name\": \"OpenPIV\",\n            \"schema:url\": \"https://github.com/OpenPIV/openpiv-python\"\n        },\n        {\n            \"@id\": \"https://local-domain.org/82675f3e-8887-4a76-a62c-cc1119857735\",\n            \"@type\": \"Piv Software\",\n            \"schema:author\": {\n                \"@id\": \"https://local-domain.org/9c0696ff-7b0f-43a5-9d36-afca62f0f374\"\n            },\n            \"schema:description\": \"OpenPIV is an open source Particle Image Velocimetry analysis software written in Python and Cython\",\n            \"schema:softwareVersion\": \"0.26.0a0\",\n            \"sd:hasDocumentation\": \"https://openpiv.readthedocs.io/en/latest/\"\n        }\n    ]\n}\n```\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation and Usage",
+        "parent_header": [
+          "pivmetalib"
+        ],
+        "type": "Text_excerpt",
+        "value": "This library mainly implements the ontology in form of `pydantic` model classes. The *pivmeta* ontology uses other\nontologies and builds on top of them. Thus, some central classes from ontologies like *schema.org*, *prov*, *dcat* and\n*m4i* are implemented, too.\n\nPractical examples on how to use the library can be found in docs-folder (\ne.g. [Describe a PIV recording](docs/Describe_a_PIV_recording.ipynb)).\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2.0.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/matthiasprobst/pivmetalib/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

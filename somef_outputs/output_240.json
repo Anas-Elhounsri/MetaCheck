@@ -1,0 +1,954 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.917566070389153,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Caltech Library",
+        "email": "rsdoiel@caltech.edu",
+        "type": "String",
+        "value": "R. S. Doiel"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Doiel",
+            "given_name": "R. S.",
+            "name": "R. S. Doiel",
+            "type": "Agent"
+          }
+        ],
+        "datePublished": "2025",
+        "format": "cff",
+        "title": "simplified",
+        "type": "File_dump",
+        "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\ntype: software\ntitle: \"simplified\"\nabstract: \"A intermediate metadata model implemented as a Go package for\nmigrating content from EPrints 3.3 to Invenio-RDM v11.\"\nauthors:\n  - family-names: Doiel\n    given-names: R. S.\n    orcid: \"\"\n\n\nrepository-code: \"git+https://github.com/caltechlibrary/simplified\"\nversion: 0.0.24\nlicense-url: \"https://spdx.org/licenses/BSD-3-Clause-LBNL\"\nkeywords: [ \"library\", \"archives\", \"metadata\" ]\ndate-released: 2025-09-16\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "References",
+        "parent_header": [
+          "simplified"
+        ],
+        "type": "Text_excerpt",
+        "value": "- [DataCite's Metadata Schema v4](https://schema.datacite.org/meta/kernel-4.4/)\n- [Invenio RDM metadata model](https://inveniordm.docs.cern.ch/reference/metadata/)\n- [CrossRef's API](https://api.crossref.org/swagger-ui/index.html)\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/README.html",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/simplified"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/caltechlibrary/simplified"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-01-30T23:39:47Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2023-01-30"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-09-16"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-16T16:31:07Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-09-16"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "An intermediate metadata model as Go struct for migrating content from EPrints 3.3. to Invenio-RDM 11 "
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A intermediate metadata model implemented as a Go package for migrating content from EPrints 3.3 to Invenio-RDM v11."
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9882152905666953,
+      "result": {
+        "original_header": "simplified",
+        "type": "Text_excerpt",
+        "value": "simplified is a Go package for bibliographic, software and data metadata. It is used internally by Caltech Library as suitable for mapping one specific metadata form (e.g. EPrints 3.3 EPrint XML) to another (e.g. Invenio-RDM 11 records). It is also used in our feeds system which provides an aggregated view our institutional author, thesis and data repositories.  The simple record structure is inspired in part by the DataCite and Invenio RDM metadata models. \n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/README.html",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "concept"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/caltechlibrary/simplified/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "caltechlibrary/simplified"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "simplified"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/README.html",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/installer.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "\n# Installation\n\nsimplified is an experimental package. As such we you need to to compile\nthe source code to produce executables if you wish to try out the example programs. Installation requires the following.\n\n- Git\n- Go 1.21.1 or better\n- GNU Make\n- Bash\n- Pandoc (for documentation processing)\n\nSteps to install.\n\n1. clone this repository\n2. change into the cloned directory\n3. Run `make`, the executables will be in the \"bin\" directory\n\n```\ngit clone https://github.com/caltechlibrary/simplified\ncd simplified\nmake\n./bin/simpleutil -help\n./bin/simple2markdown -help\n```\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/INSTALL.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "git+https://github.com/caltechlibrary/simplified/issues"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "library",
+          "archives",
+          "metadata"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "\nCopyright (c) 2023, Caltech\nAll rights not granted herein are expressly reserved by Caltech.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/BSD-3-Clause-LBNL",
+        "spdx_id": "https://spdx.org/licenses/BSD-3-Clause-LBNL",
+        "type": "License",
+        "value": "https://spdx.org/licenses/BSD-3-Clause-LBNL"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "simplified"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "simplified"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "caltechlibrary"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "size": 68557,
+        "type": "Programming_language",
+        "value": "Go"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 43918,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 20477,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 8239,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 7336,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 7101,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "PowerShell",
+        "size": 1476,
+        "type": "Programming_language",
+        "value": "PowerShell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Lua",
+        "size": 195,
+        "type": "Programming_language",
+        "value": "Lua"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Go",
+        "type": "Programming_language",
+        "value": "Go",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/README.html"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2025-09-16T16:30:06Z",
+        "date_published": "2025-09-16T16:30:49Z",
+        "description": "Fixed logic in HasAffiliation. The target ID and Name must be none empty strings before comparing.\r\nThis is related to issue #82 in irdmtools.\r\n\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/simplified/compare/v0.0.23...v0.0.24",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.24",
+        "name": "v0.0.24",
+        "release_id": 247702888,
+        "tag": "v0.0.24",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.24",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/247702888",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/247702888",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.24"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2024-04-01T16:38:26Z",
+        "date_published": "2024-04-01T16:40:28Z",
+        "description": "Added the missing `.versions` struct to Simplified records.",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.23",
+        "name": "Added missing .versions struct",
+        "release_id": 149256516,
+        "tag": "v0.0.23",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.23",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/149256516",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/149256516",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.23"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-09-29T22:55:53Z",
+        "date_published": "2023-09-29T22:57:26Z",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.22",
+        "name": "code cleanup",
+        "release_id": 123188420,
+        "tag": "v0.0.22",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.22",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/123188420",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/123188420",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.22"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-09-15T17:24:02Z",
+        "date_published": "2023-09-15T17:25:22Z",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.21",
+        "name": "Fix: moved ROR into Funder struct as FunderIdentifier",
+        "release_id": 121337540,
+        "tag": "v0.0.21",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.21",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/121337540",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/121337540",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.21"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-09-15T17:04:29Z",
+        "date_published": "2023-09-15T17:06:11Z",
+        "description": "**Full Changelog**: https://github.com/caltechlibrary/simplified/compare/v0.0.19...v0.0.20",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.20",
+        "name": "Feat: Added ROR to Funder Struct",
+        "release_id": 121335418,
+        "tag": "v0.0.20",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.20",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/121335418",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/121335418",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.20"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-07-31T18:25:12Z",
+        "date_published": "2023-07-31T18:28:51Z",
+        "description": "RDM has two separate data structures when expressing what files are with a record. If you connect via the `/api/records/{record_id}` object the files' entries attribute is a map to entries where the filename is used as the key. If you get a list of files using `/api/records/{record_id}/files` the map is replaced with an array. There are additional fields on the Files object (e.g. links object(s)).  The Files type is used now when when encoding/decoding the full record and FileListing is used when working with the structure returned by the \"files\" end point.",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.19",
+        "name": "Adding support for two ways of working with \"files\" in RDM",
+        "release_id": 114546517,
+        "tag": "v0.0.19",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.19",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/114546517",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/114546517",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.19"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-07-31T17:32:51Z",
+        "date_published": "2023-07-31T17:55:00Z",
+        "description": "This release is bringing the Files and Entry types more inline with RDM.",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.18",
+        "name": "Files.Entries type updates",
+        "release_id": 114541511,
+        "tag": "v0.0.18",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.18",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/114541511",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/114541511",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.18"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-07-28T17:08:06Z",
+        "date_published": "2023-07-28T22:32:03Z",
+        "description": "Improve Files.Entries handling and make the data structure more aligned with RDM.\r\n",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.17",
+        "release_id": 114063375,
+        "tag": "v0.0.17",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.17",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/114063375",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/114063375",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.17"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-06-08T18:52:05Z",
+        "date_published": "2023-06-08T19:25:29Z",
+        "description": "The struct changes were made to move simplified records structures closer to RDM.  This was in response to Issues in irdmtools.\r\n\r\nPerson struct remains but HasAffiliation is now attached to that record struct and Creators' struct due to RDM's handling of affiliations in records versus person vocabulary.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/simplified/compare/v0.0.15...v0.0.16",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.16",
+        "name": "Updates related to irdmtools, issue #13 - #27",
+        "release_id": 107882214,
+        "tag": "v0.0.16",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.16",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/107882214",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/107882214",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.16"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-06-07T20:40:47Z",
+        "date_published": "2023-06-07T20:43:20Z",
+        "description": "The Identifiers field should encode as \"identifiers\" (plural), fixed typo.",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.15",
+        "name": "Fix typo in person/org identifiers",
+        "release_id": 107732893,
+        "tag": "v0.0.15",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.15",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/107732893",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/107732893",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.15"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-06-07T20:04:42Z",
+        "date_published": "2023-06-07T20:18:13Z",
+        "description": "Updates related ro irdmtools, issue #20. This effects how the rights model is rendered for RDM.",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.14",
+        "name": "Updates related ro irdmtools, issue #20",
+        "release_id": 107728280,
+        "tag": "v0.0.14",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.14",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/107728280",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/107728280",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.14"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-06-07T18:43:45Z",
+        "date_published": "2023-06-07T18:45:25Z",
+        "description": "These updates are related to the development of irdmtools.",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.13",
+        "name": "Updates to model needed by irdmtools, issue #19",
+        "release_id": 107718424,
+        "tag": "v0.0.13",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.13",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/107718424",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/107718424",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.13"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-05-17T22:22:43Z",
+        "date_published": "2023-05-17T22:25:26Z",
+        "description": "A Person structure was added to the simplified package.  Yaml v3 annotations included on Person, Identifier and Affiliation structs.\r\nInstaller.sh added via codemeta-installer.tmpl.",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.12",
+        "name": "yaml enhancements",
+        "release_id": 103388477,
+        "tag": "v0.0.12",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.12",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/103388477",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/103388477",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.12"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-04-19T18:31:08Z",
+        "date_published": "2023-04-19T18:33:42Z",
+        "description": "This releases includes bug fixes and improved alignment with Invenio RDM metadata model.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/simplified/compare/v0.0.10...v0.0.11",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.11",
+        "name": "Improved RDM 11 model support",
+        "release_id": 100104970,
+        "tag": "v0.0.11",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.11",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/100104970",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/100104970",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.11"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-04-13T23:52:25Z",
+        "date_published": "2023-04-13T23:53:40Z",
+        "description": "In RDM 11 the titles in date types are encoded as \"lang\" (e.g. \"en\") pointing at title value rather than just a string.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/simplified/compare/v0.0.9...v0.0.10",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.10",
+        "name": "bug fix, changes title in DateType to map[string]string",
+        "release_id": 99475569,
+        "tag": "v0.0.10",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/99475569",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/99475569",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-04-13T23:42:42Z",
+        "date_published": "2023-04-13T23:43:31Z",
+        "description": "Bug fix, Added .en attribute to TitleDetail\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/simplified/compare/v0.0.8...v0.0.9",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.9",
+        "name": "Bug fix, Added .en attribute to TitleDetail",
+        "release_id": 99475080,
+        "tag": "v0.0.9",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/99475080",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/99475080",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-04-13T23:36:31Z",
+        "date_published": "2023-04-13T23:38:35Z",
+        "description": "The titles in award identifiers need to support TitleDetails type.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/simplified/compare/v0.0.7...v0.0.8",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.8",
+        "name": "bug fixes, split out award identifiers",
+        "release_id": 99474852,
+        "tag": "v0.0.8",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/99474852",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/99474852",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-04-13T23:24:23Z",
+        "date_published": "2023-04-13T23:25:50Z",
+        "description": "In the funding attribute the awards can have title's that need to be a `map[string]interface{}` rather than `map[string]string`.\r\n\r\n**Full Changelog**: https://github.com/caltechlibrary/simplified/compare/v0.0.6...v0.0.7",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.7",
+        "name": "bug fix, identifier's .title attribute.",
+        "release_id": 99474173,
+        "tag": "v0.0.7",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/99474173",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/99474173",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-04-13T23:15:53Z",
+        "date_published": "2023-04-13T23:18:10Z",
+        "description": "In Invenio RDM 11 the `resource_type` in `.metadata` should be a `map[string]interface{}` instead of a `map[string]string`. E.g.\r\n\r\n```\r\n{\r\n  \"id\": \"publication-article\",\r\n  \"title\": {\r\n    \"de\": \"Zeitschriftenartikel\",\r\n    \"en\": \"Journal Article\"\r\n  }\r\n}\r\n```\r\n",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.6",
+        "name": "bug fix, updated .metadata.resource_type",
+        "release_id": 99473808,
+        "tag": "v0.0.6",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/99473808",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/99473808",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-04-13T22:33:07Z",
+        "date_published": "2023-04-13T22:36:08Z",
+        "description": "This release sees the addition of RDM style custom_fields off the main simplified record.",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.5",
+        "name": "Added rdm custom_fields",
+        "release_id": 99471323,
+        "tag": "v0.0.5",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/99471323",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/99471323",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-04-10T19:11:32Z",
+        "date_published": "2023-04-10T19:13:51Z",
+        "description": "Fixed a JSON mapping for related identifiers.",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.3",
+        "name": "Bug fix",
+        "release_id": 98831567,
+        "tag": "v0.0.3",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/98831567",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/98831567",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rsdoiel",
+          "type": "User"
+        },
+        "date_created": "2023-04-08T00:17:12Z",
+        "date_published": "2023-04-08T00:19:09Z",
+        "description": "This is a proof of concept package for a common representation of Caltech Library repository metadata records. It is inspired by Invenio-RDM and DataCite's scheme.",
+        "html_url": "https://github.com/caltechlibrary/simplified/releases/tag/v0.0.2",
+        "name": "Proof of concept",
+        "release_id": 98606690,
+        "tag": "v0.0.2",
+        "tarball_url": "https://api.github.com/repos/caltechlibrary/simplified/tarball/v0.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/caltechlibrary/simplified/releases/98606690",
+        "value": "https://api.github.com/repos/caltechlibrary/simplified/releases/98606690",
+        "zipball_url": "https://api.github.com/repos/caltechlibrary/simplified/zipball/v0.0.2"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": null,
+        "type": "Software_application",
+        "value": "Go >= v1.20.1",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "identifier",
+    "has_build_file",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:08:07",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.24"
+      },
+      "source": "https://raw.githubusercontent.com/caltechlibrary/simplified/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

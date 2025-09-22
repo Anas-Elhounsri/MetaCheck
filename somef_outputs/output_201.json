@@ -1,0 +1,476 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "cj@cjyetman.com",
+        "identifier": "https://orcid.org/0000-0001-5099-9500",
+        "type": "String",
+        "value": "CJ Yetman"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Yetman",
+            "given_name": "CJ",
+            "name": "CJ Yetman",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-5099-9500"
+          }
+        ],
+        "datePublished": "2025",
+        "format": "cff",
+        "title": "network.r2d3: Makes interactive network graphs using r2d3",
+        "type": "File_dump",
+        "url": "https://cjyetman.github.io/network.r2d3",
+        "value": "# --------------------------------------------\n# CITATION file created with {cffr} R package\n# See also: https://docs.ropensci.org/cffr/\n# --------------------------------------------\n \ncff-version: 1.2.0\nmessage: 'To cite package \"network.r2d3\" in publications use:'\ntype: software\nlicense: MIT\ntitle: 'network.r2d3: Makes interactive network graphs using r2d3'\nversion: 0.0.0.9000\nabstract: Makes interactive network graphs using r2d3.\nauthors:\n- family-names: Yetman\n  given-names: CJ\n  email: cj@cjyetman.com\n  orcid: https://orcid.org/0000-0001-5099-9500\nrepository-code: https://github.com/cjyetman/network.r2d3\nurl: https://cjyetman.github.io/network.r2d3\ncontact:\n- family-names: Yetman\n  given-names: CJ\n  email: cj@cjyetman.com\n  orcid: https://orcid.org/0000-0001-5099-9500\nkeywords:\n- d3\n- data-visualization\n- interactive-visualizations\n- r\n- r-package\n- r2d3\nreferences:\n- type: software\n  title: jsonlite\n  abstract: 'jsonlite: A Simple and Robust JSON Parser and Generator for R'\n  notes: Imports\n  url: https://jeroen.r-universe.dev/jsonlite\n  repository: https://CRAN.R-project.org/package=jsonlite\n  authors:\n  - family-names: Ooms\n    given-names: Jeroen\n    email: jeroenooms@gmail.com\n    orcid: https://orcid.org/0000-0002-4035-0289\n  year: '2025'\n  doi: 10.32614/CRAN.package.jsonlite\n  version: '>= 0.9.6'\n- type: software\n  title: r2d3\n  abstract: 'r2d3: Interface to ''D3'' Visualizations'\n  notes: Imports\n  url: https://rstudio.github.io/r2d3/\n  repository: https://CRAN.R-project.org/package=r2d3\n  authors:\n  - family-names: Strayer\n    given-names: Nick\n    email: nick.strayer@rstudio.com\n  - family-names: Luraschi\n    given-names: Javier\n    email: jluraschi@gmail.com\n  - family-names: Allaire\n    given-names: JJ\n  year: '2025'\n  doi: 10.32614/CRAN.package.r2d3\n- type: software\n  title: ape\n  abstract: 'ape: Analyses of Phylogenetics and Evolution'\n  notes: Suggests\n  url: https://github.com/emmanuelparadis/ape\n  repository: https://CRAN.R-project.org/package=ape\n  authors:\n  - family-names: Paradis\n    given-names: Emmanuel\n    email: Emmanuel.Paradis@ird.fr\n    orcid: https://orcid.org/0000-0003-3092-2199\n  - family-names: Blomberg\n    given-names: Simon\n    orcid: https://orcid.org/0000-0003-1062-0839\n  - family-names: Bolker\n    given-names: Ben\n    orcid: https://orcid.org/0000-0002-2127-0443\n  - family-names: Brown\n    given-names: Joseph\n    orcid: https://orcid.org/0000-0002-3835-8062\n  - family-names: Claramunt\n    given-names: Santiago\n    orcid: https://orcid.org/0000-0002-8926-5974\n  - family-names: Claude\n    given-names: Julien\n    orcid: https://orcid.org/0000-0002-9267-1228\n  - family-names: Cuong\n    given-names: Hoa Sien\n  - family-names: Desper\n    given-names: Richard\n  - family-names: Didier\n    given-names: Gilles\n    orcid: https://orcid.org/0000-0003-0596-9112\n  - family-names: Durand\n    given-names: Benoit\n  - family-names: Dutheil\n    given-names: Julien\n    orcid: https://orcid.org/0000-0001-7753-4121\n  - family-names: Ewing\n    given-names: RJ\n  - family-names: Gascuel\n    given-names: Olivier\n  - family-names: Guillerme\n    given-names: Thomas\n    orcid: https://orcid.org/0000-0003-4325-1275\n  - family-names: Heibl\n    given-names: Christoph\n    orcid: https://orcid.org/0000-0002-7655-3299\n  - family-names: Ives\n    given-names: Anthony\n    orcid: https://orcid.org/0000-0001-9375-9523\n  - family-names: Jones\n    given-names: Bradley\n    orcid: https://orcid.org/0000-0003-4498-1069\n  - family-names: Krah\n    given-names: Franz\n    orcid: https://orcid.org/0000-0001-7866-7508\n  - family-names: Lawson\n    given-names: Daniel\n    orcid: https://orcid.org/0000-0002-5311-6213\n  - family-names: Lefort\n    given-names: Vincent\n  - family-names: Legendre\n    given-names: Pierre\n    orcid: https://orcid.org/0000-0002-3838-3305\n  - family-names: Lemon\n    given-names: Jim\n  - family-names: Louvel\n    given-names: Guillaume\n    orcid: https://orcid.org/0000-0002-7745-0785\n  - family-names: Marotta\n    given-names: Federico\n  - family-names: Marcon\n    given-names: Eric\n    orcid: https://orcid.org/0000-0002-5249-321X\n  - family-names: McCloskey\n    given-names: Rosemary\n    orcid: https://orcid.org/0000-0002-9772-8553\n  - family-names: Nylander\n    given-names: Johan\n  - family-names: Opgen-Rhein\n    given-names: Rainer\n  - family-names: Popescu\n    given-names: Andrei-Alin\n  - family-names: Royer-Carenzi\n    given-names: Manuela\n  - family-names: Schliep\n    given-names: Klaus\n    orcid: https://orcid.org/0000-0003-2941-0161\n  - family-names: Strimmer\n    given-names: Korbinian\n    orcid: https://orcid.org/0000-0001-7917-2056\n  - family-names: Vienne\n    given-names: Damien\n    name-particle: de\n    orcid: https://orcid.org/0000-0001-9532-5251\n  year: '2025'\n  doi: 10.32614/CRAN.package.ape\n- type: software\n  title: chromote\n  abstract: 'chromote: Headless Chrome Web Browser Interface'\n  notes: Suggests\n  url: https://rstudio.github.io/chromote/\n  repository: https://CRAN.R-project.org/package=chromote\n  authors:\n  - family-names: Aden-Buie\n    given-names: Garrick\n    email: garrick@posit.co\n    orcid: https://orcid.org/0000-0002-7111-0077\n  - family-names: Chang\n    given-names: Winston\n    email: winston@posit.co\n  - family-names: Schloerke\n    given-names: Barret\n    email: barret@posit.co\n    orcid: https://orcid.org/0000-0001-9986-114X\n  year: '2025'\n  doi: 10.32614/CRAN.package.chromote\n- type: software\n  title: codemetar\n  abstract: 'codemetar: Generate ''CodeMeta'' Metadata for R Packages'\n  notes: Suggests\n  url: https://docs.ropensci.org/codemetar/\n  repository: https://CRAN.R-project.org/package=codemetar\n  authors:\n  - family-names: Boettiger\n    given-names: Carl\n    email: cboettig@gmail.com\n    orcid: https://orcid.org/0000-0002-1642-628X\n  - family-names: Salmon\n    given-names: Ma\u00eblle\n    orcid: https://orcid.org/0000-0002-2815-0399\n  year: '2025'\n  doi: 10.32614/CRAN.package.codemetar\n- type: software\n  title: covr\n  abstract: 'covr: Test Coverage for Packages'\n  notes: Suggests\n  url: https://covr.r-lib.org\n  repository: https://CRAN.R-project.org/package=covr\n  authors:\n  - family-names: Hester\n    given-names: Jim\n    email: james.f.hester@gmail.com\n  year: '2025'\n  doi: 10.32614/CRAN.package.covr\n- type: software\n  title: cffr\n  abstract: 'cffr: Generate Citation File Format (''cff'') Metadata for R Packages'\n  notes: Suggests\n  url: https://docs.ropensci.org/cffr/\n  repository: https://CRAN.R-project.org/package=cffr\n  authors:\n  - family-names: Hernang\u00f3mez\n    given-names: Diego\n    email: diego.hernangomezherrero@gmail.com\n    orcid: https://orcid.org/0000-0001-8457-4658\n  year: '2025'\n  doi: 10.32614/CRAN.package.cffr\n- type: software\n  title: data.tree\n  abstract: 'data.tree: General Purpose Hierarchical Data Structure'\n  notes: Suggests\n  url: https://github.com/gluc/data.tree\n  repository: https://CRAN.R-project.org/package=data.tree\n  authors:\n  - family-names: Glur\n    given-names: Christoph\n    email: christoph.glur@powerpartners.pro\n  year: '2025'\n  doi: 10.32614/CRAN.package.data.tree\n- type: software\n  title: devtools\n  abstract: 'devtools: Tools to Make Developing R Packages Easier'\n  notes: Suggests\n  url: https://devtools.r-lib.org/\n  repository: https://CRAN.R-project.org/package=devtools\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n  - family-names: Hester\n    given-names: Jim\n  - family-names: Chang\n    given-names: Winston\n  - family-names: Bryan\n    given-names: Jennifer\n    email: jenny@rstudio.com\n    orcid: https://orcid.org/0000-0002-6983-2759\n  year: '2025'\n  doi: 10.32614/CRAN.package.devtools\n- type: software\n  title: diffviewer\n  abstract: 'diffviewer: HTML Widget to Show File Differences'\n  notes: Suggests\n  url: https://diffviewer.r-lib.org\n  repository: https://CRAN.R-project.org/package=diffviewer\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  - family-names: Kunst\n    given-names: Joshua\n  - family-names: Chang\n    given-names: Winston\n    email: winston@posit.co\n  year: '2025'\n  doi: 10.32614/CRAN.package.diffviewer\n- type: software\n  title: igraph\n  abstract: 'igraph: Network Analysis and Visualization'\n  notes: Suggests\n  url: https://r.igraph.org/\n  repository: https://CRAN.R-project.org/package=igraph\n  authors:\n  - family-names: Cs\u00e1rdi\n    given-names: G\u00e1bor\n    email: csardi.gabor@gmail.com\n    orcid: https://orcid.org/0000-0001-7098-9676\n  - family-names: Nepusz\n    given-names: Tam\u00e1s\n    email: ntamas@gmail.com\n    orcid: https://orcid.org/0000-0002-1451-338X\n  - family-names: Traag\n    given-names: Vincent\n    orcid: https://orcid.org/0000-0003-3170-3879\n  - family-names: Horv\u00e1t\n    given-names: Szabolcs\n    email: szhorvat@gmail.com\n    orcid: https://orcid.org/0000-0002-3100-523X\n  - family-names: Zanini\n    given-names: Fabio\n    email: fabio.zanini@unsw.edu.au\n    orcid: https://orcid.org/0000-0001-7097-8539\n  - family-names: Noom\n    given-names: Daniel\n  - family-names: M\u00fcller\n    given-names: Kirill\n    email: kirill@cynkra.com\n    orcid: https://orcid.org/0000-0002-1416-3412\n  year: '2025'\n  doi: 10.32614/CRAN.package.igraph\n- type: software\n  title: pak\n  abstract: 'pak: Another Approach to Package Installation'\n  notes: Suggests\n  url: https://pak.r-lib.org/\n  repository: https://CRAN.R-project.org/package=pak\n  authors:\n  - family-names: Cs\u00e1rdi\n    given-names: G\u00e1bor\n    email: csardi.gabor@gmail.com\n  - family-names: Hester\n    given-names: Jim\n  year: '2025'\n  doi: 10.32614/CRAN.package.pak\n- type: software\n  title: pkgdown\n  abstract: 'pkgdown: Make Static HTML Documentation for a Package'\n  notes: Suggests\n  url: https://pkgdown.r-lib.org/\n  repository: https://CRAN.R-project.org/package=pkgdown\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n    orcid: https://orcid.org/0000-0003-4757-117X\n  - family-names: Hesselberth\n    given-names: Jay\n    orcid: https://orcid.org/0000-0002-6299-179X\n  - family-names: Salmon\n    given-names: Ma\u00eblle\n    orcid: https://orcid.org/0000-0002-2815-0399\n  - family-names: Roy\n    given-names: Olivier\n  - family-names: Br\u00fcggemann\n    given-names: Salim\n    orcid: https://orcid.org/0000-0002-5329-5987\n  year: '2025'\n  doi: 10.32614/CRAN.package.pkgdown\n- type: software\n  title: shiny\n  abstract: 'shiny: Web Application Framework for R'\n  notes: Suggests\n  url: https://shiny.posit.co/\n  repository: https://CRAN.R-project.org/package=shiny\n  authors:\n  - family-names: Chang\n    given-names: Winston\n    email: winston@posit.co\n    orcid: https://orcid.org/0000-0002-1576-2126\n  - family-names: Cheng\n    given-names: Joe\n    email: joe@posit.co\n  - family-names: Allaire\n    given-names: JJ\n    email: jj@posit.co\n  - family-names: Sievert\n    given-names: Carson\n    email: carson@posit.co\n    orcid: https://orcid.org/0000-0002-4958-2844\n  - family-names: Schloerke\n    given-names: Barret\n    email: barret@posit.co\n    orcid: https://orcid.org/0000-0001-9986-114X\n  - family-names: Xie\n    given-names: Yihui\n    email: yihui@posit.co\n  - family-names: Allen\n    given-names: Jeff\n  - family-names: McPherson\n    given-names: Jonathan\n    email: jonathan@posit.co\n  - family-names: Dipert\n    given-names: Alan\n  - family-names: Borges\n    given-names: Barbara\n  year: '2025'\n  doi: 10.32614/CRAN.package.shiny\n- type: software\n  title: testthat\n  abstract: 'testthat: Unit Testing for R'\n  notes: Suggests\n  url: https://testthat.r-lib.org\n  repository: https://CRAN.R-project.org/package=testthat\n  authors:\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@posit.co\n  year: '2025'\n  doi: 10.32614/CRAN.package.testthat\n  version: '>= 3.0.0'\n- type: software\n  title: tibble\n  abstract: 'tibble: Simple Data Frames'\n  notes: Suggests\n  url: https://tibble.tidyverse.org/\n  repository: https://CRAN.R-project.org/package=tibble\n  authors:\n  - family-names: M\u00fcller\n    given-names: Kirill\n    email: kirill@cynkra.com\n    orcid: https://orcid.org/0000-0002-1416-3412\n  - family-names: Wickham\n    given-names: Hadley\n    email: hadley@rstudio.com\n  year: '2025'\n  doi: 10.32614/CRAN.package.tibble\n- type: software\n  title: tidygraph\n  abstract: 'tidygraph: A Tidy API for Graph Manipulation'\n  notes: Suggests\n  url: https://tidygraph.data-imaginist.com\n  repository: https://CRAN.R-project.org/package=tidygraph\n  authors:\n  - family-names: Pedersen\n    given-names: Thomas Lin\n    email: thomasp85@gmail.com\n    orcid: https://orcid.org/0000-0002-5147-4711\n  year: '2025'\n  doi: 10.32614/CRAN.package.tidygraph\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/cjyetman/network.r2d3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://cjyetman.github.io/network.r2d3"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/.github/workflows/pkgdown.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-12-17T15:37:09Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-12T11:26:14Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+        "type": "String",
+        "value": "Makes interactive network graphs using r2d3."
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Makes interactive network graphs using r2d3."
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8891492798380907,
+      "result": {
+        "original_header": "network.r2d3",
+        "type": "Text_excerpt",
+        "value": "It is intended to closely follow the functionality of [networkD3](https://christophergandrud.github.io/networkD3/), but with the following benefits: \n1. leverage the benefits of `r2d3` versus including a version of D3 internally\n2. use a better, more consistent API based on current standards in tidyverse\n3. use transparent converters to enable easy usage of numerous data input types\n4. use a testing infrastructure to aid in development\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/cjyetman/network.r2d3/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/cjyetman/network.r2d3/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cjyetman/network.r2d3"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "network.r2d3"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "package.json",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/inst/lib/package.json"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/inst/lib/package.json",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "package.json"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/inst/lib/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://cjyetman.github.io/network.r2d3"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "network.r2d3"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "network.r2d3"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install the dev version of network.r2d3 with:\n\n``` r\npak::pak(\"cjyetman/network.r2d3\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/cjyetman/network.r2d3/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/cjyetman/network.r2d3/issues"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/cjyetman/network.r2d3/issues"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "d3, data-visualization, interactive-visualizations, r, r-package, r2d3"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2020 network.r2d3 authors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "network.r2d3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "network.r2d3: Makes interactive network graphs using r2d3"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "cjyetman"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+        "type": "String",
+        "value": "network.r2d3"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "test"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/inst/lib/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 74004,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 20852,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "d3-sankey",
+        "type": "Software_application",
+        "value": "d3-sankey@^0.12.3",
+        "version": "^0.12.3"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/inst/lib/package.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:59:00",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 3
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.0.0.9000"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.0.9000"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "1.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/cjyetman/network.r2d3/main/inst/lib/package.json",
+      "technique": "code_parser"
+    }
+  ]
+}

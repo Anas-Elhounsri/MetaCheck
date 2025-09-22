@@ -1,0 +1,683 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "stephan.ferenz@uol.de",
+        "type": "String",
+        "value": "Stephan Ferenz"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "aida.jafarbigloo.274@gmail.com",
+        "type": "String",
+        "value": "Aida Jafarbigloo"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Ferenz",
+            "given_name": "Stephan",
+            "name": "Stephan Ferenz",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Jafarbigloo",
+            "given_name": "Aida",
+            "name": "Aida Jafarbigloo",
+            "type": "Agent"
+          }
+        ],
+        "format": "cff",
+        "title": "Software Metadata Extraction and Curation Software (SMECS)",
+        "type": "File_dump",
+        "url": "https://github.com/NFDI4Energy/SMECS",
+        "value": "# This CITATION.cff file was generated with cffinit.\n\ncff-version: 1.2.0\ntitle: Software Metadata Extraction and Curation Software (SMECS)\nmessage: >-\n  If you use this software, please cite it using the\n  metadata from this file.\ntype: software\nauthors:\n  - given-names: Stephan\n    family-names: Ferenz\n    email: stephan.ferenz@uol.de\n  - given-names: Aida\n    family-names: Jafarbigloo\n    email: aida.jafarbigloo.274@gmail.com\nidentifiers:\n  - type: url\n    value: 'https://github.com/NFDI4Energy/SMECS'\n    description: GitHub link to the project\nrepository-code: 'https://github.com/NFDI4Energy/SMECS'\nabstract: >-\n  SMECS is a web-based tool designed to extract and curate\n  research software metadata in alignment with the codemeta \n  software metadata standard. By accessing repositories on \n  platforms like GitHub and GitLab, SMECS extracts multiple \n  already existing metadata in the harvesting phase. \n  In the curation phase its intuitive graphical interface \n  allows researchers to easily improve and change the retrieved \n  metadata to bestly represent their software.\n  Ultimately, SMECS allows to export the curated metadata in\n  JSON format in line with the codemeta stand.\nkeywords:\n  - software metadata\n  - extraction\n  - curation\n  - repository\n  - research software\n  - codemeta\nlicense: AGPL-3.0-or-later\n"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/NFDI4Energy/SMECS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/NFDI4Energy/SMECS"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/.github/workflows/ci.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-05-06T13:13:15Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-05-06"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-16T08:29:05Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Software Metadata Extraction and Curation Software (SMECS)"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SMECS is a web-based tool designed to extract and curate research software metadata in alignment with the codemeta software metadata standard. By accessing repositories on platforms like GitHub and GitLab, SMECS extracts multiple already existing metadata in the harvesting phase. In the curation phase its intuitive graphical interface allows researchers to easily improve and change the retrieved metadata to bestly represent their software. Ultimately, SMECS allows to export the curated metadata in JSON format in line with the codemeta stand."
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9354582911122223,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "Software Metadata Extraction and Curation Software (SMECS)\n__________________________________________________________\n| A web application to extract and curate research software metadata following the `CodeMeta `_ (`version 3.0 `_) software metadata standard.\n|\n| SMECS facilitates the extraction of research software metadata from GitHub and GitLab repositories. It provides a user-friendly graphical interface for visualizing the retrieved metadata, enabling researchers and research software engineers to create high-quality metadata without reentering information already available elsewhere. The curated metadata is exported as CodeMeta-compliant JSON, ensuring integration with other tools and enhancing the discoverability, reuse, and impact of research software.\n|\n| \ud83d\udcc4 For more details, see our `Preprint `_.\n|\n| **Authors:** Stephan Ferenz, Aida Jafarbigloo\n|\nPhases in SMECS\n__________________________________________________________\n| The workflow of SMECS consists of four sequential phases: **Start**, **Extraction**, **Curation**, and **Export**.\n|\n.. image:: https://github.com/NFDI4Energy/SMECS/blob/master/docs/Extraction_via_hermes-1.png\n   :alt: SMECS Workflow\n   :width: 1000px\n| \nAll harvested metadata are mapped to CodeMeta using existing crosswalks from CodeMeta and HERMES, plus a custom crosswalk we created for GitLab.\nThe metadata are then processed and merged via the HERMES processing step, producing a unified set of metadata.\nThese results are displayed in the Curation phase. The HERMES-based approach ensures an interoperable, modular architecture that makes it easy to integrate additional harvesting sources in the future. \nKey visualization and curation features include:\n   - **Metadata Visualization & User-Friendly Interface:** Metadata is displayed in a structured, easy-to-read format. The interface is intuitive, responsive, and allows smooth    navigation through metadata fields.\n   - **Missing Metadata Identification:** SMECS flags fields where metadata is absent.\n   - **Required Metadata Properties:** Certain fields are marked as mandatory to ensure completeness of the final output.\n   - **Editable Fields:** Users can directly edit or correct metadata within the interface.\n   - **Tagging Feature:** Some fields allow multiple values for better metadata organization.\n   - **Suggestion Lists:** For selected fields, SMECS provides suggestions to reduce manual input and ensure consistency.\n   - **Form-to-JSON Synchronization:** Updates in the form are mirrored in the JSON view (one-directional) so users can track changes instantly. \n"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/README.rst",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/NFDI4Energy/SMECS/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/NFDI4Energy/SMECS/releases"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/NFDI4Energy/SMECS/releases"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/NFDI4Energy/SMECS/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "NFDI4Energy/SMECS"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "docker_compose",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/docker-compose.yml"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/docker-compose.yml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/compose/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/compose/Dockerfile",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "796699799"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install from GitHub",
+        "type": "Text_excerpt",
+        "value": "* Cloning the repository\n.. code-block:: shell\n\n   git clone https://github.com/NFDI4Energy/SMECS.git\n\n* Creating virtual environment\n     * Ensure that `Python 3.10 or higher <https://www.python.org/>`_ is installed on your system.\n         - **Windows:** Check the version with ``py --version``. \n         - **Unix/MacOS:** Check the version with ``python3 --version``.\n     * Create the virtual environment.\n         * **Windows:** \n         .. code-block:: shell\n\n            py -m venv my-env\n\n         * **Unix/MacOS:**\n         .. code-block:: shell\n\n          python3 -m venv my-env\n\n       | for more details visit `Creation of virtual environments <https://docs.python.org/3/library/venv.html>`_\n\n     * Activate virtual environment.\n         * **Windows:**\n         .. code-block:: shell\n\n          env\\Scripts\\activate\n\n         * **Unix/MacOS:**\n         .. code-block:: shell\n\n          source env/bin/activate\n\n\n       (Note that activating the virtual environment change the shell's prompt and show what virtual environment is being used.)\n\n* Managing Packages with pip\n   * Ensure you can run pip from command prompt.\n      * **Windows:**\n      .. code-block:: shell\n\n         py -m pip --version\n\n      * **Unix/MacOS:**\n      .. code-block:: shell         \n         \n         python3 -m pip --version\n\n   * Install a list of requirements specified in a *Requirements.txt*.\n         * **Windows:** \n         .. code-block:: shell\n\n          py -m pip install -r requirements.txt\n\n         * **Unix/MacOS:** \n         .. code-block:: shell\n\n          python3 -m pip install -r requirements.txt\n\n   | for more details visit `Installing Packages <https://packaging.python.org/en/latest/tutorials/installing-packages/>`_\n|   \n|\n* **Running the project**\n    * Open and run the project in an editor (e.g. VS code).\n    * Run the project.\n        * **Windows:** \n        .. code-block:: shell\n\n          py manage.py runserver\n\n        * **Unix/MacOS:** \n        .. code-block:: shell\n\n          python3 manage.py runserver\n\n* To see the output on the browser follow the link shown in the terminal. (e.g. http://127.0.0.1:8000/)\n|\n|\nInstall through Docker\n----------\nTo get started with SMECS using Docker, follow the steps below:\n\n* Prerequisites\n   * Make sure `Docker <https://www.docker.com/products/docker-desktop/>`_  is installed on your local machine.\n\n* Cloning the Repository\n.. code-block:: shell\n\n   git clone https://github.com/NFDI4Energy/SMECS.git\n\n* Navigate to the Project Directory\n.. code-block:: shell\n\n   cd smecs\n\n* Building the Docker Images\n.. code-block:: shell\n\n   docker-compose build\n\n* Starting the Services\n.. code-block:: shell\n\n   docker-compose up\n\n* Accessing the Application\n   * Navigate to ``http://localhost:8000`` in your web browser.\n\n* Stopping the Services\n.. code-block:: shell\n\n   docker-compose down\n|\n| **Setting Up GitLab/GitHub Personal Token**\n| To enhance the functionality of this program and ensure secure interactions with the GitLab/GitHub API, users are required to provide their personal access token. Follow these steps to integrate your token:\n\n* Generate a GitLab Token:\n    * Visit `Create a personal access token <https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#create-a-personal-access-token>`_ for more information on how to generate a new token.\n* Generate a GitHub Token:\n    * Visit `Managing your personal access tokens <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens>`_ for more information on how to generate a new token.\n|\n| **Tip for developers**\n| If the page does not refresh correctly, clear the browser cache. You can force Chrome to pull in new data and ignore the saved (\"cached\") data by using the keyboard shortcut ``Cmd+Shift+R`` on Mac, and ``Ctrl+F5`` or ``Ctrl+Shift+R`` on Windows. \n|\nCollaboration\n__________________________________________________________\n| We believe in the power of collaboration and welcome contributions from the community to enhance the SMECS workflow. Whether you have found a bug, have a feature idea, or want to share feedback, your contribution matters. Feel free to submit a pull request, open up an issue, or reach out with any questions or concerns.\n|\n| To see upcoming features in SMECS, please refer to our `open issues <https://github.com/NFDI4Energy/SMECS/issues?q=is%3Aopen+is%3Aissue>`_.\n| To stay updated on upcoming changes to the `HERMES GitHub and GitLab Plugin <https://github.com/softwarepub/hermes-plugin-github-gitlab>`_, visit the `project\u2019s issues page <https://github.com/softwarepub/hermes-plugin-github-gitlab/issues>`_. And if you have questions, suggestions, feedback, or need to report a bug, please open a new issue `there <https://github.com/softwarepub/hermes-plugin-github-gitlab/issues>`_.\n|\nLicense and Citation\n__________________________________________________________\n| The code is licensed under the **GNU Affero General Public License v3.0 or later** (AGPL-3.0-or-later).\n| See `LICENSE.txt <LICENSE.txt>`_ for further information.\n\n|\nAcknowledgements\n__________________________________________________________\nWe would like to thank `meta_tool <https://github.com/rl-institut/meta_tool>`_ for providing the foundational framework upon which this project is built.\n\n\n.. |badge_license| image:: https://img.shields.io/github/license/rl-institut/meta_tool\n    :target: LICENSE.txt\n    :alt: License\n\n.. |badge_contributing| image:: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat\n    :alt: contributions\n\n.. |badge_repo_counts| image:: http://hits.dwyl.com/rl-institut/meta_tool.svg\n    :alt: counter\n\n.. |badge_contributors| image:: https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square\n    :alt: contributors\n\n.. |badge_issue_open| image:: https://img.shields.io/github/issues-raw/rl-institut/meta_tool\n    :alt: open issues\n\n.. |badge_issue_closes| image:: https://img.shields.io/github/issues-closed-raw/rl-institut/meta_tool\n    :alt: closes issues\n\n.. |badge_pr_open| image:: https://img.shields.io/github/issues-pr-raw/rl-institut/meta_tool\n    :alt: closes issues\n\n.. |badge_pr_closes| image:: https://img.shields.io/github/issues-pr-closed-raw/rl-institut/meta_tool\n    :alt: closes issues\n    \n"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/NFDI4Energy/SMECS/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/NFDI4Energy/SMECS/issues"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "codemeta, curation, extraction, fair-software, fair4rs, repository, research-software, research-software-engineering, software-metadata"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "software metadata",
+          "extraction",
+          "curation",
+          "repository",
+          "research software",
+          "codemeta"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "value": "https://api.github.com/licenses/agpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/AGPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/AGPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/AGPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "The licenses.json file in this directory is from:\nhttps://github.com/spdx/license-list-data/blob/master/json/licenses.json\n\nLicensed under CC0-1.0, by Linux Foundation and its Contributors\n"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/static/data/spdx/LICENSE",
+      "technique": "file_exploration"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SMECS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Software Metadata Extraction and Curation Software (SMECS)"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "NFDI4Energy"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 85411,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 40715,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 799,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 162,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "value": "Python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "type": "Programming_language",
+        "value": "HTML",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "type": "Programming_language",
+        "value": "CSS",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "type": "Programming_language",
+        "value": "JavaScript",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "type": "Programming_language",
+        "value": "Dockerfile",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "type": "Programming_language",
+        "value": "Shell",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/README.rst"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sferenz",
+          "type": "User"
+        },
+        "date_created": "2025-08-14T14:44:38Z",
+        "date_published": "2025-08-18T06:05:53Z",
+        "description": "## What's Changed\r\n* Integrate more codemeta elements into multiple tabs by @sferenz in https://github.com/NFDI4Energy/SMECS/pull/166\r\n* Create general classes for different field types by @sferenz in https://github.com/NFDI4Energy/SMECS/pull/170\r\n* Moved add row to table by @sferenz in https://github.com/NFDI4Energy/SMECS/pull/192\r\n* Delete .hermes directory by @Aidajafarbigloo in https://github.com/NFDI4Energy/SMECS/pull/205\r\n* Token handling by @Aidajafarbigloo in https://github.com/NFDI4Energy/SMECS/pull/207\r\n* Bug: Change the context to v3 by @Aidajafarbigloo in https://github.com/NFDI4Energy/SMECS/pull/219\r\n* Splitting foundation.js into multiples  by @Sundraiz-Shah in https://github.com/NFDI4Energy/SMECS/pull/213\r\n* Fix dependabot security alerts by @Aidajafarbigloo in https://github.com/NFDI4Energy/SMECS/pull/224\r\n* Small improvements (big field, tab descriptions, small fixes, small design changes) by @sferenz in https://github.com/NFDI4Energy/SMECS/pull/212\r\n* Add hover info for form tabs by @Aidajafarbigloo in https://github.com/NFDI4Energy/SMECS/pull/228\r\n* Update our documentation readme by @Aidajafarbigloo in https://github.com/NFDI4Energy/SMECS/pull/237\r\n* Description value updating JSON by @Sundraiz-Shah in https://github.com/NFDI4Energy/SMECS/pull/233\r\n\r\n\r\n**Full Changelog**: https://github.com/NFDI4Energy/SMECS/compare/v0.9...v0.9.2",
+        "html_url": "https://github.com/NFDI4Energy/SMECS/releases/tag/v0.9.2",
+        "name": "v0.9.2",
+        "release_id": 240505789,
+        "tag": "v0.9.2",
+        "tarball_url": "https://api.github.com/repos/NFDI4Energy/SMECS/tarball/v0.9.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NFDI4Energy/SMECS/releases/240505789",
+        "value": "https://api.github.com/repos/NFDI4Energy/SMECS/releases/240505789",
+        "zipball_url": "https://api.github.com/repos/NFDI4Energy/SMECS/zipball/v0.9.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sferenz",
+          "type": "User"
+        },
+        "date_created": "2025-05-18T10:59:32Z",
+        "date_published": "2025-05-18T11:03:35Z",
+        "description": "First version based on the integration of HERMES.",
+        "html_url": "https://github.com/NFDI4Energy/SMECS/releases/tag/v0.9",
+        "name": "v0.9",
+        "release_id": 219334831,
+        "tag": "v0.9",
+        "tarball_url": "https://api.github.com/repos/NFDI4Energy/SMECS/tarball/v0.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NFDI4Energy/SMECS/releases/219334831",
+        "value": "https://api.github.com/repos/NFDI4Energy/SMECS/releases/219334831",
+        "zipball_url": "https://api.github.com/repos/NFDI4Energy/SMECS/zipball/v0.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sferenz",
+          "type": "User"
+        },
+        "date_created": "2025-05-14T10:20:35Z",
+        "date_published": "2025-05-16T10:13:23Z",
+        "description": "Last version without the integration of HERMES. The version supports the extraction of GitLab and GitHub metadata from their API.",
+        "html_url": "https://github.com/NFDI4Energy/SMECS/releases/tag/v0.8",
+        "name": "V0.8",
+        "release_id": 219055753,
+        "tag": "v0.8",
+        "tarball_url": "https://api.github.com/repos/NFDI4Energy/SMECS/tarball/v0.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NFDI4Energy/SMECS/releases/219055753",
+        "value": "https://api.github.com/repos/NFDI4Energy/SMECS/releases/219055753",
+        "zipball_url": "https://api.github.com/repos/NFDI4Energy/SMECS/zipball/v0.8"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Django",
+        "type": "Software_application",
+        "value": "Django>=4.2.22",
+        "version": ">=4.2.22"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "django_jsonforms",
+        "type": "Software_application",
+        "value": "django_jsonforms==1.1.2",
+        "version": "==1.1.2"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "environs",
+        "type": "Software_application",
+        "value": "environs==9.3.5",
+        "version": "==9.3.5"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "marshmallow",
+        "type": "Software_application",
+        "value": "marshmallow>=3.10,<3.20",
+        "version": ">=3.10,<3.20"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyyaml",
+        "type": "Software_application",
+        "value": "pyyaml>=6.0",
+        "version": ">=6.0"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyld",
+        "type": "Software_application",
+        "value": "pyld==2.0.3",
+        "version": "==2.0.3"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python-gitlab",
+        "type": "Software_application",
+        "value": "python-gitlab==3.13.0",
+        "version": "==3.13.0"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GitPython",
+        "type": "Software_application",
+        "value": "GitPython>=3.1.41",
+        "version": ">=3.1.41"
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "git+https://github.com/softwarepub/hermes-plugin-github-gitlab",
+        "type": "Software_application",
+        "value": "git+https://github.com/softwarepub/hermes-plugin-github-gitlab",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "git+https://github.com/Aidajafarbigloo/hermes@14fc040afd4b7f7268b937477dce56bd7695fbf3#egg=hermes",
+        "type": "Software_application",
+        "value": "git+https://github.com/Aidajafarbigloo/hermes@14fc040afd4b7f7268b937477dce56bd7695fbf3#egg=hermes",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/NFDI4Energy/SMECS/master/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:23:00",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 9
+      },
+      "technique": "GitHub_API"
+    }
+  ]
+}

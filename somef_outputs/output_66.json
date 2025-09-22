@@ -1,0 +1,739 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9827743148942842,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Yaoxiang Li"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "luke.mcguinness@bristol.ac.uk",
+        "identifier": "https://orcid.org/0000-0001-8730-9761",
+        "type": "String",
+        "value": "Luke McGuinness"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0003-0709-8226",
+        "type": "String",
+        "value": "Lena Schmidt"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/medrxivr"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/medrxivr"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/medrxivr"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://travis-ci.com/ropensci/medrxivr",
+          "https://codecov.io/gh/ropensci/medrxivr?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nDevelopment is a community effort, and we welcome participation.\n\n## Code of Conduct\n\nPlease note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). \n\n## Issues\n\n<https://github.com/ropensci/medrxivr/issues> is for maintenance tasks feature requests. When you post, please abide by the same guidelines as <https://books.ropensci.org/targets/help.html>.\n\n## Development\n\nExternal code contributions are extremely helpful in the right circumstances. Here are the recommended steps.\n\n1. Prior to contribution, please propose your idea in a discussion thread so you and the maintainer can define the intent and scope of your work.\n2. [Fork the repository](https://help.github.com/articles/fork-a-repo/).\n3. Follow the [GitHub flow](https://guides.github.com/introduction/flow/index.html) to create a new branch, add commits, and open a pull request.\n4. Discuss your code with the maintainer in the pull request thread.\n5. If everything looks good, the maintainer will merge your code into the project.\n\nPlease also follow these additional guidelines.\n\n* Respect the architecture and reasoning of the package. Depending on the scope of your work, you may want to read the design documents (package vignettes).\n* If possible, keep contributions small enough to easily review manually. It is okay to split up your work into multiple pull requests.\n* Format your code according to the [tidyverse style guide](https://style.tidyverse.org/) and check your formatting with the `lint_package()` function from the [`lintr`](https://github.com/jimhester/lintr) package.\n* For new features or functionality, add tests in `tests`. Tests that can be automated should go in `tests/testthat/`. Tests that cannot be automated should go in `tests/interactive/`. For features affecting performance, it is good practice to add profiling studies to `tests/performance/`.\n* Check code coverage with `covr::package_coverage()`. Automated tests should cover all the new or changed functionality in your pull request.\n* Run overall package checks with `devtools::check()` and `goodpractice::gp()`\n* Describe your contribution in the project's [`NEWS.md`](https://github.com/ropensci/targets/blob/main/NEWS.md) file. Be sure to mention relevent GitHub issue numbers and your GitHub name as done in existing news entries.\n* If you feel contribution is substantial enough for official author or contributor status, please add yourself to the `Authors@R` field of the [`DESCRIPTION`](https://github.com/ropensci/targets/blob/main/DESCRIPTION) file.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2020-02-17T12:20:00Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-25T06:05:36Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Access and search medRxiv and bioRxiv preprint data"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+        "type": "String",
+        "value": "An increasingly important source of health-related bibliographic \n    content are preprints - preliminary versions of research articles that have\n    yet to undergo peer review. The two preprint repositories most relevant to \n    health-related sciences are medRxiv <https://www.medrxiv.org/> and\n    bioRxiv <https://www.biorxiv.org/>, both of which are operated by the Cold \n    Spring Harbor Laboratory. 'medrxivr' provides programmatic access to the \n    'Cold Spring Harbour Laboratory (CSHL)' API <https://api.biorxiv.org/>,\n    allowing users to easily download medRxiv and bioRxiv preprint metadata\n    (e.g. title, abstract, publication date, author list, etc) into R. \n    'medrxivr' also provides functions to search the downloaded preprint records \n    using regular expressions and Boolean logic, as well as helper functions \n    that allow users to export their search results to a .BIB file for easy \n    import to a reference manager and to download the full-text PDFs of \n    preprints matching their search criteria."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "An increasingly important source of health-related bibliographic \n    content are preprints - preliminary versions of research articles that have\n    yet to undergo peer review. The two preprint repositories most relevant to \n    health-related sciences are medRxiv <https://www.medrxiv.org/> and\n    bioRxiv <https://www.biorxiv.org/>, both of which are operated by the Cold \n    Spring Harbor Laboratory. 'medrxivr' provides programmatic access to the \n    'Cold Spring Harbour Laboratory (CSHL)' API <https://api.biorxiv.org/>,\n    allowing users to easily download medRxiv and bioRxiv preprint metadata\n    (e.g. title, abstract, publication date, author list, etc) into R. \n    'medrxivr' also provides functions to search the downloaded preprint records \n    using regular expressions and Boolean logic, as well as helper functions \n    that allow users to export their search results to a .BIB file for easy \n    import to a reference manager and to download the full-text PDFs of \n    preprints matching their search criteria."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8533024855691382,
+      "result": {
+        "original_header": "medrxivr <img src=\"man/figures/logo.png\" align=\"right\" width=\"20%\" height=\"20%\" />",
+        "type": "Text_excerpt",
+        "value": "An increasingly important source of health-related bibliographic content\nare preprints - preliminary versions of research articles that have yet\nto undergo peer review. The two preprint repositories most relevant to\nhealth-related sciences are [medRxiv](https://www.medrxiv.org/) and\n[bioRxiv](https://www.biorxiv.org/), both of which are operated by the\nCold Spring Harbor Laboratory. \nThe goal of the `medrxivr` R package is two-fold. In the first instance,\nit provides programmatic access to the [Cold Spring Harbour Laboratory\n(CSHL) API](https://api.biorxiv.org/), allowing users to easily download\nmedRxiv and bioRxiv preprint metadata (e.g.\u00a0title, abstract, publication\ndate, author list, etc) into R. The package also provides access to a\nmaintained static snapshot of the medRxiv repository (see [Data\nsources](#medrxiv-data)). Secondly, `medrxivr` provides functions to\nsearch the downloaded preprint records using regular expressions and\nBoolean logic, as well as helper functions that allow users to export\ntheir search results to a .BIB file for easy import to a reference\nmanager and to download the full-text PDFs of preprints matching their\nsearch criteria.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9134452263621209,
+      "result": {
+        "original_header": "medRxiv data",
+        "type": "Text_excerpt",
+        "value": "`medrixvr` provides two ways to access medRxiv data: \n- `mx_api_content(server = \"medrxiv\")` creates a local copy of all data\n  available from the medRxiv API at the time the function is run.\n``` r\n# Get a copy of the database from the live medRxiv API endpoint\npreprint_data <- mx_api_content()  \n```\n- `mx_snapshot()` provides access to a static snapshot of the medRxiv\n  database. The snapshot is created each morning at 6am using\n  `mx_api_content()` and is stored as CSV file in the [medrxivr-data\n  repository](https://github.com/mcguinlu/medrxivr-data). This method\n  does not rely on the API (which can become unavailable during peak\n  usage times) and is usually faster (as it reads data from a CSV rather\n  than having to re-extract it from the API). Discrepancies between the\n  most recent static snapshot and the live database can be assessed\n  using `mx_crosscheck()`.\n``` r\n# Get a copy of the database from the daily snapshot\npreprint_data <- mx_snapshot()  \n```\n \nThe relationship between the two methods for the medRxiv database is\nsummarised in the figure below: \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9266110616415357,
+      "result": {
+        "original_header": "bioRxiv data",
+        "type": "Text_excerpt",
+        "value": "- `mx_api_content(server = \"biorxiv\")` creates a local copy of all data\n  available from the bioRxiv API endpoint at the time the function is\n  run. **Note**: due to it\u2019s size, downloading a complete copy of the\n  bioRxiv repository in this manner takes a long time (~ 1 hour).\n``` r\n# Get a copy of the database from the live bioRxiv API endpoint\npreprint_data <- mx_api_content(server = \"biorxiv\")\n```\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8944573252880503,
+      "result": {
+        "original_header": "Other tools/packages for working with medRxiv/bioRxiv data",
+        "type": "Text_excerpt",
+        "value": "The focus of `medrxivr` is on providing tools to allow users to import\nand then search medRxiv and bioRxiv data. Below are a list of\ncomplementary packages that provide distinct but related functionality\nwhen working with medRxiv and bioRxiv data: \n- [`rbiorxiv`](https://github.com/nicholasmfraser/rbiorxiv) by [Nicholas\n  Fraser](https://github.com/nicholasmfraser) provides access to the\n  same medRxiv and bioRxiv *content* data as `medrxivr`, but also\n  provides access to the *usage* data (e.g.\u00a0downloads per month) that\n  the Cold Spring Harbour Laboratory API offers. This is useful if you\n  wish to explore, for example, [how the number of PDF downloads from\n  bioRxiv has grown over\n  time.](https://github.com/nicholasmfraser/rbiorxiv#pdf-downloads-over-time)\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9719519643292837,
+      "result": {
+        "original_header": "Code of conduct",
+        "type": "Text_excerpt",
+        "value": "Please note that this package is released with a [Contributor Code of\nConduct](https://ropensci.org/code-of-conduct/). By contributing to this\nproject, you agree to abide by its terms.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.972024741572417,
+      "result": {
+        "original_header": "Disclaimer",
+        "type": "Text_excerpt",
+        "value": "This package and the data it accesses/returns are provided \u201cas is\u201d, with\nno guarantee of accuracy. Please be sure to check the accuracy of the\ndata yourself (and do let me know if you find an issue so I can fix it\nfor everyone!)\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Download PDFs for records returned by your search",
+        "parent_header": [
+          "medrxivr <img src=\"man/figures/logo.png\" align=\"right\" width=\"20%\" height=\"20%\" />",
+          "Further functionality"
+        ],
+        "type": "Text_excerpt",
+        "value": "Pass the results of your search above (the `results` object) to the\n`mx_download()` function to download a copy of the PDF for each record\nfound by your search.\n\n``` r\nmx_download(results,        # Object returned by mx_search(), above\n            \"pdf/\",         # Directory to save PDFs to \n            create = TRUE)  # Create the directory if it doesn't exist\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/medrxivr/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 8
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/medrxivr/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/medrxivr"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "medrxivr "
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "medrxivr"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/medrxivr/master/vignettes/data_sources.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "medrxivr <img src=\"man/figures/logo.png\" align=\"right\" width=\"20%\" height=\"20%\" />"
+        ],
+        "type": "Text_excerpt",
+        "value": "To install the stable version of the package from CRAN:\n\n``` r\ninstall.packages(\"medrxivr\")\nlibrary(medrxivr)\n```\n\nAlternatively, to install the development version from GitHub, use the\nfollowing code:\n\n``` r\ninstall.packages(\"devtools\")\ndevtools::install_github(\"ropensci/medrxivr\")\nlibrary(medrxivr)\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/medrxivr/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/medrxivr/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/medrxivr/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "bibliographic-database, biorxiv, evidence-synthesis, medrxiv-data, peer-reviewed, preprint-records, r, r-package, rstats, systematic-reviews"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "evidence-synthesis",
+          "systematic-reviews",
+          "bibliographic-database",
+          "rstats",
+          "r-package",
+          "r",
+          "preprint-records",
+          "medrxiv-data",
+          "biorxiv",
+          "peer-reviewed"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/medrxivr/master/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "medrxivr"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "medrxivr: Access and Search MedRxiv and BioRxiv Preprint Data"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+        "type": "String",
+        "value": "medrxivr"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 40630,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Rez",
+        "size": 62,
+        "type": "Programming_language",
+        "value": "Rez"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/medrxivr/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "methods",
+        "type": "Software_application",
+        "value": "methods",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dplyr",
+        "type": "Software_application",
+        "value": "dplyr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "curl",
+        "type": "Software_application",
+        "value": "curl",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "jsonlite",
+        "type": "Software_application",
+        "value": "jsonlite",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "httr",
+        "type": "Software_application",
+        "value": "httr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "stringr",
+        "type": "Software_application",
+        "value": "stringr",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rlang",
+        "type": "Software_application",
+        "value": "rlang",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "vroom",
+        "type": "Software_application",
+        "value": "vroom",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "bib2df",
+        "type": "Software_application",
+        "value": "bib2df",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "tibble",
+        "type": "Software_application",
+        "value": "tibble",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "progress",
+        "type": "Software_application",
+        "value": "progress",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "lubridate",
+        "type": "Software_application",
+        "value": "lubridate",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:20:43",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 57
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.1.2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.0.4"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/medrxivr/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

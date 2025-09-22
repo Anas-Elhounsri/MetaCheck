@@ -1,0 +1,447 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8348869371208121,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "mohamedayusuf87@gmail.com",
+        "identifier": "https://orcid.org/0000-0002-9339-4613",
+        "type": "String",
+        "value": "Mohamed A. Yusuf"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/truenomad/epiCleanr"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/truenomad/epiCleanr"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/truenomad/epiCleanr"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://codecov.io/gh/truenomad/epiCleanr?branch=main"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-07-23T07:39:04Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-08-28T20:57:16Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "epiCleanr: A Tidy Solution for Epidemiological Data"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+        "type": "String",
+        "value": "Offers a tidy solution for epidemiological data. It houses a range of functions for epidemiologists and public health data wizards for data management and cleaning."
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "epiCleanr is specifically designed to meet the requirements of epidemiologists and public health data experts. It offers a comprehensive suite of functionalities for importing, cleaning, unit testing, visualizing, and preprocessing data\u2014tasks that are frequently encountered in epidemiological analysis. By focusing on addressing the unique challenges inherent in epidemiological datasets, epiCleanr enhances both the efficiency and reproducibility of your work."
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Description",
+        "parent_header": [
+          "epiCleanr <img src=\"man/figures/logo.png\" align=\"right\" height=\"128\" style=\"float:right; height:110px;\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "This package offers a tidy solution for epidemiological data. It houses\na range of functions for epidemiologists and public health data wizards\nfor data management and cleaning. For more details on how to use this package, visit the \n[epiCleanr website](https://truenomad.github.io/epiCleanr/articles/using_epicleanr.html).\n"
+      },
+      "source": "https://github.com/truenomad/epiCleanr/blob/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.9780965096755141,
+      "result": {
+        "original_header": "Quick Workflow Overview",
+        "type": "Text_excerpt",
+        "value": "`epiCleanr` could be used as a helper package for end-to-end epidemiological \ndata management, offering functionalities ranging from data importation and \nquality assessment to cleaning and exporting files. Below are some of the \nworkflow steps this package streamlines:\n \n"
+      },
+      "source": "https://github.com/truenomad/epiCleanr/blob/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9081444152630297,
+      "result": {
+        "original_header": "Data Cleaning",
+        "type": "Text_excerpt",
+        "value": "-   `clean_admin_names()`: Normalize administrative names in your\n    dataset using either user-supplied data or downloaded reference data\n    via `get_admin_names()`. \n-   `cleaning_names_strings()`: Use this function to clean and\n    standardize string columns in your data. \n-   `handle_outliers()`: Detect and manage outliers using a variety of\n    statistical methods, providing you with options to either remove or\n    impute them.\n \n"
+      },
+      "source": "https://github.com/truenomad/epiCleanr/blob/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.851467793698058,
+      "result": {
+        "original_header": "Data Export",
+        "type": "Text_excerpt",
+        "value": "Finally, use `export()` to save your cleaned data back into multiple\nfile formats, be it CSV, Excel, or other specialized formats.\n \n"
+      },
+      "source": "https://github.com/truenomad/epiCleanr/blob/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/truenomad/epiCleanr/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/truenomad/epiCleanr/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "truenomad/epiCleanr"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "epiCleanr "
+      },
+      "source": "https://github.com/truenomad/epiCleanr/blob/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://truenomad.github.io/epiCleanr/"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "epiCleanr"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "epiCleanr <img src=\"man/figures/logo.png\" align=\"right\" height=\"128\" style=\"float:right; height:110px;\"/>"
+        ],
+        "type": "Text_excerpt",
+        "value": "The package is available on [Cran](https://cran.r-project.org/web/packages/epiCleanr/) and can be installed in the following\nway:\n\n``` r\ninstall.packages(\"epiCleanr\")\nlibrary(\"epiCleanr\")\n```\n\nOr install the development version from GitHub:\n\n``` r\n# If you haven't installed the 'devtools' package, run:\n# install.packages(\"devtools\")\ndevtools::install_github(\"truenomad/epiCleanr\")\n```\n\nLoad the package:\n\n``` r\nlibrary(epiCleanr)\n```\n"
+      },
+      "source": "https://github.com/truenomad/epiCleanr/blob/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/truenomad/epiCleanr/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/truenomad/epiCleanr/issues"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2023 Mohamed A. Yusuf\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/man/figures/logo.png"
+      },
+      "source": "https://github.com/truenomad/epiCleanr/blob/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "epiCleanr"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "epiCleanr: A Tidy Solution for Epidemiological Data"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "truenomad"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+        "type": "String",
+        "value": "epiCleanr"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 109125,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/truenomad/epiCleanr/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:51:48",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/truenomad/epiCleanr/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

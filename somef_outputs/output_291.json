@@ -1,0 +1,1055 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "rrwick@gmail.com",
+        "type": "Agent",
+        "value": "rrwick@gmail.com"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "Department of Infectious Diseases, Central Clinical School, Monash University, Melbourne, Victoria 3004, Australia",
+        "email": "rrwick@gmail.com",
+        "identifier": "0000-0001-8349-0778",
+        "type": "String",
+        "value": "Ryan Wick"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Wick",
+            "given_name": "Ryan R",
+            "name": "Ryan R Wick",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-8349-0778"
+          }
+        ],
+        "datePublished": "2019",
+        "doi": "10.21105/joss.01316",
+        "format": "cff",
+        "title": "Badread",
+        "type": "File_dump",
+        "url": "https://doi.org/10.21105/joss.01316",
+        "value": "cff-version: 1.2.0\nmessage: \"If you use this software, please cite it as below.\"\nauthors:\n- family-names: \"Wick\"\n  given-names: \"Ryan R\"\n  orcid: \"https://orcid.org/0000-0001-8349-0778\"\ntitle: \"Badread\"\nurl: \"https://github.com/rrwick/Badread\"\npreferred-citation:\n  type: article\n  authors:\n  - family-names: \"Wick\"\n    given-names: \"Ryan R\"\n    orcid: \"https://orcid.org/0000-0001-8349-0778\"\n  doi: \"10.21105/joss.01316\"\n  journal: \"Journal of Open Source Software\"\n  month: 4\n  title: \"Badread: simulation of error-prone long reads\"\n  volume: 4\n  number: 36\n  year: 2019\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Reference FASTA",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The reference genome must be given as a FASTA file (either gzipped or not) using the `--reference` argument.\n\nEach sequence's depth can be specified in the FASTA header, e.g. using `depth=1.1` or `depth=15`. Badread will use this to determine the relative abundance of each sequence. This can be useful for both bacterial genomes (where plasmids may be higher depth than the chromosome) and eukaryote genomes (where chloroplast/mitochondrial genomes may be higher depth than the rest of the genome).\n\nCircular sequences are indicated by including `circular=true` in the FASTA header. This allows reads to loop past the end and back to the start of the sequence.\n\nFor a couple of examples, check out [the reference FASTA page on the wiki](https://github.com/rrwick/Badread/wiki/Example-reference-FASTAs).\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing to Badread\n\nThanks for your interest in contributing to Badread! Please have a quick read of this page before making a change, so you know what to expect.\n\n\n\n## Bug fixes\n\nIf you have discovered a bug, please report it via the GitHub [issue tracker](https://github.com/rrwick/Badread/issues).\n\nBug-fix [pull requests](https://github.com/rrwick/Badread/pulls) are always welcome! Please ensure that Badread's [automated tests](../test) still pass after you have made your changes. And whenever possible, you are encouraged to add new automated tests which cover your changes. Ideally, create a test which fails before your fix and passes after.\n\n\n\n## New features\n\nBadread's intended scope is to be a tool which generates synthetic read sets that can be used for testing other tools which take long reads as input. If you have added a new feature to Badread which stays within this scope, I would be interested in merging it in via a [pull request](https://github.com/rrwick/Badread/pulls)! Along with your new feature, please make any necessary updates to the [README.md](https://github.com/rrwick/Badread/blob/master/README.md) file to describe the feature and its usage. If possible, you are also encouraged to write [automated tests](../test) which cover your new feature.\n\nIn order to avoid [feature creep](https://en.wikipedia.org/wiki/Feature_creep), I may not accept pull requests which depart from Badread's scope. E.g. a feature for automatically designing new barcode sequences \u2013 certainly useful for some but outside the scope. However, you are always welcome to fork Badread and make such changes in your own forked copy.\n\n\n\n## Other contribution notes\n\n* Pull requests which improve performance (but do not change Badread's behaviour) are also welcome!\n* Badread is not using feature branches. I will therefore merge pull requests into the master branch and make a new [release](https://github.com/rrwick/Badread/releases) when I'm confident that everything works as intended.\n* Don't worry about changing Badread's version number in your pull request. I will bump the version when I make a new release.\n* Adding new dependencies to Badread is discouraged. Please refrain from doing so unless it is justified.\n\n\n\n## Code of conduct\n\n### Our pledge\n\nIn the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.\n\n### Our standards\n\nExamples of behaviour that contributes to creating a positive environment include:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behaviour by participants include:\n\n* The use of sexualised language or imagery and unwelcome sexual attention or advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a professional setting\n\n### Our responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable behaviour and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behaviour.\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviours that they deem inappropriate, threatening, offensive, or harmful.\n\n### Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.\n\n### Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behaviour may be reported by contacting the project team at rrwick@gmail.com. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.\n\n### Attribution\n\nThis Code of Conduct is adapted from the Contributor Covenant version 1.4, available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html\n\nFor answers to common questions about this code of conduct, see https://www.contributor-covenant.org/faq\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contributing",
+        "type": "Text_excerpt",
+        "value": "If you are interested in contributing to Badread, please take a look at the [contribution guidelines](CONTRIBUTING.md).\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-06-04T07:03:29Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2019-03-01"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2019-03-01"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-16T21:10:37Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2019-03-01"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "a long read simulator that can imitate many types of read problems"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Badread: a long read simulator that can mimic various kinds of read problems"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Badread is a long-read simulator tool that can imitate many kinds of problems one might encounter in real read sets: chimeric reads, low-quality regions, systematic basecalling errors and more."
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.8513357580332676,
+      "result": {
+        "original_header": "Method",
+        "type": "Text_excerpt",
+        "value": "Here is an overview of how Badread makes each of its reads: \n2. Choose a type of fragment:\n    * Most will be fragments of sequence from the [reference FASTA](#reference-fasta). These are equally likely to come from either strand, and can loop around circular references. If there are multiple reference sequences with different depths, then the likelihood of the fragment coming from each sequence is proportional to that sequence's depth.\n    * Depending on the settings, some fragments may also be [junk or random sequence](#junk-and-random-reads). \n3. Add adapter sequences to the start and end of the fragment, based on the [adapter settings](#adapters). \n7. 'Sequence' the fragment by adding errors until it has the target percent identity.\n    * Errors are chosen using the [error model](#error-model) and are added at random positions in the read.\n    * This step performs periodic alignments between the original fragment and the error-added sequence, so Badread can track the read's actual identity. This allow it to be precise (if Badread is aiming for a 91.5% identity read, it will be very close to 91.5% identity) but slow. If you find that Badread is too slow, check out [the wiki page on running it in parallel](https://github.com/rrwick/Badread/wiki/Running-in-parallel). \n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9026139891298666,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "Badread is a long-read simulator tool that makes \u2013 you guessed it \u2013 bad reads! It can imitate many kinds of problems one might encounter in real long-read sets: chimeras, low-quality regions, systematic basecalling errors and more. \nBadread does not try to be best at imitating real reads (though it's not too bad, see ). Rather, it was intended to give users _control_ over the quality of its simulated reads. I made Badread for the purpose of testing tools which take long reads as input. With it, one can increase the rate of different types of read problems, to see what effect it has. \nBadread is published in the . If you use it in your research, please cite this manuscript:\n> Wick RR. Badread: simulation of error-prone long reads. _Journal of Open Source Software_. 2019;4(36):1316. doi:. \n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread/wiki/Installation-issues"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread/wiki/Running-in-parallel"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread/wiki/Example-reference-FASTAs"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread/wiki/Definition-of-identity"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread/wiki/Error-models"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread/wiki/QScore-models"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread/wiki/Adapter-sequences"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread/wiki/Glitches"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread/wiki"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/rrwick/Badread/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "faq": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Error model",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The possible values for the `--error_model` argument are:\n* `nanopore2023`: a model trained on ONT R10.4.1 reads from 2023 (the default)\n* `nanopore2020`: a model trained on ONT R9.4.1 reads from 2020\n* `nanopore2018`: a model trained on ONT R9.4/R9.4.1 reads from 2018\n* `pacbio2016`: a model trained on PacBio RS II reads from 2016\n* `pacbio2021`: a model trained on PacBio Sequel IIe HiFi reads from 2021\n* `random`: a random error model with 1/3 chance each of insertion, deletion and substitution\n* a file path for a trained model\n\nFor more information on how error models work, see [this page on the wiki](https://github.com/rrwick/Badread/wiki/Error-models). For instructions on building your own error model, see [this page](https://github.com/rrwick/Badread/wiki/Generating-error-and-qscore-models).\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 24
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/rrwick/Badread/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "rrwick/Badread"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/rrwick/Badread/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/rrwick/Badread/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://doi.org/10.5281/zenodo.2622997"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "http://joss.theoj.org/papers/a9ae38312391668801949ddc59e10cb1/status.svg"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install from source",
+        "parent_header": [
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can install Badread using pip, either from a local copy:\n```bash\ngit clone https://github.com/rrwick/Badread.git\npip3 install ./Badread\nbadread --help\n```\n\nOr directly from GitHub:\n```bash\npip3 install git+https://github.com/rrwick/Badread.git\nbadread --help\n```\n\nIf these installation commands aren't working for you (e.g. an error message like `Command 'pip3' not found` or `command 'gcc' failed with exit status 1`) then check out the [installation issues page on the wiki](https://github.com/rrwick/Badread/wiki/Installation-issues).\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Run without installation",
+        "parent_header": [
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "Badread can also be run directly from its repository by using the `badread-runner.py` script, no installation required:\n\n```bash\ngit clone https://github.com/rrwick/Badread.git\nBadread/badread-runner.py -h\n```\n\nIf you run Badread this way, it's up to you to make sure that all [necessary Python packages](#requirements) are installed.\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/rrwick/Badread/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "long-read sequencing",
+          "oxford nanopore",
+          "pacbio",
+          "read simulation"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "type": "License",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "value": "https://api.github.com/licenses/gpl-3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "                    GNU GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n                            Preamble\n\n  The GNU General Public License is a free, copyleft license for\nsoftware and other kinds of works.\n\n  The licenses for most software and other practical works are designed\nto take away your freedom to share and change the works.  By contrast,\nthe GNU General Public License is intended to guarantee your freedom to\nshare and change all versions of a program--to make sure it remains free\nsoftware for all its users.  We, the Free Software Foundation, use the\nGNU General Public License for most of our software; it applies also to\nany other work released this way by its authors.  You can apply it to\nyour programs, too.\n\n  When we speak of free software, we are referring to freedom, not\nprice.  Our General Public Licenses are designed to make sure that you\nhave the freedom to distribute copies of free software (and charge for\nthem if you wish), that you receive source code or can get it if you\nwant it, that you can change the software or use pieces of it in new\nfree programs, and that you know you can do these things.\n\n  To protect your rights, we need to prevent others from denying you\nthese rights or asking you to surrender the rights.  Therefore, you have\ncertain responsibilities if you distribute copies of the software, or if\nyou modify it: responsibilities to respect the freedom of others.\n\n  For example, if you distribute copies of such a program, whether\ngratis or for a fee, you must pass on to the recipients the same\nfreedoms that you received.  You must make sure that they, too, receive\nor can get the source code.  And you must show them these terms so they\nknow their rights.\n\n  Developers that use the GNU GPL protect your rights with two steps:\n(1) assert copyright on the software, and (2) offer you this License\ngiving you legal permission to copy, distribute and/or modify it.\n\n  For the developers' and authors' protection, the GPL clearly explains\nthat there is no warranty for this free software.  For both users' and\nauthors' sake, the GPL requires that modified versions be marked as\nchanged, so that their problems will not be attributed erroneously to\nauthors of previous versions.\n\n  Some devices are designed to deny users access to install or run\nmodified versions of the software inside them, although the manufacturer\ncan do so.  This is fundamentally incompatible with the aim of\nprotecting users' freedom to change the software.  The systematic\npattern of such abuse occurs in the area of products for individuals to\nuse, which is precisely where it is most unacceptable.  Therefore, we\nhave designed this version of the GPL to prohibit the practice for those\nproducts.  If such problems arise substantially in other domains, we\nstand ready to extend this provision to those domains in future versions\nof the GPL, as needed to protect the freedom of users.\n\n  Finally, every program is threatened constantly by software patents.\nStates should not allow patents to restrict development and use of\nsoftware on general-purpose computers, but in those that do, we wish to\navoid the special danger that patents applied to a free program could\nmake it effectively proprietary.  To prevent this, the GPL assures that\npatents cannot be used to render the program non-free.\n\n  The precise terms and conditions for copying, distribution and\nmodification follow.\n\n                       TERMS AND CONDITIONS\n\n  0. Definitions.\n\n  \"This License\" refers to version 3 of the GNU General Public License.\n\n  \"Copyright\" also means copyright-like laws that apply to other kinds of\nworks, such as semiconductor masks.\n\n  \"The Program\" refers to any copyrightable work licensed under this\nLicense.  Each licensee is addressed as \"you\".  \"Licensees\" and\n\"recipients\" may be individuals or organizations.\n\n  To \"modify\" a work means to copy from or adapt all or part of the work\nin a fashion requiring copyright permission, other than the making of an\nexact copy.  The resulting work is called a \"modified version\" of the\nearlier work or a work \"based on\" the earlier work.\n\n  A \"covered work\" means either the unmodified Program or a work based\non the Program.\n\n  To \"propagate\" a work means to do anything with it that, without\npermission, would make you directly or secondarily liable for\ninfringement under applicable copyright law, except executing it on a\ncomputer or modifying a private copy.  Propagation includes copying,\ndistribution (with or without modification), making available to the\npublic, and in some countries other activities as well.\n\n  To \"convey\" a work means any kind of propagation that enables other\nparties to make or receive copies.  Mere interaction with a user through\na computer network, with no transfer of a copy, is not conveying.\n\n  An interactive user interface displays \"Appropriate Legal Notices\"\nto the extent that it includes a convenient and prominently visible\nfeature that (1) displays an appropriate copyright notice, and (2)\ntells the user that there is no warranty for the work (except to the\nextent that warranties are provided), that licensees may convey the\nwork under this License, and how to view a copy of this License.  If\nthe interface presents a list of user commands or options, such as a\nmenu, a prominent item in the list meets this criterion.\n\n  1. Source Code.\n\n  The \"source code\" for a work means the preferred form of the work\nfor making modifications to it.  \"Object code\" means any non-source\nform of a work.\n\n  A \"Standard Interface\" means an interface that either is an official\nstandard defined by a recognized standards body, or, in the case of\ninterfaces specified for a particular programming language, one that\nis widely used among developers working in that language.\n\n  The \"System Libraries\" of an executable work include anything, other\nthan the work as a whole, that (a) is included in the normal form of\npackaging a Major Component, but which is not part of that Major\nComponent, and (b) serves only to enable use of the work with that\nMajor Component, or to implement a Standard Interface for which an\nimplementation is available to the public in source code form.  A\n\"Major Component\", in this context, means a major essential component\n(kernel, window system, and so on) of the specific operating system\n(if any) on which the executable work runs, or a compiler used to\nproduce the work, or an object code interpreter used to run it.\n\n  The \"Corresponding Source\" for a work in object code form means all\nthe source code needed to generate, install, and (for an executable\nwork) run the object code and to modify the work, including scripts to\ncontrol those activities.  However, it does not include the work's\nSystem Libraries, or general-purpose tools or generally available free\nprograms which are used unmodified in performing those activities but\nwhich are not part of the work.  For example, Corresponding Source\nincludes interface definition files associated with source files for\nthe work, and the source code for shared libraries and dynamically\nlinked subprograms that the work is specifically designed to require,\nsuch as by intimate data communication or control flow between those\nsubprograms and other parts of the work.\n\n  The Corresponding Source need not include anything that users\ncan regenerate automatically from other parts of the Corresponding\nSource.\n\n  The Corresponding Source for a work in source code form is that\nsame work.\n\n  2. Basic Permissions.\n\n  All rights granted under this License are granted for the term of\ncopyright on the Program, and are irrevocable provided the stated\nconditions are met.  This License explicitly affirms your unlimited\npermission to run the unmodified Program.  The output from running a\ncovered work is covered by this License only if the output, given its\ncontent, constitutes a covered work.  This License acknowledges your\nrights of fair use or other equivalent, as provided by copyright law.\n\n  You may make, run and propagate covered works that you do not\nconvey, without conditions so long as your license otherwise remains\nin force.  You may convey covered works to others for the sole purpose\nof having them make modifications exclusively for you, or provide you\nwith facilities for running those works, provided that you comply with\nthe terms of this License in conveying all material for which you do\nnot control copyright.  Those thus making or running the covered works\nfor you must do so exclusively on your behalf, under your direction\nand control, on terms that prohibit them from making any copies of\nyour copyrighted material outside their relationship with you.\n\n  Conveying under any other circumstances is permitted solely under\nthe conditions stated below.  Sublicensing is not allowed; section 10\nmakes it unnecessary.\n\n  3. Protecting Users' Legal Rights From Anti-Circumvention Law.\n\n  No covered work shall be deemed part of an effective technological\nmeasure under any applicable law fulfilling obligations under article\n11 of the WIPO copyright treaty adopted on 20 December 1996, or\nsimilar laws prohibiting or restricting circumvention of such\nmeasures.\n\n  When you convey a covered work, you waive any legal power to forbid\ncircumvention of technological measures to the extent such circumvention\nis effected by exercising rights under this License with respect to\nthe covered work, and you disclaim any intention to limit operation or\nmodification of the work as a means of enforcing, against the work's\nusers, your or third parties' legal rights to forbid circumvention of\ntechnological measures.\n\n  4. Conveying Verbatim Copies.\n\n  You may convey verbatim copies of the Program's source code as you\nreceive it, in any medium, provided that you conspicuously and\nappropriately publish on each copy an appropriate copyright notice;\nkeep intact all notices stating that this License and any\nnon-permissive terms added in accord with section 7 apply to the code;\nkeep intact all notices of the absence of any warranty; and give all\nrecipients a copy of this License along with the Program.\n\n  You may charge any price or no price for each copy that you convey,\nand you may offer support or warranty protection for a fee.\n\n  5. Conveying Modified Source Versions.\n\n  You may convey a work based on the Program, or the modifications to\nproduce it from the Program, in the form of source code under the\nterms of section 4, provided that you also meet all of these conditions:\n\n    a) The work must carry prominent notices stating that you modified\n    it, and giving a relevant date.\n\n    b) The work must carry prominent notices stating that it is\n    released under this License and any conditions added under section\n    7.  This requirement modifies the requirement in section 4 to\n    \"keep intact all notices\".\n\n    c) You must license the entire work, as a whole, under this\n    License to anyone who comes into possession of a copy.  This\n    License will therefore apply, along with any applicable section 7\n    additional terms, to the whole of the work, and all its parts,\n    regardless of how they are packaged.  This License gives no\n    permission to license the work in any other way, but it does not\n    invalidate such permission if you have separately received it.\n\n    d) If the work has interactive user interfaces, each must display\n    Appropriate Legal Notices; however, if the Program has interactive\n    interfaces that do not display Appropriate Legal Notices, your\n    work need not make them do so.\n\n  A compilation of a covered work with other separate and independent\nworks, which are not by their nature extensions of the covered work,\nand which are not combined with it such as to form a larger program,\nin or on a volume of a storage or distribution medium, is called an\n\"aggregate\" if the compilation and its resulting copyright are not\nused to limit the access or legal rights of the compilation's users\nbeyond what the individual works permit.  Inclusion of a covered work\nin an aggregate does not cause this License to apply to the other\nparts of the aggregate.\n\n  6. Conveying Non-Source Forms.\n\n  You may convey a covered work in object code form under the terms\nof sections 4 and 5, provided that you also convey the\nmachine-readable Corresponding Source under the terms of this License,\nin one of these ways:\n\n    a) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by the\n    Corresponding Source fixed on a durable physical medium\n    customarily used for software interchange.\n\n    b) Convey the object code in, or embodied in, a physical product\n    (including a physical distribution medium), accompanied by a\n    written offer, valid for at least three years and valid for as\n    long as you offer spare parts or customer support for that product\n    model, to give anyone who possesses the object code either (1) a\n    copy of the Corresponding Source for all the software in the\n    product that is covered by this License, on a durable physical\n    medium customarily used for software interchange, for a price no\n    more than your reasonable cost of physically performing this\n    conveying of source, or (2) access to copy the\n    Corresponding Source from a network server at no charge.\n\n    c) Convey individual copies of the object code with a copy of the\n    written offer to provide the Corresponding Source.  This\n    alternative is allowed only occasionally and noncommercially, and\n    only if you received the object code with such an offer, in accord\n    with subsection 6b.\n\n    d) Convey the object code by offering access from a designated\n    place (gratis or for a charge), and offer equivalent access to the\n    Corresponding Source in the same way through the same place at no\n    further charge.  You need not require recipients to copy the\n    Corresponding Source along with the object code.  If the place to\n    copy the object code is a network server, the Corresponding Source\n    may be on a different server (operated by you or a third party)\n    that supports equivalent copying facilities, provided you maintain\n    clear directions next to the object code saying where to find the\n    Corresponding Source.  Regardless of what server hosts the\n    Corresponding Source, you remain obligated to ensure that it is\n    available for as long as needed to satisfy these requirements.\n\n    e) Convey the object code using peer-to-peer transmission, provided\n    you inform other peers where the object code and Corresponding\n    Source of the work are being offered to the general public at no\n    charge under subsection 6d.\n\n  A separable portion of the object code, whose source code is excluded\nfrom the Corresponding Source as a System Library, need not be\nincluded in conveying the object code work.\n\n  A \"User Product\" is either (1) a \"consumer product\", which means any\ntangible personal property which is normally used for personal, family,\nor household purposes, or (2) anything designed or sold for incorporation\ninto a dwelling.  In determining whether a product is a consumer product,\ndoubtful cases shall be resolved in favor of coverage.  For a particular\nproduct received by a particular user, \"normally used\" refers to a\ntypical or common use of that class of product, regardless of the status\nof the particular user or of the way in which the particular user\nactually uses, or expects or is expected to use, the product.  A product\nis a consumer product regardless of whether the product has substantial\ncommercial, industrial or non-consumer uses, unless such uses represent\nthe only significant mode of use of the product.\n\n  \"Installation Information\" for a User Product means any methods,\nprocedures, authorization keys, or other information required to install\nand execute modified versions of a covered work in that User Product from\na modified version of its Corresponding Source.  The information must\nsuffice to ensure that the continued functioning of the modified object\ncode is in no case prevented or interfered with solely because\nmodification has been made.\n\n  If you convey an object code work under this section in, or with, or\nspecifically for use in, a User Product, and the conveying occurs as\npart of a transaction in which the right of possession and use of the\nUser Product is transferred to the recipient in perpetuity or for a\nfixed term (regardless of how the transaction is characterized), the\nCorresponding Source conveyed under this section must be accompanied\nby the Installation Information.  But this requirement does not apply\nif neither you nor any third party retains the ability to install\nmodified object code on the User Product (for example, the work has\nbeen installed in ROM).\n\n  The requirement to provide Installation Information does not include a\nrequirement to continue to provide support service, warranty, or updates\nfor a work that has been modified or installed by the recipient, or for\nthe User Product in which it has been modified or installed.  Access to a\nnetwork may be denied when the modification itself materially and\nadversely affects the operation of the network or violates the rules and\nprotocols for communication across the network.\n\n  Corresponding Source conveyed, and Installation Information provided,\nin accord with this section must be in a format that is publicly\ndocumented (and with an implementation available to the public in\nsource code form), and must require no special password or key for\nunpacking, reading or copying.\n\n  7. Additional Terms.\n\n  \"Additional permissions\" are terms that supplement the terms of this\nLicense by making exceptions from one or more of its conditions.\nAdditional permissions that are applicable to the entire Program shall\nbe treated as though they were included in this License, to the extent\nthat they are valid under applicable law.  If additional permissions\napply only to part of the Program, that part may be used separately\nunder those permissions, but the entire Program remains governed by\nthis License without regard to the additional permissions.\n\n  When you convey a copy of a covered work, you may at your option\nremove any additional permissions from that copy, or from any part of\nit.  (Additional permissions may be written to require their own\nremoval in certain cases when you modify the work.)  You may place\nadditional permissions on material, added by you to a covered work,\nfor which you have or can give appropriate copyright permission.\n\n  Notwithstanding any other provision of this License, for material you\nadd to a covered work, you may (if authorized by the copyright holders of\nthat material) supplement the terms of this License with terms:\n\n    a) Disclaiming warranty or limiting liability differently from the\n    terms of sections 15 and 16 of this License; or\n\n    b) Requiring preservation of specified reasonable legal notices or\n    author attributions in that material or in the Appropriate Legal\n    Notices displayed by works containing it; or\n\n    c) Prohibiting misrepresentation of the origin of that material, or\n    requiring that modified versions of such material be marked in\n    reasonable ways as different from the original version; or\n\n    d) Limiting the use for publicity purposes of names of licensors or\n    authors of the material; or\n\n    e) Declining to grant rights under trademark law for use of some\n    trade names, trademarks, or service marks; or\n\n    f) Requiring indemnification of licensors and authors of that\n    material by anyone who conveys the material (or modified versions of\n    it) with contractual assumptions of liability to the recipient, for\n    any liability that these contractual assumptions directly impose on\n    those licensors and authors.\n\n  All other non-permissive additional terms are considered \"further\nrestrictions\" within the meaning of section 10.  If the Program as you\nreceived it, or any part of it, contains a notice stating that it is\ngoverned by this License along with a term that is a further\nrestriction, you may remove that term.  If a license document contains\na further restriction but permits relicensing or conveying under this\nLicense, you may add to a covered work material governed by the terms\nof that license document, provided that the further restriction does\nnot survive such relicensing or conveying.\n\n  If you add terms to a covered work in accord with this section, you\nmust place, in the relevant source files, a statement of the\nadditional terms that apply to those files, or a notice indicating\nwhere to find the applicable terms.\n\n  Additional terms, permissive or non-permissive, may be stated in the\nform of a separately written license, or stated as exceptions;\nthe above requirements apply either way.\n\n  8. Termination.\n\n  You may not propagate or modify a covered work except as expressly\nprovided under this License.  Any attempt otherwise to propagate or\nmodify it is void, and will automatically terminate your rights under\nthis License (including any patent licenses granted under the third\nparagraph of section 11).\n\n  However, if you cease all violation of this License, then your\nlicense from a particular copyright holder is reinstated (a)\nprovisionally, unless and until the copyright holder explicitly and\nfinally terminates your license, and (b) permanently, if the copyright\nholder fails to notify you of the violation by some reasonable means\nprior to 60 days after the cessation.\n\n  Moreover, your license from a particular copyright holder is\nreinstated permanently if the copyright holder notifies you of the\nviolation by some reasonable means, this is the first time you have\nreceived notice of violation of this License (for any work) from that\ncopyright holder, and you cure the violation prior to 30 days after\nyour receipt of the notice.\n\n  Termination of your rights under this section does not terminate the\nlicenses of parties who have received copies or rights from you under\nthis License.  If your rights have been terminated and not permanently\nreinstated, you do not qualify to receive new licenses for the same\nmaterial under section 10.\n\n  9. Acceptance Not Required for Having Copies.\n\n  You are not required to accept this License in order to receive or\nrun a copy of the Program.  Ancillary propagation of a covered work\noccurring solely as a consequence of using peer-to-peer transmission\nto receive a copy likewise does not require acceptance.  However,\nnothing other than this License grants you permission to propagate or\nmodify any covered work.  These actions infringe copyright if you do\nnot accept this License.  Therefore, by modifying or propagating a\ncovered work, you indicate your acceptance of this License to do so.\n\n  10. Automatic Licensing of Downstream Recipients.\n\n  Each time you convey a covered work, the recipient automatically\nreceives a license from the original licensors, to run, modify and\npropagate that work, subject to this License.  You are not responsible\nfor enforcing compliance by third parties with this License.\n\n  An \"entity transaction\" is a transaction transferring control of an\norganization, or substantially all assets of one, or subdividing an\norganization, or merging organizations.  If propagation of a covered\nwork results from an entity transaction, each party to that\ntransaction who receives a copy of the work also receives whatever\nlicenses to the work the party's predecessor in interest had or could\ngive under the previous paragraph, plus a right to possession of the\nCorresponding Source of the work from the predecessor in interest, if\nthe predecessor has it or can get it with reasonable efforts.\n\n  You may not impose any further restrictions on the exercise of the\nrights granted or affirmed under this License.  For example, you may\nnot impose a license fee, royalty, or other charge for exercise of\nrights granted under this License, and you may not initiate litigation\n(including a cross-claim or counterclaim in a lawsuit) alleging that\nany patent claim is infringed by making, using, selling, offering for\nsale, or importing the Program or any portion of it.\n\n  11. Patents.\n\n  A \"contributor\" is a copyright holder who authorizes use under this\nLicense of the Program or a work on which the Program is based.  The\nwork thus licensed is called the contributor's \"contributor version\".\n\n  A contributor's \"essential patent claims\" are all patent claims\nowned or controlled by the contributor, whether already acquired or\nhereafter acquired, that would be infringed by some manner, permitted\nby this License, of making, using, or selling its contributor version,\nbut do not include claims that would be infringed only as a\nconsequence of further modification of the contributor version.  For\npurposes of this definition, \"control\" includes the right to grant\npatent sublicenses in a manner consistent with the requirements of\nthis License.\n\n  Each contributor grants you a non-exclusive, worldwide, royalty-free\npatent license under the contributor's essential patent claims, to\nmake, use, sell, offer for sale, import and otherwise run, modify and\npropagate the contents of its contributor version.\n\n  In the following three paragraphs, a \"patent license\" is any express\nagreement or commitment, however denominated, not to enforce a patent\n(such as an express permission to practice a patent or covenant not to\nsue for patent infringement).  To \"grant\" such a patent license to a\nparty means to make such an agreement or commitment not to enforce a\npatent against the party.\n\n  If you convey a covered work, knowingly relying on a patent license,\nand the Corresponding Source of the work is not available for anyone\nto copy, free of charge and under the terms of this License, through a\npublicly available network server or other readily accessible means,\nthen you must either (1) cause the Corresponding Source to be so\navailable, or (2) arrange to deprive yourself of the benefit of the\npatent license for this particular work, or (3) arrange, in a manner\nconsistent with the requirements of this License, to extend the patent\nlicense to downstream recipients.  \"Knowingly relying\" means you have\nactual knowledge that, but for the patent license, your conveying the\ncovered work in a country, or your recipient's use of the covered work\nin a country, would infringe one or more identifiable patents in that\ncountry that you have reason to believe are valid.\n\n  If, pursuant to or in connection with a single transaction or\narrangement, you convey, or propagate by procuring conveyance of, a\ncovered work, and grant a patent license to some of the parties\nreceiving the covered work authorizing them to use, propagate, modify\nor convey a specific copy of the covered work, then the patent license\nyou grant is automatically extended to all recipients of the covered\nwork and works based on it.\n\n  A patent license is \"discriminatory\" if it does not include within\nthe scope of its coverage, prohibits the exercise of, or is\nconditioned on the non-exercise of one or more of the rights that are\nspecifically granted under this License.  You may not convey a covered\nwork if you are a party to an arrangement with a third party that is\nin the business of distributing software, under which you make payment\nto the third party based on the extent of your activity of conveying\nthe work, and under which the third party grants, to any of the\nparties who would receive the covered work from you, a discriminatory\npatent license (a) in connection with copies of the covered work\nconveyed by you (or copies made from those copies), or (b) primarily\nfor and in connection with specific products or compilations that\ncontain the covered work, unless you entered into that arrangement,\nor that patent license was granted, prior to 28 March 2007.\n\n  Nothing in this License shall be construed as excluding or limiting\nany implied license or other defenses to infringement that may\notherwise be available to you under applicable patent law.\n\n  12. No Surrender of Others' Freedom.\n\n  If conditions are imposed on you (whether by court order, agreement or\notherwise) that contradict the conditions of this License, they do not\nexcuse you from the conditions of this License.  If you cannot convey a\ncovered work so as to satisfy simultaneously your obligations under this\nLicense and any other pertinent obligations, then as a consequence you may\nnot convey it at all.  For example, if you agree to terms that obligate you\nto collect a royalty for further conveying from those to whom you convey\nthe Program, the only way you could satisfy both those terms and this\nLicense would be to refrain entirely from conveying the Program.\n\n  13. Use with the GNU Affero General Public License.\n\n  Notwithstanding any other provision of this License, you have\npermission to link or combine any covered work with a work licensed\nunder version 3 of the GNU Affero General Public License into a single\ncombined work, and to convey the resulting work.  The terms of this\nLicense will continue to apply to the part which is the covered work,\nbut the special requirements of the GNU Affero General Public License,\nsection 13, concerning interaction through a network will apply to the\ncombination as such.\n\n  14. Revised Versions of this License.\n\n  The Free Software Foundation may publish revised and/or new versions of\nthe GNU General Public License from time to time.  Such new versions will\nbe similar in spirit to the present version, but may differ in detail to\naddress new problems or concerns.\n\n  Each version is given a distinguishing version number.  If the\nProgram specifies that a certain numbered version of the GNU General\nPublic License \"or any later version\" applies to it, you have the\noption of following the terms and conditions either of that numbered\nversion or of any later version published by the Free Software\nFoundation.  If the Program does not specify a version number of the\nGNU General Public License, you may choose any version ever published\nby the Free Software Foundation.\n\n  If the Program specifies that a proxy can decide which future\nversions of the GNU General Public License can be used, that proxy's\npublic statement of acceptance of a version permanently authorizes you\nto choose that version for the Program.\n\n  Later license versions may give you additional or different\npermissions.  However, no additional obligations are imposed on any\nauthor or copyright holder as a result of your choosing to follow a\nlater version.\n\n  15. Disclaimer of Warranty.\n\n  THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY\nAPPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT\nHOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM \"AS IS\" WITHOUT WARRANTY\nOF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM\nIS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF\nALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n  16. Limitation of Liability.\n\n  IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING\nWILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS\nTHE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY\nGENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE\nUSE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF\nDATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD\nPARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),\nEVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGES.\n\n  17. Interpretation of Sections 15 and 16.\n\n  If the disclaimer of warranty and limitation of liability provided\nabove cannot be given local legal effect according to their terms,\nreviewing courts shall apply local law that most closely approximates\nan absolute waiver of all civil liability in connection with the\nProgram, unless a warranty or assumption of liability accompanies a\ncopy of the Program in return for a fee.\n\n                     END OF TERMS AND CONDITIONS\n\n            How to Apply These Terms to Your New Programs\n\n  If you develop a new program, and you want it to be of the greatest\npossible use to the public, the best way to achieve this is to make it\nfree software which everyone can redistribute and change under these terms.\n\n  To do so, attach the following notices to the program.  It is safest\nto attach them to the start of each source file to most effectively\nstate the exclusion of warranty; and each file should have at least\nthe \"copyright\" line and a pointer to where the full notice is found.\n\n    <one line to give the program's name and a brief idea of what it does.>\n    Copyright (C) <year>  <name of author>\n\n    This program is free software: you can redistribute it and/or modify\n    it under the terms of the GNU General Public License as published by\n    the Free Software Foundation, either version 3 of the License, or\n    (at your option) any later version.\n\n    This program is distributed in the hope that it will be useful,\n    but WITHOUT ANY WARRANTY; without even the implied warranty of\n    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n    GNU General Public License for more details.\n\n    You should have received a copy of the GNU General Public License\n    along with this program.  If not, see <http://www.gnu.org/licenses/>.\n\nAlso add information on how to contact you by electronic and paper mail.\n\n  If the program does terminal interaction, make it output a short\nnotice like this when it starts in an interactive mode:\n\n    <program>  Copyright (C) <year>  <name of author>\n    This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.\n    This is free software, and you are welcome to redistribute it\n    under certain conditions; type `show c' for details.\n\nThe hypothetical commands `show w' and `show c' should show the appropriate\nparts of the General Public License.  Of course, your program's commands\nmight be different; for a GUI interface, you would use an \"about box\".\n\n  You should also get your employer (if you work as a programmer) or school,\nif any, to sign a \"copyright disclaimer\" for the program, if necessary.\nFor more information on this, and how to apply and follow the GNU GPL, see\n<http://www.gnu.org/licenses/>.\n\n  The GNU General Public License does not permit incorporating your program\ninto proprietary programs.  If your program is a subroutine library, you\nmay consider it more useful to permit linking proprietary applications with\nthe library.  If this is what you want to do, use the GNU Lesser General\nPublic License instead of this License.  But first, please read\n<http://www.gnu.org/philosophy/why-not-lgpl.html>.\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "GPLv3"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/GPL v3.0",
+        "spdx_id": "GPL v3.0",
+        "type": "License",
+        "value": "GPL v3.0"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "License",
+        "type": "Text_excerpt",
+        "value": "[GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0.html)\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/rrwick/Badread/main/images/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Badread"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "rrwick"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Badread"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 262686,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 2896,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rrwick",
+          "type": "User"
+        },
+        "date_created": "2024-02-16T03:57:47Z",
+        "date_published": "2024-02-16T03:59:04Z",
+        "description": "This release adds new error and qscore models called `pacbio2021` that were trained on PacBio HiFi reads. Thanks to @kokyriakidis for pointing me to the datasets! Nothing else about Badread has changed, so no need to update unless you're interested in the new models.",
+        "html_url": "https://github.com/rrwick/Badread/releases/tag/v0.4.1",
+        "name": "Badread v0.4.1",
+        "release_id": 142265261,
+        "tag": "v0.4.1",
+        "tarball_url": "https://api.github.com/repos/rrwick/Badread/tarball/v0.4.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rrwick/Badread/releases/142265261",
+        "value": "https://api.github.com/repos/rrwick/Badread/releases/142265261",
+        "zipball_url": "https://api.github.com/repos/rrwick/Badread/zipball/v0.4.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rrwick",
+          "type": "User"
+        },
+        "date_created": "2023-06-06T07:26:51Z",
+        "date_published": "2023-06-06T07:27:55Z",
+        "description": "This release adds a new way to define read identities: via a normal distribution of qscores. I added this because the original method (beta distribution) was awkward for high identities, e.g. PacBio HiFi reads. Both the old (identity beta) and new (qscore normal) methods are now available in Badread. See the [Read identities](https://github.com/rrwick/Badread#read-identities) section of the README for more details.",
+        "html_url": "https://github.com/rrwick/Badread/releases/tag/v0.4.0",
+        "name": "Badread v0.4.0",
+        "release_id": 107465209,
+        "tag": "v0.4.0",
+        "tarball_url": "https://api.github.com/repos/rrwick/Badread/tarball/v0.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rrwick/Badread/releases/107465209",
+        "value": "https://api.github.com/repos/rrwick/Badread/releases/107465209",
+        "zipball_url": "https://api.github.com/repos/rrwick/Badread/zipball/v0.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rrwick",
+          "type": "User"
+        },
+        "date_created": "2023-04-21T05:27:08Z",
+        "date_published": "2023-04-21T05:32:49Z",
+        "description": "This version adds new Nanopore error/qscore models. These are named `nanopore2023` and are now the default.\r\n\r\nI also increased the default read accuracy from `--identity 87.5,97.5,5` to `--identity 95,99,2.5`. This is slightly worse than I'd expect from real-world ONT R10.4.1 reads. I.e. using Badread v0.3.0's defaults should give you reads that are a bit worse than ONT R10.4.1 reads in 2023.",
+        "html_url": "https://github.com/rrwick/Badread/releases/tag/v0.3.0",
+        "name": "Badread v0.3.0",
+        "release_id": 100288062,
+        "tag": "v0.3.0",
+        "tarball_url": "https://api.github.com/repos/rrwick/Badread/tarball/v0.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rrwick/Badread/releases/100288062",
+        "value": "https://api.github.com/repos/rrwick/Badread/releases/100288062",
+        "zipball_url": "https://api.github.com/repos/rrwick/Badread/zipball/v0.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rrwick",
+          "type": "User"
+        },
+        "date_created": "2021-02-10T22:11:57Z",
+        "date_published": "2021-02-10T22:13:15Z",
+        "description": "I made this version to include new Nanopore error/qscore models. These are named `nanopore2020` and are now the default. For consistency, I renamed the old models from `nanopore` and `pacbio` to `nanopore2018` and `pacbio2016`.\r\n\r\nI also increased the default read accuracy by a bit from `--identity 85,95,5` to `--identity 87.5,97.5,5`. This is to account for the fact that long reads are more accurate today than they were a few years ago. I still wanted Badread's defaults to be worse than real reads, but not _too_ much worse :smile:",
+        "html_url": "https://github.com/rrwick/Badread/releases/tag/v0.2.0",
+        "name": "Badread v0.2.0",
+        "release_id": 37889485,
+        "tag": "v0.2.0",
+        "tarball_url": "https://api.github.com/repos/rrwick/Badread/tarball/v0.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rrwick/Badread/releases/37889485",
+        "value": "https://api.github.com/repos/rrwick/Badread/releases/37889485",
+        "zipball_url": "https://api.github.com/repos/rrwick/Badread/zipball/v0.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rrwick",
+          "type": "User"
+        },
+        "date_created": "2019-08-12T04:45:21Z",
+        "date_published": "2019-08-12T04:46:50Z",
+        "description": "This version changes some of the logic to ensure more accurate relative depths between reference contigs, even when those contigs are small and/or linear.",
+        "html_url": "https://github.com/rrwick/Badread/releases/tag/v0.1.5",
+        "name": "Badread v0.1.5",
+        "release_id": 19220254,
+        "tag": "v0.1.5",
+        "tarball_url": "https://api.github.com/repos/rrwick/Badread/tarball/v0.1.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rrwick/Badread/releases/19220254",
+        "value": "https://api.github.com/repos/rrwick/Badread/releases/19220254",
+        "zipball_url": "https://api.github.com/repos/rrwick/Badread/zipball/v0.1.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rrwick",
+          "type": "User"
+        },
+        "date_created": "2019-04-01T03:06:50Z",
+        "date_published": "2019-04-03T06:32:40Z",
+        "description": "This release corresponds to the completion of Badread's review for [JOSS](https://joss.theoj.org/). It has no code changes since v0.1.3 - just a few additions to the documentation.",
+        "html_url": "https://github.com/rrwick/Badread/releases/tag/v0.1.4",
+        "name": "Badread v0.1.4",
+        "release_id": 16519346,
+        "tag": "v0.1.4",
+        "tarball_url": "https://api.github.com/repos/rrwick/Badread/tarball/v0.1.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rrwick/Badread/releases/16519346",
+        "value": "https://api.github.com/repos/rrwick/Badread/releases/16519346",
+        "zipball_url": "https://api.github.com/repos/rrwick/Badread/zipball/v0.1.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rrwick",
+          "type": "User"
+        },
+        "date_created": "2019-03-01T11:04:58Z",
+        "date_published": "2019-03-01T11:09:02Z",
+        "description": "* A little bit of refactoring\r\n* Edits to README and comparison page\r\n* Add a paper for [JOSS](http://joss.theoj.org/)",
+        "html_url": "https://github.com/rrwick/Badread/releases/tag/v0.1.3",
+        "name": "Badread v0.1.3",
+        "release_id": 15855875,
+        "tag": "v0.1.3",
+        "tarball_url": "https://api.github.com/repos/rrwick/Badread/tarball/v0.1.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rrwick/Badread/releases/15855875",
+        "value": "https://api.github.com/repos/rrwick/Badread/releases/15855875",
+        "zipball_url": "https://api.github.com/repos/rrwick/Badread/zipball/v0.1.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rrwick",
+          "type": "User"
+        },
+        "date_created": "2019-02-14T08:33:26Z",
+        "date_published": "2019-02-15T04:50:43Z",
+        "description": "* More automated tests\r\n* Bug fix: don't output 0-length reads\r\n* Bug fix: don't crash when glitch values are between 0 and 1.",
+        "html_url": "https://github.com/rrwick/Badread/releases/tag/v0.1.2",
+        "name": "Badread v0.1.2",
+        "release_id": 15575805,
+        "tag": "v0.1.2",
+        "tarball_url": "https://api.github.com/repos/rrwick/Badread/tarball/v0.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rrwick/Badread/releases/15575805",
+        "value": "https://api.github.com/repos/rrwick/Badread/releases/15575805",
+        "zipball_url": "https://api.github.com/repos/rrwick/Badread/zipball/v0.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rrwick",
+          "type": "User"
+        },
+        "date_created": "2018-07-05T05:07:44Z",
+        "date_published": "2018-07-05T05:09:11Z",
+        "description": "* Some small improvements to the stderr log\r\n* New adapter option: give a number for the adapter sequence and Badread will make random adapters of that length",
+        "html_url": "https://github.com/rrwick/Badread/releases/tag/v0.1.1",
+        "name": "Badread v0.1.1",
+        "release_id": 11786087,
+        "tag": "v0.1.1",
+        "tarball_url": "https://api.github.com/repos/rrwick/Badread/tarball/v0.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rrwick/Badread/releases/11786087",
+        "value": "https://api.github.com/repos/rrwick/Badread/releases/11786087",
+        "zipball_url": "https://api.github.com/repos/rrwick/Badread/zipball/v0.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "rrwick",
+          "type": "User"
+        },
+        "date_created": "2018-07-03T04:27:58Z",
+        "date_published": "2018-07-03T04:28:28Z",
+        "description": "The first release of Badread!",
+        "html_url": "https://github.com/rrwick/Badread/releases/tag/v0.1.0",
+        "name": "Badread v0.1.0",
+        "release_id": 11751002,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/rrwick/Badread/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/rrwick/Badread/releases/11751002",
+        "value": "https://api.github.com/repos/rrwick/Badread/releases/11751002",
+        "zipball_url": "https://api.github.com/repos/rrwick/Badread/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "edlib",
+        "type": "Software_application",
+        "value": "edlib",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scipy",
+        "type": "Software_application",
+        "value": "scipy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Requirements",
+        "type": "Text_excerpt",
+        "value": "Badread runs on MacOS and Linux. It may not work natively on Windows (I haven't tried) but can be run using the [Windows subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). It requires [Python](https://www.python.org/) 3.6 or later.\n\nTo install Badread you'll need [pip](https://pypi.org/project/pip/) and [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git). It also uses a few Python packages ([Edlib](https://github.com/Martinsos/edlib/tree/master/bindings/python), [NumPy](http://www.numpy.org/), [SciPy](https://www.scipy.org/) and [Matplotlib](https://matplotlib.org/)) but these should be taken care of by the installation process.\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "run": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Run without installation",
+        "parent_header": [
+          "Installation"
+        ],
+        "type": "Text_excerpt",
+        "value": "Badread can also be run directly from its repository by using the `badread-runner.py` script, no installation required:\n\n```bash\ngit clone https://github.com/rrwick/Badread.git\nBadread/badread-runner.py -h\n```\n\nIf you run Badread this way, it's up to you to make sure that all [necessary Python packages](#requirements) are installed.\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "download",
+    "contact",
+    "contributors",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:18:48",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 244
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Quick usage",
+        "type": "Text_excerpt",
+        "value": "If you need a reference genome to try out Badread, you can download [this file](https://bit.ly/2Ejwr6V) which is an assembly of the [_Klebsiella pneumoniae_ SGH10](https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN06112188) genome \u2013 a nasty hypervirulent strain ([read more about it here](https://www.nature.com/articles/s41467-018-05114-7)).\n\nBadread's default settings correspond to Oxford Nanopore R10.4.1 reads of mediocre quality:\n```bash\nbadread simulate --reference ref.fasta --quantity 50x \\\n    | gzip > reads.fastq.gz\n```\n\nTo simulate older Oxford Nanopore reads (R9.4.1, worse basecalling):\n```bash\nbadread simulate --reference ref.fasta --quantity 50x \\\n    --error_model nanopore2020 --qscore_model nanopore2020 --identity 90,98,5 \\\n    | gzip > reads.fastq.gz\n```\n\nTo simulate PacBio HiFi reads:\n```bash\nbadread simulate --reference ref.fasta --quantity 50x \\\n    --error_model pacbio2021 --qscore_model pacbio2021 --identity 30,3 \\\n    | gzip > reads.fastq.gz\n```\n\nVery bad reads:\n```bash\nbadread simulate --reference ref.fasta --quantity 50x --glitches 1000,100,100 \\\n    --junk_reads 5 --random_reads 5 --chimeras 10 --identity 80,90,6 --length 4000,2000 \\\n    | gzip > reads.fastq.gz\n```\n\nPretty good reads:\n```bash\nbadread simulate --reference ref.fasta --quantity 50x --glitches 10000,10,10 \\\n    --junk_reads 0.1 --random_reads 0.1 --chimeras 0.1 --identity 20,3 \\\n    | gzip > reads.fastq.gz\n```\n\nVery good reads:\n```bash\nbadread simulate --reference ref.fasta --quantity 50x --error_model random \\\n    --qscore_model ideal --glitches 0,0,0 --junk_reads 0 --random_reads 0 --chimeras 0 \\\n    --identity 30,3 --length 40000,20000 --start_adapter_seq \"\" --end_adapter_seq \"\" \\\n    | gzip > reads.fastq.gz\n```\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Command line",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "```\nusage: badread simulate --reference REFERENCE --quantity QUANTITY [--length LENGTH]\n                        [--identity IDENTITY] [--error_model ERROR_MODEL]\n                        [--qscore_model QSCORE_MODEL] [--seed SEED] [--start_adapter START_ADAPTER]\n                        [--end_adapter END_ADAPTER] [--start_adapter_seq START_ADAPTER_SEQ]\n                        [--end_adapter_seq END_ADAPTER_SEQ] [--junk_reads JUNK_READS]\n                        [--random_reads RANDOM_READS] [--chimeras CHIMERAS] [--glitches GLITCHES]\n                        [--small_plasmid_bias] [-h] [--version]\n\nGenerate fake long reads\n\nRequired arguments:\n  --reference REFERENCE           Reference FASTA file (can be gzipped)\n  --quantity QUANTITY             Either an absolute value (e.g. 250M) or a relative depth (e.g. 25x)\n\nSimulation parameters:\n  Length and identity and error distributions\n\n  --length LENGTH                 Fragment length distribution (mean and stdev, default: 15000,13000)\n  --identity IDENTITY             Sequencing identity distribution (mean,max,stdev for beta\n                                  distribution or mean,stdev for normal qscore distribution, default:\n                                  95,99,2.5)\n  --error_model ERROR_MODEL       Can be \"nanopore2018\", \"nanopore2020\", \"nanopore2023\", \"pacbio2016\",\n                                  \"pacbio2021\", \"random\" or a model filename (default: nanopore2023)\n  --qscore_model QSCORE_MODEL     Can be \"nanopore2018\", \"nanopore2020\", \"nanopore2023\", \"pacbio2016\",\n                                  \"pacbio2021\", \"random\", \"ideal\" or a model filename (default:\n                                  nanopore2023)\n  --seed SEED                     Random number generator seed for deterministic output (default:\n                                  different output each time)\n\nAdapters:\n  Controls adapter sequences on the start and end of reads\n\n  --start_adapter START_ADAPTER   Adapter parameters for read starts (rate and amount, default: 90,60)\n  --end_adapter END_ADAPTER       Adapter parameters for read ends (rate and amount, default: 50,20)\n  --start_adapter_seq START_ADAPTER_SEQ\n                                  Adapter sequence for read starts (default:\n                                  AATGTACTTCGTTCAGTTACGTATTGCT)\n  --end_adapter_seq END_ADAPTER_SEQ\n                                  Adapter sequence for read ends (default: GCAATACGTAACTGAACGAAGT)\n\nProblems:\n  Ways reads can go wrong\n\n  --junk_reads JUNK_READS         This percentage of reads will be low-complexity junk (default: 1)\n  --random_reads RANDOM_READS     This percentage of reads will be random sequence (default: 1)\n  --chimeras CHIMERAS             Percentage at which separate fragments join together (default: 1)\n  --glitches GLITCHES             Read glitch parameters (rate, size and skip, default: 10000,25,25)\n  --small_plasmid_bias            If set, then small circular plasmids are lost when the fragment\n                                  length is too high (default: small plasmids are included regardless\n                                  of fragment length)\n\nOther:\n  -h, --help                      Show this help message and exit\n  --version                       Show program's version number and exit\n```\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Fragment lengths",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Badread generates fragment lengths from a [gamma distribution](https://en.wikipedia.org/wiki/Gamma_distribution). While a gamma distribution is usually parameterised with shape and scale (_k_ and _\u03b8_) or shape and rate (_\u03b1_ and _\u03b2_), I don't find these particularly intuitive. So Badread instead defines fragment lengths using mean and standard deviation.\n\nThere are two ways to think about fragment lengths: the distribution of the fragment lengths and the distribution of _bases_ in the fragments. The latter distribution is higher because larger fragments contribute more bases. The read N50 is the median of the base distribution \u2013 half the bases will be in reads shorter than this and half in longer reads.\n\nBadread's default is `--length 15000,13000` (mean=15000, stdev=13000) which corresponds to a decent Nanopore run (N50=22.6 kbp). To see the equations and interactively explore how different parameters affect the distributions, check out [this Desmos plot](https://www.desmos.com/calculator/z2a3yqssie).\n\nNote that these parameters control the length of the _fragments_, not the final _reads_. These differ because: adapters are added to fragments, glitches can lengthen/shorten fragments, adding read errors can change the length (especially if the error model is biased towards insertions or deletions) and chimeras are made by concatenating multiple fragments together.\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Read identities",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Badread can generate read identities in two alternative ways.\n\nThe first way uses a [beta distribution](https://en.wikipedia.org/wiki/Beta_distribution) to sample read identities. Like with fragment lengths, Badread defines the distribution with mean and standard deviation instead of using the more formal (and less intuitive) shape parameters (_\u03b1_ and _\u03b2_). In addition, Badread scales the distribution down using a maximum value, for a total of three parameters. To use this method, give three comma-delimited values (identity mean, max, stdev), e.g. `--identity 95,99,2.5`.\n\nThe second way uses a [normal distribution](https://en.wikipedia.org/wiki/Normal_distribution) to sample read [qscores](https://en.wikipedia.org/wiki/Phred_quality_score). To use this method, give two comma-delimited values (qscore mean and stdev), e.g. `--identity 20,4`. This approach is better suited to high accuracy reads like ONT duplex or PacBio HiFi.\n\nBadread's default is `--identity 95,99,2.5` which corresponds to an okay (but not great) R10.4.1 Nanopore sequencing run. To see the equations and interactively explore how different parameters affect the distribution, check out these Desmos plots:\n* [three-parameter identity beta distribution](https://www.desmos.com/calculator/u9fivqmisa)\n* [two-parameter qscore normal distribution (qscore on x-axis)](https://www.desmos.com/calculator/kpganphxj0)\n* [two-parameter qscore normal distribution (identity on x-axis)](https://www.desmos.com/calculator/kg9s0dvbup)\n\nFor detail on how Badread defines identity, check out [this page on the wiki](https://github.com/rrwick/Badread/wiki/Definition-of-identity).\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "QScore model",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The possible values for the `--qscore_model` argument are:\n* `nanopore2023`: a model trained on ONT R10.4.1 reads from 2023 (the default)\n* `nanopore2020`: a model trained on ONT R9.4.1 reads from 2020\n* `nanopore2018`: a model trained on ONT R9.4/R9.4.1 reads from 2018\n* `pacbio2016`: a model trained on PacBio RS II reads from 2016\n* `pacbio2021`: a model trained on PacBio Sequel IIe HiFi reads from 2021\n* `random`: a model where qscores are meaningless and give no indication of read/base quality\n* `ideal`: a model where scores are unrealistically informative about read/base quality\n* a file path for a trained model\n\nFor more information on how qscore models work, see [this page on the wiki](https://github.com/rrwick/Badread/wiki/QScore-models). For instructions on building your own qscore model, see [this page](https://github.com/rrwick/Badread/wiki/Generating-error-and-qscore-models).\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Adapters",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Adapter sequences are controlled with the `--start_adapter_seq` and `--end_adapter_seq` options. The default adapters are those for the Nanopore ligation adapters. To see what those sequences are and some alternatives, check out the [adapter sequences page on the wiki](https://github.com/rrwick/Badread/wiki/Adapter-sequences). If you supply numbers for the adapter sequences (e.g. `--start_adapter_seq 20`, then Badread will make a random sequence of that length to be the adapter.\n\nHow much adapter is added to the start/end of a read is controlled by two parameters: rate and amount. These are set using the `--start_adapter` and `--end_adapter` options, with each taking two comma-delimited numbers (rate first and amount second). Rate is the percent chance that the adapter will appear at all. E.g. a start-adapter rate of 90 means that 10% of reads will have no adapter at their start and 90% of reads will have some adapter at their start. Think of it like a Bernoulli distribution.\n\nAmount controls how much of the adapter, on average, appears on the read. E.g. a start-adapter amount of 60 means that when an adapter is on the start of the read, it has an expected length of 60% its full length. Start-adapters are truncated at the start and end-adapters are truncated at the end. The amount of adapter for each read is controlled by a beta distribution, and you can interactively explore different values using [this Desmos plot](https://www.desmos.com/calculator/qzza86553k).\n\nTo turn off adapters entirely, set the sequences to nothing:<br>\n`--start_adapter_seq \"\" --end_adapter_seq \"\"`\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Junk and random reads",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Badread can add two types of completely wrong reads to the output: junk and random. Junk reads are low-complexity sequence and simulate something wrong with the sequencer. A junk fragment might look like `AATAATAATAATAATAATAAT` (and so on). Random reads are made of random sequence (25% chance of each base at each position). By default, Badread includes 1% of each type, so 2% of the total reads will be junk or random.\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Chimeras",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Chimeric reads can occur in real datasets for two possible reasons: 1) fragments of DNA were actually ligated together before sequencing (probably more common in library preps that use ligase), and 2) two or more reads were sequenced in quick succession such that the sequencing software didn't recognise them as separate (an _in silico_ chimera). Chimeras can occur on both PacBio and Nanopore sequencing platforms.\n\nAs an example, imagine you used `--chimeras 2` to set chimeras to 2%. After making a sequence fragment, Badread then has a 2% chance of making another fragment and concatenating on to the first. It then has a 2% chance of concatenating on yet another fragment, and so on. This means that about 2% of the reads will be chimeras of two or more fragments, (2%)<sup>2</sup> will be chimeras of three or more, (2%)<sup>3</sup> will be chimeras of four or more, and so on. If you are using start/end adapters, they will sometimes (but not always) be added between the fragments.\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Small plasmid bias",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Small circular plasmids can be underrepresented in long read sequencing \u2013 a topic addressed in [Completing bacterial genome assemblies with multiplex MinION sequencing](http://mgen.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.000132). In short, it is necessary to avoid excessive DNA shearing in order to achieve long read lengths. But (at least for ligation-based preps) an unsheared circular plasmid can't be sequenced because it has no blunt ends for adapter ligation. So plasmids on the low end of the read-length distribution will be sequenced at lower-than-expected depth.\n\nBadread simulates this effect if you use the `--small_plasmid_bias` option. When turned on, Badread tosses out fragments that land in a circular reference which is smaller than the fragment size. The degree of bias is therefore strongly dependent on the fragment length distribution (specifically how much of the distribution is less than the plasmid's size). Note that this only affects _circular_ sequences \u2013 linear sequences are unaffected.\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Glitches",
+        "parent_header": [
+          "Detailed usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "Glitches are points in the read where the sequence is briefly messed up. They are controlled by three parameters:\n* rate: how often glitches occur\n* size: how much random sequence is added to the read\n* skip: how much read sequence is lost\n\nThese are specified with the `--glitches` option by giving all three parameters in a comma-delimited list (no spaces). E.g. `--glitches 5000,100,100`. Each of these parameters is a mean for a [geometric random variable](https://en.wikipedia.org/wiki/Geometric_distribution). E.g. a glitch rate of 1000 doesn't mean glitches evenly occur at 1000 bp intervals, it means glitches are _on average_ 1000 bp apart. Turn glitches off entirely with `--glitches 0,0,0`.\n\nTake a look at the [glitches page on the wiki](https://github.com/rrwick/Badread/wiki/Glitches) to see some dotplots which illustrate the concept.\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v0.1.3"
+      },
+      "source": "https://raw.githubusercontent.com/rrwick/Badread/main/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

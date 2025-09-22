@@ -1,0 +1,735 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "",
+            "value": "Sebastian Gatscha"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "sebastian_gatscha@gmx.at",
+        "type": "String",
+        "value": "Sebastian Gatscha"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/YsoSirius/windfarmGA"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/YsoSirius/windfarmGA"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/YsoSirius/windfarmGA/actions",
+          "https://app.codecov.io/gh/YsoSirius/windfarmGA"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-02-17T16:56:52Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-13T02:27:00Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R Package to Optimize Windfarm Layouts"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+        "type": "String",
+        "value": "The genetic algorithm is designed to optimize wind farms of any shape. It requires a predefined amount of turbines, a unified rotor radius and an average wind speed value for each incoming wind direction. A terrain effect model can be included that downloads an 'SRTM' elevation model and loads a Corine Land Cover raster to approximate surface roughness."
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "The genetic algorithm is designed to optimize wind farms of any shape. It requires a predefined amount of turbines, a unified rotor radius and an average wind speed value for each incoming wind direction. A terrain effect model can be included that downloads an 'SRTM' elevation model and loads a Corine Land Cover raster to approximate surface roughness."
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Description",
+        "type": "Text_excerpt",
+        "value": "The genetic algorithm is designed to optimize wind farms of any shape.\nIt requires a predefined number of turbines, a uniform rotor radius and \nan average wind speed per wind direction.\nIt can include a terrain effect model, which requires an \nelevation raster and a surface roughness raster. The elevation \ndata is used to find mountains and valleys and to adjust the \nwind speeds accordingly by 'wind multipliers' and to determine \nthe air densities at rotor heights. The surface roughness raster with an additional elevation\nroughness value is used to re-evaluate the surface roughness and to individually\ndetermine the wake-decay constant for each turbine.\n\nTo start an optimization use the function `genetic_algorithm`. \n\n<div>\n  <img src=\"https://raw.githubusercontent.com/YSoSirius/windfarmGA/master/inst/img/result2.png\" style=\"width: 49%;display: inline-block;\"/>\n  <img src=\"https://raw.githubusercontent.com/YSoSirius/windfarmGA/master/inst/img/result1.png\"  style=\"width: 49%;display: inline-block;\"/>\n</div>\n\nSince version 1.1, hexagonal grid cells are possible, with \ntheir center points being possible locations for wind turbines. \nFurthermore, rasters can be included, which contain information on the Weibull \nparameters. For Austria this data is already included in the package. \n    "
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Create an input Polygon",
+        "parent_header": [
+          "Description"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Input Polygon by source\n```R\nlibrary(sf)\ndsn <- \"Path to the Shapefile\"\nlayer <- \"Name of the Shapefile\"\nPolygon1 <- sf::st_read(dsn = dsn, layer = layer)\nplot(Polygon1, col = \"blue\")\n```\n\n- Or create a random Polygon\n```R\nlibrary(sf)\nPolygon1 <- sf::st_as_sf(sf::st_sfc(\n  sf::st_polygon(list(cbind(\n    c(0, 0, 2000, 2000, 0),\n    c(0, 2000, 2000, 0, 0)))),\n  crs = 3035\n))\nplot(Polygon1, col = \"blue\", axes = TRUE)\n```\n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Create random Wind data",
+        "parent_header": [
+          "Description"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Exemplary input Wind data with *uniform* wind speed and *single* wind direction\n```R\nwind_df <- data.frame(ws = c(12, 12), wd = c(0, 0), probab = c(25, 25))\nwindrosePlot <- plot_windrose(data = wind_df, spd = wind_df$ws,\n                              dir = wind_df$wd, dirres=10, spdmax = 20)\n```\n\n- Exemplary input Wind data with *random* wind speeds and *random* wind directions\n```R\nwind_df <- data.frame(ws = sample(1:25, 10), wd = sample(1:260, 10)))\nwindrosePlot <- plot_windrose(data = wind_df, spd = wind_df$ws,\n                              dir = wind_df$wd)\n```\n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Rectangular Grid Cells",
+        "parent_header": [
+          "Description",
+          "Grid Spacing"
+        ],
+        "type": "Text_excerpt",
+        "value": "Verify that the grid spacing is appropriate. Adapt the following input variables if necessary:\n- *Rotor*: The rotor radius in meters.\n- *fcrR*: The grid spacing factor, which should at least be 2, so that a single grid covers at least the whole rotor diameter.\n- *prop*: The proportionality factor used for grid calculation. It determines the minimum percentage that a grid cell must cover of the area.\n\n*Make sure that the Polygon is projected in meters.*\n```R\nRotor <- 20\nfcrR <- 9\nGrid <- grid_area(Polygon1, size = (Rotor * fcrR), prop = 1, plotGrid = TRUE)\nstr(Grid)\n```"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Hexagonal Grid Cells",
+        "parent_header": [
+          "Description",
+          "Grid Spacing"
+        ],
+        "type": "Text_excerpt",
+        "value": "```R\nRotor <- 20\nfcrR <- 9\nHexGrid <- hexa_area(Polygon1, size = (Rotor * fcrR), plotGrid = TRUE)\nstr(HexGrid)\n```\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/YSoSirius/windfarmGA/master/inst/img/grids.png\" width=\"300\"/>\n</p>\n\n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Terrain Effect Model",
+        "parent_header": [
+          "Description"
+        ],
+        "type": "Text_excerpt",
+        "value": "If the input variable **topograp** for the functions `windfarmGA` or `genetic_algorithm` is TRUE, the genetic algorithm will take terrain effects into account. For this purpose an elevation model and a Corine Land Cover raster are downloaded automatically, but can also be given manually. ( [Download a CLC raster](https://www.eea.europa.eu/data-and-maps/data/clc-2006-raster-4) ).\n            \n\nIf you want to include your own Land Cover Raster, you must assign the Raster Image path to the input variable **sourceCCL**. The algorithm uses an adapted version of the Raster legend (\"clc_legend.csv\"), which is stored in the package subdirectory (/extdata). To use own values for the land cover roughness lengths, insert a column named **Rauhigkeit_z** to the .csv file. Assign a surface roughness length to all land cover types. \nBe sure that all rows are filled with numeric values and save the .csv file with \";\" delimiter. Assign the .csv file path to the input variable **sourceCCLRoughness**.\n\n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Plot the Results on a Leaflet Map",
+        "parent_header": [
+          "Description",
+          "Start an Optimization"
+        ],
+        "type": "Text_excerpt",
+        "value": "```R\n## Plot the best wind farm on a leaflet map (ordered by energy values)\nplot_leaflet(result = resulthex, Polygon1, which = 1)\n\n## Plot the last wind farm (ordered by chronology).\nplot_leaflet(result = resulthex, Polygon1, orderitems = FALSE, which = 1)\n```\n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Plotting Methods of the Genetic Algorithm",
+        "parent_header": [
+          "Description"
+        ],
+        "type": "Text_excerpt",
+        "value": "Several plotting functions are available:\n```R\n - plot_windfarmGA(result, Polygon1)\n - plot_result(result, Polygon1, best = 1)\n - plot_evolution(result, ask = TRUE, spar = 0.1)\n - plot_development(result)\n - plot_parkfitness(result, spar = 0.1)\n - plot_fitness_evolution(result)\n - plot_cloud(result, pl = TRUE)\n - plot_heatmap(result = result, si = 5)\n - plot_leaflet(result = result, Polygon1 = Polygon1, which = 1)\n```\n\nA full documentation of the genetic algorithm is given in my [master thesis](https://homepage.boku.ac.at/jschmidt/TOOLS/Masterarbeit_Gatscha.pdf).\n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.937528094233902,
+      "result": {
+        "original_header": "Shiny Windfarm Optimization",
+        "type": "Text_excerpt",
+        "value": "I also made a [Shiny App](https://windfarmga.shinyapps.io/windga_shiny/) for the Genetic Algorithm. \nUnfortunately, as an optimization takes quite some time and the app is currently hosted by shinyapps.io under a public license, there is only 1 R-worker at hand. So only 1 optimization can be run at a time. \n \n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://lifecycle.r-lib.org/articles/stages.html"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/YsoSirius/windfarmGA/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 7
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/YsoSirius/windfarmGA/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "YsoSirius/windfarmGA"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "windfarmGA"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ysosirius.github.io/windfarmGA/index.html"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "windfarmGA"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/YSoSirius/windfarmGA/master/inst/img/result2.png"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/YSoSirius/windfarmGA/master/inst/img/result1.png"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/YSoSirius/windfarmGA/master/inst/img/grids.png"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "The latest version can be installed from GitHub with:\n```R\ndevtools::install_github(\"YsoSirius/windfarmGA\")\ninstall.packages(\"windfarmGA\")\n```\n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/YsoSirius/windfarmGA/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/YsoSirius/windfarmGA/issues"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/YsoSirius/windfarmGA/issues"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "windfarm-layout",
+          "optimization",
+          "genetic-algorithm",
+          "renewable-energy",
+          "r",
+          "rstats",
+          "r-package"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "YEAR: 2017\nCOPYRIGHT HOLDER: Sebastian Gatscha"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/YSoSirius/windfarmGA/master/inst/img/windfarmGA.png"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "windfarmGA"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "windfarmGA: Genetic Algorithm for Wind Farm Layout Optimization"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "YsoSirius"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+        "type": "String",
+        "value": "windfarmGA"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 282830,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 6269,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "trafficonese",
+          "type": "User"
+        },
+        "date_created": "2025-01-17T13:34:36Z",
+        "date_published": "2025-01-18T12:11:39Z",
+        "description": "- Depends on R 4.1.0\n- Removed package dependencies `rgdal` and `rgeos`\n- Replaced dependency `raster` with `terra`\n- Moved dependencies `foreach`, `parallel`, `doParallel`, `elevatr` to Suggests\n- 3D-circle intersection calculation. Especially relevant if the terrain model is activated.\n- Fix `grid_area` and `hexa_area` functions for sf-1.0 and s2\n- Removed most visibility functions in favor of `terra::viewshed`\n- Removed the function `windfarmGA`, as it was redundant and just difficult to test.\n- Changed most `cat()` and `print()` calls with `message()`\n- Reset old `par` settings\n",
+        "html_url": "https://github.com/YsoSirius/windfarmGA/releases/tag/v4.0.0",
+        "name": "windfarmGA 4.0.0",
+        "release_id": 195458686,
+        "tag": "v4.0.0",
+        "tarball_url": "https://api.github.com/repos/YsoSirius/windfarmGA/tarball/v4.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/YsoSirius/windfarmGA/releases/195458686",
+        "value": "https://api.github.com/repos/YsoSirius/windfarmGA/releases/195458686",
+        "zipball_url": "https://api.github.com/repos/YsoSirius/windfarmGA/zipball/v4.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "trafficonese",
+          "type": "User"
+        },
+        "date_created": "2021-04-06T17:21:23Z",
+        "date_published": "2021-05-06T12:45:22Z",
+        "description": "- The dependencies sp, spatstat were removed and replaced by sf. All spatial outputs are now Simple Features. A Shapefile Polygon can still be passed as input to genetic_algorithm / windfarmGA, but more underlying functions now require the Polygon to be of type Simple Feature.\r\n- The functions grid_area & hexa_area are now calculated with sf::st_make_grid.\r\n- The new dependency elevatr has been added because it provides elevation data with a higher resolution compared to raster::getData.\r\n- Several dependencies that are not essential for the algorithm were moved to Suggests.\r\n- Bugfix for the calculation of the visibility analysis. #17\r\n- The viewshed parameter h1 can now also be a numeric vector with different height offsets. #18\r\n- The grid_area argument resol changed to size.\r\n- The arguments for get_dist_angles have changed to match the arguments of turbine_influences.",
+        "html_url": "https://github.com/YsoSirius/windfarmGA/releases/tag/3.0.0",
+        "name": "3.0.0",
+        "release_id": 42538415,
+        "tag": "3.0.0",
+        "tarball_url": "https://api.github.com/repos/YsoSirius/windfarmGA/tarball/3.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/YsoSirius/windfarmGA/releases/42538415",
+        "value": "https://api.github.com/repos/YsoSirius/windfarmGA/releases/42538415",
+        "zipball_url": "https://api.github.com/repos/YsoSirius/windfarmGA/zipball/3.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "YsoSirius",
+          "type": "User"
+        },
+        "date_created": "2019-12-16T18:01:42Z",
+        "date_published": "2019-12-16T18:49:11Z",
+        "description": "Fix for R 3.4.0",
+        "html_url": "https://github.com/YsoSirius/windfarmGA/releases/tag/v.2.2.3",
+        "release_id": 22265733,
+        "tag": "v.2.2.3",
+        "tarball_url": "https://api.github.com/repos/YsoSirius/windfarmGA/tarball/v.2.2.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/YsoSirius/windfarmGA/releases/22265733",
+        "value": "https://api.github.com/repos/YsoSirius/windfarmGA/releases/22265733",
+        "zipball_url": "https://api.github.com/repos/YsoSirius/windfarmGA/zipball/v.2.2.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "YsoSirius",
+          "type": "User"
+        },
+        "date_created": "2019-02-21T22:25:27Z",
+        "date_published": "2019-03-15T17:18:26Z",
+        "description": "This package was submitted to CRAN on 2019-02-21.\r\n\r\nPerformance Tuning / Restructuring / Viewshed Analysis",
+        "html_url": "https://github.com/YsoSirius/windfarmGA/releases/tag/e63a143840",
+        "name": "v.2.2.2",
+        "release_id": 16146327,
+        "tag": "e63a143840",
+        "tarball_url": "https://api.github.com/repos/YsoSirius/windfarmGA/tarball/e63a143840",
+        "type": "Release",
+        "url": "https://api.github.com/repos/YsoSirius/windfarmGA/releases/16146327",
+        "value": "https://api.github.com/repos/YsoSirius/windfarmGA/releases/16146327",
+        "zipball_url": "https://api.github.com/repos/YsoSirius/windfarmGA/zipball/e63a143840"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:48:12",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 29
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Start an Optimization",
+        "parent_header": [
+          "Description"
+        ],
+        "type": "Text_excerpt",
+        "value": "An optimization can be initiated with the function **genetic_algorithm**\n\n- without terrain effects\n```R\nresult <- genetic_algorithm(\n  Polygon1 = Polygon1, n = 12, Rotor = 20, fcrR = 9, iteration = 10,\n  vdirspe = wind_df, crossPart1 = \"EQU\", selstate = \"FIX\", mutr = 0.8,\n  Proportionality = 1, SurfaceRoughness = 0.3, topograp = FALSE,\n  elitism =TRUE, nelit = 7, trimForce = TRUE,\n  referenceHeight = 50, RotorHeight = 100\n  )\n```\n\n- with terrain effects\n```R\nsourceCCL <- \"Source of the CCL raster (TIF)\"\nsourceCCLRoughness <- \"Source of the Adaped CCL legend (CSV)\"\n\nresult <- genetic_algorithm(\n  Polygon1 = Polygon1, n = 12, Rotor = 20, fcrR = 9, iteration = 10,\n  vdirspe = wind_df, crossPart1 = \"EQU\", selstate = \"FIX\", mutr = 0.8,\n  Proportionality = 1, SurfaceRoughness = 0.3, topograp = TRUE,\n  elitism = TRUE, nelit = 7, trimForce = TRUE,\n  referenceHeight = 50, RotorHeight = 100, sourceCCL = sourceCCL,\n  sourceCCLRoughness = sourceCCLRoughness\n)\n```\n\n\n```R\n## Run an optimization with your own Weibull parameter rasters. The shape and scale \n## parameter rasters of the weibull distributions must be added to a list, with the first\n## list item being the shape parameter (k) and the second list item being the scale\n## parameter (a). Adapt the paths to your raster data and run an optimization.\nkraster <- \"/..pathto../k_param_raster.tif\"\naraster <- \"/..pathto../a_param_raster.tif\"\nweibullrasters <- list(raster(kraster), raster(araster))\n\nresult_weibull <- genetic_algorithm(\n  Polygon1 = Polygon1, GridMethod =\"h\", n=12,\n  fcrR=5, iteration=10, vdirspe = wind_df, crossPart1 = \"EQU\",\n  selstate=\"FIX\", mutr=0.8, Proportionality = 1, Rotor=30,\n  SurfaceRoughness = 0.3, topograp = FALSE,\n  elitism=TRUE, nelit = 7, trimForce = TRUE,\n  referenceHeight = 50,RotorHeight = 100,\n  weibull = TRUE, weibullsrc = weibullrasters)\nplot_windfarmGA(result = result_weibull, Polygon1 = Polygon1)\n```\n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Plot the Results on a Leaflet Map",
+        "parent_header": [
+          "Description",
+          "Start an Optimization"
+        ],
+        "type": "Text_excerpt",
+        "value": "```R\n## Plot the best wind farm on a leaflet map (ordered by energy values)\nplot_leaflet(result = resulthex, Polygon1, which = 1)\n\n## Plot the last wind farm (ordered by chronology).\nplot_leaflet(result = resulthex, Polygon1, orderitems = FALSE, which = 1)\n```\n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Full Optimization example:",
+        "type": "Text_excerpt",
+        "value": "```R\nlibrary(sf)\nlibrary(windfarmGA)\n\nPolygon1 <- sf::st_as_sf(sf::st_sfc(\n  sf::st_polygon(list(cbind(\n    c(4651704, 4651704, 4654475, 4654475, 4651704),\n    c(2692925, 2694746, 2694746, 2692925, 2692925)))), \n  crs = 3035\n))\nplot(Polygon1, col = \"blue\", axes = TRUE)\n\nwind_df <- data.frame(ws = 12, wd = 0)\nwindrosePlot <- plot_windrose(data = wind_df, spd = wind_df$ws,\n                             dir = wind_df$wd, dirres = 10, spdmax = 20)\nRotor <- 20\nfcrR <- 9\nGrid <- grid_area(shape = Polygon1, size = (Rotor*fcrR), prop = 1, plotGrid = TRUE)\n\nresult <- genetic_algorithm(Polygon1 = sp_polygon, \n                            n = 20,\n                            Rotor = Rotor, fcrR = fcrR, \n                            iteration = 50, \n                            vdirspe = wind_df,\n                            referenceHeight = 50, RotorHeight = 100)\n\n# The following function will execute all plotting function further below:\nplot_windfarmGA(result, Polygon1, whichPl = \"all\", best = 1, plotEn = 1)\n\n# The plotting functions can also be called individually:\nplot_result(result, Polygon1, best = 1, plotEn = 1, topographie = FALSE)\nplot_evolution(result, ask = TRUE, spar = 0.1)\nplot_parkfitness(result, spar = 0.1)\nplot_fitness_evolution(result)\nplot_cloud(result, pl = TRUE)\nplot_heatmap(result = result, si = 5)\nplot_leaflet(result = result, Polygon1 = Polygon1, which = 1)\n```\n"
+      },
+      "source": "https://github.com/YsoSirius/windfarmGA/blob/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+        "type": "String",
+        "value": "4.0.0.9000"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "4.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/YsoSirius/windfarmGA/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

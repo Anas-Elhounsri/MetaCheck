@@ -1,0 +1,428 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Peter Teuben"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "References",
+        "parent_header": [
+          "Quick Array Combinations (QAC)"
+        ],
+        "type": "Text_excerpt",
+        "value": "* CASA reference manual and cookbook : http://casa.nrao.edu/docs/cookbook/\n   * Measurement Set: https://casa.nrao.edu/casadocs/latest/reference-material/measurement-set\n   * MS V2 document: [MS v2 memo](https://casa.nrao.edu/casadocs/latest/reference-material/229-1.ps/@@download/file/229.ps)\n* CASA simulations: https://casa.nrao.edu/casadocs/latest/simulation\n  * Simulations (in 4.4) https://casaguides.nrao.edu/index.php/Simulating_Observations_in_CASA_4.4\n  * See also our [workflow4](workflow4.md)\n* CASA single dish imaging:  https://casa.nrao.edu/casadocs/latest/single-dish-imaging\n  * Mangum et el. 2007:  [OTF imaging technique](https://www.aanda.org/articles/aa/pdf/2007/41/aa7811-07.pdf)\n* CASA feather: https://casa.nrao.edu/casadocs/latest/image-combination/feather\n* CASA data weights and combination:  https://casaguides.nrao.edu/index.php/DataWeightsAndCombination\n* Nordic Tools SD2VIS: https://www.oso.nordic-alma.se/software-tools.php\n* Kauffman's *Adding Zero-Spacing* workflow: https://sites.google.com/site/jenskauffmann/research-notes/adding-zero-spa\n* Radio Imaging Combination Analysis (RICA) : https://gitlab.com/mileslucas/rica\n* Papers of (historic) interest:\n  * [Ekers and Rots 1979](https://ui.adsabs.harvard.edu/abs/1979ASSL...76...61E)\n  * [Vogel et al. 1984](https://ui.adsabs.harvard.edu/abs/1984ApJ...283..655V)\n  * [Braun and Walterbos 1985](https://ui.adsabs.harvard.edu/abs/1985A%26A...143..307B)\n  * [Jorsater and van Moorsel 1995](https://ui.adsabs.harvard.edu/abs/1995AJ....110.2037J)\n  * [Kurono, Morita, Kamazaki 2009](https://ui.adsabs.harvard.edu/abs/2009PASJ...61..873K)\n  * [Koda et al. 2011](https://ui.adsabs.harvard.edu/abs/2011ApJS..193...19K)\n  * [Koda et al. 2019](https://ui.adsabs.harvard.edu/abs/2019PASP..131e4505K)\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/teuben/QAC"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/teuben/QAC"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-02-28T16:52:43Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2021-05-12T20:07:17Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Quick Array Combinations:  front end to CASA to run tp2vis, feather and various array combination methods"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "QAC (Quick Array Combinations) is a front end to CASA (ascl:1107.013) and calls tools and tasks to help in combining data from a single dish and interferometer. QAC hides some of the complexity of writing CASA scripts and provide a simple interface to array combination tools and tasks in CASA. This project was conceived alongside the TP2VIS (ascl:1904.021) project, where it was used to provide an easier way to call CASA and perform regression tests."
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9685252739549207,
+      "result": {
+        "original_header": "Quick Array Combinations (QAC)",
+        "type": "Text_excerpt",
+        "value": "QAC provides a set of functions that mostly call CASA tools and tasks\nto help you combining data from a single dish and interferometer.\nQAC hides some of the complexity of writing CASA scripts and\nprovide a simpler interface to array combination tools and tasks in\nCASA. \nThis project was conceived alongside the TP2VIS project, where it was\nused to provide an easier way to call CASA, and perform regression\ntests. We still keep these within QAC as they are not distributed with\n[TP2VIS](https://github.com/tp2vis/distribute). In an earlier version\nthese functions were called QTP.  We also used QAC for an ngVLA design\nstudy, and was matured during the DC2019 project to deal with the\nnew style CASA6/python3. \n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/teuben/QAC/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/teuben/QAC/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 2
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/teuben/QAC/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "teuben/QAC"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Quick Array Combinations (QAC)"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/QAC/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ascl:1908.001"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/QAC/master/figures/example-smc2.png"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Installation instructions for QAC and related functions\n\n## 0) Executive Summary\n\nOn a linux machine with \"nothing\" installed, the following commands should get you to be able\nto run the benchmark.  Explanations and alternate ways to install are detailed below. This benchmark\nshould take around 2 minutes to run.\n\n    cd ~\n    git clone https://github.com/teuben/QAC\n    \n    # phase 1: install CASA (skip this if \"casa\" is already in your path)\n    cd QAC/casa\n    ./install_casa\n    source casa_start.sh\n    cd ..\n    \n    # phase 2: prepare install and run benchmark\n    make data\n    make install\n    cd ~/.casa\n    ln -s ~/QAC\n    cd ~/QAC/test\n    ln -s ../data/M100_TP_CO_cube.bl.image\n    ln -s ../data/M100_aver_12.ms\n    ln -s ../data/M100_aver_7.ms\n    make bench\n\n## 1) CASA:\n\nYou will need to install CASA before you can use QAC.\nSee https://casa.nrao.edu/casa_obtaining.shtml\n\nAn example is in the [casa/install_casa](casa/install_casa) shell script.\n\nNOTE:  CASA5 and below use init.py and prelude.py, CASA6 uses config.py and startup.py.\n       \n\n## 2) QAC and TP2VIS\n\nAlthough you can manually execfile() the appropriate python file(s),\nthis can become cumbersome, and we now encourage you to use CASA's\n~/.casa/init.py method. With this you will automatically have anything\npersonal available within CASA each time you use CASA.\n\nWithin QAC we have made this one step easier, by creating a\ncasa.init.py file that you can directly load.\n\nFor example, the following shell commands would grab QAC from github, and\nadd an execfile() command to your ~/.casa/init.py so this is loaded\ninto CASA each time you start CASA. \n\n    mkdir -p  ~/.casa\n    cd  ~/.casa\n    git clone https://github.com/teuben/QAC\n    cd QAC\n    make install\n    make tp2vis\n\nThe next time CASA starts, you will see the QAC routines are loaded,\nas well have access to the tp2vis routines.\n\nYou can look at QAC's casa.init.py file and steal some ideas how\nto load other interesting CASA add-ons.\n\n\n## 3) TP2VIS:\n\nAn alternative to loading TP2VIS via QAC is loading it manually:\n\n    execfile(\"tp2vis.py\")\n\nthis is the recommending procedure in the public release of\n[tp2vis](https://github.com/tp2vis/distribute).\n\n\n\n## FUTURE:\n\nIn the current CASA environment there are two other ways QAC could be\ninstalled:\n \n- the \"buildmytasks\" method (supposedly deprecated?)\n- python's \"setup.py\" method (e.g. ADMIT uses this)\n\nbut none are supported in this development version of QAC. They might\nbe in some future release, depending on further development of CASA.\nAs it stands now, using the execfile() style to load the correct files\nis the more pragmatic approach, well realizing this will have to be\nreplaced when CASA switches to Python 3.\n\nMost scripts that use QAC start with a pdir= that is created, but under certain\ncircumstances has expensive datasets that could be re-used. For these it would\nbe useful to be re-entrant, like the dc2019 \"script4paper\" examples.\n\nE.g. pdir='\"sky4a\"'\n     sdir='\"sky4\"'\n     sdata='[\"sky4.aca.cycle6.ms\",\"sky4.alma.cycle6.1.ms\",\"sky4.alma.cycle6.4.ms\"]'\n\n\n\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/INSTALL.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Installation\n\nHere is a description of installing QAC with CASA, all self-contained.\nThe more complicated one is [here](../INSTALL.md). This description is also meant\nfor those not so familiar with the Unix shell.\n\n\n## QAC\n\nThe QAC toolkit can be obtained directly from github:\n\n      git clone https://github.com/teuben/QAC\n\nthis will have created the QAC directory.   A few things need to be done to prepare QAC to work with CASA:\n\n      cd QAC\n      make install\n\nIgnore the request to run \"make install_casa\", we will do this manually in the next step.\n     \n\n## CASA\n\nAssuming we don't have CASA yet, we will install CASA using a script available in QAC\n\n      cd casa\n      ./install_casa https://casa.nrao.edu/download/distro/linux/release/el7/casa-release-5.4.1-32.el7.tar.gz\n      echo $SHELL\n\nif you see the bash shell being reported, use\n      \n      source casa_start.sh\n\nand if you see the csh or tcsh shell being reported, use\n\n      source casa_start.csh\n\nnow we can ask what version of CASA we have\n\n      casa-config --version\n\nand you should see 5.3.0-rel-143 in this example.\n\n## Test\n\nTo test if CASA and QAC were installed properly, from the QAC directory type\n\n      cd ..\n      make test\n\nand it should some sensible things, no errors.\n\n## Example model data\n\nFor most examples we will use a file **skymodel.fits** from the models directory:\n\n      cd models\n      make skymodel\n\nAnd in CASA there is a program **casaviewer** to look at these fits images. You can run that from\nthe unix command line in the terminal:\n\n      casaviewer skymodel.fits\n\nNow you have called the viewer from the unix command line. A more natural way perhaps is\nto do this from within CASA:\n\n      casa\n      imview('skymodel.fits')\n      exit\n\nfor unix the **casa** program is just another unix program, in fact, it's an ipython shell in disguise. You\nare just issuing interactive python commands. so for example, from the CASA prompt, you can do\nthings like\n\n      help(imview)\n      print(math.pi)\n\nThere is a lot of  documention on casa. The **help()** function is useful (but brief reminder if you need\nit right in the screen). Online you can see this expanded on\nhttps://casa.nrao.edu/casadocs-devel/stable/global-task-list/task_imview/about\n\n## Installing it in your Unix shell\n\nThis session made the **casa** command available to you in the terminal, but the next time you login, it will\nbe gone.  To make this permanent add the following line to your ~/.cshrc or ~/.bashrc file, which ever the appropriate\none to which shell you use:\n\n   \t echo $SHELL\n\n\t # if bash:\n\t source /somewhere/QAC/casa/casa_start.sh\n\n\t # if (t)csh\n\t source /somewhere/QAC/casa/casa_start.csh\n\nwhere you will of course need to fill in the **/somewhere/** part.\n\t \n      \n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/docs/install.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/teuben/QAC/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2018 Peter Teuben\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/PLACEHOLDER: Add license (ideally as a URL to the SPDX page - e.g. https://spdx.org/licenses/MIT.html) here",
+        "spdx_id": "PLACEHOLDER: Add license (ideally as a URL to the SPDX page - e.g. https://spdx.org/licenses/MIT.html) here",
+        "type": "License",
+        "value": "PLACEHOLDER: Add license (ideally as a URL to the SPDX page - e.g. https://spdx.org/licenses/MIT.html) here"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "QAC"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "QAC: Quick Array Combinations front end to CASA"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "teuben"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 585168,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 69068,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 67421,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 18023,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/teuben/QAC/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "astropy",
+        "type": "Software_application",
+        "value": "astropy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:15:30",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example",
+        "parent_header": [
+          "Quick Array Combinations (QAC)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Below a plot in which the top left panel is a selected channel from an\nALMA total power (TP) observation of the CO emissions of a small\nregion in the SMC. Overlayed on this greyscale are the pointing\ncenters of the 12-m Array. For one pointing the true extend of the 12\nm field of view is given as well with the larger green circle.  The\ntop right panel is the reconstructed TP map from the\npseudo-visibilities generated from a virtual interferometer emulating\nthe short spacings. The pure interferometric map that combines the 7m\nand 12 m data is shown in the lower left panel, and combining the TP\nvisibilities with those of the 7m+12m arrays are then shown in the\nlower right panel, now recovering the large scale flux, as well as the\nfiner scale structure.\n\n![example-smc2](figures/example-smc2.png)\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Benchmarks",
+        "parent_header": [
+          "Quick Array Combinations (QAC)",
+          "Example"
+        ],
+        "type": "Text_excerpt",
+        "value": "A better supported show of QAC functionality is currently in the **test/bench.py, bench0.py** and **sky1.py** routines [March 2018] as those were used in the\n[SD2018](https://github.com/teuben/sd2018) workshop. Please note the software in that repo is not maintained anymore, and updated versions can be found\nwithin QAC.\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "PLACEHOLDER: Add version here"
+      },
+      "source": "https://raw.githubusercontent.com/teuben/QAC/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

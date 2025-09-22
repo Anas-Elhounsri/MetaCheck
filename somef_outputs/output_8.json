@@ -1,0 +1,1445 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "veit@cusy.io",
+        "name": "Veit Schiele",
+        "type": "Agent",
+        "value": "Veit Schiele"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Schiele",
+            "given_name": "Veit",
+            "name": "Veit Schiele",
+            "type": "Agent"
+          }
+        ],
+        "datePublished": "2021",
+        "doi": "10.5281/zenodo.14031392",
+        "format": "cff",
+        "title": "Python4DataScience",
+        "type": "File_dump",
+        "url": "https://doi.org/10.5281/zenodo.14031392",
+        "value": "# SPDX-FileCopyrightText: 2021 Veit Schiele\n#\n# SPDX-License-Identifier: BSD-3-Clause\n\ncff-version: 1.2.0\ndoi: 10.5281/zenodo.14031392\ntitle: Python4DataScience\nmessage: >-\n  If you use this tutorial, please cite it using the\n  metadata from this file.\ntype: software\nauthors:\n  - given-names: Veit\n    family-names: Schiele\n    email: veit@cusy.io\n    affiliation: cusy GmbH\nidentifiers:\n  - type: doi\n    value: 10.5281/zenodo.14031392\n    description: 'Python4DataScience: 24.3.0'\nrepository-code: 'https://github.com/cusyio/Python4DataScience'\nurl: 'https://www.python4data.science/en/24.3.0/'\nabstract: >-\n  Teaching materials for the cusy training courses on\n  Python-based data science workflows.\nkeywords:\n  - Python\n  - Data-Science\n  - DataScience\n  - iPython\n  - NumPy\n  - pandas\n  - Git\n  - DVC\nlicense: BSD-3-Clause\nversion: 24.3.0\ndate-released: '2024-11-03'\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/CITATION.cff",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/cusyio/Python4DataScience"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/.github/workflows/docs.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/.github/workflows/pre-commit.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2023-06-05T17:42:37Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2024-11-03"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-12T12:43:25Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Teaching materials for the cusy training courses on Python-based data science workflows: https://cusy.io/en/our-training-courses/index.html"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Teaching materials for the cusy training courses on Python-based data science workflows: https://cusy.io/en/seminars"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Teaching materials for the cusy training courses on Python-based data science workflows"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9174715287444832,
+      "result": {
+        "original_header": ". Create a PDF:",
+        "type": "Text_excerpt",
+        "value": "   or for macOS with: \n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": ". Create HTML documentation:",
+        "type": "Text_excerpt",
+        "value": "   Note that pandoc has to be installed. On Debian/Ubuntu you can just run\n\n   .. code-block:: console\n\n    $  sudo apt-get install pandoc\n\n   To create the HTML documentation run these commands:\n\n    $ cd docs\n    $ make html\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "download": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": ". Download and unpack:",
+        "type": "Text_excerpt",
+        "value": "   .. code-block:: console\n\n    $ curl -O https://codeload.github.com/cusyio/python4datascience/zip/main\n    $ unzip main\n    Archive:  main\n    \u2026\n       creating: python4datascience-main/\n    \u2026\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/cusyio/Python4DataScience/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/threading-forking-combined.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/threading-forking-combined.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/scalene.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/scalene.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/multiprocessing.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/multiprocessing.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/ipython-profiler.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/ipython-profiler.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/dask.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/dask.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/asyncio-example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/asyncio-example.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/threading-example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/performance/threading-example.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/excel.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/excel.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/serialisation.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/serialisation.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/yaml/example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/yaml/example.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/xml-html/xml-html-examples.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/xml-html/xml-html-examples.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/xml-html/beautifulsoup.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/xml-html/beautifulsoup.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/json/example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/json/example.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/pickle/pickle-examples.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/pickle/pickle-examples.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/toml/example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/toml/example.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/csv/example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/csv/example.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/intake/data-engineers.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/intake/data-engineers.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/intake/gui.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/intake/gui.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/intake/data-scientists.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/intake/data-scientists.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/httpx/module.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/httpx/module.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/httpx/install-example.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/httpx/install-example.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/dask-pipeline.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/dask-pipeline.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/hypothesis.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/hypothesis.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/nulls.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/nulls.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/tdda.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/tdda.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/outliers.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/outliers.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/string-matching.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/string-matching.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/deduplicate.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/deduplicate.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/voluptuous.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/voluptuous.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/scikit-learn-reprocessing.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/clean-prep/scikit-learn-reprocessing.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/productive/qa/rope.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/productive/qa/rope.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/intro.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/intro.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/file.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/file.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/indexing-slicing.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/indexing-slicing.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/statistics.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/statistics.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/ndarray.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/ndarray.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/unique.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/unique.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/dtype.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/dtype.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/vectorisation.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/vectorisation.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/bool.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/bool.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/where.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/where.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/sort.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/sort.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/transpose.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/transpose.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/arithmetic.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/arithmetic.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/ufunc.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/numpy/ufunc.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/debugging.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/debugging.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/magics.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/magics.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/display.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/display.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/examples.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/examples.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/shell.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/shell.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/importing.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/importing.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/mypackage/foo.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/mypackage/foo.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/unix-shell/file-system.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/unix-shell/file-system.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/unix-shell/pipes-filters.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/unix-shell/pipes-filters.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/unix-shell/grep-find.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/unix-shell/grep-find.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/unix-shell/shell-variables.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/unix-shell/shell-variables.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/unix-shell/create-delete.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/ipython/unix-shell/create-delete.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/python-data-structures.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/python-data-structures.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/indexing.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/indexing.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/date-time.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/date-time.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/select-filter.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/select-filter.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/group-operations.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/group-operations.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/apply.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/apply.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/descriptive-statistics.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/descriptive-statistics.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/convert-dtypes.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/convert-dtypes.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/combining-merging.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/combining-merging.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/discretisation.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/discretisation.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/arithmetic.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/arithmetic.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/sorting-ranking.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/sorting-ranking.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/transforming.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/transforming.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/aggregation.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/aggregation.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/pivoting-crosstab.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/pivoting-crosstab.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/data-structures.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/data-structures.ipynb",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/string-manipulation.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/workspace/pandas/string-manipulation.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 5
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/cusyio/Python4DataScience/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cusyio/Python4DataScience"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Quick start"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/toml/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/toml/pyproject.toml",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/serialisation-formats/toml/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/docs/data-processing/intake/us_crime/build.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.5281/zenodo.14031392"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": ". Install Python packages:",
+        "type": "Text_excerpt",
+        "value": "   .. code-block:: console\n\n    $ cd python4datascience-main\n    $ python3 -m venv .venv\n    $ . .venv/bin/activate\n    $ python -m pip install -e \".[dev]\"\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": ". Install the `Jupyter Notebook Extensions",
+        "type": "Text_excerpt",
+        "value": "   files:\n\n   .. code-block:: console\n\n    $ jupyter contrib nbextension install --user\n    jupyter contrib nbextension install --user\n    Installing jupyter_contrib_nbextensions nbextension files to jupyter data directory\n    \u2026\n    Successfully installed jupyter-contrib-core-0.3.3 jupyter-contrib-nbextensions-0.5.1\n    jupyter-highlight-selected-word-0.2.0 jupyter-latex-envs-1.4.6\n    jupyter-nbextensions-configurator-0.4.1\n    \u2026\n    $ jupyter nbextension enable latex_envs --user --py\n    Enabling notebook extension latex_envs/latex_envs...\n          - Validating: OK\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": ". Install and run ale to check spelling",
+        "type": "Text_excerpt",
+        "value": "   You can install Vale with:\n\n   .. code-block:: console\n\n    $ brew install vale\n\n   You can install the parser for reStructuredText with:\n\n   .. code-block:: console\n\n    $ brew install docutils\n\n   .. seealso::\n      * `Vale installation <https://docs.errata.ai/vale/install>`_\n      * `Vale formats <https://docs.errata.ai/vale/scoping#formats>`_\n\n   Now you can check the reStructuredText files with:\n\n   .. code-block:: console\n\n    $ vale .\n    \u2714 0 errors, 0 warnings and 0 suggestions in 201 files.\n\n.. _follow-us:\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Follow us",
+        "parent_header": [
+          ". Install and run ale to check spelling"
+        ],
+        "type": "Text_excerpt",
+        "value": "* `GitHub <https://github.com/cusyio/python4datascience>`_\n* `Mastodon <https://mastodon.social/@Python4DataScience>`_\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Pull-Requests",
+        "parent_header": [
+          ". Install and run ale to check spelling"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you have suggestions for improvements and additions, we recommend that you\ncreate a `Fork <https://github.com/cusyio/python4datascience/fork>`_ of our\n`GitHub Repository <https://github.com/cusyio/python4datascience/>`_ and make\nyour changes there. You are also welcome to make a *pull request*. If the\nchanges contained therein are small and atomic, we will be happy to look at your\nsuggestions.\n\nThe following guidelines help us to maintain the German translation of the\ntutorial:\n\n* Write commit messages in English\n* Start commit messages with a `Gitmoji <https://gitmoji.dev/>`__\n* Stick to English names of files and folders.\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/cusyio/Python4DataScience/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/cusyio/Python4DataScience/issues"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "data-science, datascience, dvc, git, ipython, numpy, pandas, python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "data science",
+          "dvc",
+          "git",
+          "Python",
+          "NumPy",
+          "pandas",
+          "iPython"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "type": "License",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "value": "https://api.github.com/licenses/bsd-3-clause"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 2-Clause",
+        "spdx_id": "BSD-2-Clause",
+        "type": "File_dump",
+        "value": "Copyright (c) 2019 Veit Schiele.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/BSD-3-Clause.html",
+        "spdx_id": "https://spdx.org/licenses/BSD-3-Clause.html",
+        "type": "License",
+        "value": "https://spdx.org/licenses/BSD-3-Clause.html"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python4DataScience"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "veit/Python4DataScience: 24.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "cusyio"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python4DataScience"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 603,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/cusyio/Python4DataScience/"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "readthedocs",
+        "type": "Url",
+        "value": "https://jupyter-contrib-nbextensions.readthedocs.io/"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "regular_expression"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "veit",
+          "type": "User"
+        },
+        "date_created": "2024-11-03T19:23:06Z",
+        "date_published": "2024-11-03T21:41:05Z",
+        "html_url": "https://github.com/cusyio/Python4DataScience/releases/tag/24.3.0",
+        "name": "24.3.0",
+        "release_id": 183275130,
+        "tag": "24.3.0",
+        "tarball_url": "https://api.github.com/repos/cusyio/Python4DataScience/tarball/24.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/cusyio/Python4DataScience/releases/183275130",
+        "value": "https://api.github.com/repos/cusyio/Python4DataScience/releases/183275130",
+        "zipball_url": "https://api.github.com/repos/cusyio/Python4DataScience/zipball/24.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "veit",
+          "type": "User"
+        },
+        "date_created": "2024-06-29T15:13:48Z",
+        "date_published": "2024-11-03T18:55:04Z",
+        "html_url": "https://github.com/cusyio/Python4DataScience/releases/tag/24.2.0",
+        "name": "24.2.0",
+        "release_id": 183269115,
+        "tag": "24.2.0",
+        "tarball_url": "https://api.github.com/repos/cusyio/Python4DataScience/tarball/24.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/cusyio/Python4DataScience/releases/183269115",
+        "value": "https://api.github.com/repos/cusyio/Python4DataScience/releases/183269115",
+        "zipball_url": "https://api.github.com/repos/cusyio/Python4DataScience/zipball/24.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "veit",
+          "type": "User"
+        },
+        "date_created": "2024-04-02T11:17:10Z",
+        "date_published": "2024-04-09T13:07:23Z",
+        "html_url": "https://github.com/cusyio/Python4DataScience/releases/tag/24.1.0",
+        "name": "24.1.0",
+        "release_id": 150394651,
+        "tag": "24.1.0",
+        "tarball_url": "https://api.github.com/repos/cusyio/Python4DataScience/tarball/24.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/cusyio/Python4DataScience/releases/150394651",
+        "value": "https://api.github.com/repos/cusyio/Python4DataScience/releases/150394651",
+        "zipball_url": "https://api.github.com/repos/cusyio/Python4DataScience/zipball/24.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "veit",
+          "type": "User"
+        },
+        "date_created": "2023-06-11T10:32:13Z",
+        "date_published": "2023-06-11T10:42:25Z",
+        "description": "Extract the data science workflow from the Jupyter Tutorial",
+        "html_url": "https://github.com/cusyio/Python4DataScience/releases/tag/v1.0.0",
+        "name": "v1.0.0",
+        "release_id": 108135180,
+        "tag": "v1.0.0",
+        "tarball_url": "https://api.github.com/repos/cusyio/Python4DataScience/tarball/v1.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/cusyio/Python4DataScience/releases/108135180",
+        "value": "https://api.github.com/repos/cusyio/Python4DataScience/releases/108135180",
+        "zipball_url": "https://api.github.com/repos/cusyio/Python4DataScience/zipball/v1.0.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "run": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": ". Install and run ale to check spelling",
+        "type": "Text_excerpt",
+        "value": "   You can install Vale with:\n\n   .. code-block:: console\n\n    $ brew install vale\n\n   You can install the parser for reStructuredText with:\n\n   .. code-block:: console\n\n    $ brew install docutils\n\n   .. seealso::\n      * `Vale installation <https://docs.errata.ai/vale/install>`_\n      * `Vale formats <https://docs.errata.ai/vale/scoping#formats>`_\n\n   Now you can check the reStructuredText files with:\n\n   .. code-block:: console\n\n    $ vale .\n    \u2714 0 errors, 0 warnings and 0 suggestions in 201 files.\n\n.. _follow-us:\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Follow us",
+        "parent_header": [
+          ". Install and run ale to check spelling"
+        ],
+        "type": "Text_excerpt",
+        "value": "* `GitHub <https://github.com/cusyio/python4datascience>`_\n* `Mastodon <https://mastodon.social/@Python4DataScience>`_\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Pull-Requests",
+        "parent_header": [
+          ". Install and run ale to check spelling"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you have suggestions for improvements and additions, we recommend that you\ncreate a `Fork <https://github.com/cusyio/python4datascience/fork>`_ of our\n`GitHub Repository <https://github.com/cusyio/python4datascience/>`_ and make\nyour changes there. You are also welcome to make a *pull request*. If the\nchanges contained therein are small and atomic, we will be happy to look at your\nsuggestions.\n\nThe following guidelines help us to maintain the German translation of the\ntutorial:\n\n* Write commit messages in English\n* Start commit messages with a `Gitmoji <https://gitmoji.dev/>`__\n* Stick to English names of files and folders.\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "requirements",
+    "contact",
+    "contributors",
+    "faq",
+    "support"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 00:08:45",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 19
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Quick start",
+        "type": "Text_excerpt",
+        "value": ".. _badges:\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Status",
+        "parent_header": [
+          "Quick start"
+        ],
+        "type": "Text_excerpt",
+        "value": ".. image:: https://img.shields.io/github/contributors/cusyio/python4datascience.svg\n   :alt: Contributors\n   :target: https://github.com/cusyio/python4datascience/graphs/contributors\n.. image:: https://img.shields.io/github/license/cusyio/Python4DataScience.svg\n   :alt: License\n   :target: https://github.com/cusyio/python4datascience/blob/main/LICENSE\n.. image:: https://results.pre-commit.ci/badge/github/cusyio/Python4DataScience/main.svg\n   :target: https://results.pre-commit.ci/repo/github/649815375\n   :alt: pre-commit.ci status\n.. image:: https://readthedocs.org/projects/python4datascience/badge/?version=latest\n   :alt: Docs\n   :target: https://www.python4data.science/en/latest/\n.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo..14031392.svg\n   :target: https://doi.org/10.5281/zenodo.14031392\n.. image:: https://img.shields.io/badge/dynamic/json?label=Mastodon&query=totalItems&url=https%3A%2F%2Fmastodon.social%2F@Python4DataScience%2Ffollowers.json&logo=mastodon\n   :alt: Mastodon\n   :target: https://mastodon.social/@Python4DataScience\n\n.. _first-steps:\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Overview",
+        "parent_header": [
+          "Quick start"
+        ],
+        "type": "Text_excerpt",
+        "value": "This repository contains a data management and analysis tutorial using Python.\nThe folders contain:\n\n- ``data/`` - data for an example project\n- ``docs/`` - the actual tutorial docs\n- ``fastapi/`` - example web server providing data\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/README.rst",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "tag": "24.2.0",
+        "type": "Release",
+        "value": "24.2.0"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "24.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/cusyio/Python4DataScience/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

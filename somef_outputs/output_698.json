@@ -1,0 +1,641 @@
+{
+  "application_domain": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Web"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9950200439550884,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+        "type": "Agent",
+        "value": [
+          {
+            "email": "myrmecocystus@gmail.com",
+            "value": "Scott Chamberlain"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "myrmecocystus@gmail.com",
+        "identifier": "https://orcid.org/0000-0003-1444-9135",
+        "type": "String",
+        "value": "Scott Chamberlain"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "mark.padgham@email.com",
+        "identifier": "https://orcid.org/0000-0003-2172-5265",
+        "type": "String",
+        "value": "Mark Padgham"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ghql"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ghql"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ghql"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/ropensci/ghql/actions?query=workflow%3AR-check",
+          "https://app.codecov.io/github/ropensci/ghql?branch=master"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/ghql/master/.github/workflows/R-check.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# CONTRIBUTING #\n\n### Bugs?\n\n* Submit an issue on the [Issues page](https://github.com/ropensci/ghql/issues)\n\n### Code contributions\n\n* Fork this repo to your Github account\n* Clone your version on your account down to your machine from your account, e.g,. `git clone https://github.com/<yourgithubusername>/ghql.git`\n* Make sure to track progress upstream (i.e., on our version of `ghql` at `ropensci/ghql`) by doing `git remote add upstream https://github.com/ropensci/ghql.git`. Before making changes make sure to pull changes in from upstream by doing either `git fetch upstream` then merge later or `git pull upstream` to fetch and merge in one step\n* Make your changes (bonus points for making changes on a new feature branch)\n* Push up to your account\n* Submit a pull request to home base at `ropensci/ghql`\n\n### Check out our [discussion forum](https://discuss.ropensci.org)\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/.github/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2016-09-15T20:27:02Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-08T08:40:10Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "GraphQL R client"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+        "type": "String",
+        "value": "A 'GraphQL' client, with an R6 interface for initializing a\n    connection to a 'GraphQL' instance, and methods for constructing\n    queries, including fragments and parameterized queries. Queries are\n    checked with the 'libgraphqlparser' C++ parser via the 'graphql'\n    package."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A 'GraphQL' client, with an R6 interface for initializing a connection to a 'GraphQL' instance, and methods for constructing queries, including fragments and parameterized queries. Queries are checked with the 'libgraphqlparser' C++ parser via the 'graphql' package."
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9429960186156697,
+      "result": {
+        "original_header": "Meta",
+        "type": "Text_excerpt",
+        "value": "* Please note that this package is released with a [Contributor Code of Conduct](https://ropensci.org/code-of-conduct/). By contributing to this project, you agree to abide by its terms. \n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Package Documentation",
+        "parent_header": [
+          "ghql"
+        ],
+        "type": "Text_excerpt",
+        "value": "<https://docs.ropensci.org/ghql/>\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ghql/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 13
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/ghql/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ropensci/ghql"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ghql"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "homepage": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://docs.ropensci.org/ghql/"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ghql"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://codecov.io/github/ropensci/ghql/coverage.svg?branch=master"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install",
+        "parent_header": [
+          "ghql"
+        ],
+        "type": "Text_excerpt",
+        "value": "CRAN version\n\n\n```r\ninstall.packages(\"ghql\")\n```\n\nDevelopment version\n\n\n```r\nremotes::install_github(\"ropensci/ghql\")\n```\n\n\n```r\nlibrary(\"ghql\")\nlibrary(\"jsonlite\")\nlibrary(\"dplyr\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/ropensci/ghql/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ghql/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/ropensci/ghql/issues"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "graphql, graphql-api, graphql-client, r, r-package, rstats"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "http",
+          "API",
+          "web-services",
+          "curl",
+          "data",
+          "GraphQL",
+          "graphql",
+          "graphql-client",
+          "rstats",
+          "r",
+          "graphql-api",
+          "r-package"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2021 ghql authors\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ghql"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "ghql: General Purpose 'GraphQL' Client"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "ropensci"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+        "type": "String",
+        "value": "ghql"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 32268,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 809,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 640,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/ghql/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/ropensci/ghql/blob/master/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/ropensci/ghql/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mpadge",
+          "type": "User"
+        },
+        "date_created": "2025-09-08T08:40:10Z",
+        "date_published": "2025-09-08T08:41:00Z",
+        "html_url": "https://github.com/ropensci/ghql/releases/tag/v0.1.2",
+        "name": "CRAN version 0.1.2",
+        "release_id": 245450718,
+        "tag": "v0.1.2",
+        "tarball_url": "https://api.github.com/repos/ropensci/ghql/tarball/v0.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/ghql/releases/245450718",
+        "value": "https://api.github.com/repos/ropensci/ghql/releases/245450718",
+        "zipball_url": "https://api.github.com/repos/ropensci/ghql/zipball/v0.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sckott",
+          "type": "User"
+        },
+        "date_created": "2020-02-24T17:48:22Z",
+        "date_published": "2020-02-24T18:15:36Z",
+        "description": "### NEW FEATURES\r\n\r\n* Released to CRAN",
+        "html_url": "https://github.com/ropensci/ghql/releases/tag/v0.1.0",
+        "name": "ghql v0.1.0",
+        "release_id": 23939448,
+        "tag": "v0.1.0",
+        "tarball_url": "https://api.github.com/repos/ropensci/ghql/tarball/v0.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/ropensci/ghql/releases/23939448",
+        "value": "https://api.github.com/repos/ropensci/ghql/releases/23939448",
+        "zipball_url": "https://api.github.com/repos/ropensci/ghql/zipball/v0.1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable state and is being actively developed.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:43:09",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 148
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.1.2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.1.2"
+      },
+      "source": "https://raw.githubusercontent.com/ropensci/ghql/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

@@ -1,0 +1,2024 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.9999406440911697,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "albert.merono@vu.nl",
+        "type": "Agent",
+        "value": "albert.merono@vu.nl"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0003-4646-5842",
+        "type": "String",
+        "value": "Albert Mero\u00f1o-Pe\u00f1uela"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://orcid.org/0000-0001-5565-7577",
+        "type": "String",
+        "value": "Carlos Martinez"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": [
+          {
+            "family_name": "Mero\u00f1o-Pe\u00f1uela",
+            "given_name": "Albert",
+            "name": "Albert Mero\u00f1o-Pe\u00f1uela",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0003-4646-5842"
+          },
+          {
+            "family_name": "Hoekstra",
+            "given_name": "Rinke",
+            "name": "Rinke Hoekstra",
+            "type": "Agent"
+          },
+          {
+            "family_name": "Martinez",
+            "given_name": "Carlos",
+            "name": "Carlos Martinez",
+            "type": "Agent",
+            "url": "https://orcid.org/0000-0001-5565-7577"
+          }
+        ],
+        "datePublished": "2025",
+        "doi": "10.5281/zenodo.1064391",
+        "format": "cff",
+        "title": "grlc: the git repository linked data API constructor",
+        "type": "File_dump",
+        "url": "https://doi.org/10.5281/zenodo.1064391",
+        "value": "# YAML 1.2\n# Metadata for citation of this software according to the CFF format (https://citation-file-format.github.io/)\n---\nauthors:\n  -\n    affiliation: \"King's College London\"\n    family-names: Mero\u00f1o-Pe\u00f1uela\n    given-names: Albert\n    orcid: \"https://orcid.org/0000-0003-4646-5842\"\n  -\n    family-names: Hoekstra\n    given-names: Rinke\n  -\n    affiliation: \"Netherlands eScience Center\"\n    family-names: Martinez\n    given-names: Carlos\n    orcid: \"https://orcid.org/0000-0001-5565-7577\"\ncff-version: \"1.0.3\"\ndate-released: 2025-04-01\ndoi: 10.5281/zenodo.1064391\nlicense: MIT\nmessage: \"If you use this software, please cite it as below.\"\nrepository-code: \"https://github.com/CLARIAH/grlc\"\ntitle: \"grlc: the git repository linked data API constructor\"\nabstract: grlc, the git repository linked data API constructor, automatically builds Web APIs using SPARQL queries stored in git repositories.\nkeywords:\n  - \"swagger-ui\"\n  - sparql\n  - \"linked-data\"\n  - \"semantic-web\"\n  - \"linked-data-api\"\nversion: \"1.3.10\"\n"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/CITATION.cff",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Mero{\\~{n}}o-Pe{\\~{n}}uela, Albert and Hoekstra, Rinke",
+        "doi": "10.1007/978-3-319-47602-5_48",
+        "format": "bibtex",
+        "title": "{grlc Makes GitHub Taste Like Linked Data APIs}",
+        "type": "Text_excerpt",
+        "value": "@inproceedings{merono2016grlc,\n    doi = {10.1007/978-3-319-47602-5_48},\n    isbn = {978-3-319-47602-5},\n    pages = {342--353},\n    publisher = {Springer},\n    year = {2016},\n    booktitle = {The Semantic Web: ESWC 2016 Satellite Events, Heraklion, Crete, Greece, May 29 -- June 2,  2016},\n    title = {{grlc Makes GitHub Taste Like Linked Data APIs}},\n    author = {Mero{\\~{n}}o-Pe{\\~{n}}uela, Albert and Hoekstra, Rinke},\n}"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "<!--\nSPDX-FileCopyrightText: 2022 Albert Mero\u00f1o, Rinke Hoekstra, Carlos Mart\u00ednez\n\nSPDX-License-Identifier: MIT\n-->\n\n# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, gender identity and expression, level of experience,\nnationality, personal appearance, race, religion, or sexual identity and\norientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\n  advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at [INSERT EMAIL ADDRESS]. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html\n\n[homepage]: https://www.contributor-covenant.org\n"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/grlc"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/grlc"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/grlc.git"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://travis-ci.org/CLARIAH/grlc"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/.github/workflows/cffconvert.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/.github/workflows/testing.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/.github/workflows/publish_pypi.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/.github/workflows/linting.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "<!--\nSPDX-FileCopyrightText: 2022 Albert Mero\u00f1o, Rinke Hoekstra, Carlos Mart\u00ednez\n\nSPDX-License-Identifier: MIT\n-->\n\nThank you very much for your interest in contributing to grlc! It's people like you that truly make the Semantic Web more accessible to everyone :)\n\n## Communication channels\n\nIf you would like to get in touch with the grlc developers, and with other users of grlc, you can reach us in two ways:\n - Via Twitter, by using the grlc handle (**@grlcldapi**). Follow this account to hear about updates.\n - Via the grlc [mailing list](https://groups.google.com/g/grlc-list/). Sign up to the mailing list to ask questions and make suggestions.\n\n## Filing bug reports\n\nThe official channel to file bug reports is via our GitHub's [issue tracker](https://github.com/CLARIAH/grlc/issues). When doing so make sure that:\n- Your issue title briefly describes the bug\n- You include log output (try `docker logs grlc_grlc_1` if you daemonized your instance)\n- Name the file/module if known/available\n- You tag your issue as **bug**\n\n## Sending feature requests\n\nAs with bug reports, for requesting features please use the [issue tracker](https://github.com/CLARIAH/grlc/issues) as well and this time:\n- Describe briefly the feature in the title\n- Describe the desired feature\n- Describe your use case so we understand what you are using grlc for\n- Name the file/module if known/available\n- Tag the issue as **enhancement**\n\n## Sending pull requests\n\nIf you would like to contribute to the code directly, please send in a [pull request (PR)](https://github.com/CLARIAH/grlc/pulls). Please make sure that:\n - The title of your PR briefly describes the content\n - Describe in detail what your PR contributes\n - If your PR addresses a specific issue, indicate the issue number\n - Assign @albertmeronyo or @c-martinez as reviewer of your PR.\n\n## Testing environment\n\nTo get started with hacking grlc, follow these steps to create a local testing environment (you'll need [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/)):\n\n1. `docker pull clariah/grlc:latest`\n2. `git clone https://github.com/CLARIAH/grlc`\n3. `cd grlc`\n4. Create a `docker-compose.yml` which matches your needs. For example:\n```\nversion: '2'\nservices:\n  grlc:\n    build: ./\n    restart: unless-stopped\n    ports:\n     - \"8001:80\"\n    environment:\n     - DEBUG=true\n     - USERMAP_GID=1000\n     - USERMAP_UID=1000\n     - GRLC_GITHUB_ACCESS_TOKEN=xxx\n     - GRLC_GITLAB_ACCESS_TOKEN=yyy\n     - GRLC_SERVER_NAME=grlc.io\n```\n\n5. `docker-compose up`\n6. Your local grlc instance should be available at http://localhost:8001 and should respond to code modifications you make on `<GRLC_CLONE_PATH>`\n\nYou're good to pick any issue at the  [issue tracker](https://github.com/CLARIAH/grlc/issues) marked as **enhancement** and start implementing it :)\n\n## Governance model\n\nAs creators of grlc, [@albertmeronyo](https://github.com/albertmeronyo) and [@c-martinez](http://github.com/c-martinez) are benevolent dictators for this project. This means that they have a final say of the direction of the project. This DOES NOT mean they are not willing to listen to suggestion (on the contrary, they *love* to hear new ideas)!\n\n## Contributing\n\nAll grlc contributors will be listed in the [CONTRIBUTORS.md](CONTRIBUTORS.md) file. Also, [notes of new releases](https://github.com/CLARIAH/grlc/releases) will mention who contributed to that specific release.\n\n## Questions\n\nPlease open an issue at the [issue tracker](https://github.com/CLARIAH/grlc/issues) and tag it as **question**\n"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contribute!",
+        "type": "Text_excerpt",
+        "value": "grlc needs **you** to continue bringing Semantic Web content to developers, applications and users. No matter if you are just a curious user, a developer, or a researcher; there are many ways in which you can contribute:\n\n- File in bug reports\n- Request new features\n- Set up your own environment and start hacking\n\nCheck our [contributing](CONTRIBUTING.md) guidelines for these and more, and join us today!\n\nIf you cannot code, that's no problem! There's still plenty you can contribute:\n\n- Share your experience at using grlc in Twitter (mention the handle **@grlcldapi**)\n- If you are good with HTML/CSS, [let us know](mailto:albert.meronyo@gmail.com)\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Related tools",
+        "parent_header": [
+          "Contribute!"
+        ],
+        "type": "Text_excerpt",
+        "value": "- [SPARQL2Git](https://github.com/albertmeronyo/SPARQL2Git) is a Web interface for editing SPARQL queries and saving them in GitHub as grlc APIs.\n- [grlcR](https://github.com/CLARIAH/grlcR) is a package for R that brings Linked Data into your R environment easily through grlc.\n- [Hay's tools](https://tools.wmflabs.org/hay/directory/#/showall) lists grlc as a Wikimedia-related tool :-)\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "This is what grlc users are saying",
+        "parent_header": [
+          "Contribute!"
+        ],
+        "type": "Text_excerpt",
+        "value": "- [Flavour your Linked Data with grlc](https://blog.esciencecenter.nl/flavour-your-linked-data-with-garlic-98bfbb358e06), by Carlos Martinez\n- [Converting any SPARQL endpoint to an OpenAPI](http://chem-bla-ics.blogspot.com/2018/07/converting-any-sparql-endpoint-to.html) by Egon Willighagen\n\nQuotes from grlc users:\n> A cool project that can convert a random SPARQL endpoint into an OpenAPI endpoint\n\n> It enables us to quickly integrate any new API requirements in a matter of seconds, without having to worry about configuration or deployment of the system\n\n> You can store your SPARQL queries on GitHub and then you can run your queries on your favourite programming language (Python, Javascript, etc.) using a Web API (including swagger documentation) just as easily as loading data from a web page\n\n**Contributors:**\t[Albert Mero\u00f1o](https://github.com/albertmeronyo), [Rinke Hoekstra](https://github.com/RinkeHoekstra), [Carlos Mart\u00ednez](https://github.com/c-martinez)\n\n**Copyright:**\tAlbert Mero\u00f1o, Rinke Hoekstra, Carlos Mart\u00ednez  \n**License:**\tMIT License (see [LICENSE.txt](LICENSE.txt))\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Academic publications",
+        "parent_header": [
+          "Contribute!"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Albert Mero\u00f1o-Pe\u00f1uela, Carlos Martinez-Ortiz. \u201cgrlc: the git repository linked data API constructor.\u201c Journal of Open Source Software, 6(67), 2731 (2021), <https://doi.org/10.21105/joss.02731>\n- Albert Mero\u00f1o-Pe\u00f1uela, Pasquale Lisena, Carlos Mart\u00ednez-Ortiz. \u201cWeb Data APIs for Knowledge Graphs: Easing Access to Semantic Data for Application Developers\u201d. Synthesis Lectures on Data, Semantics, and Knowledge, 12(1), pp.1-118 (2021) (Morgan & Claypool) <https://doi.org/10.2200/S01114ED1V01Y202107DSK021>\n- Albert Mero\u00f1o-Pe\u00f1uela, Rinke Hoekstra. \u201cgrlc Makes GitHub Taste Like Linked Data APIs\u201d. The Semantic Web \u2013 ESWC 2016 Satellite Events, Heraklion, Crete, Greece, May 29 \u2013 June 2, 2016, Revised Selected Papers. LNCS 9989, pp. 342-353 (2016). ([PDF](https://link.springer.com/content/pdf/10.1007%2F978-3-319-47602-5_48.pdf))\n- Albert Mero\u00f1o-Pe\u00f1uela, Rinke Hoekstra. \u201cSPARQL2Git: Transparent SPARQL and Linked Data API Curation via Git\u201d. In: Proceedings of the 14th Extended Semantic Web Conference (ESWC 2017), Poster and Demo Track. Portoroz, Slovenia, May 28th \u2013 June 1st, 2017 (2017). ([PDF](https://www.albertmeronyo.org/wp-content/uploads/2017/04/sparql2git-transparent-sparql-4.pdf))\n- Albert Mero\u00f1o-Pe\u00f1uela, Rinke Hoekstra. \u201cAutomatic Query-centric API for Routine Access to Linked Data\u201d. In: The Semantic Web \u2013 ISWC 2017, 16th International Semantic Web Conference. Lecture Notes in Computer Science, vol 10587, pp. 334-339 (2017). ([PDF](https://www.albertmeronyo.org/wp-content/uploads/2017/07/ISWC2017_paper_430.pdf))\n- Pasquale Lisena, Albert Mero\u00f1o-Pe\u00f1uela, Tobias Kuhn, Rapha\u00ebl Troncy. \u201cEasy Web API Development with SPARQL Transformer\u201d. In: The Semantic Web \u2013 ISWC 2019, 18th International Semantic Web Conference. Lecture Notes in Computer Science, vol 11779, pp. 454-470 (2019). ([PDF](https://www.albertmeronyo.org/wp-content/uploads/2019/06/ISWC2019_paper_237.pdf))\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "contributors": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "<!--\nSPDX-FileCopyrightText: 2022 Albert Mero\u00f1o, Rinke Hoekstra, Carlos Mart\u00ednez\n\nSPDX-License-Identifier: MIT\n-->\n\n# Contributors\nThis is a list of all people who have contributed to grlc. Big thanks to everyone.\n\n[RinkeHoekstra](https://github.com/RinkeHoekstra)  \n[pasqLisena](https://github.com/pasqLisena)  \n[rlzijdeman](https://github.com/rlzijdeman)  \n[RoderickvanderWeerdt](https://github.com/RoderickvanderWeerdt)  \n[arnikz](https://github.com/arnikz)  \n[jetschni](https://github.com/jetschni)  \n[mwigham](https://github.com/mwigham)  \n[steltenpower](https://github.com/steltenpower)  \n[jspaaks](https://github.com/jspaaks)  \n[ecow](https://github.com/ecow)\n[rapw3k](https://github.com/rapw3k)\n[jaw111](https://github.com/jaw111)\n[tkuhn](https://github.com/tkuhn)\n[GenEars](https://github.com/GenEars)\n[nichtich](https://github.com/nichtich)\n[jblom](https://github.com/jblom)\n[abelsiqueira](https://github.com/abelsiqueira)\n"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/CONTRIBUTORS.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2015-11-13T15:49:10Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2015-11-13T17:17:15Z+0100"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2021-11-03"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-09-08T11:02:26Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2022-03-21T22:20:00Z+0100"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "grlc builds Web APIs using shared SPARQL queries"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "grlc, the git repository linked data API constructor"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "grlc, the git repository linked data API constructor, automatically builds Web APIs using SPARQL queries stored in git repositories."
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "`summary`",
+        "parent_header": [
+          "Decorator syntax"
+        ],
+        "type": "Text_excerpt",
+        "value": "Creates a summary of your query/operation. This is shown next to your operation name in the swagger-ui.\n\nSyntax:\n```\n#+ summary: This is the summary of my query/operation\n```\n\nExample [query](https://github.com/CLARIAH/grlc-queries/blob/master/summary.rq) and the equivalent [API operation](http://grlc.io/api-git/CLARIAH/grlc-queries/#/default/get_summary).\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "`description`",
+        "parent_header": [
+          "Decorator syntax"
+        ],
+        "type": "Text_excerpt",
+        "value": "Creates a description of your query/operation. This is shown as the description of your operation in the swagger-ui.\n\nSyntax:\n```\n#+ description: Extended description of my query/operation.\n```\n\nExample [query](https://github.com/CLARIAH/grlc-queries/blob/master/description.rq) and the equivalent [API operation](http://grlc.io/api-git/CLARIAH/grlc-queries/#/default/get_description).\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.9790236255828769,
+      "result": {
+        "original_header": "What is grlc?",
+        "type": "Text_excerpt",
+        "value": "grlc is a lightweight server that takes SPARQL queries (stored in a GitHub or GitLab repository, in your local filesystem, or listed in a URL), and translates them to Linked Data Web APIs. This enables universal access to Linked Data. Users are not required to know SPARQL to query their data, but instead can access a web API.\n \n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.890189284997594,
+      "result": {
+        "original_header": "`defaults`",
+        "type": "Text_excerpt",
+        "value": "Set the default value in the swagger-ui for a specific parameter in the query. \n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8924110411375676,
+      "result": {
+        "original_header": "`enumerate`",
+        "type": "Text_excerpt",
+        "value": "Indicates which parameters of your query/operation should get enumerations (and get dropdown menus in the swagger-ui) using the given values from the SPARQL endpoint. The values for each enumeration variable can also be specified into the query decorators to save endpoint requests and speed up the API generation. \n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8035623593640129,
+      "result": {
+        "original_header": "`endpoint-method`",
+        "type": "Text_excerpt",
+        "value": "Allows the query to be sent from the grlc server to the SPARQL endpoint using either `GET` or `POST` http method. (Default: `POST`) \n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8756771645814126,
+      "result": {
+        "type": "Text_excerpt",
+        "value": "If you use grlc in your work, please cite it as: \n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://www.repostatus.org/#inactive"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "wiki",
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/grlc/wiki"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/grlc/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "executable_example": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "jupyter_notebook",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/doc/notebooks/GrlcFromNotebook.ipynb"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/doc/notebooks/GrlcFromNotebook.ipynb",
+      "technique": "file_exploration"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 31
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CLARIAH/grlc"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "dockerfile",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/Dockerfile"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/Dockerfile",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/docker-assets/entrypoint.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/docker-assets/assets/build/install.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "grlc"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://zenodo.org/badge/latestdoi/46131212"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://joss.theoj.org/papers/437074e2d77df8c6cbf3bc4e407b3b17/status.svg"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install and run",
+        "type": "Text_excerpt",
+        "value": "You can use grlc in different ways:\n - [Via grlc.io](#grlc.io): you can use the [grlc.io service](https://grlc.io/)\n - [Via Docker](#Docker): you can use the [grlc docker image](https://hub.docker.com/r/clariah/grlc) and start your own grlc server.\n - [Via pip](#Pip): you can install the [grlc Python package](https://pypi.org/project/grlc/) and start your own grlc server or use grlc as a Python library.\n\nMore details for each of these options are given below.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "grlc.io",
+        "parent_header": [
+          "Install and run"
+        ],
+        "type": "Text_excerpt",
+        "value": "The easiest way to use grlc is by visiting [grlc.io](http://grlc.io/) and using this service to convert SPARQL queries into a RESTful API. Your queries can be [stored on a github repo](#from-a-github-repository) or can be [listed on a specification file](#from-a-specification-file).\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Google Analytics",
+        "parent_header": [
+          "Install and run",
+          "grlc.io"
+        ],
+        "type": "Text_excerpt",
+        "value": "grlc.io uses Google Analytics to keep track of the number of users of the service. We need this to show the impact of grlc when applying for funding. If this causes you to be conserned about privacy, we recommend you use some user-side anti-tracking, and we would appreciate if you could reach out to us to let us know you are using grlc.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Docker",
+        "parent_header": [
+          "Install and run"
+        ],
+        "type": "Text_excerpt",
+        "value": "To run grlc via [docker](https://www.docker.com/), you'll need a working installation of docker. To deploy grlc, just pull the [latest image from Docker hub](https://hub.docker.com/r/clariah/grlc/). :\n```bash\ndocker run -it --rm -p 8088:80 clariah/grlc\n```\n\nThe docker image allows you to setup several environment variable such as `GRLC_SERVER_NAME` `GRLC_GITHUB_ACCESS_TOKEN`,`GRLC_GITLAB_ACCESS_TOKEN` and `GRLC_SPARQL_ENDPOINT`:\n```bash\ndocker run -it --rm -p 8088:80 -e GRLC_SERVER_NAME=grlc.io -e GRLC_GITHUB_ACCESS_TOKEN=xxx -e GRLC_GITLAB_ACCESS_TOKEN=yyy -e GRLC_SPARQL_ENDPOINT=http://dbpedia.org/sparql -e DEBUG=true clariah/grlc\n```\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Pip",
+        "parent_header": [
+          "Install and run"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you want to run grlc locally or use it as a library, you can install grlc on your machine. Grlc is [registered in PyPi](https://pypi.org/project/grlc/) so you can install it using pip.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "pip install",
+        "parent_header": [
+          "Install and run",
+          "Pip"
+        ],
+        "type": "Text_excerpt",
+        "value": "Once the base requirements are satisfied, you can install grlc like this:\n```bash\npip install grlc\n```\n\nOnce grlc is installed, you have several options:\n - [Stand alone server](#Standalone-server)\n - [Using a WSGI server](#Using-a-WSGI-server)\n - [As a python library](#Grlc-library)\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Standalone server",
+        "parent_header": [
+          "Install and run",
+          "Pip"
+        ],
+        "type": "Text_excerpt",
+        "value": "grlc includes a command line tool which you can use to start your own grlc server:\n```bash\ngrlc-server\n```\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Using a WSGI server",
+        "parent_header": [
+          "Install and run",
+          "Pip"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can run grlc using a WSGI server such as gunicorn as follows:\n```bash\ngunicorn grlc.server:app\n```\n\nIf you want to use your own gunicorn configuration, for example `gunicorn_config.py`:\n```python\nworkers = 5\nworker_class = 'gevent'\nbind = '0.0.0.0:8088'\n```\nThen you can run it as:\n```bash\ngunicorn -c gunicorn_config.py grlc.server:app\n```\n\n**Note:** Since `gunicorn` does not work under Windows, you can use `waitress` instead:\n```bash\nwaitress-serve --port=8088 grlc.server:app\n```\n\nIf you want to run grlc at system boot as a service, you can find example upstart scripts at [upstart/](upstart/grlc-docker.conf)\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "grlc library",
+        "parent_header": [
+          "Install and run",
+          "Pip"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can use grlc as a library directly from your own python script. See the [usage example](https://github.com/CLARIAH/grlc/blob/master/doc/notebooks/GrlcFromNotebook.ipynb) to find out more.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "grlc server configuration",
+        "parent_header": [
+          "Install and run",
+          "Pip"
+        ],
+        "type": "Text_excerpt",
+        "value": "Regardless of how you are running your grlc server, you will need to configure it using the `config.ini` file. Have a look at the [example config file](./config.default.ini) to see how it this file is structured.\n\nThe configuration file contains the following variables:\n - `github_access_token` [access token](#gitaccess-token) to communicate with Github API.\n - `gitlab_access_token` [access token](#git-access-token) to communicate with GitLab API.\n - `local_sparql_dir` local storage directory where [local queries](#from-local-storage) are located.\n - `server_name` name of the server (e.g. grlc.io)\n - `sparql_endpoint` default SPARQL endpoint\n - `user` and `password` SPARQL endpoint default authentication (if required, specify `'none'` if not required)\n - `debug` enable debug level logging.\n - `gitlab_url` to specify the base url of your GitLab instance.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Git access token",
+        "parent_header": [
+          "Install and run",
+          "Pip",
+          "grlc server configuration"
+        ],
+        "type": "Text_excerpt",
+        "value": "In order for grlc to communicate with GitHub and/or GitLab, you'll need to tell grlc what your access token is:\n\n1. Get a [GitHub personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#authenticating-to-the-api-with-a-personal-access-token) or [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#create-a-personal-access-token).\n2. You'll get an access token string, copy it and save it somewhere safe.\n3. Edit your `config.ini` (`github_access_token` and `gitlab_access_token` respectively) and/or `docker-compose.yml` (`GRLC_GITHUB_ACCESS_TOKEN` and `GRLC_GITLAB_ACCESS_TOKEN` environment variables).\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CLARIAH/grlc/issues"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "api, linked-data, linked-data-api, open-api, semantic-web, sparql, swagger-ui"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "linked-data",
+          "linked-data-api",
+          "semantic-web",
+          "sparql",
+          "swagger-ui"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "Copyright 2017 Albert Mero\u00f1o"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/http://spdx.org/licenses/MIT",
+        "spdx_id": "http://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "http://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/src/static/grlc_logo_01.png"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "grlc"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "grlc: the git repository linked data API constructor"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "CLARIAH"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "grlc"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 137552,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "HTML",
+        "size": 9448,
+        "type": "Programming_language",
+        "value": "HTML"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 8414,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 6326,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "JavaScript",
+        "size": 4341,
+        "type": "Programming_language",
+        "value": "JavaScript"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 3251,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Dockerfile",
+        "size": 1784,
+        "type": "Programming_language",
+        "value": "Dockerfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "type": "Programming_language",
+        "value": "Python",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/CLARIAH/grlc/blob//README.md"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CLARIAH/grlc/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2025-04-02T18:50:15Z",
+        "date_published": "2025-04-02T18:57:06Z",
+        "description": "## What's Changed\r\n\r\n* Dependencies updated\r\n* Python version support updated\r\n* Extended yaml API specification\r\n* Make compliant with REUSE specification\r\n* Add JOSS badge\r\n* Gitlab support\r\n* Adding SPARQL Update\r\n* Support returning JSON-LD directly\r\n* Add explanation of why Google analytics is used\r\n* Add FAIRness badge from eScience/ARDC checklist\r\n\r\n**Full Changelog**: https://github.com/CLARIAH/grlc/compare/v1.3.9...v1.3.10",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.10",
+        "name": "March 2025 release",
+        "release_id": 209932654,
+        "tag": "v1.3.10",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.10",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/209932654",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/209932654",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.10"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2024-02-28T07:34:20Z",
+        "date_published": "2024-02-28T20:01:45Z",
+        "description": "## What's Changed\r\n\r\nChanges include:\r\n- Creating JSON-LD via SPARQLTransformer\r\n- Adding Gitlab support (testing, authentication)\r\n- Update supported Python versions: 3.8 to 3.11\r\n- Refactor query rewriter\r\n- Dependabot updates for flask, pygithub, pytest, python-gitlab, pyaml\r\n- Linter using flake8 and black\r\n- Update notebook example for using grlc as a library\r\n- Adding endpoint-method decorator allowing to control POST/GET communication with SPARQL endpoint\r\n- Replace docopt by docopt-ng\r\n\r\n\r\n**Full Changelog**: https://github.com/CLARIAH/grlc/compare/v1.3.8...v1.3.9",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.9",
+        "name": "March 2024 release",
+        "release_id": 144068248,
+        "tag": "v1.3.9",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.9",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/144068248",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/144068248",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.9"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2023-07-26T20:23:50Z",
+        "date_published": "2023-07-26T20:32:25Z",
+        "description": "Long overdue release, but hopefully next one will not take that long. \r\n\r\nThis release includes:\r\n- Adding support for relative urls in spec files\r\n- Improved error and warning handling (Add a warning if license is not found, propagate exceptions raised by rdflib)\r\n- Updated documentation and testing\r\n- Changed CI from Travis to GH action (including badge)\r\n- Incorporating Gitlab support\r\n- Add SPARQL Update support\r\n- Updated references\r\n- Version updates (Safe yaml loader, flask-cors, requests, pip installable up to python 3.9, docker image to python 3.8)\r\n\r\nThanks for your contributions to @jaw111, @tkuhn, @GenEars, @nichtich and @abelsiqueira!",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.8",
+        "name": "July 2023 release",
+        "release_id": 113728701,
+        "tag": "v1.3.8",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.8",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/113728701",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/113728701",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.8"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2021-11-03T22:57:53Z",
+        "date_published": "2021-11-03T23:00:15Z",
+        "description": "Release notes:\r\n - Upgrade rdflib 5.0.0\r\n - Updates for [JOSS review](https://github.com/openjournals/joss-reviews/issues/2731)",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.7",
+        "name": "Nov 2021 release",
+        "release_id": 52640515,
+        "tag": "v1.3.7",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/52640515",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/52640515",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2021-05-05T10:28:32Z",
+        "date_published": "2021-05-05T10:31:38Z",
+        "description": "This release includes:\r\n\r\n- Update documentation & contributing guidelines\r\n- Update requirements (docutils)\r\n- Add format control via extension (thanks @ecow for reporting)\r\n- Remove 3.5 support\r\n- Remove support for `/spec` in favour of `/swagger`\r\n- Restrict transform decorator to application/json (thanks @ecow for reporting)\r\n- Catching exception connecting to SPARQL endpoint\r\n- Handle errors raised by missing prefix\r\n- Fix query display in summary\r\n- Upgrade SPARQL transformer to support list objects (thanks @rapw3k for suggesting this feature and @pasqLisena for implementing it)\r\n- Add extra check for missing license (Thanks @jaw111 for reporting this)\r\n",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.6",
+        "name": "May 2021 release",
+        "release_id": 42466521,
+        "tag": "v1.3.6",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.6",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/42466521",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/42466521",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.6"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2020-11-16T11:43:05Z",
+        "date_published": "2020-11-16T20:02:21Z",
+        "description": "This release includes:\r\n - Workflow for tweeting new releases\r\n - Multiple updates to testing suit to catch bugs: using grlc as library, calling API paths\r\n - Improve version management, making it easier to bump version in a single file (CITATION.CFF)\r\n - Backward compatibility of /spec endpoints\r\n - Fix pagination links\r\n - Document parameter syntax\r\n - Improving support for in a repo\r\n - Add support for customizable information in repo\r\n - Show warnings on swagger UI when unable to build queries\r\n - Use PyGithub to communicate with Github",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.5",
+        "name": "Nov 2020 release",
+        "release_id": 34021918,
+        "tag": "v1.3.5",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.5",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/34021918",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/34021918",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.5"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2020-05-20T13:13:38Z",
+        "date_published": "2020-05-20T13:15:07Z",
+        "description": "- Security patch waitress\r\n- Remove Access-Control-Allow-Origin nginx header\r\n- Fix Markdown links",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.4",
+        "name": "May 2020 patch",
+        "release_id": 26715586,
+        "tag": "v1.3.4",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/26715586",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/26715586",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2020-05-09T11:33:34Z",
+        "date_published": "2020-05-10T09:57:54Z",
+        "description": "New in this release:\r\n\r\n - New functionality for loading API specification from YAML file downloaded from URL\r\n - New API routes for git, local and url specification (with backwards compatibility)\r\n - Refactoring\r\n - Fix issues with paths for static files.\r\n - Fix change download_uri github policy\r\n - Update SPARQL transformer\r\n - Prepare submission for JOSS: update docstrings, improve README, reorganise examples.",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.3",
+        "name": "May 2020 release",
+        "release_id": 26352397,
+        "tag": "v1.3.3",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/26352397",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/26352397",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2020-01-13T07:12:50Z",
+        "date_published": "2020-01-14T20:16:32Z",
+        "description": " - Remove PythonQL dependency (should solve pipenv install issues)\r\n - Add dependabot config",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.2",
+        "name": "January 2020 patch",
+        "release_id": 22838705,
+        "tag": "v1.3.2",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/22838705",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/22838705",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2019-12-26T15:10:26Z",
+        "date_published": "2019-12-26T15:26:31Z",
+        "description": "This release includes:\r\n\r\n- Updates on Travis configuration\r\n- Security fixes\r\n- Test fixes\r\n- Imlementing new features from  issues #190 #165 #24\r\n- SPARQLTransformer functionality\r\n- Change lookup path for config.ini\r\n",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.1",
+        "name": "End of 2019 release",
+        "release_id": 22469472,
+        "tag": "v1.3.1",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/22469472",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/22469472",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2019-07-01T09:11:44Z",
+        "date_published": "2019-07-01T11:32:31Z",
+        "description": " - SPARQL Transformer\r\n - Windows CI support\r\n - Full migration to Python 3 -- dropping Python 2 support :-(\r\n - Better error messages for bad credentials\r\n - Update Docker image env variables\r\n",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.3.0",
+        "name": "Full migration to Python 3",
+        "release_id": 18329046,
+        "tag": "v1.3.0",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/18329046",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/18329046",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2019-02-07T15:46:47Z",
+        "date_published": "2019-02-07T15:59:48Z",
+        "description": "Features in this release:\r\n\r\n - Make readme pypi friendly\r\n - Update requirements\r\n - Demo: running grlc from python\r\n - Add support for pyql projections\r\n - Update to work with python3\r\n - Check for license files for LicenseURLs\r\n - Add error for non-existing routes\r\n - Remove swagger-ui from static files\r\n - Process number parameters properly\r\n - Windows support",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.2.1",
+        "name": "Early 2019",
+        "release_id": 15427248,
+        "tag": "v1.2.1",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/15427248",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/15427248",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2018-10-17T10:40:03Z",
+        "date_published": "2018-10-17T11:19:43Z",
+        "description": "Updates in this release\r\n - Endpoints are now configurable\r\n - Github API interactions are done via PyGithub\r\n - Added Zenodo integration (including citation file)\r\n - Add support for queries from local directory\r\n - Support authentication on SPARQL endpoints\r\n - Added unit tests and continuous integration\r\n - Parsing insert queries \r\n - Use SwaggerUI from cdnjs \r\n - Use SPARQLWrapper\r\n - Make git2prov optional",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.2.0",
+        "name": "Summer 2018 updates",
+        "release_id": 13476445,
+        "tag": "v1.2.0",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/13476445",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/13476445",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2018-10-17T12:18:34Z",
+        "date_published": "2018-10-17T12:19:09Z",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/v1.2.0-pypi",
+        "name": "Release on pypi",
+        "release_id": 13477918,
+        "tag": "v1.2.0-pypi",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/v1.2.0-pypi",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/13477918",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/13477918",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/v1.2.0-pypi"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "c-martinez",
+          "type": "User"
+        },
+        "date_created": "2017-10-30T08:59:11Z",
+        "date_published": "2017-11-22T09:54:19Z",
+        "description": "Change log:\r\n - Python 3 support\r\n - Provenance for spec generation\r\n - Reduced default cache max age\r\n - Integrated repo PROV via Git2PROV\r\n - ci in dockerhub",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/1.1",
+        "release_id": 8616745,
+        "tag": "1.1",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/8616745",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/8616745",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "albertmeronyo",
+          "type": "User"
+        },
+        "date_created": "2017-02-07T12:52:01Z",
+        "date_published": "2017-02-07T13:53:27Z",
+        "description": "Fully charged grlc with Docker and PyPi support! Install as\n\n$ docker pull clariah/grlc:latest\nor\n$ pip install grlc\n",
+        "html_url": "https://github.com/CLARIAH/grlc/releases/tag/1.0",
+        "name": "1.0",
+        "release_id": 5382705,
+        "tag": "1.0",
+        "tarball_url": "https://api.github.com/repos/CLARIAH/grlc/tarball/1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CLARIAH/grlc/releases/5382705",
+        "value": "https://api.github.com/repos/CLARIAH/grlc/releases/5382705",
+        "zipball_url": "https://api.github.com/repos/CLARIAH/grlc/zipball/1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "docopt-ng",
+        "type": "Software_application",
+        "value": "docopt-ng==0.9.0",
+        "version": "==0.9.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Flask",
+        "type": "Software_application",
+        "value": "Flask==3.1.1",
+        "version": "==3.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Flask-Cors",
+        "type": "Software_application",
+        "value": "Flask-Cors==5.0.1",
+        "version": "==5.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyaml",
+        "type": "Software_application",
+        "value": "pyaml==25.1.0",
+        "version": "==25.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "python-gitlab",
+        "type": "Software_application",
+        "value": "python-gitlab==5.6.0",
+        "version": "==5.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rdflib",
+        "type": "Software_application",
+        "value": "rdflib==7.1.3",
+        "version": "==7.1.3"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "requests",
+        "type": "Software_application",
+        "value": "requests==2.32.4",
+        "version": "==2.32.4"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "SPARQLTransformer",
+        "type": "Software_application",
+        "value": "SPARQLTransformer==2.4.0",
+        "version": "==2.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "PyGithub",
+        "type": "Software_application",
+        "value": "PyGithub==2.6.1",
+        "version": "==2.6.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "gunicorn",
+        "type": "Software_application",
+        "value": "gunicorn==23.0.0; sys_platform!=\"win32\"",
+        "version": "==23.0.0; sys_platform!=\"win32\""
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "waitress",
+        "type": "Software_application",
+        "value": "waitress>=1.4.2; sys_platform==\"win32\"",
+        "version": ">=1.4.2; sys_platform==\"win32\""
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Flask",
+        "type": "Software_application",
+        "value": "Flask==1.0.2",
+        "version": "1.0.2"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Flask-Cors",
+        "type": "Software_application",
+        "value": "Flask-Cors==3.0.6",
+        "version": "3.0.6"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MarkupSafe",
+        "type": "Software_application",
+        "value": "MarkupSafe==0.23",
+        "version": "0.23"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "PyGithub",
+        "type": "Software_application",
+        "value": "PyGithub==1.43.5",
+        "version": "1.43.5"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "PyYAML",
+        "type": "Software_application",
+        "value": "PyYAML==5.4",
+        "version": "5.4"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "SPARQLTransformer",
+        "type": "Software_application",
+        "value": "SPARQLTransformer==2.1.1",
+        "version": "2.1.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "SPARQLWrapper",
+        "type": "Software_application",
+        "value": "SPARQLWrapper==1.8.2",
+        "version": "1.8.2"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "docopt",
+        "type": "Software_application",
+        "value": "docopt==0.6.2",
+        "version": "0.6.2"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "docutils",
+        "type": "Software_application",
+        "value": "docutils==0.17.1",
+        "version": "0.17.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "gevent",
+        "type": "Software_application",
+        "value": "gevent==1.4.0",
+        "version": "1.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "greenlet",
+        "type": "Software_application",
+        "value": "greenlet==0.4.15",
+        "version": "0.4.15"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "gunicorn",
+        "type": "Software_application",
+        "value": "gunicorn==19.6.0",
+        "version": "19.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "html5lib",
+        "type": "Software_application",
+        "value": "html5lib==1.0.1",
+        "version": "1.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "isodate",
+        "type": "Software_application",
+        "value": "isodate==0.5.4",
+        "version": "0.5.4"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "keepalive",
+        "type": "Software_application",
+        "value": "keepalive==0.5",
+        "version": "0.5"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyaml",
+        "type": "Software_application",
+        "value": "pyaml==18.11.0",
+        "version": "18.11.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pyparsing",
+        "type": "Software_application",
+        "value": "pyparsing==2.0.7",
+        "version": "2.0.7"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rdflib",
+        "type": "Software_application",
+        "value": "rdflib==5.0.0",
+        "version": "5.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "rdflib-jsonld",
+        "type": "Software_application",
+        "value": "rdflib-jsonld==0.4.0",
+        "version": "0.4.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "requests",
+        "type": "Software_application",
+        "value": "requests==2.20.0",
+        "version": "2.20.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "setuptools",
+        "type": "Software_application",
+        "value": "setuptools==>= 38.6.0",
+        "version": ">= 38.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "simplejson",
+        "type": "Software_application",
+        "value": "simplejson==3.16.0",
+        "version": "3.16.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "six",
+        "type": "Software_application",
+        "value": "six==1.12.0",
+        "version": "1.12.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "waitress",
+        "type": "Software_application",
+        "value": "waitress==>= 1.4.2",
+        "version": ">= 1.4.2"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "werkzeug",
+        "type": "Software_application",
+        "value": "werkzeug==>= 0.16.0",
+        "version": ">= 0.16.0"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Prerequisites",
+        "parent_header": [
+          "Install and run",
+          "Pip"
+        ],
+        "type": "Text_excerpt",
+        "value": "grlc has the following requirements:\n- Python3\n- development files (depending on your OS):\n```bash\nsudo apt-get install libevent-dev python-all-dev\n```\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "run": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Install and run",
+        "type": "Text_excerpt",
+        "value": "You can use grlc in different ways:\n - [Via grlc.io](#grlc.io): you can use the [grlc.io service](https://grlc.io/)\n - [Via Docker](#Docker): you can use the [grlc docker image](https://hub.docker.com/r/clariah/grlc) and start your own grlc server.\n - [Via pip](#Pip): you can install the [grlc Python package](https://pypi.org/project/grlc/) and start your own grlc server or use grlc as a Python library.\n\nMore details for each of these options are given below.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "grlc.io",
+        "parent_header": [
+          "Install and run"
+        ],
+        "type": "Text_excerpt",
+        "value": "The easiest way to use grlc is by visiting [grlc.io](http://grlc.io/) and using this service to convert SPARQL queries into a RESTful API. Your queries can be [stored on a github repo](#from-a-github-repository) or can be [listed on a specification file](#from-a-specification-file).\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Google Analytics",
+        "parent_header": [
+          "Install and run",
+          "grlc.io"
+        ],
+        "type": "Text_excerpt",
+        "value": "grlc.io uses Google Analytics to keep track of the number of users of the service. We need this to show the impact of grlc when applying for funding. If this causes you to be conserned about privacy, we recommend you use some user-side anti-tracking, and we would appreciate if you could reach out to us to let us know you are using grlc.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Docker",
+        "parent_header": [
+          "Install and run"
+        ],
+        "type": "Text_excerpt",
+        "value": "To run grlc via [docker](https://www.docker.com/), you'll need a working installation of docker. To deploy grlc, just pull the [latest image from Docker hub](https://hub.docker.com/r/clariah/grlc/). :\n```bash\ndocker run -it --rm -p 8088:80 clariah/grlc\n```\n\nThe docker image allows you to setup several environment variable such as `GRLC_SERVER_NAME` `GRLC_GITHUB_ACCESS_TOKEN`,`GRLC_GITLAB_ACCESS_TOKEN` and `GRLC_SPARQL_ENDPOINT`:\n```bash\ndocker run -it --rm -p 8088:80 -e GRLC_SERVER_NAME=grlc.io -e GRLC_GITHUB_ACCESS_TOKEN=xxx -e GRLC_GITLAB_ACCESS_TOKEN=yyy -e GRLC_SPARQL_ENDPOINT=http://dbpedia.org/sparql -e DEBUG=true clariah/grlc\n```\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Pip",
+        "parent_header": [
+          "Install and run"
+        ],
+        "type": "Text_excerpt",
+        "value": "If you want to run grlc locally or use it as a library, you can install grlc on your machine. Grlc is [registered in PyPi](https://pypi.org/project/grlc/) so you can install it using pip.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Standalone server",
+        "parent_header": [
+          "Install and run",
+          "Pip"
+        ],
+        "type": "Text_excerpt",
+        "value": "grlc includes a command line tool which you can use to start your own grlc server:\n```bash\ngrlc-server\n```\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Using a WSGI server",
+        "parent_header": [
+          "Install and run",
+          "Pip"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can run grlc using a WSGI server such as gunicorn as follows:\n```bash\ngunicorn grlc.server:app\n```\n\nIf you want to use your own gunicorn configuration, for example `gunicorn_config.py`:\n```python\nworkers = 5\nworker_class = 'gevent'\nbind = '0.0.0.0:8088'\n```\nThen you can run it as:\n```bash\ngunicorn -c gunicorn_config.py grlc.server:app\n```\n\n**Note:** Since `gunicorn` does not work under Windows, you can use `waitress` instead:\n```bash\nwaitress-serve --port=8088 grlc.server:app\n```\n\nIf you want to run grlc at system boot as a service, you can find example upstart scripts at [upstart/](upstart/grlc-docker.conf)\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "grlc library",
+        "parent_header": [
+          "Install and run",
+          "Pip"
+        ],
+        "type": "Text_excerpt",
+        "value": "You can use grlc as a library directly from your own python script. See the [usage example](https://github.com/CLARIAH/grlc/blob/master/doc/notebooks/GrlcFromNotebook.ipynb) to find out more.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "grlc server configuration",
+        "parent_header": [
+          "Install and run",
+          "Pip"
+        ],
+        "type": "Text_excerpt",
+        "value": "Regardless of how you are running your grlc server, you will need to configure it using the `config.ini` file. Have a look at the [example config file](./config.default.ini) to see how it this file is structured.\n\nThe configuration file contains the following variables:\n - `github_access_token` [access token](#gitaccess-token) to communicate with Github API.\n - `gitlab_access_token` [access token](#git-access-token) to communicate with GitLab API.\n - `local_sparql_dir` local storage directory where [local queries](#from-local-storage) are located.\n - `server_name` name of the server (e.g. grlc.io)\n - `sparql_endpoint` default SPARQL endpoint\n - `user` and `password` SPARQL endpoint default authentication (if required, specify `'none'` if not required)\n - `debug` enable debug level logging.\n - `gitlab_url` to specify the base url of your GitLab instance.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Git access token",
+        "parent_header": [
+          "Install and run",
+          "Pip",
+          "grlc server configuration"
+        ],
+        "type": "Text_excerpt",
+        "value": "In order for grlc to communicate with GitHub and/or GitLab, you'll need to tell grlc what your access token is:\n\n1. Get a [GitHub personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#authenticating-to-the-api-with-a-personal-access-token) or [GitLab personal access token](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html#create-a-personal-access-token).\n2. You'll get an access token string, copy it and save it somewhere safe.\n3. Edit your `config.ini` (`github_access_token` and `gitlab_access_token` respectively) and/or `docker-compose.yml` (`GRLC_GITHUB_ACCESS_TOKEN` and `GRLC_GITLAB_ACCESS_TOKEN` environment variables).\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "download",
+    "contact",
+    "faq",
+    "support"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 01:03:10",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 142
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Quick tutorial",
+        "type": "Text_excerpt",
+        "value": "For a quick usage tutorial check out our wiki [walkthrough](https://github.com/CLARIAH/grlc/wiki/Quick-tutorial) and [list of features](https://github.com/CLARIAH/grlc/wiki/Features).\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "type": "Text_excerpt",
+        "value": "grlc assumes that you have a collection of SPARQL queries as .rq files (like [this](https://github.com/CLARIAH/grlc-queries)). grlc will create one API operation for each SPARQL query/.rq file in the collection.\n\nYour queries can add API parameters to each operation by using the [parameter mapping](https://github.com/CLARIAH/grlc/wiki/Parameter-Mapping) syntax. This allows your query to define query variables which will be mapped to API parameters for your API operation ([see here](https://github.com/CLARIAH/grlc-queries/blob/master/enumerate.rq) for an example).\n\nYour queries can include special [decorators](#decorator-syntax) to add extra functionality to your API.\n\ngrlc also supports SPARQL queries expressed as json, using the [SPARQL Transformer](https://github.com/D2KLab/py-sparql-transformer) [Query in JSON](https://github.com/D2KLab/sparql-transformer/blob/master/README.md#query-in-json) syntax. (**Tip**: the [SPARQL Transformer Playground](https://d2klab.github.io/sparql-transformer/) is very useful when building queries with this syntax).\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Query location",
+        "parent_header": [
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "grlc can load your query collection from different locations: from a GitHub repository (`api-git`), from a GitLab repository (`api-gitlab`), from local storage (`api-local`), and from a specification file (`api-url`). Each type of location has specific features and is accessible via different paths. However all location types produce the same beautiful APIs.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "From a GitHub repository",
+        "parent_header": [
+          "Usage",
+          "Query location"
+        ],
+        "type": "Text_excerpt",
+        "value": "> API path:\n`http://grlc-server/api-git/<user>/<repo>`\n\ngrlc can build an API from any Github repository, specified by the GitHub user name of the owner (`<user>`) and repository name (`<repo>`).\n\nFor example, assuming your queries are stored on a Github repo: `https://github.com/CLARIAH/grlc-queries/`, point your browser to the following location\n`http://grlc.io/api-git/CLARIAH/grlc-queries/`\n\ngrlc can make use of git's version control mechanism to generate an API based on a specific version of queries in the repository. This can be done by including the commit sha in the URL path (`http://grlc-server/api-git/<user>/<repo>/commit/<sha>`), for example: `http://grlc.io/api-git/CLARIAH/grlc-queries/commit/79ceef2ee814a12e2ec572ffaa2f8212a22bae23`\n\ngrlc can also use a subdirectory inside your Github repo. This can be done by including a subdirectory in the URL path (`http://grlc-server/api-git/<user>/<repo>/subdir/<subdir>`).\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "From a GitLab repository",
+        "parent_header": [
+          "Usage",
+          "Query location"
+        ],
+        "type": "Text_excerpt",
+        "value": "> API path:\n`http://grlc-server/api-gitlab/<user>/<repo>`\n\ngrlc can build an API from any GitLab repository, specified by the GitLab user name of the owner (`<user>`) and repository name (`<repo>`).\n\nFor example, assuming your queries are stored on a GitLab repo: `https://gitlab.com/c-martinez/grlc-queries`, point your browser to the following location\n`http://grlc.io/api-gitlab/c-martinez/grlc-queries/`\n\ngrlc can make use of git's version control mechanism to generate an API based on a specific version of queries in the repository. This can be done by including the name of a branch in the URL path (`http://grlc-server/api-gitlab/<user>/<repo>/branch/<branch>`), for example: `http://grlc.io/api-gitlab/c-martinez/grlc-queries/branch/master`\n\ngrlc can also use a subdirectory inside your GitLab repo. This can be done by including a subdirectory in the URL path (`http://grlc-server/api-gitlab/<user>/<repo>/subdir/<subdir>`), for example: `http://grlc-server/api-gitlab/c-martinez/grlc-queries/subdir/subdir`.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "From local storage",
+        "parent_header": [
+          "Usage",
+          "Query location"
+        ],
+        "type": "Text_excerpt",
+        "value": "> API path:\n`http://grlc-server/api-local/`\n\ngrlc can generate an API from a local directory in the computer where your grlc server runs. You can configure the location of this directory in your [grlc server configuration file](#grlc-server-configuration). See also [how to install and run your own grlc instance](#install-and-run).\n\nWhen the API is generated from a local directory, API information can be loaded from a configuration file in that folder. This file must be called `local-api-config.ini` and it has the following format:\n```ini\n[repo_info]\nrepo_title = Some title\napi_description = Description of my API\ncontact_name = My name\ncontact_url = https://mypage/\nlicence_url = https://mylicence/\n```\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "From a specification file",
+        "parent_header": [
+          "Usage",
+          "Query location"
+        ],
+        "type": "Text_excerpt",
+        "value": "> API path:\n`http://grlc-server/api-url/?specUrl=<specUrl>`\n\ngrlc can generate an API from a yaml specification file accessible on the web.\n\nFor example, assuming your queries are listed on spec file: `https://raw.githubusercontent.com/CLARIAH/grlc-queries/master/urls.yml`, point your browser to the following location\n`http://grlc.io/api-url?specUrl=https://raw.githubusercontent.com/CLARIAH/grlc-queries/master/urls.yml`\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Specification file syntax",
+        "parent_header": [
+          "Usage",
+          "Query location",
+          "From a specification file"
+        ],
+        "type": "Text_excerpt",
+        "value": "A grlc API specification file is a YAML file which includes the necessary information to create a grlc API, most importantly a list of URLs to decorated and HTTP-dereferenceable SPARQL queries. This file should contain the following fields\n\n - `title`: Title of my API\n - `description`: API description\n - `contact`: Contact details of the API owner. This should include the `name` and `url` properties.\n - `licence`: A URL pointing to the licence file for the API.\n - `queries`: A list of URLs of SPARQL queries (with header decorators). Alternatively a query can be defined as a dictionary with a `name` and a `url`.\n\nFor example:\n```YAML\ntitle: Title of my API\ndescription: Description of my API\ncontact:\n  name: Contact Name\n  url: https://www.mywebsite.org\nlicence: http://example.org/licence.html\nqueries:\n  - https://www.mywebsite.org/query1.rq\n  - https://www.mywebsite.org/query2.rq\n  - https://www.otherwebsite.org/query3.rq\n  - name: QueryFour\n    url: https://www.mywebsite.org/query4.rq\n```\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "grlc generated API",
+        "parent_header": [
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "The API paths of all location types point to the generated [swagger-ui](https://swagger.io/) style API documentation. On the API documentation page, you can explore available API calls and execute individual API calls.\n\nYou can also view the swagger spec of your API, by visiting `<API-path>/swagger`, for example: `http://grlc.io/api-git/CLARIAH/grlc-queries/swagger`\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "grlc query execution",
+        "parent_header": [
+          "Usage"
+        ],
+        "type": "Text_excerpt",
+        "value": "When you call an API endpoint, grlc executes the SPARQL query for that endpoint by combining supplied parameters and decorators.\n\nThere are 4 options to specify your own endpoint:\n\n* Add a `sparql_endpoint` on your [`config.ini`](#grlc-server-configuration)\n* Add a `endpoint` parameter to your request: 'http://grlc.io/user/repo/query?endpoint=http://sparql-endpoint/'. You can add a `#+ endpoint_in_url: False` decorator if you DO NOT want to see the `endpoint` parameter in the swagger-ui of your API.\n* Add the `#+ endpoint:` [decorator](#`endpoint`).\n* Add the URL of the endpoint on a single line in an `endpoint.txt` file within the GitHub repository that contains the queries.\n\nThe endpoint call will return the result of executing the query as a json representation of rdflib.query.QueryResult (for other result formats, you can use content negotiation via HTTP `Accept` headers). For json responses, the schema of the response can be modified by using the `#+ transform:` [decorator](#`transform`).\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Example APIs",
+        "parent_header": [
+          "Decorator syntax"
+        ],
+        "type": "Text_excerpt",
+        "value": "Check these out:\n- http://grlc.io/api-git/CLARIAH/grlc-queries\n- http://grlc.io/api-gitlab/c-martinez/grlc-queries\n- http://grlc.io/api-url?specUrl=https://raw.githubusercontent.com/CLARIAH/grlc-queries/master/urls.yml\n- http://grlc.io/api-git/CLARIAH/wp4-queries-hisco\n- http://grlc.io/api-git/albertmeronyo/lodapi\n- http://grlc.io/api-git/albertmeronyo/lsq-api\n- https://grlc.io/api-git/CEDAR-project/Queries\n\nYou'll find the sources of these and many more in [GitHub](https://github.com/search?o=desc&q=endpoint+summary+language%3ASPARQL&s=indexed&type=Code&utf8=%E2%9C%93)\n\nUse [this GitHub search](https://github.com/search?q=endpoint+summary+language%3ASPARQL&type=Code&utf8=%E2%9C%93) to see examples from other grlc users.\n"
+      },
+      "source": "https://github.com/CLARIAH/grlc/blob//README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.3.7"
+      },
+      "source": "https://raw.githubusercontent.com/CLARIAH/grlc/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

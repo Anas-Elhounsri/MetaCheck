@@ -1,0 +1,540 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "mark.padgham@email.com",
+        "type": "String",
+        "value": "Mark Padgham"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mpadge/spatialcluster"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mpadge/spatialcluster"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mpadge/spatialcluster"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          "https://github.com/mpadge/spatialcluster/actions?query=workflow%3AR-CMD-check",
+          "https://codecov.io/gh/mpadge/spatialcluster"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-03-13T20:56:49Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-06-30T17:04:51Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "spatially-constrained clustering in R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+        "type": "String",
+        "value": "R port of redcap (Regionalization with dynamically\n    constrained agglomerative clustering and partitioning)."
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R port of redcap (Regionalization with dynamically constrained agglomerative clustering and partitioning)."
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.97046140402808,
+      "result": {
+        "original_header": "spatialcluster",
+        "type": "Text_excerpt",
+        "value": "An **R** package for spatially-constrained clustering using either\ndistance or covariance matrices. \u201c*Spatially-constrained*\u201d means that\nthe data from which clusters are to be formed also map on to spatial\ncoordinates, and the constraint is that clusters must be spatially contiguous. \nThe package includes both an implementation of the REDCAP collection of\nefficient yet approximate algorithms described in [D. Guo\u2019s 2008 paper,\n\u201cRegionalization with dynamically constrained agglomerative clustering\nand\npartitioning.\u201d](https://www.tandfonline.com/doi/abs/10.1080/13658810701674970)\n(pdf available\n[here](https://pdfs.semanticscholar.org/ead1/7df8aaa1aed0e433b3ae1ec1ec5c7e785b2b.pdf)),\nwith extension to covariance matrices, and a new technique for computing\nclusters using complete data sets. The package is also designed to\nanalyse matrices of spatial interactions (counts, densities) between\nsets of origin and destination points. The spatial structure of\ninteraction matrices is able to be statistically analysed to yield both\nglobal statistics for the overall spatial structure, and local\nstatistics for individual clusters.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/README.Rmd",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9419888475227903,
+      "result": {
+        "original_header": "A Cautionary Note",
+        "type": "Text_excerpt",
+        "value": "This example illustrates the universal danger in all clustering\nalgorithms: they can not fail to produce results, even when the data fed\nto them are definitely devoid of any information as in this example.\nClustering algorithms should only be applied to reflect a very specific\nhypothesis for why data should be clustered in the first place; spatial\nclustering algorithms should only be applied to reflect two very\nspecific hypothesis for (i) why data should be clustered at all, and\n(ii) why those clusters should manifest a spatial pattern.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "development_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "http://www.repostatus.org/#wip"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mpadge/spatialcluster/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 6
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/mpadge/spatialcluster/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mpadge/spatialcluster"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "spatialcluster"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "spatialcluster"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/man/figures/README-full-single-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/README.Rmd",
+      "technique": "regular_expression"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/man/figures/README-cautionary-1.png"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "spatialcluster"
+        ],
+        "type": "Text_excerpt",
+        "value": "The easiest way to install `spatialcluster` is be enabling the\n[corresponding `r-universe`](https://mpadge.r-universe.dev/):\n\n``` r\noptions (repos = c (\n    mpadge = \"https://mpadge.r-universe.dev\",\n    CRAN = \"https://cloud.r-project.org\"\n))\n```\n\nThe package can then be installed as usual with,\n\n``` r\ninstall.packges (\"spatialcluster\")\n```\n\nAlternatively, the package can also be installed using any of the\nfollowing options:\n\n``` r\n# install.packages(\"remotes\")\nremotes::install_git (\"https://codeberg.org/mpadge/spatialcluster\")\nremotes::install_git (\"https://git.sr.ht/~mpadge/spatialcluster\")\nremotes::install_bitbucket (\"mpadge/spatialcluster\")\nremotes::install_gitlab (\"mpadge/spatialcluster\")\nremotes::install_github (\"mpadge/spatialcluster\")\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/mpadge/spatialcluster/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mpadge/spatialcluster/issues"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/mpadge/spatialcluster/issues"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cluster, clustering-algorithm, r, spatial"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "clustering-algorithm",
+          "cluster",
+          "r",
+          "spatial"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+        "type": "String",
+        "value": "GPL-3"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/GPL-3.0",
+        "spdx_id": "https://spdx.org/licenses/GPL-3.0",
+        "type": "License",
+        "value": "https://spdx.org/licenses/GPL-3.0"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "spatialcluster"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "spatialcluster: R port of redcap"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "mpadge"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+        "type": "String",
+        "value": "spatialcluster"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 89379,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 42515,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 3520,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C",
+        "size": 1695,
+        "type": "Programming_language",
+        "value": "C"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 874,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://github.com/mpadge/spatialcluster/blob/main/README.md"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Project Status:\nWIP",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#project"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "documentation",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:28:41",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 31
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Usage",
+        "parent_header": [
+          "spatialcluster"
+        ],
+        "type": "Text_excerpt",
+        "value": "The two main functions, `scl_redcap()` and `scl_full()`, implement\ndifferent algorithms for spatial clustering. The former implements the\nREDCAP collection of efficient yet approximate algorithms described in\n[D. Guo\u2019s 2008 paper, \u201cRegionalization with dynamically constrained\nagglomerative clustering and\npartitioning.\u201d](https://www.tandfonline.com/doi/abs/10.1080/13658810701674970)\n(pdf available\n[here](https://pdfs.semanticscholar.org/ead1/7df8aaa1aed0e433b3ae1ec1ec5c7e785b2b.pdf)),\nwith extension here to apply clustering to covariance matrices. These\nalgorithms are computationally efficient yet generate only *approximate*\nestimates of underlying clusters. The second function, `scl_full()`,\ntrades computational efficiency for accuracy, through generating\nclustering schemes using all available data.\n\nIn short:\n\n- `scl_full()` should always be preferred as long as it returns results\n  within a reasonable amount of time\n- `scl_redcap()` should be used only where data are too large for\n  `scl_full()` to be run in a reasonable time.\n\nFor clustering a group of `n` points, both of these functions require three\nmain arguments:\n\n1.  A rectangular matrix of spatial coordinates of points to be clustered \n    (`n` rows; at least 2 columns);\n2.  An `n`-by-`n` square matrix quantifying relationships between those\n    points;\n3.  A single value (`ncl`) specifying the desired number of clusters.\n\nThe following code demonstrates usage with randomly-generated data:\n\n``` r\nset.seed (1)\nn <- 100\nxy <- matrix (runif (2 * n), ncol = 2)\ndmat <- matrix (runif (n^2), ncol = n)\n```\n\nThe load the package and call the function:\n\n``` r\nlibrary (spatialcluster)\nscl <- scl_full (xy, dmat, ncl = 8)\nplot (scl)\n```\n\n![](man/figures/README-full-single-1.png)\n\nBoth functions return a `list` with the following components:\n\n``` r\nnames (scl)\n#> [1] \"tree\"       \"merges\"     \"ord\"        \"nodes\"      \"pars\"      \n#> [6] \"statistics\"\n```\n\n- `tree` details distances and cluster numbers for all pairwise\n  comparisons between objects.\n- `merges` details increasing distances at which each pair of objects\n  was merged into a single cluster.\n- `ord` provides the order of the merges (for `scl_full()` only).\n- `nodes` records the spatial coordinates of each point (node) of the\n  input data.\n- `pars` retains the parameters used to call the clustering function.\n- `statsitics` returns the clustering statistics, both for individual\n  clusters and an overall global statistic for the clustering scheme as\n  a whole.\n\nSee the \"_Get Started_\" vignette for more details.\n"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+        "type": "String",
+        "value": "0.2.0.017"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.2.0.017"
+      },
+      "source": "https://raw.githubusercontent.com/mpadge/spatialcluster/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

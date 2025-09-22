@@ -1,0 +1,688 @@
+{
+  "application_domain": [
+    {
+      "confidence": 0.8200073884035699,
+      "result": {
+        "type": "String",
+        "value": "Semantic web"
+      },
+      "technique": "supervised_classification"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "rpkgs@pm.me",
+        "type": "String",
+        "value": "Matthew Leonawicz"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "parent_header": [
+          "memery <img src=\"man/figures/logo.png\" style=\"margin-left:10px;margin-bottom:5px;\" width=\"120\" align=\"right\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Matthew Leonawicz (2024). memery: Internet Memes for Data Analysts. R\npackage version 0.6.0. <https://CRAN.R-project.org/package=memery>\n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Code of Conduct\n\nAs contributors and maintainers of this project, we pledge to respect all people who \ncontribute through reporting issues, posting feature requests, updating documentation,\nsubmitting pull requests or patches, and other activities.\n\nWe are committed to making participation in this project a harassment-free experience for\neveryone, regardless of level of experience, gender, gender identity and expression,\nsexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion.\n\nExamples of unacceptable behavior by participants include the use of sexual language or\nimagery, derogatory comments or personal attacks, trolling, public or private harassment,\ninsults, or other unprofessional conduct.\n\nProject maintainers have the right and responsibility to remove, edit, or reject comments,\ncommits, code, wiki edits, issues, and other contributions that are not aligned to this \nCode of Conduct. Project maintainers who do not follow the Code of Conduct may be removed \nfrom the project team.\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be reported by \nopening an issue or contacting one or more of the project maintainers.\n\nThis Code of Conduct is adapted from the Contributor Covenant \n(https://www.contributor-covenant.org), version 1.0.0, available at \nhttps://contributor-covenant.org/version/1/0/0/.\n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/memery"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/memery"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/memery"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Contribute",
+        "parent_header": [
+          "memery <img src=\"man/figures/logo.png\" style=\"margin-left:10px;margin-bottom:5px;\" width=\"120\" align=\"right\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Contributions are welcome. Contribute through GitHub via pull request.\nPlease create an issue first if it is regarding any substantive feature\nadd or change.\n\n------------------------------------------------------------------------\n\nPlease note that the `memery` project is released with a [Contributor\nCode of\nConduct](https://github.com/leonawicz/memery/blob/master/CODE_OF_CONDUCT.md).\nBy contributing to this project, you agree to abide by its terms.\n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2017-10-27T23:30:05Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-09-11T22:39:43Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "R package for combining the visual impact of an attention-grabbing meme with graphic results of data analysis."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+        "type": "String",
+        "value": "Generates internet memes that optionally include a superimposed inset plot and other atypical features, \n    combining the visual impact of an attention-grabbing meme with graphic results of data analysis.\n    The package differs from related packages that focus on imitating and reproducing standard memes.\n    Some packages do this by interfacing with online meme generators whereas others achieve this natively.\n    This package takes the latter approach. It does not interface with online meme generators or require any authentication with external websites.\n    It reads images directly from local files or via URL and meme generation is done by the package.\n    While this is similar to the 'meme' package available on CRAN, it differs in that the focus is on \n    allowing for non-standard meme layouts and hybrids of memes mixed with graphs.\n    While this package can be used to make basic memes like an online meme generator would produce, \n    it caters primarily to hybrid graph-meme plots where the meme presentation can be seen as a backdrop highlighting \n    foreground graphs of data analysis results.\n    The package also provides support for an arbitrary number of meme text labels with arbitrary size, position and other attributes \n    rather than restricting to the standard top and/or bottom text placement. \n    This is useful for proper aesthetic interleaving of plots of data between meme image backgrounds and overlain text labels.\n    The package offers a selection of templates for graph placement and appearance with respect to the underlying meme.\n    Graph templates also permit additional template-specific customization.\n    Animated gif support is provided but this is optional and functional only if the 'magick' package is installed. \n    'magick' is not required unless gif functionality is desired."
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Generates internet memes that optionally include a superimposed inset plot and other atypical features, combining the visual impact of an attention-grabbing meme with graphic results of data analysis. The package differs from related packages that focus on imitating and reproducing standard memes. Some packages do this by interfacing with online meme generators whereas others achieve this natively. This package takes the latter approach. It does not interface with online meme generators or require any authentication with external websites. It reads images directly from local files or via URL and meme generation is done by the package. While this is similar to the 'meme' package available on CRAN, it differs in that the focus is on allowing for non-standard meme layouts and hybrids of memes mixed with graphs. While this package can be used to make basic memes like an online meme generator would produce, it caters primarily to hybrid graph-meme plots where the meme presentation can be seen as a backdrop highlighting foreground graphs of data analysis results. The package also provides support for an arbitrary number of meme text labels with arbitrary size, position and other attributes rather than restricting to the standard top and/or bottom text placement. This is useful for proper aesthetic interleaving of plots of data between meme image backgrounds and overlain text labels. The package offers a selection of templates for graph placement and appearance with respect to the underlying meme. Graph templates also permit additional template-specific customization. Animated gif support is provided but this is optional and functional only if the 'magick' package is installed. 'magick' is not required unless gif functionality is desired."
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9698695722110736,
+      "result": {
+        "original_header": "Make memorable plots with `memery`.",
+        "type": "Text_excerpt",
+        "value": "The `memery` package generates internet memes that optionally include a\nsuperimposed inset plot and other atypical features, combining the\nvisual impact of an attention-grabbing meme with graphic results of data\nanalysis. \nThe package differs from related packages that focus on imitating and\nreproducing standard memes. Some packages do this by interfacing with\nonline meme generators whereas others achieve this natively. This\npackage takes the latter approach. It does not interface with online\nmeme generators or require any authentication with external websites. It\nreads images directly from local files or via URL and meme generation is\ndone by the package. \nWhile this is similar to the `meme` package available on CRAN, it\ndiffers in that the focus is on allowing for non-standard meme layouts\nand hybrids of memes mixed with graphs. While this package can be used\nto make basic memes like an online meme generator would produce, it\ncaters primarily to hybrid graph-meme plots where the meme presentation\ncan be seen as a backdrop highlighting foreground graphs of data\nanalysis results. \nThe package also provides support for an arbitrary number of meme text\nlabels with arbitrary size, position and other attributes rather than\nrestricting to the standard top and/or bottom text placement. This is\nuseful for proper aesthetic interleaving of plots of data between meme\nimage backgrounds and overlain text labels. The package offers a\nselection of templates for graph placement and appearance with respect\nto the underlying meme. Graph templates also permit additional\ntemplate-specific customization. Animated gif support is provided but\nthis is optional and functional only if the `magick` package is\ninstalled. \n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/README.Rmd",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/memery/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/memery/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 1
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/leonawicz/memery/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "leonawicz/memery"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "memery "
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "description",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+        "type": "Url",
+        "value": "DESCRIPTION"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "memery"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "images": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://leonawicz.github.io/memery/articles/meme4d.jpg"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "parent_header": [
+          "memery <img src=\"man/figures/logo.png\" style=\"margin-left:10px;margin-bottom:5px;\" width=\"120\" align=\"right\">"
+        ],
+        "type": "Text_excerpt",
+        "value": "Install the CRAN release of `memery` with\n\n``` r\ninstall.packages(\"memery\")\n```\n\nInstall the development version from GitHub with\n\n``` r\n# install.packages(\"remotes\")\nremotes::install_github(\"leonawicz/memery\")\n```\n\nSee the\n[vignette](https://leonawicz.github.io/memery/articles/memery.html) for\nan overview with usage examples.\n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/README.Rmd",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/leonawicz/memery/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/memery/issues"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/leonawicz/memery/issues"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "data-visualization, memes, r-package, r-shiny"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "# MIT License\n\nCopyright (c) 2017 Matthew Leonawicz\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+        "type": "String",
+        "value": "MIT + file LICENSE"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/https://spdx.org/licenses/MIT",
+        "spdx_id": "https://spdx.org/licenses/MIT",
+        "type": "License",
+        "value": "https://spdx.org/licenses/MIT"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/leonawicz/memery/master/man/figures/logo.png"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "memery"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "memery: Internet Memes for Data Analysts"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "leonawicz"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+        "type": "String",
+        "value": "memery"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "size": 46253,
+        "type": "Programming_language",
+        "value": "R"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "CSS",
+        "size": 162,
+        "type": "Programming_language",
+        "value": "CSS"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "R",
+        "type": "Programming_language",
+        "url": "https://r-project.org",
+        "value": "R",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/leonawicz/memery/master/README.Rmd"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/leonawicz/memery/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2024-09-11T22:39:35Z",
+        "date_published": "2024-09-19T14:22:13Z",
+        "description": "* Documentation updates.\r\n* Minor code updates and fixes.",
+        "html_url": "https://github.com/leonawicz/memery/releases/tag/v0.6.0",
+        "name": "memery 0.6.0 release",
+        "release_id": 175908910,
+        "tag": "v0.6.0",
+        "tarball_url": "https://api.github.com/repos/leonawicz/memery/tarball/v0.6.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/memery/releases/175908910",
+        "value": "https://api.github.com/repos/leonawicz/memery/releases/175908910",
+        "zipball_url": "https://api.github.com/repos/leonawicz/memery/zipball/v0.6.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2023-09-12T19:57:47Z",
+        "date_published": "2023-09-23T15:36:04Z",
+        "description": "* Added required package alias in documentation.",
+        "html_url": "https://github.com/leonawicz/memery/releases/tag/v0.5.7",
+        "name": "memery 0.5.7 release",
+        "release_id": 122318818,
+        "tag": "v0.5.7",
+        "tarball_url": "https://api.github.com/repos/leonawicz/memery/tarball/v0.5.7",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/memery/releases/122318818",
+        "value": "https://api.github.com/repos/leonawicz/memery/releases/122318818",
+        "zipball_url": "https://api.github.com/repos/leonawicz/memery/zipball/v0.5.7"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2019-04-19T01:19:17Z",
+        "date_published": "2019-04-21T16:17:24Z",
+        "description": "* Made `meme_gif` faster.\r\n",
+        "html_url": "https://github.com/leonawicz/memery/releases/tag/v0.5.2",
+        "name": "memery 0.5.2 release",
+        "release_id": 16887861,
+        "tag": "v0.5.2",
+        "tarball_url": "https://api.github.com/repos/leonawicz/memery/tarball/v0.5.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/memery/releases/16887861",
+        "value": "https://api.github.com/repos/leonawicz/memery/releases/16887861",
+        "zipball_url": "https://api.github.com/repos/leonawicz/memery/zipball/v0.5.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2018-05-17T15:14:04Z",
+        "date_published": "2018-05-17T23:25:35Z",
+        "description": "* Added package hex logo.\r\n* Added the `car_shiny` function for recreating the (ca)R Shiny promotional anaylst meme animated gif. Given that it is a gif, `magick` and ImageMagick are required for this function to work.\r\n* Fixed formatting issues in some of the documentation.\r\n* Switched some help doc examples to `dontrun` to avoid generating large images inceasing package size.\r\n* Updated unit tests.\r\n* Added `lintr` to Suggests field in DESCRIPTION per CRAN maintainer request regarding `testthat` unit tests.\r\n",
+        "html_url": "https://github.com/leonawicz/memery/releases/tag/v0.5.0",
+        "name": "memery 0.5.0 release",
+        "release_id": 11058403,
+        "tag": "v0.5.0",
+        "tarball_url": "https://api.github.com/repos/leonawicz/memery/tarball/v0.5.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/memery/releases/11058403",
+        "value": "https://api.github.com/repos/leonawicz/memery/releases/11058403",
+        "zipball_url": "https://api.github.com/repos/leonawicz/memery/zipball/v0.5.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2018-02-13T16:13:21Z",
+        "date_published": "2018-02-13T16:36:44Z",
+        "description": "* Fixed incorrectly specified testthat unit test that was causing build failure on some systems.\r\n* Minor fix to framerate frame selection options for animated gifs in packaged Shiny demo app.\r\n* Minor updates to documentation.\r\n",
+        "html_url": "https://github.com/leonawicz/memery/releases/tag/v0.4.2",
+        "name": "memery 0.4.2 release",
+        "release_id": 9658029,
+        "tag": "v0.4.2",
+        "tarball_url": "https://api.github.com/repos/leonawicz/memery/tarball/v0.4.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/memery/releases/9658029",
+        "value": "https://api.github.com/repos/leonawicz/memery/releases/9658029",
+        "zipball_url": "https://api.github.com/repos/leonawicz/memery/zipball/v0.4.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2018-01-11T21:32:10Z",
+        "date_published": "2018-02-09T15:36:04Z",
+        "description": "* Update example Shiny app to account for presence/absence of `magick` package and launch an appropriately configued app in the browser (gif/no gif support and related options).\r\n* Example app test plot now only generates when app is launched in an R session where there are no ggplot objects in the global environment created by the user. If there are, then the test plot is not made. The test plot is also now only generated within the server environment and not added to the global environment.\r\n* Added app and animated gif content to introduction vignette.\r\n* Updated functions, examples and documentation.\r\n",
+        "html_url": "https://github.com/leonawicz/memery/releases/tag/v0.4.0",
+        "name": "memery 0.4.0 release",
+        "release_id": 9612051,
+        "tag": "v0.4.0",
+        "tarball_url": "https://api.github.com/repos/leonawicz/memery/tarball/v0.4.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/memery/releases/9612051",
+        "value": "https://api.github.com/repos/leonawicz/memery/releases/9612051",
+        "zipball_url": "https://api.github.com/repos/leonawicz/memery/zipball/v0.4.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2017-11-14T17:22:06Z",
+        "date_published": "2017-11-14T18:35:44Z",
+        "description": "* Updated unit tests. A couple tests requiring installation of other font families are run on Windows and Mac as well as on Linux via Travis-CI where pre-installation of fonts can be ensured. Otherwise these tests are skipped (Other Linux environments as well as Solaris).\r\n* `dplyr` packaged removed since it is no longer used (at this time) in examples and tests. This was leading to a `NOTE` on Mac builds.\r\n",
+        "html_url": "https://github.com/leonawicz/memery/releases/tag/v0.3.1",
+        "name": "memery 0.3.1 release",
+        "release_id": 8514292,
+        "tag": "v0.3.1",
+        "tarball_url": "https://api.github.com/repos/leonawicz/memery/tarball/v0.3.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/memery/releases/8514292",
+        "value": "https://api.github.com/repos/leonawicz/memery/releases/8514292",
+        "zipball_url": "https://api.github.com/repos/leonawicz/memery/zipball/v0.3.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "leonawicz",
+          "type": "User"
+        },
+        "date_created": "2017-11-08T22:09:58Z",
+        "date_published": "2017-11-09T15:35:49Z",
+        "description": "* Breaking changes: updated some arguments for `meme` and `text_position`.\r\n* Attempts to load Impact font on package load or to use any fonts with `meme` when not installed on the system now fail gracefully, falling back on `serif`.\r\n* `showtext`, `showtextdb` and `sysfonts` are now fully loaded ahead of `memery`.\r\n* Font sizing adjustments have been made to attempt to maintain as consistent as possible a text display on jpg vs. png outputs. Better anti-aliasing may be achieved using png, particularly regarding the text, though they will be fairly similar.\r\n* Added introduction vignette content.\r\n* Added templates to `inset_background` and `inset_position` helpers.\r\n* Added `size` and `margin` arguments to `inset_position` for additional user control of inset templates.\r\n* Added resource image file for examples and testing.\r\n* Added unit tests.\r\n* Minor bug fixes.\r\n* Update documentation.\r\n",
+        "html_url": "https://github.com/leonawicz/memery/releases/tag/v0.3.0",
+        "name": "memery 0.3.0 release",
+        "release_id": 8452416,
+        "tag": "v0.3.0",
+        "tarball_url": "https://api.github.com/repos/leonawicz/memery/tarball/v0.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/leonawicz/memery/releases/8452416",
+        "value": "https://api.github.com/repos/leonawicz/memery/releases/8452416",
+        "zipball_url": "https://api.github.com/repos/leonawicz/memery/zipball/v0.3.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "repository_status": [
+    {
+      "confidence": 1,
+      "result": {
+        "description": "Active \u2013 The project has reached a stable, usable\nstate and is being actively\ndeveloped.",
+        "type": "Url",
+        "value": "https://www.repostatus.org/#active"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/README.Rmd",
+      "technique": "regular_expression"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "requirements",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:04:02",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 17
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+        "type": "String",
+        "value": "0.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/DESCRIPTION",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "0.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/leonawicz/memery/master/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

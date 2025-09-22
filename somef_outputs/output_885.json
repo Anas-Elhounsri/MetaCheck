@@ -1,0 +1,1366 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": "david.hassell@ncas.ac.uk",
+        "type": "Agent",
+        "value": "david.hassell@ncas.ac.uk"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "NCAS",
+        "email": "david.hassell@ncas.ac.uk",
+        "identifier": "https://orcid.org/0000-0001-5106-7502",
+        "type": "String",
+        "value": "David Hassell"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "NCAS",
+        "email": "sadie.bartholomew@ncas.ac.uk",
+        "identifier": "https://orcid.org/0000-0002-6180-3603",
+        "type": "String",
+        "value": "Sadie L. Bartholomew"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "References",
+        "parent_header": [
+          "cfdm"
+        ],
+        "type": "Text_excerpt",
+        "value": "[![Website](https://img.shields.io/website?down_color=264d73&down_message=10.21105%2Fjoss.02717&label=JOSS&up_color=264d73&up_message=10.21105%2Fjoss.02717&url=https:%2F%2Fjoss.theoj.org%2Fpapers%2F10.21105%2Fjoss.02717%2Fstatus.svg)](https://doi.org/10.21105/joss.02717)\n[![Website](https://img.shields.io/website?color=264d73&down_message=10.5281%2Fzenodo.3894524&label=DOI&up_message=10.5281%2Fzenodo.3894524&url=https%3A%2F%2Fzenodo.org%2Frecord%2F3894524%23.Xuf2uXVKjeQ)](https://doi.org/10.5281/zenodo.3894524)\n[![Website](https://img.shields.io/website?down_color=264d73&down_message=10.5194%2Fgmd-10-4619-2017&label=GMD&up_color=264d73&up_message=10.5194%2Fgmd-10-4619-2017&url=https%3A%2F%2Fwww.geosci-model-dev.net%2F10%2F4619%2F2017%2F)](https://www.geosci-model-dev.net/10/4619/2017/)\n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Citation",
+        "type": "Text_excerpt",
+        "value": "If you use cfdm, either as a stand-alone application or to provide a CF\ndata model implementation to another software library, please consider\nincluding the reference:\n\nHassell et al., (2020). cfdm: A Python reference implementation of the\nCF data model. Journal of Open Source Software, 5(54), 2717,\nhttps://doi.org/10.21105/joss.02717\n\n```\n@article{Hassell2020,\n  doi = {10.21105/joss.02717},\n  url = {https://doi.org/10.21105/joss.02717},\n  year = {2020},\n  publisher = {The Open Journal},\n  volume = {5},\n  number = {54},\n  pages = {2717},\n  author = {David Hassell and Sadie L. Bartholomew},\n  title = {cfdm: A Python reference implementation of the CF data model},\n  journal = {Journal of Open Source Software}\n}\n```\n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": "David Hassell and Sadie L. Bartholomew",
+        "doi": "10.21105/joss.02717",
+        "format": "bibtex",
+        "title": "cfdm: A Python reference implementation of the CF data model",
+        "type": "Text_excerpt",
+        "url": "https://doi.org/10.21105/joss.02717",
+        "value": "@article{Hassell2020,\n    journal = {Journal of Open Source Software},\n    title = {cfdm: A Python reference implementation of the CF data model},\n    author = {David Hassell and Sadie L. Bartholomew},\n    pages = {2717},\n    number = {54},\n    volume = {5},\n    publisher = {The Open Journal},\n    year = {2020},\n    url = {https://doi.org/10.21105/joss.02717},\n    doi = {10.21105/joss.02717},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to make participation in our\nproject and our community a harassment-free experience for everyone,\nregardless of age, body size, disability, ethnicity, sex\ncharacteristics, gender identity and expression, level of experience,\neducation, socio-economic status, nationality, personal appearance,\nrace, religion, or sexual identity and orientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive\nenvironment include:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\n  advances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of\nacceptable behavior and are expected to take appropriate and fair\ncorrective action in response to any instances of unacceptable\nbehavior.\n\nProject maintainers have the right and responsibility to remove, edit,\nor reject comments, commits, code, wiki edits, issues, and other\ncontributions that are not aligned to this Code of Conduct, or to ban\ntemporarily or permanently any contributor for other behaviors that\nthey deem inappropriate, threatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies within all project spaces, and it also\napplies when an individual is representing the project or its\ncommunity in public spaces. Examples of representing a project or\ncommunity include posting via an official social media account, or\nacting as an appointed representative at an online or offline\nevent. Representation of a project may be further defined and\nclarified by project maintainers.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor\nCovenant][homepage], version 1.4, available at\nhttps://www.contributor-covenant.org/version/1/4/code-of-conduct.html\n\n[homepage]: https://www.contributor-covenant.org\n\nFor answers to common questions about this code of conduct, see\nhttps://www.contributor-covenant.org/faq\n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/NCAS-CMS/cfdm"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://ncas-cms.github.io/cfdm"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/NCAS-CMS/cfdm"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "continuous_integration": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/.github/workflows/run-test-suite.yml"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/.github/workflows/linting.yml"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "Thank you for taking the time to consider making a contribution to the\ncfdm package.\n\nPlease consult the\n[dedicated guidance page](https://ncas-cms.github.io/cfdm/contributing.html)\nin the documentation for detailed guidance on contributing to cfdm.\n\nOverall, general questions, suggestions for enhancements, and reports\nof bugs are appreciated and should be reported via the\n[GitHub issue tracker](https://github.com/NCAS-CMS/cfdm/issues).\n\nCode-change contributions to cfdm are also very welcome, though to\nensure the work is in line with plans for development of the library, please\nalways discuss any intended changes with the core development team in the\nfirst instance. The standard way to do so is also through the\nissue tracker:\n\n* if there is an existing issue in the tracker than you would like\n  to address, comment on that issue to indicate you would like to work on\n  it;\n* conversely, if there is not an issue corresponding to your ideas for\n  contribution, please raise a new issue outlining the idea.\n\nIf you are not sure about any aspect related to contributing after\nreading the guidance page, do not hesitate to get in touch by posting\na question in an issue.\n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2018-10-22T14:07:21Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-08-18"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-08-18"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-08-18T14:19:19Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2025-08-18"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Python reference implementation of the CF data model"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Python reference implementation of the CF data model"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "A Python reference implementation of the CF data model."
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9186005345431327,
+      "result": {
+        "original_header": "cfdm",
+        "type": "Text_excerpt",
+        "value": "A Python reference implementation of the CF data model. \n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.8974661541759172,
+      "result": {
+        "original_header": "Dask",
+        "type": "Text_excerpt",
+        "value": "From version 1.11.2.0 the `cfdm` package uses\n[Dask](https://docs.dask.org) for all of its data manipulations.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "supervised_classification"
+    },
+    {
+      "confidence": 0.9664308954333176,
+      "result": {
+        "original_header": "Functionality",
+        "type": "Text_excerpt",
+        "value": "The ``cfdm`` package fully implements the [CF data\nmodel](https://cfconventions.org/cf-conventions/cf-conventions.html#appendix-CF-data-model)\nfor its internal data structures and so is able to process any\nCF-compliant dataset. It is not strict about CF-compliance, however,\nso that partially conformant datasets may be ingested from existing\ndatasets and written to new datasets. This is so that datasets which\nare partially conformant may nonetheless be modified in memory. \n* read field and domain constructs from netCDF, CDL, and Zarr datasets\n  with a choice of netCDF backends, and in  local, http, and s3 locations,\n* be fully flexible with respect to HDF5 chunking,\n* create new field and domain constructs in memory,\n* write and append field and domain constructs to netCDF datasets on disk,\n* read, write, and manipulate UGRID mesh topologies,\n* read, write, and create coordinates defined by geometry cells,\n* read and write netCDF4 string data-type variables,\n* read, write, and create netCDF and CDL datasets containing\n  hierarchical groups,\n* inspect field and domain constructs,\n* test whether two constructs are the same,\n* modify field and domain construct metadata and data,\n* create subspaces of field and domain constructs, from indices or\n  metadata values,\n* incorporate, and create, metadata stored in external files, and\n* read, write, and create data that have been compressed by convention\n  (i.e. ragged or gathered arrays, or coordinate arrays compressed by\n  subsampling), whilst presenting a view of the data in its\n  uncompressed form,\n* read and write that data that are quantized to eliminate false\n  precision.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/NCAS-CMS/cfdm/tree/main/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "type": "Text_excerpt",
+        "value": "https://ncas-cms.github.io/cfdm\n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/NCAS-CMS/cfdm/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 12
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "NCAS-CMS/cfdm"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cfdm"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": ""
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "installation": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Installation",
+        "type": "Text_excerpt",
+        "value": "https://ncas-cms.github.io/cfdm/installation\n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "atmosphere, atmospheric-science, cf, climate, forecasting, metadata, netcdf, ocean, python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cf"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "netcdf"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "data"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "science"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "oceanography"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "meteorology"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "climate"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "cf",
+          "metadata",
+          "netcdf",
+          "python"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "License",
+        "url": "https://api.github.com/licenses/mit",
+        "value": "https://api.github.com/licenses/mit"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2018 NCAS CMS\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/LICENSE",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/MIT",
+        "spdx_id": "MIT",
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cfdm"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "NCAS-CMS"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_distribution": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://pypi.org/project/cfdm/"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "cfdm"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 3590853,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 8921,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 4599,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Python"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/setup.py",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sadielbartholomew",
+          "type": "User"
+        },
+        "date_created": "2025-08-18T14:21:34Z",
+        "date_published": "2025-08-18T14:25:42Z",
+        "description": "**2025-08-18**\r\n\r\n* Fix `cfdm.Data.reshape` when the underlying data originate on disk (https://github.com/NCAS-CMS/cfdm/issues/348)\r\n* New keyword parameter to `cfdm.Field.dump`: ``data`` (https://github.com/NCAS-CMS/cfdm/issues/345)\r\n* New dependency: ``distributed>=2025.5.1``",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.12.3.0",
+        "name": "1.12.3.0",
+        "release_id": 240623837,
+        "tag": "v1.12.3.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.12.3.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/240623837",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/240623837",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.12.3.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2025-06-05T12:49:56Z",
+        "date_published": "2025-06-05T13:20:11Z",
+        "description": "**2025-06-05**\r\n\r\n* Implement lossy compression via quantization (https://github.com/NCAS-CMS/cfdm/issues/330)\r\n* New quantization classes: `cfdm.Quantization`, `cfdm.mixin.QuantizationMixin` (https://github.com/NCAS-CMS/cfdm/issues/330)\r\n* New quantization methods: `cfdm.Field.get_quantization`, `cfdm.Field.get_quantize_on_write`, `cfdm.Field.set_quantize_on_write`, `cfdm.Field.del_quantize_on_write` (https://github.com/NCAS-CMS/cfdm/issues/330)\r\n* Improve performance in `cfdm.read` by caching any array values retrieved from disk (https://github.com/NCAS-CMS/cfdm/issues/313)\r\n* New keyword parameter to `cfdm.write`: ``chunk_cache`` (https://github.com/NCAS-CMS/cfdm/issues/328)\r\n* Read Zarr datasets with `cfdm.read` (https://github.com/NCAS-CMS/cfdm/issues/335)\r\n* Read multiple datasets simultaneously with `cfdm.read` (https://github.com/NCAS-CMS/cfdm/issues/336)\r\n* New keyword parameters to `cfdm.read`: ``recursive``, ``followlinks`` (https://github.com/NCAS-CMS/cfdm/issues/336)\r\n* New keyword parameters to `cfdm.read`: ``cdl_string`` (https://github.com/NCAS-CMS/cfdm/issues/337)\r\n* Update CF aggregation keywords (https://github.com/NCAS-CMS/cfdm/issues/341)\r\n* Set new minimum version of `dask`: ``2025.5.1`` (https://github.com/NCAS-CMS/cfdm/issues/339)\r\n* New dependency: ``zarr>=3.0.8``\r\n* Changed dependency: ``dask>=2025.5.1``",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.12.2.0",
+        "name": "1.12.2.0",
+        "release_id": 223375131,
+        "tag": "v1.12.2.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.12.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/223375131",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/223375131",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.12.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2025-04-01T11:34:52Z",
+        "date_published": "2025-04-01T11:38:42Z",
+        "description": "**2025-04-01**\r\n\r\n* Set new method `cfdm.Array.astype` (https://github.com/NCAS-CMS/cfdm/issues/331)\r\n* Set new maximum version of `dask`: ``2025.3.0`` (https://github.com/NCAS-CMS/cfdm/issues/332)\r\n* Changed dependency: ``dask>=2025.2.0,<=2025.3.0``\r\n\r\n## What's Changed\r\n* Add `astype` method on `Array` subclasses. Pin Dask. by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/333\r\n\r\n\r\n**Full Changelog**: https://github.com/NCAS-CMS/cfdm/compare/v1.12.0.0...v1.12.1.0",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.12.1.0",
+        "name": "1.12.1.0",
+        "release_id": 209577178,
+        "tag": "v1.12.1.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.12.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/209577178",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/209577178",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.12.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2025-03-18T10:06:27Z",
+        "date_published": "2025-03-18T10:05:31Z",
+        "description": "**2025-03-18**\r\n\r\n* Set new minimum version of `dask`: ``2025.2.0`` (https://github.com/NCAS-CMS/cfdm/issues/321)\r\n* Set new minimum version of `numpy`: ``2.0.0`` (https://github.com/NCAS-CMS/cfdm/issues/318)\r\n* Introduction of reading and writing of aggregation datasets (for CF-1.13) (https://github.com/NCAS-CMS/cfdm/issues/319)\r\n* Changed dependency: ``Python>=3.9.0``\r\n* Changed dependency: ``numpy>=2.0.0``\r\n* Changed dependency: ``netCDF4>=1.7.2``\r\n* Changed dependency: ``cftime>=1.6.4``\r\n* Changed dependency: ``dask>=2025.2.0``\r\n\r\n## What's Changed\r\n* Prevent read error for datasets including badly-encoded UGRID meshes by @sadielbartholomew in https://github.com/NCAS-CMS/cfdm/pull/316\r\n* Introduction of aggregation datasets by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/320\r\n* Add missing docstrings by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/322\r\n* Move to numpy version 2 by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/323\r\n* Allow dask>2024.7.1  by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/326\r\n* Add missing docs by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/327\r\n\r\n\r\n**Full Changelog**: https://github.com/NCAS-CMS/cfdm/compare/v1.11.2.1...v1.12.0.0",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.12.0.0",
+        "name": "1.12.0.0",
+        "release_id": 206499816,
+        "tag": "v1.12.0.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.12.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/206499816",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/206499816",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.12.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2025-03-11T14:09:37Z",
+        "date_published": "2025-03-11T14:09:56Z",
+        "description": "**2025-02-26**\r\n\r\n* Re-introduction of `cfdm.Data.datetime_as_string` (https://github.com/NCAS-CMS/cfdm/pull/324)\r\n\r\n## What's Changed\r\n* Reinstate cfdm.Data.datetime_as_string by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/324\r\n\r\n\r\n**Full Changelog**: https://github.com/NCAS-CMS/cfdm/compare/v1.11.2.0...v1.11.2.1",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.11.2.1",
+        "name": "1.11.2.1",
+        "release_id": 205032333,
+        "tag": "v1.11.2.1",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.11.2.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/205032333",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/205032333",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.11.2.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2025-01-28T16:33:37Z",
+        "date_published": "2025-01-28T17:04:58Z",
+        "description": "**2025-01-28**\r\n\r\n* Introduction of `dask` for all data manipulations (https://github.com/NCAS-CMS/cfdm/issues/317)\r\n* Fix bug that returned incorrect results when an invalid identifer is provided to `cf.Field.cell_methods` (https://github.com/NCAS-CMS/cfdm/issues/299)\r\n* Upgrades to allow cfdm to work with Python 3.12 (https://github.com/NCAS-CMS/cfdm/issues/302)\r\n* Extension to the HDF5 chunks API (https://github.com/NCAS-CMS/cfdm/issues/309)\r\n* New function `cfdm.netcdf_flattener` that replaces the import of `netcdf_flattener` (https://github.com/NCAS-CMS/cfdm/issues/286)\r\n* New function `cfdm.netcdf_indexer` that applies netCDF masking and unpacking to arbitrary arrays (https://github.com/NCAS-CMS/cfdm/issues/285)\r\n* Allow access to netCDF-4 files in S3 object stores (https://github.com/NCAS-CMS/cfdm/issues/285)\r\n* Allow a choice of netCDF engines (https://github.com/NCAS-CMS/cfdm/issues/285)\r\n* Fix bug that caused `cfdm.write` to fail when a parametric Z dimension coordinate did not have a ``computed_standard_name`` attribute (https://github.com/NCAS-CMS/cfdm/issues/303)\r\n* New class `cfdm.H5netcdfArray`\r\n* New class `cfdm.NetCDF4Array`\r\n* Changed dependency: ``numpy>=1.15,<2.0``\r\n* New dependency: ``h5netcdf>=1.3.0``\r\n* New dependency: ``h5py>=3.10.0``\r\n* New dependency: ``s3fs>=2024.6.0``\r\n* New dependency: ``dask>=2024.6.0,<=2024.7.1``\r\n* Removed dependency: ``netcdf_flattener``\r\n\r\n## What's Changed\r\n* Python 3.12 compatability by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/292\r\n* Update linting package versions for Python 3.12 by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/306\r\n* Fix `cfdm.write` when a parametric Z dimension coordinate does not have a compute_standard_name attribute by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/304\r\n* h5netcdf read by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/307\r\n* Extension to the HDF5 chunks API by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/310\r\n* Fix bug that returned incorrect results when an invalid identifer is provided to `cf.Field.cell_methods` by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/300\r\n* Introduction of Dask for all data manipulations by @davidhassell in https://github.com/NCAS-CMS/cfdm/pull/312\r\n\r\n\r\n**Full Changelog**: https://github.com/NCAS-CMS/cfdm/compare/v1.11.1.0...v1.11.2.0",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.11.2.0",
+        "name": "1.11.2.0",
+        "release_id": 197196794,
+        "tag": "v1.11.2.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.11.2.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/197196794",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/197196794",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.11.2.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sadielbartholomew",
+          "type": "User"
+        },
+        "date_created": "2024-03-01T16:53:09Z",
+        "date_published": "2024-03-01T17:01:07Z",
+        "description": "**2024-03-01**\r\n\r\n* New keyword parameter to `cfdm.Field.insert_dimension`: ``constructs`` (https://github.com/NCAS-CMS/cfdm/issues/287)\r\n* New example field `11`: discrete sampling geometry trajectory features (https://github.com/NCAS-CMS/cfdm/issues/289)",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.11.1.0",
+        "name": "1.11.1.0",
+        "release_id": 144402780,
+        "tag": "v1.11.1.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.11.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/144402780",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/144402780",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.11.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2023-12-06T14:41:26Z",
+        "date_published": "2023-12-06T14:53:55Z",
+        "description": "**2023-12-06**\r\n\r\n* Python 3.7 support removed (https://github.com/NCAS-CMS/cfdm/issues/274)\r\n* Implemented the reading and manipulation of UGRID mesh topologies for CF-1.11 (https://github.com/NCAS-CMS/cfdm/issues/270)\r\n* New methods: `cfdm.Field.cell_connectivity`, `cfdm.Field.cell_connectivities`\r\n* New methods: `cfdm.Field.domain_topology`, `cfdm.Field.domain_topologies`\r\n* New methods: `cfdm.Field.del_mesh_id`, `cfdm.Field.get_mesh_id`, `cfdm.Field.has_mesh_id`, `cfdm.Field.set_mesh_id`,\r\n* New attribute: `cfdm.Data.sparse_array`\r\n* New dependency: ``scipy>=1.10.0``\r\n",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.11.0.0",
+        "name": "1.11.0.0",
+        "release_id": 132860561,
+        "tag": "v1.11.0.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.11.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/132860561",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/132860561",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.11.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sadielbartholomew",
+          "type": "User"
+        },
+        "date_created": "2023-08-31T13:41:40Z",
+        "date_published": "2023-08-31T13:56:30Z",
+        "description": "**2023-08-31**\r\n\r\n* Fix bug that prevented \"https://\" netCDF files from being read (https://github.com/NCAS-CMS/cfdm/issues/268)",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.10.1.2",
+        "name": "1.10.1.2",
+        "release_id": 119449109,
+        "tag": "v1.10.1.2",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.10.1.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/119449109",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/119449109",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.10.1.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2023-07-21T09:26:35Z",
+        "date_published": "2023-07-21T14:03:01Z",
+        "description": "**2023-07-21**\r\n\r\n* Fix bug that caused very slow reads of datasets with compression by gathering or DSG ragged arrays (https://github.com/NCAS-CMS/cfdm/issues/260)\r\n* Fix bug that prevented `cfdm.read` from accessing remote files in URL locations (https://github.com/NCAS-CMS/cfdm/issues/262)\r\n",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.10.1.1",
+        "name": "1.10.1.1",
+        "release_id": 113116700,
+        "tag": "v1.10.1.1",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.10.1.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/113116700",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/113116700",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.10.1.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2023-04-26T07:43:48Z",
+        "date_published": "2023-04-26T07:49:06Z",
+        "description": "**2023-04-26**\r\n\r\n* New method: `cfdm.Data.get_data`\r\n* Changes to facilitate CFA-netCDF in cf-python (https://github.com/NCAS-CMS/cfdm/pull/255)\r\n* `cfdm.read` now always returns unicode strings from netCDF files (https://github.com/NCAS-CMS/cfdm/issues/251)\r\n* Fix bug in `cf.Data.second_element` for some data shapes (https://github.com/NCAS-CMS/cfdm/issues/249)\r\n* Fix bug when writing to disk coordinates with a ``computed_standard_name`` (https://github.com/NCAS-CMS/cfdm/pull/254)",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.10.1.0",
+        "name": "1.10.1.0",
+        "release_id": 100911358,
+        "tag": "v1.10.1.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.10.1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/100911358",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/100911358",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.10.1.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "sadielbartholomew",
+          "type": "User"
+        },
+        "date_created": "2023-03-10T17:13:55Z",
+        "date_published": "2023-03-10T19:08:03Z",
+        "description": "**2023-03-10**\r\n\r\n* New method: `cfdm.Field.del_properties` (https://github.com/NCAS-CMS/cfdm/pull/241)\r\n* New keyword parameter to `cfdm.unique_constructs: ignore_properties` (https://github.com/NCAS-CMS/cfdm/issues/240)\r\n* New keyword parameter to `cfdm.NetCDFArray`: `missing_values` (https://github.com/NCAS-CMS/cfdm/issues/246)\r\n* Fixed bug that caused `cf.write` to erroneously change external netCDF variable names (https://github.com/NCAS-CMS/cfdm/issues/244)",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.10.0.3",
+        "name": "1.10.0.3",
+        "release_id": 95245242,
+        "tag": "v1.10.0.3",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.10.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/95245242",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/95245242",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.10.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2023-01-26T08:48:41Z",
+        "date_published": "2023-01-26T08:52:02Z",
+        "description": "**2023-01-26**\r\n\r\n* New class: `cfdm.InterpolationSubarray` (https://github.com/NCAS-CMS/cfdm/issues/228)\r\n* Relocate the call to `NetCDFRead._customize_read_vars` to earlier in `NetCDFRead.read` (https://github.com/NCAS-CMS/cfdm/issues/233)",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.10.0.2",
+        "name": "1.10.0.2",
+        "release_id": 90272868,
+        "tag": "v1.10.0.2",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.10.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/90272868",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/90272868",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.10.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2022-10-31T21:38:32Z",
+        "date_published": "2022-10-31T21:43:03Z",
+        "description": "**2022-10-31**\r\n\r\n* New method: `cfdm.Data.get_tie_point_indices`\r\n* New method: `cfdm.Data.get_interpolation_parameters`\r\n* New method: `cfdm.Data.get_dependent_tie_points`\r\n* Record the names of files that contain the original data (https://github.com/NCAS-CMS/cfdm/issues/215)\r\n* New method: `cfdm.Field.get_original_filenames`\r\n* New method: `cfdm.Data.get_original_filenames`\r\n* New keyword parameter to `cfdm.write`: ``omit_data`` (https://github.com/NCAS-CMS/cfdm/issues/221)\r\n* Fixed bug that caused incorrect data assignment with some multiple list indices (https://github.com/NCAS-CMS/cfdm/issues/217)\r\n* Fixed bug that caused a failure when printing date-time data with the first element masked (https://github.com/NCAS-CMS/cfdm/issues/211)",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.10.0.1",
+        "name": "1.10.0.1",
+        "release_id": 81602316,
+        "tag": "v1.10.0.1",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.10.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/81602316",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/81602316",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.10.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2022-08-17T09:56:01Z",
+        "date_published": "2022-08-17T10:00:34Z",
+        "description": "\r\n**2022-08-17**\r\n\r\n* New method: `cfdm.Field.auxiliary_coordinate`\r\n* New method: `cfdm.Field.cell_measure`\r\n* New method: `cfdm.Field.cell_method`\r\n* New method: `cfdm.Field.coordinate`\r\n* New method: `cfdm.Field.coordinate_reference`\r\n* New method: `cfdm.Field.dimension_coordinate`\r\n* New method: `cfdm.Field.domain_ancillary`\r\n* New method: `cfdm.Field.domain_axis`\r\n* New method: `cfdm.Field.field_ancillary`\r\n* New method: `cfdm.Field.indices`\r\n* New attribute: `cfdm.Field.array`\r\n* New attribute: `cfdm.Field.datetime_array`\r\n* New construct retrieval API methods (https://github.com/NCAS-CMS/cfdm/issues/179)\r\n* Implement (bar writing to netCDF files) lossy compression by coordinate subsampling (https://github.com/NCAS-CMS/cfdm/issues/167)\r\n",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.10.0.0",
+        "name": "1.10.0.0",
+        "release_id": 74603300,
+        "tag": "v1.10.0.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.10.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/74603300",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/74603300",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.10.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2022-08-01T08:35:46Z",
+        "date_published": "2022-08-01T08:42:49Z",
+        "description": "**2022-07-18**\r\n\r\n* Upgrade to allow cfdm to work with Python 3.10 (https://github.com/NCAS-CMS/cfdm/issues/187)\r\n* Fix bug that caused a hang when reading zero-length files (https://github.com/NCAS-CMS/cfdm/issues/190)\r\n* Fix bug to prevent error when writing vlen strings to a netCDF file when compression has been set (for `netCDF4>=1.6.0`) (https://github.com/NCAS-CMS/cfdm/issues/199)\r\n  ",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.9.0.4",
+        "name": "1.9.0.4",
+        "release_id": 72233295,
+        "tag": "v1.9.0.4",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.9.0.4",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/72233295",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/72233295",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.9.0.4"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2022-03-10T18:35:08Z",
+        "date_published": "2022-03-10T18:41:00Z",
+        "description": "**2022-03-10**\r\n\r\n* Fixed bug that caused a failure from `cfdm.write` when writing identical (auxiliary) coordinates to different data variables in different groups (https://github.com/NCAS-CMS/cfdm/issues/177)\r\n* Fixed bug that caused `cf.Domain.__str__` to fail when a dimension coordinate construct does not have data (https://github.com/NCAS-CMS/cfdm/issues/174)\r\n* New dependency: ``packaging>=20.0``\r\n* Changed dependency: ``cftime>=1.6.0``\r\n",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.9.0.3",
+        "name": "1.9.0.3",
+        "release_id": 61528432,
+        "tag": "v1.9.0.3",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.9.0.3",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/61528432",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/61528432",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.9.0.3"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2022-01-31T17:33:40Z",
+        "date_published": "2022-01-31T17:42:46Z",
+        "description": "**2022-01-31**\r\n\r\n* Fixed bug that caused a `cfdm.write` failure when a vertical coordinate reference construct has no coordinates (https://github.com/NCAS-CMS/cfdm/issues/164)\r\n* Fixed bug that caused a failure when downstream `identities` methods return an `itertools.chain` object (https://github.com/NCAS-CMS/cfdm/issues/170)",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.9.0.2",
+        "name": "1.9.0.2",
+        "release_id": 58360027,
+        "tag": "v1.9.0.2",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.9.0.2",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/58360027",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/58360027",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.9.0.2"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2021-10-12T09:38:21Z",
+        "date_published": "2021-10-12T09:39:44Z",
+        "description": "**2021-10-12**\r\n\r\n* Fixed bug that prevented some geometry coordinates being written to netCDF CLASSIC files (https://github.com/NCAS-CMS/cfdm/issues/140)\r\n* Fixed bug that a caused segmentation fault when appending a string data type to netCDF files (https://github.com/NCAS-CMS/cfdm/issues/155)\r\n* Fixed bug in `cf.Field.get_domain` when there are climatological time axes (https://github.com/NCAS-CMS/cfdm/issues/159)\r\n",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.9.0.1",
+        "name": "1.9.0.1",
+        "release_id": 51195801,
+        "tag": "v1.9.0.1",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.9.0.1",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/51195801",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/51195801",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.9.0.1"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2021-09-21T13:29:23Z",
+        "date_published": "2021-09-21T13:32:52Z",
+        "description": "**2021-09-21**\r\n\r\n* Python 3.6 support removed (https://github.com/NCAS-CMS/cfdm/issues/139)\r\n* Conversion of `cfdm.Domain` to a non-abstract that may be read from and written to a netCDF dataset (https://github.com/NCAS-CMS/cfdm/issues/111)\r\n* New method: `cfdm.Domain.creation_commands`\r\n* New method: `cfdm.Domain.climatological_time_axes`\r\n* New method: `cfdm.AuxiliaryCoordinate.del_climatology`\r\n* New method: `cfdm.AuxiliaryCoordinate.get_climatology`\r\n* New method: `cfdm.AuxiliaryCoordinate.is_climatology`\r\n* New method: `cfdm.AuxiliaryCoordinate.set_climatology`\r\n* New method: `cfdm.DimensionCoordinate.del_climatology`\r\n* New method: `cfdm.DimensionCoordinate.get_climatology`\r\n* New method: `cfdm.DimensionCoordinate.is_climatology`\r\n* New method: `cfdm.DimensionCoordinate.set_climatology`\r\n* New function: `cfdm.unique_constructs`\r\n* New function: `cfdm.example_fields`\r\n* Construct access API changes from 1.8.9.0 applied to `Field.convert`\r\n* Improved error message for invalid inputs to `Field.convert`\r\n* Raise exception when attempting to write multiply defined coordinate reference parameters (https://github.com/NCAS-CMS/cfdm/issues/148)\r\n* Interpret format specifiers for size 1 `cfdm.Data` arrays   (https://github.com/NCAS-CMS/cfdm/issues/152)\r\n* Fix file name expansions in `cfdm.write`   (https://github.com/NCAS-CMS/cfdm/issues/157)\r\n  ",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.9.0.0",
+        "name": "1.9.0.0",
+        "release_id": 49984595,
+        "tag": "v1.9.0.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.9.0.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/49984595",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/49984595",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.9.0.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2021-05-25T02:48:42Z",
+        "date_published": "2021-05-25T07:04:26Z",
+        "description": "**2021-05-25**\r\n\r\n* Construct access API changes (https://github.com/NCAS-CMS/cfdm/issues/124, https://github.com/NCAS-CMS/cfdm/issues/130, https://github.com/NCAS-CMS/cfdm/issues/132, https://github.com/NCAS-CMS/cfdm/issues/137)\r\n* Performance enhancements (https://github.com/NCAS-CMS/cfdm/issues/124, https://github.com/NCAS-CMS/cfdm/issues/130)\r\n* New write mode ``mode='a'`` for appending to, rather than over-writing, a netCDF file on disk (https://github.com/NCAS-CMS/cfdm/issues/143)\r\n* Better error message in the case of a `numpy.ma.core.MaskError` occurring upon reading of CDL files with only header or coordinate information (https://github.com/NCAS-CMS/cfdm/issues/128)\r\n* Fix for zero-sized unlimited dimensions when read from a grouped netCDF file (https://github.com/NCAS-CMS/cfdm/issues/113)\r\n* Fix bug causing occasional non-symmetric `equals` operations (https://github.com/NCAS-CMS/cfdm/issues/133)\r\n* Changed dependency: ``cftime>=1.5.0``\r\n* Changed dependency: ``netCDF4>=1.5.4``\r\n",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.8.9.0",
+        "name": "1.8.9.0",
+        "release_id": 43505007,
+        "tag": "v1.8.9.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.8.9.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/43505007",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/43505007",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.8.9.0"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "davidhassell",
+          "type": "User"
+        },
+        "date_created": "2020-12-18T15:18:40Z",
+        "date_published": "2021-05-24T14:50:08Z",
+        "description": "**2020-12-18**\r\n\r\n* The setting of global constants can now be controlled by a context manager (https://github.com/NCAS-CMS/cfdm/issues/100)\r\n* Fixed bug that caused a failure when writing a dataset that contains a scalar domain ancillary construct (https://github.com/NCAS-CMS/cfdm/issues/98)\r\n* Changed dependency: ``cftime>=1.3.0``\r\n",
+        "html_url": "https://github.com/NCAS-CMS/cfdm/releases/tag/v1.8.8.0",
+        "name": "1.8.8.0",
+        "release_id": 43469760,
+        "tag": "v1.8.8.0",
+        "tarball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/tarball/v1.8.8.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/43469760",
+        "value": "https://api.github.com/repos/NCAS-CMS/cfdm/releases/43469760",
+        "zipball_url": "https://api.github.com/repos/NCAS-CMS/cfdm/zipball/v1.8.8.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "netCDF4",
+        "type": "Software_application",
+        "value": "netCDF4>=1.7.2",
+        "version": ">=1.7.2"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cftime",
+        "type": "Software_application",
+        "value": "cftime>=1.6.4",
+        "version": ">=1.6.4"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy>=2.0.0",
+        "version": ">=2.0.0"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "packaging",
+        "type": "Software_application",
+        "value": "packaging>=20.0",
+        "version": ">=20.0"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scipy",
+        "type": "Software_application",
+        "value": "scipy>=1.10.0",
+        "version": ">=1.10.0"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "h5netcdf",
+        "type": "Software_application",
+        "value": "h5netcdf>=1.3.0",
+        "version": ">=1.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "h5py",
+        "type": "Software_application",
+        "value": "h5py>=3.12.0",
+        "version": ">=3.12.0"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "s3fs",
+        "type": "Software_application",
+        "value": "s3fs>=2024.6.0",
+        "version": ">=2024.6.0"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "dask",
+        "type": "Software_application",
+        "value": "dask>=2025.5.1",
+        "version": ">=2025.5.1"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "distributed",
+        "type": "Software_application",
+        "value": "distributed>=2025.5.1",
+        "version": ">=2025.5.1"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "uritools",
+        "type": "Software_application",
+        "value": "uritools>=4.0.3",
+        "version": ">=4.0.3"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "cfunits",
+        "type": "Software_application",
+        "value": "cfunits>=3.3.7",
+        "version": ">=3.3.7"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "zarr",
+        "type": "Software_application",
+        "value": "zarr>=3.0.8",
+        "version": ">=3.0.8"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 03:28:16",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "stargazers_count": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Number",
+        "value": 31
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "type": [
+    {
+      "confidence": 0.82,
+      "result": {
+        "type": "String",
+        "value": "commandline-application"
+      },
+      "technique": "software_type_heuristics"
+    }
+  ],
+  "usage": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Tutorial",
+        "type": "Text_excerpt",
+        "value": "https://ncas-cms.github.io/cfdm/tutorial\n"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "1.12.3.0"
+      },
+      "source": "https://raw.githubusercontent.com/NCAS-CMS/cfdm/main/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

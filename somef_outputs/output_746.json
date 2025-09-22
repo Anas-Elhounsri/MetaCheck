@@ -1,0 +1,2218 @@
+{
+  "acknowledgement": [
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Acknowledgements",
+        "parent_header": [
+          "Magpie (Machine Automated General Performance Improvement via Evolution of software)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Magpie is based on [PyGGI 2.0](https://github.com/coinse/pyggi), developed at [COINSE KAIST](https://coinse.kaist.ac.kr/) in collaboration with [UCL SOLAR](https://solar.cs.ucl.ac.uk/).  \nPart of its development was supported by UK EPSRC Fellowship EP/P023991/1.\n\nIf you use Magpie for a publication, we kindly ask you to cite the following [ArXiV paper](https://arxiv.org/abs/2208.02811) that describes MAGPIE's approach:\n\n```\n@article{blot:2022:corr_1,\n  author    = {Aymeric Blot and\n               Justyna Petke},\n  title     = {{MAGPIE:} {M}achine Automated General Performance Improvement via Evolution of Software},\n  journal   = {Computing Research Repository},\n  volume    = {abs/2208.02811},\n  url       = {https://arxiv.org/abs/2208.02811},\n  year      = {2022},\n}\n```\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "email": null,
+        "name": "Aymeric Blot",
+        "type": "Agent",
+        "value": "Aymeric Blot"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "aymeric.blot@univ-rennes.fr",
+        "name": null,
+        "type": "Agent",
+        "value": null
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "leberre@cril-lab.fr",
+        "type": "String",
+        "value": "Daniel Le Berre"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "parrain@cril.fr",
+        "type": "String",
+        "value": "Anne Parrain"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "sroussel@cril.fr",
+        "type": "String",
+        "value": "St\u00e9phanie Roussel"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "lonca@cril.fr",
+        "type": "String",
+        "value": "Emmanuel Lonca"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "wallon@cril.fr",
+        "type": "String",
+        "value": "Romain Wallon"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": [
+          {
+            "email": "daniel.leberre@sat4j.org",
+            "name": "Daniel Le Berre",
+            "organization": "CRIL CNRS 8188",
+            "url": "http://www.sat4j.org/",
+            "value": "Daniel Le Berre"
+          }
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "leberre@cril-lab.fr",
+        "type": "String",
+        "value": "Daniel Le Berre"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "parrain@cril.fr",
+        "type": "String",
+        "value": "Anne Parrain"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "sroussel@cril.fr",
+        "type": "String",
+        "value": "St\u00e9phanie Roussel"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "lonca@cril.fr",
+        "type": "String",
+        "value": "Emmanuel Lonca"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "email": "wallon@cril.fr",
+        "type": "String",
+        "value": "Romain Wallon"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "citation": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": "Aymeric Blot and\nJustyna Petke",
+        "format": "bibtex",
+        "title": "{MAGPIE:} {M}achine Automated General Performance Improvement via Evolution of Software",
+        "type": "Text_excerpt",
+        "url": "https://arxiv.org/abs/2208.02811",
+        "value": "@article{blot:2022:corr_1,\n    year = {2022},\n    url = {https://arxiv.org/abs/2208.02811},\n    volume = {abs/2208.02811},\n    journal = {Computing Research Repository},\n    title = {{MAGPIE:} {M}achine Automated General Performance Improvement via Evolution of Software},\n    author = {Aymeric Blot and\nJustyna Petke},\n}"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jimbou/magpie_llm"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-11-14T05:04:10Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2024-11-14T05:07:13Z"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "LLM assisted crossover on magpie"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Machine Automated General Performance Improvement via Evolution of software"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "\nSat4j is a full featured boolean reasoning library designed to bring state-of-the-art SAT technologies to the Java Virtual Machine.\n  "
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "\nSat4j is a full featured boolean reasoning library designed to bring state-of-the-art SAT technologies to the Java Virtual Machine.\n  "
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Introduction",
+        "parent_header": [
+          "Magpie (Machine Automated General Performance Improvement via Evolution of software)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Magpie is a tool for automated software improvement.\nIt implements [MAGPIE](#citation), using the genetic improvement methodology to traverse the search space of different software variants to find improved software.\n\nMagpie provides support for improvement of both functional (automated bug fixing) and non-functional (e.g., execution time) properties of software.  \nTwo types of language-agnostic source code representations are supported: line-by-line, and XML trees.\nFor the latter we recommend the [srcML](https://www.srcml.org/) tool with out-of-the-box support for C/C++/C# and Java.  \nFinally, Magpie also enables parameter tuning and algorithm configuration, both independently and concurrently of the source code search process.\n"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/README.md",
+      "technique": "header_analysis"
+    },
+    {
+      "confidence": 0.9743894565091741,
+      "result": {
+        "original_header": "LLM assited crossover",
+        "type": "Text_excerpt",
+        "value": "This version of magpie provides LLM assisted crossover.\nUse: \n"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "documentation": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jimbou/magpie_llm/tree/master/docs"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Documentation",
+        "parent_header": [
+          "Magpie (Machine Automated General Performance Improvement via Evolution of software)"
+        ],
+        "type": "Text_excerpt",
+        "value": "Everything you need to know about Magpie.\n\n**Tutorials**\n\n- [Quick start](./docs/tutorials/quick_start.md) **(start here!)**\n- [Search for improved variants](./docs/tutorials/search.md)\n\n**How-to guides**\n\n- [Write a custom fitness function](./docs/howto/custom_fitness_function.md)\n\n**Explanations**\n\n- [Project structure](./docs/explanations/project_structure.md)\n\n**Reference guides**\n\n- [Entry points](./docs/reference/entry_points.md)\n- [Fitness functions](./docs/reference/fitness_functions.md)\n- [Scenario files](./docs/reference/scenario_file.md)\n- [Algorithm configuration model](./docs/params_model.md)\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/jimbou/magpie_llm/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/jimbou/magpie_llm/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "jimbou/magpie_llm"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "mine"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pyproject.toml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/pyproject.toml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/org.sat4j.core/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/org.sat4j.core/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/org.sat4j.br4cp/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/org.sat4j.br4cp/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/org.sat4j.maxsat/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/org.sat4j.maxsat/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/org.sat4j.pb/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/org.sat4j.pb/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/org.sat4j.core/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/org.sat4j.core/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/org.sat4j.br4cp/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/org.sat4j.br4cp/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/org.sat4j.maxsat/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/org.sat4j.maxsat/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/org.sat4j.pb/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/org.sat4j.pb/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/org.sat4j.sat/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/org.sat4j.sat/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "pom.xml",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/org.sat4j.sat/pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/org.sat4j.sat/pom.xml",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/magpie/core/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/magpie/core/setup.py",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_package_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pyproject.toml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "pom.xml"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/gp.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/reruns_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/run_single.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/run_single_with_code.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/run2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/run_single.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/run_single_with_code.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/run2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/lpg/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/magpie/clean.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/magpie/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-rb/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp3/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp3/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp3/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp3/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp3/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp3/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp3/necessary/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp3/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp3/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/zlib/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/run_fixed_advanced.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/scipy/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-java/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-java/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/example.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/buildSite.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/example.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/buildSite.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp2/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp2/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp2/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp2/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp2/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp2/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp2/necessary/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp2/necessary/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp2/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp/necessary/setup.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-cpp/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-py/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-py/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-py/init_bloat.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-py/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-py/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-py/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/build.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/clean.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/necessary/total.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/necessary/run_rapl_energy%20copy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/necessary/run_custom%20copy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/necessary/run.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/necessary/build.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/necessary/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/necessary/clean.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/necessary/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat_hack/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/run_single.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/run_single_with_code.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/run2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/necessary/run_single.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/necessary/run_single_with_code.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/necessary/run2.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/necessary/run_fixed.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/necessary/init.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/necessary/test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/minisat2/necessary/compile.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-c/init_bug.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-c/run_rapl_energy_ram.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-c/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-c/run_rapl_energy_uncore.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-c/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-c/init_slow.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/triangle-c/_magpie/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/useful_scripts/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/useful_scripts/create_example.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/useful_scripts/run_initial.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/useful_scripts/total_inital.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/useful_scripts/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/useful_scripts/analysis.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/useful_scripts/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/helpers/perf_test.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/helpers/run_rapl_energy_ram.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/helpers/pythonenv.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/helpers/run_rapl_energy.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/helpers/create_example.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/helpers/run_rapl_energy_uncore.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/helpers/run_custom.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/helpers/triangle/create_examples_old.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/helpers/triangle/create_examples.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "org.ow2.sat4j.org.ow2.sat4j.pom"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "org.ow2.sat4j.org.ow2.sat4j.pom"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/jimbou/magpie_llm/issues"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/issues"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/issues"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/issues"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "type": "File_dump",
+        "value": "MIT License\n\nCopyright (c) 2023 Universit\u00e9 de Rennes\nCopyright (c) 2022 Universit\u00e9 du Littoral C\u00f4te d'Opale\nCopyright (c) 2019 UCL\nCopyright (c) 2018 COINSE KAIST (PyGGI)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/LICENSE.md",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/pyproject.toml",
+      "technique": "code_parser"
+    }
+  ],
+  "logo": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/./docs/logo_magpie.png"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "magpie_llm"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SAT4J"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "SAT4J"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "User",
+        "value": "jimbou"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "package_distribution": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://gitlab.ow2.org/sat4j/sat4j/"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "package_id": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "magpie"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "org.ow2.sat4j.org.ow2.sat4j.pom"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "size": 632067,
+        "type": "Programming_language",
+        "value": "Java"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 519274,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "C++",
+        "size": 440026,
+        "type": "Programming_language",
+        "value": "C++"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 29911,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "type": "Programming_language",
+        "value": "Java",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Java",
+        "type": "Programming_language",
+        "value": "Java",
+        "version": null
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "related_papers": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://arxiv.org/abs/2208.02811"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "junit",
+        "type": "Software_application",
+        "value": "junit==4.13.2",
+        "version": "4.13.2"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mockito-core",
+        "type": "Software_application",
+        "value": "mockito-core==4.3.1",
+        "version": "4.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "junit",
+        "type": "Software_application",
+        "value": "junit.junit",
+        "version": "4.13.2"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mockito-core",
+        "type": "Software_application",
+        "value": "org.mockito.mockito-core",
+        "version": "4.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "junit",
+        "type": "Software_application",
+        "value": "junit==4.13.2",
+        "version": "4.13.2"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "mockito-core",
+        "type": "Software_application",
+        "value": "mockito-core==4.3.1",
+        "version": "4.3.1"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "original_header": "Requirements",
+        "parent_header": [
+          "Magpie (Machine Automated General Performance Improvement via Evolution of software)"
+        ],
+        "type": "Text_excerpt",
+        "value": "- Unix (Linux/macOS/etc; untested on Windows)\n- Python 3.8+\n\n"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/README.md",
+      "technique": "header_analysis"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "usage",
+    "faq",
+    "support",
+    "executable_example",
+    "keywords"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:56:05",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "tag": "1.1.0",
+        "type": "Release",
+        "value": "1.1.0"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/pyproject.toml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "3.0.0-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Release",
+        "value": "3.0.0-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/pom.xml",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "3.0.0-SNAPSHOT"
+      },
+      "source": "https://raw.githubusercontent.com/jimbou/magpie_llm/master/examples/sat4j/necessary/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}

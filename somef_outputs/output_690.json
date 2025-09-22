@@ -1,0 +1,625 @@
+{
+  "authors": [
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of Oxford",
+        "email": "william.usher@ouce.ox.ac.uk",
+        "identifier": "http://orcid.org/0000-0001-9367-1791",
+        "type": "String",
+        "value": "Will Usher"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "affiliation": "University of California, Davis",
+        "email": "jdherman@ucdavis.edu",
+        "identifier": "http://orcid.org/0000-0002-4081-3175",
+        "type": "String",
+        "value": "jdherman"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "code_of_conduct": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributor Covenant Code of Conduct\n\n## Our Pledge\n\nIn the interest of fostering an open and welcoming environment, we as\ncontributors and maintainers pledge to making participation in our project and\nour community a harassment-free experience for everyone, regardless of age, body\nsize, disability, ethnicity, gender identity and expression, level of experience,\nnationality, personal appearance, race, religion, or sexual identity and\norientation.\n\n## Our Standards\n\nExamples of behavior that contributes to creating a positive environment\ninclude:\n\n* Using welcoming and inclusive language\n* Being respectful of differing viewpoints and experiences\n* Gracefully accepting constructive criticism\n* Focusing on what is best for the community\n* Showing empathy towards other community members\n\nExamples of unacceptable behavior by participants include:\n\n* The use of sexualized language or imagery and unwelcome sexual attention or\nadvances\n* Trolling, insulting/derogatory comments, and personal or political attacks\n* Public or private harassment\n* Publishing others' private information, such as a physical or electronic\n  address, without explicit permission\n* Other conduct which could reasonably be considered inappropriate in a\n  professional setting\n\n## Our Responsibilities\n\nProject maintainers are responsible for clarifying the standards of acceptable\nbehavior and are expected to take appropriate and fair corrective action in\nresponse to any instances of unacceptable behavior.\n\nProject maintainers have the right and responsibility to remove, edit, or\nreject comments, commits, code, wiki edits, issues, and other contributions\nthat are not aligned to this Code of Conduct, or to ban temporarily or\npermanently any contributor for other behaviors that they deem inappropriate,\nthreatening, offensive, or harmful.\n\n## Scope\n\nThis Code of Conduct applies both within project spaces and in public spaces\nwhen an individual is representing the project or its community. Examples of\nrepresenting a project or community include using an official project e-mail\naddress, posting via an official social media account, or acting as an appointed\nrepresentative at an online or offline event. Representation of a project may be\nfurther defined and clarified by project maintainers.\n\n## Enforcement\n\nInstances of abusive, harassing, or otherwise unacceptable behavior may be\nreported by contacting the project team at william.usher{THATSIGN}ouce.ox.ac.uk. All\ncomplaints will be reviewed and investigated and will result in a response that\nis deemed necessary and appropriate to the circumstances. The project team is\nobligated to maintain confidentiality with regard to the reporter of an incident.\nFurther details of specific enforcement policies may be posted separately.\n\nProject maintainers who do not follow or enforce the Code of Conduct in good\nfaith may face temporary or permanent repercussions as determined by other\nmembers of the project's leadership.\n\n## Attribution\n\nThis Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,\navailable at [http://contributor-covenant.org/version/1/4][version]\n\n[homepage]: http://contributor-covenant.org\n[version]: http://contributor-covenant.org/version/1/4/\n"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/CODE_OF_CONDUCT.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "code_repository": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CardiacModelling/protocol-design-hERG"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/SALib/SALib"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "contributing_guidelines": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": "# Contributing\n\nAdmins: [Will Usher](https://github.com/willu47) and [Jon Herman](https://github.com/jdherman)\n\nThanks to all those who have [contributed so far](https://github.com/SALib/SALib/graphs/contributors)!\n\n## Asking Questions, Reporting Bugs\n\nWe use Github issues to keep track of bugs and to answer questions about the use\nof the library.  \n\nFor bugs, [create a new issue](https://github.com/SALib/SALib/issues/new)\non Github with the label `bug`. Use this to describe the nature of the bug and\nthe conditions needed to recreate it, including operating system and Python version.\n\nIf you have a question on interpretation of results, than we may be able to help.\nAgain, create an issue with your question and use the label `question_interpretation`.\n\nWe cannot answer specific implementation questions (such as 'how do I run my model\nwith SALib?')\n\nYou can format your questions using Github Markdown, which makes it easy to [paste in short snippets of code](https://help.github.com/articles/creating-and-highlighting-code-blocks/). If including a very long Python error traceback, please use a Github [gist](https://gist.github.com/).\n\n## Contributing Code\n\nTo contribute new code, submit a pull request. There are two instances in which you may want to contribute code: to fix a bug, or to add a new feature, such as a new sensitivity analysis method.\n\n### Fixing a Bug\n\nFirst, create a new issue on Github with the label `bug`. Use this to describe the nature of the bug and the conditions needed to recreate it.\n\nThen, please create a new branch with the name `bug_xxx` where xxx is the number of the issue.\n\nIf possible, write a test which reproduces the bug. The tests are stored in the `SALib/tests/` folder, and are run using `pytest`.  You can run the tests with the command `python setup.py test` from the root folder of the library.\n\nThen, fix the bug in the code so that the test passes.\n\nSubmit a pull request with a descriptive title and reference the issue in the text. Once a pull request is submitted, the tests will run on Travis CI. If these tests pass, we will review and merge in your changes.\n\n### Adding a new method\n\nMethods in SALib follow a decoupled sample/analysis workflow. In other words, the generation of parameter samples and the calculation of sensitivity indices can be performed in two separate steps. This is because many users have models in languages other than Python, so sending data to/from the model is left to the user. All methods should support a command-line interface on top of the Python functions.\n\nTo add a new method, create an issue on Github with the label `add_method`, if one does not already exist. Please describe the method, and link to the peer reviewed article in which the method is described. The master branch should only contain published methods. First check the current [open issues with this label](https://github.com/SALib/SALib/labels/add_method) for inspiration or to see if someone is already working on a certain method.\n\nWe use Github issues to track ideas for  and [enhancements](https://github.com/SALib/SALib/labels/enhancement).  If you are looking to contribute new methods to the library, check the labels for inspiration or to ensure you are not duplicating another's work.\n\nThen, create a new branch with a useful name, such as `new_method_method_name`. Methods should consist of:\n\n* A sampling module (a `method_name.py` file in `SALib.sample`). This will contain, among other things, a function `sample(problem, ...)` that accepts a problem dictionary and returns a numpy array of samples, one column for each parameter. See [SALib.sample.saltelli](https://github.com/SALib/SALib/blob/master/SALib/sample/saltelli.py) for an example.\n\n* An analysis module (a `method_name.py` file in `SALib.analyze`). This will contain a function analyze(problem, ...) that returns a dictionary of sensitivity indices. See [SALib.analyze.sobol](https://github.com/SALib/SALib/blob/master/SALib/analyze/sobol.py) for an example.\n\n* An example shell script and python file in the `examples` folder, ideally using a test function included in SALib such as the Ishigami or Sobol-G functions.\n\n* Docstrings for the `sample` and `analyze` functions that include citations. Please add an entry to `docs/index.rst` to add your method documentation to the concise API reference.\n\n* All contributed methods should also provide functions to support their use through the command line interface (CLI). These are `cli_parse()` and `cli_action()` to parse command line options and to run the sampling and analysis respectively. See the implementations in [SALib.analyze.delta](https://github.com/SALib/SALib/blob/consolidate-cli/SALib/analyze/delta.py) for an example.\n\n* Tests in the `tests` folder.  We're using Travis CI and Coveralls. Ideally, every new function will have one or more corresponding tests to check that errors are raised for invalid inputs, and that functions return matrices of the proper sizes. (For example [see here](https://github.com/SALib/SALib/blob/master/tests/test_sobol.py). But at a minimum, please include a regression test for the Ishigami function, in the same format as all of the other methods [see here](https://github.com/SALib/SALib/blob/master/tests/test_regression.py). This will at least ensure that future updates don't break your code!\n\nFinally, submit a pull request. Either @willu47 or @jdherman will review the pull request and merge in your changes.\n\n### Other Enhancements\n\nContributions not related to new methods are also welcome. These might include new test functions (see [SALib.test_functions](https://github.com/SALib/SALib/tree/master/SALib/test_functions) for how these are set up), or other code that is general across some or all of the methods. This general code is currently included in [SALib.util.\\_\\_init\\_\\_.py](https://github.com/SALib/SALib/blob/master/SALib/util/__init__.py).\n\n\n### Other Development Comments\n\nMost of the sampling techniques make heavy use of pseudo-random number\ngenerators.\nWe use primarily `numpy.random` as the python standard library\n`random` library is inconsistent across Python 2 and 3.\nWhen writing tests for methods which use these random number generators, set the seeds using `numpy.random.seed(SEED)`\nwhere `SEED` is a fixed integer.\nThis will ensure that your tests are repeatable.\n\n### Notes about scope\n\n* We've had some discussions about moving to an OOP setup. At this point, it would require a pretty big refactor for all of the methods. It's tough to group the methods into classes when they're decoupled, and preserving state would force people to learn a whole API. The current functional(ish) approach is easier to test, and users can do whatever they want with the numpy matrices. That's our preference for now, unless someone sees a clear way to restructure everything into classes. Further discussion on this can be found [here](https://github.com/SALib/SALib/issues/216#issuecomment-435647632).\n\n\n\n* SALib contains a few basic types of plots, especially for the Morris method. However, we generally assume that plot types and styles are left to the user, as these are often application-specific. Users interested in more complex plot types should check out the [savvy](https://github.com/houghb/savvy) library, which is built on top of SALib.\n\nThanks again!\n"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/CONTRIBUTING.md",
+      "technique": "file_exploration"
+    }
+  ],
+  "date_created": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2019-05-08T17:55:58Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-10-18"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_published": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-10-18"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "date_updated": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Date",
+        "value": "2025-07-10T09:56:55Z"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "2016-10-18"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "description": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Voltage clamp protocol design for hERG."
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Sensitivity Analysis Library in Python (Numpy). Contains Sobol, Morris, Fractional Factorial and FAST methods."
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 0.9534395060535245,
+      "result": {
+        "original_header": "Content",
+        "type": "Text_excerpt",
+        "value": "- `optimise-bruteforce`: Code to design `hhbrute3gstep` and `wangbrute3gstep`.\n- `optimise-localsensitivity`: Code to design `hh3step` and `wang3step`.\n- `optimise-sobol`: Code to design `hhsobol3step` and `wangsobol3step`.\n- `optimise-square-wave`: Code to design `maxdiff`.\n- `rank-spacefill-protocols`: Code to rank `spacefill26`, `spacefill10` and `spacefill19`.\n- `newton`: Code to perform first round fitting with `staircase`, `sis`, `hh3step` and `wang3step`.\n- `lib`: Utility modules.\n- `mmt-model-files`: Model files for hERG.\n \n"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/README.md",
+      "technique": "supervised_classification"
+    }
+  ],
+  "download_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://github.com/CardiacModelling/protocol-design-hERG/releases"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "forks_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/CardiacModelling/protocol-design-hERG/forks"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "CardiacModelling/protocol-design-hERG"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "full_title": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "Protocol designs for hERG"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/README.md",
+      "technique": "regular_expression"
+    }
+  ],
+  "has_build_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/requirements.txt",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "setup.py",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/setup.py"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/setup.py",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/requirements.txt",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "format": "requirements.txt",
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/docs/requirements.txt"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/docs/requirements.txt",
+      "technique": "file_exploration"
+    }
+  ],
+  "has_script_file": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/examples/morris/morris.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/examples/sobol/sobol.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/examples/fast/fast.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/examples/dgsm/dgsm.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/examples/delta/delta.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/examples/rbd_fast/rbd_fast.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/examples/ff/ff.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/rank-spacefill-protocols/converted_space_filling_designs/convertall2eph.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/rank-spacefill-protocols/converted_space_filling_designs/convertall2csv.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/sandbox/fit/fit.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/sandbox/compare/compare.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/newton/protocol.sh"
+      },
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/newton/fit.sh"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "identifier": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "https://doi.org/10.5281/zenodo.160164"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "issue_tracker": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://api.github.com/repos/CardiacModelling/protocol-design-hERG/issues"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "keywords": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": [
+          "sensitivity analysis",
+          "Python",
+          "uncertainty",
+          "variance-based",
+          "global sensitivity analysis",
+          "fractional factorial",
+          "Method of Morris",
+          "elementary effects"
+        ]
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "license": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "type": "License",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "value": "https://api.github.com/licenses/bsd-3-clause"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "type": "File_dump",
+        "value": ".. _license:\n\n=======\nLicense\n=======\n\n.. literalinclude:: ../LICENSE.txt\n"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/docs/license.rst",
+      "technique": "file_exploration"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "identifier": "https://spdx.org/licenses/MIT",
+        "spdx_id": "MIT",
+        "type": "License",
+        "value": "MIT"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ],
+  "name": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "protocol-design-hERG"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "owner": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Organization",
+        "value": "CardiacModelling"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "programming_languages": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Python",
+        "size": 2451059,
+        "type": "Programming_language",
+        "value": "Python"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "TeX",
+        "size": 40231,
+        "type": "Programming_language",
+        "value": "TeX"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Shell",
+        "size": 19924,
+        "type": "Programming_language",
+        "value": "Shell"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Batchfile",
+        "size": 17362,
+        "type": "Programming_language",
+        "value": "Batchfile"
+      },
+      "technique": "GitHub_API"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "Makefile",
+        "size": 7594,
+        "type": "Programming_language",
+        "value": "Makefile"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "readme_url": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "Url",
+        "value": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/README.md"
+      },
+      "technique": "file_exploration"
+    }
+  ],
+  "releases": [
+    {
+      "confidence": 1,
+      "result": {
+        "author": {
+          "name": "mirams",
+          "type": "User"
+        },
+        "date_created": "2024-08-19T14:38:18Z",
+        "date_published": "2024-08-19T14:40:09Z",
+        "description": "# Multiple Protocols for rapid capture of hERG kinetics\r\n\r\nCode associated with \"A range of voltage-clamp protocol designs for rapid capture of hERG kinetics\" by Chon Lok Lei, Dominic G. Whittaker, Monique J. Windley, Matthew D. Perry, Adam P. Hill, Gary R. Mirams.",
+        "html_url": "https://github.com/CardiacModelling/protocol-design-hERG/releases/tag/v1.0",
+        "name": "Release v1.0",
+        "release_id": 170886341,
+        "tag": "v1.0",
+        "tarball_url": "https://api.github.com/repos/CardiacModelling/protocol-design-hERG/tarball/v1.0",
+        "type": "Release",
+        "url": "https://api.github.com/repos/CardiacModelling/protocol-design-hERG/releases/170886341",
+        "value": "https://api.github.com/repos/CardiacModelling/protocol-design-hERG/releases/170886341",
+        "zipball_url": "https://api.github.com/repos/CardiacModelling/protocol-design-hERG/zipball/v1.0"
+      },
+      "technique": "GitHub_API"
+    }
+  ],
+  "requirements": [
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pints",
+        "type": "Software_application",
+        "value": "pints",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "myokit",
+        "type": "Software_application",
+        "value": "myokit",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpy",
+        "type": "Software_application",
+        "value": "numpy>=1.9.0",
+        "version": ">=1.9.0"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "scipy",
+        "type": "Software_application",
+        "value": "scipy",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "matplotlib",
+        "type": "Software_application",
+        "value": "matplotlib>=1.4.3",
+        "version": ">=1.4.3"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "pandas",
+        "type": "Software_application",
+        "value": "pandas",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/requirements.txt",
+      "technique": "code_parser"
+    },
+    {
+      "confidence": 1,
+      "result": {
+        "name": "numpydoc",
+        "type": "Software_application",
+        "value": "numpydoc",
+        "version": ""
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/docs/requirements.txt",
+      "technique": "code_parser"
+    }
+  ],
+  "somef_missing_categories": [
+    "installation",
+    "citation",
+    "acknowledgement",
+    "run",
+    "download",
+    "contact",
+    "contributors",
+    "documentation",
+    "usage",
+    "faq",
+    "support",
+    "executable_example"
+  ],
+  "somef_provenance": {
+    "date": "2025-09-19 02:41:35",
+    "somef_schema_version": "1.0.0",
+    "somef_version": "0.9.12"
+  },
+  "version": [
+    {
+      "confidence": 1,
+      "result": {
+        "type": "String",
+        "value": "v1.0.1"
+      },
+      "source": "https://raw.githubusercontent.com/CardiacModelling/protocol-design-hERG/master/lib/SALib-master/paper/codemeta.json",
+      "technique": "code_parser"
+    }
+  ]
+}
