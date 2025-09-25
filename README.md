@@ -1,4 +1,4 @@
-# Software Repository Metadata Pitfall Detection Tool
+# Software Repository Metadata Pitfall/Warning Detection Tool
 
 This project provides an automated tool for detecting common metadata quality issues (pitfalls) in software repositories. The tool analyzes SoMEF (Software Metadata Extraction Framework) output files to identify various problems in repository metadata files such as `codemeta.json`, `package.json`, `setup.py`, `DESCRIPTION`, and others.
 
