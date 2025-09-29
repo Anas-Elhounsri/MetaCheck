@@ -1,0 +1,91 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for jimbou/Optimised-fitness-functions-fse",
+  "description": "Artifacts for Optimised Fitness Functions for automated runtime improvement of software, an application on magpie",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Aymeric Blot",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:05:36Z",
+  "license": {
+    "@id": "https://spdx.org/licenses/MIT License\n\nCopyright (c) 2023 Université de Rennes\nCopyright (c) 2022 Université du Littoral Côte d'Opale\nCopyright (c) 2019 UCL\nCopyright (c) 2018 COINSE KAIST (PyGGI)\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "jimbou/Optimised-fitness-functions-fse",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/jimbou/Optimised-fitness-functions-fse"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "Programming languages in codemeta.json do not have versions",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W010 detected: codemeta.json Programming languages without versions: Java, Java"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) coderepository points to their homepage",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P016 detected: codemeta.json codeRepository points to homepage instead of repository: https://gitlab.ow2.org/sat4j/sat4j/"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) codeRepository does not point to the same repository",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P026 detected: codeRepository points to different repository: https://github.com/jimbou/Optimised-fitness-functions-fse"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "codemeta.json version does not match the package's",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P027 detected: codemeta.json version '3.0.0-SNAPSHOT' does not match package version"
+    }
+  ]
+}

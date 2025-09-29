@@ -1,0 +1,108 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for underworldcode/underworld2",
+  "description": "underworld2: A parallel, particle-in-cell, finite element code for Geodynamics.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Louis Moresi",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:05:54Z",
+  "license": {
+    "@id": "https://spdx.org/licenses/### Summary\n\nUnderworld is an open-source, parallel, particle-in-cell, finite element geodynamics code [1,2,3]. Please refer to repository\ntop level `README.md` for further information. \n\n### Licensing\n\n1) All Underworld source code is released under the LGPL-3 (See LGPLv3.txt). This covers all\nfiles `underworld` constituting the Underworld Python library, and any other material not explicitly identified under (2) below.\n\n2) Notebooks, stand-alone documentation and Python scripts which show how the code is used and run are licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.  We offer this licence to encourage you to modify and share the examples and use them to help you in your research. Where no individual creator is identified in these files, the appropriate attribution is \"The Underworld Team\". All the files covered by this license are found in the `UserGuide` directory.\n\n### History\n\nUnderworld has been in development since 2003. It has always been released under open-source license with the copyright held by the organisations contributing to its development. The underworld team has changed considerably during that time. For detailed information on the individuals and organisations contributing to the code, it is necessary to consult the repository history data and commit logs. Historical information beyond that found within the current repository is available upon request.\n\n### Copyright holders\n\nCopyright Australian National University, 2020-2023\nCopyright Melbourne University,           2014-2021\nCopyright Monash University,              2003-2021\nCopyright VPAC,                           2003-2009\n\n### References\n\n   1. Moresi, L.N., Dufour, F., Muhlhaus, H.B., 2003. A Lagrangian integration point finite element method for large deformation modeling of viscoelastic geomaterials. Journal of Computational Physics 184, 476–497.\n\n   2. Moresi, L. N., S. Quenette, V. Lemiale, C. Mériaux, B. Appelbe, and H. B. Muhlhaus (2007), Computational approaches to studying non-linear dynamics of the crust and mantle, Physics of the Earth and …, 163(1-4), 69–82, doi:10.1016/j.pepi.2007.06.009.\n\n   3. Quenette, S., Moresi, L.N., Sunter, P.D., Appelbe, W.F., 2007. Explaining StGermain: An aspect oriented environment for building extensible computational mechanics modeling software, in:. Presented at the HIPS 2007 Workshop, Parallel and Distributed Processing Symposium, 2007. Proceedings. 19th IEEE International.\n"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "underworldcode/underworld2",
+    "softwareVersion": "v2.16.4",
+    "url": "https://github.com/underworldcode/underworld2"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) has a version which does not correspond to the version used in the latest release",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P001 detected: codemeta.json version '1.0.0' does not match release version '2.16.4'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "codemeta.json dateModified is outdated compared to the actual repository last update date",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W004 detected: codemeta.json dateModified 'unknown' is outdated compared to repository date 'unknown'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P008 detected: pyproject.toml License points to local file instead of license name: 'License file: ./LICENSE.md'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) License does not have the specific version",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P022 detected: codemeta.json License does not specify version: 'GPL v3.0'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) codeRepository does not point to the same repository",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P026 detected: codeRepository points to different repository: https://github.com/underworldcode/underworld2"
+    }
+  ]
+}

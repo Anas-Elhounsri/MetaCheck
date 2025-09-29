@@ -1,0 +1,60 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for piermorel/gramm",
+  "description": "Gramm is a complete data visualization toolbox for Matlab. It provides an easy to use and high-level interface to produce publication-quality plots of complex data with varied statistical visualizations. Gramm is inspired by R's ggplot2 library.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Pierre Morel",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:06:10Z",
+  "license": {
+    "@id": "https://api.github.com/licenses/mit"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "piermorel/gramm",
+    "softwareVersion": "v3.0.2",
+    "url": "https://github.com/piermorel/gramm",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5281/zenodo.594625"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) has a version which does not correspond to the version used in the latest release",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P001 detected: codemeta.json version '2.23' does not match release version '3.0.2'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "codemeta.json dateModified is outdated compared to the actual repository last update date",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W004 detected: codemeta.json dateModified 'unknown' is outdated compared to repository date 'unknown'"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for basgoncalves/msk_modelling_matlab",
+  "description": "A pure Python package implementing PEP 249 DB-API using Microsoft ADO.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "vernondcole@gmail.com",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:06:51Z",
+  "license": {
+    "@id": "https://spdx.org/licenses/The MIT License (MIT)\n\nCopyright (c) 2016 Phillip Stromberg\n\nPermission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be included\nin all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "basgoncalves/msk_modelling_matlab",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/basgoncalves/msk_modelling_matlab",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5281/zenodo.594625"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "codemeta.json dateModified is outdated compared to the actual repository last update date",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W004 detected: codemeta.json dateModified 'unknown' is outdated compared to repository date 'unknown'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) coderepository points to their homepage",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P016 detected: setup.py codeRepository points to homepage instead of repository: https://numpy.org/doc/stable/f2py/"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) License does not have the specific version",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P022 detected: setup.py License does not specify version: 'BSD'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) codeRepository does not point to the same repository",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P026 detected: codeRepository points to different repository: https://github.com/basgoncalves/msk_modelling_matlab"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for odissei-data/ODISSEI-code-library",
+  "description": "Repository of the ODISSEI code library",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Angelica Maineri",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:06:10Z",
+  "license": {
+    "@id": "https://api.github.com/licenses/apache-2.0"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "odissei-data/ODISSEI-code-library",
+    "softwareVersion": "v1.0.1",
+    "url": "https://github.com/odissei-data/ODISSEI-code-library"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P008 detected: codemeta.json License points to local file instead of license name: 'http://www.apache.org/licenses/LICENSE-2.0'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "Programming languages in codemeta.json do not have versions",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W010 detected: codemeta.json Programming languages without versions: Ruby"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "In codemeta.json contIntegration link returns 404",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P025 detected: codemeta.json Continuous integration URL returns 404: https://github.com/odissei-data/ODISSEI-code-library/deployments"
+    }
+  ]
+}

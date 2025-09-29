@@ -1,0 +1,57 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for NCAS-CMS/cfdm",
+  "description": "A Python reference implementation of the CF data model",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "david.hassell@ncas.ac.uk",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:05:28Z",
+  "license": {
+    "@id": "https://api.github.com/licenses/mit"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "NCAS-CMS/cfdm",
+    "softwareVersion": "v1.12.3.0",
+    "url": "https://github.com/NCAS-CMS/cfdm"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "codemeta.json Identifier is empty",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W015 detected: codemeta.json identifier field is empty or missing"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) codeRepository does not point to the same repository",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P026 detected: codeRepository points to different repository: https://github.com/NCAS-CMS/cfdm"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for mhucka/urial",
+  "description": "Urial (URI Addition tooL) intelligently updates URIs stored in Finder comments of macOS files",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Michael Hucka",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:04:31Z",
+  "license": {
+    "@id": "https://api.github.com/licenses/mit"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "mhucka/urial",
+    "softwareVersion": "v1.2.1",
+    "url": "https://github.com/mhucka/urial"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P008 detected: codemeta.json License points to local file instead of license name: 'https://github.com/mhucka/urial/blob/main/LICENSE'"
+    }
+  ]
+}

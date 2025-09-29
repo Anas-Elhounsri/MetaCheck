@@ -1,59 +1,89 @@
 from typing import Dict
-import re
+import requests
+from urllib.parse import urlparse
 
 
-def detect_license_no_version_pitfall(somef_data: Dict, file_name: str) -> Dict:
+def is_valid_url_format(url: str) -> bool:
     """
-    Detect when license from metadata files doesn't have specific version.
+    Check if URL has a valid format.
+    """
+    try:
+        result = urlparse(url)
+        return all([result.scheme, result.netloc])
+    except:
+        return False
+
+
+def check_ci_url_status(url: str, timeout: int = 10) -> Dict:
+    """
+    Check if continuous integration URL returns a valid response.
+    """
+    result = {
+        "is_accessible": False,
+        "status_code": None,
+        "error": None
+    }
+
+    if not is_valid_url_format(url):
+        result["error"] = "Invalid URL format"
+        return result
+
+    try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+
+        response = requests.get(url, timeout=timeout, headers=headers, allow_redirects=True)
+        result["status_code"] = response.status_code
+
+        # Consider 200-299 as successful
+        if 200 <= response.status_code < 300:
+            result["is_accessible"] = True
+
+    except requests.exceptions.RequestException as e:
+        result["error"] = str(e)
+    except Exception as e:
+        result["error"] = f"Unexpected error: {str(e)}"
+
+    return result
+
+
+def detect_ci_404_pitfall(somef_data: Dict, file_name: str) -> Dict:
+    """
+    Detect when codemeta.json continuous integration link returns 404.
     """
     result = {
         "has_pitfall": False,
         "file_name": file_name,
-        "license_value": None,
-        "source": None
+        "ci_url": None,
+        "source": None,
+        "status_code": None,
+        "error": None
     }
 
-    if "license" not in somef_data:
+    if "continuous_integration" not in somef_data:
         return result
 
-    license_entries = somef_data["license"]
-    if not isinstance(license_entries, list):
+    ci_entries = somef_data["continuous_integration"]
+    if not isinstance(ci_entries, list):
         return result
 
-    metadata_sources = ["codemeta.json", "DESCRIPTION", "composer.json", "package.json", "pom.xml", "pyproject.toml",
-                        "requirements.txt", "setup.py"]
-
-    versioned_licenses = {
-        "GPL": r"GPL-?\d+(\.\d+)?",
-        "LGPL": r"LGPL-?\d+(\.\d+)?",
-        "AGPL": r"AGPL-?\d+(\.\d+)?",
-        "Apache": r"Apache-?\d+(\.\d+)?",
-        "CC": r"CC[- ]BY[- ]?\d+(\.\d+)?",
-        "BSD": r"BSD-?\d+[- ]Clause"
-    }
-
-    for entry in license_entries:
+    for entry in ci_entries:
         source = entry.get("source", "")
         technique = entry.get("technique", "")
 
-        is_metadata_source = (
-                technique == "code_parser" and
-                any(src in source for src in metadata_sources)
-        )
-
-        if is_metadata_source:
+        if "codemeta.json" in source or (technique == "code_parser" and "codemeta" in source.lower()):
             if "result" in entry and "value" in entry["result"]:
-                license_value = entry["result"]["value"]
+                ci_url = entry["result"]["value"]
 
-                if isinstance(license_value, str):
-                    license_upper = license_value.upper()
+                url_status = check_ci_url_status(ci_url)
 
-                    for license_name, version_pattern in versioned_licenses.items():
-                        if license_name in license_upper:
-                            if not re.search(version_pattern, license_upper):
-                                result["has_pitfall"] = True
-                                result["license_value"] = license_value
-                                result["source"] = source
-                                break
+                if not url_status["is_accessible"]:
+                    result["has_pitfall"] = True
+                    result["ci_url"] = ci_url
+                    result["source"] = source
+                    result["status_code"] = url_status["status_code"]
+                    result["error"] = url_status["error"]
+                    break
 
     return result

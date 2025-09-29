@@ -1,0 +1,94 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for darribas/gds17",
+  "description": "Geographic Data Science'17",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Quality Assessment System",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:06:12Z",
+  "license": {
+    "@id": "https://spdx.org/licenses/\"Geographic Data Science'15\", by Dani Arribas-Bel\nis licensed under the Creative Commons Attribution-NonCommercial-ShareAlike\n4.0 International License. To view a copy of this license, visit\nhttp://creativecommons.org/licenses/by-nc-sa/4.0/.\n"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "darribas/gds17",
+    "softwareVersion": "1.0",
+    "url": "https://github.com/darribas/gds17",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5281/zenodo.1135210"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "codemeta.json dateModified is outdated compared to the actual repository last update date",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W004 detected: codemeta.json dateModified 'unknown' is outdated compared to repository date 'unknown'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) License does not have the specific version",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P022 detected: codemeta.json License does not specify version: 'CC-BY'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "codemeta.json uses bare DOIs in the identifier field instead of full https://doi.org/ URL",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P024 detected: Identifier uses bare DOI instead of full URL: '10.5281/zenodo.1135210'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "codemeta.json version does not match the package's",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P027 detected: codemeta.json version '1.0' does not match package version"
+    }
+  ]
+}

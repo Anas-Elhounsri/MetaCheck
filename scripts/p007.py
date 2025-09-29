@@ -49,12 +49,10 @@ def detect_reference_publication_archive_pitfall(somef_data: Dict, file_name: st
     if not isinstance(ref_pub_entries, list):
         return result
 
-    # Look for reference publication from codemeta.json
     for entry in ref_pub_entries:
         source = entry.get("source", "")
         technique = entry.get("technique", "")
 
-        # Check if it's from codemeta.json
         if "codemeta.json" in source or (technique == "code_parser" and "codemeta" in source.lower()):
             if "result" in entry and "value" in entry["result"]:
                 ref_url = entry["result"]["value"]

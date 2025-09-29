@@ -1,0 +1,40 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for inpefess/gym-saturation",
+  "description": "a collection of Gymnasium environments for saturation provers",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Boris Shminke",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:05:40Z",
+  "license": {
+    "@id": "https://api.github.com/licenses/apache-2.0"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "inpefess/gym-saturation",
+    "softwareVersion": "v0.2.9",
+    "url": "https://github.com/inpefess/gym-saturation"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) has a version which does not correspond to the version used in the latest release",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P001 detected: pyproject.toml version '1.0.2' does not match release version '0.2.9'"
+    }
+  ]
+}

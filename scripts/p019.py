@@ -2,107 +2,110 @@ from typing import Dict
 import re
 
 
-def is_repository_url(url: str) -> bool:
+def extract_version_from_download_url(url: str) -> str:
     """
-    Check if URL appears to be a code repository rather than homepage.
-    """
-    if not url:
-        return False
-
-    url_lower = url.lower()
-
-    # Valid repository indicators
-    repo_indicators = [
-        'github.com/',
-        'gitlab.com/',
-        'bitbucket.org/',
-        'sourceforge.net/projects/',
-        'git.',
-        '.git'
-    ]
-
-    for indicator in repo_indicators:
-        if indicator in url_lower:
-            return True
-
-    return False
-
-
-def is_homepage_url_repo(url: str) -> bool:
-    """
-    Check if URL appears to be a homepage rather than code repository.
+    Extract version number from download URL.
     """
     if not url:
-        return False
+        return None
 
-    url_lower = url.lower()
-
-    # Homepage indicators
-    homepage_indicators = [
-        '.org/',
-        '.com/',
-        '.net/',
-        '.io/',
-        'www.',
-        'docs.',
-        'documentation',
-        'readthedocs',
-        'github.io'
+    # Common version patterns in download URLs
+    version_patterns = [
+        r'/archive/(?:v)?(\d+\.\d+(?:\.\d+)?(?:[a-zA-Z0-9\-\.]*)?)',  # /archive/3.8.0 or /archive/v1.2.3
+        r'[-_](?:v)?(\d+\.\d+(?:\.\d+)?(?:[a-zA-Z0-9\-\.]*)?)\.',  # -3.8.0.tar.gz or _v1.2.3.zip
+        r'/(?:v)?(\d+\.\d+(?:\.\d+)?(?:[a-zA-Z0-9\-\.]*)?)/[^/]*$'  # /3.8.0/something
     ]
 
-    # If it's clearly a repository URL, it's not a homepage
-    if is_repository_url(url):
-        return False
+    for pattern in version_patterns:
+        match = re.search(pattern, url)
+        if match:
+            return match.group(1)
 
-    # Check for homepage indicators
-    for indicator in homepage_indicators:
-        if indicator in url_lower:
-            return True
-
-    return False
+    return None
 
 
-def detect_coderepository_homepage_pitfall(somef_data: Dict, file_name: str) -> Dict:
+def get_latest_release_version(somef_data: Dict) -> str:
     """
-    Detect when code repository in metadata files points to homepage instead of repository.
+    Get the latest release version from releases data.
+    """
+    if "releases" not in somef_data:
+        return None
+
+    releases = somef_data["releases"]
+    if not isinstance(releases, list) or not releases:
+        return None
+
+    latest_release = releases[0]
+    if "result" in latest_release:
+        result = latest_release["result"]
+
+        # Try to get version from tag or name
+        if "tag" in result and result["tag"]:
+            tag = result["tag"]
+            # Clean up tag (remove 'v' prefix if present)
+            if tag.startswith('v'):
+                return tag[1:]
+            return tag
+
+        if "name" in result and result["name"]:
+            name = result["name"]
+            # Extract version from name
+            version_match = re.search(r'(?:v)?(\d+\.\d+(?:\.\d+)?(?:[a-zA-Z0-9\-\.]*)?)', name)
+            if version_match:
+                return version_match.group(1)
+
+    return None
+
+
+def detect_outdated_download_url_pitfall(somef_data: Dict, file_name: str) -> Dict:
+    """
+    Detect when codemeta.json downloadURL is outdated compared to latest release.
     """
     result = {
         "has_pitfall": False,
         "file_name": file_name,
-        "repository_url": None,
-        "source": None,
-        "is_homepage": False
+        "download_url": None,
+        "download_version": None,
+        "latest_release_version": None,
+        "source": None
     }
 
-    if "code_repository" not in somef_data:
+    if "download_url" not in somef_data:
         return result
 
-    repo_entries = somef_data["code_repository"]
-    if not isinstance(repo_entries, list):
+    download_entries = somef_data["download_url"]
+    if not isinstance(download_entries, list):
         return result
 
-    # Look for code repository from metadata sources
-    metadata_sources = ["codemeta.json", "DESCRIPTION", "composer.json", "package.json", "pom.xml", "pyproject.toml", "requirements.txt", "setup.py"]
+    codemeta_download_url = None
+    codemeta_source = None
 
-    for entry in repo_entries:
-        technique = entry.get("technique", "")
+    for entry in download_entries:
         source = entry.get("source", "")
+        technique = entry.get("technique", "")
 
-        # Check if it's from a metadata source
-        is_metadata_source = (
-                technique in metadata_sources or
-                any(src in source.lower() for src in metadata_sources)
-        )
-
-        if is_metadata_source:
+        if "codemeta.json" in source or (technique == "code_parser" and "codemeta" in source.lower()):
             if "result" in entry and "value" in entry["result"]:
-                repo_url = entry["result"]["value"]
+                codemeta_download_url = entry["result"]["value"]
+                codemeta_source = source
+                break
 
-                if is_homepage_url_repo(repo_url):
-                    result["has_pitfall"] = True
-                    result["repository_url"] = repo_url
-                    result["source"] = source if source else f"technique: {technique}"
-                    result["is_homepage"] = True
-                    break
+    if not codemeta_download_url:
+        return result
+
+    download_version = extract_version_from_download_url(codemeta_download_url)
+    if not download_version:
+        return result
+
+    latest_version = get_latest_release_version(somef_data)
+    if not latest_version:
+        return result
+
+    if download_version != latest_version:
+        result["has_pitfall"] = True
+        result["download_url"] = codemeta_download_url
+        result["download_version"] = download_version
+        result["latest_release_version"] = latest_version
+        result["source"] = codemeta_source
 
     return result

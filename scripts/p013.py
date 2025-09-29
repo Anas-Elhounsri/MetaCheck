@@ -1,96 +1,150 @@
-from typing import Dict, List
+from typing import Dict
+import requests
 import re
+from urllib.parse import urlparse
+from utils.pitfall_utils import extract_metadata_source_filename
 
 
-def detect_multiple_requirements_in_string(requirement_string: str) -> List[str]:
+def is_valid_url_format(url: str) -> bool:
     """
-    Detect if a requirement string contains multiple requirements.
-    Returns list of detected requirements or empty list if just one.
+    Check if URL has a valid format.
     """
-    if not requirement_string or not isinstance(requirement_string, str):
+    try:
+        result = urlparse(url)
+        return all([result.scheme, result.netloc])
+    except:
+        return False
+
+
+def check_url_status(url: str, timeout: int = 10) -> Dict:
+    """
+    Check if URL returns a valid response (not 404 or other error).
+    """
+    result = {
+        "is_accessible": False,
+        "status_code": None,
+        "error": None
+    }
+
+    if not is_valid_url_format(url):
+        result["error"] = "Invalid URL format"
+        return result
+
+    try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
+
+        response = requests.get(url, timeout=timeout, headers=headers, allow_redirects=True)
+        result["status_code"] = response.status_code
+
+        if 200 <= response.status_code < 300:
+            result["is_accessible"] = True
+
+    except requests.exceptions.RequestException as e:
+        result["error"] = str(e)
+    except Exception as e:
+        result["error"] = f"Unexpected error: {str(e)}"
+
+    return result
+
+
+def extract_urls_from_requirements(requirement_text: str) -> list:
+    """
+    Extract URLs from software requirement text.
+    """
+    if not requirement_text:
         return []
 
-    # Clean the string
-    req_str = requirement_string.strip()
-
-    # Patterns that might indicate multiple requirements
-    # Split by common separators but be careful not to split version specifiers
-    potential_separators = [
-        r'\s{2,}',  # Multiple spaces
-        r'\s+(?=[A-Za-z])',  # Space followed by letter (new requirement)
-        r',\s*',  # Comma separation
-        r';\s*',  # Semicolon separation
+    # URL patterns
+    url_patterns = [
+        r'https?://[^\s<>"\']+',  # HTTP/HTTPS URLs
+        r'www\.[^\s<>"\']+',  # URLs starting with www
     ]
 
-    detected_requirements = []
+    urls = []
+    for pattern in url_patterns:
+        matches = re.findall(pattern, requirement_text, re.IGNORECASE)
+        urls.extend(matches)
 
-    if re.search(r'\s{2,}', req_str):
-        parts = re.split(r'\s{2,}', req_str)
-        if len(parts) > 1:
-            detected_requirements = [part.strip() for part in parts if part.strip()]
+    cleaned_urls = []
+    for url in urls:
+        url = re.sub(r'[,;.!?)]$', '', url)  # Remove trailing punctuation
+        if url:
+            cleaned_urls.append(url)
 
-    if not detected_requirements:
-        if re.search(r'\s+[A-Z][A-Za-z]', req_str):
-            parts = re.split(r'\s+(?=[A-Z])', req_str)
-            if len(parts) > 1:
-                detected_requirements = [part.strip() for part in parts if part.strip()]
-
-    return detected_requirements if len(detected_requirements) > 1 else []
+    return cleaned_urls
 
 
-def detect_multiple_requirements_string_pitfall(somef_data: Dict, file_name: str) -> Dict:
+def detect_invalid_software_requirement_pitfall(somef_data: Dict, file_name: str) -> Dict:
     """
-    Detect when software requirements have multiple requirements written as one string.
+    Detect when metadata files have software requirements pointing to invalid pages.
     """
     result = {
         "has_pitfall": False,
         "file_name": file_name,
-        "requirement_string": None,
-        "detected_requirements": [],
+        "invalid_urls": [],
         "source": None,
-        "count_detected": 0
+        "metadata_source_file": None,
+        "requirement_text": None
     }
 
-    if "requirements" not in somef_data:
+    if "software_requirements" not in somef_data:
         return result
 
-    requirements_entries = somef_data["requirements"]
-    if not isinstance(requirements_entries, list):
+    req_entries = somef_data["software_requirements"]
+    if not isinstance(req_entries, list):
         return result
 
-    metadata_sources = ["codemeta.json", "DESCRIPTION", "composer.json", "package.json", "pom.xml", "pyproject.toml", "requirements.txt", "setup.py"]
+    metadata_sources = ["codemeta.json", "DESCRIPTION", "composer.json", "package.json", "pom.xml", "pyproject.toml",
+                        "requirements.txt", "setup.py"]
 
-    for entry in requirements_entries:
-        technique = entry.get("technique", "")
+    for entry in req_entries:
         source = entry.get("source", "")
+        technique = entry.get("technique", "")
 
-        if technique in metadata_sources or any(
-                src in source.lower() for src in ["codemeta.json", "setup.py", "pom.xml"]):
+        is_metadata_source = (
+                technique == "code_parser" and
+                any(src in source.lower() for src in metadata_sources)
+        )
+
+        if is_metadata_source:
             if "result" in entry and "value" in entry["result"]:
-                requirement_value = entry["result"]["value"]
+                req_value = entry["result"]["value"]
 
-                if isinstance(requirement_value, str):
-                    detected_reqs = detect_multiple_requirements_in_string(requirement_value)
+                # Handle different value formats
+                requirement_text = ""
+                if isinstance(req_value, str):
+                    requirement_text = req_value
+                elif isinstance(req_value, list):
+                    requirement_text = " ".join(str(item) for item in req_value)
+                elif isinstance(req_value, dict):
+                    for key in ["name", "value", "description", "text"]:
+                        if key in req_value:
+                            requirement_text += str(req_value[key]) + " "
 
-                    if detected_reqs:
-                        result["has_pitfall"] = True
-                        result["requirement_string"] = requirement_value
-                        result["detected_requirements"] = detected_reqs
-                        result["source"] = source if source else f"technique: {technique}"
-                        result["count_detected"] = len(detected_reqs)
-                        break
+                if requirement_text:
+                    urls = extract_urls_from_requirements(requirement_text)
 
-                elif isinstance(requirement_value, list) and len(requirement_value) == 1:
-                    single_req = requirement_value[0]
-                    if isinstance(single_req, str):
-                        detected_reqs = detect_multiple_requirements_in_string(single_req)
+                    if urls:
+                        invalid_urls = []
 
-                        if detected_reqs:
+                        for url in urls:
+                            url_status = check_url_status(url)
+
+                            if not url_status["is_accessible"]:
+                                invalid_urls.append({
+                                    "url": url,
+                                    "status_code": url_status["status_code"],
+                                    "error": url_status["error"]
+                                })
+
+                        if invalid_urls:
                             result["has_pitfall"] = True
-                            result["requirement_string"] = single_req
-                            result["detected_requirements"] = detected_reqs
-                            result["source"] = source if source else f"technique: {technique}"
-                            result["count_detected"] = len(detected_reqs)
+                            result["invalid_urls"] = invalid_urls
+                            result["source"] = source
+                            result["metadata_source_file"] = extract_metadata_source_filename(source)
+                            result["requirement_text"] = requirement_text
                             break
 
     return result

@@ -1,0 +1,43 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for datacite/maremma",
+  "description": "Ruby utility library for network calls",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Quality Assessment System",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:05:28Z",
+  "license": {
+    "@id": "https://api.github.com/licenses/mit"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "datacite/maremma",
+    "softwareVersion": "5.0.0",
+    "url": "https://github.com/datacite/maremma",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5438/QEG0-3GM3"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "codemeta.json dateModified is outdated compared to the actual repository last update date",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W004 detected: codemeta.json dateModified 'unknown' is outdated compared to repository date 'unknown'"
+    }
+  ]
+}

@@ -2,51 +2,64 @@ from typing import Dict
 import re
 
 
-def detect_author_name_list_pitfall(somef_data: Dict, file_name: str) -> Dict:
+def is_bare_doi(identifier: str) -> bool:
     """
-    Detect when author's givenName is a list instead of a string (multiple authors in single field).
+    Check if identifier is a bare DOI without full https://doi.org/ URL.
+    """
+    if not identifier or not isinstance(identifier, str):
+        return False
+
+    identifier = identifier.strip()
+
+    # If it already starts with https://doi.org/, it's not bare
+    if identifier.startswith('https://doi.org/'):
+        return False
+
+    # Check if it's a bare DOI pattern
+    bare_doi_patterns = [
+        r'^doi:10\.\d+/',  # doi:10.1234/example
+        r'^10\.\d+/',  # 10.1234/example
+    ]
+
+    for pattern in bare_doi_patterns:
+        if re.match(pattern, identifier):
+            return True
+
+    return False
+
+
+def detect_bare_doi_pitfall(somef_data: Dict, file_name: str) -> Dict:
+    """
+    Detect when codemeta.json uses bare DOIs in identifier field instead of full URL.
     """
     result = {
         "has_pitfall": False,
         "file_name": file_name,
-        "author_value": None,
-        "source": None
+        "identifier_value": None,
+        "source": None,
+        "is_bare_doi": False
     }
 
-    if "authors" not in somef_data:
+    if "identifier" not in somef_data:
         return result
 
-    authors_entries = somef_data["authors"]
-    if not isinstance(authors_entries, list):
+    identifier_entries = somef_data["identifier"]
+    if not isinstance(identifier_entries, list):
         return result
 
-    metadata_sources = ["codemeta.json", "DESCRIPTION", "composer.json", "package.json", "pom.xml", "pyproject.toml",
-                        "requirements.txt", "setup.py"]
-
-    for entry in authors_entries:
+    for entry in identifier_entries:
         source = entry.get("source", "")
         technique = entry.get("technique", "")
 
-        is_metadata_source = (
-                technique == "code_parser" and
-                any(src in source for src in metadata_sources)
-        )
-
-        if is_metadata_source:
+        if "codemeta.json" in source or (technique == "code_parser" and "codemeta" in source.lower()):
             if "result" in entry and "value" in entry["result"]:
-                author_value = entry["result"]["value"]
+                identifier_value = entry["result"]["value"]
 
-                if isinstance(author_value, str):
-                    # Look for patterns like "['William', 'Michael'] Landau" or similar list structures
-                    list_pattern = r"\[.*?\]"
-                    if re.search(list_pattern, author_value):
-                        list_content = re.findall(r"\[(.*?)\]", author_value)
-                        if list_content:
-                            for content in list_content:
-                                if "," in content and len(content.split(",")) > 1:
-                                    result["has_pitfall"] = True
-                                    result["author_value"] = author_value
-                                    result["source"] = source
-                                    break
+                if is_bare_doi(identifier_value):
+                    result["has_pitfall"] = True
+                    result["identifier_value"] = identifier_value
+                    result["source"] = source
+                    result["is_bare_doi"] = True
+                    break
 
     return result

@@ -1,6 +1,6 @@
 from typing import Dict
 import re
-
+from utils.pitfall_utils import extract_metadata_source_filename
 
 def has_multiple_authors_in_single_field(author_value: str) -> bool:
     """
@@ -37,6 +37,7 @@ def detect_multiple_authors_single_field_pitfall(somef_data: Dict, file_name: st
         "file_name": file_name,
         "author_value": None,
         "source": None,
+        "metadata_source_file": None,  # Add this line
         "multiple_authors_detected": False
     }
 
@@ -51,12 +52,10 @@ def detect_multiple_authors_single_field_pitfall(somef_data: Dict, file_name: st
     metadata_sources = ["codemeta.json", "DESCRIPTION", "composer.json", "package.json", "pom.xml", "pyproject.toml",
                         "requirements.txt", "setup.py"]
 
-    # Look for authors from metadata sources
     for entry in authors_entries:
         source = entry.get("source", "")
         technique = entry.get("technique", "")
 
-        # Check if it's from a metadata source
         is_metadata_source = (
                 technique == "code_parser" and
                 any(src in source.lower() for src in metadata_sources)
@@ -72,8 +71,10 @@ def detect_multiple_authors_single_field_pitfall(somef_data: Dict, file_name: st
                         result["has_pitfall"] = True
                         result["author_value"] = author_value
                         result["source"] = source
+                        result["metadata_source_file"] = extract_metadata_source_filename(source)
                         result["multiple_authors_detected"] = True
                         break
+
                 elif isinstance(author_value, dict) and "name" in author_value:
                     # Handle structured author data
                     name_value = author_value["name"]
@@ -81,6 +82,7 @@ def detect_multiple_authors_single_field_pitfall(somef_data: Dict, file_name: st
                         result["has_pitfall"] = True
                         result["author_value"] = name_value
                         result["source"] = source
+                        result["metadata_source_file"] = extract_metadata_source_filename(source)
                         result["multiple_authors_detected"] = True
                         break
 

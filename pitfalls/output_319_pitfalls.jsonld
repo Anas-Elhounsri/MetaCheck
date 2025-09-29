@@ -1,0 +1,60 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for EVERSE-ResearchSoftware/RSQKit",
+  "description": "Research Software Quality Kit - a resource for helping researchers improve the quality of software they write ",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "RSQKit community",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:04:14Z",
+  "license": {
+    "@id": "https://spdx.org/licenses/# LICENSE\n\nThe RSQKit makes all of their materials publicly available under open source licenses:\n\n- All metadata are made available under the [CC0 1.0 Universal license][cc-0-legal]\n- Images, documentation, data and page content are made available under the [CC BY 4.0 license][cc-by-legal]\n- Software is made available under the [MIT license][mit-license].\n\n[cc-by-human]: https://creativecommons.org/licenses/by/4.0/\n[cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode\n[cc-0-human]: https://creativecommons.org/publicdomain/zero/1.0/\n[cc-0-legal]: https://creativecommons.org/publicdomain/zero/1.0/legalcode\n[mit-license]: https://opensource.org/licenses/mit-license.html\n[osi]: https://opensource.org\n"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "EVERSE-ResearchSoftware/RSQKit",
+    "softwareVersion": "v1.2.0",
+    "url": "https://github.com/EVERSE-ResearchSoftware/RSQKit",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5281/zenodo.14923572"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P008 detected: codemeta.json License points to local file instead of license name: 'https://spdx.org/licenses/Apache-2.0'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) codeRepository does not point to the same repository",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P026 detected: codeRepository points to different repository: https://github.com/EVERSE-ResearchSoftware/RSQKit"
+    }
+  ]
+}

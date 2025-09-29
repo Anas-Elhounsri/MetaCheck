@@ -1,64 +1,74 @@
 from typing import Dict
 import re
+from utils.pitfall_utils import extract_metadata_source_filename
 
-
-def is_url(value: str) -> bool:
+def is_git_remote_shorthand(url: str) -> bool:
     """
-    Check if a value is a URL.
+    Check if URL uses Git remote-style shorthand instead of full URL.
     """
-    if not value or not isinstance(value, str):
+    if not url or not isinstance(url, str):
         return False
 
-    url_patterns = [
-        r'^https?://',  # HTTP/HTTPS URLs
-        r'^www\.',  # URLs starting with www
-        r'\.org',  # Contains .org
-        r'\.com',  # Contains .com
-        r'\.net',  # Contains .net
+    # Git remote shorthand patterns
+    shorthand_patterns = [
+        r'^[a-zA-Z0-9.-]+:[a-zA-Z0-9._/-]+\.git$',  # github.com:user/repo.git
+        r'^[a-zA-Z0-9.-]+:[a-zA-Z0-9._/-]+$',  # github.com:user/repo
     ]
 
-    value_lower = value.lower().strip()
+    url = url.strip()
 
-    for pattern in url_patterns:
-        if re.search(pattern, value_lower):
+    if url.startswith(('http://', 'https://')):
+        return False
+
+    for pattern in shorthand_patterns:
+        if re.match(pattern, url):
             return True
 
     return False
 
 
-def detect_development_status_url_pitfall(somef_data: Dict, file_name: str) -> Dict:
+def detect_git_remote_shorthand_pitfall(somef_data: Dict, file_name: str) -> Dict:
     """
-    Detect when codemeta.json developmentStatus is a URL instead of a string.
+    Detect when metadata files use Git remote-style shorthand in codeRepository.
     """
     result = {
         "has_pitfall": False,
         "file_name": file_name,
-        "development_status": None,
+        "repository_url": None,
         "source": None,
-        "is_url": False
+        "metadata_source_file": None,
+        "is_shorthand": False
     }
 
-    if "development_status" not in somef_data:
+    if "code_repository" not in somef_data:
         return result
 
-    dev_status_entries = somef_data["development_status"]
-    if not isinstance(dev_status_entries, list):
+    repo_entries = somef_data["code_repository"]
+    if not isinstance(repo_entries, list):
         return result
 
-    for entry in dev_status_entries:
-        source = entry.get("source", "")
+    metadata_techniques = ["code_parser"]
+    metadata_sources = ["codemeta.json", "DESCRIPTION", "composer.json", "package.json", "pom.xml", "pyproject.toml", "requirements.txt", "setup.py"]
+
+    for entry in repo_entries:
         technique = entry.get("technique", "")
+        source = entry.get("source", "")
 
-        # Check if it's from codemeta.json
-        if "codemeta.json" in source or (technique == "code_parser" and "codemeta" in source.lower()):
+        is_metadata_source = (
+                technique in metadata_techniques or
+                any(src in source.lower() for src in metadata_sources)
+        )
+
+        if is_metadata_source:
             if "result" in entry and "value" in entry["result"]:
-                dev_status = entry["result"]["value"]
+                repo_url = entry["result"]["value"]
 
-                if is_url(dev_status):
+                if is_git_remote_shorthand(repo_url):
                     result["has_pitfall"] = True
-                    result["development_status"] = dev_status
-                    result["source"] = source
-                    result["is_url"] = True
+                    result["repository_url"] = repo_url
+                    result["source"] = source if source else f"technique: {technique}"
+                    result["metadata_source_file"] = extract_metadata_source_filename(source)
+                    result["is_shorthand"] = True
                     break
 
     return result

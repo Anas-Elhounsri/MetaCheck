@@ -1,0 +1,41 @@
+{
+  "@context": "https://w3id.org/example/pwi/0.0.1/",
+  "@type": "PitfallsWarningsDetection",
+  "name": "FAIR pitfalls and Warning Diagnosis",
+  "description": "An automated tool for detecting common metadata quality issues (pitfalls) in software repositories. The tool analyzes SoMEF (Software Metadata Extraction Framework) output files to identify various problems in repository metadata files",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Pitfall Detection System",
+    "email": "system@example.com"
+  },
+  "dateCreated": "2025-09-24T12:53:48Z",
+  "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "caltechlibrary/documentarist",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/caltechlibrary/documentarist"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/P013"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "1.0.0"
+      },
+      "process": "The metadata file softwareRequirements have more than one req, but it's written as one string",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "output": "true",
+      "evidence": "Pitfall P013 detected: Multiple software requirements written as one string instead of separate entries"
+    }
+  ]
+}

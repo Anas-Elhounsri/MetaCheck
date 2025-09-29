@@ -1,6 +1,6 @@
 from typing import Dict, Optional
-from SoMEF_diagnosis import normalize_version
-
+from utils.pitfall_utils import normalize_version
+from utils.pitfall_utils import extract_metadata_source_filename
 
 def extract_version_from_metadata(somef_data: Dict) -> Optional[Dict[str, str]]:
     """
@@ -62,7 +62,6 @@ def extract_latest_release_version(somef_data: Dict) -> Optional[str]:
 
     return None
 
-
 def detect_version_mismatch(somef_data: Dict, file_name: str) -> Dict:
     """
     Detect version mismatch pitfall for a single repository.
@@ -73,7 +72,8 @@ def detect_version_mismatch(somef_data: Dict, file_name: str) -> Dict:
         "file_name": file_name,
         "metadata_version": None,
         "release_version": None,
-        "metadata_source": None
+        "metadata_source": None,
+        "metadata_source_file": None
     }
 
     metadata_version_info = extract_version_from_metadata(somef_data)
@@ -87,6 +87,7 @@ def detect_version_mismatch(somef_data: Dict, file_name: str) -> Dict:
         result["metadata_version"] = metadata_version
         result["release_version"] = normalized_release_version
         result["metadata_source"] = metadata_version_info["source"]
+        result["metadata_source_file"] = extract_metadata_source_filename(metadata_version_info["source"])
 
         if metadata_version != normalized_release_version:
             result["has_pitfall"] = True

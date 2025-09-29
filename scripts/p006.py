@@ -60,7 +60,6 @@ def detect_readme_homepage_pitfall(somef_data: Dict, file_name: str) -> Dict:
     if not isinstance(readme_entries, list):
         return result
 
-    # Look for readme URLs from metadata sources (code_parser)
     for entry in readme_entries:
         if "technique" in entry and entry["technique"] == "code_parser":
             if "source" in entry and "codemeta.json" in entry["source"]:

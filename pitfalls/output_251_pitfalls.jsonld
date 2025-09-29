@@ -1,0 +1,57 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for vliz-be-opsci/open-code-tracking",
+  "description": "work related to start tracking open software code of VLIZ ",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Quality Assessment System",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:05:27Z",
+  "license": {
+    "@id": "https://spdx.org/licenses/{license of the GitHub repository}"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "vliz-be-opsci/open-code-tracking",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/vliz-be-opsci/open-code-tracking"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "Programming languages in codemeta.json do not have versions",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W010 detected: codemeta.json Programming languages without versions: {name (e.g. R, python, ...}"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) codeRepository does not point to the same repository",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P026 detected: codeRepository points to different repository: https://github.com/vliz-be-opsci/open-code-tracking"
+    }
+  ]
+}

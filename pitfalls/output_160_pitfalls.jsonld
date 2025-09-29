@@ -1,0 +1,60 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for FairRootGroup/FairMQ",
+  "description": "C++ Message Queuing Library and Framework",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Mohammad Al-Turany",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:06:58Z",
+  "license": {
+    "@id": "https://api.github.com/licenses/lgpl-3.0"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "FairRootGroup/FairMQ",
+    "softwareVersion": "v1.10.0",
+    "url": "https://github.com/FairRootGroup/FairMQ",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5281/zenodo.1689985"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) has a version which does not correspond to the version used in the latest release",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P001 detected: codemeta.json version 'master' does not match release version '1.10.0'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P008 detected: codemeta.json License points to local file instead of license name: './COPYRIGHT'"
+    }
+  ]
+}

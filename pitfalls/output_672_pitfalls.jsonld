@@ -1,0 +1,57 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for opensource-spraakherkenning-nl/eng_ASR",
+  "description": "English Speech Recognition webservice",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "emre@nus.edu.sg",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:06:12Z",
+  "license": {
+    "@id": "https://api.github.com/licenses/agpl-3.0"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "opensource-spraakherkenning-nl/eng_ASR",
+    "softwareVersion": "v0.2.3",
+    "url": "https://github.com/opensource-spraakherkenning-nl/eng_ASR"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) Software requirements don't have version specifications",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W003 detected: codemeta.json contains software requirements without versions: Kaldi_NL"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P008 detected: codemeta.json License points to local file instead of license name: 'https://spdx.org/licenses/AGPL-3.0-only'"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "@context": "https://w3id.org/example/pwd/0.1.0/",
+  "@type": "PitfallsWarningsDetection",
+  "name": "FAIR pitfalls and Warning Diagnosis",
+  "description": "An automated tool for detecting common metadata quality issues (pitfalls) in software repositories. The tool analyzes SoMEF (Software Metadata Extraction Framework) output files to identify various problems in repository metadata files",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Pitfall Detection System",
+    "email": "system@example.com"
+  },
+  "dateCreated": "2025-09-28T22:43:22Z",
+  "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "flynn162/inspect_float32",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/flynn162/inspect_float32"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/W003"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Description for W003",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W003 detected: Issue detected in output_476.json"
+    },
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/W004"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Description for W004",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W004 detected: Issue detected in output_476.json"
+    },
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/W010"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Description for W010",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W010 detected: Issue detected in output_476.json"
+    },
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/W012"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Description for W012",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W012 detected: Issue detected in output_476.json"
+    },
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/P016"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Description for P016",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P016 detected: Issue detected in output_476.json"
+    },
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/P026"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file codeRepository uses Git remote-style shorthand instead of full URL",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P026 detected: codeRepository field uses Git remote shorthand instead of full URL"
+    }
+  ]
+}

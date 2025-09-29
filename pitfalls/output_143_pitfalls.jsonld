@@ -1,0 +1,40 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for DoSOCSv2/DoSOCSv2",
+  "description": "SPDX 2.0 document creation and storage",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "tgurney@unomaha.edu",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:06:54Z",
+  "license": {
+    "@id": "https://api.github.com/licenses/gpl-2.0"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "DoSOCSv2/DoSOCSv2",
+    "softwareVersion": "v0.16.1",
+    "url": "https://github.com/DoSOCSv2/DoSOCSv2"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) License does not have the specific version",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P022 detected: setup.py License does not specify version: 'GNU General Public License v2 or later (GPLv2+)'"
+    }
+  ]
+}

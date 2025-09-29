@@ -1,0 +1,128 @@
+{
+  "@context": "https://w3id.org/example/pwd/0.1.0/",
+  "@type": "PitfallsWarningsDetection",
+  "name": "FAIR pitfalls and Warning Diagnosis",
+  "description": "An automated tool for detecting common metadata quality issues (pitfalls) in software repositories. The tool analyzes SoMEF (Software Metadata Extraction Framework) output files to identify various problems in repository metadata files",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Pitfall Detection System",
+    "email": "system@example.com"
+  },
+  "dateCreated": "2025-09-28T22:45:54Z",
+  "license": {
+    "@id": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "fairdataihub/FAIR-AMD-OCT-paper-code",
+    "softwareVersion": "v1.1.0",
+    "url": "https://github.com/fairdataihub/FAIR-AMD-OCT-paper-code",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5281/zenodo.14926793"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/P001"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has a version which does not correspond to the version used in the latest release",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P001 detected: codemeta.json version '1.2.0' does not match release version '1.1.0'"
+    },
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/W003"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Description for W003",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W003 detected: Issue detected in output_25.json"
+    },
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/P008"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P008 detected: License points to local file instead of license name: 'https://spdx.org/licenses/MIT'"
+    },
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/W010"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Description for W010",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W010 detected: Issue detected in output_25.json"
+    },
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/P024"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file GivenName is a list instead of a string",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P024 detected: GivenName field contains a list instead of a single string value"
+    },
+    {
+      "@type": "CheckResult",
+      "pitfallindicator": {
+        "@id": "https://w3id.org/example/i/indicators/P026"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "pitfallsdetect",
+        "@id": "https://w3id.org/example/tools/pitfallsdetect",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file codeRepository uses Git remote-style shorthand instead of full URL",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P026 detected: codeRepository field uses Git remote shorthand instead of full URL"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for JuliaPackageMirrors/Gillespie.jl",
+  "description": "Julia package mirror.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Simon Frost",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:06:20Z",
+  "license": {
+    "@id": "https://spdx.org/licenses/The Gillespie.jl package is licensed under the MIT \"Expat\" License:\n\n> Copyright (c) 2014-2015: Simon Frost.\n>\n> Permission is hereby granted, free of charge, to any person obtaining\n> a copy of this software and associated documentation files (the\n> \"Software\"), to deal in the Software without restriction, including\n> without limitation the rights to use, copy, modify, merge, publish,\n> distribute, sublicense, and/or sell copies of the Software, and to\n> permit persons to whom the Software is furnished to do so, subject to\n> the following conditions:\n>\n> The above copyright notice and this permission notice shall be\n> included in all copies or substantial portions of the Software.\n>\n> THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\n> EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\n> MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\n> IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\n> CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\n> TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\n> SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "JuliaPackageMirrors/Gillespie.jl",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/JuliaPackageMirrors/Gillespie.jl"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "codemeta.json dateModified is outdated compared to the actual repository last update date",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W004 detected: codemeta.json dateModified 'unknown' is outdated compared to repository date 'unknown'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) codeRepository does not point to the same repository",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P026 detected: codeRepository points to different repository: https://github.com/JuliaPackageMirrors/Gillespie.jl"
+    }
+  ]
+}

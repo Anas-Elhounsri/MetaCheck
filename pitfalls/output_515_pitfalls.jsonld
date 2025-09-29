@@ -1,0 +1,40 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for apraga/pangolin",
+  "description": "A large-scale atmospheric chemistry-transport model for massively parallel architectures",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Aleis Praga",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:04:23Z",
+  "license": {
+    "@id": "https://spdx.org/licenses/Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright\nnotice, this list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n\nNeither the name of CERFACS nor the names of its contributors may be used\nto endorse or promote products derived from this software without specific \nprior written permission.\n"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "apraga/pangolin",
+    "softwareVersion": "1.0.0",
+    "url": "https://github.com/apraga/pangolin"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "Programming languages in codemeta.json do not have versions",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall W010 detected: codemeta.json Programming languages without versions: Fortran"
+    }
+  ]
+}

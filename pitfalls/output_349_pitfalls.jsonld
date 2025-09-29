@@ -1,0 +1,40 @@
+{
+  "@context": "https://w3id.org/everse/rsqa/0.0.1/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for teuben/nemo",
+  "description": "a Stellar Dynamics Toolbox (Not Everybody Must Observe)",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "teuben@astro.umd.edu",
+    "email": "qa-system@example.com"
+  },
+  "dateCreated": "2025-09-29T03:05:36Z",
+  "license": {
+    "@id": "https://api.github.com/licenses/gpl-2.0"
+  },
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "teuben/nemo",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/teuben/nemo"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/everse/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "howfairis",
+        "@id": "https://w3id.org/everse/tools/howfairis",
+        "softwareVersion": "0.14.2"
+      },
+      "process": "The metadata file (codemeta or other) License does not have the specific version",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "Pitfall P022 detected: setup.py License does not specify version: 'BSD'"
+    }
+  ]
+}

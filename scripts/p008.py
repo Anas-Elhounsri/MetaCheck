@@ -1,6 +1,6 @@
 from typing import Dict
 import re
-
+from utils.pitfall_utils import extract_metadata_source_filename
 
 def is_local_file_license(license_value: str) -> bool:
     """
@@ -45,6 +45,7 @@ def detect_local_file_license_pitfall(somef_data: Dict, file_name: str) -> Dict:
         "file_name": file_name,
         "license_value": None,
         "source": None,
+        "metadata_source_file": None,
         "is_local_file": False
     }
 
@@ -61,7 +62,6 @@ def detect_local_file_license_pitfall(somef_data: Dict, file_name: str) -> Dict:
         technique = entry.get("technique", "")
         source = entry.get("source", "")
 
-        # Check if it's from a metadata source
         if technique == "code_parser" or any(src in source.lower() for src in metadata_sources):
             if "result" in entry and "value" in entry["result"]:
                 license_value = entry["result"]["value"]
@@ -70,6 +70,7 @@ def detect_local_file_license_pitfall(somef_data: Dict, file_name: str) -> Dict:
                     result["has_pitfall"] = True
                     result["license_value"] = license_value
                     result["source"] = source if source else f"technique: {technique}"
+                    result["metadata_source_file"] = extract_metadata_source_filename(source)
                     result["is_local_file"] = True
                     break
 
