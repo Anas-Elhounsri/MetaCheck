@@ -1,10 +1,10 @@
 # Software Repository Metadata Pitfall/Warning Detection Tool
 
-This project provides an automated tool for detecting common metadata quality issues (pitfalls) in software repositories. The tool analyzes SoMEF (Software Metadata Extraction Framework) output files to identify various problems in repository metadata files such as `codemeta.json`, `package.json`, `setup.py`, `DESCRIPTION`, and others.
+This project provides an automated tool for detecting common metadata quality issues (pitfalls & Warnings) in software repositories. The tool analyzes SoMEF (Software Metadata Extraction Framework) output files to identify various problems in repository metadata files such as `codemeta.json`, `package.json`, `setup.py`, `DESCRIPTION`, and others.
 
 ## Overview
 
-The pitfall detection system identifies **27 different types of metadata quality issues** across multiple programming languages (Python, Java, C++, C, R, Rust). These pitfalls range from version mismatches and license template placeholders to broken URLs and improperly formatted metadata fields.
+MetaCheck identifies **27 different types of metadata quality issues** across multiple programming languages (Python, Java, C++, C, R, Rust). These pitfalls range from version mismatches and license template placeholders to broken URLs and improperly formatted metadata fields.
 
 ### Supported Pitfall Types
 
