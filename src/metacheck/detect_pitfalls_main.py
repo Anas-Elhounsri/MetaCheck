@@ -1,37 +1,37 @@
 import json
 from pathlib import Path
 
-from utils.pitfall_utils import extract_programming_languages
-from utils.json_ld_utils import create_pitfall_jsonld, save_individual_pitfall_jsonld
+from metacheck.utils.pitfall_utils import extract_programming_languages
+from metacheck.utils.json_ld_utils import create_pitfall_jsonld, save_individual_pitfall_jsonld
 
 # Import all pitfall detectors
-from scripts.p001 import detect_version_mismatch
-from scripts.p002 import detect_license_template_placeholders
-from scripts.w003 import detect_unversioned_requirements
-from scripts.w004 import detect_outdated_datemodified
-from scripts.p005 import detect_multiple_authors_single_field_pitfall
-from scripts.p006 import detect_readme_homepage_pitfall
-from scripts.p007 import detect_reference_publication_archive_pitfall
-from scripts.p008 import detect_local_file_license_pitfall
-from scripts.w010 import detect_programming_language_no_version_pitfall
-from scripts.p011 import detect_citation_missing_reference_publication_pitfall
-from scripts.w012 import detect_multiple_requirements_string_warning
-from scripts.p013 import detect_invalid_software_requirement_pitfall
-from scripts.w014 import detect_identifier_name_warning
-from scripts.w015 import detect_empty_identifier_warning
-from scripts.p016 import detect_coderepository_homepage_pitfall
-from scripts.p017 import detect_copyright_only_license
-from scripts.p018 import detect_issue_tracker_format_pitfall
-from scripts.p019 import detect_outdated_download_url_pitfall
-from scripts.p020 import detect_development_status_url_pitfall
-from scripts.w021 import detect_author_name_list_warning
-from scripts.p022 import detect_license_no_version_pitfall
-from scripts.p023 import detect_git_remote_shorthand_pitfall
-from scripts.p024 import detect_bare_doi_pitfall
-from scripts.p025 import detect_ci_404_pitfall
-from scripts.p026 import detect_different_repository_pitfall
-from scripts.p027 import detect_codemeta_version_mismatch_pitfall
-from scripts.p028 import detect_raw_swhid_pitfall
+from metacheck.scripts.p001 import detect_version_mismatch
+from metacheck.scripts.p002 import detect_license_template_placeholders
+from metacheck.scripts.w003 import detect_unversioned_requirements
+from metacheck.scripts.w004 import detect_outdated_datemodified
+from metacheck.scripts.p005 import detect_multiple_authors_single_field_pitfall
+from metacheck.scripts.p006 import detect_readme_homepage_pitfall
+from metacheck.scripts.p007 import detect_reference_publication_archive_pitfall
+from metacheck.scripts.p008 import detect_local_file_license_pitfall
+from metacheck.scripts.w010 import detect_programming_language_no_version_pitfall
+from metacheck.scripts.p011 import detect_citation_missing_reference_publication_pitfall
+from metacheck.scripts.w012 import detect_multiple_requirements_string_warning
+from metacheck.scripts.p013 import detect_invalid_software_requirement_pitfall
+from metacheck.scripts.w014 import detect_identifier_name_warning
+from metacheck.scripts.w015 import detect_empty_identifier_warning
+from metacheck.scripts.p016 import detect_coderepository_homepage_pitfall
+from metacheck.scripts.p017 import detect_copyright_only_license
+from metacheck.scripts.p018 import detect_issue_tracker_format_pitfall
+from metacheck.scripts.p019 import detect_outdated_download_url_pitfall
+from metacheck.scripts.p020 import detect_development_status_url_pitfall
+from metacheck.scripts.w021 import detect_author_name_list_warning
+from metacheck.scripts.p022 import detect_license_no_version_pitfall
+from metacheck.scripts.p023 import detect_git_remote_shorthand_pitfall
+from metacheck.scripts.p024 import detect_bare_doi_pitfall
+from metacheck.scripts.p025 import detect_ci_404_pitfall
+from metacheck.scripts.p026 import detect_different_repository_pitfall
+from metacheck.scripts.p027 import detect_codemeta_version_mismatch_pitfall
+from metacheck.scripts.p028 import detect_raw_swhid_pitfall
 
 
 
@@ -48,7 +48,6 @@ def detect_all_pitfalls(directory_path: str, output_file: str):
         print(f"Error: Directory {directory_path} does not exist.")
         return
 
-    # Create pitfalls directory if it doesn't exist
     pitfalls_output_dir.mkdir(exist_ok=True)
 
     results = {
@@ -303,18 +302,15 @@ def detect_all_pitfalls(directory_path: str, output_file: str):
             if languages:
                 repos_with_target_languages += 1
 
-            # Store pitfall results for this repository
             repo_pitfall_results = []
 
             for idx, (detector_func, pitfall_code) in enumerate(pitfall_detectors):
                 try:
                     pitfall_result = detector_func(somef_data, json_file.name)
 
-                    # Add pitfall code to result for JSON-LD generation
                     pitfall_result["pitfall_code"] = pitfall_code
                     repo_pitfall_results.append(pitfall_result)
 
-                    # Check for both pitfalls and warnings
                     has_pitfall = pitfall_result.get("has_pitfall", False)
                     has_warning = pitfall_result.get("has_warning", False)
                     has_issue = has_pitfall or has_warning
@@ -322,7 +318,6 @@ def detect_all_pitfalls(directory_path: str, output_file: str):
                     if has_issue:
                         pitfall_counts[idx] += 1
 
-                        # Track separate counts
                         if has_pitfall:
                             total_pitfalls += 1
                         if has_warning:
@@ -342,9 +337,7 @@ def detect_all_pitfalls(directory_path: str, output_file: str):
                     print(f"Error running {pitfall_code} detector on {json_file.name}: {e}")
                     continue
 
-            # Generate individual JSON-LD file for this repository
             try:
-                # Only create JSON-LD if there are pitfalls or warnings detected
                 has_any_issue = any(
                     result.get("has_pitfall", False) or result.get("has_warning", False)
                     for result in repo_pitfall_results
@@ -369,7 +362,6 @@ def detect_all_pitfalls(directory_path: str, output_file: str):
             print(f"Error processing file {json_file}: {e}")
             continue
 
-    # Update results summary
     results["summary"]["total_repositories_analyzed"] = total_repos
     results["summary"]["repositories_with_target_languages"] = repos_with_target_languages
     results["summary"]["individual_jsonld_files_created"] = jsonld_files_created
@@ -400,23 +392,23 @@ def detect_all_pitfalls(directory_path: str, output_file: str):
         print(f"Error writing output file: {e}")
 
 
-def main():
+def main(input_dir=None):
     """
     Main function to run all pitfall detections.
+    Args:
+        input_dir (str, optional): Path to the SoMEF outputs directory. If None, uses default.
     """
-    script_dir = Path(__file__).parent
-
-    somef_directory = script_dir / ("new_output_somef")
-
-    output_file = script_dir / "all_pitfalls_results.json"
+    project_root = Path.cwd()
+    somef_directory = Path(input_dir) if input_dir else project_root / "src" / "metacheck" / "somef_outputs" # default
+    output_file = project_root / "src" / "metacheck" / "all_pitfalls_results.json"
 
     if not somef_directory.exists():
-        print(f"Error: Expected directory 'somef_outputs' not found at: {somef_directory}")
-        print("Please ensure the 'somef_outputs' directory exists in the same location as this script.")
+        print(f"Error: Directory not found: {somef_directory}")
+        print("Please ensure the directory exists.")
         return
 
     detect_all_pitfalls(str(somef_directory), str(output_file))
 
-
 if __name__ == "__main__":
     main()
+    
