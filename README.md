@@ -67,7 +67,7 @@ After a successful setup, execute the package from the command line if you want 
 `python -m metacheck.cli --input https://github.com/tidyverse/tidyverse  
 `
   
-or if you wish to analyze in batches, you to run
+or if you wish to analyze in batches, you need to run
 
 `python -m metacheck.cli --input repositories.json
 `
