@@ -48,15 +48,15 @@ repositories you want to analyze.
 ### 2. Directory Structure [NEEDS AN UPDATE]
 ```
 project/ detect_pitfalls_main.py 
-        ├── somef_outputs/ # Directory containing SoMEF JSON files │ 
-            ├── repository1.json │ 
-            ├── repository2.json │ 
-            └── ... 
-        ├── scripts/ # Individual pitfall detector modules │ 
-            ├── p001.py │ 
-            ├── p002.py │ 
-            └── ... 
-        └── all_pitfalls_results.json # Generated output file
+        +-- somef_outputs/ # Directory containing SoMEF JSON files � 
+            +-- repository1.json � 
+            +-- repository2.json � 
+            +-- ... 
+        +-- scripts/ # Individual pitfall detector modules � 
+            +-- p001.py � 
+            +-- p002.py � 
+            +-- ... 
+        +-- all_pitfalls_results.json # Generated output file
 
 ```
 
@@ -84,8 +84,30 @@ a list of repositories, and it needs to be structured like the following:
   ]
 }
 ```
+if the PATH is not defined, the command will look something like this:
+  
+`python -m metacheck.cli --input your_path/repositories.json
+`
 
+and the results will be stored in the current directory like the following:
 
+```
+./somef_outputs/
+./pitfalls_outputs/
+./analysis_results.json
+```
+
+if the path is defined, the command will look something like this:
+
+`python -m metacheck.cli \ --input repositories.json \ --pitfalls-output ./results/pitfalls \ --analysis-output ./results/summary.json
+`
+
+The results will be like the following:
+```
+./somef_outputs/
+./results/pitfalls/
+./results/summary.json
+```
 ### 4. Output
 
 The tool will:
@@ -108,7 +130,7 @@ The output file contains:
 
 1. **"There is no valid repository URL" error**: Ensure the JSON file that contains the repositories 
 has a valid structure and that you are inputing the correct path
-2. **Network timeouts**: Some pitfalls validate URLs and may time out—this is normal behavior
+2. **Network timeouts**: Some pitfalls validate URLs and may time out�this is normal behavior
 
 ### Performance Notes
 
