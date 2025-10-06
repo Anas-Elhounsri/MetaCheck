@@ -80,8 +80,7 @@ a list of repositories, and it needs to be structured like the following:
   "repositories": [
     "https://gitlab.com/example/example_repo_1",
     "https://gitlab.com/example/example_repo_2",
-    "https://github.com/example/example_repo_3",
-    ...
+    "https://github.com/example/example_repo_3"
   ]
 }
 ```
