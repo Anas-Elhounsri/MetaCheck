@@ -7,6 +7,7 @@ setup(
     packages=find_namespace_packages(where="src"),
     install_requires=[
         "requests",
+        "somef",
     ],
     entry_points={
         "console_scripts": [
