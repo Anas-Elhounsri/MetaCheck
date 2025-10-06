@@ -45,7 +45,7 @@ to extract the metadata, you can still not include an authentication token and s
 However, you may be limited to a series of requests per hour depending on the batch size of 
 repositories you want to analyze.
 
-### 2. Directory Structure [NEEDS AND UPDATE]
+### 2. Directory Structure [NEEDS AN UPDATE]
 ```
 project/ detect_pitfalls_main.py 
         ├── somef_outputs/ # Directory containing SoMEF JSON files │ 
