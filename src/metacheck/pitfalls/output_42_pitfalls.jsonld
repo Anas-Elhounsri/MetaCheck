@@ -1,0 +1,94 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for bojanakoteska/SchrodingerAPI",
+  "description": "This RESTful web service (SchrodingerAPI) provides a method for solution of one-dimensional, two-dimensional and three-dimensional time-independent Schrödinger equation based on the the Gauss-Hermite Discrete Variable Representation (DVR) approach.\n\nThe solution of one-dimensional (1D) Schrödinger equation is illustrated in the case of following model potentials:\n\nMorse potential;\nSimple Harmonic Oscillator (SHO) potential;\nSombrero potential (Mexican hat);\nWoods-Saxon potential.\nSolutions of two-dimensional (2D) and three-dimensional (3D) Schrödinger equations are illustrated for the following two model potentials: multidimensional Morse potential and multidimensional SHO potential.\n\n",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:47:28Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "bojanakoteska/SchrodingerAPI",
+    "softwareVersion": "v1.0.0",
+    "url": "https://github.com/bojanakoteska/SchrodingerAPI",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5281/zenodo.11408339"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has a version which does not correspond to the version used in the latest release",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P001 detected: pom.xml version '0.0.1-SNAPSHOT' does not match release version '1.0.0'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P008 detected: codemeta.json License points to local file instead of license name: 'https://spdx.org/licenses/MIT'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Programming languages in codemeta.json do not have versions",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W010 detected: codemeta.json Programming languages without versions: Java, Python 3"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json uses bare DOIs in the identifier field instead of full https://doi.org/ URL",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P024 detected: Identifier uses bare DOI instead of full URL: '10.5281/zenodo.11408339'"
+    }
+  ]
+}

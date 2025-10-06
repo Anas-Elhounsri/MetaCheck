@@ -1,0 +1,145 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for m-giraud/Giraud2025_CarbonStabilisation",
+  "description": "DuMux is short for DUNE for Multi-{Phase, Component, Scale, Physics, …} flow and transport in porous media; is a free and open-source simulator for flow and transport processes in porous media; is a research code written in C++; is based on the research software framework DUNE (Distributed and Unified Numerics Environment) and technically a DUNE discretization and user module. Its main intention is to provide a sustainable and consistent framework for the implementation and application of porous media model concepts and constitutive relations.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:48:22Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "m-giraud/Giraud2025_CarbonStabilisation",
+    "softwareVersion": "publication2025",
+    "url": "https://github.com/m-giraud/Giraud2025_CarbonStabilisation",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.18419/darus-3788"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has a version which does not correspond to the version used in the latest release",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P001 detected: codemeta.json version '3.8' does not match release version 'publication2025'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/license"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "LICENSE file contains template placeholders like <program>, <year>, <name of author> that were not replaced",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P002 detected:  License file contains unreplaced template placeholders"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json dateModified is outdated compared to the actual repository last update date",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W004 detected: codemeta.json dateModified '2023-11-17T00:00:00' is outdated compared to repository date '2025-02-05T18:00:24'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P008 detected: codemeta.json License points to local file instead of license name: 'https://spdx.org/licenses/GPL-3.0+'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Programming languages in codemeta.json do not have versions",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W010 detected: codemeta.json Programming languages without versions: C++, Python"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json downloadURL is outdated",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P019 detected: codemeta.json downloadURL is outdated or invalid: https://git.iws.uni-stuttgart.de/dumux-repositories/dumux/-/archive/3.8.0/dumux-3.8.0.tar.gz"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) codeRepository does not point to the same repository",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P026 detected: codeRepository points to different repository: https://github.com/m-giraud/Giraud2025_CarbonStabilisation"
+    }
+  ]
+}

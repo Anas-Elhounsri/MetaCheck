@@ -1,0 +1,40 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for bvhpatel/my-data-analysis-code",
+  "description": "My code",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:47:20Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "bvhpatel/my-data-analysis-code",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/bvhpatel/my-data-analysis-code"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P008 detected: codemeta.json License points to local file instead of license name: 'https://spdx.org/licenses/MIT'"
+    }
+  ]
+}

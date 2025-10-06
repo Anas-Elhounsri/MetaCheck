@@ -1,0 +1,74 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for elipousson/standaloner",
+  "description": "Set or get a token with .Renviron",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:47:00Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "elipousson/standaloner",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/elipousson/standaloner"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P008 detected: DESCRIPTION License points to local file instead of license name: 'MIT + file LICENSE'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Programming languages in codemeta.json do not have versions",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W010 detected: codemeta.json Programming languages without versions: R"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json developmentStatus is a URL instead of a string",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P020 detected: codemeta.json developmentStatus is a URL instead of status string: https://www.repostatus.org/#active"
+    }
+  ]
+}

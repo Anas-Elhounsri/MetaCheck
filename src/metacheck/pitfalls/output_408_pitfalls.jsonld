@@ -1,0 +1,40 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for tmorrell/psf2pdb",
+  "description": "Convert CHARMM psf and a pdb file to a pdb file with CONNECT information.  Useful for ensuring correct bonding in visualization programs such as pymol.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:47:36Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "tmorrell/psf2pdb",
+    "softwareVersion": "v0.3",
+    "url": "https://github.com/tmorrell/psf2pdb"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Programming languages in codemeta.json do not have versions",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W010 detected: codemeta.json Programming languages without versions: Python"
+    }
+  ]
+}

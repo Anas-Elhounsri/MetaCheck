@@ -1,0 +1,40 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for zbmed-semtec/word2doc2vec-doc-relevance",
+  "description": "An approach exploring and assessing literature-based doc-2-doc recommendations using word2vec combined with doc2vec, and applying it to TREC and RELISH datasets",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:48:25Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "zbmed-semtec/word2doc2vec-doc-relevance",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/zbmed-semtec/word2doc2vec-doc-relevance"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json Identifier uses raw SWHIDs without their resolvable URL",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P028 detected: codemeta Identifier uses raw SWHID without resolvable URL: 'swh:1:dir:51e827e63084faece4fe491da89c9ffb0ef9a92c'"
+    }
+  ]
+}

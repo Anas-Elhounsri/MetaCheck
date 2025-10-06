@@ -1,0 +1,125 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for penn-graphics-research/DOT",
+  "description": "Decomposed Optimization Time Integration (DOT) is a domain-decomposed optimization method for fast, reliable simulation of deformation dynamics. DOT efficiently converges with frame-rate time-steps across a wide range of extreme conditions.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:46:46Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "penn-graphics-research/DOT",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/penn-graphics-research/DOT"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json dateModified is outdated compared to the actual repository last update date",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W004 detected: codemeta.json dateModified '2018-07-05T00:00:00' is outdated compared to repository date '2025-05-04T05:35:05'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P008 detected: codemeta.json License points to local file instead of license name: 'https://spdx.org/licenses/GPL-3.0-only.html'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Programming languages in codemeta.json do not have versions",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W010 detected: codemeta.json Programming languages without versions: MATLAB"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) License does not have the specific version",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P022 detected: setup.py License does not specify version: 'BSD'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "In codemeta.json contIntegration link returns 404",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P025 detected: codemeta.json Continuous integration URL returns 404: https://travis-ci.com/ScottKolo/Mongoose"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) codeRepository does not point to the same repository",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P026 detected: codeRepository points to different repository: https://github.com/penn-graphics-research/DOT"
+    }
+  ]
+}

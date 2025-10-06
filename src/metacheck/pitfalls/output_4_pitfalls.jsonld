@@ -1,0 +1,43 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for dmyersturnbull/tyrannosaurus",
+  "description": "Generate beautifully modern (2021+) Python projects with seamless, GitHub-based CI/CD, Docker and Conda support, and out-of-the-box integration with >30 best-practices tools and standards.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:48:54Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "dmyersturnbull/tyrannosaurus",
+    "softwareVersion": "v0.10.4",
+    "url": "https://github.com/dmyersturnbull/tyrannosaurus",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5281/zenodo.4485186"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has a version which does not correspond to the version used in the latest release",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P001 detected: pyproject.toml version '0.11.0' does not match release version '0.10.4'"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for DillonHammill/CytoExploreR",
+  "description": "Interactive Cytometry Data Analysis",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:48:06Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "DillonHammill/CytoExploreR",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/DillonHammill/CytoExploreR"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has License pointing to a local file instead of stating the name",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P008 detected: codemeta.json License points to local file instead of license name: 'https://spdx.org/licenses/GPL-2.0'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json developmentStatus is a URL instead of a string",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P020 detected: codemeta.json developmentStatus is a URL instead of status string: https://www.tidyverse.org/lifecycle/#maturing"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "In codemeta.json contIntegration link returns 404",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P025 detected: codemeta.json Continuous integration URL returns unknown: ['https://travis-ci.org/DillonHammill/CytoRSuite', 'https://ci.appveyor.com/project/DillonHammill/CytoRSuite', 'https://codecov.io/github/DillonHammill/CytoRSuite?branch=master']"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json version does not match the package's",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P027 detected: codemeta.json version '1.0.8' does not match package version"
+    }
+  ]
+}

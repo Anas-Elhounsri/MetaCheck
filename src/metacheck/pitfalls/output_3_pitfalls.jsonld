@@ -1,0 +1,108 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for sourmash-bio/sourmash",
+  "description": "Quickly search, compare, and analyze genomic and metagenomic data sets.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:46:47Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "sourmash-bio/sourmash",
+    "softwareVersion": "v4.9.4",
+    "url": "https://github.com/sourmash-bio/sourmash"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) has a version which does not correspond to the version used in the latest release",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P001 detected: pyproject.toml version '4.9.5-dev' does not match release version '4.9.4'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json dateModified is outdated compared to the actual repository last update date",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W004 detected: codemeta.json dateModified '2016-06-07T00:00:00' is outdated compared to repository date '2025-09-16T17:30:49'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json Identifier is empty",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W015 detected: codemeta.json identifier field is empty or missing"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) License does not have the specific version",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P022 detected: codemeta.json License does not specify version: 'BSD 3-clause'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json version does not match the package's",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P027 detected: codemeta.json version 'v1.0.0' does not match package version"
+    }
+  ]
+}

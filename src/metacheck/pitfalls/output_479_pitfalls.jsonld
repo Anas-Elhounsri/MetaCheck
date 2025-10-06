@@ -1,0 +1,57 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for kjgarza/citation-model",
+  "description": "JS Library that create a model around citations files",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:48:46Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "kjgarza/citation-model",
+    "softwareVersion": "v1.0.11",
+    "url": "https://github.com/kjgarza/citation-model"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json Identifier is empty",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W015 detected: codemeta.json identifier field is empty or missing"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json version does not match the package's",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P027 detected: codemeta.json version '1.0.10' does not match package version"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for sungdukyu/E3SM",
+  "description": "Energy Exascale Earth System Model source code.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:48:42Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "sungdukyu/E3SM",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/sungdukyu/E3SM"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) Software requirements don't have version specifications",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W003 detected: requirements.txt contains software requirements without versions: numpy"
+    }
+  ]
+}

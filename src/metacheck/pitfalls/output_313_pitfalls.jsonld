@@ -1,0 +1,60 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for CameronDevine/StateMint",
+  "description": "This is a set of tools to symbolically determine the differential equation of a dynamic system given its elemental and constraint equations.",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:48:18Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "CameronDevine/StateMint",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/CameronDevine/StateMint",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.5281/zenodo.2633330"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) Software requirements don't have version specifications",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W003 detected: requirements.txt contains software requirements without versions: python/requirements.txt"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) License does not have the specific version",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P022 detected: codemeta.json License does not specify version: 'BSD'"
+    }
+  ]
+}

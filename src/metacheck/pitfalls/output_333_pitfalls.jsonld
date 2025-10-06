@@ -1,0 +1,91 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for pachadotdev/tradestatistics-visualization-with-shiny",
+  "description": "Open Trade Statistics Shiny Dashboard",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:48:52Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "pachadotdev/tradestatistics-visualization-with-shiny",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/pachadotdev/tradestatistics-visualization-with-shiny"
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "Programming languages in codemeta.json do not have versions",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W010 detected: codemeta.json Programming languages without versions: R, R"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json Identifier is a name instead of a valid unique identifier, but an identifier exist",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W014 detected: codemeta.json Identifier is a name instead of valid unique identifier: 'otsshinyproductprofiles'"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/metadatafile"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "The metadata file (codemeta or other) codeRepository does not point to the same repository",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P026 detected: codeRepository points to different repository: https://github.com/pachadotdev/tradestatistics-visualization-with-shiny"
+    },
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json version does not match the package's",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "P027 detected: codemeta.json version '2022.8.6' does not match package version"
+    }
+  ]
+}
