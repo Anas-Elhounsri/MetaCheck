@@ -1,6 +1,6 @@
 from typing import Dict
 import re
-from utils.pitfall_utils import extract_metadata_source_filename
+from metacheck.utils.pitfall_utils import extract_metadata_source_filename
 
 def is_local_file_license(license_value: str) -> bool:
     """
@@ -11,26 +11,57 @@ def is_local_file_license(license_value: str) -> bool:
 
     license_lower = license_value.lower()
 
+    valid_license_patterns = [
+        r'https?://spdx\.org/licenses/',  # SPDX license URLs
+        r'https?://opensource\.org/licenses/',  # OSI license URLs
+        r'https?://www\.gnu\.org/licenses/',  # GNU license URLs
+        r'https?://creativecommons\.org/licenses/',  # Creative Commons URLs
+        r'https?://www\.apache\.org/licenses/',  # Apache license URLs
+        r'https?://www\.mozilla\.org/en-US/MPL/',  # Mozilla license URLs
+        r'https?://unlicense\.org',  # Unlicense URL
+        r'https?://choosealicense\.com/',  # GitHub's license chooser
+    ]
+
+    for pattern in valid_license_patterns:
+        if re.search(pattern, license_value, re.IGNORECASE):
+            return False
+
     # Local file indicators
     local_file_patterns = [
         r'^\./',  # Starts with ./
         r'^\.\./',  # Starts with ../
-        r'license\.md$',  # Ends with license.md
-        r'license\.txt$',  # Ends with license.txt
-        r'license$',  # Just "LICENSE" or "license"
-        r'/license',  # Contains /license
-        r'\.md$',  # Any .md file
-        r'\.txt$'  # Any .txt file
+        r'^license\.md$',  # Exactly "license.md"
+        r'^license\.txt$',  # Exactly "license.txt"
+        r'^license$',  # Exactly "LICENSE" or "license"
+        r'^copying$',  # Exactly "COPYING" or "copying"
+        r'^copyright$',  # Exactly "COPYRIGHT" or "copyright"
+        r'\.md$',  # Any .md file that's not a URL
+        r'\.txt$',  # Any .txt file that's not a URL
+        r'\.rst$',  # Any .rst file
     ]
 
+    # Check if it starts with relative path indicators
+    if license_value.startswith('./') or license_value.startswith('../'):
+        return True
+
+    # Check if it contains path separators (likely a file path)
+    if ('/' in license_value or '\\' in license_value) and not license_value.startswith('http'):
+        return True
+
+    # Check against local file patterns
     for pattern in local_file_patterns:
         if re.search(pattern, license_lower):
             return True
 
-    if license_value.startswith('./') or license_value.startswith('../'):
-        return True
+    # Check for common license file names
+    license_file_names = [
+        'license', 'license.md', 'license.txt', 'license.rst',
+        'copying', 'copying.md', 'copying.txt',
+        'copyright', 'copyright.md', 'copyright.txt',
+        'licence', 'licence.md', 'licence.txt'  # British spelling
+    ]
 
-    if '/' in license_value or '\\' in license_value:
+    if license_lower in license_file_names:
         return True
 
     return False

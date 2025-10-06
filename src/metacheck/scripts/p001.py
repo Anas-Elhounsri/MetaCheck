@@ -1,6 +1,6 @@
 from typing import Dict, Optional
-from utils.pitfall_utils import normalize_version
-from utils.pitfall_utils import extract_metadata_source_filename
+from metacheck.utils.pitfall_utils import normalize_version
+from metacheck.utils.pitfall_utils import extract_metadata_source_filename
 
 def extract_version_from_metadata(somef_data: Dict) -> Optional[Dict[str, str]]:
     """

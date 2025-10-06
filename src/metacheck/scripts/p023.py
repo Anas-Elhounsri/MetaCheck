@@ -1,6 +1,6 @@
 from typing import Dict
 import re
-from utils.pitfall_utils import extract_metadata_source_filename
+from metacheck.utils.pitfall_utils import extract_metadata_source_filename
 
 def is_git_remote_shorthand(url: str) -> bool:
     """

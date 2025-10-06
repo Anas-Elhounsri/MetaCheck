@@ -2,7 +2,7 @@ from typing import Dict
 import requests
 import re
 from urllib.parse import urlparse
-from utils.pitfall_utils import extract_metadata_source_filename
+from metacheck.utils.pitfall_utils import extract_metadata_source_filename
 
 
 def is_valid_url_format(url: str) -> bool:

@@ -1,5 +1,5 @@
 from typing import Dict
-from utils.pitfall_utils import extract_metadata_source_filename
+from metacheck.utils.pitfall_utils import extract_metadata_source_filename
 
 
 def is_repository_url(url: str) -> bool:

@@ -1,5 +1,5 @@
 from typing import Dict, List, Tuple, Optional
-from utils.pitfall_utils import extract_metadata_source_filename
+from metacheck.utils.pitfall_utils import extract_metadata_source_filename
 
 
 def extract_requirements_from_metadata(somef_data: Dict) -> Optional[Dict]:

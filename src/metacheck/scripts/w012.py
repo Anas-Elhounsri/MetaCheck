@@ -1,6 +1,6 @@
 from typing import Dict, List
 import re
-from utils.pitfall_utils import extract_metadata_source_filename
+from metacheck.utils.pitfall_utils import extract_metadata_source_filename
 
 
 def detect_multiple_requirements_in_string(requirement_string: str) -> List[str]:

@@ -1,6 +1,6 @@
 from typing import Dict
 import re
-from utils.pitfall_utils import extract_metadata_source_filename
+from metacheck.utils.pitfall_utils import extract_metadata_source_filename
 
 def has_multiple_authors_in_single_field(author_value: str) -> bool:
     """

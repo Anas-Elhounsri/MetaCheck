@@ -55,8 +55,7 @@ def detect_different_repository_pitfall(somef_data: Dict, file_name: str) -> Dic
 
             if technique == "GitHub_API":
                 github_api_url = repo_url
-            elif technique == "code_parser" or any(
-                    src in source.lower() for src in ["codemeta.json", "setup.py", "pom.xml"]):
+            elif any(src in source.lower() for src in ["codemeta.json"]):
                 metadata_urls.append({
                     "url": repo_url,
                     "source": source,

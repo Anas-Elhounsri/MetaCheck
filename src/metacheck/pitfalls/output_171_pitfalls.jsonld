@@ -1,0 +1,43 @@
+{
+  "@context": "https://w3id.org/example/0.1.0/",
+  "@type": "SoftwareQualityAssessment",
+  "name": "Quality Assessment for datacite/pidgraph-notebooks-r",
+  "description": "Jupyter notebook that uses GraphQL to fetch the publications, datasets and software for a particular researcher",
+  "creator": {
+    "@type": "schema:Person",
+    "name": "Anas El Hounsri",
+    "email": "a.elhounsri@upm.com"
+  },
+  "dateCreated": "2025-10-02T09:45:32Z",
+  "license": [
+    "@id: https://opensource.org/license/mit"
+  ],
+  "assessedSoftware": {
+    "@type": "schema:SoftwareApplication",
+    "name": "datacite/pidgraph-notebooks-r",
+    "softwareVersion": "Unknown",
+    "url": "https://github.com/datacite/pidgraph-notebooks-r",
+    "schema:identifier": {
+      "@id": "https://doi.org/10.14454/628m-3882"
+    }
+  },
+  "checks": [
+    {
+      "@type": "CheckResult",
+      "assessesIndicator": {
+        "@id": "https://w3id.org/example/i/indicators/codemeta"
+      },
+      "checkingSoftware": {
+        "@type": "schema:SoftwareApplication",
+        "name": "metacheck",
+        "@id": "https://w3id.org/example/tools/metacheck",
+        "softwareVersion": "0.1.0"
+      },
+      "process": "codemeta.json dateModified is outdated compared to the actual repository last update date",
+      "status": {
+        "@id": "schema:CompletedActionStatus"
+      },
+      "evidence": "W004 detected: codemeta.json dateModified '2019-12-05T00:00:00' is outdated compared to repository date '2023-10-17T13:16:17'"
+    }
+  ]
+}
