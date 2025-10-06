@@ -1,4 +1,4 @@
-# Software Repository Metadata Pitfall/Warning Detection Tool
+# Research Software MetaCheck (a Pitfall/Warning Detection Tool)
 
 This project provides an automated tool for detecting common metadata quality issues (pitfalls & Warnings)
 in software repositories. The tool analyzes SoMEF (Software Metadata Extraction Framework) output 
