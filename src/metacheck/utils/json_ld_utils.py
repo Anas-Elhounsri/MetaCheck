@@ -399,6 +399,42 @@ def extract_software_info_from_somef(somef_data: Dict) -> Dict:
 
     return software_info
 
+def get_suggestion_text(pitfall_code: str) -> str:
+    """
+    Adds the suggestions depending on the Pitfall/Warning
+    """
+    pitfall_suggestions = {
+        "P001": "Ensure the version in your metadata matches the latest official release. Keeping these synchronized avoids confusion for users and improves reproducibility.",
+        "P002": "Update the copyright section with accurate names, organizations, and the current year. Personalizing this section ensures clarity and legal accuracy.",
+        "W003": "Add version numbers to your dependencies. This provides stability for users and allows reproducibility across different environments.",
+        "W004": "You need to align the version in your metadata file with your latest release tag. Automating this synchronization as part of your release process is highly recommended.",
+        "P005": "You should separate multiple authors into a structured list. This allows tools and citation systems to correctly identify and credit each contributor.",
+        "P006": "Update the README property so it points directly to your actual README file instead of your homepage. This helps ensure users and automated tools can access your project documentation easily.",
+        "P007": "Standardize your version format across files using semantic versioning (for example, 1.2.0) or any standardized versioning scheme. Consistent versioning reduces confusion for users and systems.",
+        "P008": "You need to replace local file paths with recognized SPDX license identifiers, such as MIT or GPL-3.0-only in URL form. This ensures your license can be correctly detected by automated tools.",
+        "W010": "List all applicable licenses if your repository includes more than one. This avoids confusion about terms of use and ensures full transparency.",
+        "P011": "Include version numbers for each programming language used. Defining these helps ensure reproducibility and compatibility across systems.",
+        "W012": "Add a referencePublication field with the related DOI or citation entry to your CITATION.cff. This will help link your work to its scholarly references.",
+        "P013": "Rewrite your dependencies as a proper list, with each item separated and preferably with their versions. This makes them easier to parse for metadata systems.",
+        "W014": "Verify and update any dependency links to ensure they lead to valid and accessible pages.",
+        "W015": "You should replace plain name in your identifier field with persistent identifiers, such as DOIs or SWHIDs, to improve discoverability and interoperability.",
+        "P016": "You need to update the codeRepository field to point directly to your repository's source code instead of a homepage. Accurate links improve traceability and user access.",
+        "P017": "You need to include the complete text of a recognized license such as MIT, Apache 2.0, or GPL. A full license clarifies rights and usage conditions for others",
+        "P018": "You need to correct the issue tracker URL so it follows a valid format, such as https://github.com/user/repo/issues. Proper links help users engage with your development process.",
+        "P019": "You need to update the downloadURL field to point to your latest release or current distribution source. Outdated links can mislead users or cause failed installations.",
+        "P020": "You need to replace URLs in the developmentStatus field with descriptive text values, such as 'active', 'beta', or 'stable'. This maintains schema compliance and clarity.",
+        "W021": "Ensure givenName is a single string per person. This ensures that every author is properly credited and can be extracted automatically ",
+        "P022": "You should declare the specific version of the license using a recognized SPDX identifier. For example, use 'GPL-3.0-only' or 'GPL-2.0-or-later' instead of simply 'GPL'",
+        "P023": "You should replace the remote-style syntax with a full web-accessible URL (e.g., https://github.com/user/repo).",
+        "P024": "You should include the full DOI URL form in your metadata (e.g., https://doi.org/XX.XXXX/zenodo.XXXX)",
+        "P025": "You need to update the outdated URLs to point to the current CI platform, or remove the property if no active CI is in place. A good pratcie would be to periodically test all external links, especially those related to CI or build status.",
+        "P026": "Make sure that the codeRepository URL in your metadata exactly matches the repository hosting your source code.",
+        "P027": "You need to synchronize all version references across metadata and build configuration files.",
+        "P028": "Always use the full resolvable SWHID URL (e.g., https://archive.softwareheritage.org/swh:1:dir:abcd.../). This will ensures that both humans and machines can access the archived software snapshot directly"
+    }
+
+    return pitfall_suggestions.get(pitfall_code, f"Suggestion for {pitfall_code}")
+
 def extract_description_info(somef_data: Dict) -> str:
     """
     Extract description information from SoMEF data.
@@ -464,7 +500,7 @@ def create_pitfall_jsonld(somef_data: Dict, pitfall_results: List[Dict], file_na
                 "status": {"@id": "schema:CompletedActionStatus"},
                 "checkId":pitfall_code,
                 "evidence": format_evidence_text(pitfall_code, pitfall_result),
-                "suggestion": ""
+                "suggestion": get_suggestion_text(pitfall_code)
             }
 
             jsonld_output["checks"].append(check_result)

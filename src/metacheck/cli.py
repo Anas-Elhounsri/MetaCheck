@@ -1,13 +1,15 @@
 import argparse
 import os
-from metacheck.run_somef import run_somef_single, run_somef_batch
+from metacheck.run_somef import run_somef_batch
 from metacheck.run_analyzer import run_analysis
 
 def cli():
     parser = argparse.ArgumentParser(description="Detect metadata pitfalls in software repositories using SoMEF.")
     parser.add_argument(
         "--input",
-        help="Either a single GitHub repo URL or a path to a JSON file containing multiple repos."
+        nargs="+",  # <-- accepts multiple files
+        required=True,
+        help="One or more JSON files containing repositories (e.g., GitHub, GitLab)."
     )
     parser.add_argument(
         "--pitfalls-output",
@@ -27,26 +29,18 @@ def cli():
     )
 
     args = parser.parse_args()
-    input_value = args.input
     threshold = args.threshold
-    pitfalls_output_dir = args.pitfalls_output
-    analysis_output_file = args.analysis_output
-
     somef_output_dir = os.path.join(os.getcwd(), "somef_outputs")
 
-    if not input_value:
-        input_value = input("Enter a GitHub repository URL or path to a JSON file: ").strip()
+    print(f"Detected {len(args.input)} input files:")
+    for json_path in args.input:
+        if not os.path.exists(json_path):
+            print(f"Skipping missing file: {json_path}")
+            continue
+        print(f"Processing repositories from {json_path}")
+        run_somef_batch(json_path, somef_output_dir, threshold)
 
-    if os.path.exists(input_value) and input_value.lower().endswith(".json"):
-        print(f"Batch mode: reading repositories from {input_value}")
-        success = run_somef_batch(input_value, somef_output_dir, threshold)
-        if success:
-            run_analysis(somef_output_dir, pitfalls_output_dir, analysis_output_file)
-    else:
-        print(f"Single repository mode: running SoMEF on {input_value}")
-        result_dir = run_somef_single(input_value, somef_output_dir, threshold)
-        if result_dir:
-            run_analysis(result_dir, pitfalls_output_dir, analysis_output_file)
+    run_analysis(somef_output_dir, args.pitfalls_output, args.analysis_output)
 
 if __name__ == "__main__":
     cli()
