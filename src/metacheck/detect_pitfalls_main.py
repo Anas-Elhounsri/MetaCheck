@@ -1,10 +1,9 @@
 import json
 from pathlib import Path
-
+from typing import Iterable, Union
 from metacheck.utils.pitfall_utils import extract_programming_languages
 from metacheck.utils.json_ld_utils import create_pitfall_jsonld, save_individual_pitfall_jsonld
 
-# Import all pitfall detectors
 from metacheck.scripts.p001 import detect_version_mismatch
 from metacheck.scripts.p002 import detect_license_template_placeholders
 from metacheck.scripts.w003 import detect_unversioned_requirements
@@ -34,15 +33,21 @@ from metacheck.scripts.p027 import detect_codemeta_version_mismatch_pitfall
 from metacheck.scripts.p028 import detect_raw_swhid_pitfall
 
 
-def detect_all_pitfalls(directory_path: str, pitfalls_output_dir: str, output_file: str):
+def detect_all_pitfalls(json_files: Iterable[Path], pitfalls_output_dir: Union[str, Path], output_file: Union[str, Path]):
     """
     Detect all software repository pitfalls in SoMEF output files using modular detectors.
     Now also generates individual JSON-LD files for each repository.
     """
 
-    directory = Path(directory_path)
     pitfalls_output_dir = Path(pitfalls_output_dir)
     pitfalls_output_dir.mkdir(exist_ok=True, parents=True)
+    json_files = list(json_files)
+
+    if not json_files:
+        print("No JSON files found for analysis.")
+        return
+
+    print(f"Analyzing {len(json_files)} SoMEF JSON files...")
 
     results = {
         "summary": {
@@ -284,7 +289,7 @@ def detect_all_pitfalls(directory_path: str, pitfalls_output_dir: str, output_fi
         (detect_raw_swhid_pitfall, "P028")
     ]
 
-    for json_file in directory.glob("*.json"):
+    for json_file in json_files:
         total_repos += 1
 
         try:
@@ -386,26 +391,43 @@ def detect_all_pitfalls(directory_path: str, pitfalls_output_dir: str, output_fi
         print(f"Error writing output file: {e}")
 
 
-def main(input_dir=None, pitfalls_dir=None, analysis_output=None):
+def main(input_dir=None, somef_json_paths=None, pitfalls_dir=None, analysis_output=None):
     """
     Main function to run all pitfall detections.
+
     Args:
-        input_dir (str, optional): Path to the SoMEF outputs directory.
-        pitfalls_dir (str, optional): Path to save individual pitfall JSON-LD files.
-        analysis_output (str, optional): Path to save summary results JSON.
+        input_dir (str|Path, optional): Directory containing SoMEF outputs.
+        somef_json_paths (Iterable[Path], optional): Explicit list of SoMEF output JSON files.
+        pitfalls_dir (str|Path, optional): Directory to save pitfall JSON-LD files.
+        analysis_output (str|Path, optional): Path to save summary results JSON.
+
+    Note: Provide either input_dir OR somef_json_paths, not both.
+          If both are provided, somef_json_paths takes precedence.
     """
     project_root = Path.cwd()
-    somef_directory = Path(input_dir) if input_dir else project_root / "somef_outputs"
+
     pitfalls_directory = Path(pitfalls_dir) if pitfalls_dir else project_root / "pitfalls_outputs"
     output_file = Path(analysis_output) if analysis_output else project_root / "analysis_results.json"
 
-    if not somef_directory.exists():
-        print(f"Error: Directory not found: {somef_directory}")
-        print("Please ensure the directory exists.")
+    if somef_json_paths:
+        json_files = [Path(p) for p in somef_json_paths]
+        print(f"Using {len(json_files)} explicitly provided JSON files")
+    elif input_dir:
+        input_dir = Path(input_dir)
+        if not input_dir.exists():
+            print(f"Error: Directory not found: {input_dir}")
+            return
+        json_files = list(input_dir.glob("*.json"))
+        print(f"Found {len(json_files)} JSON files in {input_dir}")
+    else:
+        print("Error: No input directory or JSON file list provided.")
         return
 
-    detect_all_pitfalls(str(somef_directory), str(pitfalls_directory), str(output_file))
+    if not json_files:
+        print("No JSON files found for analysis.")
+        return
 
+    detect_all_pitfalls(json_files, pitfalls_directory, output_file)
 
 if __name__ == "__main__":
     main()

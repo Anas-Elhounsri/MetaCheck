@@ -48,13 +48,13 @@ repositories you want to analyze.
 ### 2. Directory Structure [NEEDS AN UPDATE]
 ```
 project/ detect_pitfalls_main.py 
-        +-- somef_outputs/ # Directory containing SoMEF JSON files ¦ 
-            +-- repository1.json ¦ 
-            +-- repository2.json ¦ 
+        +-- somef_outputs/ # Directory containing SoMEF JSON files   
+            +-- repository1.json   
+            +-- repository2.json   
             +-- ... 
-        +-- scripts/ # Individual pitfall detector modules ¦ 
-            +-- p001.py ¦ 
-            +-- p002.py ¦ 
+        +-- scripts/ # Individual pitfall detector modules   
+            +-- p001.py   
+            +-- p002.py   
             +-- ... 
         +-- all_pitfalls_results.json # Generated output file
 
@@ -108,6 +108,15 @@ The results will be like the following:
 ./results/pitfalls/
 ./results/summary.json
 ```
+
+If you have already ran SoMEF individually before running this package and wish to run the analysis, you can skip SoMEF by running this command:
+  
+`python -m metacheck.cli --skip-somef --input somef_outputs/*.json
+`
+or if you wish to run for multiple paths:
+
+`python -m metacheck.cli --skip-somef --input my_somef_outputs_1/*.json my_somef_outputs_2/*.json
+`
 ### 4. Output
 
 The tool will:
@@ -130,7 +139,7 @@ The output file contains:
 
 1. **"There is no valid repository URL" error**: Ensure the JSON file that contains the repositories 
 has a valid structure and that you are inputing the correct path
-2. **Network timeouts**: Some pitfalls validate URLs and may time out—this is normal behavior
+2. **Network timeouts**: Some pitfalls validate URLs and may time out this is normal behavior
 
 ### Performance Notes
 
