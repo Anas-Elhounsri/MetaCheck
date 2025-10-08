@@ -25,24 +25,24 @@ def run_somef_single(repo_url, output_dir="somef_outputs", threshold=0.8):
     return output_dir if success else None
 
 def run_somef_batch(json_file, output_dir="somef_outputs", threshold=0.8):
-    """Run SoMEF for all repositories listed in a JSON file, then run analysis once."""
+    """Run SoMEF for all repositories listed in a JSON file."""
     os.makedirs(output_dir, exist_ok=True)
 
     with open(json_file, "r") as f:
         data = json.load(f)
 
-    # Expected structure: {"repositories": ["repo1", "repo2", ...]}
     repos = data.get("repositories", [])
     if not repos:
-        print("No repositories found in JSON file.")
+        print(f" No repositories found in {json_file}.")
         return False
 
-    print(f"Found {len(repos)} repositories to process.\n")
+    base_name = os.path.splitext(os.path.basename(json_file))[0]
+    print(f"Running SoMEF for {len(repos)} repositories in {base_name}...")
 
     for idx, repo_url in enumerate(repos, start=1):
-        output_file = os.path.join(output_dir, f"output_{idx}.json")
-        print(f"[{idx}/{len(repos)}] Running SoMEF for: {repo_url}")
+        output_file = os.path.join(output_dir, f"{base_name}_output_{idx}.json")
+        print(f"[{idx}/{len(repos)}] {repo_url}")
         run_somef(repo_url, output_file, threshold)
 
-    print("\nFinished running SoMEF for all repositories.")
+    print(f"Completed SoMEF for {base_name}. Results in {output_dir}")
     return True
