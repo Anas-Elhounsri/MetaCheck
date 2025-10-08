@@ -112,7 +112,8 @@ The results will be like the following:
 If you have already ran SoMEF individually before running this package and wish to run the analysis, you can skip SoMEF by running this command:
   
 `python -m metacheck.cli --skip-somef --input somef_outputs/*.json
-`
+`  
+
 or if you wish to run for multiple paths:
 
 `python -m metacheck.cli --skip-somef --input my_somef_outputs_1/*.json my_somef_outputs_2/*.json
