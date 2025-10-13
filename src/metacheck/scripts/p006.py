@@ -3,6 +3,7 @@ import re
 from urllib.parse import urlparse
 
 
+
 def is_homepage_url(url: str) -> bool:
     """
     Check if a URL appears to be a homepage/wiki rather than a README file.
@@ -26,10 +27,8 @@ def is_homepage_url(url: str) -> bool:
     ]
 
     if ('github.com' in url_lower or 'gitlab.com' in url_lower):
-
         if 'readme' in url_lower or 'blob/' in url_lower:
             return False
-
         return True
 
     # Check for other homepage indicators
@@ -37,12 +36,9 @@ def is_homepage_url(url: str) -> bool:
         if indicator in url_lower:
             return True
 
-    # Check for generic domains (.org, .com, .net) but more specific
+    # Check for generic domains (.org, .com, .net)
     if any(domain in url_lower for domain in ['.org', '.com', '.net']):
         if any(ext in url_lower for ext in ['.md', '.txt', '.rst', '.html', 'readme']):
-            return False
-
-        if '/' in url_lower.split('.')[-1]:
             return False
         return True
 
