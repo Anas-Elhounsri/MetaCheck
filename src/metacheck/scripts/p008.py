@@ -1,3 +1,4 @@
+
 from typing import Dict
 import re
 from metacheck.utils.pitfall_utils import extract_metadata_source_filename
@@ -6,62 +7,33 @@ def is_local_file_license(license_value: str) -> bool:
     """
     Check if license value points to a local file instead of stating the license name.
     """
-    if not license_value:
+    if not license_value or not isinstance(license_value, str):
         return False
 
-    license_lower = license_value.lower()
+    license_lower = license_value.lower().strip()
 
-    valid_license_patterns = [
-        r'https?://spdx\.org/licenses/',  # SPDX license URLs
-        r'https?://opensource\.org/licenses/',  # OSI license URLs
-        r'https?://www\.gnu\.org/licenses/',  # GNU license URLs
-        r'https?://creativecommons\.org/licenses/',  # Creative Commons URLs
-        r'https?://www\.apache\.org/licenses/',  # Apache license URLs
-        r'https?://www\.mozilla\.org/en-US/MPL/',  # Mozilla license URLs
-        r'https?://unlicense\.org',  # Unlicense URL
-        r'https?://choosealicense\.com/',  # GitHub's license chooser
-    ]
+    if license_lower.startswith('http://') or license_lower.startswith('https://'):
+        return False
 
-    for pattern in valid_license_patterns:
-        if re.search(pattern, license_value, re.IGNORECASE):
-            return False
-
-    # Local file indicators
-    local_file_patterns = [
-        r'^\./',  # Starts with ./
-        r'^\.\./',  # Starts with ../
-        r'^license\.md$',  # Exactly "license.md"
-        r'^license\.txt$',  # Exactly "license.txt"
-        r'^license$',  # Exactly "LICENSE" or "license"
-        r'^copying$',  # Exactly "COPYING" or "copying"
-        r'^copyright$',  # Exactly "COPYRIGHT" or "copyright"
-        r'\.md$',  # Any .md file that's not a URL
-        r'\.txt$',  # Any .txt file that's not a URL
-        r'\.rst$',  # Any .rst file
-    ]
-
-    # Check if it starts with relative path indicators
     if license_value.startswith('./') or license_value.startswith('../'):
         return True
 
-    # Check if it contains path separators (likely a file path)
-    if ('/' in license_value or '\\' in license_value) and not license_value.startswith('http'):
+    if ('/' in license_value or '\\' in license_value):
         return True
 
-    # Check against local file patterns
-    for pattern in local_file_patterns:
-        if re.search(pattern, license_lower):
-            return True
-
-    # Check for common license file names
     license_file_names = [
         'license', 'license.md', 'license.txt', 'license.rst',
         'copying', 'copying.md', 'copying.txt',
         'copyright', 'copyright.md', 'copyright.txt',
-        'licence', 'licence.md', 'licence.txt'  # British spelling
+        'licence', 'licence.md', 'licence.txt',  # British spelling
+        'readme.md', 'doc.txt', 'file.rst'  # Other common file patterns
     ]
 
     if license_lower in license_file_names:
+        return True
+
+    file_extensions = ['.md', '.txt', '.rst']
+    if any(license_lower.endswith(ext) for ext in file_extensions):
         return True
 
     return False
@@ -87,7 +59,7 @@ def detect_local_file_license_pitfall(somef_data: Dict, file_name: str) -> Dict:
     if not isinstance(license_entries, list):
         return result
 
-    metadata_sources = ["codemeta.json", "DESCRIPTION", "composer.json", "package.json", "pom.xml", "pyproject.toml", "requirements.txt", "setup.py"]
+    metadata_sources = ["codemeta.json", "description", "composer.json", "package.json", "pom.xml", "pyproject.toml", "requirements.txt", "setup.py"]
 
     for entry in license_entries:
         technique = entry.get("technique", "")

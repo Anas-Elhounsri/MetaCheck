@@ -1,3 +1,4 @@
+
 from typing import Dict
 import re
 from metacheck.utils.pitfall_utils import extract_metadata_source_filename
@@ -37,7 +38,7 @@ def detect_multiple_authors_single_field_pitfall(somef_data: Dict, file_name: st
         "file_name": file_name,
         "author_value": None,
         "source": None,
-        "metadata_source_file": None,  # Add this line
+        "metadata_source_file": None,
         "multiple_authors_detected": False
     }
 
@@ -48,8 +49,8 @@ def detect_multiple_authors_single_field_pitfall(somef_data: Dict, file_name: st
     if not isinstance(authors_entries, list):
         return result
 
-    # Define metadata sources to check
-    metadata_sources = ["codemeta.json", "DESCRIPTION", "composer.json", "package.json", "pom.xml", "pyproject.toml",
+    # Define metadata sources to check (convert to lowercase for comparison)
+    metadata_sources = ["codemeta.json", "description", "composer.json", "package.json", "pom.xml", "pyproject.toml",
                         "requirements.txt", "setup.py"]
 
     for entry in authors_entries:

@@ -13,30 +13,38 @@ def is_homepage_url(url: str) -> bool:
 
     url_lower = url.lower()
 
+    if 'raw.githubusercontent.com' in url_lower:
+        return False
+
     # Check for documentation sites and wikis
     homepage_indicators = [
         '.readthedocs.io',
         '.github.io',
         'wiki',
         'docs.',
-        'documentation',
-        '.org',
-        '.com',
-        '.net'
+        'documentation'
     ]
 
-    # If it contains github.com or gitlab.com but NOT pointing to a specific README file
     if ('github.com' in url_lower or 'gitlab.com' in url_lower):
-        # If it's pointing to a specific README file, it's OK
+
         if 'readme' in url_lower or 'blob/' in url_lower:
             return False
-        # If it's just the repository root, it's a homepage
+
         return True
 
     # Check for other homepage indicators
     for indicator in homepage_indicators:
         if indicator in url_lower:
             return True
+
+    # Check for generic domains (.org, .com, .net) but more specific
+    if any(domain in url_lower for domain in ['.org', '.com', '.net']):
+        if any(ext in url_lower for ext in ['.md', '.txt', '.rst', '.html', 'readme']):
+            return False
+
+        if '/' in url_lower.split('.')[-1]:
+            return False
+        return True
 
     return False
 
