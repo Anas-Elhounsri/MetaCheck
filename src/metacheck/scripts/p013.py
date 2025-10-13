@@ -9,6 +9,12 @@ def is_valid_url_format(url: str) -> bool:
     """
     Check if URL has a valid format.
     """
+    if url is None:
+        raise ValueError("URL cannot be None")
+
+    if not url or not isinstance(url, str):
+        return False
+
     try:
         result = urlparse(url)
         return all([result.scheme, result.netloc])
@@ -38,7 +44,7 @@ def check_url_status(url: str, timeout: int = 10) -> Dict:
         response = requests.get(url, timeout=timeout, headers=headers, allow_redirects=True)
         result["status_code"] = response.status_code
 
-        if 200 <= response.status_code < 300:
+        if (200 <= response.status_code < 300) or response.status_code == 301:
             result["is_accessible"] = True
 
     except requests.exceptions.RequestException as e:
@@ -96,7 +102,7 @@ def detect_invalid_software_requirement_pitfall(somef_data: Dict, file_name: str
     if not isinstance(req_entries, list):
         return result
 
-    metadata_sources = ["codemeta.json", "DESCRIPTION", "composer.json", "package.json", "pom.xml", "pyproject.toml",
+    metadata_sources = ["codemeta.json", "description", "composer.json", "package.json", "pom.xml", "pyproject.toml",
                         "requirements.txt", "setup.py"]
 
     for entry in req_entries:
